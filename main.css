@@ -1,58 +1,45 @@
-/* shared */
-
-.margin {
+/* -------------------------shared---------------------- */
+.style {
+  font-family: Helvetica;
   margin: 50px 200px;
 }
-
 /* TEXT TOP BAR */
-
 a:hover {
   color: lightgrey;
 }
-
 a {
   cursor: pointer;
 }
-
 a:link {
   text-decoration: none;
 }
-
 a:visited {
   text-decoration: none;
 }
-
 a {
   color: black;
 }
-
 .active {
   font-weight: 400;
 }
-
 .inactive {
   color:grey;
   font-weight: 100;
 }
-
 .container_head {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: Helvetica;
   font-stretch: 80%;
 }
-
 .container_left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Helvetica;
   font-weight: 100;
   font-size: 28px;
 }
-
 .lighter_font {
   color: #9F9F9F;
   font-size: 12px;
@@ -61,26 +48,19 @@ a {
   margin-top: 1px;
   font-size: 17px;
   font-stretch: 240%;
-
 }
-
 .container_right {
   width: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: 100;
 }
-
 /* TEXT TOP BAR END*/
 
-
 /* BODY */
-
-/* HOVER IMG*/
-
+/* HOVER BODY IMG*/
 .container_body {
   align-items: center;
   display: flex;
@@ -88,7 +68,10 @@ a {
   position: relative;
   margin: 100px 0px;
 }
-
+.image{
+  width: 100%;
+  height: auto;
+}
 .image-hover {
   opacity: 1;
   display: block;
@@ -97,8 +80,7 @@ a {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
-.image-text {
+.image-text-hover {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -107,44 +89,43 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  font-family: Helvetica;
   font-weight: 100;
   font-size: 36px;
   padding: 8px 18px;
-  font: Helvetica;
+}
+.image-text {
+  text-align: center;
+  font-weight: 100;
+  font-size: 14px;
 }
 .container_body:hover .image-hover {
   opacity: 0.3;
 }
-.container_body:hover .image-text {
+.container_body:hover .image-text-hover {
   opacity: 1;
 }
-
 /* HOVER IMG END*/
 
-.container_foot {
+.container_footer {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: Helvetica;
   font-size: 12px;
 }
-
 .image_footer {
   margin: 15px 10px;
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
-
 #infor {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-
+/* --------------------------unique------------------------- */
 #image-rc {
   width: 50%;
   height: 50%;
