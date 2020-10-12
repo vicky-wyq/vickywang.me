@@ -1,3 +1,5 @@
+/* shared */
+
 .margin {
   margin: 50px 200px;
 }
@@ -24,6 +26,15 @@ a {
   color: black;
 }
 
+.active {
+  font-weight: 400;
+}
+
+.inactive {
+  color:grey;
+  font-weight: 100;
+}
+
 .container_head {
   align-items: center;
   display: flex;
@@ -31,7 +42,6 @@ a {
   justify-content: space-between;
   font-family: Helvetica;
   font-stretch: 80%;
-  color: #000000
 }
 
 .container_left {
@@ -39,16 +49,19 @@ a {
   flex-direction: column;
   align-items: center;
   font-family: Helvetica;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 28px;
-  color: #000000
 }
 
-.lighter_grey {
-  margin-top: 8px;
-  font-stretch: 240%;
+.lighter_font {
   color: #9F9F9F;
-  font-size: 13px;
+  font-size: 12px;
+}
+#topleftlighterfont {  
+  margin-top: 1px;
+  font-size: 17px;
+  font-stretch: 240%;
+
 }
 
 .container_right {
@@ -58,13 +71,13 @@ a {
   justify-content: space-around;
   font-family: Helvetica;
   font-size: 14px;
-  color: #000000
+  font-weight: 100;
 }
 
-/* TEXT TOP BAR *END/
+/* TEXT TOP BAR END*/
 
 
-/* CONTAINER BODY */
+/* BODY */
 
 /* HOVER IMG*/
 
@@ -76,7 +89,7 @@ a {
   margin: 100px 0px;
 }
 
-.image {
+.image-hover {
   opacity: 1;
   display: block;
   width: 100%;
@@ -96,21 +109,18 @@ a {
   text-align: center;
   font-family: Helvetica;
   font-weight: 100;
-  color: black;
   font-size: 36px;
   padding: 8px 18px;
   font: Helvetica;
 }
-
-.container_body:hover .image {
+.container_body:hover .image-hover {
   opacity: 0.3;
 }
-
 .container_body:hover .image-text {
   opacity: 1;
 }
 
-/*hover img end*/
+/* HOVER IMG END*/
 
 .container_foot {
   align-items: center;
@@ -133,4 +143,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+#image-rc {
+  width: 50%;
+  height: 50%;
 }
