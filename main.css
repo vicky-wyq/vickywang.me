@@ -1,7 +1,7 @@
 /* -------------------------shared---------------------- */
-.style {
+body {
   font-family: Helvetica;
-  margin: 50px 200px;
+  margin: 50px /* top&bottom*/ 200px/* left&right*/;
 }
 /* TEXT TOP BAR */
 a:hover {
@@ -70,7 +70,8 @@ a {
 }
 .image{
   width: 100%;
-  height: auto;
+  height: auto;  
+  display: block;
 }
 .image-hover {
   opacity: 1;
@@ -97,6 +98,8 @@ a {
   text-align: center;
   font-weight: 100;
   font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 .container_body:hover .image-hover {
   opacity: 0.3;
@@ -114,7 +117,7 @@ a {
   font-size: 12px;
 }
 .image_footer {
-  margin: 15px 10px;
+  margin: 15px /* top&bottom*/ 10px/* left&right*/;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -126,7 +129,12 @@ a {
   justify-content: space-evenly;
 }
 /* --------------------------unique------------------------- */
+
 #image-rc {
   width: 50%;
   height: 50%;
+}
+#image-me {
+  width: 1%;
+  height: auto;
 }
