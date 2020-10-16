@@ -2,9 +2,7 @@
 
 body {
     font-family: Helvetica;
-    margin: 50px/* top&bottom*/
-    200px/* left&right*/
-    ;
+    margin: 50px/* top&bottom*/200px/* left&right*/;
 }
 /* TEXT TOP BAR */
 a:hover {
@@ -27,8 +25,18 @@ a {
     color: black;
 }
 hr {
-    width: 62%;
+    width: 45%;
+    height:1px;
+    border-width:0;
+    background-color:grey;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
+    
+.blank {
+    height:20%;
+}
+
 
 .active {
     font-weight: 400;
@@ -46,21 +54,21 @@ hr {
     font-size: 17px;
     font-stretch: 240%;
 }
-.container_head {
+.container-head {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-stretch: 80%;
 }
-.container_left {
+.container-head-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: 100;
     font-size: 28px;
 }
-.container_right {
+.container-head-right {
     width: 350px;
     display: flex;
     flex-direction: row;
@@ -153,54 +161,8 @@ hr {
     width: 20%;
     height: auto;
 }
-.container-about{
-    width: 1600px;
+/* --------------------unique--------body----------------- */
 
-}
-.container_resume{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 1600px;
-
-}
-.container_body_about{    
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 200px/* top&bottom*/ 0px;
-}
-
-.text-about-hi {
-    text-align: center;
-    font-weight: 500;
-    font-size: 40px;
-    margin-top: 100px;
-    margin-bottom: 70px;
-}
-.text-about-intro {
-    text-align: center;
-    font-weight: 100;
-    font-size: 18px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-.text-about-left{
-    font-weight: 400;
-    font-size: 22px;
-    width: 30%;
-    margin-left:340px ;
-}
-.text-about-right/*same with intro*/{    
-    text-align: left;
-    font-weight: 100;
-    font-size: 18px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    width: 70%;
-
-}
 .horizontal-line {
     border-top: 1px solid black;
     height: 200px;
@@ -210,9 +172,107 @@ hr {
     margin-right: 10%;
 }
 .vertical-line {
-    border-left: 5px solid black;
-    height: 200px;
-    margin-top: 80px;
-    margin-bottom: 0px;
+    border-left: 5px solid gray;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 30;
 }
 
+/* --------------------unique--------body----------------- */
+
+.container-body-about{
+    flex-direction: column;
+}
+.container-body-intro-column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-body-intro-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 25%;
+}
+.container-body-left {    
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 100px;
+}
+.container-body-right {    
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 35%;
+}
+.container-body-right-nomargin{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0%;
+}
+
+
+.container-body-right-insertion{    
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    margin-bottom: 50px;
+}
+
+.item-left{
+    order: 1;
+    display: flex;
+    flex-grow: 1;
+    font-size: 22px;
+}
+.item-right{
+    display: flex;
+    margin-left: 0;
+}
+
+.text-about-hi{
+    margin: 150px 0px;
+    font-weight: 100;
+    font-size: 38px;
+}
+.text-about-intro{
+    margin: 5px 0px;
+    font-weight: 100;
+    font-size: 18px;
+}
+.text-time{
+    margin-top: -9px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-weight: 100;
+    font-size: 12px;
+}
+.text-right-title {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    font-weight: 500;
+    font-size: 22px;
+}
+.text-right-description {  
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.text-right-location {  
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-weight: lighter;
+    font-size: 14px;
+}
