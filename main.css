@@ -29,12 +29,12 @@ hr {
     height:1px;
     border-width:0;
     background-color:grey;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 13%;
+    margin-bottom: 13%;
 }
     
 .blank {
-    height:20%;
+    height:5%;
 }
 
 
@@ -161,6 +161,9 @@ hr {
     width: 20%;
     height: auto;
 }
+.blank-about {
+    height:15%;
+}
 /* --------------------unique--------body----------------- */
 
 .horizontal-line {
@@ -180,7 +183,7 @@ hr {
     margin-right: 30;
 }
 
-/* --------------------unique--------body----------------- */
+/* --------------------unique----about----body----------------- */
 
 .container-body-about{
     flex-direction: column;
@@ -275,4 +278,8 @@ hr {
     margin-left: 0px;
     font-weight: lighter;
     font-size: 14px;
+}
+/* --------------------unique----photography----body----------------- */
+.image-photo{
+    width: 1300px;
 }
