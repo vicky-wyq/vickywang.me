@@ -29,12 +29,15 @@ hr {
     height:1px;
     border-width:0;
     background-color:grey;
-    margin-top: 13%;
-    margin-bottom: 13%;
+    margin-top: 18%;
+    margin-bottom: 18%;
 }
     
 .blank {
-    height:5%;
+    height:3%;
+}
+.blank-thicker {
+    height:35%;
 }
 
 
@@ -84,7 +87,7 @@ hr {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 100px 0px;
+    margin: 7% 10%;
 }
 .image {
     width: 100%;
@@ -153,8 +156,12 @@ hr {
 /* --------------------------unique------------------------- */
 
 #image-rc {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: auto;
+}
+#image-rotation-curve {
+    width: 170%;
+    height: auto;
 }
 
 #image-me {
@@ -197,7 +204,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 25%;
+    margin-left: 22%;
 }
 .container-body-left {    
     display: flex;
@@ -211,6 +218,7 @@ hr {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 35%;
+    width: 30%;
 }
 .container-body-right-nomargin{
     display: flex;
@@ -219,8 +227,6 @@ hr {
     justify-content: flex-start;
     margin-left: 0%;
 }
-
-
 .container-body-right-insertion{    
     display: flex;
     align-items: left;
@@ -229,23 +235,12 @@ hr {
     align-items:center;
     margin-bottom: 50px;
 }
-
-.item-left{
-    order: 1;
-    display: flex;
-    flex-grow: 1;
-    font-size: 22px;
-}
-.item-right{
-    display: flex;
-    margin-left: 0;
-}
-
 .text-about-hi{
     margin: 150px 0px;
     font-weight: 100;
     font-size: 38px;
 }
+
 .text-about-intro{
     margin: 5px 0px;
     font-weight: 100;
@@ -257,6 +252,12 @@ hr {
     margin-left: 0px;
     font-weight: 100;
     font-size: 12px;
+}
+.text-left-title {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    font-size: 22px;
 }
 .text-right-title {
     margin-top: 0px;
@@ -279,7 +280,26 @@ hr {
     font-weight: lighter;
     font-size: 14px;
 }
-/* --------------------unique----photography----body----------------- */
-.image-photo{
-    width: 1300px;
+
+/* --------------------unique----architecture----body----------------- */
+
+.container-body-description{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
+.text-body-title{    
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 0px;
+
+
+}
+.text-body-description{  
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+/* --------------------unique----photography----body----------------- */
