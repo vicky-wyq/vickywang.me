@@ -1,4 +1,17 @@
 /* -------------------------shared---------------------- */
+       /* --------more than 900px = mminwidth------- */
+       /* --------less than 900px = maxwidth-------- */
+@media screen and (max-width: 680px) 
+{        
+#topbar{        
+    flex-direction: column;
+    align-items: center;
+}
+    #topbar-right{
+        flex-direction: column;
+        align-items: center;
+    }   
+}
 
 body {
     font-family: Helvetica;
@@ -39,8 +52,6 @@ hr {
 .blank-thicker {
     height:35%;
 }
-
-
 .active {
     font-weight: 400;
 }
