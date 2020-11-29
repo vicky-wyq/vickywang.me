@@ -1,6 +1,12 @@
 *.Ai
+*.psd
 *.3dm
 *.3dm*
 node_modules
 .DS_Store
 */.DS_Store
+.environment.sh
+*.jpg
+*.jpeg
+*.png
+*.CR2

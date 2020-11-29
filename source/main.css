@@ -1,9 +1,4 @@
 /* -------------------------shared---------------------- */
-
-/* --------more than 900px = mminwidth------- */
-
-/* --------less than 900px = maxwidth-------- */
-
 @media screen and (max-width: 980px) {
     #topbar {
         flex-direction: column;
@@ -48,11 +43,11 @@
     }
     .container-body-left {
         width: 90% !important;
-        margin-left: 3% !important;
+        margin-left: 1% !important;
     }
     .container-body-right {
-        width: 90% !important;
-        margin-left: 3% !important;
+        width: 95% !important;
+        margin-left: 6% !important;
 
     }
     .container-body-right-nomargin {
@@ -68,9 +63,10 @@
         font-size: 12 !important;
     }
     hr {
-        width: 90% !important;
-        margin-top: 28% !important;
-        margin-bottom: 28% !important;
+        width: 85% !important;
+        margin-top: 22% !important;
+        margin-bottom: 22% !important;
+        background-color:lightgray!important;
     }
 }
 
@@ -112,13 +108,22 @@ hr {
     height: 1px;
     border-width: 0;
     background-color: grey;
-    margin-top: 25%;
-    margin-bottom: 25%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+br {
+    display: block;
+
+    line-height: 40px;
+}
+.blank {
+    height: 5%;
+    display: block;
+}
+.blank-top {
+    height: 15%;
 }
 
-.blank {
-    height: 3%;
-}
 
 .blank-thicker {
     height: 35%;
@@ -175,7 +180,7 @@ hr {
 
 .text-body-title {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 0px;
 }
 
@@ -245,7 +250,7 @@ hr {
 }
 
 .container_body:hover .image-hover {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .container_body:hover .image-text-hover {
@@ -321,6 +326,8 @@ hr {
     display: flex;
     align-items: left;
     flex-direction: column;
+    justify-content: flex-start;
+
     width: 100px;
 }
 
@@ -329,8 +336,8 @@ hr {
     align-items: left;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 35%;
-    width: 30%;
+    margin-left: 28%;
+    width: 50%;
 }
 
 .container-body-right-nomargin {
@@ -347,7 +354,7 @@ hr {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .text-about-hi {
@@ -359,29 +366,29 @@ hr {
 }
 
 .text-about-intro {
-    margin: 5px 13%;
+    margin: 5px/* top&bottom*/ 13%;
     font-weight: 100;
     font-size: 18px;
 }
 
 .text-time {
-    margin-top: -9px;
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 0px;
     font-weight: 100;
     font-size: 10px;
 }
 
-.text-left-title {
+.text-title-left {
     margin-top: 0px;
     margin-bottom: 55px;
     margin-left: 0px;
     font-size: 18px;
 }
 
-.text-right-title {
+.text-title-right {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-left: 0px;
     font-weight: 400;
     font-size: 18px;
@@ -389,19 +396,12 @@ hr {
 
 .text-right-description {
     margin-top: 0px;
-    margin-bottom: 50px;
-    margin-left: 0px;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-.text-right-location {
-    margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 14px;
 }
+
 
 /* ------------abput--font-size-containers----body----------------- */
 
@@ -422,8 +422,5 @@ hr {
     height: auto;
 }
 
-.blank-about {
-    height: 15%;
-}
 
 /* --------------------unique--------body----------------- */
