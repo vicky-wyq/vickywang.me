@@ -12,9 +12,3 @@ node_modules
 *.png
 *.CR2
 *.docx
-
-!.gitignore
-!package.json
-!package.json.lock
-!*.html
-!*.css
