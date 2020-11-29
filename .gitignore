@@ -11,6 +11,7 @@ node_modules
 *.jpeg
 *.png
 *.CR2
+*.docx
 
 !.gitignore
 !package.json
