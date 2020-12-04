@@ -1,4 +1,5 @@
 /* -------------------------shared---------------------- */
+
 @media screen and (max-width: 980px) {
     #topbar {
         flex-direction: column;
@@ -24,6 +25,7 @@
     /*----about----- */
     #image-me {
         width: 85% !important;
+        margin-bottom: 0px !important;
     }
     .text-about-hi {
         font-size: 23px !important;
@@ -32,14 +34,12 @@
         align-items: center !important;
         font-size: 14px !important;
         width: 70% !important;
-
     }
     .container-body-intro-row {
         flex-direction: column !important;
         align-items: center !important;
         width: 90% !important;
         margin-left: 3% !important;
-
     }
     .container-body-left {
         width: 90% !important;
@@ -48,25 +48,24 @@
     .container-body-right {
         width: 95% !important;
         margin-left: 6% !important;
-
     }
     .container-body-right-nomargin {
         width: 90% !important;
     }
-    .text-left-title{
+    .text-left-title {
         font-size: 18 !important;
     }
-    .text-right-title{
+    .text-right-title {
         font-size: 16 !important;
     }
-    .text-right-description{
+    .text-right-description {
         font-size: 12 !important;
     }
     hr {
         width: 85% !important;
         margin-top: 22% !important;
         margin-bottom: 22% !important;
-        background-color:lightgray!important;
+        background-color: lightgray!important;
     }
 }
 
@@ -80,7 +79,12 @@ body {
 /* TEXT TOP BAR */
 
 a:hover {
-    color: lightgrey;
+    color: darkgrey;
+}
+
+a.hover_onimg:hover {
+    color: #202020;
+    font-weight: 350;
 }
 
 a {
@@ -111,19 +115,20 @@ hr {
     margin-top: 20%;
     margin-bottom: 20%;
 }
+
 br {
     display: block;
-
     line-height: 40px;
 }
+
 .blank {
     height: 5%;
     display: block;
 }
+
 .blank-top {
     height: 15%;
 }
-
 
 .blank-thicker {
     height: 35%;
@@ -189,6 +194,8 @@ br {
     margin-bottom: 0px;
     font-weight: lighter;
     font-size: 12px;
+    line-height: 20px;
+
 }
 
 /* --------------------font------size----body----------------- */
@@ -210,6 +217,9 @@ br {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin: 20px/* top&bottom*/
+    200px/* left&right*/
+    ;
 }
 
 .image {
@@ -287,11 +297,12 @@ br {
 
 .horizontal-line {
     border-top: 1px solid black;
-    height: 200px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 10%;
-    margin-right: 10%;
+    opacity: 0.3;
+
+    height: 0px;
+    width: 60%;
+    margin: 5%/* top&bottom*/ 10%/* left&right*/;
+
 }
 
 .vertical-line {
@@ -327,7 +338,6 @@ br {
     align-items: left;
     flex-direction: column;
     justify-content: flex-start;
-
     width: 100px;
 }
 
@@ -357,6 +367,15 @@ br {
     margin-bottom: 0px;
 }
 
+.container-body-project {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+
 .text-about-hi {
     margin: 100px/*t&b*/
     0px/*l&r*/
@@ -366,7 +385,8 @@ br {
 }
 
 .text-about-intro {
-    margin: 5px/* top&bottom*/ 13%;
+    margin: 5px/* top&bottom*/
+    28%;
     font-weight: 100;
     font-size: 18px;
 }
@@ -402,7 +422,6 @@ br {
     font-size: 14px;
 }
 
-
 /* ------------abput--font-size-containers----body----------------- */
 
 /* ---------------------------unique------------------------- */
@@ -418,9 +437,9 @@ br {
 }
 
 #image-me {
-    width: 40%;
+    width: 15%;
     height: auto;
+    margin-bottom: 90px;
 }
-
 
 /* --------------------unique--------body----------------- */
