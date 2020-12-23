@@ -16,11 +16,16 @@
         margin-right: 0% !important;
     }
     .text-body-title {
-        font-size: 10px !important;
+        font-size: 7px !important;
         align-items: center !important;
+    }
+    .text-body-description-bold {
+        font-size: 7px !important;
+        line-height: 10px !important;
     }
     .text-body-description {
         font-size: 7px !important;
+        line-height: 10px !important;
     }
     /*----about----- */
     #image-me {
@@ -34,6 +39,17 @@
         align-items: center !important;
         font-size: 14px !important;
         width: 70% !important;
+    }
+    .container-body-description {
+        margin: 0px/* top&bottom*/
+        0px/* left&right*/
+        !important;
+    }
+    .container-body-project {
+        width: 90% !important;
+    }
+    .container-body-project-img {
+        width: 90% !important;
     }
     .container-body-intro-row {
         flex-direction: column !important;
@@ -61,11 +77,15 @@
     .text-right-description {
         font-size: 12 !important;
     }
+    .horizontal-line {
+        width: 88% !important;
+    }
     hr {
-        width: 85% !important;
+        width: 75% !important;
         margin-top: 22% !important;
         margin-bottom: 22% !important;
-        background-color: lightgray!important;
+        background-color: black!important;
+        opacity: 0.3;
     }
 }
 
@@ -105,15 +125,26 @@ a {
 
 img {
     width: 100%;
+    height: auto;
+}
+
+svg {
+    width: 100%;
+    height: auto;
 }
 
 hr {
     width: 45%;
     height: 1px;
     border-width: 0;
-    background-color: grey;
+    background-color: black;
     margin-top: 20%;
     margin-bottom: 20%;
+    opacity: 0.3;
+}
+
+b {
+    font-weight: normal;
 }
 
 br {
@@ -189,18 +220,112 @@ br {
     margin-top: 0px;
 }
 
+.text-body-description-bold {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 1000px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
 .text-body-description {
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: lighter;
     font-size: 12px;
     line-height: 20px;
-
 }
 
 /* --------------------font------size----body----------------- */
 
 /* BODY */
+
+/*  button  */
+
+.carousel-item {
+    display: none;
+}
+
+.selected {
+    display: block;
+}
+
+button {
+
+    background-color:transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 60px;
+    margin: 0px 0px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-weight: light;
+    opacity: 0.9;
+    padding: 0% 0%;
+    font-stretch: ultra-condensed;
+    padding: 900% 200%;
+}
+
+.button-hover {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.image-button-hover-left {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 100;
+    font-size: 36px;
+    display: flex;
+    top: 43%;
+    left: -20px;
+    align-items: flex-start;
+}
+
+.image-button-hover-right {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 100;
+    font-size: 36px;
+    display: flex;
+    top: 43%;
+    right: 100px;
+    align-items: flex-end;
+}
+
+.container-body-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.container_body:hover .image-button-hover-left {
+    opacity: 1;
+}
+
+.container_body:hover .image-button-hover-right {
+    opacity: 1;
+}
+
+.mid-blank {
+    display: inline-block;
+    width: 400px;
+}
+
+/* botton */
 
 /* HOVER BODY IMG*/
 
@@ -298,11 +423,11 @@ br {
 .horizontal-line {
     border-top: 1px solid black;
     opacity: 0.3;
-
     height: 0px;
     width: 50%;
-    margin: 5%/* top&bottom*/ 10%/* left&right*/;
-
+    margin: 5%/* top&bottom*/
+    10%/* left&right*/
+    ;
 }
 
 .vertical-line {
@@ -374,12 +499,35 @@ br {
     justify-content: flex-start;
     width: 50%;
 }
+
 .container-body-project-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+}
+
+.container-body-project-img-ppl {
     display: flex;
     align-items: left;
     flex-direction: column;
     justify-content: flex-start;
-    width: 60%;
+    width: 20%;
+}
+
+.text-body-subtitle {
+    margin-top: 0px;
+    margin-bottom: 55px;
+    margin-left: 0px;
+    font-size: 14px;
+}
+
+.text-body-italic {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 30px;
 }
 
 .text-about-hi {
