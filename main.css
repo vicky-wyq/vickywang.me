@@ -549,7 +549,13 @@ button {
     justify-content: space-between;
     width: 100%;
 }
-
+.container-body-project-horizontaldiagram-text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 110%;
+}
 .container-body-project-item {
     display: flex;
     align-items: center;
@@ -558,7 +564,14 @@ button {
 
     flex-direction: column;
 }
+.container-body-project-thesisphotos {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
 
+    flex-direction: column;
+}
 .container-body-project-itemtext {
     display: flex;
     align-items: center;
