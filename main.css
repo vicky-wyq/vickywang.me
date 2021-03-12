@@ -15,6 +15,9 @@
         margin-left: 0% !important;
         margin-right: 0% !important;
     }
+    br {
+        line-height: 15px !important;
+    }
     .text-body-title {
         font-size: 7px !important;
         align-items: center !important;
@@ -40,16 +43,30 @@
         font-size: 14px !important;
         width: 70% !important;
     }
+    .container-bleed {
+        width: 100% !important;
+    }
     .container-body-description {
         margin: 0px/* top&bottom*/
         0px/* left&right*/
         !important;
+        font-size: 8px !important;
     }
     .container-body-project {
         width: 90% !important;
     }
+    .container-body-project-item {
+        width: 35% !important;
+        height: 110px!important;
+    }
     .container-body-project-img {
         width: 90% !important;
+    }
+    .container-body-project-itemtext {
+        font-size: 8px !important;
+    }
+    .container-body-project-img-ppl {
+        width: 60px !important;
     }
     .container-body-intro-row {
         flex-direction: column !important;
@@ -67,6 +84,21 @@
     }
     .container-body-right-nomargin {
         width: 90% !important;
+        
+    }
+    .text-project-numbers {
+        font-size: 26 !important;
+        margin-bottom: 8px !important;
+
+    }
+    .text-project-phase {
+        font-size: 10 !important;
+    }
+    .text-body-subtitle {
+        font-size: 8 !important;
+    }
+    .text-body-italic {
+        font-size: 8 !important;
     }
     .text-left-title {
         font-size: 18 !important;
@@ -78,7 +110,7 @@
         font-size: 12 !important;
     }
     .horizontal-line {
-        width: 88% !important;
+        width: 90% !important;
     }
     hr {
         width: 80% !important;
@@ -135,11 +167,11 @@ svg {
 
 svg:hover {
     z-index: 2;
-    padding: 20 6px;
+    padding: 20 5px;
     transform: scale(1.4);
     background-color: white;
     border-radius: 9px;
-    transition: all 0.3s; 
+    transition: all 0.3s;
     box-shadow: 0 14px 28px rgba(230, 230, 230, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -233,8 +265,8 @@ br {
 .text-body-description-bold {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-weight: 1000px;
-    font-size: 12px;
+    font-weight: normal;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -242,7 +274,7 @@ br {
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -369,8 +401,18 @@ button {
     flex-direction: column;
     position: relative;
     margin: 0px/* top&bottom*/
-    200px/* left&right*/;
+    200px/* left&right*/
+    ;
+}
 
+.container-body-description_smaller {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px/* top&bottom*/
+    200px/* left&right*/
+    ;
 }
 
 .image {
@@ -450,7 +492,7 @@ button {
     border-top: 1px solid black;
     opacity: 0.3;
     height: 0px;
-    width: 50%;
+    width: 600px;
     margin: 5%/* top&bottom*/
     10%/* left&right*/
     ;
@@ -553,23 +595,25 @@ button {
     align-items: center;
     margin-bottom: 0px;
 }
-.container-bleed {
 
-z-index: 2;
+.container-bleed {
+    z-index: 2;
+    width: 800px;
 }
+
 .container-body-project {
     display: flex;
     align-items: left;
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
+    width: 600px;
 }
 
 .container-body-project-img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 65%;
+    width: 700px;
 }
 
 .container-body-project-img-ppl {
@@ -577,7 +621,7 @@ z-index: 2;
     align-items: left;
     flex-direction: column;
     justify-content: flex-start;
-    width: 15%;
+    width: 120px;
 }
 
 .container-body-project-horizontaldiagram {
@@ -598,7 +642,7 @@ z-index: 2;
 
 .container-body-project-item {
     display: flex;
-    width: 200px;
+    width: 400px;
     height: 200px;
     flex-direction: column;
     justify-content: space-evenly;
@@ -667,6 +711,7 @@ z-index: 2;
     color: #4C665B;
     font-weight: 500;
     font-size: 18px;
+    align-items: center;
 }
 
 .text-time {
