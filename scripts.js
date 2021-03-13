@@ -3,7 +3,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-
+  $("#lightSlider").lightSlider({
+    gallery:true,
+    item:1,
+    thumbItem:4,
+    vThumbWidth:100,
+  }); 
   function makeCarousel(carousel) {
     var selectedIndex = 0
     
