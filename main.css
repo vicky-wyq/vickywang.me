@@ -62,7 +62,6 @@
     .container-body-project-img {
         width: 90% !important;
     }
-
     .container-body-project-itemtext {
         font-size: 8px !important;
     }
@@ -85,12 +84,10 @@
     }
     .container-body-right-nomargin {
         width: 90% !important;
-        
     }
     .text-project-numbers {
         font-size: 26 !important;
         margin-bottom: 8px !important;
-
     }
     .text-project-phase {
         font-size: 10 !important;
@@ -132,7 +129,7 @@ body {
 /* TEXT TOP BAR */
 
 a:hover {
-    color: darkgrey;
+    color: #a8d9d9;
 }
 
 a.hover_onimg:hover {
@@ -147,7 +144,8 @@ a {
 a:link {
     text-decoration: none;
 }
-
+a:link.text-about-resume {
+    text-decoration-line: underline;}
 a:visited {
     text-decoration: none;
 }
@@ -177,12 +175,12 @@ svg:hover {
 }
 
 hr {
-    width: 600px;
+    width: 700px;
     height: 1px;
     border-width: 0;
     background-color: black;
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     opacity: 0.3;
 }
 
@@ -261,7 +259,6 @@ br {
 .text-body-title {
     font-weight: 500;
     font-size: 14px;
-    margin-top: 0px;
 }
 
 .text-body-description-bold {
@@ -276,10 +273,9 @@ br {
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
 }
-
 /* --------------------font------size----body----------------- */
 
 /* BODY */
@@ -396,7 +392,6 @@ button {
     position: relative;
     margin: 7% 10%;
 }
-
 
 .container-body-description {
     align-items: center;
@@ -571,6 +566,8 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     width: 100px;
+    margin-left: 10px;
+
 }
 
 .container-body-right {
@@ -611,6 +608,32 @@ button {
     justify-content: flex-start;
     width: 600px;
 }
+.container-body-project-h {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 600px;
+}
+.container-body-left-mp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+
+    width: 250px;
+    
+}
+
+.container-body-right-mp {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 28%;
+    width: 50%;
+}
+
 
 .container-body-project-img {
     display: flex;
@@ -632,7 +655,6 @@ button {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
 }
 
 .container-body-project-horizontaldiagram-text {
@@ -644,12 +666,38 @@ button {
 }
 
 .container-body-project-item {
+    width: 160px;
+    height: 220px;
     display: flex;
-    width: 400px;
-    height: 200px;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+.container-body-project-horizontaldiagram-mealplanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.container-body-project-item-mealplanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+.container-body-project-itemtext-mealplanner {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-weight: lighter;
+    font-size: 11px;
+    line-height: 15px;
+    color: #5F5F5F;
+}
+
+
 
 .container-body-project-thesisphotos {
     display: flex;
@@ -660,11 +708,9 @@ button {
 }
 
 .container-body-project-itemtext {
-    display: flex;
-    align-items: center;
+    text-align: center;
     font-weight: lighter;
     font-size: 12px;
-    justify-content: space-evenly;
 }
 
 .text-body-subtitle {
@@ -707,11 +753,24 @@ button {
     font-size: 50px;
     margin-bottom: 30px;
 }
-
-.text-project-phase {
+.text-project-numbers-mealplanner {
     margin: 5px/* top&bottom*/
     28%;
+    color: #FFBF00;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.text-project-phase {
     color: #4C665B;
+    font-weight: 500;
+    font-size: 18px;
+    align-items: center;
+}
+.text-project-phase-mealplanner {
+    color: #FFBF00;
     font-weight: 500;
     font-size: 18px;
     align-items: center;
