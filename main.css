@@ -12,8 +12,8 @@
         font-size: 14px;
     }
     body {
-        margin-left: 0% !important;
-        margin-right: 0% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
     }
     br {
         line-height: 15px !important;
@@ -51,6 +51,9 @@
         0px/* left&right*/
         !important;
         font-size: 8px !important;
+    }
+    .container_body {
+        margin: 10% 0px!important;
     }
     .container-body-project {
         width: 90% !important;
@@ -109,6 +112,8 @@
     }
     .horizontal-line {
         width: 90% !important;
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
     }
     hr {
         width: 80% !important;
@@ -144,8 +149,23 @@ a {
 a:link {
     text-decoration: none;
 }
+
 a:link.text-about-resume {
-    text-decoration-line: underline;}
+    text-decoration-line: underline;
+}
+
+a:hover#gardeners-hub {
+    color: #4C665B;
+}
+
+a:hover#meal-planner {
+    color: #FFBF00;
+}
+
+a:hover#all-tails {
+    color: #428813;
+}
+
 a:visited {
     text-decoration: none;
 }
@@ -172,6 +192,10 @@ svg:hover {
     border-radius: 9px;
     transition: all 0.3s;
     box-shadow: 0 14px 28px rgba(230, 230, 230, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    font-weight: 500;
 }
 
 hr {
@@ -274,8 +298,9 @@ br {
     margin-bottom: 0px;
     font-weight: lighter;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 22px;
 }
+
 /* --------------------font------size----body----------------- */
 
 /* BODY */
@@ -390,7 +415,7 @@ button {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 7% 10%;
+    margin: 7% 25%;
 }
 
 .container-body-description {
@@ -487,11 +512,11 @@ button {
 }
 
 .horizontal-line {
-    border-top: 1px solid black;
+    border-top: 1px solid grey;
     opacity: 0.3;
     height: 0px;
     width: 600px;
-    margin: 5%/* top&bottom*/
+    margin: 80px/* top&bottom*/
     10%/* left&right*/
     ;
 }
@@ -567,7 +592,6 @@ button {
     justify-content: flex-start;
     width: 100px;
     margin-left: 10px;
-
 }
 
 .container-body-right {
@@ -608,6 +632,15 @@ button {
     justify-content: flex-start;
     width: 600px;
 }
+
+.container-body-project-dg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+}
+
 .container-body-project-h {
     display: flex;
     align-items: center;
@@ -615,14 +648,13 @@ button {
     justify-content: flex-start;
     width: 600px;
 }
+
 .container-body-left-mp {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-
     width: 250px;
-    
 }
 
 .container-body-right-mp {
@@ -633,7 +665,6 @@ button {
     margin-left: 28%;
     width: 50%;
 }
-
 
 .container-body-project-img {
     display: flex;
@@ -654,7 +685,7 @@ button {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .container-body-project-horizontaldiagram-text {
@@ -666,7 +697,7 @@ button {
 }
 
 .container-body-project-item {
-    width: 160px;
+    width: 130px;
     height: 220px;
     display: flex;
     flex-direction: column;
@@ -677,15 +708,14 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
+
 .container-body-project-item-mealplanner {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-
 }
+
 .container-body-project-itemtext-mealplanner {
     text-align: left;
     margin-top: 0px;
@@ -696,8 +726,6 @@ button {
     line-height: 15px;
     color: #5F5F5F;
 }
-
-
 
 .container-body-project-thesisphotos {
     display: flex;
@@ -753,6 +781,7 @@ button {
     font-size: 50px;
     margin-bottom: 30px;
 }
+
 .text-project-numbers-mealplanner {
     margin: 5px/* top&bottom*/
     28%;
@@ -769,6 +798,7 @@ button {
     font-size: 18px;
     align-items: center;
 }
+
 .text-project-phase-mealplanner {
     color: #FFBF00;
     font-weight: 500;
