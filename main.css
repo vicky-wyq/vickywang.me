@@ -193,7 +193,16 @@ svg:hover {
     transition: all 0.3s;
     box-shadow: 0 14px 28px rgba(230, 230, 230, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-
+.item {
+    width: 1200px;
+    height: 100px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 200px;
+  }
 strong {
     font-weight: 500;
 }

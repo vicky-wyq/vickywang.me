@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
   //do work
 
+  AOS.init({
+    duration: 1200,
+  })
 
-
+  
   $("#lightSlider").lightSlider({
     gallery:true,
     item:1,
