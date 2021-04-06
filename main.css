@@ -126,15 +126,15 @@
 
 body {
     font-family: Helvetica;
-    margin: 50px/* top&bottom*/
-    200px/* left&right*/
-    ;
+    margin: 0;
+
 }
 
 /* TEXT TOP BAR */
 
 a:hover {
     color: #a8d9d9;
+
 }
 
 a.hover_onimg:hover {
@@ -258,6 +258,53 @@ br {
     font-size: 17px;
     font-stretch: 240%;
 }
+/*head tool bar scroll*/
+
+.main-tool-bar {
+    z-index: 2;
+    height: 80px;
+    background:none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: ease 0.4s;
+}
+.main-tool-bar--scrolled {
+    height: 40px;
+}
+.scrollable-area {
+    height: 200vh;
+  background-color: black;
+} 
+/*head tool bar scroll*/
+/*progress bar*/
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  
+  .progress-container {
+    width: 100%;
+    height: 4px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 6px;
+    background: #4caf50;
+    width: 0%;
+  }
+/*progress bar*/
 
 .container-head {
     align-items: center;
@@ -266,9 +313,11 @@ br {
     justify-content: space-around;
     font-stretch: 80%;
     width: 100%;
+
 }
 
 .container-head-left {
+    font-family: system-ui;    
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,54 +1,34 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
   //do work
 
-  AOS.init({
-    duration: 1200,
-  })
 
+
+  const showAnim = gsap.from('.main-tool-bar', { 
+    yPercent: -100,
+    paused: true,
+    duration: 0.2
+  }).progress(1);
   
-  $("#lightSlider").lightSlider({
-    gallery:true,
-    item:1,
-    thumbItem:4,
-    vThumbWidth:100,
-  }); 
-  function makeCarousel(carousel) {
-    var selectedIndex = 0
-    
-    var carouselItems = carousel.getElementsByClassName("carousel-item");
-    carousel.getElementsByClassName("next")[0].addEventListener("click", function() {
-      carouselItems[selectedIndex].classList.remove("selected")
-    
-      if (selectedIndex === 0) {
-        selectedIndex = carouselItems.length - 1;
-      } else {
-        selectedIndex = selectedIndex - 1;
-      }
-      carouselItems[selectedIndex].classList.add("selected")
-    })
-    
-    carousel.getElementsByClassName("prev")[0].addEventListener("click", function() {
-      carouselItems[selectedIndex].classList.remove("selected")
-    
-      if (selectedIndex === carouselItems.length - 1) {
-        selectedIndex = 0;
-      } else {
-        selectedIndex = selectedIndex + 1;
-      }
-      carouselItems[selectedIndex].classList.add("selected")
-    })
+  ScrollTrigger.create({
+    start: "top top",
+    end: 99999,
+    onUpdate: (self) => {
+      self.direction === -1 ? showAnim.play() : showAnim.reverse()
+    }
+  });
+  //main-tool-bar
+
+
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - window.innerHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
   }
-  
 
-
-
-
-  var carousels = document.getElementsByClassName("carousel")
-  var index = 0;
-  while (index < carousels.length) {
-    makeCarousel(carousels[index]);
-    index++
-  }
+  //progress-bar
 
 
 
