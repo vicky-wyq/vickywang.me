@@ -2,8 +2,14 @@
 
 <head>
   <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  <!--font-name-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--aos-->
+
   <script type="text/javascript" src="scripts.js"></script>
   <script type="text/javascript"
     src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
@@ -12,14 +18,14 @@
     src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=40"></script>
   <!--tool-bar-->
 
+
   <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <!--gsap-->
-  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <!--gsap-->
+    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+  <!--for body-->
 
-
-
+  <script type="text/javascript"
+    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+  <!--for body-->
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,25 +62,7 @@
 <body>
 
   <!--head-->
-  <div class="container-head main-tool-bar" id="topbar">
 
-    <div class="container-head-left">
-      <a href="http://vickywang.design/" class="pointer"> VICKY WANG
-      </a>
-    </div>
-    <div class="container-head-right" id="topbar-right">
-      <div> <a href="/" class="active"> PROJECT </a>
-      </div>
-      <div> <a href="/architecture" class="inactive"> ARCHITECTURE </a>
-      </div>
-      <div> <a href="/photography" class="inactive"> PHOTOGRAPHY </a>
-      </div>
-      <div> <a href="/about" class="inactive"> ABOUT </a>
-      </div>
-    </div>
-
-  </div>
-  <!--head-->
   <!--progress bar-->
   <div class="header">
     <div class="progress-container">
@@ -84,67 +72,91 @@
   <div class="blank"></div>
   <!--progress bar-->
 
-  <!--body1-->
-  <div class="container_body">
-    <div class="container-body-project-img">
-      <img src="./layout_gardenershub.png" alt="DRAWING OF KAPPE RAY HOUSE" class="image-hover">
+  <div class="container-head main-tool-bar" id="topbar">
+
+    <div class="container-head-left">
+      <a href="http://vickywang.design/" class="pointer"> VW
+      </a>
     </div>
-    <div class="image-text-hover">
-      <a href="/gardeners_hub" id="gardeners-hub">GARDENERS HUB</a>
+    <div class="container-head-right" id="topbar-right">
+      <a href="/" class="active"> PROJECT </a>
+      <a href="/architecture" class="inactive"> ARCHITECTURE </a>
+      <a href="/photography" class="inactive"> PHOTOGRAPHY </a>
+      <a href="/about" class="inactive"> ABOUT </a>
     </div>
+
   </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">GARDENER'S HUB CREATES MARKETPLACE AND FRIENDSHIP FOR THE LOCAL
+
+
+  <!--head-->
+  <!--body-->
+
+  <br>
+  <p class="text-hi">Hello, I'm Vicky</p>
+  <p class="text-intro">I'm a product designer based in the San Francisco Bay Area
+    passionate
+    about translating complex business requirements into compelling user experiences. While my
+    focus is primarily on design, I don't mind occasionally writing code when the need arises.</p>
+  <!--body-->
+
+
+
+
+
+
+
+
+
+
+  <!--body1-->
+  <div class="body-h ">
+
+    <div class="body-left body-img" data-aos="fade-right">
+      <img src="./layout_gardenershub.png" alt="DRAWING OF KAPPE RAY HOUSE" class="float">
+    </div>
+
+    <div class="body-right body-txt" data-aos="fade-left">
+      <p>GARDENER'S HUB CREATES MARKETPLACE AND FRIENDSHIP FOR THE LOCAL
         COMMUNITY</p>
-      <p class="text-body-description">Individual Work</p>
-      <p class="text-body-description">Spring 2021</p>
-
+      <p>Individual Work</p>
+      <p>Spring 2021</p>
     </div>
 
   </div>
+
   <!--body1-->
-  <hr>
 
   <!--body2-->
-  <div class="container_body">
-    <div class="container-body-project-img">
 
-      <img src="./layout_mealplanner.png" alt="Urban Backyard" class="image-hover">
+  <div class="body-h">
+    <div class="body-right  body-txt" data-aos="fade-right">
+      <p>A MOBILE APP HELPS PLANNING A HEALTHY AND EFFICIENT MEAL</p>
+      <p>Individual Work</p>
+      <p>Spring 2021</p>
     </div>
-    <div class="image-text-hover">
-      <a href="/meal_planner" id="meal-planner">MEAL PLANNER</a>
+    <div class="body-left body-img" data-aos="fade-left">
+      <img src="./layout_mealplanner.png" alt="Meal Planner">
     </div>
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">A MOBILE APP HELPS PLANNING A HEALTHY AND EFFICIENT MEAL</p>
-      <p class="text-body-description">Individual Work</p>
-      <p class="text-body-description">Spring 2021</p>
 
-    </div>
+
 
   </div>
+
   <!--body2-->
-  <hr>
+
 
 
   <!--body3-->
-  <div class="container_body">
-    <div class="container-body-project-img">
+  <div class="body-h">
 
-      <img src="./layout_alltrails.png" alt="Urban Backyard" class="image-hover">
+    <div class="body-left body-img" data-aos="fade-right">
+      <img src="./layout_alltrails.png" alt="Redesign AllTrails">
     </div>
-    <div class="image-text-hover">
-      <a href="/alltrails" id="all-tails">REDESIGN ALLTRAILS APP</a>
-    </div>
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">ADDED A COMPARISON FEATURE ON ALLTRAILS MOBILE APP</p>
-      <p class="text-body-description">Individual Work</p>
-      <p class="text-body-description">Spring 2021</p>
 
+    <div class="body-right body-txt" data-aos="fade-left">
+      <p>REDESIGN ALLTRAILS APP</p>
+      <p>Individual Work</p>
+      <p>Spring 2021</p>
     </div>
 
   </div>
