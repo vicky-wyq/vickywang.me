@@ -6,6 +6,58 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+
+  function makeCarousel(carousel) {
+
+    var carouselItems = carousel.getElementsByClassName("photo");
+    var indicators = carousel.getElementsByClassName("indicator");
+
+    var selectedIndex = 0;
+
+    carousel.getElementsByClassName("next")[0].addEventListener("click", function () {
+      carouselItems[selectedIndex].classList.remove("photo-selected")
+      indicators[selectedIndex].classList.remove("indicator-selected")
+
+
+      if (selectedIndex === carouselItems.length - 1) {
+        selectedIndex = 0;
+      } else {
+        selectedIndex = selectedIndex + 1;
+      }
+      carouselItems[selectedIndex].classList.add("photo-selected")
+      indicators[selectedIndex].classList.add("indicator-selected")
+    });
+
+    carousel.getElementsByClassName("prev")[0].addEventListener("click", function () {
+      carouselItems[selectedIndex].classList.remove("photo-selected")
+      indicators[selectedIndex].classList.remove("indicator-selected")
+
+      if (selectedIndex === 0) {
+        selectedIndex = carouselItems.length - 1;
+      } else {
+        selectedIndex = selectedIndex - 1;
+      }
+      carouselItems[selectedIndex].classList.add("photo-selected")
+      indicators[selectedIndex].classList.add("indicator-selected")
+    });
+  }
+
+  var carousels = document.getElementsByClassName("carousel")
+  var index = 0;
+  while (index < carousels.length) {
+    makeCarousel(carousels[index]);
+    index++
+  }
+
+
+
+
+
+
+  // my 1st carousel
+
+
+
   //Get the button
   var mybutton = document.getElementById("myBtn");
 
@@ -40,6 +92,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+
+
+
+
+
+  //-------------------------
   // For more information, see greensock.com/docs/v3/Plugins/ScrollTrigger
   gsap.registerPlugin(ScrollTrigger);
 
@@ -55,127 +113,140 @@ document.addEventListener("DOMContentLoaded", function (event) {
       toggleActions: "restart pause reverse reset"
     }
   });
+
   gsap.to(".divider1", {
     rotate: 90,
     scrollTrigger: {
-    trigger: ".divider1",
-    start: "top 240px", //trigger, viewport
-    end: "bottom bottom",
-    scrub: 1,
-    markers: false,
-    toggleActions: "restart pause reverse reset"
-  }
+      trigger: ".divider1",
+      start: "top 240px", //trigger, viewport
+      end: "bottom bottom",
+      scrub: 1,
+      markers: false,
+      toggleActions: "restart pause reverse reset"
+    }
   });
   gsap.to(".t-intro", {
     y: 110,
     scrollTrigger: {
-    trigger: ".t-intro",
-    start: "top 240px", //trigger, viewport
-    end: "bottom bottom",
-    scrub: 1,
-    markers: false,
-    toggleActions: "restart pause reverse reset"
-  }
+      trigger: ".t-intro",
+      start: "top 240px", //trigger, viewport
+      end: "bottom bottom",
+      scrub: 1,
+      markers: false,
+      toggleActions: "restart pause reverse reset"
+    }
   });
   gsap.to(".ver1", {
     rotate: 90,
     scrollTrigger: {
-    trigger: ".ver1",
-    start: "top 380px", //trigger, viewport
-    end: "bottom bottom",
-    scrub: 1,
-    markers: false,
-    toggleActions: "restart pause reverse reset"
-  }
+      trigger: ".ver1",
+      start: "top 380px", //trigger, viewport
+      end: "bottom bottom",
+      scrub: 1,
+      markers: false,
+      toggleActions: "restart pause reverse reset"
+    }
   });
   gsap.to(".ver2", {
     rotate: 90,
     scrollTrigger: {
-    trigger: ".ver2",
-    start: "0px 380px", //trigger, viewport
-    end: "bottom bottom",
-    scrub: 1,
-    markers: true,
-    toggleActions: "restart pause reverse reset"
-  }
+      trigger: ".ver2",
+      start: "300px 0px", //trigger, viewport
+      end: "400px bottom",
+      scrub: 2,
+      markers: false,
+      toggleActions: "restart pause reverse reset"
+    }
   });
-// immediateRender: false, second scroll smooth
-//ScrollTrigger
 
-
-AOS.init({
-
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
-
-});
-//aos + 2 links on html 
-
-
-const showAnim = gsap.from('.main-tool-bar', {
-  yPercent: -100,
-  paused: true,
-  duration: 0.2
-}).progress(1);
-
-ScrollTrigger.create({
-  start: "top top",
-  end: 99999,
-  onUpdate: (self) => {
-    self.direction === -1 ? showAnim.play() : showAnim.reverse()
-  }
-});
-//main-tool-bar + 2 links on html
-
-
-window.onscroll = function () { myFunction() };
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - window.innerHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-//progress-bar 0 link on html
-function animateFrom(elem, direction) {
-  direction = direction | 1;
-
-  var x = 0,
-    y = direction * 100;
-  if (elem.classList.contains("gs_reveal_fromLeft")) {
-    x = -100;
-    y = 0;
-  } else if (elem.classList.contains("gs_reveal_fromRight")) {
-    x = 100;
-    y = 0;
-  }
-  gsap.fromTo(elem, { x: x, y: y, autoAlpha: 0 }, {
-    duration: 1.25,
-    x: 0,
-    y: 0,
-    autoAlpha: 1,
-    ease: "expo",
-    overwrite: "auto"
+  gsap.to(".p1", {
+    y: -90,
+    scrollTrigger: {
+      trigger: ".p1",
+      start: "top 380px", //trigger, viewport
+      end: "bottom bottom",
+      scrub: 1,
+      markers: false,
+      toggleActions: "restart pause reverse reset"
+    }
   });
-}
-function hide(elem) {
-  gsap.set(elem, { autoAlpha: 0 });
-}
+  // immediateRender: false, second scroll smooth
+  //ScrollTrigger
 
-document.addEventListener("DOMContentLoaded", function () {
-  gsap.registerPlugin(ScrollTrigger);
 
-  gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
-    hide(elem); // assure that the element is hidden when scrolled into view
+  AOS.init({
 
-    ScrollTrigger.create({
-      trigger: elem,
-      onEnter: function () { animateFrom(elem) },
-      onEnterBack: function () { animateFrom(elem, -1) },
-      onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000, // values from 0 to 3000, with step 50ms
+
+  });
+  //aos + 2 links on html 
+
+
+  const showAnim = gsap.from('.main-tool-bar', {
+    yPercent: -100,
+    paused: true,
+    duration: 0.2
+  }).progress(1);
+
+  ScrollTrigger.create({
+    start: "top top",
+    end: 99999,
+    onUpdate: (self) => {
+      self.direction === -1 ? showAnim.play() : showAnim.reverse()
+    }
+  });
+  //main-tool-bar + 2 links on html
+
+
+  window.onscroll = function () { myFunction() };
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - window.innerHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  //progress-bar 0 link on html
+  function animateFrom(elem, direction) {
+    direction = direction | 1;
+
+    var x = 0,
+      y = direction * 100;
+    if (elem.classList.contains("gs_reveal_fromLeft")) {
+      x = -100;
+      y = 0;
+    } else if (elem.classList.contains("gs_reveal_fromRight")) {
+      x = 100;
+      y = 0;
+    }
+    gsap.fromTo(elem, { x: x, y: y, autoAlpha: 0 }, {
+      duration: 1.25,
+      x: 0,
+      y: 0,
+      autoAlpha: 1,
+      ease: "expo",
+      overwrite: "auto"
+    });
+  }
+  function hide(elem) {
+    gsap.set(elem, { autoAlpha: 0 });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
+      hide(elem); // assure that the element is hidden when scrolled into view
+
+      ScrollTrigger.create({
+        trigger: elem,
+        onEnter: function () { animateFrom(elem) },
+        onEnterBack: function () { animateFrom(elem, -1) },
+        onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
+      });
     });
   });
-});
   //body scroll + 2 links on html
 
 
