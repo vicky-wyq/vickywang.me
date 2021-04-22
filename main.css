@@ -262,8 +262,8 @@ br {
     border-left: 1px solid gray;
     height: 160px;
     margin: 120px/* top&bottom*/
-    0%/* left&right*/
-    ;
+    120px;
+    /* left&right*/
 }
 
 /*progress bar*/
@@ -439,7 +439,8 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 380px;
+    height: 260px;
+    width: 100%;
 }
 
 .t-tl {
@@ -449,22 +450,86 @@ body {
 }
 
 .se-arrow {
-    width: 1.6%;
+    width: 32px;
     height: auto;
     margin-left: 1%;
 }
 
-/* content */
+#rc {
+    width: 300px;
+}
+
+
+#photos {
+    width: 600px;
+}
+
+/* content*/
+
+/* architecture */
+
+.carousel {
+    position: relative;
+    width: 80%;
+    height: 680px;
+    margin: 0 auto;
+}
+
+.carousel-content {
+    position: relative;
+    overflow: hidden;
+    transition: width .4s;
+    height: 100%;
+}
+
+.slide {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: left .4s cubic-bezier(.47, .13, .15, .89);
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.nav-left {
+    left: 0px;
+}
+
+.nav-right {
+    right: 0px;
+}
+
+.carousel-arrow-icon-left {
+    margin-left: 0px;
+    margin-top: -50px;
+}
+
+.carousel-arrow-icon-right {
+    margin-left: 0px;
+    margin-top: -50px;
+}
+
+/* architecture */
 
 /* Photography */
 
-.carousel {
+.carouselVW {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
 }
 
 .photos {
@@ -473,8 +538,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 1000px;
+    width: 100%;
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .photo {
@@ -483,6 +549,21 @@ body {
 
 .photo-selected {
     display: block;
+    animation-name: carousel-animation;
+    animation-duration: 2s;
+}
+
+@keyframes carousel-animation {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.carouselBtn {
+    width: 13%;
 }
 
 .indicators {
@@ -491,15 +572,15 @@ body {
     flex-direction: row;
     justify-content: center;
     width: 80%;
-    bottom: 180px;
+    bottom: 35px;
 }
 
 .indicator {
     width: 30px;
-    height: 2px;
+    height: 1px;
     border: 0px solid #73AD21;
-    margin: 2px;
     background-color: whitesmoke;
+    margin: 3px;
 }
 
 .indicator-selected {
@@ -509,7 +590,6 @@ body {
 button {
     background-color: Transparent;
     color: black;
-    color: black;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -518,7 +598,7 @@ button {
     cursor: pointer;
     outline: none;
     font-weight: light;
-    padding: 200 100px;
+    padding: 0 5%;
     margin-top: 30px;
     width: 300px;
 }
