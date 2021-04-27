@@ -165,7 +165,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         el.style.left = (oldLeft + newX) + "px";
       });
     }
-
     function moveBasedOnMouse(e) {
       var finalX = e.clientX;
       if (initialX - finalX > 0) {
@@ -176,13 +175,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       document.removeEventListener('mouseup', moveBasedOnMouse);
       carouselContent.removeEventListener('mousemove', slightMove);
     }
-
-
-
   }
-
-
-
   var carousels = document.getElementsByClassName("carousel")
   var index = 0;
   while (index < carousels.length) {
@@ -219,11 +212,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
   mybutton.addEventListener('click', topFunction)
   // back to top 
 
+  var about = document.getElementById('about');
 
-  document.getElementById('about').addEventListener('click', function (e) {
-    e.preventDefault()
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-  })
+  if (about) {
+    about.addEventListener('click', function (e) {
+      e.preventDefault()
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+    })
+  }
+
   // go to bottom 
 
 
@@ -296,17 +293,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
 
-  gsap.to(".p1", {
-    y: -90,
-    scrollTrigger: {
-      trigger: ".p1",
-      start: "top 380px", //trigger, viewport
-      end: "bottom bottom",
-      scrub: 1,
-      markers: false,
-      toggleActions: "restart pause reverse reset"
-    }
-  });
+
   // immediateRender: false, second scroll smooth
   //ScrollTrigger
 

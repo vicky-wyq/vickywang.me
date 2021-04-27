@@ -1,12 +1,18 @@
 @media screen and (max-width: 950px) {
     br {
-        line-height: 23px !important;
+        line-height: 22px !important;
     }
     .vertical-line {
-        height: 100px !important;
-        margin: 20px/* top&bottom*/
-        0% !important/* left&right*/
+        border-left: 1px solid rgb(194, 194, 194) !important;
+        height: 60px !important;
+        margin: 30px/* top&bottom*/
+        15px !important/* left&right*/
         ;
+    }
+    .horizontal-line {
+        border-top: 1px solid rgb(194, 194, 194)!important;
+        width: 70px !important;
+        margin-bottom: 10px !important;
     }
     /* header */
     .main-tool-bar {
@@ -26,12 +32,33 @@
         margin-right: 0px !important;
         margin-bottom: 12px !important;
     }
+    .box{
+        padding:0px !important;
+      }
+    .vertical-line-blank-head {
+        height: 0px !important;
+        margin: 0px !important;
+    }
     /* header */
     /* body */
+    .vertical-line-blank {
+        height: 160px;
+        margin: 10px !important;
+    }
+    #rc1 {
+        width: 160px !important;
+        margin-left: 8px !important;
+    }
+    .body-h {
+        margin: 30px/* top&bottom*/
+        0px/* left&right*/
+        !important;
+    }
     .body-intro {
         flex-direction: column !important;
     }
     .t-hello {
+        margin-top: 60px;
         margin-bottom: 20px;
     }
     .t-hi {
@@ -66,8 +93,34 @@
         0px !important/* left&right*/
         ;
     }
+    .carousel {
+        height: 360px !important;
+    }
+    #photos {
+        width: 160px !important;
+    }
+    .nav {
+        margin-top: 60px !important;
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .nav-left {
+        left: 130px !important;
+    }
+    .nav-right {
+        right: 130px !important;
+    }
+    #rc {
+        width: 100px !important;
+    }
+    .body-img {
+        width: 80% !important;
+    }
     /* body */
     /* content */
+    .content-tl {
+        height: 36px !important;
+    }
     .t-tl {
         font-size: 16px !important;
     }
@@ -75,6 +128,14 @@
         width: 5% !important;
     }
     /* content */
+    #myBtn {
+        font-size: 12px !important;
+        bottom: 10px !important;
+    }
+    #bottom-arrow {
+        height: 80px !important;
+        margin-bottom: -20px !important;
+    }
     /* about me */
     .t-titlepls {
         font-size: 8px !important;
@@ -83,7 +144,7 @@
         font-size: 8px !important;
     }
     .t-subtitle {
-        font-size: 8px !important;
+        font-size: 6px !important;
     }
     .t-time {
         font-size: 6px !important;
@@ -115,12 +176,6 @@
 
 @media screen and (max-width: 1550px) {
     /* header */
-    .head-right-1550 {
-        margin: 0px/* top&bottom*/
-        15px !important/* left&right*/
-        ;
-        font-size: 22px;
-    }
     /* body */
     #t-hello-1550 {
         font-size: 26px;
@@ -135,12 +190,20 @@
     /* footer */
 }
 
+/* 
 a:hover {
     color: #a8d9d9;
 }
 
+*/
+
 a {
+    color: black;
     cursor: pointer;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 a:link {
@@ -152,12 +215,13 @@ a:link.text-about-resume {
     text-underline-offset: 6px;
 }
 
-a:visited {
-    text-decoration: none;
+.active {
+    font-weight: 400;
 }
 
-a {
-    color: black;
+.inactive {
+    color: grey;
+    font-weight: 100;
 }
 
 img {
@@ -241,15 +305,6 @@ br {
     opacity: 0.8;
 }
 
-.active {
-    font-weight: 400;
-}
-
-.inactive {
-    color: grey;
-    font-weight: 100;
-}
-
 .horizontal-line {
     border-top: 1px solid rgb(0, 0, 0);
     height: 0px;
@@ -260,6 +315,22 @@ br {
 
 .vertical-line {
     border-left: 1px solid gray;
+    height: 160px;
+    margin: 120px/* top&bottom*/
+    120px;
+    /* left&right*/
+}
+
+.vertical-line-blank-head {
+    border-left: 0px solid gray;
+    height: 30px;
+    margin: 0px/* top&bottom*/
+    9px;
+    /* left&right*/
+}
+
+.vertical-line-blank {
+    border-left: 0px solid gray;
     height: 160px;
     margin: 120px/* top&bottom*/
     120px;
@@ -329,15 +400,35 @@ br {
 }
 
 .head-right {
-    width: 33%;
+    width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-size: 26px;
     font-weight: 300;
     margin-right: 6%;
 }
-
+/* blur hover*/
+  .box{
+    padding:30px 20px;
+    margin:0;
+    background:white;
+    border-radius:3px;
+    transition:.2s all; 
+  }
+  .head-right:hover .box{
+    filter:blur(1px);
+    opacity:.3;
+    transform: scale(.98);
+    box-shadow:none;
+  }
+  .head-right:hover .box:hover{
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+  }
+/* blur hover*/
 /*head tool bar scroll end*/
 
 /* body-intro */
@@ -375,12 +466,12 @@ body {
 
 .t-hi {
     font-family: 'Lato', sans-serif;
-    font-size: 90px;
+    font-size: 80px;
 }
 
 .t-me {
     font-family: 'Lato', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     margin-left: 0px;
     line-height: 80px;
 }
@@ -402,7 +493,7 @@ body {
     /* weight */
     border-top: 60px solid black;
     /* height */
-    margin: 0;
+    margin: 0px 20px;
 }
 
 .t-intro {
@@ -445,6 +536,8 @@ body {
 
 .t-tl {
     font-family: inherit;
+    display: flex;
+    flex-direction: row;
     font-size: 30px;
     font-weight: 100;
 }
@@ -459,9 +552,14 @@ body {
     width: 300px;
 }
 
+#rc1 {
+    width: 500px;
+    margin-left: 80px;
+}
 
 #photos {
     width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* content*/
@@ -470,7 +568,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 680px;
     margin: 0 auto;
 }
@@ -492,12 +590,11 @@ body {
 .nav {
     position: absolute;
     top: 50%;
-    margin-top: -10px;
+    margin-top: -60px;
     width: 50px;
     height: 50px;
     z-index: 2;
     cursor: pointer;
-    border-radius: 50%;
     border: none;
     outline: none;
 }
@@ -508,16 +605,6 @@ body {
 
 .nav-right {
     right: 0px;
-}
-
-.carousel-arrow-icon-left {
-    margin-left: 0px;
-    margin-top: -50px;
-}
-
-.carousel-arrow-icon-right {
-    margin-left: 0px;
-    margin-top: -50px;
 }
 
 /* architecture */
@@ -663,7 +750,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 9%px;
 }
 
 /* back to top btn */
