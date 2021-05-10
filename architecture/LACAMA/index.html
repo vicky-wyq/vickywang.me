@@ -2,7 +2,52 @@
 
 <head>
   <link rel="stylesheet" href="../../main.css">
+  <script type="text/javascript" src="../../scripts.js"></script>
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Titillium Web', sans-serif; -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Roboto', sans-serif; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <!--font using hello-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Catamaran', sans-serif; -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font font-family: 'Lato', sans-serif; -->
+
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--jQuery-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--aos-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+  <!-- gsap -tool-bar-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=40"></script>
+  <!-- gsap - tool-bar-->
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+
+
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vicky Wang</title>
@@ -14,260 +59,513 @@
   <meta property="og:description" content="Hi! Thanks for stopping by. 
   I enjoy design and code who loves solving challenging problems. 
   Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/vickywang.design/VW.png" />
+  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
 
-  <meta name="twitter:url" content="https://vickywang.design">
+  <meta name="twitter:url" content="//vickywang.design">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="VICKY WANG" />
   <meta name="twitter:creator" content="VICKY WANG" />
   <meta property="twitter:title" content="VICKY WANG">
-  <meta property="twitter:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :)">
-  <meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/vickywang.design/VW.png">
+  <meta property="twitter:description"
+    content="Hi! Thanks for stopping by. I’m a product designer based in San Francisco. I'm a former architectural designer with a passion for solving business challenges through design and occasionally code. If you like what you see here, please feel free to reach out to me at vickyw.design@gmail.com :)">
+  <meta name="twitter:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
 </head>
 
+
 <body>
-
-  <div class=margin>
-
-    <!--head-->
-    <div class="container_head">
-
-      <div class="container-head" id="topbar">
-
-        <div class="container-head-left">
-          <a href="http://vickywang.design/" class="pointer"> VICKY WANG
-          </a>
-          <p class="lighter_font" id="topleftlighterfont"> DESIGN & RESEARCH
-          </p>
-        </div>
-        <div class="container-head-right" id="topbar-right">
-          <div> <a href="/" class="inactive"> PROJECT </a>
-          </div>
-          <div> <a href="/architecture" class="active"> ARCHITECTURE </a>
-          </div>
-          <div> <a href="/photography" class="inactive"> PHOTOGRAPHY </a>
-          </div>
-          <div> <a href="/about" class="inactive"> ABOUT </a>
-          </div>
-        </div>
-      </div>
-
-
+  <!--head-->
+  <!--progress bar-->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
     </div>
-    <!--head-->
-
-    <div class="container_body">
-
-      <div class="container-body-description">
-        <p class="text-body-title">LACAMA</p>
-
-        <br>
-
-        <br>
-
-        PROBLEM CLOUD
-
-      </div>
-
-      <br>
-      <br>
-      <!--body part 1-->
-      <img src="./problem_cloud1.gif" alt="DIAGRAM" class="image">
-
-
-      <!--body part 1-->
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-
-      <!--body part 1-->
-      <img src="./problem_cloud2.gif" alt="DIAGRAM" class="image">
-
-
-      <!--body part 1-->
-
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-      <!--body part 1-->
-      <img src="./problem_cloud.jpg" alt="DIAGRAM" class="image">
-
-
-      <img src="./problem_cloud1.jpg" alt="DIAGRAM" class="image">
-
-
-
-
-      <img src="./problem_cloud2.jpg" alt="DIAGRAM" class="image">
-
-
-      <img src="./problem_cloud3.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">COLOR & LAYERS</div>
-      </div>
-
-
-
-      <img src="./test.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">FIRST ROUND TEST</div>
-      </div>
-
-
-
-
-      <!--body part 1-->
-
-
-
-
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-
-      <div class="container-body-description">
-        THE PROJECT</div>
-      <br>
-      <br>
-      <!--body part 2-->
-      <img src="./LACAMA.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">FINAL MODEL</div>
-      </div>
-
-
-      <!--body part 2-->
-      <!--body part 2-->
-      <img src="./render.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">BOXES FROM PROBLEM CLOUD</div>
-      </div>
-
-
-      <!--body part 2-->
-      <img src="./site.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">CONTEXT</div>
-      </div>
-
-      <!--body part 2-->
-
-
-
-      <img src="./onsite.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">PROBLEM CLOUD ON SITE</div>
-      </div>
-      <!--body part 2-->
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-
-      <!--body part 3-->
-      <img src="./plan1.jpg" alt="DIAGRAM" class="image">
-      
-      <div class="image-text">
-        <div class="text_button">FLOOR PLAN 1</div>
-      </div>
-      <img src="./plan2.jpg" alt="DIAGRAM" class="image">
-      
-      <div class="image-text">
-        <div class="text_button">FLOOR PLAN 2</div>
-      </div>
-      <img src="./plan3.jpg" alt="DIAGRAM" class="image">
-      
-      <div class="image-text">
-        <div class="text_button">FLOOR PLAN 3</div>
-      </div>
-      <img src="./plan4.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">FLOOR PLAN 4</div>
-      </div>
-
-
-
-      <img src="./section1.jpg" alt="DIAGRAM" class="image">
-      <div class="image-text">
-        <div class="text_button">SECTION A-A'</div>
-      </div>
-
-
-      <img src="./section2.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">SECTION B-B'</div>
-      </div>
-      <!--body part 3-->
-
+  </div>
+  <!--progress bar-->
+  <div class="main-tool-bar">
+    <div class="head-left">
+      <a href="http://vickywang.design/" class="pointer">VW
+      </a>
     </div>
+    <div class="head-right ">
+      <a href="/" class="inactive head-right-1550 box">
+        PROJECT
+      </a>
+      <a href="/architecture" class="active head-right-1550 box">
+        ARCHITECTURE
+      </a>
 
-    <!--footer-->
-    <div class="container_footer">
+      <a href="/photography" class="inactive head-right-1550 box">
+        PHOTOGRAPHY
+      </a>
 
-      <div id="infor">
-        <div>
-          <a href="mailto:vickyw.design@gmail.com">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_mail.svg" alt="email">
-          </a>
+      <a href="/" class="inactive head-right-1550 box">
+        ABOUT
+      </a>
+    </div>
+  </div>
+  <!--head-->
+  <span id="circle" class="circle"></span>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--body-->
+  <div class="body-margin">
 
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_linkedin.svg"
-              alt="linkedin">
-          </a>
-        </div>
 
-        <div>
-          <a href="https://github.com/vicky-wyq">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_github.svg"
-              alt="github">
-          </a>
-        </div>
-
-        <div>
-          <a href="https://medium.com/@vickywang.design">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_medium.svg"
-              alt="medium">
-          </a>
-        </div>
+    <!--site -->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="LACAMA.jpg" alt="DIAGRAM" class="image">
       </div>
+      <div class="vertical-line-blank"> </div>
 
-      <p class="lighter_font">COPYRIGHT &#169; VICKY WANG
+      <div class="body-right  body-txt">
+        <p class="t-title">LACMA</p>
+        <p class="horizontal-line"></p>
+        <p class="t-text">Problem cloud study to urbanism building design
+        </p>
+      </div>
+    </div>
+    <!--site -->
+    <br>
+    <!-- content-->
+    <div class="content-tl">
+      <p class="t-tl">Problem Cloud
       </p>
-
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
     </div>
+    <!-- content-->
+    <!--Problem cloud-->
+    <div class="body-h">
+      <div class="body-right body-txt">
+        <P class="t-title"> PROBLEM CLOUD</P>
+        <p class="horizontal-line"></p>
+        <br>
+
+        <p class="t-text">Using the skills, tools and materials gathered to date including
+          folding, laser cutting, assembling layers of plywood, manipulating images into vectors to
+          construct a layered assemblage the problem cloud.
+        </p>
+      </div>
+      <div class="vertical-line-blank"></div>
+      <div class="body-left body-img float">
+        <img src="problem_cloud1.gif" alt="DIAGRAM" class="image">
+      </div>
+    </div>
+    <!--Problem cloud-->
+    <br>
+    <br>
+    <!--Problem cloud-->
+    <div class="body-h">
+      <div class="body-right body-txt">
+        <P class="t-title"> PROBLEM CLOUD</P>
+        <p class="horizontal-line"></p>
+        <br>
+
+        <p class="t-text">2 images in 3 color separations and one monochrome image. Take into
+          account folding as studied in the box assignment, as well as offsetting to deal with
+          corner and ground conditions.
+        </p>
+      </div>
+      <div class="vertical-line-blank"></div>
+      <div class="body-left body-img float">
+        <img src="problem_cloud2.gif" alt="DIAGRAM" class="image">
+      </div>
+    </div>
+    <!--Problem cloud-->
+
+
+
+
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="t-tl"> The Cloud</p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--Cloud Diagram -->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="problem_cloud.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">PROBLEM CLOUD DIAGRAM
+        </P>
+        <p class="horizontal-line"></p>
+        <br>
+        <p class="t-text">2 images in 3 color separation and one monochrome image are
+          interleaved in a repetitive pattern. </P>
+
+        <p class="t-text"> 7 Layers total, Spacing: 1/4”</p>
+        <p class="t-text"> Monochrome image can be located anywhere within this layering. </p>
+      </div>
+    </div>
+    <!--Cloud Diagram -->
+    <!--Cloud Diagram -->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="problem_cloud1.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">OPERATION METHOD
+        </P>
+        <p class="horizontal-line"></p>
+        <br>
+        <p class="t-text">an armature continues around
+          the corner for structure, image
+          layers are offset perpendicular
+          from the innermost layer
+          with no distortion or shifting
+        </p>
+      </div>
+    </div>
+    <!--Cloud Diagram -->
+    <!--Cloud Diagram -->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="problem_cloud2.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">OPERATION METHOD
+        </P>
+        <p class="horizontal-line"></p>
+        <br>
+        <p class="t-text">no corner armature, image
+          layers are offset perpendicular
+          with no distortion or shifting
+        </p>
+      </div>
+    </div>
+    <!--Cloud Diagram -->
+    <!--Cloud Diagram -->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="problem_cloud3.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">OPERATION METHOD
+        </P>
+        <p class="horizontal-line"></p>
+        <br>
+        <p class="t-text">no corner armature, image
+          layers are offset perpendicular
+          from the outermost layer
+          with no distortion or shifting,
+          and then are trimmed
+        </p>
+      </div>
+    </div>
+    <!--Cloud Diagram -->
+    <!-- content-->
+    <div class="content-tl">
+      <p class="t-tl"> COLOR & LAYERS </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--CaseStudy1 -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="t-title">FIRST ROUND TEST </p>
+        <p class="horizontal-line"></p>
+        <p class="t-text">five sides of a box unfolded. As one
+          layer of the image is folded to the box, formerly contiguous
+          color areas are disconnected. An armature is necessary to
+          hold the image layer together, and to align it with the other
+          image layers. </p>
+      </div>
+      <div class="vertical-line-blank">
+      </div>
+      <div class="body-right body-img float">
+        <img src="test.jpg" alt="DIAGRAM" class="image">
+      </div>
+    </div>
+    <!--CaseStudy1 -->
+
+
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="t-tl"> The Boxes
+      </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--render -->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="render.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">BOXES FROM PROBLEM CLOUD</P>
+        <p class="horizontal-line"></p>
+        <p class="t-text"> Separate the boxes from the problem cloud </p>
+
+      </div>
+    </div>
+    <!-- render -->
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="t-tl"> Anylasis of Site and City
+      </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+
+    <!--Site and City -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="t-title"> OTHER MUSEUMS IN LA </p>
+        <p class="horizontal-line"></p>
+        <p class="t-text">searching for context and narrative with other museums
+
+        </p>
+      </div>
+      <div class="vertical-line-blank">
+      </div>
+      <div class="body-right body-img float">
+        <img src="site_city_1.jpg" alt="DIAGRAM" class="image">
+        <p class="t-thesis-casestudy">Museums in LA</p>
+      </div>
+    </div>
+    <!--Site and City -->
+    <!--Site and City2 -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="t-title"> EXTENSION OF ANGLE ORIENTATION </p>
+        <p class="horizontal-line"></p>
+        <p class="t-text">Extension of the orientation of the boxes on site
+        </p>
+      </div>
+      <div class="vertical-line-blank">
+      </div>
+      <div class="body-right body-img float">
+        <img src="site_city_2.jpg" alt="DIAGRAM" class="image">
+        <p class="t-thesis-casestudy">Orientation of grid</p>
+      </div>
+    </div>
+    <!--Site and City2 -->
+    <!--Site and City3 -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="t-title">ANGLES IN BETWEEN VERTICALITY</p>
+        <p class="horizontal-line"></p>
+        <p class="t-text">the extension of the angles in between vertical box diagonal
+        </p>
+      </div>
+      <div class="vertical-line-blank">
+      </div>
+      <div class="body-right body-img float">
+        <img src="site_city_3.jpg" alt="DIAGRAM" class="image">
+        <p class="t-thesis-casestudy">Angle from top and bottom boxes</p>
+      </div>
+    </div>
+    <!--Site and City3 -->
+    <!--Site and City4 -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="t-title"> ANGLES IN BETWEEN HORIZONTALITY</p>
+        <p class="horizontal-line"></p>
+        <p class="t-text">the extension of the angles in between horizontal box diagonal
+        </p>
+      </div>
+      <div class="vertical-line-blank">
+      </div>
+      <div class="body-right body-img float">
+        <img src="site_city_4.jpg" alt="DIAGRAM" class="image">
+        <p class="t-thesis-casestudy"> Angle in between the rotated boxes</p>
+      </div>
+    </div>
+    <!--Site and City4 -->
+    <br>
+    <br>
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="t-tl"> Plans
+      </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--SITE Plan-->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="onsite.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">SITE PLAN </P>
+        <p class="horizontal-line"></p>
+        <p class="t-text">Large-Scale</p>
+      </div>
+    </div>
+    <!--site Plan-->
+    <br>
+    <br>
+    <!--Plan1-->
+    <div class="body-h">
+      <div class="body-right  body-txt">
+        <p class="t-title">FLOOR PLAN </p>
+        <p class="horizontal-line"></p>
+        <p class="t-text">Ground Floor</p>
+      </div>
+      <div class="vertical-line-blank"> </div>
+
+      <div class="body-left body-img float">
+        <img src="plan1.jpg" alt="DIAGRAM" class="image">
+      </div>
+    </div>
+    <!--Plan1-->
+    <br>
+    <br>
+    <!--Plan2-->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="plan2.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">FLOOR PLAN </P>
+        <p class="horizontal-line"></p>
+        <p class="t-text">2F</p>
+      </div>
+    </div>
+    <!--Plan2-->
+    <br>
+    <br>
+    <!--Plan3-->
+    <div class="body-h">
+      <div class="body-right  body-txt">
+        <p class="t-title">FLOOR PLAN </p>
+        <p class="horizontal-line"></p>
+        <p class="t-text">3F</p>
+      </div>
+      <div class="vertical-line-blank"> </div>
+
+      <div class="body-left body-img float">
+        <img src="plan3.jpg" alt="DIAGRAM" class="image">
+      </div>
+    </div>
+    <!--Plan3-->
+    <br>
+    <br>
+    <!--Plan4-->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="plan4.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">FLOOR PLAN </P>
+        <p class="horizontal-line"></p>
+        <p class="t-text">4F</p>
+      </div>
+    </div>
+    <!--Plan4-->
+
+    <br>
+    <br>
+    <!-- content-->
+    <div class="content-tl">
+      <p class="t-tl"> Sections and Elevations
+      </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--Elevations-->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="section1.jpg" alt="DIAGRAM" class="image">
+      </div>
+      <div class="vertical-line-blank"> </div>
+      <div class="body-right body-txt">
+        <P class="t-title">ELEVATION </P>
+        <p class="horizontal-line"></p>
+        <p class="t-text"> Section A' - A'</p>
+      </div>
+    </div>
+    <!--Elevations-->
+    <br>
+    <br>
+    <!--Elevation1-->
+    <div class="body-h">
+      <div class="body-right  body-txt">
+        <p class="t-title">ELEVATION </p>
+        <p class="horizontal-line"></p>
+        <p class="t-text"> Section B' - B'</p>
+      </div>
+      <div class="vertical-line-blank"> </div>
+
+      <div class="body-left body-img float">
+        <img src="section2.jpg" alt="DIAGRAM" class="image">
+      </div>
+    </div>
+    <!--Elevation1-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+  </div>
 </body>
+
+
+
+
+
+<!--body-->
+
+
+<!--back to top-->
+<button onclick="topFunction()" id="myBtn" class=" myBtn-1550" title="Go to top">
+  <img id="bottom-arrow" class="ArrowHover" src="../../arrow-top.svg" alt="back to top">
+
+  <div id="btnFont">TOP</div>
+
+</button>
+<!--back to top-->
+
+<!--footer-->
+<div class="footer">
+  <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
+  </p>
+  <div class="footer-right">
+    <a href="mailto:vickyw.design@gmail.com">
+      <img class="footer-logo" src="../../mail.svg" alt="email">
+    </a>
+
+    <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
+      <img class="footer-logo" src="../../in.svg" alt="linkedin">
+    </a>
+
+    <a href="https://github.com/vicky-wyq">
+      <img class="footer-logo" src="../../git.svg" alt="github">
+    </a>
+
+    <a href="https://www.instagram.com/vw_yiqi/">
+      <img class="footer-logo" src="../../ins.svg" alt="medium">
+    </a>
+  </div>
+</div>
+<!--footer-->
+</div>
 
 </html>

@@ -263,10 +263,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     y: 110,
     scrollTrigger: {
       trigger: ".t-intro",
-      start: "top 240px", //trigger, viewport
-      end: "bottom bottom",
+      start: "top 100px", //trigger, viewport
+      end: "+=560",
       scrub: 1,
       markers: false,
+      pin: true,
       toggleActions: "restart pause reverse reset"
     }
   });
@@ -293,8 +294,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
 
-
   // immediateRender: false, second scroll smooth
+  gsap.to(".ver2", {
+    rotate: 90,
+    scrollTrigger: {
+      trigger: ".horizontal",
+      start: "top 300px", //trigger, viewport
+      end: "bottom bottom",
+      scrub: 2,
+      horizontal: true,
+      markers: false,
+      toggleActions: "restart pause reverse reset"
+    }
+  });
+
+
+
   //ScrollTrigger
 
 
