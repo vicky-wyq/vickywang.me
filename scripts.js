@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //vanilla js carousel
 
 
-  function makeCarousel(carouselGH) {
+  function makeCarouselGH(carouselGH) {
     var carouselContent = carouselGH.querySelector('.carouselContentGH');
     var slides = carouselGH.querySelectorAll('.slideGH');
     var arrayOfSlides = Array.prototype.slice.call(slides);
@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   var carouselsGH = document.getElementsByClassName("carouselGH")
   var index = 0;
   while (index < carouselsGH.length) {
-    makeCarousel(carouselsGH[index]);
+    makeCarouselGH(carouselsGH[index]);
     index++
   }
   //vanilla js carousel longer 
@@ -480,7 +480,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       start: "top 300px", //trigger, viewport
       end: "bottom bottom",
       scrub: 2,
-      horizontal: true,
+      horizontal: false,
       markers: false,
       toggleActions: "restart pause reverse reset"
     }
@@ -540,29 +540,61 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: trigger,
-        start: "top 400px",
-        end: "bottom 600px",
+        start: "trigger 600px",
+        end: "trigger 800px",
         scrub: 3,
         markers: false
       },
     })
     tl.to(trigger, {
       color: "#A9D9D9",
-      duration: 1,
-      y: -60
+      duration: 2,
+      y: -30
     })
     .to(trigger, {
       color: "#000000",
-      duration: 2,
+      duration: 1,
+      y: 20
+
     });
   }
   YAxisTrigger("#ytrigger")
   YAxisTrigger("#ytrigger1")
   YAxisTrigger("#ytrigger2")
+
+  YAxisTrigger("#ytrigger-arch")
+  YAxisTrigger("#ytrigger-arch2")
+  YAxisTrigger("#ytrigger-arch3")
+  YAxisTrigger("#ytrigger-arch4")
+  YAxisTrigger("#ytrigger-arch5")
+  YAxisTrigger("#ytrigger-arch6")
+  YAxisTrigger("#ytrigger-arch7")
+  YAxisTrigger("#ytrigger-arch8")
+
+  YAxisTrigger("#ytrigger-pg")
+  YAxisTrigger("#ytrigger-pg2")
+  YAxisTrigger("#ytrigger-pg3")
+  YAxisTrigger("#ytrigger-pg4")
+  YAxisTrigger("#ytrigger-pg5")
+  YAxisTrigger("#ytrigger-pg6")
+  YAxisTrigger("#ytrigger-pg7")
+  YAxisTrigger("#ytrigger-pg8")
+  YAxisTrigger("#ytrigger-pg9")
+  YAxisTrigger("#ytrigger-pg10")
+  YAxisTrigger("#ytrigger-pg11")
+  YAxisTrigger("#ytrigger-pg12")
+  YAxisTrigger("#ytrigger-pg13")
+  YAxisTrigger("#ytrigger-pg14")
+  YAxisTrigger("#ytrigger-pg15")
+  YAxisTrigger("#ytrigger-pg16")
+  YAxisTrigger("#ytrigger-pg17")
+  YAxisTrigger("#ytrigger-pg18")
+
   YAxisTrigger("#ytrigger-gh1")
   YAxisTrigger("#ytrigger-gh2")
   YAxisTrigger("#ytrigger-gh3")
   YAxisTrigger("#ytrigger-gh4")
+
 
   // Y Axis change
 

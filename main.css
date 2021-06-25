@@ -186,6 +186,10 @@
     }
     /* footer */
 }
+@media screen and (min-width:1680px){
+
+}
+    /* all size by default mac pro 15 in */
 
 /* 
 a:hover {
@@ -435,12 +439,12 @@ body {
 
 .t-hi {
     font-family: 'Lato', sans-serif;
-    font-size: 80px;
+    font-size: 96px;
 }
 
 .t-me {
     font-family: 'Lato', sans-serif;
-    font-size: 50px;
+    font-size: 68px;
     margin-left: 0px;
     line-height: 80px;
 }
@@ -467,7 +471,7 @@ body {
 
 .t-intro {
     font-weight: 100;
-    font-size: 58px;
+    font-size: 78px;
 }
 
 .body-v {
@@ -591,9 +595,11 @@ body {
 .height-s {
     height: 10vw;
 }
-
-.height {
+.height-m {
     height: 16vw;
+}
+.height {
+    height: 20vw;
 }
 
 .width-xs {
@@ -756,10 +762,13 @@ body {
     padding: 4vw;
 }
 
-.padding {
-    padding: 2vw;
-}
 
+.padding {
+    padding: 1vw;
+}
+.padding-lr {
+    padding: 0vw 1vw;
+}
 .padding-bottom {
     padding-bottom: 2vw;
 }
@@ -833,22 +842,6 @@ body {
 
 /* content */
 
-.content-tl {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 260px;
-    width: 100%;
-}
-
-.t-tl {
-    font-family: inherit;
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    font-weight: 100;
-}
 
 .se-arrow {
     width: 32px;
@@ -1148,22 +1141,45 @@ button {
     align-items: flex-start;
     margin: 0;
 }
+.content-tl { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 260px;
+    width: 100%;
+}
+
+.t-tl {
+    font-family: inherit;
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    font-weight: 100;
+}
 
 .t-title-l {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 5px;
 }
 
 .t-title-m {
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: 400;
+
     margin-bottom: 15px;
 }
 
 .t-title-s {
     font-size: 18px;
-    margin-bottom: 15px;
 }
-
+.t-subtitle-l {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 6px/* top&bottom*/
+    0px/* left&right*/
+    ;
+}
 .t-subtitle-m {
     font-size: 18px;
     font-weight: 300;
@@ -1171,9 +1187,15 @@ button {
     0px/* left&right*/
     ;
 }
-
-.t-text {
-    font-size: 20px;
+.t-text-l {
+    font-size: 36px;
+    font-weight: 100;
+    margin: 2px/* top&bottom*/
+    0px/* left&right*/
+    ;
+}
+.t-text-m {
+    font-size: 26px;
     font-weight: 100;
     margin: 2px/* top&bottom*/
     0px/* left&right*/
@@ -1181,9 +1203,9 @@ button {
 }
 
 .t-text-s {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 100;
-    margin: 5px 1vw;
+    margin: 5px 0vw;
 }
 
 .t-time {
