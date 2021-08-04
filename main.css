@@ -1,10 +1,147 @@
 @media screen and (max-width: 950px) {
+    /* gardeners hub*/
+    .bg-color-gh-carouselGH {
+
+        height: 42vw !important;
+        padding-bottom: 10vw;
+    }
+    .width-m {
+        width: 20vw !important; 
+        margin: 2vw;
+    }
+    .width-l {
+        width: 75vw !important;
+        margin: 1vw ;
+    }
+    .align-left-phone {
+        display: flex;
+        align-items: flex-start !important;
+
+    }
+    
+    .research-arrow {
+        margin: 7vw 3vw !important;
+        height: 0.5vh !important;
+        width: 0.5vh !important;
+    }
+    
+    .color-grey {
+        box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.2), 
+        0 36px 68px 0 rgba(0, 0, 0, 0.19) !important;
+    }
+    .bg-color-gh1 {
+        height: 23vw !important;
+    }
+    .padding-lr {
+        padding: 1vh !important;
+    }
+    .body-txt {
+        margin: 0 !important;
+    }
+    .body-left {
+        margin: 0 !important;
+    }
+    .bg-color-gh {
+        height: 90vw !important;
+    }
+    .item-height-l {
+        height: 13vh !important;
+    }
+    .body-h-project {
+        flex-direction: column !important;
+        height: 40vh !important;
+    }
+    .t-title-l {
+        font-weight: 300;
+        font-size: 1.3vh !important;
+    }
+    .t-title-m {
+        font-size: 0.8vh !important;
+        margin: 0.5vh 0 !important;
+        font-weight: 300 !important;
+    }
+    .t-title-s {
+        font-size: 0.8vh !important;
+    }
+    .t-subtitle-l {
+        font-size: 1.0vh !important;
+        margin: 6px/* top&bottom*/
+        0px/* left&right*/
+        ;
+    }
+    .t-subtitle-m {
+        font-size: 18px !important;
+        font-weight: 300;
+        margin: 6px/* top&bottom*/
+        0px/* left&right*/
+        ;
+    }
+    .t-text-l {
+        font-size: 1.0vh !important;
+        font-weight: 100;
+        margin: 2px/* top&bottom*/
+        0px/* left&right*/
+        ;
+    }
+    .t-text-m {
+        font-size: 1vh !important;
+        margin: 0 !important;
+    }
+    .t-text-s {
+        font-size: 0.6vh !important;
+        margin: 0 1vh!important;
+    }
+    .marquee-text {
+        font-size: 1.5vh !important;
+    }
+    .marquee-logo {
+        width: 1.5vh !important;
+    }
+    .marquee {
+        margin-top: 2vh !important;
+        height: 5vh !important;
+    }
+    .row-change {
+        flex-direction: column !important;
+    }
+    .icon-s {
+        width: 3vh !important;
+        margin: 2px 2vw;
+    }
+    .icon-m {
+        width: 2.5vh !important;
+        margin: 1vh 1vh !important;
+    }
+    .icon-l {
+        width: 6vh !important;
+    }
+    .nav-gh {
+        width: 1.5vh !important;
+        height: 1.5vh !important;
+        top: 48% !important;
+        margin-left: -1.0vh !important;
+        margin-right: -1.0vh !important;
+    }
+    .carouselContentGH {
+        height: 100%;
+    }
+    .carouselGH {
+        height: 16vh !important;
+    }
+    .h-line {
+        border-top: 0.01vh solid #707070;
+        height: 0px;
+        width: 5vh !important;
+        margin-top: 0px;
+        margin-bottom: 1vw;
+    }
+    /* gardeners hub*/
     br {
         line-height: 22px !important;
     }
     .vertical-line {
         border-left: 1px solid rgb(194, 194, 194) !important;
-        height: 60px !important;
+        height: 20px !important;
         margin: 30px/* top&bottom*/
         15px !important/* left&right*/
         ;
@@ -42,7 +179,7 @@
     /* header */
     /* body */
     .vertical-line-blank {
-        height: 160px;
+        height: 6px !important;
         margin: 10px !important;
     }
     #rc1 {
@@ -50,9 +187,7 @@
         margin-left: 8px !important;
     }
     .body-h {
-        margin: 30px/* top&bottom*/
-        0px/* left&right*/
-        !important;
+        margin-bottom: 20vh !important;
     }
     .body-intro {
         flex-direction: column !important;
@@ -118,14 +253,17 @@
     }
     /* body */
     /* content */
+    .adding-margintop {
+        margin-top: 20vh !important;
+    }
     .content-tl {
-        height: 36px !important;
+        height: 10vw !important;
     }
     .t-tl {
         font-size: 16px !important;
     }
     .se-arrow {
-        width: 5% !important;
+        width: 1vh !important;
     }
     /* content */
     #myBtn {
@@ -186,10 +324,10 @@
     }
     /* footer */
 }
-@media screen and (min-width:1680px){
 
-}
-    /* all size by default mac pro 15 in */
+@media screen and (min-width:1680px) {}
+
+/* all size by default mac pro 15 in */
 
 /* 
 a:hover {
@@ -489,9 +627,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 100px/* top&bottom*/
-    0px/* left&right*/
-    ;
+    margin-bottom: 15vh;
 }
 
 /* body-intro */
@@ -504,6 +640,11 @@ body {
 }
 
 .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-change {
     display: flex;
     flex-direction: row;
 }
@@ -562,8 +703,8 @@ body {
 }
 
 .circle-gh {
-    height: 9vw;
-    width: 9vw;
+    height: 12vw;
+    width: 12vw;
     border-radius: 50%;
 }
 
@@ -592,14 +733,16 @@ body {
     border: 1px solid #4C665B;
 }
 
-.height-s {
+.item-height-s {
     height: 10vw;
 }
-.height-m {
+
+.item-height-m {
     height: 16vw;
 }
-.height {
-    height: 20vw;
+
+.item-height-l {
+    height: 35vh;
 }
 
 .width-xs {
@@ -630,14 +773,14 @@ body {
 .h-line {
     border-top: 1px solid #707070;
     height: 0px;
-    width: 180px;
+    width: 15vh;
     margin-top: 0px;
     margin-bottom: 1vw;
 }
 
 .ver-line {
     border-left: 1px solid gray;
-    height: 160px;
+    height: 15.0vh;
     margin: 0 6vw;
 }
 
@@ -703,7 +846,7 @@ body {
 /* body-project- new css test */
 
 .research-arrow {
-    margin: 5vw 2vw;
+    margin: 6vw 3vw;
     border: solid black;
     border-width: 0 1px 1px 0;
     display: inline-block;
@@ -729,7 +872,7 @@ body {
 }
 
 .body-margin {
-    margin: 0px 6%;
+    margin: 0px 4vw;
 }
 
 .margin-tb {
@@ -762,34 +905,30 @@ body {
     padding: 4vw;
 }
 
-
 .padding {
     padding: 1vw;
 }
+
 .padding-lr {
     padding: 0vw 1vw;
 }
+
 .padding-bottom {
     padding-bottom: 2vw;
 }
 
-.icon {
-    width: 160px;
-}
-
-.icon-ppl {
-    width: 160px;
-    margin: 5vw;
+.icon-s {
+    width: 4vh;
+    margin: 2px 2vw;
 }
 
 .icon-m {
-    width: 80px;
+    width: 9vh;
     margin: 35px 5vw;
 }
 
-.icon-s {
-    width: 40px;
-    margin: 2px 2vw;
+.icon-l {
+    width: 12vh;
 }
 
 .body-h-txt {
@@ -829,7 +968,7 @@ body {
 .bg-color-gh1 {
     background-color: #ffffff;
     margin-top: 10vw;
-    height: 14vw;
+    height: 16vw;
     padding-bottom: 10vw;
 }
 
@@ -842,9 +981,8 @@ body {
 
 /* content */
 
-
 .se-arrow {
-    width: 32px;
+    width: 3vh;
     height: auto;
     margin-left: 1%;
 }
@@ -930,7 +1068,6 @@ animation-play-state: paused;
     white-space: nowrap;
     will-change: transform;
     animation: marquee 12s linear infinite;
-    margin: 50px 0;
 }
 
 @keyframes marquee {
@@ -943,7 +1080,7 @@ animation-play-state: paused;
 }
 
 .marquee-text {
-    font-size: 40px;
+    font-size: 3.2vh;
     margin: 0 90px;
     font-weight: 100;
 }
@@ -1008,7 +1145,7 @@ animation-play-state: paused;
     position: relative;
     width: 90%;
     margin: 0 auto;
-    height: 650px;
+    height: 65vh;
 }
 
 .carouselContentGH {
@@ -1026,13 +1163,12 @@ animation-play-state: paused;
 }
 
 .nav-gh {
-    top: 50%;
-    margin-top: -60px;
-    margin-left: -50px;
-    margin-right: -50px;
+    top: 42%;
+    margin-left: -5.0vh;
+    margin-right: -5.0vh;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 4.5vh;
+    height: 4.5vh;
     z-index: 2;
     cursor: pointer;
     border: none;
@@ -1141,12 +1277,13 @@ button {
     align-items: flex-start;
     margin: 0;
 }
-.content-tl { 
+
+.content-tl {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 260px;
+    height: 35vh;
     width: 100%;
 }
 
@@ -1159,27 +1296,29 @@ button {
 }
 
 .t-title-l {
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 2.6vh;
     margin-bottom: 5px;
 }
 
 .t-title-m {
-    font-size: 26px;
+    font-size: 2.3vh;
     font-weight: 400;
-
-    margin-bottom: 15px;
+    margin: 1vh 0;
 }
 
 .t-title-s {
-    font-size: 18px;
+    font-size: 1.5vh;
 }
+
 .t-subtitle-l {
-    font-size: 28px;
+    font-size: 2.8vh;
     font-weight: 300;
     margin: 6px/* top&bottom*/
     0px/* left&right*/
     ;
 }
+
 .t-subtitle-m {
     font-size: 18px;
     font-weight: 300;
@@ -1187,15 +1326,17 @@ button {
     0px/* left&right*/
     ;
 }
+
 .t-text-l {
-    font-size: 36px;
+    font-size: 3.0vh;
     font-weight: 100;
     margin: 2px/* top&bottom*/
     0px/* left&right*/
     ;
 }
+
 .t-text-m {
-    font-size: 26px;
+    font-size: 2.2vh;
     font-weight: 100;
     margin: 2px/* top&bottom*/
     0px/* left&right*/
@@ -1203,9 +1344,9 @@ button {
 }
 
 .t-text-s {
-    font-size: 20px;
+    font-size: 1.6vh;
     font-weight: 100;
-    margin: 5px 0vw;
+    margin: 5px 2vh;
 }
 
 .t-time {
