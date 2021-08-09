@@ -1031,7 +1031,10 @@ body {
     height: auto;
     margin-left: 1%;
 }
+#carousel-project-img{
+    width: 70vh;
 
+}
 #rc {
     width: 300px;
 }
@@ -1169,7 +1172,7 @@ animation-play-state: paused;
 .nav {
     position: absolute;
     top: 50%;
-    margin-top: -60px;
+    margin-top: -150px;
     width: 50px;
     height: 50px;
     z-index: 2;

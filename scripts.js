@@ -390,6 +390,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   mybutton.addEventListener('click', topFunction)
   // back to top 
 
+  
+/*
   var about = document.getElementById('about');
 
   if (about) {
@@ -401,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // go to bottom 
 
-
+*/
 
 
 
