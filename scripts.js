@@ -514,6 +514,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   addColorTrigger("#bg-color-trigger3")
   addColorTrigger("#bg-color-trigger4")
   //bg color change
+  
+
   var addOpacityTrigger = function (trigger) {
     let tl = gsap.timeline({
       scrollTrigger: {

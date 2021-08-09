@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 700 360" style="enable-background:new 0 0 700 360;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;}
+	.st1{fill:#FFBF00;}
+	.st2{fill:none;}
+	.st3{fill:#5C5C5C;}
+	.st4{font-family:'Helvetica-Light';}
+	.st5{font-size:16px;}
+	.st6{letter-spacing:-1;}
+	.st7{fill:#FEE28B;}
+	.st8{fill:#F5F5F5;}
+	.st9{fill:none;stroke:#FFBF00;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1">
+	<path class="st0" d="M169.4,250.4c-32.8,32.8-86,32.8-118.8,0s-32.8-86,0-118.8c32.8-32.8,86-32.8,118.8,0L110,191L169.4,250.4z"/>
+	<path class="st1" d="M169.4,250.4c-32.8,32.8-86,32.8-118.8,0s-32.8-86,0-118.8s86-32.8,118.8,0L110,191L169.4,250.4z"/>
+	<rect x="-70" y="40" class="st2" width="900" height="270"/>
+	<rect x="-70" y="40" class="st2" width="900" height="270"/>
+	<text transform="matrix(1 0 0 1 579 179)"><tspan x="0" y="0" class="st3 st4 st5 st6">Y</tspan><tspan x="8.3" y="0" class="st3 st4 st5">es</tspan></text>
+	<rect x="579" y="163" class="st2" width="33" height="24"/>
+	<text transform="matrix(1 0 0 1 579 206)" class="st3 st4 st5">No</text>
+	<rect x="579" y="190" class="st2" width="33" height="24"/>
+	<text transform="matrix(1 0 0 1 579 234)" class="st3 st4 st5">Sometimes</text>
+	<rect x="579" y="218" class="st2" width="145" height="24"/>
+</g>
+<g id="Layer_3">
+	<rect x="552" y="162" class="st7" width="22" height="22"/>
+	<rect x="552" y="189" class="st1" width="22" height="22"/>
+	<rect x="552" y="217" class="st8" width="22" height="22"/>
+	<circle class="st0" cx="563" cy="228" r="6"/>
+</g>
+<g id="Layer_2">
+	<circle class="st0" cx="563" cy="200" r="6"/>
+	<circle class="st9" cx="563" cy="228" r="6"/>
+	<circle class="st0" cx="563" cy="173" r="6"/>
+</g>
+</svg>
