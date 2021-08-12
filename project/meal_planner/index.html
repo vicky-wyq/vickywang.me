@@ -1,0 +1,923 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../main.css">
+  <script type="text/javascript" src="../../scripts.js"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Titillium Web', sans-serif; -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Roboto', sans-serif; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <!--font using hello-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Catamaran', sans-serif; -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font font-family: 'Lato', sans-serif; -->
+
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--jQuery-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--aos-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+  <!-- gsap -tool-bar-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=40"></script>
+  <!-- gsap - tool-bar-->
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+
+
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vicky Wang</title>
+  <meta property="og:site_name" content="VICKY WANG">
+
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VICKY WANG" />
+  <meta property="og:description" content="Hi! Thanks for stopping by. 
+    I enjoy design and code who loves solving challenging problems. 
+    Interested in what you see? Shoot me an email :) " />
+  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="750">
+  <meta property="og:image:height" content="750">
+
+  <meta name="twitter:url" content="//vickywang.design">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="VICKY WANG" />
+  <meta name="twitter:creator" content="VICKY WANG" />
+  <meta property="twitter:title" content="VICKY WANG">
+  <meta property="twitter:description"
+    content="Hi! Thanks for stopping by. I’m a product designer based in San Francisco. I'm a former architectural designer with a passion for solving business challenges through design and occasionally code. If you like what you see here, please feel free to reach out to me at vickyw.design@gmail.com :)">
+  <meta name="twitter:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="750">
+  <meta property="og:image:height" content="750">
+</head>
+
+<body>
+  <!--head-->
+  <!--progress bar-->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <!--progress bar-->
+  <div class="main-tool-bar">
+    <div class="head-left">
+      <a href="http://vickywang.design/" class="pointer">VW
+      </a>
+    </div>
+    <div class="head-right ">
+      <a href="/" class="active head-right-1550 box">
+        PROJECT
+      </a>
+      <a href="/architecture" class="inactive head-right-1550 box">
+        ARCHITECTURE
+      </a>
+
+      <a href="/photography" class="inactive head-right-1550 box">
+        PHOTOGRAPHY
+      </a>
+
+      <a href="/" class="inactive head-right-1550 box">
+        ABOUT
+      </a>
+    </div>
+  </div>
+  <span id="circle" class="circle"></span>
+
+  <!--head-->
+
+
+  <!--about mealplanner-->
+  <div class="body-h-project bg-color-mp" id="bg-color-triggerMP">
+    <div class="body-left body-img float">
+      <img src="../../layout_mealplanner.png" alt="DIAGRAM" class="image">
+    </div>
+    <div class="vertical-line-blank"></div>
+    <div class="body-right body-txt">
+      <P class="t-title-m">MEAL PLANNER</P>
+      <p class="horizontal-line"></p>
+      <p class="t-text-s"> <strong>My Role:</strong> &nbsp; Design Research, UX/UI Design, Visual
+        Design, Interaction Design, Wireframing, Branding, Prototyping, Usability Testing </p>
+      <p class="t-text-s"> <strong>Skills and Tools:</strong> &nbsp;
+        HTML, CSS, JavaScript, JQuery, Interviewing, Storyboarding, Experience Prototyping, Adobe
+        XD, Sketch</p>
+      <p class="t-text-s"><strong>Duration:</strong> &nbsp; May 2021 - August 2021
+      </p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <!--about mealplanner-->
+
+  <!-- content-->
+  <div class="body-margin">
+
+    <div class="content-tl">
+      <p class="t-text-l"> Case Study</p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--Problem and solution-->
+    <div class="row-change center-h margin">
+      <div class="column">
+        <P class="t-title-m">PROBLEMS</P>
+        <p class="horizontal-line"></p>
+        <p class="t-text-m">not enough time/ busy schedule</p>
+        <p class="t-text-m">cooking is complecated dont konw how to cook </p>
+        <p class="t-text-m">Convenience food is typically high in chemical additives, hormones,
+          sugar, salt, unhealthy fat, and calories</p>
+        <p class="t-text-m">Restaurants often serve more food than you should eat. </p>
+
+      </div>
+      <div class="vertical-line">
+      </div>
+      <div class="column">
+        <P class="t-title-m">SOLUTIONS</P>
+        <p class="horizontal-line"></p>
+        <p class="t-text-m">organized ingredients / easy Recipes base on user's cook Equipment
+        <P>
+        <p class="t-text-m">When you prepare your own meals, you have more control over the
+          ingredients.
+        <P>
+        <p class="t-text-m">Cooking at home doesn’t have to be complicated
+        <P>
+        <p class="t-text-m">Cooking at home can even take less time that eating out</p>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="column">
+        <P class="t-title-m">PROCESS</P>
+        <p class="horizontal-line"></p>
+        <p class="t-text-m"> The goal of this project is to find solutions and ideas to help people
+          to improve their cooking experience and organize panty information</p>
+      </div>
+    </div>
+    <!--Problem solution Process-->
+  </div>
+
+  <!--body1-->
+
+  <br>
+  <br>
+
+
+
+
+
+
+  <br>
+  <div class="row center-h ">
+
+    <div class="column center-v">
+      <P class="center-v center-h color-grey circle-mp  t-subtitle-l">Empathize </P>
+      <br>
+
+      <P class="t-text-s"> &#183; Design Strategy</P>
+      <P class="t-text-s"> &#183; User Research</P>
+      <P class="t-text-s"> &#183; Competitive Analysis </P>
+    </div>
+
+    <P class="research-arrow"></P>
+
+    <div class="column center-v">
+      <P class="center-v center-h color-grey circle-mp  t-subtitle-l">Define </P>
+      <br>
+
+      <P class="t-text-s"> &#183; Secondary Research </P>
+      <P class="t-text-s"> &#183; Survey </P>
+      <P class="t-text-s"> &#183; Persona </P>
+      <P class="t-text-s"> &#183; User Journey </P>
+    </div>
+    <P class="research-arrow"></P>
+
+    <div class="column center-v">
+      <P class="center-v center-h color-grey circle-mp  t-subtitle-l">Ideate </P>
+      <br>
+      <P class="t-text-s"> &#183; Brain Stroming</P>
+      <P class="t-text-s"> &#183; User Flow </P>
+      <P class="t-text-s"> &#183; Card Sorting </P>
+      <P class="t-text-s"> &#183; Information Architecture </P>
+
+    </div>
+    <P class="research-arrow"></P>
+    <div class="column center-v">
+      <P class="center-v center-h color-grey circle-mp  t-subtitle-l">Prototype
+      </P>
+      <br>
+
+      <P class="t-text-s"> &#183; Branding </P>
+      <P class="t-text-s"> &#183; Wireframes</P>
+      <P class="t-text-s"> &#183; Prototypes </P>
+      <P class="t-text-s"> &#183; Visal Design</P>
+    </div>
+    <P class="research-arrow"></P>
+
+    <div class="column center-v">
+      <P class="center-v center-h color-grey circle-mp  t-subtitle-l">Final Design </P>
+      <br>
+      <P class="t-text-s"> &#183; Usability Testing</P>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- 01 -->
+  <div class="body-margin">
+
+    <P class="text-project-numbers color-mp">01</P>
+
+    <div class="row-change center-v">
+      <div class="column">
+        <P class="t-title-l">DISCOVER</P>
+        <p class="horizontal-line"></p>
+        <p class="t-text-m">a lot of people don't like to cook at home, especially young people.
+          cooking at home help Health & Wellness. This app provides a convenient way to manage
+          ingredients and make meals based on existing pantry stuff. xxxxxa lot of people don't
+          like to cook at home, especially young people.
+          cooking at home help Health & Wellness. This app provides a convenient way to manage
+          ingredients and make meals based on existing pantry stuff. </p>
+      </div>
+      <div class="vertical-line">
+      </div>
+      <div class="row">
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_1-1.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">Design Strategy </p>
+        </div>
+
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_1-2.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">User Research </p>
+        </div>
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_1-3.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">Competitive Analysis</p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <!-- STRATEGY -->
+  <div class="bg-color-mp-noheight">
+    <div class="column body-margin">
+      <div class="row padding-tb">
+        <P class="t-title-m">DESIGN STRATEGY </P>
+        <img class="icon-s float" src="icon_mp_1-1.svg" alt="User Research" class="image">
+      </div>
+      <p class="t-text-m">
+        to understand the problems of the goal and context of use of potential
+        users I used some blockbusting activity and applied different technicals to better analyze
+        the problem from different perspectives. I began by interviewing three people with 6
+        months,
+        18 months, and 36
+        months of horticultural experience.</p>
+      <br>
+      <div class="column  align-left padding-lr-xl padding-tb">
+        <div class="row center-v item-height-m border-radius">
+          <p class="t-title-m center-h center-v item-height-s width-s  border-radius color-grey">
+            Executive Intent </p>
+          <p class="vertical-line"></p>
+          <p
+            class="t-text-m center-h center-v item-height-s width-xl border-radius color-grey padding-lr">
+            This project is all about creating a simple cooking
+            process. user can easily add their pantry information into this app and generate
+            receipts
+            based on existing ingredients and personal preferences. In addition to that, they can
+            also
+            scan and visualize the pantry information in this app. Moreover, they can select
+            ingredients and cuisine just the way you want it.</p>
+        </div>
+
+        <div class="row center-v item-height-m border-radius">
+          <p class="t-title-m center-h center-v item-height-s width-s  border-radius color-grey">
+            Target Audience</p>
+          <p class="vertical-line"></p>
+          <div
+            class="column t-text-m center-h item-height-s width-m border-radius color-grey padding-lr">
+            <p class="t-text-m"> <strong>Gender:</strong> Male, Female, Transgender</p>
+            <p class="t-text-m"> <strong>Profession:</strong> Working and Non-working</p>
+            <p class="t-text-m"> <strong>Age Group:</strong> 16+</p>
+          </div>
+          <p class=vertical-line-blank></p>
+          <p
+            class="t-text-m center-h center-v item-height-s width-m border-radius color-grey padding-lr">
+            Working Professionals, those people who are willing to
+            cook but have problems managing pantry and finding receipts</p>
+
+        </div>
+
+        <div class="row center-v item-height-m border-radius">
+          <p class="t-title-m center-h center-v item-height-s width-s border-radius color-grey">
+            General Tasks</p>
+          <p class="vertical-line"></p>
+          <p class="t-text-m center-v item-height-s width-xl border-radius color-grey padding-lr">
+            Users can add food to the pantry section, and choose the
+            recipe style. They also can add cooking equipment to this application. If they create an
+            account and follow some steps adding their cooking pieces of stuff, the app will create
+            your favorite recipe.</p>
+          <p class="vertical-line-blank"></p>
+        </div>
+
+        <div class="row center-v item-height-m border-radius">
+          <p class="t-title-m center-h center-v item-height-s width-s  border-radius color-grey">
+            Branding Goals</p>
+          <p class="vertical-line"></p>
+          <div
+            class="column t-text-m center-h item-height-s width-xl border-radius color-grey padding-lr">
+            <p class="t-text-m"> <strong>Branding Partnership:</strong> to increase brand awareness
+              we
+              can partner with other brandings</p>
+            <p class="t-text-m"> <strong>Leverage Social:</strong> Develope shareble content</p>
+            <p class="t-text-m"> <strong>Use Referrals:</strong> We can use referral program to
+              increase
+              brand awareness</p>
+            <p class="t-text-m"> <strong>Public Content:</strong> To increase our credibility we can
+              write and article, share video, apps, services.</p>
+          </div>
+          <p class="vertical-line-blank"></p>
+        </div>
+
+        <div class="row center-v item-height-m border-radius">
+          <p class="t-title-m center-h center-v item-height-s width-s  border-radius color-grey">
+            Cross
+            Channels </p>
+          <p class="vertical-line"></p>
+          <div
+            class="column t-text-m center-h center-v item-height-s width-xl border-radius color-grey padding-lr">
+            <p class="t-text-m"> <strong>All Platforms:</strong> </p>
+            <p class="t-text-m"> IOS, Android</p>
+            <p class="t-text-m"> Web</p>
+          </div>
+        </div>
+
+        <div class="row center-v item-height-m border-radius">
+          <p class="t-title-m center-h center-v item-height-s width-s border-radius color-grey ">
+            Critical Factor </p>
+          <p class="vertical-line"></p>
+          <div
+            class="column t-text-m center-h center-v item-height-s width-xl border-radius color-grey padding-lr">
+            <p class="t-text-m">There are so many platforms about recipes and cooking.
+              but our goal is to combine pantry information, cooking equipment, and recipe as one
+              app
+              to turn the complexity into simplicity </p>
+          </div>
+        </div>
+
+        <div class="row center-v item-height-m border-radius">
+          <p class="t-title-m center-h center-v item-height-s width-s border-radius color-grey">
+            Major Competitors </p>
+          <p class="vertical-line"></p>
+          <div
+            class="column t-text-m center-h center-v item-height-s width-xl border-radius color-grey padding-lr">
+            <p class="t-text-m"> BigOven, OrfanizEat,</p>
+            <p class="t-text-m"> Grocery, Mewalthy, qMenu</p>
+            <p class="t-text-m"> MyFridgeFood, Pantry Check,</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+
+
+  <!-- STRATEGY -->
+  <div class="column body-margin">
+    <div class="row">
+      <P class="t-title-m">USER RESEARCH </P>
+      <img class="icon-s float" src="icon_mp_1-2.svg" alt="User Research" class="image">
+    </div>
+    <p class="t-text-m">I have conducted 10+ user interviews and collected viable information from
+      them towards cooking own food easier
+    </p>
+  </div>
+  <br>
+
+  <div class="column body-margin">
+
+    <P class="t-title-m">Qualitative Research </P>
+
+    <p class="t-text-m">I have conducted 10+ user interviews and collected viable information from
+      them towards cooking own food easier
+    </p>
+
+    <p class="t-text-m"> Do you know how to cook? </p>
+    <p class="t-text-m"> Why you like/don't like to cook at home? </p>
+    <p class="t-text-m"> How long it takes to decide what to cook? </p>
+    <p class="t-text-m"> +more questions </p>
+
+    <br>
+    <div class="column">
+      <P class="t-title-m">Quantitative Research </P>
+      <p class="t-text-m">I have invited 68 people to respond through the online
+        survey from questionnaires. Around 43 people had participated in filling the survey and
+        made this research possible.
+      </p>
+    </div>
+    <div class="row center-v">
+
+      <div class="column center-v color-grey border-radius width-l  ">
+        <img src="./user-research.svg" alt="DIAGRAM" class="img-l">
+        <p class="horizontal-line-mp"></p>
+        <div class="column padding">
+          <p class="t-subtitle-m"> Do you know how to cook? </p>
+          <p class="t-text-s center-h"> 36 Responses </p>
+        </div>
+      </div>
+      <div class="column center-v color-grey border-radius width-l  ">
+        <img src="./user-research.svg" alt="DIAGRAM" class="img-l">
+        <p class="horizontal-line-mp"></p>
+        <div class="column padding ">
+          <p class="t-subtitle-m"> Why you like/don't like to cook at home? </p>
+          <p class="t-text-s center-h">48 Responses </p>
+        </div>
+      </div>
+      <div class="column center-v color-grey border-radius width-l  ">
+        <img src="./user-research.svg" alt="DIAGRAM" class="img-l">
+        <p class="horizontal-line-mp"></p>
+        <div class="column padding ">
+          <p class="t-subtitle-m"> How long it takes to decide what to cook? </p>
+          <p class="t-text-s center-h">29 Responses </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+  <br>
+  <div class="column body-margin">
+    <P class="t-title-m"> COMPETITIVE ANALYSIS </P>
+    <p class="t-text-m">Based on identifying and comparing current horticulture
+      website futures, analysis how they addressed similar problems.</p>
+    <br>
+    <div class="container-body-project">
+      <svg width="874px" height="874px" viewBox="0 0 874 874" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Page 1</title>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Phase" transform="translate(-9.000000, -13.000000)" stroke-width="0.3">
+            <path d="M465.5,13.2662705 L472.716179,23.85 L458.283821,23.85 L465.5,13.2662705 Z"
+              id="Triangle-Copy-6" stroke="#050505" fill="#FFFFFF"
+              transform="translate(465.500000, 18.500000) scale(-1, -1) rotate(180.000000) translate(-465.500000, -18.500000) ">
+            </path>
+            <path d="M877.5,422.266271 L884.716179,432.85 L870.283821,432.85 L877.5,422.266271 Z"
+              id="Triangle-Copy-5" stroke="#050505" fill="#FFFFFF"
+              transform="translate(877.500000, 427.500000) scale(-1, -1) rotate(-90.000000) translate(-877.500000, -427.500000) ">
+            </path>
+            <line x1="871.5" y1="427.5" x2="9.5" y2="427.5" id="Line-Copy-2" stroke="#000000"
+              stroke-linecap="square"></line>
+            <line x1="896.5" y1="455.5" x2="34.5" y2="455.5" id="Line-Copy-3" stroke="#000000"
+              stroke-linecap="square"
+              transform="translate(465.500000, 455.500000) rotate(270.000000) translate(-465.500000, -455.500000) ">
+            </line>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="container-body-project">
+      SVG Comparison DIAGRAMS PLACEHOLDER
+    </div>
+
+
+  </div>
+  <br>
+
+
+  <br>
+
+
+  <br>
+
+
+
+
+
+  <br>
+  <br>
+
+  <br>
+  <!-- 02 -->
+  <div class="body-margin">
+
+    <P class="text-project-numbers color-mp">02</P>
+
+    <div class="row-change center-v">
+      <div class="column">
+        <P class="t-title-l">SECONDARY RESEARCH</P>
+        <p class="horizontal-line"></p>
+        <p class="t-text-m">The goal of this application is to help people who have
+          problems with planning their meals, struggle with grocery shopping, and lack fridge
+          information. </p>
+      </div>
+      <div class="vertical-line">
+      </div>
+      <div class="row">
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_2-1.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">Empathy Mapping </p>
+        </div>
+
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_2-2.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">Customer Journey </p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <!-- 02 -->
+
+  <div class="body-margin">
+    <div class="column">
+      <div class="row padding-tb">
+        <P class="t-title-m"> Key Findings from the Pains and Gains </P>
+        <img class="icon-s float" src="icon_mp_2-1.svg" alt="User Research" class="image">
+      </div>
+      <!-- finding 1 -->
+      <div class="column">
+        <p class="t-title-m">Finding 1 </p>
+        <p class="t-text-m"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>
+      </div>
+      <br>
+      <div class="row float color-grey">
+        <img src="./icon_mp_4-1.svg" alt="DIAGRAM" class="icon-l width-l">
+        <div class="  width-l">
+          <div class="column margin-xs ">
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.”
+            </p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx”</p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” </p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” </p>
+          </div>
+        </div>
+      </div>
+      <!-- finding 1 -->
+      <br>
+
+      <!-- finding 2 -->
+      <div class="column">
+        <p class="t-title-m">Finding 2 </p>
+        <p class="t-text-m"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>
+      </div>
+      <br>
+      <div class="row float color-grey">
+        <img src="./icon_mp_4-1.svg" alt="DIAGRAM" class="icon-l width-l">
+        <div class="  width-l">
+          <div class="column margin-xs ">
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.”
+            </p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx”</p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” </p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” </p>
+          </div>
+        </div>
+      </div>
+      <!-- finding 2 -->
+      <br>
+
+      <!-- finding 3 -->
+      <div class="column">
+        <p class="t-title-m">Finding 3 </p>
+        <p class="t-text-m"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>
+      </div>
+      <br>
+      <div class="row float color-grey">
+        <img src="./icon_mp_4-1.svg" alt="DIAGRAM" class="icon-l width-l">
+        <div class="  width-l">
+          <div class="column margin-xs ">
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.”
+            </p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx”</p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” </p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” </p>
+          </div>
+        </div>
+      </div>
+      <!-- finding 3 -->
+      <br>
+
+      <div class="column margin">
+        <div class="row">
+          <P class="t-title-m">CUSTOMER JOURNEY </P>
+          <img class="icon-s float" src="icon_mp_2-2.svg" alt="CUSTOMER JOURNEY" class="image">
+        </div>
+        <p class="t-text-m">a customer journey map is a diagram that visually
+          demonstrates the user flow through the application, starting with initial contact for
+          discovery, and continues throughout the process of how to generate user's meal plan with
+          this app</p>
+      </div>
+      <br>
+      <!-- place holder -->
+      <div class="column">
+        <p class="t-title-m">place holder </p>
+        <p class="t-text-m"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>
+      </div>
+      <br>
+      <div class="row float color-grey">
+        <img src="./icon_mp_4-1.svg" alt="DIAGRAM" class="icon-l width-l">
+        <div class="  width-l">
+          <div class="column margin-xs ">
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.”
+            </p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx”</p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” </p>
+            <p class="t-text-s"> “xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” </p>
+          </div>
+        </div>
+      </div>
+      <!-- place holder -->
+    </div>
+  </div>
+  <br>
+
+
+  <!-- 03 -->
+  <div class="body-margin">
+
+    <P class="text-project-numbers color-mp">03</P>
+
+    <div class="row-change center-v">
+      <div class="column">
+        <P class="t-title-l">IDEATION</P>
+        <p class="horizontal-line"></p>
+        <p class="t-text-m"> Ideation is the most exciting stage, based on my previous study of
+          understanding the pain
+          points I come up with several potential solutions to each of the pain points
+          category. I selected several initial concepts including grocery shopping list, meal
+          planning, fridge, help people manage their meals.</p>
+      </div>
+      <div class="vertical-line">
+      </div>
+      <div class="row">
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_3-1.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">USER FLOW </p>
+        </div>
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_3-2.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">CARD SORTING</p>
+        </div>
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_3-3.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">CARD SORTING</p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <!-- 03 -->
+  <br>
+  <div class="column body-margin">
+    <div class="row">
+      <P class="t-title-m">USER FLOW </P>
+      <img class="icon-s float" src="icon_mp_3-1.svg" alt="User Research" class="image">
+    </div>
+    <p class="t-text-m">A User Flow is a route map for the user to navigate from
+      the entry point to the end point in order to complete a task in the user interface. the
+      user flow defines all navigation steps in the user journey in order to achieve their goal</p>
+    <img src="icon_mp_3-1.svg" alt="User Research" class="width-l padding-lr center-h">
+  </div>
+  <br>
+  <div class="column body-margin">
+    <div class="row">
+      <P class="t-title-m">CARD SORTING </P>
+      <img class="icon-s float" src="icon_mp_3-2.svg" alt="User Research" class="image">
+    </div>
+    <p class="t-text-m">Card sorting is a method used to help design or evaluate
+      the information architecture of a site. In a card sorting session, participants organize
+      topics into categories that make sense to them and they may also help me label these
+      groups.</p>
+    <img src="icon_mp_3-2.svg" alt="User Research" class="width-l padding-lr center-h">
+  </div>
+  <br>
+  <div class="column body-margin">
+    <div class="row">
+      <P class="t-title-m">INFORMATION ARCHITECTURE</P>
+      <img class="icon-s float" src="icon_mp_3-3.svg" alt="User Research" class="image">
+    </div>
+    <p class="t-text-m">information architecture is the practice of deciding how to arrange the
+      parts of something to be understandable. Information architecture aims at organizing content
+      so that users would easily adjust to the functionality of the product and could find
+      everything they need without big effort.</p>
+    <img src="icon_mp_3-3.svg" alt="User Research" class="width-l padding-lr center-h">
+  </div>
+  <br>
+
+
+  <!-- 04 -->
+  <div class="body-margin">
+
+    <P class="text-project-numbers color-mp">04</P>
+
+    <div class="row-change center-v">
+      <div class="column">
+        <P class="t-title-l">DESIGN & TEST </P>
+        <p class="horizontal-line"></p>
+        <p class="t-text-m">Starting prototyping and testing after previous research. Sketching it
+          out some low-fidelity wireframe to see how the app works with selected initial concepts.
+          Adding more information and details on the mid-fidelity wireframe. Eventually, started
+          usability testing before the high-fidelity wireframe. </p>
+      </div>
+      <div class="vertical-line">
+      </div>
+      <div class="row">
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_4-1.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">WIREFRAMES </p>
+        </div>
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_4-2.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">USABILITY TESTING</p>
+        </div>
+
+      </div>
+    </div>
+    <br>
+  </div>
+  <!-- 04 -->
+  <br>
+  <div class="column body-margin">
+    <div class="row">
+      <P class="t-title-m">WIREFRAMES </P>
+      <img class="icon-s float" src="icon_mp_4-1.svg" alt="User Research" class="image">
+    </div>
+    <p class="t-text-m">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    <img src="icon_mp_3-1.svg" alt="User Research" class="width-l padding-lr center-h">
+  </div>
+  <br>
+
+  <br>
+  <div class="column body-margin">
+    <div class="row">
+      <P class="t-title-m">LOW-FIDELITY WIREFRAMES </P>
+      <img class="icon-s float" src="icon_mp_4-2.svg" alt="User Research" class="image">
+    </div>
+    <p class="t-text-m">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    <p class="t-text-m">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    <p class="t-text-m">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+
+  </div>
+  <div class="column body-margin">
+    <div class="row">
+      <P class="t-title-m">MID-FIDELITY WIREFRAMES </P>
+      <img class="icon-s float" src="icon_mp_4-2.svg" alt="User Research" class="image">
+    </div>
+    <p class="t-text-m">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    <p class="t-text-m">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    <p class="t-text-m">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+
+  </div>
+  <br>
+
+
+  <div class="column body-margin">
+    <div class="row">
+      <P class="t-title-m">USABILITY TESTING </P>
+      <img class="icon-s float" src="icon_mp_4-2.svg" alt="User Research" class="image">
+    </div>
+    <p class="t-text-m">Usability testing refers to evaluating a product or service
+      by testing it with representative users. Typically, during a test, participants will
+      try to complete typical tasks while observers watch, listen and takes notes. The goal is to
+      identify any usability problems, collect qualitative and quantitative data and determine
+      the participant's satisfaction with the product.</p>
+
+    <p class="t-text-m"> &#183;the filter catagary should more simple with this app idea</p>
+    <p class="t-text-m"> &#183;the local social meal planner could be useful for beginner gardeners.
+    </p>
+    <p class="t-text-m"> &#183;The usability testing was conducted with 4 users. Results
+      were mostly positive with few improvements.</p>
+
+    <p class="t-text-m">&#183;Users are not able to find categories and summary content
+      at first glance</p>
+    +SVG
+  </div>
+
+  <!-- 05 -->
+  <div class="body-margin">
+
+    <P class="text-project-numbers color-mp">05</P>
+
+    <div class="row-change center-v">
+      <div class="column">
+        <P class="t-title-l">ITERATION </P>
+        <p class="horizontal-line"></p>
+        <p class="t-text-m">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+      </div>
+      <div class="vertical-line">
+      </div>
+      <div class="row">
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_4-1.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">WIREFRAMES </p>
+        </div>
+        <div class="column center-v"> <img class="icon-l margin-s float" src="icon_mp_4-2.svg"
+            alt="User Research" class="image">
+          <p class="t-title-s">USABILITY TESTING</p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <!-- 05 -->
+
+  <div class="container-body-project">
+    <br>
+    <br>
+    <br>
+
+    <div class="text-project-numbers-mealplanner">
+      05 </div>
+    <div class="text-project-phase-mealplanner">
+      ITERATION </div>
+    <br>
+    <br>
+
+    <br>
+    <div class="text-body-title">
+      xxx </div>
+
+    <br>
+
+    <div class="container-body-description">
+      <p class="text-body-description">jpeg</p>
+    </div>
+
+    <div class="container-body-project-img">
+      <img src="./hf_landing.png" alt="DIAGRAM" class="image">
+
+    </div>
+
+    <br>
+    <div class="text-project-phase-mealplanner">
+      THANK YOU </div>
+    <br>
+    <br>
+</body>
+
+<!--back to top-->
+<button onclick="topFunction()" id="myBtn" class=" myBtn-1550" title="Go to top">
+  <img id="bottom-arrow" class="ArrowHover" src="../../arrow-top.svg" alt="back to top">
+
+  <div id="btnFont">TOP</div>
+
+</button>
+<!--back to top-->
+
+<!--footer-->
+<div class="footer">
+  <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
+  </p>
+  <div class="footer-right">
+    <a href="mailto:vickyw.design@gmail.com">
+      <img class="footer-logo" src="../../mail.svg" alt="email">
+    </a>
+
+    <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
+      <img class="footer-logo" src="../../in.svg" alt="linkedin">
+    </a>
+
+    <a href="https://github.com/vicky-wyq">
+      <img class="footer-logo" src="../../git.svg" alt="github">
+    </a>
+
+    <a href="https://www.instagram.com/vw_yiqi/">
+      <img class="footer-logo" src="../../ins.svg" alt="medium">
+    </a>
+  </div>
+</div>
+<!--footer-->
+
+</html>

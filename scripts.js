@@ -516,7 +516,34 @@ document.addEventListener("DOMContentLoaded", function (event) {
   addColorTrigger("#bg-color-trigger3")
   addColorTrigger("#bg-color-trigger4")
   //bg color change
+
+
   
+  var addColorTriggerMP = function (triggerMP) {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: triggerMP,
+        start: "center 600px",
+        end: "bottom 900px",
+        scrub: 3,
+        //toggleClass: "active",
+        markers: false
+      },
+    })
+    tl.to(triggerMP, {
+      backgroundColor: "#FFBF00",
+      duration: 15,
+      y: 120
+    })
+      .to(triggerMP, {
+        backgroundColor: "#FED256",
+        duration: 15,
+        y: 190
+      });
+  }
+  addColorTriggerMP("#bg-color-triggerMP")
+
+  //bg color change
 
   var addOpacityTrigger = function (trigger) {
     let tl = gsap.timeline({

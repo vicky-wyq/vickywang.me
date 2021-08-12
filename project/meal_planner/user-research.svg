@@ -16,25 +16,25 @@
 </style>
 <g id="Layer_1">
 	<path class="st0" d="M169.4,250.4c-32.8,32.8-86,32.8-118.8,0s-32.8-86,0-118.8c32.8-32.8,86-32.8,118.8,0L110,191L169.4,250.4z"/>
-	<path class="st1" d="M169.4,250.4c-32.8,32.8-86,32.8-118.8,0s-32.8-86,0-118.8s86-32.8,118.8,0L110,191L169.4,250.4z"/>
+	<path class="st1" d="M273.4,250.4c-32.8,32.8-86,32.8-118.8,0s-32.8-86,0-118.8s86-32.8,118.8,0L214,191L273.4,250.4z"/>
 	<rect x="-70" y="40" class="st2" width="900" height="270"/>
 	<rect x="-70" y="40" class="st2" width="900" height="270"/>
-	<text transform="matrix(1 0 0 1 579 179)"><tspan x="0" y="0" class="st3 st4 st5 st6">Y</tspan><tspan x="8.3" y="0" class="st3 st4 st5">es</tspan></text>
-	<rect x="579" y="163" class="st2" width="33" height="24"/>
-	<text transform="matrix(1 0 0 1 579 206)" class="st3 st4 st5">No</text>
-	<rect x="579" y="190" class="st2" width="33" height="24"/>
-	<text transform="matrix(1 0 0 1 579 234)" class="st3 st4 st5">Sometimes</text>
-	<rect x="579" y="218" class="st2" width="145" height="24"/>
+	<text transform="matrix(1 0 0 1 510 179)"><tspan x="0" y="0" class="st3 st4 st5 st6">Y</tspan><tspan x="8.3" y="0" class="st3 st4 st5">es</tspan></text>
+	<rect x="510" y="163" class="st2" width="33" height="24"/>
+	<text transform="matrix(1 0 0 1 510 206)" class="st3 st4 st5">No</text>
+	<rect x="510" y="190" class="st2" width="33" height="24"/>
+	<text transform="matrix(1 0 0 1 510 234)" class="st3 st4 st5">Sometimes</text>
+	<rect x="510" y="218" class="st2" width="145" height="24"/>
 </g>
 <g id="Layer_3">
-	<rect x="552" y="162" class="st7" width="22" height="22"/>
-	<rect x="552" y="189" class="st1" width="22" height="22"/>
-	<rect x="552" y="217" class="st8" width="22" height="22"/>
-	<circle class="st0" cx="563" cy="228" r="6"/>
+	<rect x="483" y="162" class="st7" width="22" height="22"/>
+	<rect x="483" y="189" class="st1" width="22" height="22"/>
+	<rect x="483" y="217" class="st8" width="22" height="22"/>
+	<circle class="st0" cx="494" cy="228" r="6"/>
 </g>
 <g id="Layer_2">
-	<circle class="st0" cx="563" cy="200" r="6"/>
-	<circle class="st9" cx="563" cy="228" r="6"/>
-	<circle class="st0" cx="563" cy="173" r="6"/>
+	<circle class="st0" cx="494" cy="200" r="6"/>
+	<circle class="st9" cx="494" cy="228" r="6"/>
+	<circle class="st0" cx="494" cy="173" r="6"/>
 </g>
 </svg>

@@ -1,5 +1,27 @@
 @media screen and (max-width: 950px) {
+    .border-radius {
+        border-radius: 0.5em !important;
+    }
     /* gardeners hub*/
+    .speech-bubble {
+        position: relative;
+        background: #f5f5f5;
+        border-radius: .4em;
+    }
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        top: 0 !important;
+        left: 48% !important;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent !important;
+        border-bottom-color: #f5f5f5 !important;
+        border-top: 0 !important;
+        border-right: 0 !important;
+        margin-left: -5px !important;
+        margin-top: -10px !important;
+    }
     .bg-color-gh-carouselGH {
 
         height: 42vw !important;
@@ -687,6 +709,7 @@ body {
     justify-content: space-around;
 }
 
+
 .center-v {
     display: flex;
     align-items: center;
@@ -746,7 +769,7 @@ body {
 }
 
 .border-radius {
-    border-radius: .4em;
+    border-radius: 1em;
 }
 
 .border {
@@ -758,11 +781,11 @@ body {
 }
 
 .item-height-m {
-    height: 14vw;
+    height: 12vw;
 }
 
 .item-height-l {
-    height: 35vh;
+    height: 38vh;
 }
 
 .width-xs {
@@ -845,10 +868,10 @@ body {
     margin-bottom: 18px;
 }
 
-.horizontal-line-l {
-    border-top: 1px solid rgb(0, 0, 0);
+.horizontal-line-mp {
+    border-top: 1px solid #FFBF00;
     height: 0px;
-    width: 100%;
+    width: 6vh;
     margin-top: 0px;
 }
 
@@ -1001,6 +1024,11 @@ body {
     margin-bottom: 30px;
 }
 .bg-color-mp {
+    background-color: #F5F5F5;
+    margin: 0;
+    height: 60vw;
+}
+.bg-color-mp-noheight {
     background-color: #F5F5F5;
     margin: 0;
 }
@@ -1368,7 +1396,7 @@ button {
 }
 
 .t-subtitle-m {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300;
     margin: 6px/* top&bottom*/
     0px/* left&right*/
