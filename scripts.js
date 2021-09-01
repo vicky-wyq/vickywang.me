@@ -531,12 +531,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
       },
     })
     tl.to(triggerMP, {
-      backgroundColor: "#FFBF00",
-      duration: 15,
-      y: 120
+      backgroundColor: "#FFE28B",
+      duration: 30,
+      y: 150
     })
       .to(triggerMP, {
-        backgroundColor: "#FED256",
+        backgroundColor: "#F5F5F5",
         duration: 15,
         y: 190
       });
@@ -549,7 +549,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: trigger,
-        start: "top 700px",
+        start: "top 200px",
         end: "bottom 900px",
         scrub: 3,
         markers: false
