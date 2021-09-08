@@ -196,12 +196,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     tl.to(trigger, {
       backgroundColor: "#4C665B",
       duration: 15,
-      y: 120
+      y: 60
     })
       .to(trigger, {
         backgroundColor: "#EAF0EE",
         duration: 15,
-        y: 190
+        y: 90
       });
   }
   addColorTrigger("#bg-color-trigger")
