@@ -335,7 +335,7 @@
     }
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1860px) {
     /* header */
     /* body */
     #t-hello-1550 {
@@ -348,10 +348,24 @@
         font-size: 40px;
         line-height: 45px;
     }
+
     /* footer */
 }
 
-@media screen and (min-width:1680px) {}
+@media screen and (min-width:1680px) {
+    .MPcarousel {
+        height: 1300px !important;
+    }
+    .MPcarousel-content {
+    
+        height: 1300px !important;
+    }
+    .MPslide {
+        margin-top: -200px !important;
+
+    }
+    
+}
 
 /* all size by default mac pro 15 in */
 
@@ -505,7 +519,10 @@ br {
     display: block;
     line-height: 1.5vw;
 }
-
+.blankLineWidthL {
+    display: block;
+    width: 10vw;
+}
 .blank-lineheight-xs {
     display: block;
     height: 0.8vw;
@@ -528,7 +545,7 @@ br {
 
 .blank-lineheight-xl {
     display: block;
-    height: 12vw;
+    height: 18vw;
 }
 
 .circle {
@@ -693,7 +710,7 @@ body {
 .divider {
     width: 1px;
     /* weight */
-    border-top: 150px solid black;
+    border-top: 120px solid black;
     /* height */
     margin: 0px/* top&bottom*/
     80px/* left&right*/
@@ -705,9 +722,9 @@ body {
     align-items: center;
     width: 1px;
     /* weight */
-    border-top: 60px solid black;
+    border-top: 50px solid black;
     /* height */
-    margin: 0px 20px;
+    margin: 13px 20px;
 }
 
 .body-v {
@@ -725,7 +742,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20vh !important;
 }
 
 /* body-intro */
@@ -850,11 +866,13 @@ body {
 .clip-shape-shadow {
     filter: drop-shadow(20px 40px 25px rgba(124, 84, 10, 0.404));
 }
-
+.clip-shape-shadowBW {
+    filter: drop-shadow(20px 40px 25px rgba(143, 143, 143, 0.404));
+}
 .clip-shape {
     clip-path: inset(0px round 15px);
     width: 800px;
-    height: 1000px;
+    height: 1200px;
 }
 
 .color-white:hover {
@@ -925,8 +943,9 @@ body {
 
 .width-l {
     width: 32vw;
-    margin: 4vw;
+    margin: 2vw;
 }
+
 .width-ll {
     width: 36vw;
     margin: 4vw;
@@ -939,7 +958,7 @@ body {
 
 .width-xxl {
     width: 60vw;
-    margin: 4vw;
+    margin: 0vw;
 }
 
 .width {
@@ -1019,7 +1038,7 @@ body {
 .vertical-line-mp {
     border-left: 1px solid rgba(0, 0, 0, 0.23);
     height: 20vh;
-    margin: 18vh 5vh;
+    margin: 5vh;
 }
 
 .vertical-line-mp-s {
@@ -1072,12 +1091,14 @@ body {
     width: 30%;
 }
 
-.margin-all {
+.marginAll {
     margin: 0px 4vw;
 }
+
 .margin-none {
     margin: 0;
 }
+
 .margin-l {
     margin: 20vw;
 }
@@ -1191,10 +1212,12 @@ body {
     margin: 0;
     height: 60vw;
 }
+
 .bg-color-mp-noheight1 {
     background-color: #FED256;
     margin: 0;
 }
+
 .bg-color-mp-noheight {
     background-color: #F5F5F5;
     margin: 0;
@@ -1443,24 +1466,25 @@ animation-play-state: paused;
 .MPcarousel {
     position: relative;
     width: 100%;
-    height: auto;
-    margin: 0 auto;
+    height: 700px;
+    margin: 0;
 }
 
 .MPcarousel-content {
+    height: 700px;
+
     position: relative;
     overflow: hidden;
     transition: width .4s;
-    height: 100%;
 }
 
 .MPslide {
-    height: auto;
+    margin-top: -15vh;
     width: 20%;
     position: absolute;
     z-index: 1;
     transition: left .4s cubic-bezier(.47, .13, .15, .89);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .centerElement {
@@ -1489,7 +1513,6 @@ animation-play-state: paused;
 .MPnav-right {
     right: -25px;
 }
-
 
 /* MP Carousel */
 
@@ -1592,7 +1615,6 @@ button {
     justify-content: flex-start;
     align-items: center;
     height: 35vh;
-    width: 100%;
 }
 
 .t-tl {

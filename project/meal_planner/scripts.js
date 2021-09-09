@@ -22,7 +22,7 @@ function initializeSlides(slideElements) {
 }
 
 function moveLeft(slides) {
-  if (slides[slides.length - 1].left === 60) {
+  if (slides[slides.length - 1].left === 40) {
     return;
   }
   slides.forEach((slide) => {
@@ -89,13 +89,12 @@ function createCarousel(slidesClass, leftNavClass, rightNavClass) {
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
   createCarousel('.hfSlide', '.hfLeft', '.hfRight');
-  createCarousel('.lfSlide', '.lfLeft', '.lfRight');
   createCarousel('.mfSlide', '.mfLeft', '.mfRight');
   createCarousel('.hfSlide1', '.hfLeft1', '.hfRight1');
 
 
 
-  //do xxxx
+  //0901/2021 Carousel
 
 
 
@@ -109,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: triggerMP,
-        start: "center 600px",
+        start: "center 300px",
         end: "bottom 900px",
         scrub: 3,
         //toggleClass: "active",

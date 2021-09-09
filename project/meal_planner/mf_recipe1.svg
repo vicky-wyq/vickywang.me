@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1173" viewBox="0 0 900 1173">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2251" data-name="Rectangle 2251" width="374" height="808" rx="50" fill="#3100ff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1f3f6" stop-opacity="0.8"/>
+      <stop offset="0.194" stop-color="#f8f8f4" stop-opacity="0"/>
+      <stop offset="0.79" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#868686" stop-opacity="0.102"/>
+    </linearGradient>
+    <clipPath id="clip-mf_recipe1">
+      <rect width="900" height="1173"/>
+    </clipPath>
+  </defs>
+  <g id="mf_recipe1" clip-path="url(#clip-mf_recipe1)">
+    <g id="phone-bottom" transform="translate(109)">
+      <path id="Path_2462" data-name="Path 2462" d="M60,0H326a60,60,0,0,1,60,60V769a60,60,0,0,1-60,60H60A60,60,0,0,1,0,769V60A60,60,0,0,1,60,0Z" transform="translate(148 172)" fill="#fff"/>
+      <path id="Path_2436" data-name="Path 2436" d="M50,0H324a50,50,0,0,1,50,50V758a50,50,0,0,1-50,50H50A50,50,0,0,1,0,758V50A50,50,0,0,1,50,0Z" transform="translate(155 182)" fill="#f5f5f5"/>
+      <path id="Path_2434" data-name="Path 2434" d="M40.929,0H332.343a40.929,40.929,0,0,1,40.929,40.929v726.9a40.929,40.929,0,0,1-40.929,40.929H40.929A40.929,40.929,0,0,1,0,767.828V40.929A40.929,40.929,0,0,1,40.929,0Z" transform="translate(155.147 182.355)" fill="none"/>
+      <rect id="Rectangle_2199" data-name="Rectangle 2199" width="13" height="10" transform="translate(214 172)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2201" data-name="Rectangle 2201" width="11" height="10" transform="translate(457 172)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2200" data-name="Rectangle 2200" width="13" height="11" transform="translate(214 990)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2202" data-name="Rectangle 2202" width="11" height="11" transform="translate(457 990)" fill="#6b7f99" opacity="0.2"/>
+    </g>
+    <g id="icon-arrow" transform="translate(742 72)">
+      <path id="path" d="M1288.262,1163.709l-6.775,6.775,6.775,6.775" transform="translate(-1281.487 -1163.709)" fill="none" stroke="#748a9d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="line" x2="15.198" transform="translate(0.855 6.772)" fill="none" stroke="#748a9d" stroke-linecap="round" stroke-width="1"/>
+    </g>
+    <g id="Mask_Group_120" data-name="Mask Group 120" transform="translate(266 183)" clip-path="url(#clip-path)">
+      <g id="Group_1678" data-name="Group 1678">
+        <text id="Start_by_taking_the_4_raspberries_chop_them_into_tiny_segments_and_introduce_the_strawberry._Check_to_make_sure_that_the_raspberries_and_the_strawberry_sit_well_together_before_slicing_and_dicing_a_lemon_and_adding_it_to_this_rather_strange_combination_o" data-name="Start by taking the 4 raspberries, chop them into tiny segments and introduce the strawberry. Check to make sure that the raspberries and the strawberry sit well together, before slicing and dicing a lemon and adding it to this rather strange combination o" transform="translate(30 659)" fill="#707070" font-size="16" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="12">Start by taking the 4 raspberries, chop them </tspan><tspan x="0" y="31">into tiny segments and introduce the </tspan><tspan x="0" y="50">strawberry. Check to make sure that the </tspan><tspan x="0" y="69">raspberries and the strawberry sit well </tspan><tspan x="0" y="88">together, before slicing and dicing a lemon </tspan><tspan x="0" y="107">and adding it to this rather strange </tspan><tspan x="0" y="126">combination of fruits.</tspan></text>
+        <text id="Instructions" transform="translate(30 630)" fill="#707070" font-size="20" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="0">Instructions</tspan></text>
+        <text id="Easy" transform="translate(282 432)" fill="#707070" font-size="16" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="0">Easy</tspan></text>
+        <text id="Prep_20m" data-name="Prep 20m" transform="translate(282 468)" fill="#707070" font-size="16" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="0">Prep 20m</tspan></text>
+        <text id="Cook_5m" data-name="Cook 5m" transform="translate(282 504)" fill="#707070" font-size="16" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="0">Cook 5m</tspan></text>
+        <g id="icon-difficulty" transform="translate(252 418)">
+          <line id="line-2" data-name="line" y2="8" transform="translate(0 8)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <line id="line-3" data-name="line" y2="12" transform="translate(7 4)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <line id="line-4" data-name="line" y2="16" transform="translate(14)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="icon-clock" transform="translate(251 454)">
+          <circle id="ellipse" cx="7.5" cy="7.5" r="7.5" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="path-2" data-name="path" d="M477,742v3.783l2.722,2.025" transform="translate(-470.121 -738)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="icon-cook" transform="translate(252 490)">
+          <path id="path-3" data-name="path" d="M512.46,761.238a6.694,6.694,0,0,1-13.388,0c0-3.7,3-12.107,6.694-12.107S512.46,757.541,512.46,761.238Z" transform="translate(-499.072 -749.131)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="path-4" data-name="path" d="M509.37,764.275a3.6,3.6,0,0,1-7.208,0c0-1.99,1.614-6.518,3.6-6.518S509.37,762.285,509.37,764.275Z" transform="translate(-499.072 -749.131)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <text id="_4_Raspberries_1_Strawberry_1_2_Lemon_2_Cherries_Mint" data-name="4 Raspberries
+1 Strawberry
+1/2 Lemon
+2 Cherries
+Mint" transform="translate(71 420)" fill="#707070" font-size="16" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="12">4 </tspan><tspan x="0" y="48">Raspberries</tspan><tspan x="0" y="84">1 Strawberry</tspan><tspan x="0" y="120">1/2 Lemon</tspan><tspan x="0" y="156">2 Cherries</tspan></text>
+        <text id="Ingredients" transform="translate(30 391)" fill="#707070" font-size="20" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="0">Ingredients</tspan></text>
+        <path id="Path_2478" data-name="Path 2478" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1400 -3937.519)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_2479" data-name="Path 2479" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1400 -3901.519)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_2480" data-name="Path 2480" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1400 -3865.519)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <g id="checkbox" transform="translate(32 523)">
+          <rect id="rectangle" width="24" height="24" rx="12" fill="#f5f5f5"/>
+          <path id="path-5" data-name="path" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1432 -4352.519)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" opacity="0"/>
+        </g>
+        <g id="checkbox-2" data-name="checkbox" transform="translate(32 559)">
+          <rect id="rectangle-2" data-name="rectangle" width="24" height="24" rx="12" fill="#f5f5f5"/>
+          <path id="path-6" data-name="path" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1432 -4352.519)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" opacity="0"/>
+        </g>
+        <rect id="photo" width="315" height="212" rx="8" transform="translate(30 124)" fill="#eee"/>
+        <g id="icon-share" transform="translate(327 67)">
+          <path id="path-7" data-name="path" d="M487.689,660.44v8.847a4.006,4.006,0,0,1-4.005,4.006h-8.848a4.006,4.006,0,0,1-4.005-4.006V660.44" transform="translate(-470.831 -652.117)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="path-8" data-name="path" d="M479.26,666.866V652.117l-4.764,4.764" transform="translate(-470.831 -652.117)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <line id="line-5" data-name="line" x2="4.764" y2="4.764" transform="translate(8.429)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <text id="XXX_Recipe" data-name="XXX Recipe" transform="translate(188 84)" fill="#707070" font-size="20" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="-53.016" y="0">XXX Recipe</tspan></text>
+        <g id="checkbox-selected" transform="translate(31 415)">
+          <path id="rectangle-3" data-name="rectangle" d="M12,0A12,12,0,1,1,0,12,12,12,0,0,1,12,0Z" fill="#707070"/>
+          <path id="path-9" data-name="path" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1432 -4352.519)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="checkbox-unselected" transform="translate(32 487)">
+          <rect id="rectangle-4" data-name="rectangle" width="24" height="24" rx="12" fill="#c7c7c7"/>
+        </g>
+        <g id="checkbox-unselected-2" data-name="checkbox-unselected" transform="translate(32 451)">
+          <rect id="rectangle-5" data-name="rectangle" width="24" height="24" rx="12" fill="#c7c7c7"/>
+        </g>
+        <path id="path-10" data-name="path" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1399.963 -3901.519)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="path-11" data-name="path" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1399.963 -3866.451)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="phone-top" transform="translate(109)">
+      <rect id="Rectangle_2198" data-name="Rectangle 2198" width="374" height="808" rx="50" transform="translate(155 182)" fill="url(#linear-gradient)"/>
+      <g id="phone_dots_at_top" data-name="phone dots at top" transform="translate(317.479 195.336)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="1.5" cy="1.5" r="1.5" transform="translate(5.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_8" data-name="Ellipse 8" cx="1" cy="1" r="1" transform="translate(-0.479 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="1" cy="1" r="1" transform="translate(14.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="1" cy="1" r="1" transform="translate(20.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_4" data-name="Ellipse 4" cx="1" cy="1" r="1" transform="translate(26.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_5" data-name="Ellipse 5" cx="1" cy="1" r="1" transform="translate(39.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_7" data-name="Ellipse 7" cx="1.5" cy="1.5" r="1.5" transform="translate(45.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_6" data-name="Ellipse 6" cx="1.5" cy="1.5" r="1.5" transform="translate(31.521 -0.336)" fill="#9c9c9d"/>
+      </g>
+    </g>
+  </g>
+</svg>
