@@ -338,43 +338,17 @@
 @media screen and (max-width: 1860px) {
     /* header */
     /* body */
-    #t-hello-1550 {
-        font-size: 26px;
-    }
-    #t-hi-1550 {
-        font-size: 46px;
-    }
-    #t-me-1550 {
-        font-size: 40px;
-        line-height: 45px;
-    }
+
 
     /* footer */
 }
-
 @media screen and (min-width:1680px) {
-    .MPcarousel {
-        height: 1300px !important;
-    }
-    .MPcarousel-content {
-    
-        height: 1300px !important;
-    }
-    .MPslide {
-        margin-top: -200px !important;
 
+    .marginAll {
+        margin: 0px 30vh !important;
     }
     
 }
-
-/* all size by default mac pro 15 in */
-
-/* 
-a:hover {
-    color: #a8d9d9;
-}
-
-*/
 
 table {
     border-collapse: collapse;
@@ -696,7 +670,7 @@ body {
 
 .t-me {
     font-family: 'Lato', sans-serif;
-    font-size: 5.5vh;
+    font-size: 5.6vh;
     margin-left: 0px;
     line-height: 1.6;
 }
@@ -1092,7 +1066,10 @@ body {
 }
 
 .marginAll {
-    margin: 0px 4vw;
+    margin: 0px 12vh;
+}
+.marginInner{
+    margin: 0 8vh;
 }
 
 .margin-none {
@@ -1114,7 +1091,10 @@ body {
 .margin-xs {
     margin: 1vw
 }
+.marginLeft{
+    margin-left: 15vh;
 
+}
 .margin-tbr {
     margin-top: 2vw;
     margin-bottom: 2vw;
@@ -1385,12 +1365,12 @@ animation-play-state: paused;
     transition: left .4s cubic-bezier(.47, .13, .15, .89);
 }
 
-.nav-project {
+.GHnav {
     position: absolute;
     top: 50%;
     margin-top: -80px;
-    width: 50px;
-    height: 50px;
+    width: 6vh;
+    height: 6vh;
     z-index: 2;
     cursor: pointer;
     border: none;
@@ -1399,10 +1379,10 @@ animation-play-state: paused;
 
 .nav {
     position: absolute;
-    top: 50%;
-    margin-top: -150px;
-    width: 50px;
-    height: 50px;
+    top: 40%;
+    margin-top: -80px;    
+    width: 6vh;
+    height: 6vh;
     z-index: 2;
     cursor: pointer;
     border: none;
@@ -1442,9 +1422,10 @@ animation-play-state: paused;
     top: 42%;
     margin-left: -5.0vh;
     margin-right: -5.0vh;
-    position: absolute;
     width: 4.5vh;
     height: 4.5vh;
+    position: absolute;
+
     z-index: 2;
     cursor: pointer;
     border: none;
@@ -1464,27 +1445,32 @@ animation-play-state: paused;
 /* MP Carousel */
 
 .MPcarousel {
+    height: 80vh;
+
     position: relative;
     width: 100%;
-    height: 700px;
-    margin: 0;
+    margin: 0 auto;
+
 }
 
 .MPcarousel-content {
-    height: 700px;
+    height: 100%;
 
     position: relative;
     overflow: hidden;
     transition: width .4s;
+
 }
 
 .MPslide {
-    margin-top: -15vh;
+    height: 100%;
+    margin-top: -180px;
     width: 20%;
     position: absolute;
     z-index: 1;
     transition: left .4s cubic-bezier(.47, .13, .15, .89);
     opacity: 0.7;
+    
 }
 
 .centerElement {
@@ -1492,11 +1478,10 @@ animation-play-state: paused;
 }
 
 .MPnav {
+    height: 60vh;
+    width: 4.5vh;
     position: absolute;
-    top: 0;
-    margin-top: -10px;
     width: 40%;
-    height: 90%;
     z-index: 2;
     cursor: pointer;
     border-radius: 5%;
@@ -1507,11 +1492,14 @@ animation-play-state: paused;
 }
 
 .MPnav-left {
-    left: -25px;
+    left: 0px;
+    top: 0;
+
 }
 
 .MPnav-right {
-    right: -25px;
+    right: 0px;
+    top: 0;
 }
 
 /* MP Carousel */

@@ -50,31 +50,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
       toggleActions: "restart pause reverse reset"
     }
   });
-  gsap.to(".ver2", {
-    rotate: 90,
-    scrollTrigger: {
-      trigger: ".ver2",
-      start: "top 300px", //trigger, viewport
-      end: "bottom bottom",
-      scrub: 2,
-      markers: false,
-      toggleActions: "restart pause reverse reset"
-    }
-  });
+
 
   // immediateRender: false, second scroll smooth
-  gsap.to(".ver2", {
-    rotate: 90,
-    scrollTrigger: {
-      trigger: ".horizontal",
-      start: "top 300px", //trigger, viewport
-      end: "bottom bottom",
-      scrub: 2,
-      horizontal: false,
-      markers: false,
-      toggleActions: "restart pause reverse reset"
-    }
-  });
+
   var YAxisTrigger = function (trigger) {
     let tl = gsap.timeline({
       scrollTrigger: {
