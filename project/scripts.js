@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: trigger,
-        start: "trigger 600px",
-        end: "trigger 800px",
+        start: "trigger center",
+        end: "trigger bottom",
         scrub: 3,
         markers: false
       },
@@ -79,6 +79,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   YAxisTrigger("#ytrigger")
   YAxisTrigger("#ytrigger1")
   YAxisTrigger("#ytrigger2")
+  YAxisTrigger("#ytrigger3")
+  YAxisTrigger("#ytrigger4")
+
   // Y Axis change
   //ScrollTrigger
 });

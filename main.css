@@ -260,11 +260,6 @@
     #photos {
         width: 160px !important;
     }
-    .nav {
-        margin-top: -20px !important;
-        width: 15px !important;
-        height: 15px !important;
-    }
     .nav-left {
         left: 130px !important;
     }
@@ -338,16 +333,19 @@
 @media screen and (max-width: 1860px) {
     /* header */
     /* body */
-
-
     /* footer */
 }
-@media screen and (min-width:1680px) {
 
+@media screen and (min-width:1880px) {
     .marginAll {
         margin: 0px 30vh !important;
     }
-    
+    .AboutProjectNav {
+        top: 38% !important;
+    }
+    .nav {
+        top: 23% !important;
+    }
 }
 
 table {
@@ -401,6 +399,10 @@ a:link.text-about-resume {
     text-decoration-line: underline;
     text-underline-offset: 6px;
 }
+a:link.textProject {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
 
 .active {
     font-weight: 400;
@@ -434,14 +436,6 @@ svg {
 
 /* Hover */
 
-@keyframes hover-float {
-    50% {
-        transform: translateY(-3px);
-    }
-    100% {
-        transform: translateY(-19px);
-    }
-}
 
 .ArrowHover {
     display: inline-block;
@@ -474,6 +468,14 @@ svg {
 .float:hover {
     transform: translateY(-15px);
 }
+@keyframes hover-float {
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(-19px);
+    }
+}
 
 strong {
     font-weight: 300;
@@ -493,10 +495,12 @@ br {
     display: block;
     line-height: 1.5vw;
 }
+
 .blankLineWidthL {
     display: block;
     width: 10vw;
 }
+
 .blank-lineheight-xs {
     display: block;
     height: 0.8vw;
@@ -516,7 +520,14 @@ br {
     display: block;
     height: 6vw;
 }
-
+.blankHL {
+    display: block;
+    height: 9vw;
+}
+.blankHXL {
+    display: block;
+    height: 20vw;
+}
 .blank-lineheight-xl {
     display: block;
     height: 18vw;
@@ -561,7 +572,6 @@ br {
 .main-tool-bar {
     z-index: 2;
     border-bottom: 1px solid whitesmoke;
-    height: 10vh;
     text-align: center;
     align-items: center;
     background-color: white;
@@ -624,7 +634,7 @@ br {
     transform: scale(1);
     filter: blur(0px);
     opacity: 1;
-    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+    box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px;
 }
 
 /* blur hover*/
@@ -675,12 +685,29 @@ body {
     line-height: 1.6;
 }
 
+
 .t-intro {
     font-weight: 100;
     font-size: 5.8vh;
     line-height: 1.2;
 }
+.tTQ {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.6vh;
+    line-height: 1.6;
+    font-weight: 300;
+}
 
+.containerTQ{
+    position: relative;
+    text-align: center;
+}
+.centeredTQ {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 .divider {
     width: 1px;
     /* weight */
@@ -791,8 +818,8 @@ body {
 }
 
 .circle-mp {
-    height: 12vw;
-    width: 12vw;
+    height: 20vh;
+    width: 20vh;
     border-radius: 50%;
 }
 
@@ -811,8 +838,8 @@ body {
 }*/
 
 .circle-gh {
-    height: 12vw;
-    width: 12vw;
+    height: 20vh;
+    width: 20vh;
     border-radius: 50%;
 }
 
@@ -830,7 +857,7 @@ body {
 
 .color-grey {
     background-color: #F5F5F5;
-    box-shadow: 0 29px 38px 0 rgba(0, 0, 0, 0.016), 0 36px 68px 0 rgba(0, 0, 0, 0.075);
+    box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px;
 }
 
 .shadow1 {
@@ -840,9 +867,11 @@ body {
 .clip-shape-shadow {
     filter: drop-shadow(20px 40px 25px rgba(124, 84, 10, 0.404));
 }
+
 .clip-shape-shadowBW {
     filter: drop-shadow(20px 40px 25px rgba(143, 143, 143, 0.404));
 }
+
 .clip-shape {
     clip-path: inset(0px round 15px);
     width: 800px;
@@ -856,7 +885,7 @@ body {
 
 .color-white {
     background-color: #ffffff;
-    filter: drop-shadow(3px 5px 5px rgb(0 0 0 / 0.1));
+    box-shadow: rgba(141, 141, 141, 0.45) 0px 25px 20px -20px;
 }
 
 .border-radius {
@@ -883,6 +912,10 @@ body {
 
 .item-height-l {
     height: 40vh;
+}
+
+.itemHtXL {
+    height: 68vh;
 }
 
 .item-height-xxxl {
@@ -915,6 +948,10 @@ body {
     margin: 2vw;
 }
 
+.widthMM {
+    width: 20vw;
+}
+
 .width-l {
     width: 32vw;
     margin: 2vw;
@@ -929,12 +966,14 @@ body {
     width: 42vw;
     margin: 4vw;
 }
-
-.width-xxl {
-    width: 60vw;
-    margin: 0vw;
+.widthL {
+    width: 40vw;
+    margin:0;
 }
-
+.widthXL {
+    width: 50vw;
+    margin:0;
+}
 .width {
     width: 15vw;
     margin: 2vw;
@@ -1031,21 +1070,19 @@ body {
 
 .vertical-line-blank {
     border-left: 0px solid gray;
-    height: 160px;
-    margin: 120px/* top&bottom*/
-    120px;
-    /* left&right*/
+    height: 20vh;
+    margin: 0 2vh;
 }
 
 /* body-project- new css test */
 
 .research-arrow {
-    margin: 6vw 3vw;
+    margin: 9vh 4.5vh;
     border: solid black;
     border-width: 0 1px 1px 0;
     display: inline-block;
-    height: 1vw;
-    width: 1vw;
+    height: 2vh;
+    width: 2vh;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
@@ -1068,7 +1105,8 @@ body {
 .marginAll {
     margin: 0px 12vh;
 }
-.marginInner{
+
+.marginInner {
     margin: 0 8vh;
 }
 
@@ -1091,10 +1129,11 @@ body {
 .margin-xs {
     margin: 1vw
 }
-.marginLeft{
-    margin-left: 15vh;
 
+.marginLeft {
+    margin-left: 15vh;
 }
+
 .margin-tbr {
     margin-top: 2vw;
     margin-bottom: 2vw;
@@ -1186,7 +1225,11 @@ body {
     font-size: 30px;
     margin-bottom: 30px;
 }
-
+.bg-color-am {
+    background-color: #ebebeb;
+    margin: 0;
+    height: 60vw;
+}
 .bg-color-mp {
     background-color: #FED256;
     margin: 0;
@@ -1242,7 +1285,7 @@ body {
 
 #photos {
     width: 600px;
-    box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.2), 0 36px 68px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 /* content*/
@@ -1365,9 +1408,9 @@ animation-play-state: paused;
     transition: left .4s cubic-bezier(.47, .13, .15, .89);
 }
 
-.GHnav {
+.AboutProjectNav {
     position: absolute;
-    top: 50%;
+    top: 53%;
     margin-top: -80px;
     width: 6vh;
     height: 6vh;
@@ -1380,7 +1423,7 @@ animation-play-state: paused;
 .nav {
     position: absolute;
     top: 40%;
-    margin-top: -80px;    
+    margin-top: -80px;
     width: 6vh;
     height: 6vh;
     z-index: 2;
@@ -1425,7 +1468,6 @@ animation-play-state: paused;
     width: 4.5vh;
     height: 4.5vh;
     position: absolute;
-
     z-index: 2;
     cursor: pointer;
     border: none;
@@ -1446,20 +1488,16 @@ animation-play-state: paused;
 
 .MPcarousel {
     height: 80vh;
-
     position: relative;
     width: 100%;
     margin: 0 auto;
-
 }
 
 .MPcarousel-content {
     height: 100%;
-
     position: relative;
     overflow: hidden;
     transition: width .4s;
-
 }
 
 .MPslide {
@@ -1469,12 +1507,34 @@ animation-play-state: paused;
     position: absolute;
     z-index: 1;
     transition: left .4s cubic-bezier(.47, .13, .15, .89);
-    opacity: 0.7;
-    
+    opacity: 0.6;
 }
 
 .centerElement {
     opacity: 1;
+
+    
+}
+@keyframes MPcircleMove {
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(-19px);
+    }
+}
+.MPcircle {
+    position: absolute;
+    background-color: #FFE28B;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    left: 49%;
+    bottom: 10%;
+    z-index: 6;
+    animation: MPcircleMove 5s infinite;
+
 }
 
 .MPnav {
@@ -1494,13 +1554,14 @@ animation-play-state: paused;
 .MPnav-left {
     left: 0px;
     top: 0;
-
 }
 
 .MPnav-right {
     right: 0px;
     top: 0;
 }
+
+
 
 /* MP Carousel */
 
@@ -1514,6 +1575,9 @@ animation-play-state: paused;
     width: 100%;
 }
 
+.shadowAll {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
 .photos {
     position: relative;
     display: flex;
@@ -1522,7 +1586,7 @@ animation-play-state: paused;
     align-items: center;
     width: 100%;
     opacity: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .photo {
