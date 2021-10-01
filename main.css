@@ -2,6 +2,52 @@
     .border-radius {
         border-radius: 0.5em !important;
     }
+    .centeredTQ {
+        height: 10px;
+        bottom: 12% !important;
+
+    }
+    .column {
+        align-items: center;
+        justify-content: center;
+    }
+    .marginInner {
+        margin: 0 6vh !important;
+    }
+    .tArrow {
+        font-size: 10px !important;
+    }
+    .se-arrow {
+        width: 10px !important;
+    }
+    .carousel-content {
+        height: 35vh !important;
+    }
+    .carousel {
+        height: 35vh !important;
+    }
+    .nav {
+        top: 85% !important;
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .AboutProjectNav {
+        top: 110% !important;
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .nav-left {
+        left: 80px !important;
+    }
+    .nav-right {
+        right: 80px !important;
+    }
+    .marginAllTESING {
+        margin: 0px 0 !important;
+    }
+    .marginAll {
+        margin: 0px 0 !important;
+    }
     /* gardeners hub*/
     .speech-bubble {
         position: relative;
@@ -72,11 +118,10 @@
         text-align: center;
     }
     .t-title-l {
-        font-weight: 300;
-        font-size: 1.3vh !important;
+        font-size: 9px !important;
     }
     .t-title-m {
-        font-size: 0.7vh !important;
+        font-size: 8px !important;
         margin: 0.5vh 0 !important;
         font-weight: 300 !important;
     }
@@ -97,19 +142,22 @@
         ;
     }
     .t-text-l {
-        font-size: 1.0vh !important;
+        font-size: 12px !important;
         font-weight: 100;
         margin: 2px/* top&bottom*/
         0px/* left&right*/
         ;
     }
     .t-text-m {
-        font-size: 1vh !important;
+        font-size: 10px !important;
         margin: 0 !important;
     }
     .t-text-s {
         font-size: 0.6vh !important;
         margin: 0 1vh!important;
+    }
+    .tTQ {
+        font-size: 10px !important;
     }
     .marquee-text {
         font-size: 1.5vh !important;
@@ -142,12 +190,6 @@
         margin-left: -1.0vh !important;
         margin-right: -1.0vh !important;
     }
-    .carousel-content {
-        height: 20vh !important;
-    }
-    .carousel {
-        height: 20vh !important;
-    }
     .slide {
         height: 200px !important;
     }
@@ -170,8 +212,8 @@
     }
     .vertical-line {
         border-left: 1px solid rgb(194, 194, 194) !important;
-        height: 20px !important;
-        margin: 30px/* top&bottom*/
+        height: 2px !important;
+        margin: 10px/* top&bottom*/
         15px !important/* left&right*/
         ;
     }
@@ -260,12 +302,6 @@
     #photos {
         width: 160px !important;
     }
-    .nav-left {
-        left: 130px !important;
-    }
-    .nav-right {
-        right: 130px !important;
-    }
     #rc {
         width: 100px !important;
     }
@@ -282,9 +318,6 @@
     }
     .t-tl {
         font-size: 16px !important;
-    }
-    .se-arrow {
-        width: 1vh !important;
     }
     /* content */
     #myBtn {
@@ -336,35 +369,25 @@
     /* footer */
 }
 
-@media screen and (min-width:1880px) {
-    .marginAll {
-        margin: 0px 30vh !important;
-    }
-    .AboutProjectNav {
-        top: 38% !important;
-    }
-    .nav {
-        top: 23% !important;
-    }
-}
+@media screen and (min-width:1880px) {}
 
 table {
     border-collapse: collapse;
     width: 100%;
     border-style: hidden;
-    font-size: 1.8vh;
+    font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
 }
 
 td, th {
     border: 1px solid #eeeeee;
     text-align: left;
-    padding: 2vh;
-    height: 8vh;
+    padding: 1vh;
+    height: 2vh;
 }
 
 td {
-    font-weight: 100;
+    font-weight: 200;
 }
 
 th {
@@ -399,6 +422,7 @@ a:link.text-about-resume {
     text-decoration-line: underline;
     text-underline-offset: 6px;
 }
+
 a:link.textProject {
     text-decoration-line: underline;
     text-underline-offset: 4px;
@@ -436,7 +460,6 @@ svg {
 
 /* Hover */
 
-
 .ArrowHover {
     display: inline-block;
     transition-duration: 0.5s;
@@ -468,6 +491,7 @@ svg {
 .float:hover {
     transform: translateY(-15px);
 }
+
 @keyframes hover-float {
     50% {
         transform: translateY(-3px);
@@ -520,14 +544,27 @@ br {
     display: block;
     height: 6vw;
 }
+
+.blankHS {
+    display: block;
+    height: 3.0vh;
+}
+
+.blankHM {
+    display: block;
+    height: 6.0vh;
+}
+
 .blankHL {
     display: block;
-    height: 9vw;
+    height: 14.0vh;
 }
+
 .blankHXL {
     display: block;
     height: 20vw;
 }
+
 .blank-lineheight-xl {
     display: block;
     height: 18vw;
@@ -685,29 +722,32 @@ body {
     line-height: 1.6;
 }
 
-
 .t-intro {
     font-weight: 100;
     font-size: 5.8vh;
     line-height: 1.2;
 }
+
 .tTQ {
     font-family: 'Lato', sans-serif;
     font-size: 2.6vh;
     line-height: 1.6;
     font-weight: 300;
+    margin: 0;
 }
 
-.containerTQ{
+.containerTQ {
     position: relative;
     text-align: center;
 }
+
 .centeredTQ {
     position: absolute;
     bottom: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
+
 .divider {
     width: 1px;
     /* weight */
@@ -768,6 +808,12 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+.align-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .align-bottom {
@@ -923,7 +969,7 @@ body {
 }
 
 .width-xs {
-    width: 10vw;
+    width: 12rem;
     margin: 2vw;
 }
 
@@ -966,14 +1012,37 @@ body {
     width: 42vw;
     margin: 4vw;
 }
+
+.widthS {
+    width: 20vw;
+    margin: 0;
+}
+
+.widthM {
+    width: 30vw;
+    margin: 0;
+}
+
+.widthMM {
+    width: 38vw;
+    margin: 0;
+}
+
 .widthL {
     width: 40vw;
-    margin:0;
+    margin: 0;
 }
+
 .widthXL {
     width: 50vw;
-    margin:0;
+    margin: 0;
 }
+
+.widthXXL {
+    width: 68vw;
+    margin: 0;
+}
+
 .width {
     width: 15vw;
     margin: 2vw;
@@ -1025,6 +1094,20 @@ body {
     width: 130px;
     margin-top: 0px;
     margin-bottom: 18px;
+}
+
+.horizontalLAM {
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    height: 4px;
+    width: 130px;
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+
+.verticalLAM {
+    border-left: 1px solid rgb(255, 255, 255, 0.8);
+    height: 5.0rem;
+    margin: 0vh 5vh;
 }
 
 .horizontal-line-mp {
@@ -1081,8 +1164,8 @@ body {
     border: solid black;
     border-width: 0 1px 1px 0;
     display: inline-block;
-    height: 2vh;
-    width: 2vh;
+    height: 1rem;
+    width: 1rem;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
@@ -1104,6 +1187,10 @@ body {
 
 .marginAll {
     margin: 0px 12vh;
+}
+
+.marginAllTESING {
+    margin: 0px 5%;
 }
 
 .marginInner {
@@ -1178,6 +1265,11 @@ body {
     margin: 2px 2vw;
 }
 
+.iconLOGO {
+    width: 6vh;
+    margin: 9px;
+}
+
 .icon-m {
     width: 9vh;
     margin: 35px 5vw;
@@ -1206,10 +1298,14 @@ body {
     color: #FED256;
 }
 
+.colorAP {
+    color: #5384ED;
+}
+
 .text-project-numbers {
     display: flex;
     justify-content: center;
-    margin: 80px 0;
+    margin: 10% 0;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 100;
     font-size: 120px;
@@ -1225,11 +1321,20 @@ body {
     font-size: 30px;
     margin-bottom: 30px;
 }
-.bg-color-am {
-    background-color: #ebebeb;
-    margin: 0;
-    height: 60vw;
+
+.bgColorAM {
+    height: 120vw;
+    background-image: -webkit-linear-gradient(265deg, #5384ED 90%, #ffffff 10%);
 }
+
+.bgColorAMRV {
+    background-image: -webkit-linear-gradient(85deg, #5384ED 90%, #ffffff 10%);
+}
+
+.tColorAM {
+    color: #d9e0f0;
+}
+
 .bg-color-mp {
     background-color: #FED256;
     margin: 0;
@@ -1267,12 +1372,6 @@ body {
 }
 
 /* content */
-
-.se-arrow {
-    width: 3vh;
-    height: auto;
-    margin-left: 1%;
-}
 
 #rc {
     width: 300px;
@@ -1390,7 +1489,7 @@ animation-play-state: paused;
 .carousel {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 45vw;
     margin: 0 auto;
 }
 
@@ -1412,8 +1511,8 @@ animation-play-state: paused;
     position: absolute;
     top: 53%;
     margin-top: -80px;
-    width: 6vh;
-    height: 6vh;
+    width: 60px;
+    height: 60px;
     z-index: 2;
     cursor: pointer;
     border: none;
@@ -1422,10 +1521,10 @@ animation-play-state: paused;
 
 .nav {
     position: absolute;
-    top: 40%;
+    top: 30%;
     margin-top: -80px;
-    width: 6vh;
-    height: 6vh;
+    width: 60px;
+    height: 60px;
     z-index: 2;
     cursor: pointer;
     border: none;
@@ -1512,9 +1611,8 @@ animation-play-state: paused;
 
 .centerElement {
     opacity: 1;
-
-    
 }
+
 @keyframes MPcircleMove {
     50% {
         transform: translateY(-3px);
@@ -1523,6 +1621,7 @@ animation-play-state: paused;
         transform: translateY(-19px);
     }
 }
+
 .MPcircle {
     position: absolute;
     background-color: #FFE28B;
@@ -1534,7 +1633,6 @@ animation-play-state: paused;
     bottom: 10%;
     z-index: 6;
     animation: MPcircleMove 5s infinite;
-
 }
 
 .MPnav {
@@ -1561,8 +1659,6 @@ animation-play-state: paused;
     top: 0;
 }
 
-
-
 /* MP Carousel */
 
 /* Photography */
@@ -1578,6 +1674,7 @@ animation-play-state: paused;
 .shadowAll {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
+
 .photos {
     position: relative;
     display: flex;
@@ -1679,23 +1776,43 @@ button {
 
 .t-title-l {
     font-weight: 400;
-    font-size: 2.6vh;
+    font-size: 1.9rem;
     text-transform: uppercase;
 }
 
+.tTXL {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.tSXL {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+.tSL {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0;
+}
+
 .t-title-m {
-    font-size: 2.6vh;
+    font-size: 1.7rem;
     font-weight: 300;
     margin: 0;
 }
 
 .t-title-s {
-    font-size: 2.2vh;
+    font-size: 1.6rem;
     font-weight: 300;
+    margin: 0;
 }
 
 .t-subtitle-l {
-    font-size: 2.8vh;
+    font-size: 2.0em;
     font-weight: 300;
     margin: 6px/* top&bottom*/
     0px/* left&right*/
@@ -1703,7 +1820,7 @@ button {
 }
 
 .t-subtitle-m {
-    font-size: 24px;
+    font-size: 1.6rem;
     font-weight: 300;
     margin: 6px/* top&bottom*/
     0px/* left&right*/
@@ -1711,29 +1828,43 @@ button {
 }
 
 .t-text-l {
-    font-size: 3.0vh;
+    font-size: 1.9rem;
     font-weight: 100;
     margin: 2px/* top&bottom*/
     0px/* left&right*/
     ;
 }
 
+.tArrow {
+    font-size: 2.7em;
+    font-weight: 100;
+    margin: 2px/* top&bottom*/
+    0px/* left&right*/
+    ;
+}
+
+.se-arrow {
+    width: 2.6em;
+    height: auto;
+    margin-left: 1%;
+}
+
 .t-text-m {
-    font-size: 2.6vh;
+    font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.6;
     margin: 0;
 }
 
 .t-text-s {
-    font-size: 2.2vh;
+    font-size: 1.4rem;
     font-weight: 100;
     margin: 0;
     line-height: 1.4;
 }
 
 .t-icon-s {
-    font-size: 1.6vh;
+    font-size: 1.0rem;
     font-weight: 300;
     margin: 0;
     line-height: 1.4;
