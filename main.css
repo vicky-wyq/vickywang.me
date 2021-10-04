@@ -1,52 +1,129 @@
 @media screen and (max-width: 950px) {
+    .widthS {
+        width: 38vw !important;
+    }
+    .widthMM {
+        width: 65vw !important;
+    }
+    .widthM {
+        width: 50vw !important;
+    }
+    .alignCPH {
+        align-items: center;
+    }
+    /* step progress bar */
+    .stepper-item::before {
+        top: 4px !important;
+    }
+    .stepper-item::after {
+        top: 4px !important;
+    }
+    .stepper-item .step-counter {
+        width: 5px !important;
+        height: 5px !important;
+        border-radius: 50%;
+        border: 3px solid #ccc !important;
+    }
+    .stepper-item.active {
+        font-weight: bold;
+    }
+    .stepper-item.completed .step-counter {
+        border: 3px solid #5384ED !important;
+    }
+    .stepper-item.completed::after {
+        top: 4px !important;
+    }
+    .step-name {
+        font-size: 8px !important;
+    }
+    /* step progress bar */
     .border-radius {
         border-radius: 0.5em !important;
+    }
+    .blankPHONE {
+        height: 220px !important;
     }
     .centeredTQ {
         height: 10px;
         bottom: 12% !important;
-
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
     }
     .marginInner {
         margin: 0 6vh !important;
     }
+    .horizontalLAM {
+        height: 2px !important;
+        width: 90px !important;
+    }
     .tArrow {
         font-size: 10px !important;
+    }
+    .item-height-m {
+        height: 45vw !important;
+    }
+    .tSL {
+        font-size: 0.5rem !important;
+        font-weight: 100;
+        margin: 0;
+    }
+    .text-project-numbers {
+        font-size: 50px !important;
+        margin: 2% 0 !important;
+    }
+    table {
+        font-size: 0.3rem !important;
+    }
+    .tTXL {
+        font-size: 1.0rem !important;
+    }
+    .blankHS {
+        height: 1.0vh !important;
+    }
+    .blankHL {
+        height: 3.0vh !important;
+    }
+    .blankHXL {
+        height: 16vH !important;
+    }
+    .bgColorAM {
+        height: 900px !important;
+    }
+    .verLineAMWhite {
+        height: 2.0rem !important;
+    }
+    .iconLOGO {
+        width: 1rem !important;
     }
     .se-arrow {
         width: 10px !important;
     }
-    .carousel-content {
-        height: 35vh !important;
-    }
     .carousel {
-        height: 35vh !important;
-    }
-    .nav {
-        top: 85% !important;
-        width: 25px !important;
-        height: 25px !important;
+        height: 45vh !important;
     }
     .AboutProjectNav {
-        top: 110% !important;
-        width: 25px !important;
-        height: 25px !important;
+        top: 70% !important;
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .nav {
+        top: 60% !important;
+        width: 20px !important;
+        height: 20px !important;
     }
     .nav-left {
-        left: 80px !important;
+        left: 50px !important;
     }
     .nav-right {
-        right: 80px !important;
-    }
-    .marginAllTESING {
-        margin: 0px 0 !important;
+        right: 50px !important;
     }
     .marginAll {
         margin: 0px 0 !important;
+    }
+    .designThinkingAM {
+        border: 1px solid #5384ED !important;
+    }
+    .icon-list {
+        width: 3px !important;
+        margin-right: 10px;
     }
     /* gardeners hub*/
     .speech-bubble {
@@ -117,17 +194,6 @@
     .text-center {
         text-align: center;
     }
-    .t-title-l {
-        font-size: 9px !important;
-    }
-    .t-title-m {
-        font-size: 8px !important;
-        margin: 0.5vh 0 !important;
-        font-weight: 300 !important;
-    }
-    .t-title-s {
-        font-size: 0.6vh !important;
-    }
     .t-subtitle-l {
         font-size: 1.0vh !important;
         margin: 6px/* top&bottom*/
@@ -141,23 +207,39 @@
         0px/* left&right*/
         ;
     }
-    .t-text-l {
+    .t-subtitle {
+        font-size: 6px !important;
+    }
+    .t-time {
+        font-size: 10px !important;
+    }
+    .t-title-l {
+        font-size: 14px !important;
+    }
+    .t-title-m {
         font-size: 12px !important;
+        margin: 0.5vh 0 !important;
+        font-weight: 300 !important;
+    }
+    .t-title-s {
+        font-size: 10px !important;
+    }
+    .t-text-l {
+        font-size: 13px !important;
         font-weight: 100;
         margin: 2px/* top&bottom*/
         0px/* left&right*/
         ;
     }
     .t-text-m {
-        font-size: 10px !important;
+        font-size: 12px !important;
         margin: 0 !important;
     }
     .t-text-s {
-        font-size: 0.6vh !important;
-        margin: 0 1vh!important;
+        font-size: 10px !important;
     }
     .tTQ {
-        font-size: 10px !important;
+        font-size: 14px !important;
     }
     .marquee-text {
         font-size: 1.5vh !important;
@@ -171,6 +253,9 @@
     }
     .row-change {
         flex-direction: column !important;
+    }
+    .row-changeRV {
+        flex-direction: column-reverse !important;
     }
     .icon-s {
         width: 3vh !important;
@@ -275,8 +360,8 @@
         line-height: 40px !important;
     }
     .t-me-1 {
-        margin-top: 10px!important;
-        font-size: 12px !important;
+        margin-top: 20px!important;
+        font-size: 14px !important;
     }
     .t-intro {
         font-size: 20px !important;
@@ -329,15 +414,6 @@
         margin-bottom: -20px !important;
     }
     /* about me */
-    .t-title {
-        font-size: 8px !important;
-    }
-    .t-subtitle {
-        font-size: 6px !important;
-    }
-    .t-time {
-        font-size: 6px !important;
-    }
     /* about me */
     /* footer */
     .footer {
@@ -369,7 +445,47 @@
     /* footer */
 }
 
-@media screen and (min-width:1880px) {}
+@media screen and (min-width:1920px) {
+    .marginAll1920 {
+        margin: 0px 42vh !important;
+    }
+    .designThinkingAM {
+        height: 3vw !important;
+        width: 8vw !important;
+    }
+    .widthS1920 {
+        width: 13vw !important;
+    }
+    .widthM {
+        width: 23vw !important;
+        margin: 0;
+    }
+    .widthMM1920 {
+        width: 25vw !important;
+    }
+    .AboutProjectNav {
+        top: 45% !important;
+    }
+    .Nav {
+        top: 23% !important;
+    }
+    .carousel {
+        height: 28vw !important;
+    }
+    .blankHXS {
+        height: 0.5vh !important;
+    }
+    .blankHS {
+        height: 1.5vh !important;
+    }
+    .blankHM {
+        height: 3.0vh !important;
+    }
+    .blankHL1920 {
+        height: 7.0vh !important;
+    }
+
+}
 
 table {
     border-collapse: collapse;
@@ -545,6 +661,11 @@ br {
     height: 6vw;
 }
 
+.blankHXS {
+    display: block;
+    height: 1.0vh;
+}
+
 .blankHS {
     display: block;
     height: 3.0vh;
@@ -563,6 +684,15 @@ br {
 .blankHXL {
     display: block;
     height: 20vw;
+}
+
+.widthAll {
+    width: 60vw;
+}
+
+.blankPHONE {
+    display: block;
+    height: 0vw;
 }
 
 .blank-lineheight-xl {
@@ -787,6 +917,89 @@ body {
 
 /* body-intro */
 
+/* step progress bar */
+
+.stepper-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 15px;
+    left: -50%;
+    z-index: 2;
+}
+
+.stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 15px;
+    left: 50%;
+    z-index: 2;
+}
+
+.stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 10px solid #ccc;
+    background: white;
+    margin-bottom: 6px;
+}
+
+.stepper-item.active {
+    font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+    border: 10px solid #5384ED;
+}
+
+.stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #657baa;
+    width: 100%;
+    top: 15px;
+    left: 50%;
+    z-index: 3;
+}
+
+.stepper-item:first-child::before {
+    content: none;
+}
+
+.stepper-item:last-child::after {
+    content: none;
+}
+
+.step-name {
+    font-size: 18px;
+}
+
+/* step progress bar */
+
 /* body-project- new css test */
 
 .column {
@@ -875,13 +1088,17 @@ body {
     border-radius: 50%;
 }
 
-/* .circle-mp:hover {
-    transform: scale(1.1);
-    opacity: .9;
-    cursor: pointer;
-    transition: transform 330ms ease-in-out;
-    border: 1vh solid #FED256;
-}*/
+.designThinkingAM {
+    border: 5px solid;
+    border-width: 5px;
+    border-image-slice: 1;
+    height: 4vw;
+    width: 14vw;
+}
+
+.designThinkingAM-blue {
+    border-image-source: linear-gradient(to left, #BACCF4, #5384ED);
+}
 
 .circle-gh {
     height: 20vh;
@@ -994,10 +1211,6 @@ body {
     margin: 2vw;
 }
 
-.widthMM {
-    width: 20vw;
-}
-
 .width-l {
     width: 32vw;
     margin: 2vw;
@@ -1104,10 +1317,16 @@ body {
     margin-bottom: 18px;
 }
 
-.verticalLAM {
+.verLineAMWhite {
     border-left: 1px solid rgb(255, 255, 255, 0.8);
     height: 5.0rem;
     margin: 0vh 5vh;
+}
+
+.verLineAM {
+    border-left: 1px solid gray;
+    height: 5.0rem;
+    margin: 3vw 5vw;
 }
 
 .horizontal-line-mp {
@@ -1121,7 +1340,7 @@ body {
     border-left: 1px solid gray;
     height: 160px;
     margin: 120px/* top&bottom*/
-    120px;
+    60px;
     /* left&right*/
 }
 
@@ -1186,11 +1405,7 @@ body {
 }
 
 .marginAll {
-    margin: 0px 12vh;
-}
-
-.marginAllTESING {
-    margin: 0px 5%;
+    margin: 0px 14vh;
 }
 
 .marginInner {
@@ -1323,12 +1538,17 @@ body {
 }
 
 .bgColorAM {
-    height: 120vw;
+    height: 130vw;
     background-image: -webkit-linear-gradient(265deg, #5384ED 90%, #ffffff 10%);
 }
 
 .bgColorAMRV {
     background-image: -webkit-linear-gradient(85deg, #5384ED 90%, #ffffff 10%);
+}
+
+.bgGrey {
+    background-color: #f5f5f5;
+    margin: 0;
 }
 
 .tColorAM {
@@ -1486,6 +1706,24 @@ animation-play-state: paused;
 
 /* architecture */
 
+.slide {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: left .4s cubic-bezier(.47, .13, .15, .89);
+}
+
+.nav {
+    position: absolute;
+    top: 23%;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
 .carousel {
     position: relative;
     width: 100%;
@@ -1500,29 +1738,9 @@ animation-play-state: paused;
     height: 100%;
 }
 
-.slide {
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47, .13, .15, .89);
-}
-
 .AboutProjectNav {
     position: absolute;
-    top: 53%;
-    margin-top: -80px;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-.nav {
-    position: absolute;
-    top: 30%;
-    margin-top: -80px;
+    top: 43%;
     width: 60px;
     height: 60px;
     z-index: 2;
@@ -1801,12 +2019,12 @@ button {
 
 .t-title-m {
     font-size: 1.7rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
 }
 
 .t-title-s {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
     margin: 0;
 }

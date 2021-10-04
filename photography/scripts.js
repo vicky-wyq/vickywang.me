@@ -58,21 +58,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: trigger,
-        start: "trigger 600px",
+        start: "trigger 300px",
         end: "trigger 800px",
         scrub: 3,
-        markers: false
+        markers: true
       },
     })
     tl.to(trigger, {
       color: "#A9D9D9",
       duration: 2,
-      y: -30
+      y: -5
     })
       .to(trigger, {
         color: "#000000",
         duration: 1,
-        y: 20
+        y: 5
 
       });
   }
