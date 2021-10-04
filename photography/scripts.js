@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         start: "trigger 300px",
         end: "trigger 800px",
         scrub: 3,
-        markers: true
+        markers: false
       },
     })
     tl.to(trigger, {

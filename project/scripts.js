@@ -67,12 +67,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     tl.to(trigger, {
       color: "#A9D9D9",
       duration: 2,
-      y: -30
+      y: -5
     })
       .to(trigger, {
         color: "#000000",
         duration: 1,
-        y: 20
+        y: 5
 
       });
   }
