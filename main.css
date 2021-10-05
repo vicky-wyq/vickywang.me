@@ -2,14 +2,43 @@
     .widthS {
         width: 38vw !important;
     }
+    .widthXS {
+        width: 28vw !important;
+        margin: 0;
+    }
     .widthMM {
         width: 65vw !important;
     }
     .widthM {
         width: 50vw !important;
     }
+    .widthXL {
+        width: 80vw !important;
+    }
+
+    
     .alignCPH {
         align-items: center;
+    }
+    .circle-mp {
+        height: 22vh !important;
+        width: 22vh !important;
+        border-radius: 50%;
+    }
+    .bg-color-mp {
+        height: 100vw !important;
+    }
+    .MPcarousel {
+        height: 23rem !important;
+    }
+    .MPcircle {
+        width: 10px !important;
+        height: 10px !important;
+        left: 49% !important;
+        bottom: 20% !important;
+    } 
+    .vertical-line-mp {
+        height: 3rem !important;
     }
     /* step progress bar */
     .stepper-item::before {
@@ -82,7 +111,7 @@
         height: 3.0vh !important;
     }
     .blankHXL {
-        height: 16vH !important;
+        height: 16vh !important;
     }
     .bgColorAM {
         height: 900px !important;
@@ -194,8 +223,11 @@
     .text-center {
         text-align: center;
     }
+    .t-icon-s {
+        font-size: 0.5rem !important;
+    }
     .t-subtitle-l {
-        font-size: 1.0vh !important;
+        font-size: 1.5rem !important;
         margin: 6px/* top&bottom*/
         0px/* left&right*/
         ;
@@ -222,7 +254,7 @@
         font-weight: 300 !important;
     }
     .t-title-s {
-        font-size: 10px !important;
+        font-size: 8px !important;
     }
     .t-text-l {
         font-size: 13px !important;
@@ -456,12 +488,15 @@
     .widthS1920 {
         width: 13vw !important;
     }
-    .widthM {
+    .widthM1920 {
         width: 23vw !important;
         margin: 0;
     }
     .widthMM1920 {
         width: 25vw !important;
+    }
+    .widthL1920 {
+        width: 35vw !important;
     }
     .AboutProjectNav {
         top: 45% !important;
@@ -484,6 +519,7 @@
     .blankHL1920 {
         height: 7.0vh !important;
     }
+
 
 }
 
@@ -683,7 +719,7 @@ br {
 
 .blankHXL {
     display: block;
-    height: 20vw;
+    height: 20rem;
 }
 
 .widthAll {
@@ -1075,10 +1111,20 @@ body {
     font-weight: 300;
     box-shadow: 0 2px 4px 0 rgba(238, 238, 238, 0.795), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
 }
+.research-arrow {
+    margin: 6rem 3rem;
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
 .circle-mp {
-    height: 20vh;
-    width: 20vh;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
 }
 
@@ -1225,6 +1271,10 @@ body {
     width: 42vw;
     margin: 4vw;
 }
+.widthXS {
+    width: 12vw;
+    margin: 0;
+}
 
 .widthS {
     width: 20vw;
@@ -1247,7 +1297,7 @@ body {
 }
 
 .widthXL {
-    width: 50vw;
+    width: 60vw;
     margin: 0;
 }
 
@@ -1378,16 +1428,6 @@ body {
 
 /* body-project- new css test */
 
-.research-arrow {
-    margin: 9vh 4.5vh;
-    border: solid black;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
 
 .body-h-project {
     display: flex;
@@ -1408,10 +1448,12 @@ body {
     margin: 0px 14vh;
 }
 
-.marginInner {
-    margin: 0 8vh;
+.marginElm {
+    margin: 2rem;
 }
-
+.marginIcon {
+    margin: 1.5rem;
+}
 .margin-none {
     margin: 0;
 }
@@ -1491,7 +1533,7 @@ body {
 }
 
 .icon-l {
-    width: 12vh;
+    width: 8rem;
 }
 
 .icon-xl {
@@ -1804,7 +1846,7 @@ animation-play-state: paused;
 /* MP Carousel */
 
 .MPcarousel {
-    height: 80vh;
+    height: 53rem;
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -1819,7 +1861,7 @@ animation-play-state: paused;
 
 .MPslide {
     height: 100%;
-    margin-top: -180px;
+    margin-top: 0;
     width: 20%;
     position: absolute;
     z-index: 1;
@@ -1829,6 +1871,7 @@ animation-play-state: paused;
 
 .centerElement {
     opacity: 1;
+    z-index: 5;
 }
 
 @keyframes MPcircleMove {
@@ -1843,11 +1886,11 @@ animation-play-state: paused;
 .MPcircle {
     position: absolute;
     background-color: #FFE28B;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid white;
-    left: 49%;
+    left: 49.5%;
     bottom: 10%;
     z-index: 6;
     animation: MPcircleMove 5s infinite;
@@ -1994,7 +2037,7 @@ button {
 
 .t-title-l {
     font-weight: 400;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
 }
 
@@ -2018,7 +2061,7 @@ button {
 }
 
 .t-title-m {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin: 0;
 }
