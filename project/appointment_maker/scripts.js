@@ -67,69 +67,6 @@ function renderSlides(slides) {
   })
 }
 
-function createCarousel(slidesClass, leftNavClass, rightNavClass) {
-  var slideElements = document.querySelectorAll(slidesClass);
-
-  var slides = initializeSlides(slideElements);
-  renderSlides(slides);
-
-  var leftButton = document.querySelector(leftNavClass);
-  leftButton.addEventListener('click', () => {
-    moveLeft(slides);
-    renderSlides(slides);
-  })
-
-  var rightButton = document.querySelector(rightNavClass);
-  rightButton.addEventListener('click', () => {
-    moveRight(slides);
-    renderSlides(slides);
-  })
-}
-
-document.addEventListener("DOMContentLoaded", function (event) {
-  //do work
-  createCarousel('.hfSlide', '.hfLeft', '.hfRight');
-  createCarousel('.mfSlide', '.mfLeft', '.mfRight');
-  createCarousel('.hfSlide1', '.hfLeft1', '.hfRight1');
 
 
 
-  //0901/2021 Carousel
-
-
-
-
-
-
-
-  // For more information, see greensock.com/docs/v3/Plugins/ScrollTrigger
-  gsap.registerPlugin(ScrollTrigger);
-  var addColorTriggerMP = function (triggerMP) {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: triggerMP,
-        start: "center 300px",
-        end: "bottom 900px",
-        scrub: 3,
-        //toggleClass: "active",
-        markers: false
-      },
-    })
-    tl.to(triggerMP, {
-      backgroundColor: "#5384ED",
-      duration: 30,
-      y: 50
-    })
-      .to(triggerMP, {
-        backgroundColor: "#F5F5F5",
-        duration: 15,
-        y: 90
-      });
-  }
-  addColorTriggerMP("#bg-color-triggerAP")
-  //bg color change
-  //ScrollTrigger
-
-
-
-});
