@@ -65,7 +65,7 @@ Mint" transform="translate(71 420)" fill="#707070" font-size="16" font-family="H
           <path id="path-6" data-name="path" d="M1440.355,4365.126l2.325,2.325,4.89-4.89" transform="translate(-1432 -4352.519)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" opacity="0"/>
         </g>
         <rect id="photo" width="315" height="212" rx="8" transform="translate(30 124)" fill="#eee"/>
-        <g id="icon-share" transform="translate(327 67)">
+        <g id="widthShare" transform="translate(327 67)">
           <path id="path-7" data-name="path" d="M487.689,660.44v8.847a4.006,4.006,0,0,1-4.005,4.006h-8.848a4.006,4.006,0,0,1-4.005-4.006V660.44" transform="translate(-470.831 -652.117)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <path id="path-8" data-name="path" d="M479.26,666.866V652.117l-4.764,4.764" transform="translate(-470.831 -652.117)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <line id="line-5" data-name="line" x2="4.764" y2="4.764" transform="translate(8.429)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
