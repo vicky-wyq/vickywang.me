@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1173" viewBox="0 0 900 1173">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2203" data-name="Rectangle 2203" width="374" height="808" rx="50" transform="translate(264 182)" fill="#3100ff"/>
+    </clipPath>
+    <filter id="rectangle" x="218" y="142" width="465" height="797" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1f3f6" stop-opacity="0.8"/>
+      <stop offset="0.194" stop-color="#f8f8f4" stop-opacity="0"/>
+      <stop offset="0.79" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#868686" stop-opacity="0.102"/>
+    </linearGradient>
+    <clipPath id="clip-mf_signin1">
+      <rect width="900" height="1173"/>
+    </clipPath>
+  </defs>
+  <g id="mf_signin1" clip-path="url(#clip-mf_signin1)">
+    <g id="phone-bottom" transform="translate(109)">
+      <path id="Path_2462" data-name="Path 2462" d="M60,0H326a60,60,0,0,1,60,60V769a60,60,0,0,1-60,60H60A60,60,0,0,1,0,769V60A60,60,0,0,1,60,0Z" transform="translate(148 172)" fill="#fff"/>
+      <path id="Path_2436" data-name="Path 2436" d="M50,0H324a50,50,0,0,1,50,50V758a50,50,0,0,1-50,50H50A50,50,0,0,1,0,758V50A50,50,0,0,1,50,0Z" transform="translate(155 182)" fill="#f5f5f5"/>
+      <path id="Path_2434" data-name="Path 2434" d="M40.929,0H332.343a40.929,40.929,0,0,1,40.929,40.929v726.9a40.929,40.929,0,0,1-40.929,40.929H40.929A40.929,40.929,0,0,1,0,767.828V40.929A40.929,40.929,0,0,1,40.929,0Z" transform="translate(155.147 182.355)" fill="none"/>
+      <rect id="Rectangle_2199" data-name="Rectangle 2199" width="13" height="10" transform="translate(214 172)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2201" data-name="Rectangle 2201" width="11" height="10" transform="translate(457 172)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2200" data-name="Rectangle 2200" width="13" height="11" transform="translate(214 990)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2202" data-name="Rectangle 2202" width="11" height="11" transform="translate(457 990)" fill="#6b7f99" opacity="0.2"/>
+    </g>
+    <g id="Mask_Group_116" data-name="Mask Group 116" clip-path="url(#clip-path)">
+      <g id="Group_1668" data-name="Group 1668" transform="translate(273 -105)">
+        <g id="bg-shadow" transform="translate(-10 287)">
+          <ellipse id="ellipse" cx="149.5" cy="48.5" rx="149.5" ry="48.5" transform="translate(38 610)" opacity="0.15"/>
+          <g transform="matrix(1, 0, 0, 1, -263, -182)" filter="url(#rectangle)">
+            <path id="rectangle-2" data-name="rectangle" d="M0,0H375a0,0,0,0,1,0,0V671a36,36,0,0,1-36,36H36A36,36,0,0,1,0,671V0A0,0,0,0,1,0,0Z" transform="translate(263 182)" fill="#fff"/>
+          </g>
+        </g>
+        <text id="Sign_In" data-name="Sign In" transform="translate(178 1047)" fill="#c7c7c7" font-size="14" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="-26.059" y="0">SIGN IN</tspan></text>
+        <g id="button" transform="translate(20 904)">
+          <rect id="rectangle-3" data-name="rectangle" width="315" height="60" rx="30" fill="#c7c7c7"/>
+          <g id="text-arrow" transform="translate(2)">
+            <text id="Create_Account" data-name="Create Account" transform="translate(109 35)" fill="#fff" font-size="14" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">CREATE ACCOUNT</tspan></text>
+            <g id="icon-arrow-small" transform="translate(89 26)">
+              <path id="path" d="M1281.487,1163.709l4.157,4.157-4.157,4.157" transform="translate(-1275.794 -1163.709)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+              <line id="line" x1="9.326" transform="translate(0 4.155)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+            </g>
+          </g>
+        </g>
+        <rect id="Rectangle_2234" data-name="Rectangle 2234" width="315" height="60" rx="8" transform="translate(20 721)" fill="#eee"/>
+        <text id="Password" transform="translate(80 756)" fill="#c7c7c7" font-size="16" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="0">Password</tspan></text>
+        <g id="icon-padlock" transform="translate(41 739)">
+          <path id="path-2" data-name="path" d="M414,606v4.994A4.005,4.005,0,0,1,409.994,615H398.006A4.005,4.005,0,0,1,394,610.994V606" transform="translate(-394 -592.819)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="path-3" data-name="path" d="M394,602.146a4.005,4.005,0,0,1,4.006-4.005h11.988A4.005,4.005,0,0,1,414,602.146" transform="translate(-394 -592.819)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <circle id="ellipse-2" data-name="ellipse" cx="2.013" cy="2.013" r="2.013" transform="translate(7.987 10.166)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="path-4" data-name="path" d="M399.421,597.4a4.579,4.579,0,0,1,9.158,0" transform="translate(-394 -592.819)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <line id="line-2" data-name="line" y2="2.304" transform="translate(10 14.192)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <rect id="Rectangle_2235" data-name="Rectangle 2235" width="315" height="60" rx="8" transform="translate(20 646)" fill="#eee"/>
+        <text id="Email" transform="translate(80 681)" fill="#c7c7c7" font-size="16" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="0">Email</tspan></text>
+        <g id="icon-mail" transform="translate(41 669)">
+          <path id="path-5" data-name="path" d="M454,604v6.994A4.005,4.005,0,0,1,449.994,615H438.006A4.005,4.005,0,0,1,434,610.994V604" transform="translate(-434 -600)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="path-6" data-name="path" d="M439.175,600H452.1l-8.212,8.5L435.68,600Z" transform="translate(-434 -600)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <rect id="Rectangle_2236" data-name="Rectangle 2236" width="315" height="60" rx="8" transform="translate(20 571)" fill="#eee"/>
+        <text id="Full_Name" data-name="Full Name" transform="translate(80 606)" fill="#c7c7c7" font-size="16" font-family="Helvetica" letter-spacing="-0.01em"><tspan x="0" y="0">Full Name</tspan></text>
+        <g id="icon-account" transform="translate(42 592)">
+          <path id="path-7" data-name="path" d="M350.257,584.929a9.343,9.343,0,0,0-7.167-9.081v-1.039a4.1,4.1,0,1,0-4.358,0v1.039a9.343,9.343,0,0,0-7.167,9.081" transform="translate(-331.565 -567.243)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="icon-close" transform="translate(320 357)">
+          <line id="line-3" data-name="line" x2="14.213" y2="14.213" fill="none" stroke="#748a9d" stroke-linecap="round" stroke-width="1"/>
+          <line id="line-4" data-name="line" x2="14.213" y2="14.213" transform="translate(14.213) rotate(90)" fill="none" stroke="#748a9d" stroke-linecap="round" stroke-width="1"/>
+        </g>
+        <text id="MEAL_PLANNER" data-name="MEAL PLANNER" transform="translate(94 439)" fill="#707070" font-size="19" font-family="ArialRoundedMTBold, Arial Rounded MT Bold"><tspan x="2.417" y="18">MEAL PLANNER</tspan></text>
+        <g id="Path_2469" data-name="Path 2469" transform="translate(172.843 366.101)" fill="#fff">
+          <path d="M 20.42309379577637 35.84619522094727 C 16.30343437194824 35.84619522094727 12.43036365509033 34.24191665649414 9.51732349395752 31.32887649536133 C 6.604283809661865 28.41583633422852 5.000003814697266 24.54275512695312 5.000003814697266 20.423095703125 C 5.000003814697266 16.30343627929688 6.604283809661865 12.4303560256958 9.51732349395752 9.517315864562988 C 12.43036365509033 6.604275703430176 16.30344390869141 4.999995708465576 20.42309379577637 4.999995708465576 C 24.54274368286133 4.999995708465576 28.41582298278809 6.604275703430176 31.3288631439209 9.517315864562988 C 34.24190521240234 12.4303560256958 35.84618377685547 16.30343627929688 35.84618377685547 20.423095703125 C 35.84618377685547 24.54275512695312 34.24190521240234 28.41583633422852 31.3288631439209 31.32887649536133 C 28.41582298278809 34.24191665649414 24.54275321960449 35.84619522094727 20.42309379577637 35.84619522094727 Z" stroke="none"/>
+          <path d="M 20.42309379577637 10.00000381469727 C 14.6757869720459 10.00000381469727 10.00000190734863 14.67578887939453 10.00000190734863 20.423095703125 C 10.00000190734863 26.17040252685547 14.6757869720459 30.84618759155273 20.42309379577637 30.84618759155273 C 26.17040252685547 30.84618759155273 30.8461856842041 26.17040252685547 30.8461856842041 20.423095703125 C 30.8461856842041 14.67578887939453 26.17040252685547 10.00000381469727 20.42309379577637 10.00000381469727 M 20.42309379577637 3.814697265625e-06 C 31.70246315002441 3.814697265625e-06 40.84618759155273 9.143726348876953 40.84618759155273 20.423095703125 C 40.84618759155273 31.70246505737305 31.70246315002441 40.84618759155273 20.42309379577637 40.84618759155273 C 9.14372444152832 40.84618759155273 0 31.70246505737305 0 20.423095703125 C 0 9.143726348876953 9.14372444152832 3.814697265625e-06 20.42309379577637 3.814697265625e-06 Z" stroke="none" fill="#b5b5b5"/>
+        </g>
+        <path id="Path_2470" data-name="Path 2470" d="M-722.19,86.186V55.924l18.016,15.836,19.186-15.836V86.186" transform="translate(863.501 314.28)" fill="none" stroke="#b5b5b5" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+      </g>
+    </g>
+    <g id="phone-top" transform="translate(109)">
+      <rect id="Rectangle_2198" data-name="Rectangle 2198" width="374" height="808" rx="50" transform="translate(155 182)" fill="url(#linear-gradient)"/>
+      <g id="phone_dots_at_top" data-name="phone dots at top" transform="translate(317.479 195.336)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="1.5" cy="1.5" r="1.5" transform="translate(5.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_8" data-name="Ellipse 8" cx="1" cy="1" r="1" transform="translate(-0.479 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="1" cy="1" r="1" transform="translate(14.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="1" cy="1" r="1" transform="translate(20.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_4" data-name="Ellipse 4" cx="1" cy="1" r="1" transform="translate(26.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_5" data-name="Ellipse 5" cx="1" cy="1" r="1" transform="translate(39.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_7" data-name="Ellipse 7" cx="1.5" cy="1.5" r="1.5" transform="translate(45.521 -0.336)" fill="#9c9c9d"/>
+        <circle id="Ellipse_6" data-name="Ellipse 6" cx="1.5" cy="1.5" r="1.5" transform="translate(31.521 -0.336)" fill="#9c9c9d"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,12 +1,54 @@
 <html>
 
 <head>
+
   <link rel="stylesheet" href="main.css" />
   <script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="scripts_about.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" />
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Titillium Web', sans-serif; -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Roboto', sans-serif; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <!--font using hello-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Catamaran', sans-serif; -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font font-family: 'Lato', sans-serif; -->
+
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--jQuery-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--aos-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+  <!-- gsap -tool-bar-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=40"></script>
+  <!-- gsap - tool-bar-->
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+
+
+
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +60,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VICKY WANG" />
   <meta property="og:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :) " />
+    I enjoy design and code who loves solving challenging problems. 
+    Interested in what you see? Shoot me an email :) " />
   <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
@@ -30,156 +72,914 @@
   <meta name="twitter:site" content="VICKY WANG" />
   <meta name="twitter:creator" content="VICKY WANG" />
   <meta property="twitter:title" content="VICKY WANG">
-  <meta property="twitter:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :)">
+  <meta property="twitter:description"
+    content="Hi! Thanks for stopping by. I’m a product designer based in San Francisco. I'm a former architectural designer with a passion for solving business challenges through design and occasionally code. If you like what you see here, please feel free to reach out to me at vickyw.design@gmail.com :)">
   <meta name="twitter:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
-
 </head>
 
 <body>
-
   <!--head-->
-  <div class="container-head" id="topbar">
-
-    <div class="container-head-left">
-      <a href="http://vickywang.design/" class="pointer"> VICKY WANG
+  <!--progress bar-->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <!--progress bar-->
+  <div class="main-tool-bar">
+    <div class="head-left">
+      <a href="http://vickywang.design/" class="pointer">VW
       </a>
-      <p class="lighter_font" id="topleftlighterfont"> DESIGN & RESEARCH
-      </p>
     </div>
-    <div class="container-head-right" id="topbar-right">
-      <div> <a href="/" class="active"> PROJECT </a>
-      </div>
-      <div> <a href="/architecture" class="inactive"> ARCHITECTURE </a>
-      </div>
-      <div> <a href="/photography" class="inactive"> PHOTOGRAPHY </a>
-      </div>
-      <div> <a href="/about" class="inactive"> ABOUT </a>
-      </div>
+    <div class="head-right ">
+      <a href="/project" class="inactive head-right-1550 box">
+        PROJECT
+      </a>
+      <a href="/architecture" class="inactive head-right-1550 box">
+        ARCHITECTURE
+      </a>
+
+      <a href="/photography" class="inactive head-right-1550 box">
+        PHOTOGRAPHY
+      </a>
+
+      <a href="/" class="active head-right-1550 box">
+        ABOUT
+      </a>
     </div>
   </div>
   <!--head-->
-  <div class="blank"></div>
+  <span id="circle" class="circle"></span>
 
-  <!--body1-->
-  <div class="container_body">
-    <div  class= "container-body-project-img">
-    <img src="./layout_gardenershub.png" 
-      alt="DRAWING OF KAPPE RAY HOUSE" class="image-hover">
+  <!--body-->
+
+  <div class="blankHXL"></div>
+  <div class="body-landing">
+    <div class="body-intro">
+      <div class="t-hello">HELLO, </div>
     </div>
-    <div class="image-text-hover">
-      <a href="/gardeners_hub" id="gardeners-hub">GARDENERS HUB</a>
+    <div class="body-intro" data-aos="fade-up">
+      <div class="body-v">
+        <div class="t-hi">I'm Vicky.</div>
+      </div>
+      <p class="divider"></p>
+      <div class="body-v">
+        <div class="body-intro">
+          <span class="t-me">a designer</span>
+          <span class="divider1"></span>
+          <span class="t-me"> problem solver. </span>
+        </div>
+        <div class="t-me t-me-1">
+          based in the San Francisco Bay Area.
+        </div>
+      </div>
+    </div>
+    <div class="t-intro zTop" data-aos="fade-up">
+      Passionate about translating complex business requirements into compelling user
+      experiences. While my focus is primarily on design, I don't mind occasionally writing code
+      when the need arises.</div>
+  </div>
+  <div class="blankHM"></div>
+
+
+
+  <!--body-->
+  <div class="body-h">
+    <p class="lineVerAll ver1"></p>
+  </div>
+  <!-- content-->
+  <div class="row marginAll heightM centerVer marginAll1920">
+    <p class="tArrow"> Selected Projects </p>
+    <img class="se-arrow" src="./arrow-se.svg" alt="se-arrow">
+  </div>
+  <!-- content-->
+
+  <!-- Product -->
+  <div class="marginAll marginAll1920">
+    <div class="carousel">
+      <div class="AboutProjectNav nav-left">
+        <img src="./arrow-left.svg" alt="left">
+      </div>
+
+      <div class="carousel-content">
+        <div class="slide">
+          <div class="row-change centerVer">
+            <a href="/project/meal_planner">
+              <img class="" src="./layout_MealPlanner.png" alt="Meal Planner">
+            </a>
+            <div class="column">
+              <a href="/project/meal_planner" class="titleM"> MEAL PLANNER </a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">A mobile app helps planning a healthy meal</p>
+              <p class="textS">May 2021 - August 2021 </p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change centerVer">
+            <a href="/project/gardeners_hub">
+              <img src="./layout_GardenersHub.png" alt="Gardeners' Hub">
+            </a>
+            <div class="column">
+              <a href="/project/gardeners_hub" class="titleM"> GARDENERS HUB</a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">A marketplace for local community</p>
+              <p class="textS">May 2021 - August 2021 </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change centerVer">
+            <a href="/appointment_maker">
+              <img src="./layout_AppointmentMaker.png" alt="APPOINTMENT MAKER">
+            </a>
+            <div class="column">
+              <p href="/alltrails" class="titleM"> APPOINTMENT MAKER</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">Coming Soon</p>
+              <p class="textS">Google UX Certificate Project 1</p>
+              <p class="textS">4 Weeks 30+ Screens</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change centerVer">
+            <p href="/appointment_maker">
+              <img src="./layout_IndieRockbands.png" alt="INDIE ROCK BANDS">
+            </p>
+            <div class="column">
+              <p href="/indie_rock_bands" class="titleM"> INDIE ROCK BANDS</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">Coming Soon</p>
+              <p class="textS">Google UX Certificate Project 2</p>
+              <p class="textS">4 Weeks 30+ Screens</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change centerVer">
+            <p href="/medication_reminder">
+              <img src="./layout_MedicationReminder.png" alt="APPOINTMENT MAKER">
+            </p>
+            <div class="column">
+              <p href="/alltrails" class="titleM">MEDICATION REMINDER</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">Coming Soon</p>
+              <p class="textS">Google UX Certificate Project 3</p>
+              <p class="textS">4 Weeks 30+ Screens</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="AboutProjectNav nav-right">
+        <img src="./arrow-right.svg" alt="right">
+      </div>
     </div>
   </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">GARDENER'S HUB CREATES MARKETPLACE AND FRIENDSHIP FOR THE LOCAL COMMUNITY</p>
-      <p class="text-body-description">Individual Work</p>
-      <p class="text-body-description">Spring 2021</p>
+
+  <!-- Product -->
+
+  <!-- content-->
+  <div class="row marginAll marginAll1920 heightM centerVer">
+    <a href="/architecture" class="tArrow"> Architecture</a>
+    <img class="se-arrow" src="./arrow-se.svg" alt="se-arrow">
+  </div>
+  <!-- content-->
+  <!-- architecture-->
+  <div class="marginAll marginAll1920">
+
+    <div class="carousel">
+      <div class="nav nav-left">
+        <img src="./arrow-left.svg" alt="left">
+      </div>
+
+      <div class="carousel-content">
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture/recreation_commons/">
+                <img class="widthS1920 widthS" src="./ar_1.svg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+
+            <div class="column centerHorz widthM">
+              <a href="/architecture/recreation_commons/" class="titleM">RECREATION COMMONS</a>
+              <p class="lineHorizAll"></p>
+
+              <p class="textS">INTEGRATED DESIGN STUDIO, ARCH 203, Fall 2018</p>
+              <p class="textS">M. Arch, CED, UC Berkeley</p>
+              <p class="textS">Instructor: Roddy Creedon </p>
+              <p class="textS">Site: 110 Franklin St. San Francisco, CA, 94102</p>
+              <p class="textS">Total Floor Area: 22900 s.f. 4 Floors</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture/narrow_stripes/">
+                <img class="widthL widthL1920 shadowAll" src="./ar_2.jpg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+
+            <div class="column centerHorz widthM">
+              <a href="/architecture/narrow_stripes/" class="titleM">NARROW STRIPES</a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">INTEGRATED DESIGN STUDIO, ARCH 203, Fall 2018</p>
+              <p class="textS">Site: Location: Hyde Park, London </p>
+              <p class="textS">7500 square metres approx. </p>
+              <p class="textS">Maximum Built Area: 4000 square metres </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture">
+                <img class="widthL widthL1920" src="./ar_3.jpg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+
+            <div class="column centerHorz widthM">
+              <a href="/architecture" class="titleM">KAPPE HOUSE STUDY </a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">THE MAKING OF BUILDINGS, ARCH 209, FALL 2015 </p>
+              <p class="textS">M. Arch, CED, UC Berkeley </p>
+              <p class="textS">Instructor: Yung Ho Chang</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture/manifold_ground/">
+                <img class="widthL widthL1920 shadowAll" src="./ar_4.jpg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+
+            <div class="column centerHorz widthM">
+              <a href="/architecture/manifold_ground/" class="titleM">MANIFOLD GROUND </a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">[IN]ARCH ADV, SUMMERS 2014</p>
+              <p class="textS">Summer Program, CED, UC Berkeley</p>
+              <p class="textS">Instructor: Keith Plymale </p>
+              <p class="textS">Site: 450 Hayes St. San Francisco, CA 94102 </p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture/thesis_studio/">
+                <img class="widthL widthL1920 shadowAll" src="./ar_5.jpg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+
+            <div class="column centerHorz widthM">
+              <a href="/architecture/thesis_studio/" class="titleM">ON ORDER: DIFFERENTIATED
+                CONTINUITY OF OBJECTS</a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">THESIS STUDIO, FALL 2018 - SPRING 2019</p>
+              <p class="textS">M. Arch, CED, UC Berkeley</p>
+              <p class="textS">Instructor: Kyle Steinfeld </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture/recovery_of_river_edges/">
+                <img class="widthL widthL1920 shadowAll" src="./ar_6.jpg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+
+            <div class="column centerHorz widthM">
+              <a href="/architecture/recovery_of_river_edges/" class="titleM">THE ROTATION OF
+                CURVES</a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">Introduction to Architecture Studio 1, Fall 2015</p>
+              <p class="textS">M. Arch, CED, UC Berkeley</p>
+              <p class="textS">Instructor: Rudabeh Pakravan </p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture/the_rotation_of_curves/">
+                <img class="widthL widthL1920 shadowAll" src="./ar_7.jpg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <a href="/architecture/the_rotation_of_curves/" class="titleM">RECOVERY OF RIVER
+                EDGES</a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">Introduction to Architecture Studio 2, Spring 2016</p>
+              <p class="textS">M. Arch, CED, UC Berkeley</p>
+              <p class="textS">Instructor: Jay Atherton </p>
+              <p class="textS">Site: Sunnynook River Park, 2901 Glendale Blvd, Los Angeles,
+                CA 90039 </p>
+              <p class="textS">Program Area: Indoor/outdoor community space for performances
+                3000 sq.ft.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture">
+                <img class="widthL widthL1920 shadowAll" src="./ar_8.jpg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <a href="/architecture" class="titleM">LACMA</a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">M. Arch, CED, UC Berkeley, ARCH 201, FALL 2016 </p>
+              <p class="textS">M. Arch, CED, UC Berkeley</p>
+              <p class="textS">Instructor: Mark Anderson </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/architecture">
+                <img class="widthL widthL1920 shadowAll" src="./ar_9.jpg" alt="Architecture">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <a href="/architecture" class="titleM">OTHER ACADEMIC WORKS </a>
+              <p class="lineHorizAll"></p>
+              <p class="textS">798 Exhibition Gallery 2010 </p>
+              <p class="textS">The Renovation of a Factory Building 2013</p>
+              <p class="textS">Mountain Residential House 2012</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="nav nav-right">
+        <img src="./arrow-right.svg" alt="right">
+      </div>
+    </div>
+  </div>
+  <!-- architecture-->
+
+  <!-- content-->
+  <div class="row marginAll marginAll1920 heightM centerVer">
+    <a href="/photography" class="tArrow"> Photography </a>
+    <img href="/photography" class="se-arrow" src="./arrow-se.svg" alt="se-arrow">
+  </div>
+  <!-- content-->
+
+  <!-- photography new-->
+  <div class=" marginAll marginAll1920">
+    <div class="carousel">
+      <div class="nav nav-left">
+        <img src="./arrow-left.svg" alt="left">
+      </div>
+      <div class="carousel-content">
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_1.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">Bosque Del Apache National Wildlife Refuge</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_2.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">Bosque Del Apache National Wildlife Refuge</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_3.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">Bosque Del Apache National Wildlife Refuge</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_4.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p href="/photography" class="titleM">Sacramento National Wildlife Refuge</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_5.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p href="/photography" class="titleM">Sacramento National Wildlife Refuge</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_6.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">Sacramento National Wildlife Refuge</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_7.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">Teton National Park </p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">September, 2020</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_8.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">White Sands National Monument</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_9.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">White Sands National Monument</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_10.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">White Sands National Monument</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_11.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">White Sands National Monument</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_12.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">White Sands National Monument</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_13.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">White Sands National Monument</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_14.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">White Sands National Monument</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019</p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_15.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">Yellowstone National Park</p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">September, 2020 </p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="row-change marginAll centerVer">
+            <div class="column">
+              <a href="/photography">
+                <img class="widthL widthL1920 shadowAll" src="./pg_16.jpg" alt="Photography">
+              </a>
+            </div>
+            <div class="lineVerAll">
+            </div>
+            <div class="column centerHorz widthM">
+              <p class="titleM">Donner Lake </p>
+              <p class="lineHorizAll"></p>
+              <p class="textS">December, 2019 </p>
+              <p class="textS">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="nav nav-right">
+        <div class="-right">
+          <img src="./arrow-right.svg" alt="right">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- photography new-->
+
+
+
+  <!-- content-->
+  <div class="row marginAll marginAll1920 heightM centerVer align-left">
+    <p class="tArrow"> About Me </p>
+    <img class="se-arrow" src="./arrow-se.svg" alt="se-arrow">
+  </div>
+  <!-- content-->
+  <!-- about me-->
+
+
+
+  <div class="marginAll marginAll1920">
+    <div class="column widthL alignCPH">
+
+      <a href="https://s3-us-west-1.amazonaws.com/vickywang.design/Resume_vw.pdf"
+        class="text-about-resume titleM"> Download My Resume
+      </a>
+      </div>
+
+    <div class="blankHM"></div>
+
+
+    <div class="row-change">
+      <div class="column alignCPH">
+        <div class="widthM widthM1920">
+          <div class="body-left titleL" data-aos="fade-up">
+            EDUCATION </div>
+          <div class="blankHM"></div>
+
+          <div class="body-v">
+            <p class="titleM">UC Berkeley
+            </p>
+            <p class="textS styleItalic">August 2015 - May 2019</p>
+            <p class="textM">Master of Architecture</p>
+            <p class="textM">Building Science / Technology</p>
+          </div>
+          <div class="blankHM"></div>
+
+          <div class="body-v">
+            <p class="titleM">Beijing University of Tech</p>
+            <p class="textS styleItalic">May 2009 - August 2013 </p>
+            <p class="textM">Bachelor of Art and Design</p>
+            <p class="textM">Landscape Design</p>
+          </div>
+        </div>
+        <div class="blankHM"></div>
+
+      </div>
+
+
+
+      <div class="column alignCPH">
+        <div class="widthM widthM1920">
+          <div class="body-left titleL" data-aos="fade-up">
+            SKILL&TOOLS
+          </div>
+
+          <div class="blankHM"></div>
+
+
+          <div class="body-v">
+            <p class="titleM">UI/UX
+            </p>
+            <p class="textM">Sketch, Adobe XD, Figma</p>
+          </div>
+          <br>
+
+          <div class="body-v">
+            <p class="titleM">Programming</p>
+            <p class="textM">HTML, CSS, JavaScript</p>
+            <p class="textM">jQuery</p>
+          </div>
+          <br>
+
+
+          <div class="body-v">
+            <p class="titleM">2D Graphic</p>
+            <p class="textM">Adobe Suite (Illustrator, Photoshop, InDesign)</p>
+            <p class="textM">AutoCAD</p>
+          </div>
+          <br>
+
+          <div class="body-v">
+            <p class="titleM">3D Modelling and VR</p>
+            <p class="textM">3Dmax Studio, Rhino, Sketchup</p>
+            <p class="textM">Grasshopper, Ladybug, DIVA</p>
+            <p class="textM">Unity</p>
+          </div>
+          <br>
+
+          <div class="body-v">
+            <p class="titleM">Design Research
+            </p>
+            <p class="textM">Affinity Diagramming</p>
+            <p class="textM">Experience Prototyping</p>
+          </div>
+          <br>
+
+          <div class="body-v">
+            <p class="titleM">Fabrication
+            </p>
+            <p class="textM">3D Printing, 3D Scanner (NextEngine 3D)</p>
+            <p class="textM">CNC (Techno Isel 3-axis CNC router), </p>
+            <p class="textM">Laser Cutter, Blade Cutter (Zund S3 Digital)</p>
+          </div>
+        </div>
+        <div class="blankHM"></div>
+
+      </div>
+
+      <div class="column alignCPH">
+        <div class="widthM widthM1920">
+          <div class="body-left titleL" data-aos="fade-up">
+            EXPERIENCE </div>
+          <div class="blankHM"></div>
+
+
+          <div class="body-v">
+            <p class="titleM">Buro Ole Scheeren</p>
+            <p class="textS styleItalic">August 2017 - July 2018</p>
+            <p class="textM">Beijing, China</p>
+            <p class="textM">Architectural Designer</p>
+          </div>
+          <br>
+
+          <div class="body-v">
+            <p class="titleM">In Design Studio</p>
+            <p class="textS styleItalic">May 2017 - August 2017</p>
+            <p class="textM">New York, U.S.</p>
+            <p class="textM">Summer Intern</p>
+          </div>
+          <br>
+
+          <div class="body-v">
+            <p class="titleM">PDI Design Group</p>
+            <p class="textS styleItalic">December 2013 - July 2015</p>
+            <p class="textM">Beijing, China</p>
+            <p class="textM">Architectural Designer</p>
+          </div>
+          <br>
+
+          <div class="body-v">
+            <p class="titleM">Do Union</p>
+            <p class="textS styleItalic">July 2010 - May 2012</p>
+            <p class="textM">Beijing, China</p>
+            <p class="textM">Architectural Intern</p>
+          </div>
+          <div class="blankHM"></div>
+
+        </div>
+
+
+
+
+      </div>
+
 
     </div>
-
   </div>
-  <!--body1-->
-  <hr>
 
-  <!--body2-->
-  <div class="container_body">
-    <div  class= "container-body-project-img">
-
-    <img src="./layout_mealplanner.png"
-      alt="Urban Backyard" class="image-hover">
-    </div>
-    <div class="image-text-hover">
-      <a href="/meal_planner" id="meal-planner">MEAL PLANNER</a>
+  <div class="blankHM"></div>
+  <div class="containerTQ">
+    <img src="./me.jpg" alt="right">
+    <div class="centeredTQ">
+      <p class=" tTQ centerHorz" data-aos="fade-up">Thanks for your time and have a good day! </p>
+      <p class="displayNonePhone textM centerHorz" data-aos="fade-up">Learn more about my works &nbsp; <a
+          class="textProject" href="/project">here</a> </p>
     </div>
   </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">A MOBILE APP HELPS PLANNING A HEALTHY AND EFFICIENT MEAL</p>
-      <p class="text-body-description">Individual Work</p>
-      <p class="text-body-description">Spring 2021</p>
 
-    </div>
-
-  </div>
-  <!--body2-->
-  <hr>
-
-
-<!--body3-->
-<div class="container_body">
-  <div  class= "container-body-project-img">
-
-  <img src="./layout_alltrails.png"
-    alt="Urban Backyard" class="image-hover">
-  </div>
-  <div class="image-text-hover">
-    <a href="/alltrails" id="all-tails">REDESIGN ALLTRAILS APP</a>
-  </div>
-</div>
-<div>
-  <div class="container-body-description">
-    <p class="text-body-title">ADDED A COMPARISON FEATURE ON ALLTRAILS MOBILE APP</p>
-    <p class="text-body-description">Individual Work</p>
-    <p class="text-body-description">Spring 2021</p>
-
-  </div>
-
-</div>
-<!--body3-->
+  <!-- about me-->
 
 
 
 
 
 
-  <div class="blank-thicker"></div>
 
 
+  <!--back to top-->
+  <button id="myBtn" class=" myBtn-1550" title="Go to top">
+    <img id="bottom-arrow" class="ArrowHover" src="./arrow-top.svg" alt="back to top">
+
+    <div>TOP</div>
+
+  </button>
+  <!--back to top-->
 
   <!--footer-->
-  <div class="container_footer">
-
-    <div id="infor">
-      <div>
-        <a href="mailto:vickyw.design@gmail.com">
-          <img class="image_footer"
-            src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_mail.svg" alt="email">
-        </a>
-
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/vicky-yiqi-wang-6ab7487b/">
-          <img class="image_footer"
-            src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_linkedin.svg"
-            alt="linkedin">
-        </a>
-      </div>
-
-      <div>
-        <a href="https://github.com/vicky-wyq">
-          <img class="image_footer"
-            src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_github.svg" alt="github">
-        </a>
-      </div>
-
-      <div>
-        <a href="https://medium.com/@vickywang.design">
-          <img class="image_footer"
-            src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_medium.svg" alt="medium">
-        </a>
-      </div>
-    </div>
-
-    <p class="lighter_font">COPYRIGHT &#169; VICKY WANG
+  <div class="footer">
+    <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
     </p>
+    <div class="footer-right">
+      <a href="mailto:vickyw.design@gmail.com">
+        <img class="footer-logo" src="./mail.svg" alt="email">
+      </a>
 
+      <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
+        <img class="footer-logo" src="./in.svg" alt="linkedin">
+      </a>
+
+      <a href="https://github.com/vicky-wyq">
+        <img class="footer-logo" src="./git.svg" alt="github">
+      </a>
+
+      <a href="https://www.instagram.com/vw_yiqi/">
+        <img class="footer-logo" src="./ins.svg" alt="medium">
+      </a>
+    </div>
   </div>
+  <!--footer-->
+
+
+
 </body>
 
 </html>

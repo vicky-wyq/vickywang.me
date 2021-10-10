@@ -2,7 +2,52 @@
 
 <head>
   <link rel="stylesheet" href="../../main.css">
+  <script type="text/javascript" src="../../scripts.js"></script>
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Titillium Web', sans-serif; -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Roboto', sans-serif; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <!--font using hello-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Catamaran', sans-serif; -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font font-family: 'Lato', sans-serif; -->
+
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--jQuery-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--aos-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+  <!-- gsap -tool-bar-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=40"></script>
+  <!-- gsap - tool-bar-->
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+
+
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vicky Wang</title>
@@ -14,20 +59,19 @@
   <meta property="og:description" content="Hi! Thanks for stopping by. 
   I enjoy design and code who loves solving challenging problems. 
   Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/vickywang.design/VW.png" />
+  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
 
-  <meta name="twitter:url" content="https://vickywang.design">
+  <meta name="twitter:url" content="//vickywang.design">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="VICKY WANG" />
   <meta name="twitter:creator" content="VICKY WANG" />
   <meta property="twitter:title" content="VICKY WANG">
-  <meta property="twitter:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :)">
-  <meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/vickywang.design/VW.png">
+  <meta property="twitter:description"
+    content="Hi! Thanks for stopping by. I’m a product designer based in San Francisco. I'm a former architectural designer with a passion for solving business challenges through design and occasionally code. If you like what you see here, please feel free to reach out to me at vickyw.design@gmail.com :)">
+  <meta name="twitter:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
@@ -35,52 +79,48 @@
 
 <body>
 
-  <div class=margin>
+  <!--head-->
+  <!--progress bar-->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <!--progress bar-->
+  <div class="main-tool-bar">
+    <div class="head-left">
+      <a href="http://vickywang.design/" class="pointer">VW
+      </a>
+    </div>
+    <div class="head-right ">
+      <a href="/project" class="inactive head-right-1550 box">
+        PROJECT
+      </a>
+      <a href="/architecture" class="active head-right-1550 box">
+        ARCHITECTURE
+      </a>
 
-    <!--head-->
-    <div class="container_head">
+      <a href="/photography" class="inactive head-right-1550 box">
+        PHOTOGRAPHY
+      </a>
 
-      <div class="container-head" id="topbar">
-
-        <div class="container-head-left">
-          <a href="http://vickywang.design/" class="pointer"> VICKY WANG
-          </a>
-          <p class="lighter_font" id="topleftlighterfont"> DESIGN & RESEARCH
-          </p>
-        </div>
-        <div class="container-head-right" id="topbar-right">
-          <div> <a href="/" class="inactive"> PROJECT </a>
-          </div>
-          <div> <a href="/architecture" class="active"> ARCHITECTURE </a>
-          </div>
-          <div> <a href="/photography" class="inactive"> PHOTOGRAPHY </a>
-          </div>
-          <div> <a href="/about" class="inactive"> ABOUT </a>
-          </div>
-        </div>
-      </div>
-
+      <a href="/" class="inactive head-right-1550 box">
+        ABOUT
+      </a>
 
     </div>
-    <!--head-->
-    <!--body part 1-->
-    <div class="container_body">
-      <br>
-      <br>
-      <div class="container-body-description">
-        <p class="text-body-title">ON ORDER: DIFFERENTIATED CONTINUITY OF OBJECTS</p>
+  </div>
+  <!--head-->
+  <span id="circle" class="circle"></span>
+  <div class="blankPHONE"></div>
+  <div class="blankHXL"></div>
+  <div class="blankHXL"></div>
 
+  <div class="marginAll marginAll1920">
 
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-      <div class="container-body-project">
+    <!-- cover -->
+    <div class="row-change">
+      <div class="column float">
         <svg width="893px" height="115px" viewBox="0 0 893 115" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>Page 1</title>
@@ -151,446 +191,458 @@
             </g>
           </g>
         </svg>
-
-      </div>
-
-      <br>
-      <p class="text-body-italic">"The order is not rationalistic and underlying but is simply
-        order, like that of continuity, one thing after another. "</p>
-      <p class="text-body-italic">— Donald Judd</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-      <div class="container-body-description">
-        ABSTRACT </div>
-      <br>
-      <br>
-      <div class="container-body-project">
-        <div class="text-body-description">
-          Architecture is nothing more but a union of disparate systems, and
-          every aspect of an architectural design is part of one system or another. The individual
-          systems can be continuous or discontinuous, and they are all related in some way. As an
-          architect, it’s important that one does not only consider continuity as it pertains to a
-          single system, but also the effects that continuous/discontinuous aspects of different
-          systems can have on each other.The use of discontinu- ity in a single system can be used
-          to create distinctive features in an architectural design if the architect considers its
-          effect on other systems.
-        </div>
         <br>
-        <br>
-        <div class="text-body-description">
-          In a building, each type of architectural elements creates a kind of spatial continuity or
-          discontinuity based on the way it’s arranged. For example, if we have a row of ten
-          columns, each 10 ft apart, we can say that they are continuous because they form a
-          sequence. If we have ten columns with different shape or orientation, we can say that is
-          discontinuous because they do not form a sequence. In architecture, such local
-          arrangements can be extended into larger systems. Through aggregation, combination, and in
-          relation to other arrangements, they form larger spatial networks and complex material
-          systems.
-        </div>
-        <br>
-        <br>
-        <div class="text-body-description">
-          The degree of continuity and discontinuity can be adjusted to achieve the needs of a
-          particular program. For example, when designing a 600 meter tall landmark skyscraper, one
-          must consider the building’s use for both shopping and as an office. Many archi- tects who
-          design these types of buildings will use focal points such as the arrival plaza, the
-          tower’s center, and the top of the tower to create design features. This is usually done
-          by differentiating them from the rest of the design and creating discontinuity within the
-          overall context of continuity within the space. The quality of an architectural design is
-          reflected in the way it’s discontinuous elements are integrated with the continuous
-          backdrop. Discontin- uous elements can be used bluntly to create differentiation, but a
-          well-conceived design will ensure that they are in harmony with the greater whole.
-        </div>
-
-
-
+        <p class="textL">"The order is not rationalistic and underlying but is simply order,
+          like that of continuity, one thing after another. "</p>
+        <p class="textM">— Donald Judd </p>
 
       </div>
-      <br>
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-      <div class="container-body-description">
-        DIFFERENTIATED CONTINUITY </div>
-      <br>
-      <br>
-      <br>
+      <div class="blankVer"> </div>
 
-      <video width="70%" height="auto" controls autoplay>
-        <source src="./anomation.mp4" type="video/mp4">
-      </video>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <div class="column">
+        <p class="titleL">ON ORDER: DIFFERENTIATED CONTINUITY OF OBJECTS
 
-      <img src="./methods1.png" alt="DIAGRAM" class="image">
-      <br>
-      <div class="container-body-project-horizontaldiagram-text">
-        <div class="image-text">
-          <div class="text_button">Large-Scale</div>
-        </div>
-        <div class="image-text">
-          <div class="text_button">Large-Scale</div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <img src="./methods1-1.png" alt="DIAGRAM" class="image">
-      <br>
-      <div class="container-body-project-horizontaldiagram-text">
-        <div class="image-text">
-          <div class="text_button">Mid-Scale</div>
-        </div>
-        <div class="image-text">
-          <div class="text_button">Small-Scale</div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <img src="./methods2.png" alt="DIAGRAM" class="image">
-      <br>
-      <div class="container-body-project-horizontaldiagram-text">
-        <div class="image-text">
-          <div class="text_button">Large-Scale</div>
-        </div>
-        <div class="image-text">
-          <div class="text_button">Large-Scale</div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br> <img src="./methods2-1.png" alt="DIAGRAM" class="image">
-      <br>
-      <div class="container-body-project-horizontaldiagram-text">
-        <div class="image-text">
-          <div class="text_button">Mid-Scale</div>
-        </div>
-        <div class="image-text">
-          <div class="text_button">Small-Scale</div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <img src="./methods3.png" alt="DIAGRAM" class="image">
-      <br>
-      <div class="container-body-project-horizontaldiagram-text">
-        <div class="image-text">
-          <div class="text_button">Large-Scale</div>
-        </div>
-        <div class="image-text">
-          <div class="text_button">Large-Scale</div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br> <img src="./methods3-1.png" alt="DIAGRAM" class="image">
-      <br>
-      <br>
-      <div class="container-body-project-horizontaldiagram-text">
-        <div class="image-text">
-          <div class="text_button">Mid-Scale</div>
-        </div>
-        <div class="image-text">
-          <div class="text_button">Small-Scale</div>
-        </div>
-      </div>
-
-
-
-      <br>
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-      <div class="container-body-description">
-        PHOTO DOCUMENTATION </div>
-      <br>
-      <br>
-      <br>
-      <img src="./photo1.png" alt="DIAGRAM" class="image">
-      <br>
-      <br>
-      <br>
-      <br>
-      <img src="./photo2.png" alt="DIAGRAM" class="image">
-      <br>
-      <br>
-      <br>
-      <br>
-      <img src="./photo3.png" alt="DIAGRAM" class="image">
-      <br>
-      <br>
-      <br>
-      <br> <img src="./photo4.png" alt="DIAGRAM" class="image">
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-
-      <br>
-      <br>
-      <div class="container-body-description">
-        OPERATION METHOD
-      </div>
-
-
-      <img src="./diagrams.jpg" alt="SITE" class="image">
-      <br>
-      <div class="container-body-project">
-        <div class="text-body-description">
-          <p> Architects use objects to connect and divide space. The arrangement of objects
-            appreciates
-            aesthetic appeal and spatial quality. The goal of this thesis is to showcase a series of
-            experiments in the arrangement of architectural elements, and explore the relationships
-            between architectural components and the integration of various types of sequences.
-            Specifically, these experiments will demonstrate how the arrangement of elements can
-            produce continuity and discontinuity, how different systems are integrated, and how the
-            degree of continuity and discontinuity can be adjusted in order to achieve the design
-            purpose. Each type of element (columns, beams, openings) can create a sequence by
-            similarity. The similarity includes size and shape, spacing and orientation.</p>
-
-          <p>For instance, if we have a row of ten columns with similar size, shape, spacing, or
-            orientation, we call it continuity. If we have different size, or different shape, or
-            different orientation, we can say that is discontinuity because they do not maintain the
-            sequence.</p>
-
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="container-body-description">
-        CASE STUDY AND MANIPULATIONS </div>
-      <br>
-      <div class="container-body-project">
-        <div class="text-body-description">
-          <p> Here are some historical buildings that have utilized continuity and discontinuity to
-            create distinctive features.
-            These case studies interpret the relationship between the architectural elements and
-            aesthetic appeal.
-            The following experiments will explore the effect of changes in the degree of continuity
-            and discontinuity in these iconic buildings.
-          </p>
-        </div>
-      </div>
-      <br>
-      <br>
-      <img src="./CaseStudy1.jpg" alt="SITE" class="image">
-
-
-      <div class="image-text">
-        <div class="text_button">SANNA, 21ST CENTURY MUSEUM OF CONTEMPORARY ART 2004</div>
-      </div>
-      <br>
-      <br>
-      <br>
-
-      <img src="./CaseStudy2.jpg" alt="SITE" class="image">
-      <div class="image-text">
-        <div class="text_button">JUNTA ISHIGAMI, KANAGAWA INSTITUTE OF TECHNOLOGY 2008</div>
-      </div>
-      <br>
-      <br>
-      <br>
-
-      <img src="./CaseStudy3.jpg" alt="SITE" class="image">
-      <div class="image-text">
-        <div class="text_button">MIES VAN DER ROHE, S.R. CROWN HALL 1956</div>
-      </div>
-      <br>
-      <br>
-      <br>
-
-      <img src="./CaseStudy4.jpg" alt="SITE" class="image">
-      <div class="image-text">
-        <div class="text_button">LE CORBUSIER, CARPENTER CENTER 1962</div>
-      </div>
-      <br>
-      <br>
-      <br>
-
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-      <div class="container-body-description">
-        RESULTS OF MANIPULATIONS </div>
-      <br>
-      <br>
-
-      <br>
-      <br>   
-      <br>
-      <img src="./compare.jpg" alt="SITE" class="image">
-
-      <br>
-      <br>
-      <br>
-      <!--body part 1-->
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-
-      <div class="container-body-description">
-        ARCHITECTURE PROJECTS
-      </div>
-      <br>
-      <br>
-      <div class="container-body-project">
-        <br>
-        <p class="text-body-italic">
-
-          Architecture is nothing more but a union of disparate systems.
-          Every aspect of an architectural design is part of one system or another.
         </p>
-        <br>
-        <br>
-
-
-
-
-        <div class="text-body-description">
-          <p> For example, in an office building, the columns form a sequence, the furniture
-            establish the sequence, the repetition of the program as well as the repetition of the
-            elements
-          </p>
-
-          <p> Different types of sequences can be extended into larger systems. Through aggregation,
-            combination, and in relation to other arrangements, they form larger spatial networks
-            and complex material systems.
-
-          </p>
-
-          <p>
-            The individual systems can be continuous or discontinuous, and they are all related in
-            some way. As an architect, it's important that one does not only consider continuity as
-            it pertains to a single system, but also the effects that continuous/discontinuous
-            aspects of different systems can have on each other.
-
-          </p>
-          <p> The use of discontinuity in a single system can be used to create distinctive features
-            in an architectural design if the architect considers its effect on other systems.
-
-          </p>
-
-        </div>
-      </div>
-      <br>
-
-      <br>
-      <br>
-      <br>
-
-      <img src="./Project.jpg" alt="THESIS PROJECT" class="image"> <br>
-      <br>
-      <br>
-
-      <img src="./Project1.jpg" alt="THESIS PROJECT" class="image">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="horizontal-line"></div>
-      <br>
-      <br>
-      <br>
-      <div class="container-body-description">
-        REFERENCE </div>
-      <br>
-      <div class="text-body-description">
-        <p><a href="http://www.designersandbooks.com/book/ten-canonical-buildings">Peter Eisenman,
-            Ten Canonical Buildings 1950-2000 </a></p>
-        <p><a>https://en.wikipedia.org/wiki/Farnsworth_House</a></p>
-        <p><a>https://en.wikipedia.org/wiki/S._R._Crown_Hall</a></p>
-        <p><a>https://www.archdaily.com/59578/national-park-centre-valerio-olgiati</a></p>
-        <p><a>https://en.wikipedia.org/wiki/McCormick_Tribune_Campus_Center</a></p>
-        <p> <a> https://en.wikipedia.org/wiki/21st_Century_Museum_of_Contemporary_Art,_Kanazawa</a>
-        </p>
-        <p> <a>https://en.wikipedia.org/wiki/Salk_Institute_for_Biological_Studies</a></p>
-        <p><a> https://www.archdaily.com/66661/66661</a></p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">Thesis Studio</p>
       </div>
     </div>
+    <!-- cover -->
+    <div class="blankHXL"></div>
+    
+    <!-- content-->
+    <div class="row heightM centerVer">
+      <p class="tArrow"> Abstract </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
 
-    <!--footer-->
-    <div class="container_footer">
+    <!--Abstract-->
+    <div class="column">
 
-      <div id="infor">
-        <div>
-          <a href="mailto:vickyw.design@gmail.com">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_mail.svg" alt="email">
-          </a>
+      <P class="titleL"> ABSTRACT</P>
+      <p class="lineHorizAll"></p>
+      <div class="blankHS"></div>
 
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_linkedin.svg"
-              alt="linkedin">
-          </a>
-        </div>
+      <p class="textS ">Architecture is nothing more but a union of disparate systems, and
+        every aspect of an architectural design is part of one system or another. The individual
+        systems can be continuous or discontinuous, and they are all related in some way. As an
+        architect, it’s important that one does not only consider continuity as it pertains to a
+        single system, but also the effects that continuous/discontinuous aspects of different
+        systems can have on each other.The use of discontinu- ity in a single system can be used
+        to create distinctive features in an architectural design if the architect considers its
+        effect on other systems.
+      </p>
+      <div class="blankHS"></div>
+      <p class="textS">In a building, each type of architectural elements creates a kind of
+        spatial continuity or discontinuity based on the way it’s arranged. For example, if we
+        have a row of ten columns, each 10 ft apart, we can say that they are continuous because
+        they form a sequence. If we have ten columns with different shape or orientation, we can
+        say that is discontinuous because they do not form a sequence. In architecture, such local
+        arrangements can be extended into larger systems. Through aggregation, combination, and in
+        relation to other arrangements, they form larger spatial networks and complex material
+        systems.
+      </p>
+      <div class="blankHS"></div>
+      <p class="textS">The degree of continuity and discontinuity can be adjusted to achieve
+        the needs of a particular program. For example, when designing a 600 meter tall landmark
+        skyscraper, one must consider the building’s use for both shopping and as an office. Many
+        archi- tects who design these types of buildings will use focal points such as the arrival
+        plaza, the tower’s center, and the top of the tower to create design features. This is
+        usually done by differentiating them from the rest of the design and creating
+        discontinuity within the overall context of continuity within the space. The quality of an
+        architectural design is reflected in the way it’s discontinuous elements are integrated
+        with the continuous backdrop. Discontin- uous elements can be used bluntly to create
+        differentiation, but a well-conceived design will ensure that they are in harmony with the
+        greater whole.
+      </p>
+      <div class="blankHM"></div>
 
-        <div>
-          <a href="https://github.com/vicky-wyq">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_github.svg"
-              alt="github">
-          </a>
-        </div>
+      <img src="image_bl.jpg" alt="DIAGRAM" class="image float">
+    </div>
+    <!--Abstract-->
+    <div class="blankHL"></div>
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Operation Method</p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--Operation Method -->
+    <div class="column">
+      <img src="diagrams.jpg" alt="DIAGRAM" class="image float">
 
-        <div>
-          <a href="https://medium.com/@vickywang.design">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_medium.svg"
-              alt="medium">
-          </a>
-        </div>
-      </div>
+      <P class="titleL">OPERATION METHOD
+      </P>
+      <p class="lineHorizAll"></p>
+      <br>
 
-      <p class="lighter_font">COPYRIGHT &#169; VICKY WANG
+      <p class="textS">Architects use objects to connect and divide space. The arrangement of
+        objects appreciates aesthetic appeal and spatial quality. The goal of this thesis is to
+        showcase a series of experiments in the arrangement of architectural elements, and explore
+        the relationships between architectural components and the integration of various types of
+        sequences. Specifically, these experiments will demonstrate how the arrangement of
+        elements can produce continuity and discontinuity, how different systems are integrated,
+        and how the degree of continuity and discontinuity can be adjusted in order to achieve the
+        design purpose. Each type of element (columns, beams, openings) can create a sequence by
+        similarity. The similarity includes size and shape, spacing and orientation.
+      </p>
+      <br>
+      <p class="textS">For instance, if we have a row of ten columns with similar size,
+        shape, spacing, or orientation, we call it continuity. If we have different size, or
+        different shape, or different orientation, we can say that is discontinuity because they
+        do not maintain the sequence.
+
       </p>
 
     </div>
+    <!--Operation Method -->
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Case Study</p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--CaseStudy1 -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="titleL">CASE STUDY 1</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">Here are some historical buildings that have utilized continuity and
+          discontinuity to create distinctive features. </p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <div class="body-right body-img float">
+        <img src="CaseStudy1.jpg" alt="DIAGRAM" >
+        <p class="textS styleItalic">SANNA, 21ST CENTURY MUSEUM OF CONTEMPORARY ART 2004 </p>
+      </div>
+    </div>
+    <!--CaseStudy1 -->
+    <br>
+    <br>
+    <!--CaseStudy2 -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="titleL">CASE STUDY 2</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">These case studies interpret the relationship between the
+          architectural elements and aesthetic appeal. </p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <div class="body-right body-img float">
+        <img src="CaseStudy2.jpg" alt="DIAGRAM" >
+        <p class="textS styleItalic">JUNTA ISHIGAMI, KANAGAWA INSTITUTE OF TECHNOLOGY 2008</p>
+      </div>
+    </div>
+    <!--CaseStudy2 -->
+    <!--CaseStudy3 -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="titleL">CASE STUDY 3 </p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">The following experiments will explore the effect of changes in the
+          degree of continuity and discontinuity in these iconic buildings.</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <div class="body-right body-img float">
+        <img src="CaseStudy3.jpg" alt="DIAGRAM" >
+        <p class="textS styleItalic">MIES VAN DER ROHE, S.R. CROWN HALL 1956</p>
+      </div>
+    </div>
+    <!--CaseStudy3 -->
+    <!--CaseStudy4 -->
+    <div class="body-h">
+      <div class="body-left  body-txt">
+        <p class="titleL">CASE STUDY 4</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">
+
+        </p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <div class="body-right body-img float">
+        <img src="CaseStudy4.jpg" alt="DIAGRAM" >
+        <p class="textS styleItalic">LE CORBUSIER, CARPENTER CENTER 1962</p>
+      </div>
+    </div>
+    <!--CaseStudy4 -->
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Results of Manipulations
+      </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--Results of Manipulations -->
+    <div class="body-h">
+      <div class="body-left body-img float">
+        <img src="compare.jpg" alt="DIAGRAM" >
+      </div>
+      <div class="blankVer"> </div>
+      <div class="body-right body-txt">
+        <P class="titleL">RESULTS OF MANIPULATIONS</P>
+        <p class="lineHorizAll"></p>
+        <p class="textM">the comparison of the results of case study manipulations </p>
+
+      </div>
+    </div>
+    <!-- Results of Manipulations -->
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Architecture Projects
+      </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+
+    <!--project -->
+    <div class="column">
+      <p class="titleL"> My Understanding of Architecture </p>
+      <p class="lineHorizAll"></p>
+      <p class="textM">Architecture is nothing more but a union of disparate systems. Every
+        aspect of an architectural design is part of one system or another. </p>
+      <p class="textM">
+        For example, in an office building, the columns form a sequence, the furniture establish
+        the sequence, the repetition of the program as well as the repetition of the elements
+      </p>
+      <img src="Project.jpg" alt="DIAGRAM" class="image float">
+      <p class="textS styleItalic">a union of disparate systems</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="blankHXL"></div>
+
+
+  <!--project1 -->
+  <div class="column marginAll">
+    <p class="titleL"> My Understanding of Architecture </p>
+    <p class="lineHorizAll"></p>
+    <p class="textM"> Different types of sequences can be extended into larger systems.
+      Through aggregation, combination, and in relation to other arrangements, they form larger
+      spatial networks and complex material systems. </p>
+    <p class="textM">
+      The individual systems can be continuous or discontinuous, and they are all related in
+      some way. As an architect, it's important that one does not only consider continuity as it
+      pertains to a single system, but also the effects that continuous/discontinuous aspects of
+      different systems can have on each other. </p>
+    <p class="textM">
+      The use of discontinuity in a single system can be used to create distinctive features in
+      an architectural design if the architect considers its effect on other systems.
+    </p>
+    <img src="Project1.jpg" alt="DIAGRAM" class="image float">
+    <p class="textS styleItalic">a union of disparate systems</p>
+  </div>
+  <!--project1 -->
+  <div class="blankHXL"></div>
+
+  <!--video-->
+  <div class="column marginAll">
+    <P class="titleL"> DIFFERENTIATED CONTINUITY </P>
+    <p class="lineHorizAll"></p>
+    <p class="textM">Differentiated continuity apply on different scales</p>
+    <div class="blankHXL"></div>
+
+    <div class="centerHorz">
+      <video width="70%" height="auto" controls autoplay>
+        <source src="./anomation.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <!--video-->
+  <!-- content-->
+  <div class="content-tl marginAll">
+    <p class="tArrow"> Drawings of multiple scales </p>
+    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+  </div>
+  <!-- content-->
+
+
+
+
+  <!--Scale-->
+  <div class="column marginAll">
+    <p class="titleL">DRAWING</p>
+    <p class="lineHorizAll"></p>
+    <p class="textM">Large-Scale</p>
+    <div class="blankHM"></div>
+
+    <img src="methods1.png" alt="DIAGRAM" class="image float">
+  </div>
+
+  <!--Scale-->
+  <div class="blankHXL"></div>
+
+  <!--Scale-->
+  <div class="column marginAll">
+    <p class="titleL">DRAWING </p>
+    <p class="lineHorizAll"></p>
+    <p class="textM">Mid-Scale</p>
+    <div class="blankHM"></div>
+
+    <img src="methods1-1.png" alt="DIAGRAM" class="image float">
+  </div>
+  <!--Scale-->
+  <div class="blankHXL"></div>
+
+  <!--Scale-->
+  <div class="column marginAll">
+    <P class="titleL">DRAWING </P>
+    <p class="textM">Large-Scale</p>
+    <div class="blankHM"></div>
+
+    <img src="methods2.png" alt="DIAGRAM" >
+
+  </div>
+  <!--Scale-->
+  <div class="blankHM"></div>
+
+  <!--Scale-->
+  <div class="column marginAll">
+
+    <P class="titleL">DRAWING </P>
+    <p class="lineHorizAll"></p>
+    <p class="textM">Mid-Scale</p>
+    <div class="blankHM"></div>
+
+    <img src="methods2-1.png" alt="DIAGRAM" >
+
+  </div>
+  <!--Scale-->
+  <div class="blankHL"></div>
+
+  <!--Scale-->
+  <div class="column marginAll">
+    <p class="titleL">DRAWING</p>
+    <p class="lineHorizAll"></p>
+    <p class="textM">Mid-Scale</p>
+    <div class="blankHM"></div>
+    <img src="methods3.png" alt="DIAGRAM" >
+  </div>
+  <!--Scale-->
+  <div class="blankHL"></div>
+
+  <!--Scale-->
+  <div class="column marginAll">
+
+    <p class="titleL">DRAWING </p>
+    <p class="lineHorizAll"></p>
+    <p class="textM">Small-Scale</p>
+    <div class="blankHM"></div>
+
+    <img src="methods3-1.png" alt="DIAGRAM" >
+  </div>
+  <!--Scale-->
+  <div class="blankHXL"></div>
+  <!-- content-->
+  <div class="content-tl marginAll">
+    <p class="tArrow"> Photo Documentation</p>
+    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+  </div>
+  <!-- content-->
+  <!--photos -->
+  <div class="column marginAll">
+    <P class="titleL">PHOTOS</P>
+    <p class="lineHorizAll"></p>
+    <p class="textM"> Circulation</p>
+    <div class="blankHM"></div>
+    <img src="photo1.png" alt="DIAGRAM" class="image float">
+
+  </div>
+  <!--photos -->
+  <div class="blankHXL"></div>
+
+
+  <!--photos -->
+  <div class="column marginAll">
+    <p class="titleL">PHOTOS </p>
+    <p class="lineHorizAll"></p>
+    <p class="textM">Structure </p>
+    <div class="blankHM"></div>
+
+    <img src="photo2.png" alt="DIAGRAM" class="image float">
+  </div>
+  <!--photos -->
+  <div class="blankHXL"></div>
+
+  <!--photos -->
+  <div class="column marginAll">
+
+    <P class="titleL">PHOTOS</P>
+    <p class="lineHorizAll"></p>
+    <p class="textM">Surface</p>
+    <div class="blankHM"></div>
+    <img src="photo3.png" alt="DIAGRAM" >
+
+
+  </div>
+  <!--photos -->
+  <div class="blankHXL"></div>
+
+  <!--photos -->
+  <div class="column marginAll">
+    <p class="titleL">PHOTOS</p>
+    <p class="lineHorizAll"></p>
+    <p class="textM"> Perspective </p>
+    <div class="blankHM"></div>
+
+    <img src="photo4.png" alt="DIAGRAM" class="image float">
+  </div>
+  <!--photos -->
+  <div class="blankHXL"></div>
+
+
+
+
+
 </body>
+
+
+
+<!--body-->
+
+
+<!--back to top-->
+<button id="myBtn" class=" myBtn-1550" title="Go to top">
+  <img id="bottom-arrow" class="ArrowHover" src="../../arrow-top.svg" alt="back to top">
+
+  <div id="btnFont">TOP</div>
+
+</button>
+<!--back to top-->
+
+<!--footer-->
+<div class="footer">
+  <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
+  </p>
+  <div class="footer-right">
+    <a href="mailto:vickyw.design@gmail.com">
+      <img class="footer-logo" src="../../mail.svg" alt="email">
+    </a>
+
+    <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
+      <img class="footer-logo" src="../../in.svg" alt="linkedin">
+    </a>
+
+    <a href="https://github.com/vicky-wyq">
+      <img class="footer-logo" src="../../git.svg" alt="github">
+    </a>
+
+    <a href="https://www.instagram.com/vw_yiqi/">
+      <img class="footer-logo" src="../../ins.svg" alt="medium">
+    </a>
+  </div>
+</div>
+<!--footer-->
+</div>
 
 </html>
