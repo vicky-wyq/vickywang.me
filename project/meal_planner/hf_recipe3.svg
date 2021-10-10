@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1173" viewBox="0 0 900 1173">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2285" data-name="Rectangle 2285" width="374" height="808" rx="50" transform="translate(2263 6510)" fill="#3100ff"/>
+    </clipPath>
+    <filter id="rectangle" x="217" y="143" width="465" height="782" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1f3f6" stop-opacity="0.8"/>
+      <stop offset="0.194" stop-color="#f8f8f4" stop-opacity="0"/>
+      <stop offset="0.79" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#86613b" stop-opacity="0.102"/>
+    </linearGradient>
+    <clipPath id="clip-hf_recipe3">
+      <rect width="900" height="1173"/>
+    </clipPath>
+  </defs>
+  <g id="hf_recipe3" clip-path="url(#clip-hf_recipe3)">
+    <g id="phone-bottom" transform="translate(109)">
+      <path id="Path_2462" data-name="Path 2462" d="M60,0H326a60,60,0,0,1,60,60V769a60,60,0,0,1-60,60H60A60,60,0,0,1,0,769V60A60,60,0,0,1,60,0Z" transform="translate(148 172)" fill="#fff"/>
+      <path id="Path_2436" data-name="Path 2436" d="M50,0H324a50,50,0,0,1,50,50V758a50,50,0,0,1-50,50H50A50,50,0,0,1,0,758V50A50,50,0,0,1,50,0Z" transform="translate(155 182)" fill="#f5f5f5"/>
+      <path id="Path_2434" data-name="Path 2434" d="M40.929,0H332.343a40.929,40.929,0,0,1,40.929,40.929v726.9a40.929,40.929,0,0,1-40.929,40.929H40.929A40.929,40.929,0,0,1,0,767.828V40.929A40.929,40.929,0,0,1,40.929,0Z" transform="translate(155.147 182.355)" fill="none"/>
+      <rect id="Rectangle_2199" data-name="Rectangle 2199" width="13" height="10" transform="translate(214 172)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2201" data-name="Rectangle 2201" width="11" height="10" transform="translate(457 172)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2200" data-name="Rectangle 2200" width="13" height="11" transform="translate(214 990)" fill="#6b7f99" opacity="0.2"/>
+      <rect id="Rectangle_2202" data-name="Rectangle 2202" width="11" height="11" transform="translate(457 990)" fill="#6b7f99" opacity="0.2"/>
+    </g>
+    <g id="Mask_Group_145" data-name="Mask Group 145" transform="translate(-2000 -6327)" clip-path="url(#clip-path)">
+      <g id="Group_1713" data-name="Group 1713">
+        <g id="button" transform="translate(2292 7232)">
+          <path id="rectangle-2" data-name="rectangle" d="M30,0H285a30,30,0,0,1,0,60H30A30,30,0,0,1,30,0Z" fill="#fed256"/>
+          <g id="text-arrow" transform="translate(17)">
+            <g id="icon-arrow-small" transform="translate(89 26)">
+              <path id="path" d="M1281.487,1163.709l4.157,4.157-4.157,4.157" transform="translate(-1275.794 -1163.709)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+              <line id="line" x1="9.326" transform="translate(0 4.155)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+            </g>
+            <text id="Get_Started" data-name="Get Started" transform="translate(109 35)" fill="#fff" font-size="14" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">GET STARTED</tspan></text>
+          </g>
+        </g>
+        <path id="Path_2504" data-name="Path 2504" d="M-2952.79,4643.409h11.141" transform="translate(5261 1944.591)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="1"/>
+        <g id="bg-shadow" transform="translate(2262 6510)">
+          <ellipse id="ellipse" cx="149.5" cy="48.5" rx="149.5" ry="48.5" transform="translate(38 595)" opacity="0.15"/>
+          <g transform="matrix(1, 0, 0, 1, -262, -183)" filter="url(#rectangle)">
+            <path id="rectangle-3" data-name="rectangle" d="M0,0H375a0,0,0,0,1,0,0V656a36,36,0,0,1-36,36H36A36,36,0,0,1,0,656V0A0,0,0,0,1,0,0Z" transform="translate(262 183)" fill="#fff"/>
+          </g>
+        </g>
+        <g id="nav-dot" transform="translate(2425 7152)">
+          <circle id="Ellipse_442" data-name="Ellipse 442" cx="5" cy="5" r="5" fill="#eee"/>
+        </g>
+        <g id="nav-dot-2" data-name="nav-dot" transform="translate(2445 7152)">
+          <circle id="Ellipse_442-2" data-name="Ellipse 442" cx="5" cy="5" r="5" fill="#eee"/>
+        </g>
+        <g id="nav-dot-3" data-name="nav-dot" transform="translate(2465 7152)">
+          <circle id="Ellipse_442-3" data-name="Ellipse 442" cx="5" cy="5" r="5" fill="#b5b5b5"/>
+        </g>
+        <text id="onboarding-text-3" transform="translate(2305 7049)" fill="#505050" font-size="16" font-family="Lato-Light, Lato" font-weight="300" letter-spacing="-0.01em"><tspan x="41.48" y="16">Tailor your Recipes feed exactly</tspan><tspan x="98.12" y="35">how you like it</tspan></text>
+        <text id="All" transform="translate(2322 6670)" fill="#707070" font-size="14" font-family="Lato-Light, Lato" font-weight="300"><tspan x="0" y="0">All</tspan></text>
+        <text id="Meat_Poultry" data-name="Meat &amp; Poultry" transform="translate(2322 6833)" fill="#707070" font-size="14" font-family="Lato-Light, Lato" font-weight="300"><tspan x="0" y="0">Meat &amp; Poultry</tspan></text>
+        <text id="Salad_Recipes" data-name="Salad Recipes" transform="translate(2322 6887)" fill="#707070" font-size="14" font-family="Lato-Light, Lato" font-weight="300"><tspan x="0" y="0">Salad Recipes</tspan></text>
+        <text id="Seafood_Recipes" data-name="Seafood Recipes" transform="translate(2322 6941)" fill="#707070" font-size="14" font-family="Lato-Light, Lato" font-weight="300"><tspan x="0" y="0">Seafood Recipes</tspan></text>
+        <text id="Recipe_Preferences" data-name="Recipe Preferences" transform="translate(2450 6594)" fill="#505050" font-size="20" font-family="Lato-Regular, Lato" letter-spacing="-0.01em"><tspan x="-82.97" y="0">Recipe Preferences</tspan></text>
+        <g id="switch-off" transform="translate(2540 6654)">
+          <g id="switch-body" transform="translate(37 24) rotate(180)" fill="none" stroke="#707070" stroke-width="1">
+            <rect width="37" height="24" rx="12" stroke="none"/>
+            <rect x="0.5" y="0.5" width="36" height="23" rx="11.5" fill="none"/>
+          </g>
+          <rect id="switch-circle" width="24" height="24" rx="12" transform="translate(13)" fill="#b5b5b5"/>
+          <path id="switch-line-2" d="M1442.681,4368.046l5.484-5.484" transform="translate(-1420.595 -4353.062)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="switch-line-1" d="M1442.681,4368.046l5.484-5.484" transform="translate(4390.132 -1433.181) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="switch-off-2" data-name="switch-off" transform="translate(2540 6708)">
+          <g id="switch-body-2" data-name="switch-body" transform="translate(37 24) rotate(180)" fill="none" stroke="#707070" stroke-width="1">
+            <rect width="37" height="24" rx="12" stroke="none"/>
+            <rect x="0.5" y="0.5" width="36" height="23" rx="11.5" fill="none"/>
+          </g>
+          <rect id="switch-circle-2" data-name="switch-circle" width="24" height="24" rx="12" transform="translate(13)" fill="#b5b5b5"/>
+          <path id="switch-line-2-2" data-name="switch-line-2" d="M1442.681,4368.046l5.484-5.484" transform="translate(-1420.595 -4353.062)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="switch-line-1-2" data-name="switch-line-1" d="M1442.681,4368.046l5.484-5.484" transform="translate(4390.132 -1433.181) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="switch-off-3" data-name="switch-off" transform="translate(2540 6816)">
+          <g id="switch-body-3" data-name="switch-body" transform="translate(37 24) rotate(180)" fill="none" stroke="#707070" stroke-width="1">
+            <rect width="37" height="24" rx="12" stroke="none"/>
+            <rect x="0.5" y="0.5" width="36" height="23" rx="11.5" fill="none"/>
+          </g>
+          <rect id="switch-circle-3" data-name="switch-circle" width="24" height="24" rx="12" transform="translate(13)" fill="#b5b5b5"/>
+          <path id="switch-line-2-3" data-name="switch-line-2" d="M1442.681,4368.046l5.484-5.484" transform="translate(-1420.595 -4353.062)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="switch-line-1-3" data-name="switch-line-1" d="M1442.681,4368.046l5.484-5.484" transform="translate(4390.132 -1433.181) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="switch-off-4" data-name="switch-off" transform="translate(2540 6870)">
+          <g id="switch-body-4" data-name="switch-body" transform="translate(37 24) rotate(180)" fill="none" stroke="#707070" stroke-width="1">
+            <rect width="37" height="24" rx="12" stroke="none"/>
+            <rect x="0.5" y="0.5" width="36" height="23" rx="11.5" fill="none"/>
+          </g>
+          <rect id="switch-circle-4" data-name="switch-circle" width="24" height="24" rx="12" transform="translate(13)" fill="#b5b5b5"/>
+          <path id="switch-line-2-4" data-name="switch-line-2" d="M1442.681,4368.046l5.484-5.484" transform="translate(-1420.595 -4353.062)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="switch-line-1-4" data-name="switch-line-1" d="M1442.681,4368.046l5.484-5.484" transform="translate(4390.132 -1433.181) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="switch-off-5" data-name="switch-off" transform="translate(2540 6924)">
+          <g id="switch-body-5" data-name="switch-body" transform="translate(37 24) rotate(180)" fill="none" stroke="#707070" stroke-width="1">
+            <rect width="37" height="24" rx="12" stroke="none"/>
+            <rect x="0.5" y="0.5" width="36" height="23" rx="11.5" fill="none"/>
+          </g>
+          <rect id="switch-circle-5" data-name="switch-circle" width="24" height="24" rx="12" transform="translate(13)" fill="#b5b5b5"/>
+          <path id="switch-line-2-5" data-name="switch-line-2" d="M1442.681,4368.046l5.484-5.484" transform="translate(-1420.595 -4353.062)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="switch-line-1-5" data-name="switch-line-1" d="M1442.681,4368.046l5.484-5.484" transform="translate(4390.132 -1433.181) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="switch-off-6" data-name="switch-off" transform="translate(2540 6762)">
+          <g id="switch-body-6" data-name="switch-body" transform="translate(36 24) rotate(180)" fill="none">
+            <path d="M12,0H24a12,12,0,0,1,0,24H12A12,12,0,0,1,12,0Z" stroke="none"/>
+            <path d="M 12 1 C 9.061790466308594 1 6.299449920654297 2.144199371337891 4.221820831298828 4.221820831298828 C 2.144199371337891 6.299449920654297 1 9.061790466308594 1 12 C 1 14.93820953369141 2.144199371337891 17.7005500793457 4.221820831298828 19.77817916870117 C 6.299449920654297 21.85580062866211 9.061790466308594 23 12 23 L 24 23 C 26.93820953369141 23 29.7005500793457 21.85580062866211 31.77817916870117 19.77817916870117 C 33.85580062866211 17.7005500793457 35 14.93820953369141 35 12 C 35 9.061790466308594 33.85580062866211 6.299449920654297 31.77817916870117 4.221820831298828 C 29.7005500793457 2.144199371337891 26.93820953369141 1 24 1 L 12 1 M 12 0 L 24 0 C 30.62742042541504 0 36 5.372579574584961 36 12 C 36 18.62742042541504 30.62742042541504 24 24 24 L 12 24 C 5.372579574584961 24 0 18.62742042541504 0 12 C 0 5.372579574584961 5.372579574584961 0 12 0 Z" stroke="none" fill="#ffbf00"/>
+          </g>
+          <rect id="switch-circle-6" data-name="switch-circle" width="24" height="24" rx="12" fill="#ffbf00"/>
+          <path id="switch-line-2-6" data-name="switch-line-2" d="M1442.681,4367.8l5.236-5.236" transform="translate(-1432.094 -4352.813)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="switch-line-1-6" data-name="switch-line-1" d="M1442.681,4365.062l2.5-2.5" transform="translate(4373.062 -1430.141) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <text id="Pasta_Noodles" data-name="Pasta &amp; Noodles" transform="translate(2322 6779)" fill="#707070" font-size="14" font-family="Lato-Light, Lato" font-weight="300"><tspan x="0" y="0">Pasta &amp; Noodles</tspan></text>
+        <text id="BBQ_Grilling" data-name="BBQ &amp; Grilling" transform="translate(2322 6725)" fill="#707070" font-size="14" font-family="Lato-Light, Lato" font-weight="300"><tspan x="0" y="0">BBQ &amp; Grilling</tspan></text>
+      </g>
+    </g>
+    <g id="phone-top" transform="translate(109)">
+      <rect id="Rectangle_2198" data-name="Rectangle 2198" width="374" height="808" rx="50" transform="translate(155 182)" fill="url(#linear-gradient)"/>
+      <g id="phone_dots_at_top" data-name="phone dots at top" transform="translate(317.479 195.336)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="1.5" cy="1.5" r="1.5" transform="translate(5.521 -0.336)" fill="#6b7f99"/>
+        <circle id="Ellipse_8" data-name="Ellipse 8" cx="1" cy="1" r="1" transform="translate(-0.479 -0.336)" fill="#6b7f99"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="1" cy="1" r="1" transform="translate(14.521 -0.336)" fill="#6b7f99"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="1" cy="1" r="1" transform="translate(20.521 -0.336)" fill="#6b7f99"/>
+        <circle id="Ellipse_4" data-name="Ellipse 4" cx="1" cy="1" r="1" transform="translate(26.521 -0.336)" fill="#6b7f99"/>
+        <circle id="Ellipse_5" data-name="Ellipse 5" cx="1" cy="1" r="1" transform="translate(39.521 -0.336)" fill="#6b7f99"/>
+        <circle id="Ellipse_7" data-name="Ellipse 7" cx="1.5" cy="1.5" r="1.5" transform="translate(45.521 -0.336)" fill="#6b7f99"/>
+        <circle id="Ellipse_6" data-name="Ellipse 6" cx="1.5" cy="1.5" r="1.5" transform="translate(31.521 -0.336)" fill="#6b7f99"/>
+      </g>
+    </g>
+  </g>
+</svg>

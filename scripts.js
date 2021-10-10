@@ -1,56 +1,55 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
+
+
   AOS.init({
-    duration: 1200,
+
+    delay: 180, // values from 0 to 3000, with step 50ms
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+  });
+  //aos + 2 links on html 
+
+
+  const showAnim = gsap.from('.main-tool-bar', {
+    yPercent: -100,
+    paused: true,
+    duration: 0.2
+  }).progress(1);
+
+  ScrollTrigger.create({
+    start: "top top",
+    end: 99999,
+    onUpdate: (self) => {
+      self.direction === -1 ? showAnim.play() : showAnim.reverse()
+    }
+  });
+  //main-tool-bar + 2 links on html
+
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.addEventListener('scroll', function () {
+    scrollFunction()
   })
 
-  
-  $("#lightSlider").lightSlider({
-    gallery:true,
-    item:1,
-    thumbItem:4,
-    vThumbWidth:100,
-  }); 
-  function makeCarousel(carousel) {
-    var selectedIndex = 0
-    
-    var carouselItems = carousel.getElementsByClassName("carousel-item");
-    carousel.getElementsByClassName("next")[0].addEventListener("click", function() {
-      carouselItems[selectedIndex].classList.remove("selected")
-    
-      if (selectedIndex === 0) {
-        selectedIndex = carouselItems.length - 1;
-      } else {
-        selectedIndex = selectedIndex - 1;
-      }
-      carouselItems[selectedIndex].classList.add("selected")
-    })
-    
-    carousel.getElementsByClassName("prev")[0].addEventListener("click", function() {
-      carouselItems[selectedIndex].classList.remove("selected")
-    
-      if (selectedIndex === carouselItems.length - 1) {
-        selectedIndex = 0;
-      } else {
-        selectedIndex = selectedIndex + 1;
-      }
-      carouselItems[selectedIndex].classList.add("selected")
-    })
-  }
-  
-
-
-
-
-  var carousels = document.getElementsByClassName("carousel")
-  var index = 0;
-  while (index < carousels.length) {
-    makeCarousel(carousels[index]);
-    index++
+  function scrollFunction() {
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
 
-
-
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  mybutton.addEventListener('click', topFunction)
+  // back to top 
 
 });

@@ -2,7 +2,52 @@
 
 <head>
   <link rel="stylesheet" href="../../main.css">
+  <script type="text/javascript" src="../../scripts.js"></script>
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Titillium Web', sans-serif; -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Roboto', sans-serif; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <!--font using hello-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Catamaran', sans-serif; -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font font-family: 'Lato', sans-serif; -->
+
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--jQuery-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--aos-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+  <!-- gsap -tool-bar-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=40"></script>
+  <!-- gsap - tool-bar-->
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+
+
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vicky Wang</title>
@@ -14,253 +59,357 @@
   <meta property="og:description" content="Hi! Thanks for stopping by. 
   I enjoy design and code who loves solving challenging problems. 
   Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/vickywang.design/VW.png" />
+  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
 
-  <meta name="twitter:url" content="https://vickywang.design">
+  <meta name="twitter:url" content="//vickywang.design">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="VICKY WANG" />
   <meta name="twitter:creator" content="VICKY WANG" />
   <meta property="twitter:title" content="VICKY WANG">
-  <meta property="twitter:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :)">
-  <meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/vickywang.design/VW.png">
+  <meta property="twitter:description"
+    content="Hi! Thanks for stopping by. I’m a product designer based in San Francisco. I'm a former architectural designer with a passion for solving business challenges through design and occasionally code. If you like what you see here, please feel free to reach out to me at vickyw.design@gmail.com :)">
+  <meta name="twitter:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
 </head>
 
+
 <body>
+  <!--head-->
+  <!--progress bar-->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <!--progress bar-->
+  <div class="main-tool-bar">
+    <div class="head-left">
+      <a href="http://vickywang.design/" class="pointer">VW
+      </a>
+    </div>
+    <div class="head-right ">
+      <a href="/project" class="inactive head-right-1550 box">
+        PROJECT
+      </a>
+      <a href="/architecture" class="active head-right-1550 box">
+        ARCHITECTURE
+      </a>
 
-  <div class=margin>
+      <a href="/photography" class="inactive head-right-1550 box">
+        PHOTOGRAPHY
+      </a>
 
-    <!--head-->
-    <div class="container_head">
-
-      <div class="container-head" id="topbar">
-
-        <div class="container-head-left">
-          <a href="http://vickywang.design/" class="pointer"> VICKY WANG
-          </a>
-          <p class="lighter_font" id="topleftlighterfont"> DESIGN & RESEARCH
-          </p>
-        </div>
-        <div class="container-head-right" id="topbar-right">
-          <div> <a href="/" class="inactive"> PROJECT </a>
-          </div>
-          <div> <a href="/architecture" class="active"> ARCHITECTURE </a>
-          </div>
-          <div> <a href="/photography" class="inactive"> PHOTOGRAPHY </a>
-          </div>
-          <div> <a href="/about" class="inactive"> ABOUT </a>
-          </div>
-        </div>
-      </div>
-
+      <a href="/" class="inactive head-right-1550 box">
+        ABOUT
+      </a>
 
     </div>
-    <!--head-->
+  </div>
+  <!--head-->
+  <span id="circle" class="circle"></span>
 
-    <!--body1-->
-    <div class="container_body">
-      <img
-        src="https://s3-us-west-1.amazonaws.com/vickywang.design/architecture/recreation_commons/Arch_Rec_Conms_Diagram2.jpg"
-        alt="DIAGRAM" class="image">
+  <!--body-->
+  <div class="blankPHONE"></div>
+  <div class="blankHL"></div>
+  <div class="marginAll marginAll1920">
 
-      <div class="image-text">
-        <div class="text_button">EXERCISE VS. LEISURE</div>
+
+
+    <!--diagram 1-->
+    <div class="row centerVer centerHorz">
+      <img src="diagram.jpg" alt="DIAGRAM" class="float widthL">
+
+      <div class="column">
+        <P class="titleL">TWO VOLUMES IN ONE SPACE</P>
+        <p class="lineHorizAll"></p>
+        <p class="textM">the purpose of these two volumes is to distinguish two types of
+          programs: for the public, another for private use.</p>
       </div>
     </div>
+    <!--diagram 1-->
 
-    <!--body1-->
-    <!--body2-->
-    <div class="container_body">
-      <img src="programs.jpg" alt="DIAGRAM" class="image">
 
-      <div class="image-text">
-        <div class="text_button">PRIVATE VS. PUBLIC</div>
-      </div>
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Programs </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
     </div>
-    <!--body2-->
+    <!-- content-->
+    <br>
+    <!--diagram 1-->
+    <div class="column centerVer centerHorz">
+      <img src="programs.jpg" alt="DIAGRAM" class=" float">
 
-    <!--body2-->
-    <div class="container_body">
-      <img src="./diagram1.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">TWO VOLUMES</div>
-      </div>
-    </div>
-    <!--body2-->
-    <!--body2-->
-    <div class="container_body">
-      <img src="./diagram2.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">LIGHT & AIR</div>
-      </div>
-    </div>
-    <!--body2-->
-    <!--body2-->
-    <div class="container_body">
-      <img src="./diagram3.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">FACADE</div>
-      </div>
-    </div>
-    <!--body2-->
-    <!--body2-->
-    <div class="container_body">
-      <img src="./section_perspective.jpg" alt="DIAGRAM" class="image">
-
-      <div class="image-text">
-        <div class="text_button">SECTION PERSPECTIVE</div>
-      </div>
-    </div>
-    <!--body2-->
-    <!--body3-->
-    <div class="container_body">
-      <img
-        src="https://s3-us-west-1.amazonaws.com/vickywang.design/architecture/recreation_commons/Arch_Rec_Conms_Street+View.jpg"
-        alt="STREET VIEW" class="image">
-
-      <div class="image-text">
-        <div class="text_button">STREET VIEW</div>
-      </div>
-    </div>
-    <!--body3-->
-    <!--body4-->
-
-    <!--body4-->
-
-    <!--body5-->
-    <div class="container_body">
-      <img src="./int1.jpg" alt="SITE PLAN" class="image">
-
-      <div class="image-text">
-        <div class="text_button">INTERIOR VIEW</div>
-      </div>
-    </div>
-    <!--body5-->
-    <!--body5.1-->
-    <div class="container_body">
-      <img src="./int2.jpg" alt="SITE PLAN" class="image">
-
-      <div class="image-text">
-        <div class="text_button">INTERIOR VIEW</div>
-      </div>
-    </div>
-    <!--body5.1-->
-
-    <!--body6-->
-    <div class="container_body">
-      <img src="./siteplan.jpg" alt="SITE PLAN" class="image">
-
-      <div class="image-text">
-        <div class="text_button">SITE PLAN</div>
-      </div>
-    </div>
-    <!--body6-->
-
-    <!--body6-->
-    <div class="container_body">
-      <img src="./floorplan1.jpg" alt="FLOOR PLAN" class="image">
-
-      <div class="image-text">
-        <div class="text_button">FLOOR PLAN</div>
-      </div>
-    </div>
-    <!--body6-->
-    <!--body7-->
-    <div class="container_body">
-      <img src="./floorplan2.jpg" alt="FLOOR PLAN" class="image">
-
-      <div class="image-text">
-        <div class="text_button">FLOOR PLAN</div>
-      </div>
-    </div>
-    <!--body7-->
-    <!--body7.1-->
-    <div class="container_body">
-      <img src="./floorplan3.jpg" alt="FLOOR PLAN" class="image">
-
-      <div class="image-text">
-        <div class="text_button">FLOOR PLAN</div>
-      </div>
-    </div>
-    <!--body7.1-->
-    <!--body8-->
-    <div class="container_body">
-      <img src="./section.jpg" alt="SECTION" class="image">
-
-      <div class="image-text">
-        <div class="text_button">SECTION</div>
-      </div>
-    </div>
-    <!--body8-->
-
-
-
-
-
-    <!--body-->
-    <div class="container_body">
-      <img
-        src="https://s3-us-west-1.amazonaws.com/vickywang.design/architecture/recreation_commons/00_Arch_Rec_Conms_Site.jpg"
-        alt="SITE" class="image">
-
-      <div class="image-text">
-        <div class="text_button">SITE</div>
-      </div>
-    </div>
-
-
-    <!--body-->
-
-    <!--footer-->
-    <div class="container_footer">
-
-      <div id="infor">
-        <div>
-          <a href="mailto:vickyw.design@gmail.com">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_mail.svg" alt="email">
-          </a>
-
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_linkedin.svg"
-              alt="linkedin">
-          </a>
-        </div>
-
-        <div>
-          <a href="https://github.com/vicky-wyq">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_github.svg"
-              alt="github">
-          </a>
-        </div>
-
-        <div>
-          <a href="https://medium.com/@vickywang.design">
-            <img class="image_footer"
-              src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_medium.svg"
-              alt="medium">
-          </a>
-        </div>
-      </div>
-
-      <p class="lighter_font">COPYRIGHT &#169; VICKY WANG
-      </p>
+      <p class="titleL">PRIVATE VS. PUBLIC</p>
+      <p class="lineHorizAll"></p>
+      <p class="textM widthL">insert two volumes into one space two distinguish two main
+        programs. one for the public, another one for private purpose</p>
 
     </div>
+    <!--diagram 1-->
+    <div class="blankHXL"></div>
+    <!--diagram 2-->
+    <div class="column centerVer centerHorz">
+      <img src="diagram0.jpg" alt="DIAGRAM" class="float">
+
+      <p class="titleL">EXERCISE VS. LEISURE</p>
+      <p class="lineHorizAll"></p>
+      <p class="textM widthL">the circulation integrates the two volumes as one space. it creates
+        a
+        dynamic view between the leisure and training sections.</p>
+    </div>
+    <!--diagram 2-->
+    <div class="blankHL"></div>
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Diagrams </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--environmental diagram-->
+    <div class="body-h">
+      <div class="body-right  body-txt marginAll">
+        <p class="titleS">THE MANIPULATION OF TWO VOLUMES</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">Void vs. Solid</p>
+      </div>
+      <div class="body-left body-img float">
+        <img src="diagram1.jpg" alt="DIAGRAM" >
+      </div>
+    </div>
+    <!--environmental diagram-->
+    <!--environmental diagram-->
+    <div class="body-h">
+      <div class="body-right  body-txt marginAll">
+        <p class="titleS">LIGHT AND AIR</p>
+        <p class="lineHorizAll"></p>
+
+        <p class="textM">an opening on the southern side provides and a gap between adjacent
+          build providing all-day nature daylight from the top all the way to the swimming pool at
+          first floor</p>
+      </div>
+      <div class="body-left body-img float">
+        <img src="diagram2.jpg" alt="DIAGRAM" >
+      </div>
+    </div>
+    <!--environmental diagram-->
+    <!--environmental diagram-->
+    <div class="body-h">
+      <div class="body-right  body-txt marginAll">
+        <p class="titleS">FACADE DESGIN</p>
+        <p class="lineHorizAll"></p>
+
+        <p class="textM">all the windows equally set, and the metal mesh with two types of
+          coating redomly setup</p>
+      </div>
+      <div class="body-left body-img float">
+        <img src="diagram3.jpg" alt="DIAGRAM" >
+      </div>
+    </div>
+    <!--environmental diagram-->
+
+    <div class="blankHXL"></div>
+
+
+    <!--Section Perspective -->
+    <div class="column centerVer centerHorz">
+      <img src="section_perspective.jpg" alt="DIAGRAM" class="float">
+
+      <div class="body-right body-txt widthXS">
+        <P class="titleL">SECTION PERSPECTIVE</P>
+        <p class="lineHorizAll"></p>
+        <p class="textM">F1-5 with Facade Detail</p>
+      </div>
+    </div>
+    <!--Section Perspective -->
+    <div class="blankHXL"></div>
+
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Renders </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+
+    <!--renders 2-->
+    <div class="body-h">
+      <div class="body-right  body-txt">
+        <p class="titleL">INTERIOR VIEW</p>
+        <p class="lineHorizAll"></p>
+
+        <p class="textM">Interior view from the public side</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <div class="body-left float">
+        <img src="render_int1.jpg" alt="DIAGRAM" >
+      </div>
+    </div>
+    <!--renders 2-->
+    <div class="blankHXL"></div>
+    <!--renders 3-->
+    <div class="body-h">
+      <div class="body-left float">
+        <img src="render_int2.jpg" alt="DIAGRAM" >
+      </div>
+      <div class="blankVer">
+      </div>
+      <div class="body-right body-txt">
+        <p class="titleL">INTERIOR VIEW</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">Interior view from the activity room</p>
+      </div>
+
+    </div>
+    <!--renders 3-->
+    <div class="blankHXL"></div>
+
+    <!--renders 2-->
+    <div class="body-h">
+      <div class="body-right  body-txt">
+        <p class="titleL">STREET VIEW</p>
+        <p class="lineHorizAll"></p>
+
+        <p class="textM">Street view from south west</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <div class="body-left float">
+        <img src="render_streetview.jpg" alt="DIAGRAM" >
+      </div>
+    </div>
+    <!--renders 2-->
+
+
+    <br>
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Plans and Sections </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--plans and sections 1-->
+    <div class="column centerVer centerHorz">
+      <img src="plan_f1.jpg" alt="DIAGRAM" >
+
+      <p class="titleL">FLOOR PLANS </p>
+      <p class="lineHorizAll"></p>
+      <p class="textM">F1 and F2</p>
+    </div>
+
+    <!--plans and sections 1-->
+    <div class="blankHXL"></div>
+    <!--plans and sections 2-->
+    <div class="column centerVer centerHorz">
+      <img src="plan_f3.jpg" alt="DIAGRAM" >
+
+      <p class="titleL">FLOOR PLANS </p>
+      <p class="lineHorizAll"></p>
+      <p class="textM">F3 and F4</p>
+
+    </div>
+    <!--plans and sections 2-->
+    <div class="blankHXL"></div>
+    <!--plans and sections 3-->
+    <div class="column centerVer centerHorz">
+      <img src="plan_f5.jpg" alt="plans and sections" >
+
+      <p class="titleL">FLOOR PLANS </p>
+      <p class="lineHorizAll"></p>
+      <p class="textM">F5 and Facade Detail</p>
+
+    </div>
+    <!--plans and sections 3-->
+
+    <div class="blankHXL"></div>
+    <!--plans and sections 2-->
+    <div class="column centerVer centerHorz">
+      <img src="sections_l.jpg" alt="DIAGRAM" >
+
+      <P class="titleL"> SECTIONS</P>
+      <p class="lineHorizAll"></p>
+      <p class="textM">F5 and Facade Detail</p>
+    </div>
+    <!--plans and sections 2-->
+    <div class="blankHXL"></div>
+    <!--plans and sections 3-->
+    <div class="column centerVer centerHorz">
+      <img src="section_1.jpg" alt="Section1" >
+      <img src="section_2.jpg" alt="Section2" >
+      <P class="titleL">SECTIONS</P>
+      <p class="lineHorizAll"></p>
+      <p class="textM">Section Detail</p>
+    </div>
+    <!--plans and sections 3-->
+    <!-- content-->
+    <div class="content-tl">
+      <p class="tArrow"> Site </p>
+      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+    </div>
+    <!-- content-->
+    <!--site-->
+    <div class="column centerVer centerHorz">
+      <img src="site.jpg" alt="DIAGRAM" >
+
+      <p class="titleL">SITE </p>
+      <p class="lineHorizAll"></p>
+      <p class="textM">110 Franklin St. San Francisco, CA, 94102</p>
+
+    </div>
+    <!--site-->
+    <div class="blankHXL"></div>
+
+
+
+  </div>
 </body>
+
+
+
+
+
+<!--body-->
+
+
+<!--back to top-->
+<button id="myBtn" class=" myBtn-1550" title="Go to top">
+  <img id="bottom-arrow" class="ArrowHover" src="../../arrow-top.svg" alt="back to top">
+
+  <div id="btnFont">TOP</div>
+
+</button>
+<!--back to top-->
+
+<!--footer-->
+<div class="footer">
+  <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
+  </p>
+  <div class="footer-right">
+    <a href="mailto:vickyw.design@gmail.com">
+      <img class="footer-logo" src="../../mail.svg" alt="email">
+    </a>
+
+    <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
+      <img class="footer-logo" src="../../in.svg" alt="linkedin">
+    </a>
+
+    <a href="https://github.com/vicky-wyq">
+      <img class="footer-logo" src="../../git.svg" alt="github">
+    </a>
+
+    <a href="https://www.instagram.com/vw_yiqi/">
+      <img class="footer-logo" src="../../ins.svg" alt="medium">
+    </a>
+  </div>
+</div>
+<!--footer-->
+</div>
 
 </html>

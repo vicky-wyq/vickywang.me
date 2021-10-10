@@ -2,9 +2,54 @@
 
 <head>
   <link rel="stylesheet" href="../main.css">
-  <script type="text/javascript" src="../scripts.js"></script>
+  <script type="text/javascript" src="../../scripts.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Titillium Web', sans-serif; -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Roboto', sans-serif; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <!--font using hello-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Catamaran', sans-serif; -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font font-family: 'Lato', sans-serif; -->
+
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--jQuery-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--aos-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+  <!-- gsap -tool-bar-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=40"></script>
+  <!-- gsap - tool-bar-->
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+
+
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vicky Wang</title>
@@ -14,22 +59,21 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VICKY WANG" />
   <meta property="og:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/vickywang.design/VW.png" />
+I enjoy design and code who loves solving challenging problems. 
+Interested in what you see? Shoot me an email :) " />
+  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
 
-  <meta name="twitter:url" content="https://vickywang.design">
+  <meta name="twitter:url" content="//vickywang.design">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="VICKY WANG" />
   <meta name="twitter:creator" content="VICKY WANG" />
   <meta property="twitter:title" content="VICKY WANG">
-  <meta property="twitter:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :)">
-  <meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/vickywang.design/VW.png">
+  <meta property="twitter:description"
+    content="Hi! Thanks for stopping by. I’m a product designer based in San Francisco. I'm a former architectural designer with a passion for solving business challenges through design and occasionally code. If you like what you see here, please feel free to reach out to me at vickyw.design@gmail.com :)">
+  <meta name="twitter:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
@@ -37,298 +81,449 @@
 
 <body>
   <!--head-->
-  <div class="container-head" id="topbar">
-
-    <div class="container-head-left">
-      <a href="http://vickywang.design/" class="pointer"> VICKY WANG
+  <!--progress bar-->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <!--progress bar-->
+  <div class="main-tool-bar">
+    <div class="head-left">
+      <a href="http://vickywang.design/" class="pointer">VW
       </a>
-      <p class="lighter_font" id="topleftlighterfont"> DESIGN & RESEARCH
-      </p>
     </div>
+    <div class="head-right ">
+      <a href="/project/" class="inactive head-right-1550 box">
+        PROJECT
+      </a>
+      <a href="/architecture" class="inactive head-right-1550 box">
+        ARCHITECTURE
+      </a>
 
-    <div class="container-head-right" id="topbar-right">
-      <div> <a href="/" class="inactive"> PROJECT </a>
-      </div>
-      <div> <a href="/architecture" class="inactive"> ARCHITECTURE </a>
-      </div>
-      <div> <a href="/photography" class="active"> PHOTOGRAPHY </a>
-      </div>
-      <div> <a href="/about" class="inactive"> ABOUT </a>
-      </div>
+      <a href="/photography" class="active head-right-1550 box">
+        PHOTOGRAPHY
+      </a>
+
+      <a href="/" class="inactive head-right-1550 box">
+        ABOUT
+      </a>
+
     </div>
-
   </div>
   <!--head-->
+  <!--body-->
+  <div class="blankHXL"></div>
 
+  <div class="body-landing">
+    <div class="body-intro">
+      <div class="t-hello" id="t-hello-1550">HELLO, </div>
+    </div>
+    <div class="body-intro" data-aos="fade-up">
+      <div class="body-v">
+        <div class="t-hi">I'm Vicky.</div>
+      </div>
+      <p class="divider"></p>
+      <div class="body-v">
+        <div class="body-intro">
+          <span class="t-me">photography</span>
+          <span class="divider1"></span>
+          <span class="t-me"> observation</span>
 
+        </div>
+        <div class="t-me t-me-1">
+          Selected recent photographs </div>
+      </div>
+    </div>
 
-  <!--body-hover button-->
-
-
-
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/09182020_1.jpg"
-      alt="Yellowstone National Park">
+    <div class="t-intro zTop" data-aos="fade-up">
+      Always got inspiration from nature. I love to recompose the nature form with my camera in 2
+      dimensions. Observing the narrative of natural components within a certain perspective.</div>
   </div>
 
-  <div class="container-body-description">
-    <p class="text-body-title">Yellowstone National Park</p>
-    <p class="text-body-description"> September, 2020</p>
+  <div class="body-h">
+    <p class="lineVerAll ver1"></p>
   </div>
 
-  <hr>
-
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019.jpg"
-      alt="Bosque Del Apache National Wildlife Refuge">
+  <!--Photo 1-->
+  <div id="ytrigger-pg">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./01.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p class="titleL">Bosque Del Apache National Wildlife Refuge</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+    </div>
   </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Bosque Del Apache National Wildlife Refuge</p>
-      <p class="text-body-description"> December, 2019</p>
+  <!--Photo 1-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 2-->
+
+
+  <div id="ytrigger-pg2">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
+
+      <div class="column widthM">
+        <p class="titleL">Bosque Del Apache National Wildlife Refuge</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./02.jpg">
+    </div>
+
+
+  </div>
+  <!--Photo 2-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 3-->
+  <div id="ytrigger-pg3">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./03.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p class="titleL">Bosque Del Apache National Wildlife Refuge</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+    </div>
+  </div>
+  <!--Photo 3-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 4-->
+
+  <div id="ytrigger-pg4">
+
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
+
+      <div class="column widthM">
+        <p href="/Photography" class="titleL">Sacramento National Wildlife Refuge</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./04.jpg">
+    </div>
+
+  </div>
+
+  <!--Photo 4-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 5-->
+  <div id="ytrigger-pg5">
+
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./05.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p href="/Photography" class="titleL">Sacramento National Wildlife Refuge</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+    </div>
+  </div>
+  <!--Photo 5-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 6-->
+  <div id="ytrigger-pg6">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
+
+      <div class="column widthM">
+        <p href="/Photography" class="titleL">Sacramento National Wildlife Refuge</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./06.jpg">
+    </div>
+  </div>
+  <!--Photo 6-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 7-->
+  <div id="ytrigger-pg7">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./07.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p class="titleL">Teton National Park </p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">September, 2020</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
     </div>
   </div>
 
-  <hr>
+  <!--Photo 7-->
+  <div class="blankHXL"></div>
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019_1.jpg"
-      alt="Bosque Del Apache National Wildlife Refuge">
+  <!--Photo 8-->
+  <div id="ytrigger-pg8">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
+
+      <div class="column widthM">
+        <p class="titleL">White Sands National Monument</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./08.jpg">
+    </div>
   </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Bosque Del Apache National Wildlife Refuge</p>
-      <p class="text-body-description"> December, 2019</p>
+  <!--Photo 8-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 9-->
+  <div id="ytrigger-pg9">
+
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./09.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p class="titleL">White Sands National Monument</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+    </div>
+  </div>
+  <!--Photo 9-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 10-->
+  <div id="ytrigger-pg10">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
+
+      <div class="column widthM">
+        <p class="titleL">White Sands National Monument</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./10.jpg">
+    </div>
+  </div>
+  <!--Photo 10-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 11-->
+  <div id="ytrigger-pg11">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./11.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p class="titleL">White Sands National Monument</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+    </div>
+  </div>
+  <!--Photo 11-->
+  <div class="blankHXL"></div>
+
+  <!--Photo 12-->
+
+  <div id="ytrigger-pg12">
+
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
+
+      <div class="column widthM">
+        <p class="titleL">White Sands National Monument</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./12.jpg">
     </div>
   </div>
 
+  <!--Photo 12-->
 
-  <hr>
+  <div class="blankHXL"></div>
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/09152020.jpg"
-      alt="Teton National Park">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Teton National Park</p>
-      <p class="text-body-description"> September, 2020</p>
+  <!--Photo 13-->
+  <div id="ytrigger-pg13">
+
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./13.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p class="titleL">White Sands National Monument</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
     </div>
   </div>
+  <!--Photo 13-->
+  <div class="blankHXL"></div>
 
-  <hr>
+  <!--Photo 14-->
+  <div id="ytrigger-pg14">
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/09152020_1.jpg"
-      alt="Teton National Park">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Teton National Park</p>
-      <p class="text-body-description"> September, 2020</p>
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
+
+      <div class="column widthM">
+        <p class="titleL">White Sands National Monument</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./14.jpg">
     </div>
   </div>
+  <!--Photo 14-->
 
-  <hr>
+  <div class="blankHXL"></div>
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019_3.jpg"
-      alt="White Sands National Monument">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">White Sands National Monument</p>
-      <p class="text-body-description"> December, 2019</p>
+  <!--Photo 15-->
+  <div id="ytrigger-pg15">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./15.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p class="titleL">Yellowstone National Park</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">September, 2020 </p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
     </div>
   </div>
+  <!--Photo 15-->
+  <div class="blankHXL"></div>
 
-  <hr>
+  <!--Photo 16-->
+  <div id="ytrigger-pg16">
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019_4.jpg"
-      alt="White Sands National Monument">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">White Sands National Monument</p>
-      <p class="text-body-description"> December, 2019</p>
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
+
+      <div class="column widthM">
+        <p class="titleL">Taos Pueblo Indian Reservation</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./16.jpg">
     </div>
   </div>
+  <!--Photo 16-->
 
-  <hr>
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019_9.jpg"
-      alt="White Sands National Monument">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">White Sands National Monument</p>
-      <p class="text-body-description"> December, 2019</p>
+  <div class="blankHXL"></div>
+
+  <!--Photo 17-->
+  <div id="ytrigger-pg17">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer">
+      <img class="float shadowAll" src="./17.jpg">
+      <div class="blankVer">
+      </div>
+      <div class="column widthM">
+        <p class="titleL">Donner Lake </p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019 </p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
     </div>
   </div>
+  <!--Photo 17-->
+  <div class="blankHXL"></div>
 
-  <hr>
+  <!--Photo 18-->
+  <div id="ytrigger-pg18">
+    <div class="row-change marginAll marginAll1920 centerHorz centerVer row-changeRV">
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019_5.jpg"
-      alt="White Sands National Monument">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">White Sands National Monument</p>
-      <p class="text-body-description"> December, 2019</p>
+      <div class="column widthM">
+        <p class="titleL">Yellowstone National Park</p>
+        <p class="lineHorizAll"></p>
+        <p class="textM">December, 2019</p>
+        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      </div>
+      <div class="blankVer">
+      </div>
+      <img class="float shadowAll" src="./19.jpg">
     </div>
   </div>
+  <!--Photo 18-->
 
-  <hr>
+  <div class="blankHXL"></div>
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019_6.jpg"
-      alt="White Sands National Monument">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">White Sands National Monument</p>
-      <p class="text-body-description"> December, 2019</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019_7.jpg"
-      alt="White Sands National Monument">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">White Sands National Monument</p>
-      <p class="text-body-description"> December, 2019</p>
-    </div>
-  </div>
-
-  <hr>
+  <p class="tTQ centerHorz" data-aos="fade-up">Thanks for your time and have a good day! </p>
+  <p class="textM centerHorz" data-aos="fade-up">More coming soon</p>
 
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12272019_8.jpg"
-      alt="White Sands National Monument">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">White Sands National Monument</p>
-      <p class="text-body-description"> December, 2019</p>
-    </div>
-  </div>
 
-  <hr>
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/12282019.jpg"
-      alt="White Sands National Monument">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Taos Pueblo</p>
-      <p class="text-body-description"> December, 2019</p>
-    </div>
-  </div>
 
-  <hr>
+  <!--back to top-->
+  <button id="myBtn" class=" myBtn-1550" title="Go to top">
+    <img id="bottom-arrow" class="ArrowHover" src="../arrow-top.svg" alt="back to top">
 
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/01032020_2.jpg"
-      alt="Sacramento National Wildlife Refuge">
+    <div id="btnFont">TOP</div>
 
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Sacramento National Wildlife Refuge</p>
-      <p class="text-body-description"> December, 2019</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/01032020_1.jpg"
-      alt="Sacramento National Wildlife Refuge">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Sacramento National Wildlife Refuge</p>
-      <p class="text-body-description"> December, 2019</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/01032020_2.jpg"
-      alt="Sacramento National Wildlife Refuge">
-
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Sacramento National Wildlife Refuge</p>
-      <p class="text-body-description"> December, 2019</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="container_body">
-    <img src="https://s3-us-west-1.amazonaws.com/vickywang.design/photography/01032020.jpg"
-      alt="Sacramento National Wildlife Refuge">
-  </div>
-  <div>
-    <div class="container-body-description">
-      <p class="text-body-title">Sacramento National Wildlife Refuge</p>
-      <p class="text-body-description"> December, 2019</p>
-    </div>
-  </div>
-
-  <div class="blank-thicker"></div>
+  </button>
+  <!--back to top-->
+  <div class="blankHXL"></div>
 
 
   <!--footer-->
-  <div class="container_footer">
-
-    <div id="infor">
-      <div>
-        <a href="mailto:vickyw.design@gmail.com">
-          <img class="image_footer"
-            src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_mail.svg" alt="email">
-        </a>
-
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/vicky-yiqi-wang-6ab7487b/">
-          <img class="image_footer"
-            src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_linkedin.svg"
-            alt="linkedin">
-        </a>
-      </div>
-
-      <div>
-        <a href="https://github.com/vicky-wyq">
-          <img class="image_footer"
-            src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_github.svg" alt="github">
-        </a>
-      </div>
-
-      <div>
-        <a href="https://medium.com/@vickywang.design">
-          <img class="image_footer"
-            src="https://s3-us-west-1.amazonaws.com/vickywang.design/Icons_medium.svg" alt="medium">
-        </a>
-      </div>
-    </div>
-
-    <p class="lighter_font">COPYRIGHT &#169; VICKY WANG
+  <div class="footer">
+    <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
     </p>
+    <div class="footer-right">
+      <a href="mailto:vickyw.design@gmail.com">
+        <img class="footer-logo" src="../mail.svg" alt="email">
+      </a>
 
+      <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
+        <img class="footer-logo" src="../in.svg" alt="linkedin">
+      </a>
+
+      <a href="https://github.com/vicky-wyq">
+        <img class="footer-logo" src="../git.svg" alt="github">
+      </a>
+
+      <a href="https://www.instagram.com/vw_yiqi/">
+        <img class="footer-logo" src="../ins.svg" alt="medium">
+      </a>
+    </div>
   </div>
+  <!--footer-->
+
 </body>
 
 </html>
