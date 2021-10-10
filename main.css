@@ -1,17 +1,49 @@
 @media screen and (max-width: 950px) {
+    .centerPhone {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .circleGH {
+        height: 9rem !important;
+        width: 9rem !important;
+    }
     .verLineAM {
         border-left: 1px solid gray;
         height: 3.0rem !important;
         margin: 0vw 5vw;
     }
-    .heightS1920 {
-        height: 6rem !important;
+    .heightM {
+        height: 10rem !important;
+    }
+    
+    .widthL {
+        width: 20rem !important;
+    }
+    .widthS {
+        width: 20rem !important;
+    }
+    .widthXS {
+        width: 20rem !important;
+        margin: 0;
+    }
+    .widthMM {
+        width: 65vw !important;
+    }
+    .widthM {
+        width: 40vw !important;
+    }
+    .widthXL {
+        width: 80vw !important;
     }
     .titleL {
         font-size: 14px !important;
     }
     .tTQ {
         font-size: 14px !important;
+    }
+    .colorGreyShadow {
+        box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px !important;
     }
     /* fonts going to delete */
     .t-icon-s {
@@ -21,7 +53,7 @@
         font-size: 6px !important;
     }
     .titleM {
-        font-size: 12px !important;
+        font-size: 10px !important;
         margin: 0.5vh 0 !important;
         font-weight: 300 !important;
     }
@@ -52,22 +84,7 @@
     .displayNonePhone {
         display: none !important;
     }
-    .widthS {
-        width: 20rem !important;
-    }
-    .widthXS {
-        width: 20rem !important;
-        margin: 0;
-    }
-    .widthMM {
-        width: 65vw !important;
-    }
-    .widthM {
-        width: 40vw !important;
-    }
-    .widthXL {
-        width: 80vw !important;
-    }
+
     .alignCPH {
         align-items: center !important;
     }
@@ -150,10 +167,10 @@
         height: 1.0vh !important;
     }
     .blankHL {
-        height: 3.0vh !important;
+        height: 6rem !important;
     }
     .blankHXL {
-        height: 16vh !important;
+        height: 8rem !important;
     }
     .widthLogo {
         width: 1rem !important;
@@ -212,10 +229,7 @@
         margin-left: -5px !important;
         margin-top: -10px !important;
     }
-    .bg-colorGH-carouselGH {
-        height: 42vw !important;
-        padding-bottom: 10vw;
-    }
+
     .align-left-phone {
         display: flex;
         align-items: flex-start !important;
@@ -225,12 +239,8 @@
         height: 0.5vh !important;
         width: 0.5vh !important;
     }
-    .colorGreyShadow {
-        box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.2), 0 36px 68px 0 rgba(0, 0, 0, 0.19) !important;
-    }
-    .bg-colorGH1 {
-        height: 23vw !important;
-    }
+
+
     .padding-lr {
         padding: 1vh !important;
     }
@@ -240,11 +250,9 @@
     .body-left {
         margin: 0 !important;
     }
-    .bg-colorGH {
-        height: 90vw !important;
-    }
+
     .heightL {
-        height: 13vh !important;
+        height: 13rem !important;
     }
     .body-h-project {
         flex-direction: column !important;
@@ -281,9 +289,9 @@
         width: 6vh !important;
     }
     .nav-gh {
-        width: 1.5vh !important;
-        height: 1.5vh !important;
-        top: 48% !important;
+        width: 3rem !important;
+        height: 3rem !important;
+        top: 30% !important;
         margin-left: -1.0vh !important;
         margin-right: -1.0vh !important;
     }
@@ -294,7 +302,7 @@
         height: 100%;
     }
     .carouselGH {
-        height: 16vh !important;
+        height: 50rem !important;
     }
     .h-line {
         border-top: 0.01vh solid #707070;
@@ -456,7 +464,7 @@
         margin: 0px 42vh !important;
     }
     .widthS1920 {
-        width: 13vw !important;
+        width: 23rem !important;
     }
     .widthM1920 {
         width: 23vw !important;
@@ -487,7 +495,7 @@
         height: 3.0vh !important;
     }
     .blankHL1920 {
-        height: 7.0vh !important;
+        height: 25.0vh !important;
     }
     .heightS1920 {
         height: 15rem !important;
@@ -554,7 +562,7 @@ body {
     /* left&right*/
 }
 
-.lineVerAll-s {
+.-s {
     border-left: 1px solid gray;
     height: 100px;
     margin: 5px;
@@ -613,9 +621,9 @@ body {
     border-radius: 50%;
 }
 
-.circle-gh {
-    height: 20vh;
-    width: 20vh;
+.circleGH {
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
 }
 
@@ -687,7 +695,9 @@ body {
 .colorGH {
     color: #4C665B;
 }
-
+.colorGHBg {
+    background-color: #EAF0EE;
+}
 .colorMP {
     color: #FED256;
 }
@@ -793,6 +803,9 @@ body {
 .paddingS {
     padding: 1rem;
 }
+.paddingM {
+    padding: 3rem;
+}
 .padding {
     padding: 1vw;
 }
@@ -875,7 +888,7 @@ body {
 }
 
 .heightM {
-    height: 15vw;
+    height: 18rem;
 }
 
 .heightL {
@@ -955,7 +968,7 @@ body {
     }
 }
 
-.circle-gh:hover {
+.circleGH:hover {
     transform: scale(1.2);
     opacity: .9;
     cursor: pointer;
@@ -1148,24 +1161,10 @@ strong {
     margin: 0;
 }
 
-.bg-colorGH {
-    background-color: #ffffff;
-    margin: 0;
-    height: 60vw;
-}
+.colorWtBg{
 
-.bg-colorGH1 {
     background-color: #ffffff;
-    margin-top: 10vw;
-    height: 16vw;
-    padding-bottom: 10vw;
-}
 
-.bg-colorGH-carouselGH {
-    background-color: #EAF0EE;
-    margin-top: 10vw;
-    height: 28vw;
-    padding-bottom: 10vw;
 }
 
 .marquee {
@@ -1270,7 +1269,7 @@ strong {
     position: relative;
     width: 90%;
     margin: 0 auto;
-    height: 65vh;
+    height: 40rem;
 }
 
 .carouselContentGH {
@@ -1281,7 +1280,6 @@ strong {
 }
 
 .slideGH {
-    height: 100%;
     position: absolute;
     z-index: 1;
     transition: left .4s cubic-bezier(.47, .13, .15, .89);
