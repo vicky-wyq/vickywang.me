@@ -4,6 +4,9 @@
         justify-content: center !important;
         align-items: center !important;
     }
+    .alignCPH {
+        align-items: center !important;
+    }
     .circleGH {
         height: 9rem !important;
         width: 9rem !important;
@@ -20,6 +23,9 @@
     .widthL {
         width: 20rem !important;
     }
+    #widthRC {
+        width: 10rem !important;
+    }
     .widthS {
         width: 20rem !important;
     }
@@ -31,16 +37,14 @@
         width: 65vw !important;
     }
     .widthM {
-        width: 40vw !important;
+        width: 20rem !important;
     }
     .widthXL {
         width: 80vw !important;
     }
-    .titleL {
-        font-size: 14px !important;
-    }
+
     .tTQ {
-        font-size: 14px !important;
+        font-size: 10px !important;
     }
     .colorGreyShadow {
         box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px !important;
@@ -52,8 +56,11 @@
     .t-subtitle {
         font-size: 6px !important;
     }
+    .titleL {
+        font-size: 16px !important;
+    }
     .titleM {
-        font-size: 10px !important;
+        font-size: 14px !important;
         margin: 0.5vh 0 !important;
         font-weight: 300 !important;
     }
@@ -68,7 +75,7 @@
         ;
     }
     .textM {
-        font-size: 12px !important;
+        font-size: 14px !important;
         margin: 0 !important;
     }
     .textS {
@@ -85,9 +92,7 @@
         display: none !important;
     }
 
-    .alignCPH {
-        align-items: center !important;
-    }
+
     .circle-mp {
         height: 22vh !important;
         width: 22vh !important;
@@ -134,8 +139,11 @@
     .border-radius {
         border-radius: 0.5em !important;
     }
-    .blankPHONE {
+    .blankPhone {
         height: 220px !important;
+    }
+    .blankPhoneS {
+        height: 120px !important;
     }
     .centeredTQ {
         height: 10px;
@@ -149,7 +157,7 @@
         width: 90px !important;
     }
     .tArrow {
-        font-size: 10px !important;
+        font-size: 20px !important;
     }
     .tSL {
         font-size: 0.4rem !important;
@@ -163,39 +171,50 @@
     table {
         font-size: 0.3rem !important;
     }
+    .blankHXS {
+        height: 1rem !important;
+    }
     .blankHS {
-        height: 1.0vh !important;
+        height: 1.5rem !important;
+    }
+    .blankHM {
+        height: 3rem !important;
     }
     .blankHL {
-        height: 6rem !important;
-    }
-    .blankHXL {
         height: 8rem !important;
     }
+    .blankHXL {
+        height: 14rem !important;
+    }
+
+
     .widthLogo {
         width: 1rem !important;
     }
     .se-arrow {
-        width: 10px !important;
+        width: 18px !important;
     }
     .carousel {
         height: 45vh !important;
     }
     .AboutProjectNav {
-        top: 70% !important;
-        width: 20px !important;
-        height: 20px !important;
+        top: 65% !important;
+        width: 25px !important;
+        height: 25px !important;
     }
     .nav {
-        top: 60% !important;
-        width: 20px !important;
-        height: 20px !important;
+        top: 75% !important;
+        width: 25px !important;
+        height: 25px !important;
     }
     .nav-left {
-        left: 50px !important;
+        left: 10px !important;
     }
     .nav-right {
-        right: 50px !important;
+        right: 10px !important;
+    }
+    .marginM {
+        margin: 0vh 8vh !important;
     }
     .marginAll {
         margin: 0 !important;
@@ -358,20 +377,14 @@
         height: 6px !important;
         margin: 10px !important;
     }
-    #rc1 {
-        width: 160px !important;
-        margin-left: 8px !important;
-    }
+
     .body-h {
         margin-bottom: 0vh !important;
     }
-    .body-intro {
+    .intro {
         flex-direction: column !important;
     }
-    .t-hello {
-        margin-top: 60px;
-        margin-bottom: 20px;
-    }
+
     .t-hi {
         font-size: 36px !important;
     }
@@ -380,8 +393,8 @@
         line-height: 40px !important;
     }
     .t-me-1 {
-        margin-top: 20px!important;
-        font-size: 14px !important;
+        margin-top: 24px!important;
+        font-size: 18px !important;
     }
     .t-intro {
         font-size: 20px !important;
@@ -476,24 +489,14 @@
     .widthL1920 {
         width: 70rem!important;
     }
-    .AboutProjectNav {
-        top: 45% !important;
-    }
+
     .Nav {
         top: 23% !important;
     }
     .carousel {
         height: 28vw !important;
     }
-    .blankHXS {
-        height: 0.5vh !important;
-    }
-    .blankHS {
-        height: 1.5vh !important;
-    }
-    .blankHM {
-        height: 3.0vh !important;
-    }
+
     .blankHL1920 {
         height: 25.0vh !important;
     }
@@ -583,7 +586,7 @@ body {
 .blankVer {
     border-left: 0px solid gray;
     height: 20vh;
-    margin: 0 2vh;
+    margin: 0 4vh;
 }
 .circle {
     position: absolute;
@@ -762,7 +765,9 @@ body {
 .marginS {
     margin: 0vh 1vh;
 }
-
+.marginM {
+    margin: 0vh 4vh;
+}
 .marginElm {
     margin: 2rem;
 }
@@ -906,22 +911,22 @@ body {
 
 .blankHS {
     display: block;
-    height: 3.0vh;
+    height: 6rem;
 }
 
 .blankHM {
     display: block;
-    height: 6.0vh;
+    height: 12rem;
 }
 
 .blankHL {
     display: block;
-    height: 14.0vh;
+    height: 20rem;
 }
 
 .blankHXL {
     display: block;
-    height: 20rem;
+    height: 28rem;
 }
 
 /* blank */
@@ -1248,7 +1253,7 @@ strong {
 
 .AboutProjectNav {
     position: absolute;
-    top: 43%;
+    top: 37%;
     width: 60px;
     height: 60px;
     z-index: 2;
@@ -1721,7 +1726,7 @@ button {
 
 /* intro */
 
-.body-landing {
+.landingIntro {
     display: flex;
     flex-direction: column;
     margin: 0px/* top&bottom*/
@@ -1729,7 +1734,7 @@ button {
     ;
 }
 
-.body-intro {
+.intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1762,7 +1767,7 @@ button {
 
 .tTQ {
     font-family: 'Lato', sans-serif;
-    font-size: 2.6vh;
+    font-size: 2.0rem;
     line-height: 1.6;
     font-weight: 300;
     margin: 0;
@@ -1800,7 +1805,7 @@ button {
     margin: 13px 20px;
 }
 
-.body-v {
+.introVer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
