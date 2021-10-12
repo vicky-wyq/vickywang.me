@@ -222,9 +222,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       y: 30
     });
   }
-  addOpacityTrigger("#bg-color-opc")
-  addOpacityTrigger("#bg-color-opc1")
-  addOpacityTrigger("#bg-color-opc2")
+  //addOpacityTrigger("#bg-color-opc")
+
   //bg opacity change
   var YAxisTrigger = function (trigger) {
     let tl = gsap.timeline({
