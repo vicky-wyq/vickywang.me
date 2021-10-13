@@ -15,7 +15,6 @@
 	.st9{font-size:10px;}
 	.st10{font-family:'Lato-Hairline';}
 	.st11{font-size:8px;}
-	.st12{enable-background:new    ;}
 </style>
 <g id="Layer_2_1_">
 </g>
@@ -63,17 +62,24 @@
 <text transform="matrix(1 0 0 1 95.0001 198.8399)" class="st10 st11">Adg: 35</text>
 <text transform="matrix(1 0 0 1 59.9283 208.4399)" class="st10 st11">Education: bachelor&apos;s degree</text>
 <text transform="matrix(1 0 0 1 55.0084 218.0399)" class="st10 st11">Hometown: Berkeley, California</text>
-<text transform="matrix(1 0 0 1 249.5894 120.9297)" class="st10 st11">Find an easy way to manage his meeting schedule</text>
-<text transform="matrix(1 0 0 1 249.5894 130.8912)" class="st10 st11">A meeting reminder for him to attend or schedule a meeting</text>
-<text transform="matrix(1 0 0 1 249.5894 220.7265)" class="st10 st11">Alex Wu is a Software Engineering Manager with a busy and demanding schedule. </text>
-<text transform="matrix(1 0 0 1 249.5894 230.3265)" class="st10 st11">He works at a large social media company. </text>
-<text transform="matrix(1 0 0 1 249.5894 239.9265)" class="st10 st11">Alex is working on collecting data technologies. </text>
-<text transform="matrix(1 0 0 1 249.5894 249.5265)" class="st10 st11">How does he manage his time with a busy schedule?</text>
-<text transform="matrix(1 0 0 1 249.7493 164.0393)" class="st12"><tspan x="0" y="0" class="st10 st11">I always struggle with the meeting schedule, </tspan><tspan x="0" y="9.6" class="st10 st11">especially, I forgot to cancel meetings before vacation.</tspan></text>
-<text transform="matrix(1 0 0 1 249.7493 184.1219)" class="st10 st11">Overwhelming meetings from different teams.</text>
-<text transform="matrix(1 0 0 1 250.0694 109.4761)" class="st8 st9">Goals</text>
-<text transform="matrix(1 0 0 1 249.5894 79.1993)" class="st12"><tspan x="0" y="0" class="st10 st11">“I am busy with my work, but I love this job. </tspan><tspan x="0" y="9.6" class="st10 st11">I believe there are better ways to improve productivity at work.&quot;</tspan></text>
-<text transform="matrix(1 0 0 1 250.0694 69.7457)" class="st8 st9">Attitude &amp; personality</text>
-<text transform="matrix(1 0 0 1 250.0694 208.439)" class="st8 st9">Story</text>
-<text transform="matrix(1 0 0 1 249.8297 152.6998)" class="st8 st9">Frustrations</text>
+<text transform="matrix(1 0 0 1 249.5894 68.5526)" class="st10 st11">Schedule meeting efficiently that maximize productivity </text>
+<text transform="matrix(1 0 0 1 249.5894 78.5141)" class="st10 st11">Receive meeting notification before meetings start or after meetings canceled. </text>
+<text transform="matrix(1 0 0 1 249.5894 169.8531)" class="st10 st11">Alex Wu is a Software Engineering Manager with a busy and demanding schedule. </text>
+<text transform="matrix(1 0 0 1 249.5894 179.4531)" class="st10 st11">He works at a large social media company. </text>
+<text transform="matrix(1 0 0 1 249.5894 189.0531)" class="st10 st11">Alex is working on collecting data technologies. </text>
+<text transform="matrix(1 0 0 1 249.5894 198.6531)" class="st10 st11">How does he manage his time with a busy schedule?</text>
+<text transform="matrix(1 0 0 1 249.7493 113.6622)" class="st10 st11">&quot;I forgot to cancel meetings before vacation.&quot;</text>
+<text transform="matrix(1 0 0 1 249.7493 123.2622)" class="st10 st11">&quot;Meetings are overwhelmed, scheduling conflicts&quot;</text>
+<text transform="matrix(1 0 0 1 249.7493 134.2383)" class="st10 st11">&quot;Forgot attend meeting when I was very busy&quot;</text>
+<text transform="matrix(1 0 0 1 241.9625 57.099)" class="st8 st9">Goals</text>
+<text transform="matrix(1 0 0 1 249.5894 232.0018)" class="st10 st11">“I am busy with my work, but I love this job. </text>
+<text transform="matrix(1 0 0 1 249.5894 241.6018)" class="st10 st11">I believe there are better ways to deal with my meeting schedule. &quot;</text>
+<text transform="matrix(1 0 0 1 241.9625 218.7082)" class="st8 st9">Attitude &amp; personality</text>
+<text transform="matrix(1 0 0 1 241.9625 158.0619)" class="st8 st9">Story</text>
+<text transform="matrix(1 0 0 1 241.7228 102.3227)" class="st8 st9">Frustrations</text>
+<circle class="st0" cx="244.1" cy="65.4" r="1.1"/>
+<circle class="st0" cx="244.1" cy="76.2" r="1.1"/>
+<circle class="st0" cx="244.1" cy="110.8" r="1.1"/>
+<circle class="st0" cx="244.1" cy="121.6" r="1.1"/>
+<circle class="st0" cx="244.1" cy="131.4" r="1.1"/>
 </svg>
