@@ -54,8 +54,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // immediateRender: false, second scroll smooth
 
-
-  
+/*
   var YAxisTrigger = function (trigger) {
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -86,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   YAxisTrigger("#ytrigger-arch6")
   YAxisTrigger("#ytrigger-arch7")
   YAxisTrigger("#ytrigger-arch8")
+*/
+  
+
   // Y Axis change
   //ScrollTrigger
 });
