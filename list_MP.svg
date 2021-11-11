@@ -11,14 +11,16 @@
 	.st5{display:inline;fill:url(#SVGID_5_);}
 </style>
 <g id="Layer_5" class="st0">
-	<radialGradient id="SVGID_1_" cx="34.5" cy="41.5" r="50.5396" gradientUnits="userSpaceOnUse">
+	
+		<radialGradient id="SVGID_1_" cx="34.5" cy="32.9" r="50.5396" gradientTransform="matrix(1 0 0 -1 0 74.4)" gradientUnits="userSpaceOnUse">
 		<stop  offset="0.4129" style="stop-color:#FFFFFF"/>
 		<stop  offset="0.9165" style="stop-color:#FFE28B"/>
 	</radialGradient>
 	<rect x="-17.5" y="-6.5" class="st1" width="104" height="96"/>
 </g>
 <g id="Layer_2_1_" class="st0">
-	<radialGradient id="SVGID_2_" cx="40.369" cy="35.9697" r="71.1676" gradientUnits="userSpaceOnUse">
+	
+		<radialGradient id="SVGID_2_" cx="40.369" cy="38.4303" r="71.1676" gradientTransform="matrix(1 0 0 -1 0 74.4)" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0.7144" style="stop-color:#FFE28B"/>
 		<stop  offset="1" style="stop-color:#FED256"/>
@@ -27,24 +29,35 @@
 </g>
 <g id="Layer_2_copy">
 	
-		<radialGradient id="SVGID_3_" cx="36.2344" cy="61.7524" r="81.6124" gradientTransform="matrix(1 0 0 -1 0 72)" gradientUnits="userSpaceOnUse">
+		<radialGradient id="SVGID_3_" cx="92.7813" cy="56.5587" r="272.0413" gradientTransform="matrix(0.3 0 0 0.3 8.4 -6.72)" gradientUnits="userSpaceOnUse">
 		<stop  offset="4.257294e-02" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
-		<stop  offset="0.4631" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
-		<stop  offset="0.8211" style="stop-color:#FFE28B"/>
+		<stop  offset="7.750662e-02" style="stop-color:#FFF7E1;stop-opacity:0.152"/>
+		<stop  offset="0.1179" style="stop-color:#FFF1C6;stop-opacity:0.212"/>
+		<stop  offset="0.1643" style="stop-color:#FFEBB0;stop-opacity:0.2811"/>
+		<stop  offset="0.2185" style="stop-color:#FFE79F;stop-opacity:0.3618"/>
+		<stop  offset="0.2855" style="stop-color:#FFE494;stop-opacity:0.4615"/>
+		<stop  offset="0.3796" style="stop-color:#FFE28D;stop-opacity:0.6015"/>
+		<stop  offset="0.6407" style="stop-color:#FFE28B;stop-opacity:0.99"/>
+		<stop  offset="0.6763" style="stop-color:#FCD770;stop-opacity:0.9914"/>
+		<stop  offset="0.7469" style="stop-color:#F8C341;stop-opacity:0.9942"/>
+		<stop  offset="0.8092" style="stop-color:#F5B51F;stop-opacity:0.9966"/>
+		<stop  offset="0.8605" style="stop-color:#F3AC0A;stop-opacity:0.9987"/>
+		<stop  offset="0.8943" style="stop-color:#F2A902"/>
 	</radialGradient>
 	<circle class="st3" cx="36" cy="36" r="36"/>
 </g>
 <g id="Layer_1_1_">
 	
-		<radialGradient id="SVGID_4_" cx="36.0708" cy="36.2481" r="14.4" fx="36.0438" fy="35.0652" gradientTransform="matrix(1 0 0 -1 0 72)" gradientUnits="userSpaceOnUse">
+		<radialGradient id="SVGID_4_" cx="92.236" cy="141.573" r="48" fx="92.146" fy="137.63" gradientTransform="matrix(0.3 0 0 0.3 8.4 -6.72)" gradientUnits="userSpaceOnUse">
 		<stop  offset="1.151046e-02" style="stop-color:#FED256"/>
 		<stop  offset="0.7407" style="stop-color:#FFBF00"/>
 		<stop  offset="0.9007" style="stop-color:#F0B400"/>
 	</radialGradient>
-	<circle class="st4" cx="36" cy="36" r="14.4"/>
+	<circle class="st4" cx="36" cy="36" r="14.3"/>
 </g>
 <g id="Layer_1_copy" class="st0">
-	<radialGradient id="SVGID_5_" cx="36" cy="35.006" r="13.7688" fx="35.9555" fy="48.1862" gradientUnits="userSpaceOnUse">
+	
+		<radialGradient id="SVGID_5_" cx="36" cy="39.394" r="13.7688" fx="35.9555" fy="52.5742" gradientTransform="matrix(1 0 0 -1 0 74.4)" gradientUnits="userSpaceOnUse">
 		<stop  offset="4.296635e-02" style="stop-color:#FFFFFF"/>
 		<stop  offset="0.5338" style="stop-color:#FFE28B"/>
 		<stop  offset="0.7029" style="stop-color:#FED256"/>

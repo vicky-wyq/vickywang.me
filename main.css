@@ -1,34 +1,37 @@
 @media screen and (max-width: 950px) {
+    body a:link.textIntro {
+        text-decoration-line: underline;
+        text-decoration-thickness: 0 px;
+        text-underline-offset: 3px;
+        text-decoration-color: rgba(40, 40, 40, 0.4);
+    }
     body .centerPhone {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .alignCPH {
-        align-items: center !important;
+    body .alignCPH {
+        align-items: center;
     }
-    .circleGH {
-        height: 9rem !important;
-        width: 9rem !important;
+    body .circleGH {
+        height: 9rem;
+        width: 9rem;
     }
-    .lineVerS {
-        height: 3.0rem !important;
+    body .lineVerS {
+        height: 3.0rem;
         margin: 0vw 5vw;
     }
-    .heightM {
-        height: 10rem !important;
+    body .heightM {
+        height: 10rem;
     }
-    .widthL {
-        width: 20rem !important;
+    body .widthL {
+        width: 20rem;
     }
-    .widthMPhHalf {
-        width: 10rem !important;
+    body .widthMPhHalf {
+        width: 10rem;
     }
-    .widthIconM {
-        width: 4rem !important;
-    }
-    #widthRC {
-        width: 10rem !important;
+    body .widthIconM {
+        width: 4rem;
     }
     body .widthS {
         width: 20rem;
@@ -37,66 +40,66 @@
         width: 20rem;
         margin: 0;
     }
-    .widthMM {
-        width: 65vw !important;
+    body .widthMM {
+        width: 65vw;
     }
-    .widthM {
-        width: 18rem !important;
+    body .widthM {
+        width: 18rem;
     }
-    .widthXL {
-        width: 80vw !important;
+    body .widthXL {
+        width: 80vw;
     }
-    .tTQ {
-        font-size: 16px !important;
+    body .tTQ {
+        font-size: 16px;
     }
     /* fonts going to delete */
-    .t-icon-s {
-        font-size: 0.5rem !important;
+    body .t-icon-s {
+        font-size: 0.5rem;
     }
-    .t-subtitle {
-        font-size: 6px !important;
+    body .t-subtitle {
+        font-size: 6px;
     }
-    .titleL {
-        font-size: 16px !important;
+    body .titleL {
+        font-size: 16px;
     }
-    .titleM {
-        font-size: 14px !important;
-        margin: 0.5vh 0 !important;
-        font-weight: 300 !important;
+    body .titleM {
+        font-size: 14px;
+        margin: 0.5vh 0;
+        font-weight: 300;
     }
-    .titleS {
-        font-size: 8px !important;
+    body .titleS {
+        font-size: 8px;
     }
     body .titleXS {
         font-size: 8px;
     }
-    .textL {
-        font-size: 13px !important;
+    body .textL {
+        font-size: 13px;
         font-weight: 100;
         margin: 2px/* top&bottom*/
         0px/* left&right*/
         ;
     }
-    .textM {
-        font-size: 14px !important;
-        margin: 0 !important;
+    body .textM {
+        font-size: 14px;
+        margin: 0;
     }
-    .textS {
-        font-size: 10px !important;
+    body .textS {
+        font-size: 10px;
     }
     /* fonts going to delete */
-    .t-tl {
-        font-size: 16px !important;
+    body .t-tl {
+        font-size: 16px;
     }
-    .content-tl {
-        height: 10vw !important;
+    body .content-tl {
+        height: 10vw;
     }
-    .displayNonePhone {
-        display: none !important;
+    body .displayNonePhone {
+        display: none;
     }
-    .circle-mp {
-        height: 22vh !important;
-        width: 22vh !important;
+    body .circle-mp {
+        height: 22vh;
+        width: 22vh;
         border-radius: 50%;
     }
     body .MPslide {
@@ -105,240 +108,227 @@
     body .centerElement {
         opacity: 1;
     }
-    .MPcarousel {
-        height: 26rem !important;
+    body .MPcarousel {
+        height: 26rem;
     }
-    .MPcircle {
-        width: 10px !important;
-        height: 10px !important;
-        left: 49% !important;
-        bottom: 10% !important;
+    body .MPcircle {
+        width: 10px;
+        height: 10px;
+        left: 49%;
+        bottom: 10%;
     }
-    .lineVerAll-mp {
-        height: 3rem !important;
+    body .lineVerAll-mp {
+        height: 3rem;
     }
-    .lineHorizS {
-        margin: 4px !important;
-        height: 3px !important;
-        width: 30px !important;
+    body .lineHorizSmallAM {
+        margin: 4px;
+        height: 3px;
+        width: 30px;
     }
     /* step progress bar */
-    .stepper-item::before {
-        top: 4px !important;
+    body .stepper-item::before {
+        top: 4px;
     }
-    .stepper-item::after {
-        top: 4px !important;
+    body .stepper-item::after {
+        top: 4px;
     }
-    .stepper-item .step-counter {
-        width: 3px !important;
-        height: 3px !important;
+    body .stepper-item .step-counter {
+        width: 3px;
+        height: 3px;
         border-radius: 50%;
-        border: 3px solid #ccc !important;
+        border: 3px solid #ccc;
     }
-    .stepper-item.completed .step-counter {
-        border: 3px solid #5384ed9d !important;
+    body .stepper-item.completed .step-counter {
+        border: 3px solid #5384ed9d;
     }
-    .stepper-item.active .step-counter {
-        border: 3px solid #5384ED !important;
+    body .stepper-item.active .step-counter {
+        border: 3px solid #5384ED;
     }
-    .step-name {
-        font-size: 8px !important;
+    body .step-name {
+        font-size: 8px;
     }
     /* step progress bar */
-    .border-radius {
-        border-radius: 0.5em !important;
+    body .border-radius {
+        border-radius: 0.5em;
     }
-    .blankPhone {
-        height: 220px !important;
+    body .blankProject {
+        height: 280px;
     }
-    .blankPhoneS {
-        height: 120px !important;
+    body .blankProjectS {
+        height: 120px;
     }
     body .centeredTQ {
         bottom: -15px;
     }
-    .marginInner {
-        margin: 0 6vh !important;
+    body .marginInner {
+        margin: 0 6vh;
     }
-    .lineHoriz {
-        height: 1px !important;
-        width: 90px !important;
+    body .lineHoriz {
+        height: 1px;
+        width: 90px;
     }
-    .tArrow {
-        font-size: 20px !important;
+    body .tArrow {
+        font-size: 20px;
     }
-    .tSL {
-        font-size: 0.4rem !important;
-        font-weight: 100;
-        margin: 0;
+    body .tSL {
+        font-size: 0.4rem;
     }
     body .textNos {
         font-size: 50px;
         margin: 8vh 0;
     }
-    table {
-        font-size: 0.3rem !important;
+    body table {
+        font-size: 0.3rem;
     }
     body .blankHXS {
-        height: 2px;
+        height: ;
     }
-    .blankHS {
-        height: 1.5rem !important;
+    body .blankHS {
+        height: 1.5rem;
     }
-    .blankHM {
-        height: 3rem !important;
+    body .blankHM {
+        height: 6rem;
     }
-    .blankHL {
-        height: 8rem !important;
+    body .blankHL {
+        height: 8rem;
     }
-    .blankHXL {
-        height: 14rem !important;
+    body .blankHXL {
+        height: 14rem;
     }
-    .widthLogo {
-        width: 1rem !important;
+    body .widthLogo {
+        width: 1rem;
     }
-    .se-arrow {
-        width: 18px !important;
+    body .se-arrow {
+        width: 18px;
     }
-    .carousel {
-        height: 45vh !important;
+    body .carousel {
+        height: 45vh;
     }
-    .AboutProjectNav {
-        top: 65% !important;
-        width: 25px !important;
-        height: 25px !important;
+    body .AboutProjectNav {
+        top: 65%;
+        width: 25px;
+        height: 25px;
     }
-    .nav {
-        top: 75% !important;
-        width: 25px !important;
-        height: 25px !important;
+    body .nav {
+        top: 75%;
+        width: 25px;
+        height: 25px;
     }
-    .nav-left {
-        left: 10px !important;
+    body .nav-left {
+        left: 10px;
     }
-    .nav-right {
-        right: 10px !important;
+    body .nav-right {
+        right: 10px;
     }
-    .marginM {
-        margin: 0vh 8vh !important;
+    body .marginM {
+        margin: 0vh 8vh;
     }
-    .marginAll {
-        margin: 0 !important;
+    body .marginAll {
+        margin: 0;
     }
-    .marginAllL {
-        margin: 0 !important;
+    body .marginAllL {
+        margin: 0;
     }
-    .designThinkingAM {
-        border: 2px solid #5384ED !important;
-        height: 7rem !important;
-        width: 7rem !important;
+    body .designThinkingAM {
+        border: 2px solid #5384ED;
+        height: 7rem;
+        width: 7rem;
     }
     /* gardeners hub*/
-    .speech-bubble {
+    body .speech-bubble {
         position: relative;
         background: #f5f5f5;
         border-radius: .4em;
     }
-    .speech-bubble:after {
-        content: '';
-        position: absolute;
-        top: 0 !important;
-        left: 48% !important;
-        width: 0;
-        height: 0;
-        border: 10px solid transparent !important;
-        border-bottom-color: #f5f5f5 !important;
-        border-top: 0 !important;
-        border-right: 0 !important;
-        margin-left: -5px !important;
-        margin-top: -10px !important;
+    body .speech-bubble:after {
+        top: 0;
+        left: 48%;
+        border: 10px solid transparent;
+        border-bottom-color: #f5f5f5;
+        border-top: 0;
+        border-right: 0;
+        margin-left: -5px;
+        margin-top: -10px;
     }
-    .align-left-phone {
-        display: flex;
-        align-items: flex-start !important;
+    body .align-left-phone {
+        align-items: flex-start;
     }
-    .researchArr {
-        margin: 7vw 3vw !important;
-        height: 0.5vh !important;
-        width: 0.5vh !important;
+    body .researchArr {
+        margin: 7vw 3vw;
+        height: 0.5vh;
+        width: 0.5vh;
     }
-    .padding-lr {
-        padding: 1vh !important;
+    body .padding-lr {
+        padding: 1vh;
     }
-    .body-txt {
-        margin: 0 !important;
+    body .body-txt {
+        margin: 0;
     }
-    .heightL {
-        height: 13rem !important;
+    body .heightL {
+        height: 13rem;
     }
-    .text-center {
+    body .text-center {
         text-align: center;
     }
-    .marquee-text {
-        font-size: 1.5vh !important;
+    body .marquee-text {
+        font-size: 1.5vh;
     }
-    .marquee-logo {
-        width: 1.5vh !important;
+    body .marquee-logo {
+        width: 1.5vh;
     }
-    .marquee {
-        margin-top: 2vh !important;
-        height: 5vh !important;
+    body .marquee {
+        margin-top: 2vh;
+        height: 5vh;
     }
-    .rowChng {
-        flex-direction: column !important;
+    body .rowChng {
+        flex-direction: column;
     }
-    .rowChngRV {
-        flex-direction: column-reverse !important;
+    body .rowChngRV {
+        flex-direction: column-reverse;
     }
-    .icon-s {
-        width: 3vh !important;
+    body .icon-s {
+        width: 3vh;
         margin: 2px 2vw;
     }
-    .icon-m {
-        width: 2.5vh !important;
-        margin: 1vh 1vh !important;
+    body .icon-m {
+        width: 2.5vh;
+        margin: 1vh 1vh;
     }
-    .icon-l {
-        width: 6vh !important;
+    body .icon-l {
+        width: 6vh;
     }
-    .nav-gh {
-        width: 3rem !important;
-        height: 3rem !important;
-        top: 30% !important;
-        margin-left: -1.0vh !important;
-        margin-right: -1.0vh !important;
+    body .nav-gh {
+        width: 3rem;
+        height: 3rem;
+        top: 30%;
+        margin-left: -1.0vh;
+        margin-right: -1.0vh;
     }
-    .slide {
-        height: 200px !important;
+    body .slide {
+        height: 200px;
     }
-    .carouselContentGH {
+    body .carouselContentGH {
         height: 100%;
     }
-    .carouselGH {
-        height: 50rem !important;
+    body .carouselGH {
+        height: 50rem;
     }
-    .h-line {
-        border-top: 0.01vh solid #707070;
-        height: 0px;
-        width: 5vh !important;
-        margin-top: 0px;
-        margin-bottom: 1vw;
+    body .h-line {
+        width: 5vh;
     }
     /* gardeners hub*/
-    br {
-        line-height: 22px !important;
+    body br {
+        line-height: 22px;
     }
-    .lineVerAll {
-        border-left: 1px solid rgb(194, 194, 194) !important;
-        height: 40px !important;
-        margin: 10px/* top&bottom*/
-        15px !important/* left&right*/
-        ;
+    body .lineVerAll {
+        border-left: 1px solid rgb(194, 194, 194);
+        height: 40px;
+        margin: 10px 15px;
     }
-    .lineHorizAll {
-        border-top: 1px solid rgb(194, 194, 194)!important;
-        width: 70px !important;
-        margin-bottom: 10px !important;
+    body .lineHorizAll {
+        border-top: 1px solid rgb(194, 194, 194);
+        width: 70px;
+        margin-bottom: 10px;
     }
     /* header */
     .main-tool-bar {
@@ -361,31 +351,30 @@
     .box {
         padding: 0px !important;
     }
-    .blankVer-head {
-        height: 0px !important;
-        margin: 0px !important;
-    }
     /* header */
     /* body */
-    .blankVer {
-        height: 2rem !important;
+    body .blankVer {
+        height: 2rem;
     }
-    .intro {
-        flex-direction: column !important;
+    body .intro {
+        flex-direction: column;
     }
-    .t-hi {
-        font-size: 36px !important;
+    body .t-hi {
+        font-size: 36px;
     }
-    .t-me {
-        font-size: 26px !important;
-        line-height: 40px !important;
+    body .t-me {
+        font-size: 26px;
+        line-height: 40px;
     }
-    .t-me-1 {
-        margin-top: 24px!important;
-        font-size: 18px !important;
+    body .t-me-1 {
+        margin-top: 24px;
+        font-size: 18px;
     }
-    .t-intro {
-        font-size: 20px !important;
+    body .t-intro {
+        font-size: 20px;
+    }
+    body .t-hello {
+        font-size: 40px;
     }
     .divider {
         width: 50px !important;
@@ -456,45 +445,102 @@
 }
 
 @media screen and (min-width:1920px) {
-    body .marginAll1920 {
-        margin: 0px 22vw;
+    body .MPcarousel {
+        height: 63rem;
     }
-    body .marginAllL1920 {
+    body .researchArr {
+        margin: 8rem 2rem;
+        height: 0.5rem;
+        width: 0.5rem;
+    }
+    body .circle-mp {
+        height: 16rem;
+        width: 16rem;
+    }
+    body .lineVerAll-mp {
+        height: 180px;
+        margin: 9rem 5%;
+    }
+    body .marginAll {
+        margin: 0px 20vw;
+    }
+    body .marginAllL {
         margin: 0px 50vh;
     }
     body .Nav {
-        top: 20%;
+        top: 28%;
     }
-    body .blankHL1920 {
+    body .nav-left {
+        left: 200px;
+    }
+    body .nav-right {
+        right: 200px;
+    }
+    body .blankHL {
         height: 25.0vh;
     }
-    body .widthS {
-        width: 35rem;
-    }
-    body .widthM1920 {
-        width: 23vw;
+    body .widthXS {
+        width: 15rem;
         margin: 0;
     }
-    body .widthMM1920 {
+    body .widthS {
+        width: 23rem;
+    }
+    body .widthM {
+        width: 28vw;
+        margin: 0;
+    }
+    body .widthMM {
         width: 25vw;
     }
-    body .widthL1920 {
+    body .widthL {
         width: 70rem;
+    }
+    body .widthXL {
+        width: 75rem;
+    }
+    body .heightL {
+        height: 42rem;
     }
     body .carousel {
         height: 28vw;
     }
-    body .heightS1920 {
+    body .heightS {
         height: 15rem;
     }
-   body .blankHS {
+    body .blankHS {
         display: block;
         height: 8rem;
+    }
+    body .blankProject {
+        height: 350px;
+    }
+    body .blankProjectS {
+        height: 220px;
+    }
+    body .carouselGH {
+        height: 70rem;
+    }
+    body .AboutProjectNav {
+        top: 45%;
+    }
+    body .heightM {
+        height: 30rem;
+    }
+    body .marginM {
+        margin: 0vh 5vh;
+    }
+    body .blankHXS {
+        height: 4rem;
+    }
+    body .tTQ {
+        font-size: 2.6rem;
     }
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    color: #181818;
 }
 
 /* Geometry*/
@@ -554,7 +600,7 @@ body {
     margin-bottom: 18px;
 }
 
-.lineHorizS {
+.lineHorizSmallAM {
     display: block;
     margin: 7px 0;
     height: 4px;
@@ -564,7 +610,17 @@ body {
     border: none;
 }
 
-.lineHorizSGH {
+.lineHorizS {
+    display: block;
+    margin: 7px 0;
+    height: 4px;
+    width: 30px;
+    background-color: #368661;
+    border-radius: 20px;
+    border: none;
+}
+
+.lineHorizSmallAMGH {
     margin: 1.0rem 3rem;
     display: block;
     height: 4px;
@@ -577,7 +633,7 @@ body {
 .lineVerAll-mp {
     border-left: 1px solid rgba(0, 0, 0, 0.23);
     height: 180px;
-    margin: 5vh;
+    margin: 15vh 10vh;
 }
 
 .lineVerAll-mp-s {
@@ -596,7 +652,7 @@ body {
 }
 
 .researchArr {
-    margin: 6rem 3rem;
+    margin: 6rem 2rem;
     border: solid black;
     border-width: 0 1px 1px 0;
     display: inline-block;
@@ -619,8 +675,8 @@ body {
 }
 
 .circleGH {
-    height: 12rem;
-    width: 12rem;
+    height: 11rem;
+    width: 11rem;
     border-radius: 50%;
 }
 
@@ -736,8 +792,12 @@ body {
     background-color: #ffffff;
 }
 
-.shadowOnly {
+.shadowBox {
     box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px;
+}
+
+.shadowFilter {
+    filter: drop-shadow(15px 10px 15px rgba(143, 143, 143, 0.404));
 }
 
 .clip-shape-shadow {
@@ -858,7 +918,7 @@ body {
 
 .widthIconS {
     width: 1.8rem;
-    margin: 3px;
+    margin: 2px;
 }
 
 .widthLogo {
@@ -905,7 +965,7 @@ body {
 }
 
 .widthXL {
-    width: 80rem;
+    width: 60rem;
 }
 
 .heightS {
@@ -917,12 +977,16 @@ body {
 }
 
 .heightL {
-    height: 25rem;
+    height: 28rem;
 }
 
 /* width and height */
 
 /* blank */
+
+.blankProject {
+    height: 150px;
+}
 
 .blankHXS {
     display: block;
@@ -987,7 +1051,8 @@ body {
 
 .float:hover {
     transform: translateY(-15px);
-    filter: drop-shadow(15px 10px 15px rgba(143, 143, 143, 0.404));
+    /*     filter: drop-shadow(15px 10px 15px rgba(143, 143, 143, 0.404));
+ */
 }
 
 @keyframes hover-float {
@@ -1007,7 +1072,7 @@ body {
     border: 1px solid #4C665B;
 }
 
-.shadowOnly:hover {
+.shadowBox:hover {
     box-shadow: 0 29px 38px 0 rgba(0, 0, 0, 0.096), 0 36px 68px 0 rgba(0, 0, 0, 0.075);
 }
 
@@ -1044,12 +1109,30 @@ td:nth-child(even) {
 
 /* table */
 
-ul {
-    list-style-position: inside;
-    margin: 0;
+/* ul.iconx {
+    list-style-position: outside;
+    list-style-image: url('../../list_MP.svg');
     padding: 0;
-    list-style-type: none;
+} */
+
+ul.iconx {
+    list-style-position: outside;
+    list-style-image: url('../../list_MP.svg');
+    padding: 0;
 }
+
+ul {
+    list-style-position: outside;
+    padding: 0;
+}
+
+/*     list-style-type: none;
+    list-style-image: url('sqpurple.gif'); */
+
+/* }
+li{
+    margin: 112px 0;
+} */
 
 a {
     color: black;
@@ -1067,6 +1150,12 @@ a:link {
 a:link.text-about-resume {
     text-decoration-line: underline;
     text-underline-offset: 6px;
+}
+
+a:link.textIntro {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
 }
 
 a:link.textProject {
@@ -1243,11 +1332,11 @@ strong {
 }
 
 .nav-left {
-    left: 0px;
+    left: 50px;
 }
 
 .nav-right {
-    right: 0px;
+    right: 50px;
 }
 
 .carouselGH {
@@ -1271,7 +1360,7 @@ strong {
 }
 
 .nav-gh {
-    top: 42%;
+    top: 22%;
     margin-left: -5.0vh;
     margin-right: -5.0vh;
     width: 4.5vh;
@@ -1491,31 +1580,32 @@ button {
 .titleL {
     font-weight: 400;
     font-size: 28px;
+    margin: 2px 0;
 }
 
 .titleM {
     font-size: 24px;
     font-weight: 400;
-    margin: 0;
+    margin: 2px 0;
 }
 
 .titleS {
     font-size: 18px;
     font-weight: 400;
-    margin: 0;
+    margin: 2px 0;
 }
 
 .titleXS {
     font-size: 15px;
     font-weight: 400;
-    margin: 0;
+    margin: 2px 0;
 }
 
 .textL {
     color: #858585;
     font-size: 28px;
     font-weight: 300;
-    margin: 0;
+    margin: 2px 0;
 }
 
 .textM {
@@ -1523,14 +1613,14 @@ button {
     font-size: 24px;
     font-weight: 300;
     line-height: 1.6;
-    margin: 0;
+    margin: 2px 0;
 }
 
 .textS {
     color: #858585;
     font-size: 18px;
     font-weight: 300;
-    margin: 0;
+    margin: 5px 0;
     line-height: 1.4;
 }
 
@@ -1746,7 +1836,7 @@ button {
 
 .tTQ {
     font-family: 'Lato', sans-serif;
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     font-weight: 300;
     margin: 0;

@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
+
+
   // For more information, see greensock.com/docs/v3/Plugins/ScrollTrigger
   gsap.registerPlugin(ScrollTrigger);
 
@@ -41,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
   // immediateRender: false, second scroll smooth
-
-  var YAxisTrigger = function (trigger) {
+  /* 
+    var YAxisTrigger = function (trigger) {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: trigger,
@@ -70,5 +72,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   YAxisTrigger("#ytrigger4")
 
   // Y Axis change
+  
+  */
+
+
   //ScrollTrigger
 });
