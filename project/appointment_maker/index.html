@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="../../main.css">
   <script type="text/javascript" src="../../scripts.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
@@ -44,7 +45,15 @@
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <!-- gsap - ScrollTrigger-->
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+    integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--materializecss.com-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+    integrity="sha512-t38vG/f94E72wz6pCsuuhcOPJlHKwPy+PY+n1+tJFzdte3hsIgYE7iEpgg/StngunGszVMrRfvwZinrza0vMTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--materializecss.com-->
 
 
   <meta charset="UTF-8">
@@ -136,7 +145,7 @@
         <div class="column centerVer">
           <p class="titleM">Responsibilities </p>
           <div class="blankHXS"></div>
-          <div class="row align-top">
+          <div class="rowVW align-top">
 
             <div class="column align-right widthMPhHalf ">
               <p class="textS">User Research &bull; </p>
@@ -164,10 +173,10 @@
           <p class="titleM">Skills and Tools: </p>
           <div class="blankHXS"></div>
 
-          <div class="row centerVer">
+          <div class="rowVW centerVer">
             <div class="align-right widthMPhHalf">
               <div class="column centerVer ">
-                <div class="row centerHorz">
+                <div class="rowVW centerHorz">
                   <img class="widthLogo" src="logo_adobe.png" alt="adobe">
                   <img class="widthLogo" src="logo_ai.png" alt="adobe">
                   <img class="widthLogo" src="logo_ps.png" alt="adobe">
@@ -179,7 +188,7 @@
             <div class="lineVerS"></div>
             <div class="align-left widthMPhHalf">
               <div class="column centerVer">
-                <div class="row centerHorz">
+                <div class="rowVW centerHorz">
                   <img class="widthLogo" src="logo_html.png" alt="adobe">
                   <img class="widthLogo" src="logo_css.png" alt="adobe">
                   <img class="widthLogo" src="logo_js.png" alt="adobe">
@@ -198,7 +207,7 @@
           <p class="titleM">Project Duration:</p>
           <div class="blankHXS"></div>
 
-          <div class="row centerVer">
+          <div class="rowVW centerVer">
 
             <div class="align-right widthMPhHalf">
               <div class="column">
@@ -224,10 +233,10 @@
         <P class="titleM">About</P>
         <div class="blankHXS"></div>
 
-        <div class="row align-top">
+        <div class="rowVW align-top">
           <div class="align-right widthMPhHalf">
             <div class="column centerVer ">
-              <div class="row centerHorz">
+              <div class="rowVW centerHorz">
                 <img class="widthLogo" src="logo_coursera.svg" alt="adobe">
 
               </div>
@@ -252,6 +261,7 @@
   </div>
 
   <!--about appointmentmaker-->
+
 
   <div class="blankHM"></div>
   <P class="centerHorz titleL">Design Thinking Process</P>
@@ -384,7 +394,7 @@
       <div class="blankHM"></div>
 
       <P class="titleL">Personas</P>
-      <div class="row centerVer">
+      <div class="rowVW centerVer">
         <div class="widthMPhHalf">
           <P class="titleS align-right">Goals</P>
         </div>
@@ -417,7 +427,7 @@
         <P class="titleL">User Journey Map</P>
         <div class="blankHS"></div>
 
-        <div class="row centerPhone centerVer">
+        <div class="rowVW centerPhone centerVer">
           <div class="widthMPhHalf">
             <P class="titleS align-right">Steps</P>
           </div>
@@ -595,7 +605,7 @@
   </div>
 
   <div class="blankHM"></div>
-  <div class="column centerVer marginAll marginAll">
+  <div class="column centerVer marginAll">
 
     <P class="titleL">Define problems</P>
     <div class="lineVerS"></div>
@@ -621,13 +631,11 @@
     </div>
     <div class="blankHM"></div>
   </div>
-
-  <!--step progress bar-->
-  <div class="column centerVer marginAll marginAll">
+  <div class="column centerVer marginAll">
     <P class="titleL">Competitive audit</P>
     <div class="blankHS"></div>
 
-    <div class="row centerVer">
+    <div class="rowVW centerVer">
       <div class="widthMPhHalf">
         <P class="titleS align-right">General information</P>
         <P class="titleS align-right">UX Design</P>
@@ -642,7 +650,298 @@
       </div>
     </div>
     <div class="blankHM"></div>
+  </div>
+  <ul class="collapsible marginAll">
+    <li>
+      <div class="collapsible-header titleM">
+        General Information
 
+      </div>
+      <div class="collapsible-body"><span>
+          <table>
+            <tr>
+              <th>General information</th>
+              <td class="titleS">Calendly</td>
+              <td class="titleS"> Doodle</td>
+              <td class="titleS">Acuity Scheduling</td>
+              <td class="titleS">Google Calendar </td>
+            </tr>
+
+            <tr>
+              <th>Competitor type </th>
+              <td> Direct</td>
+              <td> Direct</td>
+              <td> Direct</td>
+              <td> Indirect</td>
+
+            </tr>
+
+            <tr>
+              <th> Locations</th>
+              <td> Atlanta, GA, US </td>
+              <td> New York, NY, US</td>
+              <td> Zurich, Switzerland</td>
+              <td> Mountain View, California</td>
+            </tr>
+
+            <tr>
+              <th>Product Offerings </th>
+              <td>
+                <div class="column">
+
+                  <p>Sync calendar</p>
+                  <p>Keep it private</p>
+                  <p>Customized meeting calendar</p>
+                  <p>Easy to schedule</p>
+                  <p>Keep it private</p>
+                  <p>Notification</p>
+                  <p>Request booking information</p>
+
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p>Sync calendar</p>
+                  <p>Keep it private</p>
+                  <p>Set of meetings</p>
+                  <p>Easy to schedule</p>
+                  <p>Keep it private</p>
+                  <p>Create multiple calendars</p>
+                  <p>&#8212;</p>
+
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p>Sync calendar</p>
+                  <p>Keep it private</p>
+                  <p>customized reminder</p>
+                  <p>Easily share </p>
+                  <p>&#8212;</p>
+                  <p>&#8212;</p>
+                  <p>&#8212;</p>
+
+                </div>
+              </td>
+              <td>
+                <div class="column">
+
+                  <p>Create events easily</p>
+                  <p>Events from Gamil</p>
+                  <p>Schedule with map and images</p>
+                  <p>Compatible Google products</p>
+                  <p>&#8212;</p>
+                  <p>&#8212;</p>
+                  <p>&#8212;</p>
+
+                </div>
+
+              </td>
+
+            </tr>
+
+            <tr>
+              <th>Price&#47;User&#47;Month</th>
+              <td>
+                <div class="column">
+                  <p> 8&#8211;12&#36;&plus;</p>
+                  <p> free Basic</p>
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p> 6&#8211;8.95&#36;</p>
+                  <p>14&#8211;day free trial</p>
+                </div>
+              </td>
+
+              <td>
+                <div class="column">
+                  <p> 14&#8211;45&#36;</p>
+                  <p>7&#8211;day free trial</p>
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p> Free</p>
+                  <p>&#8212;</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Website</th>
+              <td> <a href="https://calendly.com/">calendly.com </td>
+              <td> <a href="https://doodle.com/">doodle.com </td>
+              <td> <a href="https://acuityscheduling.com/">acuityscheduling.com</td>
+              <td> <a href="https://www.google.com/calendar/">google.com/calendar </td>
+            </tr>
+            <tr>
+              <th>Business Size</th>
+              <td>
+                <div class="column">
+                  <p> Medium</p>
+                  <p> 120 employees</p>
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p> Small</p>
+                  <p> 50 employees</p>
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p> Small</p>
+                  <p> 11-50 employees</p>
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p> Large</p>
+                  <p> 135,000 employees</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Target Audience</th>
+              <td> Everyone</td>
+              <td> Everyone</td>
+              <td> Everyone</td>
+              <td> Everyone</td>
+
+            </tr>
+            <tr>
+              <th>Unique Value Proposition</th>
+              <td> Easy scheduling ahead</td>
+              <td> Meetings made simple</td>
+              <td>
+                <div class="column">
+                  <p> All you need to do is </p>
+                  <p>show up at the right time</p>
+                </div>
+              </td>
+              <td> Make the most of every day</td>
+
+            </tr>
+          </table>
+        </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header ">
+        <p class="titleM">UX Design</p> 
+        <p class="textM"> First impressions</p> 
+
+
+
+
+      </div>
+      <div class="collapsible-body"><span>
+        <table>
+          <tr>
+            <th>First impressions </th>
+            <td class="titleS colorAPbg">Calendly</td>
+            <td class="titleS"> Doodle</td>
+            <td class="titleS">Acuity Scheduling</td>
+            <td class="titleS">Google Calendar </td>
+          </tr>
+    
+          <tr>
+            <th>Desktop website experience </th>
+            <td class="colorAPbg">
+              <div class="column">
+                <p class="colorAP titleS">Outstanding</p>
+                <p>&plus; Visually appealing imagery</p>
+                <p>&plus; Welcoming and easy to use</p>
+                <p>&plus; Clear branding
+                </p>
+                <p>&plus; Lots of intuitive features engaging animations</p>
+    
+              </div>
+            </td>
+            <td>
+              <div class="column">
+                <p class="colorAP titleS">Okay</p>
+                <p>&plus; Easy to navigate and find information</p>
+                <p>&plus; Makes customers feel welcome </p>
+                <p>&plus; Clear branding</p>
+                <p>&minus; Feels a little dense</p>
+              </div>
+            </td>
+            <td>
+              <div class="column">
+                <p class="colorAP titleS">Understanding</p>
+                <p>&plus; Minimal features and visuals</p>
+                <p>&plus; Easy to navigate and find information</p>
+                <p>&minus; Feels overwhelming in places</p>
+                <p>&#8212;</p>
+    
+              </div>
+            </td>
+            <td>
+              <div class="column">
+                <div class="column">
+                  <p class="colorAP titleS">Good</p>
+                  <p>&plus; Clean design</p>
+                  <p>&plus; Clear branding</p>
+                  <p>&plus; Easy to login with Google account</p>
+                  <p>&minus; Lack of features </p>
+    
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Mobile website experience </th>
+            <td class="colorAPbg">
+              <div class="column">
+                <p class="colorAP titleS">Good</p>
+                <p>&plus; Fully responsive</p>
+                <p>&plus; Engaging animations</p>
+                <p>&plus; Menu is easy to read</p>
+    
+              </div>
+            </td>
+            <td>
+              <div class="column">
+                <p class="colorAP titleS">Okay</p>
+                <p>&plus; Fully responsive</p>
+                <p>&plus; Interaction was not as smooth on mobile</p>
+                <p>&#8212; Need to login from beginning</p>
+              </div>
+            </td>
+            <td>
+              <div class="column">
+                <p class="colorAP titleS">Understanding</p>
+    
+                <p>&minus; Not fully responsive</p>
+                <p>&plus; Key information is presented</p>
+                <p>&minus; need to swipe left and right to see the calendar</p>
+    
+              </div>
+            </td>
+            <td>
+              <div class="column">
+                <p class="colorAP titleS">Good</p>
+                <p>&minus; Not fully responsive</p>
+                <p>&minus; Menu is hard to read</p>
+                <p>&plus; App can be downloaded to collect points</p>
+    
+              </div>
+            </td>
+          </tr>
+        </table></span></div>
+    </li>
+    <li>
+      <div class="collapsible-header titleM">
+        UX Design
+
+      </div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+  <!--step progress bar-->
+
+  <div class="column centerVer marginAll">
 
     <P class="titleM">General Information</P>
     <div class="blankHS"></div>
@@ -1233,7 +1532,7 @@
     <P class="titleM">Competitive audit report</P>
     <div class="blankHS"></div>
 
-    <div class="row centerVer">
+    <div class="rowVW centerVer">
       <div class="widthMPhHalf">
         <P class="titleS align-right"> Analyze findings</P>
         <P class="titleS align-right">Summarize findings</P>
@@ -1256,195 +1555,211 @@
   </div>
   <div class="blankHS"></div>
 
-
-  <div class="rowChng centerHorz alignCPH">
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column ">
-        <P class="titleM">Competitive audit goal </P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="textS">Compare the scheduling experience of each competitor's app as a new
-              user and a returning user. </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column">
-        <P class="titleM">Key competitors:</P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="titleS">Calendly and Doodle </li>
-            <li class="textS">are Easy scheduling application. </li>
-            <li class="textS">are direct competitors to Appointment Maker</li>
-            <div class="blankHS"></div>
-
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column">
-        <P class="titleM">Quality of competitors&apos; products:</P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="titleS">Calendly </li>
-            <li class="textS"> The website and app have excellent scheduling
-              features, which allow people to create different event types of appointments and share
-              the meeting link easily with privacy.</li>
+  <div class="marginAll">
+    <div class="rowChng centerHorz alignCPH">
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column ">
+          <P class="titleM">Competitive audit goal </P>
+          <div class="column">
             <div class="blankHXS"></div>
-            <li class="titleS">Doodle </li>
-            <li class="textS">The design looks impressive but
-              doesn’t always host an intuitive user experience.</li>
-          </ul>
+            <ul>
+              <li class="textS">Compare the scheduling experience of each competitor's app as a new
+                user and a returning user. </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="blankVer"></div>
+
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column">
+          <P class="titleM">Key competitors:</P>
+          <div class="column">
+            <div class="blankHXS"></div>
+            <ul>
+              <li class="titleS">Calendly and Doodle </li>
+              <li class="textS">are Easy scheduling application. </li>
+              <li class="textS">are direct competitors to Appointment Maker</li>
+              <div class="blankHS"></div>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="blankVer"></div>
+
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column">
+          <P class="titleM">Quality of competitors&apos; products:</P>
+          <div class="column">
+            <div class="blankHXS"></div>
+            <ul>
+              <li class="titleS">Calendly </li>
+              <li class="textS"> The website and app have excellent scheduling
+                features, which allow people to create different event types of appointments and
+                share
+                the meeting link easily with privacy.</li>
+              <div class="blankHXS"></div>
+              <li class="titleS">Doodle </li>
+              <li class="textS">The design looks impressive but
+                doesn’t always host an intuitive user experience.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blankHS"></div>
+
+    <div class="rowChng centerHorz alignCPH">
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column">
+          <P class="titleM">Competitors market</P>
+          <div class="column">
+            <div class="blankHXS"></div>
+            <ul>
+              <li class="titleS">Calendly </li>
+              <li class="textS"> as a scheduling tool for everyone including
+                sales, recruiting, customer success, manage and optimize the meeting lifecycle
+                across
+                workflows, team scheduling, integrations.</li>
+              <div class="blankHXS"></div>
+              <li class="titleS">Doodle </li>
+              <li class="textS">a web-based scheduling tool that promises to eliminate the
+                hassle of organizing meetings via email or phone.</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="blankVer"></div>
+
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column">
+          <P class="titleM">Competitors self promotion:</P>
+          <div class="column">
+            <div class="blankHXS"></div>
+            <ul>
+              <li class="titleS">Calendly </li>
+              <li class="textS"> Schedule meetings without the back-and-forth emails, providing
+                event
+                types and workflow improving scheduling experience. </li>
+              <div class="blankHXS"></div>
+              <li class="titleS">Doodle </li>
+              <li class="textS">Meetings made simple, Save time scheduling your day with the power
+                of
+                Doodle. providing book links on dashboard </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="blankVer"></div>
+
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column">
+          <P class="titleM">Competitors&apos; strengths: </P>
+          <div class="column">
+            <div class="blankHXS"></div>
+            <ul>
+              <li class="titleS">Calendly </li>
+              <li class="textS">Using its visual design to communicate its company ethos </li>
+              <li class="textS">Customize dashboard, easy to find appointments </li>
+              <li class="textS">Manage and optimize the meeting lifecycle across your organization
+              </li>
+              <li class="textS">Integrating screen reader</li>
+              <div class="blankHXS"></div>
+              <li class="titleS">Doodle </li>
+              <li class="textS">Using its visual design to communicate its company ethos</li>
+              <li class="textS">Easy to find appointments on dashboard </li>
+              <li class="textS">required info when scheduling </li>
+
+              <li class="textS">Integrating screen reader</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blankHS"></div>
+
+    <div class="rowChng centerHorz alignCPH">
+
+
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column">
+          <P class="titleM">Competitors&apos; weaknesses </P>
+          <div class="column">
+            <div class="blankHXS"></div>
+            <ul>
+              <li class="titleS">Calendly </li>
+              <li class="textS">Not expanding its language options </li>
+              <div class="blankHXS"></div>
+              <li class="titleS">Doodle </li>
+              <li class="textS">Not expanding its language options </li>
+              <li class="textS">No customization on dashboard
+              <li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="blankVer"></div>
+
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column">
+          <P class="titleM">Gaps </P>
+          <div class="column">
+            <div class="blankHXS"></div>
+            <ul>
+              <li class="titleS">Calendly </li>
+              <li class="textS">Core features are not all accessible without a premium subscription
+              </li>
+              <div class="blankHXS"></div>
+              <li class="titleS">Doodle </li>
+              <li class="textS">Only 14 &#8212; day free trial </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="blankVer"></div>
+
+      <div
+        class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
+        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <div class="column">
+          <P class="titleM">Opportunities: </P>
+          <div class="column">
+            <div class="blankHXS"></div>
+            <ul>
+              <li class="titleS">Calendly </li>
+              <li class="textS">One booking page including all event types on dashboard </li>
+              <div class="blankHXS"></div>
+              <li class="titleS">Doodle </li>
+              <li class="textS">Provide customized appointment dashboard </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="rowChng centerHorz alignCPH">
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column">
-        <P class="titleM">Competitors market</P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="titleS">Calendly </li>
-            <li class="textS"> as a scheduling tool for everyone including
-              sales, recruiting, customer success, manage and optimize the meeting lifecycle across
-              workflows, team scheduling, integrations.</li>
-            <div class="blankHXS"></div>
-            <li class="titleS">Doodle </li>
-            <li class="textS">a web-based scheduling tool that promises to eliminate the
-              hassle of organizing meetings via email or phone.</li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column">
-        <P class="titleM">Competitors self promotion:</P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="titleS">Calendly </li>
-            <li class="textS"> Schedule meetings without the back-and-forth emails, providing event
-              types and workflow improving scheduling experience. </li>
-            <div class="blankHXS"></div>
-            <li class="titleS">Doodle </li>
-            <li class="textS">Meetings made simple, Save time scheduling your day with the power of
-              Doodle. providing book links on dashboard </li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column">
-        <P class="titleM">Competitors&apos; strengths: </P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="titleS">Calendly </li>
-            <li class="textS">Using its visual design to communicate its company ethos </li>
-            <li class="textS">Customize dashboard, easy to find appointments </li>
-            <li class="textS">Manage and optimize the meeting lifecycle across your organization
-            </li>
-            <li class="textS">Integrating screen reader</li>
-            <div class="blankHXS"></div>
-            <li class="titleS">Doodle </li>
-            <li class="textS">Using its visual design to communicate its company ethos</li>
-            <li class="textS">Easy to find appointments on dashboard </li>
-            <li class="textS">required info when scheduling </li>
-
-            <li class="textS">Integrating screen reader</li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="rowChng centerHorz alignCPH">
-
-
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column">
-        <P class="titleM">Competitors&apos; weaknesses </P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="titleS">Calendly </li>
-            <li class="textS">Not expanding its language options </li>
-            <div class="blankHXS"></div>
-            <li class="titleS">Doodle </li>
-            <li class="textS">Not expanding its language options </li>
-            <li class="textS">No customization on dashboard
-            <li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column">
-        <P class="titleM">Gaps </P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="titleS">Calendly </li>
-            <li class="textS">Core features are not all accessible without a premium subscription
-            </li>
-            <div class="blankHXS"></div>
-            <li class="titleS">Doodle </li>
-            <li class="textS">Only 14 &#8212; day free trial </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div
-      class="row align-top widthS padding-s marginElm float align-left ShadowBox border-radius  ">
-      <img class="widthIconS" src="list.svg" alt="&bull;">
-      <div class="column">
-        <P class="titleM">Opportunities: </P>
-        <div class="column">
-          <div class="blankHXS"></div>
-          <ul>
-            <li class="titleS">Calendly </li>
-            <li class="textS">One booking page including all event types on dashboard </li>
-            <div class="blankHXS"></div>
-            <li class="titleS">Doodle </li>
-            <li class="textS">Provide customized appointment dashboard </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
 
   <P class="textNos colorAP">03</P>

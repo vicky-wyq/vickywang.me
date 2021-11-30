@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
   //aos + 2 links on html 
 
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
 
   const showAnim = gsap.from('.main-tool-bar', {
     yPercent: -100,

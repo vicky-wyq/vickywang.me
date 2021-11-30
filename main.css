@@ -5,241 +5,306 @@
         text-underline-offset: 3px;
         text-decoration-color: rgba(40, 40, 40, 0.4);
     }
+
     body .centerPhone {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     body .alignCPH {
         align-items: center;
     }
+
     body .circleGH {
         height: 9rem;
         width: 9rem;
     }
+
     body .lineVerS {
         height: 3.0rem;
         margin: 0vw 5vw;
     }
+
     body .heightM {
         height: 10rem;
     }
+
     body .widthL {
         width: 20rem;
     }
+
     body .widthMPhHalf {
         width: 10rem;
     }
+
     body .widthIconM {
         width: 4rem;
     }
+
     body .widthS {
         width: 20rem;
     }
+
     body .widthXS {
         width: 20rem;
         margin: 0;
     }
+
     body .widthMM {
         width: 65vw;
     }
+
     body .widthM {
         width: 18rem;
     }
+
     body .widthXL {
         width: 80vw;
     }
+
     body .tTQ {
         font-size: 16px;
     }
+
     /* fonts going to delete */
     body .t-icon-s {
         font-size: 0.5rem;
     }
+
     body .t-subtitle {
         font-size: 6px;
     }
+
     body .titleL {
         font-size: 16px;
     }
+
     body .titleM {
         font-size: 14px;
         margin: 0.5vh 0;
         font-weight: 300;
     }
+
     body .titleS {
         font-size: 8px;
     }
+
     body .titleXS {
         font-size: 8px;
     }
+
     body .textL {
         font-size: 13px;
         font-weight: 100;
-        margin: 2px/* top&bottom*/
-        0px/* left&right*/
+        margin: 2px
+            /* top&bottom*/
+            0px
+            /* left&right*/
         ;
     }
+
     body .textM {
         font-size: 14px;
         margin: 0;
     }
+
     body .textS {
         font-size: 10px;
     }
+
     /* fonts going to delete */
     body .t-tl {
         font-size: 16px;
     }
+
     body .content-tl {
         height: 10vw;
     }
+
     body .displayNonePhone {
         display: none;
     }
-    body .circle-mp {
+
+    body .circleMP {
         height: 22vh;
         width: 22vh;
         border-radius: 50%;
     }
+
     body .MPslide {
         opacity: 0;
     }
+
     body .centerElement {
         opacity: 1;
     }
-    body .MPcarousel {
+
+    body .carouselMP {
         height: 26rem;
     }
+
     body .MPcircle {
         width: 10px;
         height: 10px;
         left: 49%;
         bottom: 10%;
     }
+
     body .lineVerAll-mp {
         height: 3rem;
     }
+
     body .lineHorizSmallAM {
         margin: 4px;
         height: 3px;
         width: 30px;
     }
+
     /* step progress bar */
     body .stepper-item::before {
         top: 4px;
     }
+
     body .stepper-item::after {
         top: 4px;
     }
+
     body .stepper-item .step-counter {
         width: 3px;
         height: 3px;
         border-radius: 50%;
         border: 3px solid #ccc;
     }
+
     body .stepper-item.completed .step-counter {
         border: 3px solid #5384ed9d;
     }
+
     body .stepper-item.active .step-counter {
         border: 3px solid #5384ED;
     }
+
     body .step-name {
         font-size: 8px;
     }
+
     /* step progress bar */
     body .border-radius {
         border-radius: 0.5em;
     }
+
     body .blankProject {
         height: 280px;
     }
+
     body .blankProjectS {
         height: 120px;
     }
+
     body .centeredTQ {
         bottom: -15px;
     }
+
     body .marginInner {
         margin: 0 6vh;
     }
+
     body .lineHoriz {
         height: 1px;
         width: 90px;
     }
+
     body .tArrow {
         font-size: 20px;
     }
+
     body .tSL {
         font-size: 0.4rem;
     }
+
     body .textNos {
         font-size: 50px;
         margin: 8vh 0;
     }
+
     body table {
         font-size: 0.3rem;
     }
-    body .blankHXS {
-        height: ;
-    }
+
     body .blankHS {
         height: 1.5rem;
     }
+
     body .blankHM {
         height: 6rem;
     }
+
     body .blankHL {
         height: 8rem;
     }
+
     body .blankHXL {
         height: 14rem;
     }
+
     body .widthLogo {
         width: 1rem;
     }
+
     body .se-arrow {
         width: 18px;
     }
-    body .carousel {
+
+    body .carouselAbout {
         height: 45vh;
     }
+
     body .AboutProjectNav {
         top: 65%;
         width: 25px;
         height: 25px;
     }
+
     body .nav {
         top: 75%;
         width: 25px;
         height: 25px;
     }
+
     body .nav-left {
         left: 10px;
     }
+
     body .nav-right {
         right: 10px;
     }
+
     body .marginM {
         margin: 0vh 8vh;
     }
+
     body .marginAll {
         margin: 0;
     }
+
     body .marginAllL {
         margin: 0;
     }
+
     body .designThinkingAM {
         border: 2px solid #5384ED;
         height: 7rem;
         width: 7rem;
     }
+
     /* gardeners hub*/
     body .speech-bubble {
         position: relative;
         background: #f5f5f5;
         border-radius: .4em;
     }
+
     body .speech-bubble:after {
         top: 0;
         left: 48%;
@@ -250,53 +315,68 @@
         margin-left: -5px;
         margin-top: -10px;
     }
+
     body .align-left-phone {
         align-items: flex-start;
     }
+
     body .researchArr {
         margin: 7vw 3vw;
         height: 0.5vh;
         width: 0.5vh;
     }
+
     body .padding-lr {
         padding: 1vh;
     }
+
     body .body-txt {
         margin: 0;
     }
+
     body .heightL {
         height: 13rem;
     }
+
     body .text-center {
         text-align: center;
     }
+
     body .marquee-text {
         font-size: 1.5vh;
     }
+
     body .marquee-logo {
         width: 1.5vh;
     }
+
     body .marquee {
         margin-top: 2vh;
         height: 5vh;
     }
+
     body .rowChng {
         flex-direction: column;
     }
+
     body .rowChngRV {
         flex-direction: column-reverse;
     }
+
     body .icon-s {
         width: 3vh;
         margin: 2px 2vw;
     }
+
     body .icon-m {
         width: 2.5vh;
         margin: 1vh 1vh;
     }
+
     body .icon-l {
         width: 6vh;
     }
+
     body .nav-gh {
         width: 3rem;
         height: 3rem;
@@ -304,135 +384,170 @@
         margin-left: -1.0vh;
         margin-right: -1.0vh;
     }
+
     body .slide {
         height: 200px;
     }
+
     body .carouselContentGH {
         height: 100%;
     }
+
     body .carouselGH {
         height: 50rem;
     }
+
     body .h-line {
         width: 5vh;
     }
+
     /* gardeners hub*/
     body br {
         line-height: 22px;
     }
+
     body .lineVerAll {
         border-left: 1px solid rgb(194, 194, 194);
         height: 40px;
         margin: 10px 15px;
     }
+
     body .lineHorizAll {
         border-top: 1px solid rgb(194, 194, 194);
         width: 70px;
         margin-bottom: 10px;
     }
+
     /* header */
-    .main-tool-bar {
-        height: 180px !important;
-        flex-direction: column !important;
+    body .main-tool-bar {
+        height: 180px;
+        flex-direction: column;
     }
-    .head-left {
-        font-size: 60px !important;
-        margin: 0px !important;
+
+    body .head-left {
+        font-size: 60px;
+        margin: 0px;
         font-weight: 300;
     }
-    .head-right {
-        flex-direction: column !important;
-        align-items: center !important;
-        font-size: 20px !important;
-        margin-left: 0px !important;
-        margin-right: 0px !important;
-        margin-bottom: 12px !important;
+
+    body .head-right {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 12px;
     }
-    .box {
-        padding: 0px !important;
+
+    body .box {
+        padding: 0px;
     }
+
     /* header */
     /* body */
     body .blankVer {
         height: 2rem;
     }
+
     body .intro {
         flex-direction: column;
     }
+
     body .t-hi {
         font-size: 36px;
     }
+
     body .t-me {
         font-size: 26px;
         line-height: 40px;
     }
+
     body .t-me-1 {
         margin-top: 24px;
         font-size: 18px;
     }
+
     body .t-intro {
         font-size: 20px;
     }
+
     body .t-hello {
         font-size: 40px;
     }
+
     .divider {
         width: 50px !important;
         /* weight */
-        border-top: 1px solid rgb(83, 83, 83)!important;
+        border-top: 1px solid rgb(83, 83, 83) !important;
         /* height */
-        margin: 36px/* top&bottom*/
-        0px !important/* left&right*/
+        margin: 36px
+            /* top&bottom*/
+            0px !important
+            /* left&right*/
         ;
     }
+
     .divider1 {
         width: 30px !important;
         /* weight */
         border-top: 1px solid rgb(83, 83, 83) !important;
         /* height */
-        margin: 22px/* top&bottom*/
-        0px !important/* left&right*/
+        margin: 22px
+            /* top&bottom*/
+            0px !important
+            /* left&right*/
         ;
     }
+
     #photos {
         width: 160px !important;
     }
+
     #rc {
         width: 100px !important;
     }
+
     .body-img {
         width: 80% !important;
     }
+
     /* body */
     /* content */
     .adding-margintop {
         margin-top: 20vh !important;
     }
+
     /* content */
     #myBtn {
         font-size: 12px !important;
         bottom: 10px !important;
     }
+
     #bottom-arrow {
         height: 80px !important;
         margin-bottom: -20px !important;
     }
+
     /* about me */
     /* about me */
     /* footer */
     body .footer {
         height: 90px;
     }
+
     body .footer-left {
         font-size: 10px;
     }
+
     .footer-right {
         margin: 0px !;
     }
+
     body .footer-logo {
         margin: 4px;
         width: 12px;
     }
+
     #bottom-arrow {
         height: 128px;
     }
@@ -445,98 +560,174 @@
 }
 
 @media screen and (min-width:1920px) {
-    body .MPcarousel {
+
+    body .head-right {
+
+        font-size: 2.8rem;
+
+    }
+    body .carousel {
+        height: 1000px !important;
+    }
+    
+    body .carousel .carousel-item {
+        width: 800px !important;
+    }
+    body .carouselMP {
         height: 63rem;
     }
+
     body .researchArr {
         margin: 8rem 2rem;
         height: 0.5rem;
         width: 0.5rem;
     }
-    body .circle-mp {
+
+    body .circleMP {
         height: 16rem;
         width: 16rem;
     }
+
+    body .circleGH {
+        height: 16rem;
+        width: 16rem;
+    }
+
     body .lineVerAll-mp {
         height: 180px;
         margin: 9rem 5%;
     }
+
     body .marginAll {
-        margin: 0px 20vw;
+        margin: 0px 33rem !important;
     }
+
     body .marginAllL {
         margin: 0px 50vh;
     }
+
     body .Nav {
         top: 28%;
     }
+
     body .nav-left {
         left: 200px;
     }
+
     body .nav-right {
         right: 200px;
     }
+
     body .blankHL {
         height: 25.0vh;
     }
+
+    body .blankVer {
+        width: 6rem;
+    }
+
     body .widthXS {
         width: 15rem;
         margin: 0;
     }
+
     body .widthS {
         width: 23rem;
     }
+
     body .widthM {
-        width: 28vw;
+        width: 26vw;
         margin: 0;
     }
+
     body .widthMM {
         width: 25vw;
     }
+
     body .widthL {
         width: 70rem;
     }
+
     body .widthXL {
         width: 75rem;
     }
+
     body .heightL {
         height: 42rem;
     }
-    body .carousel {
-        height: 28vw;
+
+    body .carouselAbout {
+        height: 28vw !important;
     }
+
     body .heightS {
         height: 15rem;
     }
+
     body .blankHS {
         display: block;
         height: 8rem;
     }
+
     body .blankProject {
         height: 350px;
     }
+
     body .blankProjectS {
         height: 220px;
     }
+
     body .carouselGH {
-        height: 70rem;
+        height: 70rem !important;
     }
+
     body .AboutProjectNav {
         top: 45%;
     }
+
     body .heightM {
         height: 30rem;
     }
+
     body .marginM {
         margin: 0vh 5vh;
     }
+
     body .blankHXS {
         height: 4rem;
     }
+
     body .tTQ {
         font-size: 2.6rem;
     }
 }
+
+body .collapsible {
+    border-top: 0px solid #ddd;
+    border-right: 0px solid #ddd;
+    border-left: 0px solid #ddd;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.collapsible-header {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    /* display: flex; */
+    /* cursor: pointer; */
+    /* -webkit-tap-highlight-color: transparent; */
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+body .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+    /* -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px !important;
+}
+
+
 
 body {
     font-family: 'Lato', sans-serif;
@@ -580,8 +771,9 @@ body {
 .lineVerAll {
     border-left: 1px solid gray;
     height: 160px;
-    margin: 120px/* top&bottom*/
-    60px;
+    margin: 120px
+        /* top&bottom*/
+        60px;
     /* left&right*/
 }
 
@@ -668,15 +860,15 @@ body {
     margin: 0 6vw;
 }
 
-.circle-mp {
+.circleMP {
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
 }
 
 .circleGH {
-    height: 11rem;
-    width: 11rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
 }
 
@@ -689,7 +881,7 @@ body {
     flex-direction: column;
 }
 
-.row {
+.rowVW {
     display: flex;
     flex-direction: row;
 }
@@ -768,6 +960,14 @@ body {
     color: #FED256;
 }
 
+.colorMPBorder {
+    border: 2px solid #FED256;
+
+}
+.colorGreyBorder {
+    border: 5px solid #F5F5F5;
+
+}
 .colorMPbg {
     background-color: #FED256;
 }
@@ -953,7 +1153,7 @@ body {
 }
 
 .widthM {
-    width: 40rem;
+    width: 35rem;
 }
 
 .widthMPhHalf {
@@ -1015,8 +1215,8 @@ body {
 
 .blankVer {
     border-left: 0px solid gray;
-    height: 20vh;
-    margin: 0 4vh;
+    width: 8rem;
+
 }
 
 /* blank */
@@ -1059,6 +1259,7 @@ body {
     50% {
         transform: translateY(-3px);
     }
+
     100% {
         transform: translateY(-19px);
     }
@@ -1121,7 +1322,7 @@ ul.iconx {
     padding: 0;
 }
 
-ul {
+body ul {
     list-style-position: outside;
     padding: 0;
 }
@@ -1134,7 +1335,7 @@ li{
     margin: 112px 0;
 } */
 
-a {
+body a {
     color: black;
     cursor: pointer;
 }
@@ -1262,6 +1463,7 @@ strong {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(50%);
     }
@@ -1306,14 +1508,30 @@ strong {
     outline: none;
 }
 
-.carousel {
+body .carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+body .carousel .carousel-item {
+    visibility: hidden;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: -200;
+    left: 0;
+}
+
+.carouselAbout {
     position: relative;
     width: 100%;
     height: 45vw;
     margin: 0 auto;
 }
 
-.carousel-content {
+.carouselAbout-content {
     position: relative;
     overflow: hidden;
     transition: width .4s;
@@ -1339,21 +1557,21 @@ strong {
     right: 50px;
 }
 
-.carouselGH {
+body .carouselGH {
     position: relative;
     width: 90%;
     margin: 0 auto;
     height: 40rem;
 }
 
-.carouselContentGH {
+body .carouselContentGH {
     position: relative;
     overflow: hidden;
     transition: width .4s;
     height: 100%;
 }
 
-.slideGH {
+body .slideGH {
     position: absolute;
     z-index: 1;
     transition: left .4s cubic-bezier(.47, .13, .15, .89);
@@ -1384,14 +1602,14 @@ strong {
 
 /* MP Carousel */
 
-.MPcarousel {
+.carouselMP {
     height: 53rem;
     position: relative;
     width: 100%;
     margin: 0 auto;
 }
 
-.MPcarousel-content {
+.carouselMP-content {
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -1417,6 +1635,7 @@ strong {
     50% {
         transform: translateY(-3px);
     }
+
     100% {
         transform: translateY(-19px);
     }
@@ -1475,6 +1694,7 @@ strong {
     0% {
         opacity: 0.2;
     }
+
     100% {
         opacity: 1;
     }
@@ -1484,26 +1704,6 @@ strong {
     width: 13%;
 }
 
-.indicators {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 80%;
-    bottom: 35px;
-}
-
-.indicator {
-    width: 30px;
-    height: 1px;
-    border: 0px solid #73AD21;
-    background-color: whitesmoke;
-    margin: 3px;
-}
-
-.indicator-selected {
-    background-color: grey;
-}
 
 button {
     background-color: Transparent;
@@ -1681,9 +1881,7 @@ button {
 .tArrow {
     font-size: 2.7em;
     font-weight: 100;
-    margin: 2px/* top&bottom*/
-    0px/* left&right*/
-    ;
+    margin: 2px 0px;
 }
 
 .se-arrow {
@@ -1752,7 +1950,7 @@ button {
     align-items: center;
     font-weight: 500;
     font-size: 3.6vh;
-    margin-left: 6%;
+    margin-left: 8%;
 }
 
 .head-right {
@@ -1760,9 +1958,9 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    font-size: 2.6vh;
+    font-size: 1.8rem;
     font-weight: 300;
-    margin-right: 6%;
+    margin-right: 8%;
 }
 
 /* blur hover*/
@@ -1798,8 +1996,10 @@ button {
 .landingIntro {
     display: flex;
     flex-direction: column;
-    margin: 0px/* top&bottom*/
-    8%/* left&right*/
+    margin: 0px
+        /* top&bottom*/
+        8%
+        /* left&right*/
     ;
 }
 
@@ -1859,8 +2059,10 @@ button {
     /* weight */
     border-top: 120px solid black;
     /* height */
-    margin: 0px/* top&bottom*/
-    80px/* left&right*/
+    margin: 0px
+        /* top&bottom*/
+        80px
+        /* left&right*/
     ;
 }
 
@@ -1879,14 +2081,36 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    margin: 0px/* top&bottom*/
-    0px/* left&right*/
+    margin: 0px
+        /* top&bottom*/
+        0px
+        /* left&right*/
     ;
 }
 
 /* intro */
 
 /* step progress bar */
+.indicators {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    bottom: 35px;
+}
+
+.indicator {
+    width: 30px;
+    height: 1px;
+    border: 0px solid #73AD21;
+    background-color: whitesmoke;
+    margin: 3px;
+}
+
+.indicator-selected {
+    background-color: grey;
+}
 
 .stepper-wrapper {
     margin-top: 50px;

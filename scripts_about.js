@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
   function makeCarousel(carousel) {
-    var carouselContent = carousel.querySelector('.carousel-content');
+    var carouselContent = carousel.querySelector('.carouselAbout-content');
     var slides = carousel.querySelectorAll('.slide');
     var arrayOfSlides = Array.prototype.slice.call(slides);
     var carouselDisplaying;
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       carouselContent.removeEventListener('mousemove', slightMove);
     }
   }
-  var carousels = document.getElementsByClassName("carousel")
+  var carousels = document.getElementsByClassName("carouselAbout")
   var index = 0;
   while (index < carousels.length) {
     makeCarousel(carousels[index]);
