@@ -88,15 +88,21 @@ function createCarousel(slidesClass, leftNavClass, rightNavClass) {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
-  createCarousel('.hfSlide', '.hfLeft', '.hfRight');
-  createCarousel('.mfSlide', '.mfLeft', '.mfRight');
-  createCarousel('.hfSlide1', '.hfLeft1', '.hfRight1');
 
 
 
   //0901/2021 Carousel
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });
 
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
 
 
 
