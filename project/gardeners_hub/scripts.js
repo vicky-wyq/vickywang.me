@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
+
+
   function makeCarouselGH(carouselGH) {
     var carouselContent = carouselGH.querySelector('.carouselContentGH');
     var slides = carouselGH.querySelectorAll('.slideGH');
@@ -50,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     function setScreenSize() {
       if (window.innerWidth >= 500) {
-        carouselDisplaying = 5;
+        carouselDisplaying = 4;
       } else if (window.innerWidth >= 300) {
         carouselDisplaying = 1;
       } else {

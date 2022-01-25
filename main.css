@@ -72,30 +72,25 @@
         font-size: 0.5rem;
     }
 
-    body .t-subtitle {
-        font-size: 6px;
-    }
-
     body .titleL {
-        font-size: 16px;
+        font-size: 24px;
     }
 
     body .titleM {
-        font-size: 14px;
+        font-size: 22px;
         margin: 0.5vh 0;
-        font-weight: 300;
     }
 
     body .titleS {
-        font-size: 8px;
+        font-size: 18px;
     }
 
     body .titleXS {
-        font-size: 8px;
+        font-size: 16px;
     }
 
     body .textL {
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 100;
         margin: 2px
             /* top&bottom*/
@@ -105,12 +100,16 @@
     }
 
     body .textM {
-        font-size: 14px;
+        font-size: 16px;
         margin: 0;
     }
 
     body .textS {
-        font-size: 10px;
+        font-size: 16px;
+    }
+
+    body .textXS {
+        font-size: 12px;
     }
 
     /* fonts going to delete */
@@ -142,6 +141,16 @@
 
     body .carouselMP {
         height: 26rem;
+    }
+
+    body .carousel {
+        height: 400px !important;
+    }
+
+    body .carousel .carousel-item {
+        width: 320px !important;
+        top: 65 !important;
+
     }
 
     body .MPcircle {
@@ -207,7 +216,7 @@
     }
 
     body .marginInner {
-        margin: 0 6vh;
+        margin: 0;
     }
 
     body .lineHoriz {
@@ -257,19 +266,19 @@
     }
 
     body .carouselAbout {
-        height: 45vh;
+        height: 55vh;
     }
 
     body .AboutProjectNav {
-        top: 65%;
-        width: 25px;
-        height: 25px;
+        top: 18%;
+        width: 35px;
+        height: 35px;
     }
 
     body .nav {
-        top: 75%;
-        width: 25px;
-        height: 25px;
+        top: 16%;
+        width: 35px;
+        height: 35px;
     }
 
     body .nav-left {
@@ -285,7 +294,7 @@
     }
 
     body .marginAll {
-        margin: 0;
+        margin: 0 2rem;
     }
 
     body .marginAllL {
@@ -328,6 +337,10 @@
 
     body .padding-lr {
         padding: 1vh;
+    }
+
+    body .paddingL {
+        padding: 2rem 5rem;
     }
 
     body .body-txt {
@@ -420,14 +433,15 @@
 
     /* header */
     body .main-tool-bar {
-        height: 180px;
+        height: 200px;
         flex-direction: column;
     }
 
     body .head-left {
-        font-size: 60px;
+        font-size: 38px;
         margin: 0px;
-        font-weight: 300;
+        font-weight: 400;
+
     }
 
     body .head-right {
@@ -444,60 +458,49 @@
     }
 
     /* header */
-    /* body */
-    body .blankVer {
-        height: 2rem;
-    }
+    /* intro */
 
     body .intro {
+        display: flex;
         flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .t-hello {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        font-size: 33px;
     }
 
     body .t-hi {
-        font-size: 36px;
+        font-family: 'Lato', sans-serif;
+        font-size: 3rem;
     }
 
-    body .t-me {
-        font-size: 26px;
-        line-height: 40px;
-    }
-
-    body .t-me-1 {
-        margin-top: 24px;
-        font-size: 18px;
-    }
 
     body .t-intro {
-        font-size: 20px;
+        font-size: 2.8vh;
+
     }
 
-    body .t-hello {
-        font-size: 40px;
+    body .divider {
+
+        margin: 10px;
     }
 
-    .divider {
-        width: 50px !important;
-        /* weight */
-        border-top: 1px solid rgb(83, 83, 83) !important;
-        /* height */
-        margin: 36px
-            /* top&bottom*/
-            0px !important
-            /* left&right*/
-        ;
+    body .divider1 {
+
+        margin: 10px;
     }
 
-    .divider1 {
-        width: 30px !important;
-        /* weight */
-        border-top: 1px solid rgb(83, 83, 83) !important;
-        /* height */
-        margin: 22px
-            /* top&bottom*/
-            0px !important
-            /* left&right*/
-        ;
+    /* intro */
+    /* body */
+    body .blankVer {
+        height: 10rem;
     }
+
 
     #photos {
         width: 160px !important;
@@ -553,28 +556,101 @@
     }
 }
 
-@media screen and (max-width: 1860px) {
+@media (min-width: 950px) and (max-width: 1860px) {
+
     /* header */
-    /* body */
-    /* footer */
+    body .head-left {
+        font-size: 2.4rem;
+    }
+
+    body .head-right {
+        font-size: 1.8rem;
+    }
+
+    /* header */
+    /* intro */
+
+    body .intro {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .t-hello {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        font-size: 33px;
+    }
+
+    body .t-hi {
+        font-family: 'Lato', sans-serif;
+        font-size: 5rem;
+    }
+
+
+    body .t-intro {
+        font-size: 2.8vh;
+
+    }
+
+    body .divider {
+
+        margin: 0px 20px;
+    }
+
+    body .divider1 {
+
+        margin: 13px 20px;
+    }
+
+    /* intro */
 }
 
-@media screen and (min-width:1920px) {
+
+@media screen and (min-width:1860px) {
+    body .head-left {
+        margin-left: 12%;
+
+    }
 
     body .head-right {
 
         font-size: 2.8rem;
+        margin-right: 12%;
 
     }
+
+    body .landingIntro {
+
+        margin: 0px 12%;
+    }
+
+    body .footer-left {
+
+        margin-left: 12%;
+    }
+
+    body .footer-right {
+
+        margin-right: 12%;
+    }
+
     body .carousel {
         height: 1000px !important;
     }
-    
+
     body .carousel .carousel-item {
         width: 800px !important;
     }
+
     body .carouselMP {
         height: 63rem;
+    }
+
+    body .nav-gh {
+        top: 23%;
     }
 
     body .researchArr {
@@ -598,8 +674,12 @@
         margin: 9rem 5%;
     }
 
+    body .marginInner {
+        margin: 0px 21vw;
+    }
+
     body .marginAll {
-        margin: 0px 33rem !important;
+        margin: 0px 38rem !important;
     }
 
     body .marginAllL {
@@ -656,9 +736,7 @@
         height: 42rem;
     }
 
-    body .carouselAbout {
-        height: 28vw !important;
-    }
+
 
     body .heightS {
         height: 15rem;
@@ -700,6 +778,31 @@
     body .tTQ {
         font-size: 2.6rem;
     }
+}
+
+/*Class for when element is above threshold
+*/
+.pin-top {
+    position: relative;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/*
+// Class for when element is below threshold
+
+*/
+.pin-bottom {
+    position: relative;
+}
+
+/* Class for when element is pinned
+
+*/
+.pinned {
+    position: fixed !important;
 }
 
 body .collapsible {
@@ -964,10 +1067,12 @@ body {
     border: 2px solid #FED256;
 
 }
+
 .colorGreyBorder {
     border: 5px solid #F5F5F5;
 
 }
+
 .colorMPbg {
     background-color: #FED256;
 }
@@ -1021,6 +1126,12 @@ body {
 .marginAll {
     margin: 0px 10vw;
 }
+
+.marginInner {
+    margin: 0px 10vw;
+}
+
+
 
 .marginAllL {
     margin: 0px 30rem;
@@ -1089,11 +1200,11 @@ body {
 }
 
 .padding-s {
-    padding: 2vw;
+    padding: 2rem;
 }
 
-.padding-l {
-    padding: 4vw;
+.paddingL {
+    padding: 1rem 5rem;
 }
 
 .padding-lr-xl {
@@ -1336,7 +1447,7 @@ li{
 } */
 
 body a {
-    color: black;
+    color: #181818;
     cursor: pointer;
 }
 
@@ -1527,7 +1638,7 @@ body .carousel .carousel-item {
 .carouselAbout {
     position: relative;
     width: 100%;
-    height: 45vw;
+    height: 46rem;
     margin: 0 auto;
 }
 
@@ -1557,28 +1668,28 @@ body .carousel .carousel-item {
     right: 50px;
 }
 
-body .carouselGH {
+.carouselGH {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     height: 40rem;
 }
 
-body .carouselContentGH {
+.carouselContentGH {
     position: relative;
     overflow: hidden;
     transition: width .4s;
     height: 100%;
 }
 
-body .slideGH {
+.slideGH {
     position: absolute;
     z-index: 1;
     transition: left .4s cubic-bezier(.47, .13, .15, .89);
 }
 
 .nav-gh {
-    top: 22%;
+    top: 35%;
     margin-left: -5.0vh;
     margin-right: -5.0vh;
     width: 4.5vh;
@@ -1824,6 +1935,14 @@ button {
     line-height: 1.4;
 }
 
+.textXS {
+    color: #858585;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
 .textNos {
     display: flex;
     justify-content: center;
@@ -1949,7 +2068,7 @@ button {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 3.6vh;
+    font-size: 3.8vh;
     margin-left: 8%;
 }
 
@@ -1958,7 +2077,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: 300;
     margin-right: 8%;
 }
@@ -2023,7 +2142,7 @@ button {
 
 .t-me {
     font-family: 'Lato', sans-serif;
-    font-size: 5.6vh;
+    font-size: 4.6em;
     margin-left: 0px;
     line-height: 1.6;
 }
@@ -2250,7 +2369,7 @@ button {
     font-weight: 100;
     font-size: 2vh;
     font-family: inherit;
-    margin-left: 6%;
+    margin-left: 8%;
 }
 
 .footer-right {
@@ -2260,7 +2379,7 @@ button {
     justify-content: space-around;
     font-size: 26px;
     font-weight: 300;
-    margin-right: 6%;
+    margin-right: 8%;
 }
 
 .footer-logo {
