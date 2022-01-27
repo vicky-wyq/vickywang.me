@@ -12,9 +12,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
   //aos + 2 links on html 
 
-  $(document).ready(function(){
-    $('.tabs').tabs();
-  });
+  function progressBarScroll() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+        height = document.body.scrollHeight - document.body.clientHeight,
+        scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+    console.log('height', height);
+    console.log('scrollHeight', document.documentElement.scrollHeight);
+    console.log('clientHeight', document.documentElement.clientHeight);
+
+  }
+  
+  window.onscroll = function () {
+    progressBarScroll();
+  };
+  //progressBarScroll
+
+
 
   const showAnim = gsap.from('.main-tool-bar', {
     yPercent: -100,
@@ -30,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
   //main-tool-bar + 2 links on html
+
+
 
   //Get the button
   var mybutton = document.getElementById("myBtn");
