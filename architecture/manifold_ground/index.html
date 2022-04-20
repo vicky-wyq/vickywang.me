@@ -1,8 +1,10 @@
 <html>
 
+
 <head>
   <link rel="stylesheet" href="../../main.css">
   <script type="text/javascript" src="../../scripts.js"></script>
+
 
   <link
     href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
@@ -25,6 +27,19 @@
     rel="stylesheet">
   <!--font font-family: 'Lato', sans-serif; -->
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+  <!--font awesome -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+
   <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!--jQuery-->
@@ -44,22 +59,36 @@
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <!-- gsap - ScrollTrigger-->
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
 
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vicky Wang - Product Designer</title>
+  <meta name="description" content="Vicky Wang's Portfolio">
+  <meta name="keywords"
+    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
+  <meta name="author" content="Vicky Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Vicky Wang</title>
   <meta property="og:site_name" content="VICKY WANG">
-
   <meta property="og:url" content="/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VICKY WANG" />
   <meta property="og:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
+      I enjoy design and code who loves solving challenging problems. 
+      Interested in what you see? Shoot me an email :) " />
+  <meta property="og:image"
+    content="https://s3.us-west-1.amazonaws.com/vickywang.me/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
@@ -77,194 +106,233 @@
   <meta property="og:image:height" content="750">
 </head>
 
-
 <body>
-  <!--head-->
-  <!--progress bar-->
-  <div class="header">
+  <!--progressBarScroll-->
+  <div class="progressContainer">
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="progressBar"></div>
     </div>
   </div>
-  <!--progress bar-->
-  <div class="main-tool-bar">
-    <div class="head-left">
-      <a href="http://vickywang.me/" class="pointer">VW
+  <!--progressBarScroll-->
+  <!-- header -->
+  <nav class="header">
+    <div class="backgroundColorNav">
+      <a href="http://vickywang.me/" class="logo pointer">VW
       </a>
-    </div>
-    <div class="head-right ">
-      <a href="/project" class="inactive  box">
-        PROJECT
-      </a>
-      <a href="/architecture" class="active  box">
-        ARCHITECTURE
-      </a>
-
-      <a href="/photography" class="inactive  box">
-        PHOTOGRAPHY
-      </a>
-
-      <a href="/" class="inactive  box">
-        ABOUT
-      </a>
-
-    </div>
-  </div>
-  <!--head-->
-  <span id="circle" class="circle"></span>
-
-  <!--body-->
-  <div class="blankProject"></div>
-  <div class="blankHXL"></div>
-
-  <div class="marginAll marginAll">
-
-    <!--site -->
-    <div class="rowChng centerVer">
-      <div class="column">
-        <img src="greylines.jpg" alt="DIAGRAM">
-      </div>
-      <div class="blankVer"> </div>
-
-      <div class="column">
-        <p class="titleL">MANIFOLD GROUND</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Form finding from 2 dimensions to 3 dimensions</p>
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item inactive box"><a href="/project" class="nav-link">PROJECT</a></li>
+          <li class="nav-item active box"><a href="/architecture" class="nav-link">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/photography" class="nav-link">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/" class="nav-link">ABOUT</a></li>
+        </ul>
       </div>
 
-
-    </div>
-    <!--site -->
-    <div class="blankHL"></div>
-
-
-    <!-- content-->
-    <div class="rowVW heightM centerVer ">
-      <p class="tArrow"> Methodology </p>
-      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
-    </div>
-    <!-- content-->
-    <!--diagram-->
-    <div class="column centerVer">
-      <img src="object.jpg" alt="DIAGRAM">
-
-      <div class="column widthM">
-        <P class="titleM"> 2D TO 3D</P>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Manipulation of 2 dimensional drawing to 3d dimension geometry </p>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </div>
-    <!--diagram-->
-    <div class="blankHL"></div>
-    <!--geometry-->
-    <div class="column centerVer">
-      <img src="model.jpg" alt="DIAGRAM">
-      <div class="column widthM">
-        <P class="titleM">GEOMETRY ON SITE</P>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Transfer the geometry to site </p>
+  </nav>
+  <!-- header -->
+
+  <div class="blankHL"></div>
+  <!-- cover -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="greylines.jpg" alt="DIAGRAM">
+
+        </div>
       </div>
-    </div>
-    <!--geometry-->
-    <div class="blankHL"></div>
-
-    <!--density-->
-    <div class="column centerVer">
-      <img src="cut.jpg" alt="DIAGRAM">
-      <div class="blankHS"></div>
-
-      <div class="column">
-        <p class="titleM">2D TO 3D MANIPULATION</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Cut and fold on both side of the bristol paper</p>
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>MANIFOLD GROUND</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Form finding from 2 dimensions to 3 dimensions</h6>
+        </div>
       </div>
-
-    </div>
-    <!--density-->
-    <div class="blankHL"></div>
-
-    <!-- content-->
-    <div class="rowVW heightM centerVer ">
-      <p class="tArrow"> Site and Programs </p>
-      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
-    </div>
-    <!-- content-->
-    <!--site -->
-    <div class="column centerVer">
-      <img src="diagram.jpg" alt="DIAGRAM">
-      <div class="blankHS"></div>
-
-      <div class="column">
-        <p class="titleM">DIAGRAMS</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Programs including market, observation place, beer garden, etc. </p>
-      </div>
-
-    </div>
-    <!--site -->
-    <div class="blankHL"></div>
-    <!-- content-->
-    <div class="content-tl">
-      <p class="tArrow"> Flyover View</p>
-      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
-    </div>
-    <!-- content-->
-
-
-
-    <!--Section Perspective -->
-    <div class="column centerVer">
-      <img src="render.jpg" alt="DIAGRAM">
-      <div class="blankHS"></div>
-      <div class="column ">
-        <P class="titleM">FLYOVER VIEW</P>
-        <p class="lineHorizAll"></p>
-        <p class="textM">From the surrounding building people can see this build as an urban
-          sculpture</p>
-      </div>
-    </div>
-    <!--Section Perspective -->
-    <!-- content-->
-    <div class="content-tl">
-      <p class="tArrow"> Site</p>
-      <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
-    </div>
-    <!-- content-->
-
-
-    <!--Site -->
-    <div class="column centerVer">
-      <img src="site1.jpg" alt="DIAGRAM">
-      <div class="blankHS"></div>
-      <div class="widthM">
-
-      <p class="titleM">SITE</p>
-      <p class="lineHorizAll"></p>
-      <p class="textM">This site is one of the most popular places in san Francisco. Along
-        the city axis, there are Saint Mary's Cathedral, SF City Hall, and there is a freeway
-        entrance on the southern side.
-      </p>
-    </div>
-
-    </div>
-
-  <!--Site -->
-  <div class="blankHXL"></div>
-
-  <!--Site -->
-  <div class="column centerVer">
-    <img src="site.jpg" alt="DIAGRAM">
-    <div class="blankHM"></div>
-
-    <div class="column">
-      <P class="titleM">SITE</P>
-      <p class="lineHorizAll"></p>
-      <p class="textM">Site: 450 Hayes St. San Francisco, CA 94102</p>
 
     </div>
   </div>
-  <!--Site -->
-  <div class="blankHXL"></div>
+  <!-- cover -->
+
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Methodology </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+      </div>
+    </div>
+  </div>
+  <!--Arrow-->
+  <div class="blankHS"></div>
+  <!-- object -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center ">
+      <div class="Grid-cell">
+        <div class="element"> <img src="object.jpg" alt="DIAGRAM">
+
+        </div>
+        <div class="element">
+          <h4>2D TO 3D</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Manipulation of 2 dimensional drawing to 3d dimension geometry </h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- object -->
+  <!--geometry-->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center ">
+      <div class="Grid-cell">
+        <div class="element"> <img src="model.jpg" alt="DIAGRAM">
+        </div>
+        <div class="element">
+          <h4>GEOMETRY ON SITE</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Transfer the geometry to site </h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--geometry-->
+  <!--density-->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center ">
+      <div class="Grid-cell">
+        <div class="element"> <img src="cut.jpg" alt="DIAGRAM">
+        </div>
+        <div class="element">
+          <h4>2D TO 3D MANIPULATION</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Cut and fold on both side of the bristol paper </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--density-->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Site and Programs </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+      </div>
+    </div>
+  </div>
+  <!--Arrow-->
+  <div class="blankHS"></div>
+
+  <!--site -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center ">
+      <div class="Grid-cell">
+        <div class="element"> <img src="cut.jpg" alt="DIAGRAM">
+        </div>
+        <div class="element">
+          <h4>DIAGRAMS</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Programs including market, observation place, beer garden, etc. </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--site -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Flyover View </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+      </div>
+    </div>
+  </div>
+  <!--Arrow-->
+  <div class="blankHS"></div>
+
+  <!--Section Perspective -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center ">
+      <div class="Grid-cell">
+        <div class="element"> <img src="render.jpg" alt="DIAGRAM">
+        </div>
+        <div class="element">
+          <h4>FLYOVER VIEW</h4>
+          <p class="lineHorizAll"></p>
+          <h6>From the surrounding building people can see this build as an urban
+            sculpture </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section Perspective -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Site </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+      </div>
+    </div>
+  </div>
+  <!--Arrow-->
+  <div class="blankHS"></div>
+  <!--SITE -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center ">
+      <div class="Grid-cell">
+        <div class="element"> <img src="site1.jpg" alt="DIAGRAM">
+        </div>
+        <div class="element">
+          <h4>SITE</h4>
+          <p class="lineHorizAll"></p>
+          <h6>This site is one of the most popular places in san Francisco. Along
+            the city axis, there are Saint Mary's Cathedral, SF City Hall, and there is a freeway
+            entrance on the southern side.</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--SITE -->
+  <!--SITE -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center ">
+      <div class="Grid-cell">
+        <div class="element"> <img src="site.jpg" alt="DIAGRAM">
+        </div>
+        <div class="element">
+          <h4>SITE</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Site: 450 Hayes St. San Francisco, CA 94102</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--SITE -->
+
+
+  <div class="blankHL"></div>
 
 
   <p class="tTQ centerHorz" data-aos="fade-up">Thanks for your time and have a good day! </p>
@@ -272,10 +340,9 @@
   <div class="blank-lineheight-s"></div>
 
 
-  <div class="blankHXL"></div>
+  <div class="blankHL"></div>
 
 
-  </div>
 </body>
 
 
@@ -287,7 +354,7 @@
 
 <!--back to top-->
 <button id="myBtn" class=" myBtn-1550" title="Go to top">
-  <img id="bottom-arrow" class="ArrowHover" src="../../arrow-top.svg" alt="back to top">
+  <img id="bottom-arrow" class="ArrowHover" src="../../icon/arrow-top.svg" alt="back to top">
 
   <div id="btnFont">TOP</div>
 
@@ -300,19 +367,19 @@
   </p>
   <div class="footer-right">
     <a href="mailto:vickyw.design@gmail.com">
-      <img class="footer-logo" src="../../mail.svg" alt="email">
+      <img class="footer-logo" src="../../icon/mail.svg" alt="email">
     </a>
 
-    <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
-      <img class="footer-logo" src="../../in.svg" alt="linkedin">
+    <a href="https://www.linkedin.com/in/vicky-wyq/">
+      <img class="footer-logo" src="../../icon/in.svg" alt="linkedin">
     </a>
 
     <a href="https://github.com/vicky-wyq">
-      <img class="footer-logo" src="../../git.svg" alt="github">
+      <img class="footer-logo" src="../../icon/git.svg" alt="github">
     </a>
 
     <a href="https://www.instagram.com/vw_yiqi/">
-      <img class="footer-logo" src="../../ins.svg" alt="medium">
+      <img class="footer-logo" src="../../icon/ins.svg" alt="medium">
     </a>
   </div>
 </div>

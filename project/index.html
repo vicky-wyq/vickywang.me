@@ -1,11 +1,52 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vicky Wang | Product Designer | UI/UX Designer</title>
+  <meta name="keywords"
+    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
+  <meta name="author" content="Vicky Wang">
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org",
+    "@graph":[{"@type":"WebSite","@id":"https://vickywang.me/#website",
+    "url":"https://vickywang.me/",
+    "name":"Vicky Wang","description":"UX/UI Designer | Product Designer",
+    "potentialAction":[{"@type":"SearchAction",
+    "target":{"@type":"EntryPoint","urlTemplate":"https://vickywang.me/?s={search_term_string}"},
+    "query-input":"required name=search_term_string"}],"inLanguage":"en-US"},
+    {"@type":"CollectionPage","@id":"https://vickywang.me/#website",
+    "url":"https://vickywang.me","name":"Vicky Wang | User Experience Designer | UX Design",
+    "isPartOf":{"@id":"https://vickywang.me/#website"},
+    "description":"Hi! Thanks for stopping by. I enjoy design and code who loves solving challenging problems. Interested in what you see? Shoot me an email :)",
+    "breadcrumb":{"@id":"https://vickywang.me/#breadcrumb"},
+    "inLanguage":"en-US","potentialAction":[{"@type":"ReadAction",
+    "target":["https://vickywang.me/"]}]},{"@type":"BreadcrumbList","@id":"https://vickywang.me/#breadcrumb",
+    "itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]} </script>
+
+  <meta name="description" content="Vicky Wang's portfolio website">
+  <link rel="canonical" href="https://vickywang.me/project/">
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property='og:title' content="Vicky Wang | UX/UI Designer | Product Designer" />
+  <meta property='og:description'
+    content='Hi! Thanks for stopping by. I enjoy design and code who loves solving challenging problems. Interested in what you see? Shoot me an email :)' />
+  <meta property='og:url' content="https://vickywang.me/project" />
+  <meta property="og:site_name" content="Vicky Wang's Website">
+
+
+
+
+
+
 
   <link rel="stylesheet" href="../main.css">
-  <script type="text/javascript" src="scripts.js"></script>
   <script type="text/javascript" src="../scripts.js"></script>
-
+  <script type="text/javascript" src="scripts_project.js"></script>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
@@ -28,6 +69,15 @@
     rel="stylesheet">
   <!--font font-family: 'Lato', sans-serif; -->
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+  <!--font awesome -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+
   <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!--jQuery-->
@@ -47,291 +97,293 @@
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <!-- gsap - ScrollTrigger-->
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Vicky Wang - Product Designer</title>
-  <meta name="description" content="Vicky Wang's Portfolio">
-  <meta name="keywords"
-    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
-  <meta name="author" content="Vicky Wang">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta property="og:site_name" content="VICKY WANG">
-  <meta property="og:url" content="/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="VICKY WANG" />
-  <meta property="og:description" content="Hi! Thanks for stopping by. 
-      I enjoy design and code who loves solving challenging problems. 
-      Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image"
-    content="https://s3.us-west-1.amazonaws.com/vickywang.me/thumbnail.jpg" />
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="750">
-  <meta property="og:image:height" content="750">
-
-  <meta name="twitter:url" content="//vickywang.design">
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="VICKY WANG" />
-  <meta name="twitter:creator" content="VICKY WANG" />
-  <meta property="twitter:title" content="VICKY WANG">
-  <meta property="twitter:description"
-    content="Hi! Thanks for stopping by. I’m a product designer based in San Francisco. I'm a former architectural designer with a passion for solving business challenges through design and occasionally code. If you like what you see here, please feel free to reach out to me at vickyw.design@gmail.com :)">
-  <meta name="twitter:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="750">
-  <meta property="og:image:height" content="750">
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 </head>
 
 <body>
   <!--progressBarScroll-->
-  <div class="header">
+  <div class="progressContainer">
     <div class="progress-container">
       <div class="progress-bar" id="progressBar"></div>
     </div>
   </div>
   <!--progressBarScroll-->
-
-  <div class="main-tool-bar">
-    <div class="head-left">
-      <a href="http://vickywang.me/" class="pointer">VW
-      </a>
+  <!-- header -->
+  <nav class="header">
+    <div class="backgroundColorNav">
+      <a href="http://vickywang.me/" class="logo pointer">VW</a>
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item active "><a href="/project" class="nav-link box">PROJECT</a></li>
+          <li class="nav-item inactive "><a href="/architecture"
+              class="nav-link box">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item inactive "><a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item inactive "><a href="/" class="nav-link box">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="head-right">
-      <a href="/project" class="active box">
-        PROJECT
-      </a>
-      <a href="/architecture" class="inactive box">
-        ARCHITECTURE
-      </a>
-
-      <a href="/photography" class="inactive box">
-        PHOTOGRAPHY
-      </a>
-
-      <a href="/" class="inactive box">
-        ABOUT
-      </a>
-    </div>
-  </div>
-  <!--head-->
-  <span id="circle" class="circle"></span>
-
-
+  </nav>
+  <!-- header -->
+  <div class="blankHL"></div>
   <!--intro-->
-
-  <div class="blankProject"></div>
-  <div class="landingIntro">
+  <div class="wrapper element">
     <div class="intro">
-      <div class="t-hello" id="t-hello-1550">HELLO, </div>
+      <div class="t-hello">HELLO, </div>
     </div>
     <div class="blankHXS"></div>
 
     <div class="intro" data-aos="fade-up">
-      <div class="introVer">
-        <div class="t-hi">I'm Vicky.</div>
+      <div class="column">
+        <h1 class="t-hi">I'm Vicky.</h1>
       </div>
       <p class="divider"></p>
-      <div class="introVer">
+      <div class="column">
         <div class="intro">
           <span class="t-me">product</span>
           <span class="divider1"></span>
-          <span class="t-me"> design</span>
-
+          <span class="t-me"> UI/UX designer</span>
         </div>
-        <div class="t-me t-me-1">
-          most recent design projects </div>
+        <div class="rowChng">
+          <span class="t-me"> most recent &nbsp;</span>
+          <span class="t-me"> design projects </span>
+        </div>
+      </div>
+    </div>
+    <div class="t-intro zTop" data-aos="fade-up">
+      <p>
+        I’m currently a UI/UX Designer on the book appointment & team management ECommerce teams.
+        BookYourPet is a SaaS product aimed at connecting pet owners with pet service providers.
+      </p>
+      <p> I work closely with engineering and management on all phases of the design process.
+        Leading the design of all major features and flows.
+      </p>
+    </div>
+  </div>
+  <!--intro-->
+  <div class="blankHL"></div>
+  <!-- Arrow -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+      <div class="Grid-cell">
+        <div class="element">
+          <div class="Grid">
+            <p class="tArrow"> Ongoing Projects</p>
+            <img class="se-arrow" src="../icon/arrow-se.svg" alt="se-arrow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Arrow -->
+  <div class="blankHM"></div>
+  <!-- projects ongoing -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid-cell">
+        <a href="/project/appointa/">
+          <div class="element">
+
+            <div class="elementCard float cardBorder">
+              <img src="../image/Cover_Appointa.svg" alt="Appointa">
+              <div class="element">
+                <div class="element">
+                  <h5>For scheduling interview</h5>
+                  <h3 class="arrCard">Appointa</h3>
+                  <h5>Appointa is designed for recruiters, managers, and candidates to schedule,
+                    reschedule, or cancel appointments. All in one App, sync calendars, easy to
+                    share availability between team members and candidates.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="Grid-cell">
+        <a href="/project/seer/">
+          <div class="element">
+
+            <div class="elementCard float cardBorder">
+              <img src="../image/Cover_ANARE.jpg" alt="ANARE">
+              <div class="element">
+                <div class="element">
+                  <h5>For grow business</h5>
+                  <h3 class="arrCard">SEER</h3>
+                  <!--Analysis Report-->
+                  <h5>SEER is designed for analysis of business sentiment scores based on the input
+                    keywords. It connects to different social network platforms with API. Covert
+                    keywords to feed. NLP processes the feeds with the keywords, and generates data
+                    on
+                    the dashboard for users</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- projects ongoing -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!-- Work Sample -->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Work Sample </p>
+        <img class="se-arrow" src="../icon/arrow-se.svg" alt="se-arrow">
+      </div>
+    </div>
+  </div>
+  <div class="blankHS"></div>
+
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid-cell">
+        <div class="element">
+          <div class="elementInner float cardBorder elementCard">
+            <div class="img__wrap">
+              <img class="img__img" src="../image/layout_worksample.png" />
+              <div class="img__description">
+                <div class="input-field">
+                  <input type="password" id="password" placeholder="password">
+                  <button class="passwordArr" type="submit"><i class="fas fa-chevron-right"></i>
+                  </button>
+                  <div class="blankHXS"></div>
+                  <div class="pwIncorrectHeight">
+                    <span id="pwIncorrect">Password is incorrect </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="t-intro zTop" data-aos="fade-up">
-
-      I’m currently a UI/UX designer at BookYourPet. I recently designed an appointment booking flow
-      for our B2B website and redesigned the B2C mobile app UI with the same flow.
-
-      And attending Google UX <a
-        href="https://s3.us-west-1.amazonaws.com/vickywang.me/Google+UX+Certificate.pdf"
-        class="textIntro">Certificate</a> courses more projects coming soon. Any
-      improvements or advice would be greatly appreciated.
-
-
-
-
-    </div>
   </div>
+
+
+  <!-- Work Sample -->
   <div class="blankHM"></div>
-
-  <!--intro-->
-
-  <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
-    <p class="tArrow"> Selected Projects </p>
-    <img class="se-arrow" src="../arrow-se.svg" alt="se-arrow">
-  </div>
-  <!-- content-->
-  <!--APPOINTMENTMAKER-->
-
-
-  <div class="rowChng marginAll marginAll centerHorz centerVer">
-    <a href="/project/appointment_maker">
-      <img src="../layout_AppointmentMaker.png" alt="Appointment Maker">
-    </a>
-    <div class="blankVer">
-    </div>
-    <div class="column widthM">
-      <a href="/project/appointment_maker" class="titleL" data-aos="fade-up">Appointment
-        Maker</a>
-      <p class="lineHorizAll"></p>
-      <p class="textS textItalic">Ongoing</p>
-      <p class="textS"> <strong>Project 1:</strong> &nbsp; Google UX Certificate</p>
-      <p class="textS"> <strong>About:</strong> &nbsp; A scheduling app for making appointment
-        makers</p>
-      <p class="textS"> <strong>Duration:</strong> &nbsp; 4 Weeks</p>
-
+  <hr>
+  <div class="blankHM"></div>
+  <!-- Arrow -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+      <div class="Grid-cell">
+        <div class="element">
+          <div class="Grid">
+            <p class="tArrow"> Other Projects</p>
+            <img class="se-arrow" src="../icon/arrow-se.svg" alt="se-arrow">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <!--APPOINTMENTMAKER-->
-  <div class="blankHL"></div>
-  <!--MEAL PLANNER-->
+  <!-- Arrow -->
+  <div class="blankHM"></div>
+  <!-- projects other -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid-cell">
+        <a href="/project/gardeners_hub/">
+          <div class="elementCard float cardBorder">
+            <img src="../image/layout_GardenersHub.png" alt="Gardeners Hub">
+            <div class="element">
+              <div class="element">
+                <h5>For Gardeners</h5>
+                <h3>Gardeners Hub</h3>
+                <h5>Find solutions and ideas to help gardeners to
+                  improve their horticultural experience with neighbors and reduce wasting resources
+                  by selling or sharing locally.</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
 
-  <div class="rowChngRV marginAll centerHorz centerVer">
-    <div class="column widthM">
-      <a href="/project/meal_planner" class="titleL" data-aos="fade-up">MEAL PLANNER</a>
-      <p class="lineHorizAll"></p>
-      <p class="textS textItalic">May 2021 - August 2021</p>
-      <p class="textM">A mobile app helps planning a healthy meal</p>
+      <div class="Grid-cell">
+        <a href="/project/appointment_maker/">
+          <div class="elementCard float cardBorder">
+            <img src="../image/layout_AppointmentMaker.png" alt="Make appointment">
+            <div class="element">
+              <div class="element">
+                <h5>For makeing appointment</h5>
+                <h3>Appointment Maker</h3>
+                <h5>Appointment maker is a personal reminder that combines different tasks into one
+                  App. easy to manage appointment scheduling.</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="Grid-cell">
+        <a href="/project/meal_planner/">
+          <div class="elementCard float cardBorder">
+            <img src="../image/layout_MealPlanner.png" alt="Meal Planner">
+            <div class="element">
+              <div class="element">
+                <h5 class="">For plan meal</h5>
+                <h3>Meal Planner</h3>
+                <h5>A single mobile app that helps people to improve their cooking experience by
+                  generating a shopping list based on information from their kitchen</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="blankVer">
-    </div>
-    <a href="/project/meal_planner">
-      <img src="../layout_mealplanner.png" alt="Meal Planner">
-    </a>
   </div>
-  <!--MEAL PLANNER-->
-  <div class="blankHL"></div>
-  <!--GARDENERS HUB-->
-
-  <div class="rowChng marginAll  centerHorz centerVer ">
-
-    <a href="/project/gardeners_hub">
-      <img src="../layout_gardenershub.png" alt="Gardeners' Hub">
-    </a>
-    <div class="blankVer">
-    </div>
-    <div class="column widthM">
-      <a href="/project/gardeners_hub" class="titleL" data-aos="fade-up">GARDENERS HUB</a>
-      <p class="lineHorizAll"></p>
-
-      <p class="textS textItalic">May 2021 - August 2021</p>
-
-      <p class="textM">A marketplace for local community</p>
-
-    </div>
-
-
-  </div>
-  <!--GARDENERS HUB-->
-
-  <div class="blankHL"></div>
-
-
-
-  <!--Responsive Web-->
-  <!--
-    
-      <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-    <div class="column widthM">
-      <p href="/project/indie" class="titleL" data-aos="fade-up">Indie Rock bands Website</p>
-      <p class="lineHorizAll"></p>
-      <p class="textS textItalic">Coming Soon</p>
-
-      <p class="textS"> <strong>Project 2:</strong> &nbsp; Google UX Certificate</p>
-      <p class="textS"> <strong>About:</strong> &nbsp; A responsive website for album listening
-        & ordering for Indie Rock bands</p>
-      <p class="textS"> <strong>Duration:</strong> &nbsp; 4 Weeks</p>
-    </div>
-    <div class="blankVer">
-    </div>
-    <p href="/project/indie">
-      <img src="../layout_IndieRockbands.png" alt="Meal Planner">
-    </p>
-  </div>
-  -->
-
-
-
-
-  <!--Responsive Web-->
-
-  <!--Social Good-->
-  <!--
-    
-  <div class="rowChng marginAll marginAll centerHorz centerVer">
-
-    <p href="/project/meal_planner">
-      <img src="../layout_MedicationReminder.png" alt="Meal Planner">
-    </p>
-    <div class="blankVer">
-    </div>
-    <div class="column widthM">
-      <p href="/project/meal_planner" class="titleL" data-aos="fade-up">Medication Reminder</p>
-      <p class="lineHorizAll"></p>
-      <p class="textS textItalic">Coming Soon</p>
-
-      <p class="textS"> <strong>Project:</strong> &nbsp; Google UX Certificate Project 3</p>
-      <p class="textS"> <strong>About:</strong> &nbsp; A cross-platform to help people remember
-        to take medicine on time</p>
-      <p class="textS"> <strong>Duration:</strong> &nbsp; 4 Weeks</p>
-    </div>
-
-  </div>
-  -->
-
-
-
-
-  <!--Social Good-->
-
-
+  <!-- projects other -->
+  <div class="blankHS"></div>
+  <hr>
+  <div class="blankHS"></div>
   <p class="tTQ centerHorz" data-aos="fade-up">Thanks for your time and have a good day! </p>
-  <p class="textM centerHorz" data-aos="fade-up">More coming soon</p>
-
-
-
+  <p class="textM centerHorz" data-aos="fade-up">More projects coming soon</p>
   <div class="blankHL"></div>
-
-
-
   <!--back to top-->
   <button id="myBtn" class=" myBtn-1550" title="Go to top">
-    <img id="bottom-arrow" class="ArrowHover" src="../arrow-top.svg" alt="back to top">
-
+    <img id="bottom-arrow" class="ArrowHover" src="../icon/arrow-top.svg" alt="back to top">
     <div>TOP</div>
-
   </button>
   <!--back to top-->
-
   <!--footer-->
   <div class="footer">
-    <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
+    <p class="footer-left"> &#169; 2022 &#8212; VICKY WANG
     </p>
     <div class="footer-right">
       <a href="mailto:vickyw.design@gmail.com">
-        <img class="footer-logo" src="../mail.svg" alt="email">
+        <img class="footer-logo" src="../icon/mail.svg" alt="email">
       </a>
 
-      <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
-        <img class="footer-logo" src="../in.svg" alt="linkedin">
+      <a href="https://www.linkedin.com/in/vicky-wyq/">
+        <img class="footer-logo" src="../icon/in.svg" alt="linkedin">
       </a>
 
       <a href="https://github.com/vicky-wyq">
-        <img class="footer-logo" src="../git.svg" alt="github">
+        <img class="footer-logo" src="../icon/git.svg" alt="github">
       </a>
 
       <a href="https://www.instagram.com/vw_yiqi/">
-        <img class="footer-logo" src="../ins.svg" alt="medium">
+        <img class="footer-logo" src="../icon/ins.svg" alt="medium">
       </a>
     </div>
   </div>

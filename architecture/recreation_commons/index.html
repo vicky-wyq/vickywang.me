@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="../../main.css">
   <script type="text/javascript" src="../../scripts.js"></script>
 
+
   <link
     href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
@@ -25,6 +26,19 @@
     rel="stylesheet">
   <!--font font-family: 'Lato', sans-serif; -->
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+  <!--font awesome -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+
   <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!--jQuery-->
@@ -44,22 +58,36 @@
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <!-- gsap - ScrollTrigger-->
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
 
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vicky Wang - Product Designer</title>
+  <meta name="description" content="Vicky Wang's Portfolio">
+  <meta name="keywords"
+    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
+  <meta name="author" content="Vicky Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Vicky Wang</title>
   <meta property="og:site_name" content="VICKY WANG">
-
   <meta property="og:url" content="/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VICKY WANG" />
   <meta property="og:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
+    I enjoy design and code who loves solving challenging problems. 
+    Interested in what you see? Shoot me an email :) " />
+  <meta property="og:image"
+    content="https://s3.us-west-1.amazonaws.com/vickywang.me/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
@@ -79,317 +107,338 @@
 
 
 <body>
-  <!--head-->
-  <!--progress bar-->
-  <div class="header">
+  <!--progressBarScroll-->
+  <div class="progressContainer">
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="progressBar"></div>
     </div>
   </div>
-  <!--progress bar-->
-  <div class="main-tool-bar">
-    <div class="head-left">
-      <a href="http://vickywang.me/" class="pointer">VW
+  <!--progressBarScroll-->
+  <!-- header -->
+  <nav class="header">
+    <div class="backgroundColorNav">
+      <a href="http://vickywang.me/" class="logo pointer">VW
       </a>
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item inactive box"><a href="/project" class="nav-link">PROJECT</a></li>
+          <li class="nav-item active box"><a href="/architecture" class="nav-link">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/photography" class="nav-link">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/" class="nav-link">ABOUT</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="head-right ">
-      <a href="/project" class="inactive  box">
-        PROJECT
-      </a>
-      <a href="/architecture" class="active  box">
-        ARCHITECTURE
-      </a>
+  </nav>
+  <!-- header -->
 
-      <a href="/photography" class="inactive  box">
-        PHOTOGRAPHY
-      </a>
-
-      <a href="/" class="inactive  box">
-        ABOUT
-      </a>
-
-    </div>
-  </div>
-  <!--head-->
-  <span id="circle" class="circle"></span>
-
-  <!--body-->
-  <div class="blankProject"></div>
   <div class="blankHL"></div>
 
 
+  <!-- cover -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="diagram.jpg" alt="DIAGRAM">
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>TWO VOLUMES IN ONE SPACE</h4>
+          <p class="lineHorizAll"></p>
+          <h6>the purpose of these two volumes is to distinguish two types of
+            programs: for the public, another for private use.</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- cover -->
 
   <!--diagram 1-->
-  <div class="rowChng centerVer centerHorz marginAll marginAll">
-    <img src="diagram.jpg" alt="DIAGRAM" class=" widthM">
-
-    <div class="column widthM">
-      <P class="titleL">TWO VOLUMES IN ONE SPACE</P>
-      <p class="lineHorizAll"></p>
-      <p class="textM">the purpose of these two volumes is to distinguish two types of
-        programs: for the public, another for private use.</p>
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Programs </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+      </div>
     </div>
   </div>
-  <!--diagram 1-->
+  <!--Arrow-->
+  <div class="wrapper">
+    <div class="Grid Grid--full u-textCenter">
+      <div class="Grid-cell">
+        <img src="programs.jpg" alt="DIAGRAM">
+      </div>
+      <div class="Grid-cell">
+        <h4>PRIVATE VS. PUBLIC</h4>
+          <h6>insert two volumes into one space two distinguish two main
+            programs. one for the public, another one for private purpose</p>
+          </h6>
+      </div>
+    </div>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
 
+    <div class="Grid Grid--full u-textCenter">
+      <div class="Grid-cell">
+        <img src="diagram0.jpg" alt="DIAGRAM">
+      </div>
+      <div class="Grid-cell">
+        <h4">EXERCISE VS. LEISURE</h4>
+          <h6>the circulation integrates the two volumes as one space. it
+            creates a dynamic view between the leisure and training sections.</p>
+          </h6>
+      </div>
+    </div>
 
-  <div class="blankHL"></div>
-  <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
-    <p class="tArrow"> Programs </p>
-    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
   </div>
-  <!-- content-->
-  <div class="marginAll marginAll">
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
 
-    <!--diagram 1-->
-    <div class="column centerVer centerHorz">
-      <img src="programs.jpg" alt="DIAGRAM">
-      <div class="widthM">
-
-        <p class="titleM">PRIVATE VS. PUBLIC</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM widthL">insert two volumes into one space two distinguish two main
-          programs. one for the public, another one for private purpose</p>
-      </div>
-
-
-    </div>
-    <!--diagram 1-->
-    <div class="blankHXL"></div>
-    <!--diagram 2-->
-    <div class="column centerVer centerHorz">
-      <img src="diagram0.jpg" alt="DIAGRAM">
-      <div class="blankHS"></div>
-
-      <div class="widthM">
-        <p class="titleM">EXERCISE VS. LEISURE</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM widthL">the circulation integrates the two volumes as one space. it creates
-          a dynamic view between the leisure and training sections.</p>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Diagrams </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
       </div>
     </div>
-    <!--diagram 2-->
   </div>
-  <div class="blankHL"></div>
-  <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
-    <p class="tArrow"> Diagrams </p>
-    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+  <!--Arrow-->
+
+  <div class="blankHM"></div>
+  <!--diagrams-->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="diagram1.jpg" alt="DIAGRAM">
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element ">
+          <h3>MANIPULATION OF TWO VOLUMES</h3>
+          <h6>Void vs. Solid </h6>
+        </div>
+      </div>
+
+    </div>
   </div>
-  <!-- content-->
-
-  <div class="blankHS"></div>
-  <div class="marginAll marginAll">
-
-    <!--environmental diagram-->
-    <div class="rowChng centerVer">
-      <div class="column widthM">
-        <p class="titleS">MANIPULATION OF TWO VOLUMES</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Void vs. Solid</p>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="diagram2.jpg" alt="DIAGRAM">
+        </div>
       </div>
-      <img class="widthL" src="diagram1.jpg" alt="DIAGRAM">
-    </div>
-    <!--environmental diagram-->
-    <!--environmental diagram-->
-    <div class="rowChng centerVer">
-      <div class="column widthM">
-        <p class="titleS">LIGHT AND AIR</p>
-        <p class="lineHorizAll"></p>
-
-        <p class="textM">an opening on the southern side provides and a gap between adjacent
-          build providing all-day nature daylight from the top all the way to the swimming pool at
-          first floor</p>
+      <div class="Grid-cell">
+        <div class="element ">
+          <h3>LIGHT AND AIR</h3>
+          <h6>an opening on the southern side provides and a gap between adjacent
+            build providing all-day nature daylight from the top all the way to the swimming pool at
+            first floor </h6>
+        </div>
       </div>
-      <img class="widthL" src="diagram2.jpg" alt="DIAGRAM">
-    </div>
-    <!--environmental diagram-->
-    <!--environmental diagram-->
-    <div class="rowChng centerVer">
-      <div class="column widthM">
-        <p class="titleS">FACADE DESGIN</p>
-        <p class="lineHorizAll"></p>
 
-        <p class="textM">all the windows equally set, and the metal mesh with two types of
-          coating redomly setup</p>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="diagram3.jpg" alt="DIAGRAM">
+        </div>
       </div>
-      <img class="widthL" src="diagram3.jpg" alt="DIAGRAM">
+      <div class="Grid-cell">
+        <div class="element ">
+          <h3>FACADE DESGIN</h3>
+          <h6>all the windows equally set, and the metal mesh with two types of
+            coating redomly setup </h6>
+        </div>
+      </div>
+
     </div>
-    <!--environmental diagram-->
+  </div>
 
-    <div class="blankHL"></div>
-
-
-    <!--Section Perspective -->
-    <div class="column centerVer centerHorz">
+  <!--diagrams-->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Section Perspective -->
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
       <img src="section_perspective.jpg" alt="DIAGRAM">
-      <div class="blankHS"></div>
-
-      <div class="column alignCPH">
-        <P class="titleM">SECTION PERSPECTIVE</P>
-        <p class="lineHorizAll"></p>
-        <p class="textM">F1-5 with Facade Detail</p>
+    </div>
+    <div class="Grid-cell">
+      <h4>SECTION PERSPECTIVE</h4>
+      <h6>F1-5 with Facade Detail
+      </h6>
+    </div>
+  </div>
+  <!--Section Perspective -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Renders </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
       </div>
     </div>
-    <!--Section Perspective -->
-
-    <div class="blankHL"></div>
   </div>
-
-  <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
-    <p class="tArrow"> Renders </p>
-    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+  <!--Arrow-->
+  <div class="blankHM"></div>
+  <!-- renders -->
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="render_int1.jpg" alt="render">
+    </div>
+    <div class="Grid-cell">
+      <h4>INTERIOR VIEW</h4>
+      <h6>F1-5 with Facade Detail </h6>
+    </div>
   </div>
-  <!-- content-->
-
-
-  <div class="marginAll marginAll">
-
-    <!--renders 2-->
-    <div class="column">
-      <img src="render_int1.jpg" alt="DIAGRAM">
-      <div class="blankHXS"></div>
-
-      <div class="widthM">
-
-        <p class="titleL">INTERIOR VIEW</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Interior view from the public side</p>
+  <!-- renders -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!-- renders -->
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="render_int2.jpg" alt="render">
+    </div>
+    <div class="Grid-cell">
+      <h4>INTERIOR VIEW</h4>
+      <h6>Interior view from the activity room </h6>
+    </div>
+  </div>
+  <!-- renders -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!-- renders -->
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="render_streetview.jpg" alt="render">
+    </div>
+    <div class="Grid-cell">
+      <h4>STREET VIEW</h4>
+      <h6>Street view from south west</h6>
+    </div>
+  </div>
+  <!-- renders -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Plans and Sections </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
       </div>
-
-
     </div>
-    <!--renders 2-->
-    <div class="blankHL"></div>
-    <!--renders 3-->
+  </div>
+  <!--Arrow-->
+  <div class="blankHM"></div>
+  <!-- floor plans -->
 
-    <div class="column">
-      <img src="render_int2.jpg" alt="DIAGRAM">
-      <div class="blankHXS"></div>
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="plan_f1.jpg" alt="Floor Plans">
+    </div>
+    <div class="Grid-cell">
+      <h4>Floor Plans</h4>
+      <h6>F1 and F2</h6>
+    </div>
+  </div>
+  <div class="blankHS"></div>
+  <hr>
+  <div class="blankHS"></div>
 
-      <div class="widthM">
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="plan_f3.jpg" alt="Floor Plans">
+    </div>
+    <div class="Grid-cell">
+      <h4>Floor Plans</h4>
+      <h6>F3 and F4</h6>
+    </div>
+  </div>
+  <div class="blankHS"></div>
+  <hr>
+  <div class="blankHS"></div>
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="plan_f3.jpg" alt="Floor Plans">
+    </div>
+    <div class="Grid-cell">
+      <h4>Floor Plans</h4>
+      <h6>F5 and Facade Detail</h6>
+    </div>
+  </div>
+  <!-- floor plans -->
+  <div class="blankHS"></div>
+  <hr>
+  <div class="blankHS"></div>
 
-        <p class="titleL">INTERIOR VIEW</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Interior view from the activity room</p>
+  <!-- sections -->
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="section_1.jpg" alt="Floor Plans">
+    </div>
+    <div class="Grid-cell">
+      <h4>Sections</h4>
+      <h6>North - South</h6>
+    </div>
+  </div>
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="section_2.jpg" alt="Floor Plans">
+    </div>
+    <div class="Grid-cell">
+      <h4>Sections</h4>
+      <h6>East - West</h6>
+    </div>
+  </div>
+  <!-- sections -->
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Site </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
       </div>
-
-
     </div>
-    <!--renders 3-->
-    <div class="blankHL"></div>
-
-    <!--renders 2-->
-    <div class="column">
-
-      <img src="render_streetview.jpg" alt="DIAGRAM">
-      <div class="blankHXS"></div>
-
-      <div class="widthM">
-
-        <p class="titleL">STREET VIEW</p>
-        <p class="lineHorizAll"></p>
-
-        <p class="textM">Street view from south west</p>
-      </div>
-
-    </div>
-    <!--renders 2-->
   </div>
-  <div class="blankHL"></div>
+  <!--Arrow-->
+  <div class="blankHM"></div>
+  <div class="Grid Grid--full u-textCenter wrapper">
+    <div class="Grid-cell">
+      <img src="site.jpg" alt="Floor Plans">
+    </div>
+    <div class="Grid-cell">
+      <h4>Site</h4>
+      <h6>110 Franklin St. San Francisco, CA, 94102
 
-
-  <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
-    <p class="tArrow"> Plans and Sections </p>
-    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
+      </h6>
+    </div>
   </div>
-  <!-- content-->
-  <div class="marginAll marginAll">
 
-    <!--plans and sections 1-->
-    <div class="column centerVer centerHorz">
-      <img src="plan_f1.jpg" alt="DIAGRAM">
-      <div class="blankHXS"></div>
 
-      <p class="titleM">FLOOR PLANS </p>
-      <p class="lineHorizAll"></p>
-      <p class="textM">F1 and F2</p>
-    </div>
-
-    <!--plans and sections 1-->
-    <div class="blankHXL"></div>
-    <!--plans and sections 2-->
-    <div class="column centerVer centerHorz">
-      <img src="plan_f3.jpg" alt="DIAGRAM">
-      <div class="blankHXS"></div>
-
-      <p class="titleM">FLOOR PLANS </p>
-      <p class="lineHorizAll"></p>
-      <p class="textM">F3 and F4</p>
-
-    </div>
-    <!--plans and sections 2-->
-    <div class="blankHXL"></div>
-    <!--plans and sections 3-->
-    <div class="column centerVer centerHorz">
-      <img src="plan_f5.jpg" alt="plans and sections">
-      <div class="blankHXS"></div>
-
-      <p class="titleM">FLOOR PLANS </p>
-      <p class="lineHorizAll"></p>
-      <p class="textM">F5 and Facade Detail</p>
-
-    </div>
-    <!--plans and sections 3-->
-
-    <div class="blankHXL"></div>
-    <!--plans and sections 2-->
-    <div class="column centerVer centerHorz">
-      <img src="sections_l.jpg" alt="DIAGRAM">
-      <div class="blankHXS"></div>
-
-      <P class="titleM"> SECTIONS</P>
-      <p class="lineHorizAll"></p>
-      <p class="textM">F5 and Facade Detail</p>
-    </div>
-    <!--plans and sections 2-->
-    <div class="blankHXL"></div>
-    <!--plans and sections 3-->
-    <div class="column centerVer centerHorz">
-      <img src="section_1.jpg" alt="Section1">
-      <img src="section_2.jpg" alt="Section2">
-      <div class="blankHXS"></div>
-
-      <P class="titleM">SECTIONS</P>
-      <p class="lineHorizAll"></p>
-      <p class="textM">Section Detail</p>
-    </div>
-    <!--plans and sections 3-->
-
-  </div>
-  <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
-    <p class="tArrow"> Site </p>
-    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
-  </div>
-  <!-- content-->
-  <div class="marginAll marginAll">
-
-    <!--site-->
-    <div class="column centerVer centerHorz">
-      <img src="site.jpg" alt="DIAGRAM">
-    <div class="blankHXS"></div>
-
-      <p class="titleM">SITE </p>
-      <p class="lineHorizAll"></p>
-      <p class="textM">110 Franklin St. San Francisco, CA, 94102</p>
-
-    </div>
-    <!--site-->
-  </div>
   <div class="blankHL"></div>
 
 
@@ -405,7 +454,7 @@
 
 <!--back to top-->
 <button id="myBtn" class=" myBtn-1550" title="Go to top">
-  <img id="bottom-arrow" class="ArrowHover" src="../../arrow-top.svg" alt="back to top">
+  <img id="bottom-arrow" class="ArrowHover" src="../../icon/arrow-top.svg" alt="back to top">
 
   <div id="btnFont">TOP</div>
 
@@ -418,19 +467,19 @@
   </p>
   <div class="footer-right">
     <a href="mailto:vickyw.design@gmail.com">
-      <img class="footer-logo" src="../../mail.svg" alt="email">
+      <img class="footer-logo" src="../../icon/mail.svg" alt="email">
     </a>
 
     <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
-      <img class="footer-logo" src="../../in.svg" alt="linkedin">
+      <img class="footer-logo" src="../../icon/in.svg" alt="linkedin">
     </a>
 
     <a href="https://github.com/vicky-wyq">
-      <img class="footer-logo" src="../../git.svg" alt="github">
+      <img class="footer-logo" src="../../icon/git.svg" alt="github">
     </a>
 
     <a href="https://www.instagram.com/vw_yiqi/">
-      <img class="footer-logo" src="../../ins.svg" alt="medium">
+      <img class="footer-logo" src="../../icon/ins.svg" alt="medium">
     </a>
   </div>
 </div>

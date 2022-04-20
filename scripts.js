@@ -1,6 +1,23 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+  
+  document.querySelectorAll(".nav-link").forEach((link) =>
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    })
+  );
+  //Responsive hamburger menu
+
+
 
 
   AOS.init({
@@ -30,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-  const showAnim = gsap.from('.main-tool-bar', {
+  const showAnim = gsap.from('.header', {
     yPercent: -100,
     paused: true,
     duration: 0.2
@@ -43,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       self.direction === -1 ? showAnim.play() : showAnim.reverse()
     }
   });
-  //main-tool-bar + 2 links on html
+  //header + 2 links on html
 
 
 
