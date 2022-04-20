@@ -26,6 +26,19 @@
     rel="stylesheet">
   <!--font font-family: 'Lato', sans-serif; -->
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+  <!--font awesome -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+
   <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!--jQuery-->
@@ -45,22 +58,26 @@
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <!-- gsap - ScrollTrigger-->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
-    integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--materializecss.com-->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
-    integrity="sha512-t38vG/f94E72wz6pCsuuhcOPJlHKwPy+PY+n1+tJFzdte3hsIgYE7iEpgg/StngunGszVMrRfvwZinrza0vMTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--materializecss.com-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
 
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vicky Wang - Product Designer</title>
-  <meta name="description" content="Vicky Wang's Portfolio Website">
+  <meta name="description" content="Vicky Wang's Portfolio">
+  <meta name="keywords"
+    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
+  <meta name="author" content="Vicky Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:site_name" content="VICKY WANG">
   <meta property="og:url" content="/" />
@@ -69,7 +86,8 @@
   <meta property="og:description" content="Hi! Thanks for stopping by. 
     I enjoy design and code who loves solving challenging problems. 
     Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
+  <meta property="og:image"
+    content="https://s3.us-west-1.amazonaws.com/vickywang.me/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
@@ -89,53 +107,52 @@
 
 
 <body>
-  <!--head-->
-  <!--progress bar-->
-  <div class="header">
+  <!--progressBarScroll-->
+  <div class="progressContainer">
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="progressBar"></div>
     </div>
   </div>
-  <!--progress bar-->
-  <div class="main-tool-bar">
-    <div class="head-left">
-      <a href="http://vickywang.me/" class="pointer">VW
+  <!--progressBarScroll-->
+  <!-- header -->
+  <nav class="header">
+    <div class="backgroundColorNav">
+
+      <a href="http://vickywang.me/" class="logo pointer">VW
       </a>
+
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item active"><a href="/project" class="nav-link box">PROJECT</a></li>
+          <li class="nav-item inactive"><a href="/architecture"
+              class="nav-link box">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item inactive"><a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item inactive"><a href="/" class="nav-link box">ABOUT</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="head-right ">
-      <a href="/project" class="active  box">
-        PROJECT
-      </a>
-      <a href="/architecture" class="inactive  box">
-        ARCHITECTURE
-      </a>
 
-      <a href="/photography" class="inactive  box">
-        PHOTOGRAPHY
-      </a>
+  </nav>
 
-      <a href="/" class="inactive  box">
-        ABOUT
-      </a>
-
-    </div>
-  </div>
-  <!--head-->
-  <span id="circle" class="circle"></span>
-
-  <!--body-->
-
+  <!-- header -->
 
   <!--about appointmentmaker-->
 
-  <div class="colorGrey">
-    <div class="blankProjectS"></div>
-
+  <div class="colorBgGrey">
+    <div class="blankHL"></div>
     <div class="column centerVer">
 
       <div class="blankHS"></div>
       <div class="column centerVer">
-        <img src="../../layout_AppointmentMaker.png" alt="Appointment Maker" class="widthXL">
+        <img src="../../image/layout_AppointmentMaker.png" alt="Appointment Maker" class="widthXL">
 
         <div class="blankHS"></div>
         <P class="titleL">Appointment Maker</P>
@@ -259,179 +276,224 @@
     <div class="blankHS"></div>
 
   </div>
-
   <!--about appointmentmaker-->
   <!--redo this project-->
 
 
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
 
 
 
 
 
 
-  
   <!--redo this project-->
 
-  <div class="blankHM"></div>
-  <P class="centerHorz titleL">Design Thinking Process</P>
 
-  <div class="blankHM"></div>
+  <div class="wrapper">
 
+    <h3>Design Thinking Process</h3>
 
-  <div CLASS="marginAll marginAll centerHorz  rowChng">
-    <div class="column marginS float alignCPH widthXS padding-s ShadowBox border-radius">
-      <P class="titleM"> Empathize </P>
-      <div class="lineHorizSmallAM"></div>
-      <div class="blankHXS"></div>
-
-      <ul class="column align-botton">
-        <li class="textS"> Personas </li>
-        <li class="textS"> User Journey Map</li>
-      </ul>
-
-    </div>
-    <div class="blankHM"></div>
-
-    <div class="column marginS float alignCPH widthXS padding-s ShadowBox border-radius">
-      <P class="titleM"> Define </P>
-      <div class="lineHorizSmallAM"></div>
-      <div class="blankHXS"></div>
-
-      <ul class="column align-botton">
-        <li class="textS"> Defining problems </li>
-        <li class="textS"> Competitive Audit</li>
-      </ul>
-
-    </div>
-    <div class="blankHM"></div>
-
-    <div class="column marginS float alignCPH widthXS padding-s ShadowBox border-radius">
-      <P class="titleM"> Ideate </P>
-      <div class="lineHorizSmallAM"></div>
-      <div class="blankHXS"></div>
-
-      <ul class="column align-botton">
-        <li class="textS"> Storyboards </li>
-        <li class="textS"> Wireframes</li>
-        <li class="textS"> IA</li>
-        <li class="textS"> Prototypes</li>
-      </ul>
-
-    </div>
-    <div class="blankHM"></div>
-
-    <div class="column marginS float alignCPH widthXS padding-s ShadowBox border-radius">
-      <P class="titleM"> Design </P>
-      <div class="lineHorizSmallAM"></div>
-      <div class="blankHXS"></div>
-
-      <ul class="column align-botton">
-        <li class="textS"> Branding </li>
-        <li class="textS"> Prototypes</li>
-        <li class="textS"> Visal Design </li>
-      </ul>
-
-    </div>
-    <div class="blankHM"></div>
-
-    <div class="column marginS float alignCPH widthXS padding-s ShadowBox border-radius">
-      <P class="titleM"> Testing </P>
-      <div class="lineHorizSmallAM"></div>
-      <div class="blankHXS"></div>
-
-      <ul class="column align-botton">
-        <li class="textS"> Usability Testing </li>
-
-      </ul>
-
-    </div>
-    <div class="blankHM"></div>
-
-  </div>
-
-  <div class="blankHS"></div>
-
-
-  <P class="textNos colorAP">01</P>
-  <P class="centerHorz titleL">Empathize</P>
-  <div class="blankHXS"></div>
-  <!--step progress bar-->
-
-  <div class="stepper-wrapper marginAllL marmarginAllLginAll">
-    <div class="stepper-item completed active">
-      <div class="step-counter"></div>
-      <div class="step-name">Empathize</div>
-
-
-      <div class="column centerVer">
-        <div class="lineVerS  margin-xs"></div>
-        <div class="itemList"></div>
-        <div class="titleXS">Personas</div>
-        <div class="blankHXS"></div>
-        <div class="itemList"></div>
-        <div class="titleXS">User Journey Map</div>
+    <div class="Grid Grid--gutters Grid--cols-4">
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Empathize </h4>
+          <div class="lineHorizS AP"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Personas </li>
+              <li class="textS"> User Journey Map</li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Define </h4>
+          <div class="lineHorizS AP"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Defining problems </li>
+              <li class="textS">Competitive Audit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Ideate </h4>
+          <div class="lineHorizS AP"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Storyboards </li>
+              <li class="textS"> Wireframes</li>
+              <li class="textS"> Information architecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Design </h4>
+          <div class="lineHorizS AP"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Branding </li>
+              <li class="textS"> Visal Design </li>
+              <li class="textS"> Prototypes </li>
 
-    </div>
-    <div class="stepper-item">
-      <div class="step-counter"></div>
-      <div class="step-name">Define</div>
-    </div>
-    <div class="stepper-item">
-      <div class="step-counter"></div>
-      <div class="step-name">Ideate</div>
-    </div>
-    <div class="stepper-item">
-      <div class="step-counter"></div>
-      <div class="step-name">Design</div>
-    </div>
-    <div class="stepper-item">
-      <div class="step-counter"></div>
-      <div class="step-name">Testing</div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Testing </h4>
+          <div class="lineHorizS AP"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Usability Testing </li>
+              <li class="textS"> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
 
-  <!--step progress bar-->
 
-  <div class="blankHS"></div>
+  <!-- 01 -->
 
+  <div class="wrapper">
+    <P class="textNos AP">01</P>
+    <h1>Empathize</h1>
+    <div class="blankHXS"></div>
+    <div class="Grid Grid--gutters Grid--cols-4">
+      <div class="Grid-cell">
+        <div class="element cardBorder colorBlue heightM">
+          <h4> Empathize </h4>
+          <div class="lineHorizS AP"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Personas </li>
+              <li class="textS"> User Journey Map</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Define </h4>
+          <div class="lineHorizS APinActive"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Defining problems </li>
+              <li class="textS">Competitive Audit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Ideate </h4>
+          <div class="lineHorizS APinActive"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Storyboards </li>
+              <li class="textS"> Wireframes</li>
+              <li class="textS"> Information architecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Design </h4>
+          <div class="lineHorizS APinActive"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Branding </li>
+              <li class="textS"> Visal Design </li>
+              <li class="textS"> Prototypes </li>
 
-  <div class="colorGrey">
-    <div class="column centerVer marginAll marginAll">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Testing </h4>
+          <div class="lineHorizS APinActive"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Usability Testing </li>
+              <li class="textS"> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 01 -->
 
-      <div class="blankHM"></div>
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--personas01 -->
+  <div class="wrapper">
 
-      <P class="titleL">Personas</P>
-      <div class="rowVW centerVer">
+    <div class="column centerVer">
+      <h3 class="titleL">Personas</h3>
+      <div class="blankHS"></div>
+
+      <div class="rowVW centerPhone centerVer">
         <div class="widthMPhHalf">
           <P class="titleS align-right">Goals</P>
         </div>
         <div class="lineVerS"></div>
-        <div class="column widthMPhHalf">
-          <P class="textS"> Personal Reminder</P>
-          <P class="textS"> Conbine different task into one sheets</P>
-          <P class="textS"> Manage meeting schedule</P>
+        <div class=" columnNon widthMPhHalf">
+          <ul>
+            <li>Personal Reminder </li>
+            <li>Conbine different task into one sheets </li>
+            <li>Manage meeting schedule </li>
+          </ul>
+
         </div>
       </div>
-      <div class="blankHS"></div>
-
-      <img class="ShadowBox float " src="personas01.svg" alt="Appointment Maker">
-      <div class="blankHM"></div>
-
-      <img class="ShadowBox float " src="personas02.svg" alt="Appointment Maker">
-
-      <div class="blankHM"></div>
-
     </div>
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center">
+      <div class="Grid-cell">
 
+        <div class="element"> <img src="personas01.svg" alt="DIAGRAM">
+        </div>
+      </div>
+    </div>
+    <!--personas01 -->
+
+    <!--personas02 -->
+    <div class="Grid Grid--gutters Grid--cols-1 Grid--center">
+      <div class="Grid-cell">
+
+        <div class="element"> <img src="personas02.svg" alt="DIAGRAM">
+        </div>
+      </div>
+    </div>
   </div>
+  <!--personas02 -->
+
+
+
+
+
+
 
   <div class="blankHM"></div>
 
 
-  <div class="marginAll marginAll">
+  <div class="wrapper">
     <div class="column centerVer">
       <div class="column centerVer">
         <P class="titleL">User Journey Map</P>
@@ -572,76 +634,122 @@
     </table>
 
   </div>
-  <div class="blankHL"></div>
-  <P class="textNos colorAP">02</P>
-  <P class="centerHorz titleL">Define</P>
-  <div class="blankHXS"></div>
 
-  <!--step progress bar-->
-  <div class="stepper-wrapper marginAllL marmarginAllLginAll">
-    <div class="stepper-item completed inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Empathize</div>
-    </div>
-    <div class="stepper-item completed active">
-      <div class="step-counter"></div>
-      <div class="step-name">Define</div>
 
-      <div class="column centerVer">
-        <div class="lineVerS margin-xs"></div>
-        <div class="itemList"></div>
 
-        <div class="titleXS">Defining problems
-        </div>
-        <div class="blankHXS"></div>
-        <div class="itemList"></div>
-        <div class="titleXS">Competitive Audit
+  <!-- 02 -->
+
+  <div class="wrapper">
+    <P class="textNos AP">02</P>
+    <h1>Define</h1>
+    <div class="blankHXS"></div>
+    <div class="Grid Grid--gutters Grid--cols-4">
+      <div class="Grid-cell">
+        <div class="element cardBorder  heightM">
+          <h4> Empathize </h4>
+          <div class="lineHorizS APinActive"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Personas </li>
+              <li class="textS"> User Journey Map</li>
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder colorBlue heightM">
+          <h4> Define </h4>
+          <div class="lineHorizS AP"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Defining problems </li>
+              <li class="textS">Competitive Audit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Ideate </h4>
+          <div class="lineHorizS APinActive"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Storyboards </li>
+              <li class="textS"> Wireframes</li>
+              <li class="textS"> Information architecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Design </h4>
+          <div class="lineHorizS APinActive"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Branding </li>
+              <li class="textS"> Visal Design </li>
+              <li class="textS"> Prototypes </li>
 
-    </div>
-    <div class="stepper-item inactive inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Ideate</div>
-    </div>
-    <div class="stepper-item inactive inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Design</div>
-    </div>
-    <div class="stepper-item inactive inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Testing</div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element cardBorder heightM">
+          <h4> Testing </h4>
+          <div class="lineHorizS APinActive"></div>
+          <div class="element">
+            <ul>
+              <li class="textS"> Usability Testing </li>
+              <li class="textS"> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- 02 -->
+
 
   <div class="blankHM"></div>
-  <div class="column centerVer marginAll">
 
-    <P class="titleL">Define problems</P>
-    <div class="lineVerS"></div>
+
+  <div class="wrapper">
+
+
+
+    <h2>Define problems</h2>
 
     <div class="blankHS"></div>
 
-    <div class="rowChng centerVer">
-      <div class="column widthM">
-
-        <P class="titleS">Problem Statement</P>
-        <P class="textS"> Alex is a busy software engineer manager who needs a faster, more
-          collaborative way to schedule many meetings from one application because scheduling
-          meetings take too much time and effort to avoid meeting conflicts and absence.</P>
+    <div class="Grid Grid--gutters Grid--cols-2 ">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>Problem Statement</h4>
+          <h5> Alex is a busy software engineer manager who needs a faster, more
+            collaborative way to schedule many meetings from one application because scheduling
+            meetings take too much time and effort to avoid meeting conflicts and absence.</h5>
+        </div>
       </div>
-      <div class="blankVer"></div>
-
-      <div class="column widthM">
-        <P class="titleS ">Hypothesis Statement</P>
-        <P class="textS"> Alex is a busy software engineer manager who needs a faster, more
-          collaborative way to schedule many meetings from one application because scheduling
-          meetings take too much time and effort to avoid meeting conflicts and absence.</P>
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>Hypothesis Statement</h4>
+          <h5> Alex is a busy software engineer manager who needs a faster, more
+            collaborative way to schedule many meetings from one application because scheduling
+            meetings take too much time and effort to avoid meeting conflicts and absence.</h5>
+        </div>
       </div>
+
+
     </div>
-    <div class="blankHM"></div>
+
   </div>
-  <div class="column centerVer marginAll">
+
+
+  <div class="blankHM"></div>
+  </div>
+  <div class="wrapper u-textCenter">
     <P class="titleL">Competitive audit</P>
     <div class="blankHS"></div>
 
@@ -661,9 +769,9 @@
     </div>
     <div class="blankHM"></div>
   </div>
-  <ul class="collapsible marginAll">
+  <ul class="wrapper">
     <li>
-      <div class="collapsible-header titleM">
+      <div class="collapsible-progressContainer titleM">
         General Information
 
       </div>
@@ -837,112 +945,113 @@
         </span></div>
     </li>
     <li>
-      <div class="collapsible-header ">
-        <p class="titleM">UX Design</p> 
-        <p class="textM"> First impressions</p> 
+      <div class="collapsible-progressContainer ">
+        <p class="titleM">UX Design</p>
+        <p class="textM"> First impressions</p>
 
 
 
 
       </div>
       <div class="collapsible-body"><span>
-        <table>
-          <tr>
-            <th>First impressions </th>
-            <td class="titleS colorAPbg">Calendly</td>
-            <td class="titleS"> Doodle</td>
-            <td class="titleS">Acuity Scheduling</td>
-            <td class="titleS">Google Calendar </td>
-          </tr>
-    
-          <tr>
-            <th>Desktop website experience </th>
-            <td class="colorAPbg">
-              <div class="column">
-                <p class="colorAP titleS">Outstanding</p>
-                <p>&plus; Visually appealing imagery</p>
-                <p>&plus; Welcoming and easy to use</p>
-                <p>&plus; Clear branding
-                </p>
-                <p>&plus; Lots of intuitive features engaging animations</p>
-    
-              </div>
-            </td>
-            <td>
-              <div class="column">
-                <p class="colorAP titleS">Okay</p>
-                <p>&plus; Easy to navigate and find information</p>
-                <p>&plus; Makes customers feel welcome </p>
-                <p>&plus; Clear branding</p>
-                <p>&minus; Feels a little dense</p>
-              </div>
-            </td>
-            <td>
-              <div class="column">
-                <p class="colorAP titleS">Understanding</p>
-                <p>&plus; Minimal features and visuals</p>
-                <p>&plus; Easy to navigate and find information</p>
-                <p>&minus; Feels overwhelming in places</p>
-                <p>&#8212;</p>
-    
-              </div>
-            </td>
-            <td>
-              <div class="column">
+          <table>
+            <tr>
+              <th>First impressions </th>
+              <td class="titleS colorAPbg">Calendly</td>
+              <td class="titleS"> Doodle</td>
+              <td class="titleS">Acuity Scheduling</td>
+              <td class="titleS">Google Calendar </td>
+            </tr>
+
+            <tr>
+              <th>Desktop website experience </th>
+              <td class="colorAPbg">
+                <div class="column">
+                  <p class="colorAP titleS">Outstanding</p>
+                  <p>&plus; Visually appealing imagery</p>
+                  <p>&plus; Welcoming and easy to use</p>
+                  <p>&plus; Clear branding
+                  </p>
+                  <p>&plus; Lots of intuitive features engaging animations</p>
+
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p class="colorAP titleS">Okay</p>
+                  <p>&plus; Easy to navigate and find information</p>
+                  <p>&plus; Makes customers feel welcome </p>
+                  <p>&plus; Clear branding</p>
+                  <p>&minus; Feels a little dense</p>
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p class="colorAP titleS">Understanding</p>
+                  <p>&plus; Minimal features and visuals</p>
+                  <p>&plus; Easy to navigate and find information</p>
+                  <p>&minus; Feels overwhelming in places</p>
+                  <p>&#8212;</p>
+
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <div class="column">
+                    <p class="colorAP titleS">Good</p>
+                    <p>&plus; Clean design</p>
+                    <p>&plus; Clear branding</p>
+                    <p>&plus; Easy to login with Google account</p>
+                    <p>&minus; Lack of features </p>
+
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Mobile website experience </th>
+              <td class="colorAPbg">
                 <div class="column">
                   <p class="colorAP titleS">Good</p>
-                  <p>&plus; Clean design</p>
-                  <p>&plus; Clear branding</p>
-                  <p>&plus; Easy to login with Google account</p>
-                  <p>&minus; Lack of features </p>
-    
+                  <p>&plus; Fully responsive</p>
+                  <p>&plus; Engaging animations</p>
+                  <p>&plus; Menu is easy to read</p>
+
                 </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th>Mobile website experience </th>
-            <td class="colorAPbg">
-              <div class="column">
-                <p class="colorAP titleS">Good</p>
-                <p>&plus; Fully responsive</p>
-                <p>&plus; Engaging animations</p>
-                <p>&plus; Menu is easy to read</p>
-    
-              </div>
-            </td>
-            <td>
-              <div class="column">
-                <p class="colorAP titleS">Okay</p>
-                <p>&plus; Fully responsive</p>
-                <p>&plus; Interaction was not as smooth on mobile</p>
-                <p>&#8212; Need to login from beginning</p>
-              </div>
-            </td>
-            <td>
-              <div class="column">
-                <p class="colorAP titleS">Understanding</p>
-    
-                <p>&minus; Not fully responsive</p>
-                <p>&plus; Key information is presented</p>
-                <p>&minus; need to swipe left and right to see the calendar</p>
-    
-              </div>
-            </td>
-            <td>
-              <div class="column">
-                <p class="colorAP titleS">Good</p>
-                <p>&minus; Not fully responsive</p>
-                <p>&minus; Menu is hard to read</p>
-                <p>&plus; App can be downloaded to collect points</p>
-    
-              </div>
-            </td>
-          </tr>
-        </table></span></div>
+              </td>
+              <td>
+                <div class="column">
+                  <p class="colorAP titleS">Okay</p>
+                  <p>&plus; Fully responsive</p>
+                  <p>&plus; Interaction was not as smooth on mobile</p>
+                  <p>&#8212; Need to login from beginning</p>
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p class="colorAP titleS">Understanding</p>
+
+                  <p>&minus; Not fully responsive</p>
+                  <p>&plus; Key information is presented</p>
+                  <p>&minus; need to swipe left and right to see the calendar</p>
+
+                </div>
+              </td>
+              <td>
+                <div class="column">
+                  <p class="colorAP titleS">Good</p>
+                  <p>&minus; Not fully responsive</p>
+                  <p>&minus; Menu is hard to read</p>
+                  <p>&plus; App can be downloaded to collect points</p>
+
+                </div>
+              </td>
+            </tr>
+          </table>
+        </span></div>
     </li>
     <li>
-      <div class="collapsible-header titleM">
+      <div class="collapsible-progressContainer titleM">
         UX Design
 
       </div>
@@ -951,7 +1060,7 @@
   </ul>
   <!--step progress bar-->
 
-  <div class="column centerVer marginAll">
+  <div class="wrapper">
 
     <P class="titleM">General Information</P>
     <div class="blankHS"></div>
@@ -1538,7 +1647,7 @@
 
   <div class="blankHL"></div>
 
-  <div class="column centerVer marginAll marginAll">
+  <div class="wrapper">
     <P class="titleM">Competitive audit report</P>
     <div class="blankHS"></div>
 
@@ -1565,11 +1674,11 @@
   </div>
   <div class="blankHS"></div>
 
-  <div class="marginAll">
+  <div class="wrapper">
     <div class="rowChng centerHorz alignCPH">
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column ">
           <P class="titleM">Competitive audit goal </P>
           <div class="column">
@@ -1585,7 +1694,7 @@
 
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column">
           <P class="titleM">Key competitors:</P>
           <div class="column">
@@ -1605,7 +1714,7 @@
 
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column">
           <P class="titleM">Quality of competitors&apos; products:</P>
           <div class="column">
@@ -1630,7 +1739,7 @@
     <div class="rowChng centerHorz alignCPH">
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column">
           <P class="titleM">Competitors market</P>
           <div class="column">
@@ -1654,7 +1763,7 @@
 
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column">
           <P class="titleM">Competitors self promotion:</P>
           <div class="column">
@@ -1678,7 +1787,7 @@
 
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column">
           <P class="titleM">Competitors&apos; strengths: </P>
           <div class="column">
@@ -1710,7 +1819,7 @@
 
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column">
           <P class="titleM">Competitors&apos; weaknesses </P>
           <div class="column">
@@ -1731,7 +1840,7 @@
 
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column">
           <P class="titleM">Gaps </P>
           <div class="column">
@@ -1751,7 +1860,7 @@
 
       <div
         class="rowVW align-top widthM padding-s marginElm float align-left ShadowBox border-radius  ">
-        <img class="widthIconS" src="list.svg" alt="&bull;">
+        <img class="IconS" src="list.svg" alt="&bull;">
         <div class="column">
           <P class="titleM">Opportunities: </P>
           <div class="column">
@@ -1772,137 +1881,13 @@
 
 
 
-  <P class="textNos colorAP">03</P>
-  <P class="centerHorz titleL">Ideate</P>
-  <div class="blankHXS"></div>
-  <!--step progress bar-->
-  <div class="stepper-wrapper marginAllL marmarginAllLginAll">
-    <div class="stepper-item completed inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Empathize</div>
-    </div>
-    <div class="stepper-item completed inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Define</div>
-    </div>
-    <div class="stepper-item completed active">
-      <div class="step-counter"></div>
-      <div class="step-name">Ideate</div>
-      <div class="column centerVer">
-        <div class="lineVerS  margin-xs"></div>
 
-        <div class="itemList"></div>
-        <div class="titleXS">Storyboards </div>
-        <div class="blankHXS"></div>
-
-        <div class="itemList"></div>
-        <div class="titleXS">wireframes </div>
-        <div class="blankHXS"></div>
-
-        <div class="itemList"></div>
-        <div class="titleXS">Info Architecture </div>
-        <div class="blankHXS"></div>
-      </div>
-
-    </div>
-    <div class="stepper-item inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Design</div>
-    </div>
-    <div class="stepper-item inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Testing</div>
-    </div>
-  </div>
-  <div class="blankHL"></div>
-  <p class="tTQ centerHorz" data-aos="fade-up">Coming Soon! </p>
-
-  <div class="blankHM"></div>
-  <!--step progress bar-->
-  <P class="textNos colorAP">04</P>
-  <P class="centerHorz titleL">Design</P>
-  <div class="blankHXS"></div>
-  <!--step progress bar-->
-  <div class="stepper-wrapper marginAllL marmarginAllLginAll">
-    <div class="stepper-item completed inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Branding</div>
-    </div>
-    <div class="stepper-item completed inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Prototypes</div>
-    </div>
-    <div class="stepper-item completed inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Visal Design</div>
-    </div>
-    <div class="stepper-item completed active">
-      <div class="step-counter"></div>
-      <div class="step-name">Design</div>
-      <div class="column centerVer">
-        <div class="lineVerS  margin-xs"></div>
-
-        <div class="itemList"></div>
-        <div class="titleXS ">Storyboards </div>
-        <div class="blankHXS"></div>
-
-        <div class="itemList"></div>
-        <div class="titleXS ">wireframes </div>
-        <div class="blankHXS"></div>
-
-        <div class="itemList"></div>
-        <div class="titleXS ">Info Architecture </div>
-        <div class="blankHXS"></div>
-
-        <div class="itemList"></div>
-        <div class="titleXS ">Prototypes </div>
-      </div>
-    </div>
-    <div class="stepper-item inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Testing</div>
-    </div>
-  </div>
-  <div class="blankHL"></div>
 
   <p class=" tTQ centerHorz" data-aos="fade-up">Coming Soon! </p>
 
   <div class="blankHM"></div>
-  <!--step progress bar-->
-  <P class="textNos colorAP">05</P>
-  <P class="centerHorz titleL">Testing</P>
 
-  <div class="blankHXS"></div>
-  <!--step progress bar-->
-  <div class="stepper-wrapper marginAllL marmarginAllLginAll">
-    <div class="stepper-item completed inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Empathize</div>
-    </div>
-    <div class="stepper-item completed inactive">
-      <div class="step-counter"></div>
-      <div class="step-name">Define</div>
-    </div>
-    <div class="stepper-item completed inactive">
-      <div class="step-counter "></div>
-      <div class="step-name">Ideate</div>
-    </div>
-    <div class="stepper-item completed inactive">
-      <div class="step-counter "></div>
-      <div class="step-name">Design</div>
-    </div>
-    <div class="stepper-item completed active">
-      <div class="step-counter"></div>
-      <div class="step-name">Testing</div>
-      <div class="column centerVer">
-        <div class="lineVerS  margin-xs"></div>
 
-        <div class="itemList"></div>
-        <div class="titleXS ">Usability Testing </div>
-
-      </div>
-    </div>
-  </div>
   <div class="blankHL"></div>
 
   <p class=" tTQ centerHorz" data-aos="fade-up">Coming Soon! </p>
@@ -1911,7 +1896,7 @@
   <!--step progress bar-->
 
 
-  <div class="colorGrey">
+  <div class="colorBgGrey">
   </div>
 
   <div class="blankHS"></div>
@@ -1930,7 +1915,7 @@
 
 <!--back to top-->
 <button id="myBtn" class=" myBtn-1550" title="Go to top">
-  <img id="bottom-arrow" class="ArrowHover" src="../../arrow-top.svg" alt="back to top">
+  <img id="bottom-arrow" class="ArrowHover" src="../../icon/arrow-top.svg" alt="back to top">
 
   <div id="btnFont">TOP</div>
 
@@ -1943,19 +1928,19 @@
   </p>
   <div class="footer-right">
     <a href="mailto:vickyw.design@gmail.com">
-      <img class="footer-logo" src="../../mail.svg" alt="email">
+      <img class="footer-logo" src="../../icon/mail.svg" alt="email">
     </a>
 
-    <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
-      <img class="footer-logo" src="../../in.svg" alt="linkedin">
+    <a href="https://www.linkedin.com/in/vicky-wyq/">
+      <img class="footer-logo" src="../../icon/in.svg" alt="linkedin">
     </a>
 
     <a href="https://github.com/vicky-wyq">
-      <img class="footer-logo" src="../../git.svg" alt="github">
+      <img class="footer-logo" src="../../icon/git.svg" alt="github">
     </a>
 
     <a href="https://www.instagram.com/vw_yiqi/">
-      <img class="footer-logo" src="../../ins.svg" alt="medium">
+      <img class="footer-logo" src="../../icon/ins.svg" alt="medium">
     </a>
   </div>
 </div>

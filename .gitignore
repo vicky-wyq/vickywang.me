@@ -8,7 +8,9 @@ node_modules
 05_logo
 .environment.sh
 *.jpg
+xbbsws
 *.jpeg
 *.png
 *.CR2
 *.docx
+worksamples

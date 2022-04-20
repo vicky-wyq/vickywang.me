@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="../../main.css">
   <script type="text/javascript" src="../../scripts.js"></script>
 
+
   <link
     href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
@@ -25,6 +26,19 @@
     rel="stylesheet">
   <!--font font-family: 'Lato', sans-serif; -->
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+  <!--font awesome -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+
   <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!--jQuery-->
@@ -44,22 +58,36 @@
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <!-- gsap - ScrollTrigger-->
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
 
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vicky Wang - Product Designer</title>
+  <meta name="description" content="Vicky Wang's Portfolio">
+  <meta name="keywords"
+    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
+  <meta name="author" content="Vicky Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Vicky Wang</title>
   <meta property="og:site_name" content="VICKY WANG">
-
   <meta property="og:url" content="/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VICKY WANG" />
   <meta property="og:description" content="Hi! Thanks for stopping by. 
-  I enjoy design and code who loves solving challenging problems. 
-  Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
+      I enjoy design and code who loves solving challenging problems. 
+      Interested in what you see? Shoot me an email :) " />
+  <meta property="og:image"
+    content="https://s3.us-west-1.amazonaws.com/vickywang.me/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
@@ -79,143 +107,181 @@
 
 
 <body>
-  <!--head-->
-  <!--progress bar-->
-  <div class="header">
+  <!--progressBarScroll-->
+  <div class="progressContainer">
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="progressBar"></div>
     </div>
   </div>
-  <!--progress bar-->
-  <div class="main-tool-bar">
-    <div class="head-left">
-      <a href="http://vickywang.me/" class="pointer">VW
-      </a>
-    </div>
-    <div class="head-right ">
-      <a href="/project" class="inactive  box">
-        PROJECT
-      </a>
-      <a href="/architecture" class="active  box">
-        ARCHITECTURE
+  <!--progressBarScroll-->
+  <!-- header -->
+  <nav class="header">
+    <div class="backgroundColorNav">
+
+      <a href="http://vickywang.me/" class="logo pointer">VW
       </a>
 
-      <a href="/photography" class="inactive  box">
-        PHOTOGRAPHY
-      </a>
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item inactive box"><a href="/project" class="nav-link">PROJECT</a></li>
+          <li class="nav-item active box"><a href="/architecture" class="nav-link">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/photography" class="nav-link">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/" class="nav-link">ABOUT</a></li>
+        </ul>
+      </div>
 
-      <a href="/" class="inactive  box">
-        ABOUT
-      </a>
-
-    </div>
-  </div>
-  <!--head-->
-  <span id="circle" class="circle"></span>
-
-  <!--body-->
-  <div class="blankProject"></div>
-  <div class="blankHXL"></div>
-
-
-  <!--diagram 1-->
-  <div class="rowChng centerVer marginAll marginAll">
-    <div class="float">
-      <img src="render.jpg" alt="DIAGRAM">
-    </div>
-    <div class="blankVer"></div>
-    <div class="column widthM">
-      <P class="titleL">NARROW STRIPES</P>
-      <p class="lineHorizAll"></p>
-      <p class="textM">Using a series of straps to divide the space that providing an
-        infrastructure space serves the community nearby</p>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
 
-  </div>
-  <!--diagram 1-->
+  </nav>
+  <!-- header -->
   <div class="blankHL"></div>
+  <!-- cover -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="render.jpg" alt="DIAGRAM"> </div>
+      </div>
 
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>NARROW STRIPES</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Using a series of straps to divide the space that providing an
+            infrastructure space serves the community nearby</h6>
+        </div>
+      </div>
 
-  <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
-    <p class="tArrow"> Programs and Diagrams </p>
-    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
-  </div>
-  <!-- content-->
-
-  <div class="blankHS"></div>
-
-
-  <!--diagram 2-->
-  <div class="rowChng rowChngRV centerVer marginAll marginAll">
-    <div class="column widthM">
-      <p class="titleM">PROGRAMS</p>
-      <p class="lineHorizAll"></p>
-      <p class="textM">Three categories of programs. Social and Leisure, Library, and
-        miscellaneous</p>
-    </div>
-    <div class="column float">
-      <img src="diagram.jpg" alt="DIAGRAM">
     </div>
   </div>
-  <!--diagram 2-->
+  <!-- cover -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Programs and Diagrams </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+      </div>
+    </div>
+  </div>
+  <!--Arrow-->
+  <div class="blankHM"></div>
+  <!-- cover -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="diagram.jpg" alt="DIAGRAM"> </div>
+      </div>
+
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>PROGRAMS</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Three categories of programs. Social and Leisure, Library, and
+            miscellaneous</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- cover -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Renders </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+      </div>
+    </div>
+  </div>
+  <!--Arrow-->
+  <div class="blankHM"></div>
+  <!-- cover -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="render1.jpg" alt="DIAGRAM"> </div>
+      </div>
+
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>RENDERS</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Multiple views</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- cover -->
+
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--Arrow-->
+  <div class="Grid Grid--gutters Grid--full Grid--nested wrapper">
+    <div class="Grid-cell">
+      <div class="Grid">
+        <p class="tArrow"> Site and Floor Plan </p>
+        <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+      </div>
+    </div>
+  </div>
+  <!--Arrow-->
+  <div class="blankHM"></div>
+  <!-- site plan -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="siteplan.jpg" alt="DIAGRAM"> </div>
+      </div>
+
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>SITE PLAN</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Relationship between site and the infrastructure building</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- site plan -->
+  <div class="blankHM"></div>
+  <hr>
   <div class="blankHM"></div>
 
 
-  <!-- content-->
-  <div class="rowVW  heightM centerVer marginAll marginAll">
-    <p class="tArrow"> Renders</p>
-    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
-  </div>
-  <!-- content-->
-  <!--Section Perspective -->
-  <div class="rowChng centerVer marginAll marginAll">
-    <div class="column float">
-      <img src="render1.jpg" alt="DIAGRAM">
-    </div>
-    <div class="blankVer">
-    </div>
-    <div class="column widthM">
-      <P class="titleM">RENDERS</P>
-      <p class="lineHorizAll"></p>
-      <p class="textM">Multiple views</p>
-    </div>
-  </div>
-  <!--Section Perspective -->
+  <!-- site -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img src="site.jpg" alt="DIAGRAM"> </div>
+      </div>
 
-  <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
-    <p class="tArrow"> Site and Floor Plan </p>
-    <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
-  </div>
-  <!-- content-->
+      <div class="Grid-cell">
+        <div class="element">
+          <h4>SITE</h4>
+          <p class="lineHorizAll"></p>
+          <h6>Location: Hyde Park, London</h6>
+        </div>
+      </div>
 
-  <!--Plan-->
-  <div class="rowChng rowChngRV centerVer marginAll marginAll">
-    <div class="column widthM">
-      <p class="titleM">SITE PLAN</p>
-      <p class="lineHorizAll"></p>
-      <p class="textM">Relationship between site and the infrastructure building</p>
-    </div>
-    <div class="blankVer">
-    </div>
-    <div class="float">
-      <img src="siteplan.jpg" alt="DIAGRAM">
     </div>
   </div>
-  <!--Plan-->
-  <div class="blankHXL"></div>
-  <!--Plan site-->
-  <div class="column centerVer marginAll marginAll">
-    <img src="site.jpg" alt="DIAGRAM">
-    <div class="blankHS"></div>
-    <p class="titleM"> SITE</p>
-    <p class="lineHorizAll"></p>
-    <p class="textM">Location: Hyde Park, London</p>
-  </div>
-
-  </div>
-  <!--Plan site-->
+  <!-- site -->
   <div class="blankHXL"></div>
 
 
@@ -241,7 +307,7 @@
 
 <!--back to top-->
 <button id="myBtn" class=" myBtn-1550" title="Go to top">
-  <img id="bottom-arrow" class="ArrowHover" src="../../arrow-top.svg" alt="back to top">
+  <img id="bottom-arrow" class="ArrowHover" src="../../icon/arrow-top.svg" alt="back to top">
 
   <div id="btnFont">TOP</div>
 
@@ -254,19 +320,19 @@
   </p>
   <div class="footer-right">
     <a href="mailto:vickyw.design@gmail.com">
-      <img class="footer-logo" src="../../mail.svg" alt="email">
+      <img class="footer-logo" src="../../icon/mail.svg" alt="email">
     </a>
 
     <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
-      <img class="footer-logo" src="../../in.svg" alt="linkedin">
+      <img class="footer-logo" src="../../icon/in.svg" alt="linkedin">
     </a>
 
     <a href="https://github.com/vicky-wyq">
-      <img class="footer-logo" src="../../git.svg" alt="github">
+      <img class="footer-logo" src="../../icon/git.svg" alt="github">
     </a>
 
     <a href="https://www.instagram.com/vw_yiqi/">
-      <img class="footer-logo" src="../../ins.svg" alt="medium">
+      <img class="footer-logo" src="../../icon/ins.svg" alt="medium">
     </a>
   </div>
 </div>
