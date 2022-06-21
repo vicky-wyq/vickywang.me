@@ -205,13 +205,13 @@ main>nav {}
     color: var(--green);
 }
 
-.APPOINTA .section-nav a:hover,
+.section-nav.APPOINTA a:hover,
 .section-nav a:focus {
     color: var(--APPOINTA-blue);
 }
 
 
-.SEER .section-nav a:hover,
+.section-nav.SEER a:hover,
 .section-nav a:focus{
     color: var(--seer-purple);
 }
@@ -2537,10 +2537,18 @@ a:link.textProject {
     text-underline-offset: 4px;
 }
 
-.active {
+.active a {
     font-weight: 400;
 }
-
+.active.greenNav a{
+    color: var(--green) ;
+}
+.active.appointa a{
+    color: var(--APPOINTA-blue) ;
+}
+.active.seer a{
+    color: var(--seer-purple) ;
+}
 .inactive {
     color: #858585;
     font-weight: 300;
