@@ -20,8 +20,8 @@ html {
     --grey-lightest: #f8f8f8;
 
     --green: #296448;
-    --green-light: #D6E2E4;
-    /* projects */
+    --green-light: #368661;
+    /* 368661 projects 296448*/
 
     --AMBlue: #5384ED;
 
@@ -284,9 +284,9 @@ h5, h6 {
 
 }
 
-.textUnderlineSeer {
+.textUnderline.GREEN {
     text-decoration: underline;
-    text-decoration-color: var(--green);
+    text-decoration-color: var(--green-light);
 
     text-underline-offset: 3px;
 }
@@ -1911,7 +1911,7 @@ a.nav-link:hover {
     margin: 0;
     height: 4px;
     width: 30px;
-    background-color: #368661;
+    background-color: var(--green-light);
     border-radius: 20px;
     border: none;
 }
@@ -1959,7 +1959,7 @@ a.nav-link:hover {
 }
 
 .leftVerLine {
-    border-left: 5px solid var(--green);
+    border-left: 5px solid var(--green-light);
     padding-left: 1em;
 }
 
