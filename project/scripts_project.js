@@ -1,67 +1,28 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
-  console.log(CryptoJS)
 
-  const pass = document.getElementById("password");
-  const submit = document.querySelectorAll(".passwordArr")[0];
-  const msg = document.getElementById("pwIncorrect");
-  const w = 'U2FsdGVkX19oLUQ5jGSt/8/BznuKKmnoGgwpbQPYIbeXe3qedrMX9ePhdFn9BFIe';
+  // Modal Setup
+  var modal = document.getElementById('modal');
 
-  // Get the input field
-  var input = document.getElementById("password");
-
-  // Execute a function when the user presses a key on the keyboard
-  input.addEventListener("keypress", function (event) {
-    // If the user presses the "Enter" key on the keyboard
-    if (event.key === "Enter") {
-      // Cancel the default action, if needed
-      event.preventDefault();
-      // Trigger the button element with a click
-      submit.click();
-    }
+  var modalClose = document.getElementById('modal-close');
+  modalClose.addEventListener('click', function () {
+    modal.style.display = "none";
   });
-  submit.addEventListener("click", () => {
-    let redirect;
-    try {
-      let decrypted = CryptoJS.AES.decrypt(w, pass.value);
-      redirect = CryptoJS.enc.Utf8.stringify(decrypted);
-    } catch (e) {
-      console.log(e);
-    }
-
-    if (redirect && redirect.includes("/xb")) {
-      window.location.href = redirect;
-      msg.style.display = "none";
-    } else {
-      // handle some error
-      msg.style.display = "block";
-    }
+  modal.addEventListener('click', function () {
+    modal.style.display = "none";
   });
 
-
-  //password
-// Modal Setup
-var modal = document.getElementById('modal');
-
-var modalClose = document.getElementById('modal-close');
-modalClose.addEventListener('click', function() { 
-  modal.style.display = "none";
-});
-modal.addEventListener('click', function() { 
-  modal.style.display = "none";
-});
-
-// global handler
-document.addEventListener('click', function (e) { 
-  if (e.target.className.indexOf('modal-target') !== -1) {
+  // global handler
+  document.addEventListener('click', function (e) {
+    if (e.target.className.indexOf('modal-target') !== -1) {
       var img = e.target;
       var modalImg = document.getElementById("modal-content");
       var captionText = document.getElementById("modal-caption");
       modal.style.display = "block";
       modalImg.src = img.src;
       captionText.innerHTML = img.alt;
-   }
-});
+    }
+  });
 
 
 
