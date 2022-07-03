@@ -28,6 +28,8 @@ html {
     --seer-purple: #6956E5;
 
     --APPOINTA-blue: #5384ED;
+    --APPOINTA-blueLighter: #abc4fa;
+
     --APPOINTA-bg: #f5f8fa;
 
 
@@ -284,26 +286,26 @@ h5, h6 {
 
 }
 
-.textUnderline.GREEN {
+.textDecor {
     text-decoration: underline;
-    text-decoration-color: var(--green-light);
-
-    text-underline-offset: 3px;
+    text-decoration-style: double;
+    text-decoration-thickness: 1px;
 }
-
-.textUnderline.Seer {
-    text-decoration: underline;
+.textDecor.SEER {
     text-decoration-color: var(--seer-purple);
-
-    text-underline-offset: 3px;
 }
-
-.textUnderline.APPOINTA {
-    text-decoration: underline;
+.textDecor.APPOINTA {
     text-decoration-color: var(--APPOINTA-blue);
-
-    text-underline-offset: 3px;
 }
+
+.textDecor.GREEN {
+    text-decoration-color: var(--green-light);
+}
+
+
+
+
+
 
 h1 {
     font-weight: 500;
@@ -2395,6 +2397,11 @@ a.nav-link:hover {
     margin: 9px;
 }
 
+.IconSH {
+    height: 1.8rem;
+    margin: 2px;
+}
+
 .IconS {
     width: 1.8rem;
     margin: 2px;
@@ -2576,11 +2583,12 @@ img {
     -webkit-transition: all 120ms ease-in;
     -webkit-transform: scale(1.01);
     -ms-transition: all 120ms ease-in;
-    -ms-transform: scale(1.01);   
+    -ms-transform: scale(1.01);
     -moz-transition: all 120ms ease-in;
     -moz-transform: scale(1.01);
     transition: all 120ms ease-in;
-    transform: scale(1.01);}
+    transform: scale(1.01);
+}
 
 /* The Modal (background) */
 .modal {
