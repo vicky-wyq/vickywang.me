@@ -921,6 +921,9 @@ button.passwordArr {
         /*  10% opaque green */
 
     }
+    body .nav-menu {
+        top: 20.6em;
+    }
 
     .active .bar:nth-child(2) {
         opacity: 0;
@@ -1609,7 +1612,7 @@ a.nav-link:hover {
     }
 
     body .nav-menu {
-        top: 20em;
+        top: 17em;
     }
 
     body .input-field {
