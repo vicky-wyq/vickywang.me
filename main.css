@@ -24,6 +24,7 @@ html {
     /* 368661 projects 296448*/
 
     --AMBlue: #5384ED;
+    --WS-Blue: #2AA5F3;
 
     --seer-purple: #6956E5;
 
@@ -218,7 +219,10 @@ main>nav {}
     color: var(--seer-purple);
 }
 
-
+.section-nav.WS a:hover,
+.section-nav a:focus {
+    color: var(--WS-Blue);
+}
 
 
 
@@ -300,6 +304,9 @@ h5, h6 {
 
 .textDecor.GREEN {
     text-decoration-color: var(--green-light);
+}
+.textDecor.WS {
+    text-decoration-color: var(--WS-Blue);
 }
 
 
@@ -402,6 +409,13 @@ hr {
 
     opacity: 0.7;
     filter: alpha(opacity=70); */
+}
+.elementCard.WS:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--WS-Blue);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
 }
 
 .elementCard:hover {
@@ -1397,7 +1411,6 @@ button.passwordArr {
 }
 
 .progress-bar {
-
     background-color: var(--green);
     height: 3px;
     width: 0%;
@@ -1416,7 +1429,11 @@ button.passwordArr {
     height: 3px;
     width: 0%;
 }
-
+.progress-bar.WS {
+    background-color: var(--WS-Blue);
+    height: 3px;
+    width: 0%;
+}
 /*progressBarScroll*/
 
 
@@ -1675,6 +1692,9 @@ a.nav-link:hover {
 .colorAPPOINTA {
     color: var(--APPOINTA-blue);
 }
+.colorWS {
+    color: var(--WS-Blue);
+}
 
 
 .colorGreen {
@@ -1897,10 +1917,11 @@ a.nav-link:hover {
 }
 
 .lineHorizS.AP {
-    background-color: #5384ED;
-
+    background-color: var(--APPOINTA-blue);
 }
-
+.lineHorizS.WS {
+    background-color:var(--WS-Blue);
+}
 .lineHorizS.SEER {
     background-color: var(--seer-purple);
 
@@ -1977,7 +1998,10 @@ a.nav-link:hover {
     border-left: 5px solid var(--APPOINTA-blue);
     padding-left: 1em;
 }
-
+.leftVerLine.WS {
+    border-left: 5px solid var(--WS-Blue);
+    padding-left: 1em;
+}
 .ver-line {
     border-left: 1px solid gray;
     height: 15.0vh;
