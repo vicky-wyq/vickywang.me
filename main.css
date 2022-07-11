@@ -1686,7 +1686,7 @@ a.nav-link:hover {
 
 .colorBgAPPOINTA {
     background-color: #f5f8fa;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .colorAPPOINTA {
@@ -1756,7 +1756,9 @@ a.nav-link:hover {
 .shadowFilter {
     filter: drop-shadow(3px 2px 2px rgba(143, 143, 143, 0.404));
 }
-
+.shadowFilterL {
+    filter: drop-shadow(3px 20px 20px rgba(129, 139, 161, 0.304));
+}
 .clip-shape-shadow {
     filter: drop-shadow(20px 40px 25px rgba(124, 84, 10, 0.404));
 }
