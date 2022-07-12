@@ -55,6 +55,9 @@
 <rect x="1709.5" y="166.5" width="115" height="52" rx="5.5" fill="#F6F9FE"/>
 <text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1741.27" y="198.652">Profile</tspan></text>
 <rect x="1709.5" y="166.5" width="115" height="52" rx="5.5" stroke="#5384ED"/>
+<rect x="1743.5" y="506.5" width="150" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1775.29" y="538.652">Integration</tspan></text>
+<rect x="1743.5" y="506.5" width="150" height="52" rx="5.5" stroke="#5384ED"/>
 <rect x="1743.5" y="251.5" width="130" height="52" rx="5.5" fill="#F6F9FE"/>
 <text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1775.19" y="283.652">Account</tspan></text>
 <rect x="1743.5" y="251.5" width="130" height="52" rx="5.5" stroke="#BACCF4"/>
@@ -62,8 +65,6 @@
 <text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1806.42" y="368.652">User name</tspan></text>
 <rect x="1774" y="421" width="144" height="53" rx="6" fill="#F6F9FE"/>
 <text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1806.24" y="453.652">Password</tspan></text>
-<rect x="1743" y="506" width="151" height="53" rx="6" fill="#BACCF4"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1775.29" y="538.652">Integration</tspan></text>
 <rect x="1774" y="591" width="177" height="53" rx="6" fill="#F6F9FE"/>
 <text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1806.41" y="623.652">Sync calendar</tspan></text>
 <rect x="1774" y="676" width="274" height="53" rx="6" fill="#F6F9FE"/>
