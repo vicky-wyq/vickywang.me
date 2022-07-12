@@ -1,63 +1,73 @@
 <svg width="2065" height="832" viewBox="0 0 2065 832" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="12" y="167" width="187" height="53" rx="6" fill="#5384ED"/>
-<text fill="#F5F5F5" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="44.082" y="199.652">Interview types</tspan></text>
-<rect x="883.5" y="9.5" width="110" height="50" rx="4.5" fill="#E2EDFD"/>
-<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="914.365" y="40.6523">Home</tspan></text>
-<rect x="883.5" y="9.5" width="110" height="50" rx="4.5" stroke="#5384ED" stroke-width="3"/>
-<rect x="46" y="251" width="242" height="53" rx="6" fill="#BACCF4"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="78.1953" y="283.652">List of interview types</tspan></text>
-<rect x="77" y="337" width="184" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="109.164" y="369.652">Phone screens</tspan></text>
-<rect x="77" y="422" width="230" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="109.321" y="454.652">Technical interviews</tspan></text>
-<rect x="77" y="507" width="252" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="109.317" y="539.652">Add new interview type</tspan></text>
-<rect x="109" y="592" width="188" height="53" rx="6" fill="#F5F5F5"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="141.09" y="624.652">Interview name</tspan></text>
-<rect x="109" y="677" width="133" height="53" rx="6" fill="#F5F5F5"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="141.196" y="709.652">Duration</tspan></text>
+<rect x="12.5" y="167.5" width="184" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="44.2246" y="199.652">Interview types</tspan></text>
+<rect x="12.5" y="167.5" width="184" height="52" rx="5.5" stroke="#5384ED"/>
+<rect x="882.5" y="8.5" width="112" height="52" rx="5.5" fill="#E2EDFD"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="914.277" y="40.6523">Home</tspan></text>
+<rect x="882.5" y="8.5" width="112" height="52" rx="5.5" stroke="#5384ED"/>
+<rect x="46.5" y="251.5" width="238" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="78.1279" y="283.652">List of interview types</tspan></text>
+<rect x="46.5" y="251.5" width="238" height="52" rx="5.5" stroke="#BACCF4"/>
+<rect x="77" y="337" width="183" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="109.262" y="369.652">Phone screens</tspan></text>
+<rect x="77" y="422" width="227" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="109.192" y="454.652">Technical interviews</tspan></text>
+<rect x="77" y="507" width="249" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="109.127" y="539.652">Add new interview type</tspan></text>
+<rect x="109" y="592" width="187" height="53" rx="6" fill="#F5F5F5"/>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="141.372" y="624.652">Interview name</tspan></text>
+<rect x="109" y="677" width="132" height="53" rx="6" fill="#F5F5F5"/>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="141.118" y="709.652">Duration</tspan></text>
 <rect x="109" y="762" width="134" height="53" rx="6" fill="#F5F5F5"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="141.02" y="794.652">Location</tspan></text>
-<rect x="1310" y="251" width="191" height="53" rx="6" fill="#BACCF4"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1342.37" y="283.652">Team memebrs</tspan></text>
-<rect x="417" y="166.5" width="148" height="53" rx="6" fill="#5384ED"/>
-<text fill="#F5F5F5" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="449.226" y="199.152">Interviews</tspan></text>
-<rect x="451" y="251.5" width="203" height="53" rx="6" fill="#BACCF4"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="483.339" y="284.152">List of interviews</tspan></text>
-<rect x="482" y="336.5" width="228" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="514.209" y="369.152">Scheduled Interview</tspan></text>
-<rect x="482" y="421.5" width="225" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="514.036" y="454.152">Upcoming Interview</tspan></text>
-<rect x="482" y="507" width="180" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="514.405" y="539.652">Past Interview</tspan></text>
-<rect x="862" y="166.5" width="153" height="53" rx="6" fill="#5384ED"/>
-<text fill="#F5F5F5" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="894.353" y="199.152">Availability</tspan></text>
-<rect x="896" y="251.5" width="109" height="53" rx="6" fill="#BACCF4"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="928.264" y="284.152">Chart</tspan></text>
-<rect x="927" y="336.5" width="102" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="959.438" y="369.152">Date</tspan></text>
-<rect x="927" y="421.5" width="191" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="959.368" y="454.152">Team memebrs</tspan></text>
-<rect x="1276" y="166.5" width="110" height="53" rx="6" fill="#5384ED"/>
-<text fill="#F5F5F5" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1308.38" y="199.152">Team</tspan></text>
-<rect x="1341" y="337" width="200" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1373.18" y="369.652">Add/delete skills</tspan></text>
-<rect x="1341" y="422" width="235" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1373.45" y="454.652">Add/delete members</tspan></text>
-<rect x="1709" y="166" width="118" height="53" rx="6" fill="#5384ED"/>
-<text fill="#F5F5F5" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1741.45" y="198.652">Profile</tspan></text>
-<rect x="1743" y="251" width="132" height="53" rx="6" fill="#BACCF4"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1775.43" y="283.652">Account</tspan></text>
-<rect x="1774" y="336" width="151" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1806.1" y="368.652">User name</tspan></text>
-<rect x="1774" y="421" width="144" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1806.21" y="453.652">Password</tspan></text>
-<rect x="1743" y="506" width="153" height="53" rx="6" fill="#BACCF4"/>
-<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1775.48" y="538.652">Integration</tspan></text>
-<rect x="1774" y="591" width="178" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1806.19" y="623.652">Sync calendar</tspan></text>
-<rect x="1774" y="676" width="275" height="53" rx="6" fill="#E2EDFD"/>
-<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="1806.11" y="708.652">Video conference account</tspan></text>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="141.169" y="794.652">Location</tspan></text>
+<rect x="1310.5" y="251.5" width="189" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1342.19" y="283.652">Team memebrs</tspan></text>
+<rect x="1310.5" y="251.5" width="189" height="52" rx="5.5" stroke="#BACCF4"/>
+<rect x="417.5" y="167" width="146" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="449.49" y="199.152">Interviews</tspan></text>
+<rect x="417.5" y="167" width="146" height="52" rx="5.5" stroke="#5384ED"/>
+<rect x="451.5" y="252" width="200" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="483.394" y="284.152">List of interviews</tspan></text>
+<rect x="451.5" y="252" width="200" height="52" rx="5.5" stroke="#BACCF4"/>
+<rect x="482" y="336.5" width="225" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="514.036" y="369.152">Scheduled Interview</tspan></text>
+<rect x="482" y="421.5" width="223" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="514.064" y="454.152">Upcoming Interview</tspan></text>
+<rect x="482" y="507" width="178" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="514.293" y="539.652">Past Interview</tspan></text>
+<rect x="862.5" y="167" width="149" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="894.065" y="199.152">Availability</tspan></text>
+<rect x="862.5" y="167" width="149" height="52" rx="5.5" stroke="#5384ED"/>
+<rect x="896.5" y="252" width="107" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="928.071" y="284.152">Chart</tspan></text>
+<rect x="896.5" y="252" width="107" height="52" rx="5.5" stroke="#BACCF4"/>
+<rect x="927" y="336.5" width="102" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="959.481" y="369.152">Date</tspan></text>
+<rect x="927" y="421.5" width="190" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="959.193" y="454.152">Team memebrs</tspan></text>
+<rect x="1276.5" y="167" width="108" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1308.01" y="199.152">Team</tspan></text>
+<rect x="1276.5" y="167" width="108" height="52" rx="5.5" stroke="#5384ED"/>
+<rect x="1341" y="337" width="198" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1373.06" y="369.652">Add/delete skills</tspan></text>
+<rect x="1341" y="422" width="234" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1373.41" y="454.652">Add/delete members</tspan></text>
+<rect x="1709.5" y="166.5" width="115" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1741.27" y="198.652">Profile</tspan></text>
+<rect x="1709.5" y="166.5" width="115" height="52" rx="5.5" stroke="#5384ED"/>
+<rect x="1743.5" y="251.5" width="130" height="52" rx="5.5" fill="#F6F9FE"/>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1775.19" y="283.652">Account</tspan></text>
+<rect x="1743.5" y="251.5" width="130" height="52" rx="5.5" stroke="#BACCF4"/>
+<rect x="1774" y="336" width="151" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1806.42" y="368.652">User name</tspan></text>
+<rect x="1774" y="421" width="144" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1806.24" y="453.652">Password</tspan></text>
+<rect x="1743" y="506" width="151" height="53" rx="6" fill="#BACCF4"/>
+<text fill="#102042" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1775.29" y="538.652">Integration</tspan></text>
+<rect x="1774" y="591" width="177" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1806.41" y="623.652">Sync calendar</tspan></text>
+<rect x="1774" y="676" width="274" height="53" rx="6" fill="#F6F9FE"/>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1806.49" y="708.652">Video conference account</tspan></text>
 <path d="M23.3333 219C23.3333 220.473 24.5272 221.667 26 221.667C27.4728 221.667 28.6667 220.473 28.6667 219C28.6667 217.527 27.4728 216.333 26 216.333C24.5272 216.333 23.3333 217.527 23.3333 219ZM43.3333 277C43.3333 278.473 44.5272 279.667 46 279.667C47.4728 279.667 48.6667 278.473 48.6667 277C48.6667 275.527 47.4728 274.333 46 274.333C44.5272 274.333 43.3333 275.527 43.3333 277ZM25.5 219V257H26.5V219H25.5ZM25.5 257C25.5 268.322 34.6782 277.5 46 277.5V276.5C35.2304 276.5 26.5 267.77 26.5 257H25.5Z" fill="#898F9B"/>
 <path d="M428.333 219C428.333 220.473 429.527 221.667 431 221.667C432.473 221.667 433.667 220.473 433.667 219C433.667 217.527 432.473 216.333 431 216.333C429.527 216.333 428.333 217.527 428.333 219ZM448.333 277C448.333 278.473 449.527 279.667 451 279.667C452.473 279.667 453.667 278.473 453.667 277C453.667 275.527 452.473 274.333 451 274.333C449.527 274.333 448.333 275.527 448.333 277ZM430.5 219V257H431.5V219H430.5ZM430.5 257C430.5 268.322 439.678 277.5 451 277.5V276.5C440.23 276.5 431.5 267.77 431.5 257H430.5Z" fill="#898F9B"/>
 <path d="M873.333 219C873.333 220.473 874.527 221.667 876 221.667C877.473 221.667 878.667 220.473 878.667 219C878.667 217.527 877.473 216.333 876 216.333C874.527 216.333 873.333 217.527 873.333 219ZM893.333 277C893.333 278.473 894.527 279.667 896 279.667C897.473 279.667 898.667 278.473 898.667 277C898.667 275.527 897.473 274.333 896 274.333C894.527 274.333 893.333 275.527 893.333 277ZM875.5 219V257H876.5V219H875.5ZM875.5 257C875.5 268.322 884.678 277.5 896 277.5V276.5C885.23 276.5 876.5 267.77 876.5 257H875.5Z" fill="#898F9B"/>
