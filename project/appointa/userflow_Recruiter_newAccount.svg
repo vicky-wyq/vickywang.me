@@ -1,0 +1,753 @@
+<svg width="6509" height="2841" viewBox="0 0 6509 2841" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="355" height="83" transform="translate(127 75)" fill="#5384ED"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="42" font-weight="500" letter-spacing="0em"><tspan x="159" y="131.773">Working hours</tspan></text>
+<g clip-path="url(#clip0_3006_20126)">
+<rect width="1440" height="1024" transform="translate(127 158)" fill="white"/>
+<g filter="url(#filter0_d_3006_20126)">
+<rect x="127" y="158" width="1440" height="80" fill="white"/>
+</g>
+<g clip-path="url(#clip1_3006_20126)">
+<path d="M1495.52 198C1495.52 210.749 1485.69 221 1473.67 221C1461.64 221 1451.81 210.749 1451.81 198C1451.81 185.251 1461.64 175 1473.67 175C1485.69 175 1495.52 185.251 1495.52 198Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-4-inside-1_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1456.52 213.875V213C1456.52 207.015 1467.95 204 1473.67 204C1479.39 204 1490.81 207.015 1490.81 213V213.875C1486.62 218.857 1480.49 222 1473.67 222C1466.84 222 1460.71 218.857 1456.52 213.875ZM1473.67 184C1468.93 184 1465.1 188.028 1465.1 193C1465.1 197.972 1468.93 202 1473.67 202C1478.4 202 1482.24 197.972 1482.24 193C1482.24 188.028 1478.4 184 1473.67 184Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1456.52 213.875V213C1456.52 207.015 1467.95 204 1473.67 204C1479.39 204 1490.81 207.015 1490.81 213V213.875C1486.62 218.857 1480.49 222 1473.67 222C1466.84 222 1460.71 218.857 1456.52 213.875ZM1473.67 184C1468.93 184 1465.1 188.028 1465.1 193C1465.1 197.972 1468.93 202 1473.67 202C1478.4 202 1482.24 197.972 1482.24 193C1482.24 188.028 1478.4 184 1473.67 184Z" fill="#F5F5F5"/>
+<path d="M1456.52 213.875H1454.52V214.604L1454.99 215.162L1456.52 213.875ZM1490.81 213.875L1492.34 215.162L1492.81 214.604V213.875H1490.81ZM1458.52 213.875V213H1454.52V213.875H1458.52ZM1458.52 213C1458.52 212.202 1458.89 211.378 1459.79 210.505C1460.71 209.616 1462.07 208.796 1463.73 208.099C1467.05 206.702 1471.07 206 1473.67 206V202C1470.54 202 1465.99 202.806 1462.17 204.412C1460.26 205.217 1458.41 206.273 1457.01 207.633C1455.59 209.009 1454.52 210.806 1454.52 213H1458.52ZM1473.67 206C1476.26 206 1480.29 206.702 1483.61 208.099C1485.27 208.796 1486.63 209.616 1487.54 210.505C1488.44 211.378 1488.81 212.202 1488.81 213H1492.81C1492.81 210.806 1491.75 209.009 1490.33 207.633C1488.92 206.273 1487.07 205.217 1485.16 204.412C1481.34 202.806 1476.79 202 1473.67 202V206ZM1488.81 213V213.875H1492.81V213H1488.81ZM1489.28 212.588C1485.44 217.153 1479.86 220 1473.67 220V224C1481.13 224 1487.8 220.562 1492.34 215.162L1489.28 212.588ZM1473.67 220C1467.47 220 1461.89 217.153 1458.05 212.588L1454.99 215.162C1459.53 220.562 1466.21 224 1473.67 224V220ZM1467.1 193C1467.1 189.039 1470.13 186 1473.67 186V182C1467.74 182 1463.1 187.016 1463.1 193H1467.1ZM1473.67 200C1470.13 200 1467.1 196.961 1467.1 193H1463.1C1463.1 198.984 1467.74 204 1473.67 204V200ZM1480.24 193C1480.24 196.961 1477.21 200 1473.67 200V204C1479.6 204 1484.24 198.984 1484.24 193H1480.24ZM1473.67 186C1477.21 186 1480.24 189.039 1480.24 193H1484.24C1484.24 187.016 1479.6 182 1473.67 182V186Z" fill="#AAAAAA" mask="url(#path-4-inside-1_3006_20126)"/>
+</g>
+<path d="M187.952 174H240.333V214H187.952V174Z" fill="#F5F5F5"/>
+<path d="M193.952 180L233.952 208" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M233.952 180L193.952 208" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M187.952 174V172H185.952V174H187.952ZM240.333 174H242.333V172H240.333V174ZM240.333 214V216H242.333V214H240.333ZM187.952 214H185.952V216H187.952V214ZM187.952 176H240.333V172H187.952V176ZM238.333 174V214H242.333V174H238.333ZM240.333 212H187.952V216H240.333V212ZM189.952 214V174H185.952V214H189.952Z" fill="#AAAAAA"/>
+<rect x="415" y="278" width="864" height="812" rx="32" fill="#F5F5F5"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="696.637" y="331.367">Working hours &#38; time zone</tspan></text>
+<path d="M1247 351H447V353H1247V351Z" fill="#B4B4B4" mask="url(#path-11-inside-2_3006_20126)"/>
+<rect x="447" y="384" width="800" height="174" rx="8" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="483" y="441.367">Time zone</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="483" y="474.881">Dropdown</tspan></text>
+<rect x="484" y="483" width="726" height="38" rx="3" fill="white"/>
+<path d="M1185.5 499.75L1190 504.25L1194.5 499.75" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="495" y="507.578">GMT - 0700 Pacific Time - Los Angeles</tspan></text>
+<rect x="484" y="483" width="726" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="447" y="590" width="800" height="388" rx="8" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="483" y="647.367">Working hours</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="493" y="695.275">Monday</tspan></text>
+<rect x="765" y="670" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="776" y="694.578">10 am</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="764" y="661.881">Start</tspan></text>
+<rect x="765" y="670" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="1012" y="670" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1023" y="694.578">6 pm</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1011" y="661.881">end</tspan></text>
+<rect x="1012" y="670" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="493" y="753.275">Tuesday</tspan></text>
+<rect x="765" y="728" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="776" y="752.578">10 am</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="764" y="719.881">Start</tspan></text>
+<rect x="765" y="728" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="1012" y="728" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1023" y="752.578">6 pm</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1011" y="719.881">end</tspan></text>
+<rect x="1012" y="728" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="493" y="811.275">Wednesday</tspan></text>
+<rect x="765" y="786" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="776" y="810.578">10 am</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="764" y="777.881">Start</tspan></text>
+<rect x="765" y="786" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="1012" y="786" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1023" y="810.578">6 pm</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1011" y="777.881">end</tspan></text>
+<rect x="1012" y="786" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="493" y="869.275">Thursday</tspan></text>
+<rect x="765" y="844" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="776" y="868.578">10 am</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="764" y="835.881">Start</tspan></text>
+<rect x="765" y="844" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="1012" y="844" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1023" y="868.578">6 pm</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1011" y="835.881">end</tspan></text>
+<rect x="1012" y="844" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="493" y="927.275">Friday</tspan></text>
+<rect x="765" y="902" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="776" y="926.578">10 am</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="764" y="893.881">Start</tspan></text>
+<rect x="765" y="902" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="1012" y="902" width="198" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1023" y="926.578">6 pm</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1011" y="893.881">end</tspan></text>
+<rect x="1012" y="902" width="198" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="972" y="1011" width="60" height="46" rx="3" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="987" y="1039.58">Skip</tspan></text>
+<rect x="972" y="1011" width="60" height="46" rx="3" stroke="#333333" stroke-width="2"/>
+<rect x="1065" y="1010" width="150" height="48" rx="4" fill="#333333"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1081" y="1039.58">Save &#38; continue</tspan></text>
+</g>
+<rect width="486" height="83" transform="translate(1735 75)" fill="#5384ED"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="42" font-weight="500" letter-spacing="0em"><tspan x="1767" y="131.773">Invite team members</tspan></text>
+<g clip-path="url(#clip2_3006_20126)">
+<rect width="1440" height="1024" transform="translate(1735 158)" fill="white"/>
+<g filter="url(#filter1_d_3006_20126)">
+<rect x="1735" y="158" width="1440" height="80" fill="white"/>
+</g>
+<g clip-path="url(#clip3_3006_20126)">
+<path d="M3103.52 198C3103.52 210.749 3093.69 221 3081.67 221C3069.64 221 3059.81 210.749 3059.81 198C3059.81 185.251 3069.64 175 3081.67 175C3093.69 175 3103.52 185.251 3103.52 198Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-64-inside-3_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3064.52 213.875V213C3064.52 207.015 3075.94 204 3081.67 204C3087.39 204 3098.81 207.015 3098.81 213V213.875C3094.62 218.857 3088.49 222 3081.67 222C3074.84 222 3068.71 218.857 3064.52 213.875ZM3081.67 184C3076.93 184 3073.09 188.028 3073.09 193C3073.09 197.972 3076.93 202 3081.67 202C3086.4 202 3090.24 197.972 3090.24 193C3090.24 188.028 3086.4 184 3081.67 184Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3064.52 213.875V213C3064.52 207.015 3075.94 204 3081.67 204C3087.39 204 3098.81 207.015 3098.81 213V213.875C3094.62 218.857 3088.49 222 3081.67 222C3074.84 222 3068.71 218.857 3064.52 213.875ZM3081.67 184C3076.93 184 3073.09 188.028 3073.09 193C3073.09 197.972 3076.93 202 3081.67 202C3086.4 202 3090.24 197.972 3090.24 193C3090.24 188.028 3086.4 184 3081.67 184Z" fill="#F5F5F5"/>
+<path d="M3064.52 213.875H3062.52V214.604L3062.99 215.162L3064.52 213.875ZM3098.81 213.875L3100.34 215.162L3100.81 214.604V213.875H3098.81ZM3066.52 213.875V213H3062.52V213.875H3066.52ZM3066.52 213C3066.52 212.202 3066.89 211.378 3067.79 210.505C3068.71 209.616 3070.07 208.796 3071.72 208.099C3075.05 206.702 3079.07 206 3081.67 206V202C3078.54 202 3073.99 202.806 3070.17 204.412C3068.26 205.217 3066.41 206.273 3065.01 207.633C3063.59 209.009 3062.52 210.806 3062.52 213H3066.52ZM3081.67 206C3084.26 206 3088.29 206.702 3091.61 208.099C3093.27 208.796 3094.63 209.616 3095.54 210.505C3096.44 211.378 3096.81 212.202 3096.81 213H3100.81C3100.81 210.806 3099.75 209.009 3098.33 207.633C3096.92 206.273 3095.07 205.217 3093.16 204.412C3089.34 202.806 3084.79 202 3081.67 202V206ZM3096.81 213V213.875H3100.81V213H3096.81ZM3097.28 212.588C3093.44 217.153 3087.86 220 3081.67 220V224C3089.13 224 3095.8 220.562 3100.34 215.162L3097.28 212.588ZM3081.67 220C3075.47 220 3069.89 217.153 3066.05 212.588L3062.99 215.162C3067.53 220.562 3074.21 224 3081.67 224V220ZM3075.09 193C3075.09 189.039 3078.13 186 3081.67 186V182C3075.74 182 3071.09 187.016 3071.09 193H3075.09ZM3081.67 200C3078.13 200 3075.09 196.961 3075.09 193H3071.09C3071.09 198.984 3075.74 204 3081.67 204V200ZM3088.24 193C3088.24 196.961 3085.21 200 3081.67 200V204C3087.6 204 3092.24 198.984 3092.24 193H3088.24ZM3081.67 186C3085.21 186 3088.24 189.039 3088.24 193H3092.24C3092.24 187.016 3087.6 182 3081.67 182V186Z" fill="#AAAAAA" mask="url(#path-64-inside-3_3006_20126)"/>
+</g>
+<path d="M1795.95 174H1848.33V214H1795.95V174Z" fill="#F5F5F5"/>
+<path d="M1801.95 180L1841.95 208" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M1841.95 180L1801.95 208" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M1795.95 174V172H1793.95V174H1795.95ZM1848.33 174H1850.33V172H1848.33V174ZM1848.33 214V216H1850.33V214H1848.33ZM1795.95 214H1793.95V216H1795.95V214ZM1795.95 176H1848.33V172H1795.95V176ZM1846.33 174V214H1850.33V174H1846.33ZM1848.33 212H1795.95V216H1848.33V212ZM1797.95 214V174H1793.95V214H1797.95Z" fill="#AAAAAA"/>
+<rect x="2023" y="278" width="864" height="452" rx="32" fill="#F5F5F5"/>
+<path d="M2083.5 328H2062.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2073 338.5L2062.5 328L2073 317.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="2358.77" y="336.367">Invite team members</tspan></text>
+<path d="M2855 361H2055V363H2855V361Z" fill="#B4B4B4" mask="url(#path-71-inside-4_3006_20126)"/>
+<rect x="2055" y="394" width="800" height="104" rx="8" fill="white"/>
+<rect x="2088" y="427" width="664" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="2099" y="451.578">https://invite.com/@orumenoj/could-this-be-the-start-6d1fe8ee4e35</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="2087" y="418.881">Invite with link</tspan></text>
+<rect x="2088" y="427" width="664" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="2764" y="426" width="59" height="40" rx="4" fill="#333333"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="2776" y="451.578">Copy</tspan></text>
+<rect x="2055" y="530" width="800" height="168" rx="8" fill="white"/>
+<rect x="2088" y="563" width="734" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="2099" y="587.578">Enter one or more email addresses</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="2087" y="554.881">Invite with email</tspan></text>
+<rect x="2088" y="563" width="734" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M2519 622C2519 619.791 2520.79 618 2523 618H2663V666H2523C2520.79 666 2519 664.209 2519 662V622Z" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="2576" y="647.578">Skip</tspan></text>
+<path d="M2663 618H2665V616H2663V618ZM2663 666V668H2665V666H2663ZM2523 620H2663V616H2523V620ZM2661 618V666H2665V618H2661ZM2663 664H2523V668H2663V664ZM2521 662V622H2517V662H2521ZM2523 664C2521.9 664 2521 663.105 2521 662H2517C2517 665.314 2519.69 668 2523 668V664ZM2523 616C2519.69 616 2517 618.686 2517 622H2521C2521 620.895 2521.9 620 2523 620V616Z" fill="#333333"/>
+<path d="M2679 622C2679 619.791 2680.79 618 2683 618H2823V666H2683C2680.79 666 2679 664.209 2679 662V622Z" fill="#333333"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="2730.5" y="647.578">Invite</tspan></text>
+</g>
+<rect width="444" height="83" transform="translate(3343 75)" fill="#5384ED"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="42" font-weight="500" letter-spacing="0em"><tspan x="3375" y="131.773">Team members list</tspan></text>
+<g clip-path="url(#clip4_3006_20126)">
+<rect width="1440" height="1024" transform="translate(3343 158)" fill="white"/>
+<g filter="url(#filter2_d_3006_20126)">
+<rect x="3343" y="158" width="1440" height="80" fill="white"/>
+</g>
+<g clip-path="url(#clip5_3006_20126)">
+<path d="M4711.52 198C4711.52 210.749 4701.69 221 4689.67 221C4677.64 221 4667.81 210.749 4667.81 198C4667.81 185.251 4677.64 175 4689.67 175C4701.69 175 4711.52 185.251 4711.52 198Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-94-inside-5_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4672.52 213.875V213C4672.52 207.015 4683.94 204 4689.67 204C4695.39 204 4706.81 207.015 4706.81 213V213.875C4702.62 218.857 4696.49 222 4689.67 222C4682.84 222 4676.71 218.857 4672.52 213.875ZM4689.67 184C4684.93 184 4681.09 188.028 4681.09 193C4681.09 197.972 4684.93 202 4689.67 202C4694.4 202 4698.24 197.972 4698.24 193C4698.24 188.028 4694.4 184 4689.67 184Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4672.52 213.875V213C4672.52 207.015 4683.94 204 4689.67 204C4695.39 204 4706.81 207.015 4706.81 213V213.875C4702.62 218.857 4696.49 222 4689.67 222C4682.84 222 4676.71 218.857 4672.52 213.875ZM4689.67 184C4684.93 184 4681.09 188.028 4681.09 193C4681.09 197.972 4684.93 202 4689.67 202C4694.4 202 4698.24 197.972 4698.24 193C4698.24 188.028 4694.4 184 4689.67 184Z" fill="#F5F5F5"/>
+<path d="M4672.52 213.875H4670.52V214.604L4670.99 215.162L4672.52 213.875ZM4706.81 213.875L4708.34 215.162L4708.81 214.604V213.875H4706.81ZM4674.52 213.875V213H4670.52V213.875H4674.52ZM4674.52 213C4674.52 212.202 4674.89 211.378 4675.79 210.505C4676.71 209.616 4678.07 208.796 4679.72 208.099C4683.05 206.702 4687.07 206 4689.67 206V202C4686.54 202 4681.99 202.806 4678.17 204.412C4676.26 205.217 4674.41 206.273 4673.01 207.633C4671.59 209.009 4670.52 210.806 4670.52 213H4674.52ZM4689.67 206C4692.26 206 4696.29 206.702 4699.61 208.099C4701.27 208.796 4702.63 209.616 4703.54 210.505C4704.44 211.378 4704.81 212.202 4704.81 213H4708.81C4708.81 210.806 4707.75 209.009 4706.33 207.633C4704.92 206.273 4703.07 205.217 4701.16 204.412C4697.34 202.806 4692.79 202 4689.67 202V206ZM4704.81 213V213.875H4708.81V213H4704.81ZM4705.28 212.588C4701.44 217.153 4695.86 220 4689.67 220V224C4697.13 224 4703.8 220.562 4708.34 215.162L4705.28 212.588ZM4689.67 220C4683.47 220 4677.89 217.153 4674.05 212.588L4670.99 215.162C4675.53 220.562 4682.21 224 4689.67 224V220ZM4683.09 193C4683.09 189.039 4686.13 186 4689.67 186V182C4683.74 182 4679.09 187.016 4679.09 193H4683.09ZM4689.67 200C4686.13 200 4683.09 196.961 4683.09 193H4679.09C4679.09 198.984 4683.74 204 4689.67 204V200ZM4696.24 193C4696.24 196.961 4693.21 200 4689.67 200V204C4695.6 204 4700.24 198.984 4700.24 193H4696.24ZM4689.67 186C4693.21 186 4696.24 189.039 4696.24 193H4700.24C4700.24 187.016 4695.6 182 4689.67 182V186Z" fill="#AAAAAA" mask="url(#path-94-inside-5_3006_20126)"/>
+</g>
+<path d="M3403.95 174H3456.33V214H3403.95V174Z" fill="#F5F5F5"/>
+<path d="M3409.95 180L3449.95 208" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M3449.95 180L3409.95 208" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M3403.95 174V172H3401.95V174H3403.95ZM3456.33 174H3458.33V172H3456.33V174ZM3456.33 214V216H3458.33V214H3456.33ZM3403.95 214H3401.95V216H3403.95V214ZM3403.95 176H3456.33V172H3403.95V176ZM3454.33 174V214H3458.33V174H3454.33ZM3456.33 212H3403.95V216H3456.33V212ZM3405.95 214V174H3401.95V214H3405.95Z" fill="#AAAAAA"/>
+<rect x="3663" y="278" width="864" height="732" rx="32" fill="#F5F5F5"/>
+<path d="M3723.5 328H3702.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3713 338.5L3702.5 328L3713 317.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="3995.32" y="336.367">Select team members</tspan></text>
+<path d="M4495 361H3695V363H4495V361Z" fill="#B4B4B4" mask="url(#path-101-inside-6_3006_20126)"/>
+<rect x="3695" y="394" width="800" height="504" rx="8" fill="white"/>
+<rect x="3727" y="426" width="122.667" height="40" fill="#F5F5F5"/>
+<path d="M3828.5 443.75L3833 448.25L3837.5 443.75" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="3781.76" y="437" width="18" height="18" rx="1" fill="white"/>
+<rect x="3781.76" y="437" width="18" height="18" rx="1" stroke="#AAAAAA" stroke-width="2"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="3808.76" y="450.578">All</tspan></text>
+<rect x="3727" y="426" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="466" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="477" width="18" height="18" rx="1" fill="#333333"/>
+<path d="M3775.49 483L3774.08 481.58L3767.49 488.17L3764.91 485.6L3763.49 487.01L3767.49 491L3775.49 483Z" fill="white"/>
+<rect x="3760.5" y="477" width="18" height="18" rx="1" stroke="#333333" stroke-width="2"/>
+<rect x="3727" y="466" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="506" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="517" width="18" height="18" rx="1" fill="white"/>
+<rect x="3760.5" y="517" width="18" height="18" rx="1" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="3727" y="506" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="546" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="557" width="18" height="18" rx="1" fill="white"/>
+<rect x="3760.5" y="557" width="18" height="18" rx="1" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="3727" y="546" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="586" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="597" width="18" height="18" rx="1" fill="#333333"/>
+<path d="M3775.49 603L3774.08 601.58L3767.49 608.17L3764.91 605.6L3763.49 607.01L3767.49 611L3775.49 603Z" fill="white"/>
+<rect x="3760.5" y="597" width="18" height="18" rx="1" stroke="#333333" stroke-width="2"/>
+<rect x="3727" y="586" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="626" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="637" width="18" height="18" rx="1" fill="white"/>
+<rect x="3760.5" y="637" width="18" height="18" rx="1" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="3727" y="626" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="666" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="677" width="18" height="18" rx="1" fill="white"/>
+<rect x="3760.5" y="677" width="18" height="18" rx="1" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="3727" y="666" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="706" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="717" width="18" height="18" rx="1" fill="#333333"/>
+<path d="M3775.49 723L3774.08 721.58L3767.49 728.17L3764.91 725.6L3763.49 727.01L3767.49 731L3775.49 723Z" fill="white"/>
+<rect x="3760.5" y="717" width="18" height="18" rx="1" stroke="#333333" stroke-width="2"/>
+<rect x="3727" y="706" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="746" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="757" width="18" height="18" rx="1" fill="#333333"/>
+<path d="M3775.49 763L3774.08 761.58L3767.49 768.17L3764.91 765.6L3763.49 767.01L3767.49 771L3775.49 763Z" fill="white"/>
+<rect x="3760.5" y="757" width="18" height="18" rx="1" stroke="#333333" stroke-width="2"/>
+<rect x="3727" y="746" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="786" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="797" width="18" height="18" rx="1" fill="white"/>
+<rect x="3760.5" y="797" width="18" height="18" rx="1" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="3727" y="786" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3727" y="826" width="122.667" height="40" fill="white"/>
+<rect x="3760.5" y="837" width="18" height="18" rx="1" fill="#333333"/>
+<path d="M3775.49 843L3774.08 841.58L3767.49 848.17L3764.91 845.6L3763.49 847.01L3767.49 851L3775.49 843Z" fill="white"/>
+<rect x="3760.5" y="837" width="18" height="18" rx="1" stroke="#333333" stroke-width="2"/>
+<rect x="3727" y="826" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="426" width="122.667" height="40" fill="#F5F5F5"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="450.881">Name</tspan></text>
+<path d="M3951.17 443.75L3955.67 448.25L3960.17 443.75" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="3849.67" y="426" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="466" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="490.881">----</tspan></text>
+<rect x="3849.67" y="466" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="506" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="530.881">----</tspan></text>
+<rect x="3849.67" y="506" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="546" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="570.881">----</tspan></text>
+<rect x="3849.67" y="546" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="586" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="610.881">----</tspan></text>
+<rect x="3849.67" y="586" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="626" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="650.881">----</tspan></text>
+<rect x="3849.67" y="626" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="666" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="690.881">----</tspan></text>
+<rect x="3849.67" y="666" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="706" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="730.881">----</tspan></text>
+<rect x="3849.67" y="706" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="746" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="770.881">----</tspan></text>
+<rect x="3849.67" y="746" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="786" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="810.881">----</tspan></text>
+<rect x="3849.67" y="786" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3849.67" y="826" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3857.67" y="850.881">----</tspan></text>
+<rect x="3849.67" y="826" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="426" width="122.667" height="40" fill="#F5F5F5"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="450.881">Title</tspan></text>
+<path d="M4073.83 443.75L4078.33 448.25L4082.83 443.75" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="3972.33" y="426" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="466" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="490.881">----</tspan></text>
+<rect x="3972.33" y="466" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="506" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="530.881">----</tspan></text>
+<rect x="3972.33" y="506" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="546" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="570.881">----</tspan></text>
+<rect x="3972.33" y="546" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="586" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="610.881">----</tspan></text>
+<rect x="3972.33" y="586" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="626" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="650.881">----</tspan></text>
+<rect x="3972.33" y="626" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="666" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="690.881">----</tspan></text>
+<rect x="3972.33" y="666" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="706" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="730.881">----</tspan></text>
+<rect x="3972.33" y="706" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="746" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="770.881">----</tspan></text>
+<rect x="3972.33" y="746" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="786" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="810.881">----</tspan></text>
+<rect x="3972.33" y="786" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="3972.33" y="826" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="3980.33" y="850.881">----</tspan></text>
+<rect x="3972.33" y="826" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="426" width="122.667" height="40" fill="#F5F5F5"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="450.881">Interview Hours</tspan></text>
+<path d="M4196.5 443.75L4201 448.25L4205.5 443.75" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="4095" y="426" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="466" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="490.881">----</tspan></text>
+<rect x="4095" y="466" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="506" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="530.881">----</tspan></text>
+<rect x="4095" y="506" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="546" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="570.881">----</tspan></text>
+<rect x="4095" y="546" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="586" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="610.881">----</tspan></text>
+<rect x="4095" y="586" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="626" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="650.881">----</tspan></text>
+<rect x="4095" y="626" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="666" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="690.881">----</tspan></text>
+<rect x="4095" y="666" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="706" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="730.881">----</tspan></text>
+<rect x="4095" y="706" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="746" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="770.881">----</tspan></text>
+<rect x="4095" y="746" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="786" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="810.881">----</tspan></text>
+<rect x="4095" y="786" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4095" y="826" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4103" y="850.881">----</tspan></text>
+<rect x="4095" y="826" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="426" width="122.667" height="40" fill="#F5F5F5"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="450.881">Skill</tspan></text>
+<path d="M4319.17 443.75L4323.67 448.25L4328.17 443.75" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="4217.67" y="426" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="466" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="490.881">----</tspan></text>
+<rect x="4217.67" y="466" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="506" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="530.881">----</tspan></text>
+<rect x="4217.67" y="506" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="546" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="570.881">----</tspan></text>
+<rect x="4217.67" y="546" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="586" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="610.881">----</tspan></text>
+<rect x="4217.67" y="586" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="626" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="650.881">----</tspan></text>
+<rect x="4217.67" y="626" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="666" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="690.881">----</tspan></text>
+<rect x="4217.67" y="666" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="706" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="730.881">----</tspan></text>
+<rect x="4217.67" y="706" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="746" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="770.881">----</tspan></text>
+<rect x="4217.67" y="746" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="786" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="810.881">----</tspan></text>
+<rect x="4217.67" y="786" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4217.67" y="826" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4225.67" y="850.881">----</tspan></text>
+<rect x="4217.67" y="826" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="426" width="122.667" height="40" fill="#F5F5F5"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="450.881">Actions</tspan></text>
+<rect x="4340.33" y="426" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="466" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="490.881">----</tspan></text>
+<rect x="4340.33" y="466" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="506" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="530.881">----</tspan></text>
+<rect x="4340.33" y="506" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="546" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="570.881">----</tspan></text>
+<rect x="4340.33" y="546" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="586" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="610.881">----</tspan></text>
+<rect x="4340.33" y="586" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="626" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="650.881">----</tspan></text>
+<rect x="4340.33" y="626" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="666" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="690.881">----</tspan></text>
+<rect x="4340.33" y="666" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="706" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="730.881">----</tspan></text>
+<rect x="4340.33" y="706" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="746" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="770.881">----</tspan></text>
+<rect x="4340.33" y="746" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="786" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="810.881">----</tspan></text>
+<rect x="4340.33" y="786" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4340.33" y="826" width="122.667" height="40" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="4348.33" y="850.881">----</tspan></text>
+<rect x="4340.33" y="826" width="122.667" height="40" stroke="#AAAAAA"/>
+<rect x="4220" y="931" width="60" height="46" rx="3" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="4235" y="959.578">Skip</tspan></text>
+<rect x="4220" y="931" width="60" height="46" rx="3" stroke="#333333" stroke-width="2"/>
+<rect x="4313" y="930" width="150" height="48" rx="4" fill="#333333"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="4329" y="959.578">Save &#38; continue</tspan></text>
+</g>
+<rect width="743" height="83" transform="translate(4951 75)" fill="#5384ED"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="42" font-weight="500" letter-spacing="0em"><tspan x="4983" y="131.773">Add team member interview skills</tspan></text>
+<g clip-path="url(#clip6_3006_20126)">
+<rect width="1440" height="1024" transform="translate(4951 158)" fill="white"/>
+<g filter="url(#filter3_d_3006_20126)">
+<rect x="4951" y="158" width="1440" height="80" fill="white"/>
+</g>
+<g clip-path="url(#clip7_3006_20126)">
+<path d="M6319.52 198C6319.52 210.749 6309.69 221 6297.67 221C6285.64 221 6275.81 210.749 6275.81 198C6275.81 185.251 6285.64 175 6297.67 175C6309.69 175 6319.52 185.251 6319.52 198Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-257-inside-7_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6280.52 213.875V213C6280.52 207.015 6291.94 204 6297.67 204C6303.39 204 6314.81 207.015 6314.81 213V213.875C6310.62 218.857 6304.49 222 6297.67 222C6290.84 222 6284.71 218.857 6280.52 213.875ZM6297.67 184C6292.93 184 6289.09 188.028 6289.09 193C6289.09 197.972 6292.93 202 6297.67 202C6302.4 202 6306.24 197.972 6306.24 193C6306.24 188.028 6302.4 184 6297.67 184Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6280.52 213.875V213C6280.52 207.015 6291.94 204 6297.67 204C6303.39 204 6314.81 207.015 6314.81 213V213.875C6310.62 218.857 6304.49 222 6297.67 222C6290.84 222 6284.71 218.857 6280.52 213.875ZM6297.67 184C6292.93 184 6289.09 188.028 6289.09 193C6289.09 197.972 6292.93 202 6297.67 202C6302.4 202 6306.24 197.972 6306.24 193C6306.24 188.028 6302.4 184 6297.67 184Z" fill="#F5F5F5"/>
+<path d="M6280.52 213.875H6278.52V214.604L6278.99 215.162L6280.52 213.875ZM6314.81 213.875L6316.34 215.162L6316.81 214.604V213.875H6314.81ZM6282.52 213.875V213H6278.52V213.875H6282.52ZM6282.52 213C6282.52 212.202 6282.89 211.378 6283.79 210.505C6284.71 209.616 6286.07 208.796 6287.72 208.099C6291.05 206.702 6295.07 206 6297.67 206V202C6294.54 202 6289.99 202.806 6286.17 204.412C6284.26 205.217 6282.41 206.273 6281.01 207.633C6279.59 209.009 6278.52 210.806 6278.52 213H6282.52ZM6297.67 206C6300.26 206 6304.29 206.702 6307.61 208.099C6309.27 208.796 6310.63 209.616 6311.54 210.505C6312.44 211.378 6312.81 212.202 6312.81 213H6316.81C6316.81 210.806 6315.75 209.009 6314.33 207.633C6312.92 206.273 6311.07 205.217 6309.16 204.412C6305.34 202.806 6300.79 202 6297.67 202V206ZM6312.81 213V213.875H6316.81V213H6312.81ZM6313.28 212.588C6309.44 217.153 6303.86 220 6297.67 220V224C6305.13 224 6311.8 220.562 6316.34 215.162L6313.28 212.588ZM6297.67 220C6291.47 220 6285.89 217.153 6282.05 212.588L6278.99 215.162C6283.53 220.562 6290.21 224 6297.67 224V220ZM6291.09 193C6291.09 189.039 6294.13 186 6297.67 186V182C6291.74 182 6287.09 187.016 6287.09 193H6291.09ZM6297.67 200C6294.13 200 6291.09 196.961 6291.09 193H6287.09C6287.09 198.984 6291.74 204 6297.67 204V200ZM6304.24 193C6304.24 196.961 6301.21 200 6297.67 200V204C6303.6 204 6308.24 198.984 6308.24 193H6304.24ZM6297.67 186C6301.21 186 6304.24 189.039 6304.24 193H6308.24C6308.24 187.016 6303.6 182 6297.67 182V186Z" fill="#AAAAAA" mask="url(#path-257-inside-7_3006_20126)"/>
+</g>
+<path d="M5011.95 174H5064.33V214H5011.95V174Z" fill="#F5F5F5"/>
+<path d="M5017.95 180L5057.95 208" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M5057.95 180L5017.95 208" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M5011.95 174V172H5009.95V174H5011.95ZM5064.33 174H5066.33V172H5064.33V174ZM5064.33 214V216H5066.33V214H5064.33ZM5011.95 214H5009.95V216H5011.95V214ZM5011.95 176H5064.33V172H5011.95V176ZM5062.33 174V214H5066.33V174H5062.33ZM5064.33 212H5011.95V216H5064.33V212ZM5013.95 214V174H5009.95V214H5013.95Z" fill="#AAAAAA"/>
+<rect x="5271" y="278" width="864" height="849" rx="32" fill="#F5F5F5"/>
+<path d="M5331.5 328H5310.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5321 338.5L5310.5 328L5321 317.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="5615.03" y="336.367">Add interview skills</tspan></text>
+<path d="M6103 361H5303V363H6103V361Z" fill="#B4B4B4" mask="url(#path-264-inside-8_3006_20126)"/>
+<rect x="5303" y="394" width="800" height="320" rx="8" fill="white"/>
+<g clip-path="url(#clip8_3006_20126)">
+<path d="M5379.71 450C5379.71 462.749 5369.88 473 5357.86 473C5345.83 473 5336 462.749 5336 450C5336 437.251 5345.83 427 5357.86 427C5369.88 427 5379.71 437.251 5379.71 450Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-271-inside-9_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5340.71 465.875V465C5340.71 459.015 5352.14 456 5357.86 456C5363.58 456 5375 459.015 5375 465V465.875C5370.81 470.857 5364.68 474 5357.86 474C5351.03 474 5344.9 470.857 5340.71 465.875ZM5357.86 436C5353.12 436 5349.29 440.028 5349.29 445C5349.29 449.972 5353.12 454 5357.86 454C5362.59 454 5366.43 449.972 5366.43 445C5366.43 440.028 5362.59 436 5357.86 436Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5340.71 465.875V465C5340.71 459.015 5352.14 456 5357.86 456C5363.58 456 5375 459.015 5375 465V465.875C5370.81 470.857 5364.68 474 5357.86 474C5351.03 474 5344.9 470.857 5340.71 465.875ZM5357.86 436C5353.12 436 5349.29 440.028 5349.29 445C5349.29 449.972 5353.12 454 5357.86 454C5362.59 454 5366.43 449.972 5366.43 445C5366.43 440.028 5362.59 436 5357.86 436Z" fill="#F5F5F5"/>
+<path d="M5340.71 465.875H5338.71V466.604L5339.18 467.162L5340.71 465.875ZM5375 465.875L5376.53 467.162L5377 466.604V465.875H5375ZM5342.71 465.875V465H5338.71V465.875H5342.71ZM5342.71 465C5342.71 464.202 5343.08 463.378 5343.98 462.505C5344.9 461.616 5346.26 460.796 5347.92 460.099C5351.24 458.702 5355.26 458 5357.86 458V454C5354.73 454 5350.18 454.806 5346.36 456.412C5344.45 457.217 5342.6 458.273 5341.2 459.633C5339.78 461.009 5338.71 462.806 5338.71 465H5342.71ZM5357.86 458C5360.45 458 5364.48 458.702 5367.8 460.099C5369.46 460.796 5370.82 461.616 5371.73 462.505C5372.63 463.378 5373 464.202 5373 465H5377C5377 462.806 5375.94 461.009 5374.52 459.633C5373.11 458.273 5371.26 457.217 5369.35 456.412C5365.53 454.806 5360.98 454 5357.86 454V458ZM5373 465V465.875H5377V465H5373ZM5373.47 464.588C5369.63 469.153 5364.05 472 5357.86 472V476C5365.32 476 5371.99 472.562 5376.53 467.162L5373.47 464.588ZM5357.86 472C5351.66 472 5346.08 469.153 5342.24 464.588L5339.18 467.162C5343.72 472.562 5350.4 476 5357.86 476V472ZM5351.29 445C5351.29 441.039 5354.32 438 5357.86 438V434C5351.93 434 5347.29 439.016 5347.29 445H5351.29ZM5357.86 452C5354.32 452 5351.29 448.961 5351.29 445H5347.29C5347.29 450.984 5351.93 456 5357.86 456V452ZM5364.43 445C5364.43 448.961 5361.4 452 5357.86 452V456C5363.79 456 5368.43 450.984 5368.43 445H5364.43ZM5357.86 438C5361.4 438 5364.43 441.039 5364.43 445H5368.43C5368.43 439.016 5363.79 434 5357.86 434V438Z" fill="#AAAAAA" mask="url(#path-271-inside-9_3006_20126)"/>
+</g>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="5446.71" y="456.275">James Throndsen</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="5626.71" y="456.275">Mid-level software engineer</tspan></text>
+<path d="M6065 444L6053 456" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6053 444L6065 456" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g clip-path="url(#clip9_3006_20126)">
+<path d="M5379.71 554C5379.71 566.749 5369.88 577 5357.86 577C5345.83 577 5336 566.749 5336 554C5336 541.251 5345.83 531 5357.86 531C5369.88 531 5379.71 541.251 5379.71 554Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-278-inside-10_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5340.71 569.875V569C5340.71 563.015 5352.14 560 5357.86 560C5363.58 560 5375 563.015 5375 569V569.875C5370.81 574.857 5364.68 578 5357.86 578C5351.03 578 5344.9 574.857 5340.71 569.875ZM5357.86 540C5353.12 540 5349.29 544.028 5349.29 549C5349.29 553.972 5353.12 558 5357.86 558C5362.59 558 5366.43 553.972 5366.43 549C5366.43 544.028 5362.59 540 5357.86 540Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5340.71 569.875V569C5340.71 563.015 5352.14 560 5357.86 560C5363.58 560 5375 563.015 5375 569V569.875C5370.81 574.857 5364.68 578 5357.86 578C5351.03 578 5344.9 574.857 5340.71 569.875ZM5357.86 540C5353.12 540 5349.29 544.028 5349.29 549C5349.29 553.972 5353.12 558 5357.86 558C5362.59 558 5366.43 553.972 5366.43 549C5366.43 544.028 5362.59 540 5357.86 540Z" fill="#F5F5F5"/>
+<path d="M5340.71 569.875H5338.71V570.604L5339.18 571.162L5340.71 569.875ZM5375 569.875L5376.53 571.162L5377 570.604V569.875H5375ZM5342.71 569.875V569H5338.71V569.875H5342.71ZM5342.71 569C5342.71 568.202 5343.08 567.378 5343.98 566.505C5344.9 565.616 5346.26 564.796 5347.92 564.099C5351.24 562.702 5355.26 562 5357.86 562V558C5354.73 558 5350.18 558.806 5346.36 560.412C5344.45 561.217 5342.6 562.273 5341.2 563.633C5339.78 565.009 5338.71 566.806 5338.71 569H5342.71ZM5357.86 562C5360.45 562 5364.48 562.702 5367.8 564.099C5369.46 564.796 5370.82 565.616 5371.73 566.505C5372.63 567.378 5373 568.202 5373 569H5377C5377 566.806 5375.94 565.009 5374.52 563.633C5373.11 562.273 5371.26 561.217 5369.35 560.412C5365.53 558.806 5360.98 558 5357.86 558V562ZM5373 569V569.875H5377V569H5373ZM5373.47 568.588C5369.63 573.153 5364.05 576 5357.86 576V580C5365.32 580 5371.99 576.562 5376.53 571.162L5373.47 568.588ZM5357.86 576C5351.66 576 5346.08 573.153 5342.24 568.588L5339.18 571.162C5343.72 576.562 5350.4 580 5357.86 580V576ZM5351.29 549C5351.29 545.039 5354.32 542 5357.86 542V538C5351.93 538 5347.29 543.016 5347.29 549H5351.29ZM5357.86 556C5354.32 556 5351.29 552.961 5351.29 549H5347.29C5347.29 554.984 5351.93 560 5357.86 560V556ZM5364.43 549C5364.43 552.961 5361.4 556 5357.86 556V560C5363.79 560 5368.43 554.984 5368.43 549H5364.43ZM5357.86 542C5361.4 542 5364.43 545.039 5364.43 549H5368.43C5368.43 543.016 5363.79 538 5357.86 538V542Z" fill="#AAAAAA" mask="url(#path-278-inside-10_3006_20126)"/>
+</g>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="5446.71" y="560.275">Nancy Williams</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="5626.71" y="560.275">Director of product design</tspan></text>
+<path d="M6065 548L6053 560" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6053 548L6065 560" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g clip-path="url(#clip10_3006_20126)">
+<path d="M5379.71 658C5379.71 670.749 5369.88 681 5357.86 681C5345.83 681 5336 670.749 5336 658C5336 645.251 5345.83 635 5357.86 635C5369.88 635 5379.71 645.251 5379.71 658Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-285-inside-11_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5340.71 673.875V673C5340.71 667.015 5352.14 664 5357.86 664C5363.58 664 5375 667.015 5375 673V673.875C5370.81 678.857 5364.68 682 5357.86 682C5351.03 682 5344.9 678.857 5340.71 673.875ZM5357.86 644C5353.12 644 5349.29 648.028 5349.29 653C5349.29 657.972 5353.12 662 5357.86 662C5362.59 662 5366.43 657.972 5366.43 653C5366.43 648.028 5362.59 644 5357.86 644Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5340.71 673.875V673C5340.71 667.015 5352.14 664 5357.86 664C5363.58 664 5375 667.015 5375 673V673.875C5370.81 678.857 5364.68 682 5357.86 682C5351.03 682 5344.9 678.857 5340.71 673.875ZM5357.86 644C5353.12 644 5349.29 648.028 5349.29 653C5349.29 657.972 5353.12 662 5357.86 662C5362.59 662 5366.43 657.972 5366.43 653C5366.43 648.028 5362.59 644 5357.86 644Z" fill="#F5F5F5"/>
+<path d="M5340.71 673.875H5338.71V674.604L5339.18 675.162L5340.71 673.875ZM5375 673.875L5376.53 675.162L5377 674.604V673.875H5375ZM5342.71 673.875V673H5338.71V673.875H5342.71ZM5342.71 673C5342.71 672.202 5343.08 671.378 5343.98 670.505C5344.9 669.616 5346.26 668.796 5347.92 668.099C5351.24 666.702 5355.26 666 5357.86 666V662C5354.73 662 5350.18 662.806 5346.36 664.412C5344.45 665.217 5342.6 666.273 5341.2 667.633C5339.78 669.009 5338.71 670.806 5338.71 673H5342.71ZM5357.86 666C5360.45 666 5364.48 666.702 5367.8 668.099C5369.46 668.796 5370.82 669.616 5371.73 670.505C5372.63 671.378 5373 672.202 5373 673H5377C5377 670.806 5375.94 669.009 5374.52 667.633C5373.11 666.273 5371.26 665.217 5369.35 664.412C5365.53 662.806 5360.98 662 5357.86 662V666ZM5373 673V673.875H5377V673H5373ZM5373.47 672.588C5369.63 677.153 5364.05 680 5357.86 680V684C5365.32 684 5371.99 680.562 5376.53 675.162L5373.47 672.588ZM5357.86 680C5351.66 680 5346.08 677.153 5342.24 672.588L5339.18 675.162C5343.72 680.562 5350.4 684 5357.86 684V680ZM5351.29 653C5351.29 649.039 5354.32 646 5357.86 646V642C5351.93 642 5347.29 647.016 5347.29 653H5351.29ZM5357.86 660C5354.32 660 5351.29 656.961 5351.29 653H5347.29C5347.29 658.984 5351.93 664 5357.86 664V660ZM5364.43 653C5364.43 656.961 5361.4 660 5357.86 660V664C5363.79 664 5368.43 658.984 5368.43 653H5364.43ZM5357.86 646C5361.4 646 5364.43 649.039 5364.43 653H5368.43C5368.43 647.016 5363.79 642 5357.86 642V646Z" fill="#AAAAAA" mask="url(#path-285-inside-11_3006_20126)"/>
+</g>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="5446.71" y="664.275">Elizabeth Brown</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="5626.71" y="664.275">Senior product manager</tspan></text>
+<path d="M6065 652L6053 664" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6053 652L6065 664" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="5303" y="746" width="800" height="269" rx="8" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="5335" y="799.367">Interview skill</tspan></text>
+<path d="M6065 784L6053 796" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6053 784L6065 796" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="5336" y="837" width="734" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="5347" y="861.578">Design team</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="5335" y="828.881">Selected skills</tspan></text>
+<rect x="5336" y="837" width="734" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="5349.79" y="841" width="156.597" height="30" rx="15" fill="white"/>
+<g clip-path="url(#clip11_3006_20126)">
+<path d="M5377.84 861.25C5374.09 862.375 5374.09 859.375 5372.59 859M5383.09 863.5V860.597C5383.12 860.239 5383.07 859.88 5382.95 859.542C5382.83 859.205 5382.63 858.897 5382.38 858.64C5384.74 858.377 5387.21 857.485 5387.21 853.39C5387.21 852.342 5386.81 851.335 5386.09 850.577C5386.43 849.661 5386.41 848.648 5386.02 847.75C5386.02 847.75 5385.14 847.487 5383.09 848.86C5381.37 848.394 5379.56 848.394 5377.84 848.86C5375.79 847.487 5374.91 847.75 5374.91 847.75C5374.52 848.648 5374.5 849.661 5374.84 850.577C5374.11 851.341 5373.71 852.357 5373.71 853.412C5373.71 857.477 5376.19 858.37 5378.54 858.662C5378.3 858.917 5378.11 859.221 5377.99 859.555C5377.86 859.888 5377.81 860.243 5377.84 860.597V863.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="5393.09" y="861.578">Front-end</tspan></text>
+<g clip-path="url(#clip12_3006_20126)">
+<path d="M5476.09 863.5C5480.23 863.5 5483.59 860.142 5483.59 856C5483.59 851.858 5480.23 848.5 5476.09 848.5C5471.95 848.5 5468.59 851.858 5468.59 856C5468.59 860.142 5471.95 863.5 5476.09 863.5Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5478.34 853.75L5473.84 858.25" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5473.84 853.75L5478.34 858.25" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="5349.79" y="841" width="156.597" height="30" rx="15" stroke="#333333" stroke-width="2"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="5345" y="921.275">Suggested skills</tspan></text>
+<rect x="5336" y="952" width="136" height="30" rx="15" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="5347" y="972.578">Portfolio review</tspan></text>
+<rect x="5336" y="952" width="136" height="30" rx="15" stroke="#333333" stroke-width="2"/>
+<rect x="5491" y="952" width="92" height="30" rx="15" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="5502" y="972.578">Front-end</tspan></text>
+<rect x="5491" y="952" width="92" height="30" rx="15" stroke="#333333" stroke-width="2"/>
+<rect x="5602" y="952" width="89" height="30" rx="15" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="5613" y="972.578">Back-end</tspan></text>
+<rect x="5602" y="952" width="89" height="30" rx="15" stroke="#333333" stroke-width="2"/>
+<rect x="5828" y="1048" width="60" height="46" rx="3" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="5843" y="1076.58">Skip</tspan></text>
+<rect x="5828" y="1048" width="60" height="46" rx="3" stroke="#333333" stroke-width="2"/>
+<rect x="5921" y="1047" width="150" height="48" rx="4" fill="#333333"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="5937" y="1076.58">Save &#38; continue</tspan></text>
+</g>
+<rect width="396" height="83" transform="translate(931 1633)" fill="#5384ED"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="42" font-weight="500" letter-spacing="0em"><tspan x="963" y="1689.77">Create interview</tspan></text>
+<g clip-path="url(#clip13_3006_20126)">
+<rect width="1440" height="1024" transform="translate(931 1716)" fill="white"/>
+<g filter="url(#filter4_d_3006_20126)">
+<rect x="931" y="1716" width="1440" height="80" fill="white"/>
+</g>
+<g clip-path="url(#clip14_3006_20126)">
+<path d="M2299.52 1756C2299.52 1768.75 2289.69 1779 2277.67 1779C2265.64 1779 2255.81 1768.75 2255.81 1756C2255.81 1743.25 2265.64 1733 2277.67 1733C2289.69 1733 2299.52 1743.25 2299.52 1756Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-318-inside-12_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2260.52 1771.87V1771C2260.52 1765.01 2271.95 1762 2277.67 1762C2283.39 1762 2294.81 1765.01 2294.81 1771V1771.87C2290.62 1776.86 2284.49 1780 2277.67 1780C2270.84 1780 2264.71 1776.86 2260.52 1771.87ZM2277.67 1742C2272.93 1742 2269.1 1746.03 2269.1 1751C2269.1 1755.97 2272.93 1760 2277.67 1760C2282.4 1760 2286.24 1755.97 2286.24 1751C2286.24 1746.03 2282.4 1742 2277.67 1742Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2260.52 1771.87V1771C2260.52 1765.01 2271.95 1762 2277.67 1762C2283.39 1762 2294.81 1765.01 2294.81 1771V1771.87C2290.62 1776.86 2284.49 1780 2277.67 1780C2270.84 1780 2264.71 1776.86 2260.52 1771.87ZM2277.67 1742C2272.93 1742 2269.1 1746.03 2269.1 1751C2269.1 1755.97 2272.93 1760 2277.67 1760C2282.4 1760 2286.24 1755.97 2286.24 1751C2286.24 1746.03 2282.4 1742 2277.67 1742Z" fill="#F5F5F5"/>
+<path d="M2260.52 1771.87H2258.52V1772.6L2258.99 1773.16L2260.52 1771.87ZM2294.81 1771.87L2296.34 1773.16L2296.81 1772.6V1771.87H2294.81ZM2262.52 1771.87V1771H2258.52V1771.87H2262.52ZM2262.52 1771C2262.52 1770.2 2262.89 1769.38 2263.79 1768.51C2264.71 1767.62 2266.07 1766.8 2267.73 1766.1C2271.05 1764.7 2275.07 1764 2277.67 1764V1760C2274.54 1760 2269.99 1760.81 2266.17 1762.41C2264.26 1763.22 2262.41 1764.27 2261.01 1765.63C2259.59 1767.01 2258.52 1768.81 2258.52 1771H2262.52ZM2277.67 1764C2280.26 1764 2284.29 1764.7 2287.61 1766.1C2289.27 1766.8 2290.63 1767.62 2291.54 1768.51C2292.44 1769.38 2292.81 1770.2 2292.81 1771H2296.81C2296.81 1768.81 2295.75 1767.01 2294.33 1765.63C2292.92 1764.27 2291.07 1763.22 2289.16 1762.41C2285.34 1760.81 2280.79 1760 2277.67 1760V1764ZM2292.81 1771V1771.87H2296.81V1771H2292.81ZM2293.28 1770.59C2289.44 1775.15 2283.86 1778 2277.67 1778V1782C2285.13 1782 2291.8 1778.56 2296.34 1773.16L2293.28 1770.59ZM2277.67 1778C2271.47 1778 2265.89 1775.15 2262.05 1770.59L2258.99 1773.16C2263.53 1778.56 2270.21 1782 2277.67 1782V1778ZM2271.1 1751C2271.1 1747.04 2274.13 1744 2277.67 1744V1740C2271.74 1740 2267.1 1745.02 2267.1 1751H2271.1ZM2277.67 1758C2274.13 1758 2271.1 1754.96 2271.1 1751H2267.1C2267.1 1756.98 2271.74 1762 2277.67 1762V1758ZM2284.24 1751C2284.24 1754.96 2281.21 1758 2277.67 1758V1762C2283.6 1762 2288.24 1756.98 2288.24 1751H2284.24ZM2277.67 1744C2281.21 1744 2284.24 1747.04 2284.24 1751H2288.24C2288.24 1745.02 2283.6 1740 2277.67 1740V1744Z" fill="#AAAAAA" mask="url(#path-318-inside-12_3006_20126)"/>
+</g>
+<path d="M991.952 1732H1044.33V1772H991.952V1732Z" fill="#F5F5F5"/>
+<path d="M997.952 1738L1037.95 1766" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M1037.95 1738L997.952 1766" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M991.952 1732V1730H989.952V1732H991.952ZM1044.33 1732H1046.33V1730H1044.33V1732ZM1044.33 1772V1774H1046.33V1772H1044.33ZM991.952 1772H989.952V1774H991.952V1772ZM991.952 1734H1044.33V1730H991.952V1734ZM1042.33 1732V1772H1046.33V1732H1042.33ZM1044.33 1770H991.952V1774H1044.33V1770ZM993.952 1772V1732H989.952V1772H993.952Z" fill="#AAAAAA"/>
+<rect x="1251" y="1836" width="864" height="806" rx="32" fill="#F5F5F5"/>
+<path d="M1311.5 1886H1290.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1301 1896.5L1290.5 1886L1301 1875.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="1582.23" y="1894.37">Create interview type</tspan></text>
+<path d="M2083 1919H1283V1921H2083V1919Z" fill="#B4B4B4" mask="url(#path-325-inside-13_3006_20126)"/>
+<rect x="1283" y="1952" width="800" height="578" rx="8" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="1315" y="2001.28">Event name, location, instruction, link</tspan></text>
+<rect x="1316" y="2039" width="734" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="1327" y="2063.58">mid level front end developer</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1315" y="2030.88">Event name</tspan></text>
+<rect x="1316" y="2039" width="734" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1315" y="2122.88">Duration</tspan></text>
+<rect x="1316" y="2131" width="734" height="38" rx="3" fill="white"/>
+<path d="M2025.5 2147.75L2030 2152.25L2034.5 2147.75" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1327" y="2155.58">45 mins</tspan></text>
+<rect x="1316" y="2131" width="734" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1315" y="2214.88">Location</tspan></text>
+<rect x="1316" y="2223" width="734" height="38" rx="3" fill="white"/>
+<path d="M2025.5 2239.75L2030 2244.25L2034.5 2239.75" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1327" y="2247.58">In person</tspan></text>
+<rect x="1316" y="2223" width="734" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M1315 2270C1315 2267.79 1316.79 2266 1319 2266H2047C2049.21 2266 2051 2267.79 2051 2270V2422C2051 2424.21 2049.21 2426 2047 2426H1319C1316.79 2426 1315 2424.21 1315 2422V2270Z" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1331" y="2297.47">Phone call</tspan></text>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1331" y="2333.47">Google meet</tspan></text>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1331" y="2369.47">Zoom</tspan></text>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1331" y="2405.47">In person</tspan></text>
+<path d="M1319 2268H2047V2264H1319V2268ZM2049 2270V2422H2053V2270H2049ZM2047 2424H1319V2428H2047V2424ZM1317 2422V2270H1313V2422H1317ZM1319 2424C1317.9 2424 1317 2423.1 1317 2422H1313C1313 2425.31 1315.69 2428 1319 2428V2424ZM2049 2422C2049 2423.1 2048.1 2424 2047 2424V2428C2050.31 2428 2053 2425.31 2053 2422H2049ZM2047 2268C2048.1 2268 2049 2268.9 2049 2270H2053C2053 2266.69 2050.31 2264 2047 2264V2268ZM1319 2264C1315.69 2264 1313 2266.69 1313 2270H1317C1317 2268.9 1317.9 2268 1319 2268V2264Z" fill="#AAAAAA"/>
+<rect x="1316" y="2459" width="734" height="38" rx="3" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="1327" y="2483.58">front-end-developer-interview</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="1315" y="2450.88">Event link</tspan></text>
+<rect x="1316" y="2459" width="734" height="38" rx="3" stroke="#AAAAAA" stroke-width="2"/>
+<rect x="1808" y="2563" width="60" height="46" rx="3" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1823" y="2591.58">Skip</tspan></text>
+<rect x="1808" y="2563" width="60" height="46" rx="3" stroke="#333333" stroke-width="2"/>
+<rect x="1901" y="2562" width="150" height="48" rx="4" fill="#333333"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="1917" y="2591.58">Save &#38; continue</tspan></text>
+</g>
+<rect width="634" height="83" transform="translate(2539 1633)" fill="#5384ED"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="42" font-weight="500" letter-spacing="0em"><tspan x="2571" y="1689.77">Add required Interview skills</tspan></text>
+<g clip-path="url(#clip15_3006_20126)">
+<rect width="1440" height="1024" transform="translate(2539 1716)" fill="white"/>
+<g filter="url(#filter5_d_3006_20126)">
+<rect x="2539" y="1716" width="1440" height="80" fill="white"/>
+</g>
+<g clip-path="url(#clip16_3006_20126)">
+<path d="M3907.52 1756C3907.52 1768.75 3897.69 1779 3885.67 1779C3873.64 1779 3863.81 1768.75 3863.81 1756C3863.81 1743.25 3873.64 1733 3885.67 1733C3897.69 1733 3907.52 1743.25 3907.52 1756Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-359-inside-14_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3868.52 1771.87V1771C3868.52 1765.01 3879.94 1762 3885.67 1762C3891.39 1762 3902.81 1765.01 3902.81 1771V1771.87C3898.62 1776.86 3892.49 1780 3885.67 1780C3878.84 1780 3872.71 1776.86 3868.52 1771.87ZM3885.67 1742C3880.93 1742 3877.09 1746.03 3877.09 1751C3877.09 1755.97 3880.93 1760 3885.67 1760C3890.4 1760 3894.24 1755.97 3894.24 1751C3894.24 1746.03 3890.4 1742 3885.67 1742Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3868.52 1771.87V1771C3868.52 1765.01 3879.94 1762 3885.67 1762C3891.39 1762 3902.81 1765.01 3902.81 1771V1771.87C3898.62 1776.86 3892.49 1780 3885.67 1780C3878.84 1780 3872.71 1776.86 3868.52 1771.87ZM3885.67 1742C3880.93 1742 3877.09 1746.03 3877.09 1751C3877.09 1755.97 3880.93 1760 3885.67 1760C3890.4 1760 3894.24 1755.97 3894.24 1751C3894.24 1746.03 3890.4 1742 3885.67 1742Z" fill="#F5F5F5"/>
+<path d="M3868.52 1771.87H3866.52V1772.6L3866.99 1773.16L3868.52 1771.87ZM3902.81 1771.87L3904.34 1773.16L3904.81 1772.6V1771.87H3902.81ZM3870.52 1771.87V1771H3866.52V1771.87H3870.52ZM3870.52 1771C3870.52 1770.2 3870.89 1769.38 3871.79 1768.51C3872.71 1767.62 3874.07 1766.8 3875.72 1766.1C3879.05 1764.7 3883.07 1764 3885.67 1764V1760C3882.54 1760 3877.99 1760.81 3874.17 1762.41C3872.26 1763.22 3870.41 1764.27 3869.01 1765.63C3867.59 1767.01 3866.52 1768.81 3866.52 1771H3870.52ZM3885.67 1764C3888.26 1764 3892.29 1764.7 3895.61 1766.1C3897.27 1766.8 3898.63 1767.62 3899.54 1768.51C3900.44 1769.38 3900.81 1770.2 3900.81 1771H3904.81C3904.81 1768.81 3903.75 1767.01 3902.33 1765.63C3900.92 1764.27 3899.07 1763.22 3897.16 1762.41C3893.34 1760.81 3888.79 1760 3885.67 1760V1764ZM3900.81 1771V1771.87H3904.81V1771H3900.81ZM3901.28 1770.59C3897.44 1775.15 3891.86 1778 3885.67 1778V1782C3893.13 1782 3899.8 1778.56 3904.34 1773.16L3901.28 1770.59ZM3885.67 1778C3879.47 1778 3873.89 1775.15 3870.05 1770.59L3866.99 1773.16C3871.53 1778.56 3878.21 1782 3885.67 1782V1778ZM3879.09 1751C3879.09 1747.04 3882.13 1744 3885.67 1744V1740C3879.74 1740 3875.09 1745.02 3875.09 1751H3879.09ZM3885.67 1758C3882.13 1758 3879.09 1754.96 3879.09 1751H3875.09C3875.09 1756.98 3879.74 1762 3885.67 1762V1758ZM3892.24 1751C3892.24 1754.96 3889.21 1758 3885.67 1758V1762C3891.6 1762 3896.24 1756.98 3896.24 1751H3892.24ZM3885.67 1744C3889.21 1744 3892.24 1747.04 3892.24 1751H3896.24C3896.24 1745.02 3891.6 1740 3885.67 1740V1744Z" fill="#AAAAAA" mask="url(#path-359-inside-14_3006_20126)"/>
+</g>
+<path d="M2599.95 1732H2652.33V1772H2599.95V1732Z" fill="#F5F5F5"/>
+<path d="M2605.95 1738L2645.95 1766" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M2645.95 1738L2605.95 1766" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M2599.95 1732V1730H2597.95V1732H2599.95ZM2652.33 1732H2654.33V1730H2652.33V1732ZM2652.33 1772V1774H2654.33V1772H2652.33ZM2599.95 1772H2597.95V1774H2599.95V1772ZM2599.95 1734H2652.33V1730H2599.95V1734ZM2650.33 1732V1772H2654.33V1732H2650.33ZM2652.33 1770H2599.95V1774H2652.33V1770ZM2601.95 1772V1732H2597.95V1772H2601.95Z" fill="#AAAAAA"/>
+<rect x="2859" y="1836" width="864" height="498" rx="32" fill="#F5F5F5"/>
+<path d="M2919.5 1886H2898.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2909 1896.5L2898.5 1886L2909 1875.5" stroke="#898F9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="3140.13" y="1894.37">Select required interview skills</tspan></text>
+<path d="M3691 1919H2891V1921H3691V1919Z" fill="#B4B4B4" mask="url(#path-366-inside-15_3006_20126)"/>
+<path d="M2891 1956C2891 1953.79 2892.79 1952 2895 1952H3687C3689.21 1952 3691 1953.79 3691 1956V2008C3691 2010.21 3689.21 2012 3687 2012H2895C2892.79 2012 2891 2010.21 2891 2008V1956Z" fill="white"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="2903" y="1975.58">Lorem ipsum dolor sit amet, consectet ui i iadipiscing elit.</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="2891" y="1944.88">Instructions</tspan></text>
+<path d="M3685.5 1999.75L3678.75 2006.5" stroke="#7D7D7D"/>
+<path d="M3685.5 2004.25L3683.25 2006.5" stroke="#7D7D7D"/>
+<path d="M2895 1954H3687V1950H2895V1954ZM3689 1956V2008H3693V1956H3689ZM3687 2010H2895V2014H3687V2010ZM2893 2008V1956H2889V2008H2893ZM2895 2010C2893.9 2010 2893 2009.1 2893 2008H2889C2889 2011.31 2891.69 2014 2895 2014V2010ZM3689 2008C3689 2009.1 3688.1 2010 3687 2010V2014C3690.31 2014 3693 2011.31 3693 2008H3689ZM3687 1954C3688.1 1954 3689 1954.9 3689 1956H3693C3693 1952.69 3690.31 1950 3687 1950V1954ZM2895 1950C2891.69 1950 2889 1952.69 2889 1956H2893C2893 1954.9 2893.9 1954 2895 1954V1950Z" fill="#AAAAAA"/>
+<rect x="2891" y="2044" width="800" height="178" rx="8" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="2923" y="2093.28">Select team for this interview</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="2923" y="2142.88">Invite to specific team</tspan></text>
+<rect x="2928" y="2167" width="18" height="18" rx="1" fill="#333333"/>
+<path d="M2942.99 2173L2941.58 2171.58L2934.99 2178.17L2932.41 2175.6L2930.99 2177.01L2934.99 2181L2942.99 2173Z" fill="white"/>
+<rect x="2928" y="2167" width="18" height="18" rx="1" stroke="#333333" stroke-width="2"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="2955" y="2180.58">Front-end</tspan></text>
+<rect x="3050" y="2167" width="18" height="18" rx="1" fill="#333333"/>
+<path d="M3064.99 2173L3063.58 2171.58L3056.99 2178.17L3054.41 2175.6L3052.99 2177.01L3056.99 2181L3064.99 2173Z" fill="white"/>
+<rect x="3050" y="2167" width="18" height="18" rx="1" stroke="#333333" stroke-width="2"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="3077" y="2180.58">Portfolio review</tspan></text>
+<rect x="3216" y="2167" width="18" height="18" rx="1" fill="white"/>
+<rect x="3216" y="2167" width="18" height="18" rx="1" stroke="#AAAAAA" stroke-width="2"/>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="3243" y="2180.58">Cross-functional interview</tspan></text>
+<rect x="3500" y="2255" width="60" height="46" rx="3" fill="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="3515" y="2283.58">Skip</tspan></text>
+<rect x="3500" y="2255" width="60" height="46" rx="3" stroke="#333333" stroke-width="2"/>
+<rect x="3593" y="2254" width="66" height="48" rx="4" fill="#333333"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="3609" y="2283.58">Save</tspan></text>
+</g>
+<rect width="491" height="83" transform="translate(4147 1633)" fill="#5384ED"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="42" font-weight="500" letter-spacing="0em"><tspan x="4179" y="1689.77">Interview type added</tspan></text>
+<g clip-path="url(#clip17_3006_20126)">
+<rect width="1440" height="1024" transform="translate(4147 1716)" fill="white"/>
+<g filter="url(#filter6_d_3006_20126)">
+<rect x="4147" y="1716" width="1440" height="80" fill="white"/>
+</g>
+<g clip-path="url(#clip18_3006_20126)">
+<path d="M5515.52 1756C5515.52 1768.75 5505.69 1779 5493.67 1779C5481.64 1779 5471.81 1768.75 5471.81 1756C5471.81 1743.25 5481.64 1733 5493.67 1733C5505.69 1733 5515.52 1743.25 5515.52 1756Z" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
+<mask id="path-396-inside-16_3006_20126" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5476.52 1771.87V1771C5476.52 1765.01 5487.94 1762 5493.67 1762C5499.39 1762 5510.81 1765.01 5510.81 1771V1771.87C5506.62 1776.86 5500.49 1780 5493.67 1780C5486.84 1780 5480.71 1776.86 5476.52 1771.87ZM5493.67 1742C5488.93 1742 5485.09 1746.03 5485.09 1751C5485.09 1755.97 5488.93 1760 5493.67 1760C5498.4 1760 5502.24 1755.97 5502.24 1751C5502.24 1746.03 5498.4 1742 5493.67 1742Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5476.52 1771.87V1771C5476.52 1765.01 5487.94 1762 5493.67 1762C5499.39 1762 5510.81 1765.01 5510.81 1771V1771.87C5506.62 1776.86 5500.49 1780 5493.67 1780C5486.84 1780 5480.71 1776.86 5476.52 1771.87ZM5493.67 1742C5488.93 1742 5485.09 1746.03 5485.09 1751C5485.09 1755.97 5488.93 1760 5493.67 1760C5498.4 1760 5502.24 1755.97 5502.24 1751C5502.24 1746.03 5498.4 1742 5493.67 1742Z" fill="#F5F5F5"/>
+<path d="M5476.52 1771.87H5474.52V1772.6L5474.99 1773.16L5476.52 1771.87ZM5510.81 1771.87L5512.34 1773.16L5512.81 1772.6V1771.87H5510.81ZM5478.52 1771.87V1771H5474.52V1771.87H5478.52ZM5478.52 1771C5478.52 1770.2 5478.89 1769.38 5479.79 1768.51C5480.71 1767.62 5482.07 1766.8 5483.72 1766.1C5487.05 1764.7 5491.07 1764 5493.67 1764V1760C5490.54 1760 5485.99 1760.81 5482.17 1762.41C5480.26 1763.22 5478.41 1764.27 5477.01 1765.63C5475.59 1767.01 5474.52 1768.81 5474.52 1771H5478.52ZM5493.67 1764C5496.26 1764 5500.29 1764.7 5503.61 1766.1C5505.27 1766.8 5506.63 1767.62 5507.54 1768.51C5508.44 1769.38 5508.81 1770.2 5508.81 1771H5512.81C5512.81 1768.81 5511.75 1767.01 5510.33 1765.63C5508.92 1764.27 5507.07 1763.22 5505.16 1762.41C5501.34 1760.81 5496.79 1760 5493.67 1760V1764ZM5508.81 1771V1771.87H5512.81V1771H5508.81ZM5509.28 1770.59C5505.44 1775.15 5499.86 1778 5493.67 1778V1782C5501.13 1782 5507.8 1778.56 5512.34 1773.16L5509.28 1770.59ZM5493.67 1778C5487.47 1778 5481.89 1775.15 5478.05 1770.59L5474.99 1773.16C5479.53 1778.56 5486.21 1782 5493.67 1782V1778ZM5487.09 1751C5487.09 1747.04 5490.13 1744 5493.67 1744V1740C5487.74 1740 5483.09 1745.02 5483.09 1751H5487.09ZM5493.67 1758C5490.13 1758 5487.09 1754.96 5487.09 1751H5483.09C5483.09 1756.98 5487.74 1762 5493.67 1762V1758ZM5500.24 1751C5500.24 1754.96 5497.21 1758 5493.67 1758V1762C5499.6 1762 5504.24 1756.98 5504.24 1751H5500.24ZM5493.67 1744C5497.21 1744 5500.24 1747.04 5500.24 1751H5504.24C5504.24 1745.02 5499.6 1740 5493.67 1740V1744Z" fill="#AAAAAA" mask="url(#path-396-inside-16_3006_20126)"/>
+</g>
+<path d="M4207.95 1732H4260.33V1772H4207.95V1732Z" fill="#F5F5F5"/>
+<path d="M4213.95 1738L4253.95 1766" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M4253.95 1738L4213.95 1766" stroke="#AAAAAA" stroke-width="2"/>
+<path d="M4207.95 1732V1730H4205.95V1732H4207.95ZM4260.33 1732H4262.33V1730H4260.33V1732ZM4260.33 1772V1774H4262.33V1772H4260.33ZM4207.95 1772H4205.95V1774H4207.95V1772ZM4207.95 1734H4260.33V1730H4207.95V1734ZM4258.33 1732V1772H4262.33V1732H4258.33ZM4260.33 1770H4207.95V1774H4260.33V1770ZM4209.95 1772V1732H4205.95V1772H4209.95Z" fill="#AAAAAA"/>
+<rect x="4467" y="1836" width="864" height="304" rx="32" fill="#F5F5F5"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="4828.46" y="1889.37">You&#x2019;re all set</tspan></text>
+<path d="M5299 1909H4499V1911H5299V1909Z" fill="#B4B4B4" mask="url(#path-403-inside-17_3006_20126)"/>
+<rect x="4499" y="1942" width="800" height="86" rx="8" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="18" letter-spacing="0em"><tspan x="4531" y="1991.28">Welcome to the best scheduling tool for managing your job interview</tspan></text>
+<rect x="5172" y="2060" width="95" height="48" rx="4" fill="#333333"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="5188" y="2089.58">Continue</tspan></text>
+</g>
+<path d="M6073.33 1042C6073.33 1052.31 6081.69 1060.67 6092 1060.67C6102.31 1060.67 6110.67 1052.31 6110.67 1042C6110.67 1031.69 6102.31 1023.33 6092 1023.33C6081.69 1023.33 6073.33 1031.69 6073.33 1042ZM1551.53 1707.47C1552.89 1708.84 1555.11 1708.84 1556.47 1707.47L1578.75 1685.2C1580.12 1683.83 1580.12 1681.62 1578.75 1680.25C1577.38 1678.88 1575.17 1678.88 1573.8 1680.25L1554 1700.05L1534.2 1680.25C1532.83 1678.88 1530.62 1678.88 1529.25 1680.25C1527.88 1681.62 1527.88 1683.83 1529.25 1685.2L1551.53 1707.47ZM6088.5 1042V1403H6095.5V1042H6088.5ZM5972 1519.5H1674V1526.5H5972V1519.5ZM1550.5 1643V1705H1557.5V1643H1550.5ZM1674 1519.5C1605.79 1519.5 1550.5 1574.79 1550.5 1643H1557.5C1557.5 1578.66 1609.66 1526.5 1674 1526.5V1519.5ZM6088.5 1403C6088.5 1467.34 6036.34 1519.5 5972 1519.5V1526.5C6040.21 1526.5 6095.5 1471.21 6095.5 1403H6088.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="6092" cy="1042" r="43" fill="#5384ED"/>
+<path d="M1022.33 1001C1022.33 1011.31 1030.69 1019.67 1041 1019.67C1051.31 1019.67 1059.67 1011.31 1059.67 1001C1059.67 990.691 1051.31 982.333 1041 982.333C1030.69 982.333 1022.33 990.691 1022.33 1001ZM1737.47 1003.47C1738.84 1002.11 1738.84 999.892 1737.47 998.525L1715.2 976.251C1713.83 974.884 1711.62 974.884 1710.25 976.251C1708.88 977.618 1708.88 979.834 1710.25 981.201L1730.05 1001L1710.25 1020.8C1708.88 1022.17 1708.88 1024.38 1710.25 1025.75C1711.62 1027.12 1713.83 1027.12 1715.2 1025.75L1737.47 1003.47ZM1041 1004.5H1235.5V997.5H1041V1004.5ZM1235.5 1004.5H1735V997.5H1235.5V1004.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="1041" cy="1001" r="43" fill="#5384ED"/>
+<path d="M2747.33 703C2747.33 713.309 2755.69 721.667 2766 721.667C2776.31 721.667 2784.67 713.309 2784.67 703C2784.67 692.691 2776.31 684.333 2766 684.333C2755.69 684.333 2747.33 692.691 2747.33 703ZM3345.47 705.475C3346.84 704.108 3346.84 701.892 3345.47 700.525L3323.2 678.251C3321.83 676.884 3319.62 676.884 3318.25 678.251C3316.88 679.618 3316.88 681.834 3318.25 683.201L3338.05 703L3318.25 722.799C3316.88 724.166 3316.88 726.382 3318.25 727.749C3319.62 729.116 3321.83 729.116 3323.2 727.749L3345.47 705.475ZM2766 706.5H2927.71V699.5H2766V706.5ZM2927.71 706.5H3343V699.5H2927.71V706.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="2766" cy="703" r="43" fill="#5384ED"/>
+<path d="M3678.67 321C3678.67 310.691 3670.31 302.333 3660 302.333C3649.69 302.333 3641.33 310.691 3641.33 321C3641.33 331.309 3649.69 339.667 3660 339.667C3670.31 339.667 3678.67 331.309 3678.67 321ZM3172.53 318.525C3171.16 319.892 3171.16 322.108 3172.53 323.475L3194.8 345.749C3196.17 347.116 3198.38 347.116 3199.75 345.749C3201.12 344.382 3201.12 342.166 3199.75 340.799L3179.95 321L3199.75 301.201C3201.12 299.834 3201.12 297.618 3199.75 296.251C3198.38 294.884 3196.17 294.884 3194.8 296.251L3172.53 318.525ZM3660 317.5H3524.08V324.5H3660V317.5ZM3524.08 317.5L3175 317.5V324.5L3524.08 324.5V317.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="3660" cy="321" r="43" transform="rotate(-180 3660 321)" fill="#5384ED"/>
+<path d="M5291.67 321C5291.67 310.691 5283.31 302.333 5273 302.333C5262.69 302.333 5254.33 310.691 5254.33 321C5254.33 331.309 5262.69 339.667 5273 339.667C5283.31 339.667 5291.67 331.309 5291.67 321ZM4785.53 318.525C4784.16 319.892 4784.16 322.108 4785.53 323.475L4807.8 345.749C4809.17 347.116 4811.38 347.116 4812.75 345.749C4814.12 344.382 4814.12 342.166 4812.75 340.799L4792.95 321L4812.75 301.201C4814.12 299.834 4814.12 297.618 4812.75 296.251C4811.38 294.884 4809.17 294.884 4807.8 296.251L4785.53 318.525ZM5273 317.5H5137.08V324.5H5273V317.5ZM5137.08 317.5L4788 317.5V324.5L5137.08 324.5V317.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="5273" cy="321" r="43" transform="rotate(-180 5273 321)" fill="#5384ED"/>
+<path d="M2023.67 321C2023.67 310.691 2015.31 302.333 2005 302.333C1994.69 302.333 1986.33 310.691 1986.33 321C1986.33 331.309 1994.69 339.667 2005 339.667C2015.31 339.667 2023.67 331.309 2023.67 321ZM1564.53 318.525C1563.16 319.892 1563.16 322.108 1564.53 323.475L1586.8 345.749C1588.17 347.116 1590.38 347.116 1591.75 345.749C1593.12 344.382 1593.12 342.166 1591.75 340.799L1571.95 321L1591.75 301.201C1593.12 299.834 1593.12 297.618 1591.75 296.251C1590.38 294.884 1588.17 294.884 1586.8 296.251L1564.53 318.525ZM2005 317.5H1882.25V324.5H2005V317.5ZM1882.25 317.5L1567 317.5V324.5L1882.25 324.5V317.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="2005" cy="321" r="43" transform="rotate(-180 2005 321)" fill="#5384ED"/>
+<path d="M3569.33 2239C3569.33 2249.31 3577.69 2257.67 3588 2257.67C3598.31 2257.67 3606.67 2249.31 3606.67 2239C3606.67 2228.69 3598.31 2220.33 3588 2220.33C3577.69 2220.33 3569.33 2228.69 3569.33 2239ZM4149.47 2241.47C4150.84 2240.11 4150.84 2237.89 4149.47 2236.53L4127.2 2214.25C4125.83 2212.88 4123.62 2212.88 4122.25 2214.25C4120.88 2215.62 4120.88 2217.83 4122.25 2219.2L4142.05 2239L4122.25 2258.8C4120.88 2260.17 4120.88 2262.38 4122.25 2263.75C4123.62 2265.12 4125.83 2265.12 4127.2 2263.75L4149.47 2241.47ZM3588 2242.5H3744.66V2235.5H3588V2242.5ZM3744.66 2242.5H4147V2235.5H3744.66V2242.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="3588" cy="2239" r="43" fill="#5384ED"/>
+<path d="M4461.33 956C4461.33 966.309 4469.69 974.667 4480 974.667C4490.31 974.667 4498.67 966.309 4498.67 956C4498.67 945.691 4490.31 937.333 4480 937.333C4469.69 937.333 4461.33 945.691 4461.33 956ZM4953.47 958.475C4954.84 957.108 4954.84 954.892 4953.47 953.525L4931.2 931.251C4929.83 929.884 4927.62 929.884 4926.25 931.251C4924.88 932.618 4924.88 934.834 4926.25 936.201L4946.05 956L4926.25 975.799C4924.88 977.166 4924.88 979.382 4926.25 980.749C4927.62 982.116 4929.83 982.116 4931.2 980.749L4953.47 958.475ZM4480 959.5H4612V952.5H4480V959.5ZM4612 959.5H4951V952.5H4612V959.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="4480" cy="956" r="43" fill="#5384ED"/>
+<path d="M1326.33 1878C1326.33 1888.31 1334.69 1896.67 1345 1896.67C1355.31 1896.67 1363.67 1888.31 1363.67 1878C1363.67 1867.69 1355.31 1859.33 1345 1859.33C1334.69 1859.33 1326.33 1867.69 1326.33 1878ZM5655.47 1189.53C5654.11 1188.16 5651.89 1188.16 5650.52 1189.53L5628.25 1211.8C5626.88 1213.17 5626.88 1215.38 5628.25 1216.75C5629.62 1218.12 5631.83 1218.12 5633.2 1216.75L5653 1196.95L5672.8 1216.75C5674.17 1218.12 5676.38 1218.12 5677.75 1216.75C5679.12 1215.38 5679.12 1213.17 5677.75 1211.8L5655.47 1189.53ZM1348.5 1878V1474.5H1341.5V1878H1348.5ZM1465 1358H5533V1351H1465V1358ZM5656.5 1234.5V1192H5649.5V1234.5H5656.5ZM5533 1358C5601.21 1358 5656.5 1302.71 5656.5 1234.5H5649.5C5649.5 1298.84 5597.34 1351 5533 1351V1358ZM1348.5 1474.5C1348.5 1410.16 1400.66 1358 1465 1358V1351C1396.79 1351 1341.5 1406.29 1341.5 1474.5H1348.5Z" fill="#5384ED"/>
+<circle opacity="0.3" cx="1344" cy="1879" r="43" fill="#5384ED"/>
+<defs>
+<filter id="filter0_d_3006_20126" x="123" y="158" width="1448" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3006_20126"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3006_20126" result="shape"/>
+</filter>
+<filter id="filter1_d_3006_20126" x="1731" y="158" width="1448" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3006_20126"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3006_20126" result="shape"/>
+</filter>
+<filter id="filter2_d_3006_20126" x="3339" y="158" width="1448" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3006_20126"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3006_20126" result="shape"/>
+</filter>
+<filter id="filter3_d_3006_20126" x="4947" y="158" width="1448" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3006_20126"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3006_20126" result="shape"/>
+</filter>
+<filter id="filter4_d_3006_20126" x="927" y="1716" width="1448" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3006_20126"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3006_20126" result="shape"/>
+</filter>
+<filter id="filter5_d_3006_20126" x="2535" y="1716" width="1448" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3006_20126"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3006_20126" result="shape"/>
+</filter>
+<filter id="filter6_d_3006_20126" x="4143" y="1716" width="1448" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3006_20126"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3006_20126" result="shape"/>
+</filter>
+<clipPath id="clip0_3006_20126">
+<rect width="1440" height="1024" fill="white" transform="translate(127 158)"/>
+</clipPath>
+<clipPath id="clip1_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(1450.81 174)"/>
+</clipPath>
+<clipPath id="clip2_3006_20126">
+<rect width="1440" height="1024" fill="white" transform="translate(1735 158)"/>
+</clipPath>
+<clipPath id="clip3_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(3058.81 174)"/>
+</clipPath>
+<clipPath id="clip4_3006_20126">
+<rect width="1440" height="1024" fill="white" transform="translate(3343 158)"/>
+</clipPath>
+<clipPath id="clip5_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(4666.81 174)"/>
+</clipPath>
+<clipPath id="clip6_3006_20126">
+<rect width="1440" height="1024" fill="white" transform="translate(4951 158)"/>
+</clipPath>
+<clipPath id="clip7_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(6274.81 174)"/>
+</clipPath>
+<clipPath id="clip8_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(5335 426)"/>
+</clipPath>
+<clipPath id="clip9_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(5335 530)"/>
+</clipPath>
+<clipPath id="clip10_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(5335 634)"/>
+</clipPath>
+<clipPath id="clip11_3006_20126">
+<rect width="18" height="18" fill="white" transform="translate(5371.09 847)"/>
+</clipPath>
+<clipPath id="clip12_3006_20126">
+<rect width="18" height="18" fill="white" transform="translate(5467.09 847)"/>
+</clipPath>
+<clipPath id="clip13_3006_20126">
+<rect width="1440" height="1024" fill="white" transform="translate(931 1716)"/>
+</clipPath>
+<clipPath id="clip14_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(2254.81 1732)"/>
+</clipPath>
+<clipPath id="clip15_3006_20126">
+<rect width="1440" height="1024" fill="white" transform="translate(2539 1716)"/>
+</clipPath>
+<clipPath id="clip16_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(3862.81 1732)"/>
+</clipPath>
+<clipPath id="clip17_3006_20126">
+<rect width="1440" height="1024" fill="white" transform="translate(4147 1716)"/>
+</clipPath>
+<clipPath id="clip18_3006_20126">
+<rect width="45.7143" height="48" fill="white" transform="translate(5470.81 1732)"/>
+</clipPath>
+</defs>
+</svg>
