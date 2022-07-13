@@ -3,14 +3,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Modal Setup
   var modal = document.getElementById('modal');
-
   var modalClose = document.getElementById('modal-close');
-  modalClose.addEventListener('click', function () {
-    modal.style.display = "none";
-  });
-  modal.addEventListener('click', function () {
-    modal.style.display = "none";
-  });
+
+  if (modalClose) {
+    modalClose.addEventListener('click', function () {
+      modal.style.display = "none";
+    });
+  }
+
+  if (modal) {
+    modal.addEventListener('click', function () {
+      modal.style.display = "none";
+    });
+  }
+  
 
   // global handler
   document.addEventListener('click', function (e) {
@@ -26,8 +32,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-  window.addEventListener('DOMContentLoaded', () => {
 
+
+
+  window.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         const id = entry.target.getAttribute('id');
@@ -50,25 +58,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-  window.addEventListener('DOMContentLoaded', () => {
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-        if (entry.intersectionRatio > 0) {
-          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-        } else {
-          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-        }
-      });
-    });
-
-    // Track all sections that have an `id` applied
-    document.querySelectorAll('section[id]').forEach((section) => {
-      observer.observe(section);
-    });
-
-  });
   // For more information, see greensock.com/docs/v3/Plugins/ScrollTrigger
   gsap.registerPlugin(ScrollTrigger);
 
