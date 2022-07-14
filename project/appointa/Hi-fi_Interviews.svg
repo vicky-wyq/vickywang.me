@@ -16,62 +16,59 @@
 <path d="M386.397 55.2031H381.6L372.959 40.4531V55.2031H368.475V32.7969H373.272L381.913 47.5625V32.7969H386.397V55.2031Z" fill="#5384ED"/>
 <path d="M399.975 55.2031H395.506V37.2812H388.772V32.7969H406.694V37.2812H399.975V55.2031Z" fill="#5384ED"/>
 <path d="M421.569 46.25V41.7656C421.569 41.151 421.449 40.5729 421.209 40.0312C420.98 39.4792 420.663 39 420.256 38.5938C419.85 38.1875 419.371 37.8698 418.819 37.6406C418.277 37.401 417.699 37.2812 417.084 37.2812C416.47 37.2812 415.887 37.401 415.334 37.6406C414.793 37.8698 414.319 38.1875 413.913 38.5938C413.506 39 413.183 39.4792 412.944 40.0312C412.715 40.5729 412.6 41.151 412.6 41.7656V46.25H421.569ZM426.053 55.2031H421.569V50.7188H412.6V55.2031H408.131V41.7656C408.131 40.526 408.366 39.3646 408.834 38.2812C409.303 37.1875 409.939 36.2344 410.741 35.4219C411.553 34.6094 412.501 33.9688 413.584 33.5C414.678 33.0312 415.845 32.7969 417.084 32.7969C418.324 32.7969 419.486 33.0312 420.569 33.5C421.663 33.9688 422.616 34.6094 423.428 35.4219C424.241 36.2344 424.881 37.1875 425.35 38.2812C425.819 39.3646 426.053 40.526 426.053 41.7656V55.2031Z" fill="#5384ED"/>
-<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="698.277" y="50.1523">Home</tspan></text>
-<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="779.49" y="50.1523">Interviews</tspan></text>
+<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="694.339" y="50.1523">Home</tspan></text>
+<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="775.463" y="50.1523">Interviews</tspan></text>
 <g clip-path="url(#clip1_502_7183)">
-<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="894.065" y="50.1523">Availability</tspan></text>
+<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="891.213" y="50.1523">Availability</tspan></text>
 </g>
-<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1012.01" y="50.1523">Team</tspan></text>
+<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1011.42" y="50.1523">Team</tspan></text>
 <circle cx="1109" cy="44" r="19" fill="#C4C4C4"/>
 <circle cx="1109" cy="44" r="19" fill="url(#pattern0)"/>
 <circle cx="1109" cy="44" r="19" stroke="#5384ED" stroke-width="2"/>
-<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="1137.19" y="50.1523">Account</tspan></text>
+<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1137" y="50.1523">Account</tspan></text>
 <path d="M1210 41L1216 47L1222 41" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="32" font-weight="500" letter-spacing="0em"><tspan x="268" y="179.938">Interviews</tspan></text>
-<path d="M268 228C268 219.163 275.163 212 284 212H358C366.837 212 374 219.163 374 228V228C374 236.837 366.837 244 358 244H284C275.163 244 268 236.837 268 228V228Z" fill="white"/>
+<path d="M268 228C268 219.163 275.163 212 284 212H358C366.837 212 374 219.163 374 228C374 236.837 366.837 244 358 244H284C275.163 244 268 236.837 268 228Z" fill="white"/>
 <path d="M288.25 233.25C291.564 233.25 294.25 230.564 294.25 227.25C294.25 223.936 291.564 221.25 288.25 221.25C284.936 221.25 282.25 223.936 282.25 227.25C282.25 230.564 284.936 233.25 288.25 233.25Z" stroke="#7C8DB0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M295.75 234.75L292.488 231.487" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="302" y="232.785">Name</tspan></text>
 <path d="M348.5 225.75L353 230.25L357.5 225.75" stroke="#7C8DB0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M284 213H358V211H284V213ZM358 243H284V245H358V243ZM284 243C275.716 243 269 236.284 269 228H267C267 237.389 274.611 245 284 245V243ZM373 228C373 236.284 366.284 243 358 243V245C367.389 245 375 237.389 375 228H373ZM358 213C366.284 213 373 219.716 373 228H375C375 218.611 367.389 211 358 211V213ZM284 211C274.611 211 267 218.611 267 228H269C269 219.716 275.716 213 284 213V211Z" fill="#CBD4E6"/>
-<path d="M390 228C390 219.163 397.163 212 406 212H488C496.837 212 504 219.163 504 228V228C504 236.837 496.837 244 488 244H406C397.163 244 390 236.837 390 228V228Z" fill="white"/>
+<path d="M390 228C390 219.163 397.163 212 406 212H488C496.837 212 504 219.163 504 228C504 236.837 496.837 244 488 244H406C397.163 244 390 236.837 390 228Z" fill="white"/>
 <path d="M416.25 222H405.75C404.922 222 404.25 222.672 404.25 223.5V234C404.25 234.828 404.922 235.5 405.75 235.5H416.25C417.078 235.5 417.75 234.828 417.75 234V223.5C417.75 222.672 417.078 222 416.25 222Z" stroke="#7C8DB0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M414 220.5V223.5" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M408 220.5V223.5" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M404.25 226.5H417.75" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="424" y="232.785">Date range</tspan></text>
 <path d="M406 213H488V211H406V213ZM488 243H406V245H488V243ZM406 243C397.716 243 391 236.284 391 228H389C389 237.389 396.611 245 406 245V243ZM503 228C503 236.284 496.284 243 488 243V245C497.389 245 505 237.389 505 228H503ZM488 213C496.284 213 503 219.716 503 228H505C505 218.611 497.389 211 488 211V213ZM406 211C396.611 211 389 218.611 389 228H391C391 219.716 397.716 213 406 213V211Z" fill="#CBD4E6"/>
-<path d="M520 228C520 219.163 527.163 212 536 212H676C684.837 212 692 219.163 692 228V228C692 236.837 684.837 244 676 244H536C527.163 244 520 236.837 520 228V228Z" fill="white"/>
+<path d="M520 228C520 219.163 527.163 212 536 212H676C684.837 212 692 219.163 692 228C692 236.837 684.837 244 676 244H536C527.163 244 520 236.837 520 228Z" fill="white"/>
 <text fill="#27273F" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="532" y="232.785">Technical phone screen</tspan></text>
 <path d="M536 213H676V211H536V213ZM676 243H536V245H676V243ZM536 243C527.716 243 521 236.284 521 228H519C519 237.389 526.611 245 536 245V243ZM691 228C691 236.284 684.284 243 676 243V245C685.389 245 693 237.389 693 228H691ZM676 213C684.284 213 691 219.716 691 228H693C693 218.611 685.389 211 676 211V213ZM536 211C526.611 211 519 218.611 519 228H521C521 219.716 527.716 213 536 213V211Z" fill="#A1B0CC"/>
-<path d="M708 228C708 219.163 715.163 212 724 212H801C809.837 212 817 219.163 817 228V228C817 236.837 809.837 244 801 244H724C715.163 244 708 236.837 708 228V228Z" fill="white"/>
+<path d="M708 228C708 219.163 715.163 212 724 212H801C809.837 212 817 219.163 817 228C817 236.837 809.837 244 801 244H724C715.163 244 708 236.837 708 228Z" fill="white"/>
 <text fill="#27273F" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="720" y="232.785">Phone screen</tspan></text>
 <path d="M724 213H801V211H724V213ZM801 243H724V245H801V243ZM724 243C715.716 243 709 236.284 709 228H707C707 237.389 714.611 245 724 245V243ZM816 228C816 236.284 809.284 243 801 243V245C810.389 245 818 237.389 818 228H816ZM801 213C809.284 213 816 219.716 816 228H818C818 218.611 810.389 211 801 211V213ZM724 211C714.611 211 707 218.611 707 228H709C709 219.716 715.716 213 724 213V211Z" fill="#A1B0CC"/>
-<path d="M833 228C833 219.163 840.163 212 849 212H882C890.837 212 898 219.163 898 228V228C898 236.837 890.837 244 882 244H849C840.163 244 833 236.837 833 228V228Z" fill="white"/>
+<path d="M833 228C833 219.163 840.163 212 849 212H882C890.837 212 898 219.163 898 228C898 236.837 890.837 244 882 244H849C840.163 244 833 236.837 833 228Z" fill="white"/>
 <text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="845" y="232.785">Onsite</tspan></text>
 <path d="M849 213H882V211H849V213ZM882 243H849V245H882V243ZM849 243C840.716 243 834 236.284 834 228H832C832 237.389 839.611 245 849 245V243ZM897 228C897 236.284 890.284 243 882 243V245C891.389 245 899 237.389 899 228H897ZM882 213C890.284 213 897 219.716 897 228H899C899 218.611 891.389 211 882 211V213ZM849 211C839.611 211 832 218.611 832 228H834C834 219.716 840.716 213 849 213V211Z" fill="#CBD4E6"/>
-<path d="M914 228C914 219.163 921.163 212 930 212H977C985.837 212 993 219.163 993 228V228C993 236.837 985.837 244 977 244H930C921.163 244 914 236.837 914 228V228Z" fill="white"/>
+<path d="M914 228C914 219.163 921.163 212 930 212H977C985.837 212 993 219.163 993 228C993 236.837 985.837 244 977 244H930C921.163 244 914 236.837 914 228Z" fill="white"/>
 <text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="926" y="232.785">Pre-offer</tspan></text>
 <path d="M930 213H977V211H930V213ZM977 243H930V245H977V243ZM930 243C921.716 243 915 236.284 915 228H913C913 237.389 920.611 245 930 245V243ZM992 228C992 236.284 985.284 243 977 243V245C986.389 245 994 237.389 994 228H992ZM977 213C985.284 213 992 219.716 992 228H994C994 218.611 986.389 211 977 211V213ZM930 211C920.611 211 913 218.611 913 228H915C915 219.716 921.716 213 930 213V211Z" fill="#CBD4E6"/>
-<path d="M1009 228C1009 219.163 1016.16 212 1025 212H1154C1162.84 212 1170 219.163 1170 228V228C1170 236.837 1162.84 244 1154 244H1025C1016.16 244 1009 236.837 1009 228V228Z" fill="white"/>
+<path d="M1009 228C1009 219.163 1016.16 212 1025 212H1154C1162.84 212 1170 219.163 1170 228C1170 236.837 1162.84 244 1154 244H1025C1016.16 244 1009 236.837 1009 228Z" fill="white"/>
 <text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="1021" y="232.785">General Programming</tspan></text>
 <path d="M1025 213H1154V211H1025V213ZM1154 243H1025V245H1154V243ZM1025 243C1016.72 243 1010 236.284 1010 228H1008C1008 237.389 1015.61 245 1025 245V243ZM1169 228C1169 236.284 1162.28 243 1154 243V245C1163.39 245 1171 237.389 1171 228H1169ZM1154 213C1162.28 213 1169 219.716 1169 228H1171C1171 218.611 1163.39 211 1154 211V213ZM1025 211C1015.61 211 1008 218.611 1008 228H1010C1010 219.716 1016.72 213 1025 213V211Z" fill="#CBD4E6"/>
-<path d="M268 284C268 275.163 275.163 268 284 268H432C440.837 268 448 275.163 448 284V284C448 292.837 440.837 300 432 300H284C275.163 300 268 292.837 268 284V284Z" fill="white"/>
+<path d="M268 284C268 275.163 275.163 268 284 268H432C440.837 268 448 275.163 448 284C448 292.837 440.837 300 432 300H284C275.163 300 268 292.837 268 284Z" fill="white"/>
 <text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="280" y="288.785">Hiring manager interview</tspan></text>
 <path d="M284 269H432V267H284V269ZM432 299H284V301H432V299ZM284 299C275.716 299 269 292.284 269 284H267C267 293.389 274.611 301 284 301V299ZM447 284C447 292.284 440.284 299 432 299V301C441.389 301 449 293.389 449 284H447ZM432 269C440.284 269 447 275.716 447 284H449C449 274.611 441.389 267 432 267V269ZM284 267C274.611 267 267 274.611 267 284H269C269 275.716 275.716 269 284 269V267Z" fill="#CBD4E6"/>
-<path d="M464 284C464 275.163 471.163 268 480 268H673C681.837 268 689 275.163 689 284V284C689 292.837 681.837 300 673 300H480C471.163 300 464 292.837 464 284V284Z" fill="white"/>
+<path d="M464 284C464 275.163 471.163 268 480 268H673C681.837 268 689 275.163 689 284C689 292.837 681.837 300 673 300H480C471.163 300 464 292.837 464 284Z" fill="white"/>
 <text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="476" y="288.785">Backend programming interview</tspan></text>
 <path d="M480 269H673V267H480V269ZM673 299H480V301H673V299ZM480 299C471.716 299 465 292.284 465 284H463C463 293.389 470.611 301 480 301V299ZM688 284C688 292.284 681.284 299 673 299V301C682.389 301 690 293.389 690 284H688ZM673 269C681.284 269 688 275.716 688 284H690C690 274.611 682.389 267 673 267V269ZM480 267C470.611 267 463 274.611 463 284H465C465 275.716 471.716 269 480 269V267Z" fill="#CBD4E6"/>
-<path d="M268 340C268 331.163 275.163 324 284 324H400C408.837 324 416 331.163 416 340V361C416 369.837 408.837 377 400 377H284C275.163 377 268 369.837 268 361V340Z" fill="white"/>
-<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="300" y="356.652">Scheduled</tspan></text>
-<path d="M448 340C448 331.163 455.163 324 464 324H578C586.837 324 594 331.163 594 340V361C594 369.837 586.837 377 578 377H464C455.163 377 448 369.837 448 361V340Z" fill="white"/>
-<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="480" y="356.652">Upcoming</tspan></text>
-<path d="M626 340C626 331.163 633.163 324 642 324H711C719.837 324 727 331.163 727 340V361C727 369.837 719.837 377 711 377H642C633.163 377 626 369.837 626 361V340Z" fill="white"/>
-<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="658" y="356.652">Past</tspan></text>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="300" y="356.652">Scheduled</tspan></text>
+<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="465" y="356.652">Upcoming</tspan></text>
+<text fill="#7C8DB0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="628" y="356.652">Past</tspan></text>
 <rect width="976" height="9" transform="translate(268 377)" fill="white"/>
 <rect x="268" y="381" width="976" height="1" fill="#E9E8FC"/>
-<rect x="300" y="381" width="83" height="2" rx="1" fill="#5384ED"/>
+<rect x="301" y="381" width="83" height="2" rx="1" fill="#5384ED"/>
 <text fill="#27273F" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="284.094" y="438.785">Friday, June 17, 2022</tspan></text>
 <text fill="#27273F" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="14" letter-spacing="0em"><tspan x="284.265" y="465.785">12:30 pm -1:30 pm</tspan></text>
 <g clip-path="url(#clip2_502_7183)">
@@ -152,7 +149,7 @@
 <rect width="1512" height="982" rx="32" fill="white"/>
 </clipPath>
 <clipPath id="clip1_502_7183">
-<rect width="86" height="21" fill="white" transform="translate(894 33.5)"/>
+<rect width="88" height="21" fill="white" transform="translate(891 33.5)"/>
 </clipPath>
 <clipPath id="clip2_502_7183">
 <rect width="85" height="9.6" fill="white" transform="translate(500.05 426) rotate(90)"/>
