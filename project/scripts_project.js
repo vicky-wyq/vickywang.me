@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
+
   // Modal Setup
   var modal = document.getElementById('modal');
   var modalClose = document.getElementById('modal-close');
