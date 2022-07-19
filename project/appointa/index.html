@@ -83,11 +83,9 @@
   <!--jQuery-->
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type="text/javascript"
+  <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <!--jQuery 07182022-->
-
-
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--aos-->
@@ -235,10 +233,16 @@
             <li class=""><a href="#wireframes">Lo-fi wireframes</a></li>
             <li class=""><a href="#mid-fiWireframes">Mid-fi screen flow &#38; testing </a></li>
             <li class=""><a href="#sitemap">Sitemap</a></li>
+          </ul>
+        </li>
+        <li><a href="#design">Hi-fi design </a>
+          <ul>
+            <li class=""><a href="#screens">Hi-fi screens</a></li>
+            <li class=""><a href="#prototype">Clickable prototype </a></li>
+            <li class=""><a href="#components">UI components </a></li>
 
           </ul>
         </li>
-        <li><a href="#design">Hi-fi design </a></li>
         <li><a href="#takeaways">Takeaways </a></li>
       </ol>
     </nav>
@@ -469,6 +473,7 @@
           </div>
         </div>
         <!-- Arrow -->
+
         <div class="blankHXS"></div>
         <!-- user Journey -->
         <div class="wrapper">
@@ -476,7 +481,7 @@
             <div class="Grid-cell">
               <div class="element">
 
-                <img class="modal-target" src="userJourney.svg" alt="user Journey">
+                <img id="testing" class="modal-target" src="userJourney.svg" alt="user Journey">
               </div>
             </div>
 
@@ -919,8 +924,8 @@
               </div>
             </div>
             <div class="Grid-cell">
-              <div class="element"> <img class="cardAPPOINTA shadowBox" src="testingChangepassword.gif"
-                  alt="New User">
+              <div class="element"> <img class="cardAPPOINTA shadowBox"
+                  src="testingChangepassword.gif" alt="New User">
               </div>
             </div>
           </div>
@@ -968,7 +973,8 @@
             </div>
 
             <div class="Grid-cell">
-              <div class="element"> <img class="cardAPPOINTA shadowBox" src="testingNewUser.gif" alt="New User">
+              <div class="element"> <img class="cardAPPOINTA shadowBox" src="testingNewUser.gif"
+                  alt="New User">
               </div>
             </div>
           </div>
@@ -1050,8 +1056,8 @@
             </div>
 
             <div class="Grid-cell">
-              <div class="element"> <img class="cardAPPOINTA shadowBox" src="testingExistingUser.gif"
-                  alt="Existing User"></div>
+              <div class="element"> <img class="cardAPPOINTA shadowBox"
+                  src="testingExistingUser.gif" alt="Existing User"></div>
             </div>
 
           </div>
@@ -1157,8 +1163,8 @@
             </div>
 
             <div class="Grid-cell">
-              <div class="element"> <img class="cardAPPOINTA shadowBox" src="testingMemberOnboarding.gif"
-                  alt="New User">
+              <div class="element"> <img class="cardAPPOINTA shadowBox"
+                  src="testingMemberOnboarding.gif" alt="New User">
               </div>
             </div>
           </div>
@@ -1298,120 +1304,128 @@
     <section id="design">
       <div class="colorBgAPPOINTA">
         <div class="blankHS"></div>
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="Grid">
-                  <p class="tArrow"> Hi-fi design</p>
-                  <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+        <section id="screens">
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="Grid">
+                    <p class="tArrow"> Hi-fi design</p>
+                    <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Arrow -->
-        <div class="blankHS"></div>
+          <!-- Arrow -->
+          <div class="blankHS"></div>
 
 
-        <div class="Grid Grid--full u-textCenter">
-          <div class="Grid-cell">
-            <img class="iconM" src="ppl_recruiter.png" alt="Administration account">
-            <h3>Administration account</h3>
-            <h6>Recruiters &#47; Hiring managers</h6>
-          </div>
-        </div>
-
-        <div class="blankHS"></div>
-        <div class="wrapper">
-          <div id="flex-container" class=" cardAPPOINTA">
-            <div id="left-zone">
-              <ul class="list">
-                <li class="item">
-                  <input type="radio" id="radio_testimonial-1" name="basic_carousel"
-                    checked="checked" />
-                  <label class="label_testimonial-1" for="radio_testimonial-1">Landing page</label>
-                  <div class="content-test">
-                    <img class="shadowFilterL" src="Hi-fi_Landing.svg" alt="team member">
-                  </div>
-                </li>
-                <li class="item">
-                  <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
-                  <label class="label_testimonial-2" for="radio_testimonial-2">Interviews</label>
-                  <div class="content-test">
-                    <img class="shadowFilterL" src="Hi-fi_Interviews.svg" alt="team member">
-
-                  </div>
-                </li>
-                <li class="item">
-                  <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
-                  <label class="label_testimonial-3" for="radio_testimonial-3">Interview
-                    types</label>
-                  <div class="content-test">
-                    <img class="shadowFilterL" src="Hi-fi_InterviewTypes.svg" alt="team member">
-
-                  </div>
-                </li>
-                <li class="item">
-                  <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
-                  <label class="label_testimonial-4" for="radio_testimonial-4">Interview sets</label>
-                  <div class="content-test">
-                    <img class="shadowFilterL" src="Hi-fi_InterviewSets.svg" alt="team member">
-                  </div>
-                </li>
-                <li class="item">
-                  <input type="radio" id="radio_testimonial-5" name="basic_carousel" />
-                  <label class="label_testimonial-5" for="radio_testimonial-5">Team memebrs</label>
-                  <div class="content-test">
-                    <img class="shadowFilterL" src="Hi-fi_TeamMember.svg" alt="team member">
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div id="right-zone"></div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-              <h3 class="u-textCenter"> Hi-fi screens </h3>
+          <div class="Grid Grid--full u-textCenter">
+            <div class="Grid-cell">
+              <img class="iconM" src="ppl_recruiter.png" alt="Administration account">
+              <h3>Administration account</h3>
+              <h6>Recruiters &#47; Hiring managers</h6>
             </div>
           </div>
-        </div>
 
-        <div class="blankHS"></div>
+          <div class="blankHS"></div>
+          <div class="wrapper">
+            <div id="flex-container" class=" cardAPPOINTA">
+              <div id="left-zone">
+                <ul class="list">
+                  <li class="item">
+                    <input type="radio" id="radio_testimonial-1" name="basic_carousel"
+                      checked="checked" />
+                    <label class="label_testimonial-1" for="radio_testimonial-1">Landing
+                      page</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Hi-fi_Landing.svg" alt="team member">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
+                    <label class="label_testimonial-2" for="radio_testimonial-2">Interviews</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Hi-fi_Interviews.svg" alt="team member">
 
+                    </div>
+                  </li>
+                  <li class="item">
+                    <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
+                    <label class="label_testimonial-3" for="radio_testimonial-3">Interview
+                      types</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Hi-fi_InterviewTypes.svg" alt="team member">
 
-        <div class="blankHS"></div>
-
-
-        <div class="blankHS"></div>
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
+                    <label class="label_testimonial-4" for="radio_testimonial-4">Interview
+                      sets</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Hi-fi_InterviewSets.svg" alt="team member">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <input type="radio" id="radio_testimonial-5" name="basic_carousel" />
+                    <label class="label_testimonial-5" for="radio_testimonial-5">Team
+                      memebrs</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Hi-fi_TeamMember.svg" alt="team member">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="right-zone"></div>
+            </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="Grid">
-                  <p class="tArrow"> UI Components</p>
-                  <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+                <h3 class="u-textCenter"> Hi-fi screens </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="blankHS"></div>
+        <section id="screens">
+          <div class="wrapper">
+            <iframe style="border: 6px solid rgba(255, 255, 255, 0.9);     border-radius: 35px;
+          " width="100%" height="920"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0APvIwRfsXK7XTGaBXhD05%2FAPPOINTA%3Fpage-id%3D501%253A9560%26node-id%3D501%253A9561%26viewport%3D1138%252C453%252C0.48%26scaling%3Dscale-down%26starting-point-node-id%3D501%253A9561%26hotspot-hints%3D0"></iframe>
+          </div>
+        </section>
+        <div class="blankHS"></div>
+
+        <section id="components">
+
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="Grid">
+                    <p class="tArrow"> UI Components</p>
+                    <img class="se-arrow" src="../../icon/arrow-se.svg" alt="se-arrow">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Arrow -->
+          <!-- Arrow -->
 
-        <!-- UI -->
-        <div class="Grid Grid--full u-textCenter wrapper">
-          <div class="Grid-cell">
-            <div class="element">
-              <img class="modal-target" src="UI_header.svg" alt="UI Header">
+          <!-- UI -->
+          <div class="Grid Grid--full u-textCenter wrapper">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="UI_header.svg" alt="UI Header">
 
+              </div>
             </div>
           </div>
-        </div>
-        <!-- UI -->
+          <!-- UI -->
+        </section>
       </div>
 
     </section>
