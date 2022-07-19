@@ -318,7 +318,9 @@ h5, h6 {
 }
 
 
-
+.allCaps{
+    text-transform: uppercase;
+}
 
 
 
@@ -2166,7 +2168,7 @@ a.nav-link:hover {
 .lineHorizS {
     display: block;
     margin: 0;
-    height: 4px;
+    height: 2px;
     width: 30px;
     background-color: var(--green-light);
     border-radius: 20px;
