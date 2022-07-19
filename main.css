@@ -1676,7 +1676,7 @@ input:checked~label {
     font-size: 2rem;
     font-weight: 500;
     /* margin-right: 8%; */
-    color: var(--black-less);
+    color: var(--black);
 }
 
 .wrapper {
@@ -1807,11 +1807,11 @@ a.nav-link:hover {
     width: 1.5rem;
     height: 3px;
     display: block;
-    color: var(--black-darker);
     padding: 0;
     margin: 6px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    color: var(--black);
     background-color: var(--black);
 }
 
@@ -2803,7 +2803,7 @@ a:link.textProject {
 }
 
 .active a {
-    font-weight: 400;
+    font-weight: 300;
     color: var(--black);
 }
 

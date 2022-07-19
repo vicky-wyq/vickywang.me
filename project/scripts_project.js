@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
       modal.style.display = "none";
     });
   }
-  
+  $( function() {
+    $( "#draggable" ).draggable();
+  });
 
   // global handler
   document.addEventListener('click', function (e) {
