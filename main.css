@@ -1161,7 +1161,7 @@ button.passwordArr {
         border-bottom: none;
     }
 
-    body #flex-container {
+    body .flex-container {
 
         height: 520px;
         /* position: absolute; */
@@ -1351,7 +1351,9 @@ button.passwordArr {
 
 
 /* ============= Begin Testimonial Flexbox ============ */
-#flex-container {
+
+
+.flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1376,7 +1378,7 @@ button.passwordArr {
     position: relative;
 }
 
-#left-zone {
+.left-zone {
     height: 50%;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
@@ -1387,7 +1389,7 @@ button.passwordArr {
     width: 100%;
 }
 
-#left-zone .list {
+.left-zone .list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1461,7 +1463,7 @@ label:hover {
     text-align: center;
 }
 
-#right-zone {
+.right-zone {
     width: 100%;
     -webkit-box-flex: 1;
     -ms-flex: 1 0 auto;
@@ -1482,7 +1484,7 @@ input:checked~.content-test {
 }
 
 @media (min-width: 480px) {
-    #flex-container {
+    .flex-container {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1496,7 +1498,7 @@ input:checked~.content-test {
         right: 0;
     }
 
-    #left-zone .list {
+    .left-zone .list {
         border-right: 2px solid var(--grey-normal);
     }
 
@@ -1509,11 +1511,11 @@ input:checked~.content-test {
         transform: translateY(100%);
     }
 
-    #left-zone {
+    .left-zone {
         width: 20%;
     }
 
-    #right-zone {
+    .right-zone {
         height: 100%;
         width: 80%;
     }
