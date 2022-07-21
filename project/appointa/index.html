@@ -129,36 +129,39 @@
   <!-- header -->
   <nav class="header">
     <div class="backgroundColorNav">
-      <a href="http://vickywang.me/" class="logo pointer">VW
+      <a href="http://vickywang.me/" class="logo pointer colorAPPOINTA">VW
       </a>
       <div class="navbar">
         <ul class="nav-menu">
           <li class="nav-item active APPOINTA"><a href="/project" class="nav-link box">PROJECT</a>
           </li>
-          <li class="nav-item inactive "><a href="/architecture"
-              class="nav-link box">ARCHITECTURE</a>
+          <li class="nav-item inactive"><a href="/architecture"
+              class="nav-link box  font300-1080">ARCHITECTURE</a>
           </li>
-          <li class="nav-item inactive "><a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
+          <li class="nav-item inactive"><a href="/photography"
+              class="nav-link box  font300-1080">PHOTOGRAPHY</a>
           </li>
-          <li class="nav-item inactive "><a href="/" class="nav-link box">ABOUT</a></li>
+          <li class="nav-item inactive "><a href="/" class="nav-link box  font300-1080">ABOUT</a>
+          </li>
         </ul>
       </div>
       <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <span class="bar APPOINTA"></span>
+        <span class="bar APPOINTA"></span>
+        <span class="bar APPOINTA"></span>
       </div>
     </div>
   </nav>
   <!-- Working process -->
   <div class="colorBgAPPOINTA">
 
+    <div class="blankMin1080"></div>
 
     <div class="blankHS"></div>
     <div class="Grid Grid--full u-textCenter wrapper">
       <div class="Grid-cell">
         <div class="element">
-          <img class="shadowFilterL" id="draggable" src="Hi-fi_Landing.svg" alt="team member">
+          <img class="shadowFilterL" src="Hi-fi_Landing.svg" alt="team member">
         </div>
       </div>
       <div class="blankHS"></div>
@@ -166,7 +169,7 @@
 
         <div class="element">
 
-          <h1>APPOINTA</h1>
+          <h1 class="colorBlack">APPOINTA</h1>
           <h4 class="">An interview scheduling tool</h4>
         </div>
       </div>
@@ -285,14 +288,14 @@
             <ul>
               <li>Add &#38; remove skills </li>
               <li>Add &#38; remove team members </li>
-  
+
             </ul>
-  
+
           </div>
         </div>
-  
+
         <div class="Grid-cell">
-  
+
           <div class="element"> <img class="cardAPPOINTA shadowBox" src="hi-fi_interviewSkills.gif"
               alt="New User">
           </div>
@@ -1309,7 +1312,7 @@
             </div>
 
             <div class="Grid-cell">
-              <div class="element"> <img class="cardAPPOINTA" src="testingCandidate.gif"
+              <div class="element"> <img class="cardAPPOINTA shadowBox" src="testingCandidate.gif"
                   alt="New User">
               </div>
             </div>
@@ -1482,20 +1485,17 @@
               <div class="right-zone"></div>
             </div>
 
-
-
-            <div class="Grid-cell">
-              <div class="element">
-                <h3 class="u-textCenter"> Hi-fi screens </h3>
-              </div>
-            </div>
           </div>
 
 
         </section>
         <div class="blankHS"></div>
         <section id="prototype">
-
+          <div class="wrapper">
+            <iframe style="border: 6px solid rgba(255, 255, 255, 0.9);     border-radius: 35px;
+          " width="100%" height="920"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0APvIwRfsXK7XTGaBXhD05%2FAPPOINTA%3Fpage-id%3D501%253A9560%26node-id%3D501%253A9561%26viewport%3D1138%252C453%252C0.48%26scaling%3Dscale-down%26starting-point-node-id%3D501%253A9561%26hotspot-hints%3D0"></iframe>
+          </div>
         </section>
         <div class="blankHS"></div>
 
@@ -1515,29 +1515,54 @@
             </div>
           </div>
           <!-- Arrow -->
-       
+
           <div class="wrapper">
             <div class="flex-container cardAPPOINTA">
               <div class="left-zone">
                 <ul class="list">
                   <li class="item">
-                    <input type="radio" id="xx" name="UI"
-                      checked="checked" />
-                    <label class="xx" for="xx">Landing
-                      page</label>
+                    <input type="radio" id="dropdown" name="UI" checked="checked"/>
+                    <label class="dropdown" for="dropdown">Dropdown and tab</label>
                     <div class="content-test">
-                      <img class="shadowFilterL" src="Hi-fi_Landing.svg" alt="team member">
+                      <img class="shadowFilterL" src="Components_dropdown.svg" alt="Components">
                     </div>
                   </li>
                   <li class="item">
-                    <input type="radio" id="xx2" name="UI" />
-                    <label class="xx2" for="xx2">xxxxxx1</label>
+                    <input type="radio" id="callout" name="UI" />
+                    <label class="callout" for="callout">Callouts and icons</label>
                     <div class="content-test">
-                      <img class="shadowFilterL" src="Hi-fi_Interviews.svg" alt="team member">
-
+                      <img class="shadowFilterL" src="Components_callout.svg" alt="Components">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <input type="radio" id="headerUI" name="UI" />
+                    <label class="headerUI" for="headerUI">Headers</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Components_header.svg" alt="Components">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <input type="radio" id="pill" name="UI" />
+                    <label class="pill" for="pill">Pills</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Components_pill.svg" alt="Components">
+                    </div>
+                  </li>
+                  <li class="item">
+                    <input type="radio" id="textbox" name="UI" />
+                    <label class="textbox" for="textbox">Textboxes</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Components_textbox.svg" alt="Components">
                     </div>
                   </li>
 
+                  <li class="item">
+                    <input type="radio" id="button" name="UI" />
+                    <label class="button" for="button">Buttons</label>
+                    <div class="content-test">
+                      <img class="shadowFilterL" src="Components_button.svg" alt="Components">
+                    </div>
+                  </li>
                 </ul>
               </div>
               <div class="right-zone"></div>
@@ -1545,23 +1570,14 @@
 
 
 
-            <div class="Grid-cell">
-              <div class="element">
-                <h3 class="u-textCenter"> UI Components </h3>
-              </div>
-            </div>
-          </div>
-          <!-- UI -->
-          <div class="Grid Grid--full u-textCenter wrapper">
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="modal-target" src="UI_header.svg" alt="UI Header">
 
-              </div>
-            </div>
           </div>
           <!-- UI -->
+
         </section>
+
+        <div class="blankHS"></div>
+
       </div>
 
     </section>
