@@ -25,7 +25,7 @@ html {
     --grey-light: #efefef;
     --grey-lightest: #f8f8f8;
 
-    --SiteWide: #000000;
+    --SiteWide: #202020;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
     --SiteWide-light: #368661;
@@ -252,7 +252,9 @@ ul, ol {
 li {
     margin-left: 1rem;
 }
-
+.liNone {
+    list-style: none !important;
+}
 ul {
     list-style-type: circle;
     font-family: inherit;
