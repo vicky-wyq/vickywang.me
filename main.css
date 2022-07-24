@@ -25,10 +25,10 @@ html {
     --grey-light: #efefef;
     --grey-lightest: #f8f8f8;
 
-    --green: #1b563b;
-    /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0*/
+    --SiteWide: #000000;
+    /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
-    --green-light: #368661;
+    --SiteWide-light: #368661;
     /* 368661 projects 296448*/
 
     --AMBlue: #5384ED;
@@ -216,7 +216,7 @@ main>nav {}
 
 .section-nav a:hover,
 .section-nav a:focus {
-    color: var(--green);
+    color: var(--SiteWide);
 }
 
 .section-nav.APPOINTA a:hover,
@@ -316,7 +316,7 @@ h6 {
 }
 
 .textDecor.GREEN {
-    text-decoration-color: var(--green-light);
+    text-decoration-color: var(--SiteWide-light);
 }
 
 .textDecor.WS {
@@ -437,7 +437,7 @@ hr {
 
 .elementCard:hover {
     cursor: pointer;
-    border-bottom: 5px solid var(--green);
+    border-bottom: 5px solid var(--SiteWide);
     transition: all 0.25s ease-in;
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
@@ -549,7 +549,7 @@ input {
     font-size: 16px;
     border-radius: 3px;
     outline: none;
-    box-shadow: 4px 4px 0px var(--green);
+    box-shadow: 4px 4px 0px var(--SiteWide);
 }
 
 .input-field button {
@@ -948,7 +948,7 @@ button.passwordArr {
 
     body .hamburger {
         display: block;
-        padding: 2.5em;
+        padding: 2.6em;
         width: 2em;
     }
 
@@ -977,8 +977,8 @@ button.passwordArr {
     }
 
     .active .bar:nth-child(3) {
-        -webkit-transform: translateY(-10px) rotate(-45deg);
-        transform: translateY(-10px) rotate(-45deg);
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
         width: 100%;
     }
 
@@ -1497,6 +1497,8 @@ input:checked~.content-test {
 }
 
 @media (min-width: 480px) {
+
+    
     .flex-container {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -1650,7 +1652,7 @@ input:checked~label.WS {
 }
 
 .progress-bar {
-    background-color: var(--green);
+    background-color: var(--SiteWide);
     height: 3px;
     width: 0%;
 }
@@ -1698,7 +1700,7 @@ input:checked~label.WS {
 .logo {
     padding: 1em;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     /* margin-right: 8%; */
     color: var(--black);
 }
@@ -1819,7 +1821,7 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-    color: var(--black);
+    color: var(--SiteWide-light);
 }
 
 .hamburger {
@@ -1829,14 +1831,13 @@ a.nav-link:hover {
 .bar {
     border-radius: 1em;
     width: 1.5rem;
-    height: 3px;
+    height: 2px;
     display: block;
     padding: 0;
     margin: 6px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    color: var(--green);
-    background-color: var(--green);
+    background-color: var(--SiteWide);
 }
 
 .bar.APPOINTA {
@@ -1870,7 +1871,7 @@ a.nav-link:hover {
     }
 
     body .nav-item {
-        padding-left: 2.5em !important;
+        padding-left: 0.6em !important;
         background-color: var(--white);
     }
 
@@ -1964,7 +1965,7 @@ a.nav-link:hover {
 }
 
 .colorGreen {
-    color: var(--green);
+    color: var(--SiteWide);
 }
 
 .colorGrey {
@@ -1993,7 +1994,7 @@ a.nav-link:hover {
 
 .cardAPPOINTA {
     background: var(--white);
-    border-radius: 35px;
+    border-radius: 2.2em;
     border: 1px solid #f0f3fb;
 }
 
@@ -2209,7 +2210,7 @@ a.nav-link:hover {
     margin: 0 0 0.6em;
     height: 3px;
     width: 30px;
-    background-color: var(--green-light);
+    background-color: var(--SiteWide-light);
     border-radius: 20px;
     border: none;
 }
@@ -2257,7 +2258,7 @@ a.nav-link:hover {
 }
 
 .leftVerLine {
-    border-left: 5px solid var(--green-light);
+    border-left: 5px solid var(--SiteWide-light);
     padding-left: 1em;
 }
 
@@ -2856,12 +2857,12 @@ a:link.textProject {
 }
 
 .active a {
-    font-weight: 400;
+    font-weight: 300;
     color: var(--black);
 }
 
 .active.greenNav a {
-    color: var(--green);
+    color: var(--SiteWide);
 }
 
 .active.appointa a {
