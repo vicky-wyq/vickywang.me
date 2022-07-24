@@ -63,7 +63,11 @@ html {
 body {
     font-family: 'Lato', sans-serif;
 }
-
+.BGseer0 {
+    background-image: url("project/seer/bg0.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .BGseer1 {
     background-image: url("project/seer/bg1.svg");
     background-position: center;
@@ -1949,7 +1953,9 @@ a.nav-link:hover {
 .colorAPPOINTA {
     color: var(--APPOINTA-blue);
 }
-
+polygon{
+    fill: var(--seer-purple);
+}
 .colorSEER {
     color: var(--seer-purple);
 }
