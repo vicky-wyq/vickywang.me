@@ -33,7 +33,7 @@ html {
 
     --AMBlue: #5384ED;
     --WS-Blue: #35B9C5;
-        /* 2AA5F3*/
+    /* 2AA5F3*/
 
     --WS-Teal: #35B9C5;
     --WS-Teal-light: #f3f4f4;
@@ -1954,9 +1954,11 @@ a.nav-link:hover {
 .colorWS {
     color: var(--WS-Blue);
 }
+
 .colorWSBG {
     background-color: var(--WS-Teal-light);
 }
+
 .colorBlack {
     color: var(--black);
 }
@@ -2450,8 +2452,8 @@ a.nav-link:hover {
 .footer-left {
     display: flex;
     justify-content: flex-start;
-    font-weight: 100;
-    font-size: 1em;
+    font-weight: 300;
+    font-size: 1.2em;
     font-family: inherit;
     margin-left: 8%;
 
@@ -2468,11 +2470,19 @@ a.nav-link:hover {
 
 .footer-logo {
     margin: 1em;
+    padding: 18px;
+    border-radius: 50%;
+
     width: 1em;
     height: auto;
     cursor: pointer;
 }
 
+.footer-logo:hover {
+    padding: 18px;
+    border-radius: 50%;
+    background-color: var(--grey-light);
+}
 
 
 
