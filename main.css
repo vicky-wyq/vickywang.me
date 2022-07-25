@@ -73,13 +73,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.BGseer1_1 {
+    background-image: url("project/seer/bg1_1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .BGseer2 {
     background-image: url("project/seer/bg2.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.BGseer2_1 {
+    background-image: url("project/seer/bg2_1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .module-border-wrap1 {
     border: solid 15px transparent;
