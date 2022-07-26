@@ -40,17 +40,7 @@ gsap.to(".t-intro", {
     toggleActions: "restart pause reverse reset"
   }
 });
-gsap.to(".ver1", {
-  rotate: 90,
-  scrollTrigger: {
-    trigger: ".ver1",
-    start: "top 380px", //trigger, viewport
-    end: "bottom bottom",
-    scrub: 1,
-    markers: false,
-    toggleActions: "restart pause reverse reset"
-  }
-});
+
 
 
 // immediateRender: false, second scroll smooth

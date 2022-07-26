@@ -304,13 +304,13 @@ h3, h4, h5 {
     font-family: inherit;
     font-weight: 300;
     margin: 0 0 0.8em;
+    color: var(--grey-darkest);
 
 }
 
 h6 {
     font-family: inherit;
     font-weight: 300;
-    color: var(--grey-darkest);
     margin: 0 0 0.4em;
 
 }
@@ -451,7 +451,7 @@ hr {
 
 .elementCard:hover {
     cursor: pointer;
-    border-bottom: 5px solid var(--SiteWide);
+    border-bottom: 5px solid var(--SiteWide-light);
     transition: all 0.25s ease-in;
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
@@ -563,7 +563,7 @@ input {
     font-size: 16px;
     border-radius: 3px;
     outline: none;
-    box-shadow: 4px 4px 0px var(--SiteWide);
+    box-shadow: 4px 4px 0px var(--grey-dark);
 }
 
 .input-field button {
@@ -1511,6 +1511,19 @@ input:checked~.content-test {
 }
 
 @media (min-width: 480px) {
+    body .flex-container.BP {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        min-height: auto;
+        height: 1040px;
+        /* position: absolute; */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
     
     .flex-container {
@@ -1957,7 +1970,9 @@ a.nav-link:hover {
     background-color: #f5f8fa;
     margin: 0 auto;
 }
-
+.colorBlack {
+    color: var(--black);
+}
 .colorAPPOINTA {
     color: var(--APPOINTA-blue);
 }
