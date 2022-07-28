@@ -135,10 +135,10 @@
 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="2500" y="634.578">99+</tspan></text>
 <path d="M2539 660H2046V662H2539V660Z" fill="black" mask="url(#path-100-inside-6_3253_23438)"/>
 </g>
-<rect width="192" height="53" transform="translate(144 43)" fill="#605DEC"/>
-<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="176" y="75.6523">Setup keywords</tspan></text>
-<rect width="195" height="53" transform="translate(1601 43)" fill="#605DEC"/>
-<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1633" y="75.6523">Saved keywords</tspan></text>
+<rect width="246" height="51" transform="translate(146 49)" fill="#605DEC"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="30" font-weight="500" letter-spacing="0em"><tspan x="162" y="84.7539">Setup keywords</tspan></text>
+<rect width="250" height="51" transform="translate(1601 49)" fill="#605DEC"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="30" font-weight="500" letter-spacing="0em"><tspan x="1617" y="84.7539">Saved keywords</tspan></text>
 <defs>
 <filter id="filter0_i_3253_23438" x="146" y="228" width="191" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
