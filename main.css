@@ -63,26 +63,31 @@ html {
 body {
     font-family: 'Lato', sans-serif;
 }
+
 .BGseer0 {
     background-image: url("project/seer/bg0.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .BGseer1 {
     background-image: url("project/seer/bg1.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .BGseer1_1 {
     background-image: url("project/seer/bg1_1.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .BGseer2 {
     background-image: url("project/seer/bg2.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .BGseer2_1 {
     background-image: url("project/seer/bg2_1.svg");
     background-position: center;
@@ -264,9 +269,11 @@ ul, ol {
 li {
     margin-left: 1rem;
 }
+
 .liNone {
     list-style: none !important;
 }
+
 ul {
     list-style-type: circle;
     font-family: inherit;
@@ -300,7 +307,13 @@ h1, h2 {
     margin: 0;
 }
 
-h3, h4, h5 {
+h3 {
+    font-family: inherit;
+    font-weight: 300;
+    margin: 0 0 0.8em;
+}
+
+h4, h5 {
     font-family: inherit;
     font-weight: 300;
     margin: 0 0 0.8em;
@@ -798,6 +811,7 @@ button.passwordArr {
 @media all and (max-width: 1080px) {
     .font300-1080 {
         font-weight: 300 !important;
+        color: var(--grey-darkest) !important;
 
     }
 
@@ -1055,9 +1069,10 @@ button.passwordArr {
 
     a.nav-link {
         margin: 1rem 0;
-        color: var(--black-less);
         z-index: 1;
     }
+
+    /*         color: var(--black-less);   */
 
 
     .active {
@@ -1525,7 +1540,7 @@ input:checked~.content-test {
         right: 0;
     }
 
-    
+
     .flex-container {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -1970,15 +1985,19 @@ a.nav-link:hover {
     background-color: #f5f8fa;
     margin: 0 auto;
 }
+
 .colorBlack {
     color: var(--black);
 }
+
 .colorAPPOINTA {
     color: var(--APPOINTA-blue);
 }
-polygon{
+
+polygon {
     fill: var(--seer-purple);
 }
+
 .colorSEER {
     color: var(--seer-purple);
 }
@@ -2467,18 +2486,23 @@ polygon{
 
 
 .footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
 
-    border-top: 1px solid var(--white);
-    background-color: var(--grey-lightest);
-    opacity: 0.9;
-    height: 18em;
+    height: 5em;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-
+    border-top: 1px solid var(--white);
+    background-color: var(--grey-lightest);
+    opacity: 0.9;
+    height: 18em;
 }
 
 .footer-left {
@@ -2487,7 +2511,6 @@ polygon{
     font-weight: 300;
     font-size: 1.2em;
     font-family: inherit;
-    margin-left: 8%;
 
 }
 
@@ -2497,11 +2520,10 @@ polygon{
     justify-content: space-around;
     font-size: 22px;
     font-weight: 300;
-    margin-right: 8%;
 }
 
 .footer-logo {
-    margin: 1em;
+    margin: 0.2em;
     padding: 18px;
     border-radius: 50%;
 
