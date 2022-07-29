@@ -1218,7 +1218,10 @@ button.passwordArr {
         border-bottom: solid 1px var(--APPOINTA-blue);
         border-right: none;
     }
-
+    body input:checked~label.WS {
+        border-bottom: solid 1px var(--WS-Teal);
+        border-right: none;
+    }
     body .content-test {
         right: 0;
 
@@ -1576,6 +1579,8 @@ input:checked~.content-test {
         height: 100%;
         width: 80%;
     }
+
+
 }
 
 input:checked~label {
@@ -1591,8 +1596,11 @@ input:checked~label {
 
 input:checked~label.WS {
     color: var(--WS-Teal);
-    border-right: solid 4px var(--WS-Teal);
 }
+
+
+
+
 
 /* ============== End Testimonial Flexbox ============= */
 
@@ -1912,6 +1920,10 @@ a.nav-link:hover {
         padding: 0.75rem 0;
     }
 
+    body .cardAPPOINTA {
+        border-radius: 1.2em;
+    }
+
     body .nav-item {
         padding-left: 0.6em !important;
         background-color: var(--white);
@@ -1933,6 +1945,14 @@ a.nav-link:hover {
         top: 23%;
         left: 0;
         width: 14em;
+    }
+
+    body .footer-logo {
+        padding: 6px;
+    }
+
+    body .footer-logo:hover {
+        padding: 6px;
     }
 
 }
