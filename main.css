@@ -1218,10 +1218,12 @@ button.passwordArr {
         border-bottom: solid 1px var(--APPOINTA-blue);
         border-right: none;
     }
+
     body input:checked~label.WS {
         border-bottom: solid 1px var(--WS-Teal);
         border-right: none;
     }
+
     body .content-test {
         right: 0;
 
@@ -3005,6 +3007,12 @@ img {
     width: 95%;
     opacity: 1 !important;
 }
+
+.modal-content:hover {
+    cursor:zoom-out;
+}
+
+
 
 /* Caption of Modal Image */
 .modal-caption {
