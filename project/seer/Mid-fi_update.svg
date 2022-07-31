@@ -1,52 +1,22 @@
 <svg width="1280" height="771" viewBox="0 0 1280 771" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="686" height="51" fill="#605DEC"/>
 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="30" font-weight="500" letter-spacing="0em"><tspan x="16" y="35.7539">All in one screen - Setup keywords + display data</tspan></text>
-<g clip-path="url(#clip0_3269_23268)">
 <rect width="1280" height="720" transform="translate(0 51)" fill="#F5F5F5"/>
-<g filter="url(#filter0_d_3269_23268)">
-<rect width="1280" height="80" transform="translate(0 51)" fill="white"/>
-<rect x="65" y="68" width="39.8684" height="38" fill="#F5F5F5"/>
-<path d="M70 73L100 101" stroke="#AAAAAA" stroke-width="2"/>
-<path d="M100 73L70 101" stroke="#AAAAAA" stroke-width="2"/>
-<rect x="65" y="68" width="39.8684" height="38" stroke="#AAAAAA" stroke-width="2"/>
-<circle cx="1192" cy="91" r="23" fill="#F5F5F5" stroke="#AAAAAA" stroke-width="2"/>
-<mask id="path-6-inside-1_3269_23268" fill="white">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1174 106.875V106C1174 100.015 1185.99 97 1192 97C1198.01 97 1210 100.015 1210 106V106.875C1205.6 111.857 1199.17 115 1192 115C1184.83 115 1178.4 111.857 1174 106.875ZM1192 77C1187.03 77 1183 81.0275 1183 86C1183 90.9725 1187.03 95 1192 95C1196.97 95 1201 90.9725 1201 86C1201 81.0275 1196.97 77 1192 77Z"/>
-</mask>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1174 106.875V106C1174 100.015 1185.99 97 1192 97C1198.01 97 1210 100.015 1210 106V106.875C1205.6 111.857 1199.17 115 1192 115C1184.83 115 1178.4 111.857 1174 106.875ZM1192 77C1187.03 77 1183 81.0275 1183 86C1183 90.9725 1187.03 95 1192 95C1196.97 95 1201 90.9725 1201 86C1201 81.0275 1196.97 77 1192 77Z" fill="#F5F5F5"/>
-<path d="M1174 106.875H1172V107.631L1172.5 108.198L1174 106.875ZM1210 106.875L1211.5 108.198L1212 107.631V106.875H1210ZM1176 106.875V106H1172V106.875H1176ZM1176 106C1176 105.238 1176.37 104.423 1177.32 103.539C1178.3 102.641 1179.74 101.814 1181.49 101.112C1185 99.7068 1189.25 99 1192 99V95C1188.75 95 1183.99 95.8007 1180 97.3991C1178.01 98.1989 1176.08 99.2477 1174.61 100.599C1173.13 101.963 1172 103.769 1172 106H1176ZM1192 99C1194.75 99 1199 99.7068 1202.51 101.112C1204.26 101.814 1205.7 102.641 1206.68 103.539C1207.63 104.423 1208 105.238 1208 106H1212C1212 103.769 1210.87 101.963 1209.39 100.599C1207.92 99.2477 1205.99 98.1989 1204 97.3991C1200.01 95.8007 1195.25 95 1192 95V99ZM1208 106V106.875H1212V106H1208ZM1208.5 105.551C1204.47 110.122 1198.57 113 1192 113V117C1199.77 117 1206.74 113.593 1211.5 108.198L1208.5 105.551ZM1192 113C1185.43 113 1179.53 110.122 1175.5 105.551L1172.5 108.198C1177.26 113.593 1184.23 117 1192 117V113ZM1185 86C1185 82.1321 1188.13 79 1192 79V75C1185.92 75 1181 79.9229 1181 86H1185ZM1192 93C1188.13 93 1185 89.8679 1185 86H1181C1181 92.0771 1185.92 97 1192 97V93ZM1199 86C1199 89.8679 1195.87 93 1192 93V97C1198.08 97 1203 92.0771 1203 86H1199ZM1192 79C1195.87 79 1199 82.1321 1199 86H1203C1203 79.9229 1198.08 75 1192 75V79Z" fill="#AAAAAA" mask="url(#path-6-inside-1_3269_23268)"/>
-</g>
-<rect x="64.5" y="158.5" width="317" height="555" rx="7.5" fill="white"/>
-<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="32" letter-spacing="0em"><tspan x="96.2344" y="218.156">Left panel</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="263.367">Add keywords</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="307.367">Save keywords</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="351.367">Search keywords</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="395.367">New feeds of keywords</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="439.367">Organize keywords</tspan></text>
-<rect x="64.5" y="158.5" width="317" height="555" rx="7.5" stroke="#AAAAAA"/>
-<rect x="421.5" y="158.5" width="794" height="555" rx="7.5" fill="white"/>
-<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="32" letter-spacing="0em"><tspan x="453.125" y="218.156">Main screen</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="263.367">Date picker ad filter</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="307.367">Sentiment score - overall</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="351.367">Sentiment score - line graph, show change</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="395.367">Upvote ratio</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="439.367">Post count</tspan></text>
-<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="483.367">Table&#10;</tspan><tspan x="489" y="509.367">Community&#10;</tspan><tspan x="489" y="535.367">Title&#10;</tspan><tspan x="489" y="561.367">Author&#10;</tspan><tspan x="489" y="587.367">Date &#38; time&#10;</tspan><tspan x="489" y="613.367">Content&#10;</tspan><tspan x="489" y="639.367">Upvote ratio&#10;</tspan><tspan x="489" y="665.367">Sentiment score</tspan></text>
-<rect x="421.5" y="158.5" width="794" height="555" rx="7.5" stroke="#AAAAAA"/>
-</g>
-<defs>
-<filter id="filter0_d_3269_23268" x="-4" y="51" width="1288" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3269_23268"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3269_23268" result="shape"/>
-</filter>
-<clipPath id="clip0_3269_23268">
-<rect width="1280" height="720" fill="white" transform="translate(0 51)"/>
-</clipPath>
-</defs>
+<rect x="64.5" y="133.5" width="317" height="555" rx="7.5" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="32" letter-spacing="0em"><tspan x="96.2344" y="193.156">Left panel</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="238.367">Add keywords</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="282.367">Save keywords</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="326.367">Search keywords</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="370.367">New feeds of keywords</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="96" y="414.367">Organize keywords</tspan></text>
+<rect x="64.5" y="133.5" width="317" height="555" rx="7.5" stroke="#AAAAAA"/>
+<rect x="421.5" y="133.5" width="794" height="555" rx="7.5" fill="white"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="32" letter-spacing="0em"><tspan x="453.125" y="193.156">Main screen</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="238.367">Date picker ad filter</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="282.367">Sentiment score - overall</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="326.367">Sentiment score - line graph, show change</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="370.367">Upvote ratio</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="414.367">Post count</tspan></text>
+<text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="24" letter-spacing="0em"><tspan x="453" y="458.367">Table&#10;</tspan><tspan x="489" y="484.367">Community&#10;</tspan><tspan x="489" y="510.367">Title&#10;</tspan><tspan x="489" y="536.367">Author&#10;</tspan><tspan x="489" y="562.367">Date &#38; time&#10;</tspan><tspan x="489" y="588.367">Content&#10;</tspan><tspan x="489" y="614.367">Upvote ratio&#10;</tspan><tspan x="489" y="640.367">Sentiment score</tspan></text>
+<rect x="421.5" y="133.5" width="794" height="555" rx="7.5" stroke="#AAAAAA"/>
 </svg>
