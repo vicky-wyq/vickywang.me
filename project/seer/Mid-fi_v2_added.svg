@@ -123,7 +123,7 @@
 <path d="M796 354L808 366" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M497 367C501.418 367 505 363.418 505 359C505 354.582 501.418 351 497 351C492.582 351 489 354.582 489 359C489 363.418 492.582 367 497 367Z" stroke="#7D7D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M507 369L502.65 364.65" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="518" y="365.578">Adidas</tspan></text>
+<text fill="#7D7D7D" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="16" letter-spacing="0em"><tspan x="518" y="365.578">Keywords</tspan></text>
 <text fill="#767676" xml:space="preserve" style="white-space: pre" font-family="Chalkboard" font-size="14" letter-spacing="0em"><tspan x="470" y="328.881">Enter keyword(s)</tspan></text>
 <rect x="471" y="337" width="358" height="46" rx="3" stroke="#AAAAAA" stroke-width="2"/>
 <rect x="846" y="336" width="60" height="48" rx="4" fill="#333333"/>
