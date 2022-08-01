@@ -1704,7 +1704,7 @@ input:checked~label.WS {
 }
 
 .progress-bar {
-    background-color: var(--SiteWide);
+    background-color: var(--SiteWide-light);
     height: 3px;
     width: 0%;
 }
