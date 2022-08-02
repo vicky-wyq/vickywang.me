@@ -1544,7 +1544,19 @@ input:checked~.content-test {
         left: 0;
         right: 0;
     }
-
+    body .flex-container.Mobile {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        min-height: auto;
+        height: 780px;
+        /* position: absolute; */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
     .flex-container {
         -webkit-box-orient: horizontal;
@@ -1598,6 +1610,8 @@ input:checked~label {
 
 input:checked~label.WS {
     color: var(--WS-Teal);
+    border-right: solid 4px var(--WS-Teal);
+
 }
 
 
