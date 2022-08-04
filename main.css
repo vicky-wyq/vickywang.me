@@ -1544,6 +1544,7 @@ input:checked~.content-test {
         left: 0;
         right: 0;
     }
+
     body .flex-container.Mobile {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -2930,15 +2931,14 @@ a:link {
 
 a:link.textUnderline {
     text-decoration-line: underline;
+    text-decoration-thickness: 1px;
     text-underline-offset: 6px;
+    text-decoration-color: var(--black);
+
 }
 
-
-a:link.textIntro {
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
-}
+ 
+ 
 
 a:link.textProject {
     text-decoration-line: underline;
@@ -3023,7 +3023,7 @@ img {
 }
 
 .modal-content:hover {
-    cursor:zoom-out;
+    cursor: zoom-out;
 }
 
 
