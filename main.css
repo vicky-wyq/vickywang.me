@@ -277,6 +277,8 @@ li {
 ul {
     list-style-type: circle;
     font-family: inherit;
+    font-size: large;
+    line-height:1.4em;
     font-weight: 300;
     color: var(--grey-darkest);
     list-style-position: outside;
@@ -316,7 +318,7 @@ h3 {
 h4, h5 {
     font-family: inherit;
     font-weight: 300;
-    margin: 0 0 0.8em;
+    margin: 0 0 0.6em;
     color: var(--grey-darkest);
 
 }
@@ -324,7 +326,7 @@ h4, h5 {
 h6 {
     font-family: inherit;
     font-weight: 300;
-    margin: 0 0 0.4em;
+    margin: 0 0 0.3em;
 
 }
 
