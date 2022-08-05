@@ -202,6 +202,9 @@ main>nav {}
     body .logo {
         padding: 0.5em;
     }
+    body .blankMin1880 {
+        height: 8rem;
+    }
 }
 
 .section-nav {
