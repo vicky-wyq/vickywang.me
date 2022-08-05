@@ -1,22 +1,14 @@
-<svg width="790" height="80" viewBox="0 0 790 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_954_9429)">
-<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="10" letter-spacing="0em"><tspan x="472" y="73.418">Automate</tspan></text>
-<rect x="81" y="3" width="38" height="38" rx="19" fill="#E6EEFB"/>
-<text fill="#BACCF4" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" letter-spacing="0em"><tspan x="91" y="27.4688">01</tspan></text>
-<text fill="#898F9B" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="86.5" y="58.1016">Emal</tspan></text>
-<rect x="278" y="3" width="38" height="38" rx="19" fill="#E6EEFB"/>
-<text fill="#BACCF4" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" letter-spacing="0em"><tspan x="288" y="27.4688">02</tspan></text>
-<text fill="#898F9B" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="269" y="58.1016">Phone call</tspan></text>
-<rect x="475" y="3" width="38" height="38" rx="19" fill="#E6EEFB"/>
-<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" letter-spacing="0em"><tspan x="485" y="27.4688">03</tspan></text>
-<text fill="#898F9B" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="464.5" y="58.1016">Scheduling</tspan></text>
-<rect x="672" y="3" width="38" height="38" rx="19" fill="#E6EEFB"/>
-<text fill="#BACCF4" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" letter-spacing="0em"><tspan x="682" y="27.4688">04</tspan></text>
-<text fill="#898F9B" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="651" y="58.1016">Text document</tspan></text>
-</g>
-<defs>
-<clipPath id="clip0_954_9429">
-<rect width="790" height="80" fill="white"/>
-</clipPath>
-</defs>
+<svg width="790" height="115" viewBox="0 0 790 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+<text fill="#898F9B" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="10" letter-spacing="0em"><tspan x="175.371" y="82.418">Finding times that work </tspan><tspan x="199.985" y="94.418">for everyone</tspan></text>
+<text fill="#898F9B" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="10" letter-spacing="0em"><tspan x="339.792" y="82.418">Waiting for candidates to </tspan><tspan x="348.854" y="94.418">send their availability</tspan></text>
+<text fill="#898F9B" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="10" letter-spacing="0em"><tspan x="496.555" y="82.418">Waiting for the interview team </tspan><tspan x="510.676" y="94.418">to send their availability</tspan></text>
+<rect x="201" y="26" width="38" height="38" rx="19" fill="#E6EEFB"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" letter-spacing="0em"><tspan x="211" y="50.4688">01</tspan></text>
+<line x1="239" y1="44.5" x2="376" y2="44.5" stroke="#BACCF4" stroke-dasharray="2 2"/>
+<rect x="376" y="26" width="38" height="38" rx="19" fill="#E6EEFB"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" letter-spacing="0em"><tspan x="386" y="50.4688">02</tspan></text>
+<line x1="414" y1="44.5" x2="551" y2="44.5" stroke="#BACCF4" stroke-dasharray="2 2"/>
+<rect x="551" y="26" width="38" height="38" rx="19" fill="#E6EEFB"/>
+<text fill="#5384ED" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="16" letter-spacing="0em"><tspan x="561" y="50.4688">03</tspan></text>
+<text fill="#545C6D" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="338" y="11.1016">Scheduling challenge</tspan></text>
 </svg>
