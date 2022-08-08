@@ -1045,6 +1045,7 @@ button.passwordArr {
         background-color: var(--white);
     }
 
+    
     /*  2 1080 */
 
 
@@ -1892,8 +1893,11 @@ a.nav-link {
 
 }
 
-a.nav-link:hover {
-    color: var(--SiteWide-light);
+
+ 
+
+a.active.SEER {
+    background-color: var(--seer-purple);
 }
 
 .hamburger {
@@ -2962,7 +2966,6 @@ a:link.textProject {
 .active.appointa a {
     color: var(--APPOINTA-blue);
 }
-
 .active.seer a {
     color: var(--seer-purple);
 }
