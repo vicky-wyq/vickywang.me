@@ -239,8 +239,9 @@
 <rect width="48" height="2" transform="translate(18 52)" fill="white"/>
 <path opacity="0.5" d="M18.0667 53H65.9333" stroke="url(#paint0_linear_279_1921)" stroke-width="4" stroke-linecap="round"/>
 </g>
-<rect x="18" y="62" width="48" height="49" rx="4" fill="white"/>
-<path d="M46 77.5L51 82.5L38 95.5H33V90.5L46 77.5Z" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="18" y="62" width="48" height="38" rx="19" fill="#F9F9F9"/>
+<path d="M41 88C45.4183 88 49 84.4183 49 80C49 75.5817 45.4183 72 41 72C36.5817 72 33 75.5817 33 80C33 84.4183 36.5817 88 41 88Z" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50.9999 89.9999L46.6499 85.6499" stroke="#6E7491" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="18" y="656" width="48" height="48" rx="24" fill="#F6F6FE"/>
 <path d="M30.9883 685.41L36.0156 670.938H38.4648L32.1484 688H30.4023L30.9883 685.41ZM26.2891 670.938L31.2695 685.41L31.8906 688H30.1445L23.8398 670.938H26.2891ZM45.25 682.844L48.6367 670.938H50.2773L49.3281 675.566L45.6836 688H44.0547L45.25 682.844ZM41.7461 670.938L44.4414 682.609L45.25 688H43.6328L39.4961 670.938H41.7461ZM54.6602 682.598L57.2969 670.938H59.5586L55.4336 688H53.8164L54.6602 682.598ZM50.5234 670.938L53.8164 682.844L55.0117 688H53.3828L49.8672 675.566L48.9062 670.938H50.5234Z" fill="#7E7E7E"/>
 <path d="M0 0H84H0ZM84 720H0H84ZM0 720V0V720ZM85 0V720H83V0H85Z" fill="#E9E8FC" mask="url(#path-219-inside-12_279_1921)"/>
