@@ -38,7 +38,8 @@ html {
     --WS-Teal: #35B9C5;
     --WS-Teal-light: #f3f4f4;
 
-    --seer-purple: #6956E5;
+    --seer-purple: #BCBAF7;
+    --seer-purpleLightest: #F6F6FE;
 
     --APPOINTA-blue: #5384ED;
     --APPOINTA-blueLighter: #abc4fa;
@@ -2047,7 +2048,9 @@ polygon {
 .colorSEER {
     color: var(--seer-purple);
 }
-
+.colorSEERBG {
+    background-color: var(--seer-purpleLightest);
+}
 .colorWS {
     color: var(--WS-Blue);
 }
@@ -2359,8 +2362,8 @@ polygon {
 }
 
 .leftVerLine.SEER {
-    border-left: 5px solid var(--seer-purple);
-    padding-left: 1em;
+    border-left: 3px solid var(--seer-purple);
+    padding-left: 1.6em;
 }
 
 .leftVerLine.APPOINTA {
