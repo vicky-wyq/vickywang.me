@@ -38,10 +38,14 @@ html {
     --WS-Teal: #35B9C5;
     --WS-Teal-light: #f3f4f4;
 
+    --seer-purpleDark: #1513A0;
 
     --seer-purple: #605DEC;
     --seer-purpleLighter: #BCBAF7;
     --seer-purpleLightest: #F6F6FE;
+    --seer-purpleLightest1: rgba(246,246,254,0.4);
+    --alpha: 0.8;
+
 
     --APPOINTA-blue: #5384ED;
     --APPOINTA-blueLighter: #abc4fa;
@@ -56,6 +60,11 @@ html {
     font-family: 'Lato', sans-serif;
 
     --testing-font: #b5b5c3;
+}
+
+section {
+    margin: 0;
+    padding: 0;
 }
 
 .testingFont {
@@ -205,6 +214,7 @@ main>nav {}
     body .logo {
         padding: 0.5em;
     }
+
     body .blankMin1880 {
         height: 8rem;
     }
@@ -284,7 +294,7 @@ ul {
     list-style-type: circle;
     font-family: inherit;
     font-size: large;
-    line-height:1.4em;
+    line-height: 1.4em;
     font-weight: 300;
     color: var(--grey-darkest);
     list-style-position: outside;
@@ -308,7 +318,7 @@ h1, h2 {
     font-family: inherit;
     font-weight: 600;
 
-    margin: 1em 0;
+    margin: 0.8em 0;
 }
 
 .noMargin {
@@ -318,13 +328,13 @@ h1, h2 {
 h3 {
     font-family: inherit;
     font-weight: 300;
-    margin: 0 0 0.8em;
+    margin: 0 0 0.6em;
 }
 
 h4, h5 {
     font-family: inherit;
     font-weight: 300;
-    margin: 0 0 0.6em;
+    margin: 0 0 0.4em;
     color: var(--grey-darkest);
 
 }
@@ -1048,7 +1058,7 @@ button.passwordArr {
         background-color: var(--white);
     }
 
-    
+
     /*  2 1080 */
 
 
@@ -1897,7 +1907,7 @@ a.nav-link {
 }
 
 
- 
+
 
 a.active.SEER {
     background-color: var(--seer-purple);
@@ -2047,18 +2057,27 @@ polygon {
     fill: var(--seer-purple);
 }
 
+.colorSEERDark {
+    color: var(--seer-purpleDark);
+}
+
 .colorSEER {
     color: var(--seer-purple);
 }
+
 .colorSEERLt {
     color: var(--seer-purpleLighter);
 }
+
 .colorSEERLightest {
     color: var(--seer-purpleLightest);
 }
+
 .colorSEERBG {
-    background-color: var(--seer-purpleLightest);
+    background-color: var(--seer-purpleLightest1);
+
 }
+
 .colorWS {
     color: var(--WS-Blue);
 }
@@ -2957,8 +2976,8 @@ a:link.textUnderline {
 
 }
 
- 
- 
+
+
 
 a:link.textProject {
     text-decoration-line: underline;
@@ -2977,6 +2996,7 @@ a:link.textProject {
 .active.appointa a {
     color: var(--APPOINTA-blue);
 }
+
 .active.seer a {
     color: var(--seer-purple);
 }
