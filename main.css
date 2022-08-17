@@ -36,7 +36,9 @@ html {
     /* 2AA5F3*/
 
     --WS-Teal: #35B9C5;
+    --WS-Teal-lighter:#D4F1F3;
     --WS-Teal-light: #f3f4f4;
+    --WS-lightBG: rgba(243,250,253,0.4);
 
     --seer-purpleDark: #1513A0;
 
@@ -2075,9 +2077,10 @@ polygon {
 
 .colorSEERBG {
     background-color: var(--seer-purpleLightest1);
-
 }
-
+.colorWSmobileBG {
+    background-color: var(--WS-lightBG);
+}
 .colorWS {
     color: var(--WS-Blue);
 }
@@ -2399,8 +2402,8 @@ polygon {
 }
 
 .leftVerLine.WS {
-    border-left: 5px solid var(--WS-Blue);
-    padding-left: 1em;
+    border-left: 4px solid var(--WS-Teal-lighter);
+    padding-left: 1.6em;
 }
 
 .ver-line {
