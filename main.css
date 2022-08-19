@@ -52,6 +52,7 @@ html {
 
     --APPOINTA-blue: #5384ED;
     --APPOINTA-blueLighter: #abc4fa;
+    --APPOINTA-blueLightest: #f5f8ff;
 
     --APPOINTA-bg: #f5f8fa;
     --White-transparent: rgba(255,255,255,0.6);
@@ -2057,8 +2058,11 @@ a.active.SEER {
     color: var(--APPOINTA-blue);
 }
 
-.colorAPPOINTABG {
+.colorAPPOINTABg {
     background-color: var(--White-transparent);
+}
+.colorAPPOINTABgBlue {
+    background-color: var(--APPOINTA-blueLightest);
 }
 polygon {
     fill: var(--seer-purple);
