@@ -32,6 +32,7 @@ html {
     /* 368661 projects 296448*/
 
     --AMBlue: #5384ED;
+
     --WS-Blue: #35B9C5;
     /* 2AA5F3*/
 
@@ -53,6 +54,7 @@ html {
     --APPOINTA-blueLighter: #abc4fa;
 
     --APPOINTA-bg: #f5f8fa;
+    --White-transparent: rgba(255,255,255,0.6);
 
 
     ---testing-hover: #e4fff3;
@@ -2055,6 +2057,9 @@ a.active.SEER {
     color: var(--APPOINTA-blue);
 }
 
+.colorAPPOINTABG {
+    background-color: var(--White-transparent);
+}
 polygon {
     fill: var(--seer-purple);
 }
@@ -2397,7 +2402,7 @@ polygon {
 }
 
 .leftVerLine.APPOINTA {
-    border-left: 5px solid var(--APPOINTA-blue);
+    border-left: 4px solid var(--APPOINTA-blueLighter);
     padding-left: 1em;
 }
 
