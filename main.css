@@ -526,7 +526,7 @@ hr {
 
 .elementButton {
     padding: 0.8em 0;
-    margin-bottom: 1em;
+    margin-right: 1.6em;
     transition: background-color 0.3s ease;
     border-radius: 3px;
 }
@@ -675,7 +675,13 @@ button.passwordArr {
     }
 }
 
-
+.arrButton:after {
+    content: "";
+    background-image: url("icon/arrow-forward.svg");
+    height: 2.8rem;
+    width: 2.8rem;
+    float: right;
+}
 
 
 .arrCard:after {
@@ -3547,27 +3553,26 @@ body .carousel .carousel-item {
 
 /* CSS */
 .button-55 {
+    border: solid 1px var(--black-less);
+    border-radius: 0.4em;
     align-self: center;
-    background-color: var(--grey-lightest);
+    background-color: var(--white);
     background-image: none;
     background-position: 0 90%;
     background-repeat: repeat no-repeat;
     background-size: 4px 3px;
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-width: 2px;
     box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
     box-sizing: border-box;
-    color: #41403e;
+    color: var(--black);
     cursor: pointer;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 100;
     line-height: 3rem;
     outline: none;
-    padding: .75rem;
+    padding: 0.45em 0.25em;
     text-decoration: none;
     transition: all 235ms ease-in-out;
-
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
