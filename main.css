@@ -3523,7 +3523,7 @@ body .carousel .carousel-item {
     background-position: 0 90%;
     background-repeat: repeat no-repeat;
     background-size: 4px 3px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(112, 112, 112, 0.2) 0px 7px 29px 0px;
     box-sizing: border-box;
     color: var(--black);
     cursor: pointer;
@@ -3542,7 +3542,7 @@ body .carousel .carousel-item {
 }
 
 .button-55:hover {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(63, 63, 63, 0.2) 0px 2px 8px 0px;
     transform: translate3d(0, 2px, 0);
 }
 
