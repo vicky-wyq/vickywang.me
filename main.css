@@ -1467,7 +1467,6 @@ button.passwordArr {
     width: 100%;
     height: 110vh;
     margin: auto;
-    background-color: var(--white);
 
     overflow: hidden;
     -webkit-box-orient: vertical;
@@ -1667,7 +1666,11 @@ input:checked~label.WS {
     border-right: solid 4px var(--WS-Teal);
 
 }
+input:checked~label.SEER {
+    color: var(--seer-purple);
+    border-right: solid 4px var(--seer-purple);
 
+}
 
 
 
