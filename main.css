@@ -1098,6 +1098,7 @@ button.passwordArr {
 
     .nav-menu li {
         padding: 1rem 0;
+        margin: 0;
     }
 
     body .box {
@@ -1121,7 +1122,7 @@ button.passwordArr {
     }
 
     a.nav-link {
-        margin: 1rem 0;
+        margin: 1rem;
         z-index: 1;
     }
 
@@ -2021,7 +2022,7 @@ a.active.SEER {
     }
 
     body .nav-menu {
-        top: 17em;
+        top: 15em;
     }
 
     body .input-field {
