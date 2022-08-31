@@ -1153,6 +1153,10 @@ button.passwordArr {
 
 
 @media all and (max-width: 680px) {
+    .blankPhone {
+        height: 6rem;
+    }
+
     body h1 {
         font-size: 1.6em;
     }
