@@ -2919,7 +2919,7 @@ polygon {
     padding: 18px;
     border-radius: 50%;
 
-    width: 2.6em;
+    width: 2.2em;
     height: auto;
     cursor: pointer;
 }
@@ -3571,7 +3571,7 @@ body .carousel .carousel-item {
 
 /* CSS */
 .button-55 {
-    border-radius: 1em;
+    border-radius: 0.6em;
     align-self: center;
     background-color: var(--white);
     background-image: none;
