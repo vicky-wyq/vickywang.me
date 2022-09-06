@@ -926,7 +926,7 @@ button.passwordArr {
     }
 
     body .footer {
-        height: 90px;
+        height: 150px;
     }
 
     body .footer-left {
@@ -1631,7 +1631,7 @@ input:checked~.content-test {
         -ms-flex-direction: row;
         flex-direction: row;
         min-height: auto;
-        height: 600px;
+        height: 660px;
         /* position: absolute; */
         top: 0;
         bottom: 0;
@@ -2955,7 +2955,10 @@ polygon {
     height: 1.2rem;
     margin: 1px;
 }
-
+.IconCaseStudy {
+    width: 2rem;
+    margin: 1rem 0;
+}
 .IconS {
     width: 1.8rem;
     margin: 2px;
