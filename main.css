@@ -2097,7 +2097,7 @@ a.active.SEER {
 }
 
 .colorBgAPPOINTA {
-    background-color: #f5f8fa;
+    background-color:var(--APPOINTA-bg);
     margin: 0 auto;
 }
 
@@ -2563,9 +2563,9 @@ polygon {
 
 .ProjectBannerInner {
     position: absolute;
-    bottom: -60;
-    left: 50%;
+    bottom: -280;
     transform: translate(-50%, -50%);
+    left: 47%;
 }
 
 .ProjectBannerInner1 {
@@ -3002,6 +3002,7 @@ polygon {
 .widthXL {
     width: 60rem;
 }
+
 
 .heightS {
     height: 14rem;
@@ -3585,6 +3586,42 @@ body .carousel .carousel-item {
 }
 
 /* CSS */
+
+
+/* CSS */
+.button-35 {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: var(--black);
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-35:hover {
+  box-shadow: var(--APPOINTA-blue) 0 0 0 2px, transparent 0 0 0 0;
+  color:  var(--APPOINTA-blue);
+
+}
+
 .button-55 {
     border-radius: 0.6em;
     align-self: center;
@@ -3603,12 +3640,13 @@ body .carousel .carousel-item {
     font-weight: 300;
     line-height: 3rem;
     outline: none;
-    padding: 0.45em 18px;
+    padding: 16px 36px;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin: 0;
 }
 
 .button-55:hover {
@@ -3706,7 +3744,7 @@ body .carousel .carousel-item {
 
 button {
     background-color: Transparent;
-    color: black;
+    color: var(--black);
     border: none;
     text-align: center;
     text-decoration: none;
@@ -3716,8 +3754,6 @@ button {
     outline: none;
     font-weight: light;
     padding: 0 5%;
-    margin-top: 30px;
-    width: 300px;
 }
 
 /* Photography */
