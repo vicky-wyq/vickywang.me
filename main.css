@@ -89,31 +89,31 @@ body {
 }
 
 .BGseer0 {
-    background-image: url("project/seer/bg0.svg");
+    background-image: url("./seer/bg0.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .BGseer1 {
-    background-image: url("project/seer/bg1.svg");
+    background-image: url("./seer/bg1.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .BGseer1_1 {
-    background-image: url("project/seer/bg1_1.svg");
+    background-image: url("./seer/bg1_1.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .BGseer2 {
-    background-image: url("project/seer/bg2.svg");
+    background-image: url("./seer/bg2.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .BGseer2_1 {
-    background-image: url("project/seer/bg2_1.svg");
+    background-image: url("./seer/bg2_1.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -2567,7 +2567,12 @@ polygon {
     transform: translate(-50%, -50%);
     left: 47%;
 }
-
+.ProjectBannerInnerSeer {
+    position: absolute;
+    bottom: -80;
+    transform: translate(-50%, -50%);
+    left: 47%;
+}
 .ProjectBannerInner1 {
     position: absolute;
     left: 50%;
