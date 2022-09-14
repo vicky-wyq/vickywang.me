@@ -2567,12 +2567,7 @@ polygon {
     transform: translate(-50%, -50%);
     left: 47%;
 }
-.ProjectBannerInnerSeer {
-    position: absolute;
-    bottom: -80;
-    transform: translate(-50%, -50%);
-    left: 47%;
-}
+
 .ProjectBannerInner1 {
     position: absolute;
     left: 50%;
@@ -3625,9 +3620,43 @@ body .carousel .carousel-item {
   box-shadow: var(--APPOINTA-blue) 0 0 0 2px, transparent 0 0 0 0;
   color:  var(--APPOINTA-blue);
   background-color: rgba(255, 255, 255, 0.8);
-
-
 }
+
+.button-35-1 {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: var(--black);
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-35-1:hover {
+    box-shadow: var(--seer-purple) 0 0 0 2px, transparent 0 0 0 0;
+    color:  var(--seer-purple);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+
+
 
 .button-55 {
     border-radius: 0.6em;
