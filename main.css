@@ -3592,6 +3592,8 @@ body .carousel .carousel-item {
 .button-35 {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--white);
+
   border-radius: 12px;
   box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
   box-sizing: border-box;
@@ -3610,7 +3612,6 @@ body .carousel .carousel-item {
   text-decoration: none;
   transition: box-shadow .2s,-webkit-box-shadow .2s;
   white-space: nowrap;
-  border: 0;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -3625,6 +3626,8 @@ body .carousel .carousel-item {
 .button-35-1 {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--white);
+
     border-radius: 12px;
     box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
     box-sizing: border-box;
@@ -3643,7 +3646,6 @@ body .carousel .carousel-item {
     text-decoration: none;
     transition: box-shadow .2s,-webkit-box-shadow .2s;
     white-space: nowrap;
-    border: 0;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
