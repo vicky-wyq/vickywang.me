@@ -869,6 +869,12 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+   body .ProjectBannerInner {
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
     .font300-1080 {
         font-weight: 300 !important;
         color: var(--grey-darkest) !important;
@@ -2563,9 +2569,9 @@ polygon {
 
 .ProjectBannerInner {
     position: absolute;
-    bottom: -280;
+    bottom: -50;
     transform: translate(-50%, -50%);
-    left: 47%;
+    left: 46%;
 }
 
 .ProjectBannerInner1 {
@@ -3587,7 +3593,48 @@ body .carousel .carousel-item {
 
 /* CSS */
 
-
+.btn1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.125s 0.75s;
+    margin-top: 6px;
+}
+.btn1:before, .btn1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 1s linear, border-color 0s 0.5s linear;
+}
+.btn1:before {
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+}
+.btn1:after {
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+.btn1:hover {
+    color: var(--AMBlue);
+}
+.btn1:hover:before, .btn1:hover:after {
+    border-color: var(--AMBlue);
+}
+.btn1:hover:before {
+    transform: skewY(180deg);
+}
+.btn1:hover:after {
+    transform: skewX(-180deg);
+}
 /* CSS */
 .button-35 {
   align-items: center;
@@ -3621,6 +3668,9 @@ body .carousel .carousel-item {
   box-shadow: var(--APPOINTA-blue) 0 0 0 2px, transparent 0 0 0 0;
   color:  var(--APPOINTA-blue);
   background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+
+
 }
 
 .button-35-1 {
