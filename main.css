@@ -699,8 +699,8 @@ button.passwordArr {
 .arrButton:after {
     content: "";
     background-image: url("icon/arrow-forward.svg");
-    height: 2rem;
-    width: 2rem;
+    height: 1.2rem;
+    width: 1.2rem;
     float: right;
 }
 
@@ -3724,10 +3724,10 @@ body .carousel .carousel-item {
     display: inline-block;
     font-size: 1.2rem;
     font-family: inherit;
-    font-weight: 300;
-    line-height: 2rem;
+    font-weight: 400;
+    line-height: 1.1rem;
     outline: none;
-    padding: 8px 22px;
+    padding: 12px 22px;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     user-select: none;
