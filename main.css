@@ -70,6 +70,7 @@ html {
 .displayNonePhone {
     display: block;
 }
+
 .displayNoneDesktop {
     display: none;
 }
@@ -868,12 +869,13 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
-   body .ProjectBannerInner {
+    body .ProjectBannerInner {
         position: absolute;
         bottom: 0;
         transform: translate(-50%, -50%);
         left: 50%;
     }
+
     .font300-1080 {
         font-weight: 300 !important;
         color: var(--grey-darkest) !important;
@@ -926,6 +928,7 @@ button.passwordArr {
     body .displayNonePhone {
         display: none;
     }
+
     body .displayNoneDesktop {
         display: block;
     }
@@ -1685,6 +1688,7 @@ input:checked~label.WS {
     border-right: solid 4px var(--WS-Teal);
 
 }
+
 input:checked~label.SEER {
     color: var(--seer-purple);
     border-right: solid 4px var(--seer-purple);
@@ -2102,7 +2106,7 @@ a.active.SEER {
 }
 
 .colorBgAPPOINTA {
-    background-color:var(--APPOINTA-bg);
+    background-color: var(--APPOINTA-bg);
     margin: 0 auto;
 }
 
@@ -2962,10 +2966,12 @@ polygon {
     height: 1.2rem;
     margin: 1px;
 }
+
 .IconCaseStudy {
     width: 2rem;
     margin: 1rem 0;
 }
+
 .IconS {
     width: 1.8rem;
     margin: 2px;
@@ -3605,6 +3611,7 @@ body .carousel .carousel-item {
     transition: color 0.125s 0.75s;
     margin-top: 6px;
 }
+
 .btn1:before, .btn1:after {
     content: '';
     position: absolute;
@@ -3614,71 +3621,41 @@ body .carousel .carousel-item {
     bottom: 0;
     transition: transform 1s linear, border-color 0s 0.5s linear;
 }
+
 .btn1:before {
     border-left: 1px solid var(--black);
     border-right: 1px solid var(--black);
 }
+
 .btn1:after {
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
 }
+
 .btn1:hover {
     color: var(--AMBlue);
 }
+
 .btn1:hover:before, .btn1:hover:after {
     border-color: var(--AMBlue);
 }
+
 .btn1:hover:before {
     transform: skewY(180deg);
 }
+
 .btn1:hover:after {
     transform: skewX(-180deg);
 }
+
 /* CSS */
 .button-35 {
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid var(--white);
-
-  border-radius: 12px;
-  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
-  box-sizing: border-box;
-  color: var(--black);
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 500;
-  justify-content: center;
-  line-height: 1;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s,-webkit-box-shadow .2s;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-35:hover {
-  box-shadow: var(--APPOINTA-blue) 0 0 0 2px, transparent 0 0 0 0;
-  color:  var(--APPOINTA-blue);
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s;
-
-
-}
-
-.button-35-1 {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid var(--white);
 
     border-radius: 12px;
-    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
     box-sizing: border-box;
     color: var(--black);
     cursor: pointer;
@@ -3693,19 +3670,56 @@ body .carousel .carousel-item {
     padding: 1rem 1.2rem;
     text-align: center;
     text-decoration: none;
-    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    transition: box-shadow .2s, -webkit-box-shadow .2s;
     white-space: nowrap;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .button-35-1:hover {
-    box-shadow: var(--seer-purple) 0 0 0 2px, transparent 0 0 0 0;
-    color:  var(--seer-purple);
+}
+
+.button-35:hover {
+    box-shadow: var(--APPOINTA-blue) 0 0 0 2px, transparent 0 0 0 0;
+    color: var(--APPOINTA-blue);
     background-color: rgba(255, 255, 255, 0.8);
-  }
-  
+    transition: all 0.3s;
+
+
+}
+
+.button-35-1 {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--white);
+
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: var(--black);
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s, -webkit-box-shadow .2s;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-35-1:hover {
+    box-shadow: var(--seer-purple) 0 0 0 2px, transparent 0 0 0 0;
+    color: var(--seer-purple);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 
 
 
@@ -3727,13 +3741,13 @@ body .carousel .carousel-item {
     font-weight: 400;
     line-height: 1.1rem;
     outline: none;
-    padding: 12px 22px;
+    padding: 16px 32px;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    margin: 0;
+    margin: 12px;
 }
 
 .button-55:hover {
