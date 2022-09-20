@@ -548,7 +548,6 @@ hr {
 }
 
 .elementButton {
-    margin-right: 1.6em;
     transition: background-color 0.3s ease;
     border-radius: 3px;
 }
@@ -700,8 +699,8 @@ button.passwordArr {
 .arrButton:after {
     content: "";
     background-image: url("icon/arrow-forward.svg");
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 2rem;
+    width: 2rem;
     float: right;
 }
 
@@ -3723,12 +3722,12 @@ body .carousel .carousel-item {
     color: var(--black);
     cursor: pointer;
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-family: inherit;
     font-weight: 300;
-    line-height: 3rem;
+    line-height: 2rem;
     outline: none;
-    padding: 16px 36px;
+    padding: 8px 22px;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     user-select: none;
