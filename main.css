@@ -3659,7 +3659,6 @@ body .carousel .carousel-item {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid var(--white);
-
     border-radius: 12px;
     box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
     box-sizing: border-box;
@@ -3673,7 +3672,7 @@ body .carousel .carousel-item {
     justify-content: center;
     line-height: 1;
     outline: none;
-    padding: 1rem 1.2rem;
+    padding: 0.8em 1.4em;
     text-align: center;
     text-decoration: none;
     transition: box-shadow .2s, -webkit-box-shadow .2s;
@@ -3681,13 +3680,15 @@ body .carousel .carousel-item {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin-top: 0.4em;
+    
 }
 
 .button-35:hover {
     box-shadow: var(--APPOINTA-blue) 0 0 0 2px, transparent 0 0 0 0;
     color: var(--APPOINTA-blue);
     background-color: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s;
+    transition: all 0.5s;
 
 
 }
