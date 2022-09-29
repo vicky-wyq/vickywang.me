@@ -100,7 +100,11 @@ body {
     background-position: left;
     background-repeat: no-repeat;
 }
-
+.BGappointaColor {
+    background-image: url(./appointa/backgroundArrowColor.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
 .BGseer1 {
     background-image: url("./seer/bg1.svg");
     background-position: center;
