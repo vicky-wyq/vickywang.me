@@ -2991,7 +2991,9 @@ polygon {
 .iconM {
     width: 4rem;
 }
-
+.iconML {
+    width: 6rem;
+}
 .iconL {
     width: 8rem;
 }
