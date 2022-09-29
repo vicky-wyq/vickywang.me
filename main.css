@@ -704,6 +704,7 @@ button.passwordArr {
     width: 1.2em;
     float: right;
 }
+
 .arrButtonResume:after {
     content: "";
     background-image: url("icon/button-link.svg");
@@ -886,6 +887,10 @@ button.passwordArr {
         font-weight: 300 !important;
         color: var(--grey-darkest) !important;
 
+    }
+
+    body .heightXS {
+        height: 10rem;
     }
 
     body .heightS {
@@ -1184,6 +1189,9 @@ button.passwordArr {
 
     body h1 {
         font-size: 1.6em;
+    }
+    body .heightXS {
+        height: auto;
     }
 
     body .heightS {
@@ -2991,9 +2999,11 @@ polygon {
 .iconM {
     width: 4rem;
 }
+
 .iconML {
     width: 6rem;
 }
+
 .iconL {
     width: 8rem;
 }
@@ -3022,7 +3032,9 @@ polygon {
     width: 60rem;
 }
 
-
+.heightXS {
+    height: 6rem;
+}
 .heightS {
     height: 14rem;
 }
@@ -3683,7 +3695,7 @@ body .carousel .carousel-item {
     -webkit-user-select: none;
     touch-action: manipulation;
     margin-top: 0.4em;
-    
+
 }
 
 .button-35:hover {
@@ -3721,7 +3733,7 @@ body .carousel .carousel-item {
     -webkit-user-select: none;
     touch-action: manipulation;
     margin-top: 0.4em;
-    
+
 }
 
 .button-35-1:hover {
