@@ -105,6 +105,12 @@ body {
     background-position: left;
     background-repeat: no-repeat;
 }
+.BGappointaQuote {
+    background-image: url(./appointa/backgroundQuote.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
 .BGseer1 {
     background-image: url("./seer/bg1.svg");
     background-position: center;
@@ -886,6 +892,22 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+    body .BGappointa {
+        background-image: url(./appointa/backgroundArrowM.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    body .BGappointaColor {
+        background-image: url(./appointa/backgroundArrowColorM.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    body .BGappointaQuote {
+        background-image: url(./appointa/backgroundQuoteM.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
     body .ProjectBannerInner {
         position: absolute;
         bottom: 0;
@@ -1193,6 +1215,22 @@ button.passwordArr {
 
 
 @media all and (max-width: 680px) {
+    body .BGappointa {
+        background-image: url(./appointa/backgroundArrowS.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    body .BGappointaColor {
+        background-image: url(./appointa/backgroundArrowColorS.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    body .BGappointaQuote {
+        background-image: url(./appointa/backgroundQuoteS.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
     .blankPhone {
         height: 3.8rem;
     }
