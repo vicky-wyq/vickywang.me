@@ -339,7 +339,13 @@ section {
     padding-top: 5em;
 }
 
+.specialText {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 3em;
 
+    margin: 0.8em 0;
+}
 
 
 
