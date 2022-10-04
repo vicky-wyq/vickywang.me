@@ -51,7 +51,9 @@ html {
 
 
     --APPOINTA-blue: #5384ED;
-    --APPOINTA-blueLighter: #abc4fa;
+    --APPOINTA-blueLight: #BACCF4;
+
+    --APPOINTA-blueLighter: #E2EDFD;
     --APPOINTA-blueLightest: #f5f8ff;
 
     --APPOINTA-bg: #f5f8fa;
@@ -341,12 +343,18 @@ section {
 
 .specialText {
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3em;
 
     margin: 0.8em 0;
 }
+.specialTextS {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 2em;
 
+    margin: 0.8em 0;
+}
 
 
 h1, h2 {
@@ -2188,7 +2196,7 @@ a.active.SEER {
 }
 
 .colorAPPOINTALt {
-    color: var(--APPOINTA-blueLighter);
+    color: var(--APPOINTA-blueLight);
 }
 
 .colorAPPOINTABg {
