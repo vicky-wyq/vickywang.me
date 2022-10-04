@@ -107,7 +107,7 @@ body {
 }
 .BGappointaQuote {
     background-image: url(./appointa/backgroundQuote.svg);
-    background-position: left;
+    background-position: top;
     background-repeat: no-repeat;
     z-index: 99;
 }
