@@ -55,6 +55,7 @@ html {
 
     --APPOINTA-blueLighter: #E2EDFD;
     --APPOINTA-blueLightest: #f5f8ff;
+    --APPOINTA-yellow: #FFD109;
 
     --APPOINTA-bg: #f5f8fa;
     --White-transparent: rgba(255, 255, 255, 0.6);
@@ -2198,6 +2199,10 @@ a.active.SEER {
 .colorAPPOINTALt {
     color: var(--APPOINTA-blueLight);
 }
+.colorAPPOINTAYellow {
+    color: var(--APPOINTA-yellow);
+}
+
 
 .colorAPPOINTABg {
     background-color: var(--White-transparent);
