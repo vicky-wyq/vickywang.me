@@ -13,6 +13,8 @@ html {
     /* Color */
     --white: #ffffff;
     --alert: #CC3300;
+    --alert--pink: #EB5757;
+
     --black: #161616;
     --black-less: #5f6368;
     /* #505050*/
@@ -341,6 +343,14 @@ layout **/
 section {
     padding-top: 5em;
 }
+.colorAPPOINTAYellow::selection {
+    background: var(--APPOINTA-yellow);
+    color: var(--white);
+  }
+  .colorAPPOINTALt::selection {
+    background: var(--APPOINTA-blueLight);
+    color: var(--white);
+  }
 
 .specialText {
     font-family: inherit;
@@ -349,6 +359,14 @@ section {
 
     margin: 0.8em 0;
 }
+.specialTextXS {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 2.6em;
+
+    margin: 0.8em 0;
+}
+
 .specialTextS {
     font-family: inherit;
     font-weight: 600;
