@@ -49,7 +49,9 @@ html {
     --seer-purpleLighter: #BCBAF7;
     --seer-purpleLightest: #F6F6FE;
     --seer-purpleLightest1: rgba(246, 246, 254, 0.4);
+    --seer-purple--Orange:#FBBF7D;
     --alpha: 0.8;
+    
 
 
     --APPOINTA-blue: #5384ED;
@@ -2233,7 +2235,9 @@ a.active.SEER {
 polygon {
     fill: var(--seer-purple);
 }
-
+.colorSEEROrange {
+    color: var(--seer-purple--Orange);
+}
 .colorSEERDark {
     color: var(--seer-purpleDark);
 }
