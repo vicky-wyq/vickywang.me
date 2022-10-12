@@ -3280,7 +3280,7 @@ img {
     /* Stay in place */
     z-index: 4;
     /* Sit on top */
-    padding-top: 100px;
+    padding-top: 2em;
     /* Location of the box */
     left: 0;
     top: 0;
