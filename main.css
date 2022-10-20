@@ -2676,9 +2676,9 @@ polygon {
 
 .ProjectBannerInner {
     position: absolute;
-    bottom: -50;
+    bottom: 30;
     transform: translate(-50%, -50%);
-    left: 46%;
+    left: 50%;
 }
 
 .ProjectBannerInner1 {
