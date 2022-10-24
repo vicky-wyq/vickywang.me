@@ -361,7 +361,23 @@ section {
 
     margin: 0.8em 0;
 }
+
+
+.specialTextS {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 2em;
+
+    margin: 0.4em 0;
+}
 .specialTextXS {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.4em;
+
+    margin: 0.2em 0;
+}
+.specialTextHR {
     font-family: 'Indie Flower', cursive;
     
     font-weight: 400;
@@ -369,15 +385,6 @@ section {
 
     margin: 0.8em 0;
 }
-
-.specialTextS {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 2em;
-
-    margin: 0.8em 0;
-}
-
 
 h1, h2 {
     font-family: inherit;
