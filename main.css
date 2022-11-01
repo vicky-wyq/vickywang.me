@@ -2817,11 +2817,11 @@ polygon {
 }
 
 .footer-logo {
-    margin: 0.2em;
+    margin: 0.4em;
     padding: 18px;
     border-radius: 50%;
 
-    width: 1em;
+    width: 1.2em;
     height: auto;
     cursor: pointer;
 }
@@ -3052,7 +3052,7 @@ polygon {
     padding: 18px;
     border-radius: 50%;
 
-    width: 2.2em;
+    width: 2em;
     height: auto;
     cursor: pointer;
 }
