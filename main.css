@@ -49,9 +49,9 @@ html {
     --seer-purpleLighter: #BCBAF7;
     --seer-purpleLightest: #F6F6FE;
     --seer-purpleLightest1: rgba(246, 246, 254, 0.4);
-    --seer-purple--Orange:#FBBF7D;
+    --seer-purple--Orange: #FBBF7D;
     --alpha: 0.8;
-    
+
 
 
     --APPOINTA-blue: #5384ED;
@@ -107,17 +107,20 @@ body {
     background-position: left;
     background-repeat: no-repeat;
 }
+
 .BGappointaColor {
     background-image: url(./appointa/backgroundArrowColor.svg);
     background-position: left;
     background-repeat: no-repeat;
 }
+
 .BGappointaQuote {
     background-image: url(./appointa/backgroundQuote.svg);
     background-position: top;
     background-repeat: no-repeat;
     z-index: 99;
 }
+
 .BGseer1 {
     background-image: url("./seer/bg1.svg");
     background-position: center;
@@ -345,14 +348,16 @@ layout **/
 section {
     padding-top: 5em;
 }
+
 .colorAPPOINTAYellow::selection {
     background: var(--APPOINTA-yellow);
     color: var(--white);
-  }
-  .colorAPPOINTALt::selection {
+}
+
+.colorAPPOINTALt::selection {
     background: var(--APPOINTA-blueLight);
     color: var(--white);
-  }
+}
 
 .specialText {
     font-family: inherit;
@@ -370,6 +375,7 @@ section {
 
     margin: 0.4em 0;
 }
+
 .specialTextXS {
     font-family: inherit;
     font-weight: 600;
@@ -377,9 +383,10 @@ section {
 
     margin: 0.2em 0;
 }
+
 .specialTextHR {
     font-family: 'Jua', sans-serif;
-    
+
     font-weight: 100;
     font-size: 2.6em;
 
@@ -940,17 +947,20 @@ button.passwordArr {
         background-position: left;
         background-repeat: no-repeat;
     }
+
     body .BGappointaColor {
         background-image: url(./appointa/backgroundArrowColorM.svg);
         background-position: left;
         background-repeat: no-repeat;
     }
+
     body .BGappointaQuote {
         background-image: url(./appointa/backgroundQuoteM.svg);
         background-position: left;
         background-repeat: no-repeat;
         z-index: 99;
     }
+
     body .ProjectBannerInner {
         position: absolute;
         bottom: 0;
@@ -1263,17 +1273,20 @@ button.passwordArr {
         background-position: left;
         background-repeat: no-repeat;
     }
+
     body .BGappointaColor {
         background-image: url(./appointa/backgroundArrowColorS.svg);
         background-position: left;
         background-repeat: no-repeat;
     }
+
     body .BGappointaQuote {
         background-image: url(./appointa/backgroundQuoteS.svg);
         background-position: left;
         background-repeat: no-repeat;
         z-index: 99;
     }
+
     .blankPhone {
         height: 3.8rem;
     }
@@ -2227,6 +2240,7 @@ a.active.SEER {
 .colorAPPOINTALt {
     color: var(--APPOINTA-blueLight);
 }
+
 .colorAPPOINTAYellow {
     color: var(--APPOINTA-yellow);
 }
@@ -2243,9 +2257,11 @@ a.active.SEER {
 polygon {
     fill: var(--seer-purple);
 }
+
 .colorSEEROrange {
     color: var(--seer-purple--Orange);
 }
+
 .colorSEERDark {
     color: var(--seer-purpleDark);
 }
@@ -2632,7 +2648,7 @@ polygon {
 }
 
 .t-hello {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
 }
