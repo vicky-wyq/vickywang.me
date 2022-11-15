@@ -1,12 +1,21 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: visible; }
 html {
     scroll-behavior: smooth;
-    height: 100%;
     color: var(--black-less);
-
+}
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 :root {
     /* Color */
+
     --white: #ffffff;
     --alert: #CC3300;
     --alert--pink: #EB5757;
@@ -70,6 +79,8 @@ html {
     --testing-font: #b5b5c3;
 }
 
+
+
 .displayNonePhone {
     display: block;
 }
@@ -88,9 +99,7 @@ section {
     font-weight: 600;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-}
+
 
 .BGseer0 {
     background-image: url("./seer/bg0.svg");
@@ -1153,7 +1162,7 @@ button.passwordArr {
     }
 
     body .nav-menu {
-        top: 20.6em;
+        top: 18em;
     }
 
     .active .bar:nth-child(2) {
@@ -1959,6 +1968,7 @@ input:checked~label.SEER {
 /*head tool bar scroll*/
 
 .logo {
+    
     padding: 1em;
     font-size: 2rem;
     font-weight: 300;

@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
+
+
   console.log(CryptoJS)
 
   const pass = document.getElementById("password");
