@@ -81,14 +81,16 @@ body {
 
 
 
-.displayNonePhone {
+.displayLaptop {
     display: block;
 }
 
-.displayNoneDesktop {
+.displayTablet {
     display: none;
 }
-
+body .displayPhone {
+    display: none;
+}
 section {
     margin: 0;
     padding: 0;
@@ -1026,12 +1028,15 @@ button.passwordArr {
     }
 
 
-    body .displayNonePhone {
+    body .displayLaptop {
         display: none;
     }
 
-    body .displayNoneDesktop {
+    body .displayTablet {
         display: block;
+    }
+    body .displayPhone {
+        display: none;
     }
 
     body .footer {
@@ -1271,6 +1276,14 @@ button.passwordArr {
 
 
 @media all and (max-width: 680px) {
+    body .displayPhone {
+        display: block;
+    }
+    body .displayTablet {
+        display: none;
+    }
+
+
     body .BGappointa {
         background-image: url(./appointa/backgroundArrowS.svg);
         background-position: left;
