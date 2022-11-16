@@ -1229,6 +1229,8 @@ button.passwordArr {
  
 
     body .navbar:hover .box:hover {
+        z-index: 99;
+
         transform: scale(1);
         filter: blur(0px);
         opacity: 1;
