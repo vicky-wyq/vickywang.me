@@ -1226,17 +1226,13 @@ button.passwordArr {
         border-bottom: 1px solid var(--grey-lightest);
     }
 
-    body .navbar:hover .box {
-        opacity: 1;
-        filter: blur(0px);
-        transform: scale(1);
-
-    }
+ 
 
     body .navbar:hover .box:hover {
         transform: scale(1);
         filter: blur(0px);
         opacity: 1;
+        box-shadow: rgba(109, 109, 109, 0) 0px 25px 20px -20px;
 
     }
 
