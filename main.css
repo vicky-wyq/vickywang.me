@@ -1,7 +1,4 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    overflow: visible; }
+
 html {
     scroll-behavior: smooth;
     color: var(--black-less);
@@ -1167,7 +1164,7 @@ button.passwordArr {
     }
 
     body .nav-menu {
-        top: 18em;
+        top: 0;
     }
 
     .active .bar:nth-child(2) {
@@ -1190,7 +1187,7 @@ button.passwordArr {
 
     .nav-menu {
         width: 100%;
-        height: 100%;
+        height: 65%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1203,7 +1200,7 @@ button.passwordArr {
         justify-content: center;
         align-items: left;
         position: fixed;
-        top: 15em;
+        top: 0;
         right: -112%;
         -webkit-transition: 0.5s;
         transition: 0.5s;
@@ -2072,6 +2069,7 @@ input:checked~label.SEER {
     transition: all 0.5s;
     /* margin-right: 8%; */
 
+
 }
 
 /*  3 - no media query */
@@ -2090,6 +2088,7 @@ input:checked~label.SEER {
     -ms-flex-align: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    background-color: ffffff;
 }
 
 a.nav-link {
@@ -2177,7 +2176,7 @@ a.active.SEER {
     }
 
     body .nav-menu {
-        top: 15em;
+        top: 0;
     }
 
     body .input-field {
