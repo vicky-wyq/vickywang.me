@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
 // For more information, see greensock.com/docs/v3/Plugins/ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 // You can use a ScrollTrigger in a tween or timeline
 gsap.to(".divider", {
