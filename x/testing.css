@@ -1,4 +1,32 @@
-
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .header{
+    background-color: teal;
+    color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    height: 65px;  transition: transform 0.25s ease-in-out;
+  }
+  .main{
+    background-color: rgba(0,0,0,0.1);
+    height: 150vh;
+    padding-top: 70px;
+  }
+  
+  
+  .header-unpin{
+    /* display: none; */
+    transform: translateY(-65px);
+  }
+  .header-pin{
+    /* display: block; */
+    transform: translateY(0);
+  }
+  
 html {
     scroll-behavior: smooth;
     color: var(--black-less);
@@ -83,148 +111,6 @@ body {
     --testing-font: #b5b5c3;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.7);
-    /*  10% opaque green */
-    height: 5em;transition: transform 0.25s ease-in-out;
-    border-bottom: 1px solid var(--grey-lightest);
-    z-index: 3;    
-    max-width: 1240px;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    transition: ease 0.4s;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-    /*    .main{
-    background-color: rgba(0,0,0,0.1);
-    height: 150vh;
-    padding-top: 70px;
-  }  */
-  
-  .header-unpin{
-    /* display: none; */
-    transform: translateY(-65px);
-  }
-  .header-pin{
-    /* display: block; */
-    transform: translateY(0);
-  }
-/*head tool bar scroll end*/
-/* blur hover*/
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 26px 16px;
-
-    border-radius: 3px;
-    transition: .2s all;
-
-}
-
-.navbar:hover .box {
-    filter: blur(1px);
-    opacity: .8;
-    transform: scale(.98);
-    box-shadow: none;
-}
-
-.navbar:hover .box:hover {
-    transform: scale(1);
-    filter: blur(0px);
-    opacity: 1;
-    box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px;
-}
-
-.navbar {
-    text-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    /* margin-right: 8%; */
-}
-
-/*  3 - no media query */
-
-.nav-menu li {
-    list-style: none;
-}
-
-.nav-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    background-color: ffffff;
-}
-
-a.nav-link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 300;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    color: var(--grey-darkest);
-
-}
-
-a.active.SEER {
-    background-color: var(--seer-purple);
-}
-
-.hamburger {
-    display: none;
-}
-
-.bar {
-    border-radius: 1em;
-    width: 1.5rem;
-    height: 2px;
-    display: block;
-    padding: 0;
-    margin: 6px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    background-color: var(--SiteWide);
-}
-
-.bar.APPOINTA {
-    background-color: var(--APPOINTA-blue);
-}
-
-
-.bar.SEER {
-    background-color: var(--seer-purple);
-}
-
-
-.bar:nth-child(1) {
-    width: 100%;
-}
-
-.bar:nth-child(2) {
-    width: 100%;
-}
-
-.bar:nth-child(3) {
-    width: 100%;
-}
-/* from responsive hamburger menu*/
 
 
 .displayLaptop {
@@ -1336,7 +1222,7 @@ button.passwordArr {
 
     .nav-menu {
         width: 100%;
-        height: 100%;
+        height: 65%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2138,6 +2024,165 @@ input:checked~label.SEER {
     margin: auto;
 }
 
+.backgroundColorNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
+    height: 5em;
+    text-align: center;
+    align-items: center;
+
+    transition: ease 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.7);
+    /*  10% opaque green */
+    height: 5em;
+    border-bottom: 1px solid var(--grey-lightest);
+    z-index: 3;
+}
+
+.header--scrolled {
+    height: 40px;
+}
+
+.scrollable-area {
+    height: 200vh;
+    background-color: black;
+}
+
+/*head tool bar scroll end*/
+/* blur hover*/
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 16px;
+
+    border-radius: 3px;
+    transition: .2s all;
+
+}
+
+.navbar:hover .box {
+    filter: blur(1px);
+    opacity: .8;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+.navbar:hover .box:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px;
+}
+
+
+
+
+.navbar {
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    /* margin-right: 8%; */
+
+
+}
+
+/*  3 - no media query */
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: ffffff;
+}
+
+a.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: var(--grey-darkest);
+
+}
+
+
+
+
+a.active.SEER {
+    background-color: var(--seer-purple);
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    border-radius: 1em;
+    width: 1.5rem;
+    height: 2px;
+    display: block;
+    padding: 0;
+    margin: 6px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: var(--SiteWide);
+}
+
+.bar.APPOINTA {
+    background-color: var(--APPOINTA-blue);
+}
+
+
+.bar.SEER {
+    background-color: var(--seer-purple);
+}
+
+
+.bar:nth-child(1) {
+    width: 100%;
+}
+
+.bar:nth-child(2) {
+    width: 100%;
+}
+
+.bar:nth-child(3) {
+    width: 100%;
+}
+
+
+/* from responsive hamburger menu*/
 
 @media screen and (max-width: 480px) {
 
