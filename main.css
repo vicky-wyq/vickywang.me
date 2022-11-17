@@ -1,8 +1,8 @@
-
 html {
     scroll-behavior: smooth;
     color: var(--black-less);
 }
+
 body {
     width: 100%;
     height: 100%;
@@ -80,6 +80,7 @@ body {
 
     --testing-font: #b5b5c3;
 }
+
 .backgroundColorNav {
     position: fixed;
     top: 0;
@@ -97,6 +98,7 @@ body {
     justify-content: space-between;
 
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -105,27 +107,30 @@ body {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.7);
     /*  10% opaque green */
-    height: 5em;transition: transform 0.25s ease-in-out;
+    height: 5em;
+    transition: transform 0.25s ease-in-out;
     border-bottom: 1px solid var(--grey-lightest);
     z-index: 3;
 }
 
- 
 
-    /*    .main{
+
+/*    .main{
     background-color: rgba(0,0,0,0.1);
     height: 150vh;
     padding-top: 70px;
   }  */
-  
-  .header-unpin{
+
+.header-unpin {
     /* display: none; */
     transform: translateY(-65px);
-  }
-  .header-pin{
+}
+
+.header-pin {
     /* display: block; */
     transform: translateY(0);
-  }
+}
+
 /*head tool bar scroll end*/
 /* blur hover*/
 .box {
@@ -168,7 +173,7 @@ body {
 }
 
 .nav-menu {
-    z-index:99;
+    z-index: 99;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -231,6 +236,7 @@ a.active.SEER {
 .bar:nth-child(3) {
     width: 100%;
 }
+
 /* from responsive hamburger menu*/
 
 
@@ -241,9 +247,11 @@ a.active.SEER {
 .displayTablet {
     display: none;
 }
+
 body .displayPhone {
     display: none;
 }
+
 section {
     margin: 0;
     padding: 0;
@@ -1190,6 +1198,7 @@ button.passwordArr {
     body .displayTablet {
         display: block;
     }
+
     body .displayPhone {
         display: none;
     }
@@ -1385,7 +1394,7 @@ button.passwordArr {
         border-bottom: 1px solid var(--grey-lightest);
     }
 
- 
+
 
     body .navbar:hover .box:hover {
         z-index: 99;
@@ -1434,6 +1443,7 @@ button.passwordArr {
     body .displayPhone {
         display: block;
     }
+
     body .displayTablet {
         display: none;
     }
@@ -2137,7 +2147,7 @@ input:checked~label.SEER {
 /*head tool bar scroll*/
 
 .logo {
-    
+
     padding: 1em;
     font-size: 2rem;
     font-weight: 300;
@@ -3827,7 +3837,7 @@ body .carousel .carousel-item {
 
 }
 
-.button-35:hover {
+.button-35.APPOINTA:hover {
     box-shadow: var(--APPOINTA-blue) 0 0 0 2px, transparent 0 0 0 0;
     color: var(--APPOINTA-blue);
     background-color: rgba(255, 255, 255, 0.8);
@@ -3836,42 +3846,20 @@ body .carousel .carousel-item {
 
 }
 
-.button-35-1 {
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid var(--white);
-    border-radius: 12px;
-    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
-    box-sizing: border-box;
-    color: var(--black);
-    cursor: pointer;
-    display: inline-flex;
-    flex: 1 1 auto;
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 500;
-    justify-content: center;
-    line-height: 1;
-    outline: none;
-    padding: 0.8em 1.4em;
-    text-align: center;
-    text-decoration: none;
-    transition: box-shadow .2s, -webkit-box-shadow .2s;
-    white-space: nowrap;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    margin-top: 0.4em;
 
-}
-
-.button-35-1:hover {
+.button-35.SEER:hover {
     box-shadow: var(--seer-purple) 0 0 0 2px, transparent 0 0 0 0;
     color: var(--seer-purple);
     background-color: rgba(255, 255, 255, 0.8);
 }
 
 
+
+.button-35.WS:hover {
+    box-shadow: var(--WS-Blue) 0 0 0 2px, transparent 0 0 0 0;
+    color: var(--WS-Blue);
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
 
 .buttonLanding {
