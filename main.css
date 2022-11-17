@@ -170,6 +170,7 @@ body {
 }
 
 .nav-menu {
+    z-index:99;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1344,7 +1345,6 @@ button.passwordArr {
 
     .nav-menu {
         width: 100%;
-        height: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1375,7 +1375,7 @@ button.passwordArr {
 
 
     .nav-menu li {
-        padding: 1rem 0;
+        padding: 0;
         margin: 0;
     }
 
