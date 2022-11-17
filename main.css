@@ -133,10 +133,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 26px 16px;
-
-    border-radius: 3px;
+    border-radius: 0;
     transition: .2s all;
-
 }
 
 .navbar:hover .box {
@@ -419,6 +417,7 @@ main>nav {}
     body .blankMin1880 {
         height: 8rem;
     }
+
 }
 
 .section-nav {
@@ -1104,6 +1103,7 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+
     body .BGappointa {
         background-image: url(./appointa/backgroundArrowM.svg);
         background-position: left;
@@ -1430,12 +1430,14 @@ button.passwordArr {
 
 
 @media all and (max-width: 680px) {
+
     body .displayPhone {
         display: block;
     }
     body .displayTablet {
         display: none;
     }
+
 
 
     body .BGappointa {
@@ -1894,6 +1896,7 @@ input:checked~.content-test {
 
 @media (min-width: 480px) {
 
+
     body .flex-container.BP {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -2118,6 +2121,7 @@ input:checked~label.SEER {
 /* intro */
 
 @media screen and (max-width: 1480px) {
+
     body .rowChng {
         flex-direction: column;
     }
@@ -2148,10 +2152,6 @@ input:checked~label.SEER {
 
 
 @media screen and (max-width: 480px) {
-
-
-
-
     a.nav-link {
         padding: 0.75rem 0;
     }
