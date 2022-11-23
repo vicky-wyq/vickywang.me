@@ -288,6 +288,12 @@ section {
     background-repeat: no-repeat;
     z-index: 99;
 }
+.BGseerQuote {
+    background-image: url(./seer/backgroundQuote.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
 
 .BGseer1 {
     background-image: url("./seer/bg1.svg");
@@ -1130,7 +1136,12 @@ button.passwordArr {
         background-repeat: no-repeat;
         z-index: 99;
     }
-
+    .BGseerQuote {
+        background-image: url(./seer/backgroundQuoteM.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
     body .ProjectBannerInner {
         position: absolute;
         bottom: 0;
@@ -1468,7 +1479,12 @@ button.passwordArr {
         background-repeat: no-repeat;
         z-index: 99;
     }
-
+    .BGseerQuote {
+        background-image: url(./seer/backgroundQuoteS.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
     .blankPhone {
         height: 3.8rem;
     }
@@ -2344,7 +2360,7 @@ polygon {
 
 }
 
-.cardBG {
+.cardSEER {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 35px;
     border: 1px solid var(--border);
