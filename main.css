@@ -2026,12 +2026,12 @@ input:checked~label.SEER {
 
 .progressStepContainer {
     position: relative;
-    padding: 2rem;
+    padding: 0;
 }
 
 .progress {
     position: relative;
-    padding: 0 1rem 0 3.5rem;
+    padding: 0 0 0 1.5rem;
     margin: 2rem 0 0;
     list-style: none;
 }
@@ -2040,13 +2040,13 @@ input:checked~label.SEER {
     position: relative;
     min-height: 75px;
     counter-increment: list;
-    padding-left: 5rem;
+    padding-left: 1.5rem;
 }
 
 .progress__item:before {
     content: "";
     position: absolute;
-    left: -1.4rem;
+    left: -1.6rem;
     top: 33px;
     height: 80%;
     width: 1px;
@@ -2066,7 +2066,7 @@ input:checked~label.SEER {
     color: var(--grey-dark);
     /* text inside of dots*/
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 2rem;
     text-align: center;
     border: 1px solid var(--grey-dark);
