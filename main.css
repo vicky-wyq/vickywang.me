@@ -59,8 +59,6 @@ body {
     --seer-purple--Orange: #FBBF7D;
     --alpha: 0.8;
 
-
-
     --APPOINTA-blue: #5384ED;
     --APPOINTA-blueLight: #BACCF4;
 
@@ -71,6 +69,10 @@ body {
     --APPOINTA-bg: #f5f8fa;
     --White-transparent: rgba(255, 255, 255, 0.6);
     --border: #f0f3fb;
+
+    --toasttab:#FF4C00;
+
+    --GardenersHub:#4C665B;
 
     ---testing-hover: #e4fff3;
     --testing: #eff4ff;
@@ -720,6 +722,7 @@ hr {
 .elementCard {
     padding: 0;
     margin: 0;
+    border-style: ridge;
     border-radius: 3px;
     /*  
     transition: background-color 0.3s ease;
@@ -752,7 +755,20 @@ hr {
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
 }
-
+.elementCard.toasttab:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--toasttab);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+.elementCard.GardenersHub:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--GardenersHub);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
 .elementCard:hover {
     cursor: pointer;
     border-bottom: 5px solid var(--SiteWide-light);
@@ -2374,8 +2390,9 @@ polygon {
 
 .cardBorder {
     border: 2px solid var(--grey-lightest);
-
     border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
 }
 
 .cardBorderGreen {
@@ -2504,7 +2521,11 @@ polygon {
     width: 4rem;
 
 }
+.blankVerXS {
+    border-left: 0px solid gray;
+    width: 1rem;
 
+}
 /* blank */
 
 
