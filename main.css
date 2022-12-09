@@ -1308,9 +1308,9 @@ button.passwordArr {
     }
 
     .t-hello {
-        font-family:  'Hi Melody','Titillium Web', sans-serif;
+        font-family: 'Caveat', sans-serif;
         font-weight: 400;
-        font-size: 33px;
+        font-size: 26px;
     }
 
     body .t-hi {
@@ -2705,9 +2705,9 @@ polygon {
 }
 
 .t-hello {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Caveat', sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
 .t-hi {
