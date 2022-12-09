@@ -429,11 +429,12 @@ main>nav {}
     body .logo {
         padding: 0.5em;
     }
-
     body .blankMin1880 {
         height: 8rem;
     }
-
+    body .section-nav {
+        top: 18rem;    
+    }
 }
 
 .section-nav {
@@ -442,16 +443,11 @@ main>nav {}
     padding-left: 0;
     border-left: 1px solid var(--grey-light);
     z-index: 3;
-
     position: sticky;
     margin-left: 80%;
-
-    top: 18rem;
+    top: 8rem;
     width: fit-content;
-
     padding: 1em 2em 1em 1em;
-
-
 }
 
 .section-nav a {
@@ -2211,10 +2207,6 @@ input:checked~label.SEER {
     .wrapper {
         margin: 0 1em;
     }
-
-    body .nav-menu {
-    }
-
     body .input-field {
         top: 23%;
         left: 0;
