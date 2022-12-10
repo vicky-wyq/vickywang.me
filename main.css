@@ -453,7 +453,7 @@ main>nav {}
 
 .section-nav {
     background-color: var(--White-transparent);
-    border-radius: 1.2em;
+    border-radius: 10px;
     opacity: 0.8;
     border: 1px solid var(--grey-lightest);
     z-index: 3;
