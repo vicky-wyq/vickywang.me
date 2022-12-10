@@ -437,14 +437,25 @@ main>nav {}
 
     body .section-nav {
         top: 20rem;
-        left: 18%;
+        left: 10vw;
+    }
+
+    body li .rightPanel {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    body .titleRightPanel {
+        font-size: 22px;
+        line-height: 32px;
     }
 }
 
 .section-nav {
     background-color: var(--White-transparent);
+    border-radius: 1.2em;
     opacity: 0.8;
-    border-right: 1px solid var(--grey-lightest);
+    border: 1px solid var(--grey-lightest);
     z-index: 3;
     position: sticky;
     width: fit-content;
@@ -504,7 +515,11 @@ li .rightPanel {
     font-size: 12px;
     line-height: 16px;
     margin-left: 0;
+}
 
+.titleRightPanel {
+    font-size: 16px;
+    line-height: 18px;
 }
 
 ul .rightPanel {
