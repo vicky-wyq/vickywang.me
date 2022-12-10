@@ -436,21 +436,20 @@ main>nav {}
     }
 
     body .section-nav {
-        top: 18rem;
+        top: 20rem;
+        left: 18%;
     }
 }
 
 .section-nav {
-    background-color: var(--white);
+    background-color: var(--White-transparent);
     opacity: 0.8;
-    padding-left: 0;
-    border-left: 1px solid var(--grey-light);
+    border-right: 1px solid var(--grey-lightest);
     z-index: 3;
     position: sticky;
-    margin-right: 0;
-    top: 8rem;
     width: fit-content;
-    padding: 1em 2em 1em 1em;
+    top: 12rem;
+    padding: 1em;
 }
 
 .section-nav a {
@@ -502,10 +501,12 @@ li {
 }
 
 li .rightPanel {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 16px;
     margin-left: 0;
 
 }
+
 ul .rightPanel {
     list-style-type: none;
 }
