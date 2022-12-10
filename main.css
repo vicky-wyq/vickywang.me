@@ -3134,6 +3134,8 @@ polygon {
     font-size: 1.8em;
     font-weight: 100;
     margin: 2px 0px;
+    text-transform: capitalize;
+
 }
 
 .se-arrow {
