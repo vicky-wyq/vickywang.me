@@ -70,9 +70,9 @@ body {
     --White-transparent: rgba(255, 255, 255, 0.6);
     --border: #f0f3fb;
 
-    --toasttab:#FF4C00;
+    --toasttab: #FF4C00;
 
-    --GardenersHub:#4C665B;
+    --GardenersHub: #4C665B;
 
     ---testing-hover: #e4fff3;
     --testing: #eff4ff;
@@ -290,6 +290,7 @@ section {
     background-repeat: no-repeat;
     z-index: 99;
 }
+
 .BGseerQuote {
     background-image: url(./seer/backgroundQuote.svg);
     background-position: top;
@@ -429,11 +430,13 @@ main>nav {}
     body .logo {
         padding: 0.5em;
     }
+
     body .blankMin1880 {
         height: 8rem;
     }
+
     body .section-nav {
-        top: 18rem;    
+        top: 18rem;
     }
 }
 
@@ -444,7 +447,7 @@ main>nav {}
     border-left: 1px solid var(--grey-light);
     z-index: 3;
     position: sticky;
-    margin-left: 80%;
+    margin-right: 0;
     top: 8rem;
     width: fit-content;
     padding: 1em 2em 1em 1em;
@@ -496,6 +499,15 @@ ul, ol {
 
 li {
     margin-left: 1rem;
+}
+
+li .rightPanel {
+    font-size: 14px;
+    margin-left: 0;
+
+}
+ul .rightPanel {
+    list-style-type: none;
 }
 
 .liNone {
@@ -751,6 +763,7 @@ hr {
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
 }
+
 .elementCard.toasttab:hover {
     cursor: pointer;
     border-bottom: 5px solid var(--toasttab);
@@ -758,6 +771,7 @@ hr {
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
 }
+
 .elementCard.GardenersHub:hover {
     cursor: pointer;
     border-bottom: 5px solid var(--GardenersHub);
@@ -765,6 +779,7 @@ hr {
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
 }
+
 .elementCard:hover {
     cursor: pointer;
     border-bottom: 5px solid var(--SiteWide-light);
@@ -1148,12 +1163,14 @@ button.passwordArr {
         background-repeat: no-repeat;
         z-index: 99;
     }
+
     .BGseerQuote {
         background-image: url(./seer/backgroundQuoteM.svg);
         background-position: top;
         background-repeat: no-repeat;
         z-index: 99;
     }
+
     body .ProjectBannerInner {
         position: absolute;
         bottom: 0;
@@ -1352,6 +1369,7 @@ button.passwordArr {
         /*  10% opaque green */
 
     }
+
     .active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -1383,7 +1401,7 @@ button.passwordArr {
         flex-direction: column;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: left;
         position: fixed;
         top: 81px;
@@ -1488,12 +1506,14 @@ button.passwordArr {
         background-repeat: no-repeat;
         z-index: 99;
     }
+
     .BGseerQuote {
         background-image: url(./seer/backgroundQuoteS.svg);
         background-position: top;
         background-repeat: no-repeat;
         z-index: 99;
     }
+
     .blankPhone {
         height: 3.8rem;
     }
@@ -2207,6 +2227,7 @@ input:checked~label.SEER {
     .wrapper {
         margin: 0 1em;
     }
+
     body .input-field {
         top: 23%;
         left: 0;
@@ -2509,11 +2530,13 @@ polygon {
     width: 4rem;
 
 }
+
 .blankVerXS {
     border-left: 0px solid gray;
     width: 1rem;
 
 }
+
 /* blank */
 
 
