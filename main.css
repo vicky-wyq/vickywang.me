@@ -429,6 +429,11 @@ section {
         font-size: 22px;
         line-height: 32px;
     }
+    body main > nav {
+        position: sticky;
+        top: 2rem;
+        position:-webkit-sticky; position:sticky; bottom:32vh; 
+    }
 }
 
 /* 1. Enable smooth scrolling */
