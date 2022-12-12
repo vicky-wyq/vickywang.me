@@ -401,31 +401,11 @@ section {
     }
 
 }
-
-
-
-
 .positionAbl {
     position: absolute;
     margin: 0;
     width: 100%;
 }
-
-/* 1. Enable smooth scrolling */
-
-
-/* 2. Make nav sticky 
-main>nav {}
-
-*/
-
-/* 3. ScrollSpy active styles (see JS tab for activation) */
-.section-nav li.active>a {
-    color: #333;
-    font-weight: 500;
-}
-
-/* Sidebar Navigation */
 @media all and (min-width: 1880px) {
     body .logo {
         padding: 0.5em;
@@ -451,6 +431,21 @@ main>nav {}
     }
 }
 
+/* 1. Enable smooth scrolling */
+/* 2. Make nav sticky */
+main > nav {
+	position: sticky;
+	top: 2rem;
+    position:-webkit-sticky; position:sticky; bottom:18vh; 
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active>a {
+    color: var(--black);
+    font-weight: 500;
+}
+
+/* Sidebar Navigation */
 .section-nav {
     background-color: var(--White-transparent);
     border-radius: 10px;
@@ -492,9 +487,6 @@ main>nav {}
 .section-nav a:focus {
     color: var(--WS-Blue);
 }
-
-
-
 /** Poor man's reset 
 * {
     box-sizing: border-box;
