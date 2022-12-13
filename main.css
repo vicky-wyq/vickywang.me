@@ -401,11 +401,13 @@ section {
     }
 
 }
+
 .positionAbl {
     position: absolute;
     margin: 0;
     width: 100%;
 }
+
 @media all and (min-width: 1880px) {
     body .logo {
         padding: 0.5em;
@@ -429,17 +431,22 @@ section {
         font-size: 22px;
         line-height: 32px;
     }
-    body main > nav {
-        position:-webkit-sticky; position:sticky; bottom:32vh; 
+
+    body main>nav {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 32vh;
     }
 }
 
 /* 1. Enable smooth scrolling */
 /* 2. Make nav sticky */
-main > nav {
-	position: sticky;
-	top: 2rem;
-    position:-webkit-sticky; position:sticky; bottom:18vh; 
+main>nav {
+    position: sticky;
+    top: 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 18vh;
 }
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
@@ -490,6 +497,7 @@ main > nav {
 .section-nav a:focus {
     color: var(--WS-Blue);
 }
+
 /** Poor man's reset 
 * {
     box-sizing: border-box;
@@ -810,6 +818,8 @@ hr {
     margin-bottom: 1em;
     transition: background-color 0.3s ease;
     border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
 }
 
 .elementInnerSEER {
@@ -2402,10 +2412,16 @@ polygon {
     border: 1px solid var(--border);
 }
 
+.cardSEERGif {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+    border: 6px solid var(--seer-purpleLightest);
+}
+
 .cardAPPOINTA {
     background: var(--white);
     border-radius: 2.2em;
-    border: 1px solid var(--border);
+    border: 6px solid var(--border);
 }
 
 .cardBorder {
@@ -2426,6 +2442,9 @@ polygon {
     border-radius: var(--border-radius);
 }
 
+.shadowBox1 {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
 
 .shadowBox {
     box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px;
