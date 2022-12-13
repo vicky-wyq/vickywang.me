@@ -806,17 +806,17 @@ hr {
 
 .elementSEER {
     background: linear-gradient(140deg, #d8f2ff, #cad6ff, #e6dbff, #cbd8ff);
-    padding: 6px;
+    padding: 4px;
     margin-bottom: 1em;
     transition: background-color 0.3s ease;
-    border-radius: 35px;
+    border-radius: 34px;
 }
 
 .elementInnerSEER {
     background: rgba(255, 255, 255, 0.7);
     padding: 2em;
     transition: background-color 0.3s ease;
-    border-radius: 28px;
+    border-radius: 30px;
 }
 
 /* ---- must always have for responsive*/
