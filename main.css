@@ -91,7 +91,7 @@ body {
     margin: 0 auto;
     max-width: 1240px;
     width: 100%;
-    height: 5em;
+    height: 4em;
     text-align: center;
     align-items: center;
     transition: ease 0.4s;
@@ -109,7 +109,7 @@ body {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.7);
     /*  10% opaque green */
-    height: 5em;
+    height: 4em;
     transition: transform 0.25s ease-in-out;
     border-bottom: 1px solid var(--grey-lightest);
     z-index: 3;
@@ -139,7 +139,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 26px 16px;
+    padding: 0.95em 1vw;
     border-radius: 0;
     transition: .2s all;
 }
@@ -189,7 +189,7 @@ body {
 
 a.nav-link {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -2215,7 +2215,7 @@ input:checked~label.SEER {
 .logo {
 
     padding: 1em;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     /* margin-right: 8%; */
     color: var(--black);
