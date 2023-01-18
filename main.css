@@ -2370,7 +2370,7 @@ polygon {
     color: var(--black);
 }
 
-.colorGreen {
+.SiteWide {
     color: var(--SiteWide);
 }
 
@@ -2812,9 +2812,9 @@ polygon {
     align-items: center;
     width: 1px;
     /* weight */
-    border-top: 40px solid black;
+    border-top: 30px solid var(--grey-dark);
     /* height */
-    margin: 0 2em;
+    margin: 0 1.8em;
 }
 
 .introVer {
