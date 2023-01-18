@@ -3330,6 +3330,7 @@ a:link.textUnderline {
     text-decoration-thickness: 1px;
     text-underline-offset: 6px;
     text-decoration-color: var(--black);
+    padding-right: 1em;
 
 }
 
