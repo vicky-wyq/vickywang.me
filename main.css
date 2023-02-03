@@ -210,6 +210,7 @@ body {
 
 .dropdown-content a:hover {
     background-color: var(--grey-lightest);
+    cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
