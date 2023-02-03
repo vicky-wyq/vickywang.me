@@ -187,30 +187,38 @@ body {
     justify-content: flex-end;
 }
 
+/* drop down menu*/
+
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color:var(--white);
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+
+}
+
+.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+}
+
+.dropdown-content a:hover {
+    background-color: var(--grey-lightest);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* drop down menu*/
+
+
 a.nav-link {
     text-decoration: none;
     font-size: 1.2rem;
@@ -1195,7 +1203,9 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
-
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
     body .BGappointa {
         background-image: url(./appointa/backgroundArrowM.svg);
         background-position: left;
@@ -2235,6 +2245,7 @@ input:checked~label.SEER {
         width: 35px;
         height: 35px;
     }
+
 }
 
 /* intro */
