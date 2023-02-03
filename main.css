@@ -187,6 +187,30 @@ body {
     justify-content: flex-end;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 a.nav-link {
     text-decoration: none;
     font-size: 1.2rem;
@@ -503,7 +527,8 @@ main>nav {
 }
 **/
 
-ul, ol {
+ul,
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -512,9 +537,11 @@ ul, ol {
 li {
     margin-left: 1rem;
 }
+
 li.marginZero {
     margin-left: 0;
 }
+
 li .rightPanel {
     font-size: 12px;
     line-height: 16px;
@@ -598,7 +625,8 @@ section {
     margin: 0.8em 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: inherit;
     font-weight: 600;
 
@@ -615,7 +643,8 @@ h3 {
     margin: 0 0 0.6em;
 }
 
-h4, h5 {
+h4,
+h5 {
     font-family: inherit;
     font-weight: 300;
     margin: 0 0 0.4em;
@@ -1199,6 +1228,7 @@ button.passwordArr {
         transform: translate(-50%, -50%);
         left: 50%;
     }
+
     .font300-1080 {
         font-weight: 300 !important;
         color: var(--grey-darkest) !important;
@@ -1436,6 +1466,7 @@ button.passwordArr {
     .nav-item {
         background-color: var(--white);
     }
+
     body .box {
         width: 100%;
         justify-content: flex-start;
@@ -1443,6 +1474,7 @@ button.passwordArr {
         padding: 0.95em 1.4em;
 
     }
+
     body .navbar:hover .box {
         filter: blur(0px);
         opacity: 1;
@@ -1684,12 +1716,15 @@ button.passwordArr {
     flex: 0 0 calc(33.3333% - 1em);
 }
 
-.Grid--holly-grail .aside, .Grid--holly-grail .main {
+.Grid--holly-grail .aside,
+.Grid--holly-grail .main {
     flex: 1 100%;
 }
 
 /* One of -- columns*/
-.Grid--1of2>.Grid-cell, .Grid--1of4>.Grid-cell:first-of-type, .Grid--1of3>.Grid-cell:first-of-type {
+.Grid--1of2>.Grid-cell,
+.Grid--1of4>.Grid-cell:first-of-type,
+.Grid--1of3>.Grid-cell:first-of-type {
     flex: 0 0 96%;
 }
 
@@ -1750,7 +1785,11 @@ button.passwordArr {
 @media (min-width: 48em) {
 
 
-    .Grid--cols-2>.Grid-cell, .Grid--cols-3>.Grid-cell, .Grid--cols-4>.Grid-cell, .Grid--cols-6>.Grid-cell, .Grid--cols-12>.Grid-cell {
+    .Grid--cols-2>.Grid-cell,
+    .Grid--cols-3>.Grid-cell,
+    .Grid--cols-4>.Grid-cell,
+    .Grid--cols-6>.Grid-cell,
+    .Grid--cols-12>.Grid-cell {
         flex: 1;
     }
 
@@ -3266,7 +3305,8 @@ table {
     font-family: 'Lato', sans-serif;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #eeeeee;
     text-align: left;
     padding: 1vh;
@@ -3439,7 +3479,8 @@ img {
 }
 
 /* Add Animation */
-.modal-content, .modal-caption {
+.modal-content,
+.modal-caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -3838,7 +3879,8 @@ body .carousel .carousel-item {
     margin-top: 6px;
 }
 
-.btn1:before, .btn1:after {
+.btn1:before,
+.btn1:after {
     content: '';
     position: absolute;
     top: 0;
@@ -3862,7 +3904,8 @@ body .carousel .carousel-item {
     color: var(--AMBlue);
 }
 
-.btn1:hover:before, .btn1:hover:after {
+.btn1:hover:before,
+.btn1:hover:after {
     border-color: var(--AMBlue);
 }
 
