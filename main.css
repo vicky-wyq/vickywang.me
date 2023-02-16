@@ -17,7 +17,6 @@ body {
 
 :root {
     /* Color */
-
     --white: #ffffff;
     --alert: #CC3300;
     --alert--pink: #EB5757;
@@ -26,7 +25,7 @@ body {
     --black-less: #5f6368;
     /* #505050*/
 
-    --grey-darkest: #8d929a;
+    --grey-darkest: #999D9F;
     /* #909090*/
 
     --grey-dark: #c8c8c8;
@@ -710,7 +709,6 @@ h6 {
 
 h1 {
     font-weight: 500;
-
     font-size: 1.8em;
 }
 
@@ -2581,7 +2579,7 @@ polygon {
 
 .blankHM {
     display: block;
-    height: 12rem;
+    height: 8rem;
 }
 
 .blankHL {
@@ -3192,10 +3190,15 @@ polygon {
 .tArrow {
     font-size: 1.8em;
     font-weight: 100;
-    margin: 2px 0px;
+    margin:  0px;
     text-transform: capitalize;
 
 }
+.seArrow {
+    width: auto;
+    height: 0.8em;
+}
+
 
 .se-arrow {
     width: 1.6em;
