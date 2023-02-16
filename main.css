@@ -38,6 +38,10 @@ body {
 
     --SiteWide-light: #AAD9D9;
     /* 368661 projects 296448*/
+    --SiteWide-lighter: #cbeded;
+    --SiteWide-lightest: #e6fcfc;
+
+
 
     --AMBlue: #5384ED;
 
@@ -73,13 +77,10 @@ body {
 
     --GardenersHub: #4C665B;
 
-    ---testing-hover: #e4fff3;
-    --testing: #eff4ff;
 
     --border-radius: 0.5em;
     font-family: 'Lato', sans-serif;
 
-    --testing-font: #b5b5c3;
 }
 
 .backgroundColorNav {
@@ -206,14 +207,13 @@ body {
     display: block;
     text-align: left;
     margin: 6px;
-    transition: background-color 2s ease-out 1ms
 
 }
 
 .dropdown-content a:hover {
     background-color: var(--grey-lightest);
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 12px;
 
 
 }
@@ -298,10 +298,7 @@ section {
     padding: 0;
 }
 
-.testingFont {
-    color: var(--testing-font);
-    font-weight: 600;
-}
+
 
 
 
@@ -904,7 +901,7 @@ hr {
 
 .password:hover {
     display: block;
-    background: var(---testing-hover);
+    background: var(--grey-lightest);
 }
 
 /* ---- password --------- */
@@ -1132,12 +1129,15 @@ button.passwordArr {
 
 
 .Demo {
+    font-family: inherit;
     padding: 0.8em 1em 0;
     margin-bottom: 1em;
-    background: rgba(51, 153, 204, .2);
+    background: var(--SiteWide-lightest);
     transition: background-color 0.3s ease;
-    border: 1px solid #3cc;
-    border-radius: 3px;
+    border: 0.01em solid var(--SiteWide-light);
+    border-radius: 6px;
+    color: var(--SiteWide-light);
+
 }
 
 .Demo:after {
@@ -1145,10 +1145,11 @@ button.passwordArr {
     display: block;
     margin-top: 0.8em;
     height: 1px;
+
 }
 
 .Demo:hover {
-    background: rgba(51, 153, 204, .6);
+    background: var(--SiteWide-lighter);
 }
 
 .Demo.Holly {
@@ -1854,26 +1855,37 @@ button.passwordArr {
 
 .content-1of1::before {
     content: "1";
+    color: var(--SiteWide-light);
 }
 
 .content-1of2::before {
     content: "1/2";
+    color: var(--SiteWide-light);
+
 }
 
 .content-1of3::before {
     content: "1/3";
+    color: var(--SiteWide-light);
+
 }
 
 .content-1of4::before {
     content: "1/4";
+    color: var(--SiteWide-light);
+
 }
 
 .content-1of6::before {
     content: "1/6";
+    color: var(--SiteWide-light);
+
 }
 
 .content-1of12::before {
     content: "1/12";
+    color: var(--SiteWide-light);
+
 }
 
 
