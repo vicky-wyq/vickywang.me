@@ -13,7 +13,63 @@ body {
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
 }
+.displayNone{
+    display: none;
+}
+.blockS {
+    font-family: inherit;
+    padding: 2.6em;
+    border-radius: 6px;
+    height: 1em;
+    font-size: 12px;
+    text-transform: uppercase;
+}
 
+.black{
+    background: var(--black);
+    color: var(--grey-lightest);
+}
+.blackLess{
+    background: var(--black-less);
+    color: var(--grey-lightest);
+}
+.colorGreyDarkest{
+    background: var(--grey-darkest);
+    color: var(--grey-lightest);
+}
+.colorGreyDark{
+    background: var(--grey-dark);
+    color: var(--grey-lightest);
+}
+
+
+.colorGreyNormal {
+    background-color: var(--grey-normal);
+}
+.colorGreyLight {
+    background-color: var(--grey-light);
+}
+
+.colorGreyLightest {
+    background-color: var(--grey-lightest);
+}
+
+.colorLt {
+    background-color: var(--SiteWide-light);
+}
+.colorLter {
+    background-color: var(--SiteWide-lighter);
+}
+
+.colorLtest {
+    background-color: var(--SiteWide-lightest);
+}
+
+.colorAlet {
+    background-color: var(--alert);
+    color: var(--grey-lightest);
+
+}
 
 :root {
     /* Color */
@@ -31,7 +87,7 @@ body {
     --grey-dark: #c8c8c8;
     --grey-normal: #e4e4e4;
     --grey-light: #efefef;
-    --grey-lightest: #f8f8f8;
+    --grey-lightest: #;
 
     --SiteWide: #202020;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
@@ -39,7 +95,7 @@ body {
     --SiteWide-light: #AAD9D9;
     /* 368661 projects 296448*/
     --SiteWide-lighter: #cbeded;
-    --SiteWide-lightest: #e6fcfc;
+    --SiteWide-lightest: #faffff;
 
 
 
@@ -2322,7 +2378,7 @@ input:checked~label.SEER {
 }
 
 
-
+  
 /* color and shadow*/
 
 .colorGH {
@@ -2755,7 +2811,7 @@ polygon {
 }
 
 .leftVerLine {
-    border-left: 5px solid var(--SiteWide-light);
+    border-left: 5px solid var(--grey-light);
     padding-left: 1em;
 }
 
@@ -2845,7 +2901,7 @@ polygon {
 
 .centeredTQ {
     position: absolute;
-    bottom: 3%;
+    bottom: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
