@@ -697,9 +697,9 @@ section {
 h1,
 h2 {
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
 
-    margin: 0.8em 0;
+    margin: 0 0 0.8em;
 }
 
 .noMargin {
@@ -725,6 +725,8 @@ h6 {
     font-family: inherit;
     font-weight: 300;
     margin: 0 0 0.3em;
+    color: var(--grey-darkest);
+
 
 }
 
@@ -761,7 +763,6 @@ h6 {
 
 
 h1 {
-    font-weight: 500;
     font-size: 1.68em;
 }
 
@@ -2566,7 +2567,7 @@ polygon {
 }
 
 .shadowFilterL {
-    filter: drop-shadow(3px 20px 20px rgba(129, 139, 161, 0.304));
+    filter: drop-shadow(3px 20px 20px rgba(156, 156, 156, 0.304));
 }
 
 .clip-shape-shadow {
@@ -4037,9 +4038,16 @@ body .carousel .carousel-item {
     margin-top: 0.4em;
 
 }
+.button-35.DS:hover {
+    box-shadow: var(--black-less) 0 0 0 0.1em, transparent 0 0 0 0;
+    color: var(--black-less);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
 
+
+}
 .button-35.APPOINTA:hover {
-    box-shadow: var(--APPOINTA-blue) 0 0 0 2px, transparent 0 0 0 0;
+    box-shadow: var(--APPOINTA-blue) 0 0 0 0.1em, transparent 0 0 0 0;
     color: var(--APPOINTA-blue);
     background-color: rgba(255, 255, 255, 0.8);
     transition: all 0.5s;
@@ -4049,7 +4057,7 @@ body .carousel .carousel-item {
 
 
 .button-35.SEER:hover {
-    box-shadow: var(--seer-purple) 0 0 0 2px, transparent 0 0 0 0;
+    box-shadow: var(--seer-purple) 0 0 0 0.1em, transparent 0 0 0 0;
     color: var(--seer-purple);
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -4057,7 +4065,7 @@ body .carousel .carousel-item {
 
 
 .button-35.WS:hover {
-    box-shadow: var(--WS-Blue) 0 0 0 2px, transparent 0 0 0 0;
+    box-shadow: var(--WS-Blue) 0 0 0 0.1em, transparent 0 0 0 0;
     color: var(--WS-Blue);
     background-color: rgba(255, 255, 255, 0.8);
 }
