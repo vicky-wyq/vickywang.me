@@ -4039,7 +4039,7 @@ body .carousel .carousel-item {
 
 }
 .button-35.DS:hover {
-    box-shadow: var(--black-less) 0 0 0 0.1em, transparent 0 0 0 0;
+    box-shadow: var(--black-less) 0 0 0 0.06em, transparent 0 0 0 0;
     color: var(--black-less);
     background-color: rgba(255, 255, 255, 0.8);
     transition: all 0.5s;
