@@ -91,6 +91,7 @@ body {
 
     --SiteWide: #202020;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
+    --SiteWide-dark: #7ba0a0;
 
     --SiteWide-light: #AAD9D9;
     /* 368661 projects 296448*/
@@ -844,7 +845,7 @@ hr {
 
 
 
-/* element = demo */
+/* elementCard = bottom border */
 .elementCard {
     padding: 0;
     margin: 0;
@@ -1000,7 +1001,7 @@ hr {
 .input-field {
     position: absolute;
     top: 43%;
-    left: 32%;
+    left: 18%;
     width: 100%;
     text-align: center;
     font-size: 18px;
@@ -1191,9 +1192,9 @@ button.passwordArr {
     margin-bottom: 1em;
     background: var(--SiteWide-lightest);
     transition: background-color 0.3s ease;
-    border: 0.01em solid var(--SiteWide-light);
+    border: 0.01em solid var(--SiteWide-dark);
     border-radius: 6px;
-    color: var(--SiteWide-light);
+    color: var(--SiteWide-dark);
 
 }
 
@@ -1577,7 +1578,7 @@ button.passwordArr {
     /* hamburger menu*/
     body .input-field {
         top: 38%;
-        left: 30%;
+        left: 10%;
         width: 16em;
     }
 
@@ -1912,36 +1913,36 @@ button.passwordArr {
 
 .content-1of1::before {
     content: "1";
-    color: var(--SiteWide-light);
+    color: var(--SiteWide-dark);
 }
 
 .content-1of2::before {
     content: "1/2";
-    color: var(--SiteWide-light);
+    color: var(--SiteWide-dark);
 
 }
 
 .content-1of3::before {
     content: "1/3";
-    color: var(--SiteWide-light);
+    color: var(--SiteWide-dark);
 
 }
 
 .content-1of4::before {
     content: "1/4";
-    color: var(--SiteWide-light);
+    color: var(--SiteWide-dark);
 
 }
 
 .content-1of6::before {
     content: "1/6";
-    color: var(--SiteWide-light);
+    color: var(--SiteWide-dark);
 
 }
 
 .content-1of12::before {
     content: "1/12";
-    color: var(--SiteWide-light);
+    color: var(--SiteWide-dark);
 
 }
 
@@ -2329,7 +2330,7 @@ input:checked~label.SEER {
 
 .logo {
 
-    padding: 0.8em;
+    padding: 1.6em;
     font-size: 1.8rem;
     font-weight: 300;
     /* margin-right: 8%; */
@@ -2363,7 +2364,7 @@ input:checked~label.SEER {
 
     body .input-field {
         top: 23%;
-        left: 0;
+        left: 20%;
         width: 14em;
     }
 
