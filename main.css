@@ -932,6 +932,22 @@ hr {
     transition: background-color 0.3s ease;
     border-radius: 30px;
 }
+.elementDemoCard {
+    background: linear-gradient(140deg, #f7fcff, #ecf0fb, #f8f5ff, #ecf1ff);
+    padding: 4px;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+}
+
+.elementInnerDemoCard {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
 
 /* ---- must always have for responsive*/
 .element {
@@ -1092,6 +1108,8 @@ button.passwordArr {
     height: 1.2em;
     width: 1.2em;
     float: right;
+    margin-left: 4px;
+
 }
 
 .arrButtonResume:after {
@@ -1100,8 +1118,18 @@ button.passwordArr {
     height: 1.2em;
     width: 1.2em;
     float: right;
-}
+    margin-left: 4px;
 
+}
+.arrButtonSmall:after {
+    content: "";
+    background-image: url("icon/button-arrow-rightS.svg");
+    height: 0.8em;
+    width: 0.8em;
+    float: right;
+    margin-left: 6px;
+
+}
 .arrCard:after {
     content: "";
     background-image: url("icon/arrow-card.svg");
@@ -4017,6 +4045,8 @@ body .carousel .carousel-item {
 .btn1:hover:after {
     transform: skewX(-180deg);
 }
+ 
+  
 
 /* CSS */
 .button-35 {
@@ -4045,7 +4075,7 @@ body .carousel .carousel-item {
     -webkit-user-select: none;
     touch-action: manipulation;
     margin-top: 0.4em;
-
+    margin: 12px;
 }
 .button-35.DS:hover {
     box-shadow: var(--black-less) 0 0 0 0.06em, transparent 0 0 0 0;
@@ -4098,7 +4128,7 @@ body .carousel .carousel-item {
     font-weight: 400;
     line-height: 1.2em;
     outline: none;
-    padding: 16px 32px;
+    padding: 16px 28px;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     user-select: none;
