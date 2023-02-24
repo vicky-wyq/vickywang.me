@@ -1208,8 +1208,8 @@ button.passwordArr {
 /* element = elementDemo */
 
 .elementDemo {
-    padding: 0.4em 0.5em 0;
-    margin-bottom: 0.5em;
+    padding: 0.8em 1em 0;
+    margin-bottom: 1em;
     border-radius: 6px;
     border: 0.01em solid var(--SiteWide-warm);
     background: var(--SiteWide-warm);
@@ -1235,9 +1235,8 @@ button.passwordArr {
 .Demo {
     font-family: inherit;
     font-weight: 200;
-
-    padding: 0.4em 0.5em 0;
-    margin-bottom: 0.5em;
+    padding: 0.8em 1em 0; /*top 0.8, left and right 1*/
+    margin-bottom: 1em;
     border-radius: 6px;
     border: 0.01em solid var(--SiteWide-dark);
 
@@ -1248,7 +1247,7 @@ button.passwordArr {
 .Demo:after {
     content: "";
     display: block;
-    margin-top: 0.4em;
+    margin-top: 0.8em; /*button 0.8*/
     height: 1px;
 
 }
