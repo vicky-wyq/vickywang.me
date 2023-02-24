@@ -53,7 +53,9 @@ body {
 .colorGreyLightest {
     background-color: var(--grey-lightest);
 }
-
+.colorWarm {
+    background-color: var(--SiteWide-warm);
+}
 .colorLt {
     background-color: var(--SiteWide-light);
 }
