@@ -710,87 +710,68 @@ section {
 .noMargin {
     margin: 0;
 }
-h1,h2 {
-    font-family: inherit;
-    font-weight: 500;
-
-    margin: 0 0 0.8em;
-}
-h3 {
-    font-family: inherit;
-    font-weight: 300;
-    margin: 0 0 0.6em;
-}
-
-h4,h5 {
-    font-family: inherit;
-    font-weight: 300;
-    margin: 0 0 0.4em;
-    color: var(--grey-darkest);
-}
-h6 {
-    font-family: inherit;
-    font-weight: 300;
-    margin: 0 0 0.3em;
-    color: var(--grey-darkest);
 
 
-}
-h1 {
-    font-size: 2em;
- 
-    }
-
-
-h2 {
-    font-size: 1.5em;
-}
-
-h3 {
-    font-size: 1.17em;
-
-}
-
-h4 {
-    font-size: 1em;
-
-}
-
-h5 {
-    font-size: .83em;
-}
-
-h6 {
-    font-size: .67em;
-}
-h1,h2,h3,h4,h5,h6.testing {
+h1,h2,h3,h4,h5,h6 {
 
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 
 }
-h1.testing {
+h1 {
     font-size: clamp(1.5em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
+       font-weight: 500;
+
 }
-h2.testing {
+h2 {
     font-size: clamp(1.17em, 1.6vw, 1.8em);
+    font-weight: 500;
+
 }
 
-h3.testing {
+h3 {
     font-size: clamp(1em, 1.26vw, 1.5em);
+    font-weight: 300;
+
 }
-h4.testing {
+h4 {
     font-size: clamp(0.83em, 1.06vw, 1.2em);
+    font-weight: 300;
+    color: var(--grey-darkest);
 }
-h5.testing {
+h5 {
     font-size: clamp(0.67em, 0.88vw, 1em);
+    font-weight: 300;
+    color: var(--grey-darkest);
 }
-h6.testing {
+h6 {
     font-size: clamp(0.58em, 0.7vw, 0.67em);
+    font-weight: 300;
+    color: var(--grey-darkest);
+
 }
+p{
+    font-size: clamp(0.83em, 1.06vw, 1.2em);
+    color: var(--grey-darkest);
+
+}
+p.normal {
+    font-weight: 300;
+  }
+  
+  p.light {
+    font-weight: 100;
+  }
+  
+  p.thick {
+    font-weight: 500;
+  }
+  
+
+
 strong {
     font-weight: 500;
     color: var(--black);
