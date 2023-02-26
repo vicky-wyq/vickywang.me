@@ -951,8 +951,8 @@ hr {
 
 /* ---- must always have for responsive*/
 .element {
-    padding: 0.4em 0.5em 0;
-    margin-bottom: 0.5em;
+    padding: 0.8em 1em 0;
+    margin-bottom: 1em;
     transition: background-color 0.3s ease;
 }
 
@@ -962,7 +962,7 @@ hr {
 }
 
 .elementInner {
-    padding: 1.6em;
+    padding: 1em;
     transition: background-color 0.3s ease;
     border-radius: 3px;
 }
@@ -1216,7 +1216,7 @@ button.passwordArr {
     transition: background-color 0.3s ease;
 }
 .elementInnerDemo {
-    padding: 0.5em;
+    padding: 0.8em 0.5em;
     transition: background-color 0.3s ease;
     border-radius: 6px;
     border: 0.01em solid var(--SiteWide-light);
@@ -1238,7 +1238,7 @@ button.passwordArr {
     padding: 0.8em 1em 0; /*top 0.8, left and right 1*/
     margin-bottom: 1em;
     border-radius: 6px;
-    border: 0.01em solid var(--SiteWide-dark);
+    border: 0.06em solid var(--SiteWide-lighter);
 
 
     background: var(--SiteWide-lightest);
