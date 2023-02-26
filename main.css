@@ -763,32 +763,33 @@ h5 {
 h6 {
     font-size: .67em;
 }
+h1,h2,h3,h4,h5,h6.testing {
+
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+
+}
 h1.testing {
     font-size: clamp(1.5em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
-    margin: .67em 0
 }
 h2.testing {
     font-size: clamp(1.17em, 1.6vw, 1.8em);
-    margin: .75em 0
 }
 
 h3.testing {
     font-size: clamp(1em, 1.26vw, 1.5em);
-    margin: .83em 0
 }
 h4.testing {
     font-size: clamp(0.83em, 1.06vw, 1.2em);
-
 }
 h5.testing {
     font-size: clamp(0.67em, 0.88vw, 1em);
 }
 h6.testing {
     font-size: clamp(0.58em, 0.7vw, 0.67em);
-
 }
 strong {
     font-weight: 500;
