@@ -13,9 +13,11 @@ body {
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
 }
-.displayNone{
+
+.displayNone {
     display: none;
 }
+
 .blockS {
     font-family: inherit;
     padding: 2em;
@@ -25,19 +27,22 @@ body {
     text-transform: uppercase;
 }
 
-.black{
+.black {
     background: var(--black);
     color: var(--grey-lightest);
 }
-.blackLess{
+
+.blackLess {
     background: var(--black-less);
     color: var(--grey-lightest);
 }
-.colorGreyDarkest{
+
+.colorGreyDarkest {
     background: var(--grey-darkest);
     color: var(--grey-lightest);
 }
-.colorGreyDark{
+
+.colorGreyDark {
     background: var(--grey-dark);
     color: var(--grey-lightest);
 }
@@ -46,6 +51,7 @@ body {
 .colorGreyNormal {
     background-color: var(--grey-normal);
 }
+
 .colorGreyLight {
     background-color: var(--grey-light);
 }
@@ -53,12 +59,15 @@ body {
 .colorGreyLightest {
     background-color: var(--grey-lightest);
 }
+
 .colorWarm {
     background-color: var(--SiteWide-warm);
 }
+
 .colorLt {
     background-color: var(--SiteWide-light);
 }
+
 .colorLter {
     background-color: var(--SiteWide-lighter);
 }
@@ -95,7 +104,8 @@ body {
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
     --SiteWide-dark: #7ba0a0;
 
-    --SiteWide-light: #AAD9D9;     /*never change*/
+    --SiteWide-light: #AAD9D9;
+    /*never change*/
 
     /* 368661 projects 296448*/
     --SiteWide-lighter: #e6f6f6;
@@ -253,7 +263,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:var(--white);
+    background-color: var(--white);
     width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -282,7 +292,6 @@ body {
 .dropdown:hover .dropdown-content {
     display: flex;
     transition: background-color 2s ease-in 100ms
-
 }
 
 /* drop down menu*/
@@ -698,34 +707,27 @@ section {
 
     margin: 0.8em 0;
 }
-
-h1,
-h2 {
+.noMargin {
+    margin: 0;
+}
+h1,h2 {
     font-family: inherit;
     font-weight: 500;
 
     margin: 0 0 0.8em;
 }
-
-.noMargin {
-    margin: 0;
-}
-
 h3 {
     font-family: inherit;
     font-weight: 300;
     margin: 0 0 0.6em;
 }
 
-h4,
-h5 {
+h4,h5 {
     font-family: inherit;
     font-weight: 300;
     margin: 0 0 0.4em;
     color: var(--grey-darkest);
-
 }
-
 h6 {
     font-family: inherit;
     font-weight: 300;
@@ -734,7 +736,73 @@ h6 {
 
 
 }
+h1 {
+    font-size: clamp(1.46em, 1.26vw, 2em);
+    /* - first one is the minimum allowed font-size.
+       - third one is the maximum allowed font-size.
+       - second argument is font-size that you wish to always have. */
+    }
 
+
+h2 {
+    font-size: 1.56em;
+}
+
+h3 {
+    font-size: 1.38em;
+
+}
+
+h4 {
+    font-size: 1.2em;
+
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+h1.testing {
+    font-size: clamp(1.46em, 1.26vw, 2em);
+    /* - first one is the minimum allowed font-size.
+       - third one is the maximum allowed font-size.
+       - second argument is font-size that you wish to always have. */
+}
+h2.testing {
+    font-size: clamp(1.26em, 1vw, 1.56em);
+}
+
+h3.testing {
+    font-size: clamp(1.1em, 0.8vw, 1.38em);
+}
+h4.testing {
+    font-size: clamp(0.8em, 0.7vw, 1.2em);
+
+}
+h5.testing {
+    font-size: clamp(0.8em, 0.6vw, 1em);
+}
+h6.testing {
+    font-size: clamp(0.8em, 0.5vw, 0.8em);
+}
+strong {
+    font-weight: 500;
+    color: var(--black);
+    margin: 1.5em, 0;
+}
+
+.styleCap {
+    text-transform: uppercase;
+}
+
+.textItalic {
+    font-style: italic;
+}
+
+/* text*/
 .textDecor {
     text-decoration: underline;
     text-decoration-style: double;
@@ -767,47 +835,7 @@ h6 {
 }
 
 
-h1 {
-    font-size: 1.68em;
-}
 
-h2 {
-    font-size: 1.56em;
-}
-
-h3 {
-    font-size: 1.38em;
-
-}
-
-h4 {
-    font-size: 1.2em;
-
-}
-
-h5 {
-    font-size: 1em;
-}
-
-h6 {
-    font-size: 0.8em;
-}
-
-strong {
-    font-weight: 500;
-    color: var(--black);
-    margin: 1.5em, 0;
-}
-
-.styleCap {
-    text-transform: uppercase;
-}
-
-.textItalic {
-    font-style: italic;
-}
-
-/* text*/
 
 hr {
     border: none;
@@ -932,6 +960,7 @@ hr {
     transition: background-color 0.3s ease;
     border-radius: 30px;
 }
+
 .elementDemoCard {
     background: linear-gradient(140deg, #f7fcff, #ecf0fb, #f8f5ff, #ecf1ff);
     padding: 4px;
@@ -1019,9 +1048,11 @@ hr {
 
 .input-field {
     position: absolute;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-    transform: translate(-50%, -50%); 
+    top: 50%;
+    /* position the top  edge of the element at the middle of the parent */
+    left: 50%;
+    /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
     /* This is a shorthand of translateX(-50%) and translateY(-50%) */
 }
 
@@ -1121,6 +1152,7 @@ button.passwordArr {
     margin-left: 4px;
 
 }
+
 .arrButtonSmall:after {
     content: "";
     background-image: url("icon/button-arrow-rightS.svg");
@@ -1130,6 +1162,7 @@ button.passwordArr {
     margin-left: 6px;
 
 }
+
 .arrCard:after {
     content: "";
     background-image: url("icon/arrow-card.svg");
@@ -1205,6 +1238,7 @@ button.passwordArr {
 .Grid--gutters .Grid--nested .Grid-cell:first-of-type .element {
     margin-right: 1em;
 }
+
 /* element = elementDemo */
 
 .elementDemo {
@@ -1215,6 +1249,7 @@ button.passwordArr {
     background: var(--SiteWide-warm);
     transition: background-color 0.3s ease;
 }
+
 .elementInnerDemo {
     padding: 0.8em 0.5em;
     transition: background-color 0.3s ease;
@@ -1226,6 +1261,7 @@ button.passwordArr {
     transition: background-color 0.3s ease;
 
 }
+
 .elementInnerDemo:hover {
     background: var(--SiteWide-lighter);
 }
@@ -1235,7 +1271,8 @@ button.passwordArr {
 .Demo {
     font-family: inherit;
     font-weight: 200;
-    padding: 0.8em 1em 0; /*top 0.8, left and right 1*/
+    padding: 0.8em 1em 0;
+    /*top 0.8, left and right 1*/
     margin-bottom: 1em;
     border-radius: 6px;
     border: 0.06em solid var(--SiteWide-lighter);
@@ -1244,10 +1281,12 @@ button.passwordArr {
     background: var(--SiteWide-lightest);
     transition: background-color 0.3s ease;
 }
+
 .Demo:after {
     content: "";
     display: block;
-    margin-top: 0.8em; /*button 0.8*/
+    margin-top: 0.8em;
+    /*button 0.8*/
     height: 1px;
 
 }
@@ -1318,6 +1357,7 @@ button.passwordArr {
     .dropdown:hover .dropdown-content {
         display: none;
     }
+
     body .BGappointa {
         background-image: url(./appointa/backgroundArrowM.svg);
         background-position: left;
@@ -2412,7 +2452,7 @@ input:checked~label.SEER {
 }
 
 
-  
+
 /* color and shadow*/
 
 .colorGH {
@@ -3295,10 +3335,11 @@ polygon {
 .tArrow {
     font-size: 1.8em;
     font-weight: 100;
-    margin:  0px;
+    margin: 0px;
     text-transform: capitalize;
 
 }
+
 .seArrow {
     width: auto;
     height: 0.8em;
@@ -4044,8 +4085,8 @@ body .carousel .carousel-item {
 .btn1:hover:after {
     transform: skewX(-180deg);
 }
- 
-  
+
+
 
 /* CSS */
 .button-35 {
@@ -4076,6 +4117,7 @@ body .carousel .carousel-item {
     margin-top: 0.4em;
     margin: 12px;
 }
+
 .button-35.DS:hover {
     box-shadow: var(--black-less) 0 0 0 0.06em, transparent 0 0 0 0;
     color: var(--black-less);
@@ -4084,6 +4126,7 @@ body .carousel .carousel-item {
 
 
 }
+
 .button-35.APPOINTA:hover {
     box-shadow: var(--APPOINTA-blue) 0 0 0 0.1em, transparent 0 0 0 0;
     color: var(--APPOINTA-blue);
