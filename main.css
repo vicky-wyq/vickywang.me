@@ -516,7 +516,7 @@ section {
 
 @media all and (min-width: 1880px) {
     body .logo {
-        padding: 0.5em;
+        padding: 1.2em;
     }
 
     body .blankMin1880 {
@@ -674,58 +674,61 @@ section {
     color: var(--white);
 }
 
-.specialText {
+.specialTextL {
     font-family: inherit;
     font-weight: 600;
-    font-size: 3em;
-
-    margin: 0.8em 0;
+    font-size: clamp(1.6em, 2.8vw, 3.2em);
+    margin: 0;
+    
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
-
-
 .specialTextS {
     font-family: inherit;
     font-weight: 600;
-    font-size: 2em;
+    font-size: clamp(1.6em, 2vw, 2.2em);
+    margin: 0;
+    
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 
-    margin: 0.4em 0;
 }
-
-.specialTextXS {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 1.4em;
-
-    margin: 0.2em 0;
-}
-
-.specialTextHR {
+.specialTextNote {
     font-family: 'Indie Flower', sans-serif;
-
     font-weight: 100;
-    font-size: 2.6em;
-
-    margin: 0.8em 0;
+    font-size: clamp(1.6em, 2vw, 2.2em);
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
+
+
+
 .noMargin {
     margin: 0;
 }
 
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 
 }
+
 h1 {
     font-size: clamp(1.38em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
-       font-weight: 500;
+    font-weight: 500;
 
 }
+
 h2 {
     font-size: clamp(1.17em, 1.6vw, 1.8em);
     font-weight: 500;
@@ -737,39 +740,41 @@ h3 {
     font-weight: 300;
 
 }
+
 h4 {
     font-size: clamp(0.86em, 1.06vw, 1.2em);
     font-weight: 300;
     color: var(--grey-darkest);
 }
+
 h5 {
     font-size: clamp(0.73em, 0.88vw, 1em);
     font-weight: 300;
     color: var(--grey-darkest);
 }
+
 h6 {
     font-size: clamp(0.68em, 0.7vw, 0.86em);
     font-weight: 300;
     color: var(--grey-darkest);
 
 }
-p{
+
+p.light {
+    font-weight: 100;
+}
+
+p {
     font-size: clamp(0.83em, 1.06vw, 1.2em);
     color: var(--grey-darkest);
-
-}
-p.normal {
     font-weight: 300;
-  }
-  
-  p.light {
-    font-weight: 100;
-  }
-  
-  p.thick {
+}
+
+/* default/normal */
+p.thick {
     font-weight: 500;
-  }
-  
+}
+
 
 
 strong {
@@ -979,7 +984,11 @@ hr {
     transition: background-color 0.3s ease;
     border-radius: 3px;
 }
-
+.elementInnerL {
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
 /* ---- password --------- */
 
 .password {
@@ -1516,12 +1525,7 @@ button.passwordArr {
         height: 14rem;
     }
 
-    .t-hello {
-        font-family: 'Caveat', sans-serif;
-        font-weight: 400;
-        font-size: 26px;
-    }
-
+ 
     body .t-hi {
         font-family: 'Lato', sans-serif;
         font-size: 2.2rem;
@@ -1532,9 +1536,7 @@ button.passwordArr {
         align-items: flex-start;
     }
 
-    body .t-intro {
-        display: none;
-    }
+ 
 
     body .divider {
 
@@ -2388,7 +2390,7 @@ input:checked~label.SEER {
 
 .logo {
 
-    padding: 1.6em;
+    padding: 1em;
     font-size: 1.8rem;
     font-weight: 300;
     /* margin-right: 8%; */
@@ -2915,12 +2917,14 @@ polygon {
     justify-content: space-between;
     align-items: center;
 }
+/* Caveat */
+/* Shadows Into Light */
 
 .t-hello {
-    font-family: 'Caveat', sans-serif;
+    font-family: 'Gloria Hallelujah', sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
-    margin: 0.4em 0;
+    font-size: clamp(1em, 1.26vw, 1.5em);
+    margin: 0;
     color: var(--grey-darkest);
 
 }
@@ -2939,11 +2943,7 @@ polygon {
 
 }
 
-.t-intro {
-    font-weight: 200;
-    font-size: 2em;
-    line-height: 1.2;
-}
+ 
 
 .tTQ {
     font-family: 'Lato', sans-serif;
@@ -3521,7 +3521,6 @@ a:link.textUnderline {
     text-decoration-thickness: 1px;
     text-underline-offset: 6px;
     text-decoration-color: var(--black);
-    padding-right: 1em;
 
 }
 
