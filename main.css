@@ -679,20 +679,21 @@ section {
     font-weight: 600;
     font-size: clamp(1.6em, 2.8vw, 3.2em);
     margin: 0;
-    
+
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
+
 .specialTextS {
     font-family: inherit;
     font-weight: 600;
-    font-size: clamp(1.6em, 2vw, 2.2em);
+    font-size: clamp(1em, 2vw, 2.2em);
     margin: 0;
-    
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 
 }
+
 .specialTextNote {
     font-family: 'Indie Flower', sans-serif;
     font-weight: 100;
@@ -708,17 +709,7 @@ section {
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
 
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
-
-}
 
 h1 {
     font-size: clamp(1.38em, 1.8vw, 2.2em);
@@ -726,37 +717,46 @@ h1 {
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
     font-weight: 500;
-
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
 
 h2 {
     font-size: clamp(1.17em, 1.6vw, 1.8em);
     font-weight: 500;
-
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
 
 h3 {
     font-size: clamp(1em, 1.26vw, 1.5em);
     font-weight: 300;
-
+    margin-top: clamp(0.42em, 0.5em, 1.2em);
+    margin-bottom: clamp(0.42em, 0.5em, 1.2em);
 }
 
 h4 {
     font-size: clamp(0.86em, 1.06vw, 1.2em);
     font-weight: 300;
     color: var(--grey-darkest);
+    margin-top: clamp(0.36em, 0.4em, 1em);
+    margin-bottom: clamp(0.36em, 0.4em, 1em);
 }
+
 
 h5 {
     font-size: clamp(0.73em, 0.88vw, 1em);
     font-weight: 300;
     color: var(--grey-darkest);
+    margin-top: clamp(0.2em, 0.4em, 1em);
+    margin-bottom: clamp(0.2em, 0.4em, 1em);
 }
 
 h6 {
     font-size: clamp(0.68em, 0.7vw, 0.86em);
     font-weight: 300;
     color: var(--grey-darkest);
+    margin: 0.26em 0;
 
 }
 
@@ -984,11 +984,13 @@ hr {
     transition: background-color 0.3s ease;
     border-radius: 3px;
 }
+
 .elementInnerL {
     padding: 2em;
     transition: background-color 0.3s ease;
     border-radius: 3px;
 }
+
 /* ---- password --------- */
 
 .password {
@@ -1164,30 +1166,34 @@ button.passwordArr {
     float: right;
 }
 
-/* accordion */
 .accordion {
+    margin: 0;
     background-color: var(--grey-lightest);
     border-bottom: 1px solid var(--grey-light);
-
-    outline: none;
-    text-align: left;
-    padding: 15px 20px;
     color: var(--black);
     cursor: pointer;
+    padding: 15px 20px;
+    display: flex;
+    --webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     transition: background-color 0.2s linear;
+
 }
+/* accordion */
+
 
 .accordion:after {
     content: "";
-    background-image: url("icon/arrow-accordion-up.svg");
-    height: 36px;
-    width: 36px;
+    background-image: url("icon/plus.svg");
+    height: 28px;
+    width: 28px;
     float: right;
 }
 
 .accordion.is-open:after {
     content: "";
-    background-image: url("icon/arrow-accordion-down.svg");
+    background-image: url("icon/minus.svg");
 }
 
 .accordion:hover,
@@ -1263,14 +1269,13 @@ button.passwordArr {
 
 .Demo {
     font-family: inherit;
-    font-weight: 200;
+    font-weight: 300;
     padding: 0.8em 1em 0;
     /*top 0.8, left and right 1*/
     margin-bottom: 1em;
     border-radius: 6px;
     border: 0.06em solid var(--SiteWide-lighter);
-
-
+    color: var(--SiteWide-dark);
     background: var(--SiteWide-lightest);
     transition: background-color 0.3s ease;
 }
@@ -1525,7 +1530,7 @@ button.passwordArr {
         height: 14rem;
     }
 
- 
+
     body .t-hi {
         font-family: 'Lato', sans-serif;
         font-size: 2.2rem;
@@ -1536,7 +1541,7 @@ button.passwordArr {
         align-items: flex-start;
     }
 
- 
+
 
     body .divider {
 
@@ -1973,35 +1978,45 @@ button.passwordArr {
 
 .content-1of1::before {
     content: "1";
+    font-weight: 300;
     color: var(--SiteWide-dark);
 }
 
 .content-1of2::before {
     content: "1/2";
+    font-weight: 300;
     color: var(--SiteWide-dark);
 
 }
 
 .content-1of3::before {
     content: "1/3";
+    font-weight: 300;
+
     color: var(--SiteWide-dark);
 
 }
 
 .content-1of4::before {
     content: "1/4";
+    font-weight: 300;
+
     color: var(--SiteWide-dark);
 
 }
 
 .content-1of6::before {
     content: "1/6";
+    font-weight: 300;
+
     color: var(--SiteWide-dark);
 
 }
 
 .content-1of12::before {
     content: "1/12";
+    font-weight: 300;
+
     color: var(--SiteWide-dark);
 
 }
@@ -2760,8 +2775,8 @@ polygon {
     border-top: 1px solid rgba(0, 0, 0, 0.13);
     height: 0px;
     width: 90px;
-    margin-top: 0px;
-    margin-bottom: 18px;
+    margin-top: 6px;
+    margin-bottom: 12px;
 }
 
 .lineHorizAll-mp {
@@ -2917,6 +2932,7 @@ polygon {
     justify-content: space-between;
     align-items: center;
 }
+
 /* Caveat */
 /* Shadows Into Light */
 
@@ -2943,7 +2959,7 @@ polygon {
 
 }
 
- 
+
 
 .tTQ {
     font-family: 'Lato', sans-serif;
