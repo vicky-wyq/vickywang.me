@@ -719,7 +719,7 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 h1 {
-    font-size: clamp(1.5em, 1.8vw, 2.2em);
+    font-size: clamp(1.38em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
@@ -738,17 +738,17 @@ h3 {
 
 }
 h4 {
-    font-size: clamp(0.83em, 1.06vw, 1.2em);
+    font-size: clamp(0.86em, 1.06vw, 1.2em);
     font-weight: 300;
     color: var(--grey-darkest);
 }
 h5 {
-    font-size: clamp(0.67em, 0.88vw, 1em);
+    font-size: clamp(0.73em, 0.88vw, 1em);
     font-weight: 300;
     color: var(--grey-darkest);
 }
 h6 {
-    font-size: clamp(0.58em, 0.7vw, 0.67em);
+    font-size: clamp(0.68em, 0.7vw, 0.86em);
     font-weight: 300;
     color: var(--grey-darkest);
 
@@ -1700,9 +1700,7 @@ button.passwordArr {
         height: 3.8rem;
     }
 
-    body h1 {
-        font-size: 1.6em;
-    }
+
 
     body .heightXS {
         height: auto;
