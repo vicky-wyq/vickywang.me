@@ -18,14 +18,7 @@ body {
     display: none;
 }
 
-.blockS {
-    font-family: inherit;
-    padding: 2em;
-    border-radius: 6px;
-    height: 1em;
-    font-size: 12px;
-    text-transform: uppercase;
-}
+
 
 .black {
     background: var(--black);
@@ -1180,6 +1173,7 @@ button.passwordArr {
     transition: background-color 0.2s linear;
 
 }
+
 /* accordion */
 
 
@@ -3370,11 +3364,32 @@ polygon {
 }
 
 .intro-logo:hover {
-    padding: 18px;
+    padding: 1em 1.6em;
     border-radius: 50%;
     background-color: var(--grey-lightest);
 }
 
+
+
+.chip {
+    font-family: inherit;
+    padding: 0.6em;
+    border-radius: 2em;
+    font-size: 12px;
+    width: min-content;
+    background-color: var(--SiteWide-warm);
+}
+
+
+
+.blockS {
+    font-family: inherit;
+    padding: 2em;
+    border-radius: 6px;
+    height: 1em;
+    font-size: 12px;
+    text-transform: uppercase;
+}
 
 .widthLogo {
     width: 3rem;
