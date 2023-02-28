@@ -3355,7 +3355,7 @@ polygon {
 
 .intro-logo {
     margin: 0.6em;
-    padding: 18px;
+    padding: 1.2em;
     border-radius: 50%;
 
     width: 2em;
@@ -3364,7 +3364,7 @@ polygon {
 }
 
 .intro-logo:hover {
-    padding: 1em 1.6em;
+    padding: 1.2em;
     border-radius: 50%;
     background-color: var(--grey-lightest);
 }
