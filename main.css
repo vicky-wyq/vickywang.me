@@ -2603,7 +2603,7 @@ polygon {
 }
 
 .cardBorder {
-    border: 2px solid var(--grey-lightest);
+    border: 0.03em solid var(--grey-lightest);
     border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);
