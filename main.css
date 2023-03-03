@@ -1101,6 +1101,24 @@ button.passwordArr {
     animation: mover 1s infinite alternate;
 }
 
+
+
+.shrinkAndExpand {
+    transform: rotateX(40deg);
+    animation: shrinkAndExpand 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shrinkAndExpand {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateY(50deg);
+    }
+}
+
 @-webkit-keyframes mover {
     0% {
         transform: translateY(0);
