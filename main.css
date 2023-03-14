@@ -18,45 +18,59 @@ body {
     display: none;
 }
 
+/* color grey */
 
-
-.black {
-    background: var(--black);
-    color: var(--grey-lightest);
-}
-
-.blackLess {
-    background: var(--black-less);
-    color: var(--grey-lightest);
-}
 .colorGreyTesting {
     color: var(--black-light);
 }
-.colorGrey {
+
+.colorGreyDk {
     color: var(--grey-darkest);
 }
-.colorGreyDarkest {
+
+.colorGreyLt {
+    color: var(--grey-lightest);
+}
+
+/* color grey */
+/* bg color grey */
+.blackBG {
+    background: var(--SiteWide);
+}
+
+.blackBG {
+    background: var(--black);
+}
+
+.blackLessBG {
+    background: var(--black-less);
+}
+
+.colorGreyBGTesting {
+    background: var(--black-light);
+}
+
+.colorGreyDarkBGestBG {
     background: var(--grey-darkest);
-    color: var(--grey-lightest);
 }
 
-.colorGreyDark {
+.colorGreyDarkBG {
     background: var(--grey-dark);
-    color: var(--grey-lightest);
 }
 
-
-.colorGreyNormal {
+.colorGreyNormalBG {
     background-color: var(--grey-normal);
 }
 
-.colorGreyLight {
+.colorGreyLightBG {
     background-color: var(--grey-light);
 }
 
-.colorGreyLightest {
+.colorGreyLightBGest {
     background-color: var(--grey-lightest);
 }
+
+/* bg color grey */
 
 .colorWarm {
     background-color: var(--SiteWide-warm);
@@ -86,9 +100,14 @@ body {
     --alert: #CC3300;
     --alert--pink: #EB5757;
 
+
+    --SiteWide: #202020;
+
     --black: #161616;
+    /* #161616*/
+
     --black-less: #5f6368;
-    --black-light: #797d81;
+    --black-light: #83878a;
 
     /* #505050*/
 
@@ -101,7 +120,9 @@ body {
     --grey-light: #efefef;
     --grey-lightest: #F8F8F8;
 
-    --SiteWide: #202020;
+
+
+
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
     --SiteWide-dark: #7ba0a0;
 
@@ -488,15 +509,7 @@ section {
         transparent 400px
       );
  */
-.colorBgX {
-    z-index: 0;
-    background: linear-gradient(30deg, #ffffff, #ff7fa5, #1992fc, #a4d2fa, #ffffff);
-    animation: a 0s ease-in-out -2.3s alternate infinite;
-    animation-duration: 4.1s, 2.9s;
-    filter: blur(120px);
-    animation: rotate-gradient linear 7s infinite;
-    background-size: 600%;
-}
+
 
 @keyframes rotate-gradient {
     0% {
@@ -872,7 +885,10 @@ hr {
     padding: 0;
     margin: 0;
     border-style: ridge;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+
     /*  
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -2650,8 +2666,17 @@ polygon {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.shadowBox2 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: var(--border-radius);
+
+}
+/* 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+*/
+
 .shadowBox {
-    box-shadow: rgba(109, 109, 109, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(139, 139, 139, 0.45) 0px 25px 20px -20px;
 }
 
 .shadowFilter {
