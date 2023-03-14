@@ -35,7 +35,7 @@ body {
 /* color grey */
 /* bg color grey */
 .blackBG {
-    background: var(--SiteWide);
+    background: var(--colorBlack);
 }
 
 .blackBG {
@@ -73,19 +73,19 @@ body {
 /* bg color grey */
 
 .colorWarm {
-    background-color: var(--SiteWide-warm);
+    background-color: var(--colorBlack-warm);
 }
 
 .colorLt {
-    background-color: var(--SiteWide-light);
+    background-color: var(--colorBlack-light);
 }
 
 .colorLter {
-    background-color: var(--SiteWide-lighter);
+    background-color: var(--colorBlack-lighter);
 }
 
 .colorLtest {
-    background-color: var(--SiteWide-lightest);
+    background-color: var(--colorBlack-lightest);
 }
 
 .colorAlet {
@@ -95,15 +95,21 @@ body {
 }
 
 :root {
+    --img-APPOINT:url('./image/Cover_APPOINTA.jpg');
+    --img-SEER:url('./image/Cover_SEER.jpg');
+    --img-WS:url('./image/Cover_worksample.png');
+
+    --img-DS:url('./image/Cover_portfolioWeb.png');
+
     /* Color */
     --white: #ffffff;
     --alert: #CC3300;
     --alert--pink: #EB5757;
 
 
-    --SiteWide: #202020;
+    --colorBlack: #202020;
 
-    --black: #161616;
+    --black: #202020;
     /* #161616*/
 
     --black-less: #5f6368;
@@ -124,15 +130,15 @@ body {
 
 
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
-    --SiteWide-dark: #7ba0a0;
+    --colorBlack-dark: #7ba0a0;
 
-    --SiteWide-light: #AAD9D9;
+    --colorBlack-light: #AAD9D9;
     /*never change*/
 
     /* 368661 projects 296448*/
-    --SiteWide-lighter: #e6f6f6;
-    --SiteWide-lightest: #faffff;
-    --SiteWide-warm: #fcf5eb;
+    --colorBlack-lighter: #e6f6f6;
+    --colorBlack-lightest: #faffff;
+    --colorBlack-warm: #fcf5eb;
 
 
 
@@ -345,7 +351,7 @@ a.active.SEER {
     margin: 6px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    background-color: var(--SiteWide);
+    background-color: var(--colorBlack);
 }
 
 .bar.APPOINTA {
@@ -599,7 +605,7 @@ main>nav {
 
 .section-nav a:hover,
 .section-nav a:focus {
-    color: var(--SiteWide);
+    color: var(--colorBlack);
 }
 
 .section-nav.APPOINTA a:hover,
@@ -736,8 +742,8 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.17em, 1.6vw, 1.8em);
-    font-weight: 500;
+    font-size: clamp(1.17em, 1.46vw, 1.68em);
+    font-weight: 300;
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
@@ -821,7 +827,7 @@ strong {
 }
 
 .textDecor.GREEN {
-    text-decoration-color: var(--SiteWide-light);
+    text-decoration-color: var(--colorBlack-light);
 }
 
 .textDecor.WS {
@@ -939,7 +945,7 @@ hr {
 
 .elementCard:hover {
     cursor: pointer;
-    border-bottom: 5px solid var(--SiteWide-light);
+    border-bottom: 5px solid var(--colorBlack-light);
     transition: all 0.25s ease-in;
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
@@ -1281,8 +1287,8 @@ button.passwordArr {
     padding: 0.8em 1em 0;
     margin-bottom: 1em;
     border-radius: 6px;
-    border: 0.01em solid var(--SiteWide-warm);
-    background: var(--SiteWide-warm);
+    border: 0.01em solid var(--colorBlack-warm);
+    background: var(--colorBlack-warm);
     transition: background-color 0.3s ease;
 }
 
@@ -1290,16 +1296,16 @@ button.passwordArr {
     padding: 0.8em 0.5em;
     transition: background-color 0.3s ease;
     border-radius: 6px;
-    border: 0.01em solid var(--SiteWide-light);
+    border: 0.01em solid var(--colorBlack-light);
 
 
-    background: var(--SiteWide-lightest);
+    background: var(--colorBlack-lightest);
     transition: background-color 0.3s ease;
 
 }
 
 .elementInnerDemo:hover {
-    background: var(--SiteWide-lighter);
+    background: var(--colorBlack-lighter);
 }
 
 /* element = demo */
@@ -1311,9 +1317,9 @@ button.passwordArr {
     /*top 0.8, left and right 1*/
     margin-bottom: 1em;
     border-radius: 6px;
-    border: 0.06em solid var(--SiteWide-lighter);
-    color: var(--SiteWide-dark);
-    background: var(--SiteWide-lightest);
+    border: 0.06em solid var(--colorBlack-lighter);
+    color: var(--colorBlack-dark);
+    background: var(--colorBlack-lightest);
     transition: background-color 0.3s ease;
 }
 
@@ -1327,7 +1333,7 @@ button.passwordArr {
 }
 
 .Demo:hover {
-    background: var(--SiteWide-lighter);
+    background: var(--colorBlack-lighter);
 }
 
 .Demo.Holly {
@@ -2016,13 +2022,13 @@ button.passwordArr {
 .content-1of1::before {
     content: "1";
     font-weight: 300;
-    color: var(--SiteWide-dark);
+    color: var(--colorBlack-dark);
 }
 
 .content-1of2::before {
     content: "1/2";
     font-weight: 300;
-    color: var(--SiteWide-dark);
+    color: var(--colorBlack-dark);
 
 }
 
@@ -2030,7 +2036,7 @@ button.passwordArr {
     content: "1/3";
     font-weight: 300;
 
-    color: var(--SiteWide-dark);
+    color: var(--colorBlack-dark);
 
 }
 
@@ -2038,7 +2044,7 @@ button.passwordArr {
     content: "1/4";
     font-weight: 300;
 
-    color: var(--SiteWide-dark);
+    color: var(--colorBlack-dark);
 
 }
 
@@ -2046,7 +2052,7 @@ button.passwordArr {
     content: "1/6";
     font-weight: 300;
 
-    color: var(--SiteWide-dark);
+    color: var(--colorBlack-dark);
 
 }
 
@@ -2054,7 +2060,7 @@ button.passwordArr {
     content: "1/12";
     font-weight: 300;
 
-    color: var(--SiteWide-dark);
+    color: var(--colorBlack-dark);
 
 }
 
@@ -2393,7 +2399,7 @@ input:checked~label.SEER {
 }
 
 .progress-bar {
-    background-color: var(--SiteWide-light);
+    background-color: var(--colorBlack-light);
     height: 3px;
     width: 0%;
 }
@@ -2446,7 +2452,7 @@ input:checked~label.SEER {
     font-size: 1.8rem;
     font-weight: 300;
     /* margin-right: 8%; */
-    color: var(--SiteWide);
+    color: var(--colorBlack);
 }
 
 .wrapper {
@@ -2606,9 +2612,7 @@ polygon {
     color: var(--black);
 }
 
-.SiteWide {
-    color: var(--SiteWide);
-}
+
 
 
 
@@ -2665,11 +2669,33 @@ polygon {
 .shadowBoxPrototype {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.cardImgCrop {
+	height: 20.6em;
+	width: 100%;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+}
 
+.cardImgCropAPPOINTA {
+	border-radius: var(--border-radius);
+	background-image: var(--img-APPOINT);
+}
+.cardImgCropWS {
+	border-radius: var(--border-radius);
+	background-image: var(--img-WS);
+}
+.cardImgCropSEER {
+	border-radius: var(--border-radius);
+	background-image: var(--img-SEER);
+}
+.cardImgCropDS {
+	border-radius: var(--border-radius);
+	background-image: var(--img-DS);
+}
 .shadowBox2 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    border-radius: var(--border-radius);
-
 }
 /* 
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -2881,7 +2907,7 @@ polygon {
     margin: 0 0 0.6em;
     height: 3px;
     width: 30px;
-    background-color: var(--SiteWide-light);
+    background-color: var(--colorBlack-light);
     border-radius: 20px;
     border: none;
 }
@@ -3428,7 +3454,7 @@ polygon {
     border-radius: 2em;
     font-size: 12px;
     width: min-content;
-    background-color: var(--SiteWide-warm);
+    background-color: var(--colorBlack-warm);
 }
 
 
@@ -3620,7 +3646,7 @@ a:link.textProject {
 }
 
 .active.greenNav a {
-    color: var(--SiteWide);
+    color: var(--colorBlack);
 }
 
 .active.appointa a {
