@@ -29,7 +29,12 @@ body {
     background: var(--black-less);
     color: var(--grey-lightest);
 }
-
+.colorGreyTesting {
+    color: var(--black-light);
+}
+.colorGrey {
+    color: var(--grey-darkest);
+}
 .colorGreyDarkest {
     background: var(--grey-darkest);
     color: var(--grey-lightest);
@@ -83,11 +88,13 @@ body {
 
     --black: #161616;
     --black-less: #5f6368;
+    --black-light: #797d81;
+
     /* #505050*/
 
     --grey-darkest: #999D9F;
 
-    /* #909090, 999D9F*/
+    /* #909090, 999D9F, 8e8787*/
 
     --grey-dark: #c8c8c8;
     --grey-normal: #e4e4e4;
@@ -725,8 +732,8 @@ h2 {
 h3 {
     font-size: clamp(1em, 1.26vw, 1.5em);
     font-weight: 300;
-    margin-top: clamp(0.42em, 0.5em, 1.2em);
-    margin-bottom: clamp(0.42em, 0.5em, 1.2em);
+    margin-top: clamp(0.42em, 0.56em, 1.2em);
+    margin-bottom: clamp(0.42em, 0.56em, 1.2em);
 }
 
 h4 {
@@ -2489,6 +2496,7 @@ input:checked~label.SEER {
 
 }
 
+
 .colorGreyBorder {
     border: 5px solid #F5F5F5;
 
@@ -2586,9 +2594,7 @@ polygon {
     color: var(--SiteWide);
 }
 
-.colorGrey {
-    color: var(--grey-darkest);
-}
+
 
 .tColorAM {
     color: #d9e0f0;
