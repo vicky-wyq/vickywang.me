@@ -86,7 +86,8 @@ body {
     /* #505050*/
 
     --grey-darkest: #999D9F;
-    /* #909090*/
+
+    /* #909090, 999D9F*/
 
     --grey-dark: #c8c8c8;
     --grey-normal: #e4e4e4;
