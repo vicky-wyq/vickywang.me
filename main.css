@@ -34,41 +34,48 @@ body {
 
 /* color grey */
 /* bg color grey */
-.blackBG {
-    background: var(--colorBlack);
-}
-
-.blackBG {
+.Grey900 {
     background: var(--black);
 }
+/* grey900 */
 
-.blackLessBG {
+.Grey800 {
     background: var(--black-less);
 }
-
-.colorGreyBGTesting {
+/* grey800 */
+.Grey700 {
     background: var(--black-light);
-}
+}/* grey700 */
 
 .colorGreyDarkBGestBG {
     background: var(--grey-darkest);
 }
+/* grey600 */
 
 .colorGreyDarkBG {
     background: var(--grey-dark);
 }
 
+
+/* grey500 */
+
 .colorGreyNormalBG {
     background-color: var(--grey-normal);
 }
+/* grey400 */
 
 .colorGreyLightBG {
     background-color: var(--grey-light);
 }
+/* grey300 */
 
 .colorGreyLightBGest {
     background-color: var(--grey-lightest);
 }
+/* grey200 */
+
+
+/* grey100 */
 
 /* bg color grey */
 
@@ -107,7 +114,7 @@ body {
     --alert--pink: #EB5757;
 
 
-    --colorBlack: #202020;
+    --black: #202020;
 
     --black: #202020;
     /* #161616*/
@@ -351,7 +358,7 @@ a.active.SEER {
     margin: 6px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    background-color: var(--colorBlack);
+    background-color: var(--black);
 }
 
 .bar.APPOINTA {
@@ -605,7 +612,7 @@ main>nav {
 
 .section-nav a:hover,
 .section-nav a:focus {
-    color: var(--colorBlack);
+    color: var(--black);
 }
 
 .section-nav.APPOINTA a:hover,
@@ -753,6 +760,7 @@ h3 {
     font-weight: 300;
     margin-top: clamp(0.42em, 0.56em, 1.2em);
     margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+    line-height: clamp(1px, 32px, 36px);;
 }
 
 h4 {
@@ -3463,9 +3471,8 @@ polygon {
 
 .blockS {
     font-family: inherit;
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 6px;
-    height: 1em;
     font-size: 12px;
     text-transform: uppercase;
 }
