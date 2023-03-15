@@ -95,11 +95,11 @@ body {
 }
 
 :root {
-    --img-APPOINT:url('./image/Cover_APPOINTA.jpg');
-    --img-SEER:url('./image/Cover_SEER.jpg');
-    --img-WS:url('./image/Cover_worksample.png');
+    --img-APPOINT: url('./image/Cover_APPOINTA.jpg');
+    --img-SEER: url('./image/Cover_SEER.jpg');
+    --img-WS: url('./image/Cover_worksample.png');
 
-    --img-DS:url('./image/Cover_portfolioWeb.png');
+    --img-DS: url('./image/Cover_portfolioWeb.png');
 
     /* Color */
     --white: #ffffff;
@@ -1395,6 +1395,10 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+    body .cardImgCrop {
+        min-height: 16em;
+    }
+
     .dropdown:hover .dropdown-content {
         display: none;
     }
@@ -2669,33 +2673,54 @@ polygon {
 .shadowBoxPrototype {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
 .cardImgCrop {
-	height: 20.6em;
-	width: 100%;
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-	background-size: cover;
-	box-sizing: border-box;
+    min-height: 20.6em;
+    width: 100%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100%;
+    background-position: 50% 50%;
 }
 
+/* 
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+*/
 .cardImgCropAPPOINTA {
-	border-radius: var(--border-radius);
-	background-image: var(--img-APPOINT);
+    border-radius: var(--border-radius);
+    background-image: var(--img-APPOINT);
+
 }
+
 .cardImgCropWS {
-	border-radius: var(--border-radius);
-	background-image: var(--img-WS);
+    border-radius: var(--border-radius);
+    background-image: var(--img-WS);
+
 }
+
 .cardImgCropSEER {
-	border-radius: var(--border-radius);
-	background-image: var(--img-SEER);
+    border-radius: var(--border-radius);
+    background-image: var(--img-SEER);
+
 }
+
 .cardImgCropDS {
-	border-radius: var(--border-radius);
-	background-image: var(--img-DS);
+    border-radius: var(--border-radius);
+    background-image: var(--img-DS);
+
 }
+
 .shadowBox2 {
-    box-shadow: rgba(172, 176, 179, 0.1) -4px 9px 25px -6px;
+    box-shadow: rgba(147, 153, 157, 0.1) -4px 9px 25px -6px;
 
 }
 
