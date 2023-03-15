@@ -1395,9 +1395,6 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
-    body .cardImgCrop {
-        min-height: 16em;
-    }
 
     .dropdown:hover .dropdown-content {
         display: none;
@@ -2675,18 +2672,16 @@ polygon {
 }
 
 .cardImgCrop {
-    min-height: 20.6em;
-    width: 100%;
+    height: 558px;
+}
 
+/* 
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-size: 100%;
     background-position: 50% 50%;
-}
-
-/* 
     background-origin: border-box;
     background-clip: content-box, border-box;
     box-sizing: border-box;
