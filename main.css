@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    color: var(--Grey800);
+    color: var(--Grey700);
 }
 
 body {
@@ -115,13 +115,16 @@ body {
 
 
 
-    --Grey900: #202020;
-    /* #161616*/
+    --Grey900: #292929;
+    /*292929 2c2c2c #161616*/
 
-    --Grey800: #5f6368;
-    --Grey700: #83878a;
+    --Grey800: #4f4f4f;
+    /* 5f6368 */
 
-    /* #505050*/
+
+    --Grey700: #757575;
+
+    /* #505050 83878a 787878 757575 7e7e7ea8a8a8*/
 
     --Grey600: #999D9F;
 
@@ -676,7 +679,6 @@ ul {
     font-size: large;
     line-height: 1.4em;
     font-weight: 300;
-    color: var(--Grey600);
     list-style-position: outside;
     margin-left: 0;
     padding-left: 20px;
@@ -765,7 +767,6 @@ h3 {
 h4 {
     font-size: clamp(0.86em, 1.06vw, 1.2em);
     font-weight: 300;
-    color: var(--Grey600);
     margin-top: clamp(0.36em, 0.4em, 1em);
     margin-bottom: clamp(0.36em, 0.4em, 1em);
 }
@@ -774,7 +775,6 @@ h4 {
 h5 {
     font-size: clamp(0.73em, 0.88vw, 1em);
     font-weight: 300;
-    color: var(--Grey600);
     margin-top: clamp(0.2em, 0.4em, 1em);
     margin-bottom: clamp(0.2em, 0.4em, 1em);
 }
@@ -782,7 +782,6 @@ h5 {
 h6 {
     font-size: clamp(0.68em, 0.7vw, 0.86em);
     font-weight: 300;
-    color: var(--Grey600);
     margin: 0.26em 0;
 
 }
@@ -793,7 +792,6 @@ p.light {
 
 p {
     font-size: clamp(0.83em, 1.06vw, 1.2em);
-    color: var(--Grey600);
     font-weight: 300;
 }
 
@@ -3415,6 +3413,7 @@ polygon {
     font-weight: 100;
     margin: 0px;
     text-transform: capitalize;
+    color: var(--Grey900);
 
 }
 
