@@ -82,6 +82,9 @@ body {
 .colorWarm {
     background-color: var(--colorBlack-warm);
 }
+.SkylineBlue {
+    background-color: var(--colorBlack-dark);
+}
 
 .colorLt {
     background-color: var(--colorBlack-light);
@@ -126,20 +129,31 @@ body {
 
     /* #505050 83878a 787878 757575 7e7e7ea8a8a8*/
 
-    --Grey600: #999D9F;
 
-    /* #909090, 999D9F, 8e8787*/
+    --Grey600: #a5a5a5;
 
-    --Grey500: #c8c8c8;
-    --Grey400: #e4e4e4;
+    /* #909090, 999D9F, 8e8787 a7a7a7*/
+
+    --Grey500: #b6b5b5;
+
+    /* #c8c8c8 e0e0e0*/
+
+    
+    --Grey400: #e6e6e6;
+        /* e4e4e4; e6e6e6*/
+
     --Grey300: #efefef;
-    --Grey200: #F8F8F8;
+        /* efefef, f2f2f2*/
 
+    --Grey200: #f2f2f2;
+    /* F8F8F8, f2f2f2*/
+
+    --Grey100: #F8F8F8;
 
 
 
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
-    --colorBlack-dark: #7ba0a0;
+    --colorBlack-dark: #9bb5b4;
 
     --colorBlack-light: #AAD9D9;
     /*never change*/
