@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    color: var(--black-less);
+    color: var(--Grey800);
 }
 
 body {
@@ -21,56 +21,56 @@ body {
 /* color grey */
 
 .colorGreyTesting {
-    color: var(--black-light);
+    color: var(--Grey700);
 }
 
 .colorGreyDk {
-    color: var(--grey-darkest);
+    color: var(--Grey600);
 }
 
 .colorGreyLt {
-    color: var(--grey-lightest);
+    color: var(--Grey200);
 }
 
 /* color grey */
 /* bg color grey */
 .Grey900 {
-    background: var(--black);
+    background: var(--Grey900);
 }
 /* grey900 */
 
 .Grey800 {
-    background: var(--black-less);
+    background: var(--Grey800);
 }
 /* grey800 */
 .Grey700 {
-    background: var(--black-light);
+    background: var(--Grey700);
 }/* grey700 */
 
-.colorGreyDarkBGestBG {
-    background: var(--grey-darkest);
+.Grey600 {
+    background: var(--Grey600);
 }
 /* grey600 */
 
-.colorGreyDarkBG {
-    background: var(--grey-dark);
+.Grey500 {
+    background: var(--Grey500);
 }
 
 
 /* grey500 */
 
-.colorGreyNormalBG {
-    background-color: var(--grey-normal);
+.Grey400 {
+    background-color: var(--Grey400);
 }
 /* grey400 */
 
-.colorGreyLightBG {
-    background-color: var(--grey-light);
+.Grey300 {
+    background-color: var(--Grey300);
 }
 /* grey300 */
 
-.colorGreyLightBGest {
-    background-color: var(--grey-lightest);
+.Grey200 {
+    background-color: var(--Grey200);
 }
 /* grey200 */
 
@@ -97,7 +97,7 @@ body {
 
 .colorAlet {
     background-color: var(--alert);
-    color: var(--grey-lightest);
+    color: var(--Grey200);
 
 }
 
@@ -114,24 +114,23 @@ body {
     --alert--pink: #EB5757;
 
 
-    --black: #202020;
 
-    --black: #202020;
+    --Grey900: #202020;
     /* #161616*/
 
-    --black-less: #5f6368;
-    --black-light: #83878a;
+    --Grey800: #5f6368;
+    --Grey700: #83878a;
 
     /* #505050*/
 
-    --grey-darkest: #999D9F;
+    --Grey600: #999D9F;
 
     /* #909090, 999D9F, 8e8787*/
 
-    --grey-dark: #c8c8c8;
-    --grey-normal: #e4e4e4;
-    --grey-light: #efefef;
-    --grey-lightest: #F8F8F8;
+    --Grey500: #c8c8c8;
+    --Grey400: #e4e4e4;
+    --Grey300: #efefef;
+    --Grey200: #F8F8F8;
 
 
 
@@ -217,7 +216,7 @@ body {
     /*  10% opaque green */
     height: 4em;
     transition: transform 0.25s ease-in-out;
-    border-bottom: 1px solid var(--grey-lightest);
+    border-bottom: 1px solid var(--Grey200);
     z-index: 3;
 }
 
@@ -317,7 +316,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: var(--grey-lightest);
+    background-color: var(--Grey200);
     cursor: pointer;
     border-radius: 12px;
 
@@ -338,7 +337,7 @@ a.nav-link {
     font-weight: 300;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    color: var(--grey-darkest);
+    color: var(--Grey600);
 }
 
 a.active.SEER {
@@ -358,7 +357,7 @@ a.active.SEER {
     margin: 6px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    background-color: var(--black);
+    background-color: var(--Grey900);
 }
 
 .bar.APPOINTA {
@@ -584,7 +583,7 @@ main>nav {
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active>a {
-    color: var(--black);
+    color: var(--Grey900);
     font-weight: 500;
 }
 
@@ -593,7 +592,7 @@ main>nav {
     background-color: var(--White-transparent);
     border-radius: 10px;
     opacity: 0.8;
-    border: 1px solid var(--grey-lightest);
+    border: 1px solid var(--Grey200);
     z-index: 3;
     position: sticky;
     width: fit-content;
@@ -605,14 +604,14 @@ main>nav {
     text-decoration: none;
     display: block;
     padding: .125rem 0;
-    color: var(--grey-darkest);
+    color: var(--Grey600);
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
 }
 
 .section-nav a:hover,
 .section-nav a:focus {
-    color: var(--black);
+    color: var(--Grey900);
 }
 
 .section-nav.APPOINTA a:hover,
@@ -677,7 +676,7 @@ ul {
     font-size: large;
     line-height: 1.4em;
     font-weight: 300;
-    color: var(--grey-darkest);
+    color: var(--Grey600);
     list-style-position: outside;
     margin-left: 0;
     padding-left: 20px;
@@ -766,7 +765,7 @@ h3 {
 h4 {
     font-size: clamp(0.86em, 1.06vw, 1.2em);
     font-weight: 300;
-    color: var(--grey-darkest);
+    color: var(--Grey600);
     margin-top: clamp(0.36em, 0.4em, 1em);
     margin-bottom: clamp(0.36em, 0.4em, 1em);
 }
@@ -775,7 +774,7 @@ h4 {
 h5 {
     font-size: clamp(0.73em, 0.88vw, 1em);
     font-weight: 300;
-    color: var(--grey-darkest);
+    color: var(--Grey600);
     margin-top: clamp(0.2em, 0.4em, 1em);
     margin-bottom: clamp(0.2em, 0.4em, 1em);
 }
@@ -783,7 +782,7 @@ h5 {
 h6 {
     font-size: clamp(0.68em, 0.7vw, 0.86em);
     font-weight: 300;
-    color: var(--grey-darkest);
+    color: var(--Grey600);
     margin: 0.26em 0;
 
 }
@@ -794,7 +793,7 @@ p.light {
 
 p {
     font-size: clamp(0.83em, 1.06vw, 1.2em);
-    color: var(--grey-darkest);
+    color: var(--Grey600);
     font-weight: 300;
 }
 
@@ -807,7 +806,7 @@ p.thick {
 
 strong {
     font-weight: 500;
-    color: var(--black);
+    color: var(--Grey900);
     margin: 1.5em, 0;
 }
 
@@ -857,7 +856,7 @@ strong {
 hr {
     border: none;
     height: 1px;
-    border-bottom: 1px solid var(--grey-lightest);
+    border-bottom: 1px solid var(--Grey200);
 
 }
 
@@ -1033,7 +1032,7 @@ hr {
 
 .password:hover {
     display: block;
-    background: var(--grey-lightest);
+    background: var(--Grey200);
 }
 
 /* ---- password --------- */
@@ -1087,11 +1086,11 @@ input {
     height: 42px;
     padding: 0 12px;
     background: var(--white);
-    border: 1px solid var(--black-less);
+    border: 1px solid var(--Grey800);
     font-size: 16px;
     border-radius: 3px;
     outline: none;
-    box-shadow: 4px 4px 0px var(--grey-normal);
+    box-shadow: 4px 4px 0px var(--Grey400);
 }
 
 .input-field button {
@@ -1105,7 +1104,7 @@ input {
     transform: translateY(-50%);
     right: 13px;
     cursor: pointer;
-    color: var(--black);
+    color: var(--Grey900);
     animation: arrowani 0.5s linear infinite alternate;
 }
 
@@ -1113,7 +1112,7 @@ input {
 button.passwordArr {
     padding: 0;
     margin-top: -1.26em;
-    color: var(--black);
+    color: var(--Grey900);
 }
 
 .pwIncorrectHeight {
@@ -1218,9 +1217,9 @@ button.passwordArr {
 
 .accordion {
     margin: 0;
-    background-color: var(--grey-lightest);
-    border-bottom: 1px solid var(--grey-light);
-    color: var(--black);
+    background-color: var(--Grey200);
+    border-bottom: 1px solid var(--Grey300);
+    color: var(--Grey900);
     cursor: pointer;
     padding: 15px 20px;
     display: flex;
@@ -1249,15 +1248,15 @@ button.passwordArr {
 
 .accordion:hover,
 .accordion.is-open {
-    border: 1px solid var(--grey-light);
+    border: 1px solid var(--Grey300);
 
-    background-color: var(--grey-light);
+    background-color: var(--Grey300);
 }
 
 .accordion-content {
-    background-color: var(--grey-lightest);
-    border-left: 1px solid var(--grey-lightest);
-    border-right: 1px solid var(--grey-lightest);
+    background-color: var(--Grey200);
+    border-left: 1px solid var(--Grey200);
+    border-right: 1px solid var(--Grey200);
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
@@ -1442,7 +1441,7 @@ button.passwordArr {
 
     .font300-1080 {
         font-weight: 300 !important;
-        color: var(--grey-darkest) !important;
+        color: var(--Grey600) !important;
     }
 
     body .heightXS {
@@ -1674,7 +1673,7 @@ button.passwordArr {
     body .box {
         width: 100%;
         justify-content: flex-start;
-        border-bottom: 1px solid var(--grey-lightest);
+        border-bottom: 1px solid var(--Grey200);
         padding: 0.95em 1.4em;
 
     }
@@ -2148,13 +2147,13 @@ label {
     text-align: center;
     line-height: 46px;
     position: relative;
-    color: var(--black-less);
+    color: var(--Grey800);
 }
 
 label:hover {
     opacity: 0.75;
     cursor: pointer;
-    background-color: var(--grey-lightest);
+    background-color: var(--Grey200);
 }
 
 .content-test {
@@ -2257,7 +2256,7 @@ input:checked~.content-test {
     }
 
     .left-zone .list {
-        border-right: 2px solid var(--grey-normal);
+        border-right: 2px solid var(--Grey400);
     }
 
     .content-test {
@@ -2341,7 +2340,7 @@ input:checked~label.SEER {
     top: 33px;
     height: 80%;
     width: 1px;
-    border-left: 1px solid var(--grey-light);
+    border-left: 1px solid var(--Grey300);
     /*line btw dots*/
 }
 
@@ -2354,13 +2353,13 @@ input:checked~label.SEER {
     height: 2em;
     border-radius: 50%;
     background: transparent;
-    color: var(--grey-dark);
+    color: var(--Grey500);
     /* text inside of dots*/
     font-weight: 400;
     font-size: 0.8em;
     line-height: 2rem;
     text-align: center;
-    border: 1px solid var(--grey-dark);
+    border: 1px solid var(--Grey500);
 }
 
 .progress__item:last-child:before {
@@ -2369,22 +2368,22 @@ input:checked~label.SEER {
 
 .progress__item.progress__item--completed {
     opacity: 0.6;
-    color: var(--black);
+    color: var(--Grey900);
 }
 
 .progress__item.progress__item--completed:after {
     content: "\2713";
     font-weight: 400;
-    background: var(--grey-darkest);
+    background: var(--Grey600);
     /*dots*/
 
-    color: var(--black);
+    color: var(--Grey900);
     /* sign inside of dots*/
 }
 
 .progress__item.progress__item--active:after {
-    border: 1px solid var(--grey-darkest);
-    color: var(--grey-darkest);
+    border: 1px solid var(--Grey600);
+    color: var(--Grey600);
 
 }
 
@@ -2543,7 +2542,7 @@ input:checked~label.SEER {
 }
 
 .colorBgGrey {
-    background-color: var(--grey-lightest);
+    background-color: var(--Grey200);
 }
 
 .colorBgAPPOINTA {
@@ -2552,7 +2551,7 @@ input:checked~label.SEER {
 }
 
 .colorBlack {
-    color: var(--black);
+    color: var(--Grey900);
 }
 
 .colorAPPOINTA {
@@ -2617,7 +2616,7 @@ polygon {
 }
 
 .colorBlack {
-    color: var(--black);
+    color: var(--Grey900);
 }
 
 
@@ -2633,7 +2632,7 @@ polygon {
 }
 
 .imgBorder {
-    border: 1px solid var(--grey-normal);
+    border: 1px solid var(--Grey400);
     border-radius: var(--border-radius);
 
 }
@@ -2657,14 +2656,14 @@ polygon {
 }
 
 .cardBorder {
-    border: 0.08em solid var(--grey-lightest);
+    border: 0.08em solid var(--Grey200);
     border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);
 }
 
 .cardBorderGreen {
-    border: 1px solid var(--grey-dark);
+    border: 1px solid var(--Grey500);
 
     border-radius: var(--border-radius);
 }
@@ -2908,7 +2907,7 @@ polygon {
 }
 
 .lineHorizS.APinActive {
-    background-color: var(--grey-darkest);
+    background-color: var(--Grey600);
 
 }
 
@@ -2965,7 +2964,7 @@ polygon {
 }
 
 .leftVerLine {
-    border-left: 5px solid var(--grey-light);
+    border-left: 5px solid var(--Grey300);
     padding-left: 1em;
 }
 
@@ -3022,7 +3021,7 @@ polygon {
     font-weight: 400;
     font-size: clamp(1em, 1.26vw, 1.5em);
     margin: 0;
-    color: var(--grey-darkest);
+    color: var(--Grey600);
 
 }
 
@@ -3093,7 +3092,7 @@ polygon {
     align-items: center;
     width: 0.03em;
     /* weight */
-    border-top: 30px solid var(--grey-dark);
+    border-top: 30px solid var(--Grey500);
     /* height */
     margin: 0 1.8em;
 }
@@ -3179,7 +3178,7 @@ polygon {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--white);
-    background-color: var(--grey-lightest);
+    background-color: var(--Grey200);
     opacity: 0.9;
     height: 18em;
 }
@@ -3214,7 +3213,7 @@ polygon {
 .footer-logo:hover {
     padding: 18px;
     border-radius: 50%;
-    background-color: var(--grey-light);
+    background-color: var(--Grey300);
 }
 
 
@@ -3453,7 +3452,7 @@ polygon {
 .intro-logo:hover {
     padding: 1.2em;
     border-radius: 50%;
-    background-color: var(--grey-lightest);
+    background-color: var(--Grey200);
 }
 
 
@@ -3637,7 +3636,7 @@ a:link.textUnderline {
     text-decoration-line: underline;
     text-decoration-thickness: 0.03em;
     text-underline-offset: 6px;
-    text-decoration-color: var(--black);
+    text-decoration-color: var(--Grey900);
 
 }
 
@@ -3651,11 +3650,11 @@ a:link.textProject {
 
 .active a {
     font-weight: 300;
-    color: var(--black);
+    color: var(--Grey900);
 }
 
 .active.greenNav a {
-    color: var(--Black);
+    color: var(--Grey900);
 }
 
 .active.appointa a {
@@ -3667,7 +3666,7 @@ a:link.textProject {
 }
 
 .inactive {
-    color: var(--grey-darkest);
+    color: var(--Grey600);
     font-weight: 300;
 }
 
@@ -3779,7 +3778,7 @@ img {
     position: absolute;
     top: 15px;
     right: 35px;
-    color: var(--grey-darkest);
+    color: var(--Grey600);
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -3787,7 +3786,7 @@ img {
 
 .modal-close:hover,
 .modal-close:focus {
-    color: var(--black-less);
+    color: var(--Grey800);
     text-decoration: none;
     cursor: pointer;
 }
@@ -4158,13 +4157,13 @@ body .carousel .carousel-item {
 }
 
 .btn1:before {
-    border-left: 1px solid var(--black);
-    border-right: 1px solid var(--black);
+    border-left: 1px solid var(--Grey900);
+    border-right: 1px solid var(--Grey900);
 }
 
 .btn1:after {
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--Grey900);
+    border-bottom: 1px solid var(--Grey900);
 }
 
 .btn1:hover {
@@ -4194,7 +4193,7 @@ body .carousel .carousel-item {
     border-radius: 12px;
     box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
     box-sizing: border-box;
-    color: var(--black);
+    color: var(--Grey900);
     cursor: pointer;
     display: inline-flex;
     flex: 1 1 auto;
@@ -4217,8 +4216,8 @@ body .carousel .carousel-item {
 }
 
 .button-35.DS:hover {
-    box-shadow: var(--black-less) 0 0 0 0.06em, transparent 0 0 0 0;
-    color: var(--black-less);
+    box-shadow: var(--Grey800) 0 0 0 0.06em, transparent 0 0 0 0;
+    color: var(--Grey800);
     background-color: rgba(255, 255, 255, 0.8);
     transition: all 0.5s;
 
@@ -4260,7 +4259,7 @@ body .carousel .carousel-item {
     background-size: 4px 3px;
     box-shadow: rgba(112, 112, 112, 0.2) 0px 7px 29px 0px;
     box-sizing: border-box;
-    color: var(--black);
+    color: var(--Grey900);
     cursor: pointer;
     display: inline-block;
     font-size: 1.2em;
@@ -4330,7 +4329,7 @@ body .carousel .carousel-item {
     transform: translate(0%, 0%);
     width: 100%;
     height: 100%;
-    background: var(--black);
+    background: var(--Grey900);
     border-radius: 10px;
 }
 
@@ -4372,7 +4371,7 @@ body .carousel .carousel-item {
 
 button {
     background-color: Transparent;
-    color: var(--black);
+    color: var(--Grey900);
     border: none;
     text-align: center;
     text-decoration: none;
