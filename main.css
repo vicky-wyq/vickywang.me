@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    color: var(--Grey700);
+    color: var(--Grey800);
 }
 
 body {
@@ -786,7 +786,7 @@ section {
 
 
 h1 {
-    font-size: clamp(1.38em, 1.8vw, 2.2em);
+    font-size: clamp(1.4em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
@@ -796,40 +796,41 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.17em, 1.46vw, 1.68em);
+    font-size: clamp(1.3em, 1.46vw, 1.68em);
     font-weight: 300;
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
 
 h3 {
-    font-size: clamp(1em, 1.26vw, 1.5em);
+    font-size: clamp(1.2em, 1.26vw, 1.48em);
     font-weight: 300;
     margin-top: clamp(0.42em, 0.56em, 1.2em);
     margin-bottom: clamp(0.42em, 0.56em, 1.2em);
-    line-height: clamp(1px, 32px, 36px);
+    line-height: 136%;
     ;
 }
 
 h4 {
-    font-size: clamp(0.86em, 1.06vw, 1.2em);
+    font-size: clamp(0.96em, 1.12vw, 1.2em);
     font-weight: 300;
     margin-top: clamp(0.36em, 0.4em, 1em);
     margin-bottom: clamp(0.36em, 0.4em, 1em);
-    line-height: clamp(1px, 24px, 36px);
+    line-height: 136%;
+
 
 }
 
 
 h5 {
-    font-size: clamp(0.73em, 0.88vw, 1em);
+    font-size: clamp(0.73em, 0.92vw, 1em);
     font-weight: 300;
     margin-top: clamp(0.2em, 0.4em, 1em);
     margin-bottom: clamp(0.2em, 0.4em, 1em);
 }
 
 h6 {
-    font-size: clamp(0.68em, 0.7vw, 0.86em);
+    font-size: clamp(0.68em, 0.78vw, 0.86em);
     font-weight: 300;
     margin: 0.26em 0;
 
@@ -1280,7 +1281,7 @@ button.passwordArr {
 
 .accordion {
     margin: 0;
-    background-color: var(--Grey200);
+    background-color: var(--Grey100);
     border-bottom: 1px solid var(--Grey300);
     color: var(--Grey900);
     cursor: pointer;
@@ -1313,11 +1314,11 @@ button.passwordArr {
 .accordion.is-open {
     border: 1px solid var(--Grey300);
 
-    background-color: var(--Grey300);
+    background-color: var(--Grey200);
 }
 
 .accordion-content {
-    background-color: var(--Grey200);
+    background-color: var(--Grey100);
     border-left: 1px solid var(--Grey200);
     border-right: 1px solid var(--Grey200);
     padding: 0 20px;
@@ -1465,6 +1466,10 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+    body .se-arrow {
+        width: 1.3em;
+
+    }
     .dropdown:hover .dropdown-content {
         display: none;
     }
@@ -1859,12 +1864,10 @@ button.passwordArr {
     }
 
     body .se-arrow {
-        width: 1.1em;
+        width: 1.16em;
     }
 
-    body .tArrow {
-        font-size: 1.2em;
-    }
+
 
     body .tTQ {
         font-size: 1rem;
@@ -3476,7 +3479,8 @@ polygon {
 /* margin anf padding*/
 
 .tArrow {
-    font-size: 1.8em;
+    font-size: clamp(1.4em, 2vw, 2em);
+
     font-weight: 100;
     margin: 0px;
     text-transform: capitalize;
