@@ -1159,7 +1159,7 @@ input {
 }
 
 .input-field button {
-    width: 2rem;
+    width: 1.8rem;
     text-align: center;
     font-size: 1.2rem;
     background: transparent;
@@ -1170,11 +1170,12 @@ input {
     right: 13px;
     cursor: pointer;
     color: var(--Grey900);
-    animation: arrowani 0.5s linear infinite alternate;
+    animation: arrowani 0.8s linear infinite alternate;
 }
 
 
 button.passwordArr {
+    z-index: 99;
     padding: 0;
     margin-top: -1.26em;
     color: var(--Grey900);
@@ -1194,7 +1195,7 @@ button.passwordArr {
 
 @keyframes arrowani {
     100% {
-        padding-left: 10px;
+        margin-right: -8px;
     }
 }
 
