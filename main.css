@@ -97,6 +97,7 @@ body {
 .Grey200Bg {
     background-color: var(--Grey200);
 }
+
 .colorBgGrey {
     background-color: var(--Grey200);
 }
@@ -1470,6 +1471,7 @@ button.passwordArr {
         width: 1.3em;
 
     }
+
     .dropdown:hover .dropdown-content {
         display: none;
     }
@@ -1575,17 +1577,11 @@ button.passwordArr {
         height: 150px;
     }
 
-    body .footer-left {
-        font-size: 10px;
-    }
 
-    .footer-right {
-        margin: 0px !;
-    }
 
     body .footer-logo {
         margin: 4px;
-        width: 12px;
+        width: 18px;
     }
 
     #bottom-arrow {
@@ -3187,7 +3183,7 @@ polygon {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 30px;
+    bottom: 6px;
     z-index: 99;
     font-size: 22px;
     font-weight: 100;
@@ -3197,16 +3193,53 @@ polygon {
     background-color: Transparent;
     color: none;
     cursor: pointer;
-    padding: 18px;
     border-radius: 50px;
     opacity: 0.9;
 }
 
-#bottom-arrow {
-    height: 130px;
-    margin-bottom: -40px;
+#dad:hover #bro {
+    -webkit-animation: backToTop 1s infinite alternate;
+    animation: backToTop 1s ease infinite alternate;
+    transition-duration: 0.6s;
+    animation-delay: 0.3s;
 }
 
+#dad:hover #sis {
+    color: var(--Grey900);
+}
+
+#bottom-arrow {
+    height: 30px;
+    margin-bottom: -12px;
+    z-index: 6;
+}
+#bottom-arrow:hover {
+    -webkit-animation: backToTop 1s infinite alternate;
+    animation: backToTop 1s ease infinite alternate;
+    transition-duration: 0.6s;
+    animation-delay: 0.3s;
+}
+@-webkit-keyframes backToTop {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes backToTop {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+/* 
 .ArrowHover {
     display: inline-block;
     transition-duration: 0.5s;
@@ -3217,7 +3250,7 @@ polygon {
 }
 
 .ArrowHover:hover {
-    transform: translateY(-16px);
+    transform: translateY(-12px);
     animation-name: hover-float;
     animation-duration: 1.5s;
     animation-delay: 0.3s;
@@ -3225,8 +3258,7 @@ polygon {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
-/* back to top */
+*/
 /* back to top */
 
 /* footer */
@@ -3239,14 +3271,12 @@ polygon {
     margin: 0 auto;
     max-width: 1240px;
     width: 100%;
-
     height: 5em;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--white);
+    border-top: 0.01em solid var(--Grey300);
     opacity: 0.9;
     height: 18em;
 }
@@ -3254,18 +3284,13 @@ polygon {
 .footer-left {
     display: flex;
     justify-content: flex-start;
-    font-weight: 300;
-    font-size: 1.2em;
     font-family: inherit;
-
 }
 
 .footer-right {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 22px;
-    font-weight: 300;
 }
 
 .footer-logo {
@@ -3273,7 +3298,7 @@ polygon {
     padding: 18px;
     border-radius: 50%;
 
-    width: 1.2em;
+    width: 1.4em;
     height: auto;
     cursor: pointer;
 }
