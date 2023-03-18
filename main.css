@@ -1585,9 +1585,7 @@ button.passwordArr {
         width: 18px;
     }
 
-    #bottom-arrow {
-        height: 1rem;
-    }
+
 
     body .AboutProjectNav {
         top: 46%;
@@ -3198,27 +3196,15 @@ polygon {
 }
 
 #dad:hover #bro {
-    -webkit-animation: backToTop 1s infinite alternate;
-    animation: backToTop 1s ease infinite alternate;
-    transition-duration: 0.6s;
-    animation-delay: 0.3s;
+    -webkit-animation: backToTop 0.5s linear infinite alternate;
+    animation: backToTop 0.5s linear infinite alternate;
 }
 
 #dad:hover #sis {
     color: var(--Grey900);
 }
 
-#bottom-arrow {
-    height: 36px;
-    margin-bottom: -12px;
-    z-index: 6;
-}
-#bottom-arrow:hover {
-    -webkit-animation: backToTop 1s infinite alternate;
-    animation: backToTop 1s ease infinite alternate;
-    transition-duration: 0.6s;
-    animation-delay: 0.3s;
-}
+
 @-webkit-keyframes backToTop {
     0% {
         transform: translateY(0);
@@ -3238,6 +3224,7 @@ polygon {
         transform: translateY(-8px);
     }
 }
+
 
 /* 
 .ArrowHover {
