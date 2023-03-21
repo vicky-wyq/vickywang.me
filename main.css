@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     color: var(--Grey800);
+    font-size: 16px;
 }
 
 body {
@@ -782,8 +783,6 @@ section {
 .noMargin {
     margin: 0;
 }
-
-
 
 
 h1 {
