@@ -1661,8 +1661,10 @@ button.passwordArr {
     }
 
     body .divider1 {
+        margin: 0 10px;
 
-        margin: 10px;
+        border-top: 20px solid var(--Grey500);
+        /* height */
     }
 
 
@@ -1854,7 +1856,7 @@ button.passwordArr {
     }
 
     body .hamburger {
-        padding: 2em;
+        padding: 1.2em 1.8em;
     }
 
     body .se-arrow {
@@ -3082,10 +3084,9 @@ polygon {
 .t-hello {
     font-family: 'Gloria Hallelujah', sans-serif;
     font-weight: 400;
-    font-size: clamp(1em, 1.26vw, 1.5em);
+    font-size: clamp(1em, 1.22vw, 1.32em);
     margin: 0;
     color: var(--Grey700);
-
 }
 
 .t-hi {
