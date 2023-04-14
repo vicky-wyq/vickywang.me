@@ -150,19 +150,15 @@ body {
     --alert: #CC3300;
     --alert--pink: #EB5757;
 
-
-
     --Grey900: #1b1b1b;
     /*292929 2c2c2c #161616*/
 
     --Grey800: #505050;
     /* 5f6368 4f4f4f*/
 
-
     --Grey700: #707070;
 
     /* #505050 83878a 787878  757575*/
-
 
     --Grey600: #a5a5a5;
 
@@ -171,7 +167,6 @@ body {
     --Grey500: #b6b5b5;
 
     /* #c8c8c8 e0e0e0*/
-
 
     --Grey400: #e6e6e6;
     /* e4e4e4; e6e6e6*/
@@ -183,8 +178,6 @@ body {
     /* F8F8F8, f2f2f2*/
 
     --Grey100: #F8F8F8;
-
-
 
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
     --colorBlack-dark: #9bb5b4;
@@ -203,7 +196,6 @@ body {
 
     --WS-Blue: #35B9C5;
     /* 2AA5F3*/
-
     --WS-Teal: #35B9C5;
     --WS-Teal-lighter: #D4F1F3;
     --WS-Teal-light: #f3f4f4;
@@ -228,15 +220,12 @@ body {
     --APPOINTA-bg: #f5f8fa;
     --White-transparent: rgba(255, 255, 255, 0.6);
     --border: #f0f3fb;
-
     --toasttab: #FF4C00;
-
     --GardenersHub: #4C665B;
-
 
     --border-radius: 0.5em;
     font-family: 'Lato', sans-serif;
-
+    --GLORIFY-orange: #EDDACC;
 }
 
 .backgroundColorNav {
@@ -2139,6 +2128,10 @@ button.passwordArr {
 
 
 /* ------------------- Responsive grid -------------------*/
+/* ------------------- New Slider -------------------*/
+
+  
+/* ------------------- New Slider -------------------*/
 
 /* ============= Begin Testimonial Flexbox ============ */
 
@@ -2146,26 +2139,32 @@ button.passwordArr {
 .flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 110vh;
     display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+/* ------------------- 
+
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-    height: 110vh;
-    margin: auto;
 
-    overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    position: relative;
-}
+
+
+-------------------*/
+
 
 .left-zone {
     height: 50%;
@@ -2271,7 +2270,33 @@ input:checked~.content-test {
     transition: transform 1s, -webkit-transform 1s;
     opacity: 1;
 }
+input:checked~label {
+    opacity: 1;
+    -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
 
+input:checked~label {
+    color: var(--APPOINTA-blue);
+    border-right: solid 4px var(--APPOINTA-blue);
+}
+
+input:checked~label.WS {
+    color: var(--WS-Teal);
+    border-right: solid 4px var(--WS-Teal);
+
+}
+
+input:checked~label.SEER {
+    color: var(--seer-purple);
+    border-right: solid 4px var(--seer-purple);
+
+}
+
+
+
+
+/* ============== End Testimonial Flexbox ============= */
 @media (min-width: 480px) {
 
 
@@ -2342,40 +2367,7 @@ input:checked~.content-test {
 
 }
 
-input:checked~label {
-    opacity: 1;
-    -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-input:checked~label {
-    color: var(--APPOINTA-blue);
-    border-right: solid 4px var(--APPOINTA-blue);
-}
-
-input:checked~label.WS {
-    color: var(--WS-Teal);
-    border-right: solid 4px var(--WS-Teal);
-
-}
-
-input:checked~label.SEER {
-    color: var(--seer-purple);
-    border-right: solid 4px var(--seer-purple);
-
-}
-
-
-
-
-/* ============== End Testimonial Flexbox ============= */
-
-
-
-
 /*progressStepTracker*/
-
-
 .progressStepContainer {
     position: relative;
     padding: 0;
@@ -2611,6 +2603,14 @@ input:checked~label.SEER {
 
 .colorBlack {
     color: var(--Grey900);
+}
+
+.colorGLORIFY {
+    color: var(--GLORIFY-orange);
+}
+
+.colorBgGLORIFY {
+    background-color: var(--GLORIFY-orange);
 }
 
 .colorAPPOINTA {
@@ -3741,6 +3741,10 @@ a:link.textProject {
 
 .active.appointa a {
     color: var(--APPOINTA-blue);
+}
+
+.active.GLORIFY a {
+    color: var(--GLORIFY-orange);
 }
 
 .active.seer a {
