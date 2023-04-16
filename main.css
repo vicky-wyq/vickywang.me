@@ -610,9 +610,165 @@ section {
         bottom: 32vh;
     }
 }
-/* new nav */
 
 /* new nav */
+.HorizNav {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: calc(100% - 104px);;
+    margin: 0;
+    border-top: 1px solid var(--Grey200);
+    background: rgba(255, 255, 255, 0.7);
+
+
+}
+
+.HorizNavItem {
+    display: flex;
+    align-items: center;
+}
+
+.hightTesting {
+    height: 1600px;
+    background-color: #5384ED;
+}
+
+.hightTesting1 {
+    height: 1600px;
+    background-color: #afc8fd;
+}
+
+.hightTesting2 {
+    background-color: var(--white);
+    margin: 0;
+}
+
+.custom-btn {
+    margin: 32px auto;
+    padding: 10px 25px;
+
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    color:var(--Grey500);
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #1d1d1d;
+    border-radius: 5px;
+    background: var(--white);
+
+}
+
+/* BTN 5 */
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: var(--white);
+}
+
+.btn-5:hover {
+    color: var(--Grey900);
+    /*txt*/
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 0;
+    background: var(--Grey900);
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+
+/* BTN 5 */
+
+
+
+/* new nav */
+/*new sub nav*/
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.subNav li.active>a {
+    color: var(--Grey900);
+    font-weight: 500;
+    background-color:var(--Grey100);
+    border-left:var(--Grey900) 0.01em solid;
+}
+
+
+/* Sidebar Navigation */
+.subNav {
+    position: sticky;
+    border-radius: 6px;
+    opacity: 0.8;
+    border: 1px solid var(--Grey200);
+    z-index: 3;
+    top: 12rem;
+}
+
+.subNav a {
+
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    color: var(--Grey600);
+    transition: all 50ms ease-in-out;
+    /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.subNav a:hover,
+.subNav a:focus {
+    color: var(--Grey900);
+}
+
+
+li .newPanel {
+    list-style: none;
+    font-size: 12px;
+    line-height: 16px;
+}
+.newTitlePanel {
+    font-size: 16px;
+    line-height: 18px;
+}
+/*new sub nav*/
+
+
+
+
+
+
 
 /* 1. Enable smooth scrolling */
 /* 2. Make nav sticky */
@@ -687,7 +843,7 @@ ol {
 }
 
 li {
-    margin-left: 1rem;
+    margin-left: 0;
 }
 
 li.marginZero {
@@ -2303,7 +2459,8 @@ button.passwordArr {
 .carousel__thumbnails label {
     display: block;
     position: relative;
-    padding-top: 50%; /*added 4/13*/
+    padding-top: 50%;
+    /*added 4/13*/
 
 }
 
@@ -3134,7 +3291,7 @@ polygon {
     height: 0px;
     width: 90px;
     margin-top: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 
 .lineHorizAll-mp {
