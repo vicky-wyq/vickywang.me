@@ -613,15 +613,18 @@ section {
 
 /* new nav */
 .HorizNav {
+    z-index: 99;
     width: 100%;
     position: sticky;
     display: flex;
     justify-content: center;
-    top: calc(100% - 104px);
-    ;
+    top: calc(100% - 116px);
+    
     margin: 0;
     border-top: 1px solid var(--Grey200);
     background: rgba(255, 255, 255, 0.7);
+
+ height: 116px;
 
 
 }
@@ -631,20 +634,7 @@ section {
     align-items: center;
 }
 
-.hightTesting {
-    height: 1600px;
-    background-color: #5384ED;
-}
 
-.hightTesting1 {
-    height: 1600px;
-    background-color: #afc8fd;
-}
-
-.hightTesting2 {
-    background-color: var(--white);
-    margin: 0;
-}
 
 .custom-btn {
     margin: 32px auto;
@@ -668,62 +658,129 @@ section {
 
 .HorizNav li.active>a {
     color: var(--Grey900);
-    background-color: var(--Grey100);
-    font-weight: 600;
-
-
+    background-color: var(--white);
+    font-weight: 500;
 }
 
-/* BTN 5 */
-.btn-5 {
-    width: 130px;
-    height: 40px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-    background: var(--white);
-}
 
-.btn-5:hover {
-    color: var(--Grey900);
-    /*txt*/
+/* BTN test */
+
+
+.outline {
+    position: relative;
     background: transparent;
-    box-shadow: none;
+    color: var(--Grey500);
+    margin: 0;
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    border: none;
 }
 
-.btn-5:before,
-.btn-5:after {
-    content: '';
+
+
+.outline:before,
+.outline:after {
+    content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 1px;
-    width: 0;
-    background: var(--Grey900);
-    box-shadow:
-        -1px -1px 5px 0px #fff,
-        7px 7px 20px 0px #0003,
-        4px 4px 5px 0px #0002;
-    transition: 400ms ease all;
-}
-
-.btn-5:after {
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-}
-
-.btn-5:hover:before,
-.btn-5:hover:after {
+    display: block;
     width: 100%;
-    transition: 800ms ease all;
+    height: 1px;
+}
+
+.outline:before {
+    top: 0;
+    left: 0;
+    box-shadow: inset 1px 1px 0 0 var(--Grey600);
+}
+
+.outline:after {
+    right: 0;
+    bottom: 0;
+    box-shadow: inset -1px -1px 0 0 var(--Grey600);
+}
+
+.outline:hover,
+.outline:focus {
+    color: lighten(var(--Grey900), 20%);
+}
+
+.outline:hover::before,
+.outline:focus::before {
+    animation: lineBefore 1s forwards;
+}
+
+.outline:hover::after,
+.outline:focus::after {
+    animation: lineAfter 1s forwards;
+}
+
+@keyframes lineBefore {
+    0% {
+        width: 100%;
+        height: 1px;
+
+        top: 0;
+        left: 0;
+    }
+
+    33% {
+        width: 1px;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+    }
+
+    66% {
+        width: 1px;
+        height: 1px;
+
+        top: calc(100% - 1px);
+        left: 0;
+    }
+
+    100% {
+        width: 100%;
+        height: 1px;
+
+        top: calc(100% - 1px);
+        left: 0;
+    }
+}
+
+@keyframes lineAfter {
+    0% {
+        width: 100%;
+        height: 1px;
+    }
+
+    33% {
+        width: 1px;
+        height: 100%;
+
+        bottom: 0;
+        right: 0;
+    }
+
+    66% {
+        width: 1px;
+        height: 1px;
+
+        bottom: calc(100% - 1px);
+        right: 0;
+    }
+
+    100% {
+        width: 100%;
+        height: 1px;
+
+        bottom: calc(100% - 1px);
+        right: 0;
+    }
 }
 
 
-/* BTN 5 */
-
-
+/* BTN test */
 
 /* new nav */
 /*new sub nav*/
@@ -857,10 +914,6 @@ li {
     margin-left: 0;
 }
 
-li.marginZero {
-    margin-left: 0;
-}
-
 li .rightPanel {
     font-size: 12px;
     line-height: 16px;
@@ -881,7 +934,7 @@ ul .rightPanel {
 }
 
 ul {
-    list-style-type: circle;
+    list-style-type: none;
     font-family: inherit;
     font-size: large;
     line-height: 1.4em;
@@ -889,6 +942,10 @@ ul {
     list-style-position: outside;
     margin-left: 0;
     padding-left: 20px;
+}
+
+ul .listCircle {
+    list-style-type: circle;
 }
 
 /** page 
@@ -2989,6 +3046,7 @@ input:checked~label.SEER {
 .colorGLORIFY {
     color: var(--GLORIFY-orange);
 }
+
 
 .colorBgGLORIFY {
     background-color: var(--GLORIFY-orange);
