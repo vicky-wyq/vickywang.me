@@ -617,7 +617,8 @@ section {
     position: sticky;
     display: flex;
     justify-content: center;
-    top: calc(100% - 104px);;
+    top: calc(100% - 104px);
+    ;
     margin: 0;
     border-top: 1px solid var(--Grey200);
     background: rgba(255, 255, 255, 0.7);
@@ -648,11 +649,10 @@ section {
 .custom-btn {
     margin: 32px auto;
     padding: 10px 25px;
-
     text-align: center;
     width: 130px;
     height: 40px;
-    color:var(--Grey500);
+    color: var(--Grey500);
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -662,6 +662,15 @@ section {
     border: 2px solid #1d1d1d;
     border-radius: 5px;
     background: var(--white);
+
+
+}
+
+.HorizNav li.active>a {
+    color: var(--Grey900);
+    background-color: var(--Grey100);
+    font-weight: 600;
+
 
 }
 
@@ -722,8 +731,7 @@ section {
 .subNav li.active>a {
     color: var(--Grey900);
     font-weight: 500;
-    background-color:var(--Grey100);
-    border-left:var(--Grey900) 0.01em solid;
+    border-left: var(--Grey900) 0.01em solid;
 }
 
 
@@ -732,7 +740,6 @@ section {
     position: sticky;
     border-radius: 6px;
     opacity: 0.8;
-    border: 1px solid var(--Grey200);
     z-index: 3;
     top: 12rem;
 }
@@ -750,6 +757,8 @@ section {
 .subNav a:hover,
 .subNav a:focus {
     color: var(--Grey900);
+    background-color: var(--Grey100);
+
 }
 
 
@@ -758,10 +767,12 @@ li .newPanel {
     font-size: 12px;
     line-height: 16px;
 }
+
 .newTitlePanel {
     font-size: 16px;
     line-height: 18px;
 }
+
 /*new sub nav*/
 
 
