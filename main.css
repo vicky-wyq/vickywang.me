@@ -3583,10 +3583,11 @@ polygon {
     left: 50%;
 }
 
-.ProjectBannerInner1 {
+.ProjectBannerInnerND {
     position: absolute;
-    left: 50%;
+    bottom: -20;
     transform: translate(-50%, -50%);
+    left: 50%;
 }
 
 .divider {
