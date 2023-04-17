@@ -338,38 +338,34 @@ body {
     display: none;
     position: absolute;
     background-color: var(--white);
-    width: auto;
+    width: 100%;
+    left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 12px;
-
 }
 
 .dropdown-content a {
     float: none;
-    padding: 12px 16px;
+    padding: 8px 12px;
     text-decoration: none;
     display: block;
     text-align: left;
     margin: 6px;
-
 }
 
 .dropdown-content a:hover {
-    background-color: var(--Grey200);
+    background-color: var(--Grey100);
     cursor: pointer;
     border-radius: 12px;
-
-
 }
 
 .dropdown:hover .dropdown-content {
     display: flex;
-    transition: background-color 2s ease-in 100ms
+    transition: background-color 2s ease-in 100ms;
 }
 
 /* drop down menu*/
-
 
 a.nav-link {
     text-decoration: none;
@@ -1690,14 +1686,13 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+
     body .se-arrow {
         width: 1.3em;
 
     }
 
-    .dropdown:hover .dropdown-content {
-        display: none;
-    }
+
 
     body .BGappointa {
         background-image: url(./appointa/backgroundArrowM.svg);
@@ -2905,7 +2900,7 @@ input:checked~label.SEER {
 }
 
 .progress-bar {
-    background-color: var(--colorTeal-light);
+    background-color: var(--Grey900);
     height: 3px;
     width: 0%;
 }
@@ -2936,6 +2931,7 @@ input:checked~label.SEER {
 /* intro */
 
 @media screen and (max-width: 1480px) {
+
 
     body .rowChng {
         flex-direction: column;
@@ -3585,7 +3581,7 @@ polygon {
 
 .ProjectBannerInnerND {
     position: absolute;
-    bottom: -20;
+    bottom: -80;
     transform: translate(-50%, -50%);
     left: 50%;
 }
