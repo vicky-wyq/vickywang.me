@@ -946,6 +946,7 @@ ul {
 
 ul .listCircle {
     list-style-type: circle;
+    margin-left: 1em;
 }
 
 /** page 
