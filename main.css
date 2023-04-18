@@ -665,11 +665,14 @@ section {
 .outline {
     position: relative;
     background: transparent;
+    background-color: var(--white);
+
     color: var(--Grey500);
     margin: 0;
     padding: 12px 18px;
     font-size: 1.2rem;
     border: none;
+    
 }
 
 
