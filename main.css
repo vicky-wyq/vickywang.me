@@ -408,7 +408,9 @@ a.active.SEER {
 .bar.SEER {
     background-color: var(--seer-purple);
 }
-
+.bar.GLORIFY {
+    background-color: var(--GlorifyBlue);
+}
 
 .bar:nth-child(1) {
     width: 100%;
@@ -1201,7 +1203,7 @@ hr {
 
 .elementCard.GLORIFY:hover {
     cursor: pointer;
-    border-bottom: 5px solid var(--GLORIFY-orange);
+    border-bottom: 5px solid var(--GLORIFY-orangeLt);
     transition: all 0.25s ease-in;
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
@@ -2925,7 +2927,11 @@ input:checked~label.SEER {
     height: 3px;
     width: 0%;
 }
-
+.progress-bar.GLORIFY {
+    background-color: var(--GLORIFY-orange);
+    height: 3px;
+    width: 0%;
+}
 /*progressBarScroll*/
 
 
@@ -4188,7 +4194,7 @@ a:link.textProject {
 }
 
 .active.GLORIFY a {
-    color: var(--GLORIFY-orange);
+    color: var(--GlorifyBlue);
 }
 
 .active.seer a {
@@ -4778,7 +4784,11 @@ body .carousel .carousel-item {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-
+.button-35.GLORIFY:hover {
+    box-shadow: var(--GlorifyBlue) 0 0 0 0.1em, transparent 0 0 0 0;
+    color: var(--GlorifyBlue);
+    background-color: rgba(255, 255, 255, 0.8);
+}
 .buttonLanding {
     border-radius: 0.6em;
     align-self: center;
