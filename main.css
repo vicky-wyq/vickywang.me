@@ -225,7 +225,11 @@ body {
 
     --border-radius: 0.5em;
     font-family: 'Lato', sans-serif;
-    --GLORIFY-orange: #EDDACC;
+    --GLORIFY-orangeLt: #EDDACC;
+    --GLORIFY-orange: #EFBD66;
+    --GlorifyBlue: #489FD3;
+
+
 }
 
 .backgroundColorNav {
@@ -615,14 +619,11 @@ section {
     display: flex;
     justify-content: center;
     top: calc(100% - 116px);
-    
+
     margin: 0;
     border-top: 1px solid var(--Grey200);
     background: rgba(255, 255, 255, 0.7);
-
- height: 116px;
-
-
+    height: 116px;
 }
 
 .HorizNavItem {
@@ -672,7 +673,7 @@ section {
     padding: 12px 18px;
     font-size: 1.2rem;
     border: none;
-    
+
 }
 
 
@@ -1197,6 +1198,7 @@ hr {
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
 }
+
 .elementCard.GLORIFY:hover {
     cursor: pointer;
     border-bottom: 5px solid var(--GLORIFY-orange);
@@ -1204,6 +1206,7 @@ hr {
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
 }
+
 .elementCard.APPOINTA:hover {
     cursor: pointer;
     border-bottom: 5px solid var(--APPOINTA-blue);
@@ -1723,12 +1726,7 @@ button.passwordArr {
         z-index: 99;
     }
 
-    body .ProjectBannerInner {
-        position: absolute;
-        bottom: 0;
-        transform: translate(-50%, -50%);
-        left: 50%;
-    }
+
 
     .font300-1080 {
         font-weight: 300 !important;
@@ -3050,12 +3048,12 @@ input:checked~label.SEER {
 }
 
 .colorGLORIFY {
-    color: var(--GLORIFY-orange);
+    color: var(--GlorifyBlue);
 }
 
 
 .colorBgGLORIFY {
-    background-color: var(--GLORIFY-orange);
+    background-color: var(--GLORIFY-orangeLt);
 }
 
 .colorAPPOINTA {
@@ -3577,7 +3575,7 @@ polygon {
 
 .ProjectBannerInner {
     position: absolute;
-    bottom: 30;
+    top: calc(100% - 64px);
     transform: translate(-50%, -50%);
     left: 50%;
 }
