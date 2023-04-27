@@ -1484,7 +1484,7 @@ button.passwordArr {
     background-image: url("icon/button-link.svg");
     height: 1.2em;
     width: 1.2em;
-    float: right;
+    float: l;
     margin-left: 4px;
 
 }
@@ -3588,7 +3588,7 @@ polygon {
 
 .ProjectBannerInnerND {
     position: absolute;
-    bottom: -80;
+    top: calc(100% - 128px);
     transform: translate(-50%, -50%);
     left: 50%;
 }
@@ -4751,6 +4751,7 @@ body .carousel .carousel-item {
     margin: 12px;
 }
 
+
 .button-35.DS:hover {
     box-shadow: var(--Grey800) 0 0 0 0.06em, transparent 0 0 0 0;
     color: var(--Grey800);
@@ -4788,7 +4789,9 @@ body .carousel .carousel-item {
     box-shadow: var(--GlorifyBlue) 0 0 0 0.1em, transparent 0 0 0 0;
     color: var(--GlorifyBlue);
     background-color: rgba(255, 255, 255, 0.8);
+
 }
+
 .buttonLanding {
     border-radius: 0.6em;
     align-self: center;
