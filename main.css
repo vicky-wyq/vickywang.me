@@ -408,6 +408,7 @@ a.active.SEER {
 .bar.SEER {
     background-color: var(--seer-purple);
 }
+
 .bar.GLORIFY {
     background-color: var(--GlorifyBlue);
 }
@@ -785,6 +786,7 @@ section {
 /* BTN test */
 
 /* new nav */
+
 /*new sub nav*/
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .subNav li.active>a {
@@ -817,11 +819,11 @@ section {
 .subNav a:focus {
     color: var(--Grey900);
     background-color: var(--Grey100);
-
 }
 
 
 li .newPanel {
+    /*for V3     display: none; */
     list-style: none;
     font-size: 12px;
     line-height: 16px;
@@ -834,8 +836,30 @@ li .newPanel {
 
 /*new sub nav*/
 
+/*new sub nav V3*/
 
 
+
+.newPanelV3{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+
+
+    list-style: none;
+    font-size: 12px;
+    line-height: 16px;
+
+}
+
+.newPanelV3.active{
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+}
+
+/*new sub nav V3*/
 
 
 
@@ -2927,11 +2951,13 @@ input:checked~label.SEER {
     height: 3px;
     width: 0%;
 }
+
 .progress-bar.GLORIFY {
     background-color: var(--GLORIFY-orange);
     height: 3px;
     width: 0%;
 }
+
 /*progressBarScroll*/
 
 
