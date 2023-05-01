@@ -1454,7 +1454,10 @@ button.passwordArr {
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 1s infinite alternate;
 }
-
+.moveLeftRight {
+    -webkit-animation: moverLR 1s infinite alternate;
+    animation: moverLR 1s infinite alternate;
+}
 
 
 .shrinkAndExpand {
@@ -1492,7 +1495,25 @@ button.passwordArr {
         transform: translateY(-6px);
     }
 }
+@-webkit-keyframes moverLR {
+    0% {
+        transform: translateX(0);
+    }
 
+    100% {
+        transform: translateX(-6px);
+    }
+}
+
+@keyframes moverLR {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-6px);
+    }
+}
 .arrButton:after {
     content: "";
     background-image: url("icon/button-arrow-right.svg");
