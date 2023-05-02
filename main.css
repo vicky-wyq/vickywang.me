@@ -840,7 +840,7 @@ li .newPanel {
 
 
 
-.newPanelV3{
+.newPanelV3 {
     visibility: hidden;
     height: 0;
     opacity: 0;
@@ -853,7 +853,7 @@ li .newPanel {
 
 }
 
-.newPanelV3.active{
+.newPanelV3.active {
     visibility: visible;
     height: auto;
     opacity: 1;
@@ -1454,6 +1454,7 @@ button.passwordArr {
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 1s infinite alternate;
 }
+
 .moveLeftRight {
     -webkit-animation: moverLR 1s infinite alternate;
     animation: moverLR 1s infinite alternate;
@@ -1495,6 +1496,7 @@ button.passwordArr {
         transform: translateY(-6px);
     }
 }
+
 @-webkit-keyframes moverLR {
     0% {
         transform: translateX(0);
@@ -1514,6 +1516,7 @@ button.passwordArr {
         transform: translateX(-6px);
     }
 }
+
 .arrButton:after {
     content: "";
     background-image: url("icon/button-arrow-right.svg");
@@ -1529,7 +1532,7 @@ button.passwordArr {
     background-image: url("icon/button-link.svg");
     height: 1.2em;
     width: 1.2em;
-    float: l;
+    float: right;
     margin-left: 4px;
 
 }
@@ -2186,7 +2189,6 @@ button.passwordArr {
     }
 
     body .flex-container {
-
         height: 520px;
         /* position: absolute; */
     }
@@ -2457,27 +2459,27 @@ button.passwordArr {
 }
 
 .carouselNew>input:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+    box-shadow: 0px 0px 0px 1px var(--Grey900);
 }
 
 .carouselNew>input:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+    box-shadow: 0px 0px 0px 1px var(--Grey900);
 }
 
 .carouselNew>input:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+    box-shadow: 0px 0px 0px 1px var(--Grey900);
 }
 
 .carouselNew>input:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+    box-shadow: 0px 0px 0px 1px var(--Grey900);
 }
 
 .carouselNew>input:nth-of-type(5):checked~.carousel__thumbnails li:nth-of-type(5) {
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+    box-shadow: 0px 0px 0px 1px var(--Grey900);
 }
 
 .carouselNew>input:nth-of-type(6):checked~.carousel__thumbnails li:nth-of-type(6) {
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+    box-shadow: 0px 0px 0px 1px var(--Grey900);
 }
 
 .carousel__slides {
@@ -2634,7 +2636,19 @@ button.passwordArr {
     align-items: center;
     justify-content: center;
 }
-
+.flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: auto;
+    height: 660px;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 /* ------------------- 
 
     -ms-flex-wrap: wrap;
@@ -2782,77 +2796,199 @@ input:checked~label.SEER {
 }
 
 /* ============== End Testimonial Flexbox ============= */
-@media (min-width: 480px) {
+/* ============== slideshow update ============= */
+
+
+.LRCarouselContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.LRCarouselContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: auto;
+    height: 660px;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.LRCarouselLeftZone {
+    height: 50%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.LRCarouselLeftZone .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    opacity: 0.5;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    position: relative;
+    color: var(--Grey800);
+}
+
+label:hover {
+    opacity: 0.75;
+    cursor: pointer;
+    background-color: var(--Grey200);
+}
+
+.LRCarouselContent {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    height: 40%;
+    width: 100%;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.LRCarouselContent p {
+    max-width: 50%;
+    text-align: center;
+}
+
+.LRCarouselRightZone {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    height: 50%;
+}
+
+input:checked~.LRCarouselContent {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    opacity: 1;
+}
+
+input:checked~label {
+    opacity: 1;
+    -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+input:checked~label {
+    color: var(--Grey900);
+    border-right: solid 4px var(--Grey900);
+}
+
+/* ============== slideshow update ============= */
+
+body .flex-container.BP {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: auto;
+    height: 1040px;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body .flex-container.Mobile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: auto;
+    height: 780px;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 
 
+.left-zone .list {
+    border-right: 2px solid var(--Grey400);
+}
 
+.content-test {
+    width: 70%;
+    height: 100%;
+    pointer-events: auto;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
 
-    body .flex-container.BP {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        min-height: auto;
-        height: 1040px;
-        /* position: absolute; */
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
+.left-zone {
+    width: 20%;
+}
 
-    body .flex-container.Mobile {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        min-height: auto;
-        height: 780px;
-        /* position: absolute; */
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-
-    .flex-container {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        min-height: auto;
-        height: 660px;
-        /* position: absolute; */
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-
-    .left-zone .list {
-        border-right: 2px solid var(--Grey400);
-    }
-
-    .content-test {
-        width: 70%;
-        height: 100%;
-        pointer-events: auto;
-        -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-
-    .left-zone {
-        width: 20%;
-    }
-
-    .right-zone {
-        height: 100%;
-        width: 80%;
-    }
-
-
+.right-zone {
+    height: 100%;
+    width: 80%;
 }
 
 /*progressStepTracker*/
