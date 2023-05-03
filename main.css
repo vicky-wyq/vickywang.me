@@ -102,6 +102,9 @@ body {
 .colorBgGrey {
     background-color: var(--Grey200);
 }
+.colorBgGrey100 {
+    background-color: var(--Grey100);
+}
 
 /* grey200 */
 .Grey100Bg {
@@ -1050,8 +1053,9 @@ h3 {
     font-weight: 300;
     margin-top: clamp(0.42em, 0.56em, 1.2em);
     margin-bottom: clamp(0.42em, 0.56em, 1.2em);
-    line-height: 136%;
-    ;
+    /*
+        line-height: 136%;
+    */
 }
 
 h4 {
@@ -1059,8 +1063,9 @@ h4 {
     font-weight: 300;
     margin-top: clamp(0.36em, 0.4em, 1em);
     margin-bottom: clamp(0.36em, 0.4em, 1em);
-    line-height: 136%;
-
+    /*
+        line-height: 136%;
+    */
 
 }
 
@@ -2407,44 +2412,43 @@ button.passwordArr {
 
 
 /* ------------------- Responsive grid -------------------*/
-/* ------------------- Slide 2 -------------------*/
+/* ------------------- LRcarousel -------------------*/
 body {
     font-family: sans-serif;
-  }
-  
-  .LRcarousel {
-    margin: 0 auto;
+}
+
+.LRcarousel {
     text-align: center;
     overflow: hidden;
     display: flex;
-  
-  }
-  
-  .LRslides {
-    height: 500px;
-    width:100%;
+
+}
+
+.LRslides {
+    height: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     scrollbar-width: none;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-  
-  }
-  
-  .LRslides::-webkit-scrollbar {
+
+}
+
+.LRslides::-webkit-scrollbar {
     display: none;
-  }
-  
-  .slides-item {
+}
+
+.slides-item {
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px;
     display: flex;
     flex-shrink: 0;
     font-size: 100px;
     height: 100%;
     width: 100%;
-  
+
     justify-content: center;
     margin: 0;
     position: relative;
@@ -2452,64 +2456,93 @@ body {
     transform: scale(1);
     transform-origin: center center;
     transition: transform .5s;
-  }
-  
-  .carousel__nav {
-    padding: 1.25rem 0.5rem;
+}
+
+.carousel__nav {
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
-  }
-  
-  .slider-nav {
-     align-items: center;
-    background-color: #ddd;
-    border-radius: 2px;
-    color: #000;
+}
+
+.slider-nav {
+    border-radius: 32px;
+    color: var(--Grey700);
+    margin: 12px;
     display: inline-flex;
-    height: 1.5rem;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 12px;
     position: relative;
     text-decoration: none;
-    width: 6.5rem;
-    /* Add a smooth transition for the background-color and color properties */
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /*     
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .slider-nav:active, .slider-nav:hover, .slider-nav.active{
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .slide-1 {
-    background-color: #fdc;
-  }
-  
-  .slide-2 {
-    background-color: #bfd;
-  }
-  
-  .slide-3 {
-    background-color: #cdf;
-  }
-  
-  .slide-4 {
-    background-color: #dca;
-  }
-  
-  .slide-5 {
-    background-color: #ffc;
-  }
-  
-  .carousel__skip-link {
+    -webkit-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+    transition: 1s ease-out;
+
+ */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+    transform: translateY(0px);
+
+}
+
+.slider-nav:active,
+.slider-nav:hover,
+.slider-nav.active {
+    color: var(--Grey900);
+    /*     
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 5s ease-out, background-color 2s;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    transition: 5s ease-out, background-color 2s;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.9);
+
+     */
+
+
+    background-color: var(--White-transparent);
+    transition: transform .6s ease, -webkit-transform .6s ease;
+
+    transform: translateY(8px);
+}
+
+
+
+
+.slide-1 {
+    background-color: var(--Grey200);
+}
+
+.slide-2 {
+    background-color: var(--Grey200);
+}
+
+.slide-3 {
+    background-color: var(--Grey200);
+}
+
+.slide-4 {
+    background-color: var(--Grey200);
+}
+
+.slide-5 {
+    background-color: var(--Grey200);
+}
+
+.carousel__skip-link {
     height: 1px;
     overflow: hidden;
     position: absolute;
     top: auto;
     width: 1px;
-  }
-  
-  .carousel__skip-link:focus {
+}
+
+.carousel__skip-link:focus {
     align-items: center;
     background-color: #000;
     color: #fff;
@@ -2521,16 +2554,15 @@ body {
     text-decoration: none;
     width: 100%;
     z-index: 1;
-  }
-  
+}
 
-/* ------------------- Slide 2 -------------------*/
+
+/* ------------------- LRcarousel -------------------*/
 
 /* ------------------- New Slider -------------------*/
 
 
 .containerNew {
-    max-width: 1044px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -2755,6 +2787,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .flex-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2768,6 +2801,7 @@ body {
     left: 0;
     right: 0;
 }
+
 /* ------------------- 
 
     -ms-flex-wrap: wrap;

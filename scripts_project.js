@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   });
 
+// LRcarousel Starts
 
 
 let activeIndex = 0;
@@ -71,6 +72,7 @@ function updateActiveSlide() {
       navLink.classList.add('active');
     } else {
       navLink.classList.remove('active');
+      
     }
   });
 }
@@ -128,6 +130,7 @@ document.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide
 updateActiveSlide();
 
 
+// LRcarousel Ends
 
 
 });
