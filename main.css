@@ -4136,9 +4136,10 @@ polygon {
 /* margin anf padding*/
 
 .tArrow {
+    font-family: inherit;
     font-size: clamp(1.4em, 2vw, 2em);
 
-    font-weight: 100;
+    font-weight:100;
     margin: 0px;
     text-transform: capitalize;
     color: var(--Grey900);
