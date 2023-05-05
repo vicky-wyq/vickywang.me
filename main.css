@@ -4,6 +4,97 @@ html {
     font-size: 16px;
 }
 
+:root {
+    --img-APPOINT: url('./image/Cover_APPOINTA.jpg');
+    --img-SEER: url('./image/Cover_SEER.jpg');
+    --img-WS: url('./image/Cover_worksample.png');
+
+    --img-DS: url('./image/Cover_portfolioWeb.png');
+
+    /* Color */
+    --white: #ffffff;
+    --alert: #CC3300;
+    --alert--pink: #EB5757;
+
+    --Grey900: #1b1b1b;
+    /*292929 2c2c2c #161616*/
+
+    --Grey800: #505050;
+    /* 5f6368 4f4f4f*/
+
+    --Grey700: #707070;
+
+    /* #505050 83878a 787878  757575*/
+
+    --Grey600: #a5a5a5;
+
+    /* #909090, 999D9F, 8e8787 a7a7a7*/
+
+    --Grey500: #cacaca;
+
+    /* #c8c8c8 e0e0e0*/
+
+    --Grey400: #e6e6e6;
+    /* e4e4e4; e6e6e6*/
+
+    --Grey300: #efefef;
+    /* efefef, f2f2f2*/
+
+    --Grey200: #f2f2f2;
+    /* F8F8F8, f2f2f2*/
+
+    --Grey100: #F8F8F8;
+
+    /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
+    --colorTealDk: #8fbfbf;
+    --colorTealLt: #AAD9D9;
+    /*never change    AAD9D9*/
+    /* 368661 projects 296448*/
+    --colorTealLtr: #e6f6f6;
+    --colorTealLtest: #faffff;
+    --colorWarm: #fcf5eb;
+
+
+
+    --AMBlue: #5384ED;
+
+    --WS-Blue: #35B9C5;
+    /* 2AA5F3*/
+    --WS-Teal: #35B9C5;
+    --WS-Teal-lighter: #D4F1F3;
+    --WS-Teal-light: #f3f4f4;
+    --WS-lightBG: rgba(243, 250, 253, 0.4);
+
+    --seer-purpleDark: #1513A0;
+
+    --seer-purple: #605DEC;
+    --seer-purpleLighter: #BCBAF7;
+    --seer-purpleLightest: #F6F6FE;
+    --seer-purpleLightest1: rgba(246, 246, 254, 0.4);
+    --seer-purple--Orange: #FBBF7D;
+    --alpha: 0.8;
+
+    --APPOINTA-blue: #5384ED;
+    --APPOINTA-blueLight: #BACCF4;
+
+    --APPOINTA-blueLighter: #E2EDFD;
+    --APPOINTA-blueLightest: #f5f8ff;
+    --APPOINTA-yellow: #FFD109;
+
+    --APPOINTA-bg: #f5f8fa;
+    --White-transparent: rgba(255, 255, 255, 0.6);
+    --border: #f0f3fb;
+    --toasttab: #FF4C00;
+    --GardenersHub: #4C665B;
+
+    --border-radius: 0.5em;
+    font-family: 'Lato', sans-serif;
+    --GLORIFY-orangeLt: #EDDACC;
+    --GLORIFY-orange: #EFBD66;
+    --GlorifyBlue: #489FD3;
+
+
+}
 body {
     width: 100%;
     height: 100%;
@@ -116,23 +207,23 @@ body {
 /* bg color grey */
 
 .colorWarm {
-    background-color: var(--colorBlack-warm);
+    background-color: var(--colorWarm);
 }
 
 .SkylineBlue {
-    background-color: var(--colorTeal-dark);
+    background-color: var(--colorTealDk);
 }
 
-.colorLt {
-    background-color: var(--colorTeal-light);
+.SkylineBlueLt {
+    background-color: var(--colorTealLt);
 }
 
-.colorLter {
-    background-color: var(--colorTeal-lighter);
+.SkylineBlueLter {
+    background-color: var(--colorTealLtr);
 }
 
-.colorLtest {
-    background-color: var(--colorTeal-lightest);
+.SkylineBlueLtest {
+    background-color: var(--colorTealLtest);
 }
 
 .colorAlet {
@@ -141,99 +232,6 @@ body {
 
 }
 
-:root {
-    --img-APPOINT: url('./image/Cover_APPOINTA.jpg');
-    --img-SEER: url('./image/Cover_SEER.jpg');
-    --img-WS: url('./image/Cover_worksample.png');
-
-    --img-DS: url('./image/Cover_portfolioWeb.png');
-
-    /* Color */
-    --white: #ffffff;
-    --alert: #CC3300;
-    --alert--pink: #EB5757;
-
-    --Grey900: #1b1b1b;
-    /*292929 2c2c2c #161616*/
-
-    --Grey800: #505050;
-    /* 5f6368 4f4f4f*/
-
-    --Grey700: #707070;
-
-    /* #505050 83878a 787878  757575*/
-
-    --Grey600: #a5a5a5;
-
-    /* #909090, 999D9F, 8e8787 a7a7a7*/
-
-    --Grey500: #b6b5b5;
-
-    /* #c8c8c8 e0e0e0*/
-
-    --Grey400: #e6e6e6;
-    /* e4e4e4; e6e6e6*/
-
-    --Grey300: #efefef;
-    /* efefef, f2f2f2*/
-
-    --Grey200: #f2f2f2;
-    /* F8F8F8, f2f2f2*/
-
-    --Grey100: #F8F8F8;
-
-    /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
-    --colorTeal-dark: #9bb5b4;
-
-    --colorBlack-light: #AAD9D9;
-    /*never change*/
-
-    /* 368661 projects 296448*/
-    --colorTeal-lighter: #e6f6f6;
-    --colorTeal-lightest: #faffff;
-    --colorBlack-warm: #fcf5eb;
-
-
-
-    --AMBlue: #5384ED;
-
-    --WS-Blue: #35B9C5;
-    /* 2AA5F3*/
-    --WS-Teal: #35B9C5;
-    --WS-Teal-lighter: #D4F1F3;
-    --WS-Teal-light: #f3f4f4;
-    --WS-lightBG: rgba(243, 250, 253, 0.4);
-
-    --seer-purpleDark: #1513A0;
-
-    --seer-purple: #605DEC;
-    --seer-purpleLighter: #BCBAF7;
-    --seer-purpleLightest: #F6F6FE;
-    --seer-purpleLightest1: rgba(246, 246, 254, 0.4);
-    --seer-purple--Orange: #FBBF7D;
-    --alpha: 0.8;
-
-    --APPOINTA-blue: #5384ED;
-    --APPOINTA-blueLight: #BACCF4;
-
-    --APPOINTA-blueLighter: #E2EDFD;
-    --APPOINTA-blueLightest: #f5f8ff;
-    --APPOINTA-yellow: #FFD109;
-
-    --APPOINTA-bg: #f5f8fa;
-    --White-transparent: rgba(255, 255, 255, 0.6);
-    --border: #f0f3fb;
-    --toasttab: #FF4C00;
-    --GardenersHub: #4C665B;
-
-    --border-radius: 0.5em;
-    font-family: 'Lato', sans-serif;
-    --GLORIFY-orangeLt: #EDDACC;
-    --GLORIFY-orange: #EFBD66;
-    --GlorifyBlue: #489FD3;
-
-
-}
 
 .backgroundColorNav {
     position: fixed;
@@ -1568,7 +1566,6 @@ button.passwordArr {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.2s linear;
-
 }
 
 /* accordion */
@@ -1580,18 +1577,22 @@ button.passwordArr {
     height: 28px;
     width: 28px;
     float: right;
+    transition: all 1s ease-in-out;
+
 }
 
 .accordion.is-open:after {
     content: "";
     background-image: url("icon/minus.svg");
+    transform: rotate(180deg);
+    transition: all 1s ease-in-out;
 }
 
 .accordion:hover,
 .accordion.is-open {
     border: 1px solid var(--Grey300);
-
     background-color: var(--Grey200);
+
 }
 
 .accordion-content {
@@ -1601,7 +1602,7 @@ button.passwordArr {
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
 }
 
 
@@ -1635,8 +1636,8 @@ button.passwordArr {
     padding: 0.8em 1em 0;
     margin-bottom: 1em;
     border-radius: 6px;
-    border: 0.01em solid var(--colorBlack-warm);
-    background: var(--colorBlack-warm);
+    border: 0.01em solid var(--colorWarm);
+    background: var(--colorWarm);
     transition: background-color 0.3s ease;
 }
 
@@ -1647,13 +1648,13 @@ button.passwordArr {
     border: 0.01em solid var(--colorTeal-light);
 
 
-    background: var(--colorTeal-lightest);
+    background: var(--colorTealLtest);
     transition: background-color 0.3s ease;
 
 }
 
 .elementInnerDemo:hover {
-    background: var(--colorTeal-lighter);
+    background: var(--colorTealLtr);
 }
 
 /* element = demo */
@@ -1665,9 +1666,9 @@ button.passwordArr {
     /*top 0.8, left and right 1*/
     margin-bottom: 1em;
     border-radius: 6px;
-    border: 0.06em solid var(--colorTeal-lighter);
-    color: var(--colorTeal-dark);
-    background: var(--colorTeal-lightest);
+    border: 0.06em solid var(--colorTealLtr);
+    color: var(--colorTealDk);
+    background: var(--colorTealLtest);
     transition: background-color 0.3s ease;
 }
 
@@ -1681,7 +1682,7 @@ button.passwordArr {
 }
 
 .Demo:hover {
-    background: var(--colorTeal-lighter);
+    background: var(--colorTealLtr);
 }
 
 .Demo.Holly {
@@ -2360,13 +2361,13 @@ button.passwordArr {
 .content-1of1::before {
     content: "1";
     font-weight: 300;
-    color: var(--colorTeal-dark);
+    color: var(--colorTealDk);
 }
 
 .content-1of2::before {
     content: "1/2";
     font-weight: 300;
-    color: var(--colorTeal-dark);
+    color: var(--colorTealDk);
 
 }
 
@@ -2374,7 +2375,7 @@ button.passwordArr {
     content: "1/3";
     font-weight: 300;
 
-    color: var(--colorTeal-dark);
+    color: var(--colorTealDk);
 
 }
 
@@ -2382,7 +2383,7 @@ button.passwordArr {
     content: "1/4";
     font-weight: 300;
 
-    color: var(--colorTeal-dark);
+    color: var(--colorTealDk);
 
 }
 
@@ -2390,7 +2391,7 @@ button.passwordArr {
     content: "1/6";
     font-weight: 300;
 
-    color: var(--colorTeal-dark);
+    color: var(--colorTealDk);
 
 }
 
@@ -2398,7 +2399,7 @@ button.passwordArr {
     content: "1/12";
     font-weight: 300;
 
-    color: var(--colorTeal-dark);
+    color: var(--colorTealDk);
 
 }
 
@@ -4183,7 +4184,7 @@ polygon {
     border-radius: 2em;
     font-size: 12px;
     width: min-content;
-    background-color: var(--colorBlack-warm);
+    background-color: var(--colorWarm);
 }
 
 
