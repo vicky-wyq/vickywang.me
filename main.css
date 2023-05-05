@@ -1053,9 +1053,7 @@ h3 {
     font-weight: 300;
     margin-top: clamp(0.42em, 0.56em, 1.2em);
     margin-bottom: clamp(0.42em, 0.56em, 1.2em);
-    /*
-        line-height: 136%;
-    */
+    ;
 }
 
 h4 {
@@ -1063,9 +1061,7 @@ h4 {
     font-weight: 300;
     margin-top: clamp(0.36em, 0.4em, 1em);
     margin-bottom: clamp(0.36em, 0.4em, 1em);
-    /*
-        line-height: 136%;
-    */
+
 
 }
 
@@ -2413,10 +2409,6 @@ button.passwordArr {
 
 /* ------------------- Responsive grid -------------------*/
 /* ------------------- LRcarousel -------------------*/
-body {
-    font-family: sans-serif;
-}
-
 .LRcarousel {
     text-align: center;
     overflow: hidden;
@@ -2459,24 +2451,27 @@ body {
 }
 
 .carousel__nav {
-    padding: 0 2rem;
+    padding: 0;
+    margin-right: 4em;
     display: flex;
     flex-direction: column;
+
 }
 
 .slider-nav {
     border-radius: 32px;
     color: var(--Grey700);
-    margin: 12px;
     display: inline-flex;
     justify-content: center;
     padding: 12px;
+    margin: 0;
     position: relative;
     text-decoration: none;
     width:100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    
     /*     
     transition: background-color 0.3s, color 0.3s;
     -webkit-transition: 1s ease-out;
@@ -2505,9 +2500,8 @@ body {
      */
 
 
-    background-color: var(--White-transparent);
+    background-color: var(--white);
     transition: transform .6s ease, -webkit-transform .6s ease;
-
     transform: translateY(8px);
 }
 
@@ -2558,11 +2552,11 @@ body {
 
 
 /* ------------------- LRcarousel -------------------*/
-
 /* ------------------- New Slider -------------------*/
 
 
 .containerNew {
+    max-width: 1044px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -2772,6 +2766,7 @@ body {
 
 /* ------------------- New Slider -------------------*/
 
+
 /* ============= Begin Testimonial Flexbox ============ */
 
 
@@ -2787,7 +2782,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .flex-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2801,7 +2795,6 @@ body {
     left: 0;
     right: 0;
 }
-
 /* ------------------- 
 
     -ms-flex-wrap: wrap;
@@ -4136,10 +4129,9 @@ polygon {
 /* margin anf padding*/
 
 .tArrow {
-    font-family: inherit;
     font-size: clamp(1.4em, 2vw, 2em);
 
-    font-weight:100;
+    font-weight: 100;
     margin: 0px;
     text-transform: capitalize;
     color: var(--Grey900);
