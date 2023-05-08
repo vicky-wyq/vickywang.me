@@ -983,9 +983,11 @@ main {}
 layout **/
 /** enlarge the sections for this demo, so that we have a long scrollable page **/
 section {
+    padding-top: 2em;
+}
+section .padding {
     padding-top: 5em;
 }
-
 .colorAPPOINTAYellow::selection {
     background: var(--APPOINTA-yellow);
     color: var(--white);
@@ -3948,7 +3950,7 @@ polygon {
     padding: 18px;
     border-radius: 50%;
 
-    width: 1.4em;
+    width: 1.6em;
     height: auto;
     cursor: pointer;
 }

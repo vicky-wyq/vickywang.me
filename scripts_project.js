@@ -31,11 +31,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
 
-
-
-
-
-  window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         const id = entry.target.getAttribute('id');
@@ -52,7 +48,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
       observer.observe(section);
     });
 
-  });
+  }); 
+
+
+  
+
+
+
+
+
 
 // LRcarousel Starts
 
@@ -128,8 +132,6 @@ document.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide
 
 // Update the active slide indicator on page load
 updateActiveSlide();
-
-
 // LRcarousel Ends
 
 
