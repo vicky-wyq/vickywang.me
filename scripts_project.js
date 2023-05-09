@@ -29,9 +29,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       captionText.innerHTML = img.alt;
     }
   });
-
-
-window.addEventListener('DOMContentLoaded', () => {
+/* window.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         const id = entry.target.getAttribute('id');
@@ -48,8 +46,31 @@ window.addEventListener('DOMContentLoaded', () => {
       observer.observe(section);
     });
 
-  }); 
+  });  */
 
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+          const activeLi = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
+          activeLi.classList.add('active');
+          activeLi.querySelector('ul').classList.add('active'); // add this line
+        } else {
+          const inactiveLi = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
+          inactiveLi.classList.remove('active');
+          inactiveLi.querySelector('ul').classList.remove('active'); // add this line
+        }
+      });
+    });
+  
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+      observer.observe(section);
+    });
+  });
+  
 
   
 
