@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       modal.style.display = "none";
     });
   }
-  
+
 
   // global handler
   document.addEventListener('click', function (e) {
@@ -29,106 +29,137 @@ document.addEventListener("DOMContentLoaded", function (event) {
       captionText.innerHTML = img.alt;
     }
   });
-
+  // Scroll add/remove classes Starts
   window.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         const id = entry.target.getAttribute('id');
+        const activeLi = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
+        const ul = activeLi.querySelector('ul');
+
         if (entry.intersectionRatio > 0) {
-          const activeLi = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
           activeLi.classList.add('active');
-          activeLi.querySelector('ul').classList.add('active'); // add this line
+          if (ul) {
+            ul.classList.add('active');
+          }
         } else {
-          const inactiveLi = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
-          inactiveLi.classList.remove('active');
-          inactiveLi.querySelector('ul').classList.remove('active'); // add this line
+          activeLi.classList.remove('active');
+          if (ul) {
+            ul.classList.remove('active');
+          }
         }
       });
     });
-  
+
     // Track all sections that have an `id` applied
     document.querySelectorAll('section[id]').forEach((section) => {
       observer.observe(section);
     });
   });
 
+  /*
+    window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          if (entry.intersectionRatio > 0) {
+            const activeLi = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
+            activeLi.classList.add('active');
+            activeLi.querySelector('ul').classList.add('active'); // add this line
+          } else {
+            const inactiveLi = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
+            inactiveLi.classList.remove('active');
+            inactiveLi.querySelector('ul').classList.remove('active'); // add this line
+          }
+        });
+      });
+  
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+      });
+    });
+   */
+
+  // Scroll add/remove classes ends
 
 
-// LRcarousel Starts
+
+  // LRcarousel Starts
 
 
-let activeIndex = 0;
+  let activeIndex = 0;
 
-// Define a function to update the active slide indicator
-function updateActiveSlide() {
-  const slides = document.querySelectorAll('.slides-item');
+  // Define a function to update the active slide indicator
+  function updateActiveSlide() {
+    const slides = document.querySelectorAll('.slides-item');
+    const navLinks = document.querySelectorAll('.slider-nav');
+    const slidesContainer = document.querySelector('.LRslides');
+    activeIndex = Math.round(slidesContainer.scrollTop / slidesContainer.clientHeight);
+
+    // Remove 'active' class from all nav links and add it to the active one
+    navLinks.forEach((navLink, index) => {
+      if (index === activeIndex) {
+        navLink.classList.add('active');
+      } else {
+        navLink.classList.remove('active');
+
+      }
+    });
+  }
+
+  let autoplayInterval;
+
+  // Define a function to scroll to the specified slide
+  function scrollToSlide(slideIndex) {
+    const slidesContainer = document.querySelector('.LRslides');
+    slidesContainer.scrollTo({
+      top: slideIndex * slidesContainer.clientHeight,
+      behavior: 'smooth',
+    });
+  }
+
+  // Function to start autoplay
+  function startAutoplay() {
+    const slidesContainer = document.querySelector('.LRslides');
+    const totalSlides = document.querySelectorAll('.slides-item').length;
+
+    let currentSlide = activeIndex;
+    autoplayInterval = setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      scrollToSlide(currentSlide);
+      updateActiveSlide();
+    }, 3000); // Change the number to adjust the time interval between slide transitions (in milliseconds)
+  }
+
+  // Function to stop autoplay
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  // Start autoplay on page load
+  startAutoplay();
+
+  // Add 'mouseenter' event listeners to the slider navigation links
   const navLinks = document.querySelectorAll('.slider-nav');
-  const slidesContainer = document.querySelector('.LRslides');
-  activeIndex = Math.round(slidesContainer.scrollTop / slidesContainer.clientHeight);
-
-  // Remove 'active' class from all nav links and add it to the active one
   navLinks.forEach((navLink, index) => {
-    if (index === activeIndex) {
-      navLink.classList.add('active');
-    } else {
-      navLink.classList.remove('active');
-      
-    }
+    navLink.addEventListener('mouseenter', () => {
+      scrollToSlide(index);
+      updateActiveSlide();
+      stopAutoplay(); // Stop autoplay when the user interacts with the carousel
+    });
+    navLink.addEventListener('mouseleave', () => {
+      startAutoplay(); // Stop autoplay when the user interacts with the carousel
+    });
   });
-}
-
-let autoplayInterval;
-
-// Define a function to scroll to the specified slide
-function scrollToSlide(slideIndex) {
-  const slidesContainer = document.querySelector('.LRslides');
-  slidesContainer.scrollTo({
-    top: slideIndex * slidesContainer.clientHeight,
-    behavior: 'smooth',
-  });
-}
-
-// Function to start autoplay
-function startAutoplay() {
-  const slidesContainer = document.querySelector('.LRslides');
-  const totalSlides = document.querySelectorAll('.slides-item').length;
-
-  let currentSlide = activeIndex;
-  autoplayInterval = setInterval(() => {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    scrollToSlide(currentSlide);
-    updateActiveSlide();
-  }, 3000); // Change the number to adjust the time interval between slide transitions (in milliseconds)
-}
-
-// Function to stop autoplay
-function stopAutoplay() {
-  clearInterval(autoplayInterval);
-}
-
-// Start autoplay on page load
-startAutoplay();
-
-// Add 'mouseenter' event listeners to the slider navigation links
-const navLinks = document.querySelectorAll('.slider-nav');
-navLinks.forEach((navLink, index) => {
-  navLink.addEventListener('mouseenter', () => {
-    scrollToSlide(index);
-    updateActiveSlide();
-    stopAutoplay(); // Stop autoplay when the user interacts with the carousel
-  });
-  navLink.addEventListener('mouseleave', () => {
-    startAutoplay(); // Stop autoplay when the user interacts with the carousel
-  });
-});
 
 
-// Add the scroll event listener
-document.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide);
+  // Add the scroll event listener
+  document.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide);
 
-// Update the active slide indicator on page load
-updateActiveSlide();
-// LRcarousel Ends
+  // Update the active slide indicator on page load
+  updateActiveSlide();
+  // LRcarousel Ends
 
 
 });
