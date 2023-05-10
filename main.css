@@ -1894,34 +1894,6 @@ button.passwordArr {
     }
 
 
-    body .widthL {
-        width: auto;
-    }
-
-    .widthCarouselImg {
-        width: 30em !important;
-    }
-
-    body .widthS {
-        width: 20rem;
-    }
-
-    body .widthXS {
-        width: 20rem;
-        margin: 0;
-    }
-
-    body .widthMM {
-        width: 65vw;
-    }
-
-    body .widthM {
-        width: 18rem;
-    }
-
-    body .widthXL {
-        width: 80vw;
-    }
 
     body .blankMin1080 {
         height: 3.6rem;
@@ -2082,10 +2054,13 @@ button.passwordArr {
         padding: 0.5em 0.6em;
     }
 
+    body .widthXS {
+        width: 8em;
+    }
+
     body .displayPhone {
         display: block;
     }
-
     body .displayTablet {
         display: none;
     }
@@ -4058,15 +4033,15 @@ polygon {
 }
 
 .widthXS {
-    width: 13rem;
+    width: 12em;
 }
 
 .widthS {
-    width: 20rem;
+    width: 20em;
 }
 
 .widthM {
-    width: 35rem;
+    width: 35em;
 }
 
 .widthMPhHalf {
