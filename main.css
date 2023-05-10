@@ -588,7 +588,7 @@ section {
 
 @media all and (min-width: 1880px) {
     body .logo {
-        padding: 1.2em;
+        padding: 1.6em;
     }
 
     body .blankMin1880 {
@@ -831,10 +831,14 @@ li .newPanel {
     font-size: 12px;
     line-height: 16px;
 }
-
+li .newPanelV3 {
+    /*for V3     display: none; */
+    font-size: 14px;
+    line-height: 14px;
+}
 .newTitlePanel {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 16px;
 }
 
 /*new sub nav*/
@@ -980,7 +984,7 @@ main {}
 layout **/
 /** enlarge the sections for this demo, so that we have a long scrollable page **/
 section {
-    padding-top: 0;
+    padding-top: 5em;
 }
 section .padding {
     padding-top: 5em;
@@ -1970,7 +1974,7 @@ button.passwordArr {
     }
 
     body .logo {
-        padding: 1em;
+        padding: 1.6em;
     }
 
     .header {
@@ -2144,7 +2148,7 @@ button.passwordArr {
     }
 
     body .logo {
-        padding: 0.7em;
+        padding: 0.8em;
     }
 
     body .hamburger {
@@ -2956,11 +2960,12 @@ body .flex-container.Mobile {
 
 .logo {
 
-    padding: 1em;
+    padding: 1.8em;
     font-size: 1.8rem;
     font-weight: 300;
     /* margin-right: 8%; */
     color: var(--colorBlack);
+    width: 1.2em;
 }
 
 .wrapper {
