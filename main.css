@@ -8,7 +8,6 @@ html {
     --img-APPOINT: url('./image/Cover_APPOINTA.jpg');
     --img-SEER: url('./image/Cover_SEER.jpg');
     --img-WS: url('./image/Cover_worksample.png');
-
     --img-DS: url('./image/Cover_portfolioWeb.png');
 
     /* Color */
@@ -2512,7 +2511,7 @@ button.passwordArr {
 
         transition: transform 1.6s ease, -webkit-transform 1.6s ease;
 
-            transform: translateY(0px);
+        transform: translateY(0px);
 
      */
 
