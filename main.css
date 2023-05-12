@@ -2531,10 +2531,10 @@ button.passwordArr {
 
  */    
  
-    font-weight: 300;
+    font-weight: 300 !important;
 
 
-    color: var(--Grey700);
+    color: var(--Grey800);
     transition: 0.25s;
     background: none;
     border: 1px solid var(--white);
@@ -2560,7 +2560,7 @@ button.passwordArr {
     border-color: var(--hover);
     color: var(--Grey900);
     box-shadow: inset 0 4.25em 0 0 var(--hover);
-    font-weight: 500;
+    font-weight: 500 !important;
 
 }
 
