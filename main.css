@@ -1320,6 +1320,13 @@ hr {
 /* ---- must always have for responsive*/
 .element {
     padding: 0.8em 1em 0;
+
+/* ----     0.8em 1em 0 0;  top, right, bottom, left;
+
+
+padding: 0.8em 0em 0;
+/* ----     padding: 0.8em top 1em right and left 0 bottom; ----*/
+
     margin-bottom: 1em;
     transition: background-color 0.3s ease;
 }
@@ -1692,9 +1699,9 @@ button.passwordArr {
     /*top 0.8, left and right 1*/
     margin-bottom: 1em;
     border-radius: 6px;
-    border: 0.06em solid var(--colorTealLtr);
+    border: 0.06em solid var(--GLORIFY-orange);
     color: var(--colorTealDk);
-    background: var(--colorTealLtest);
+    background: var(--colorWarm);
     transition: background-color 0.3s ease;
 }
 
@@ -1770,6 +1777,15 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+
+    body .dropdown-content a:hover {
+        display: none;
+    }
+
+    body .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
     body .logo {
         padding: 0.5em 1em;
     }
@@ -2487,10 +2503,10 @@ button.passwordArr {
     transform: translateY(0px);
 
  */
- transform: translateY(0);
- transition-timing-function: ease-in;
- transition: 2s;
- border: 1px solid transparent;
+    transform: translateY(0);
+    transition-timing-function: ease-in;
+    transition: 2s;
+    border: 1px solid transparent;
 
 }
 
@@ -2515,13 +2531,13 @@ button.passwordArr {
 
      */
 
-     transition: 0.25s;
-     transition-timing-function: ease-out;
-     
-     transform: translateY(100);
-     border: 1px solid var(--Grey200);
+    transition: 0.25s;
+    transition-timing-function: ease-out;
 
-    }
+    transform: translateY(100);
+    border: 1px solid var(--Grey200);
+
+}
 
 
 
@@ -2952,7 +2968,7 @@ body .flex-container.Mobile {
 
 .logo {
 
-    padding: 0.5em 0;
+    padding: 0.5em 1em;
     font-size: 1.8rem;
     font-weight: 300;
     /* margin-right: 8%; */
