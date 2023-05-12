@@ -2,6 +2,8 @@ html {
     scroll-behavior: smooth;
     color: var(--Grey800);
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
+
 }
 
 :root {
@@ -100,10 +102,10 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
+
 }
 
 .displayNone {
@@ -1034,35 +1036,52 @@ section .padding {
     margin: 0;
 }
 
+.fontWeight300 {
+    font-weight: 300;
+
+}
+
+.fontWeight500 {
+    font-weight: 500;
+
+}
+
+h1,
+h2 {
+    font-weight: 500;
+
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
 
 h1 {
     font-size: clamp(1.4em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
-    font-weight: 500;
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
 
 h2 {
     font-size: clamp(1.3em, 1.46vw, 1.68em);
-    font-weight: 300;
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
 
 h3 {
     font-size: clamp(1.2em, 1.26vw, 1.48em);
-    font-weight: 300;
     margin-top: clamp(0.42em, 0.56em, 1.2em);
     margin-bottom: clamp(0.42em, 0.56em, 1.2em);
-    ;
 }
 
 h4 {
     font-size: clamp(0.96em, 1.12vw, 1.2em);
-    font-weight: 300;
     margin-top: clamp(0.36em, 0.4em, 1em);
     margin-bottom: clamp(0.36em, 0.4em, 1em);
 
@@ -1072,14 +1091,12 @@ h4 {
 
 h5 {
     font-size: clamp(0.73em, 0.92vw, 1em);
-    font-weight: 300;
     margin-top: clamp(0.2em, 0.4em, 1em);
     margin-bottom: clamp(0.2em, 0.4em, 1em);
 }
 
 h6 {
     font-size: clamp(0.68em, 0.78vw, 0.86em);
-    font-weight: 300;
     margin: 0.26em 0;
 
 }
@@ -1116,7 +1133,6 @@ p.thick {
 
 strong {
     font-family: 'lato', sans-serif;
-
     font-weight: 500;
     color: var(--Grey900);
     margin: 1em, 0;
@@ -1131,6 +1147,15 @@ strong {
 }
 
 /* text*/
+
+.allCaps {
+    text-transform: uppercase;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
 .textDecor {
     text-decoration: underline;
     text-decoration-style: double;
@@ -1152,17 +1177,6 @@ strong {
 .textDecor.WS {
     text-decoration-color: var(--WS-Blue);
 }
-
-
-.allCaps {
-    text-transform: uppercase;
-}
-
-.strikethrough {
-    text-decoration: line-through;
-}
-
-
 
 
 hr {
@@ -2438,7 +2452,7 @@ button.passwordArr {
 
 .LRslides {
     height: 600px;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
@@ -2472,18 +2486,21 @@ button.passwordArr {
 
 .carousel__nav {
     padding: 0;
-    margin-right: 4em;
     display: flex;
     flex-direction: column;
 
 }
 
 .slider-nav {
-    border-radius: 12px;
-    color: var(--Grey700);
+    /*     backup
+    font-size: clamp(1.2em, 1vw, 1.48em);
+
+    font-family: inherit;
+    border-radius: 24px;
+    color: var(--Grey700) !important;
     display: inline-flex;
     justify-content: center;
-    padding: 12px;
+    padding: 1em;
     margin: 1em;
     position: relative;
     text-decoration: none;
@@ -2492,8 +2509,12 @@ button.passwordArr {
     align-items: flex-start;
     flex-direction: column;
     background: transparent;
-    box-shadow: inset 0px 0 0 var(--white), inset 0 0px 0 var(--white), inset 0px 0 0 var(--white), inset 0 0px 0 var(--white);
-    background-color: transparent;
+
+    transform: translateY(0);
+    transition-timing-function: ease-in;
+    transition: all .5s ease;
+    */
+
     /*     
     transition: background-color 0.3s, color 0.3s;
     -webkit-transition: 1s ease-out;
@@ -2501,34 +2522,59 @@ button.passwordArr {
 
     transition: 1s ease-out;
     transform: translateY(0px);
+    background-color: transparent;
 
     border: 1px solid transparent;
     transition: background-color 1s;
 
- */
-    transform: translateY(0);
-    transition-timing-function: ease-in;
-    transition: 1s;
+    box-shadow: inset 0px 0 0 var(--white), inset 0 0px 0 var(--white), inset 0px 0 0 var(--white), inset 0 0px 0 var(--white);
 
+ */    
+ 
+    font-weight: 300;
+
+
+    color: var(--Grey700);
+    transition: 0.25s;
+    background: none;
+    border: 1px solid var(--white);
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    border-radius: 12px;
+    display: inline-block;
 
 }
 
-/*     
 
-
-
+.up {
+    --color: var(--AMBlue);
+    --hover: var(--White-transparent);
 }
- */
-
 
 
 .slider-nav:active,
 .slider-nav:hover,
 .slider-nav.active {
+    border-color: var(--hover);
     color: var(--Grey900);
+    box-shadow: inset 0 4.25em 0 0 var(--hover);
+    font-weight: 500;
+
+}
+
+/*     backup
+    font-weight: 500;
+    font-family: inherit;
+
+    color: var(--Grey900) !important;
     box-shadow: inset -1px 0 0 var(--white), inset 0 -1px 0 var(--white), inset 1px 0 0 var(--white), inset 0 1px 0 var(--white);
     background-color: var(--White-transparent);
-    /*     
+    transition-timing-function: ease-out;
+    */
+
+/*     
      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
      transition: 5s ease-out, background-color 2s;
      -webkit-transform: translateY(0%);
@@ -2542,11 +2588,18 @@ button.passwordArr {
      border: 1px solid var(--Grey200);
 
      transition: 0.5ms;
-
-      */
-
-    transition-timing-function: ease-out;
     transform: translateY(100);
+
+    */
+
+
+
+
+
+
+
+box-shadow: inset 0 -3.25em 0 0 var(--hover);
+
 
 }
 
