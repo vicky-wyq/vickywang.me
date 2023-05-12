@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       currentSlide = (currentSlide + 1) % totalSlides;
       scrollToSlide(currentSlide);
       updateActiveSlide();
-    }, 3000); // Change the number to adjust the time interval between slide transitions (in milliseconds)
+    }, 4000); // Change the number to adjust the time interval between slide transitions (in milliseconds)
   }
 
   // Function to stop autoplay
