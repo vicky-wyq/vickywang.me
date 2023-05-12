@@ -2503,12 +2503,12 @@ button.passwordArr {
     transform: translateY(0px);
 
     border: 1px solid transparent;
+    transition: background-color 1s;
 
  */
     transform: translateY(0);
     transition-timing-function: ease-in;
     transition: 1s;
-    transition: background-color 1s;
 
 
 }
