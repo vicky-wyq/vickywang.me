@@ -2690,10 +2690,8 @@ button.passwordArr {
 /* ------------------- Responsive grid -------------------*/
 /* ------------------- LRcarousel -------------------*/
 .LRcarousel {
-    text-align: center;
     overflow: hidden;
     display: flex;
-
 }
 .LRslides {
     height: 600px;
@@ -2786,8 +2784,9 @@ button.passwordArr {
     display: inline-block;
 }
 .slider-nav.noBg {
-    color: var(--Grey800);
-    border: 1px solid var(--Grey900);
+    color: var(--Grey900);
+    border: 0.01em solid var(--Grey100);
+
 }
 /*
 .up {
@@ -2798,7 +2797,6 @@ button.passwordArr {
 
 
 
-.slider-nav:active,
 .slider-nav:hover,
 .slider-nav.active {
     border-color: var(--white);
@@ -2808,14 +2806,14 @@ button.passwordArr {
     box-shadow: inset 0 -8.25em 0 0 var(--white);
 }
 
-.slider-nav:active,
-.slider-nav:hover,
-.slider-nav.noBg.active {
-    border-color: var(--Grey900);
-    color: var(--white);
-    box-shadow: inset 0 4.25em 0 0 var(--alert--pink);
-    font-weight: 500 !important;
-    box-shadow: inset 0 -10.25em 0 0 var(--Grey900);
+.noBg .slider-nav:hover,
+.noBg .slider-nav.active {
+  border: 0.01em solid var(--Grey900);
+
+  color: var(--Grey900);
+  box-shadow: inset 0 4.25em 0 0 var(--alert--pink);
+  font-weight: 500 !important;
+  box-shadow: inset 0 -10.25em 0 0 var(--Grey100);
 }
 /*     backup
     font-weight: 500;
