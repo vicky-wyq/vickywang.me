@@ -398,7 +398,7 @@ polygon {
 }
 
 .cardBorder {
-    border: 0.08em solid var(--Grey200);
+    border: 0.06em solid var(--Grey200);
     border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);
