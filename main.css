@@ -191,7 +191,10 @@ body {
 .Grey200Bg {
     background-color: var(--Grey200);
 }
+.WhiteBg{
+    background-color: var(--white);
 
+}
 .colorBgGrey {
     background-color: var(--Grey200);
 }
