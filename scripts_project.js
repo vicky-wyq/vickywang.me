@@ -90,13 +90,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
       this.carouselId = carouselId;
       this.activeIndex = 0;
       this.autoplayInterval = null;
-  
+
       this.init();
     }
-  
+
     init() {
       this.startAutoplay();
-  
+
       const navLinks = document.querySelectorAll(`#${this.carouselId} .slider-nav`);
       navLinks.forEach((navLink, index) => {
         navLink.addEventListener('mouseenter', () => {
@@ -108,20 +108,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
           this.startAutoplay();
         });
       });
-  
+
       document.querySelector(`#${this.carouselId} .LRslides`).addEventListener('scroll', () => {
         this.updateActiveSlide();
       });
-  
+
       this.updateActiveSlide();
     }
-  
+
     updateActiveSlide() {
       const slides = document.querySelectorAll(`#${this.carouselId} .slides-item`);
       const navLinks = document.querySelectorAll(`#${this.carouselId} .slider-nav`);
       const slidesContainer = document.querySelector(`#${this.carouselId} .LRslides`);
       this.activeIndex = Math.round(slidesContainer.scrollTop / slidesContainer.clientHeight);
-  
+
       navLinks.forEach((navLink, index) => {
         if (index === this.activeIndex) {
           navLink.classList.add('active');
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
       });
     }
-  
+
     scrollToSlide(slideIndex) {
       const slidesContainer = document.querySelector(`#${this.carouselId} .LRslides`);
       slidesContainer.scrollTo({
@@ -138,11 +138,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         behavior: 'smooth',
       });
     }
-  
+
     startAutoplay() {
       const slidesContainer = document.querySelector(`#${this.carouselId} .LRslides`);
       const totalSlides = document.querySelectorAll(`#${this.carouselId} .slides-item`).length;
-  
+
       let currentSlide = this.activeIndex;
       this.autoplayInterval = setInterval(() => {
         currentSlide = (currentSlide + 1) % totalSlides;
@@ -150,34 +150,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
         this.updateActiveSlide();
       }, 3800);
     }
-  
+
     stopAutoplay() {
       clearInterval(this.autoplayInterval);
     }
   }
-  
+
   const carousel1 = new Carousel('carousel1');
-const carousel2 = new Carousel('carousel2');
+  const carousel2 = new Carousel('carousel2');
 
 
   // LRcarousel Ends
 
 
-
-
-
-
-  // TBcarousel Starts
-  
-  (function () {
+  function initCarousel(carouselSelector) {
     let activeIndex = 0;
-
+  
     function updateActiveSlide() {
-      const slides = document.querySelectorAll('.TBslidesItem');
-      const navLinks = document.querySelectorAll('.TBsliderNav');
-      const slidesContainer = document.querySelector('.TBslides');
+      const carousel = document.querySelector(carouselSelector);
+      const slides = carousel.querySelectorAll('.TBslidesItem');
+      const navLinks = carousel.querySelectorAll('.TBsliderNav');
+      const slidesContainer = carousel.querySelector('.TBslides');
       activeIndex = Math.round(slidesContainer.scrollLeft / slidesContainer.clientWidth);
-
+  
       navLinks.forEach((navLink, index) => {
         if (index === activeIndex) {
           navLink.classList.add('active');
@@ -186,51 +181,67 @@ const carousel2 = new Carousel('carousel2');
         }
       });
     }
-
+  
     let autoplayInterval;
-
-    function scrollToSlide(slideIndex) {
-      const slidesContainer = document.querySelector('.TBslides');
+  
+    function scrollToSlide(slideIndex, carousel) {
+      const slidesContainer = carousel.querySelector('.TBslides');
       slidesContainer.scrollTo({
         left: slideIndex * slidesContainer.clientWidth,
         behavior: 'smooth',
       });
     }
-
-    function startAutoplay() {
-      const slidesContainer = document.querySelector('.TBslides');
-      const totalSlides = document.querySelectorAll('.TBslidesItem').length;
-
+  
+    function startAutoplay(carousel) {
+      const slidesContainer = carousel.querySelector('.TBslides');
+      const totalSlides = carousel.querySelectorAll('.TBslidesItem').length;
+  
       let currentSlide = activeIndex;
       autoplayInterval = setInterval(() => {
         currentSlide = (currentSlide + 1) % totalSlides;
-        scrollToSlide(currentSlide);
+        scrollToSlide(currentSlide, carousel);
         updateActiveSlide();
       }, 3800);
     }
-
+  
     function stopAutoplay() {
       clearInterval(autoplayInterval);
     }
-
-    startAutoplay();
-
-    const navLinks = document.querySelectorAll('.TBsliderNav');
-    navLinks.forEach((navLink, index) => {
-      navLink.addEventListener('mouseenter', () => {
-        scrollToSlide(index);
-        updateActiveSlide();
-        stopAutoplay();
+  
+    const carousels = document.querySelectorAll(carouselSelector);
+    carousels.forEach(carousel => {
+      startAutoplay(carousel);
+  
+      const navLinks = carousel.querySelectorAll('.TBsliderNav');
+      navLinks.forEach((navLink, index) => {
+        navLink.addEventListener('mouseenter', () => {
+          scrollToSlide(index, carousel);
+          updateActiveSlide();
+          stopAutoplay();
+        });
+        navLink.addEventListener('mouseleave', () => {
+          startAutoplay(carousel);
+        });
       });
-      navLink.addEventListener('mouseleave', () => {
-        startAutoplay();
-      });
+  
+      carousel.querySelector('.TBslides').addEventListener('scroll', updateActiveSlide);
+  
+      updateActiveSlide();
     });
+  }
+  
+  // Usage
+  initCarousel('#TBcarousel1');
+  
+  initCarousel('#TBcarousel2');
 
-    document.querySelector('.TBslides').addEventListener('scroll', updateActiveSlide);
 
-    updateActiveSlide();
-})();
+
+  // TBcarousel Starts
+
+
+  
+
 
   // TBcarousel Ends
 
