@@ -3715,7 +3715,7 @@ body .flex-container.Mobile {
 
 .centeredTQ {
     position: absolute;
-    bottom: 0;
+    top: calc(100% - 100px);
     left: 50%;
     transform: translate(-50%, -50%);
 }
