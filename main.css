@@ -1273,12 +1273,15 @@ li .rightPanel {
     font-size: 12px;
     line-height: 16px;
     margin-left: 0;
-}
 
+}
+/*
 .titleRightPanel {
     font-size: 16px;
     line-height: 18px;
 }
+
+*/
 
 ul .rightPanel {
     list-style-type: none;
