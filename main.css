@@ -97,7 +97,7 @@ html {
     font-family: 'Lato', sans-serif;
     --GLORIFY-orangeLt: #EDDACC;
     --GLORIFY-orange: #EFBD66;
-    --GlorifyBlue: #489FD3;
+    --GlorifyBlue: #66B3FA;
 
 
 }
@@ -316,10 +316,12 @@ body {
     color: var(--Grey900);
 }
 
-.colorGLORIFY {
+.colorGLORIFYBlue {
     color: var(--GlorifyBlue);
 }
-
+.colorGLORIFYOrange {
+    color: var(--GLORIFY-orange);
+}
 
 .colorBgGLORIFY {
     background-color: var(--GLORIFY-orangeLt);
@@ -425,7 +427,13 @@ polygon {
     border-radius: 2.2em;
     border: 1px solid var(--border);
 }
+.cardGlorify {
+    background: var(--white);
+    border-radius: 1.2em;
+    border: 1px solid var(--border);
+    padding: 1em 2em;
 
+}
 .cardBorder {
     border: 0.06em solid var(--Grey200);
     border-radius: var(--border-radius);
@@ -632,7 +640,7 @@ polygon {
     width: 100%;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 99;
     border-radius: 12px;
 }
 
@@ -1180,7 +1188,6 @@ main>nav {
     position: -webkit-sticky;
     position: sticky;
     border-radius: 6px;
-    z-index: 3;
     width: max-content;
     background-color: var(--White-transparent);
     padding-top: 16px;
@@ -1334,7 +1341,6 @@ section .padding {
     font-weight: 600;
     font-size: clamp(1.6em, 2.8vw, 3.2em);
     margin: 0;
-
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
@@ -1903,8 +1909,8 @@ button.passwordArr {
 .arrCard:after {
     content: "";
     background-image: url("icon/arrow-card.svg");
-    height: 36px;
-    width: 36px;
+    height: 22px;
+    width: 22px;
     float: right;
 }
 
@@ -4427,6 +4433,7 @@ a:link.textProject {
 }
 
 .active.GLORIFY a {
+    font-weight: 500;
     color: var(--GlorifyBlue);
 }
 
