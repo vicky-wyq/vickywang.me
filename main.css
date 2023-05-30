@@ -1366,7 +1366,7 @@ section .padding {
 
 
 .noMargin {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .fontWeight300 {
@@ -1417,8 +1417,6 @@ h4 {
     font-size: clamp(0.96em, 1.12vw, 1.2em);
     margin-top: clamp(0.36em, 0.4em, 1em);
     margin-bottom: clamp(0.36em, 0.4em, 1em);
-
-
 }
 
 
