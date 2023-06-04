@@ -2794,7 +2794,7 @@ button.passwordArr {
     width: 80%;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: hidden;
     scrollbar-width: none;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
