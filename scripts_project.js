@@ -29,23 +29,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
       captionText.innerHTML = img.alt;
     }
   });
+
   // Scroll add/remove classes Starts
   window.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         const id = entry.target.getAttribute('id');
-        const activeLi = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
-        const ul = activeLi.querySelector('ul');
+        const anchor = document.querySelector(`nav li a[href="#${id}"]`);
 
-        if (entry.intersectionRatio > 0) {
-          activeLi.classList.add('active');
-          if (ul) {
-            ul.classList.add('active');
-          }
-        } else {
-          activeLi.classList.remove('active');
-          if (ul) {
-            ul.classList.remove('active');
+        if (anchor) {
+          const activeLi = anchor.parentElement;
+          const ul = activeLi.querySelector('ul');
+
+          if (entry.intersectionRatio > 0) {
+            activeLi.classList.add('active');
+            if (ul) {
+              ul.classList.add('active');
+            }
+          } else {
+            activeLi.classList.remove('active');
+            if (ul) {
+              ul.classList.remove('active');
+            }
           }
         }
       });
@@ -60,78 +65,79 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // Scroll add/remove classes ends
 
 
+
   // LRCarousel starts 
 
-(function () {
-  function initLRcarousel(carouselId) {
-    let activeIndex = 0;
-    let autoplayInterval;
+  (function () {
+    function initLRcarousel(carouselId) {
+      let activeIndex = 0;
+      let autoplayInterval;
 
-    function updateActiveSlide() {
+      function updateActiveSlide() {
+        const carousel = document.querySelector(`#${carouselId}`);
+        const slides = carousel.querySelectorAll('.slides-item');
+        const navLinks = carousel.querySelectorAll('.slider-nav');
+        const slidesContainer = carousel.querySelector('.LRslides');
+        activeIndex = Math.round(slidesContainer.scrollTop / slidesContainer.clientHeight);
+
+        navLinks.forEach((navLink, index) => {
+          if (index === activeIndex) {
+            navLink.classList.add('active');
+          } else {
+            navLink.classList.remove('active');
+          }
+        });
+      }
+
+      function scrollToSlide(slideIndex) {
+        const carousel = document.querySelector(`#${carouselId}`);
+        const slidesContainer = carousel.querySelector('.LRslides');
+        slidesContainer.scrollTo({
+          top: slideIndex * slidesContainer.clientHeight,
+          behavior: 'smooth',
+        });
+      }
+
+      function startAutoplay() {
+        const carousel = document.querySelector(`#${carouselId}`);
+        const totalSlides = carousel.querySelectorAll('.slides-item').length;
+
+        let currentSlide = activeIndex;
+        autoplayInterval = setInterval(() => {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          scrollToSlide(currentSlide);
+          updateActiveSlide();
+        }, 3800);
+      }
+
+      function stopAutoplay() {
+        clearInterval(autoplayInterval);
+      }
+
       const carousel = document.querySelector(`#${carouselId}`);
-      const slides = carousel.querySelectorAll('.slides-item');
+      startAutoplay();
+
       const navLinks = carousel.querySelectorAll('.slider-nav');
-      const slidesContainer = carousel.querySelector('.LRslides');
-      activeIndex = Math.round(slidesContainer.scrollTop / slidesContainer.clientHeight);
-
       navLinks.forEach((navLink, index) => {
-        if (index === activeIndex) {
-          navLink.classList.add('active');
-        } else {
-          navLink.classList.remove('active');
-        }
+        navLink.addEventListener('mouseenter', () => {
+          scrollToSlide(index);
+          updateActiveSlide();
+          stopAutoplay();
+        });
+        navLink.addEventListener('mouseleave', () => {
+          startAutoplay();
+        });
       });
+
+      carousel.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide);
+
+      updateActiveSlide();
     }
 
-    function scrollToSlide(slideIndex) {
-      const carousel = document.querySelector(`#${carouselId}`);
-      const slidesContainer = carousel.querySelector('.LRslides');
-      slidesContainer.scrollTo({
-        top: slideIndex * slidesContainer.clientHeight,
-        behavior: 'smooth',
-      });
-    }
-
-    function startAutoplay() {
-      const carousel = document.querySelector(`#${carouselId}`);
-      const totalSlides = carousel.querySelectorAll('.slides-item').length;
-
-      let currentSlide = activeIndex;
-      autoplayInterval = setInterval(() => {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        scrollToSlide(currentSlide);
-        updateActiveSlide();
-      }, 3800);
-    }
-
-    function stopAutoplay() {
-      clearInterval(autoplayInterval);
-    }
-
-    const carousel = document.querySelector(`#${carouselId}`);
-    startAutoplay();
-
-    const navLinks = carousel.querySelectorAll('.slider-nav');
-    navLinks.forEach((navLink, index) => {
-      navLink.addEventListener('mouseenter', () => {
-        scrollToSlide(index);
-        updateActiveSlide();
-        stopAutoplay();
-      });
-      navLink.addEventListener('mouseleave', () => {
-        startAutoplay();
-      });
-    });
-
-    carousel.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide);
-
-    updateActiveSlide();
-  }
-
-  // Usage
-  initLRcarousel('carousel1');
-  initLRcarousel('carousel2');
-})();
+    // Usage
+    initLRcarousel('carousel1');
+    initLRcarousel('carousel2');
+  })();
   // LRCarousel ends 
 
 
@@ -148,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const navLinks = carousel.querySelectorAll('.TBsliderNav');
         const slidesContainer = carousel.querySelector('.TBslides');
         activeIndex = Math.round(slidesContainer.scrollLeft / slidesContainer.clientWidth);
-  
+
         navLinks.forEach((navLink, index) => {
           if (index === activeIndex) {
             navLink.classList.add('active');
@@ -157,9 +163,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
           }
         });
       }
-  
+
       let autoplayInterval;
-  
+
       function scrollToSlide(slideIndex, carousel) {
         const slidesContainer = carousel.querySelector('.TBslides');
         slidesContainer.scrollTo({
@@ -167,11 +173,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
           behavior: 'smooth',
         });
       }
-  
+
       function startAutoplay(carousel) {
         const slidesContainer = carousel.querySelector('.TBslides');
         const totalSlides = carousel.querySelectorAll('.TBslidesItem').length;
-  
+
         let currentSlide = activeIndex;
         autoplayInterval = setInterval(() => {
           currentSlide = (currentSlide + 1) % totalSlides;
@@ -179,15 +185,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
           updateActiveSlide();
         }, 3800);
       }
-  
+
       function stopAutoplay() {
         clearInterval(autoplayInterval);
       }
-  
+
       const carousels = document.querySelectorAll(carouselSelector);
       carousels.forEach(carousel => {
         startAutoplay(carousel);
-  
+
         const navLinks = carousel.querySelectorAll('.TBsliderNav');
         navLinks.forEach((navLink, index) => {
           navLink.addEventListener('mouseenter', () => {
@@ -199,13 +205,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
             startAutoplay(carousel);
           });
         });
-  
+
         carousel.querySelector('.TBslides').addEventListener('scroll', updateActiveSlide);
-  
+
         updateActiveSlide();
       });
     }
-  
+
     // Usage
     initCarousel('#TBcarousel1');
     initCarousel('#TBcarousel2');
