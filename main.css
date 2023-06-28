@@ -223,7 +223,9 @@ body {
     background-color: var(--white);
 
 }
-
+.colorBgGrey900 {
+    background-color: var(--Grey900);
+}
 .colorBgGrey {
     background-color: var(--Grey200);
 }
@@ -319,6 +321,7 @@ body {
 .colorGLORIFYBlue {
     color: var(--GlorifyBlue);
 }
+
 .colorGLORIFYOrange {
     color: var(--GLORIFY-orange);
 }
@@ -427,6 +430,7 @@ polygon {
     border-radius: 2.2em;
     border: 1px solid var(--border);
 }
+
 .cardGlorify {
     background: var(--white);
     border-radius: 1.2em;
@@ -434,6 +438,7 @@ polygon {
     padding: 1em 2em;
 
 }
+
 .cardBorder {
     border: 0.06em solid var(--Grey200);
     border-radius: var(--border-radius);
@@ -1103,7 +1108,6 @@ section {
 .subNav {
     position: sticky;
     border-radius: 6px;
-    z-index: 3;
     top: 12rem;
 }
 
@@ -1196,7 +1200,6 @@ main>nav {
     overflow-y: auto;
     height: fit-content;
 
- 
     top: 50%;
     transform: translateY(-50%);
 
@@ -1282,6 +1285,7 @@ li .rightPanel {
     margin-left: 0;
 
 }
+
 /*
 .titleRightPanel {
     font-size: 16px;
@@ -2791,7 +2795,7 @@ button.passwordArr {
 
 .LRslides {
     height: 600px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -2979,11 +2983,12 @@ button.passwordArr {
 }
 
 .TBslides {
-    height: 600px;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    overflow-y: scroll;
+    overflow-y: hidden; /* Changed this */
+    overflow-x: auto; /* Added this */
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -3141,13 +3146,15 @@ button.passwordArr {
 .item input {
     display: none;
 }
-label{
+
+label {
     line-height: 26px;
     color: var(--Grey900);
     font-weight: 300;
 
 }
-li label{
+
+li label {
     display: block;
     opacity: 0.5;
     height: 46px;
