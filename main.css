@@ -223,9 +223,11 @@ body {
     background-color: var(--white);
 
 }
+
 .colorBgGrey900 {
     background-color: var(--Grey900);
 }
+
 .colorBgGrey {
     background-color: var(--Grey200);
 }
@@ -427,15 +429,15 @@ polygon {
 
 .cardAPPOINTA {
     background: var(--white);
-    border-radius: 2.2em;
+    border-radius: 1.2em;
     border: 1px solid var(--border);
 }
 
 .cardGlorify {
     background: var(--white);
-    border-radius: 1.2em;
+    border-radius: 0.8em;
     border: 1px solid var(--border);
-    padding: 1em 2em;
+
 
 }
 
@@ -1362,7 +1364,8 @@ section .padding {
 .specialTextNote {
     font-family: 'Indie Flower', sans-serif;
     font-weight: 100;
-    font-size: clamp(1.6em, 2vw, 2.2em);
+    font-size: clamp(1.3em, 1.46vw, 1.68em);
+
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
@@ -1433,7 +1436,6 @@ h5 {
 h6 {
     font-size: clamp(0.68em, 0.78vw, 0.86em);
     margin: 0.26em 0;
-
 }
 
 p.light {
@@ -1513,6 +1515,9 @@ strong {
     text-decoration-color: var(--WS-Blue);
 }
 
+.textDecor.Glorify {
+    color: var(--GLORIFY-orange) !important;
+}
 
 hr {
     border: none;
@@ -2976,7 +2981,6 @@ button.passwordArr {
 
 /* ------------------- TBcarousel -------------------*/
 .TBcarousel {
-    text-align: center;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -2987,8 +2991,10 @@ button.passwordArr {
     width: 100%;
     display: flex;
     flex-direction: row;
-    overflow-y: hidden; /* Changed this */
-    overflow-x: auto; /* Added this */
+    overflow-y: hidden;
+    /* Changed this */
+    overflow-x: auto;
+    /* Added this */
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -3003,7 +3009,6 @@ button.passwordArr {
     border-radius: 12px;
     display: flex;
     flex-shrink: 0;
-    font-size: 100px;
     height: 100%;
     width: 100%;
     justify-content: center;
