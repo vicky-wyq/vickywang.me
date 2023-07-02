@@ -437,6 +437,7 @@ polygon {
     background: var(--white);
     border-radius: 0.8em;
     border: 1px solid var(--border);
+    height: auto;
 
 
 }
