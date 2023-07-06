@@ -304,6 +304,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     initCarousel('#TBcarousel1');
     initCarousel('#TBcarousel2');
     initCarousel('#TBcarouselGlorify1');
+    initCarousel('#TBcarouselGlorify2');
+    initCarousel('#TBcarouselGlorify3');
+    initCarousel('#TBcarouselGlorify4');
+    initCarousel('#TBcarouselGlorify5');
+
+
   })();
   // TBcarousel Ends
 
