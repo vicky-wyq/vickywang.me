@@ -448,7 +448,10 @@ polygon {
     -webkit-border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);
 }
+.cardBorderThick {
+    border: 0.1em solid var(--Grey900);
 
+}
 .cardBorderGreen {
     border: 1px solid var(--Grey500);
 
@@ -1180,9 +1183,8 @@ main>nav {
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active>a {
-    color: var(--Grey900);
     font-weight: 500;
-    border-right: var(--Grey900) .06em solid;
+    border-left: var(--Grey900) .06em solid;
     background-color: var(--Grey100);
 
 }
@@ -1199,43 +1201,23 @@ main>nav {
     background-color: var(--White-transparent);
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 12px;
+    padding-right: 12px;
     overflow-y: auto;
     height: fit-content;
-
     top: 50%;
     transform: translateY(-50%);
-
-    /*
-
-        translate: 50%
-
-    bottom: 0;
-    left:0px;
-
-
-    height: 68vh;
-    min-height: 10vh;
-
-    height: 110vh;
-
-    border-radius: 10px;
-    opacity: 0.8;
-    border: 1px solid var(--Grey200);
-    top: 0;
-    height: auto;
-    */
+    left: 100%;
 }
 
 .section-nav a {
-    border-right: var(--Grey400) 0.01em solid;
+    border-left: var(--Grey400) 0.01em solid;
     text-decoration: none;
     display: block;
-    padding: 6px 16px;
+    padding: 8px 16px;
     color: var(--Grey600);
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
-    border-radius: 6px 0 0 6px;
+    border-radius: 0 8px 8px 0;
 
 }
 
@@ -1243,9 +1225,6 @@ main>nav {
 .section-nav a:focus {
     background-color: var(--Grey300) !important;
     color: var(--Grey900) !important;
-    font-weight: 500;
-    border-radius: 6px 0 0 6px;
-
 }
 
 
@@ -3884,7 +3863,7 @@ body .flex-container.Mobile {
     left: 50%;
     transform: translateX(-50%);
     bottom: 6px;
-    z-index: 99;
+    z-index: 5;
     font-size: 22px;
     font-weight: 100;
     font-family: inherit;
@@ -4469,7 +4448,6 @@ img {
 
 /* imgModal */
 .modal-target {
-
     cursor: zoom-in;
     transition: 0.3s;
 }
@@ -4486,14 +4464,12 @@ img {
 }
 
 /* The Modal (background) */
-
-
 .modal {
     display: none;
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 4;
+    z-index: 99;
     /* Sit on top */
     padding-top: 2em;
     /* Location of the box */
@@ -4509,7 +4485,7 @@ img {
     /* Fallback color */
     background-color: rgba(255, 255, 255, 0.98);
     /* Black w/ opacity */
-  }
+}
 
 
 .modal-content {
@@ -4522,6 +4498,7 @@ img {
     opacity: 1 !important;
 
 }
+
 .modal-content:hover {
     cursor: zoom-out;
 }
@@ -4588,6 +4565,7 @@ img {
     background-color: var(--Grey100);
     border-radius: 32px;
     margin: 1em;
+    padding: 0.5em;
 }
 
 .iconXforModal:hover,
