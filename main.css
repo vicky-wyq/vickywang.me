@@ -4493,36 +4493,35 @@ img {
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 99;
-    top: 0;
+    z-index: 4;
+    /* Sit on top */
+    padding-top: 2em;
+    /* Location of the box */
     left: 0;
+    top: 0;
     width: 100%;
+    /* Full width */
     height: 100%;
+    /* Full height */
     overflow: auto;
     /* Enable scroll if needed */
     background-color: rgb(255, 255, 255);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.96);
+    background-color: rgba(255, 255, 255, 0.98);
     /* Black w/ opacity */
+  }
 
 
-}
-
-/* Modal Content (image) */
 .modal-content {
-    margin: auto;
-    display: block;
+    position: absolute;
     top: 50%;
-    left: 0;
-    transform: translateY(50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 95%;
-/* 
-    width: 95%;
-    height: auto;
+    height: [YourHeightValue];
     opacity: 1 !important;
-    */
-}
 
+}
 .modal-content:hover {
     cursor: zoom-out;
 }
@@ -4536,19 +4535,19 @@ img {
     width: 80%;
     max-width: 1200px;
     text-align: center;
-    color: white;
+    color: var(--Grey900);
     font-weight: 700;
-    font-size: 1em;
-    margin-top: 32px;
+    font-size: 2em;
+    margin-top: 1em;
 }
 
 /* Add Animation */
 .modal-content,
 .modal-caption {
     -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
+    -webkit-animation-duration: 0.1s;
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 0.1s;
 }
 
 @-webkit-keyframes zoom {
@@ -4581,7 +4580,6 @@ img {
     font-weight: bold;
     transition: 0.3s;
     z-index: 99;
-
 }
 
 .iconXforModal {
@@ -4589,13 +4587,12 @@ img {
     width: 48px;
     background-color: var(--Grey100);
     border-radius: 32px;
+    margin: 1em;
 }
+
 .iconXforModal:hover,
 .iconXforModal:focus {
-    height: 48px;
-    width: 48px;
     background-color: var(--Grey300);
-    border-radius: 32px;
 }
 
 .modal-close:hover,
