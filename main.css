@@ -448,10 +448,12 @@ polygon {
     -webkit-border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);
 }
+
 .cardBorderThick {
     border: 0.1em solid var(--Grey900);
 
 }
+
 .cardBorderGreen {
     border: 1px solid var(--Grey500);
 
@@ -1287,7 +1289,7 @@ ul .rightPanel {
 ul {
     list-style-type: none;
     font-family: inherit;
-    font-size: large;
+    font-size: clamp(0.83em, 1.06vw, 1.2em);
     line-height: 1.4em;
     font-weight: 300;
     list-style-position: outside;
@@ -3017,7 +3019,7 @@ button.passwordArr {
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
-    border-radius: 32px;
+    border-radius: 1em;
     display: inline-block;
 }
 
@@ -3037,7 +3039,7 @@ button.passwordArr {
 
 .noBg .TBsliderNav:hover,
 .noBg .TBsliderNav.active {
-    border: 0.01em solid var(--Grey900);
+    border: 0.06em solid var(--Grey900);
 
     color: var(--Grey900);
 
