@@ -308,6 +308,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     initCarousel('#TBcarouselGlorify3');
     initCarousel('#TBcarouselGlorify4');
     initCarousel('#TBcarouselGlorify5');
+    initCarousel('#TBcarouselGlorify6');
+    initCarousel('#TBcarouselGlorify7');
+    initCarousel('#TBcarouselGlorify8');
+    initCarousel('#TBcarouselGlorify9');
 
 
   })();
