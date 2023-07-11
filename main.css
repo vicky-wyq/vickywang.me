@@ -3040,12 +3040,11 @@ button.passwordArr {
 .noBg .TBsliderNav:hover,
 .noBg .TBsliderNav.active {
     border: 0.06em solid var(--Grey900);
-
     color: var(--Grey900);
-
     box-shadow: inset -4.25em 0 0 0 var(--hover);
     font-weight: 500 !important;
     box-shadow: inset 18em 0 0 0 var(--hover);
+    z-index: 0;
 }
 
 
