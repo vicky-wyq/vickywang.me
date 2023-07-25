@@ -98,6 +98,7 @@ html {
     --GLORIFY-orangeLt: #EDDACC;
     --GLORIFY-orange: #EFBD66;
     --GlorifyBlue: #66B3FA;
+    --GlorifyGreen: #79C25A;
 
 
 }
@@ -224,6 +225,10 @@ body {
 
 }
 
+.WhiteBgTrans {
+    background-color: var(--White-transparent);
+}
+
 .colorBgGrey900 {
     background-color: var(--Grey900);
 }
@@ -296,7 +301,7 @@ body {
 
 
 .colorGreyBorder {
-    border: 5px solid #F5F5F5;
+    border: 1px solid #F5F5F5;
 
 }
 
@@ -326,6 +331,9 @@ body {
 
 .colorGLORIFYOrange {
     color: var(--GLORIFY-orange);
+}
+.colorGLORIFYGreen {
+    color: var(--GlorifyGreen);
 }
 
 .colorBgGLORIFY {
@@ -565,7 +573,7 @@ polygon {
     height: 4em;
     transition: transform 0.25s ease-in-out;
     border-bottom: 1px solid var(--Grey200);
-    z-index: 3;
+    z-index: 98;
 }
 
 
@@ -632,7 +640,7 @@ polygon {
 }
 
 .nav-menu {
-    z-index: 99;
+    z-index: 98;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -653,7 +661,7 @@ polygon {
     width: 100%;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 99;
+    z-index: 98;
     border-radius: 12px;
 }
 
@@ -779,14 +787,14 @@ section {
     background-image: url(./appointa/backgroundQuote.svg);
     background-position: top;
     background-repeat: no-repeat;
-    z-index: 99;
+    z-index: 98;
 }
 
 .BGseerQuote {
     background-image: url(./seer/backgroundQuote.svg);
     background-position: top;
     background-repeat: no-repeat;
-    z-index: 99;
+    z-index: 98;
 }
 
 .BGseer1 {
@@ -932,7 +940,7 @@ section {
 
 /* new nav */
 .HorizNav {
-    z-index: 99;
+    z-index: 98;
     width: 100%;
     position: sticky;
     display: flex;
@@ -1201,14 +1209,21 @@ main>nav {
     border-radius: 6px;
     width: max-content;
     background-color: var(--White-transparent);
+
+    /* 💡 
     padding-top: 16px;
     padding-bottom: 16px;
     padding-right: 12px;
+         */
+
+
+
     overflow-y: auto;
     height: fit-content;
     top: 50%;
     transform: translateY(-50%);
     left: 100%;
+    z-index: 98;
 }
 
 .section-nav a {
@@ -1267,6 +1282,7 @@ li .rightPanel {
     font-size: 12px;
     line-height: 16px;
     margin-left: 0;
+    z-index: 98;
 
 }
 
@@ -1351,7 +1367,11 @@ section .padding {
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
-
+.specialTextDemo {
+    font-family: 'Caveat', sans-serif;
+    margin: 0;
+    font-size: clamp(1.3em, 1.46vw, 1.68em);
+}
 
 
 .noMargin {
@@ -1773,7 +1793,7 @@ input {
 
 
 button.passwordArr {
-    z-index: 99;
+    z-index: 98;
     padding: 0;
     margin-top: -8px;
     color: var(--Grey900);
@@ -2159,14 +2179,12 @@ button.passwordArr {
         background-image: url(./appointa/backgroundQuoteM.svg);
         background-position: left;
         background-repeat: no-repeat;
-        z-index: 99;
     }
 
     .BGseerQuote {
         background-image: url(./seer/backgroundQuoteM.svg);
         background-position: top;
         background-repeat: no-repeat;
-        z-index: 99;
     }
 
 
@@ -2382,7 +2400,7 @@ button.passwordArr {
 
     /*  2 1080 */
     body .navbar:hover .box:hover {
-        z-index: 99;
+        z-index: 98;
         transform: scale(1);
         filter: blur(0px);
         opacity: 1;
@@ -2394,7 +2412,7 @@ button.passwordArr {
 
     .active {
         right: 0;
-        z-index: 100;
+        z-index: 98;
         transition: 0.2s ease;
     }
 
@@ -2445,14 +2463,14 @@ button.passwordArr {
         background-image: url(./appointa/backgroundQuoteS.svg);
         background-position: left;
         background-repeat: no-repeat;
-        z-index: 99;
+        z-index: 98;
     }
 
     .BGseerQuote {
         background-image: url(./seer/backgroundQuoteS.svg);
         background-position: top;
         background-repeat: no-repeat;
-        z-index: 99;
+        z-index: 98;
     }
 
     .blankPhone {
@@ -3044,7 +3062,7 @@ button.passwordArr {
     box-shadow: inset -4.25em 0 0 0 var(--hover);
     font-weight: 500 !important;
     box-shadow: inset 18em 0 0 0 var(--hover);
-    z-index: 0;
+    z-index: auto;
 }
 
 
@@ -3368,7 +3386,7 @@ body .flex-container.Mobile {
 /*progressBarScroll*/
 
 .progressContainer {
-    z-index: 99;
+    z-index: 98;
     position: fixed;
     top: 0;
     width: 100%;
@@ -3864,7 +3882,7 @@ body .flex-container.Mobile {
     left: 50%;
     transform: translateX(-50%);
     bottom: 6px;
-    z-index: 5;
+    z-index: 98;
     font-size: 22px;
     font-weight: 100;
     font-family: inherit;
