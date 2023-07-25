@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           currentSlide = (currentSlide + 1) % totalSlides;
           scrollToSlide(currentSlide);
           updateActiveSlide();
-        }, 3800);
+        }, 5600);
       }
   
       function stopAutoplay() {
@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           currentSlide = (currentSlide + 1) % totalSlides;
           scrollToSlide(currentSlide, carousel);
           updateActiveSlide(carousel);
-        }, 3800);
+        }, 5600);
       }
 
       function stopAutoplay() {
