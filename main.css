@@ -21,7 +21,7 @@ html {
     --white: #ffffff;
     --alert: #CC3300;
     --alert--pink: #EB5757;
-    --Highlight:rgb(255,241,14, 0.5);
+    --Highlight: rgb(255, 241, 14, 0.5);
     --Grey900: #1b1b1b;
     /*292929 2c2c2c #161616*/
 
@@ -95,8 +95,10 @@ html {
 
     --border-radius: 0.5em;
     font-family: 'Lato', sans-serif;
-    --GLORIFY-orangeLt: #EDDACC;
+    --GLORIFY-orangeBgLt: #EDDACC;
     --GLORIFY-orange: #EFBD66;
+    --GLORIFY-orangeLt: #FFFAF3;
+
     --GlorifyBlue: #66B3FA;
     --GlorifyGreen: #79C25A;
 
@@ -320,10 +322,12 @@ body {
     background-color: var(--APPOINTA-bg);
     margin: 0 auto;
 }
+
 .colorBgHighlight {
     background-color: var(--Highlight);
     margin: 0 auto;
 }
+
 .colorBlack {
     color: var(--Grey900);
 }
@@ -335,12 +339,16 @@ body {
 .colorGLORIFYOrange {
     color: var(--GLORIFY-orange);
 }
+
 .colorGLORIFYGreen {
     color: var(--GlorifyGreen);
 }
+.colorBgGlorifyLt {
+    background-color: var(--GLORIFY-orangeLt);
+}
 
 .colorBgGLORIFY {
-    background-color: var(--GLORIFY-orangeLt);
+    background-color: var(--GLORIFY-orangeBgLt);
 }
 
 .colorAPPOINTA {
@@ -1370,6 +1378,7 @@ section .padding {
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
+
 .specialTextDemo {
     font-family: 'Caveat', sans-serif;
     margin: 0;
@@ -1591,7 +1600,7 @@ hr {
 
 .elementCard.GLORIFY:hover {
     cursor: pointer;
-    border-bottom: 5px solid var(--GLORIFY-orangeLt);
+    border-bottom: 5px solid var(--GLORIFY-orangeBgLt);
     transition: all 0.25s ease-in;
     /*  opacity: 1.0;
     filter: alpha(opacity=100);*/
@@ -3497,6 +3506,15 @@ body .flex-container.Mobile {
         padding: 6px;
     }
 
+    body .TBsliderNav {
+        font-size: 12px;
+
+        margin: 0.3em;
+        padding: 0.8em 1em;
+
+    }
+
+
 
 }
 
@@ -3733,7 +3751,10 @@ body .flex-container.Mobile {
     border-left: 5px solid var(--Grey300);
     padding-left: 1em;
 }
-
+.leftVerLine.GLORIFY {
+    border-left: 3px solid var(--GLORIFY-orange);
+    padding-left: 1em;
+}
 .leftVerLine.SEER {
     border-left: 3px solid var(--seer-purpleLighter);
     padding-left: 1.6em;
