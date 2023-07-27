@@ -21,7 +21,7 @@ html {
     --white: #ffffff;
     --alert: #CC3300;
     --alert--pink: #EB5757;
-
+    --Highlight:rgb(255,241,14, 0.5);
     --Grey900: #1b1b1b;
     /*292929 2c2c2c #161616*/
 
@@ -320,7 +320,10 @@ body {
     background-color: var(--APPOINTA-bg);
     margin: 0 auto;
 }
-
+.colorBgHighlight {
+    background-color: var(--Highlight);
+    margin: 0 auto;
+}
 .colorBlack {
     color: var(--Grey900);
 }
