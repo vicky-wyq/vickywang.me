@@ -21,7 +21,7 @@ html {
     --white: #ffffff;
     --alert: #CC3300;
     --alert--pink: #EB5757;
-    --Highlight: rgb(255, 241, 14, 0.5);
+    --Highlight: rgba(255, 242, 0, 0.3);
     --Grey900: #1b1b1b;
     /*292929 2c2c2c #161616*/
 
@@ -97,7 +97,9 @@ html {
     font-family: 'Lato', sans-serif;
     --GLORIFY-orangeBgLt: #EDDACC;
     --GLORIFY-orange: #EFBD66;
-    --GLORIFY-orangeLt: #FFFAF3;
+    --GLORIFY-orangeLt: #f5d7a3;
+
+    --GLORIFY-orangeLtest: #FFFAF3;
 
     --GlorifyBlue: #66B3FA;
     --GlorifyGreen: #79C25A;
@@ -344,7 +346,7 @@ body {
     color: var(--GlorifyGreen);
 }
 .colorBgGlorifyLt {
-    background-color: var(--GLORIFY-orangeLt);
+    background-color: var(--GLORIFY-orangeLtest);
 }
 
 .colorBgGLORIFY {
@@ -1510,17 +1512,19 @@ strong {
 .textDecor {
     text-decoration: underline;
     text-decoration-style: double;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 2px;
 }
 
 .textDecor.SEER {
     text-decoration-color: var(--seer-purple);
 }
 
-.textDecor.APPOINTA {
-    text-decoration-color: var(--APPOINTA-blue);
+.textDecor.GLORIFY {
+    text-decoration-color: var(--GLORIFY-orangeLt);
 }
-
+.textDecor.APPOINTA {
+    text-decoration-color: var(--APPOINTA-blueLight);
+}
 .textDecor.GREEN {
     text-decoration-color: var(--colorTeal-light);
 }
