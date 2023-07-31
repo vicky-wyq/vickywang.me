@@ -4389,12 +4389,16 @@ td,
 th {
     border: 1px solid #eeeeee;
     text-align: left;
-    padding: 1vh;
-    height: 2vh;
+    padding: 0.6vh;
+    height: 0.6vh;
+    font-weight: 300;
+
 }
 
 td {
-    font-weight: 200;
+    height: 1vh;
+    font-weight: 300;
+
 }
 
 th {
