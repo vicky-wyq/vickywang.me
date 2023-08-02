@@ -345,6 +345,7 @@ body {
 .colorGLORIFYGreen {
     color: var(--GlorifyGreen);
 }
+
 .colorBgGlorifyLt {
     background-color: var(--GLORIFY-orangeLtest);
 }
@@ -893,7 +894,131 @@ section {
         transparent 400px
       );
  */
+/* bar graph */
 
+.barGraph {
+    height: auto;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.barGraphText{
+    text-align: left;
+    width: 160px;
+
+    padding: 0.02em 0;
+    margin: 0.4em 0;
+}
+.barGraph .barGraphInner {
+    text-align: right;
+
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.barGraph .barGraphInner #bar_graph {
+    border-left: 0.1em solid var(--GLORIFY-orange);
+}
+
+.barGraph .barGraphInner #bar_graph div {
+
+    padding: 0.02em 0;
+    margin: 0.4em 0;
+
+    background: var(--GLORIFY-orangeLt);
+    color: #676767;
+    overflow: hidden;
+    display: block;
+    width: 0%;
+    animation: grow30 1s forwards ease;
+    animation-delay: 0.8s;
+    border-radius: 0 12px 12px 0;
+}
+
+.barGraph .barGraphInner #bar_graph div:nth-child(2n) {
+    animation: grow40 1s forwards ease;
+    animation-delay: 0.8s;
+}
+
+.barGraph .barGraphInner #bar_graph div:nth-child(3n) {
+    animation: grow87 1s forwards ease;
+    animation-delay: 0.8s;
+}
+
+.barGraph .barGraphInner #bar_graph div:nth-child(4n) {
+    animation: grow69 1s forwards ease;
+    animation-delay: 0.8s;
+}
+
+.barGraph .barGraphInner #bar_graph div p {
+    margin: 0;
+
+}
+
+.barGraph #rerun p {
+    padding: 10px 20px;
+    border: 2px #fff solid;
+    width: max-content;
+    display: block;
+    margin: 30px auto;
+    border-radius: 600px;
+    text-align: center;
+    color: #fff;
+}
+
+.barGraph #rerun p:hover {
+    border: 2px #a9d25a solid;
+    color: #676767;
+    background: #a9d25a;
+}
+
+@keyframes grow30 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+        padding-right: 10px;
+    }
+}
+
+@keyframes grow40 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+        padding-right: 10px;
+    }
+}
+
+@keyframes grow87 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 87%;
+        padding-right: 10px;
+    }
+}
+
+@keyframes grow69 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 69%;
+        padding-right: 10px;
+    }
+}
+
+/* bar graph */
 
 @keyframes rotate-gradient {
     0% {
@@ -1522,9 +1647,11 @@ strong {
 .textDecor.GLORIFY {
     text-decoration-color: var(--GLORIFY-orangeLt);
 }
+
 .textDecor.APPOINTA {
     text-decoration-color: var(--APPOINTA-blueLight);
 }
+
 .textDecor.GREEN {
     text-decoration-color: var(--colorTeal-light);
 }
@@ -3755,10 +3882,12 @@ body .flex-container.Mobile {
     border-left: 5px solid var(--Grey300);
     padding-left: 1em;
 }
+
 .leftVerLine.GLORIFY {
     border-left: 3px solid var(--GLORIFY-orange);
     padding-left: 1em;
 }
+
 .leftVerLine.SEER {
     border-left: 3px solid var(--seer-purpleLighter);
     padding-left: 1.6em;
