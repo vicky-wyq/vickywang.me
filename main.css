@@ -902,11 +902,12 @@ section {
     align-items: center;
     display: flex;
     flex-direction: row;
+    font-weight: 300;
+
 }
 .barGraphText{
     text-align: left;
-    width: 160px;
-
+    width: 156px;
     padding: 0.02em 0;
     margin: 0.4em 0;
 }
@@ -919,42 +920,69 @@ section {
 }
 
 .barGraph .barGraphInner #bar_graph {
-    border-left: 0.1em solid var(--GLORIFY-orange);
+    border-left: 0.02em solid var(--GLORIFY-orange);
 }
 
 .barGraph .barGraphInner #bar_graph div {
-
     padding: 0.02em 0;
     margin: 0.4em 0;
-
     background: var(--GLORIFY-orangeLt);
-    color: #676767;
     overflow: hidden;
     display: block;
     width: 0%;
-    animation: grow30 1s forwards ease;
-    animation-delay: 0.8s;
     border-radius: 0 12px 12px 0;
 }
+.barGraph .barGraphInner #bar_graph div.grow0 {
+    animation: grow0 1s forwards ease;
+    animation-delay: 0.8s;
+    background-color: var(--white);
+    text-align: left;
+    padding-left: 12px;
+}
+.barGraph .barGraphInner #bar_graph div.grow10 {
+    animation: grow10 1s forwards ease;
+    animation-delay: 0.8s;
+}
+.barGraph .barGraphInner #bar_graph div.grow20 {
+    animation: grow20 1s forwards ease;
+    animation-delay: 0.8s;
+}
 
-.barGraph .barGraphInner #bar_graph div:nth-child(2n) {
+.barGraph .barGraphInner #bar_graph div.grow30 {
+    animation: grow30 1s forwards ease;
+    animation-delay: 0.8s;
+}
+
+.barGraph .barGraphInner #bar_graph div.grow40 {
     animation: grow40 1s forwards ease;
     animation-delay: 0.8s;
 }
-
-.barGraph .barGraphInner #bar_graph div:nth-child(3n) {
-    animation: grow87 1s forwards ease;
+.barGraph .barGraphInner #bar_graph div.grow50 {
+    animation: grow50 1s forwards ease;
     animation-delay: 0.8s;
 }
-
-.barGraph .barGraphInner #bar_graph div:nth-child(4n) {
-    animation: grow69 1s forwards ease;
+.barGraph .barGraphInner #bar_graph div.grow60 {
+    animation: grow60 1s forwards ease;
     animation-delay: 0.8s;
 }
-
+.barGraph .barGraphInner #bar_graph div.grow70 {
+    animation: grow70 1s forwards ease;
+    animation-delay: 0.8s;
+}
+.barGraph .barGraphInner #bar_graph div.grow80 {
+    animation: grow80 1s forwards ease;
+    animation-delay: 0.8s;
+}
+.barGraph .barGraphInner #bar_graph div.grow90 {
+    animation: grow90 1s forwards ease;
+    animation-delay: 0.8s;
+}
+.barGraph .barGraphInner #bar_graph div.grow100 {
+    animation: grow100 1s forwards ease;
+    animation-delay: 0.8s;
+}
 .barGraph .barGraphInner #bar_graph div p {
     margin: 0;
-
 }
 
 .barGraph #rerun p {
@@ -973,6 +1001,36 @@ section {
     color: #676767;
     background: #a9d25a;
 }
+@keyframes grow0 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+        padding-right: 12px;
+    }
+}
+@keyframes grow10 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 10%;
+        padding-right: 12px;
+    }
+}
+@keyframes grow20 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+        padding-right: 12px;
+    }
+}
 
 @keyframes grow30 {
     0% {
@@ -980,11 +1038,10 @@ section {
     }
 
     100% {
-        width: 60%;
-        padding-right: 10px;
+        width: 30%;
+        padding-right: 12px;
     }
 }
-
 @keyframes grow40 {
     0% {
         width: 0%;
@@ -992,32 +1049,79 @@ section {
 
     100% {
         width: 40%;
-        padding-right: 10px;
+        padding-right: 12px;
     }
 }
-
-@keyframes grow87 {
+@keyframes grow50 {
     0% {
         width: 0%;
     }
 
     100% {
-        width: 87%;
-        padding-right: 10px;
+        width: 50%;
+        padding-right: 12px;
     }
 }
-
-@keyframes grow69 {
+@keyframes grow60 {
     0% {
         width: 0%;
     }
 
     100% {
-        width: 69%;
-        padding-right: 10px;
+        width: 60%;
+        padding-right: 12px;
     }
 }
+@keyframes grow60 {
+    0% {
+        width: 0%;
+    }
 
+    100% {
+        width: 60%;
+        padding-right: 12px;
+    }
+}
+@keyframes grow70 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+        padding-right: 12px;
+    }
+}
+@keyframes grow80 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+        padding-right: 12px;
+    }
+}
+@keyframes grow90 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+        padding-right: 12px;
+    }
+}
+@keyframes grow100 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+        padding-right: 12px;
+    }
+}
 /* bar graph */
 
 @keyframes rotate-gradient {
@@ -1443,7 +1547,7 @@ ul .rightPanel {
 ul {
     list-style-type: none;
     font-family: inherit;
-    font-size: clamp(0.83em, 1.06vw, 1.2em);
+    font-size: clamp(0.8em, 1vw, 1.1em);
     line-height: 1.4em;
     font-weight: 300;
     list-style-position: outside;
@@ -1584,7 +1688,10 @@ p.light {
 }
 
 p {
-    font-size: clamp(0.83em, 1.06vw, 1.2em);
+    /*     font-size: clamp(0.83em, 1.06vw, 1.2em); */
+
+    font-size: clamp(0.8em, 1vw, 1.1em);
+
     font-weight: 300;
 }
 
@@ -4510,7 +4617,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     border-style: hidden;
-    font-size: 1.2rem;
+    font-size: clamp(0.73em, 0.92vw, 1em);
     font-family: 'Lato', sans-serif;
 }
 
@@ -4520,7 +4627,7 @@ th {
     text-align: left;
     padding: 0.6vh;
     height: 0.6vh;
-    font-weight: 300;
+    font-weight: 500;
 
 }
 
