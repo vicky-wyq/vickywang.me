@@ -2230,6 +2230,9 @@ button.passwordArr {
     background-color: var(--Grey100);
 */
 }
+.withBg.accordion:hover, .withBg.accordion.is-open {
+    background-color: var(--white);
+}
 
 .accordion-content {
     /*    background-color: var(--Grey100);
