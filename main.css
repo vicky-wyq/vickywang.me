@@ -2212,7 +2212,7 @@ button.passwordArr {
     content: "";
     background-image: url("icon/minus.svg");
     transform: rotate(180deg);
-    transition: all 1s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 .accordion:hover,
