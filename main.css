@@ -7,8 +7,9 @@ html {
 
 
 }
-
-
+.help:hover {
+    cursor: help;
+}
 :root {
     --height100: 100%;
 
@@ -913,7 +914,6 @@ section {
 }
 .barGraph .barGraphInner {
     text-align: right;
-
     display: block;
     margin: 0;
     width: 100%;
@@ -923,15 +923,22 @@ section {
     border-left: 0.02em solid var(--GLORIFY-orange);
 }
 
+
+
+
+
 .barGraph .barGraphInner #bar_graph div {
-    padding: 0.02em 0;
-    margin: 0.4em 0;
+    padding: 0.16em 0;
+    margin: 1.16em 0;
     background: var(--GLORIFY-orangeLt);
     overflow: hidden;
     display: block;
     width: 0%;
     border-radius: 0 12px 12px 0;
+    font-size: 10px;
+    font-weight: 500;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow0 {
     animation: grow0 1s forwards ease;
     animation-delay: 0.8s;
