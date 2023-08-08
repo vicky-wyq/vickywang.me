@@ -7,9 +7,11 @@ html {
 
 
 }
+
 .help:hover {
     cursor: help;
 }
+
 :root {
     --height100: 100%;
 
@@ -906,12 +908,14 @@ section {
     font-weight: 300;
 
 }
-.barGraphText{
+
+.barGraphText {
     text-align: left;
     width: 156px;
     padding: 0.02em 0;
     margin: 0.4em 0;
 }
+
 .barGraph .barGraphInner {
     text-align: right;
     display: block;
@@ -939,17 +943,23 @@ section {
     font-weight: 500;
 }
 
+.barGraph .barGraphInner #bar_graph div:hover {
+    background: var(--GLORIFY-orange);
+
+}
+
 .barGraph .barGraphInner #bar_graph div.grow0 {
     animation: grow0 1s forwards ease;
     animation-delay: 0.8s;
-    background-color: var(--white);
+    background-color: var(--White-transparent);
     text-align: left;
-    padding-left: 12px;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow10 {
     animation: grow10 1s forwards ease;
     animation-delay: 0.8s;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow20 {
     animation: grow20 1s forwards ease;
     animation-delay: 0.8s;
@@ -964,30 +974,37 @@ section {
     animation: grow40 1s forwards ease;
     animation-delay: 0.8s;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow50 {
     animation: grow50 1s forwards ease;
     animation-delay: 0.8s;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow60 {
     animation: grow60 1s forwards ease;
     animation-delay: 0.8s;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow70 {
     animation: grow70 1s forwards ease;
     animation-delay: 0.8s;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow80 {
     animation: grow80 1s forwards ease;
     animation-delay: 0.8s;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow90 {
     animation: grow90 1s forwards ease;
     animation-delay: 0.8s;
 }
+
 .barGraph .barGraphInner #bar_graph div.grow100 {
     animation: grow100 1s forwards ease;
     animation-delay: 0.8s;
 }
+
 .barGraph .barGraphInner #bar_graph div p {
     margin: 0;
 }
@@ -1008,6 +1025,7 @@ section {
     color: #676767;
     background: #a9d25a;
 }
+
 @keyframes grow0 {
     0% {
         width: 0%;
@@ -1018,6 +1036,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow10 {
     0% {
         width: 0%;
@@ -1028,6 +1047,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow20 {
     0% {
         width: 0%;
@@ -1049,6 +1069,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow40 {
     0% {
         width: 0%;
@@ -1059,6 +1080,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow50 {
     0% {
         width: 0%;
@@ -1069,6 +1091,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow60 {
     0% {
         width: 0%;
@@ -1079,6 +1102,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow60 {
     0% {
         width: 0%;
@@ -1089,6 +1113,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow70 {
     0% {
         width: 0%;
@@ -1099,6 +1124,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow80 {
     0% {
         width: 0%;
@@ -1109,6 +1135,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow90 {
     0% {
         width: 0%;
@@ -1119,6 +1146,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes grow100 {
     0% {
         width: 0%;
@@ -1129,6 +1157,7 @@ section {
         padding-right: 12px;
     }
 }
+
 /* bar graph */
 
 @keyframes rotate-gradient {
@@ -2237,7 +2266,9 @@ button.passwordArr {
     background-color: var(--Grey100);
 */
 }
-.withBg.accordion:hover, .withBg.accordion.is-open {
+
+.withBg.accordion:hover,
+.withBg.accordion.is-open {
     background-color: var(--white);
 }
 
@@ -4811,8 +4842,8 @@ img {
     max-width: 1200px;
     text-align: center;
     color: var(--Grey900);
-    font-weight: 700;
-    font-size: 2em;
+    font-weight: 500;
+    font-size: clamp(1.3em, 1.46vw, 1.68em);
     margin-top: 1em;
 }
 

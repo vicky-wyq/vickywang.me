@@ -455,14 +455,14 @@
     <div class="Grid Grid--full u-textCenter">
       <div class="Grid-cell">
         <h1 class="Grid Grid--center"> <span class="specialTextL">Case study</span><img class="moveUpDown widthLogo"
-            src="../icon/arrow-accordion-down.svg" alt="Research">
+            src="../icon/arrow-accordion-down.svg" alt="Scroll down">
         </h1>
       </div>
     </div>
     <div class="wrapper">
       <div class="Grid Grid--full">
         <div class="Grid-cell">
-          <img class="modal-target " src="Research_Diagram.svg" alt="Mind map">
+          <img class="modal-target" src="Research_Diagram.svg" alt="Desgin Thinking Process">
         </div>
       </div>
     </div>
@@ -483,7 +483,7 @@
         <div class="Grid-cell">
           <div class="element">
             <div class="Grid">
-              <img class="modal-target" src="Project_Timeline.svg" alt="Timeline">
+              <img class="modal-target" src="Project_Timeline.svg" alt="Project Timeline">
             </div>
           </div>
         </div>
@@ -531,7 +531,7 @@
     <section id="content1">
       <div class="Grid Grid--full u-textCenter wrapper">
         <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Research</span><img class="moveUpDown widthLogo"
+          <h1 class="Grid Grid--center"> <span>Research</span><img class="widthLogo"
               src="../icon/icon_research.svg" alt="Research">
           </h1>
         </div>
@@ -539,7 +539,7 @@
       <div class="wrapper">
         <div class="Grid Grid--full">
           <div class="Grid-cell">
-            <img class="modal-target" src="Research_Diagram_Research.svg" alt="Mind map">
+            <img class="modal-target" src="Research_Diagram_Research.svg" alt="Research Process">
           </div>
         </div>
         <div class="Grid Grid--full ">
@@ -1017,7 +1017,7 @@
             <div class="Grid-cell">
               <div class="element">
                 <div class="Grid">
-                  <img class="modal-target" src="Research_AffinityMap.png" alt="Affinity map">
+                  <img class="modal-target" src="Research_AffinityMap.png" alt="Affinity Map">
                 </div>
               </div>
             </div>
@@ -1631,7 +1631,7 @@
     <section id="content2">
       <div class="Grid Grid--full u-textCenter wrapper">
         <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Design</span><img class="moveUpDown widthLogo" src="../icon/note.svg"
+          <h1 class="Grid Grid--center"> <span>Design</span><img class="widthLogo" src="../icon/note.svg"
               alt="Design">
           </h1>
         </div>
@@ -1639,7 +1639,7 @@
       <div class="wrapper">
         <div class="Grid Grid--full">
           <div class="Grid-cell">
-            <img class="modal-target " src="Research_Diagram_Design.svg" alt="Mind map">
+            <img class="modal-target" src="Research_Diagram_Design.svg" alt="Design Process">
           </div>
         </div>
 
@@ -2270,23 +2270,40 @@
               </div>
             </div>
           </div>
+          <!-- wireframe 1 -->
+
+
           <div class="element">
             <div class="Grid Grid--gutters Grid--cols-2">
 
               <div class="Grid-cell">
                 <div class="element">
-                  <h4> <strong> Time on Task &#58; </strong> </h4>
-                  <h5> Minimum&#58; <strong>12 seconds</strong> </h5>
-                  <h5> Maximum&#58; <strong>80 seconds</strong> </h5>
-                  <h5> Average&#58; <strong>60 seconds</strong> </h5>
+                  <h4 class="help"
+                    title="Measure the time taken for users to complete specific tasks. This can provide insights into the complexity or simplicity of the wireframe.">
+                    <strong> Time on Task &#58; </strong>
+                  </h4>
+                  <h5 class="help" title="The quickest time a user is able to complete a task, assuming no errors.">
+                    Minimum&#58; <strong>34 seconds</strong> </h5>
+                  <h5 class="help" title="Identify potential bottlenecks or areas where users may be getting confused.">
+                    Maximum&#58; <strong>96 seconds</strong> </h5>
+                  <h5 class="help" title="A broader understanding of the typical user experience."> Average&#58;
+                    <strong>66 seconds</strong>
+                  </h5>
                 </div>
               </div>
               <div class="Grid-cell">
                 <div class="element">
-                  <h4> <strong> Taps to Complete: &#58; </strong> </h4>
-                  <h5> Minimum&#58; <strong>12 Taps</strong> </h5>
-                  <h5> Maximum&#58; <strong>20 Taps</strong> </h5>
-                  <h5> Average&#58; <strong>10 Taps</strong> </h5>
+                  <h4 class="help"
+                    title="Analyzing the number of taps needed to complete a task may indicate the efficiency and user-friendliness of the design">
+                    <strong> Taps to Complete: &#58; </strong>
+                  </h4>
+                  <h5 class="help"
+                    title="The most efficient path through the interface that some users are able to find.">
+                    Minimum&#58; <strong>12 Taps</strong> </h5>
+                  <h5 class="help" title="Identify worst-case scenarios or pain points in the user journey.">
+                    Maximum&#58; <strong>30 Taps</strong> </h5>
+                  <h5 class="help" title="A general sense of how many taps users typically need to complete a task.">
+                    Average&#58; <strong>10 Taps</strong> </h5>
                 </div>
               </div>
             </div>
@@ -2297,12 +2314,20 @@
                 <div class="barGraphText">User Satisfaction:</div>
                 <div class="barGraphText">Error Rate:</div>
               </div>
-              <div class="barGraphInner scaleInner">
+              <div class="barGraphInner">
                 <article id="bar_graph">
-                  <div class="grow100"> 100&#37; </div>
-                  <div class="grow100"> 100&#37; </div>
-                  <div class="grow90"> 90&#37; </div>
-                  <div class="grow10"> 10&#37; </div>
+                  <div
+                    title="Assess whether users understand the overall concept and can navigate through the wireframe without confusion."
+                    class="help grow90"> 90&#37;+ </div>
+                  <div
+                    title=" Identify how many users are able to successfully complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.)."
+                    class="help grow90"> 90&#37;+ </div>
+                  <div
+                    title="Collect qualitative feedback from users regarding their satisfaction with the design, aesthetics, and overall concept."
+                    class="help grow70"> 70&#37;+ </div>
+                  <div
+                    title="Monitor the number of errors or misunderstandings users make while interacting with the wireframe. "
+                    class="help grow20"> 20&#37;+ </div>
                 </article>
               </div>
             </div>
@@ -2415,7 +2440,7 @@
     <section id="content3">
       <div class="Grid Grid--full u-textCenter wrapper">
         <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Iterate</span><img class="moveUpDown widthLogo"
+          <h1 class="Grid Grid--center"> <span>Iterate</span><img class="widthLogo"
               src="../icon/icon_Iteration.svg" alt="Iterate">
           </h1>
         </div>
@@ -2423,7 +2448,7 @@
       <div class="wrapper">
         <div class="Grid Grid--full">
           <div class="Grid-cell">
-            <img class="modal-target " src="Research_Diagram_Iterate.svg" alt="Mind map">
+            <img class="modal-target " src="Research_Diagram_Iterate.svg" alt="Iterate Process">
           </div>
         </div>
 
@@ -2464,7 +2489,7 @@
                 <div class="Grid Grid--full">
                   <div class="Grid-cell">
                     <div class="element">
-                      <img class="modal-target" src="Iterate_Flow_GroupPrayer_Join.png" alt="Sitemap">
+                      <img class="modal-target" src="Iterate_Flow_GroupPrayer_Join.png" alt="Join Group Prayer">
                     </div>
                   </div>
                 </div>
@@ -2473,7 +2498,7 @@
                 <div class="Grid Grid--full">
                   <div class="Grid-cell">
                     <div class="element">
-                      <img class="modal-target" src="Iterate_Flow_GroupPrayer_PrayDetails.png" alt="Sitemap">
+                      <img class="modal-target" src="Iterate_Flow_GroupPrayer_PrayDetails.png" alt="Wait to Pray">
                     </div>
                   </div>
                 </div>
@@ -2482,7 +2507,7 @@
                 <div class="Grid Grid--full">
                   <div class="Grid-cell">
                     <div class="element">
-                      <img class="modal-target" src="Iterate_Flow_GroupPrayer_Pray.png" alt="Sitemap">
+                      <img class="modal-target" src="Iterate_Flow_GroupPrayer_Pray.png" alt="Begin Prayer">
                     </div>
                   </div>
                 </div>
@@ -2550,7 +2575,7 @@
                   <div class="Grid-cell">
                     <div class="element">
                       <div class="Grid">
-                        <img class="modal-target" src="Iterate_Flow_Fellowship_withdraw.png" alt="Add fellowship">
+                        <img class="modal-target" src="Iterate_Flow_Fellowship_withdraw.png" alt="Withdraw Request">
                       </div>
                     </div>
                   </div>
@@ -2567,7 +2592,7 @@
                   <div class="Grid-cell">
                     <div class="element">
                       <div class="Grid">
-                        <img class="modal-target" src="Iterate_Flow_Fellowship_remove.png" alt="Add fellowship">
+                        <img class="modal-target" src="Iterate_Flow_Fellowship_remove.png" alt="Remove fellowship">
                       </div>
                     </div>
                   </div>
@@ -2600,14 +2625,14 @@
           </div>
           <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
             <div class="Grid-cell">
-              <div class="element"> <img class="widthXS cardBorderThick" src="Iterate_Flow_Chat.gif" alt="Delete">
+              <div class="element"> <img class="widthXS cardBorderThick" src="Iterate_Flow_Chat.gif" alt="Chat">
               </div>
             </div>
 
             <div class="Grid-cell">
               <div class="element">
                 <div class="Grid">
-                  <img class="modal-target" src="Iterate_Flow_Chat.png" alt="Add fellowship">
+                  <img class="modal-target" src="Iterate_Flow_Chat.png" alt="Chat with fellowships">
                 </div>
               </div>
 
@@ -2647,12 +2672,8 @@
               </div>
             </div>
           </div>
-          <div class="blankHXS"></div>
-          <div class="element">
 
-          </div>
 
-          <div class="blankHXS"></div>
 
           <div class="element">
             <h3 class="accordion accordionBorderTop noMargin withBg"><strong>Research plan &#38; testing
@@ -2719,14 +2740,18 @@
               <div class="blankHXS"></div>
             </div>
 
-            <h3 class="accordion accordionBorderBottom noMargin withBg"><strong>The tree structure &#38; test</strong>
+            <h3 class="accordion accordionBorderBottom noMargin withBg"><strong>Tasks &#38; the tree structure </strong>
             </h3>
             <div class="accordion-content">
               <div class="blankHXS"></div>
+              <p>List out a high level organization, have participant click through the menus </p>
+              <h4> <strong> Tasks </strong> </h4>
               <ul>
-                <li>List out a high level organization</li>
-                <li>Have participant click through the menus</li>
+                <li class="listCircle">Create a new prayer group for your community. </li>
+                <li class="listCircle">Find a featured prayer group to join. </li>
               </ul>
+              <h4> <strong> Tree </strong> </h4>
+
               <table>
                 <tr>
                   <th></th>
@@ -2821,42 +2846,98 @@
               </div>
             </div>
           </div>
+          <!-- tree test-->
+
           <div class="element">
-            <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid Grid--full">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h4> <strong> Number of Visits&#58; </strong> </h4>
+                  <p>With only three participants, consider listing out individual participant paths rather than aggregating.</p>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--gutters Grid--cols-3">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h5> <strong> Participant 1&#58; </strong></h5>
+                  <ul>
+                    <li class="listCircle">Visited "Create a Prayer Group": Once (successfully completed task 1)
+                    </li>
+                    <li class="listCircle">Visited "Featured Prayer Groups": Twice (successfully completed task 2 after
+                      initial confusion)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <h5> <strong> Participant 2&#58; </strong></h5>
+                  <ul>
+                    <li class="listCircle">Visited "My Prayer Groups" then "Create a Prayer Group": (successfully completed task 1)
+
+                    </li>
+                    <li class="listCircle">Visited "Join a Prayer Group" then "Featured Prayer Groups": (successfully completed task 2)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <h5> <strong> Participant 3&#58; </strong></h5>
+                  <ul>
+                    <li class="listCircle">Visited "Create a Prayer Group": Once (successfully completed task 1)
+
+                    </li>
+                    <li class="listCircle">Visited "Join a Prayer Group", returned to "Group Prayer" main node, then went to "Featured Prayer Groups": (successfully completed task 2 but with hesitation)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--gutters Grid--cols-2 Grid--1of4">
 
               <div class="Grid-cell">
                 <div class="element">
-                  <h4> <strong> Time on Task &#58; </strong> </h4>
-                  <h5> Minimum&#58; <strong>12 seconds</strong> </h5>
-                  <h5> Maximum&#58; <strong>80 seconds</strong> </h5>
-                  <h5> Average&#58; <strong>60 seconds</strong> </h5>
+                  <h4 class="help"
+                    title="Measure the time taken for users to complete specific tasks. This can provide insights into the complexity or simplicity of the wireframe.">
+                    <strong> Time Taken &#58; </strong>
+                  </h4>
+                  <h5 class="help" title="The quickest time a user is able to complete a task, assuming no errors.">
+                    Minimum&#58; <strong>34 seconds</strong> </h5>
+                  <h5 class="help" title="Identify potential bottlenecks or areas where users may be getting confused.">
+                    Maximum&#58; <strong>96 seconds</strong> </h5>
+                  <h5 class="help" title="A broader understanding of the typical user experience."> Average&#58;
+                    <strong>66 seconds</strong>
+                  </h5>
                 </div>
               </div>
               <div class="Grid-cell">
                 <div class="element">
-                  <h4> <strong> Taps to Complete: &#58; </strong> </h4>
-                  <h5> Minimum&#58; <strong>12 Taps</strong> </h5>
-                  <h5> Maximum&#58; <strong>20 Taps</strong> </h5>
-                  <h5> Average&#58; <strong>10 Taps</strong> </h5>
+                  <h4 class="help " title=""> <strong> Other &#58; </strong>
+                  </h4>
+                  <div class="barGraph">
+                    <div>
+                      <div class="barGraphText">Success Rate</div>
+                      <div class="barGraphText">Directness</div>
+                    </div>
+                    <div class="barGraphInner">
+                      <article id="bar_graph">
+
+                        <div
+                          title=" Identify how many users are able to successfully complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.)."
+                          class="help grow90"> 90&#37;+ </div>
+                        <div
+                          title="Formula: (Number of steps in the optimal path / Number of steps taken by the participant) x 100. A result of 100% indicates the participant took the optimal path, while less than 100% shows some degree of deviation."
+                          class="help grow70"> 70&#37;+ </div>
+
+
+                      </article>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="barGraph element">
-              <div>
-                <div class="barGraphText">User Understanding</div>
-                <div class="barGraphText">Task Success Rate</div>
-                <div class="barGraphText">User Satisfaction:</div>
-                <div class="barGraphText">Error Rate:</div>
-              </div>
-              <div class="barGraphInner scaleInner">
-                <article id="bar_graph">
-                  <div class="grow100"> 100&#37; </div>
-                  <div class="grow100"> 100&#37; </div>
-                  <div class="grow90"> 90&#37; </div>
-                  <div class="grow10"> 10&#37; </div>
-                </article>
-              </div>
-            </div>
+
           </div>
 
 
@@ -2951,7 +3032,7 @@
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Group prayer versions comparison</strong> </h2>
+                <h2> <strong class="colorGLORIFYOrange"> Group Prayer Versions Comparison</strong> </h2>
               </div>
             </div>
           </div>
@@ -2959,7 +3040,8 @@
             <div class="Grid-cell">
               <div class="element">
                 <div class="Grid">
-                  <img class="modal-target" src="Iterate_Flow_GroupPrayer_Compare.png" alt="Add fellowship">
+                  <img class="modal-target" src="Iterate_Flow_GroupPrayer_Compare.png" alt="Group prayer versions comparison
+                  ">
                 </div>
               </div>
 
@@ -3203,23 +3285,39 @@
               </div>
             </div>
           </div>
+          <!-- wirefrane test 2 -->
+
           <div class="element">
             <div class="Grid Grid--gutters Grid--cols-2">
 
               <div class="Grid-cell">
                 <div class="element">
-                  <h4 class="help" title="Measure the time taken for users to complete specific tasks. This can provide insights into the complexity or simplicity of the wireframe."> <strong> Time on Task &#58; </strong> </h4>
-                  <h5 class="help" title="The quickest time a user is able to complete a task, assuming no errors."> Minimum&#58; <strong>12 seconds</strong> </h5>
-                  <h5  class="help" title="Identify potential bottlenecks or areas where users may be getting confused."> Maximum&#58; <strong>80 seconds</strong> </h5>
-                  <h5  class="help" title="A broader understanding of the typical user experience."> Average&#58; <strong>60 seconds</strong> </h5>
+                  <h4 class="help"
+                    title="Measure the time taken for users to complete specific tasks. This can provide insights into the complexity or simplicity of the wireframe.">
+                    <strong> Time on Task &#58; </strong>
+                  </h4>
+                  <h5 class="help" title="The quickest time a user is able to complete a task, assuming no errors.">
+                    Minimum&#58; <strong>12 seconds</strong> </h5>
+                  <h5 class="help" title="Identify potential bottlenecks or areas where users may be getting confused.">
+                    Maximum&#58; <strong>80 seconds</strong> </h5>
+                  <h5 class="help" title="A broader understanding of the typical user experience."> Average&#58;
+                    <strong>60 seconds</strong>
+                  </h5>
                 </div>
               </div>
               <div class="Grid-cell">
                 <div class="element">
-                  <h4 class="help" title="Analyzing the number of taps needed to complete a task may indicate the efficiency and user-friendliness of the design"> <strong> Taps to Complete: &#58; </strong> </h4>
-                  <h5 class="help" title="The most efficient path through the interface that some users are able to find."> Minimum&#58; <strong>12 Taps</strong> </h5>
-                  <h5 class="help" title="Identify worst-case scenarios or pain points in the user journey."> Maximum&#58; <strong>20 Taps</strong> </h5>
-                  <h5 class="help" title="A general sense of how many taps users typically need to complete a task."> Average&#58; <strong>10 Taps</strong> </h5>
+                  <h4 class="help"
+                    title="Analyzing the number of taps needed to complete a task may indicate the efficiency and user-friendliness of the design">
+                    <strong> Taps to Complete: &#58; </strong>
+                  </h4>
+                  <h5 class="help"
+                    title="The most efficient path through the interface that some users are able to find.">
+                    Minimum&#58; <strong>12 Taps</strong> </h5>
+                  <h5 class="help" title="Identify worst-case scenarios or pain points in the user journey.">
+                    Maximum&#58; <strong>20 Taps</strong> </h5>
+                  <h5 class="help" title="A general sense of how many taps users typically need to complete a task.">
+                    Average&#58; <strong>10 Taps</strong> </h5>
                 </div>
               </div>
             </div>
@@ -3236,10 +3334,14 @@
                     title="Assess whether users understand the overall concept and can navigate through the wireframe without confusion."
                     class="help grow100"> 100&#37; </div>
                   <div
-                    title=" Identify how many users are able to successfully complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.)." class="help grow100"> 100&#37; </div>
+                    title=" Identify how many users are able to successfully complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.)."
+                    class="help grow100"> 100&#37; </div>
                   <div
-                    title="Collect qualitative feedback from users regarding their satisfaction with the design, aesthetics, and overall concept." class="help grow90"> 90&#37; </div>
-                  <div title="Monitor the number of errors or misunderstandings users make while interacting with the wireframe. " class="help grow10"> 10&#37; </div>
+                    title="Collect qualitative feedback from users regarding their satisfaction with the design, aesthetics, and overall concept."
+                    class="help grow90"> 90&#37; </div>
+                  <div
+                    title="Monitor the number of errors or misunderstandings users make while interacting with the wireframe. "
+                    class="help grow10"> 10&#37; </div>
                 </article>
               </div>
             </div>
@@ -3347,7 +3449,7 @@
 
       <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
         <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Enhance</span><img class="moveUpDown widthLogo"
+          <h1 class="Grid Grid--center"> <span>Enhance</span><img class="widthLogo"
               src="../icon/icon_Redesign.svg" alt="Enhance">
           </h1>
         </div>
@@ -3488,7 +3590,7 @@
               <div class="element">
                 <h2 class="centerVer">
                   <img class="iconS" src="IconTest.svg" alt="Design">
-                  <span class="colorGLORIFYOrange"> Test plan - Wireframe Test on Figma </span>
+                  <span class="colorGLORIFYOrange"> Test plan - Hi-Fi Prototype Test on Figma </span>
                 </h2>
               </div>
             </div>
@@ -3611,23 +3713,39 @@
               </div>
             </div>
           </div>
+          <!-- HiFi test -->
+
           <div class="element">
             <div class="Grid Grid--gutters Grid--cols-2">
 
               <div class="Grid-cell">
                 <div class="element">
-                  <h4> <strong> Time on Task &#58; </strong> </h4>
-                  <h5> Minimum&#58; <strong>8 seconds</strong> </h5>
-                  <h5> Maximum&#58; <strong>80 seconds</strong> </h5>
-                  <h5> Average&#58; <strong>60 seconds</strong> </h5>
+                  <h4 class="help"
+                    title="Measure the time taken for users to complete specific tasks. This can provide insights into the complexity or simplicity of the wireframe.">
+                    <strong> Time on Task &#58; </strong>
+                  </h4>
+                  <h5 class="help" title="The quickest time a user is able to complete a task, assuming no errors.">
+                    Minimum&#58; <strong>12 seconds</strong> </h5>
+                  <h5 class="help" title="Identify potential bottlenecks or areas where users may be getting confused.">
+                    Maximum&#58; <strong>80 seconds</strong> </h5>
+                  <h5 class="help" title="A broader understanding of the typical user experience."> Average&#58;
+                    <strong>60 seconds</strong>
+                  </h5>
                 </div>
               </div>
               <div class="Grid-cell">
                 <div class="element">
-                  <h4> <strong> Taps to Complete: &#58; </strong> </h4>
-                  <h5> Minimum&#58; <strong>12 Taps</strong> </h5>
-                  <h5> Maximum&#58; <strong>20 Taps</strong> </h5>
-                  <h5> Average&#58; <strong>10 Taps</strong> </h5>
+                  <h4 class="help"
+                    title="Analyzing the number of taps needed to complete a task may indicate the efficiency and user-friendliness of the design">
+                    <strong> Taps to Complete: &#58; </strong>
+                  </h4>
+                  <h5 class="help"
+                    title="The most efficient path through the interface that some users are able to find.">
+                    Minimum&#58; <strong>12 Taps</strong> </h5>
+                  <h5 class="help" title="Identify worst-case scenarios or pain points in the user journey.">
+                    Maximum&#58; <strong>20 Taps</strong> </h5>
+                  <h5 class="help" title="A general sense of how many taps users typically need to complete a task.">
+                    Average&#58; <strong>10 Taps</strong> </h5>
                 </div>
               </div>
             </div>
@@ -3638,12 +3756,20 @@
                 <div class="barGraphText">User Satisfaction:</div>
                 <div class="barGraphText">Error Rate:</div>
               </div>
-              <div class="barGraphInner scaleInner">
+              <div class="barGraphInner">
                 <article id="bar_graph">
-                  <div class="grow100"> 100&#37; </div>
-                  <div class="grow100"> 100&#37; </div>
-                  <div class="grow90"> 90&#37; </div>
-                  <div class="grow10"> 10&#37; </div>
+                  <div
+                    title="Assess whether users understand the overall concept and can navigate through the wireframe without confusion."
+                    class="help grow100"> 100&#37; </div>
+                  <div
+                    title=" Identify how many users are able to successfully complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.)."
+                    class="help grow100"> 100&#37; </div>
+                  <div
+                    title="Collect qualitative feedback from users regarding their satisfaction with the design, aesthetics, and overall concept."
+                    class="help grow90"> 90&#37; </div>
+                  <div
+                    title="Monitor the number of errors or misunderstandings users make while interacting with the wireframe. "
+                    class="help grow0"> &#160;&#160;0&#37; </div>
                 </article>
               </div>
             </div>
