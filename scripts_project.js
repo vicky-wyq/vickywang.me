@@ -1,27 +1,29 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
-  const gifImage = document.getElementById('gifImage');
+  const gifImages = document.querySelectorAll('.gif-toggle');
 
-  let isPlaying = false; // Assuming we start with the static frame
+  gifImages.forEach(gifImage => {
+      let isPlaying = false;  // Initially, the GIF is not playing
   
-  gifImage.addEventListener('mouseover', function() {
-      this.src = 'https://vickywang.me/glorify/HiFi_FinalEnhancement.gif';
-  });
+      gifImage.addEventListener('mouseover', function() {
+          this.src = this.dataset.gif;
+      });
   
-  gifImage.addEventListener('mouseout', function() {
-      this.src = 'https://s3.us-west-1.amazonaws.com/vickywang.me/glorify/HiFi_FinalEnhancement.png';
-  });
+      gifImage.addEventListener('mouseout', function() {
+          this.src = this.dataset.static;
+      });
   
-  // Handling touch devices
-  gifImage.addEventListener('touchend', function() {
-      if (isPlaying) {
-          this.src = 'URL_OF_STATIC_FRAME';
-      } else {
-          this.src = 'https://vickywang.me/glorify/HiFi_FinalEnhancement.gif';
-      }
-      isPlaying = !isPlaying;
+      // Handling touch devices
+      gifImage.addEventListener('touchend', function() {
+          if (isPlaying) {
+              this.src = this.dataset.static;
+          } else {
+              this.src = this.dataset.gif;
+          }
+          isPlaying = !isPlaying;
+      });
   });
-  //gif hover to play
+  //gif hover/tap to play
   
   // Modal Setup
   var modal = document.getElementById('modal');
