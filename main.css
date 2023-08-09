@@ -3299,7 +3299,6 @@ button.passwordArr {
 .TBslidesItem {
     align-items: center;
     border-radius: 12px;
-    display: flex;
     flex-shrink: 0;
     height: 100%;
     width: 100%;
