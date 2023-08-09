@@ -1,6 +1,28 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
+  const gifImage = document.getElementById('gifImage');
 
+  let isPlaying = false; // Assuming we start with the static frame
+  
+  gifImage.addEventListener('mouseover', function() {
+      this.src = 'https://vickywang.me/glorify/HiFi_FinalEnhancement.gif';
+  });
+  
+  gifImage.addEventListener('mouseout', function() {
+      this.src = 'https://s3.us-west-1.amazonaws.com/vickywang.me/glorify/HiFi_FinalEnhancement.png';
+  });
+  
+  // Handling touch devices
+  gifImage.addEventListener('touchend', function() {
+      if (isPlaying) {
+          this.src = 'URL_OF_STATIC_FRAME';
+      } else {
+          this.src = 'https://vickywang.me/glorify/HiFi_FinalEnhancement.gif';
+      }
+      isPlaying = !isPlaying;
+  });
+  //gif hover to play
+  
   // Modal Setup
   var modal = document.getElementById('modal');
   var modalClose = document.getElementById('modal-close');
