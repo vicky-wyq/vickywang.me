@@ -11,6 +11,9 @@ html {
 .help:hover {
     cursor: help;
 }
+.progress:hover {
+    cursor: progress;
+}
 
 :root {
     --height100: 100%;
