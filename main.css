@@ -150,39 +150,31 @@ body {
     display: none;
 }
 
-/* color grey */
+/* ===== color grey ===== */
 .Grey900 {
     color: var(--Grey900);
 }
-
 .Grey800 {
     color: var(--Grey800);
 }
-
 .Grey700 {
     color: var(--Grey700);
 }
-
 .Grey600 {
     color: var(--Grey600);
 }
-
 .Grey500 {
     color: var(--Grey500);
 }
-
 .Grey400 {
     color: var(--Grey400);
 }
-
 .Grey300 {
     color: var(--Grey300);
 }
-
 .Grey200 {
     color: var(--Grey200);
 }
-
 .Grey100 {
     color: var(--Grey100);
 }
@@ -2015,19 +2007,33 @@ padding: 0.8em 0em 0;
     display: block;
     background: var(--Grey200);
 }
-
+.passwordDesignSystem {
+    display: block;
+    padding: 0.8em 1em 0;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+}
 /* ---- password --------- */
-
+/* ===== hide/show Design system ===== */
+.img__descriptionDesignSystem {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+/* ===== hide/show Design system ===== */
 /* ---- hide/show --------- */
-
-
 /* relevant styles */
 .img__wrap {
     position: relative;
     width: 100%;
 
 }
-
 .img__description {
     position: absolute;
     top: 0;
@@ -2037,21 +2043,15 @@ padding: 0.8em 0em 0;
     background: rgba(255, 255, 255, 0.8);
     visibility: hidden;
     opacity: 0;
-
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
 }
-
 .img__wrap:hover .img__description {
     visibility: visible;
     opacity: 1;
 }
-
 /* ---- hide/show --------- */
 /* ---- password textbox --------- */
-
-
-
 .input-field {
     position: absolute;
     top: 50%;
@@ -2061,7 +2061,6 @@ padding: 0.8em 0em 0;
     transform: translate(-50%, -50%);
     /* This is a shorthand of translateX(-50%) and translateY(-50%) */
 }
-
 input {
     width: 16em;
     height: 42px;
@@ -2088,19 +2087,15 @@ input {
     color: var(--Grey900);
     animation: arrowani 0.8s linear infinite alternate;
 }
-
-
 button.passwordArr {
     z-index: 98;
     padding: 0;
     margin-top: -8px;
     color: var(--Grey900);
 }
-
 .pwIncorrectHeight {
     height: 3em;
 }
-
 #pwIncorrect {
     margin: 0;
     padding: 8px;
@@ -2108,13 +2103,11 @@ button.passwordArr {
     color: var(--alert);
     display: none;
 }
-
 @keyframes arrowani {
     100% {
         margin-right: -8px;
     }
 }
-
 /* ---- password textbox --------- */
 .moveUpDown {
     -webkit-animation: mover 1s infinite alternate;
@@ -2125,8 +2118,6 @@ button.passwordArr {
     -webkit-animation: moverLR 1s infinite alternate;
     animation: moverLR 1s infinite alternate;
 }
-
-
 .shrinkAndExpand {
     transform: rotateX(40deg);
     animation: shrinkAndExpand 3s infinite;
