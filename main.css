@@ -272,79 +272,45 @@ body {
 .Grey100 {
     color: var(--Grey100);
 }
-
 /* color grey */
-/* bg color grey */
-.Grey900Bg {
+/* ===== bg color grey ===== */
+
+.GreyBg900 {
     background: var(--Grey900);
 }
-
-/* grey900 */
-.Grey800Bg {
+.GreyBg800 {
     background: var(--Grey800);
 }
-
-/* grey800 */
-.Grey700Bg {
+.GreyBg700 {
     background: var(--Grey700);
 }
-
-/* grey700 */
-
-.Grey600Bg {
+.GreyBg600 {
     background: var(--Grey600);
 }
-
-/* grey600 */
-
-.Grey500Bg {
+.GreyBg500 {
     background: var(--Grey500);
 }
-
-/* grey500 */
-.Grey400Bg {
-    background-color: var(--Grey400);
+.GreyBg400 {
+    background: var(--Grey400);
 }
-
-/* grey400 */
-.Grey300Bg {
-    background-color: var(--Grey300);
+.GreyBg300 {
+    background: var(--Grey300);
 }
-
-/* grey300 */
-.Grey200Bg {
-    background-color: var(--Grey200);
+.GreyBg200 {
+    background: var(--Grey200);
 }
-
+.GreyBg100 {
+    background: var(--Grey100);
+}
 .WhiteBg {
     background-color: var(--white);
 
 }
-
 .WhiteBgTrans {
     background-color: var(--White-transparent);
 }
+/* ===== bg color grey ===== */
 
-.colorBgGrey900 {
-    background-color: var(--Grey900);
-}
-
-.colorBgGrey {
-    background-color: var(--Grey200);
-}
-
-.colorBgGrey100 {
-    background-color: var(--Grey100);
-}
-
-/* grey200 */
-.Grey100Bg {
-    background-color: var(--Grey100);
-}
-
-/* grey100 */
-
-/* bg color grey */
 
 .colorWarm {
     background-color: var(--colorWarm);
@@ -1114,6 +1080,7 @@ section {
     color: #676767;
     background: #a9d25a;
 }
+/* bar graph */
 
 @keyframes grow0 {
     0% {
