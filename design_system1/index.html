@@ -343,22 +343,21 @@
 
     <nav class="section-nav">
       <ol>
-        <li><a href="#content1" class="titleRightPanel">Styles</a>
+        <li><a href="#content1" class="titleRightPanel">Basics Styles</a>
           <ul>
             <li class="rightPanel"><a href="#content11"> &#160; Color Guidance</a></li>
             <li class="rightPanel"><a href="#content12"> &#160; Typography</a></li>
             <li class="rightPanel"><a href="#content13"> &#160; Elevation</a></li>
           </ul>
         </li>
-        <li><a href="#content2" class="titleRightPanel">Layout</a>
+        <li><a href="#content2" class="titleRightPanel">Spacing &#38; Grid</a>
           <ul>
-            <li class="rightPanel"><a href="#content21"> &#160; Synthesis </a></li>
-            <li class="rightPanel"><a href="#content22"> &#160; Sitemap</a></li>
-            <li class="rightPanel"><a href="#content23"> &#160; Wireframe</a></li>
-            <li class="rightPanel"><a href="#content24"> &#160; Wireframe test 1</a></li>
+            <li class="rightPanel"><a href="#content21"> &#160; Layout </a></li>
+            <li class="rightPanel"><a href="#content22"> &#160; Responsive Grid</a></li>
+
           </ul>
         </li>
-        <li><a href="#content3" class="titleRightPanel">Iterate</a>
+        <li><a href="#content3" class="titleRightPanel">UI Components</a>
           <ul>
             <li class="rightPanel"><a href="#content31"> &#160; Flow Update</a></li>
             <li class="rightPanel"><a href="#content32"> &#160; Organizing Content</a></li>
@@ -389,14 +388,26 @@
 
       <section id="content11">
         <div class="wrapper">
-          <!-- Color -->
-          <div class="element">
-            <p class="tArrow">Color<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+          <!-- Arrow -->
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h2 class="tArrow">Color Guidance <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+              </div>
+            </div>
           </div>
+          <!-- Arrow -->
+
           <div class="blankHXS"></div>
-          <div class="element">
-            <h3>Tonal Palettes</h3>
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1> <strong class="SkylineBlueLt">Tonal Palettes</strong> </h1>
+              </div>
+            </div>
           </div>
+
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
@@ -489,14 +500,91 @@
               </div>
             </div>
           </div>
-          <div class="blankHS"></div>
           <div class="element">
-            <h3>Action &#38; Error</h3>
+            <h3>CSS Code</h3>
+            <pre>
+              <code> 
+                /* ===== color grey ===== */
+                  .Grey900 {
+                      color: var(--Grey900);
+                  }
+                  .Grey800 {
+                      color: var(--Grey800);
+                  }
+                  .Grey700 {
+                      color: var(--Grey700);
+                  }
+                  .Grey600 {
+                      color: var(--Grey600);
+                  }
+                  .Grey500 {
+                      color: var(--Grey500);
+                  }
+                  .Grey400 {
+                      color: var(--Grey400);
+                  }
+                  .Grey300 {
+                      color: var(--Grey300);
+                  }
+                  .Grey200 {
+                      color: var(--Grey200);
+                  }
+                  .Grey100 {
+                      color: var(--Grey100);
+                  }
+                /* ===== color grey ===== */
+                /* ===== bg color grey ===== */
+                  .GreyBg900 {
+                      background: var(--Grey900);
+                  }
+                  .GreyBg800 {
+                      background: var(--Grey800);
+                  }
+                  .GreyBg700 {
+                      background: var(--Grey700);
+                  }
+                  .GreyBg600 {
+                      background: var(--Grey600);
+                  }
+                  .GreyBg500 {
+                      background: var(--Grey500);
+                  }
+                  .GreyBg400 {
+                      background: var(--Grey400);
+                  }
+                  .GreyBg300 {
+                      background: var(--Grey300);
+                  }
+                  .GreyBg200 {
+                      background: var(--Grey200);
+                  }
+                  .GreyBg100 {
+                      background: var(--Grey100);
+                  }
+                  .WhiteBg {
+                      background-color: var(--white);
+                  
+                  }
+                  .WhiteBgTrans {
+                      background-color: var(--White-transparent);
+                  }
+                /* ===== bg color grey ===== */
+              </code></pre>
           </div>
+
+          <div class="blankHS"></div>
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1> <strong class="SkylineBlueLt">Action &#38; Error</strong> </h1>
+              </div>
+            </div>
+          </div>
+
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS SkylineBlue shadowBox">
+                <div class="blockS BgSkylineBlue shadowBox">
                   <div>Beach 400</div>
                   <div>HEX:e6e6e6</div>
                 </div>
@@ -504,7 +592,7 @@
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS SkylineBlueLt shadowBox">
+                <div class="blockS BgSkylineBlueLt shadowBox">
                   <div>Beach 300</div>
                   <div>HEX:292929</div>
                 </div>
@@ -512,7 +600,7 @@
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS SkylineBlueLter shadowBox">
+                <div class="blockS BgSkylineBlueLter shadowBox">
                   <div>Beach 200</div>
                   <div>HEX:4f4f4f</div>
                 </div>
@@ -520,7 +608,7 @@
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS SkylineBlueLtest shadowBox">
+                <div class="blockS BgSkylineBlueLtest shadowBox">
                   <div>Beach 100</div>
                   <div>HEX:757575</div>
                 </div>
@@ -528,7 +616,7 @@
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS colorWarm  shadowBox">
+                <div class="blockS BgWarm  shadowBox">
                   <div>Sandy</div>
                   <div>HEX:fcf5eb</div>
                 </div>
@@ -537,7 +625,7 @@
 
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS colorAlet shadowBox">
+                <div class="blockS BgAlet shadowBox">
                   <div>Alert</div>
                   <div>HEX:CC3300</div>
                 </div>
@@ -549,1232 +637,246 @@
           <div class="element">
             <h3>CSS Code</h3>
             <pre>
-              <code>
-                :root {
-                  --height100: 100%;
-              
-                  --img-APPOINT: url('./image/Cover_APPOINTA.jpg');
-                  --img-SEER: url('./image/Cover_SEER.jpg');
-                  --img-WS: url('./image/Cover_worksample.png');
-                  --img-DS: url('./image/Cover_portfolioWeb.png');
-              
-                  /* Color */
-                  --white: #ffffff;
-                  --alert: #CC3300;
-                  --alert--pink: #EB5757;
-                  --Highlight: rgba(255, 242, 0, 0.3);
-                  --Grey900: #1b1b1b;
-                  /*292929 2c2c2c #161616*/
-              
-                  --Grey800: #505050;
-                  /* 5f6368 4f4f4f*/
-              
-                  --Grey700: #707070;
-              
-                  /* #505050 83878a 787878  757575*/
-              
-                  --Grey600: #a5a5a5;
-              
-                  /* #909090, 999D9F, 8e8787 a7a7a7*/
-              
-                  --Grey500: #cacaca;
-              
-                  /* #c8c8c8 e0e0e0*/
-              
-                  --Grey400: #e6e6e6;
-                  /* e4e4e4; e6e6e6*/
-              
-                  --Grey300: #efefef;
-                  /* efefef, f2f2f2*/
-              
-                  --Grey200: #f2f2f2;
-                  /* F8F8F8, f2f2f2*/
-              
-                  --Grey100: #fafafa;
-              
-                  /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
-                  --colorTealDk: #8fbfbf;
-                  --colorTealLt: #AAD9D9;
-                  /*never change    AAD9D9*/
-                  /* 368661 projects 296448*/
-                  --colorTealLtr: #e6f6f6;
-                  --colorTealLtest: #faffff;
-                  --colorWarm: #fcf5eb;
-              
-              
-              
-                  --AMBlue: #5384ED;
-              
+              <code> 
+                /* ===== color vickywang.me ===== */
 
-                  
-              
-              
-              }
+                .Warm {
+                    color: var(--Warm);
+                }
+                
+                .SkylineBlue {
+                    color: var(--colorTealDk);
+                }
+                
+                .SkylineBlueLt {
+                    color: var(--colorTealLt);
+                }
+                
+                .SkylineBlueLter {
+                    color: var(--colorTealLtr);
+                }
+                
+                .SkylineBlueLtest {
+                    color: var(--colorTealLtest);
+                }
+                
+                .BgAlet {
+                    color: var(--alert);
+                
+                }
+                
+                /* ===== color vickywang.me ===== */
+                /* ===== bg color vickywang.me ===== */
+                .BgWarm {
+                    background-color: var(--Warm);
+                }
+                
+                .BgSkylineBlue {
+                    background-color: var(--colorTealDk);
+                }
+                
+                .BgSkylineBlueLt {
+                    background-color: var(--colorTealLt);
+                }
+                
+                .BgSkylineBlueLter {
+                    background-color: var(--colorTealLtr);
+                }
+                
+                .BgSkylineBlueLtest {
+                    background-color: var(--colorTealLtest);
+                }
+                
+                .BgAlet {
+                    background-color: var(--alert);
+                    color: var(--Grey200);
+                }
+                
+                /* ===== bg color vickywang.me ===== */
               </code></pre>
           </div>
 
-          <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Understand <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Set up Research</strong> </h2>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <h3 class="accordion accordionBorderTop noMargin"><strong>Context &#38; problem statement</strong> </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-
-              <div class="Grid Grid--gutters Grid--cols-2">
-
-                <div class="Grid-cell">
-                  <h4> <strong> Context</strong> </h4>
-                  <p>Glorify primarily offers a <span class="textDecor GLORIFY">single-player experience </span>, where
-                    users can explore a vast library of content in a feature known as the <span
-                      class="textDecor GLORIFY">Daily Worship</span>. Renowned as the top Christian Daily Worship app.
-                  </p>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Problem statement</strong> </h4>
-                  <p>Glorify exists in a primarily <span class="textDecor GLORIFY">isolated experience</span>. Community
-                    is integral to Christianity. There’s an opportunity to fully meet the user's needs for social and
-                    collaborative experiences in their faith journey.</p>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-
-            </div>
-
-            <h3 class="accordion noMargin"><strong>Research plan</strong></h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-
-              <div class="Grid Grid--full">
-                <div class="Grid-cell">
-                  <h4> <strong> Background</strong> </h4>
-                  <p>The Glorify platform has mainly been utilized as a single-player experience, which has <span
-                      class="textDecor GLORIFY">made it challenging for users to establish new connections</span>. In
-                    order
-                    to address this issue, my aim is to leverage the platform's existing infrastructure and introduce
-                    activities that promote connections and cater to the <span class="textDecor GLORIFY">initial version
-                      of
-                      its community</span>.
-                  </p>
-                  <p>Group worship constitutes a significant aspect of Christian community activities. While Glorify
-                    offers <span class="textDecor GLORIFY">a vast library of content for individual daily
-                      worship</span>,
-                    this research will specifically concentrate on the <span class="textDecor GLORIFY">communal aspects
-                      of
-                      worship</span>.</p>
-                </div>
-              </div>
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <h4> <strong>Research goal</strong> </h4>
-                  <p>Understand both the successful methods and pain points of having <span
-                      class="textDecor GLORIFY">group
-                      worship</span>
-                  </p>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong>Research Method</strong> </h4>
-                  <p> Semi-structured user interview</p>
-                </div>
-              </div>
-              <div class="Grid Grid--full">
-                <div class="Grid-cell">
-                  <h4> <strong> Research questions</strong> </h4>
-                  <ul>
-                    <li class="listCircle">
-                      How do Christians typically attend group worship? what they do? which group worship they like
-                      the
-                      most? </li>
-                    <li class="listCircle">
-                      Why Christians participate in group worship? How did they initiate? what is their motivation?
-                    </li>
-                    <li class="listCircle">
-                      What types of group worship have been most/least valuable to the participants in the past?
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <h4> <strong> Participants </strong> </h4>
-                  <p>Christians/non-Christian seeking opportunities to connect and engage with fellow believers.</p>
-                  </p>
-                </div>
-                <div class="Grid-cell">
-                  <h4 class="help"
-                    title="This is a brief exercise, ideally requiring the recruitment of 5 participants."> <strong> 3
-                      participants </strong>
-                  </h4>
-                  <ul>
-                    <li class="listCircle">Participant 1 age. 38 male </li>
-                    <li class="listCircle">Participant 2 age. 46 female </li>
-                    <li class="listCircle">Participant 3 age. 27 female </li>
-                  </ul>
-                  <div class="blankHXS"></div>
-                </div>
-              </div>
-
-              <div class="Grid Grid--full wrapper">
-                <div class="Grid-cell">
-
-                  <p class="specialTextNote colorGLORIFYBlue u-textCenter">Research goal &#8680; research questions
-                    &#8680; recruit participants
-                  </p>
-
-                </div>
-              </div>
-
-              <div class="blankHXS"></div>
-
-            </div>
-
-            <h3 class="accordion accordionBorderBottom noMargin"><strong> Discussion Guide &#124; Interview
-                Script</strong></h3>
-
-            <div class="accordion-content accordionBorderBottom">
-              <div class="blankHXS"></div>
-
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <h4> <strong>Introduction</strong> </h4>
-                  <p>Thank you very much for your time and participation in this interview. Do you have any final
-                    thoughts
-                    that you would like to share? Do you have any final questions?
-                  </p>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong>Establish Rapport</strong> </h4>
-                  <p> Before we get started, I would love to get to know you a little bit more.
-                    What city do you live in? How long have you lived there? Who do you live with?
-                    Where do you currently work? What is your current role? Can you tell me a little bit more about your
-                    work?</p>
-                </div>
-              </div>
-              <div class="Grid Grid--gutters Grid--cols-3">
-                <div class="Grid-cell">
-                  <h4> <strong> Interview Question 1</strong> </h4>
-                  <p>
-                    What kind of group worship have you participated in as part of a Christian group worship?
-                  </p>
-                  <h4> <strong> Potential Follow-Up Prompts:</strong> </h4>
-                  <ul>
-                    <li class="listCircle">Which one do you visit most frequently?</li>
-                    <li class="listCircle">Which one you like the most? </li>
-                  </ul>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Interview Question 2</strong> </h4>
-                  <p>
-                    Why do you participate in group worship? How did you initiate? what is your motivation? </p>
-                  <h4> <strong> Potential Follow-Up Prompts:</strong> </h4>
-                  <ul>
-                    <li class="listCircle">How did you initially become a part of group worship?</li>
-                    <li class="listCircle">What motivates you to join group worship?</li>
-                  </ul>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Interview Question 3</strong> </h4>
-                  <p>
-                    What types of group worship experiences have been most valuable to you in the past? Why?</p>
-                  <h4> <strong> Potential Follow-Up Prompts:</strong> </h4>
-                  <ul>
-                    <li class="listCircle">Have you encountered any difficulties in discovering new group worship?</li>
-                    <li class="listCircle">Have you had any negative experiences with group worship?</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="Grid Grid--full">
-                <div class="Grid-cell">
-                  <h4> <strong> Conclusion </strong> </h4>
-                  <p>Thank you very much for your time and participation in this interview. Do you have any final
-                    thoughts
-                    that you would like to share? Do you have any final questions?</p>
-                </div>
-              </div>
-
-              <div class="blankHXS"></div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--full u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="iconXS moveUpDown" src="Note_Arrow.svg" alt="Pause">
-                <p class="specialTextDemo colorGLORIFYGreen">Click to open&#47;close
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Interview questions &#38; answers</strong> </h2>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <h3 class="accordion accordionBorderTop noMargin"><strong>Participant 1</strong>
-            </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <img class="iconM" src="P1.png" alt="search">
-              <h3>James, 38 years old, Software engineer, male, based in SF Bay Area</h3>
-              <div class="blankHXS"></div>
-              <h5> <strong> What kind of group worship have you participated in as part of a Christian group
-                  worship? </strong> </h5>
-              <p>I engage in daily group worship by participating in <span class="textDecor GLORIFY">morning
-                  prayer gatherings</span>, <span class="textDecor GLORIFY">small group
-                  Bible studies</span>, and occasional attend traditional liturgical worship services in
-                a Protestant church..</p>
-
-              <h5> <strong> You mentioned participating in morning prayer, small group Bible studies, and
-                  weekday worship services. I can imagine you already have had a lot of group worship
-                  experiences. Which one of these do you visit most frequently?</strong> </h5>
-              <p>I most frequently visit <span class="textDecor GLORIFY">small group Bible studies</span>. I
-                appreciate the in-depth discussions and the opportunity to connect with others on <span
-                  class="textDecor GLORIFY">a deeper level in our shared exploration of the Bible</span>. It is
-                the setting where I find the most <span class="textDecor GLORIFY">personal growth and
-                  fulfillment
-                  in my faith journey</span>.</p>
-
-              <h5> <strong> Why do you participate in group worship? </strong> </h5>
-              <p>In a community of believers, we come together in group worship to experience a deep sense of
-                connection and belonging. I find solace and strength in this collective gathering. The
-                opportunity <span class="textDecor GLORIFY">to worship alongside fellow believers</span> uplifts
-                my spirit and reminds me of the power of unity. Engaging in group worship allows me to <span
-                  class="textDecor GLORIFY">express my gratitude and praise to God</span>, sharing in the
-                joy of His presence with others who walk the same path of faith.</p>
-
-              <h5> <strong> How did you initially become a part of group worship?
-                </strong> </h5>
-              <p>I initially became a part of group worship through my involvement in the <span
-                  class="textDecor GLORIFY">local church community.</span> I may have started by attending
-                church
-                services or events, where I was welcomed and introduced
-                to the idea of group worship. It could have been through an invitation from a friend or family
-                member, or simply a personal decision to seek spiritual connection and community. Over time, as
-                I experienced the power and beauty of group worship, I actively engaged and became a regular
-                participant in the various gatherings and activities.</p>
-
-              <h5> <strong> What types of group worship experiences have been most valuable to you in the
-                  past?</strong> </h5>
-              <p>I have discovered the tremendous value of participating in contemplative worship experiences.
-                These moments of reflective and introspective worship allow me to connect with God on a deeper
-                level. Instead of the energetic and vibrant atmosphere of contemporary music, I find solace and
-                spiritual nourishment in quiet spaces, where soft melodies and gentle instrumentation create an
-                ambiance of tranquility. These worship experiences provide a sanctuary for introspection,
-                prayer, and personal connection with God. Through this intentional stillness and reverence, I am
-                able to
-                engage my heart and mind, finding a profound sense of peace and closeness to the Divine.</p>
-
-              <h5> <strong> Have you encountered any difficulties in discovering new group worship experiences
-                  or had any negative experiences with group worship? </strong> </h5>
-              <p>I have encountered some difficulties in <span class="textDecor GLORIFY">discovering new group
-                  worship experiences</span>. It can be <span class="textDecor GLORIFY">challenging to find
-                  contemplative and introspective worship settings</span> that align with my preference for
-                quieter worship environments. However, I have actively sought out communities and events that
-                offer these types of worship experiences and have been able to find fulfillment in connecting
-                with
-                <span class="textDecor GLORIFY">like-minded individuals</span>.
-              </p>
-
-              <h5> <strong> Additional notes</strong> </h5>
-              <ul>
-                <li class="listCircle">Prefers contemplative and introspective worship experiences.
-                </li>
-                <li class="listCircle">Values collective prayer and moments of intercession within a group.</li>
-              </ul>
-
-              <div class="blankHXS"></div>
-
-            </div>
-
-            <h3 class="accordion noMargin"><strong>Participant 2</strong></h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-
-              <img class="iconM" src="P2.png" alt="search">
-              <h3> Sarah, 46 female, Scientist, female, based in SF Bay Area</h3>
-              <div class="blankHXS"></div>
-              <h5> <strong> What kind of group worship have you participated in as part of a Christian group
-                  event?</strong> </h5>
-              <p>I participate in daily group worship by engaging in <span class="textDecor GLORIFY">devotionals
-                  and guided prayer sessions within small groups</span>, attending women's ministry groups,
-                <span class="textDecor GLORIFY">weekday worship</span> services, and being part of mentoring
-                relationships.
-              </p>
-
-              <h5> <strong> You mentioned guided prayer sessions and weekday worship. I'm curious to know which
-                  one is your favorite group worship experience and the reasons behind your preference?</strong>
-              </h5>
-              <p>My favorite group worship is to attend weekday worship services. These gatherings provide a
-                meaningful spiritual reset and help me maintain a consistent focus on my faith throughout the
-                week. I find solace and <span class="textDecor GLORIFY">inspiration in coming together with
-                  others to worship and learn from the teachings shared during these services</span>.</p>
-
-              <h5> <strong>Why do you participate in group worship? </strong> </h5>
-              <p>Group worship is a sacred space where I feel a strong sense of community. The <span
-                  class="textDecor GLORIFY">warmth and support of fellow believers</span> provide me with
-                <span class="textDecor GLORIFY">encouragement and accountability</span>. Through collective
-                worship
-                and prayer, I draw closer to God, feeling His presence as we lift our voices together. It is
-                during these moments that I experience the <span class="textDecor GLORIFY">power of shared
-                  faith,
-                  finding comfort and strength in knowing that I am not alone on my journey</span>.
-              </p>
-
-              <h5> <strong> How did you initially become a part of group worship?
-                </strong> </h5>
-              <p>My journey into group worship began through an intentional search for <span
-                  class="textDecor GLORIFY">spiritual nourishment and fellowship.</span> It may have started
-                with
-                a desire to explore my faith more deeply or a specific event or program that caught my
-                attention. I might have joined a women's ministry group, attended a weekday worship service, or
-                <span class="textDecor GLORIFY">connected with like-minded individuals in the community</span>
-                who encouraged me to be a part of group worship. The warm and welcoming environment, coupled
-                with the sense of connection and support, made me feel at home and motivated me to continue
-                participating in group worship.
-              </p>
-
-              <h5> <strong> What types of group worship experiences have been most valuable to you in the
-                  past?</strong> </h5>
-              <p>I have discovered the immense value of a diverse worship experience. The blend of traditional
-                hymns and contemporary worship songs strikes a beautiful balance, reaching into the depths of my
-                faith. Participating in women's ministry events or retreats has provided a nurturing and
-                empowering environment where I can connect with other women of faith.<span class="textDecor GLORIFY">The
-                  collective worship, teaching</span>, and fellowship in these
-                gatherings have touched my heart and strengthened my spiritual journey.</p>
-
-              <h5> <strong> Have you encountered any difficulties in discovering new group worship experiences
-                  or had any negative experiences with group worship? </strong> </h5>
-              <p>I have not encountered significant difficulties in discovering new group worship experiences.
-                I have found a variety of worship opportunities that align with my desire for a balanced blend
-                of <span class="textDecor GLORIFY">traditional hymns and contemporary worship songs</span>.
-                However, there have been instances where I felt disconnected from the worship environment due to
-                <span class="textDecor GLORIFY">a lack of inclusivity or relevance to my specific stage of
-                  life</span>.
-              </p>
-
-              <h5> <strong> Additional notes</strong> </h5>
-              <ul>
-                <li class="listCircle">Finds value in women's ministry events and retreats, fostering a nurturing and
-                  empowering environment.
-                </li>
-                <li class="listCircle">Seeks worship experiences that provide a sense of community and connection.</li>
-              </ul>
-
-              <div class="blankHXS"></div>
-
-            </div>
-
-            <h3 class="accordion accordionBorderBottom noMargin"><strong>Participant 3</strong></h3>
-
-            <div class="accordion-content accordionBorderBottom">
-              <div class="blankHXS"></div>
-
-              <img class="iconM" src="P3.png" alt="search">
-              <h3>Jennifer, 27 years old, Designer, female, based in New York</h3>
-              <div class="blankHXS"></div>
-              <h5> <strong> What kind of group worship have you participated in as part of a Christian group
-                  event?</strong> </h5>
-              <p>I embrace vibrant and energetic daily group worship through <span
-                  class="textDecor GLORIFY">contemporary music, engaging in small group studies and discussions,
-                  volunteering at food banks</span> or community outreach programs, and expressing my faith
-                through creative worship expressions like art, music, or dance.</p>
-
-              <h5> <strong> Which of the group art, music, or dance worship experiences is your favorite, and
-                  which one do you attend most frequently?</strong> </h5>
-              <p>while I visit small group studies and discussions tailored for young adults frequently, the
-                one
-                I like the most is engaging in creative worship expressions like art, music, or dance. This form
-                of worship allows me to express my faith in a unique and personal way, and it resonates deeply
-                with me as a way to connect with God and engage with my spirituality.</p>
-
-              <h5> <strong>Why do you participate in group worship? </strong> </h5>
-              <p>Group worship ignites a deep connection with my generation and empowers me to express my love
-                for God. Engaging in dynamic and passionate worship experiences resonates with the fire within
-                me.
-                The community of like-minded individuals fuels my desire to live out my faith boldly. Through
-                interactive discussions and teachings, I learn and grow, equipping myself to face the challenges
-                of the world. The creativity and expressive nature of our worship allow me to celebrate God's
-                goodness with fervor and authenticity.</p>
-
-              <h5> <strong> How did you initially become a part of group worship?
-                </strong> </h5>
-              <p>My entry into group worship began with a desire to find a community of believers who shared my
-                passion for vibrant and authentic worship. I may have sought out young adult ministries or
-                events
-                specifically tailored for my age group, where I discovered a sense of belonging and a space to
-                express my faith in creative ways. The energy and enthusiasm of others drew me in, and I
-                realized
-                the power of coming together with peers who were on a similar journey of faith. From that point
-                forward, I actively engaged in group worship, finding it to be a source of inspiration,
-                connection, and growth.</p>
-
-              <h5> <strong> What types of group worship experiences have been most valuable to you in the
-                  past?</strong> </h5>
-              <p>I have found immense value in dynamic and interactive worship experiences that speak to my
-                generation. Engaging with contemporary music, visual arts, and creative expressions of worship
-                like art, dance, or spoken word allows me to connect with God on a deeply personal and
-                expressive
-                level. The energy and passion in these worship settings inspire me, while engaging in small
-                group
-                studies and discussions nurtures my thirst for knowledge and understanding. Through relevant
-                teachings and dialogues, I find inspiration to live out my faith boldly in my daily life.</p>
-
-              <h5> <strong> Have you encountered any difficulties in discovering new group worship experiences
-                  or
-                  had any negative experiences with group worship? </strong> </h5>
-              <p>I have occasionally encountered challenges in discovering new group worship experiences that
-                truly resonate with my generation. It can be difficult to find worship settings that incorporate
-                the dynamic and interactive elements I seek, such as creative expressions and contemporary
-                styles.
-                However, I have actively sought out churches, events, or communities that cater to young adults
-                and have been able to find fulfilling worship experiences that align with my preferences.</p>
-
-              <h5> <strong> Additional notes</strong> </h5>
-
-              <ul>
-                <li class="listCircle">Enjoys dynamic and interactive worship experiences.
-                </li>
-                <li class="listCircle">Values creative expressions of worship, such as art, music, or dance.</li>
-              </ul>
-
-              <div class="blankHXS"></div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--full u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="iconXS moveUpDown" src="Note_Arrow.svg" alt="Pause">
-                <p class="specialTextDemo colorGLORIFYGreen">Click to open&#47;close
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="blankHS"></div>
-          <div class="Grid Grid--full ">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Synthesize user feedback with Affinity Mapping </strong> </h2>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="Grid">
-                  <img class="modal-target" src="Research_AffinityMap.png" alt="Affinity Map">
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="Grid Grid--full wrapper">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="specialTextNote colorGLORIFYBlue u-textCenter">By clustering individual observations on a board,
-                patterns emerge, allowing me to quickly identify themes and make informed decisions. It simplifies
-                complex user data, facilitating a clearer understanding of user needs and preferences.
-              </p>
-            </div>
-          </div>
-        </div>
+
         <div class="blankHS"></div>
 
       </section>
-      <section id="content12" class="GreyBg100">
+      <section id="content12">
         <div class="wrapper">
           <!-- Arrow -->
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Findings <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                <h2 class="tArrow">Typography <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
                 </h2>
               </div>
             </div>
           </div>
           <!-- Arrow -->
-
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element ">
-                <h2 class="centerVer"> <img class="iconS" src="IconIdea.svg" alt="Design">
-                  <strong class="colorGLORIFYOrange"> Finding 1</strong>
-                </h2>
-                <h4><strong>The participants expressed a range of preferences when it comes to worship styles and
-                    expressions. The primary benefits that Christians derive from attending such worship include the
-                    strength derived from <span class="textDecor GLORIFY">shared faith, mutual understanding, support,
-                      and the opportunity to connect with others</span>.</strong>
-                </h4>
-                <p>"To find inspiration, renewal, and empowerment to live out my faith in daily life." - Jennifer
-                  (Participant 3)
-                </p>
-                <p>"To experience a sense of community and connection with other believers." - James (Participant 1)
-                </p>
-                <p>"To receive teachings and insights that help deepen my faith and understanding." - Sarah
-                  (Participant
-                  2)
-                </p>
-              </div>
-            </div>
+          <div class="blankHXS"></div>
+          <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="centerVer"> <img class="iconS" src="IconIdea.svg" alt="Design">
-                  <strong class="colorGLORIFYOrange"> Finding 2</strong>
-                </h2>
-                <h4><strong>Participants tend to attend <span class="textDecor GLORIFY">small group events more
-                      frequently due to the enriching discussions and the chance to forge connections with fellow
-                      participants</span>.</strong>
-                </h4>
-                <p>"I visit small group studies and discussions most frequently. These groups allow me to connect with
-                  peers who share similar experiences and challenges." - Jennifer (Participant 3)"
-                </p>
-                <p>"I visit small group Bible studies most frequently. I appreciate the in-depth discussions and the
-                  opportunity to connect with others." - James (Participant 1)
-                </p>
+                <h1> <strong class="SkylineBlueLt"> Font family</strong> </h1>
               </div>
             </div>
           </div>
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element ">
 
-                <h2 class="centerVer"> <img class="iconS" src="IconIdea.svg" alt="Design">
-                  <strong class="colorGLORIFYOrange"> Finding 3</strong>
-                </h2>
-                <h4><strong>Older participants often gravitate towards contemplative and introspective worship, while
-                    younger participants tend to prefer <span class="textDecor GLORIFY">dynamic and interactive worship
-                      experiences</span>.</strong>
-                </h4>
-
-                <p>"I prefer dynamic and interactive worship experiences." - Jennifer (Participant 3)
-                </p>
-                <p>"I would like to participate in contemplative and introspective worship." - James (Participant 1)
-                </p>
-              </div>
-            </div>
+          <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="centerVer"> <img class="iconS" src="IconIdea.svg" alt="Design">
-                  <strong class="colorGLORIFYOrange"> Finding 4</strong>
-                </h2>
-                <h4><strong>Participants in group worship often face challenges, especially when it comes to navigating
-                    <span class="textDecor GLORIFY">different interpretations of the worship style or
-                      environment</span>.
-                  </strong></h4>
-                <p>"It can be difficult to find worship settings that incorporate the dynamic and interactive elements
-                  I seek, such as creative expressions and contemporary styles." -Jennifer (Participant 3)
-                </p>
-                <p>"It can be challenging to find contemplative and introspective worship settings that align with my
-                  preference for quieter worship environments." -James (Participant 1)
-                </p>
+                <p class="specialTextS">Lato</p>
               </div>
             </div>
           </div>
-          <div class="blankHS"></div>
 
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1> <strong class="SkylineBlueLt"> Font size &#38; Weight</strong> </h1>
+              </div>
+            </div>
+          </div>
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg"><strong>Display</strong> </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--full">
+                <div class="Grid-cell">
+                  <p class="specialTextL">Display 1, Lorem ipsum dolor sit amet</p>
+                  <p class="specialTextS">Display 2, Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion noMargin withBg"><strong>Heading</strong> </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--full">
+                <div class="Grid-cell">
+
+                  <h1 class="fontWeight500">h1 font-weight: 500, margin: top &#38; button 0.75em, Lorem ipsum dolor sit
+                    amet
+                  </h1>
+                  <h2 class="fontWeight500">h2 font-weight: 500, margin: top &#38; button 0.75em, Lorem ipsum dolor sit
+                    amet
+                  </h2>
+                  <h3 class="fontWeight300">h3 font-weight: 300, margin: top &#38; button 0.75em, Lorem ipsum dolor sit
+                    amet
+                  </h3>
+                  <h4 class="fontWeight300">h4 font-weight: 300, margin: top &#38; button 0.75em, Lorem ipsum dolor sit
+                    amet
+                  </h4>
+                  <h5 class="fontWeight300">h5 font-weight: 300, margin: top &#38; button 0.75em, Lorem ipsum dolor sit
+                    amet
+                  </h5>
+                  <h6 class="fontWeight300">h6 font-weight: 300, margin: top &#38; button 0.75em, Lorem ipsum dolor sit
+                    amet
+                  </h6>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion noMargin withBg"><strong>Body</strong> </h3>
+            <div class="accordion-content">
+              <div class="blankHXS"></div>
+              <div class="Grid Grid--full">
+                <div class="Grid-cell">
+                  <p class="thick">Paragraph, thick, Lorem ipsum dolor sit amet</p>
+                  <p class="default">Paragraph, normal, Lorem ipsum dolor sit amet</p>
+                  <p class="light">Paragraph, light, Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion accordionBorderBottom noMargin withBg"><strong>Others </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--full">
+                <div class="Grid-cell">
+                  <strong>
+                    <h3>Bold, font weight 500, Lorem ipsum dolor sit amet</h3>
+                  </strong>
+                  <h3 class="allCaps fontWeight300">Uppercase, Lorem ipsum dolor sit amet</h3>
+                  <p class="tArrow">Label, Lorem ipsum dolor sit amet</p>
+                  <p class="specialTextNote">Note, Lorem ipsum dolor sit amet</p>
+                  <div class="t-hello">Note, Lorem ipsum dolor sit amet</div>
+                  <h3 class="textUnderline fontWeight300">text decoration</h3>
+                  <h3 class="textDecor fontWeight300">text decoration</h3>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="content13">
+
         <div class="wrapper">
           <!-- Arrow -->
           <div class="element">
-            <h2 class="tArrow">Define <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+            <h2 class="tArrow">Elevation<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
             </h2>
           </div>
           <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Define the problem</strong> </h2>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <h3 class="accordion accordionBorderTop noMargin"><strong>What&#63; &nbsp; Who&#63; &nbsp; Where&#63; &nbsp;
-                When&#63; &nbsp; Why&#63; &nbsp; </strong> </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <div class="Grid Grid--gutters Grid--cols-3">
-                <div class="Grid-cell">
-                  <h4> <strong> 5W's</strong> </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Answers </strong> </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Explanation</strong> </h4>
-                </div>
-              </div>
-              <div class="Grid Grid--gutters Grid--cols-3">
-                <div class="Grid-cell">
-                  <h4> What is the problem? </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4>Glorify exists in <span class="textDecor GLORIFY">a primarily isolated experience</span>. </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4>Participants express the desire to <span class="textDecor GLORIFY">understand and share their
-                      faith
-                      with others, as well as to offer assistance or seek support from others</span></h4>
-
-                  <h4>"To find inspiration, renewal, and empowerment to live out my faith in daily life."
-                    - Jennifer (Participant 3)</h4>
-                  <h4>"To experience a sense of community and connection with other believers."
-                    - James (Participant 1)</h4>
-
-                </div>
-              </div>
-
-              <div class="Grid Grid--gutters Grid--cols-3">
-                <div class="Grid-cell">
-                  <h4> Who is affected by the problem? </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4>Celebrate individuals who are willing to engage in group worship with others </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4>The research includes participants from age 27 - 46</h4>
-                </div>
-              </div>
-
-              <div class="Grid Grid--gutters Grid--cols-3">
-                <div class="Grid-cell">
-                  <h4> Where does this problem occur? </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4>The problem occurs when people want to <span class="textDecor GLORIFY">discuss and understand,
-                      share
-                      faith with others</span> in the community
-                  </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4>The background states that this problem takes place in the current Glorify app</h4>
-                </div>
-              </div>
-
-              <div class="Grid Grid--gutters Grid--cols-3">
-                <div class="Grid-cell">
-                  <h4> When does this problem occur? </h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4>When individuals seek to <span class="textDecor GLORIFY">share their faith, deepen their
-                      understanding of faith, or provide/receive support</span>.</h4>
-                </div>
-                <div class="Grid-cell">
-                  <h4>Participants in group worship often face challenges.</h4>
-                  <h4>"It can be challenging to find contemplative and introspective worship settings that align with
-                    my
-                    preference for quieter worship environments."
-                    -James (Participant 1)</h4>
-
-                </div>
-              </div>
-
-              <div class="Grid Grid--gutters Grid--cols-3">
-                <div class="Grid-cell">
-                  <h4> Why does this problem occur? </h4>
-                  <h4> Why is this problem important? </h4>
-
-                </div>
-                <div class="Grid-cell">
-                  <h4>The problem occurs when <span class="textDecor GLORIFY">individuals feel lonely, seek support or
-                      trying to understand faith.</span></h4>
-                  <h4>There’s an opportunity to fully meet the user's needs for social and collaborative experiences
-                    in
-                    their faith journey.</h4>
-
-                </div>
-                <div class="Grid-cell">
-                  <h4>Participants note that when it comes to navigating different interpretations of the worship
-                    style or
-                    environment. </h4>
-                  <h4>"It can be difficult to find worship settings that incorporate the dynamic and interactive
-                    elements
-                    I
-                    seek, such as creative expressions and contemporary styles."
-                    -Jennifer (Participant 3)</h4>
-
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-
-            </div>
-
-
-
-            <h3 class="accordion accordionBorderBottom noMargin"><strong> Problem statement update</strong></h3>
-
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-
-
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <h4> <strong> Problem statement V1</strong> </h4>
-                  <p>Glorify exists in a primarily isolated experience. Community is integral to Christianity. There’s
-                    an
-                    opportunity to fully meet the user's needs for social and collaborative experiences in their faith
-                    journey.
-                  </p>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Problem statement V2</strong> </h4>
-                  <p>Glorify exists in a primarily isolated experience, while community is integral to Christianity.
-                    There is an opportunity to enhance the Glorify app to foster community engagement, enabling users
-                    to
-                    <span class="textDecor GLORIFY">easily find like-minded worship groups, facilitate seamless
-                      interaction, and establish meaningful connections within the platform</span>.
-                  </p>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-          </div>
-
-
-
-
-
-
-          <div class="blankHS"></div>
 
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Brainstorming Solutions with a Mind Map</strong> </h2>
+                <h1> <strong class="SkylineBlueLt"> Shadow &#38; depth</strong> </h1>
               </div>
             </div>
           </div>
 
-          <div class="wrapper">
-            <div class="Grid Grid--full">
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="Grid">
-                    <img class="modal-target" src="Research_MindMap.svg" alt="Mind map">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blankHS"></div>
-          <div class="Grid Grid--full">
+          <div class="blankHXS"></div>
+          <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Prioritization</strong> </h2>
+                <div class="blockS GreyBg200 shadowFilter">Small Shadow</div>
               </div>
             </div>
-          </div>
-          <div class="element">
-            <h3 class="accordion accordionBorderTop noMargin"> <strong>Four categories</strong> </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <div class="Grid Grid--gutters Grid--cols-4">
-                <div class="Grid-cell">
-                  <h3> <strong> Most rational</strong> </h3>
-                  <h5> <strong> Befriend in the community</strong> </h5>
-
-                  <ul>
-                    <li>Enhance <span class="textDecor GLORIFY">user profile</span> by incorporating detailed worship
-                      statistics</li>
-                    <div class="blankHXS"></div>
-
-                    <li>Facilitate <span class="textDecor GLORIFY">user connections</span> and seamless communication
-                      within the app. </li>
-                  </ul>
-                  <div class="blankHXS"></div>
-                  <h5> <strong>Enable users toshare their daily worship with other users.</strong> </h5>
-                  <ul>
-                    <li>Share <span class="textDecor GLORIFY">Bible study notes</span></li>
-                    <li>Allow users to <span class="textDecor GLORIFY">share their journal</span> with other users
-                      within
-                      the app</li>
-                    <li><span class="textDecor GLORIFY">Share the music</span> they were listening to</li>
-                  </ul>
-                </div>
-
-                <div class="Grid-cell">
-                  <h3> <strong> Most delightful</strong> </h3>
-
-                  <h5> <strong> Discover and join group events</strong> </h5>
-                  <ul>
-                    <li>Facilitate <span class="textDecor GLORIFY">Bible study</span> together through the app</li>
-                    <div class="blankHXS"></div>
-
-                    <li>Enable users to search for specific group events</li>
-                  </ul>
-                  <div class="blankHXS"></div>
-                  <h5> <strong>Befriend in the community</strong> </h5>
-                  <ul>
-                    <li><span class="textDecor GLORIFY">discover like-minded groups or fellowships</span></li>
-
-                  </ul>
-                </div>
-                <div class="Grid-cell">
-                  <h3> <strong> Darling</strong> </h3>
-                  <h5> <strong> Discover and join group events</strong> </h5>
-                  <ul>
-                    <li>Facilitate <span class="textDecor GLORIFY">prayer-focused group worship</span> through the app
-                    </li>
-                    <div class="blankHXS"></div>
-
-                    <li>Provide personalized group event recommendations</li>
-                  </ul>
-
-                </div>
-                <div class="Grid-cell">
-                  <h3> <strong> Long shot</strong> </h3>
-                  <h5> <strong> Create a local group community</strong> </h5>
-
-                  <ul>
-                    <li>Enable fellowships to <span class="textDecor GLORIFY">find other fellowships within a specific
-                        area</span></li>
-                    <div class="blankHXS"></div>
-
-                    <li>Enable fellowships to <span class="textDecor GLORIFY">find places or people to help those in
-                        need</span></li>
-                    <div class="blankHXS"></div>
-
-                    <li>Empower fellowships to <span class="textDecor GLORIFY">engage in volunteering or teaching
-                        activities</span></li>
-                  </ul>
-
-                </div>
-
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-
-
-            <h3 class="accordion accordionBorderBottom noMargin"><strong> How-Now-Wow Matrix
-              </strong></h3>
-
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <div class="wrapper">
-                <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Research_How-Now-Wow Matrix.svg" alt="How-Now-Wow Matrix">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-          </div>
-
-
-          <div class="element">
-            <div class="Grid Grid--full">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h4> <strong> Group Worship Through the App&#58; </strong> </h4>
-                  <p>Group worship within the app, <span class="textDecor GLORIFY">group prayer and Bible study</span>,
-                    emerges as a top design choice, highlighting user engagement and community growth.</p>
-                </div>
-              </div>
-            </div>
-            <div class="Grid Grid--gutters Grid--cols-2">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h5> <strong> Deepened Community Interaction&#58; </strong></h5>
-                  <p>While the 'Most Rational' category establishes connections and the 'Most Delightful' enhances
-                    discovery, the 'Darling' idea of group worship delves deeper into facilitating spiritual communion
-                    among users. It's an experience that can bind the community closer than shared notes or music.</p>
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <h5> <strong> Unique Offering:&#58; </strong></h5>
-                  <P> While many apps might facilitate sharing of notes, music, or journals, a space designed
-                    specifically for group prayer/Bible study is a rarer commodity, giving our platform a distinct edge.
-                  </P>
-                </div>
-              </div>
-            </div>
-            <div class="Grid Grid--gutters Grid--cols-2">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h5> <strong> Balanced Approach&#58; </strong></h5>
-                  <p>Being from the 'Darling' category, it strikes a balance between innovation and feasibility. It's a
-                    feature that's both daring and realistic, allowing us to explore new territories without straying
-                    too far from known grounds.</p>
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <h5> <strong> Future Scalability:&#58; </strong></h5>
-                  <P> Once a robust system for group worship/Bible study is established, it can be further expanded or
-                    refined, integrating elements from other categories. For instance, shared worship statistics from
-                    the 'Most Rational' category can be integrated to provide insights into group prayer sessions.
-                  </P>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="Grid Grid--full wrapper">
             <div class="Grid-cell">
               <div class="element">
-                <p class="specialTextNote colorGLORIFYBlue u-textCenter">While my decision stems from a small sample
-                  size, with more time, I'd gather broader feedback and use quantitative surveys for deeper insights.
-                  Yet, even with this limited data, the 'group worship through the app' emerges as a leading design
-                  choice.
-                </p>
+                <div class="blockS GreyBg200 shadowBox">Normal Shadow</div>
               </div>
             </div>
-          </div>
-
-
-          <div class="blankHS"></div>
-
-          <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Draft the ideas</strong> </h2>
+                <div class="blockS GreyBg200 shadowFilterL">Larger Shadow</div>
               </div>
             </div>
           </div>
-          <div class="TBcarousel Grid--center Grid Grid--full" aria-label="TBcarousel" Tabindex="0"
-            id="TBcarouselGlorify2">
-            <div class="TBslides">
-              <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 2" tabindex="0">
-                <div class="Grid Grid--full">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="modal-target" src="Research_Sketch_GroupPrayer.png" alt="Group Prayer">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 2" tabindex="0">
-                <div class="Grid Grid--full">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="modal-target" src="Research_Sketch_BibleStudy.png" alt="Bible Study">
-                    </div>
-                  </div>
-                </div>
+          <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
+            <div class="Grid-cell">
+              <div class="element displayNone">
+                <div class="blockS GreyBg200 shadowFilter">Small Shadow</div>
               </div>
             </div>
-            <div class="TBcarouselNav Grid-cell noBg">
-              <a class="TBsliderNav" aria-label="Go to slide 1">
-                <div>Group prayer</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 2">
-                <div>Bible study</div>
-              </a>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS GreyBg200 shadowBoxLt">Normal Shadow - light</div>
+              </div>
             </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+                <div class="blockS GreyBg200 shadowFilterL">Larger Shadow</div>
+              </div>
+            </div>
+          </div>
+          <!-- Elevation -->
 
-          </div>
 
           <div class="blankHS"></div>
 
         </div>
       </section>
-      <section id="content14" class="GreyBg100">
-        <div class="blankHXS"></div>
 
-        <div class="wrapper">
-          <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Test &#38; Iterate <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h2 class="centerVer">
-                  <img class="iconS" src="IconTest.svg" alt="Design">
-
-                  <span class="colorGLORIFYOrange">Concept Test &#124; Feedback session script</span>
-
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h4> <strong>Research Goal</strong> </h4>
-                <p>Gather feedback to understand users' initial impressions of the concepts.
-                </p>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h4> <strong>Intro</strong> </h4>
-                <p> Thanks for supporting me with this feedback session! I will present two early design concepts for
-                  a mobile app. <span class="textDecor GLORIFY"> The goal of these apps is to facilitate individuals
-                    in joining group worship, while also enabling interaction and connection with other fellowships
-                    within the Glorify app. </span> I want to gather feedback about these ideas before I move forward
-                  with the design process.</p>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h4> <strong>Concept A</strong> </h4>
-
-                <p>the first concept is adding a <span class="textDecor GLORIFY">group prayer</span> feature to the
-                  existing Christian single-player app. The
-                  goal is to help users <span class="textDecor GLORIFY">discover like-minded individuals during group
-                    prayer</span> sessions.</p>
-                <p>With the app, users can:</p>
-                <ul>
-                  <li class="listCircle">Create a <span class="textDecor GLORIFY">group prayer room</span> </li>
-                  <li class="listCircle">Discover group prayers that align with their interests </li>
-                  <li class="listCircle">Find a suitable group prayer to participate in </li>
-                  <li class="listCircle">Engage in prayer with other fellowships within the room </li>
-                  <li class="listCircle">Foster connections with other fellowships after the group prayer session
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h4> <strong>Concept B</strong> </h4>
-                <p>This concept involves integrating a <span class="textDecor GLORIFY">Bible study</span> session
-                  into the existing Christian single-player
-                  app, aiming to <span class="textDecor GLORIFY">facilitate meaningful connections</span> among users
-                  who <span class="textDecor GLORIFY">share similar beliefs and interests</span>
-                  through these study sessions.</p>
-                <p>With the app, users can:</p>
-                <ul>
-                  <li class="listCircle">Create a <span class="textDecor GLORIFY">Bible study room</span> </li>
-                  <li class="listCircle">Discover topics that align with their interests</li>
-                  <li class="listCircle">Find a Bible study session to join</li>
-                  <li class="listCircle">Engage in discussions with other fellowships within the room</li>
-                  <li class="listCircle">Foster connections with other fellowships after the Bible study session</li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h4> <strong> Conclusion </strong> </h4>
-                <p>That's the end of our session! Thank you for providing your thoughts on these concepts. I
-                  appreciate
-                  your time.</p>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="centerVer"> <img class="iconS" src="IconIdea.svg" alt="Design">
-                  <span class="colorGLORIFYOrange">Iteration Ideas</span>
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          </h1>
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-                <h4> <strong> Feedback - Concept A </strong> </h4>
-                <ul>
-                  <li>The concept is an extension of the existing prayer feature in the app.</li>
-                  <li>In addition to praying together, users may also wish to <span
-                      class="textDecor GLORIFY">communicate while they are waiting</span>.</li>
-                  <li>Perhaps there could be an alternative method for users to interact with other fellowships
-                    without needing to send a formal fellowship request.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h4> <strong> Feedback - Concept B </strong> </h4>
-                <ul>
-                  <li>It becomes quite complex when bible study is restricted to <span
-                      class="textDecor GLORIFY">keyboard-based chatting</span> only.</li>
-                  <li>Discussing only one topic may become monotonous.</li>
-                  <li>Spending too much time in a room can lead to <span class="textDecor GLORIFY">losing focus on the
-                      topic</span>.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element ">
-                <h4> <strong> I'd like to iterate on Concept A (Group prayer) by adding some elements from Concept B
-                    (Chatting before group prayer start).</strong> </h4>
-                <ul>
-                  <li>In the new iteration, users inside the group prayer room have the ability to <span
-                      class="textDecor GLORIFY">chat with each other before the group prayer session begins</span>.</li>
-                  <li>The app will <span class="textDecor GLORIFY">retain the history of group prayers</span>, including
-                    the fellowships who participated in the prayer sessions together. </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHS"></div>
-
-      </section>
     </section>
 
     <section id="content2">
       <div class="Grid Grid--full u-textCenter wrapper">
         <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Design</span><img class="widthLogo" src="../icon/note.svg" alt="Design">
+          <h1 class="Grid Grid--center"> <span>Spacing &#38; Grid</span><img class="widthLogo" src="../icon/note.svg"
+              alt="Design">
           </h1>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <img class="modal-target" src="Research_Diagram_Design.svg" alt="Design Process">
-          </div>
-        </div>
-
-
-        <div class="Grid Grid--full ">
-          <div class="Grid-cell">
-            <div class="element">
-              <h3> Strive to ensure that the initial version of the community design can be <span
-                  class="textDecor GLORIFY">seamlessly integrated into the existing mobile app</span>. Additionally,
-                identify potential issues related to the concept and user flow.
-              </h3>
-            </div>
-          </div>
         </div>
       </div>
       <div class="blankHXS"></div>
@@ -1784,7 +886,7 @@
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Synthesis <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                <h2 class="tArrow">Layout <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
                 </h2>
               </div>
             </div>
@@ -1793,770 +895,644 @@
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Enablers</strong> </h2>
+                <h1> <strong class="SkylineBlueLt"> Devices</strong> </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="blankHXS"></div>
+          <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="iconML" src="./Icon_Mobile.svg" alt="Mobile">
+                <div class="centerHorz">
+                  <div class="chip">Mobile</div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="iconML" src="./Icon_Tablet.svg" alt="Tablet">
+                <div class="centerHorz">
+                  <div class="chip">Tablet</div>
+                </div>
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="iconML" src="./Icon_Laptop.svg" alt="Laptop">
+                <div class="centerHorz">
+                  <div class="chip">Laptop</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1> <strong class="SkylineBlueLt"> Break Points</strong> </h1>
               </div>
             </div>
           </div>
           <div class="blankHXS"></div>
-
-          <div class="wrapper">
-            <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="Grid">
-                    <img class="modal-target" src="Research_Enablers.svg" alt="Enablers">
-                  </div>
-                </div>
-              </div>
+          <div class="Grid Grid--full u-textCenter">
+            <div class="element">
+              <h3>Monitor</h3>
             </div>
-          </div>
-          <div class="blankHXS"></div>
-
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
+            <div class="Grid-cell paddingNone">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Moderated Closed Card Sorting</strong> </h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="wrapper">
-            <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="Grid">
-                    <img class="modal-target" src="Research_CardSorting.svg" alt="Card sorting">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="blankHS"></div>
-
-        </div>
-      </section>
-      <section id="content22" class="GreyBg100">
-
-        <div class="blankHXS"></div>
-
-        <div class="wrapper">
-          <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Sitemap <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Sitemap update</strong> </h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="wrapper">
-            <div class="Grid Grid--full">
-              <div class="Grid-cell">
-                <div class="element">
-                  <img class="modal-target" src="Research_SiteMap.svg" alt="Sitemap">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="centerVer"> <img class="iconS" src="IconIdea.svg" alt="Design">
-                  <span class="colorGLORIFYOrange">Proposed additions</span>
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-                <h4> <strong>Group prayer</strong> </h4>
-
-                <ul>
-                  <li>Will integrated into current prayer feature</li>
-                  <li>Enable <span class="textDecor GLORIFY">create</span> group prayer</li>
-                  <li>Enable <span class="textDecor GLORIFY">participate</span> group prayer</li>
-                  <li>Enable <span class="textDecor GLORIFY">leave</span> group prayer</li>
-                </ul>
+                <div class="Demo shadowBox">1880 px &#43;</div>
               </div>
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <h4> <strong> Chat </strong> </h4>
-                <ul>
-                  <li>Adding a new icon into top navigation</li>
-                  <li>Able to see the <span class="textDecor GLORIFY">notification</span> anytime</li>
-                  <li>Able to <span class="textDecor GLORIFY">receive</span> message and fellowship request from other
-                    fellowship</li>
-                  <li>Enable the <span class="textDecor GLORIFY">compose</span> message with other fellowship</li>
-
-                </ul>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element ">
-                <h4> <strong> Fellowship</strong> </h4>
-                <ul>
-                  <li>Adding a new "add/remove" icon to the existing fellowship page</li>
-                  <li>Adding a new "message" icon to the each fellowship</li>
-                </ul>
+                <div class="blockS blackLess displayNone">HEX 161616</div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="blankHS"></div>
-
-      </section>
-      <section id="content23">
-        <div class="wrapper">
-
-          <!-- Arrow -->
           <div class="element">
-            <h2 class="tArrow">Wireframes <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
+            <h3>Laptop</h3>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="Demo shadowBox">1080 px</div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS blackLess displayNone">HEX 161616</div>
+              </div>
+            </div>
+          </div>
+          <div class="element">
+            <h3>Tablet</h3>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="Demo shadowBox">680 px</div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS blackLess displayNone">HEX 161616</div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS blackLess displayNone">HEX 161616</div>
+              </div>
+            </div>
+          </div>
+          <div class="element">
+            <h3>Mobile</h3>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2 u-textCenter Grid--1of6">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="Demo shadowBox">480 px</div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS blackLess displayNone">HEX 161616</div>
+              </div>
+            </div>
+          </div>
+          <div class="blankHS"></div>
+        </div>
+      </section>
+      <section id="content22">
+        <div class="wrapper">
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h2 class="tArrow">Responsive Grid <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+              </div>
+            </div>
           </div>
           <!-- Arrow -->
+          <div class="blankHXS"></div>
 
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Group prayer</strong> </h2>
+                <h1> <strong class="SkylineBlueLt">Basic Grid</strong> </h1>
               </div>
             </div>
-          </div>
-          <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="Grid">
-                  <img class="modal-target" src="Design_wireframe_GroupPrayer.svg" alt="Group prayer">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="TBcarousel Grid--center Grid Grid--full" aria-label="TBcarousel" Tabindex="0"
-            id="TBcarouselGlorify3">
-            <div class="TBslides">
-              <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 3" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell ">
-                    <div class="element"> <img class="widthXS cardBorderThick"
-                        src="Design_wireframe_gif_groupprayer_create.gif" alt="New User">
-                    </div>
-
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_groupprayer_create.svg" alt="Create group prayer">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 3" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell ">
-                    <div class="element"> <img class="widthXS cardBorderThick"
-                        src="Design_wireframe_gif_groupprayer_participate.gif" alt="Participate group prayer">
-                    </div>
-
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_groupprayer_participate.svg" alt="Hi-fi prototype">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 3" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell ">
-                    <div class="element"> <img class="widthXS cardBorderThick"
-                        src="Design_wireframe_gif_groupprayer_leave.gif" alt="Leave group prayer">
-                    </div>
-
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_groupprayer_leave.svg" alt="Leave group prayer">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="TBcarouselNav Grid-cell noBg">
-              <a class="TBsliderNav" aria-label="Go to slide 1">
-                <div>Create</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 2">
-                <div>Participate</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 3">
-                <div>Leave</div>
-              </a>
-            </div>
-
           </div>
           <div class="Grid Grid--full u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="iconXS moveUpDown" src="Note_Arrow.svg" alt="Pause">
-                <p class="specialTextDemo colorGLORIFYGreen">Hover to pause or navigate through the slideshow
-                </p>
+            <div class="Grid-cell paddingNone">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of1"></div>
               </div>
             </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of2"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of3"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of3"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of4"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of4"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of4"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of4"></div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-6 u-textCenter">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of6"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of6"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of6"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of6"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of6"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of6"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-12 u-textCenter">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of12"></div>
+              </div>
+            </div>
+          </div>
+          <div class="element">
+            <h3>HTML Code</h3>
+            <pre>
+              <code>
+
+                    &lt;div class="Grid Grid--full u-textCenter"&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of1"&gt;&lt;/div&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="Grid Grid--gutters Grid--cols-2 u-textCenter"&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="Grid Grid--gutters Grid--cols-3 u-textCenter"&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="Grid Grid--gutters Grid--cols-4 u-textCenter"&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="Grid Grid--gutters Grid--cols-6 u-textCenter"&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="Grid Grid--gutters Grid--cols-12 u-textCenter"&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of12"&gt;&lt;/div&gt;&lt;/div&gt;
+                    &lt;/div&gt;  
+              </code>
+            </pre>
           </div>
           <div class="blankHS"></div>
 
-
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Chat</strong> </h2>
+                <h1> <strong class="SkylineBlueLt">Left &#47; Center &#47; Right content alignment</strong> </h1>
               </div>
             </div>
           </div>
-          <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+          <div class="Grid Grid--gutters Grid--1of2">
             <div class="Grid-cell">
-              <div class="element">
-                <div class="Grid">
-                  <img class="modal-target" src="Design_wireframe_Chat.svg" alt="Chat">
-                </div>
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--1of2 Grid--center">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of2"></div>
               </div>
             </div>
           </div>
 
-
-          <div class="TBcarousel Grid--center Grid Grid--full" aria-label="TBcarousel" Tabindex="0"
-            id="TBcarouselGlorify4">
-            <div class="TBslides">
-              <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell ">
-                    <div class="element"> <img class="widthXS cardBorderThick" src="Design_Flow_Chat_Accept.gif"
-                        alt="New User">
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_Chat_Accept.png" alt="Accept fellowship request">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
+          <div class="Grid Grid--gutters Grid--1of2 Grid--right">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of2"></div>
               </div>
-              <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell ">
-                    <div class="element"> <img class="widthXS cardBorderThick" src="Design_Flow_Chat_decline.gif"
-                        alt="Participate group prayer">
-                    </div>
-
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_Chat_decline.png" alt="Decline fellowship">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell ">
-                    <div class="element"> <img class="widthXS cardBorderThick" src="Design_Flow_Chat_compose.gif"
-                        alt="Compose">
-                    </div>
-
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_Chat_compose.png" alt="Compose">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-3" id="slide-4" aria-label="slide 4 of 5" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell ">
-                    <div class="element"> <img class="widthXS cardBorderThick" src="Design_Flow_Chat_Read.gif"
-                        alt="Compose">
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_Chat_Read.png" alt="Read and reply message">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-3" id="slide-5" aria-label="slide 5 of 5" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell">
-                    <div class="element"> <img class="widthXS cardBorderThick" src="Design_Flow_Chat_delete.gif"
-                        alt="Delete">
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_Chat_delete.png" alt="Delete message">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
             </div>
-            <div class="TBcarouselNav Grid-cell noBg">
-              <a class="TBsliderNav" aria-label="Go to slide 1">
-                <div>Accept</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 2">
-                <div>Decline</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 3">
-                <div>Compose</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 4">
-                <div>Read &#47; reply</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 5">
-                <div>Delete</div>
-              </a>
-
-            </div>
-
           </div>
-
-
+          <div class="element">
+            <h3>HTML Code</h3>
+            <pre>
+              <code>
+                &lt;div class="Grid Grid--gutters Grid--1of6"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="Grid Grid--gutters Grid--1of4"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="Grid Grid--gutters Grid--1of3"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              
+              </code>
+            </pre>
+          </div>
           <div class="blankHS"></div>
 
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1> <strong class="SkylineBlueLt">Vertical alignment</strong> </h1>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-3 Grid--top">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">This cell should be <strong>top-aligned</strong>.</div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi.
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit duis tristique. Diam
+                  vulputate
+                  ut
+                  pharetra sit amet aliquam id diam maecenas. Dictumst quisque sagittis purus sit amet volutpat
+                  consequat
+                  mauris.In fermentum posuere urna nec. </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-3 Grid--center">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">This cell should be <strong>center-aligned</strong>.</div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi.
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit duis tristique. Diam
+                  vulputate
+                  ut
+                  pharetra sit amet aliquam id diam maecenas. Dictumst quisque sagittis purus sit amet volutpat
+                  consequat
+                  mauris.In fermentum posuere urna nec. </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="Grid Grid--gutters Grid--cols-3 Grid--bottom">
+            <div class="Grid-cell">
+              <div class="Demo">
 
+                <div class="elementInnerDemo">This cell should be <strong>bottom-aligned</strong>.</div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
 
+                <div class="elementInnerDemo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi.
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
 
+                <div class="elementInnerDemo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut
+                  labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit duis tristique. Diam
+                  vulputate
+                  ut
+                  pharetra sit amet aliquam id diam maecenas. Dictumst quisque sagittis purus sit amet volutpat
+                  consequat
+                  mauris.In fermentum posuere urna nec. </div>
+              </div>
+            </div>
+          </div>
+          <div class="element">
+            <h3>HTML Code</h3>
+            <pre>
+              <code>
+                &lt;div class="Grid Grid--gutters Grid--1of2"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="Grid Grid--gutters Grid--1of2 Grid--center"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="Grid Grid--gutters Grid--1of2 Grid--right"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              
+              
+              </code>
+            </pre>
+          </div>
+          <div class="blankHS"></div>
 
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2> <strong class="colorGLORIFYOrange"> Profile</strong> </h2>
+                <h1> <strong class="SkylineBlueLt">Nesting</strong> </h1>
               </div>
             </div>
           </div>
-          <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+          <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of3"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">
+                  <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
+                    <div class="Grid-cell">
+                      <div class="elementInnerDemo content-1of3"></div>
+                    </div>
+                    <div class="Grid-cell">
+                      <div class="elementInnerDemo">
+                        <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
+                          <div class="Grid-cell">
+                            <div class="elementInnerDemo content-1of3"></div>
+                          </div>
+                          <div class="Grid-cell">
+                            <div class="elementInnerDemo">auto</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="element">
+            <h3>HTML Code</h3>
+            <pre>
+              <code> 
+                &lt;div class="Grid Grid--gutters Grid--1of3 Grid--nested"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;
+                  &lt;div class="Grid Grid--gutters Grid--1of3 Grid--nested"&gt;
+                    &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
+                    &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;
+                      &lt;div class="Grid Grid--gutters Grid--1of3 Grid--nested"&gt;
+                        &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
+                        &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              
+              </code>
+            </pre>
+          </div>
+          <div class="blankHS"></div>
+          <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <div class="Grid">
-                  <img class="modal-target" src="Design_wireframe_Felloship.svg" alt="Profile">
-                </div>
+                <h1> <strong class="SkylineBlueLt">Sidebar and main content</strong> </h1>
               </div>
             </div>
           </div>
 
-
-          <div class="TBcarousel Grid--center Grid Grid--full" aria-label="TBcarousel" Tabindex="0"
-            id="TBcarouselGlorify5">
-            <div class="TBslides">
-              <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 2" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell">
-                    <div class="element"> <img class="widthXS cardBorderThick" src="Design_Flow_User_Add.gif"
-                        alt="Delete">
-                    </div>
-                  </div>
-
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_User_Add.png" alt="Add fellowship">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 2" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center u-textCenter">
-                  <div class="Grid-cell">
-                    <div class="element"> <img class="widthXS cardBorderThick" src="Design_Flow_User_Remove.gif"
-                        alt="Delete">
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <div class="Grid">
-                        <img class="modal-target" src="Design_Flow_User_Remove.png" alt="Remove fellowship">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
+          <div class="Grid Grid--gutters Grid--1of6">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of6"></div>
               </div>
             </div>
-            <div class="TBcarouselNav Grid-cell noBg">
-              <a class="TBsliderNav" aria-label="Go to slide 1">
-                <div>Add</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 2">
-                <div>Remove</div>
-              </a>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">auto</div>
+              </div>
             </div>
-
           </div>
+          <div class="Grid Grid--gutters Grid--1of4">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of4"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">auto</div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--1of3">
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo content-1of3"></div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="Demo">
+                <div class="elementInnerDemo">auto</div>
+              </div>
+            </div>
+          </div>
+          <div class="element">
+            <h3>HTML Code</h3>
+            <pre>
+              <code> 
+                &lt;div class="Grid Grid--gutters Grid--1of6"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="Grid Grid--gutters Grid--1of4"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="Grid Grid--gutters Grid--1of3"&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
+                &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              
+              
+              </code>
+            </pre>
+          </div>
+          <div class="blankHS"></div>
         </div>
 
       </section>
-      <div class="blankHS"></div>
-      <section id="content24" class="GreyBg100">
-        <div class="blankHXS"></div>
-
-        <div class="wrapper">
-          <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Wireframe test 1 <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="centerVer">
-                  <img class="iconS" src="IconTest.svg" alt="Design">
-                  <span class="colorGLORIFYOrange"> Test plan - Wireframe Test on Figma </span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <h3 class="accordion accordionBorderTop noMargin withBg"><strong>Define the test plan</strong>
-            </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <div class="Grid Grid--gutters Grid--cols-3">
-
-                <div class="Grid-cell">
-                  <h4> <strong> Test goal </strong> </h4>
-                  <p>
-                    Concentrate on the seamless integration of the entire process, which includes group prayer,
-                    introducing a new fellowship, and interacting with other fellowships.
-                  </p>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Method </strong> </h4>
-                  <p>Moderated tests</p>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Expected outcome</strong> </h4>
-                  <P>Successfully participate in a group prayer, add a new fellowship, and engage in a chat with other
-                    members of the fellowship with an intuitive and user-friendly process.</P>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-
-            <h3 class="accordion noMargin withBg"><strong>Scenarios &#38; tasks</strong></h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <div class="Grid Grid--full">
-                <div class="Grid-cell">
-                  <h4> <strong> Scenarios </strong> </h4>
-                  <p>You are a new user of the Glorify app with a keen interest in group prayers and fellowship. You
-                    want to participate in group prayers, add new fellowships, and chat with members of different
-                    fellowships.</p>
-                </div>
-
-              </div>
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <h4> <strong> Tasks - Participate group prayer </strong> </h4>
-                  <ul>
-                    <li class="listCircle">Open the Figma file containing the wireframes for the Glorify app.</li>
-                    <li class="listCircle">Navigate to the wireframe representing the 'Group Prayer' section within
-                      the app.</li>
-                    <li class="listCircle">Participate in an ongoing group prayer by following along with the prayers
-                      and adding your own prayers as prompted by the app.</li>
-                  </ul>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Tasks - Create a new group prayer</strong> </h4>
-                  <ul>
-                    <li class="listCircle">Open the Figma file containing the wireframes for the Glorify app.</li>
-                    <li class="listCircle">Navigate to the wireframe representing the 'Group Prayer' section within the
-                      app.</li>
-                    <li class="listCircle">Create a new group prayer </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <h4> <strong> Tasks - Send a fellowship request </strong> </h4>
-                  <ul>
-                    <li class="listCircle">Explore available fellowships after group prayer</li>
-                    <li class="listCircle">Add a fellowship that aligns with your interests.</li>
-                    <li class="listCircle">Use the chat feature to start a conversation with members of the newly
-                      joined
-                      fellowship.</li>
-                  </ul>
-                </div>
-                <div class="Grid-cell">
-                  <h4> <strong> Tasks - Accept a fellowship request</strong> </h4>
-                  <ul>
-                    <li class="listCircle">Review a fellowship request including the fellowship profile and message
-                    </li>
-                    <li class="listCircle">Accept the request </li>
-                    <li class="listCircle">Use the chat feature to reply message</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="blankHXS"></div>
-            </div>
-            <h3 class="accordion accordionBorderBottom noMargin withBg"><strong>Measurement &#38; Potential
-                roadblocks</strong>
-            </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
 
 
-              <div class="Grid Grid--full">
-                <div class="Grid-cell">
-                  <h4> <strong> Success Metrics </strong> </h4>
-                  <ul>
-                    <li><strong>User Understanding and Flow Comprehension&#58;</strong> Assess whether users understand
-                      the overall concept and can navigate through the wireframe without confusion. Are the flow and
-                      steps intuitive?</li>
-
-                    <li><strong>Task Success Rate&#58;</strong> Identify how many users are able to successfully
-                      complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.). Any
-                      struggle may indicate that the design needs refinement.</li>
-
-                    <li><strong>Time on Task&#58;</strong> Measure the time taken for users to complete specific tasks.
-                      This can provide insights into the complexity or simplicity of the wireframe.</li>
-                    <li><strong>Error Rate&#58;</strong> Monitor the number of errors or misunderstandings users make
-                      while interacting with the wireframe. Errors can help identify areas for improvement.</li>
-                    <li><strong>User Satisfaction and Feedback&#58;</strong> Collect qualitative feedback from users
-                      regarding their satisfaction with the design, aesthetics, and overall concept. This can be done
-                      through interviews or questionnaires.</li>
-
-                    <li><strong>Clicks to Complete a Task&#58;</strong> Analyzing the number of clicks needed to
-                      complete a task may indicate the efficiency and user-friendliness of the design.</li>
-                  </ul>
-                </div>
-
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-          </div>
-
-
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="centerVer">
-                  <img class="iconS" src="IconIdea.svg" alt="Design">
-                  <span class="colorGLORIFYOrange"> Analyze the testing results </span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <!-- wireframe 1 -->
-
-
-          <div class="element">
-            <div class="Grid Grid--gutters Grid--cols-2">
-
-              <div class="Grid-cell">
-                <div class="element">
-                  <h4 class="help"
-                    title="Measure the time taken for users to complete specific tasks. This can provide insights into the complexity or simplicity of the wireframe.">
-                    <strong> Time on Task &#58; </strong>
-                  </h4>
-                  <h5 class="help" title="The quickest time a user is able to complete a task, assuming no errors.">
-                    Minimum&#58; <strong>34 seconds</strong> </h5>
-                  <h5 class="help" title="Identify potential bottlenecks or areas where users may be getting confused.">
-                    Maximum&#58; <strong>96 seconds</strong> </h5>
-                  <h5 class="help" title="A broader understanding of the typical user experience."> Average&#58;
-                    <strong>66 seconds</strong>
-                  </h5>
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <h4 class="help"
-                    title="Analyzing the number of taps needed to complete a task may indicate the efficiency and user-friendliness of the design">
-                    <strong> Taps to Complete: &#58; </strong>
-                  </h4>
-                  <h5 class="help"
-                    title="The most efficient path through the interface that some users are able to find.">
-                    Minimum&#58; <strong>12 Taps</strong> </h5>
-                  <h5 class="help" title="Identify worst-case scenarios or pain points in the user journey.">
-                    Maximum&#58; <strong>30 Taps</strong> </h5>
-                  <h5 class="help" title="A general sense of how many taps users typically need to complete a task.">
-                    Average&#58; <strong>10 Taps</strong> </h5>
-                </div>
-              </div>
-            </div>
-            <div class="barGraph element">
-              <div>
-                <div class="barGraphText">User Understanding</div>
-                <div class="barGraphText">Task Success Rate</div>
-                <div class="barGraphText">User Satisfaction:</div>
-                <div class="barGraphText">Error Rate:</div>
-              </div>
-              <div class="barGraphInner">
-                <article id="bar_graph">
-                  <div
-                    title="Assess whether users understand the overall concept and can navigate through the wireframe without confusion."
-                    class="help grow90"> 90&#37;+ </div>
-                  <div
-                    title=" Identify how many users are able to successfully complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.)."
-                    class="help grow90"> 90&#37;+ </div>
-                  <div
-                    title="Collect qualitative feedback from users regarding their satisfaction with the design, aesthetics, and overall concept."
-                    class="help grow70"> 70&#37;+ </div>
-                  <div
-                    title="Monitor the number of errors or misunderstandings users make while interacting with the wireframe. "
-                    class="help grow20"> 20&#37;+ </div>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="element">
-            <h3 class="accordion accordionBorderTop noMargin withBg"><strong>Understanding the processes&#58;</strong>
-            </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <div class="Grid Grid--full">
-
-                <div class="Grid-cell">
-                  <p> The majority of testers were able to understand the process of participating in group prayer,
-                    adding a new fellowship, and starting a chat within 2 minutes. They appreciated the clear
-                    annotations and visual cues.
-                  </p>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-
-            <h3 class="accordion noMargin withBg"><strong>Navigating the wireframes&#58;
-              </strong></h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <div class="Grid Grid--full">
-                <div class="Grid-cell">
-                  <p>Testers generally found the wireframes easy to navigate, with a median time of 32 seconds to locate
-                    the 'Group Prayer' and 'Fellowship' sections. Some testers suggested that a table of contents or an
-                    overview map of the wireframes would be helpful.
-                  </p>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-            <h3 class="accordion noMargin withBg"><strong>Interactivity in group prayer&#58;</strong>
-            </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-
-
-              <div class="Grid Grid--full">
-                <div class="Grid-cell">
-                  <p>Testers praised the representation of interactive elements in the group prayer wireframe. Some
-                    recommended more detailed annotations to fully express the real-time nature of reactions and
-                    comments during the group prayer.
-                  </p>
-                </div>
-
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-            <h3 class="accordion accordionBorderBottom noMargin withBg"><strong>Potential roadblocks and
-                solutions&#58;</strong>
-            </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <p><strong>Interactive Features During Waiting Time&#58;</strong> Testers found the wireframes
-                    representing the
-                    creation/joining process of a group prayer quite intuitive. The median time to understand the
-                    process was 1 minute and 45 seconds. <span class="textDecor GLORIFY">It seems users would appreciate
-                      more
-                      engagement while waiting for the group prayer to start</span>. One solution could be to introduce
-                    interactive elements such as trivia questions about the Bible, thought-provoking quotes, or serene
-                    religious imagery. This could <span class="textDecor GLORIFY">keep users engaged and occupied during
-                      the waiting time.</span> </p>
-                </div>
-                <div class="Grid-cell">
-                  <p><strong>Chatting with Fellowship Members Post-Prayer&#58;</strong>The chat function was favorably
-                    received, with testers finding it easy to comprehend from the wireframes. The average time taken to
-                    understand the process was 1 minute and 15 seconds. Some testers suggested that <span
-                      class="textDecor GLORIFY">chat or fellowship requests should be approved before initiating a
-                      conversation</span> . Additionally, implementing push notifications for new chat messages was
-                    proposed to ensure users don't miss any ongoing discussions.
-                  </p>
-                </div>
-              </div>
-
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <p><strong>Joining an Existing Group Prayer&#58;</strong> To facilitate the process of <span
-                      class="textDecor GLORIFY">finding and joining suitable groups</span>, introduce a search function
-                    or filtering options. These could include filters for group size, frequency of meetings, focus of
-                    prayers, or even a filter for groups that users have bookmarked or saved.</p>
-                </div>
-                <div class="Grid-cell">
-                  <p><strong>Adding New Fellowships after Group Prayer&#58;</strong> The process of exploring and adding
-                    new fellowships after group prayer was clear to most testers, but they expressed a <span
-                      class="textDecor GLORIFY">desire to connect with others during this process</span>. It may be
-                    beneficial to make the 'Add Fellowship' feature more flexible, allowing it to be used at any time
-                    during group prayer.</p>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-            </div>
-
-          </div>
-
-
-
-
-        </div>
-        <div class="blankHS"></div>
-
-      </section>
     </section>
 
     <section id="content3">

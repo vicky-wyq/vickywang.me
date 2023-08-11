@@ -6,93 +6,7 @@ html {
     height: var(--height100);
 }
 
-/* ===== code copy to clipboard ====== */
-/* Style for the container of the code */
-pre {
-    height: 12em;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* To ensure the button doesn't overflow */
-    position: relative;
-    background: var(--Grey200);
-    /* A dark background for code readability */
-    color: var(--Grey700);
-    /* Light text for better contrast against dark background */
-    border-radius: 6px;
-    /* A subtle rounded corner */
-    overflow: hidden;
-    /* Ensure nothing spills out of our box */
-    font-size: clamp(0.68em, 0.78vw, 0.86em);
-    border: 1px solid var(--Grey300);
-}
 
-/* Style for the code */
-pre code {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: block;
-    /* To ensure the button doesn't interfere with code lines */
-    white-space: pre;
-    /* Ensure code's white space (like indentation) is respected */
-    height: 100%;
-
-    /* Full height of the parent */
-    overflow-y: auto;
-    /* Allow vertical scroll */
-    scrollbar-width: thin;
-    /* Makes the scrollbar slimmer */
-    scrollbar-color: var(--Grey700) var(--Grey300);
-    /* Scrollbar styling (color, in this case) */
-}
-
-/* Scrollbar styles for WebKit browsers */
-pre code::-webkit-scrollbar {
-    width: 8px;
-}
-
-pre code::-webkit-scrollbar-thumb {
-    background-color: var(--white);
-    border-radius: 4px;
-}
-
-pre code::-webkit-scrollbar-thumb:hover {
-    background-color: var(--colorTealDk);
-    border-radius: 4px;
-}
-
-pre code::-webkit-scrollbar-track {
-    background-color: var(--Grey500);
-}
-
-/* Style for the copy button */
-pre button {
-    position: absolute;
-    top: 8px;
-    right: 18px;
-    background-color: var(--Grey900);
-    /* Blue background color */
-    color: var(--white);
-    /* White text */
-    border: none;
-    /* No border */
-    border-radius: 3px;
-    /* A subtle rounded corner for the button */
-    padding: 5px 10px;
-    cursor: pointer;
-    /* The hand icon on hover, suggesting an action */
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-    /* A fade transition effect on hover */
-}
-
-pre button:hover {
-    background-color: var(--colorTealDk);
-    /* A slightly darker blue for the hover effect */
-}
-
-/* ===== code copy to clipboard ====== */
 .help:hover {
     cursor: help;
 }
@@ -150,7 +64,7 @@ pre button:hover {
     /* 368661 projects 296448*/
     --colorTealLtr: #e6f6f6;
     --colorTealLtest: #faffff;
-    --colorWarm: #fcf5eb;
+    --Warm: #fcf5eb;
 
 
 
@@ -272,72 +186,113 @@ body {
 .Grey100 {
     color: var(--Grey100);
 }
-/* color grey */
+
+/* ===== color grey ===== */
 /* ===== bg color grey ===== */
 
 .GreyBg900 {
     background: var(--Grey900);
 }
+
 .GreyBg800 {
     background: var(--Grey800);
 }
+
 .GreyBg700 {
     background: var(--Grey700);
 }
+
 .GreyBg600 {
     background: var(--Grey600);
 }
+
 .GreyBg500 {
     background: var(--Grey500);
 }
+
 .GreyBg400 {
     background: var(--Grey400);
 }
+
 .GreyBg300 {
     background: var(--Grey300);
 }
+
 .GreyBg200 {
     background: var(--Grey200);
 }
+
 .GreyBg100 {
     background: var(--Grey100);
 }
+
 .WhiteBg {
     background-color: var(--white);
 
 }
+
 .WhiteBgTrans {
     background-color: var(--White-transparent);
 }
+
 /* ===== bg color grey ===== */
 
 
-.colorWarm {
-    background-color: var(--colorWarm);
+/* ===== color vickywang.me ===== */
+
+.Warm {
+    color: var(--Warm);
 }
 
 .SkylineBlue {
-    background-color: var(--colorTealDk);
+    color: var(--colorTealDk);
 }
 
 .SkylineBlueLt {
-    background-color: var(--colorTealLt);
+    color: var(--colorTealLt);
 }
 
 .SkylineBlueLter {
-    background-color: var(--colorTealLtr);
+    color: var(--colorTealLtr);
 }
 
 .SkylineBlueLtest {
+    color: var(--colorTealLtest);
+}
+
+.BgAlet {
+    color: var(--alert);
+
+}
+
+/* ===== color vickywang.me ===== */
+/* ===== bg color vickywang.me ===== */
+.BgWarm {
+    background-color: var(--Warm);
+}
+
+.BgSkylineBlue {
+    background-color: var(--colorTealDk);
+}
+
+.BgSkylineBlueLt {
+    background-color: var(--colorTealLt);
+}
+
+.BgSkylineBlueLter {
+    background-color: var(--colorTealLtr);
+}
+
+.BgSkylineBlueLtest {
     background-color: var(--colorTealLtest);
 }
 
-.colorAlet {
+.BgAlet {
     background-color: var(--alert);
     color: var(--Grey200);
-
 }
 
+/* ===== bg color vickywang.me ===== */
 /* color and shadow*/
 
 .colorGH {
@@ -1080,6 +1035,7 @@ section {
     color: #676767;
     background: #a9d25a;
 }
+
 /* bar graph */
 
 @keyframes grow0 {
@@ -2373,8 +2329,8 @@ button.passwordArr {
     padding: 0.8em 1em 0;
     margin-bottom: 1em;
     border-radius: 6px;
-    border: 0.01em solid var(--colorWarm);
-    background: var(--colorWarm);
+    border: 0.01em solid var(--Warm);
+    background: var(--Warm);
     transition: background-color 0.3s ease;
 }
 
@@ -2406,7 +2362,7 @@ button.passwordArr {
     /*     border: 0.06em solid var(--GLORIFY-orange); */
 
     color: var(--colorTealDk);
-    background: var(--colorWarm);
+    background: var(--Warm);
     transition: background-color 0.3s ease;
 }
 
@@ -4609,7 +4565,7 @@ body .flex-container.Mobile {
     border-radius: 2em;
     font-size: 12px;
     width: min-content;
-    background-color: var(--colorWarm);
+    background-color: var(--Warm);
 }
 
 
@@ -5718,3 +5674,93 @@ button {
 
 
 /* back to top btn */
+
+
+
+/* ===== code copy to clipboard ====== */
+/* Style for the container of the code */
+pre {
+    height: 12em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* To ensure the button doesn't overflow */
+    position: relative;
+    background: var(--Grey200);
+    /* A dark background for code readability */
+    color: var(--Grey700);
+    /* Light text for better contrast against dark background */
+    border-radius: 6px;
+    /* A subtle rounded corner */
+    overflow: hidden;
+    /* Ensure nothing spills out of our box */
+    font-size: clamp(0.68em, 0.78vw, 0.86em);
+    border: 1px solid var(--Grey300);
+}
+
+/* Style for the code */
+pre code {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: block;
+    /* To ensure the button doesn't interfere with code lines */
+    white-space: pre;
+    /* Ensure code's white space (like indentation) is respected */
+    height: 100%;
+
+    /* Full height of the parent */
+    overflow-y: auto;
+    /* Allow vertical scroll */
+    scrollbar-width: thin;
+    /* Makes the scrollbar slimmer */
+    scrollbar-color: var(--Grey700) var(--Grey300);
+    /* Scrollbar styling (color, in this case) */
+}
+
+/* Scrollbar styles for WebKit browsers */
+pre code::-webkit-scrollbar {
+    width: 8px;
+}
+
+pre code::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+pre code::-webkit-scrollbar-thumb:hover {
+    background-color: var(--colorTealDk);
+    border-radius: 4px;
+}
+
+pre code::-webkit-scrollbar-track {
+    background-color: var(--Grey500);
+}
+
+/* Style for the copy button */
+pre button {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    background-color: var(--Grey900);
+    /* Blue background color */
+    color: var(--white);
+    /* White text */
+    border: none;
+    /* No border */
+    border-radius: 3px;
+    /* A subtle rounded corner for the button */
+    padding: 5px 10px;
+    cursor: pointer;
+    /* The hand icon on hover, suggesting an action */
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    /* A fade transition effect on hover */
+}
+
+pre button:hover {
+    background-color: var(--colorTealDk);
+    /* A slightly darker blue for the hover effect */
+}
+
+/* ===== code copy to clipboard ====== */
