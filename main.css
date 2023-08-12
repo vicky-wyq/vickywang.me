@@ -5692,7 +5692,7 @@ button {
 /* ===== code copy to clipboard ====== */
 /* Style for the container of the code */
 pre {
-    height: 12em;
+    height: 16em;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -5780,7 +5780,7 @@ Pre .codeTiltle {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: var(--Grey300);
+    background: var(--Grey200);
     padding: 15px;
     width: 100%;
 }
