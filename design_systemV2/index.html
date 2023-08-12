@@ -32,7 +32,6 @@
   <script type="text/javascript" src="../scripts.js"></script>
   <script type="text/javascript" src="../scripts_project.js"></script>
 
-
   <link type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js">
   </link>
 
@@ -136,6 +135,7 @@
 </head>
 
 <body>
+
   <!--progressBarScroll-->
   <div class="progressContainer">
     <div class="progress-container">
@@ -380,25 +380,27 @@
 
       <section id="content11">
         <div class="wrapper">
+
+
+          <div class="blankHXS"></div>
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1> <strong class="SkylineBlueLt">Color Guidance</strong> </h1>
+              </div>
+            </div>
+          </div>
           <!-- Arrow -->
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Color Guidance <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                <h2 class="tArrow"> Tonal Palettes <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
                 </h2>
               </div>
             </div>
           </div>
           <!-- Arrow -->
 
-          <div class="blankHXS"></div>
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt">Tonal Palettes</strong> </h1>
-              </div>
-            </div>
-          </div>
 
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
@@ -493,8 +495,92 @@
             </div>
           </div>
           <div class="element">
-            <h3>CSS Code</h3>
+            <div class="tabs">
+              <button class="tab-button active" onclick="showTab('tab1')">HTML</button>
+              <button class="tab-button" onclick="showTab('tab2')">CSS</button>
+              <button class="tab-button" onclick="showTab('tab3')">JavaScript</button>
+            </div>
+
+            <div class="tab-content active" id="tab1">
+              <pre>
+                <code>
+                  :root {
+                    --height100: 100%;
+                
+                    --img-APPOINT: url('./image/Cover_APPOINTA.jpg');
+                    --img-SEER: url('./image/Cover_SEER.jpg');
+                    --img-WS: url('./image/Cover_worksample.png');
+                    --img-DS: url('./image/Cover_portfolioWeb.png');
+                
+                    /* Color */
+                    --white: #ffffff;
+                    --alert: #CC3300;
+                    --alert--pink: #EB5757;
+                    --Highlight: rgba(255, 242, 0, 0.3);
+                    --Grey900: #1b1b1b;
+                    /*292929 2c2c2c #161616*/
+                
+                    --Grey800: #505050;
+                    /* 5f6368 4f4f4f*/
+                
+                    --Grey700: #707070;
+                
+                    /* #505050 83878a 787878  757575*/
+                
+                    --Grey600: #a5a5a5;
+                
+                    /* #909090, 999D9F, 8e8787 a7a7a7*/
+                
+                    --Grey500: #cacaca;
+                
+                    /* #c8c8c8 e0e0e0*/
+                
+                    --Grey400: #e6e6e6;
+                    /* e4e4e4; e6e6e6*/
+                
+                    --Grey300: #efefef;
+                    /* efefef, f2f2f2*/
+                
+                    --Grey200: #f2f2f2;
+                    /* F8F8F8, f2f2f2*/
+                
+                    --Grey100: #fafafa;
+                
+                    /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
+                    --colorTealDk: #8fbfbf;
+                    --colorTealLt: #AAD9D9;
+                    /*never change    AAD9D9*/
+                    /* 368661 projects 296448*/
+                    --colorTealLtr: #e6f6f6;
+                    --colorTealLtest: #faffff;
+                    --colorWarm: #fcf5eb;
+                
+                
+                
+                    --AMBlue: #5384ED;
+                
+
+                    
+                
+                
+                }
+                </code>
+              </pre>
+            </div>
+            <div class="tab-content" id="tab2">Content for Tab 2</div>
+            <div class="tab-content" id="tab3">Content for Tab 3</div>
+
+          </div>
+
+
+
+
+
+          <div class="element">
+
             <pre>
+              <div class="codeTiltle">CSS Code</div>
+
               <code> 
                 /* ===== color grey ===== */
                   .Grey900 {
@@ -565,14 +651,17 @@
           </div>
 
           <div class="blankHS"></div>
+
+          <!-- Arrow -->
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Action &#38; Error</strong> </h1>
+                <h2 class="tArrow"> Action &#38; Error <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                </h2>
               </div>
             </div>
           </div>
-
+          <!-- Arrow -->
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
@@ -627,8 +716,9 @@
           </div>
           <!-- Color -->
           <div class="element">
-            <h3>CSS Code</h3>
             <pre>
+              <div class="codeTiltle">CSS Code</div>
+
               <code> 
                 /* ===== color vickywang.me ===== */
 
@@ -685,7 +775,8 @@
                 }
                 
                 /* ===== bg color vickywang.me ===== */
-              </code></pre>
+              </code>
+            </pre>
           </div>
 
         </div>
@@ -695,40 +786,45 @@
       </section>
       <section id="content12">
         <div class="wrapper">
+
+
+          <div class="blankHXS"></div>
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1> <strong class="SkylineBlueLt"> Typography </strong> </h1>
+              </div>
+            </div>
+          </div>
           <!-- Arrow -->
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Typography <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                <h2 class="tArrow">Font family <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
                 </h2>
               </div>
             </div>
           </div>
           <!-- Arrow -->
-          <div class="blankHXS"></div>
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Font family</strong> </h1>
+                <p class="specialTextS Grey500">Lato</p>
               </div>
             </div>
           </div>
+          <!-- Arrow -->
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h2 class="tArrow">Font size &#38; Weight <img class="seArrow" src="../icon/arrow-se.svg"
+                    alt="icon arrow">
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Arrow -->
 
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <p class="specialTextS">Lato</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Font size &#38; Weight</strong> </h1>
-              </div>
-            </div>
-          </div>
           <div class="element">
             <h3 class="accordion accordionBorderTop noMargin withBg"><strong>Display</strong> </h3>
             <div class="accordion-content">
@@ -803,21 +899,21 @@
       <section id="content13">
 
         <div class="wrapper">
-          <!-- Arrow -->
-          <div class="element">
-            <h2 class="tArrow">Elevation<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
-          </div>
-          <!-- Arrow -->
+
 
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Shadow &#38; depth</strong> </h1>
+                <h1> <strong class="SkylineBlueLt"> Elevation </strong> </h1>
               </div>
             </div>
           </div>
-
+          <!-- Arrow -->
+          <div class="element">
+            <h2 class="tArrow">Shadow &#38; depth <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+            </h2>
+          </div>
+          <!-- Arrow -->
           <div class="blankHXS"></div>
           <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
             <div class="Grid-cell">
@@ -874,24 +970,24 @@
       <div class="blankHXS"></div>
       <section id="content21">
         <div class="wrapper">
+
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1> <strong class="SkylineBlueLt">Layout</strong> </h1>
+              </div>
+            </div>
+          </div>
           <!-- Arrow -->
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Layout <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                <h2 class="tArrow">Devices <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
                 </h2>
               </div>
             </div>
           </div>
           <!-- Arrow -->
-          <div class="Grid Grid--full">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Devices</strong> </h1>
-              </div>
-            </div>
-          </div>
-
           <div class="blankHXS"></div>
           <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
             <div class="Grid-cell">
@@ -921,13 +1017,19 @@
               </div>
             </div>
           </div>
+          <div class="blankHXS"></div>
+
+          <!-- Arrow -->
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Break Points</strong> </h1>
+                <h2 class="tArrow">Break Points <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                </h2>
               </div>
             </div>
           </div>
+          <!-- Arrow -->
+
           <div class="blankHXS"></div>
           <div class="Grid Grid--full u-textCenter">
             <div class="element">
@@ -1586,12 +1688,15 @@
             <h3>HTML Code</h3>
             <pre>
               <code>
-                &lt;a&gt; &lt;button class="buttonLanding"&gt;Button
-                    &amp;nbsp; &lt;/button&gt;&lt;/a&gt;
+                &lt;!-- Large button --&gt;
+                &lt;a&gt; &lt;button class="buttonLanding"&gt;Button &amp;nbsp; &lt;/button&gt;&lt;/a&gt;
+                &lt;a&gt; &lt;button class="buttonLanding arrButton"&gt;Button &amp;nbsp;&lt;/button&gt;&lt;/a&gt;
+                &lt;!-- Large button --&gt;
+
+                &lt;!-- Small button --&gt;
                 &lt;a&gt; &lt;button class="button-35 DS"&gt;Button&lt;/button&gt;&lt;/a&gt;
-                &lt;a&gt; &lt;button class="buttonLanding arrButton"&gt;Button &amp;nbsp;
-                  &lt;/button&gt;&lt;/a&gt;
-                </code>
+                &lt;!-- Small button --&gt;
+              </code>
                 
             </pre>
           </div>
@@ -1899,23 +2004,26 @@
           <div class="element">
             <h3 class="accordion accordionBorderTop noMargin "><strong>Title</strong> </h3>
             <div class="accordion-content">
-              <div class="Grid Grid--full">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.</h4>
-              </div>
+              <div class="blankHXS"></div>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</h4>
               <div class="blankHXS"></div>
             </div>
 
             <h3 class="accordion noMargin "><strong>Title</strong> </h3>
             <div class="accordion-content">
+              <div class="blankHXS"></div>
+
               <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.</h4>
               <div class="blankHXS"></div>
             </div>
             <h3 class="accordion accordionBorderBottom noMargin "><strong>Title</strong> </h3>
+
             <div class="accordion-content">
+              <div class="blankHXS"></div>
               <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.</h4>
@@ -1930,6 +2038,8 @@
             <div class="element">
               <h3 class="accordion accordionBorderTop noMargin withBg"><strong>Title</strong> </h3>
               <div class="accordion-content">
+                <div class="blankHXS"></div>
+
                 <div class="Grid Grid--full">
                   <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -1940,6 +2050,8 @@
 
               <h3 class="accordion noMargin withBg"><strong>Title</strong> </h3>
               <div class="accordion-content">
+                <div class="blankHXS"></div>
+
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                   labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.</h4>
@@ -1947,6 +2059,8 @@
               </div>
               <h3 class="accordion accordionBorderBottom noMargin withBg"><strong>Title</strong> </h3>
               <div class="accordion-content">
+                <div class="blankHXS"></div>
+
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                   labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.</h4>
@@ -1957,17 +2071,165 @@
           <div class="blankHXS"></div>
 
         </div>
+        <div class="blankHM"></div>
 
         <div class="wrapper">
           <div class="Grid Grid--full">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Slideshow</strong> </h1>
+                <h1> <strong class="SkylineBlueLt">Slideshows</strong> </h1>
               </div>
             </div>
           </div>
         </div>
         <div class="blankHS"></div>
+
+        <div class="BgSkylineBlueLter">
+          <div class="blankHXS"></div>
+          <div class="wrapper">
+            <div class="Grid-cell">
+              <h2 class="element">Horizontal layout with background color</h2>
+            </div>
+          </div>
+          <div class="wrapper LRcarousel Grid Grid--gutters Grid--1of4 Grid--center u-textCenter"
+            aria-label="LRcarousel" Tabindex="0" id="carousel1">
+            <div class="carousel__nav Grid-cell">
+              <a class="slider-nav" aria-label="Go to slide 1">
+                <div>Lorem ipsum</div>
+              </a>
+              <a class="slider-nav" aria-label="Go to slide 2">
+                <div>Lorem ipsum</div>
+              </a>
+              <a class="slider-nav" aria-label="Go to slide 3">
+                <div>Lorem ipsum</div>
+              </a>
+            </div>
+            <div class="LRslides Grid-cell">
+              <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
+                <img src="../Placeholder.svg" alt="">
+              </div>
+              <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
+                <img src="../Placeholder.svg" alt="">
+
+              </div>
+              <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
+                <img src="../Placeholder.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="blankHXS"></div>
+        </div>
+        <div class="WhiteBg">
+          <div class="blankHXS"></div>
+          <div class="wrapper">
+            <div class="Grid-cell">
+              <h2 class="element">Horizontal layout without background color</h2>
+            </div>
+          </div>
+
+          <div class="wrapper LRcarousel Grid Grid--gutters Grid--1of4 Grid--center u-textCenter"
+            aria-label="LRcarousel" Tabindex="0" id="carousel2">
+            <div class="carousel__nav noBg Grid-cell">
+              <a class="slider-nav" aria-label="Go to slide 1">
+                <div>Lorem ipsum</div>
+              </a>
+              <a class="slider-nav" aria-label="Go to slide 2">
+                <div>Lorem ipsum</div>
+              </a>
+              <a class="slider-nav" aria-label="Go to slide 3">
+                <div>Lorem ipsum</div>
+              </a>
+            </div>
+            <div class="LRslides Grid-cell">
+              <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
+                <img src="../PlaceholderDark.svg" alt="">
+              </div>
+              <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
+                <img src="../PlaceholderDark.svg" alt="">
+
+              </div>
+              <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
+                <img src="../PlaceholderDark.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="blankHXS"></div>
+        </div>
+        <div class="blankHM"></div>
+        <div class="BgSkylineBlueLter">
+          <div class="blankHXS"></div>
+          <div class="wrapper">
+            <div class="Grid-cell">
+              <h2 class="element">Vertical layout with background color</h2>
+            </div>
+          </div>
+          <div class="wrapper TBcarousel Grid--center Grid Grid--full u-textCenter" aria-label="TBcarousel" Tabindex="0"
+            id="TBcarousel1">
+            <div class="TBslides">
+              <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
+                <img src="../Placeholder.svg" alt="">
+              </div>
+              <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"> <img
+                  src="../Placeholder.svg" alt="">
+              </div>
+              <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"> <img
+                  src="../Placeholder.svg" alt="">
+              </div>
+            </div>
+            <div class="TBcarouselNav Grid-cell">
+              <a class="TBsliderNav" aria-label="Go to slide 1">
+                <div>Lorem ipsum</div>
+              </a>
+              <a class="TBsliderNav" aria-label="Go to slide 2">
+                <div>Lorem ipsum</div>
+              </a>
+              <a class="TBsliderNav" aria-label="Go to slide 3">
+                <div>Lorem ipsum</div>
+              </a>
+            </div>
+            <div class="blankHS"></div>
+          </div>
+          <div class="blankHXS"></div>
+        </div>
+
+
+
+        <div class="WhiteBg">
+          <div class="blankHXS"></div>
+          <div class="wrapper">
+            <div class="Grid-cell">
+              <h2 class="element">Vertical layout without background color</h2>
+            </div>
+          </div>
+
+          <div class="wrapper TBcarousel Grid--center Grid Grid--full u-textCenter" aria-label="TBcarousel" Tabindex="0"
+            id="TBcarousel2">
+            <div class="TBslides">
+              <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
+                <img src="../PlaceholderDark.svg" alt="">
+              </div>
+              <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"> <img
+                  src="../PlaceholderDark.svg" alt="">
+              </div>
+              <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"> <img
+                  src="../PlaceholderDark.svg" alt="">
+              </div>
+            </div>
+            <div class="TBcarouselNav Grid-cell noBg">
+              <a class="TBsliderNav" aria-label="Go to slide 1">
+                <div>Lorem ipsum</div>
+              </a>
+              <a class="TBsliderNav" aria-label="Go to slide 2">
+                <div>Lorem ipsum</div>
+              </a>
+              <a class="TBsliderNav" aria-label="Go to slide 3">
+                <div>Lorem ipsum</div>
+              </a>
+            </div>
+            <div class="blankHS"></div>
+          </div>
+          <div class="blankHXS"></div>
+        </div>
 
 
       </section>

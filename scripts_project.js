@@ -246,6 +246,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+function showTab(tabId) {
+  // Get all content divs and hide them
+  let contents = document.querySelectorAll('.tab-content');
+  for(let content of contents) {
+      content.classList.remove('active');
+  }
+
+  // Get all tab buttons and deactivate them
+  let buttons = document.querySelectorAll('.tab-button');
+  for(let button of buttons) {
+      button.classList.remove('active');
+  }
+
+  // Show the clicked tab content and activate the button
+  document.getElementById(tabId).classList.add('active');
+  let activeButton = Array.from(buttons).find(button => button.getAttribute('onclick') === `showTab('${tabId}')`);
+  activeButton.classList.add('active');
+}
+
+//Tabs
 
 
 });
