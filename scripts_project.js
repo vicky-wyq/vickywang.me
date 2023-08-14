@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
-
-
   const copyButtonLabel = "Copy Code";
 
   // use a class selector if available
