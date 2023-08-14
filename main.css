@@ -5692,7 +5692,7 @@ button {
 /* ===== code copy to clipboard ====== */
 /* Style for the container of the code */
 pre {
-    height: 16em;
+    height: 15em;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -5786,41 +5786,3 @@ Pre .codeTiltle {
 }
 
 /* ===== code copy to clipboard ====== */
-/* ===== Tab ====== */
-
-.tabs {
-    display: flex;
-    border-bottom: 1px solid #ddd;
-}
-
-.tab-button {
-    font-size: 12px;
-    padding: 8px 16px;
-    cursor: pointer;
-    border: none;
-    background-color: var(--Grey100);
-    border-bottom: 2px solid transparent;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.tab-button:hover {
-    background-color: #e0e0e0;
-}
-
-.tab-button.active {
-    background-color: var(--Grey100);
-
-    border-bottom-color: var(--Grey900);
-}
-
-.tab-content {
-    display: none;
-    border: 1px solid #ddd;
-    border-top: none;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-/* ===== Tab ====== */
