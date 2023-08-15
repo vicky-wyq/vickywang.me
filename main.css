@@ -5784,6 +5784,39 @@ Pre .codeTiltle {
     background: var(--Grey200);
     padding: 15px;
     width: 100%;
+    font-size: 16px;
 }
 
 /* ===== code copy to clipboard ====== */
+
+/* ===== text copy to clipboard ====== */
+button.Clipboard {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 1.3rem 2.6rem;
+    background: var(--colorTealLtest);
+    border: 1px var(--colorTealLt);
+    border-style: dashed;
+    color: #093824;
+    transition: 200ms;
+}
+
+button.Clipboard:hover {
+    /* filter: brightness(1.05); */
+    transform: translateY(-5px);
+    box-shadow: 0px 30px 200px rgba(255, 255, 255, 0.7);
+}
+button.Clipboard:focus {
+    outline: 6px solid var(--colorTealLtr);
+}
+button.Clipboard:active {
+    transform: skew(-2deg) rotate(2deg);
+}
+.copied {
+    position: absolute;
+    top: 80vh;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+    color: violet;
+  }
+/* ===== text copy to clipboard ====== */
