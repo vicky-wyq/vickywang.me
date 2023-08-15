@@ -1,65 +1,123 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
+
+
+  function copyTargetText(e, callback) {
+    var textToCopy = e.target.innerText;
+    
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(textToCopy).then(function() {
+        callback(null);
+      }, function(err) {
+        callback(err);
+      });
+    } else {
+      try {
+        var textArea = document.createElement("textarea");
+        textArea.value = textToCopy;
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        
+        var successful = document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        if (!successful) throw new Error("Failed to copy");
+        callback(null);
+      } catch (err) {
+        callback(err);
+      }
+    }
+}
+
+document.querySelector("button").addEventListener("click", function(e) {
+    e.preventDefault();
+    
+    copyTargetText(e, function(err) {
+      if (err) {
+        console.error("Failed to copy: ", err);
+        return;
+      }
+      
+      var copyAlert = document.createElement("div");  // Creating a div instead of span
+      copyAlert.className = "copied";  // Assigning the class "copied" to the div
+      copyAlert.innerText =  'Copied to Clipboard';
+      document.body.appendChild(copyAlert);
+
+      setTimeout(function() {
+        document.body.removeChild(copyAlert);
+      }, 1500);
+    });
+});
+
+  
+
+
+
+  //copy Clipboard
+
+
   const copyButtonLabel = "Copy Code";
 
   // use a class selector if available
   let blocks = document.querySelectorAll("pre");
-  
+
   blocks.forEach((block) => {
     // only add button if browser supports Clipboard API
     if (navigator.clipboard) {
       let button = document.createElement("button");
-  
+
       button.innerText = copyButtonLabel;
       block.appendChild(button);
-  
+
       button.addEventListener("click", async () => {
         await copyCode(block, button);
       });
     }
   });
-  
+
   async function copyCode(block, button) {
     let code = block.querySelector("code");
     let text = code.innerText;
-  
+
     await navigator.clipboard.writeText(text);
-  
+
     // visual feedback that task is completed
     button.innerText = "Code Copied";
-  
+
     setTimeout(() => {
       button.innerText = copyButtonLabel;
     }, 700);
   }
-  
+  //copy code
+
 
 
   const gifImages = document.querySelectorAll('.gif-toggle');
 
   gifImages.forEach(gifImage => {
-      let isPlaying = false;  // Initially, the GIF is not playing
-  
-      gifImage.addEventListener('mouseover', function() {
-          this.src = this.dataset.gif;
-      });
-  
-      gifImage.addEventListener('mouseout', function() {
-          this.src = this.dataset.static;
-      });
-  
-      // Handling touch devices
-      gifImage.addEventListener('touchend', function() {
-          if (isPlaying) {
-              this.src = this.dataset.static;
-          } else {
-              this.src = this.dataset.gif;
-          }
-          isPlaying = !isPlaying;
-      });
+    let isPlaying = false;  // Initially, the GIF is not playing
+
+    gifImage.addEventListener('mouseover', function () {
+      this.src = this.dataset.gif;
+    });
+
+    gifImage.addEventListener('mouseout', function () {
+      this.src = this.dataset.static;
+    });
+
+    // Handling touch devices
+    gifImage.addEventListener('touchend', function () {
+      if (isPlaying) {
+        this.src = this.dataset.static;
+      } else {
+        this.src = this.dataset.gif;
+      }
+      isPlaying = !isPlaying;
+    });
   });
   //gif hover/tap to play
-  
+
   // Modal Setup
   var modal = document.getElementById('modal');
   var modalClose = document.getElementById('modal-close');
@@ -123,124 +181,124 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Scroll add/remove classes ends
 
- // TBcarousel Starts
-(function () {
-  function initCarousel(carouselSelector) {
-    let activeIndex = 0;
+  // TBcarousel Starts
+  (function () {
+    function initCarousel(carouselSelector) {
+      let activeIndex = 0;
 
-    function updateActiveSlide(carousel) {
-      const slides = carousel.querySelectorAll('.TBslidesItem');
-      const navLinks = carousel.querySelectorAll('.TBsliderNav');
-      const slidesContainer = carousel.querySelector('.TBslides');
-      activeIndex = Math.round(slidesContainer.scrollLeft / slidesContainer.clientWidth);
+      function updateActiveSlide(carousel) {
+        const slides = carousel.querySelectorAll('.TBslidesItem');
+        const navLinks = carousel.querySelectorAll('.TBsliderNav');
+        const slidesContainer = carousel.querySelector('.TBslides');
+        activeIndex = Math.round(slidesContainer.scrollLeft / slidesContainer.clientWidth);
 
-      navLinks.forEach((navLink, index) => {
-        if (index === activeIndex) {
-          navLink.classList.add('active');
-        } else {
-          navLink.classList.remove('active');
-        }
+        navLinks.forEach((navLink, index) => {
+          if (index === activeIndex) {
+            navLink.classList.add('active');
+          } else {
+            navLink.classList.remove('active');
+          }
+        });
+      }
+
+      function scrollToSlide(slideIndex, carousel) {
+        const slidesContainer = carousel.querySelector('.TBslides');
+        slidesContainer.scrollTo({
+          left: slideIndex * slidesContainer.clientWidth,
+          behavior: 'smooth',
+        });
+      }
+
+      const carousels = document.querySelectorAll(carouselSelector);
+      carousels.forEach(carousel => {
+        // If the carousel doesn't exist, skip this iteration
+        if (!carousel) return;
+
+        const navLinks = carousel.querySelectorAll('.TBsliderNav');
+        navLinks.forEach((navLink, index) => {
+          navLink.addEventListener('mouseenter', () => {
+            scrollToSlide(index, carousel);
+            updateActiveSlide(carousel);
+          });
+        });
+
+        carousel.querySelector('.TBslides').addEventListener('scroll', () => updateActiveSlide(carousel));
+
+        updateActiveSlide(carousel);
       });
     }
 
-    function scrollToSlide(slideIndex, carousel) {
-      const slidesContainer = carousel.querySelector('.TBslides');
-      slidesContainer.scrollTo({
-        left: slideIndex * slidesContainer.clientWidth,
-        behavior: 'smooth',
-      });
-    }
+    // Usage
+    initCarousel('#TBcarousel1');
+    initCarousel('#TBcarousel2');
+    initCarousel('#TBcarouselGlorify1');
+    initCarousel('#TBcarouselGlorify2');
+    initCarousel('#TBcarouselGlorify3');
+    initCarousel('#TBcarouselGlorify4');
+    initCarousel('#TBcarouselGlorify5');
+    initCarousel('#TBcarouselGlorify6');
+    initCarousel('#TBcarouselGlorify7');
+    initCarousel('#TBcarouselGlorify8');
+    initCarousel('#TBcarouselGlorify9');
+  })();
+  // TBcarousel Ends
 
-    const carousels = document.querySelectorAll(carouselSelector);
-    carousels.forEach(carousel => {
-      // If the carousel doesn't exist, skip this iteration
-      if (!carousel) return;
 
-      const navLinks = carousel.querySelectorAll('.TBsliderNav');
+
+
+  // LRCarousel starts
+  (function () {
+    function initLRcarousel(carouselId) {
+      const carousel = document.querySelector(`#${carouselId}`);
+
+      // If the carousel doesn't exist, stop here.
+      if (!carousel) {
+        return;
+      }
+
+      let activeIndex = 0;
+
+      function updateActiveSlide() {
+        const slides = carousel.querySelectorAll('.slides-item');
+        const navLinks = carousel.querySelectorAll('.slider-nav');
+        const slidesContainer = carousel.querySelector('.LRslides');
+        activeIndex = Math.round(slidesContainer.scrollTop / slidesContainer.clientHeight);
+
+        navLinks.forEach((navLink, index) => {
+          if (index === activeIndex) {
+            navLink.classList.add('active');
+          } else {
+            navLink.classList.remove('active');
+          }
+        });
+      }
+
+      function scrollToSlide(slideIndex) {
+        const slidesContainer = carousel.querySelector('.LRslides');
+        slidesContainer.scrollTo({
+          top: slideIndex * slidesContainer.clientHeight,
+          behavior: 'smooth',
+        });
+      }
+
+      const navLinks = carousel.querySelectorAll('.slider-nav');
       navLinks.forEach((navLink, index) => {
         navLink.addEventListener('mouseenter', () => {
-          scrollToSlide(index, carousel);
-          updateActiveSlide(carousel);
+          scrollToSlide(index);
+          updateActiveSlide();
         });
       });
 
-      carousel.querySelector('.TBslides').addEventListener('scroll', () => updateActiveSlide(carousel));
+      carousel.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide);
 
-      updateActiveSlide(carousel);
-    });
-  }
-
-  // Usage
-  initCarousel('#TBcarousel1');
-  initCarousel('#TBcarousel2');
-  initCarousel('#TBcarouselGlorify1');
-  initCarousel('#TBcarouselGlorify2');
-  initCarousel('#TBcarouselGlorify3');
-  initCarousel('#TBcarouselGlorify4');
-  initCarousel('#TBcarouselGlorify5');
-  initCarousel('#TBcarouselGlorify6');
-  initCarousel('#TBcarouselGlorify7');
-  initCarousel('#TBcarouselGlorify8');
-  initCarousel('#TBcarouselGlorify9');
-})();
-// TBcarousel Ends
-
-
-
-
-// LRCarousel starts
-(function () {
-  function initLRcarousel(carouselId) {
-    const carousel = document.querySelector(`#${carouselId}`);
-
-    // If the carousel doesn't exist, stop here.
-    if (!carousel) {
-      return;
+      updateActiveSlide();
     }
 
-    let activeIndex = 0;
-
-    function updateActiveSlide() {
-      const slides = carousel.querySelectorAll('.slides-item');
-      const navLinks = carousel.querySelectorAll('.slider-nav');
-      const slidesContainer = carousel.querySelector('.LRslides');
-      activeIndex = Math.round(slidesContainer.scrollTop / slidesContainer.clientHeight);
-
-      navLinks.forEach((navLink, index) => {
-        if (index === activeIndex) {
-          navLink.classList.add('active');
-        } else {
-          navLink.classList.remove('active');
-        }
-      });
-    }
-
-    function scrollToSlide(slideIndex) {
-      const slidesContainer = carousel.querySelector('.LRslides');
-      slidesContainer.scrollTo({
-        top: slideIndex * slidesContainer.clientHeight,
-        behavior: 'smooth',
-      });
-    }
-
-    const navLinks = carousel.querySelectorAll('.slider-nav');
-    navLinks.forEach((navLink, index) => {
-      navLink.addEventListener('mouseenter', () => {
-        scrollToSlide(index);
-        updateActiveSlide();
-      });
-    });
-
-    carousel.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide);
-
-    updateActiveSlide();
-  }
-
-  // Usage
-  initLRcarousel('carousel1');
-  initLRcarousel('carousel2');
-})();
-// LRCarousel ends
+    // Usage
+    initLRcarousel('carousel1');
+    initLRcarousel('carousel2');
+  })();
+  // LRCarousel ends
 
 
 
