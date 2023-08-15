@@ -4524,10 +4524,9 @@ body .flex-container.Mobile {
 
 .tArrow {
     font-size: clamp(1.4em, 2vw, 2em);
-
     font-weight: 100;
     margin: 0px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: var(--Grey900);
 
 }
@@ -5715,14 +5714,16 @@ pre code {
     position: absolute;
     top: 46px;
     width: 100%;
+    height: 100%;
     display: block;
-    padding:20px 0;
+    padding: 20px 0;
     /* To ensure the button doesn't interfere with code lines */
     white-space: pre;
     /* Ensure code's white space (like indentation) is respected */
-    height: 100%;
-    max-height: 52%; /* reduced height to force overflow and see the scrollbar */
-    overflow-y: scroll; /* Always show the scrollbar */
+    max-height: 58%;
+    /* reduced height to force overflow and see the scrollbar */
+    overflow-y: scroll;
+    /* Always show the scrollbar */
     /* Allow vertical scroll */
     scrollbar-width: thin;
     /* Makes the scrollbar slimmer */
