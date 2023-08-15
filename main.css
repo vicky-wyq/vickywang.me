@@ -5713,7 +5713,7 @@ pre {
 /* Style for the code */
 pre code {
     position: absolute;
-    top: 1;
+    top: 46px;
     width: 100%;
     display: block;
     padding:20px 0;
@@ -5721,9 +5721,8 @@ pre code {
     white-space: pre;
     /* Ensure code's white space (like indentation) is respected */
     height: 100%;
-
-    /* Full height of the parent */
-    overflow-y: auto;
+    max-height: 52%; /* reduced height to force overflow and see the scrollbar */
+    overflow-y: scroll; /* Always show the scrollbar */
     /* Allow vertical scroll */
     scrollbar-width: thin;
     /* Makes the scrollbar slimmer */
@@ -5739,6 +5738,7 @@ pre code::-webkit-scrollbar {
 pre code::-webkit-scrollbar-thumb {
     background-color: var(--white);
     border-radius: 4px;
+
 }
 
 pre code::-webkit-scrollbar-thumb:hover {
