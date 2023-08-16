@@ -4,55 +4,58 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   function copyTargetText(e, callback) {
     var textToCopy = e.target.innerText;
-    
+
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(textToCopy).then(function() {
-        callback(null);
-      }, function(err) {
-        callback(err);
-      });
+        navigator.clipboard.writeText(textToCopy).then(function() {
+            callback(null);
+        }, function(err) {
+            callback(err);
+        });
     } else {
-      try {
-        var textArea = document.createElement("textarea");
-        textArea.value = textToCopy;
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        
-        var successful = document.execCommand('copy');
-        document.body.removeChild(textArea);
-        
-        if (!successful) throw new Error("Failed to copy");
-        callback(null);
-      } catch (err) {
-        callback(err);
-      }
+        try {
+            var textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            var successful = document.execCommand('copy');
+            document.body.removeChild(textArea);
+
+            if (!successful) throw new Error("Failed to copy");
+            callback(null);
+        } catch (err) {
+            callback(err);
+        }
     }
 }
 
-document.querySelector("button").addEventListener("click", function(e) {
-    e.preventDefault();
-    
-    copyTargetText(e, function(err) {
-      if (err) {
-        console.error("Failed to copy: ", err);
-        return;
-      }
-      
-      var copyAlert = document.createElement("div");  // Creating a div instead of span
-      copyAlert.className = "copied";  // Assigning the class "copied" to the div
-      copyAlert.innerText =  'Copied to Clipboard';
-      document.body.appendChild(copyAlert);
+// Get all buttons with class "Clipboard"
+var buttons = document.querySelectorAll("button.Clipboard");
+buttons.forEach(function(button) {
+    button.addEventListener("click", function(e) {
+        e.preventDefault();
 
-      setTimeout(function() {
-        document.body.removeChild(copyAlert);
-      }, 1500);
+        copyTargetText(e, function(err) {
+            if (err) {
+                console.error("Failed to copy: ", err);
+                return;
+            }
+
+            var ClipboardBox = e.target.closest(".ClipboardBox"); // Find the closest .ClipboardBox parent of the clicked button
+            var copyAlert = document.createElement("div");
+            copyAlert.className = "copied";
+            copyAlert.innerText = 'Copied to Clipboard';
+
+            // Append the copyAlert inside the ClipboardBox
+            ClipboardBox.appendChild(copyAlert);
+
+            setTimeout(function() {
+                copyAlert.remove();
+            }, 1500);
+        });
     });
 });
-
-  
-
-
 
   //copy Clipboard
 
