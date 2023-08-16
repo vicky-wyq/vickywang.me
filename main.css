@@ -25,7 +25,12 @@ html {
 
     /* Color */
     --white: #ffffff;
-    --alert: #CC3300;
+    --alert: #A40000;
+    --alertLight: #FDEFEF;
+    --success: #007B65;
+    --successLight: #EAFFFB;
+
+    --alertLight: #FDEFEF;
     --alert--pink: #EB5757;
     --Highlight: rgba(255, 242, 0, 0.3);
     --Grey900: #1b1b1b;
@@ -260,11 +265,12 @@ body {
     color: var(--colorTealLtest);
 }
 
-.BgAlet {
+.Alet {
     color: var(--alert);
-
 }
-
+.AletLt {
+    color: var(--alertLight);
+}
 /* ===== color vickywang.me ===== */
 /* ===== bg color vickywang.me ===== */
 .BgWarm {
@@ -291,7 +297,18 @@ body {
     background-color: var(--alert);
     color: var(--Grey200);
 }
-
+.BgAletLt {
+    background-color: var(--alertLight);
+    color: var(--Grey800);
+}
+.BgSuccess {
+    background-color: var(--success);
+    color: var(--Grey200);
+}
+.BgSuccessLt {
+    background-color: var(--successLight);
+    color: var(--Grey800);
+}
 /* ===== bg color vickywang.me ===== */
 /* color and shadow*/
 
@@ -2748,6 +2765,7 @@ button.passwordArr {
         margin: 0.2em;
         padding: 0.1em;
     }
+
     body .logo {
         padding: 0.5em 0.6em;
     }
@@ -4840,7 +4858,7 @@ img {
     background-color: rgba(255, 255, 255, 0.98);
     /* Black w/ opacity */
 }
- 
+
 
 
 .modal-content {
@@ -4976,72 +4994,6 @@ svg {
 
 /* margin */
 
-.photos {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    opacity: 1;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
-.photo {
-    display: none;
-}
-
-.photo-selected {
-    display: block;
-    animation-name: carousel-animation;
-    animation-duration: 2s;
-}
-
-.marquee {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 300px;
-    overflow-x: hidden;
-}
-
-.track {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 12s linear infinite;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(50%);
-    }
-}
-
-.marquee-text {
-    font-size: 3.2vh;
-    margin: 0 90px;
-    font-weight: 100;
-}
-
-.track:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-.marquee-logo {
-    width: 40px;
-    height: auto;
-    margin-left: 1%;
-}
-
-/* marquee */
 
 /* architecture */
 
@@ -5243,13 +5195,7 @@ body .carousel .carousel-item {
 /* MP Carousel */
 
 /* Photography */
-.carouselVW {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+
 
 @keyframes carousel-animation {
     0% {
@@ -5261,9 +5207,7 @@ body .carousel .carousel-item {
     }
 }
 
-.carouselBtn {
-    width: 13%;
-}
+ 
 
 .button1 {
     background-color: white;
@@ -5692,7 +5636,7 @@ button {
 
 
 
-/* ===== code copy to clipboard ====== */
+/* ===== copy code to clipboard ====== */
 /* Style for the container of the code */
 pre {
     height: 15em;
@@ -5791,38 +5735,114 @@ Pre .codeTiltle {
     font-size: 16px;
 }
 
-/* ===== code copy to clipboard ====== */
+/* ===== copy code to clipboard ====== */
+
+
+button.small {
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background-color: var(--Grey900);
+    /* Blue background color */
+    color: var(--white);
+    /* White text */
+    border: none;
+    /* No border */
+    border-radius: 3px;
+    /* A subtle rounded corner for the button */
+    padding: 5px 10px;
+    cursor: pointer;
+    /* The hand icon on hover, suggesting an action */
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    /* A fade transition effect on hover */
+}
+
+
+
+
+/* ===== click icon copy to clipboard ====== */
+
+
+.ClipboardBox.iconOnly {
+    position: relative;
+    width: 5em;
+
+
+}
+
+button.Clipboard.iconOnly {
+    width: 100%;
+    cursor: pointer;
+    font-size: clamp(0.8em, 1vw, 1.1em);
+    padding: 1em;
+    color: var(--Grey900);
+    transition: 200ms;
+    border-radius: 24px;
+    background-color: var(--Grey100);
+
+
+}
+
+button.Clipboard.iconOnly:hover {
+background-color: var(--Grey200);
+border-radius: 24px;
+
+
+}
+
+button.Clipboard.iconOnly:focus {
+    outline: 2px solid var(--Grey400);
+}
+
+button.Clipboard.iconOnly:active {
+    transform: skew(-2deg) rotate(2deg);
+}
+
+
+.copyText {
+    opacity: 0;
+    height: 0;
+    /* To ensure the space taken up by the link is negligible */
+    overflow: hidden;
+    /* Ensures that content doesn't spill out */
+    margin: 0;
+    /* Remove any default margin */
+    padding: 0;
+    /* Remove any default padding */
+}
+/* ===== click icon copy to clipboard ====== */
 
 /* ===== text copy to clipboard ====== */
-button.Clipboard {
+button.Clipboard.clickTxt {
     cursor: pointer;
     font-size: clamp(0.8em, 1vw, 1.1em);
     padding: 0 1em;
-    background: var(--colorTealLtest);
-    border: 1px var(--colorTealLt);
+    background: var(--Grey100);
+    border: 1px var(--Grey300);
     border-style: dashed;
     color: var(--Grey900);
     transition: 200ms;
     text-align: left;
     width: 100%;
-
 }
 
-button.Clipboard:hover {
+button.Clipboard.clickTxt:hover {
     /* filter: brightness(1.05); */
     transform: translateY(-5px);
     box-shadow: 0px 30px 200px rgba(255, 255, 255, 0.7);
 }
 
-button.Clipboard:focus {
-    outline: 6px solid var(--colorTealLtr);
+button.Clipboard.clickTxt:focus {
+    outline: 6px solid var(--Grey300);
 }
 
-button.Clipboard:active {
+button.Clipboard.clickTxt:active {
     transform: skew(-2deg) rotate(2deg);
 }
 
-.ClipboardBox {
+.ClipboardBox.clickTxt {
     position: relative;
     width: 100%;
     height: 100%;
@@ -5831,11 +5851,10 @@ button.Clipboard:active {
 .copied {
     position: absolute;
     font-size: 1em;
-    color: var(--seer-purple--Orange);
-    right: 10px;  /* adjusted for some padding from the right */
-    bottom: 10px; /* adjusted for some padding from the bottom */
+    color: var(--GlorifyGreen);
+    bottom: -30px;
+    text-align: center;
 }
-
 
 /* 
     top: 50%;
