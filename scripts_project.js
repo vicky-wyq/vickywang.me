@@ -144,11 +144,19 @@ buttons.forEach(function(button) {
       var img = e.target;
       var modalImg = document.getElementById("modal-content");
       var captionText = document.getElementById("modal-caption");
+      
+      // Read background color from the clicked element's data attribute
+      var bgColor = img.getAttribute('data-bgcolor');
+      if (bgColor) {
+        modal.style.backgroundColor = bgColor;
+      }
+  
       modal.style.display = "block";
       modalImg.src = img.src;
       captionText.innerHTML = img.alt;
     }
   });
+  
 
   // Scroll add/remove classes Starts
   window.addEventListener('DOMContentLoaded', () => {
