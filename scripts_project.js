@@ -45,7 +45,7 @@ buttons.forEach(function(button) {
             var ClipboardBox = e.target.closest(".ClipboardBox"); // Find the closest .ClipboardBox parent of the clicked button
             var copyAlert = document.createElement("div");
             copyAlert.className = "copied";
-            copyAlert.innerText = 'Copied to Clipboard';
+            copyAlert.innerText = 'Copied';
 
             // Append the copyAlert inside the ClipboardBox
             ClipboardBox.appendChild(copyAlert);
