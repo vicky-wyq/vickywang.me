@@ -5465,26 +5465,6 @@ Pre .codeTiltle {
 /* ===== copy code to clipboard ====== */
 
 
-button.small {
-    font-size: 16px;
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    background-color: var(--Grey900);
-    /* Blue background color */
-    color: var(--white);
-    /* White text */
-    border: none;
-    /* No border */
-    border-radius: 3px;
-    /* A subtle rounded corner for the button */
-    padding: 5px 10px;
-    cursor: pointer;
-    /* The hand icon on hover, suggesting an action */
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-    /* A fade transition effect on hover */
-}
 
 
 
@@ -5494,29 +5474,20 @@ button.small {
 
 .ClipboardBoxIconOnly {
     position: relative;
-    width: 5em;
-
-
+    width: 2em;
+    height: auto;
+    border-radius: 24px;
 }
-
 button.ClipboardIconOnly {
-    width: 100%;
     cursor: pointer;
-    font-size: clamp(0.8em, 1vw, 1.1em);
-    padding: 1em;
     color: var(--Grey900);
     transition: 200ms;
     border-radius: 24px;
     background-color: var(--Grey100);
-
-
 }
 
 button.ClipboardIconOnly:hover {
     background-color: var(--Grey200);
-    border-radius: 24px;
-
-
 }
 
 button.ClipboardIconOnly:focus {
@@ -5566,9 +5537,9 @@ button.ClipboardIconOnly:active {
 
 .copy-text {
     position: relative;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    background: var(--white);
+    border: 1px solid var(--Grey400);
+    border-radius: 8px;
     display: flex;
     align-items: center;
 }
@@ -5587,8 +5558,8 @@ button.ClipboardIconOnly:active {
 
 .copy-text button {
     padding: 10px;
-    background: var(--GardenersHub);
-    color: var(--successLight);
+    background: var(--Grey900);
+    color: var(--white);
     font-size: 18px;
     border: none;
     outline: none;
@@ -5598,7 +5569,7 @@ button.ClipboardIconOnly:active {
 }
 
 .copy-text button:active {
-    background: var(--success);
+    background: var(--Grey900);
 }
 
 .copy-text button:before {
@@ -5606,7 +5577,7 @@ button.ClipboardIconOnly:active {
     position: absolute;
     top: -45px;
     right: 0px;
-    background: var(--success);
+    background: var(--Grey900);
     padding: 8px 10px;
     border-radius: 20px;
     font-size: 15px;
@@ -5620,7 +5591,7 @@ button.ClipboardIconOnly:active {
     right: 25px;
     width: 10px;
     height: 10px;
-    background: var(--success);
+    background: var(--Grey900);
     transform: rotate(45deg);
     display: none;
 }
@@ -5669,18 +5640,21 @@ button.Clipboard.clickTxt:active {
 }
 
 .copied {
+
     position: absolute;
     font-size: 0.8em;
     text-align: center;
+    justify-content: center;
     font-family: inherit;
     font-weight: 500;
-    padding: 0.4em 0.8em;
+    padding: 0.6em 0.8em;
     border-radius: 32px;
     color: var(--white);
     background: var(--Grey900);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
 /* 
@@ -5794,9 +5768,11 @@ button.Clipboard.clickTxt:active {
     transform: translate3d(0, 2px, 0);
 }
 
-.buttonLanding:focus {
+/*.buttonLanding:focus {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1px;
 }
+*/
+
 
 @media (min-width: 768px) {
     .button-46 {
@@ -5893,6 +5869,29 @@ button {
     outline: none;
     font-weight: light;
     padding: 0 5%;
+}
+
+.buttonDemoCode {
+
+    background-color: var(--Grey900);
+    /* Blue background color */
+    color: var(--white);
+    /* White text */
+    border: none;
+    /* No border */
+    border-radius: 3px;
+    /* A subtle rounded corner for the button */
+    padding: 5px 10px;
+    cursor: pointer;
+    /* The hand icon on hover, suggesting an action */
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    /* A fade transition effect on hover */
+}
+
+.buttonDemoCode:hover {
+    background-color: var(--colorTealDk);
+    /* A slightly darker blue for the hover effect */
 }
 
 /* ===== button ====== */
