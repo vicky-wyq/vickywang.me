@@ -2,60 +2,147 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
 
+  // Helper function to copy text to the clipboard
+  function copyToClipboard(textElement, feedbackElement) {
+    textElement.select();
+    document.execCommand("copy");
+    feedbackElement.classList.add("active");
+    window.getSelection().removeAllRanges();
+    setTimeout(function () {
+      feedbackElement.classList.remove("active");
+    }, 2500);
+  }
+  // Attach event listener to all .copy-text button elements
+  let copyTextContainers = document.querySelectorAll(".copy-text");
+
+  copyTextContainers.forEach(function (container) {
+    let button = container.querySelector("button");
+    let input = container.querySelector("input.text");
+
+    button.addEventListener("click", function () {
+      copyToClipboard(input, container);
+    });
+  });
+
+  // ====== textbox copy to clipboard ======
+
+
+
+
+
+
+
+  function copyTextToClipboard(text, callback) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(function () {
+        callback(null);
+      }, function (err) {
+        callback(err);
+      });
+    } else {
+      // Fallback for older browsers without clipboard API
+      try {
+        var textArea = document.createElement("textarea");
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        var successful = document.execCommand('copy');
+        document.body.removeChild(textArea);
+
+        if (!successful) throw new Error("Failed to copy");
+        callback(null);
+      } catch (err) {
+        callback(err);
+      }
+    }
+  }
+
+  // Attach event listener to all .ClipboardIconOnly buttons
+  document.querySelectorAll('.ClipboardIconOnly').forEach(function (button) {
+    button.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default action
+
+      var currentButton = e.currentTarget;
+      // Extract text from the .clickIconCopy element inside the clicked button
+      var textToCopy = currentButton.querySelector('.clickIconCopy').innerText;
+
+      // Copy the extracted text to the clipboard
+      copyTextToClipboard(textToCopy, function (err) {
+        if (err) {
+          throw err;
+        } else {
+          // Optional: Show a temporary "Copied!" message or any other feedback mechanism
+          var feedback = document.createElement('div');
+
+          feedback.className = "copiedByClickIcon";
+          feedback.innerText = 'Copied!';
+          currentButton.appendChild(feedback);
+          setTimeout(function () {
+            currentButton.removeChild(feedback);
+          }, 1500);
+        }
+      });
+    });
+  });
+  // Append the copyAlert inside the ClipboardBox
+
+  // ========== click icon to copy  
+
   function copyTargetText(e, callback) {
     var textToCopy = e.target.innerText;
 
+
     if (navigator.clipboard) {
-        navigator.clipboard.writeText(textToCopy).then(function() {
-            callback(null);
-        }, function(err) {
-            callback(err);
-        });
+      navigator.clipboard.writeText(textToCopy).then(function () {
+        callback(null);
+      }, function (err) {
+        callback(err);
+      });
     } else {
-        try {
-            var textArea = document.createElement("textarea");
-            textArea.value = textToCopy;
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
+      try {
+        var textArea = document.createElement("textarea");
+        textArea.value = textToCopy;
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
 
-            var successful = document.execCommand('copy');
-            document.body.removeChild(textArea);
+        var successful = document.execCommand('copy');
+        document.body.removeChild(textArea);
 
-            if (!successful) throw new Error("Failed to copy");
-            callback(null);
-        } catch (err) {
-            callback(err);
-        }
+        if (!successful) throw new Error("Failed to copy");
+        callback(null);
+      } catch (err) {
+        callback(err);
+      }
     }
-}
+  }
 
-// Get all buttons with class "Clipboard"
-var buttons = document.querySelectorAll("button.Clipboard");
-buttons.forEach(function(button) {
-    button.addEventListener("click", function(e) {
-        e.preventDefault();
+  // Get all buttons with class "Clipboard"
+  var buttons = document.querySelectorAll("button.Clipboard");
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      copyTargetText(e, function (err) {
+        if (err) {
+          console.error("Failed to copy: ", err);
+          return;
+        }
+        var ClipboardBox = e.target.closest(".ClipboardBox"); // Find the closest .ClipboardBox parent of the clicked button
+        var copyAlert = document.createElement("div");
+        copyAlert.className = "copied";
+        copyAlert.innerText = 'Copied';
 
-        copyTargetText(e, function(err) {
-            if (err) {
-                console.error("Failed to copy: ", err);
-                return;
-            }
+        // Append the copyAlert inside the ClipboardBox
+        ClipboardBox.appendChild(copyAlert);
 
-            var ClipboardBox = e.target.closest(".ClipboardBox"); // Find the closest .ClipboardBox parent of the clicked button
-            var copyAlert = document.createElement("div");
-            copyAlert.className = "copied";
-            copyAlert.innerText = 'Copied';
-
-            // Append the copyAlert inside the ClipboardBox
-            ClipboardBox.appendChild(copyAlert);
-
-            setTimeout(function() {
-                copyAlert.remove();
-            }, 1500);
-        });
+        setTimeout(function () {
+          copyAlert.remove();
+        }, 1500);
+      });
     });
-});
+  });
 
   //copy Clipboard
 
@@ -144,19 +231,19 @@ buttons.forEach(function(button) {
       var img = e.target;
       var modalImg = document.getElementById("modal-content");
       var captionText = document.getElementById("modal-caption");
-      
+
       // Read background color from the clicked element's data attribute
       var bgColor = img.getAttribute('data-bgcolor');
       if (bgColor) {
         modal.style.backgroundColor = bgColor;
       }
-  
+
       modal.style.display = "block";
       modalImg.src = img.src;
       captionText.innerHTML = img.alt;
     }
   });
-  
+
 
   // Scroll add/remove classes Starts
   window.addEventListener('DOMContentLoaded', () => {
