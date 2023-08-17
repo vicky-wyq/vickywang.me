@@ -4332,23 +4332,22 @@ body .flex-container.Mobile {
 .footer-right {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 50%;
 }
 
 .footer-logo {
-    margin: 0.4em;
-    padding: 18px;
     border-radius: 50%;
-
     width: 1.6em;
     height: auto;
     cursor: pointer;
+    padding: 1.2em;
 }
-
 .footer-logo:hover {
-    padding: 18px;
     border-radius: 50%;
     background-color: var(--Grey300);
+    padding: 1.2em;
+
 }
 
 
@@ -4548,6 +4547,7 @@ body .flex-container.Mobile {
 }
 
 /* margin anf padding*/
+/* ======== width & height ========= */
 
 .tArrow {
     font-size: clamp(1.4em, 2vw, 2em);
@@ -4562,23 +4562,6 @@ body .flex-container.Mobile {
     width: auto;
     height: 0.8em;
 }
-
-
-.se-arrow {
-    width: 1.6em;
-    height: auto;
-    margin-left: 1%;
-}
-
-.carouselArrow {
-    width: 2.8em;
-
-}
-
-/* Geometry*/
-
-/* width and height */
-
 .intro-logo {
     margin: 0.6em;
     padding: 1.2em;
@@ -4594,7 +4577,6 @@ body .flex-container.Mobile {
     border-radius: 50%;
     background-color: var(--Grey100);
 }
-
 .iconDemo {
     margin: 0.6em;
     padding: 1.2em;
@@ -4602,8 +4584,6 @@ body .flex-container.Mobile {
     height: auto;
     cursor: pointer;
 }
-
-
 .chip {
     font-family: inherit;
     padding: 0.6em;
@@ -4612,9 +4592,6 @@ body .flex-container.Mobile {
     width: min-content;
     background-color: var(--Warm);
 }
-
-
-
 .blockS {
     font-family: inherit;
     padding: 1.5em;
@@ -4622,36 +4599,27 @@ body .flex-container.Mobile {
     font-size: 12px;
     text-transform: uppercase;
 }
-
 .widthLogo {
     width: 3rem;
     margin: 9px;
 }
-
 .iconSH {
     height: 1.8rem;
     margin: 2px;
 }
-
 .iconXS {
     width: 1.4em;
     height: 1.4em;
     margin: 1px;
-
 }
-
-
-
 .iconS {
     width: 2.6rem;
     margin: 2px;
 }
-
 .IconM_MP_GH {
     width: 8rem;
     margin-right: 10px;
 }
-
 .iconM {
     width: 4rem;
 }
@@ -4703,8 +4671,7 @@ body .flex-container.Mobile {
 .heightL {
     height: 28rem;
 }
-
-/* width and height */
+/* ======== width & height ========= */
 
 
 
@@ -5474,16 +5441,30 @@ Pre .codeTiltle {
 
 .ClipboardBoxIconOnly {
     position: relative;
-    width: 2em;
-    height: auto;
+    width: 2.2em;
+    height: 2.2em;
     border-radius: 24px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
 }
+
 button.ClipboardIconOnly {
+    width: 100%;
+    height: 100%;
+    background: var(--Grey100);
     cursor: pointer;
+    border: none;
     color: var(--Grey900);
     transition: 200ms;
     border-radius: 24px;
-    background-color: var(--Grey100);
+}
+
+.iconXSXXX {
+    width: 1.4em;
+    height: 100%;
 }
 
 button.ClipboardIconOnly:hover {
@@ -5513,7 +5494,7 @@ button.ClipboardIconOnly:active {
 
 .copiedByClickIcon {
     position: absolute;
-    font-size: 0.8em;
+    font-size: 0.6em;
     text-align: center;
     font-family: inherit;
     font-weight: 500;
@@ -5736,9 +5717,27 @@ button.Clipboard.clickTxt:active {
 
 }
 
+/*
+
+button {
+    background-color: Transparent;
+    color: var(--Grey900);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 46px;
+    cursor: pointer;
+    outline: none;
+    font-weight: light;
+    padding: 0 5%;
+}
+*/
 .buttonLanding {
     border-radius: 0.6em;
     align-self: center;
+    border: none;
+
     background-color: var(--white);
     background-image: none;
     background-position: 0 90%;
@@ -5855,20 +5854,6 @@ button.Clipboard.clickTxt:active {
         min-width: 200px;
         padding: 14px 16px;
     }
-}
-
-button {
-    background-color: Transparent;
-    color: var(--Grey900);
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 46px;
-    cursor: pointer;
-    outline: none;
-    font-weight: light;
-    padding: 0 5%;
 }
 
 .buttonDemoCode {
