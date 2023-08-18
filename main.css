@@ -30,6 +30,7 @@ html {
     --paddingM: 0.75em;
     --paddingL: 1em;
     --paddingXL: 1.25em;
+    --paddingMax: 1.5em;
 
 
     --height100: 100%;
@@ -4722,31 +4723,42 @@ footer {
 .heightL {
     height: 28rem;
 }
+
 .WidthHeighMax {
     width: 100%;
     height: 100%;
     border: none;
 }
+
 /* ======== width & height ========= */
 
 
 /* ======== paddings ========= */
 
-.paddingXS{
+.paddingXS {
     padding: var(--paddingXS);
-background: darkgray;
 }
-.paddingS{
+
+.paddingS {
     padding: var(--paddingS);
 
-}.paddingM{
+}
+
+.paddingM {
     padding: var(--paddingM);
 
-}.paddingL{
+}
+
+.paddingL {
     padding: var(--paddingL);
 
-}.paddingXL{
+}
+
+.paddingXL {
     padding: var(--paddingXL);
+}
+.paddingMax {
+    padding: var(--paddingMax);
 }
 /* ======== paddings ========= */
 /* ======== width & height V2 New ========= */
@@ -4754,14 +4766,17 @@ background: darkgray;
     width: 1.4em;
     margin: 0;
 }
+
 .iconS {
     width: 2.6rem;
     margin: 0;
 }
+
 .iconM {
     width: 4em;
     height: 4em;
 }
+
 .iconL {
     width: 6rem;
 }
@@ -4769,6 +4784,7 @@ background: darkgray;
 .iconXL {
     width: 8rem;
 }
+
 /* ======== width & height V2 New ========= */
 /* ======== spacing ========= */
 
@@ -4801,6 +4817,7 @@ background: darkgray;
     width: 3em;
     height: 3em;
 }
+
 /* ======== spacing ========= */
 
 
