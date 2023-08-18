@@ -1429,7 +1429,7 @@ section {
 .subNav li.active>a {
     color: var(--Grey900);
     font-weight: 500;
-    border-left: var(--Grey900) 0.01em solid;
+    border-left: var(--Grey900) .01em solid;
 }
 
 
@@ -1507,7 +1507,7 @@ main>nav {
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active>a {
     font-weight: 500;
-    border-left: var(--Grey900) .06em solid;
+    border-left: var(--Grey900) .08em solid;
     background-color: var(--Grey100);
 
 }
@@ -1537,15 +1537,14 @@ main>nav {
 }
 
 .section-nav a {
-    border-left: var(--Grey400) 0.01em solid;
+    border-left: var(--Grey400) 0.04em solid;
     text-decoration: none;
     display: block;
     padding: 8px 16px;
-    color: var(--Grey600);
+    color: var(--Grey700);
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
     border-radius: 0 8px 8px 0;
-
 }
 
 .section-nav a:hover,
