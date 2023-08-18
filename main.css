@@ -17,13 +17,19 @@ html {
 
 :root {
     --border-radius: 0.5em;
+
     --border-radiusXS: 0.25em;
-
     --border-radiusS: 0.5em;
-    --border-radiusM: 1em;
-    --border-radiusL: 1.25em;
+    --border-radiusM: 0.75em;
+    --border-radiusL: 1em;
+    --border-radiusXL: 1.25em;
+    --border-radiusMax: 50%;
 
-
+    --paddingXS: 0.25em;
+    --paddingS: 0.5em;
+    --paddingM: 0.75em;
+    --paddingL: 1em;
+    --paddingXL: 1.25em;
 
 
     --height100: 100%;
@@ -133,22 +139,21 @@ html {
 .Testing {
     transition: background-color 0.3s ease;
     border-radius: 6px;
-    height: 6em;
+    height: 10em;
     background: var(--Warm);
     transition: background-color 0.3s ease;
 }
+
 .borderRadiusXS {
     border-radius: var(--border-radiusXS);
 }
 
-.borderRadiusM {
-    border-radius: var(--border-radiusM);
-
-}
-
 .borderRadiusS {
     border-radius: var(--border-radiusS);
+
 }
+
+
 
 .borderRadiusM {
     border-radius: var(--border-radiusM);
@@ -157,6 +162,14 @@ html {
 
 .borderRadiusL {
     border-radius: var(--border-radiusL);
+}
+
+.borderRadiusXL {
+    border-radius: var(--border-radiusXL);
+}
+
+.borderRadiusMax {
+    border-radius: var(--border-radiusMax);
 }
 
 /* width */
@@ -4709,50 +4722,55 @@ footer {
 .heightL {
     height: 28rem;
 }
-
-/* ======== width & height ========= */
-/* ======== width & height V2 New ========= */
 .WidthHeighMax {
     width: 100%;
     height: 100%;
     border: none;
 }
+/* ======== width & height ========= */
 
-.iconSM {
-    width: 2.2em;
-    height: 2.2em;
+
+/* ======== paddings ========= */
+
+.paddingXS{
+    padding: var(--paddingXS);
+background: darkgray;
 }
+.paddingS{
+    padding: var(--paddingS);
 
+}.paddingM{
+    padding: var(--paddingM);
+
+}.paddingL{
+    padding: var(--paddingL);
+
+}.paddingXL{
+    padding: var(--paddingXL);
+}
+/* ======== paddings ========= */
+/* ======== width & height V2 New ========= */
 .iconXS {
     width: 1.4em;
     margin: 0;
-
 }
-
 .iconS {
     width: 2.6rem;
     margin: 0;
-
 }
-
-.iconSM {
-    width: 2.2em;
-    height: 2.2em;
-
-}
-
 .iconM {
     width: 4em;
     height: 4em;
 }
-
-.iconML {
+.iconL {
     width: 6rem;
 }
 
-.iconL {
+.iconXL {
     width: 8rem;
 }
+/* ======== width & height V2 New ========= */
+/* ======== spacing ========= */
 
 .spacing1 {
     width: 0.5em;
@@ -4783,12 +4801,7 @@ footer {
     width: 3em;
     height: 3em;
 }
-
-/* ======== width & height V2 New ========= */
-
-
-
-
+/* ======== spacing ========= */
 
 
 /* table */
@@ -5583,14 +5596,10 @@ button.ClipboardIconOnly {
 
 .hoverGrey300 {
     background-color: none;
-    padding: 1.2em;
-    border-radius: 50%;
 }
 
 .hoverGrey300:hover {
     background-color: var(--Grey300);
-    padding: 1.2em;
-    border-radius: 50%;
 
 }
 
