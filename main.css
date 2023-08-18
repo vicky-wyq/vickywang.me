@@ -4305,6 +4305,13 @@ body .flex-container.Mobile {
 
 /* footer */
 
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 
 .footer {
     bottom: 0;
@@ -4332,23 +4339,10 @@ body .flex-container.Mobile {
 .footer-right {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-between;
 }
 
-.footer-logo {
-    border-radius: 50%;
-    width: 1.6em;
-    height: auto;
-    cursor: pointer;
-    padding: 1.2em;
-}
-.footer-logo:hover {
-    border-radius: 50%;
-    background-color: var(--Grey300);
-    padding: 1.2em;
 
-}
 
 
 
@@ -4430,6 +4424,13 @@ body .flex-container.Mobile {
 .centerVer {
     display: flex;
     align-items: center;
+}
+
+.centerVH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 
 .centerHorz-spacearound {
@@ -4562,6 +4563,7 @@ body .flex-container.Mobile {
     width: auto;
     height: 0.8em;
 }
+
 .intro-logo {
     margin: 0.6em;
     padding: 1.2em;
@@ -4577,6 +4579,7 @@ body .flex-container.Mobile {
     border-radius: 50%;
     background-color: var(--Grey100);
 }
+
 .iconDemo {
     margin: 0.6em;
     padding: 1.2em;
@@ -4584,6 +4587,7 @@ body .flex-container.Mobile {
     height: auto;
     cursor: pointer;
 }
+
 .chip {
     font-family: inherit;
     padding: 0.6em;
@@ -4592,6 +4596,7 @@ body .flex-container.Mobile {
     width: min-content;
     background-color: var(--Warm);
 }
+
 .blockS {
     font-family: inherit;
     padding: 1.5em;
@@ -4599,38 +4604,24 @@ body .flex-container.Mobile {
     font-size: 12px;
     text-transform: uppercase;
 }
+
 .widthLogo {
     width: 3rem;
     margin: 9px;
 }
+
+
 .iconSH {
     height: 1.8rem;
     margin: 2px;
 }
-.iconXS {
-    width: 1.4em;
-    height: 1.4em;
-    margin: 1px;
-}
-.iconS {
-    width: 2.6rem;
-    margin: 2px;
-}
+
+
 .IconM_MP_GH {
     width: 8rem;
     margin-right: 10px;
 }
-.iconM {
-    width: 4rem;
-}
 
-.iconML {
-    width: 6rem;
-}
-
-.iconL {
-    width: 8rem;
-}
 
 .widthXS {
     width: 12em;
@@ -4671,7 +4662,55 @@ body .flex-container.Mobile {
 .heightL {
     height: 28rem;
 }
+
 /* ======== width & height ========= */
+/* ======== width & height V2 New ========= */
+.WidthHeighMax {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.iconSM {
+    width: 2.2em;
+    height: 2.2em;
+}
+
+.iconXS {
+    width: 1.4em;
+    margin: 0;
+
+}
+
+.iconS {
+    width: 2.6rem;
+    margin: 0;
+
+}
+
+.iconSM {
+    width: 2.2em;
+    height: 2.2em;
+
+}
+
+.iconM {
+    width: 4em;
+    height: 4em;
+}
+
+.iconML {
+    width: 6rem;
+}
+
+.iconL {
+    width: 8rem;
+}
+
+/* ======== width & height V2 New ========= */
+
+
+
 
 
 
@@ -5441,15 +5480,12 @@ Pre .codeTiltle {
 
 .ClipboardBoxIconOnly {
     position: relative;
-    width: 2.2em;
-    height: 2.2em;
     border-radius: 24px;
-
     display: flex;
     justify-content: center;
     text-align: center;
-
 }
+
 
 button.ClipboardIconOnly {
     width: 100%;
@@ -5460,12 +5496,44 @@ button.ClipboardIconOnly {
     color: var(--Grey900);
     transition: 200ms;
     border-radius: 24px;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.iconXSXXX {
-    width: 1.4em;
-    height: 100%;
+/* ===== will move away ====== */
+
+.hoverGrey300 {
+    background-color: none;
+    padding: 1.2em;
+    border-radius: 50%;
 }
+
+.hoverGrey300:hover {
+    background-color: var(--Grey300);
+    padding: 1.2em;
+    border-radius: 50%;
+
+}
+
+
+.footer-logo {
+    border-radius: 50%;
+    width: 1.6em;
+    height: auto;
+    cursor: pointer;
+    padding: 1.2em;
+}
+
+.footer-logo:hover {
+    border-radius: 50%;
+    background-color: var(--Grey300);
+    padding: 1.2em;
+
+}
+
+/* ===== will move away ====== */
 
 button.ClipboardIconOnly:hover {
     background-color: var(--Grey200);
@@ -5483,6 +5551,7 @@ button.ClipboardIconOnly:active {
 .clickIconCopy {
     opacity: 1;
     height: 0;
+    width: 0;
     /* To ensure the space taken up by the link is negligible */
     overflow: hidden;
     /* Ensures that content doesn't spill out */
