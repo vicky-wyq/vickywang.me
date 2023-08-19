@@ -4641,13 +4641,7 @@ footer {
     background-color: var(--Grey100);
 }
 
-.iconDemo {
-    margin: 0.6em;
-    padding: 1.2em;
-    width: 2em;
-    height: auto;
-    cursor: pointer;
-}
+
 
 .chip {
     font-family: inherit;
@@ -4741,12 +4735,10 @@ footer {
 
 .paddingS {
     padding: var(--paddingS);
-
 }
 
 .paddingM {
     padding: var(--paddingM);
-
 }
 
 .paddingL {
@@ -4763,26 +4755,33 @@ footer {
 /* ======== paddings ========= */
 /* ======== width & height V2 New ========= */
 .iconXS {
-    width: 1.4em;
+    width: 16px;
     margin: 0;
 }
 
 .iconS {
-    width: 2.6rem;
+    width: 24px;
     margin: 0;
 }
 
 .iconM {
-    width: 4em;
+    width: 32px;
     height: 4em;
 }
 
 .iconL {
-    width: 6rem;
+    width: 40px;
 }
 
 .iconXL {
-    width: 8rem;
+    width: 48px;
+}
+.iconDemo {
+    margin: 0.6em;
+    padding: 1.2em;
+    width: 2em;
+    height: auto;
+    cursor: pointer;
 }
 
 /* ======== width & height V2 New ========= */
@@ -5637,10 +5636,11 @@ button.ClipboardIconOnly {
 }
 
 /* ===== will move away ====== */
-
+/* 
 button.ClipboardIconOnly:hover {
     background-color: var(--Grey200);
 }
+
 
 button.ClipboardIconOnly:focus {
     outline: 2px solid var(--Grey400);
@@ -5649,6 +5649,17 @@ button.ClipboardIconOnly:focus {
 button.ClipboardIconOnly:active {
     transform: skew(-2deg) rotate(2deg);
 }
+
+*/
+
+button.focusState:focus {
+    outline: 2px solid var(--Grey400);
+}
+
+button.activeState:active {
+    transform: skew(-2deg) rotate(2deg);
+}
+
 
 
 .clickIconCopy {
