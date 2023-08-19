@@ -4749,9 +4749,11 @@ footer {
 .paddingXL {
     padding: var(--paddingXL);
 }
+
 .paddingMax {
     padding: var(--paddingMax);
 }
+
 /* ======== paddings ========= */
 /* ======== width & height V2 New ========= */
 .iconXS {
@@ -4766,7 +4768,6 @@ footer {
 
 .iconM {
     width: 32px;
-    height: 4em;
 }
 
 .iconL {
@@ -4775,6 +4776,9 @@ footer {
 
 .iconXL {
     width: 48px;
+}
+.iconMax {
+    width: 56px;
 }
 .iconDemo {
     margin: 0.6em;
@@ -5586,39 +5590,43 @@ Pre .codeTiltle {
 
 .ClipboardBoxIconOnly {
     position: relative;
-    border-radius: 24px;
     display: flex;
     justify-content: center;
     text-align: center;
+    width: fit-content;
 }
 
 
 button.ClipboardIconOnly {
-    width: 100%;
-    height: 100%;
-    background: var(--Grey100);
+    width: fit-content;
+    height: fit-content;
     cursor: pointer;
     border: none;
-    color: var(--Grey900);
     transition: 200ms;
-    border-radius: 24px;
-
+    background: none;
+    padding: 0;
     align-items: center;
     display: flex;
     justify-content: center;
+    border-radius: var(--border-radiusMax);
+
 }
 
 /* ===== will move away ====== */
+.hoverGrey100 {
+    background-color: none;
+}
 
+.hoverGrey100:hover {
+    background-color: var(--Grey100);
+}
 .hoverGrey300 {
     background-color: none;
 }
 
 .hoverGrey300:hover {
     background-color: var(--Grey300);
-
 }
-
 
 .footer-logo {
     border-radius: 50%;
@@ -5642,23 +5650,23 @@ button.ClipboardIconOnly:hover {
 }
 
 
+
+
+
+
+*/
 button.ClipboardIconOnly:focus {
     outline: 2px solid var(--Grey400);
+    border-radius: var(--border-radiusMax);
 }
 
 button.ClipboardIconOnly:active {
     transform: skew(-2deg) rotate(2deg);
+    border-radius: var(--border-radiusMax);
+
 }
 
-*/
 
-button.focusState:focus {
-    outline: 2px solid var(--Grey400);
-}
-
-button.activeState:active {
-    transform: skew(-2deg) rotate(2deg);
-}
 
 
 
@@ -5677,7 +5685,7 @@ button.activeState:active {
 
 .copiedByClickIcon {
     position: absolute;
-    font-size: 0.6em;
+    font-size: 0.8em;
     text-align: center;
     font-family: inherit;
     font-weight: 500;
