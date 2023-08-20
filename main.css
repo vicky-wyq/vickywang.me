@@ -4616,12 +4616,13 @@ footer {
     margin: 0px;
     /* text-transform: capitalize; */
     color: var(--Grey900);
-
+    display: flex;
+align-items: center;
 }
 
 .seArrow {
-    width: auto;
-    height: 0.8em;
+    width: 0.96em;
+    height: auto;
 }
 
 .intro-logo {
