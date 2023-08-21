@@ -28,6 +28,29 @@
     font-family: 'Lato', sans-serif;
 }
 
+.tArrow {
+    font-size: clamp(1.4em, 2vw, 2em);
+    font-weight: 100;
+    margin: 0px;
+    /* text-transform: capitalize; */
+    color: var(--Grey900);
+    display: flex;
+    align-items: center;
+}
+
+.seArrow {
+    width: 0.96em;
+    height: auto;
+}
+
+
+
+.se-arrow {
+    width: 1.6em;
+    height: auto;
+    margin-left: 1%;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     color: var(--black);
@@ -37,7 +60,8 @@ body {
 
 
 
-h1, h2 {
+h1,
+h2 {
     font-family: inherit;
     font-weight: 500;
     margin: 1em 0;
@@ -49,14 +73,16 @@ h1, h2 {
     margin: 0;
 }
 
-h3, h4 {
+h3,
+h4 {
     font-family: inherit;
     font-weight: 300;
     color: var(--black);
     margin: 0.8em, 0;
 }
 
-h5, h6 {
+h5,
+h6 {
     font-family: inherit;
     font-weight: 300;
     color: var(--grey-dark);
@@ -730,12 +756,15 @@ button.passwordArr {
     flex: 0 0 calc(33.3333% - 1em);
 }
 
-.Grid--holly-grail .aside, .Grid--holly-grail .main {
+.Grid--holly-grail .aside,
+.Grid--holly-grail .main {
     flex: 1 100%;
 }
 
 /* One of -- columns*/
-.Grid--1of2>.Grid-cell, .Grid--1of4>.Grid-cell:first-of-type, .Grid--1of3>.Grid-cell:first-of-type {
+.Grid--1of2>.Grid-cell,
+.Grid--1of4>.Grid-cell:first-of-type,
+.Grid--1of3>.Grid-cell:first-of-type {
     flex: 0 0 96%;
 }
 
@@ -794,7 +823,12 @@ button.passwordArr {
 
 /* Large screens */
 @media (min-width: 48em) {
-    .Grid--cols-2>.Grid-cell, .Grid--cols-3>.Grid-cell, .Grid--cols-4>.Grid-cell, .Grid--cols-6>.Grid-cell, .Grid--cols-12>.Grid-cell {
+
+    .Grid--cols-2>.Grid-cell,
+    .Grid--cols-3>.Grid-cell,
+    .Grid--cols-4>.Grid-cell,
+    .Grid--cols-6>.Grid-cell,
+    .Grid--cols-12>.Grid-cell {
         flex: 1;
     }
 
@@ -1491,17 +1525,7 @@ a.nav-link:hover {
 
 /* Geometry*/
 
-.tArrow {
-    font-size: 1.8em;
-    font-weight: 100;
-    margin: 2px 0px;
-}
 
-.se-arrow {
-    width: 1.6em;
-    height: auto;
-    margin-left: 1%;
-}
 
 .carouselArrow {
     width: 2.8em;
@@ -1962,7 +1986,8 @@ table {
     font-family: 'Lato', sans-serif;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #eeeeee;
     text-align: left;
     padding: 1vh;
