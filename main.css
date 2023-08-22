@@ -3871,6 +3871,12 @@ body .flex-container.Mobile {
 
 
 @media screen and (max-width: 480px) {
+    .centerVHPhoneOnly {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
     body .box {
         padding: 0.95em 1.0em;
     }
