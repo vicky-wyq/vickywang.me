@@ -375,6 +375,13 @@ body {
 }
 
 /* ===== bg color vickywang.me ===== */
+/* ===== bg color Glorify ===== */
+
+.BgGlorifyOrange {
+    background: var(--GLORIFY-orangeLt);
+}
+/* ===== bg color Glorify ===== */
+
 /* color and shadow*/
 
 .colorGH {
@@ -1008,7 +1015,6 @@ section {
 
 .barGraphText {
     text-align: left;
-    width: 156px;
     padding: 0.02em 0;
     margin: 0.4em 0;
 }
@@ -1124,7 +1130,121 @@ section {
 }
 
 /* bar graph */
+/* Review graph */
 
+.RateGraph {
+    height: auto;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+
+}
+
+.RateGraphText {
+    text-align: left;
+    width: 156px;
+    padding: 0.02em 0;
+    margin: 0.4em 0;
+}
+
+.RateGraph .RateGraphInner {
+    display: block;
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+}
+
+
+.RateGraph .RateGraphInner #RateGraph {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+.RateGraph .RateGraphInner #RateGraph div {
+    padding: 0.16em 0;
+    margin: 1.16em 0;
+    background: var(--GLORIFY-orangeLt);
+    overflow: hidden;
+    display: block;
+    width: 0%;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.RateGraph .RateGraphInner #RateGraph div:hover {
+    background: var(--GLORIFY-orange);
+
+}
+
+.RateGraph .RateGraphInner #RateGraph div.RateGrow100 {
+    animation: RateGrow100 1s forwards ease;
+    animation-delay: 0.8s;
+    text-align: right;
+    margin-right: 6px;
+}
+.RateGraph .RateGraphInner #RateGraph div.RateGrow0 {
+    animation: RateGrow0 1s forwards ease;
+    animation-delay: 0.8s;
+    text-align: right;
+    margin-right: 6px;
+    background: var(--Grey300);
+
+
+}
+
+
+.RateGraph .RateGraphInner #RateGraph div p {
+    margin: 0;
+}
+
+.RateGraph #rerun p {
+    padding: 10px 20px;
+    border: 2px #fff solid;
+    width: max-content;
+    display: block;
+    margin: 30px auto;
+    border-radius: 600px;
+    text-align: center;
+    color: #fff;
+}
+
+.RateGraph #rerun p:hover {
+    border: 2px #a9d25a solid;
+    color: #676767;
+    background: #a9d25a;
+}
+/* Review graph */
+
+@keyframes RateGrow100 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+        padding-right: 12px;
+    }
+}
+@keyframes RateGrow0 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+        padding-right: 12px;
+    }
+}
+/* Review graph */
+
+/* bar graph */
 @keyframes grow0 {
     0% {
         width: 0%;
@@ -4505,7 +4625,10 @@ footer {
 }
 
 /* alignment */
-
+/* ====== Margin V2 ====== */
+.marginXS {
+    margin: 0.2em;
+}
 
 /* margin and padding*/
 
@@ -4698,6 +4821,9 @@ align-items: center;
 
 .widthMPhHalf {
     width: 40rem;
+}
+.widthMax {
+    width: 100%;
 }
 
 .widthL {
