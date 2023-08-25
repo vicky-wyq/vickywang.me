@@ -1001,6 +1001,16 @@ section {
         transparent 400px
       );
  */
+
+/* ===== Graph Shared ===== */
+
+ .GraphText {
+    text-align: left;
+    padding: 0.02em 0;
+    margin: 0.4em 0;
+}
+/* ===== Graph Shared ===== */
+
 /* bar graph */
 
 .barGraph {
@@ -1013,11 +1023,6 @@ section {
 
 }
 
-.barGraphText {
-    text-align: left;
-    padding: 0.02em 0;
-    margin: 0.4em 0;
-}
 
 .barGraph .barGraphInner {
     text-align: right;
@@ -1142,12 +1147,7 @@ section {
 
 }
 
-.RateGraphText {
-    text-align: left;
-    width: 156px;
-    padding: 0.02em 0;
-    margin: 0.4em 0;
-}
+
 
 .RateGraph .RateGraphInner {
     display: block;
