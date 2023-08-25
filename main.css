@@ -380,6 +380,7 @@ body {
 .BgGlorifyOrange {
     background: var(--GLORIFY-orangeLt);
 }
+
 /* ===== bg color Glorify ===== */
 
 /* color and shadow*/
@@ -1004,11 +1005,12 @@ section {
 
 /* ===== Graph Shared ===== */
 
- .GraphText {
+.GraphText {
     text-align: left;
     padding: 0.02em 0;
     margin: 0.4em 0;
 }
+
 /* ===== Graph Shared ===== */
 
 /* bar graph */
@@ -1189,6 +1191,7 @@ section {
     text-align: right;
     margin-right: 6px;
 }
+
 .RateGraph .RateGraphInner #RateGraph div.RateGrow0 {
     animation: RateGrow0 1s forwards ease;
     animation-delay: 0.8s;
@@ -1220,6 +1223,7 @@ section {
     color: #676767;
     background: #a9d25a;
 }
+
 /* Review graph */
 
 @keyframes RateGrow100 {
@@ -1232,6 +1236,7 @@ section {
         padding-right: 12px;
     }
 }
+
 @keyframes RateGrow0 {
     0% {
         width: 0%;
@@ -1242,6 +1247,7 @@ section {
         padding-right: 12px;
     }
 }
+
 /* Review graph */
 
 /* bar graph */
@@ -1810,6 +1816,13 @@ ul .listCircle {
     list-style-type: circle;
     margin-left: 1em;
 }
+
+ol .listABC {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+
+}
+
 
 /** page 
 main {}
@@ -2468,6 +2481,7 @@ button.passwordArr {
     float: right;
     transition: all 1s ease-in-out;
 
+
 }
 
 .accordion.is-open:after {
@@ -2475,10 +2489,15 @@ button.passwordArr {
     background-image: url("icon/minus.svg");
     transform: rotate(180deg);
     transition: all .8s ease-in-out;
+
+
+
+
 }
 
 .accordion:hover,
 .accordion.is-open {
+    
     box-shadow: inset -1px 0 0 var(--Grey200), inset 0 0px 0 var(--Grey200), inset 1px 0 0 var(--Grey200), inset 0 1px 0 var(--Grey200);
     background-color: var(--Grey100);
 
@@ -3997,6 +4016,7 @@ body .flex-container.Mobile {
         justify-content: center;
         margin: 0;
     }
+
     body .box {
         padding: 0.95em 1.0em;
     }
@@ -4746,7 +4766,7 @@ footer {
     /* text-transform: capitalize; */
     color: var(--Grey900);
     display: flex;
-align-items: center;
+    align-items: center;
 }
 
 .seArrow {
@@ -4822,6 +4842,7 @@ align-items: center;
 .widthMPhHalf {
     width: 40rem;
 }
+
 .widthMax {
     width: 100%;
 }
@@ -4909,9 +4930,11 @@ align-items: center;
 .iconXL {
     width: 48px;
 }
+
 .iconMax {
     width: 56px;
 }
+
 .iconDemo {
     margin: 0.6em;
     padding: 1.2em;
@@ -5752,6 +5775,7 @@ button.ClipboardIconOnly {
 .hoverGrey100:hover {
     background-color: var(--Grey100);
 }
+
 .hoverGrey300 {
     background-color: none;
 }
@@ -5932,6 +5956,7 @@ button.Clipboard.clickTxt:hover {
 button.Clipboard.clickTxt:focus {
     outline: 2px solid var(--Grey400);
 }
+
 button.Clipboard.clickTxt:active {
     transform: skew(-2deg) rotate(2deg);
 }
