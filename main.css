@@ -2480,8 +2480,6 @@ button.passwordArr {
     width: 28px;
     float: right;
     transition: all 1s ease-in-out;
-
-
 }
 
 .accordion.is-open:after {
@@ -2489,27 +2487,19 @@ button.passwordArr {
     background-image: url("icon/minus.svg");
     transform: rotate(180deg);
     transition: all .8s ease-in-out;
-
-
-
-
 }
 
 .accordion:hover,
-.accordion.is-open {
-    
+.accordion.is-open { 
     box-shadow: inset -1px 0 0 var(--Grey200), inset 0 0px 0 var(--Grey200), inset 1px 0 0 var(--Grey200), inset 0 1px 0 var(--Grey200);
     background-color: var(--Grey100);
-
     /*    
-
     border-left: 1px solid var(--Grey200);
     border-right: 1px solid var(--Grey200);
     border-top: 1px solid var(--Grey200);
-
     border: 1px solid var(--Grey300);
     background-color: var(--Grey100);
-*/
+    */
 }
 
 .withBg.accordion:hover,
@@ -2518,9 +2508,7 @@ button.passwordArr {
 }
 
 .accordion-content {
-    /*    background-color: var(--Grey100);
-
-*/
+    /* background-color: var(--Grey100); */
     border-bottom: 1px solid var(--Grey200);
     border-left: 1px solid var(--Grey200);
     border-right: 1px solid var(--Grey200);
@@ -2530,7 +2518,6 @@ button.passwordArr {
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 }
-
 
 /* accordion */
 .element:after {
@@ -2690,7 +2677,7 @@ button.passwordArr {
     }
 
     body .logo {
-        padding: 0.5em 0.8em;
+        padding: 0.5em 1.2em !important;
     }
 
     body .se-arrow {
@@ -2975,7 +2962,7 @@ button.passwordArr {
     }
 
     body .logo {
-        padding: 0.5em 0.6em;
+        padding: 0.5em 0.4em !important;
     }
 
     body .widthXS {
@@ -3998,14 +3985,22 @@ body .flex-container.Mobile {
 
 .logo {
 
-    padding: 0.5em 0;
     font-size: 1.8rem;
     font-weight: 300;
-    /* margin-right: 8%; */
+    /* margin-right: 8%; 
+        padding: 0.5em 0;
+
+    */
     color: var(--colorBlack);
     width: 1.2em;
 }
 
+@media (max-width: 1200px){
+    body .logo {
+        padding: 0.5em 0.4em;
+    }
+
+}
 
 
 
@@ -4720,13 +4715,8 @@ footer {
     padding: 0 !important;
 }
 
-.paddingS {
-    padding: 1rem;
-}
 
-.paddingM {
-    padding: 3rem;
-}
+
 
 .padding {
     padding: 1vw;
