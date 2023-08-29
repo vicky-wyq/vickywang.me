@@ -726,7 +726,7 @@ polygon {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.95em 1.6vw;
+    padding: 19px 1.6vw;
     border-radius: 0;
     transition: .2s all;
 }
