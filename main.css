@@ -2476,21 +2476,33 @@ button.passwordArr {
 .accordion:after {
     content: "";
     background-image: url("icon/plus.svg");
-    height: 28px;
-    width: 28px;
-    float: right;
+    height: 32px;
+    width: 32px;
     transition: all 1s ease-in-out;
+
+
+
+
 }
 
 .accordion.is-open:after {
     content: "";
     background-image: url("icon/minus.svg");
-    transform: rotate(180deg);
+    height: 32px;
+    width: 32px;
+
+
     transition: all .8s ease-in-out;
+
+
+    transform-origin: center;
+    transform: rotate(180deg);
+
+
 }
 
 .accordion:hover,
-.accordion.is-open { 
+.accordion.is-open {
     box-shadow: inset -1px 0 0 var(--Grey200), inset 0 0px 0 var(--Grey200), inset 1px 0 0 var(--Grey200), inset 0 1px 0 var(--Grey200);
     background-color: var(--Grey100);
     /*    
@@ -2512,6 +2524,7 @@ button.passwordArr {
     border-bottom: 1px solid var(--Grey200);
     border-left: 1px solid var(--Grey200);
     border-right: 1px solid var(--Grey200);
+
 
     padding: 0 20px;
     max-height: 0;
@@ -3995,7 +4008,7 @@ body .flex-container.Mobile {
     width: 1.2em;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     body .logo {
         padding: 0.5em 0.4em;
     }
@@ -4726,7 +4739,7 @@ footer {
     padding: 2rem;
 }
 
- 
+
 .padding-lr-xl {
     padding: 0 7vw;
 }
