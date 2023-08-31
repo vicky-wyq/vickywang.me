@@ -25,12 +25,12 @@ html {
     --border-radiusXL: 1.25em;
     --border-radiusMax: 50%;
 
-    --paddingXS: 4px;
-    --paddingS: 8px;
-    --paddingM: 12px;
-    --paddingL: 16px;
-    --paddingXL: 20px;
-    --paddingMax: 24px;
+    --paddingXS: 6px;
+    --paddingS: 10px;
+    --paddingM: 14px;
+    --paddingL: 18px;
+    --paddingXL: 22px;
+    --paddingMax: 26px;
 
 
     --height100: 100%;
@@ -4884,27 +4884,37 @@ footer {
 
 .paddingXS {
     padding: var(--paddingXS);
+    width: fit-content;
 }
 
 .paddingS {
     padding: var(--paddingS);
+    width: fit-content;
+
 }
 
 .paddingM {
     padding: var(--paddingM);
+    width: fit-content;
+
 }
 
 .paddingL {
     padding: var(--paddingL);
+    width: fit-content;
 
 }
 
 .paddingXL {
     padding: var(--paddingXL);
+    width: fit-content;
+
 }
 
 .paddingMax {
     padding: var(--paddingMax);
+    width: fit-content;
+
 }
 
 /* ======== paddings ========= */
