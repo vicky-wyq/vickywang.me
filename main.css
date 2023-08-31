@@ -25,12 +25,12 @@ html {
     --border-radiusXL: 1.25em;
     --border-radiusMax: 50%;
 
-    --paddingXS: 0.25em;
-    --paddingS: 0.5em;
-    --paddingM: 0.75em;
-    --paddingL: 1em;
-    --paddingXL: 1.25em;
-    --paddingMax: 1.5em;
+    --paddingXS: 4px;
+    --paddingS: 8px;
+    --paddingM: 12px;
+    --paddingL: 16px;
+    --paddingXL: 20px;
+    --paddingMax: 24px;
 
 
     --height100: 100%;
