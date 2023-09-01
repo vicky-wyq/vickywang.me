@@ -137,12 +137,6 @@ html {
 
 }
 
-.Testing {
-    transition: background-color 0.3s ease;
-    height: 10em;
-    background: var(--Warm);
-    transition: background-color 0.3s ease;
-}
 
 .borderRadiusXS {
     border-radius: var(--border-radiusXS);
@@ -2055,23 +2049,7 @@ hr {
     min-width: 100px;
 }
 
-/* ------------------- Responsive grid -------------------*/
 
-
-/*Basic Grid Styles*/
-.Grid {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-}
-
-.u-textCenter {
-    text-align: center;
-}
-
-.Grid-cell {
-    flex: 1;
-}
 
 
 
@@ -2959,12 +2937,6 @@ button.passwordArr {
 }
 
 /* below from web 2.0*/
-
-
-
-
-
-
 @media all and (max-width: 680px) {
     body .iconXforModal {
         height: 26px;
@@ -3145,6 +3117,29 @@ button.passwordArr {
 
 }
 
+/* ------------------- Responsive grid -------------------*/
+
+
+/*Basic Grid Styles*/
+.Grid {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.u-textCenter {
+    text-align: center;
+}
+
+.Grid-cell {
+    flex: 1;
+}
+
+
+
+
+
+
 /*===========================================*/
 /* Base classes for all media - Mobile first */
 .Grid--cols-2>.Grid-cell {
@@ -3163,8 +3158,14 @@ button.passwordArr {
     flex: 0 0 calc(50% - 1em);
 }
 
-.Grid--cols-12>.Grid-cell {
-    flex: 0 0 calc(33.3333% - 1em);
+.Grid--cols-8>.Grid-cell {
+    flex: 0 0 calc(25% - 1em);
+    /*
+flex: 0 0 calc(33.3333% - 1em);
+    flex: 0 0 calc(12.5% - 1em);
+
+
+*/
 }
 
 .Grid--holly-grail .aside,
@@ -3203,8 +3204,14 @@ button.passwordArr {
         flex: 0 0 calc(33.3333% - 1em);
     }
 
-    .Grid--cols-12>.Grid-cell {
-        flex: 0 0 calc(16.6666% - 1em);
+    .Grid--cols-8>.Grid-cell {
+        flex: 0 0 calc(25% - 1em);
+
+
+        /*
+                flex: 0 0 calc(16.6666% - 1em);
+
+        */
     }
 
     .Grid--holly-grail .aside {
@@ -3240,7 +3247,7 @@ button.passwordArr {
     .Grid--cols-3>.Grid-cell,
     .Grid--cols-4>.Grid-cell,
     .Grid--cols-6>.Grid-cell,
-    .Grid--cols-12>.Grid-cell {
+    .Grid--cols-8>.Grid-cell {
         flex: 1;
     }
 
@@ -3323,8 +3330,8 @@ button.passwordArr {
 
 }
 
-.content-1of12::before {
-    content: "1/12";
+.content-1of8::before {
+    content: "1/8";
     font-weight: 300;
 
     color: var(--colorTealDk);
