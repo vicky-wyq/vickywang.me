@@ -5921,7 +5921,7 @@ button.ClipboardIconOnly:active {
     content: "Copied";
     position: absolute;
     top: -45px;
-    right: 0px;
+    right: -12px;
     background: var(--Grey900);
     padding: 8px 10px;
     border-radius: 20px;
@@ -5933,7 +5933,7 @@ button.ClipboardIconOnly:active {
     content: "";
     position: absolute;
     top: -20px;
-    right: 25px;
+    right: 18px;
     width: 10px;
     height: 10px;
     background: var(--Grey900);
