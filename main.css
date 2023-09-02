@@ -775,10 +775,11 @@ polygon {
     position: absolute;
     background-color: var(--white);
     width: 100%;
+    
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 98;
-    border-radius: 12px;
+    border-radius: var(--border-radiusM);
 }
 
 .dropdown-content a {
@@ -788,12 +789,15 @@ polygon {
     display: block;
     text-align: left;
     margin: 6px;
+    border: 0.06em solid var(--Grey200);
+    border-radius: var(--border-radiusM);
+
 }
 
 .dropdown-content a:hover {
     background-color: var(--Grey100);
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: var(--border-radiusM);
 }
 
 .dropdown:hover .dropdown-content {
@@ -1931,13 +1935,13 @@ h4 {
 
 
 h5 {
-    font-size: clamp(0.73em, 0.92vw, 1em);
+    font-size: clamp(0.84em, 0.92vw, 1em);
     margin-top: clamp(0.2em, 0.4em, 1em);
     margin-bottom: clamp(0.2em, 0.4em, 1em);
 }
 
 h6 {
-    font-size: clamp(0.68em, 0.78vw, 0.86em);
+    font-size: clamp(0.72em, 0.78vw, 0.86em);
     margin: 0.26em 0;
 }
 
@@ -2168,7 +2172,6 @@ hr {
 /* ---- must always have for responsive*/
 .element {
     padding: 0.8em 1em 0;
-
     /* ----     0.8em 1em 0 0;  top, right, bottom, left;
 
 
