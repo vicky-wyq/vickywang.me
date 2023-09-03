@@ -2179,7 +2179,7 @@ hr {
 
 /* ---- must always have for responsive*/
 .element {
-    padding: 0.8em 1em 0;
+    padding: 0.4em 0.8em 0;
     /* ----     0.8em 1em 0 0;  top, right, bottom, left;
 
 
@@ -2548,24 +2548,21 @@ button.passwordArr {
 /* element = elementDemo */
 
 .elementDemo {
-    padding: 0.8em 1em 0;
-    margin-bottom: 1em;
-    border-radius: 6px;
+    padding: 0.4em 0.8em 0;
+    margin-bottom: 0.8em;
+    border-radius: var(--border-radiusXS);
     border: 0.01em solid var(--Warm);
     background: var(--Warm);
     transition: background-color 0.3s ease;
 }
 
 .elementInnerDemo {
-    padding: 0.8em 0.5em;
+    padding: 0.8em 0.4em;
     transition: background-color 0.3s ease;
-    border-radius: 6px;
+    border-radius: var(--border-radiusXS);
     border: 0.01em solid var(--colorTealDk);
-
-
     background: var(--colorTealLtest);
     transition: background-color 0.3s ease;
-
 }
 
 .elementInnerDemo:hover {
@@ -2949,6 +2946,11 @@ button.passwordArr {
 
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
+
+    body .rowVW {
+        display: flex;
+        flex-direction: column;
+    }
     body .iconXforModal {
         height: 26px;
         width: 26px;
@@ -3304,6 +3306,20 @@ flex: 0 0 calc(33.3333% - 1em);
     }
 }
 
+.paddingleft{
+    padding-left: 0.4em;
+}
+.max-width::before {
+    content: "max-width";
+    font-weight: 300;
+    color: var(--colorTealDk);
+}
+.fix-width::before {
+    content: "fix-width";
+    font-weight: 300;
+    color: var(--colorTealDk);
+}
+
 .content-1of1::before {
     content: "1";
     font-weight: 300;
@@ -3314,7 +3330,6 @@ flex: 0 0 calc(33.3333% - 1em);
     content: "1/2";
     font-weight: 300;
     color: var(--colorTealDk);
-
 }
 
 .content-1of3::before {
@@ -4036,6 +4051,10 @@ body .flex-container.Mobile {
 
 
 @media screen and (max-width: 480px) {
+    body .rowVW {
+        display: flex;
+        flex-direction: column;
+    }
     .centerVHPhoneOnly {
         display: flex;
         align-items: center;
@@ -4844,7 +4863,9 @@ footer {
     margin-right: 10px;
 }
 
-
+.widthFitContent{
+    width: max-content;
+}
 .widthXS {
     width: 12em;
 }
