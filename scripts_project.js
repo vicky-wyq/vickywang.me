@@ -399,33 +399,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // LRCarousel ends
 
 
-  const audioElement = document.getElementById("myAudio");
-  const playButton = document.getElementById("play-button");
-  const timeDisplay = document.getElementById("time-display");
+  function initAudioPlayer(audioContainer) {
+    const audioElement = audioContainer.querySelector('audio');
+    const playButton = audioContainer.querySelector('.play-button');
+    const timeDisplay = audioContainer.querySelector('.time-display');
 
-  playButton.addEventListener("click", function() {
-    if (audioElement.paused) {
-      audioElement.play();
-      playButton.innerHTML = "Pause";
-    } else {
-      audioElement.pause();
-      playButton.innerHTML = "Play";
+    playButton.addEventListener("click", function() {
+      if (audioElement.paused) {
+        audioElement.play();
+        playButton.innerHTML = "Pause";
+      } else {
+        audioElement.pause();
+        playButton.innerHTML = "Play";
+      }
+    });
+
+    audioElement.addEventListener("timeupdate", function() {
+      const currentTime = audioElement.currentTime;
+      const duration = audioElement.duration;
+      timeDisplay.innerHTML = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+    });
+
+    function formatTime(time) {
+      const minutes = Math.floor(time / 60);
+      const seconds = Math.floor(time % 60);
+      return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     }
-  });
-
-  audioElement.addEventListener("timeupdate", function() {
-    const currentTime = audioElement.currentTime;
-    const duration = audioElement.duration;
-
-    timeDisplay.innerHTML = `${formatTime(currentTime)} / ${formatTime(duration)}`;
-  });
-
-  function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60);
-
-    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   }
 
-
-});
+  // Initialize each audio player
+  document.querySelectorAll('.audio-container').forEach(initAudioPlayer);
