@@ -553,7 +553,7 @@ polygon {
 }
 
 .cardGlorify {
-    background: var(--white);
+    background: var(--GLORIFY-orangeLtest);
     border-radius: 0.8em;
     border: 1px solid var(--border);
     height: auto;
@@ -6290,7 +6290,7 @@ button {
 /* Style the audio container */
 .audio-container {
     width: 100px;
-    background-color: violet;
+    background-color: none;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -6298,10 +6298,10 @@ button {
 
 /* Style the play button */
 .play-button {
-    width: 50px;
-    height: 50px;
-    background-color: #007bff;
-    color: white;
+    width: 56px;
+    height: 56px;
+    background-color: var(--Grey900);
+    color: var(--white);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -6311,7 +6311,7 @@ button {
 .time-display {
     margin-top: 10px;
     font-size: 14px;
-    color: #333;
+    color: var(--Grey700);
 }
 
 

@@ -429,7 +429,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Initialize each audio player
   document.querySelectorAll('.audio-container').forEach(initAudioPlayer);
-  }
+  
+
+
+
 
 
 });
