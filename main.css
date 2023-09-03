@@ -2579,7 +2579,7 @@ button.passwordArr {
     font-weight: 300;
     padding: 0.8em 1em 0;
     /*top 0.8, left and right 1*/
-    margin-bottom: 1em;
+    margin-bottom: 0.4em;
     border-radius: 6px;
     /*     border: 0.06em solid var(--GLORIFY-orange); */
 
@@ -2610,11 +2610,11 @@ button.passwordArr {
 }
 
 .Grid--gutters {
-    margin-left: -1em;
+    margin-left: -0.4em;
 }
 
 .Grid--gutters .Grid-cell {
-    padding-left: 1em;
+    padding-left: 0.4em;
 }
 
 .Grid--gutters .Grid--nested .Grid-cell:first-of-type .Demo {
