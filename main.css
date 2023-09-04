@@ -557,10 +557,13 @@ polygon {
     border-radius: 0.8em;
     border: 2px solid var(--GLORIFY-orange);
     height: auto;
-
-
 }
-
+.cardGlorifyBg {
+    background: var(--White-transparent);
+    border-radius: 0.8em;
+    border: 2px solid var(--GLORIFY-orange);
+    height: auto;
+}
 .cardBorder {
     border: 0.06em solid var(--Grey200);
     border-radius: var(--border-radius);
@@ -6300,20 +6303,33 @@ button {
 .play-button {
     width: 56px;
     height: 56px;
+
     background-color: var(--Grey900);
     color: var(--white);
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    -webkit-transition: background-color 500ms ease-in;
+    -moz-transition: background-color 500ms ease-in;
+    -ms-transition: background-color 500ms ease-in;
+    -o-transition: background-color 500ms ease-in;
+    transition: background-color 500ms ease-in;
+}
+.play-button:hover{
+    background-color: var(--colorTealDk);
 }
 .Glorify.play-button{
-    background-color: var(--GLORIFY-orange);
+    background-color: var(--GLORIFY-orangeLt);
+
     color: var(--grey900);
+}
+.Glorify.play-button:hover{
+    background-color: var(--GLORIFY-orange);
 }
 /* Style the time display */
 .time-display {
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top: 0.5em;
+    font-size: clamp(0.68em, 0.72vw, 0.8em);
     color: var(--Grey700);
 }
 
