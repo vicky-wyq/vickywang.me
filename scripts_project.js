@@ -399,37 +399,57 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // LRCarousel ends
 
 
-  function initAudioPlayer(audioContainer) {
-    const audioElement = audioContainer.querySelector('audio');
-    const playButton = audioContainer.querySelector('.play-button');
-    const timeDisplay = audioContainer.querySelector('.time-display');
 
-    playButton.addEventListener("click", function() {
-      if (audioElement.paused) {
-        audioElement.play();
-        playButton.innerHTML = "Pause";
-      } else {
-        audioElement.pause();
-        playButton.innerHTML = "Play";
-      }
-    });
+  // Global variable to hold the currently playing audio element
+let currentlyPlaying = null;
 
-    audioElement.addEventListener("timeupdate", function() {
-      const currentTime = audioElement.currentTime;
-      const duration = audioElement.duration;
-      timeDisplay.innerHTML = `${formatTime(currentTime)} / ${formatTime(duration)}`;
-    });
+function initAudioPlayer(audioContainer) {
+  const audioElement = audioContainer.querySelector('audio');
+  const playButton = audioContainer.querySelector('.play-button');
+  const timeDisplay = audioContainer.querySelector('.time-display');
 
-    function formatTime(time) {
-      const minutes = Math.floor(time / 60);
-      const seconds = Math.floor(time % 60);
-      return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  playButton.addEventListener("click", function() {
+    // Pause the currently playing audio if there is one
+    if (currentlyPlaying && currentlyPlaying !== audioElement) {
+      currentlyPlaying.pause();
+      currentlyPlaying.closest('.audio-container').querySelector('.play-button').innerHTML = "Play";
     }
-  }
 
-  // Initialize each audio player
-  document.querySelectorAll('.audio-container').forEach(initAudioPlayer);
-  
+    // Play or pause the clicked audio element
+    if (audioElement.paused) {
+      audioElement.play();
+      playButton.innerHTML = "Pause";
+      currentlyPlaying = audioElement;
+    } else {
+      audioElement.pause();
+      playButton.innerHTML = "Play";
+      currentlyPlaying = null;
+    }
+  });
+
+  // Update time display during playback
+  audioElement.addEventListener("timeupdate", function() {
+    const currentTime = audioElement.currentTime;
+    const duration = audioElement.duration;
+    timeDisplay.innerHTML = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+  });
+
+  // Reset the play button and currentlyPlaying when the audio ends
+  audioElement.addEventListener("ended", function() {
+    playButton.innerHTML = "Play";
+    currentlyPlaying = null;
+  });
+
+  function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  }
+}
+
+// Initialize each audio player
+document.querySelectorAll('.audio-container').forEach(initAudioPlayer);
+
 
 
 
