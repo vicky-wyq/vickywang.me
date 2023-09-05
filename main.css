@@ -1918,7 +1918,7 @@ h6 {
 }
 
 h1 {
-    font-size: clamp(1.4em, 1.8vw, 2.2em);
+    font-size: clamp(1.3em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
@@ -1927,19 +1927,19 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.3em, 1.46vw, 1.68em);
+    font-size: clamp(1.2em, 1.46vw, 1.68em);
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
 
 h3 {
-    font-size: clamp(1.2em, 1.26vw, 1.48em);
+    font-size: clamp(1.04em, 1.26vw, 1.48em);
     margin-top: clamp(0.42em, 0.56em, 1.2em);
     margin-bottom: clamp(0.42em, 0.56em, 1.2em);
 }
 
 h4 {
-    font-size: clamp(0.96em, 1.12vw, 1.2em);
+    font-size: clamp(0.92em, 1.12vw, 1.2em);
     margin-top: clamp(0.36em, 0.4em, 1em);
     margin-bottom: clamp(0.36em, 0.4em, 1em);
 }
@@ -2968,6 +2968,10 @@ button.passwordArr {
 
     body .widthXS {
         width: 8em;
+    }
+    body .widthXXS {
+        width: 5em;
+    
     }
 
     body .displayPhone {
@@ -4450,6 +4454,7 @@ body .flex-container.Mobile {
     top: calc(100% - 128px);
     transform: translate(-50%, -50%);
     left: 50%;
+    width: 100%;
 }
 
 .divider {
@@ -4869,6 +4874,11 @@ footer {
 .widthFitContent{
     width: max-content;
 }
+.widthXXS {
+    width: 8em;
+
+}
+
 .widthXS {
     width: 12em;
 }
