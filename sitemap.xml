@@ -9,72 +9,117 @@
 
 <url>
   <loc>https://vickywang.me/</loc>
-  <lastmod>2021-11-15T06:46:27+00:00</lastmod>
+  <lastmod>2023-09-03T00:12:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://vickywang.me/project/</loc>
-  <lastmod>2021-11-15T03:14:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://vickywang.me/architecture/</loc>
-  <lastmod>2021-11-15T06:47:27+00:00</lastmod>
+  <lastmod>2023-08-29T04:01:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/photography/</loc>
-  <lastmod>2021-11-15T06:47:48+00:00</lastmod>
+  <lastmod>2023-08-15T04:46:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://vickywang.me/project/meal_planner/</loc>
-  <lastmod>2021-11-22T00:35:44+00:00</lastmod>
+  <loc>https://vickywang.me/about/</loc>
+  <lastmod>2023-08-15T04:42:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://vickywang.me/project/gardeners_hub/</loc>
-  <lastmod>2021-11-11T19:38:48+00:00</lastmod>
+  <loc>https://vickywang.me/resume.pdf</loc>
+  <lastmod>2023-08-22T23:11:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://vickywang.me/project/appointment_maker/</loc>
-  <lastmod>2021-11-16T20:48:50+00:00</lastmod>
+  <loc>https://vickywang.me/glorify/</loc>
+  <lastmod>2023-09-05T21:17:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/appointa/</loc>
+  <lastmod>2023-09-02T22:50:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/seer/</loc>
+  <lastmod>2023-09-02T22:51:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/design_system/</loc>
+  <lastmod>2023-09-03T21:17:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/navigation/</loc>
+  <lastmod>2023-09-02T22:51:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/gardeners_hub/</loc>
+  <lastmod>2023-08-20T08:16:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/appointment_maker/</loc>
+  <lastmod>2023-08-20T08:12:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/meal_planner/</loc>
+  <lastmod>2023-08-21T03:16:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/recreation_commons/</loc>
-  <lastmod>2021-11-12T06:09:47+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-08-29T04:01:45+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/narrow_stripes/</loc>
-  <lastmod>2021-10-14T00:26:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/manifold_ground/</loc>
-  <lastmod>2021-10-14T05:29:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/thesis_studio/</loc>
-  <lastmod>2021-10-14T00:26:14+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-08-26T08:00:43+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/recovery_of_river_edges/</loc>
-  <lastmod>2021-10-14T05:58:26+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-08-26T08:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/architecture/thesis_studio/</loc>
+  <lastmod>2023-08-26T07:59:51+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/the_rotation_of_curves/</loc>
-  <lastmod>2021-10-14T06:12:40+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-08-26T07:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/architecture/manifold_ground/</loc>
+  <lastmod>2023-08-26T08:00:39+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/LACAMA/</loc>
-  <lastmod>2021-10-18T02:34:41+00:00</lastmod>
+  <lastmod>2023-08-26T08:00:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/navigation/V1/</loc>
+  <lastmod>2023-05-18T21:17:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/navigation/V2/</loc>
+  <lastmod>2023-05-12T22:56:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/navigation/V3/</loc>
+  <lastmod>2023-05-12T22:56:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
