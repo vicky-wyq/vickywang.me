@@ -3,10 +3,10 @@ function toggleContent(button) {
 
   if (content.style.maxHeight) {
       content.style.maxHeight = null;
-      button.textContent = "Read More";
+      button.innerHTML = "Read More &#8744;";
   } else {
       content.style.maxHeight = content.scrollHeight + "px";
-      button.textContent = "Read Less";
+      button.innerHTML = "Read Less &#8743;";
   }
 }
 
