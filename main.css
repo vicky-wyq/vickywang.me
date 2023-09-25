@@ -199,6 +199,12 @@ body {
 
 }
 
+.more {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
 .displayNone {
     display: none;
 }
@@ -2471,12 +2477,23 @@ button.passwordArr {
     height: 32px;
     width: 32px;
     transition: all 1s ease-in-out;
+}
+.accordion.Ver:after {
+    content: "Read more ...";
+    background-image: url("");
+    width:fit-content;
+    transition: all 1s ease-in-out;
+}
+.accordion.Ver.is-open:after {
+    content: "Read less ...";
+    background-image: url("");
+
+    width:fit-content;
 
 
-
+    transition: all .8s ease-in-out;
 
 }
-
 .accordion.is-open:after {
     content: "";
     background-image: url("icon/minus.svg");
@@ -2488,7 +2505,6 @@ button.passwordArr {
 
 
     transform-origin: center;
-    transform: rotate(180deg);
 
 
 }
@@ -6272,7 +6288,6 @@ button {
 }
 
 .buttonDemoCode {
-
     background-color: var(--Grey900);
     /* Blue background color */
     color: var(--white);
@@ -6293,7 +6308,26 @@ button {
     background-color: var(--colorTealDk);
     /* A slightly darker blue for the hover effect */
 }
-
+.buttonTextOnly {
+    background: none;
+    color: var(--grey900);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.buttonTextOnly.Glorify {
+    background: none;
+    color: var(--GlorifyBlue);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 2px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
 /* ===== button ====== */
 
 

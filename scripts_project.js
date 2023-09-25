@@ -1,6 +1,40 @@
+function toggleContent(button) {
+  const content = button.previousElementSibling;
+
+  if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      button.textContent = "Read More";
+  } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      button.textContent = "Read Less";
+  }
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
+  const accordionBtns = document.querySelectorAll(".accordion");
+
+  accordionBtns.forEach((accordion) => {
+    accordion.onclick = function () {
+      this.classList.toggle("is-open");
+  
+      let content = this.nextElementSibling;
+      console.log(content);
+  
+      if (content.style.maxHeight) {
+        //this is if the accordion is open
+        content.style.maxHeight = null;
+      } else {
+        //if the accordion is currently closed
+        content.style.maxHeight = content.scrollHeight + "px";
+        console.log(content.style.maxHeight);
+      }
+    };
+  });
+    //accordion
 
   // Helper function to copy text to the clipboard
   function copyToClipboard(textElement, feedbackElement) {
