@@ -2478,22 +2478,8 @@ button.passwordArr {
     width: 32px;
     transition: all 1s ease-in-out;
 }
-.accordion.Ver:after {
-    content: "Read more ...";
-    background-image: url("");
-    width:fit-content;
-    transition: all 1s ease-in-out;
-}
-.accordion.Ver.is-open:after {
-    content: "Read less ...";
-    background-image: url("");
-
-    width:fit-content;
 
 
-    transition: all .8s ease-in-out;
-
-}
 .accordion.is-open:after {
     content: "";
     background-image: url("icon/minus.svg");
@@ -6310,13 +6296,18 @@ button {
 }
 .buttonTextOnly {
     background: none;
-    color: var(--grey900);
+    color: var(--colorTealLt);
     border: none;
     border-radius: 3px;
     padding: 5px 3px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
+}
+
+.buttonTextOnly:hover {
+    color: var(--colorTealDk);
+
 }
 .buttonTextOnly.Glorify {
     background: none;
