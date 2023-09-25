@@ -2319,7 +2319,7 @@ input {
 button.passwordArr {
     z-index: 98;
     padding: 0;
-    margin-top: -8px;
+    margin-top: -21px;
     color: var(--Grey900);
 }
 
