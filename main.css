@@ -2293,6 +2293,7 @@ input {
 }
 .input-field {
     display: flex; /* Add flex */
+    flex-direction: column;
     align-items: center; /* Vertically center children */
     justify-content: center; /* Horizontally center children */
     position: absolute;
@@ -2492,7 +2493,7 @@ button.passwordArr {
 
     transform-origin: center;
 
-
+    transform: rotate(180deg);
 }
 
 .accordion:hover,
