@@ -2633,11 +2633,12 @@
           <!-- Arrow -->
           <div class="wrapper">
             <div class="element">
-              <h2 class="tArrow">Inputs <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+              <h2 class="tArrow">Inputs<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
               </h2>
             </div>
           </div>
           <!-- Arrow -->
+
           <div class="blankHXS"></div>
 
 
@@ -2645,15 +2646,22 @@
           <div class="img__wrap widthS heightS element">
             <div class="img__descriptionDesignSystem">
               <div class="input-field">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter password">
+
+
+                <div class="column">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" placeholder="Enter password">
+  
+                  <div class="pwIncorrectHeight">
+                    <span id="pwIncorrect">Password is incorrect </span>
+                  </div>
+                </div>
                 <button class="passwordArr" type="submit">
                   <img src="../icon/arrow-forward.svg" alt="Enter">
                   <!--  <i class="fas fa-chevron-right"></i> -->
                 </button>
-                <div class="pwIncorrectHeight">
-                  <span id="pwIncorrect">Password is incorrect </span>
-                </div>
+
+
               </div>
             </div>
 
