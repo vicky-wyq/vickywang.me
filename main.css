@@ -2293,9 +2293,9 @@ input {
 }
 .input-field {
     display: flex; /* Add flex */
-    flex-direction: column;
-    align-items: center; /* Vertically center children */
-    justify-content: center; /* Horizontally center children */
+    flex-direction: row;
+    align-items: left; /* Vertically center children */
+    justify-content:flex-end; /* Horizontally center children */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2310,7 +2310,7 @@ input {
     align-items: center;
     justify-content: center;
     width: 1.8rem;
-    height: 42px;
+    height: 90px;
     background: transparent;
     border: none;
     cursor: pointer;
