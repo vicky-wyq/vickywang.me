@@ -2352,7 +2352,7 @@ input {
     align-items: center;
     justify-content: center;
     width: 1.8rem;
-    height: 96px;
+    height: 118px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -3788,6 +3788,9 @@ label {
     line-height: 26px;
     color: var(--Grey900);
     font-weight: 300;
+
+
+    
 
 }
 
