@@ -564,12 +564,14 @@ polygon {
     border: 2px solid var(--GLORIFY-orange);
     height: auto;
 }
+
 .cardGlorifyBg {
     background: var(--White-transparent);
     border-radius: 0.8em;
     border: 2px solid var(--GLORIFY-orange);
     height: auto;
 }
+
 .cardBorder {
     border: 0.06em solid var(--Grey200);
     border-radius: var(--border-radius);
@@ -2099,6 +2101,14 @@ hr {
     filter: alpha(opacity=100);*/
 }
 
+.elementCard.LASO:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--AMBlue);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
 .elementCard.GLORIFY:hover {
     cursor: pointer;
     border-bottom: 5px solid var(--GLORIFY-orangeBgLt);
@@ -2279,39 +2289,60 @@ padding: 0.8em 0em 0;
 
 /* ---- hide/show --------- */
 /* ---- password textbox --------- */
+
+.PWinputLanding:focus {
+    background-color: var(--white);
+    border-radius: 10px;
+
+    /* Keep the border width the same as in the default state */
+    border: 1px solid rgba(170, 182, 217, 0.3);
+    /* Add an additional box-shadow to simulate the 2px extra border */
+    box-shadow:
+        inset 0 0 0 1px rgba(64, 109, 192, 0.9),
+        0 0 0 2px rgba(142, 187, 255, 0.3)
+        /* This is the original box-shadow for the 4px offset */
+}
+
+
+
 .PWinput:focus {
     background-color: var(--white);
     border-radius: 10px;
-    border: 3px solid rgba(170, 217, 217, 0.2);
-    box-shadow: inset 0 0 0 1px rgba(143, 191, 191, 0.6);
-  }
-  .PWinputLanding:focus {
-    background-color: var(--white);
-    border-radius: 10px;
-    border: 4px solid rgba(255, 255, 255, 0.9);
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
-  }
+    /* Keep the border width the same as in the default state */
+    border: 1px solid rgba(170, 217, 217, 0.3);
+    /* Add an additional box-shadow to simulate the 2px extra border */
+    box-shadow:
+        inset 0 0 0 1px rgba(143, 191, 191, 0.9),
+        0 0 0 2px rgba(170, 217, 217, 0.3)
+        /* This is the original box-shadow for the 4px offset */
+}
+
 input {
     width: 16em;
     height: 42px;
     padding: 0 12px;
     background: var(--white);
-    border: 1px solid var(--Grey800);
     font-size: 16px;
     border-radius: 10px;
     outline: none;
-    box-shadow: 4px 4px 0px var(--Grey400);
+
+    border: 1px solid var(--Grey800);
 }
+
 .input-field {
-    display: flex; /* Add flex */
+    display: flex;
+    /* Add flex */
     flex-direction: row;
-    align-items: left; /* Vertically center children */
-    justify-content:flex-end; /* Horizontally center children */
+    align-items: left;
+    /* Vertically center children */
+    justify-content: flex-end;
+    /* Horizontally center children */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .input-field button img {
     animation: arrowani 0.8s linear infinite alternate;
 }
@@ -2968,6 +2999,7 @@ button.passwordArr {
         display: flex;
         flex-direction: column;
     }
+
     body .iconXforModal {
         height: 26px;
         width: 26px;
@@ -2983,9 +3015,10 @@ button.passwordArr {
     body .widthXS {
         width: 8em;
     }
+
     body .widthXXS {
         width: 5em;
-    
+
     }
 
     body .displayPhone {
@@ -3327,14 +3360,16 @@ flex: 0 0 calc(33.3333% - 1em);
     }
 }
 
-.paddingleft{
+.paddingleft {
     padding-left: 0.8em;
 }
+
 .max-width::before {
     content: "max-width";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .fix-width::before {
     content: "fix-width";
     font-weight: 300;
@@ -4076,6 +4111,7 @@ body .flex-container.Mobile {
         display: flex;
         flex-direction: column;
     }
+
     .centerVHPhoneOnly {
         display: flex;
         align-items: center;
@@ -4885,9 +4921,10 @@ footer {
     margin-right: 10px;
 }
 
-.widthFitContent{
+.widthFitContent {
     width: max-content;
 }
+
 .widthXXS {
     width: 8em;
 
@@ -6306,6 +6343,7 @@ button {
     background-color: var(--colorTealDk);
     /* A slightly darker blue for the hover effect */
 }
+
 .buttonTextOnly {
     background: none;
     color: var(--colorTealLt);
@@ -6321,6 +6359,7 @@ button {
     color: var(--colorTealDk);
 
 }
+
 .buttonTextOnly.Glorify {
     background: none;
     color: var(--GlorifyBlue);
@@ -6331,6 +6370,7 @@ button {
     font-size: 14px;
     font-weight: 500;
 }
+
 /* ===== button ====== */
 
 
@@ -6362,17 +6402,21 @@ button {
     -o-transition: background-color 500ms ease-in;
     transition: background-color 500ms ease-in;
 }
-.play-button:hover{
+
+.play-button:hover {
     background-color: var(--colorTealDk);
 }
-.Glorify.play-button{
+
+.Glorify.play-button {
     background-color: var(--GLORIFY-orangeLt);
 
     color: var(--grey900);
 }
-.Glorify.play-button:hover{
+
+.Glorify.play-button:hover {
     background-color: var(--GLORIFY-orange);
 }
+
 /* Style the time display */
 .time-display {
     margin-top: 0.5em;

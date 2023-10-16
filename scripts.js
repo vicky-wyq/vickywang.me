@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const pass = document.getElementById("password");
   const submit = document.querySelectorAll(".passwordArr")[0];
   const msg = document.getElementById("pwIncorrect");
-  const w = 'U2FsdGVkX18j3H3K7pBwxfKFt5uPEhdH/yTnAG3EEqiTq3O7DoDT/aONfUej1pWQ';
+  const w = 'U2FsdGVkX1+qBYYpwqY4fxufbaVwlCa29R7uRhGBWGzr5X6zmNO/9WfCnL7sVkCf';
 
   // Get the input field
   // Execute a function when the user presses a key on the keyboard
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         console.log(e);
       }
 
-      if (redirect && redirect.includes("xi")) {
+      if (redirect && redirect.includes("lsh")) {
         window.location.href = redirect;
         msg.style.display = "none";
       } else {
