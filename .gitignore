@@ -7,10 +7,8 @@
 node_modules
 .DS_Store
 */.DS_Store
-05_logo
 .environment.sh
 *.jpg
-xbbsws
 *.jpeg
 *.png
 *.CR2
