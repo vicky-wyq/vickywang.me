@@ -3790,7 +3790,7 @@ label {
     font-weight: 300;
 
 
-    
+
 
 }
 
@@ -4110,6 +4110,18 @@ body .flex-container.Mobile {
 
 
 @media screen and (max-width: 480px) {
+    body .tags {
+        position: relative;
+        top: calc(50% - 10vmin);
+        left: calc(50% - 10vmin);
+        height: 20vmin;
+        width: 20vmin;
+        list-style: none;
+        opacity: 0;
+        user-select: none;
+    }
+
+
     body .rowVW {
         display: flex;
         flex-direction: column;
@@ -6429,3 +6441,49 @@ button {
 
 
 /* ===== audio ====== */
+
+
+/* ===== Cloud tags ====== */
+
+.tags {
+    position: relative;
+    top: calc(50% - 13vmin);
+    left: calc(50% - 13vmin);
+    height: 26vmin;
+    width: 26vmin;
+    list-style: none;
+    opacity: 0;
+    user-select: none;
+}
+
+.tags.-loaded {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.tags .tag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.5vmin;
+    line-height: 2.6vmin;
+    font-family: inherit;
+    font-weight: bold;
+    transition: transform 0.5s linear, opacity 0.5s linear;
+}
+
+.tag>.box {
+    display: inline-block;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===== Cloud tags ====== */
