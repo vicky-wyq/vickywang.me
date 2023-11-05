@@ -4110,18 +4110,6 @@ body .flex-container.Mobile {
 
 
 @media screen and (max-width: 480px) {
-    body .tags {
-        position: relative;
-        top: calc(50% - 10vmin);
-        left: calc(50% - 10vmin);
-        height: 20vmin;
-        width: 20vmin;
-        list-style: none;
-        opacity: 0;
-        user-select: none;
-    }
-
-
     body .rowVW {
         display: flex;
         flex-direction: column;
@@ -6447,10 +6435,10 @@ button {
 
 .tags {
     position: relative;
-    top: calc(50% - 13vmin);
-    left: calc(50% - 13vmin);
-    height: 26vmin;
-    width: 26vmin;
+    top: calc(50% - 16vmin);
+    left: calc(50% - 16vmin);
+    height: 32vmin;
+    width: 32vmin;
     list-style: none;
     opacity: 0;
     user-select: none;

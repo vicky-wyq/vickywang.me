@@ -52,6 +52,8 @@ class TagsCloud {
   }
 
   #updatePositions() {
+    this.#size = this.#root.offsetWidth;
+
     const sin = Math.sin(this.#rotationAngle);
     const cos = Math.cos(this.#rotationAngle);
     const ux = this.#rotationAxis[0];
