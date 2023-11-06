@@ -147,62 +147,102 @@ function main() {
     cloud.start();
   }
 }
+// TagsCloud
 
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  //do work
 
-  var lastKnownScrollY = 0;
-  var currentScrollY = 0;
-  var ticking = false;
-  var idOfHeader = 'header';
-  var eleHeader = null;
-  const classes = {
-    pinned: 'header-pin',
-    unpinned: 'header-unpin',
-  };
-  function onScroll() {
-    currentScrollY = window.pageYOffset;
-    requestTick();
+var lastKnownScrollY = 0;
+var currentScrollY = 0;
+var ticking = false;
+var idOfHeader = 'header';
+var eleHeader = null;
+const classes = {
+  pinned: 'header-pin',
+  unpinned: 'header-unpin',
+};
+function onScroll() {
+  currentScrollY = window.pageYOffset;
+  requestTick();
+}
+function requestTick() {
+  if (!ticking) {
+    requestAnimationFrame(update);
   }
-  function requestTick() {
-    if (!ticking) {
-      requestAnimationFrame(update);
-    }
-    ticking = true;
+  ticking = true;
+}
+function update() {
+  if (currentScrollY < lastKnownScrollY) {
+    pin();
+  } else if (currentScrollY > lastKnownScrollY) {
+    unpin();
   }
-  function update() {
-    if (currentScrollY < lastKnownScrollY) {
-      pin();
-    } else if (currentScrollY > lastKnownScrollY) {
-      unpin();
-    }
-    lastKnownScrollY = currentScrollY;
-    ticking = false;
+  lastKnownScrollY = currentScrollY;
+  ticking = false;
+}
+function pin() {
+  if (eleHeader.classList.contains(classes.unpinned)) {
+    eleHeader.classList.remove(classes.unpinned);
+    eleHeader.classList.add(classes.pinned);
   }
-  function pin() {
-    if (eleHeader.classList.contains(classes.unpinned)) {
-      eleHeader.classList.remove(classes.unpinned);
-      eleHeader.classList.add(classes.pinned);
-    }
+}
+function unpin() {
+  if (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned)) {
+    eleHeader.classList.remove(classes.pinned);
+    eleHeader.classList.add(classes.unpinned);
   }
-  function unpin() {
-    if (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned)) {
-      eleHeader.classList.remove(classes.pinned);
-      eleHeader.classList.add(classes.unpinned);
-    }
-  }
-  window.onload = function() {
-    eleHeader = document.getElementById(idOfHeader);
-    document.addEventListener('scroll', onScroll, false);
-  }
-  //header
+}
+window.onload = function () {
+  eleHeader = document.getElementById(idOfHeader);
+  document.addEventListener('scroll', onScroll, false);
+}
+//header
+
+function progressBarScroll() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+    height = document.body.scrollHeight - document.body.clientHeight,
+    scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+  console.log('height', height);
+  console.log('scrollHeight', document.documentElement.scrollHeight);
+  console.log('clientHeight', document.documentElement.clientHeight);
+
+}
+
+window.onscroll = function () {
+  progressBarScroll();
+};
+//progressBarScroll
 
 
 
+// ====== Components ====== //
 
-  console.log(CryptoJS)
 
+function toggleContent(button) {
+  const content = button.previousElementSibling;
+
+  if (content.style.maxHeight) {
+    content.style.maxHeight = null;
+    button.innerHTML = "Read More &#8744;";
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+    button.innerHTML = "Read Less &#8743;";
+  }
+}
+
+function initializeToggles() {
+  const toggles = document.querySelectorAll('.toggle')
+
+  toggles.forEach(function(toggle) {
+    // Add the click event listener to each button
+    toggle.addEventListener('click', function() {
+      toggleContent(toggle);
+    });
+  });
+}
+
+function initializePassword() {
+  // ====== Password Starts ====== //
   const pass = document.getElementById("password");
   const submit = document.querySelectorAll(".passwordArr")[0];
   const msg = document.getElementById("pwIncorrect");
@@ -238,60 +278,82 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     });
   }
-  //password
+  // ====== Password Ends ====== //
+}
+//Read more/less
 
+
+// ====== Components ====== //
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  //do work
+  
+  initializeToggles();
+  // ====== accordion Starts ====== //
+  const accordionBtns = document.querySelectorAll(".accordion");
+
+  accordionBtns.forEach((accordion) => {
+    accordion.onclick = function () {
+      this.classList.toggle("is-open");
+
+      let content = this.nextElementSibling;
+      console.log(content);
+
+      if (content.style.maxHeight) {
+        //this is if the accordion is open
+        content.style.maxHeight = null;
+      } else {
+        //if the accordion is currently closed
+        content.style.maxHeight = content.scrollHeight + "px";
+        console.log(content.style.maxHeight);
+      }
+    };
+  });
+  // ====== accordion Ends ====== //
+
+  initializePassword();
+
+  // ====== Hamburger Menu Starts ====== //
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
-  
+
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
   });
-  
+
   document.querySelectorAll(".nav-link").forEach((link) =>
     link.addEventListener("click", () => {
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
     })
   );
-  //Responsive hamburger menu
+  // ====== Hamburger Menu Ends ====== //
 
-
-
-
+  // ====== AOS Starts ====== //
 
   AOS.init({
-
     delay: 180, // values from 0 to 3000, with step 50ms
     duration: 1000, // values from 0 to 3000, with step 50ms
     throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
   });
-  //aos + 2 links on html 
+  //  2 links on html 
+  // ====== AOS Ends ====== //
 
-  function progressBarScroll() {
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
-        height = document.body.scrollHeight - document.body.clientHeight,
-        scrolled = (winScroll / height) * 100;
-    document.getElementById("progressBar").style.width = scrolled + "%";
-    console.log('height', height);
-    console.log('scrollHeight', document.documentElement.scrollHeight);
-    console.log('clientHeight', document.documentElement.clientHeight);
 
-  }
-  
-  window.onscroll = function () {
-    progressBarScroll();
-  };
-  //progressBarScroll
+  // ====== Back to Top Starts ====== //
 
-  //Get the button
   var mybutton = document.getElementById("myBtn");
+  //Get the button
 
-  // When the user scrolls down 20px from the top of the document, show the button
   window.addEventListener('scroll', function () {
     scrollFunction()
   })
+  // When the user scrolls down 20px from the top of the document, show the button
 
   function scrollFunction() {
     if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
@@ -301,19 +363,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 
-  // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+  // When the user clicks on the button, scroll to the top of the document
+
   mybutton.addEventListener('click', topFunction)
-  // back to top 
+  // ====== Back to Top Ends ====== //
 
 
 
-  
+  // ====== Call TagsCloud Starts ====== //
   main();
-  
+  // Call TagsCloud
+  // ====== Call TagsCloud Ends ====== //
+
+
+
+
+
 
 
 });
