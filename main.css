@@ -4617,41 +4617,9 @@ body .flex-container.Mobile {
 
 /* footer */
 
-footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
+.footerBorder {
+    border-top: 1px solid var(--Grey400);
 
-
-.footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    max-width: 1240px;
-    width: 100%;
-    height: 5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 0.01em solid var(--Grey300);
-    opacity: 0.9;
-    height: 16em;
-}
-
-.footer-left {
-    display: flex;
-    justify-content: flex-start;
-    font-family: inherit;
-}
-
-.footer-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 
