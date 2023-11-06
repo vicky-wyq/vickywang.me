@@ -1,0 +1,1262 @@
+html {
+    scroll-behavior: smooth;
+    color: var(--Grey800);
+    font-size: 16px;
+    font-family: 'inter';
+    height: var(--height100);
+}
+
+.headerBorder {
+    border-bottom: 1px solid var(--Grey400);
+
+}
+
+.footerBorder {
+    border-top: 1px solid var(--Grey400);
+
+}
+
+/* ================== header ===================== */
+
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li a {
+    display: block;
+    padding: var(--paddingS);
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 6px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: max-content;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 16px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+/* ================== header ===================== */
+/* ================== Font ========================*/
+.styleCap {
+    text-transform: uppercase;
+}
+
+.textItalic {
+    font-style: italic;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+.DisplayLarge {
+    font-size: clamp(1.9em, 2.46vw, 2.6em);
+    font-weight: 700;
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+}
+
+h1 {
+    font-size: clamp(1.3em, 1.8vw, 2.2em);
+    /* - first one is the minimum allowed font-size.
+       - third one is the maximum allowed font-size.
+       - second argument is font-size that you wish to always have. */
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+}
+
+h2 {
+    font-size: clamp(1.2em, 1.46vw, 1.68em);
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+}
+
+h3 {
+    font-size: clamp(1.04em, 1.26vw, 1.48em);
+    margin-top: clamp(0.42em, 0.56em, 1.2em);
+    margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+}
+
+h4 {
+    font-size: clamp(0.92em, 1.12vw, 1.2em);
+    margin-top: clamp(0.36em, 0.4em, 1em);
+    margin-bottom: clamp(0.36em, 0.4em, 1em);
+}
+
+
+h5 {
+    font-size: clamp(0.84em, 0.92vw, 1em);
+    margin-top: clamp(0.2em, 0.4em, 1em);
+    margin-bottom: clamp(0.2em, 0.4em, 1em);
+}
+
+h6 {
+    font-size: clamp(0.72em, 0.78vw, 0.86em);
+    margin: 0.26em 0;
+}
+
+p.light {
+    font-weight: 100;
+}
+
+p {
+    /*     font-size: clamp(0.83em, 1.06vw, 1.2em); */
+
+    font-size: clamp(0.8em, 1vw, 1.1em);
+
+    font-weight: 300;
+}
+
+/* default/normal */
+p.thick {
+    font-weight: 500;
+}
+
+/* ================== Font ========================*/
+
+.Button {
+    /* Apply box-sizing to ensure padding and border are included in the element's total dimensions */
+    box-sizing: border-box;
+    padding: 8px 24px;
+    /* This padding will be adjusted for the .Secondary button */
+    border-radius: 3px;
+    margin: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 8px;
+}
+
+.Button.Primary {
+    background-color: var(--LASOBlue);
+    color: var(--white);
+    border: none;
+    /* No border means the padding remains the same */
+}
+
+.Button.Secondary {
+    background-color: var(--white);
+    color: var(--LASOBlue);
+    border: 1px solid var(--LASOBlue);
+    /* Subtract 1px from the top and bottom padding to account for the border */
+    padding: 7px 24px;
+}
+
+.Button.Primary:hover {
+    background-color: var(--LASOBlueDark);
+
+}
+
+.Button.Secondary:hover {
+    background-color: var(--LASOBlue);
+    color: var(--white);
+
+}
+
+.active a {
+    font-weight: 500;
+    color: var(--Grey900);
+}
+
+
+.inactive a {
+    color: var(--Grey600);
+    font-weight: 300;
+}
+
+.help:hover {
+    cursor: help;
+}
+
+.progress:hover {
+    cursor: progress;
+}
+
+:root {
+    --border-radius: 0.5em;
+
+    --border-radiusXS: 0.25em;
+    --border-radiusS: 0.5em;
+    --border-radiusM: 0.75em;
+    --border-radiusL: 1em;
+    --border-radiusXL: 1.25em;
+    --border-radiusMax: 50%;
+
+    --paddingXS: 6px;
+    --paddingS: 10px;
+    --paddingM: 14px;
+    --paddingL: 18px;
+    --paddingXL: 22px;
+    --paddingMax: 26px;
+
+
+    --height100: 100%;
+
+    --img-APPOINT: url('./image/Cover_APPOINTA.jpg');
+    --img-SEER: url('./image/Cover_SEER.jpg');
+    --img-WS: url('./image/Cover_worksample.png');
+    --img-DS: url('./image/Cover_portfolioWeb.png');
+
+    /* Color */
+
+    --LASOBlueDark: #123287;
+
+    --LASOBlue: #1A47C1;
+    --LASOBlueLight: #5384ED;
+
+
+
+
+    --white: #ffffff;
+    --alert: #A40000;
+    --alertLight: #FDEFEF;
+    --success: #007B65;
+    --successLight: #EAFFFB;
+
+    --alertLight: #FDEFEF;
+    --alert--pink: #EB5757;
+    --Highlight: rgba(255, 242, 0, 0.3);
+    --Grey900: #1b1b1b;
+    /*292929 2c2c2c #161616*/
+
+    --Grey800: #505050;
+    /* 5f6368 4f4f4f*/
+
+    --Grey700: #707070;
+
+    /* #505050 83878a 787878  757575*/
+
+    --Grey600: #a5a5a5;
+
+    /* #909090, 999D9F, 8e8787 a7a7a7*/
+
+    --Grey500: #cacaca;
+
+    /* #c8c8c8 e0e0e0*/
+
+    --Grey400: #e6e6e6;
+    /* e4e4e4; e6e6e6*/
+
+    --Grey300: #efefef;
+    /* efefef, f2f2f2*/
+
+    --Grey200: #f2f2f2;
+    /* F8F8F8, f2f2f2*/
+
+    --Grey100: #fafafa;
+
+    /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
+    --colorTealDk: #8fbfbf;
+    --colorTealLt: #AAD9D9;
+    /*never change    AAD9D9*/
+    /* 368661 projects 296448*/
+    --colorTealLtr: #e6f6f6;
+    --colorTealLtest: #faffff;
+    --Warm: #fcf5eb;
+
+
+
+
+
+
+}
+
+
+.borderRadiusXS {
+    border-radius: var(--border-radiusXS);
+}
+
+.borderRadiusS {
+    border-radius: var(--border-radiusS);
+}
+
+.borderRadiusM {
+    border-radius: var(--border-radiusM);
+
+}
+
+.borderRadiusL {
+    border-radius: var(--border-radiusL);
+}
+
+.borderRadiusXL {
+    border-radius: var(--border-radiusXL);
+}
+
+.borderRadiusMax {
+    border-radius: var(--border-radiusMax);
+}
+
+
+
+body {
+    width: 100%;
+    height: var(--height100);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+
+}
+
+body a {
+    color: var(--Grey900);
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:link.textUnderline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.03em;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--Grey900);
+
+}
+
+.textUnderline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.03em;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--Grey900);
+
+}
+
+
+a:link.textProject {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+
+.active a {
+    font-weight: 300;
+    color: var(--Grey900);
+}
+
+.displayNone {
+    display: none;
+}
+
+/* ===== color grey ===== */
+.Grey900 {
+    color: var(--Grey900);
+}
+
+.Grey800 {
+    color: var(--Grey800);
+}
+
+.Grey700 {
+    color: var(--Grey700);
+}
+
+.Grey600 {
+    color: var(--Grey600);
+}
+
+.Grey500 {
+    color: var(--Grey500);
+}
+
+.Grey400 {
+    color: var(--Grey400);
+}
+
+.Grey300 {
+    color: var(--Grey300);
+}
+
+.Grey200 {
+    color: var(--Grey200);
+}
+
+.Grey100 {
+    color: var(--Grey100);
+}
+
+/* ===== color grey ===== */
+/* ===== bg color grey ===== */
+
+.GreyBg900 {
+    background: var(--Grey900);
+}
+
+.GreyBg800 {
+    background: var(--Grey800);
+}
+
+.GreyBg700 {
+    background: var(--Grey700);
+}
+
+.GreyBg600 {
+    background: var(--Grey600);
+}
+
+.GreyBg500 {
+    background: var(--Grey500);
+}
+
+.GreyBg400 {
+    background: var(--Grey400);
+}
+
+.GreyBg300 {
+    background: var(--Grey300);
+}
+
+.GreyBg200 {
+    background: var(--Grey200);
+}
+
+.GreyBg100 {
+    background: var(--Grey100);
+}
+
+.WhiteBg {
+    background-color: var(--white);
+
+}
+
+.WhiteBgTrans {
+    background-color: var(--White-transparent);
+}
+
+.WarmBg {
+    background-color: var(--Warm);
+
+}
+
+/* ===== bg color grey ===== */
+/* ======== width & height V2 New ========= */
+.iconXS {
+    width: 16px;
+    margin: 0;
+}
+
+.iconS {
+    width: 24px;
+    margin: 0;
+}
+
+.iconM {
+    width: 32px;
+}
+
+.iconL {
+    width: 40px;
+}
+
+.iconXL {
+    width: 48px;
+}
+
+.iconMax {
+    width: 56px;
+}
+
+.iconDemo {
+    margin: 0.6em;
+    padding: 1.2em;
+    width: 2em;
+    height: auto;
+    cursor: pointer;
+}
+
+/* ======== width & height V2 New ========= */
+
+/* ======== width & height ========= */
+
+.widthLogo {
+    width: 15em;
+    margin: 9px;
+}
+
+
+.iconSH {
+    height: 1.8rem;
+    margin: 2px;
+}
+
+
+.IconM_MP_GH {
+    width: 8rem;
+    margin-right: 10px;
+}
+
+.widthFitContent {
+    width: max-content;
+}
+
+.widthXXS {
+    width: 8em;
+
+}
+
+.widthXS {
+    width: 12em;
+}
+
+.widthS {
+    width: 20em;
+}
+
+.widthM {
+    width: 35em;
+}
+
+.widthMPhHalf {
+    width: 40rem;
+}
+
+.widthMax {
+    width: 100%;
+}
+
+.widthL {
+    width: 52em;
+}
+
+.widthXL {
+    width: 60rem;
+}
+
+.heightXS {
+    height: 6rem;
+}
+
+.heightS {
+    height: 14rem;
+}
+
+.heightM {
+    height: 16rem;
+}
+
+.heightL {
+    height: 28rem;
+}
+.heightXL {
+    height: 38em;
+}
+.WidthHeighMax {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ======== width & height ========= */
+/* blank */
+
+.blankProject {
+    height: 150px;
+}
+
+.blankHXXS {
+    display: block;
+    height: 0.8rem;
+}
+
+.blankHXS {
+    display: block;
+    height: 1.2rem;
+}
+
+.blankHS {
+    display: block;
+    height: 6rem;
+}
+
+.blankHM {
+    display: block;
+    height: 8rem;
+}
+
+.blankHL {
+    display: block;
+    height: 20rem;
+}
+
+.blankHXL {
+    display: block;
+    height: 28rem;
+}
+
+.blankVer {
+    border-left: 0px solid gray;
+    width: 8rem;
+
+}
+
+.blankVerS {
+    border-left: 0px solid gray;
+    width: 4rem;
+
+}
+
+.blankVerXS {
+    border-left: 0px solid gray;
+    width: 1rem;
+
+}
+
+/* blank */
+
+/* ===================== Responsive grid ===================== */
+
+
+/*Basic Grid Styles*/
+.Grid {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.u-textCenter {
+    text-align: center;
+}
+
+.Grid-cell {
+    flex: 1;
+}
+
+
+
+
+
+
+/*===========================================*/
+/* Base classes for all media - Mobile first */
+.Grid--cols-2>.Grid-cell {
+    flex: 0 0 96%;
+}
+
+.Grid--cols-3>.Grid-cell {
+    flex: 0 0 96%;
+}
+
+.Grid--cols-4>.Grid-cell {
+    flex: 0 0 96%;
+}
+
+.Grid--cols-6>.Grid-cell {
+    flex: 0 0 calc(50% - 1em);
+}
+
+.Grid--cols-8>.Grid-cell {
+    flex: 0 0 calc(25% - 1em);
+    /*
+flex: 0 0 calc(33.3333% - 1em);
+    flex: 0 0 calc(12.5% - 1em);
+
+
+*/
+}
+
+.Grid--holly-grail .aside,
+.Grid--holly-grail .main {
+    flex: 1 100%;
+}
+
+/* One of -- columns*/
+.Grid--1of2>.Grid-cell,
+.Grid--1of4>.Grid-cell:first-of-type,
+.Grid--1of3>.Grid-cell:first-of-type {
+    flex: 0 0 96%;
+}
+
+
+
+.Grid--1of6>.Grid-cell:first-of-type {
+    flex: 0 0 50%;
+}
+
+.Grid--fit>.Grid-cell {
+    flex: 1;
+}
+
+.Grid--full>.Grid-cell {
+    flex: 0 0 100%;
+}
+
+/* Tablet (medium) screens */
+@media (min-width: 30em) {
+    .Grid--cols-4>.Grid-cell {
+        flex: 0 0 calc(50% - 1em);
+    }
+
+    .Grid--cols-6>.Grid-cell {
+        flex: 0 0 calc(33.3333% - 1em);
+    }
+
+    .Grid--cols-8>.Grid-cell {
+        flex: 0 0 calc(25% - 1em);
+
+
+        /*
+                flex: 0 0 calc(16.6666% - 1em);
+
+        */
+    }
+
+    .Grid--holly-grail .aside {
+        flex: 1 calc(25% - 1em);
+    }
+
+    .Grid--1of2>.Grid-cell {
+        flex: 0 0 50%;
+    }
+
+
+
+
+    .Grid--1of6>.Grid-cell:first-of-type {
+        flex: 0 0 30%;
+    }
+
+    .Grid--1of4>.Grid-cell:first-of-type {
+        flex: 0 0 50%;
+    }
+
+    .Grid--1of3>.Grid-cell:first-of-type {
+        flex: 0 0 96%;
+    }
+}
+
+
+/* when the screens more than an ipad */
+@media (min-width: 48em) {
+
+
+    .Grid--cols-2>.Grid-cell,
+    .Grid--cols-3>.Grid-cell,
+    .Grid--cols-4>.Grid-cell,
+    .Grid--cols-6>.Grid-cell,
+    .Grid--cols-8>.Grid-cell {
+        flex: 1;
+    }
+
+    .Grid--holly-grail .main {
+        flex: 2;
+    }
+
+    .Grid--holly-grail .aside {
+        flex: 1;
+    }
+
+    .Grid--holly-grail .aside-1 {
+        order: 1;
+    }
+
+    .Grid--holly-grail .main {
+        order: 2;
+    }
+
+    .Grid--holly-grail .aside-2 {
+        order: 3;
+    }
+
+    .Grid--1of2>.Grid-cell {
+        flex: 0 0 50%;
+    }
+
+
+    .Grid--1of6>.Grid-cell:first-of-type {
+        flex: 0 0 16.6666%;
+    }
+
+    .Grid--1of4>.Grid-cell:first-of-type {
+        flex: 0 0 25%;
+    }
+
+    .Grid--1of3>.Grid-cell:first-of-type {
+        flex: 0 0 30%;
+    }
+
+    .Grid--gutters.Grid--nested .Grid-cell:first-of-type .Demo {
+        margin-right: 0;
+    }
+}
+
+.paddingleft {
+    padding-left: 0.8em;
+}
+
+.max-width::before {
+    content: "max-width";
+    font-weight: 300;
+    color: var(--colorTealDk);
+}
+
+.fix-width::before {
+    content: "fix-width";
+    font-weight: 300;
+    color: var(--colorTealDk);
+}
+
+.content-1of1::before {
+    content: "1";
+    font-weight: 300;
+    color: var(--colorTealDk);
+}
+
+.content-1of2::before {
+    content: "1/2";
+    font-weight: 300;
+    color: var(--colorTealDk);
+}
+
+.content-1of3::before {
+    content: "1/3";
+    font-weight: 300;
+
+    color: var(--colorTealDk);
+
+}
+
+.content-1of4::before {
+    content: "1/4";
+    font-weight: 300;
+
+    color: var(--colorTealDk);
+
+}
+
+.content-1of6::before {
+    content: "1/6";
+    font-weight: 300;
+
+    color: var(--colorTealDk);
+
+}
+
+.content-1of8::before {
+    content: "1/8";
+    font-weight: 300;
+
+    color: var(--colorTealDk);
+
+}
+
+.element {
+    padding: 0.4em 0.8em 0;
+    /* ----     0.8em 1em 0 0;  top, right, bottom, left;
+
+
+padding: 0.8em 0em 0;
+/* ----     padding: 0.8em top 1em right and left 0 bottom; ----*/
+
+    margin-bottom: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+.Demo {
+    font-family: inherit;
+    font-weight: 300;
+    padding: 0.8em 1em 0;
+    /*top 0.8, left and right 1*/
+    margin-bottom: 0.4em;
+    border-radius: 6px;
+    /*     border: 0.06em solid var(--GLORIFY-orange); */
+
+    color: var(--colorTealDk);
+    background: var(--Warm);
+    transition: background-color 0.3s ease;
+}
+
+.Demo:after {
+    content: "";
+    display: block;
+    margin-top: 0.8em;
+    /*button 0.8*/
+    height: 1px;
+
+}
+
+.Demo:hover {
+    background: var(--colorTealLtr);
+}
+
+/* element = demo */
+
+.Demo {
+    font-family: inherit;
+    font-weight: 300;
+    padding: 0.8em 1em 0;
+    /*top 0.8, left and right 1*/
+    margin-bottom: 0.4em;
+    border-radius: 6px;
+    /*     border: 0.06em solid var(--GLORIFY-orange); */
+
+    color: var(--colorTealDk);
+    background: var(--Warm);
+    transition: background-color 0.3s ease;
+}
+
+.Demo:after {
+    content: "";
+    display: block;
+    margin-top: 0.8em;
+    /*button 0.8*/
+    height: 1px;
+
+}
+
+.Demo:hover {
+    background: var(--colorTealLtr);
+}
+
+.Demo.Holly {
+    background: rgba(102, 51, 255, 0.1);
+}
+
+.Demo.Holly:hover {
+    background: rgba(102, 51, 255, 0.25);
+}
+
+.Grid--gutters {
+    margin-left: -0.4em;
+}
+
+.Grid--gutters .Grid-cell {
+    padding-left: 0.4em;
+}
+
+.Grid--gutters .Grid--nested .Grid-cell:first-of-type .Demo {
+    margin-right: 1em;
+}
+
+/* Justify per row*/
+.Grid--right {
+    justify-content: flex-end;
+}
+
+.Grid--center {
+    justify-content: center;
+}
+
+/* Alignment per row */
+.Grid--top {
+    align-items: flex-start;
+}
+
+.Grid--bottom {
+    align-items: flex-end;
+}
+
+.Grid--center {
+    align-items: center;
+}
+
+/* Alignment per cell */
+.Grid-cell--top {
+    align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+    align-self: flex-end;
+}
+
+.Grid-cell--center {
+    align-self: center;
+}
+
+/* changed media query from 800 to 1000*/
+
+/* ===================== Responsive grid ===================== */
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* alignment */
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowVW {
+    display: flex;
+    flex-direction: row;
+}
+
+.rowChng {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.align-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.align-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.align-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.align-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.centerHorz {
+    display: flex;
+    justify-content: center;
+}
+
+.centerVer {
+    display: flex;
+    align-items: center;
+}
+
+.centerVH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.centerHorz-spacearound {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* alignment */
+
+/* ====== Margin V2 ====== */
+.marginXS {
+    margin: 0.2em;
+}
+
+/* margin and padding*/
+.marginHS {
+    margin: 0vh 0.5em;
+}
+
+.paddingNone {
+    padding: 0 !important;
+}
+
+
+
+
+.padding {
+    padding: 1vw;
+}
+
+.padding-s {
+    padding: 2rem;
+}
+
+
+.padding-lr-xl {
+    padding: 0 7vw;
+}
+
+.padding-lr {
+    padding: 0vw 1vw;
+}
+
+.padding-tb {
+    padding: 2vw 0vw;
+}
+
+.padding-bottom {
+    padding-bottom: 2vw;
+}
+
+/* margin anf padding*/
+
+
+.BgImg {
+    background-image: url('medsBottle1.png'); /* Replace with the actual path to your image */
+    
+    /* Ensure the image covers the entire element, you may also use 'contain' depending on your needs */
+    background-size: cover; 
+  
+    /* Center the image within the element */
+    background-position: center;
+  
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat;
+
+  
+    /* Optional: if you want the content to stand out more, consider adding some padding */
+    padding: 20px; /* adjust to your preference */
+
+  }
+
+  .elementCard {
+    padding: 0;
+    margin: 0;
+    border-style: ridge;
+    border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+
+    /*  
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    opacity: 0.7;
+    filter: alpha(opacity=70); */
+}
+
+.shadowBoxLt {
+    box-shadow: rgba(176, 178, 179, 0.2) -4px 9px 25px -6px;
+
+}
