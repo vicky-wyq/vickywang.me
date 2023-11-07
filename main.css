@@ -5042,7 +5042,7 @@ body .flex-container.Mobile {
 /* ======== spacing ========= */
 
 
-/* table */
+/* ======================== table starts ========================  */
 
 table {
     border-collapse: collapse;
@@ -5076,13 +5076,8 @@ td:nth-child(even) {
     background-color: #f5f5f5c5;
 }
 
-/* table */
+/* ======================== table ends ========================  */
 
-/* ul.iconx {
-    list-style-position: outside;
-    list-style-image: url('../../icon/list_MP.svg');
-    padding: 0;
-} */
 
 ul.iconx {
     list-style-position: outside;
@@ -5095,13 +5090,12 @@ body ul {
     padding: 0;
 }
 
-/*     list-style-type: none;
-    list-style-image: url('sqpurple.gif'); */
-
-/* }
-li{
-    margin: 112px 0;
-} */
+svg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.1));
+}
+/* ====================== link & state ============================== */
 
 body a {
     color: var(--Grey900);
@@ -5164,13 +5158,15 @@ a:link.textProject {
     color: var(--Grey600);
     font-weight: 300;
 }
+/* ====================== link & state ============================== */
 
 img {
     width: 100%;
     height: auto;
 }
 
-/* imgModal */
+/* ====================== modal starts ============================== */
+
 .modal-target {
     cursor: zoom-in;
     transition: 0.3s;
@@ -5305,54 +5301,13 @@ img {
     cursor: pointer;
 }
 
-/* imgModal */
+/* ====================== modal ends ============================== */
 
-svg {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.1));
-}
+
 
 
 .zTop {
     z-index: 99;
-}
-
-.speech-bubble-nopointer {
-    position: relative;
-    background: #FED256;
-    border-radius: .4em;
-}
-
-.speech-bubble {
-    position: relative;
-    background: #f5f5f5;
-    border-radius: .4em;
-}
-
-.speech-bubble:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 0.563em solid transparent;
-    border-right-color: #f5f5f5;
-    border-left: 0;
-    margin-top: -0.562em;
-    margin-left: -0.562em;
-}
-
-/* margin */
-
-
-/* architecture */
-
-.slide {
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47, .13, .15, .89);
 }
 
 .nav {
