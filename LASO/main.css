@@ -6,6 +6,21 @@ html {
     height: var(--height100);
 }
 
+svg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.1));
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.zTop {
+    z-index: 99;
+}
+
 .headerBorder {
     border-bottom: 1px solid var(--Grey400);
 
@@ -50,6 +65,7 @@ html {
     display: block;
     float: left;
     font-size: 2em;
+    width: 2em;
     padding: 6px 20px;
     text-decoration: none;
 }
@@ -174,7 +190,7 @@ h6 {
 }
 
 .DisplayLarge {
-    font-size: clamp(1.9em, 2.46vw, 2.6em);
+    font-size: clamp(1.9em, 3.46vw, 2.6em);
     font-weight: 700;
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
@@ -559,6 +575,11 @@ a:link.textProject {
 
 }
 
+.LASOBlueBg {
+    background-color: var(--LASOBlue);
+
+}
+
 /* ===== bg color grey ===== */
 /* ======== paddings ========= */
 
@@ -636,6 +657,9 @@ a:link.textProject {
 /* ======== width & height V2 New ========= */
 
 /* ======== width & height ========= */
+.widthIMG {
+    width: 12vw;
+}
 
 .widthLogo {
     width: 15em;
@@ -653,9 +677,11 @@ a:link.textProject {
 .widthFitContent {
     width: max-content;
 }
+
 .widthXXXS {
     width: 6em;
 }
+
 .widthXXS {
     width: 8em;
 }
@@ -703,9 +729,11 @@ a:link.textProject {
 .heightL {
     height: 28rem;
 }
+
 .heightXL {
     height: 38em;
 }
+
 .WidthHeighMax {
     width: 100%;
     height: 100%;
@@ -769,7 +797,7 @@ a:link.textProject {
 
 /* blank */
 
-/* ===================== Responsive grid ===================== */
+/* ============================= Responsive grid ============================= */
 
 
 /*Basic Grid Styles*/
@@ -787,12 +815,6 @@ a:link.textProject {
     flex: 1;
 }
 
-
-
-
-
-
-/*===========================================*/
 /* Base classes for all media - Mobile first */
 .Grid--cols-2>.Grid-cell {
     flex: 0 0 96%;
@@ -893,7 +915,6 @@ flex: 0 0 calc(33.3333% - 1em);
 
 /* when the screens more than an ipad */
 @media (min-width: 48em) {
-
 
     .Grid--cols-2>.Grid-cell,
     .Grid--cols-3>.Grid-cell,
@@ -1005,42 +1026,51 @@ flex: 0 0 calc(33.3333% - 1em);
 
 }
 
-.element {
-    padding: 0.4em 0.8em 0;
-    /* ----     0.8em 1em 0 0;  top, right, bottom, left;
-
-
-padding: 0.8em 0em 0;
-/* ----     padding: 0.8em top 1em right and left 0 bottom; ----*/
-
-    margin-bottom: 0.8em;
-    transition: background-color 0.3s ease;
+/* ---- element ----*/
+.element:after {
+    content: "";
+    display: block;
+    margin-top: 0.8em;
+    height: 1px;
 }
 
-.Demo {
-    font-family: inherit;
-    font-weight: 300;
-    padding: 0.8em 1em 0;
-    /*top 0.8, left and right 1*/
-    margin-bottom: 0.4em;
-    border-radius: 6px;
-    /*     border: 0.06em solid var(--GLORIFY-orange); */
+.element:hover {
+    background: var();
+}
 
-    color: var(--colorTealDk);
+.element.Holly {
+    background: rgba(102, 51, 255, 0.1);
+}
+
+.element.Holly:hover {
+    background: rgba(102, 51, 255, 0.25);
+}
+
+.Grid--gutters .Grid--nested .Grid-cell:first-of-type .element {
+    margin-right: 1em;
+}
+
+/* element = elementDemo */
+
+.elementDemo {
+    padding: 0.4em 0.8em 0;
+    margin-bottom: 0.8em;
+    border-radius: var(--border-radiusXS);
+    border: 0.01em solid var(--Warm);
     background: var(--Warm);
     transition: background-color 0.3s ease;
 }
 
-.Demo:after {
-    content: "";
-    display: block;
-    margin-top: 0.8em;
-    /*button 0.8*/
-    height: 1px;
-
+.elementInnerDemo {
+    padding: 0.8em 0.4em;
+    transition: background-color 0.3s ease;
+    border-radius: var(--border-radiusXS);
+    border: 0.01em solid var(--colorTealDk);
+    background: var(--colorTealLtest);
+    transition: background-color 0.3s ease;
 }
 
-.Demo:hover {
+.elementInnerDemo:hover {
     background: var(--colorTealLtr);
 }
 
@@ -1130,7 +1160,160 @@ padding: 0.8em 0em 0;
 
 /* changed media query from 800 to 1000*/
 
-/* ===================== Responsive grid ===================== */
+/* elementCard = bottom border */
+.elementCard {
+    padding: 0;
+    margin: 0;
+    border-style: ridge;
+    border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+
+    /*  
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    opacity: 0.7;
+    filter: alpha(opacity=70); */
+}
+
+.elementCard.WS:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--WS-Blue);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.LASO:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--AMBlue);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.GLORIFY:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--GLORIFY-orangeBgLt);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.APPOINTA:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--APPOINTA-blue);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.SEER:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--seer-purple);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.toasttab:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--toasttab);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.GardenersHub:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--GardenersHub);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--Grey900);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementSeerDivider {
+    background: linear-gradient(140deg, #FFFFFF, #e9f2ff 20%, #fff1f5 50%, #FFFFFF);
+    height: 6px;
+}
+
+.elementSEER {
+    background: linear-gradient(140deg, #d8f2ff, #cad6ff, #e6dbff, #cbd8ff);
+    padding: 4px;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+}
+
+.elementInnerSEER {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+.elementDemoCard {
+    background: linear-gradient(140deg, #f7fcff, #ecf0fb, #f8f5ff, #ecf1ff);
+    padding: 4px;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+}
+
+.elementInnerDemoCard {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+/* ---- must always have for responsive*/
+.element {
+    padding: 0.4em 0.8em 0;
+    /* ----     0.8em 1em 0 0;  top, right, bottom, left;
+
+
+padding: 0.8em 0em 0;
+/* ----     padding: 0.8em top 1em right and left 0 bottom; ----*/
+
+    margin-bottom: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+.elementButton {
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+.elementInner {
+    padding: 1em;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+.elementInnerL {
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+/* ---- element ----*/
+
+/* ============================= Responsive grid ============================= */
+
 
 
 .wrapper {
@@ -1258,25 +1441,49 @@ padding: 0.8em 0em 0;
 /* margin anf padding*/
 
 
-.BgImg {
-    background-image: url('medsBottle1.png'); /* Replace with the actual path to your image */
-    
+.BgImg1 {
+    background-image: url('medsBottle1.png');
+    /* Replace with the actual path to your image */
+
     /* Ensure the image covers the entire element, you may also use 'contain' depending on your needs */
-    background-size: cover; 
-  
+    background-size: cover;
+
     /* Center the image within the element */
     background-position: center;
-  
+
     /* Prevent the image from repeating */
     background-repeat: no-repeat;
 
-  
+
     /* Optional: if you want the content to stand out more, consider adding some padding */
-    padding: 20px; /* adjust to your preference */
+    height: 500px;
+    /* for example, can be any value */
+    width: 100%;
+    /* for example, can be any value */
+}
 
-  }
+.BgImg2 {
+    background-image: url('IconL_30Days1.png');
+    /* Replace with the actual path to your image */
 
-  .elementCard {
+    /* Ensure the image covers the entire element, you may also use 'contain' depending on your needs */
+    background-size: cover;
+
+    /* Center the image within the element */
+    background-position: right;
+
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat;
+
+
+    /* Optional: if you want the content to stand out more, consider adding some padding */
+    height: 360px;
+    /* for example, can be any value */
+    width: 100%;
+    /* for example, can be any value */
+}
+
+.elementCard {
     padding: 0;
     margin: 0;
     border-style: ridge;
