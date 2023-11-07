@@ -137,6 +137,7 @@ html {
 
 }
 
+/* ================= border Radius =============== */
 
 .borderRadiusXS {
     border-radius: var(--border-radiusXS);
@@ -146,9 +147,6 @@ html {
     border-radius: var(--border-radiusS);
 
 }
-
-
-
 .borderRadiusM {
     border-radius: var(--border-radiusM);
 
@@ -165,6 +163,8 @@ html {
 .borderRadiusMax {
     border-radius: var(--border-radiusMax);
 }
+
+/* ================= scrollbar starts =============== */
 
 /* width */
 ::-webkit-scrollbar {
@@ -187,6 +187,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--Grey600);
 }
+/* ================= scrollbar ends =============== */
 
 body {
     width: 100%;
@@ -198,12 +199,14 @@ body {
     min-height: -webkit-fill-available;
 
 }
+/* ===== read more/less starts ===== */
 
 .more {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
+/* ===== read more/less ends ===== */
 
 .displayNone {
     display: none;
@@ -300,10 +303,7 @@ body {
 }
 
 /* ===== bg color grey ===== */
-
-
 /* ===== color vickywang.me ===== */
-
 .Warm {
     color: var(--Warm);
 }
@@ -331,7 +331,6 @@ body {
 .AletLt {
     color: var(--alertLight);
 }
-
 /* ===== color vickywang.me ===== */
 /* ===== bg color vickywang.me ===== */
 .BgWarm {
@@ -375,80 +374,21 @@ body {
 }
 
 /* ===== bg color vickywang.me ===== */
+
 /* ===== bg color Glorify ===== */
 
 .BgGlorifyOrange {
     background: var(--GLORIFY-orangeLt);
 }
-
-/* ===== bg color Glorify ===== */
-
-/* color and shadow*/
-
-.colorGH {
-    color: #4C665B;
-}
-
-.colorGHBg {
-    background-color: #EAF0EE;
-}
-
-.colorGHbg1 {
-    color: #4C665B;
-}
-
-.colorMP {
-    color: #FED256;
-}
-
-.colorMPBorder {
-    border: 2px solid #FED256;
-
-}
-
-
-.colorGreyBorder {
-    border: 1px solid #F5F5F5;
-
-}
-
-.colorMPbg {
-    background-color: #FED256;
-}
-
-
-
-.colorAPbg {
-    background-color: #E2EDFD !important;
-}
-
-
-.colorBgAPPOINTA {
-    background-color: var(--APPOINTA-bg);
-    margin: 0 auto;
-}
-
-.colorBgHighlight {
-    background-color: var(--Highlight);
-    margin: 0 auto;
-}
-
-.colorBlack {
-    color: var(--Grey900);
-}
-
 .colorGLORIFYBlue {
     color: var(--GlorifyBlue);
 }
-
 .colorGLORIFYOrange {
     color: var(--GLORIFY-orange);
 }
-
 .colorGLORIFYGreen {
     color: var(--GlorifyGreen);
 }
-
 .colorBgGlorifyLt {
     background-color: var(--GLORIFY-orangeLtest);
 }
@@ -456,6 +396,45 @@ body {
 .colorBgGLORIFY {
     background-color: var(--GLORIFY-orangeBgLt);
 }
+
+/* ===== bg color Glorify ===== */
+/* color and shadow*/
+.colorGH {
+    color: #4C665B;
+}
+.colorGHBg {
+    background-color: #EAF0EE;
+}
+.colorGHbg1 {
+    color: #4C665B;
+}
+.colorMP {
+    color: #FED256;
+}
+.colorMPBorder {
+    border: 2px solid #FED256;
+}
+.colorGreyBorder {
+    border: 1px solid #F5F5F5;
+}
+.colorMPbg {
+    background-color: #FED256;
+}
+.colorAPbg {
+    background-color: #E2EDFD !important;
+}
+.colorBgAPPOINTA {
+    background-color: var(--APPOINTA-bg);
+    margin: 0 auto;
+}
+.colorBgHighlight {
+    background-color: var(--Highlight);
+    margin: 0 auto;
+}
+.colorBlack {
+    color: var(--Grey900);
+}
+
 
 .colorAPPOINTA {
     color: var(--APPOINTA-blue);
