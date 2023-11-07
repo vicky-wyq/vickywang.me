@@ -5,16 +5,6 @@ html {
     font-family: 'Lato', sans-serif;
     height: var(--height100);
 }
-
-
-.help:hover {
-    cursor: help;
-}
-
-.progress:hover {
-    cursor: progress;
-}
-
 :root {
     --border-radius: 0.5em;
 
@@ -500,11 +490,6 @@ polygon {
 .colorBlack {
     color: var(--Grey900);
 }
-
-
-
-
-
 .tColorAM {
     color: #d9e0f0;
 }
@@ -5077,8 +5062,6 @@ td:nth-child(even) {
 }
 
 /* ======================== table ends ========================  */
-
-
 ul.iconx {
     list-style-position: outside;
     list-style-image: url('../../icon/list_MP.svg');
@@ -5117,7 +5100,6 @@ a:link.textUnderline {
     text-decoration-color: var(--Grey900);
 
 }
-
 .textUnderline {
     text-decoration-line: underline;
     text-decoration-thickness: 0.03em;
@@ -5125,8 +5107,6 @@ a:link.textUnderline {
     text-decoration-color: var(--Grey900);
 
 }
-
-
 a:link.textProject {
     text-decoration-line: underline;
     text-underline-offset: 4px;
@@ -5158,12 +5138,25 @@ a:link.textProject {
     color: var(--Grey600);
     font-weight: 300;
 }
+.help:hover {
+    cursor: help;
+}
+
+.progress:hover {
+    cursor: progress;
+}
 /* ====================== link & state ============================== */
+/* ====================== not category yet ============================== */
 
 img {
     width: 100%;
     height: auto;
 }
+
+.zTop {
+    z-index: 99;
+}
+/* ====================== not category yet ============================== */
 
 /* ====================== modal starts ============================== */
 
@@ -5306,201 +5299,7 @@ img {
 
 
 
-.zTop {
-    z-index: 99;
-}
 
-.nav {
-    position: absolute;
-    top: 21%;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-body .carousel {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 800px;
-}
-
-body .carousel .carousel-item {
-    visibility: hidden;
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: -200;
-    left: 0;
-}
-
-.carouselAbout {
-    position: relative;
-    width: 100%;
-    height: 46rem;
-    margin: 0 auto;
-}
-
-.carouselProjectImage {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.carouselAbout-content {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-    height: 100%;
-}
-
-.AboutProjectNav {
-    position: absolute;
-    top: 30%;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-.nav-left {
-    left: 150px;
-}
-
-.nav-right {
-    right: 150px;
-}
-
-.carouselGH {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    height: 40rem;
-}
-
-.carouselContentGH {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-    height: 100%;
-}
-
-.slideGH {
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47, .13, .15, .89);
-}
-
-.nav-gh {
-    top: 35%;
-    margin-left: -5.0vh;
-    margin-right: -5.0vh;
-    width: 4.5vh;
-    height: 4.5vh;
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-.nav-left-gh {
-    left: 0px;
-}
-
-.nav-right-gh {
-    right: 0px;
-}
-
-/* architecture */
-
-/* MP Carousel */
-
-.carouselMP {
-    height: 53rem;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.carouselMP-content {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-}
-
-.MPslide {
-    height: 100%;
-    margin-top: 0;
-    width: 20%;
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47, .13, .15, .89);
-    opacity: 0.6;
-}
-
-.centerElement {
-    opacity: 1;
-    z-index: 5;
-}
-
-@keyframes MPcircleMove {
-    50% {
-        transform: translateY(-3px);
-    }
-
-    100% {
-        transform: translateY(-19px);
-    }
-}
-
-.MPcircle {
-    position: absolute;
-    background-color: #FFE28B;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid white;
-    left: 49.5%;
-    bottom: 10%;
-    z-index: 6;
-    animation: MPcircleMove 5s infinite;
-}
-
-.MPnav {
-    height: 60vh;
-    width: 4.5vh;
-    position: absolute;
-    width: 40%;
-    z-index: 2;
-    cursor: pointer;
-    border-radius: 5%;
-    border: none;
-    outline: none;
-    color: white;
-}
-
-.MPnav-left {
-    left: 0px;
-    top: 0;
-}
-
-.MPnav-right {
-    right: 0px;
-    top: 0;
-}
-
-
-/* Photography */
 
 /* fonts going to delete */
 
