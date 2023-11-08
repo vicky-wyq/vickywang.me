@@ -52,13 +52,14 @@ img {
 
 .header li a {
     display: block;
-    padding: var(--paddingS);
+    padding: 1.5em;
     text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
     background-color: #f4f4f4;
+
 }
 
 .header .logo {
@@ -76,6 +77,7 @@ img {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    height: max-content;
 }
 
 /* menu icon */
@@ -147,21 +149,23 @@ img {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
-    .header li {
+    body .header li {
         float: left;
     }
 
-    .header li a {
-        padding: 16px;
+    body .header li a {
+        padding: 16px 0.8vw; 
+        font-size: clamp(0.84em, 0.92vw, 1em);
+
     }
 
-    .header .menu {
+    body .header .menu {
         clear: none;
         float: right;
         max-height: none;
     }
 
-    .header .menu-icon {
+    body .header .menu-icon {
         display: none;
     }
 }
@@ -192,22 +196,22 @@ h6 {
 .DisplayLarge {
     font-size: clamp(2.9em, 4.6vw, 3.6em);
     font-weight: 700;
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+    margin-top: clamp(0.27em, 0.35em, 1.2em);
+    margin-bottom: clamp(0.27em, 0.38em, 1.2em);
 }
 .DisplaySmall {
     font-size: clamp(2.2em, 3.6vw, 2.6em);
     font-weight: 700;
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+    margin-top: clamp(0.27em, 0.35em, 1.2em);
+    margin-bottom: clamp(0.27em, 0.38em, 1.2em);
 }
 h1 {
     font-size: clamp(1.3em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
        - third one is the maximum allowed font-size.
        - second argument is font-size that you wish to always have. */
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+       margin-top: clamp(0.27em, 0.35em, 1.2em);
+       margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
 
 h2 {
@@ -266,7 +270,7 @@ p.thick {
     /* This padding will be adjusted for the .Secondary button */
     border-radius: 3px;
     margin: 6px;
-    font-size: 16px;
+    font-size: clamp(0.84em, 0.92vw, 1em);
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 8px;
@@ -1445,8 +1449,45 @@ padding: 0.8em 0em 0;
 
 /* margin anf padding*/
 
-
-.BgImg1 {
+@media all and (max-width: 768px) {
+    body .widthMPhHalf {
+        width: 100%;
+    }
+   body .BgImg_MedBottle {
+        background-image: url('medsBottle1_1.png');
+        /* Replace with the actual path to your image */
+    
+        /* Ensure the image covers the entire element, you may also use 'contain' depending on your needs */
+        background-size: cover;
+    
+        /* Center the image within the element */
+        background-position: bottom;
+    
+        /* Prevent the image from repeating */
+        background-repeat: no-repeat;
+    
+    
+        height: 560px;
+        width: 100%;
+    }
+    body .BgImg_30Days {
+        background-image: url('iconL_30Days2.png');    
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 560px;
+        width: 100%;
+    }
+    body .BgImgDrM {
+        background-image: url('IconL_DoctorM_1.png');    
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 660px;
+        width: 100%;
+    }
+}
+.BgImg_MedBottle {
     background-image: url('medsBottle1.png');
     /* Replace with the actual path to your image */
 
@@ -1467,7 +1508,7 @@ padding: 0.8em 0em 0;
     /* for example, can be any value */
 }
 
-.BgImg2 {
+.BgImg_30Days {
     background-image: url('IconL_30Days1.png');
     /* Replace with the actual path to your image */
 
@@ -1487,7 +1528,7 @@ padding: 0.8em 0em 0;
     width: 100%;
     /* for example, can be any value */
 }
-.BgImg3 {
+.BgImgDrM {
     background-image: url('IconL_DoctorM.png');
     /* Replace with the actual path to your image */
 
