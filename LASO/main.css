@@ -344,7 +344,7 @@ p.thick {
 
     /* Color */
 
-    --LASOBlueDark: #123287;
+    --LASOBlueDark: #00154f;
 
     --LASOBlue: #1A47C1;
     --LASOBlueLight: #5384ED;
@@ -1528,3 +1528,87 @@ padding: 0.8em 0em 0;
     box-shadow: rgba(176, 178, 179, 0.2) -4px 9px 25px -6px;
 
 }
+
+
+
+.accordion {
+    /*    border-bottom: 1px solid var(--Grey200);
+*/
+    margin: 0;
+    color: var(--Grey900);
+    cursor: pointer;
+    padding: 15px 20px;
+    display: flex;
+    --webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s linear;
+}
+
+/* accordion */
+
+
+.accordionBorderTop {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.accordionBorderBottom {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.accordion:after {
+    content: "";
+    background-image: url("../icon/plus.svg");
+    height: 32px;
+    width: 32px;
+    transition: all 1s ease-in-out;
+}
+
+
+.accordion.is-open:after {
+    content: "";
+    background-image: url("../icon/minus.svg");
+    height: 32px;
+    width: 32px;
+
+
+    transition: all .8s ease-in-out;
+
+
+    transform-origin: center;
+
+    transform: rotate(180deg);
+}
+
+.accordion:hover,
+.accordion.is-open {
+    box-shadow: inset -1px 0 0 var(--Grey200), inset 0 0px 0 var(--Grey200), inset 1px 0 0 var(--Grey200), inset 0 1px 0 var(--Grey200);
+    background-color: var(--white);
+    /*    
+    border-left: 1px solid var(--Grey200);
+    border-right: 1px solid var(--Grey200);
+    border-top: 1px solid var(--Grey200);
+    border: 1px solid var(--Grey300);
+    background-color: var(--Grey100);
+    */
+}
+
+.withBg.accordion:hover,
+.withBg.accordion.is-open {
+    background-color: var(--white);
+}
+
+.accordion-content {
+    /* background-color: var(--Grey100); */
+    border-bottom: 1px solid var(--Grey200);
+    border-left: 1px solid var(--Grey200);
+    border-right: 1px solid var(--Grey200);
+
+background: var(--white);
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* accordion */
