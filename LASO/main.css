@@ -190,12 +190,17 @@ h6 {
 }
 
 .DisplayLarge {
-    font-size: clamp(1.9em, 3.46vw, 2.6em);
+    font-size: clamp(2.9em, 4.6vw, 3.6em);
     font-weight: 700;
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
-
+.DisplaySmall {
+    font-size: clamp(2.2em, 3.6vw, 2.6em);
+    font-weight: 700;
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+}
 h1 {
     font-size: clamp(1.3em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
@@ -699,7 +704,7 @@ a:link.textProject {
 }
 
 .widthMPhHalf {
-    width: 40rem;
+    width: 56%;
 }
 
 .widthMax {
@@ -1478,6 +1483,26 @@ padding: 0.8em 0em 0;
 
     /* Optional: if you want the content to stand out more, consider adding some padding */
     height: 360px;
+    /* for example, can be any value */
+    width: 100%;
+    /* for example, can be any value */
+}
+.BgImg3 {
+    background-image: url('IconL_DoctorM.png');
+    /* Replace with the actual path to your image */
+
+    /* Ensure the image covers the entire element, you may also use 'contain' depending on your needs */
+    background-size: cover;
+
+    /* Center the image within the element */
+    background-position: right;
+
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat;
+
+
+    /* Optional: if you want the content to stand out more, consider adding some padding */
+    height: 460px;
     /* for example, can be any value */
     width: 100%;
     /* for example, can be any value */
