@@ -5,6 +5,16 @@ html {
     font-family: 'Lato', sans-serif;
     height: var(--height100);
 }
+
+
+.help:hover {
+    cursor: help;
+}
+
+.progress:hover {
+    cursor: progress;
+}
+
 :root {
     --border-radius: 0.5em;
 
@@ -127,7 +137,6 @@ html {
 
 }
 
-/* ================= border Radius =============== */
 
 .borderRadiusXS {
     border-radius: var(--border-radiusXS);
@@ -137,6 +146,9 @@ html {
     border-radius: var(--border-radiusS);
 
 }
+
+
+
 .borderRadiusM {
     border-radius: var(--border-radiusM);
 
@@ -153,8 +165,6 @@ html {
 .borderRadiusMax {
     border-radius: var(--border-radiusMax);
 }
-
-/* ================= scrollbar starts =============== */
 
 /* width */
 ::-webkit-scrollbar {
@@ -177,7 +187,6 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--Grey600);
 }
-/* ================= scrollbar ends =============== */
 
 body {
     width: 100%;
@@ -189,14 +198,12 @@ body {
     min-height: -webkit-fill-available;
 
 }
-/* ===== read more/less starts ===== */
 
 .more {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
-/* ===== read more/less ends ===== */
 
 .displayNone {
     display: none;
@@ -293,7 +300,10 @@ body {
 }
 
 /* ===== bg color grey ===== */
+
+
 /* ===== color vickywang.me ===== */
+
 .Warm {
     color: var(--Warm);
 }
@@ -321,6 +331,7 @@ body {
 .AletLt {
     color: var(--alertLight);
 }
+
 /* ===== color vickywang.me ===== */
 /* ===== bg color vickywang.me ===== */
 .BgWarm {
@@ -364,21 +375,80 @@ body {
 }
 
 /* ===== bg color vickywang.me ===== */
-
 /* ===== bg color Glorify ===== */
 
 .BgGlorifyOrange {
     background: var(--GLORIFY-orangeLt);
 }
+
+/* ===== bg color Glorify ===== */
+
+/* color and shadow*/
+
+.colorGH {
+    color: #4C665B;
+}
+
+.colorGHBg {
+    background-color: #EAF0EE;
+}
+
+.colorGHbg1 {
+    color: #4C665B;
+}
+
+.colorMP {
+    color: #FED256;
+}
+
+.colorMPBorder {
+    border: 2px solid #FED256;
+
+}
+
+
+.colorGreyBorder {
+    border: 1px solid #F5F5F5;
+
+}
+
+.colorMPbg {
+    background-color: #FED256;
+}
+
+
+
+.colorAPbg {
+    background-color: #E2EDFD !important;
+}
+
+
+.colorBgAPPOINTA {
+    background-color: var(--APPOINTA-bg);
+    margin: 0 auto;
+}
+
+.colorBgHighlight {
+    background-color: var(--Highlight);
+    margin: 0 auto;
+}
+
+.colorBlack {
+    color: var(--Grey900);
+}
+
 .colorGLORIFYBlue {
     color: var(--GlorifyBlue);
 }
+
 .colorGLORIFYOrange {
     color: var(--GLORIFY-orange);
 }
+
 .colorGLORIFYGreen {
     color: var(--GlorifyGreen);
 }
+
 .colorBgGlorifyLt {
     background-color: var(--GLORIFY-orangeLtest);
 }
@@ -386,45 +456,6 @@ body {
 .colorBgGLORIFY {
     background-color: var(--GLORIFY-orangeBgLt);
 }
-
-/* ===== bg color Glorify ===== */
-/* color and shadow*/
-.colorGH {
-    color: #4C665B;
-}
-.colorGHBg {
-    background-color: #EAF0EE;
-}
-.colorGHbg1 {
-    color: #4C665B;
-}
-.colorMP {
-    color: #FED256;
-}
-.colorMPBorder {
-    border: 2px solid #FED256;
-}
-.colorGreyBorder {
-    border: 1px solid #F5F5F5;
-}
-.colorMPbg {
-    background-color: #FED256;
-}
-.colorAPbg {
-    background-color: #E2EDFD !important;
-}
-.colorBgAPPOINTA {
-    background-color: var(--APPOINTA-bg);
-    margin: 0 auto;
-}
-.colorBgHighlight {
-    background-color: var(--Highlight);
-    margin: 0 auto;
-}
-.colorBlack {
-    color: var(--Grey900);
-}
-
 
 .colorAPPOINTA {
     color: var(--APPOINTA-blue);
@@ -490,6 +521,11 @@ polygon {
 .colorBlack {
     color: var(--Grey900);
 }
+
+
+
+
+
 .tColorAM {
     color: #d9e0f0;
 }
@@ -2040,6 +2076,156 @@ hr {
 
 
 
+/* elementCard = bottom border */
+.elementCard {
+    padding: 0;
+    margin: 0;
+    border-style: ridge;
+    border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+
+    /*  
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    opacity: 0.7;
+    filter: alpha(opacity=70); */
+}
+
+.elementCard.WS:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--WS-Blue);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.LASO:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--AMBlue);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.GLORIFY:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--GLORIFY-orangeBgLt);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.APPOINTA:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--APPOINTA-blue);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.SEER:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--seer-purple);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.toasttab:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--toasttab);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard.GardenersHub:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--GardenersHub);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementCard:hover {
+    cursor: pointer;
+    border-bottom: 5px solid var(--Grey900);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
+}
+
+.elementSeerDivider {
+    background: linear-gradient(140deg, #FFFFFF, #e9f2ff 20%, #fff1f5 50%, #FFFFFF);
+    height: 6px;
+}
+
+.elementSEER {
+    background: linear-gradient(140deg, #d8f2ff, #cad6ff, #e6dbff, #cbd8ff);
+    padding: 4px;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+}
+
+.elementInnerSEER {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+.elementDemoCard {
+    background: linear-gradient(140deg, #f7fcff, #ecf0fb, #f8f5ff, #ecf1ff);
+    padding: 4px;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+}
+
+.elementInnerDemoCard {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+/* ---- must always have for responsive*/
+.element {
+    padding: 0.4em 0.8em 0;
+    /* ----     0.8em 1em 0 0;  top, right, bottom, left;
+
+
+padding: 0.8em 0em 0;
+/* ----     padding: 0.8em top 1em right and left 0 bottom; ----*/
+
+    margin-bottom: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+.elementButton {
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+.elementInner {
+    padding: 1em;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+.elementInnerL {
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
 /* ---- password --------- */
 
 .password {
@@ -2384,7 +2570,138 @@ button.passwordArr {
 }
 
 /* accordion */
+.element:after {
+    content: "";
+    display: block;
+    margin-top: 0.8em;
+    height: 1px;
+}
 
+.element:hover {
+    background: var();
+}
+
+.element.Holly {
+    background: rgba(102, 51, 255, 0.1);
+}
+
+.element.Holly:hover {
+    background: rgba(102, 51, 255, 0.25);
+}
+
+.Grid--gutters .Grid--nested .Grid-cell:first-of-type .element {
+    margin-right: 1em;
+}
+
+/* element = elementDemo */
+
+.elementDemo {
+    padding: 0.4em 0.8em 0;
+    margin-bottom: 0.8em;
+    border-radius: var(--border-radiusXS);
+    border: 0.01em solid var(--Warm);
+    background: var(--Warm);
+    transition: background-color 0.3s ease;
+}
+
+.elementInnerDemo {
+    padding: 0.8em 0.4em;
+    transition: background-color 0.3s ease;
+    border-radius: var(--border-radiusXS);
+    border: 0.01em solid var(--colorTealDk);
+    background: var(--colorTealLtest);
+    transition: background-color 0.3s ease;
+}
+
+.elementInnerDemo:hover {
+    background: var(--colorTealLtr);
+}
+
+/* element = demo */
+
+.Demo {
+    font-family: inherit;
+    font-weight: 300;
+    padding: 0.8em 1em 0;
+    /*top 0.8, left and right 1*/
+    margin-bottom: 0.4em;
+    border-radius: 6px;
+    /*     border: 0.06em solid var(--GLORIFY-orange); */
+
+    color: var(--colorTealDk);
+    background: var(--Warm);
+    transition: background-color 0.3s ease;
+}
+
+.Demo:after {
+    content: "";
+    display: block;
+    margin-top: 0.8em;
+    /*button 0.8*/
+    height: 1px;
+
+}
+
+.Demo:hover {
+    background: var(--colorTealLtr);
+}
+
+.Demo.Holly {
+    background: rgba(102, 51, 255, 0.1);
+}
+
+.Demo.Holly:hover {
+    background: rgba(102, 51, 255, 0.25);
+}
+
+.Grid--gutters {
+    margin-left: -0.4em;
+}
+
+.Grid--gutters .Grid-cell {
+    padding-left: 0.4em;
+}
+
+.Grid--gutters .Grid--nested .Grid-cell:first-of-type .Demo {
+    margin-right: 1em;
+}
+
+/* Justify per row*/
+.Grid--right {
+    justify-content: flex-end;
+}
+
+.Grid--center {
+    justify-content: center;
+}
+
+/* Alignment per row */
+.Grid--top {
+    align-items: flex-start;
+}
+
+.Grid--bottom {
+    align-items: flex-end;
+}
+
+.Grid--center {
+    align-items: center;
+}
+
+/* Alignment per cell */
+.Grid-cell--top {
+    align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+    align-self: flex-end;
+}
+
+.Grid-cell--center {
+    align-self: center;
+}
+
+/* changed media query from 800 to 1000*/
 
 .wrapper {
     max-width: 1200px;
@@ -2867,7 +3184,7 @@ button.passwordArr {
 
 }
 
-/* ============================= Responsive grid ============================= */
+/* ------------------- Responsive grid -------------------*/
 
 
 /*Basic Grid Styles*/
@@ -2885,6 +3202,12 @@ button.passwordArr {
     flex: 1;
 }
 
+
+
+
+
+
+/*===========================================*/
 /* Base classes for all media - Mobile first */
 .Grid--cols-2>.Grid-cell {
     flex: 0 0 96%;
@@ -3097,297 +3420,13 @@ flex: 0 0 calc(33.3333% - 1em);
 
 }
 
-/* ---- element ----*/
-.element:after {
-    content: "";
-    display: block;
-    margin-top: 0.8em;
-    height: 1px;
-}
-
-.element:hover {
-    background: var();
-}
-
-.element.Holly {
-    background: rgba(102, 51, 255, 0.1);
-}
-
-.element.Holly:hover {
-    background: rgba(102, 51, 255, 0.25);
-}
-
-.Grid--gutters .Grid--nested .Grid-cell:first-of-type .element {
-    margin-right: 1em;
-}
-
-/* element = elementDemo */
-
-.elementDemo {
-    padding: 0.4em 0.8em 0;
-    margin-bottom: 0.8em;
-    border-radius: var(--border-radiusXS);
-    border: 0.01em solid var(--Warm);
-    background: var(--Warm);
-    transition: background-color 0.3s ease;
-}
-
-.elementInnerDemo {
-    padding: 0.8em 0.4em;
-    transition: background-color 0.3s ease;
-    border-radius: var(--border-radiusXS);
-    border: 0.01em solid var(--colorTealDk);
-    background: var(--colorTealLtest);
-    transition: background-color 0.3s ease;
-}
-
-.elementInnerDemo:hover {
-    background: var(--colorTealLtr);
-}
-
-/* element = demo */
-
-.Demo {
-    font-family: inherit;
-    font-weight: 300;
-    padding: 0.8em 1em 0;
-    /*top 0.8, left and right 1*/
-    margin-bottom: 0.4em;
-    border-radius: 6px;
-    /*     border: 0.06em solid var(--GLORIFY-orange); */
-
-    color: var(--colorTealDk);
-    background: var(--Warm);
-    transition: background-color 0.3s ease;
-}
-
-.Demo:after {
-    content: "";
-    display: block;
-    margin-top: 0.8em;
-    /*button 0.8*/
-    height: 1px;
-
-}
-
-.Demo:hover {
-    background: var(--colorTealLtr);
-}
-
-.Demo.Holly {
-    background: rgba(102, 51, 255, 0.1);
-}
-
-.Demo.Holly:hover {
-    background: rgba(102, 51, 255, 0.25);
-}
-
-.Grid--gutters {
-    margin-left: -0.4em;
-}
-
-.Grid--gutters .Grid-cell {
-    padding-left: 0.4em;
-}
-
-.Grid--gutters .Grid--nested .Grid-cell:first-of-type .Demo {
-    margin-right: 1em;
-}
-
-/* Justify per row*/
-.Grid--right {
-    justify-content: flex-end;
-}
-
-.Grid--center {
-    justify-content: center;
-}
-
-/* Alignment per row */
-.Grid--top {
-    align-items: flex-start;
-}
-
-.Grid--bottom {
-    align-items: flex-end;
-}
-
-.Grid--center {
-    align-items: center;
-}
-
-/* Alignment per cell */
-.Grid-cell--top {
-    align-self: flex-start;
-}
-
-.Grid-cell--bottom {
-    align-self: flex-end;
-}
-
-.Grid-cell--center {
-    align-self: center;
-}
-
-/* changed media query from 800 to 1000*/
-
-/* elementCard = bottom border */
-.elementCard {
-    padding: 0;
-    margin: 0;
-    border-style: ridge;
-    border-radius: var(--border-radius);
-    -moz-border-radius: var(--border-radius);
-    -webkit-border-radius: var(--border-radius);
-
-    /*  
-    transition: background-color 0.3s ease;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-
-    opacity: 0.7;
-    filter: alpha(opacity=70); */
-}
-
-.elementCard.WS:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--WS-Blue);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.LASO:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--AMBlue);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.GLORIFY:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--GLORIFY-orangeBgLt);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.APPOINTA:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--APPOINTA-blue);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.SEER:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--seer-purple);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.toasttab:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--toasttab);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.GardenersHub:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--GardenersHub);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--Grey900);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementSeerDivider {
-    background: linear-gradient(140deg, #FFFFFF, #e9f2ff 20%, #fff1f5 50%, #FFFFFF);
-    height: 6px;
-}
-
-.elementSEER {
-    background: linear-gradient(140deg, #d8f2ff, #cad6ff, #e6dbff, #cbd8ff);
-    padding: 4px;
-    margin-bottom: 1em;
-    transition: background-color 0.3s ease;
-    border-radius: 34px;
-    -webkit-border-radius: 34px;
-    -moz-border-radius: 34px;
-}
-
-.elementInnerSEER {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 2em;
-    transition: background-color 0.3s ease;
-    border-radius: 30px;
-}
-
-.elementDemoCard {
-    background: linear-gradient(140deg, #f7fcff, #ecf0fb, #f8f5ff, #ecf1ff);
-    padding: 4px;
-    margin-bottom: 1em;
-    transition: background-color 0.3s ease;
-    border-radius: 34px;
-    -webkit-border-radius: 34px;
-    -moz-border-radius: 34px;
-}
-
-.elementInnerDemoCard {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 2em;
-    transition: background-color 0.3s ease;
-    border-radius: 30px;
-}
-
-/* ---- must always have for responsive*/
-.element {
-    padding: 0.4em 0.8em 0;
-    /* ----     0.8em 1em 0 0;  top, right, bottom, left;
-
-
-padding: 0.8em 0em 0;
-/* ----     padding: 0.8em top 1em right and left 0 bottom; ----*/
-
-    margin-bottom: 0.8em;
-    transition: background-color 0.3s ease;
-}
-
-.elementButton {
-    transition: background-color 0.3s ease;
-    border-radius: 3px;
-}
-
-.elementInner {
-    padding: 1em;
-    transition: background-color 0.3s ease;
-    border-radius: 3px;
-}
-
-.elementInnerL {
-    padding: 2em;
-    transition: background-color 0.3s ease;
-    border-radius: 3px;
-}
-/* ---- element ----*/
-
-/* ============================= Responsive grid ============================= */
 
 
 
 
-/* ============================= LRcarousel ============================= */
+
+/* ------------------- Responsive grid -------------------*/
+/* ------------------- LRcarousel -------------------*/
 .LRcarousel {
     overflow: hidden;
     display: flex;
@@ -3572,8 +3611,7 @@ padding: 0.8em 0em 0;
 
 
 
-/* ============================= LRcarousel ============================= */
-
+/* ------------------- LRcarousel -------------------*/
 
 /* ------------------- TBcarousel -------------------*/
 .TBcarousel {
@@ -5025,7 +5063,7 @@ body .flex-container.Mobile {
 /* ======== spacing ========= */
 
 
-/* ======================== table starts ========================  */
+/* table */
 
 table {
     border-collapse: collapse;
@@ -5059,7 +5097,14 @@ td:nth-child(even) {
     background-color: #f5f5f5c5;
 }
 
-/* ======================== table ends ========================  */
+/* table */
+
+/* ul.iconx {
+    list-style-position: outside;
+    list-style-image: url('../../icon/list_MP.svg');
+    padding: 0;
+} */
+
 ul.iconx {
     list-style-position: outside;
     list-style-image: url('../../icon/list_MP.svg');
@@ -5071,12 +5116,13 @@ body ul {
     padding: 0;
 }
 
-svg {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.1));
-}
-/* ====================== link & state ============================== */
+/*     list-style-type: none;
+    list-style-image: url('sqpurple.gif'); */
+
+/* }
+li{
+    margin: 112px 0;
+} */
 
 body a {
     color: var(--Grey900);
@@ -5098,6 +5144,7 @@ a:link.textUnderline {
     text-decoration-color: var(--Grey900);
 
 }
+
 .textUnderline {
     text-decoration-line: underline;
     text-decoration-thickness: 0.03em;
@@ -5105,6 +5152,8 @@ a:link.textUnderline {
     text-decoration-color: var(--Grey900);
 
 }
+
+
 a:link.textProject {
     text-decoration-line: underline;
     text-underline-offset: 4px;
@@ -5136,28 +5185,13 @@ a:link.textProject {
     color: var(--Grey600);
     font-weight: 300;
 }
-.help:hover {
-    cursor: help;
-}
-
-.progress:hover {
-    cursor: progress;
-}
-/* ====================== link & state ============================== */
-/* ====================== not category yet ============================== */
 
 img {
     width: 100%;
     height: auto;
 }
 
-.zTop {
-    z-index: 99;
-}
-/* ====================== not category yet ============================== */
-
-/* ====================== modal starts ============================== */
-
+/* imgModal */
 .modal-target {
     cursor: zoom-in;
     transition: 0.3s;
@@ -5292,12 +5326,247 @@ img {
     cursor: pointer;
 }
 
-/* ====================== modal ends ============================== */
+/* imgModal */
+
+svg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.1));
+}
 
 
+.zTop {
+    z-index: 99;
+}
+
+.speech-bubble-nopointer {
+    position: relative;
+    background: #FED256;
+    border-radius: .4em;
+}
+
+.speech-bubble {
+    position: relative;
+    background: #f5f5f5;
+    border-radius: .4em;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 0.563em solid transparent;
+    border-right-color: #f5f5f5;
+    border-left: 0;
+    margin-top: -0.562em;
+    margin-left: -0.562em;
+}
+
+/* margin */
 
 
+/* architecture */
 
+.slide {
+    position: absolute;
+    z-index: 1;
+    transition: left .4s cubic-bezier(.47, .13, .15, .89);
+}
+
+.nav {
+    position: absolute;
+    top: 21%;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+body .carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+body .carousel .carousel-item {
+    visibility: hidden;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: -200;
+    left: 0;
+}
+
+.carouselAbout {
+    position: relative;
+    width: 100%;
+    height: 46rem;
+    margin: 0 auto;
+}
+
+.carouselProjectImage {
+    position: relative;
+    overflow: hidden;
+    transition: width .4s;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.carouselAbout-content {
+    position: relative;
+    overflow: hidden;
+    transition: width .4s;
+    height: 100%;
+}
+
+.AboutProjectNav {
+    position: absolute;
+    top: 30%;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.nav-left {
+    left: 150px;
+}
+
+.nav-right {
+    right: 150px;
+}
+
+.carouselGH {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 40rem;
+}
+
+.carouselContentGH {
+    position: relative;
+    overflow: hidden;
+    transition: width .4s;
+    height: 100%;
+}
+
+.slideGH {
+    position: absolute;
+    z-index: 1;
+    transition: left .4s cubic-bezier(.47, .13, .15, .89);
+}
+
+.nav-gh {
+    top: 35%;
+    margin-left: -5.0vh;
+    margin-right: -5.0vh;
+    width: 4.5vh;
+    height: 4.5vh;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.nav-left-gh {
+    left: 0px;
+}
+
+.nav-right-gh {
+    right: 0px;
+}
+
+/* architecture */
+
+/* MP Carousel */
+
+.carouselMP {
+    height: 53rem;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carouselMP-content {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: width .4s;
+}
+
+.MPslide {
+    height: 100%;
+    margin-top: 0;
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    transition: left .4s cubic-bezier(.47, .13, .15, .89);
+    opacity: 0.6;
+}
+
+.centerElement {
+    opacity: 1;
+    z-index: 5;
+}
+
+@keyframes MPcircleMove {
+    50% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(-19px);
+    }
+}
+
+.MPcircle {
+    position: absolute;
+    background-color: #FFE28B;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    left: 49.5%;
+    bottom: 10%;
+    z-index: 6;
+    animation: MPcircleMove 5s infinite;
+}
+
+.MPnav {
+    height: 60vh;
+    width: 4.5vh;
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 5%;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.MPnav-left {
+    left: 0px;
+    top: 0;
+}
+
+.MPnav-right {
+    right: 0px;
+    top: 0;
+}
+
+
+/* Photography */
 
 /* fonts going to delete */
 
