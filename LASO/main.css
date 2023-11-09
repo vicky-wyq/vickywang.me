@@ -1818,7 +1818,18 @@ h5,
 h6 {
     font-weight: 300;
 }
-
+.DisplayLarge {
+    font-size: clamp(2.9em, 4.6vw, 3.6em);
+    font-weight: 700;
+    margin-top: clamp(0.27em, 0.35em, 1.2em);
+    margin-bottom: clamp(0.27em, 0.38em, 1.2em);
+}
+.DisplaySmall {
+    font-size: clamp(2.2em, 3.6vw, 2.6em);
+    font-weight: 700;
+    margin-top: clamp(0.27em, 0.35em, 1.2em);
+    margin-bottom: clamp(0.27em, 0.38em, 1.2em);
+}
 h1 {
     font-size: clamp(1.3em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
