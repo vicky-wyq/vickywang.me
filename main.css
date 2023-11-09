@@ -407,6 +407,10 @@ a.active.SEER {
 /* ---- responsive hamburger menu ---- */
 
 /* ========= header =========*/
+
+
+
+
 /* =================== border radius starts =================== */
 
 
@@ -1686,6 +1690,7 @@ section .padding {
 /* =========== special text =========== */
 
 
+/* ================== Font ========================*/
 
 
 .fontWeight100 {
@@ -1845,6 +1850,9 @@ strong {
 .textDecor.Glorify {
     color: var(--GLORIFY-orange) !important;
 }
+
+/* ================== Font ========================*/
+
 
 hr {
     border: none;
@@ -2485,26 +2493,6 @@ button.passwordArr {
     }
 
 
-
-    body .footer-logo {
-        margin: 4px;
-        width: 18px;
-    }
-
-
-
-    body .AboutProjectNav {
-        top: 46%;
-        width: 35px;
-        height: 35px;
-    }
-
-
-
-    body .blankMin1080 {
-        height: 3.6rem;
-    }
-
     body .blankHS {
         height: 1.5rem;
     }
@@ -2522,15 +2510,6 @@ button.passwordArr {
     }
 
 
-    body .t-hi {
-        font-family: 'Lato', sans-serif;
-        font-size: 2.2rem;
-    }
-
-    body .t-me {
-        font-size: 1.5em;
-        align-items: flex-start;
-    }
 
 
 
@@ -4217,29 +4196,9 @@ body .flex-container.Mobile {
 }
 
 
-/* 
-.ArrowHover {
-    display: inline-block;
-    transition-duration: 0.5s;
-    transition-property: transform;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
+ 
 
-.ArrowHover:hover {
-    transform: translateY(-12px);
-    animation-name: hover-float;
-    animation-duration: 1.5s;
-    animation-delay: 0.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-*/
-/* back to top */
-
-/* footer */
+/* ========== footer==========*/
 
 .footerBorder {
     border-top: 1px solid var(--Grey400);
@@ -4248,10 +4207,7 @@ body .flex-container.Mobile {
 
 
 
-
-
-/* footer */
-
+ 
 
 
 
