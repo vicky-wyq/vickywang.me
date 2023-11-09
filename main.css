@@ -135,6 +135,9 @@ body {
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
 }
+/* ========= a link / states =========*/
+
+
 body a {
     color: var(--Grey900);
     cursor: pointer;
@@ -162,7 +165,6 @@ a:link.textProject {
     text-decoration-line: underline;
     text-underline-offset: 4px;
 }
-
 .active a {
     font-weight: 300;
     color: var(--Grey900);
@@ -189,6 +191,10 @@ a:link.textProject {
     color: var(--Grey600);
     font-weight: 300;
 }
+/* ========= a link / states =========*/
+
+
+
 /* ========= display =========*/
 
 .displayNone {
@@ -1433,155 +1439,7 @@ section {
 /* ====== for nav 2 ======*/
 
 
-/* ====== button ======*/
 
-.custom-btn {
-    margin: 32px auto;
-    padding: 10px 25px;
-    text-align: center;
-    width: 130px;
-    height: 40px;
-    color: var(--Grey500);
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    border: 2px solid #1d1d1d;
-    border-radius: 5px;
-    background: var(--white);
-}
-
-.HorizNav li.active>a {
-    color: var(--Grey900);
-    background-color: var(--white);
-    font-weight: 500;
-}
-
-
-/* BTN test */
-
-
-.outline {
-    position: relative;
-    background: transparent;
-    background-color: var(--white);
-
-    color: var(--Grey500);
-    margin: 0;
-    padding: 12px 18px;
-    font-size: 1.2rem;
-    border: none;
-
-}
-
-
-
-.outline:before,
-.outline:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 1px;
-}
-
-.outline:before {
-    top: 0;
-    left: 0;
-    box-shadow: inset 1px 1px 0 0 var(--Grey600);
-}
-
-.outline:after {
-    right: 0;
-    bottom: 0;
-    box-shadow: inset -1px -1px 0 0 var(--Grey600);
-}
-
-.outline:hover,
-.outline:focus {
-    color: lighten(var(--Grey900), 20%);
-}
-
-.outline:hover::before,
-.outline:focus::before {
-    animation: lineBefore 1s forwards;
-}
-
-.outline:hover::after,
-.outline:focus::after {
-    animation: lineAfter 1s forwards;
-}
-
-@keyframes lineBefore {
-    0% {
-        width: 100%;
-        height: 1px;
-
-        top: 0;
-        left: 0;
-    }
-
-    33% {
-        width: 1px;
-        height: 100%;
-
-        top: 0;
-        left: 0;
-    }
-
-    66% {
-        width: 1px;
-        height: 1px;
-
-        top: calc(100% - 1px);
-        left: 0;
-    }
-
-    100% {
-        width: 100%;
-        height: 1px;
-
-        top: calc(100% - 1px);
-        left: 0;
-    }
-}
-
-@keyframes lineAfter {
-    0% {
-        width: 100%;
-        height: 1px;
-    }
-
-    33% {
-        width: 1px;
-        height: 100%;
-
-        bottom: 0;
-        right: 0;
-    }
-
-    66% {
-        width: 1px;
-        height: 1px;
-
-        bottom: calc(100% - 1px);
-        right: 0;
-    }
-
-    100% {
-        width: 100%;
-        height: 1px;
-
-        bottom: calc(100% - 1px);
-        right: 0;
-    }
-}
-
-
-/* BTN test */
-/* ====== button ======*/
 /*====== new sub nav 2 or 3====== */
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .subNav li.active>a {
@@ -4735,8 +4593,41 @@ body .flex-container.Mobile {
 
 /* ======== spacing ========= */
 
+/* ===== hover effect ====== */
+.hoverGrey100 {
+    background-color: none;
+}
 
-/* table */
+.hoverGrey100:hover {
+    background-color: var(--Grey100);
+}
+
+.hoverGrey300 {
+    background-color: none;
+}
+
+.hoverGrey300:hover {
+    background-color: var(--Grey300);
+}
+
+.footer-logo {
+    border-radius: 50%;
+    width: 1.6em;
+    height: auto;
+    cursor: pointer;
+    padding: 1.2em;
+}
+
+.footer-logo:hover {
+    border-radius: 50%;
+    background-color: var(--Grey300);
+    padding: 1.2em;
+
+}
+
+/* ===== hover effect ====== */
+
+/* ======== table ======== */
 
 table {
     border-collapse: collapse;
@@ -4797,10 +4688,11 @@ li{
     margin: 112px 0;
 } */
 
+/* ======== table ======== */
 
 
+/* ======== img Modal ======== */
 
-/* imgModal */
 .modal-target {
     cursor: zoom-in;
     transition: 0.3s;
@@ -4935,7 +4827,7 @@ li{
     cursor: pointer;
 }
 
-/* imgModal */
+/* ======== img Modal ======== */
 
 svg {
     width: 100%;
@@ -4951,388 +4843,6 @@ img {
     z-index: 99;
 }
 
-.speech-bubble-nopointer {
-    position: relative;
-    background: #FED256;
-    border-radius: .4em;
-}
-
-.speech-bubble {
-    position: relative;
-    background: #f5f5f5;
-    border-radius: .4em;
-}
-
-.speech-bubble:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 0.563em solid transparent;
-    border-right-color: #f5f5f5;
-    border-left: 0;
-    margin-top: -0.562em;
-    margin-left: -0.562em;
-}
-
-/* margin */
-
-
-/* architecture */
-
-.slide {
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47, .13, .15, .89);
-}
-
-.nav {
-    position: absolute;
-    top: 21%;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-body .carousel {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 800px;
-}
-
-body .carousel .carousel-item {
-    visibility: hidden;
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: -200;
-    left: 0;
-}
-
-.carouselAbout {
-    position: relative;
-    width: 100%;
-    height: 46rem;
-    margin: 0 auto;
-}
-
-.carouselProjectImage {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.carouselAbout-content {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-    height: 100%;
-}
-
-.AboutProjectNav {
-    position: absolute;
-    top: 30%;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-.nav-left {
-    left: 150px;
-}
-
-.nav-right {
-    right: 150px;
-}
-
-.carouselGH {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    height: 40rem;
-}
-
-.carouselContentGH {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-    height: 100%;
-}
-
-.slideGH {
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47, .13, .15, .89);
-}
-
-.nav-gh {
-    top: 35%;
-    margin-left: -5.0vh;
-    margin-right: -5.0vh;
-    width: 4.5vh;
-    height: 4.5vh;
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-.nav-left-gh {
-    left: 0px;
-}
-
-.nav-right-gh {
-    right: 0px;
-}
-
-/* architecture */
-
-/* MP Carousel */
-
-.carouselMP {
-    height: 53rem;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.carouselMP-content {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-}
-
-.MPslide {
-    height: 100%;
-    margin-top: 0;
-    width: 20%;
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47, .13, .15, .89);
-    opacity: 0.6;
-}
-
-.centerElement {
-    opacity: 1;
-    z-index: 5;
-}
-
-@keyframes MPcircleMove {
-    50% {
-        transform: translateY(-3px);
-    }
-
-    100% {
-        transform: translateY(-19px);
-    }
-}
-
-.MPcircle {
-    position: absolute;
-    background-color: #FFE28B;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid white;
-    left: 49.5%;
-    bottom: 10%;
-    z-index: 6;
-    animation: MPcircleMove 5s infinite;
-}
-
-.MPnav {
-    height: 60vh;
-    width: 4.5vh;
-    position: absolute;
-    width: 40%;
-    z-index: 2;
-    cursor: pointer;
-    border-radius: 5%;
-    border: none;
-    outline: none;
-    color: white;
-}
-
-.MPnav-left {
-    left: 0px;
-    top: 0;
-}
-
-.MPnav-right {
-    right: 0px;
-    top: 0;
-}
-
-
-/* Photography */
-
-/* fonts going to delete */
-
-.content-tl {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 35vh;
-}
-
-.t-tl {
-    font-family: inherit;
-    display: flex;
-    flex-direction: row;
-    font-size: 2em;
-    font-weight: 100;
-}
-
-.t-icon-s {
-    font-size: 1.0rem;
-    font-weight: 300;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.t-thesis-casestudy {
-    font-size: 14px;
-    font-weight: 100;
-    font-style: italic;
-    margin-left: 33%;
-}
-
-/* fonts going to delete */
-
-
-
-
-/* h1 */
-
-.titleL {
-    font-weight: 400;
-    font-size: 1.8em;
-    margin: 2px 0;
-}
-
-.titleM {
-    font-size: 1.8em;
-    font-weight: 400;
-    margin: 2px 0;
-}
-
-.titleS {
-    font-size: 1.5em;
-    font-weight: 400;
-    margin: 2px 0;
-}
-
-.titleXS {
-    font-size: 1.3em;
-    font-weight: 400;
-    margin: 2px 0;
-}
-
-.textL {
-    font-size: 1.8em;
-    font-weight: 300;
-    margin: 2px 0;
-}
-
-.textM {
-    font-size: 1.5em;
-    font-weight: 300;
-    line-height: 1.6;
-    margin: 2px 0;
-}
-
-.textS {
-    font-size: 1.3em;
-    font-weight: 300;
-    margin: 5px 0;
-    line-height: 1.4;
-}
-
-.textXS {
-    color: #858585;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 5px 0;
-    line-height: 1.4;
-}
-
-.textNos {
-    display: flex;
-    justify-content: center;
-    margin: 10% 0;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 100;
-    font-size: 120px;
-    margin: 15vh;
-}
-
-.AP.textNos {
-    color: var(--AMBlue);
-
-}
-
-.textNosL {
-    font-weight: 400;
-    font-size: 30px;
-    margin: 0;
-}
-
-/* text */
-
-
-
-.body-img {
-    width: 50%;
-}
-
-.body-img-v {
-    height: 800px;
-    width: auto;
-}
-
-.body-pinfor {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 400px;
-}
-
-.body-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.body-center {
-    display: flex;
-    align-items: center;
-    margin: 0 38%;
-}
-
-/* delete soon */
-
-
-/* about me */
-
-
-
-
-/* back to top btn */
 
 
 
@@ -5443,8 +4953,6 @@ Pre .codeTiltle {
 
 
 /* ===== click icon copy to clipboard ====== */
-
-
 .ClipboardBoxIconOnly {
     position: relative;
     display: flex;
@@ -5452,8 +4960,6 @@ Pre .codeTiltle {
     text-align: center;
     width: fit-content;
 }
-
-
 button.ClipboardIconOnly {
     width: fit-content;
     height: fit-content;
@@ -5469,50 +4975,12 @@ button.ClipboardIconOnly {
 
 }
 
-/* ===== will move away ====== */
-.hoverGrey100 {
-    background-color: none;
-}
 
-.hoverGrey100:hover {
-    background-color: var(--Grey100);
-}
 
-.hoverGrey300 {
-    background-color: none;
-}
-
-.hoverGrey300:hover {
-    background-color: var(--Grey300);
-}
-
-.footer-logo {
-    border-radius: 50%;
-    width: 1.6em;
-    height: auto;
-    cursor: pointer;
-    padding: 1.2em;
-}
-
-.footer-logo:hover {
-    border-radius: 50%;
-    background-color: var(--Grey300);
-    padding: 1.2em;
-
-}
-
-/* ===== will move away ====== */
-/* 
-button.ClipboardIconOnly:hover {
-    background-color: var(--Grey200);
-}
+/* ===== click paragraph to copy ====== */
 
 
 
-
-
-
-*/
 button.ClipboardIconOnly:focus {
     outline: 2px solid var(--Grey400);
     border-radius: var(--border-radiusMax);
@@ -5524,8 +4992,7 @@ button.ClipboardIconOnly:active {
 
 }
 
-
-
+/* ===== click paragraph to copy ====== */
 
 
 .clickIconCopy {
@@ -5687,11 +5154,6 @@ button.Clipboard.clickTxt:active {
 
 }
 
-/* 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  */
 /* ===== text copy to clipboard ====== */
 
 
@@ -5765,23 +5227,6 @@ button.Clipboard.clickTxt:active {
     background-color: rgba(255, 255, 255, 0.8);
 
 }
-
-/*
-
-button {
-    background-color: Transparent;
-    color: var(--Grey900);
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 46px;
-    cursor: pointer;
-    outline: none;
-    font-weight: light;
-    padding: 0 5%;
-}
-*/
 .buttonLanding {
     border-radius: 0.6em;
     align-self: center;
@@ -5815,13 +5260,6 @@ button {
     box-shadow: rgba(63, 63, 63, 0.2) 0px 2px 8px 0px;
     transform: translate3d(0, 2px, 0);
 }
-
-/*.buttonLanding:focus {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1px;
-}
-*/
-
-
 @media (min-width: 768px) {
     .button-46 {
         font-size: 20px;
@@ -5829,6 +5267,154 @@ button {
         padding: 14px 16px;
     }
 }
+/* ====== button ====== */
+
+.custom-btn {
+    margin: 32px auto;
+    padding: 10px 25px;
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    color: var(--Grey500);
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #1d1d1d;
+    border-radius: 5px;
+    background: var(--white);
+}
+
+.HorizNav li.active>a {
+    color: var(--Grey900);
+    background-color: var(--white);
+    font-weight: 500;
+}
+
+
+/* BTN test */
+
+
+.outline {
+    position: relative;
+    background: transparent;
+    background-color: var(--white);
+
+    color: var(--Grey500);
+    margin: 0;
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    border: none;
+
+}
+
+
+
+.outline:before,
+.outline:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+}
+
+.outline:before {
+    top: 0;
+    left: 0;
+    box-shadow: inset 1px 1px 0 0 var(--Grey600);
+}
+
+.outline:after {
+    right: 0;
+    bottom: 0;
+    box-shadow: inset -1px -1px 0 0 var(--Grey600);
+}
+
+.outline:hover,
+.outline:focus {
+    color: lighten(var(--Grey900), 20%);
+}
+
+.outline:hover::before,
+.outline:focus::before {
+    animation: lineBefore 1s forwards;
+}
+
+.outline:hover::after,
+.outline:focus::after {
+    animation: lineAfter 1s forwards;
+}
+
+@keyframes lineBefore {
+    0% {
+        width: 100%;
+        height: 1px;
+
+        top: 0;
+        left: 0;
+    }
+
+    33% {
+        width: 1px;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+    }
+
+    66% {
+        width: 1px;
+        height: 1px;
+
+        top: calc(100% - 1px);
+        left: 0;
+    }
+
+    100% {
+        width: 100%;
+        height: 1px;
+
+        top: calc(100% - 1px);
+        left: 0;
+    }
+}
+
+@keyframes lineAfter {
+    0% {
+        width: 100%;
+        height: 1px;
+    }
+
+    33% {
+        width: 1px;
+        height: 100%;
+
+        bottom: 0;
+        right: 0;
+    }
+
+    66% {
+        width: 1px;
+        height: 1px;
+
+        bottom: calc(100% - 1px);
+        right: 0;
+    }
+
+    100% {
+        width: 100%;
+        height: 1px;
+
+        bottom: calc(100% - 1px);
+        right: 0;
+    }
+}
+
+
+/* BTN test */
 
 .button-86 {
     all: unset;
