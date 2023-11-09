@@ -30,11 +30,11 @@
 
     --LASOBlueDark: #0a1c4d;
     --LASOBlue: #1A47C1;
-    --LASOBlueLight: #7691da;    
+    --LASOBlueLight: #7691da;
     --LASOBlueLighter: #bac8ec;
     --LASOBlueLightest: #e8edf9;
 
-   
+
     --Orange: #FF7700;
     --Error: #AE0F09;
     --Progress: #1C6320;
@@ -379,6 +379,24 @@ body .displayPhone {
         width: 100%;
     }
 
+    body .imgPlaceholder {
+        background-image: url('imgPlaceholder_1.png');
+        /* Replace with the actual path to your image */
+
+        /* Ensure the image covers the entire element, you may also use 'contain' depending on your needs */
+        background-size: cover;
+
+        /* Center the image within the element */
+        background-position: bottom;
+
+        /* Prevent the image from repeating */
+        background-repeat: no-repeat;
+
+
+        height: 560px;
+        width: 100%;
+    }
+
     body .BgImg_MedBottle {
         background-image: url('medsBottle1_1.png');
         /* Replace with the actual path to your image */
@@ -414,6 +432,15 @@ body .displayPhone {
         height: 660px;
         width: 100%;
     }
+}
+
+.imgPlaceholder {
+    background-image: url('imgPlaceholder.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 560px;
+    width: 100%;
 }
 
 .BgImg_MedBottle {
@@ -480,48 +507,120 @@ body .displayPhone {
 }
 
 /* ====== background images LASO ===== */
-/* ========== Button LASO ==========*/
+
+
+
+
+
+/* ========== Button Styles ========== */
+
+/* Base button style */
 .Button {
-    /* Apply box-sizing to ensure padding and border are included in the element's total dimensions */
     box-sizing: border-box;
+    /* Include padding and border in element's total dimensions */
     padding: 8px 24px;
-    /* This padding will be adjusted for the .Secondary button */
+    /* Standard padding for all buttons */
+    margin-right: 8px;
+    /* Consistent margin for all buttons */
     border-radius: 3px;
-    margin: 6px;
     font-size: clamp(0.84em, 0.92vw, 1em);
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 8px;
+    border: 1px solid transparent;
+    /* Ensures consistent size with or without border */
+    background-color: transparent;
+    /* Default background color */
+    color: var(--LASOBlue);
+    /* Default text color */
 }
 
-.Button.Primary {
+/* ========== Button Styles ========== */
+
+/* ========== Button Styles ========== */
+
+/* Base button style */
+.Button {
+    box-sizing: border-box;
+    /* Include padding and border in element's total dimensions */
+    padding: 8px 24px;
+    /* Standard padding for regular buttons */
+    margin-right: 8px;
+    /* Consistent margin for all buttons */
+    border-radius: 4px;
+    /* Slightly increased for aesthetic proportion */
+    border: 1px solid transparent;
+    /* Invisible border for consistent sizing */
+    font-size: clamp(0.84em, 0.92vw, 1em);
+    /* Responsive font sizing */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    /* Default background color */
+    color: var(--LASOBlue);
+    /* Default text color */
+}
+
+/* Large button style */
+.Button.Large {
+    padding: 16px 48px;
+    /* Increased padding for larger buttons */
+    font-size: clamp(1em, 1.2vw, 1.2em);
+    /* Increased font size for better readability */
+}
+
+/* Primary Button Style */
+.Button.Primary,
+.Button.Large.Primary {
     background-color: var(--LASOBlue);
     color: var(--white);
-    border: none;
-    /* No border means the padding remains the same */
 }
 
-.Button.Secondary {
+/* Secondary Button Style */
+.Button.Secondary,
+.Button.Large.Secondary {
     background-color: var(--white);
     color: var(--LASOBlue);
-    border: 1px solid var(--LASOBlue);
-    /* Subtract 1px from the top and bottom padding to account for the border */
-    padding: 7px 24px;
+    border-color: var(--LASOBlue);
+    /* Visible border color */
 }
 
-.Button.Primary:hover {
+/* Tertiary Button Style */
+.Button.Tertiary,
+.Button.Large.Tertiary {
+    color: var(--Grey900);
+    /* Inherits the base button style, no border color change needed */
+}
+
+/* Hover States for Regular Buttons */
+.Button:hover {
     background-color: var(--LASOBlueDark);
-
-}
-
-.Button.Secondary:hover {
-    background-color: var(--LASOBlue);
+    /* Default hover background for regular buttons */
     color: var(--white);
-
+    /* Default hover text color */
 }
 
-/* ========== Button LASO==========*/
+/* Hover States for Large Buttons */
+.Button.Large:hover {
+    background-color: var(--LASOBlueDark);
+    /* Default hover background for large buttons */
+    color: var(--white);
+    /* Default hover text color */
+    /* Additional hover styles for large buttons can be added here if needed */
+}
 
+.Button.Secondary:hover,
+.Button.Large.Secondary:hover {
+    background-color: var(--LASOBlue);
+    /* Background color for secondary button on hover */
+}
+
+.Button.Tertiary:hover,
+.Button.Large.Tertiary:hover {
+    background-color: var(--Grey500);
+    /* Specific hover background for tertiary button */
+}
+
+/* ========== End Button Styles ========== */
 
 
 
@@ -598,31 +697,40 @@ body .displayPhone {
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
+
 /* ===== LASO background color ===== */
 .colorBgOrange {
     background: var(--Orange);
 }
+
 .colorBgError {
     background: var(--Error);
 }
+
 .colorBgProgress {
     background: var(--Progress);
 }
+
 .colorBgBlueDark {
     background: var(--LASOBlueDark);
 }
+
 .colorBgBlue {
     background: var(--LASOBlue);
 }
+
 .colorBgBlueLight {
     background: var(--LASOBlueLight);
 }
+
 .colorBgBlueLighter {
     background: var(--LASOBlueLighter);
 }
+
 .colorBgBlueLightest {
     background: var(--LASOBlueLightest);
 }
+
 /* ===== LASO background color ===== */
 
 
@@ -630,27 +738,35 @@ body .displayPhone {
 .colorOrange {
     color: var(--Orange);
 }
+
 .colorError {
     color: var(--Error);
 }
+
 .colorProgress {
     color: var(--Progress);
 }
+
 .colorBlueDark {
     color: var(--LASOBlueDark);
 }
+
 .colorBlue {
     color: var(--LASOBlue);
 }
+
 .colorBlueLight {
     color: var(--LASOBlueLight);
 }
+
 .colorBlueLighter {
     color: var(--LASOBlueLighter);
 }
+
 .colorBlueLightest {
     color: var(--LASOBlueLightest);
 }
+
 /* ===== LASO color ===== */
 
 
@@ -690,7 +806,10 @@ body .displayPhone {
 .Grey100 {
     color: var(--Grey100);
 }
+.White {
+    color: var(--white);
 
+}
 /* ===== color grey ===== */
 /* ===== bg color grey ===== */
 
@@ -1704,8 +1823,8 @@ main>nav {
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active>a {
     font-weight: 400;
-    color: var(--LASOBlue);
-    border-left: var(--LASOBlue) .08em solid;
+    color: var(--LASOBlueDark);
+    border-left: var(--LASOBlueDark) .08em solid;
     background-color: var(--Grey100);
 
 }
@@ -1853,21 +1972,22 @@ section .padding {
     font-family: inherit;
     font-size: clamp(1.6em, 2.8vw, 3.2em);
     margin: 0;
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+    margin-top: clamp(0.17em, 0.25em, 0.56em);
+    margin-bottom: clamp(0.17em, 0.45em, 0.86em);
+
 }
 
 .specialTextS {
     font-family: inherit;
     font-size: clamp(1em, 2vw, 2.2em);
     margin: 0;
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+    margin-top: clamp(0.17em, 0.25em, 0.56em);
+    margin-bottom: clamp(0.17em, 0.45em, 0.86em);
 
 }
 
 .specialTextNote {
-    font-family: 'Indie Flower', sans-serif;
+    font-family: 'Gloria Hallelujah', sans-serif;
     font-weight: 100;
     font-size: clamp(1.3em, 1.46vw, 1.68em);
 
