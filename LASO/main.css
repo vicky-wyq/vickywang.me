@@ -1,4 +1,3 @@
-
 :root {
     --border-radius: 0.5em;
 
@@ -26,10 +25,19 @@
 
     /* Color */
 
-    --LASOBlueDark: #00154f;
 
+
+
+    --LASOBlueDark: #0a1c4d;
     --LASOBlue: #1A47C1;
-    --LASOBlueLight: #5384ED;
+    --LASOBlueLight: #7691da;    
+    --LASOBlueLighter: #bac8ec;
+    --LASOBlueLightest: #e8edf9;
+
+   
+    --Orange: #FF7700;
+    --Error: #AE0F09;
+    --Progress: #1C6320;
 
 
 
@@ -87,6 +95,7 @@
 
 
 }
+
 html {
     scroll-behavior: smooth;
     color: var(--Grey800);
@@ -94,6 +103,7 @@ html {
     font-family: 'Inter', sans-serif;
     height: var(--height100);
 }
+
 body {
     width: 100%;
     height: var(--height100);
@@ -105,6 +115,7 @@ body {
     background: #F5F5F7;
 
 }
+
 /* ========= a link / states =========*/
 
 
@@ -112,6 +123,7 @@ body a {
     color: var(--Grey900);
     cursor: pointer;
 }
+
 a:visited {
     text-decoration: none;
 }
@@ -119,22 +131,26 @@ a:visited {
 a:link {
     text-decoration: none;
 }
+
 a:link.textUnderline {
     text-decoration-line: underline;
     text-decoration-thickness: 0.03em;
     text-underline-offset: 6px;
     text-decoration-color: var(--Grey900);
 }
+
 .textUnderline {
     text-decoration-line: underline;
     text-decoration-thickness: 0.03em;
     text-underline-offset: 6px;
     text-decoration-color: var(--Grey900);
 }
+
 a:link.textProject {
     text-decoration-line: underline;
     text-underline-offset: 4px;
 }
+
 .active a {
     font-weight: 300;
     color: var(--Grey900);
@@ -161,6 +177,7 @@ a:link.textProject {
     color: var(--Grey600);
     font-weight: 300;
 }
+
 /* ========= a link / states =========*/
 
 
@@ -170,6 +187,7 @@ a:link.textProject {
 .displayNone {
     display: none;
 }
+
 .displayLaptop {
     display: block;
 }
@@ -181,20 +199,22 @@ a:link.textProject {
 body .displayPhone {
     display: none;
 }
+
 /* ========= header =========*/
 .headerBorder {
     border-bottom: 1px solid var(--Grey400);
 
 }
+
 .menu a.active {
     color: var(--LASOBlue);
     font-weight: 700;
 
 }
+
 /* Inactive link styles */
 .menu a.inactive {
     color: var(--Grey800)
-
 }
 
 .header {
@@ -310,12 +330,14 @@ body .displayPhone {
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     top: 0;
 }
-.BtnsBox4Header{
+
+.BtnsBox4Header {
     display: flex;
     flex-direction: column;
     padding: 8px;
 
 }
+
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -324,7 +346,7 @@ body .displayPhone {
     }
 
     body .header li a {
-        padding: 22px 0.8vw; 
+        padding: 22px 0.8vw;
         font-size: clamp(1.08em, 1.2vw, 1.2em);
 
     }
@@ -338,14 +360,15 @@ body .displayPhone {
     body .header .menu-icon {
         display: none;
     }
-   body .BtnsBox4Header{
+
+    body .BtnsBox4Header {
         display: flex;
         flex-direction: row;
-        padding: 18px auto; 
+        padding: 18px auto;
 
     }
 
-    
+
 }
 
 /* ================== header ===================== */
@@ -355,33 +378,36 @@ body .displayPhone {
     body .widthMPhHalf {
         width: 100%;
     }
-   body .BgImg_MedBottle {
+
+    body .BgImg_MedBottle {
         background-image: url('medsBottle1_1.png');
         /* Replace with the actual path to your image */
-    
+
         /* Ensure the image covers the entire element, you may also use 'contain' depending on your needs */
         background-size: cover;
-    
+
         /* Center the image within the element */
         background-position: bottom;
-    
+
         /* Prevent the image from repeating */
         background-repeat: no-repeat;
-    
-    
+
+
         height: 560px;
         width: 100%;
     }
+
     body .BgImg_30Days {
-        background-image: url('iconL_30Days2.png');    
+        background-image: url('iconL_30Days2.png');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
         height: 560px;
         width: 100%;
     }
+
     body .BgImgDrM {
-        background-image: url('IconL_DoctorM_1.png');    
+        background-image: url('IconL_DoctorM_1.png');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -389,6 +415,7 @@ body .displayPhone {
         width: 100%;
     }
 }
+
 .BgImg_MedBottle {
     background-image: url('medsBottle1.png');
     /* Replace with the actual path to your image */
@@ -430,6 +457,7 @@ body .displayPhone {
     width: 100%;
     /* for example, can be any value */
 }
+
 .BgImgDrM {
     background-image: url('IconL_DoctorM.png');
     /* Replace with the actual path to your image */
@@ -450,6 +478,7 @@ body .displayPhone {
     width: 100%;
     /* for example, can be any value */
 }
+
 /* ====== background images LASO ===== */
 /* ========== Button LASO ==========*/
 .Button {
@@ -490,18 +519,11 @@ body .displayPhone {
     color: var(--white);
 
 }
+
 /* ========== Button LASO==========*/
 
 
-/* ========== color LASO==========*/
 
-
-.LASOBlueBg {
-    background-color: var(--LASOBlue);
-
-}
-
-/* ========== color LASO==========*/
 
 
 
@@ -534,6 +556,7 @@ body .displayPhone {
 .borderRadiusMax {
     border-radius: var(--border-radiusMax);
 }
+
 /* =================== border radius ends =================== */
 /* =================== scroll bar starts =================== */
 
@@ -558,6 +581,7 @@ body .displayPhone {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--Grey600);
 }
+
 /* =================== scroll bar ends =================== */
 
 
@@ -568,11 +592,68 @@ body .displayPhone {
 .progress:hover {
     cursor: progress;
 }
+
 .more {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
+/* ===== LASO background color ===== */
+.colorBgOrange {
+    background: var(--Orange);
+}
+.colorBgError {
+    background: var(--Error);
+}
+.colorBgProgress {
+    background: var(--Progress);
+}
+.colorBgBlueDark {
+    background: var(--LASOBlueDark);
+}
+.colorBgBlue {
+    background: var(--LASOBlue);
+}
+.colorBgBlueLight {
+    background: var(--LASOBlueLight);
+}
+.colorBgBlueLighter {
+    background: var(--LASOBlueLighter);
+}
+.colorBgBlueLightest {
+    background: var(--LASOBlueLightest);
+}
+/* ===== LASO background color ===== */
+
+
+/* ===== LASO color ===== */
+.colorOrange {
+    color: var(--Orange);
+}
+.colorError {
+    color: var(--Error);
+}
+.colorProgress {
+    color: var(--Progress);
+}
+.colorBlueDark {
+    color: var(--LASOBlueDark);
+}
+.colorBlue {
+    color: var(--LASOBlue);
+}
+.colorBlueLight {
+    color: var(--LASOBlueLight);
+}
+.colorBlueLighter {
+    color: var(--LASOBlueLighter);
+}
+.colorBlueLightest {
+    color: var(--LASOBlueLightest);
+}
+/* ===== LASO color ===== */
+
+
 /* ===== color grey ===== */
 .Grey900 {
     color: var(--Grey900);
@@ -951,6 +1032,7 @@ polygon {
     border-radius: var(--border-radius);
     background-image: var(--img-DS);
 }
+
 /* ===== colors ===== */
 
 /* ============ shadow ============ */
@@ -989,6 +1071,7 @@ polygon {
     width: 800px;
     height: 1200px;
 }
+
 /* ============ shadow ============ */
 
 
@@ -1002,6 +1085,7 @@ polygon {
     height: 100%;
 
 }
+
 section {
     margin: 0;
     padding: 0;
@@ -1126,6 +1210,7 @@ section {
 .barGraph .barGraphInner #bar_graph {
     border-left: 0.02em solid var(--GLORIFY-orange);
 }
+
 .barGraph .barGraphInner #bar_graph div {
     padding: 0.16em 0;
     margin: 1.16em 0;
@@ -1535,6 +1620,7 @@ section {
     display: flex;
     align-items: center;
 }
+
 /* ====== for nav 2 ======*/
 
 
@@ -1563,11 +1649,13 @@ section {
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
 }
+
 .subNav a:hover,
 .subNav a:focus {
     color: var(--Grey900);
     background-color: var(--Grey100);
 }
+
 li .newPanel {
     /*for V3     display: none; */
     list-style: none;
@@ -1580,10 +1668,12 @@ li .newPanelV3 {
     font-size: 14px;
     line-height: 14px;
 }
+
 .newTitlePanel {
     font-size: 18px;
     line-height: 16px;
 }
+
 /*====== new sub nav 2 or 3====== */
 /* =========== new sub nav V3 =========== */
 .newPanelV3 {
@@ -1595,11 +1685,13 @@ li .newPanelV3 {
     font-size: 12px;
     line-height: 16px;
 }
+
 .newPanelV3.active {
     visibility: visible;
     height: auto;
     opacity: 1;
 }
+
 /* =========== new sub nav V3 =========== */
 
 /* =========== sub nav V1 =========== */
@@ -1611,11 +1703,13 @@ main>nav {
 
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active>a {
-    font-weight: 500;
-    border-left: var(--Grey900) .08em solid;
+    font-weight: 400;
+    color: var(--LASOBlue);
+    border-left: var(--LASOBlue) .08em solid;
     background-color: var(--Grey100);
 
 }
+
 /* Sidebar Navigation */
 .section-nav {
     position: -webkit-sticky;
@@ -1641,7 +1735,7 @@ main>nav {
     border-left: var(--Grey400) 0.04em solid;
     text-decoration: none;
     display: block;
-    padding: 8px 16px;
+    padding: 18px 32px;
     color: var(--Grey700);
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
@@ -1741,6 +1835,7 @@ section {
 section .padding {
     padding-top: 5em;
 }
+
 /* =========== sub nav V1 =========== */
 
 /* =========== special text =========== */
@@ -1748,27 +1843,29 @@ section .padding {
     background: var(--APPOINTA-yellow);
     color: var(--white);
 }
+
 .colorAPPOINTALt::selection {
     background: var(--APPOINTA-blueLight);
     color: var(--white);
 }
+
 .specialTextL {
     font-family: inherit;
-    font-weight: 600;
     font-size: clamp(1.6em, 2.8vw, 3.2em);
     margin: 0;
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
+
 .specialTextS {
     font-family: inherit;
-    font-weight: 600;
     font-size: clamp(1em, 2vw, 2.2em);
     margin: 0;
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 
 }
+
 .specialTextNote {
     font-family: 'Indie Flower', sans-serif;
     font-weight: 100;
@@ -1777,34 +1874,33 @@ section .padding {
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
+
 .specialTextDemo {
     font-family: 'Caveat', sans-serif;
     margin: 0;
     font-size: clamp(1.3em, 1.46vw, 1.68em);
 }
+
 /* =========== special text =========== */
 
 
 /* ================== Font ========================*/
 
 
-.fontWeight100 {
-    font-weight: 100;
-
-}
-
 .fontWeight300 {
     font-weight: 300;
 
 }
 
-.fontWeight400 {
-    font-weight: 400;
+.fontWeight500 {
+    font-weight: 500;
+
 }
 
 .fontWeight700 {
     font-weight: 700;
 }
+
 
 h1,
 h2 {
@@ -1818,18 +1914,7 @@ h5,
 h6 {
     font-weight: 300;
 }
-.DisplayLarge {
-    font-size: clamp(2.9em, 4.6vw, 3.6em);
-    font-weight: 700;
-    margin-top: clamp(0.27em, 0.35em, 1.2em);
-    margin-bottom: clamp(0.27em, 0.38em, 1.2em);
-}
-.DisplaySmall {
-    font-size: clamp(2.2em, 3.6vw, 2.6em);
-    font-weight: 700;
-    margin-top: clamp(0.27em, 0.35em, 1.2em);
-    margin-bottom: clamp(0.27em, 0.38em, 1.2em);
-}
+
 h1 {
     font-size: clamp(1.3em, 1.8vw, 2.2em);
     /* - first one is the minimum allowed font-size.
@@ -2476,6 +2561,7 @@ button.passwordArr {
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 }
+
 /* =================== accordion ===================*/
 
 
@@ -2483,9 +2569,10 @@ button.passwordArr {
     max-width: 1200px;
     margin: auto;
 }
+
 @media all and (max-width: 1080px) {
 
- 
+
 
 
     body .se-arrow {
@@ -2495,8 +2582,8 @@ button.passwordArr {
 
 
 
- 
- 
+
+
 
     body .section-nav {
         display: none;
@@ -2580,10 +2667,10 @@ button.passwordArr {
 
 
 
- 
 
 
- 
+
+
 
 
 
@@ -2785,6 +2872,7 @@ button.passwordArr {
     flex-flow: row;
     flex-wrap: wrap;
 }
+
 .u-textCenter {
     text-align: center;
 }
@@ -2792,6 +2880,7 @@ button.passwordArr {
 .Grid-cell {
     flex: 1;
 }
+
 /* Base classes for all media - Mobile first */
 .Grid--cols-2>.Grid-cell {
     flex: 0 0 96%;
@@ -2816,25 +2905,31 @@ flex: 0 0 calc(33.3333% - 1em);
     flex: 0 0 calc(12.5% - 1em);
 */
 }
+
 .Grid--holly-grail .aside,
 .Grid--holly-grail .main {
     flex: 1 100%;
 }
+
 /* One of -- columns*/
 .Grid--1of2>.Grid-cell,
 .Grid--1of4>.Grid-cell:first-of-type,
 .Grid--1of3>.Grid-cell:first-of-type {
     flex: 0 0 96%;
 }
+
 .Grid--1of6>.Grid-cell:first-of-type {
     flex: 0 0 50%;
 }
+
 .Grid--fit>.Grid-cell {
     flex: 1;
 }
+
 .Grid--full>.Grid-cell {
     flex: 0 0 100%;
 }
+
 /* Tablet (medium) screens */
 @media (min-width: 30em) {
     .Grid--cols-4>.Grid-cell {
@@ -2851,24 +2946,31 @@ flex: 0 0 calc(33.3333% - 1em);
                 flex: 0 0 calc(16.6666% - 1em);
         */
     }
+
     .Grid--holly-grail .aside {
         flex: 1 calc(25% - 1em);
     }
+
     .Grid--1of2>.Grid-cell {
         flex: 0 0 50%;
     }
+
     .Grid--1of6>.Grid-cell:first-of-type {
         flex: 0 0 30%;
     }
+
     .Grid--1of4>.Grid-cell:first-of-type {
         flex: 0 0 50%;
     }
+
     .Grid--1of3>.Grid-cell:first-of-type {
         flex: 0 0 96%;
     }
 }
+
 /* when the screens more than an ipad */
 @media (min-width: 48em) {
+
     .Grid--cols-2>.Grid-cell,
     .Grid--cols-3>.Grid-cell,
     .Grid--cols-4>.Grid-cell,
@@ -2876,24 +2978,31 @@ flex: 0 0 calc(33.3333% - 1em);
     .Grid--cols-8>.Grid-cell {
         flex: 1;
     }
+
     .Grid--holly-grail .main {
         flex: 2;
     }
+
     .Grid--holly-grail .aside {
         flex: 1;
     }
+
     .Grid--holly-grail .aside-1 {
         order: 1;
     }
+
     .Grid--holly-grail .main {
         order: 2;
     }
+
     .Grid--holly-grail .aside-2 {
         order: 3;
     }
+
     .Grid--1of2>.Grid-cell {
         flex: 0 0 50%;
     }
+
     .Grid--1of6>.Grid-cell:first-of-type {
         flex: 0 0 16.6666%;
     }
@@ -2910,29 +3019,35 @@ flex: 0 0 calc(33.3333% - 1em);
         margin-right: 0;
     }
 }
+
 .paddingleft {
     padding-left: 0.8em;
 }
+
 .max-width::before {
     content: "max-width";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .fix-width::before {
     content: "fix-width";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .content-1of1::before {
     content: "1";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .content-1of2::before {
     content: "1/2";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .content-1of3::before {
     content: "1/3";
     font-weight: 300;
@@ -2944,6 +3059,7 @@ flex: 0 0 calc(33.3333% - 1em);
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .content-1of6::before {
     content: "1/6";
     font-weight: 300;
@@ -2955,15 +3071,18 @@ flex: 0 0 calc(33.3333% - 1em);
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .element:after {
     content: "";
     display: block;
     margin-top: 0.8em;
     height: 1px;
 }
+
 .element:hover {
     background: var();
 }
+
 .element.Holly {
     background: rgba(102, 51, 255, 0.1);
 }
@@ -3153,6 +3272,7 @@ flex: 0 0 calc(33.3333% - 1em);
     border: 0.01em solid var(--Grey100);
 
 }
+
 .slider-nav:hover,
 .slider-nav.active {
     border-color: var(--white);
@@ -3161,6 +3281,7 @@ flex: 0 0 calc(33.3333% - 1em);
     font-weight: 500 !important;
     box-shadow: inset 0 -8.25em 0 0 var(--white);
 }
+
 .noBg .slider-nav:hover,
 .noBg .slider-nav.active {
     border: 0.01em solid var(--Grey900);
@@ -3170,6 +3291,7 @@ flex: 0 0 calc(33.3333% - 1em);
     font-weight: 500 !important;
     box-shadow: inset 0 -10.25em 0 0 var(--Grey100);
 }
+
 /* ======================= LRcarousel ======================= */
 
 /* ======================= TBcarousel ======================= */
@@ -3956,7 +4078,7 @@ body .flex-container.Mobile {
 }
 
 
- 
+
 
 /* ========== footer==========*/
 
@@ -3967,7 +4089,7 @@ body .flex-container.Mobile {
 
 
 
- 
+
 
 
 
@@ -4191,6 +4313,7 @@ body .flex-container.Mobile {
 .noMargin {
     margin: 0 !important;
 }
+
 .marginXS {
     margin: 0.2em;
 }
@@ -4199,6 +4322,7 @@ body .flex-container.Mobile {
 .paddingNone {
     padding: 0 !important;
 }
+
 /* ======== width & height ========= */
 
 
@@ -4238,6 +4362,7 @@ body .flex-container.Mobile {
     width: fit-content;
 
 }
+
 /* ======== paddings ========= */
 /* ======== width & height V2 New ========= */
 .iconXS {
@@ -4555,6 +4680,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 .zTop {
     z-index: 99;
 }
@@ -4676,6 +4802,7 @@ Pre .codeTiltle {
     text-align: center;
     width: fit-content;
 }
+
 button.ClipboardIconOnly {
     width: fit-content;
     height: fit-content;
@@ -4943,6 +5070,7 @@ button.Clipboard.clickTxt:active {
     background-color: rgba(255, 255, 255, 0.8);
 
 }
+
 .buttonLanding {
     border-radius: 0.6em;
     align-self: center;
@@ -4976,6 +5104,7 @@ button.Clipboard.clickTxt:active {
     box-shadow: rgba(63, 63, 63, 0.2) 0px 2px 8px 0px;
     transform: translate3d(0, 2px, 0);
 }
+
 @media (min-width: 768px) {
     .button-46 {
         font-size: 20px;
@@ -4983,6 +5112,7 @@ button.Clipboard.clickTxt:active {
         padding: 14px 16px;
     }
 }
+
 /* ====== button ====== */
 
 .custom-btn {
