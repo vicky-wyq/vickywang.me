@@ -252,7 +252,7 @@ body .displayPhone {
     display: block;
     float: left;
     width: 5em;
-    padding: 10px 16px;
+    padding: 13px 16px;
     text-decoration: none;
 }
 
@@ -538,91 +538,76 @@ body .displayPhone {
 
 /* ========== Button Styles ========== */
 
+
+/* ========== End Button Styles ========== */
+
+
+/* ========== Button Styles ========== */
+
 /* Base button style */
 .Button {
-    box-sizing: border-box;
-    /* Include padding and border in element's total dimensions */
-    padding: 8px 24px;
-    /* Standard padding for regular buttons */
-    margin-right: 8px;
-    /* Consistent margin for all buttons */
-    border-radius: 4px;
-    /* Slightly increased for aesthetic proportion */
-    border: 1px solid transparent;
-    /* Invisible border for consistent sizing */
-    font-size: clamp(0.84em, 0.92vw, 1em);
-    /* Responsive font sizing */
+    box-sizing: border-box; /* Include padding and border in element's total dimensions */
+    padding: 8px 24px; /* Standard padding for regular buttons */
+    margin: 8px; /* Consistent margin for all buttons */
+    border-radius: 4px; /* Slightly increased for aesthetic proportion */
+    border: 1px solid transparent; /* Invisible border for consistent sizing */
+    font-size: clamp(0.84em, 0.92vw, 1em); /* Responsive font sizing */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    background-color: transparent;
-    /* Default background color */
-    color: var(--LASOBlue);
-    /* Default text color */
+    background-color: transparent; /* Default background color */
+    color: var(--LASOBlue); /* Default text color */
+    text-decoration: none; /* No underline */
 }
 
 /* Large button style */
 .Button.Large {
-    padding: 16px 48px;
-    /* Increased padding for larger buttons */
-    font-size: clamp(1em, 1.2vw, 1.2em);
-    /* Increased font size for better readability */
+    padding: 16px 48px; /* Increased padding for larger buttons */
+    font-size: clamp(1em, 1.2vw, 1.2em); /* Increased font size for better readability */
 }
 
 /* Primary Button Style */
-.Button.Primary,
-.Button.Large.Primary {
+.Button.Primary {
     background-color: var(--LASOBlue);
     color: var(--white);
 }
 
 /* Secondary Button Style */
-.Button.Secondary,
-.Button.Large.Secondary {
+.Button.Secondary {
     background-color: var(--white);
     color: var(--LASOBlue);
-    border-color: var(--LASOBlue);
-    /* Visible border color */
+    border-color: var(--LASOBlue); /* Visible border color */
 }
 
 /* Tertiary Button Style */
-.Button.Tertiary,
-.Button.Large.Tertiary {
-    color: var(--Grey900);
+.Button.Tertiary {
     /* Inherits the base button style, no border color change needed */
+    color: var(--Grey900);
 }
 
-/* Hover States for Regular Buttons */
-.Button:hover {
-    background-color: var(--LASOBlueDark);
-    /* Default hover background for regular buttons */
-    color: var(--white);
-    /* Default hover text color */
+/* Hover States for Buttons */
+.Button:not(.Disabled):hover {
+    background-color: var(--LASOBlueDark); /* Default hover background */
+    color: var(--white); /* Default hover text color */
 }
 
-/* Hover States for Large Buttons */
-.Button.Large:hover {
-    background-color: var(--LASOBlueDark);
-    /* Default hover background for large buttons */
-    color: var(--white);
-    /* Default hover text color */
-    /* Additional hover styles for large buttons can be added here if needed */
+.Button.Secondary:not(.Disabled):hover {
+    background-color: var(--LASOBlue); /* Background color for secondary button on hover */
 }
 
-.Button.Secondary:hover,
-.Button.Large.Secondary:hover {
-    background-color: var(--LASOBlue);
-    /* Background color for secondary button on hover */
-}
+.Button.Tertiary:not(.Disabled):hover {
+    background-color: var(--white); 
+    color: var(--grey900);}
 
-.Button.Tertiary:hover,
-.Button.Large.Tertiary:hover {
-    background-color: var(--Grey500);
-    /* Specific hover background for tertiary button */
+/* Disabled State for Buttons */
+.Button.Disabled, .Button.Disabled:hover {
+    background-color: var(--Grey300); /* Disabled background color */
+    color: var(--Grey600); /* Disabled text color */
+    cursor: not-allowed; /* Cursor indicates disabled state */
+    border-color: var(--Grey300); /* Disabled border color */
+    pointer-events: none; /* Prevents interactions */
 }
 
 /* ========== End Button Styles ========== */
-
-
 
 
 
