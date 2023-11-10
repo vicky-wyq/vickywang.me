@@ -203,7 +203,6 @@ body .displayPhone {
 /* ========= header =========*/
 .headerBorder {
     border-bottom: 1px solid var(--Grey400);
-
 }
 
 .menu a.active {
@@ -224,7 +223,6 @@ body .displayPhone {
     width: 100%;
     z-index: 3;
     top: 0;
-    height: min-content;
 }
 
 .header ul {
@@ -331,16 +329,12 @@ body .displayPhone {
     top: 0;
 }
 
-.BtnsBox4Header {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
 
-}
 
 /* 48em = 768px */
 
 @media (min-width: 48em) {
+
     body .header li {
         float: left;
     }
@@ -361,12 +355,7 @@ body .displayPhone {
         display: none;
     }
 
-    body .BtnsBox4Header {
-        display: flex;
-        flex-direction: row;
-        padding: 18px auto;
 
-    }
 
 
 }
@@ -520,7 +509,7 @@ body .displayPhone {
     /* Include padding and border in element's total dimensions */
     padding: 8px 24px;
     /* Standard padding for all buttons */
-    margin-right: 8px;
+    margin: 12px 0;
     /* Consistent margin for all buttons */
     border-radius: 3px;
     font-size: clamp(0.84em, 0.92vw, 1em);
@@ -534,21 +523,19 @@ body .displayPhone {
     /* Default text color */
 }
 
-/* ========== Button Styles ========== */
-
-/* ========== Button Styles ========== */
-
-
-/* ========== End Button Styles ========== */
-
-
-/* ========== Button Styles ========== */
+/* Full-width button style */
+.Button.FullWidth {
+    width: 100%; /* Causes the button to fill the width of its container */
+    padding: 8px 0; /* Vertical padding only */
+    margin: 12px 0;
+    box-sizing: border-box; /* Include padding in total width */
+}
 
 /* Base button style */
 .Button {
     box-sizing: border-box; /* Include padding and border in element's total dimensions */
     padding: 8px 24px; /* Standard padding for regular buttons */
-    margin: 8px; /* Consistent margin for all buttons */
+    margin: 12px 0;
     border-radius: 4px; /* Slightly increased for aesthetic proportion */
     border: 1px solid transparent; /* Invisible border for consistent sizing */
     font-size: clamp(0.84em, 0.92vw, 1em); /* Responsive font sizing */
@@ -4423,7 +4410,9 @@ body .flex-container.Mobile {
     margin: 0.2em;
 }
 
-
+.marginS {
+    margin: 16px 8px;
+}
 .paddingNone {
     padding: 0 !important;
 }
