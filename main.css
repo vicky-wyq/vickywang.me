@@ -4427,14 +4427,30 @@ body .flex-container.Mobile {
 }
 
 /* ======== width & height ========= */
-/* ====== Margin ====== */
+/* ======== margin ========= */
 .noMargin {
     margin: 0 !important;
 }
 .marginXS {
-    margin: 0.2em;
+    margin: 0.5em;
 }
 
+.marginS {
+    margin: 1em;
+}
+.marginM {
+    margin: 1.5em;
+}
+.marginL {
+    margin: 2em;
+}
+.marginXL {
+    margin: 2.5em;
+}
+.marginMax {
+    margin: 3em;
+}
+/* ======== margin ========= */
 
 .paddingNone {
     padding: 0 !important;
