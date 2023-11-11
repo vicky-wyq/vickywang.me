@@ -195,8 +195,10 @@ a:link.textProject {
 .displayTablet {
     display: none;
 }
-
-body .displayPhone {
+.displayPhone {
+    display: none;
+}
+body.displayPhone {
     display: none;
 }
 
@@ -250,7 +252,7 @@ body .displayPhone {
     display: block;
     float: left;
     width: 5em;
-    padding: 13px 16px;
+    margin: 12px 1.2vw;
     text-decoration: none;
 }
 
@@ -364,6 +366,18 @@ body .displayPhone {
 /* ====== background images LASO ===== */
 
 @media all and (max-width: 768px) {
+    body .displayLaptop {
+        display: none;
+    }
+
+    body .displayTablet {
+        display: block;
+    }
+
+    body .displayPhone {
+        display: none;
+    }
+
     body .widthMPhHalf {
         width: 100%;
     }
@@ -1660,6 +1674,24 @@ section {
 /* ===== Graph ===== */
 
 @media all and (min-width: 1880px) {
+    body .displayNone {
+        display: none;
+    }
+    
+    body .displayLaptop {
+        display: block;
+    }
+    
+    body .displayTablet {
+        display: none !important;
+    }
+    body .displayPhone {
+        display: none !important;
+    }
+    body.displayPhone {
+        display: none !important;
+    }
+    
     body .blankMin1880 {
         height: 8rem;
     }
@@ -2708,17 +2740,6 @@ button.passwordArr {
     }
 
 
-    body .displayLaptop {
-        display: none;
-    }
-
-    body .displayTablet {
-        display: block;
-    }
-
-    body .displayPhone {
-        display: none;
-    }
 
     body .footer {
         height: 150px;
@@ -2797,13 +2818,7 @@ button.passwordArr {
 
     }
 
-    body .displayPhone {
-        display: block;
-    }
 
-    body .displayTablet {
-        display: none;
-    }
 
 
 
@@ -3687,6 +3702,13 @@ body .flex-container.Mobile {
 
 
 @media screen and (max-width: 480px) {
+    body .displayPhone {
+        display: block;
+    }
+
+    body .displayTablet {
+        display: none;
+    }
     body .rowVW {
         display: flex;
         flex-direction: column;
@@ -4401,18 +4423,34 @@ body .flex-container.Mobile {
 }
 
 /* ======== width & height ========= */
-/* ====== Margin ====== */
+/* ======== margin ========= */
 .noMargin {
     margin: 0 !important;
 }
-
+.marginSFix {
+    margin: 16px 0.8vw;
+}
 .marginXS {
-    margin: 0.2em;
+    margin: 0.5em;
 }
 
 .marginS {
-    margin: 16px 8px;
+    margin: 1em;
 }
+.marginM {
+    margin: 1.5em;
+}
+.marginL {
+    margin: 2em;
+}
+.marginXL {
+    margin: 2.5em;
+}
+.marginMax {
+    margin: 3em;
+}
+/* ======== margin ========= */
+
 .paddingNone {
     padding: 0 !important;
 }
