@@ -170,7 +170,7 @@ a:link.textProject {
     color: var(--Grey900);
 }
 
-.active.greenNav a {
+.active.activeNav a {
     color: var(--Grey900);
 }
 
@@ -2424,10 +2424,6 @@ button.passwordArr {
 
 
 
-    .font300-1080 {
-        font-weight: 300 !important;
-        color: var(--Grey600) !important;
-    }
 
     body .heightXS {
         height: 10rem;
@@ -2596,7 +2592,7 @@ button.passwordArr {
         width: 100%;
         justify-content: flex-start;
         border-bottom: 1px solid var(--Grey200);
-        padding: 0.95em 1.4em;
+        padding: 0.96em 1.4em;
 
     }
 
@@ -2619,6 +2615,7 @@ button.passwordArr {
 
 
     .active {
+        top: 65px;
         right: 0;
         z-index: 98;
         transition: 0.2s ease;
@@ -2912,6 +2909,9 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 /* when the screens more than an ipad */
 @media (min-width: 48em) {
+
+
+
     .Grid--cols-2>.Grid-cell,
     .Grid--cols-3>.Grid-cell,
     .Grid--cols-4>.Grid-cell,
@@ -3551,7 +3551,7 @@ body .flex-container.Mobile {
     padding: 0;
 }
 
-.progress {
+.progressX {
     position: relative;
     padding: 0 0 0 1.5rem;
     margin: 2rem 0 0;
@@ -3589,7 +3589,7 @@ body .flex-container.Mobile {
     /* text inside of dots*/
     font-weight: 400;
     font-size: 0.8em;
-    line-height: 2rem;
+    line-height: 2em;
     text-align: center;
     border: 1px solid var(--Grey500);
 }
@@ -5461,6 +5461,8 @@ button.Clipboard.clickTxt:active {
         min-width: 200px;
         padding: 14px 16px;
     }
+
+
 }
 
 .buttonDemoCode {
