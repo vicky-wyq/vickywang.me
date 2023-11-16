@@ -242,7 +242,7 @@ body .displayPhone {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.7);
     /*  10% opaque green */
-    height: 4em;
+    height: 64px;
     transition: transform 0.25s ease-in-out;
     border-bottom: 1px solid var(--Grey200);
     z-index: 98;
@@ -266,7 +266,7 @@ body .displayPhone {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 22px 1.6vw;
+    padding: 21px 1.6vw;
     border-radius: 0;
     transition: .2s all;
 }
