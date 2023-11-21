@@ -141,7 +141,10 @@ body {
 body a {
     color: var(--Grey900);
     cursor: pointer;
+        transition: color 0.3s ease, font-weight 0.3s ease; /* Add this line */
+
 }
+
 a:visited {
     text-decoration: none;
 }
@@ -152,6 +155,12 @@ a:link {
 a:hover {
     color: var(--colorTealDk)!important;
 }
+a.no-hover-effect:hover {
+    color: inherit !important; /* This resets the hover color to the default */
+    /* Add other properties if needed to undo the hover effect */
+}
+
+
 a:link.textUnderline {
     text-decoration-line: underline;
     text-decoration-thickness: 0.03em;
