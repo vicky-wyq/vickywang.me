@@ -119,13 +119,16 @@
 
 
 }
+
 html {
     scroll-behavior: smooth;
     color: var(--Grey800);
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
     height: var(--height100);
 }
+
 body {
     width: 100%;
     height: var(--height100);
@@ -135,13 +138,15 @@ body {
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
 }
+
 /* ========= a link / states =========*/
 
 
 body a {
     color: var(--Grey900);
     cursor: pointer;
-        transition: color 0.3s ease, font-weight 0.3s ease; /* Add this line */
+    transition: color 0.3s ease, font-weight 0.3s ease;
+    /* Add this line */
 
 }
 
@@ -152,11 +157,14 @@ a:visited {
 a:link {
     text-decoration: none;
 }
+
 a:hover {
-    color: var(--colorTealDk)!important;
+    color: var(--colorTealDk) !important;
 }
+
 a.no-hover-effect:hover {
-    color: inherit !important; /* This resets the hover color to the default */
+    color: inherit !important;
+    /* This resets the hover color to the default */
     /* Add other properties if needed to undo the hover effect */
 }
 
@@ -167,16 +175,19 @@ a:link.textUnderline {
     text-underline-offset: 6px;
     text-decoration-color: var(--Grey900);
 }
+
 .textUnderline {
     text-decoration-line: underline;
     text-decoration-thickness: 0.03em;
     text-underline-offset: 6px;
     text-decoration-color: var(--Grey900);
 }
+
 a:link.textProject {
     text-decoration-line: underline;
     text-underline-offset: 4px;
 }
+
 .active a {
     font-weight: 300;
     color: var(--Grey900);
@@ -203,6 +214,7 @@ a:link.textProject {
     color: var(--Grey600);
     font-weight: 300;
 }
+
 /* ========= a link / states =========*/
 
 
@@ -212,6 +224,7 @@ a:link.textProject {
 .displayNone {
     display: none;
 }
+
 .displayLaptop {
     display: block;
 }
@@ -223,6 +236,7 @@ a:link.textProject {
 body .displayPhone {
     display: none;
 }
+
 /* ========= display =========*/
 
 /* ========= header =========*/
@@ -243,6 +257,7 @@ body .displayPhone {
     flex-direction: row;
     justify-content: space-between;
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -363,6 +378,7 @@ body .displayPhone {
 /* drop down menu*/
 
 a.nav-link {
+    font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
@@ -451,6 +467,7 @@ a.active.SEER {
 .borderRadiusMax {
     border-radius: var(--border-radiusMax);
 }
+
 /* =================== border radius ends =================== */
 /* =================== scroll bar starts =================== */
 
@@ -475,6 +492,7 @@ a.active.SEER {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--Grey600);
 }
+
 /* =================== scroll bar ends =================== */
 
 
@@ -485,11 +503,13 @@ a.active.SEER {
 .progress:hover {
     cursor: progress;
 }
+
 .more {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
+
 /* ===== color grey ===== */
 .Grey900 {
     color: var(--Grey900);
@@ -868,6 +888,7 @@ polygon {
     border-radius: var(--border-radius);
     background-image: var(--img-DS);
 }
+
 /* ===== colors ===== */
 
 /* ============ shadow ============ */
@@ -906,6 +927,7 @@ polygon {
     width: 800px;
     height: 1200px;
 }
+
 /* ============ shadow ============ */
 
 
@@ -919,6 +941,7 @@ polygon {
     height: 100%;
 
 }
+
 section {
     margin: 0;
     padding: 0;
@@ -1043,6 +1066,7 @@ section {
 .barGraph .barGraphInner #bar_graph {
     border-left: 0.02em solid var(--GLORIFY-orange);
 }
+
 .barGraph .barGraphInner #bar_graph div {
     padding: 0.16em 0;
     margin: 1.16em 0;
@@ -1452,6 +1476,7 @@ section {
     display: flex;
     align-items: center;
 }
+
 /* ====== for nav 2 ======*/
 
 
@@ -1480,11 +1505,13 @@ section {
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
 }
+
 .subNav a:hover,
 .subNav a:focus {
     color: var(--Grey900);
     background-color: var(--Grey100);
 }
+
 li .newPanel {
     /*for V3     display: none; */
     list-style: none;
@@ -1497,10 +1524,12 @@ li .newPanelV3 {
     font-size: 14px;
     line-height: 14px;
 }
+
 .newTitlePanel {
     font-size: 18px;
     line-height: 16px;
 }
+
 /*====== new sub nav 2 or 3====== */
 /* =========== new sub nav V3 =========== */
 .newPanelV3 {
@@ -1512,11 +1541,13 @@ li .newPanelV3 {
     font-size: 12px;
     line-height: 16px;
 }
+
 .newPanelV3.active {
     visibility: visible;
     height: auto;
     opacity: 1;
 }
+
 /* =========== new sub nav V3 =========== */
 
 /* =========== sub nav V1 =========== */
@@ -1533,6 +1564,7 @@ main>nav {
     background-color: var(--Grey100);
 
 }
+
 /* Sidebar Navigation */
 .section-nav {
     position: -webkit-sticky;
@@ -1657,6 +1689,7 @@ section {
 section .padding {
     padding-top: 5em;
 }
+
 /* =========== sub nav V1 =========== */
 
 /* =========== special text =========== */
@@ -1664,10 +1697,12 @@ section .padding {
     background: var(--APPOINTA-yellow);
     color: var(--white);
 }
+
 .colorAPPOINTALt::selection {
     background: var(--APPOINTA-blueLight);
     color: var(--white);
 }
+
 .specialTextL {
     font-family: inherit;
     font-weight: 600;
@@ -1676,6 +1711,7 @@ section .padding {
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
+
 .specialTextS {
     font-family: inherit;
     font-weight: 600;
@@ -1685,6 +1721,7 @@ section .padding {
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 
 }
+
 .specialTextNote {
     font-family: 'Indie Flower', sans-serif;
     font-weight: 100;
@@ -1693,11 +1730,13 @@ section .padding {
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
 }
+
 .specialTextDemo {
     font-family: 'Caveat', sans-serif;
     margin: 0;
     font-size: clamp(1.3em, 1.46vw, 1.68em);
 }
+
 /* =========== special text =========== */
 
 
@@ -1792,20 +1831,6 @@ p.thick {
 }
 
 
-/*     font-family: Helvetica, Sans-Serif, Arial;
-       font-family: 'Ubuntu', sans-serif;
-        font-family: 'Inter', sans-serif;
-
-        font-family: 'Raleway', sans-serif; X
-        font-family: 'Golos Text', sans-serif;
-            font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Rubik', sans-serif; x
-
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Mulish', sans-serif;
-
-
- */
 
 strong {
     font-family: 'lato', sans-serif;
@@ -2381,6 +2406,7 @@ button.passwordArr {
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 }
+
 /* =================== accordion ===================*/
 
 
@@ -2388,6 +2414,7 @@ button.passwordArr {
     max-width: 1200px;
     margin: auto;
 }
+
 @media all and (max-width: 1080px) {
 
     body .dropdown-content a:hover {
@@ -2836,6 +2863,7 @@ button.passwordArr {
     flex-flow: row;
     flex-wrap: wrap;
 }
+
 .u-textCenter {
     text-align: center;
 }
@@ -2843,6 +2871,7 @@ button.passwordArr {
 .Grid-cell {
     flex: 1;
 }
+
 /* Base classes for all media - Mobile first */
 .Grid--cols-2>.Grid-cell {
     flex: 0 0 96%;
@@ -2867,25 +2896,31 @@ flex: 0 0 calc(33.3333% - 1em);
     flex: 0 0 calc(12.5% - 1em);
 */
 }
+
 .Grid--holly-grail .aside,
 .Grid--holly-grail .main {
     flex: 1 100%;
 }
+
 /* One of -- columns*/
 .Grid--1of2>.Grid-cell,
 .Grid--1of4>.Grid-cell:first-of-type,
 .Grid--1of3>.Grid-cell:first-of-type {
     flex: 0 0 96%;
 }
+
 .Grid--1of6>.Grid-cell:first-of-type {
     flex: 0 0 50%;
 }
+
 .Grid--fit>.Grid-cell {
     flex: 1;
 }
+
 .Grid--full>.Grid-cell {
     flex: 0 0 100%;
 }
+
 /* Tablet (medium) screens */
 @media (min-width: 30em) {
     .Grid--cols-4>.Grid-cell {
@@ -2902,22 +2937,28 @@ flex: 0 0 calc(33.3333% - 1em);
                 flex: 0 0 calc(16.6666% - 1em);
         */
     }
+
     .Grid--holly-grail .aside {
         flex: 1 calc(25% - 1em);
     }
+
     .Grid--1of2>.Grid-cell {
         flex: 0 0 50%;
     }
+
     .Grid--1of6>.Grid-cell:first-of-type {
         flex: 0 0 30%;
     }
+
     .Grid--1of4>.Grid-cell:first-of-type {
         flex: 0 0 50%;
     }
+
     .Grid--1of3>.Grid-cell:first-of-type {
         flex: 0 0 96%;
     }
 }
+
 /* when the screens more than an ipad */
 @media (min-width: 48em) {
 
@@ -2930,24 +2971,31 @@ flex: 0 0 calc(33.3333% - 1em);
     .Grid--cols-8>.Grid-cell {
         flex: 1;
     }
+
     .Grid--holly-grail .main {
         flex: 2;
     }
+
     .Grid--holly-grail .aside {
         flex: 1;
     }
+
     .Grid--holly-grail .aside-1 {
         order: 1;
     }
+
     .Grid--holly-grail .main {
         order: 2;
     }
+
     .Grid--holly-grail .aside-2 {
         order: 3;
     }
+
     .Grid--1of2>.Grid-cell {
         flex: 0 0 50%;
     }
+
     .Grid--1of6>.Grid-cell:first-of-type {
         flex: 0 0 16.6666%;
     }
@@ -2964,29 +3012,35 @@ flex: 0 0 calc(33.3333% - 1em);
         margin-right: 0;
     }
 }
+
 .paddingleft {
     padding-left: 0.8em;
 }
+
 .max-width::before {
     content: "max-width";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .fix-width::before {
     content: "fix-width";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .content-1of1::before {
     content: "1";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .content-1of2::before {
     content: "1/2";
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .content-1of3::before {
     content: "1/3";
     font-weight: 300;
@@ -2998,6 +3052,7 @@ flex: 0 0 calc(33.3333% - 1em);
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .content-1of6::before {
     content: "1/6";
     font-weight: 300;
@@ -3009,15 +3064,18 @@ flex: 0 0 calc(33.3333% - 1em);
     font-weight: 300;
     color: var(--colorTealDk);
 }
+
 .element:after {
     content: "";
     display: block;
     margin-top: 0.8em;
     height: 1px;
 }
+
 .element:hover {
     background: var();
 }
+
 .element.Holly {
     background: rgba(102, 51, 255, 0.1);
 }
@@ -3207,6 +3265,7 @@ flex: 0 0 calc(33.3333% - 1em);
     border: 0.01em solid var(--Grey100);
 
 }
+
 .slider-nav:hover,
 .slider-nav.active {
     border-color: var(--white);
@@ -3215,6 +3274,7 @@ flex: 0 0 calc(33.3333% - 1em);
     font-weight: 500 !important;
     box-shadow: inset 0 -8.25em 0 0 var(--white);
 }
+
 .noBg .slider-nav:hover,
 .noBg .slider-nav.active {
     border: 0.01em solid var(--Grey900);
@@ -3224,6 +3284,7 @@ flex: 0 0 calc(33.3333% - 1em);
     font-weight: 500 !important;
     box-shadow: inset 0 -10.25em 0 0 var(--Grey100);
 }
+
 /* ======================= LRcarousel ======================= */
 
 /* ======================= TBcarousel ======================= */
@@ -4057,7 +4118,6 @@ body .flex-container.Mobile {
     align-items: center;
 }
 
-/* Caveat */
 /* Shadows Into Light */
 
 .t-hello {
@@ -4207,7 +4267,7 @@ body .flex-container.Mobile {
 }
 
 
- 
+
 
 /* ========== footer==========*/
 
@@ -4218,7 +4278,7 @@ body .flex-container.Mobile {
 
 
 
- 
+
 
 
 
@@ -4442,6 +4502,7 @@ body .flex-container.Mobile {
 .noMargin {
     margin: 0 !important;
 }
+
 .marginXS {
     margin: 0.5em;
 }
@@ -4449,23 +4510,29 @@ body .flex-container.Mobile {
 .marginS {
     margin: 1em;
 }
+
 .marginM {
     margin: 1.5em;
 }
+
 .marginL {
     margin: 2em;
 }
+
 .marginXL {
     margin: 2.5em;
 }
+
 .marginMax {
     margin: 3em;
 }
+
 /* ======== margin ========= */
 
 .paddingNone {
     padding: 0 !important;
 }
+
 /* ======== width & height ========= */
 
 
@@ -4505,6 +4572,7 @@ body .flex-container.Mobile {
     width: fit-content;
 
 }
+
 /* ======== paddings ========= */
 /* ======== width & height V2 New ========= */
 .iconXS {
@@ -4822,6 +4890,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 .zTop {
     z-index: 99;
 }
@@ -4943,6 +5012,7 @@ Pre .codeTiltle {
     text-align: center;
     width: fit-content;
 }
+
 button.ClipboardIconOnly {
     width: fit-content;
     height: fit-content;
@@ -5210,6 +5280,7 @@ button.Clipboard.clickTxt:active {
     background-color: rgba(255, 255, 255, 0.8);
 
 }
+
 .buttonLanding {
     border-radius: 0.6em;
     align-self: center;
@@ -5243,6 +5314,7 @@ button.Clipboard.clickTxt:active {
     box-shadow: rgba(63, 63, 63, 0.2) 0px 2px 8px 0px;
     transform: translate3d(0, 2px, 0);
 }
+
 @media (min-width: 768px) {
     .button-46 {
         font-size: 20px;
@@ -5250,6 +5322,7 @@ button.Clipboard.clickTxt:active {
         padding: 14px 16px;
     }
 }
+
 /* ====== button ====== */
 
 .custom-btn {
