@@ -141,9 +141,13 @@ class TagsCloud {
 
 function main() {
   {
-    const root = document.querySelector('.tags');
-    const cloud = new TagsCloud(root);
+    const root = document.getElementById('TagsCloud');
+    if (!root) {
+      console.info('TagsCloud not found, skipping initialization');
+      return;
+    }
 
+    const cloud = new TagsCloud(root);
     cloud.start();
   }
 }
@@ -375,6 +379,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
   // ====== Call TagsCloud Starts ====== //
+  
+
+
   main();
   // Call TagsCloud
   // ====== Call TagsCloud Ends ====== //
