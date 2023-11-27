@@ -1573,7 +1573,6 @@ main>nav {
     border-radius: 6px;
     width: max-content;
     background-color: var(--White-transparent);
-
     /* 💡 
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1585,6 +1584,7 @@ main>nav {
     transform: translateY(-50%);
     left: 100%;
     z-index: 98;
+    height: fit-content;
 }
 
 .section-nav a {
