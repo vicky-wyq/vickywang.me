@@ -2668,6 +2668,7 @@ button.passwordArr {
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
 
+
     body .rowToColumn {
         display: flex;
         flex-direction: column;
@@ -2887,11 +2888,11 @@ button.passwordArr {
 }
 
 .Grid--cols-6>.Grid-cell {
-    flex: 0 0 calc(50% - 1em);
+    flex: 0 0 calc(50% - 0.8em);
 }
 
 .Grid--cols-8>.Grid-cell {
-    flex: 0 0 calc(25% - 1em);
+    flex: 0 0 calc(25% - 0.6em);
     /*
 flex: 0 0 calc(33.3333% - 1em);
     flex: 0 0 calc(12.5% - 1em);
@@ -2918,29 +2919,36 @@ flex: 0 0 calc(33.3333% - 1em);
     flex: 1;
 }
 
-.Grid--full>.Grid-cell {
-    flex: 0 0 100%;
-}
 
-/* Tablet (medium) screens */
+
+/* Tablet (medium) screens 480px + */
 @media (min-width: 30em) {
-    .Grid--cols-4>.Grid-cell {
-        flex: 0 0 calc(50% - 1em);
+    body .Grid--full>.Grid-cell {
+        flex: 0 0 96%;
     }
 
-    .Grid--cols-6>.Grid-cell {
-        flex: 0 0 calc(33.3333% - 1em);
+    .marginResponsiveGrid {
+        margin: 0 -0.4em 0 0.8em;
     }
+    
+    .Grid--cols-4>.Grid-cell {
+        flex: 0 0 calc(50% - 0.8em);
+    }
+/*     .Grid--cols-6>.Grid-cell {
+        flex: 0 0 calc(3.3333% - 0.8em);
+    }
+*/
+
 
     .Grid--cols-8>.Grid-cell {
-        flex: 0 0 calc(25% - 1em);
+        flex: 0 0 calc(25% - 0.6em);
         /*
                 flex: 0 0 calc(16.6666% - 1em);
         */
     }
 
     .Grid--holly-grail .aside {
-        flex: 1 calc(25% - 1em);
+        flex: 1 calc(25% - 0.8em);
     }
 
     .Grid--1of2>.Grid-cell {
@@ -2960,10 +2968,11 @@ flex: 0 0 calc(33.3333% - 1em);
     }
 }
 
-/* when the screens more than an ipad */
+/* when the screens more than an ipad === 768px + */
 @media (min-width: 48em) {
-
-
+    body .Grid--full>.Grid-cell {
+        flex: 0 0 99.5%;
+    }
 
     .Grid--cols-2>.Grid-cell,
     .Grid--cols-3>.Grid-cell,
@@ -3086,7 +3095,7 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 .Grid--gutters .Grid--nested .Grid-cell:first-of-type .element {
-    margin-right: 1em;
+    margin-right: 0.8em;
 }
 
 /* element = elementDemo */
@@ -3151,7 +3160,9 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 .Grid--gutters {
-    margin-left: -0.4em;
+    margin-left: 0.4em;
+    /* margin-left: -0.4em; */
+
 }
 
 .Grid--gutters .Grid-cell {
@@ -3159,7 +3170,7 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 .Grid--gutters .Grid--nested .Grid-cell:first-of-type .Demo {
-    margin-right: 1em;
+    margin-right: 0.8em;
 }
 
 /* Justify per row*/
