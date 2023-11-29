@@ -2920,6 +2920,10 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 
+.marginResponsiveGrid {
+    margin: 0 -0.4em 0 0.8em;
+}
+
 
 /* Tablet (medium) screens 480px + */
 @media (min-width: 30em) {
