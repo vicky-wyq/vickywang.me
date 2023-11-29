@@ -2683,7 +2683,7 @@ button.passwordArr {
     }
 
     body .logo {
-        padding: 0.5em 0.4em !important;
+        padding: 0.5em 0.6em !important;
     }
 
     body .widthXS {
@@ -3793,7 +3793,7 @@ body .flex-container.Mobile {
 
 @media (max-width: 1200px) {
     body .logo {
-        padding: 0.5em 0.4em;
+        padding: 0.5em 0.6em;
     }
 
 }
