@@ -2920,8 +2920,11 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 
-.marginResponsiveGrid {
-    margin: 0 -0.4em 0 0.8em;
+.forFullResponsiveGrid {
+    padding-left: 0.8em;
+    /*     margin: 0 -0em 0 0.8em;
+ + */
+
 }
 
 
@@ -2931,8 +2934,11 @@ flex: 0 0 calc(33.3333% - 1em);
         flex: 0 0 96%;
     }
 
-    .marginResponsiveGrid {
-        margin: 0 -0.4em 0 0.8em;
+    .forFullResponsiveGrid {
+        padding-left: 0.8em;
+
+            /*     margin: 0 -0.4em 0 0.8em;
+ + */
     }
     
     .Grid--cols-4>.Grid-cell {
