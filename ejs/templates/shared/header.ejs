@@ -1,0 +1,30 @@
+  <!-- header -->
+  <% const baseClasses = 'nav-item marginZero' %>
+  <% const activeClasses = 'active activeNav' %>
+  <% const inactiveClasses = 'inactive' %>
+  <% const pages = ['PROJECT', 'ARCHITECTURE', 'PHOTOGRAPHY', 'BLOG', 'ABOUT'] %>
+  <header>
+    <nav class="header" id="header">
+      <div class="backgroundColorNav">
+        <a href="http://vickywang.me/"><img class="logo pointer" src="./icon/logo.svg" alt="VW"
+            title="vickywang.me"></a>
+        <div class="navbar">
+          <ul class="nav-menu">
+            <% for(let i = 0; i < pages.length; i++) { %>
+                <li class="<%- `${baseClasses} ${(currentPage === pages[i] ? activeClasses : inactiveClasses)}` %>">
+                    <a href="/<%- pages[i] %>" class="nav-link box"><%- pages[i] %></a>
+                </li>
+            <% } %>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- header -->

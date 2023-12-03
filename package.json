@@ -6,11 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server",
-    "build": "node pug/build.js"
+    "build-pug": "node pug/build.js",
+    "build-ejs": "node ejs/build.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.9",
+    "ejs-lint": "^2.0.0",
+    "fs-extra": "^11.2.0",
     "http-server": "^0.12.3",
     "pug": "^3.0.2"
   }

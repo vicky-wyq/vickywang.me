@@ -1,0 +1,21 @@
+<% 
+    const options = locals.options || {};
+    const body = locals.body || '';
+    let classString = '';
+    const classes = {
+        isFull: 'Grid--full',
+        isForFullResponsiveGrid: 'forFullResponsiveGrid',
+        isTextCenter: 'u-textCenter'
+    };
+    for(let key in options) {
+        if (options[key] && classes[key]) {
+            classString = `${classString} ${classes[key]}`;
+        }
+    }
+%>
+
+<div class="Grid <%= classString %>">
+    <div class="Grid-cell">
+        <%- body %>
+    </div>
+</div>

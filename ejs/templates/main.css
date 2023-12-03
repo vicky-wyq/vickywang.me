@@ -2875,24 +2875,16 @@ button.passwordArr {
 }
 
 /* Base classes for all media - Mobile first */
-
-body .Grid--full>.Grid-cell{
-    flex: 0 0 97%;
-
-}
-
-
-
 .Grid--cols-2>.Grid-cell {
-    flex: 0 0 95%;
+    flex: 0 0 96%;
 }
 
 .Grid--cols-3>.Grid-cell {
-    flex: 0 0 95%;
+    flex: 0 0 96%;
 }
 
 .Grid--cols-4>.Grid-cell {
-    flex: 0 0 95%;
+    flex: 0 0 96%;
 }
 
 .Grid--cols-6>.Grid-cell {
@@ -2900,7 +2892,7 @@ body .Grid--full>.Grid-cell{
 }
 
 .Grid--cols-8>.Grid-cell {
-    flex: 0 0 calc(24.5% - 0.4em);
+    flex: 0 0 calc(25% - 0.6em);
     /*
 flex: 0 0 calc(33.3333% - 1em);
     flex: 0 0 calc(12.5% - 1em);
@@ -2950,16 +2942,16 @@ flex: 0 0 calc(33.3333% - 1em);
     }
     
     .Grid--cols-4>.Grid-cell {
-        flex: 0 0 calc(49% - 0.8em);
+        flex: 0 0 calc(50% - 0.8em);
     }
-     .Grid--cols-6>.Grid-cell {
-        flex: 0 0 calc(33% - 0.8em);
+/*     .Grid--cols-6>.Grid-cell {
+        flex: 0 0 calc(3.3333% - 0.8em);
     }
-
+*/
 
 
     .Grid--cols-8>.Grid-cell {
-        flex: 0 0 calc(24% - 0.4em);
+        flex: 0 0 calc(25% - 0.6em);
         /*
                 flex: 0 0 calc(16.6666% - 1em);
         */
@@ -2989,7 +2981,7 @@ flex: 0 0 calc(33.3333% - 1em);
 /* when the screens more than an ipad === 768px + */
 @media (min-width: 48em) {
     body .Grid--full>.Grid-cell {
-        flex: 0 0 100%;
+        flex: 0 0 99.5%;
     }
 
     .Grid--cols-2>.Grid-cell,
