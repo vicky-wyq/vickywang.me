@@ -1,0 +1,5 @@
+<div class="Grid <%= options.isFull ? 'Grid--full' : '' %> <%= options.isForFullResponsiveGrid ? 'forFullResponsiveGrid' : '' %> <%= options.isTextCenter ? 'u-textCenter' : '' %>">
+    <div class="Grid-cell">
+        <%- bodyx %>
+    </div>
+</div>
