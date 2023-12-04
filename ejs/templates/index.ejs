@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
 <!--Head-->
-
 <%- include('shared/head', {Title:'Innovative UX Designer Specializing in B2B SaaS & Mobile Workflow Efficiency - Vicky Wang', 
   description:'Vicky W. specializes in UX Design for B2B SaaS and consumer apps, expertly transforming complex challenges into user-friendly solutions.', 
   pageURL:'', thumbnailImgURL: 'vickywang_web.png'
   }) %>
+<!--Head-->
 
 
 <body>
   <%- include('shared/progressBar') %>
-  <!--Header-->
   <%- include('shared/header', {currentPage: 'PROJECT' }) %>
-  <!--Header-->
+
+  <div class="blankHM"></div>
+
+
+
+  <%- include('shared/intro', { version: 'vicky',
+    contents: ['UX designer', 'Product designer'],
+    layoutType: 'textOnly'
+}) %>
+
+
+
+
+
   <div class="blankHL"></div>
-  <div class="blankHL"></div>
-  <!--Arrow subtitle-->
-  <%- include('shared/arrow', {message: 'this content can be changed, ya!!!' }) %>
-  <!--Arrow subtitle-->
+
+  <%- include('shared/arrowSubtitle', {message: 'this content can be changed, ya!!!' }) %>
+  <%- include('shared/grid', {classString: true, body: 'across' }) %>
 
 
 
 
-  <h1>Parent Template</h1>
-
-  <!-- Include the child template and pass a static string variable -->
-  <%- include('./shared/grid', {options: {isFull: true, isForFullResponsiveGrid: true}, body:
-            include('./shared/child2') }) %>
 
   <!--footer-->
   <%- include('./shared/footer') %>
