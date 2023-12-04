@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-</head>
-<body>
-    <h1>about</h1>
-    <p>This is a static EJS template without any dynamic variables.</p>
+<html>
+<!--Head-->
 
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+<%- include('shared/head', {Title:'Innovative UX Designer Specializing in B2B SaaS & Mobile Workflow Efficiency - Vicky Wang', 
+  description:'Vicky W. specializes in UX Design for B2B SaaS and consumer apps, expertly transforming complex challenges into user-friendly solutions.', 
+  pageURL:'', thumbnailImgURL: 'vickywang_web.png'
+  }) %>
+
+
+<body>
+  <%- include('shared/progressBar') %>
+  <!--Header-->
+  <%- include('shared/header', {currentPage: 'PROJECT' }) %>
+  <!--Header-->
+  <div class="blankHL"></div>
+  <div class="blankHL"></div>
+  <!--Arrow subtitle-->
+  <%- include('shared/arrow', {message: 'this content can be changed, ya!!!' }) %>
+  <!--Arrow subtitle-->
+
+
+
+
+  <h1>Parent Template</h1>
+
+  <!-- Include the child template and pass a static string variable -->
+  <%- include('./shared/grid', {options: {isFull: true, isForFullResponsiveGrid: true}, body:
+            include('./shared/child2') }) %>
+
+  <!--footer-->
+  <%- include('./shared/footer') %>
+  <!--footer-->
+
 </body>
+
 </html>

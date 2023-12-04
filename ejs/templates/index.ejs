@@ -1,133 +1,37 @@
 <!DOCTYPE html>
 <html>
+<!--Head-->
 
-<head>
-    <title>Parent Template</title>
-    <link rel="stylesheet" href="./main.css">
+<%- include('shared/head', {Title:'Innovative UX Designer Specializing in B2B SaaS & Mobile Workflow Efficiency - Vicky Wang', 
+  description:'Vicky W. specializes in UX Design for B2B SaaS and consumer apps, expertly transforming complex challenges into user-friendly solutions.', 
+  pageURL:'', thumbnailImgURL: 'vickywang_web.png'
+  }) %>
 
-</head>
 
 <body>
-    
-    <%- include('shared/header', {currentPage: 'ABOUT'}) %>
-    <div class="blankHXS"></div>
-    <div class="Grid Grid--full forFullResponsiveGrid">
-      <div class="Grid-cell">
-        <div class="element">
-          <h2 class="tArrow">Basic Grid <img class="seArrow" src="/ejs/html/icon/arrow-se.svg" alt="icon arrow">
-          </h2>
-        </div>
-      </div>
-    </div>
+  <%- include('shared/progressBar') %>
+  <!--Header-->
+  <%- include('shared/header', {currentPage: 'PROJECT' }) %>
+  <!--Header-->
+  <div class="blankHL"></div>
+  <div class="blankHL"></div>
+  <!--Arrow subtitle-->
+  <%- include('shared/arrow', {message: 'this content can be changed, ya!!!' }) %>
+  <!--Arrow subtitle-->
 
 
 
-    <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of1"></div>
-        </div>
-      </div>
-    </div>
-    <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of2"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of2"></div>
-        </div>
-      </div>
-    </div>
-    <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of3"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of3"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of3"></div>
-        </div>
-      </div>
-    </div>
-    <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of4"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of4"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of4"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of4"></div>
-        </div>
-      </div>
-    </div>
-    <div class="Grid Grid--gutters Grid--cols-6 u-textCenter">
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of6"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of6"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of6"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of6"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of6"></div>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="Demo">
-          <div class="elementInnerDemo content-1of6"></div>
-        </div>
-      </div>
-    </div>
-    <!-- Arrow -->
-    <div class="wrapper">
-        <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
-            <div class="Grid-cell">
-                <div class="element">
-                    <h2 class="tArrow">Tonal Palettes<img class="seArrow" src="/ejs/html/icon/arrow-se.svg" alt="icon arrow">
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Arrow -->
-    <h1>Parent Template</h1>
 
-    <!-- Include the child template and pass a static string variable -->
-    <%- include('./shared/grid', {options: {isFull: true, isForFullResponsiveGrid: true}, body: include('./shared/child2') }) %>
+  <h1>Parent Template</h1>
+
+  <!-- Include the child template and pass a static string variable -->
+  <%- include('./shared/grid', {options: {isFull: true, isForFullResponsiveGrid: true}, body:
+            include('./shared/child2') }) %>
+
+  <!--footer-->
+  <%- include('./shared/footer') %>
+  <!--footer-->
+
 </body>
 
 </html>
