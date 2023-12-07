@@ -349,36 +349,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // ====== AOS Ends ====== //
 
 
-// ====== Back to Top Starts ====== //
+  // ====== Back to Top Starts ====== //
 
-var mybutton = document.getElementById("myBtn");
-// Get the button
+  var mybutton = document.getElementById("myBtn");
+  //Get the button
 
-if (mybutton) {
-    window.addEventListener('scroll', function () {
-        scrollFunction()
-    });
-    // When the user scrolls down 1200px from the top of the document, show the button
+  window.addEventListener('scroll', function () {
+    scrollFunction()
+  })
+  // When the user scrolls down 20px from the top of the document, show the button
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
+  function scrollFunction() {
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
     }
+  }
 
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  // When the user clicks on the button, scroll to the top of the document
 
-    mybutton.addEventListener('click', topFunction);
-}
-
-// ====== Back to Top Ends ====== //
-
+  mybutton.addEventListener('click', topFunction)
+  // ====== Back to Top Ends ====== //
 
 
 
