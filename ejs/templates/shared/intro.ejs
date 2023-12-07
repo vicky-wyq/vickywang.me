@@ -1,18 +1,12 @@
-<% let layoutType = ''; %>
-
-
 <div class="wrapper">
   <div class="element">
     <div class="forFullResponsiveGrid">
-
       <% if (version==='vicky' ) { %>
       <p class="t-hello">hello, I'm Vicky.</p>
       <% } else { %>
       <p class="t-hello">hi, there!</p>
       <% } %>
-
       <div class="row">
-
         <div class="widthMax">
           <strong>
             <div class="intro" data-aos="fade-up">
@@ -25,9 +19,6 @@
             </div>
           </strong>
         </div>
-
-
-
         <div class="paddingleft">
           <div class="widthFitContent">
             <div class="dropdownSM">
@@ -45,23 +36,11 @@
       </div>
     </div>
 
-    <% if (layoutType==='textOnly' ) { %>
-    <div class="wrapper">
-      <div class="Grid Grid--full forFullResponsiveGrid">
-        <div class="Grid-cell">
-          <h3>I am based in San Francisco and am deeply committed to developing web solutions for both
-            businesses and consumers. My approach hinges on dissecting complex challenges and
-            transforming
-            them into clear, efficient, and impactful digital experiences. </h3>
-        </div>
-      </div>
-    </div>
-    <% } else if (layoutType==='withPhoto' ) { %>
+    <% if (layoutType==='aboutPage' ) { %>
     <div class="wrapper">
       <div class="rowToColumn centerVH">
         <div class="widthMax">
           <div class="Grid-cell">
-
             <h3>As a UX designer, I possess a diverse range of skills and have gained experience in
               startup
               environments. I am fully involved in every aspect of the design process and continuously
@@ -88,7 +67,24 @@
       </div>
     </div>
 
+    <% } else { %>
+    <div class="wrapper">
+      <div class="Grid Grid--full forFullResponsiveGrid">
+        <div class="Grid-cell">
+          <h3> <%= introContentP1 %>
+          </h3>
+          <h3> <%= introContentP2 %>
+          </h3>
+          <h3> <%= introContentP3 %>
+          </h3>
+        </div>
+      </div>
+    </div>
+
     <% } %>
+
+
+
 
   </div>
 </div>

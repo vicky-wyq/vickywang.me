@@ -24,7 +24,7 @@
     --img-DS: url('./image/Cover_portfolioWeb.png');
 
 
-    
+
 
     /* Color */
     --white: #ffffff;
@@ -1930,71 +1930,41 @@ hr {
 
     opacity: 0.7;
     filter: alpha(opacity=70); */
-}
 
-.elementCard.WS:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--WS-Blue);
+    /* Add an invisible border */
+    border-bottom: 5px solid transparent;
+    /* Make the border transparent */
     transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.LASO:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--AMBlue);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.GLORIFY:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--GLORIFY-orangeBgLt);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.APPOINTA:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--APPOINTA-blue);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.SEER:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--seer-purple);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.toasttab:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--toasttab);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
-}
-
-.elementCard.GardenersHub:hover {
-    cursor: pointer;
-    border-bottom: 5px solid var(--GardenersHub);
-    transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
 }
 
 .elementCard:hover {
     cursor: pointer;
     border-bottom: 5px solid var(--Grey900);
     transition: all 0.25s ease-in;
-    /*  opacity: 1.0;
-    filter: alpha(opacity=100);*/
 }
+
+.elementCard.WS:hover {
+    border-bottom: 5px solid var(--WS-Blue);
+}
+
+.elementCard.LASO:hover {
+    border-bottom: 5px solid var(--AMBlue);
+}
+
+.elementCard.GLORIFY:hover {
+    border-bottom: 5px solid var(--GLORIFY-orangeBgLt);
+}
+
+.elementCard.APPOINTA:hover {
+    border-bottom: 5px solid var(--APPOINTA-blue);
+}
+
+.elementCard.SEER:hover {
+    border-bottom: 5px solid var(--seer-purple);
+}
+
+
+
 
 .elementSeerDivider {
     background: linear-gradient(140deg, #FFFFFF, #e9f2ff 20%, #fff1f5 50%, #FFFFFF);
@@ -2876,7 +2846,7 @@ button.passwordArr {
 
 /* Base classes for all media - Mobile first */
 
-body .Grid--full>.Grid-cell{
+body .Grid--full>.Grid-cell {
     flex: 0 0 97%;
 
 }
@@ -2945,14 +2915,15 @@ flex: 0 0 calc(33.3333% - 1em);
     .forFullResponsiveGrid {
         padding-left: 0.8em;
 
-            /*     margin: 0 -0.4em 0 0.8em;
+        /*     margin: 0 -0.4em 0 0.8em;
  + */
     }
-    
+
     .Grid--cols-4>.Grid-cell {
         flex: 0 0 calc(49% - 0.8em);
     }
-     .Grid--cols-6>.Grid-cell {
+
+    .Grid--cols-6>.Grid-cell {
         flex: 0 0 calc(33% - 0.8em);
     }
 
@@ -4332,14 +4303,17 @@ body .flex-container.Mobile {
     display: flex;
     flex-direction: column;
 }
+
 .row {
     display: flex;
     flex-direction: row;
 }
+
 .rowToColumn {
     display: flex;
     flex-direction: row;
 }
+
 .align-top {
     display: flex;
     align-items: flex-start;
@@ -5739,7 +5713,7 @@ button.Clipboard.clickTxt:active {
     position: absolute;
     background-color: var(--Grey100);
     min-width: max-content;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radiusS);
     z-index: 1;
     right: 0;
@@ -5758,17 +5732,21 @@ button.Clipboard.clickTxt:active {
 
 }
 
-.dropdownSM-content a:hover {background-color: #f1f1f1}
+.dropdownSM-content a:hover {
+    background-color: #f1f1f1
+}
 
 .dropdownSM:hover .dropdownSM-content {
     display: block;
 }
 
-.dropbtnSM:hover, .dropbtn:focus {
+.dropbtnSM:hover,
+.dropbtn:focus {
     background-color: #3e8e41;
 }
 
 .iconM {
     cursor: pointer;
 }
+
 /* ===== Share to Social Media ====== */

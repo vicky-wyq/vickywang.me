@@ -16,19 +16,26 @@
 
 
 
-  <%- include('shared/intro', { version: 'vicky',
+  <%- include('shared/intro', { 
+    version: 'vicky',
     contents: ['UX designer', 'Product designer'],
-    layoutType: 'textOnly'
+    layoutType: '', 
+    introContentP1: 'I am based in San Francisco and am deeply committed to developing web solutions for both businesses and consumers. My approach hinges on dissecting complex challenges and transforming them into clear, efficient, and impactful digital experiences.',
+    introContentP2:'',
+    introContentP3:''
+
 }) %>
 
+  <%- include('shared/homePage_icons-buttons.ejs') %>
+
+  <%- include('shared/cards', { cards: 'card1' }) %>
+  <%- include('shared/cards', { cards: 'card2' }) %>
 
 
 
+  <div class="blankHS"></div>
 
-  <div class="blankHL"></div>
-
-  <%- include('shared/arrowSubtitle', {message: 'this content can be changed, ya!!!' }) %>
-  <%- include('shared/grid', {classString: true, body: 'across' }) %>
+  <%- include('shared/arrowSubtitle', {message: 'Case Study' }) %>
 
 
 
