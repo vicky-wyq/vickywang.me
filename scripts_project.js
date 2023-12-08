@@ -153,39 +153,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //copy Clipboard
 
 
-  const copyButtonLabel = "Copy Code";
-
-  // use a class selector if available
-  let blocks = document.querySelectorAll("pre");
-
-  blocks.forEach((block) => {
-    // only add button if browser supports Clipboard API
-    if (navigator.clipboard) {
-      let button = document.createElement("button");
-
-      button.innerText = copyButtonLabel;
-      block.appendChild(button);
-
-      button.addEventListener("click", async () => {
-        await copyCode(block, button);
-      });
-    }
-  });
-
-  async function copyCode(block, button) {
-    let code = block.querySelector("code");
-    let text = code.innerText;
-
-    await navigator.clipboard.writeText(text);
-
-    // visual feedback that task is completed
-    button.innerText = "Code Copied";
-
-    setTimeout(() => {
-      button.innerText = copyButtonLabel;
-    }, 700);
-  }
-  //copy code
 
 
 
@@ -407,55 +374,139 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
   // Global variable to hold the currently playing audio element
-let currentlyPlaying = null;
+  let currentlyPlaying = null;
 
-function initAudioPlayer(audioContainer) {
-  const audioElement = audioContainer.querySelector('audio');
-  const playButton = audioContainer.querySelector('.play-button');
-  const timeDisplay = audioContainer.querySelector('.time-display');
+  function initAudioPlayer(audioContainer) {
+    const audioElement = audioContainer.querySelector('audio');
+    const playButton = audioContainer.querySelector('.play-button');
+    const timeDisplay = audioContainer.querySelector('.time-display');
 
-  playButton.addEventListener("click", function() {
-    // Pause the currently playing audio if there is one
-    if (currentlyPlaying && currentlyPlaying !== audioElement) {
-      currentlyPlaying.pause();
-      currentlyPlaying.closest('.audio-container').querySelector('.play-button').innerHTML = "Play";
-    }
+    playButton.addEventListener("click", function () {
+      // Pause the currently playing audio if there is one
+      if (currentlyPlaying && currentlyPlaying !== audioElement) {
+        currentlyPlaying.pause();
+        currentlyPlaying.closest('.audio-container').querySelector('.play-button').innerHTML = "Play";
+      }
 
-    // Play or pause the clicked audio element
-    if (audioElement.paused) {
-      audioElement.play();
-      playButton.innerHTML = "Pause";
-      currentlyPlaying = audioElement;
-    } else {
-      audioElement.pause();
+      // Play or pause the clicked audio element
+      if (audioElement.paused) {
+        audioElement.play();
+        playButton.innerHTML = "Pause";
+        currentlyPlaying = audioElement;
+      } else {
+        audioElement.pause();
+        playButton.innerHTML = "Play";
+        currentlyPlaying = null;
+      }
+    });
+
+    // Update time display during playback
+    audioElement.addEventListener("timeupdate", function () {
+      const currentTime = audioElement.currentTime;
+      const duration = audioElement.duration;
+      timeDisplay.innerHTML = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+    });
+
+    // Reset the play button and currentlyPlaying when the audio ends
+    audioElement.addEventListener("ended", function () {
       playButton.innerHTML = "Play";
       currentlyPlaying = null;
+    });
+
+    function formatTime(time) {
+      const minutes = Math.floor(time / 60);
+      const seconds = Math.floor(time % 60);
+      return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     }
-  });
-
-  // Update time display during playback
-  audioElement.addEventListener("timeupdate", function() {
-    const currentTime = audioElement.currentTime;
-    const duration = audioElement.duration;
-    timeDisplay.innerHTML = `${formatTime(currentTime)} / ${formatTime(duration)}`;
-  });
-
-  // Reset the play button and currentlyPlaying when the audio ends
-  audioElement.addEventListener("ended", function() {
-    playButton.innerHTML = "Play";
-    currentlyPlaying = null;
-  });
-
-  function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60);
-    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   }
-}
 
-// Initialize each audio player
-document.querySelectorAll('.audio-container').forEach(initAudioPlayer);
+  // Initialize each audio player
+  document.querySelectorAll('.audio-container').forEach(initAudioPlayer);
 
+
+
+
+
+
+
+
+  //copy to clipboard + tabs
+
+
+  document.querySelectorAll('.select-ejs, .select-html').forEach(function (radioBtn) {
+    radioBtn.addEventListener('click', function () {
+      showCode(this, this.classList.contains('select-ejs') ? 'ejs' : 'html');
+    });
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize each 'filed' component
+    var fileds = document.querySelectorAll('.filed');
+    fileds.forEach(function (filed) {
+      initializeFiled(filed);
+    });
+  });
+
+  function initializeFiled(filed) {
+    var ejsRadio = filed.querySelector('.select-ejs');
+    var htmlRadio = filed.querySelector('.select-html');
+    var ejsBlock = filed.querySelector('.ejs-block');
+    var htmlBlock = filed.querySelector('.html-block');
+    var copyButton = filed.querySelector('.copy-btn');
+
+    // Set initial visibility and copy button functionality
+    if (ejsRadio.checked) {
+      ejsBlock.style.display = 'block';
+      htmlBlock.style.display = 'none';
+    } else if (htmlRadio.checked) {
+      ejsBlock.style.display = 'none';
+      htmlBlock.style.display = 'block';
+    }
+
+    copyButton.style.display = 'inline';
+    copyButton.onclick = function () {
+      copyToClipboard(ejsRadio.checked ? ejsBlock.querySelector('.ejs-code') : htmlBlock.querySelector('.html-code'), this);
+    };
+  }
+
+  function showCode(radioBtn, type) {
+    var container = radioBtn.closest('.filed');
+    var ejsBlock = container.querySelector('.ejs-block');
+    var htmlBlock = container.querySelector('.html-block');
+    var copyButton = container.querySelector('.copy-btn');
+
+    if (type === 'ejs') {
+      ejsBlock.style.display = 'block';
+      htmlBlock.style.display = 'none';
+    } else if (type === 'html') {
+      ejsBlock.style.display = 'none';
+      htmlBlock.style.display = 'block';
+    }
+
+    copyButton.style.display = 'inline';
+    copyButton.onclick = function () {
+      copyToClipboard(type === 'ejs' ? ejsBlock.querySelector('.ejs-code') : htmlBlock.querySelector('.html-code'), this);
+    };
+  }
+
+  function copyToClipboard(codeBlock, btnElement) {
+    var copyText = codeBlock.innerText;
+    var textarea = document.createElement("textarea");
+    textarea.textContent = copyText;
+    document.body.appendChild(textarea);
+
+    textarea.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(textarea);
+
+    btnElement.textContent = 'Copied!';
+
+    setTimeout(function () {
+      btnElement.textContent = 'Copy';
+    }, 2000);
+  }
 
 
 
