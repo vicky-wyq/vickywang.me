@@ -3377,193 +3377,7 @@ flex: 0 0 calc(33.3333% - 1em);
 
 
 /* ======================= TBcarousel ======================= */
-/* ============= Begin Testimonial Flexbox ============ */
 
-
-.flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 110vh;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    min-height: auto;
-    height: 660px;
-    /* position: absolute; */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-/* ------------------- 
-
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-
-
--------------------*/
-
-
-.left-zone {
-    height: 50%;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-}
-
-.left-zone .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    margin: auto;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.item input {
-    display: none;
-}
-
-label {
-    line-height: 26px;
-    color: var(--Grey900);
-    font-weight: 300;
-
-
-
-
-}
-
-li label {
-    display: block;
-    opacity: 0.5;
-    height: 46px;
-    text-align: center;
-    line-height: 46px;
-    position: relative;
-    color: var(--Grey800);
-}
-
-li label:hover {
-    opacity: 0.75;
-    cursor: pointer;
-    background-color: var(--Grey200);
-}
-
-.content-test {
-    position: absolute;
-    right: 5%;
-    bottom: 0;
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-    height: 40%;
-    width: 100%;
-    -webkit-transition: 0.5s ease-out;
-    -o-transition: 0.5s ease-out;
-    transition: 0.5s ease-out;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    pointer-events: none;
-}
-
-.content-test p {
-    max-width: 50%;
-    text-align: center;
-}
-
-.right-zone {
-    width: 100%;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    height: 50%;
-}
-
-input:checked~.content-test {
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
-    -webkit-transition: -webkit-transform 1s;
-    transition: -webkit-transform 1s;
-    -o-transition: transform 1s;
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s;
-    opacity: 1;
-}
-
-input:checked~label {
-    opacity: 1;
-    -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-input:checked~label {
-    color: var(--APPOINTA-blue);
-    border-right: solid 4px var(--APPOINTA-blue);
-}
-
-input:checked~label.WS {
-    color: var(--WS-Teal);
-    border-right: solid 4px var(--WS-Teal);
-
-}
-
-input:checked~label.SEER {
-    color: var(--seer-purple);
-    border-right: solid 4px var(--seer-purple);
-
-}
-
-/* ============== End Testimonial Flexbox ============= */
 
 
 body .flex-container.BP {
@@ -4895,116 +4709,6 @@ img {
 .zTop {
     z-index: 99;
 }
-
-
-
-
-/* ===== copy code to clipboard ====== */
-/* Style for the container of the code */
-pre {
-    height: 15em;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* To ensure the button doesn't overflow */
-    position: relative;
-    background: var(--Grey100);
-    /* A dark background for code readability */
-    color: var(--Grey700);
-    /* Light text for better contrast against dark background */
-    border-radius: 6px;
-    /* A subtle rounded corner */
-    overflow: hidden;
-    /* Ensure nothing spills out of our box */
-    font-size: clamp(0.68em, 0.78vw, 0.86em);
-    border: 1px solid var(--Grey300);
-}
-
-/* Style for the code */
-pre code {
-    position: absolute;
-    top: 46px;
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding: 20px 0;
-    /* To ensure the button doesn't interfere with code lines */
-    white-space: pre;
-    /* Ensure code's white space (like indentation) is respected */
-    max-height: 58%;
-    /* reduced height to force overflow and see the scrollbar */
-    overflow-y: scroll;
-    /* Always show the scrollbar */
-    /* Allow vertical scroll */
-    scrollbar-width: thin;
-    /* Makes the scrollbar slimmer */
-    scrollbar-color: var(--Grey700) var(--Grey300);
-    /* Scrollbar styling (color, in this case) */
-}
-
-/* Scrollbar styles for WebKit browsers */
-pre code::-webkit-scrollbar {
-    width: 6px;
-}
-
-pre code::-webkit-scrollbar-thumb {
-    background-color: var(--white);
-    border-radius: 4px;
-
-}
-
-pre code::-webkit-scrollbar-thumb:hover {
-    background-color: var(--colorTealDk);
-    border-radius: 4px;
-}
-
-pre code::-webkit-scrollbar-track {
-    background-color: var(--Grey500);
-}
-
-/* Style for the copy button */
-pre button {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    background-color: var(--Grey900);
-    /* Blue background color */
-    color: var(--white);
-    /* White text */
-    border: none;
-    /* No border */
-    border-radius: 3px;
-    /* A subtle rounded corner for the button */
-    padding: 5px 10px;
-    cursor: pointer;
-    /* The hand icon on hover, suggesting an action */
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-    /* A fade transition effect on hover */
-}
-
-pre button:hover {
-    background-color: var(--colorTealDk);
-    /* A slightly darker blue for the hover effect */
-}
-
-Pre .codeTiltle {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: var(--Grey200);
-    padding: 15px;
-    width: 100%;
-    font-size: 16px;
-}
-
-/* ===== copy code to clipboard ====== */
-
-
-
-
-
-
 /* ===== click icon copy to clipboard ====== */
 .ClipboardBoxIconOnly {
     position: relative;
@@ -5702,7 +5406,7 @@ button.Clipboard.clickTxt:active {
 /* ===== Cloud tags ====== */
 
 /* ===== Share to Social Media ====== */
-
+/* =================== tabs + copy to clipboard  ===================*/
 .dropdownSM {
     position: relative;
     display: inline-block;
@@ -5750,3 +5454,65 @@ button.Clipboard.clickTxt:active {
 }
 
 /* ===== Share to Social Media ====== */
+
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs input[type="radio"] {
+    display: none; /* Hide radio buttons */
+}
+
+.tab {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-top: 1px solid var(--Grey500);
+    border-left: 1px solid var(--Grey500);
+    border-right: 1px solid var(--Grey500);
+
+    border-radius: 12px 12px 0px 0px;
+    background-color: var(--white);
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: var(--Grey200);
+}
+
+/* Style for when the radio button is checked */
+.tabs input[type="radio"]:checked + label {
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+
+
+
+.copy-btn {
+    background-color: var(--Grey900);
+    color: var(--white);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.copy-btn:hover {
+    background-color: var(--colorTealDk);
+}
+
+.code-block {
+margin-top: -1px;
+    border: 1px solid var(--Grey500);
+    padding: 12px;
+    background-color: var(--white);
+    border-radius: 0px 0px 12px 12px;
+
+}
+
+/* =================== tabs + copy to clipboard  ===================*/
