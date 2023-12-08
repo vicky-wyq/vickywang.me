@@ -4709,6 +4709,7 @@ img {
 .zTop {
     z-index: 99;
 }
+
 /* ===== click icon copy to clipboard ====== */
 .ClipboardBoxIconOnly {
     position: relative;
@@ -5463,19 +5464,20 @@ button.Clipboard.clickTxt:active {
 }
 
 .tabs input[type="radio"] {
-    display: none; /* Hide radio buttons */
+    display: none;
+    /* Hide radio buttons */
 }
 
 .tab {
     display: inline-block;
     margin-right: 10px;
-    padding: 10px;
+    padding: 12px 18px;
     cursor: pointer;
     border-top: 1px solid var(--Grey500);
     border-left: 1px solid var(--Grey500);
     border-right: 1px solid var(--Grey500);
 
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
     background-color: var(--white);
     transition: background-color 0.3s;
 }
@@ -5485,7 +5487,7 @@ button.Clipboard.clickTxt:active {
 }
 
 /* Style for when the radio button is checked */
-.tabs input[type="radio"]:checked + label {
+.tabs input[type="radio"]:checked+label {
     background-color: white;
     border-bottom: 1px solid white;
 }
@@ -5495,11 +5497,12 @@ button.Clipboard.clickTxt:active {
 .copy-btn {
     background-color: var(--Grey900);
     color: var(--white);
-    padding: 10px 15px;
+    margin: 0 0 2px 0;
+    padding: 6px 16px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: var(--border-radiusXS);
+    font-size: 12px;
 }
 
 .copy-btn:hover {
@@ -5507,11 +5510,11 @@ button.Clipboard.clickTxt:active {
 }
 
 .code-block {
-margin-top: -1px;
+    margin-top: -1px;
     border: 1px solid var(--Grey500);
     padding: 12px;
     background-color: var(--white);
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 0px 0px 8px 8px;
 
 }
 

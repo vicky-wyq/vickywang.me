@@ -432,84 +432,82 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   //copy to clipboard + tabs
 
-
-  document.querySelectorAll('.select-ejs, .select-html').forEach(function (radioBtn) {
-    radioBtn.addEventListener('click', function () {
-      showCode(this, this.classList.contains('select-ejs') ? 'ejs' : 'html');
-    });
-  });
-
-
-  document.addEventListener('DOMContentLoaded', function () {
-    // Initialize each 'filed' component
-    var fileds = document.querySelectorAll('.filed');
-    fileds.forEach(function (filed) {
-      initializeFiled(filed);
-    });
-  });
-
-  function initializeFiled(filed) {
-    var ejsRadio = filed.querySelector('.select-ejs');
-    var htmlRadio = filed.querySelector('.select-html');
-    var ejsBlock = filed.querySelector('.ejs-block');
-    var htmlBlock = filed.querySelector('.html-block');
-    var copyButton = filed.querySelector('.copy-btn');
-
-    // Set initial visibility and copy button functionality
-    if (ejsRadio.checked) {
-      ejsBlock.style.display = 'block';
-      htmlBlock.style.display = 'none';
-    } else if (htmlRadio.checked) {
-      ejsBlock.style.display = 'none';
-      htmlBlock.style.display = 'block';
-    }
-
-    copyButton.style.display = 'inline';
-    copyButton.onclick = function () {
-      copyToClipboard(ejsRadio.checked ? ejsBlock.querySelector('.ejs-code') : htmlBlock.querySelector('.html-code'), this);
-    };
-  }
-
-  function showCode(radioBtn, type) {
-    var container = radioBtn.closest('.filed');
-    var ejsBlock = container.querySelector('.ejs-block');
-    var htmlBlock = container.querySelector('.html-block');
-    var copyButton = container.querySelector('.copy-btn');
-
-    if (type === 'ejs') {
-      ejsBlock.style.display = 'block';
-      htmlBlock.style.display = 'none';
-    } else if (type === 'html') {
-      ejsBlock.style.display = 'none';
-      htmlBlock.style.display = 'block';
-    }
-
-    copyButton.style.display = 'inline';
-    copyButton.onclick = function () {
-      copyToClipboard(type === 'ejs' ? ejsBlock.querySelector('.ejs-code') : htmlBlock.querySelector('.html-code'), this);
-    };
-  }
-
-  function copyToClipboard(codeBlock, btnElement) {
-    var copyText = codeBlock.innerText;
-    var textarea = document.createElement("textarea");
-    textarea.textContent = copyText;
-    document.body.appendChild(textarea);
-
-    textarea.select();
-    document.execCommand("copy");
-
-    document.body.removeChild(textarea);
-
-    btnElement.textContent = 'Copied!';
-
-    setTimeout(function () {
-      btnElement.textContent = 'Copy';
-    }, 2000);
-  }
-
+  
 
 
 
 
 });
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize each 'filed' component
+  var fileds = document.querySelectorAll('.filed');
+  fileds.forEach(function (filed) {
+    initializeFiled(filed);
+  });
+
+  // Event listeners for radio buttons
+  document.querySelectorAll('.select-ejs, .select-html').forEach(function (radioBtn) {
+    radioBtn.addEventListener('click', function () {
+      showCode(this, this.classList.contains('select-ejs') ? 'ejs' : 'html');
+    });
+  });
+});
+
+function initializeFiled(filed) {
+  var ejsRadio = filed.querySelector('.select-ejs');
+  var ejsBlock = filed.querySelector('.ejs-block');
+  var htmlBlock = filed.querySelector('.html-block');
+  var copyButton = filed.querySelector('.copy-btn');
+
+  // Set initial visibility and copy button functionality
+  if (ejsRadio.checked) {
+    ejsBlock.style.display = 'block';
+    htmlBlock.style.display = 'none';
+    setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
+  } else {
+    ejsBlock.style.display = 'none';
+    htmlBlock.style.display = 'block';
+    setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+  }
+}
+
+function showCode(radioBtn, type) {
+  var container = radioBtn.closest('.filed');
+  var ejsBlock = container.querySelector('.ejs-block');
+  var htmlBlock = container.querySelector('.html-block');
+  var copyButton = container.querySelector('.copy-btn');
+
+  if (type === 'ejs') {
+    ejsBlock.style.display = 'block';
+    htmlBlock.style.display = 'none';
+    setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
+  } else {
+    ejsBlock.style.display = 'none';
+    htmlBlock.style.display = 'block';
+    setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+  }
+}
+
+function setupCopyButton(button, codeBlock) {
+  button.onclick = function () {
+    copyToClipboard(codeBlock, button);
+  };
+}
+
+function copyToClipboard(codeBlock, btnElement) {
+  var copyText = codeBlock.innerText;
+  var textarea = document.createElement("textarea");
+  textarea.textContent = copyText;
+  document.body.appendChild(textarea);
+
+  textarea.select();
+  document.execCommand("copy");
+
+  document.body.removeChild(textarea);
+
+  btnElement.textContent = 'Copied!';
+
+  setTimeout(function () {
+    btnElement.textContent = 'Copy Code';
+  }, 2000);
+}
