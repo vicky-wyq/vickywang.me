@@ -1,26 +1,66 @@
+
+
+
+
+
+
+
+
+
+<% let textCenterClass = '' %>
+
 <% 
-    const options = locals.options || {};
-    const body = locals.body || '';
-    let classString = '';
-    const classes = {
-        isFull: 'Grid--full',
-        isForFullResponsiveGrid: 'forFullResponsiveGrid',
-        isTextCenter: 'u-textCenter'
-    };
-    for(let key in options) {
-        if (options[key] && classes[key]) {
-            classString = `${classString} ${classes[key]}`;
-        }
-    }
+if(textCenter === true){
+    textCenterClass = 'u-textCenter'
+}
 %>
 
-<div class="Grid <%= classString %>">
-    <div class="Grid-cell">
-        <%- body %>
+
+
+
+<!-- base classes-->
+<% const baseClasses = 'Grid Grid--gutters'; %>
+
+
+
+
+
+
+<!-- unique classes | always choose 1 of the 6 -->
+<% 
+    const colsClasses = {
+        1: 'Grid--full', 
+        2: 'Grid--cols-2', 
+        3: 'Grid--cols-3', 
+        4: 'Grid--cols-4', 
+        6: 'Grid--cols-6', 
+        8: 'Grid--cols-8'
+    }; 
+%>
+
+<% 
+    const cellColsClasses = {
+        1: 'content-1of1', 
+        2: 'content-1of2', 
+        3: 'content-1of3', 
+        4: 'content-1of4', 
+        6: 'content-1of6', 
+        8: 'content-1of8', 
+    }; 
+%>
+
+
+
+
+
+<div class="wrapper">
+    <div class="Grid Grid--gutters <%= textCenterClass %> <%= colsClasses[numCols] %>">
+        <div class="Grid-cell">
+            <div class="Demo">
+                <div class="elementInnerDemo <%= cellColsClasses[numCols] %>"></div>
+            </div>
+        </div>
+
     </div>
 </div>
-<!--
 
-
-
- -->

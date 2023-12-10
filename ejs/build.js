@@ -9,6 +9,7 @@ const partialsDir = 'shared'; // Directory name for partials
 // Data to be passed to templates
 const templateData = {
   // Example: 'path/to/template.ejs': { variableName: 'value' }
+  templatePath: path.join(__dirname, 'templates'),
 };
 
 // Function to clear the html directory
@@ -30,9 +31,14 @@ async function processFile(filePath, relativePath = '') {
     if (relativePath.includes(`${partialsDir}/`)) {
       return;
     }
+// Existing line
+    const ejsData = templateData[relativePath] || {}; 
 
-    const ejsData = templateData[relativePath] || {}; // Use data for this template or default to an empty object
-    const data = await ejs.renderFile(filePath, ejsData); // Pass the data to the template
+    // Merge general templateData with specific template data
+    const finalData = { ...templateData, ...ejsData };
+
+    // Now use finalData instead of ejsData for rendering
+    const data = await ejs.renderFile(filePath, finalData); 
     const outputPath = path.join(outputDir, relativePath.replace('.ejs', '.html'));
     await fs.outputFile(outputPath, data);
   } else {

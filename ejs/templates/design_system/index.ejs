@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<!--Head-->
+<%- include('../shared/head', {Title:'Scalable Design System Design and Implementation by Vicky Wang', 
+  description:'Vicky W. specializes in UX Design for B2B SaaS and consumer apps, expertly transforming complex challenges into user-friendly solutions', 
+  pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
+  }) %>
+<!--Head-->
+
+
+<body>
+  <%- include(`${templatePath}/shared/progressBar`) %>
+  <%- include(templatePath + '/shared/header', {currentPage: 'PROJECT' }) %>
+
+  <div class="blankHM"></div>
+
+
+
+  <%- include('../shared/projectLanding') %>
+
+  <%- include('../shared/homePage_icons-buttons.ejs') %>
+
+  <%- include('../shared/cards', { cards: 'card1' }) %>
+  <%- include('../shared/cards', { cards: 'card2' }) %>
+
+
+
+  <div class="blankHS"></div>
+
+  <%- include('../shared/arrowSubtitle', {message: 'Case Study' }) %>
+
+
+
+
+
+  <!--footer-->
+  <%- include('../shared/footer') %>
+  <!--footer-->
+
+</body>
+
+</html>
