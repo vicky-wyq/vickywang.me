@@ -36,6 +36,9 @@
   <!-- Arrow -->
   <%- include('shared/arrowSubtitle', {message: 'Case Study' }) %>
   <!-- Arrow -->
+
+  <!-- Content -->
+
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
       <div class="Grid-cell">
@@ -43,7 +46,7 @@
           <a class="no-hover-effect">
             <div class="elementCard LASO float cardBorder shadowBoxLt">
               <div class="img__wrap">
-                <img class="img__img" alt="Work Samples" src="/ejs/html/projectImages/Cover_worksample.png" />
+                <img class="img__img" alt="Work Samples" src="./projectImages/Cover_worksample.png" />
                 <div class="img__description">
                   <div class="input-field">
                     <div class="column">
@@ -79,7 +82,7 @@
           <a class="no-hover-effect">
             <div class="elementCard LASO float cardBorder shadowBoxLt">
               <div class="img__wrap">
-                <img class="img__img" alt="Work Samples" src="/ejs/html/projectImages/Cover_worksample.png" />
+                <img class="img__img" alt="Work Samples" src="./projectImages/Cover_worksample.png" />
                 <div class="img__description">
                   <div class="input-field">
                     <div class="column">
@@ -119,7 +122,7 @@
           <a class="no-hover-effect">
             <div class="elementCard LASO float cardBorder shadowBoxLt">
               <div class="img__wrap">
-                <img class="img__img" alt="Work Samples" src="/ejs/html/projectImages/Cover_worksample.png" />
+                <img class="img__img" alt="Work Samples" src="./projectImages/Cover_worksample.png" />
                 <div class="img__description">
                   <div class="input-field">
                     <div class="column">
@@ -154,7 +157,7 @@
         <div class="element">
           <a class="no-hover-effect" href="/glorify/">
             <div class="elementCard GLORIFY float cardBorder shadowBoxLt">
-              <img src="/ejs/html/projectImages/Cover_Glorify.png" alt="GLORIFY">
+              <img src="./projectImages/Cover_Glorify.png" alt="GLORIFY">
               <div class="element">
                 <div class="element">
                   <h5>For daily worship</h5>
@@ -173,7 +176,7 @@
         <div class="element">
           <a class="no-hover-effect" href="/glorify/">
             <div class="elementCard GLORIFY float cardBorder shadowBoxLt">
-              <img src="/ejs/html/projectImages/Cover_worksample.png" alt="Booking">
+              <img src="./projectImages/Cover_worksample.png" alt="Booking">
               <div class="element">
                 <div class="element">
                   <h5>Booking | Business-Facing</h5>
@@ -189,7 +192,7 @@
         <div class="element">
           <a class="no-hover-effect" href="/glorify/">
             <div class="elementCard GLORIFY float cardBorder shadowBoxLt">
-              <img src="/ejs/html/projectImages/Cover_worksample.png" alt="Consumer-Facing">
+              <img src="./projectImages/Cover_worksample.png" alt="Consumer-Facing">
               <div class="element">
                 <div class="element">
                   <h5>Service Booking App | Consumer-Facing</h5>
@@ -211,7 +214,7 @@
           <a class="no-hover-effect" href="/appointa/">
             <div class="">
               <div class="elementCard float cardBorder APPOINTA shadowBoxLt">
-                <img src="/ejs/html/projectImages/Cover_APPOINTA.png" alt="APPOINTA">
+                <img src="./projectImages/Cover_APPOINTA.png" alt="APPOINTA">
                 <div class="element">
                   <div class="element">
                     <h5>For job interview scheduling</h5>
@@ -229,7 +232,7 @@
         <div class="element">
           <a class="no-hover-effect" href="/seer/">
             <div class="elementCard float cardBorder SEER shadowBoxLt">
-              <img src="/ejs/html/projectImages/Cover_SEER.png" alt="SEER">
+              <img src="./projectImages/Cover_SEER.png" alt="SEER">
               <div class="element">
                 <div class="element">
                   <h5>For tracking business performance</h5>
@@ -246,12 +249,13 @@
     </div>
 
   </div>
-  <div class="blankHS"></div>
+  <!-- Content -->
+
   <!-- Arrow -->
   <%- include('shared/arrowSubtitle', {message: 'Design System & Navigation' }) %>
   <!-- Arrow -->
+  <!-- Content -->
 
-  <div class="blankHXS"></div>
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
       <div class="Grid-cell">
@@ -295,11 +299,14 @@
       </div>
     </div>
   </div>
+  <!-- Content -->
 
-  <div class="blankHM"></div>
+  <!-- Arrow -->
+  <%- include('shared/arrowSubtitle', {message: 'Skills & Experiences' }) %>
+  <!-- Arrow -->
+
   <%- include('shared/tagCloud') %>
-
-  <div class="blankHM"></div>
+  <%- include('shared/thankYouMessage') %>
 
   <!--footer-->
   <%- include('./shared/footer') %>
