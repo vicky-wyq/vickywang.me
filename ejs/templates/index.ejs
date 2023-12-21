@@ -28,27 +28,278 @@
 
   <%- include('shared/homePage_icons-buttons') %>
 
-  <%- include('shared/cards', { cards: 'card1' }) %>
-  <%- include('shared/cards', { cards: 'card2' }) %>
-
-
-
-
-
-
-
-  <%- include('shared/grid', { numCols: 6, textCenter: true }) %>
 
 
 
 
   <div class="blankHS"></div>
-
+  <!-- Arrow -->
   <%- include('shared/arrowSubtitle', {message: 'Case Study' }) %>
+  <!-- Arrow -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect">
+            <div class="elementCard LASO float cardBorder shadowBoxLt">
+              <div class="img__wrap">
+                <img class="img__img" alt="Work Samples" src="/ejs/html/projectImages/Cover_worksample.png" />
+                <div class="img__description">
+                  <div class="input-field">
+                    <div class="column">
+                      <label for="password">
+                        <h5>Password</h5>
+                      </label>
+                      <input class="PWinputLanding" type="password" id="adminPanel" placeholder="Enter password">
 
+                      <div class="pwIncorrectHeight">
+                        <span id="pwIncorrect">Password is incorrect </span>
+                      </div>
+                    </div>
+                    <button class="passwordArr" type="submit">
+                      <img src="./icon/arrow-forward.svg" alt="Enter">
+                      <!--  <i class="fas fa-chevron-right"></i> -->
+                    </button>
+                  </div>
+                </div>
+                <div class="element">
+                  <div class="element">
+                    <h5>Password is required </h5>
+                    <h3 class="arrCard" data-aos="fade-up"><strong>Admin Panel 0 - 1</strong></h3>
+                    <h4>Extensive startup experience with full design process immersion and diverse skill set</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect">
+            <div class="elementCard LASO float cardBorder shadowBoxLt">
+              <div class="img__wrap">
+                <img class="img__img" alt="Work Samples" src="/ejs/html/projectImages/Cover_worksample.png" />
+                <div class="img__description">
+                  <div class="input-field">
+                    <div class="column">
+                      <label for="password">
+                        <h5>Password</h5>
+                      </label>
+                      <input class="PWinputLanding" type="password" id="rxZero" placeholder="Enter password">
 
+                      <div class="pwIncorrectHeight">
+                        <span id="pwIncorrect">Password is incorrect </span>
+                      </div>
+                    </div>
+                    <button class="passwordArr" type="submit">
+                      <img src="./icon/arrow-forward.svg" alt="Enter">
+                      <!--  <i class="fas fa-chevron-right"></i> -->
+                    </button>
+                  </div>
+                </div>
+                <div class="element">
+                  <div class="element">
+                    <h5>Password is required </h5>
+                    <h3 class="arrCard" data-aos="fade-up"><strong>RX Zero | Business Shift</strong></h3>
+                    <h4>Extensive startup experience with full design process immersion and diverse skill set</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
 
+    <div class="Grid Grid--gutters Grid--cols-2">
 
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect">
+            <div class="elementCard LASO float cardBorder shadowBoxLt">
+              <div class="img__wrap">
+                <img class="img__img" alt="Work Samples" src="/ejs/html/projectImages/Cover_worksample.png" />
+                <div class="img__description">
+                  <div class="input-field">
+                    <div class="column">
+                      <label for="password">
+                        <h5>Password</h5>
+                      </label>
+                      <input class="PWinputLanding" type="password" id="productPage" placeholder="Enter password">
+
+                      <div class="pwIncorrectHeight">
+                        <span id="pwIncorrect">Password is incorrect </span>
+                      </div>
+                    </div>
+                    <button class="passwordArr" type="submit">
+                      <img src="./icon/arrow-forward.svg" alt="Enter">
+                      <!--  <i class="fas fa-chevron-right"></i> -->
+                    </button>
+                  </div>
+                </div>
+                <div class="element">
+                  <div class="element">
+                    <h5>Password is required </h5>
+                    <h3 class="arrCard" data-aos="fade-up"><strong>Product page update</strong></h3>
+                    <h4>Extensive startup experience with full design process immersion and diverse skill set</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect" href="/glorify/">
+            <div class="elementCard GLORIFY float cardBorder shadowBoxLt">
+              <img src="/ejs/html/projectImages/Cover_Glorify.png" alt="GLORIFY">
+              <div class="element">
+                <div class="element">
+                  <h5>For daily worship</h5>
+                  <h3 class="arrCard" data-aos="fade-up"><strong>GLORIFY</strong></h3>
+                  <h4>Integrating a community experience into the existing Glorify Application</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect" href="/glorify/">
+            <div class="elementCard GLORIFY float cardBorder shadowBoxLt">
+              <img src="/ejs/html/projectImages/Cover_worksample.png" alt="Booking">
+              <div class="element">
+                <div class="element">
+                  <h5>Booking | Business-Facing</h5>
+                  <h3 class="arrCard" data-aos="fade-up"><strong>B2B SaaS - Onboarding & Subscription</strong></h3>
+                  <h4>Focused on simplifying and refining the onboarding and subscription processes, we aim to facilitate a smooth transition for our B2B clients. This approach is geared towards improving engagement and adoption rates, ultimately driving business growth and customer satisfaction.</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect" href="/glorify/">
+            <div class="elementCard GLORIFY float cardBorder shadowBoxLt">
+              <img src="/ejs/html/projectImages/Cover_worksample.png" alt="Consumer-Facing">
+              <div class="element">
+                <div class="element">
+                  <h5>Service Booking App | Consumer-Facing</h5>
+                  <h3 class="arrCard" data-aos="fade-up"><strong>Enhancing the Consumer Booking Flow</strong></h3>
+                  <h4>Enhancing your booking experience to ensure seamless appointment scheduling, our goal is to
+                    boost conversion rates and minimize booking drop-offs. This streamlined process is designed not
+                    only to increase revenue but also to enhance customer loyalty.</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect" href="/appointa/">
+            <div class="">
+              <div class="elementCard float cardBorder APPOINTA shadowBoxLt">
+                <img src="/ejs/html/projectImages/Cover_APPOINTA.png" alt="APPOINTA">
+                <div class="element">
+                  <div class="element">
+                    <h5>For job interview scheduling</h5>
+                    <h3 class="arrCard" data-aos="fade-up"><strong>APPOINTA</strong></h3>
+                    <h4>Streamline the job interview scheduling process to make it more efficient,
+                      convenient, and intuitive</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect" href="/seer/">
+            <div class="elementCard float cardBorder SEER shadowBoxLt">
+              <img src="/ejs/html/projectImages/Cover_SEER.png" alt="SEER">
+              <div class="element">
+                <div class="element">
+                  <h5>For tracking business performance</h5>
+                  <h3 class="arrCard" data-aos="fade-up"><strong>SEER</strong></h3>
+                  <!--Analysis Report-->
+                  <h4>Help the brand managers understand their potential users and promote their
+                    brand on Reddit</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="blankHS"></div>
+  <!-- Arrow -->
+  <%- include('shared/arrowSubtitle', {message: 'Design System & Navigation' }) %>
+  <!-- Arrow -->
+
+  <div class="blankHXS"></div>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect" href="/design_system/">
+            <div class="">
+              <div class="elementCard float cardBorder shadowBoxLt">
+                <img src="./projectImages/vicky_website.svg" alt="vickywang.me">
+                <div class="element">
+                  <div class="element">
+                    <h5>For website vickywang.me </h5>
+                    <h3 class="arrCard" data-aos="fade-up"><strong>DESIGN SYSTEM</strong></h3>
+                    <h4>Creating a design system to establish consistent branding and styling across the entire
+                      website
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <a class="no-hover-effect" href="/navigation/">
+            <div class="">
+              <div class="elementCard float cardBorder shadowBoxLt">
+                <img src="./projectImages/vicky_website.svg" alt="vickywang.me">
+                <div class="element">
+                  <div class="element">
+                    <h5>For website case study &#64; vickywang.me </h5>
+                    <h3 class="arrCard" data-aos="fade-up"><strong>NAVIGATION DESIGN</strong></h3>
+                    <h4>Developing a more structured and logical navigation system for displaying case studies
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blankHM"></div>
+  <%- include('shared/tagCloud') %>
+
+  <div class="blankHM"></div>
 
   <!--footer-->
   <%- include('./shared/footer') %>
@@ -57,5 +308,3 @@
 </body>
 
 </html>
-
-
