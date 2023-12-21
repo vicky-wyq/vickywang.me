@@ -3,6 +3,9 @@
   <% const activeClasses = 'active activeNav' %>
   <% const inactiveClasses = 'inactive' %>
   <% const pages = ['PROJECT', 'ARCHITECTURE', 'PHOTOGRAPHY', 'BLOG', 'ABOUT'] %>
+  <% function capitalizeFirstLetter(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  } %>
   <header>
     <nav class="header" id="header">
       <div class="backgroundColorNav">
@@ -12,7 +15,8 @@
           <ul class="nav-menu">
             <% for(let i = 0; i < pages.length; i++) { %>
                 <li class="<%- `${baseClasses} ${(currentPage === pages[i] ? activeClasses : inactiveClasses)}` %>">
-                    <a href="/<%- pages[i] %>" class="nav-link box"><%- pages[i] %></a>
+                    <% const url = '/' + (pages[i] === 'PROJECT' ? '' : pages[i].toLowerCase()) %>
+                    <a href="<%- url %>" class="nav-link box"><%- pages[i] %></a>
                 </li>
             <% } %>
           </ul>

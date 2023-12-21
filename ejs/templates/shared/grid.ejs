@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 <% let textCenterClass = '' %>
 
 <% 
@@ -15,16 +6,8 @@ if(textCenter === true){
 }
 %>
 
-
-
-
 <!-- base classes-->
 <% const baseClasses = 'Grid Grid--gutters'; %>
-
-
-
-
-
 
 <!-- unique classes | always choose 1 of the 6 -->
 <% 
@@ -51,16 +34,18 @@ if(textCenter === true){
 
 
 
-
-
 <div class="wrapper">
     <div class="Grid Grid--gutters <%= textCenterClass %> <%= colsClasses[numCols] %>">
-        <div class="Grid-cell">
-            <div class="Demo">
-                <div class="elementInnerDemo <%= cellColsClasses[numCols] %>"></div>
+        <% if (typeof body === 'string') { %>
+            <%- body %>
+        <% } else { %>
+            <div class="Grid-cell">
+                <div class="Demo">
+                    <div class="elementInnerDemo <%= cellColsClasses[numCols] %>"></div>
+                </div>
             </div>
-        </div>
-
+        <% } %>
+        
     </div>
 </div>
 
