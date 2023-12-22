@@ -306,11 +306,10 @@
   <!-- Arrow -->
 
   <%- include('shared/tagCloud') %>
-  <%- include('shared/thankYouMessage') %>
+  <%- include('shared/thankYouMessage', { version: 'addMessage', message: '999'}) %>
 
-  <!--footer-->
-  <%- include('./shared/footer') %>
-  <!--footer-->
+  <%- include('shared/backTop') %>
+  <%- include('shared/footer') %>
 
 </body>
 
