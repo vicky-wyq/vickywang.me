@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server",
+    "start": "http-server html",
     "build-pug": "node pug/build.js",
-    "build-ejs": "node ejs/build.js"
+    "build-ejs": "node build.js"
   },
   "author": "",
   "license": "ISC",

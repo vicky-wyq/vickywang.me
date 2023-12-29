@@ -1,0 +1,2378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Basic Metadata -->
+  <link rel="canonical" href="https://vickywang.me/appointa">
+  <title>Appointa: Streamlining Interview Scheduling for Recruiters & Candidates by Vicky Wang</title>
+  <meta name="author" content="Vicky W.">
+  <meta name="description"
+    content="Appointa by Vicky Wang revolutionizes the interview process, offering a seamless scheduling solution for recruiters and candidates. This intuitive tool simplifies coordination, saves time, and enhances the hiring experience by bridging communication gaps between hiring managers and applicants. Embrace efficiency in your recruitment with Appointa.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="Appointa: Streamlining Interview Scheduling for Recruiters & Candidates by Vicky Wang">
+  <meta property="og:description"
+    content="Appointa by Vicky Wang revolutionizes the interview process, offering a seamless scheduling solution for recruiters and candidates. This intuitive tool simplifies coordination, saves time, and enhances the hiring experience by bridging communication gaps between hiring managers and applicants. Embrace efficiency in your recruitment with Appointa.">
+  <meta property="og:url" content="https://vickywang.me/appointa">
+  <meta property="og:site_name" content="Vicky's Website">
+  <meta property="og:image" content="https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_web.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://vickywang.me/appointa">
+  <meta property="twitter:title"
+    content="Appointa: Streamlining Interview Scheduling for Recruiters & Candidates by Vicky Wang">
+  <meta property="twitter:description"
+    content="Appointa by Vicky Wang revolutionizes the interview process, offering a seamless scheduling solution for recruiters and candidates. This intuitive tool simplifies coordination, saves time, and enhances the hiring experience by bridging communication gaps between hiring managers and applicants. Embrace efficiency in your recruitment with Appointa.">
+  <meta property="twitter:image" content="https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_web.png">
+
+  <!-- favicon -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+
+
+  <!-- Google Font Preconnect-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Font Preconnect-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--sitewide font-family: 'Lato', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!--handwriting -  font-family: 'Caveat', sans-serif; -->
+  <!--handwriting -  font-family: 'Caveat Brush', sans-serif; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <!--handwriting font-family: 'Indie Flower'; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <!--handwriting font-family: 'Gloria Hallelujah';  | Hello font|-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--jQuery-->
+
+  <!--aos-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- google analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+
+
+  <link rel="stylesheet" href="../main.css" />
+  <script type="text/javascript" src="../scripts.js"></script>
+  <script type="text/javascript" src="../scripts_project.js"></script>
+</head>
+
+<body>
+  <!--progressBarScroll-->
+  <div class="progressContainer">
+    <div class="progress-container">
+      <div class="progress-bar APPOINTA" id="progressBar"></div>
+    </div>
+  </div>
+  <!--progressBarScroll-->
+  <!-- header -->
+  <nav class="header" id="header">
+    <div class="backgroundColorNav">
+      <a href="http://vickywang.me/"><img class="logo pointer" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="dropdown nav-item active activeNav marginZero"><a href="/" class=" nav-link box ">PROJECT</a>
+            <div class="dropdown-content">
+
+              <a href="/glorify/">
+
+                <div>
+                  <img src="../ProjectImages/Cover_Glorify.png" alt="GLORIFY">
+                  <div class="element">
+                    <h5 class="colorBlack">GLORIFY | Daily Worship in Christian Practice</h5>
+                  </div>
+                </div>
+              </a>
+              <a href="/seer/">
+                <div>
+                  <img src="../ProjectImages/Cover_SEER.png" alt="SEER">
+                  <div class="element">
+                    <h5 class="colorBlack">SEER | Marketing Manager Tracking Business Performance</h5>
+                  </div>
+                </div>
+              </a>
+              <a href="/design_system/">
+                <div>
+                  <img src="../ProjectImages/Cover_portfolioWeb.svg" alt="Design System">
+                  <div class="element">
+                    <h5 class="colorBlack">Design System | Efficiently Bulid &#38; Maintain Components</h5>
+                  </div>
+                </div>
+              </a>
+              <a href="/navigation/">
+                <div>
+                  <img src="../ProjectImages/Cover_portfolioWeb.svg" alt="Design System">
+                  <div class="element">
+                    <h5 class="colorBlack">Navigation Design | Secondary Menu Options for vickywang.me</h5>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          </li>
+          <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
+          </li>
+          <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+
+
+  <!-- Working process -->
+  <div class="colorBgAPPOINTA">
+    <div class="blankPhone"></div>
+    <div class="blankHS"></div>
+    <div class="ProjectBanner displayLaptop">
+      <div class="blankMin1880"></div>
+      <img src="Mockup.png" alt="APPOINTA">
+
+      <div class="ProjectBannerInner">
+        <a href="https://www.figma.com/proto/0APvIwRfsXK7XTGaBXhD05/APPOINTA?page-id=1713%3A9427&node-id=1714%3A9456&viewport=677%2C117%2C0.12&scaling=scale-down&starting-point-node-id=1714%3A9456"
+          target="_blank"> <button class="button-35 APPOINTA">Slide Decks</button></a>
+      </div>
+    </div>
+
+    <div class="ProjectBanner displayTablet">
+      <div class="blankMin1880"></div>
+      <img class="displayTablet" src="MockupS.png" alt="APPOINTA">
+      <div class="ProjectBannerInner">
+        <a href="https://www.figma.com/proto/0APvIwRfsXK7XTGaBXhD05/APPOINTA?page-id=1713%3A9427&node-id=1714%3A9456&viewport=677%2C117%2C0.12&scaling=scale-down&starting-point-node-id=1714%3A9456"
+          target="_blank"> <button class="button-35 APPOINTA">Slide Decks</button></a>
+        <div class="blankHXS"></div>
+      </div>
+    </div>
+    <div class="ProjectBanner displayPhone">
+      <div class="blankMin1880"></div>
+      <img class="displayPhone" src="MockupXS.png" alt="APPOINTA">
+      <div class="ProjectBannerInner">
+        <a href="https://www.figma.com/proto/0APvIwRfsXK7XTGaBXhD05/APPOINTA?page-id=1713%3A9427&node-id=1714%3A9456&viewport=677%2C117%2C0.12&scaling=scale-down&starting-point-node-id=1714%3A9456"
+          target="_blank"> <button class="button-35 APPOINTA">Slide Decks</button></a>
+        <div class="blankHXS"></div>
+
+      </div>
+    </div>
+  </div>
+  <div class="blankHXS"></div>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h3><strong>Opportunity</strong></h3>
+          <h4>The recruiter's primary focus is on finding qualified candidates for the open position
+            to fill the headcount requirement. However, recruiters are spending around two-thirds of
+            their overall hiring process on scheduling interviews.
+          </h4>
+
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h3><strong>Solution</strong></h3>
+          <h4> Provide a simple and straightforward way for recruiters to quickly and easily
+            schedule
+            interviews for both the hiring team and the candidate in order to achieve the company
+            hiring headcount requirement</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="Grid Grid--gutters Grid--cols-4 wrapper">
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h3><strong>Duration</strong></h3>
+          <h4>June - August 2022 </h4>
+          <h4>10 Hours per week </h4>
+
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h3><strong>Team</strong></h3>
+          <h4>Concept </h4>
+          <h4>Individual work</h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h3><strong>Role</strong></h3>
+          <h4>Product strategy</h4>
+          <h4>Research</h4>
+          <h4>Visual</h4>
+
+
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h3><strong>Tool</strong></h3>
+          <h4>Figma</h4>
+          <h4>Photoshop</h4>
+          <h4>VS Code</h4>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="blankHM"></div>
+
+  <div class="colorBgAPPOINTA">
+    <div class="blankHS"></div>
+
+    <!-- Arrow -->
+    <div class="wrapper">
+      <div class="element">
+        <p class="tArrow">APPOINTA <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+      </div>
+    </div>
+    <!-- Arrow -->
+
+    <div class="blankHS"></div>
+    <div class="wrapper">
+      <div class="flex-container">
+        <div class="left-zone">
+          <ul class="list">
+            <li class="item">
+              <input type="radio" id="radio_testimonial-1" name="carousel" checked="checked" />
+              <label class="label_testimonial-1" for="radio_testimonial-1">Landing
+                page</label>
+              <div class="content-test">
+                <img class="shadowFilterL" src="Hi-fi_Landing.svg" alt="team member">
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_testimonial-2" name="carousel" />
+              <label class="label_testimonial-2" for="radio_testimonial-2">Interviews</label>
+              <div class="content-test">
+                <img class="shadowFilterL" src="Hi-fi_Interviews.svg" alt="team member">
+
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_testimonial-3" name="carousel" />
+              <label class="label_testimonial-3" for="radio_testimonial-3">Interview
+                types</label>
+              <div class="content-test">
+                <img class="shadowFilterL" src="Hi-fi_InterviewTypes.svg" alt="team member">
+
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_testimonial-4" name="carousel" />
+              <label class="label_testimonial-4" for="radio_testimonial-4">Interview
+                sets</label>
+              <div class="content-test">
+                <img class="shadowFilterL" src="Hi-fi_InterviewSets.svg" alt="team member">
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_testimonial-5" name="carousel" />
+              <label class="label_testimonial-5" for="radio_testimonial-5">Team
+                memebrs</label>
+              <div class="content-test">
+                <img class="shadowFilterL" src="Hi-fi_TeamMember.svg" alt="team member">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right-zone"></div>
+      </div>
+
+    </div>
+
+    <div class="blankHS"></div>
+
+
+  </div>
+  <div class="blankHM"></div>
+
+  <!-- Arrow -->
+  <div class="wrapper">
+    <div class="element">
+      <p class="tArrow">Timeline <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+    </div>
+  </div>
+  <!-- Arrow -->
+  <div class="blankHXS"></div>
+
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--1of1 Grid--full forFullResponsiveGrid Grid--nested">
+      <div class="Grid-cell">
+        <div class="element">
+          <div class="Grid">
+            <img src="diagram_timeline.svg" alt="Pain points">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="blankHM"></div>
+
+
+
+  <!-- Arrow -->
+  <div class="wrapper">
+    <div class="element">
+      <p class="tArrow">Design thinking process <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+    </div>
+  </div>
+  <!-- Arrow -->
+  <div class="blankHS"></div>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--1of1 Grid--full forFullResponsiveGrid Grid--nested">
+      <div class="Grid-cell">
+        <div class="element">
+          <div class="Grid">
+            <img src="diagram_designThinking.svg" alt="se-arrow">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="blankHM"></div>
+
+
+
+  <main class="">
+    <nav class="section-nav">
+      <ol>
+        <li><a href="#discover" class="titleRightPanel">Discover</a>
+          <ul>
+            <li class="rightPanel"><a href="#research"> &#160; Research goals </a></li>
+            <li class="rightPanel"><a href="#insights"> &#160; Interview insights </a></li>
+            <li class="rightPanel"><a href="#empathyMap"> &#160; Empathy map </a></li>
+            <li class="rightPanel"><a href="#personas"> &#160; Personas </a></li>
+            <li class="rightPanel"><a href="#customerJoutney"> &#160; Customer journey map </a></li>
+          </ul>
+
+        </li>
+        <li><a href="#define" class="titleRightPanel">Define</a>
+          <ul>
+            <li class="rightPanel"><a href="#keyPainPoints"> &#160; Key pain points </a></li>
+            <li class="rightPanel"><a href="#affinityMap"> &#160; Affinity diagram</a></li>
+            <li class="rightPanel"><a href="#earlyConcepts"> &#160; Early concepts </a></li>
+
+
+          </ul>
+        </li>
+
+
+        <li><a href="#ideation" class="titleRightPanel">Develop</a>
+          <ul>
+            <li class="rightPanel"><a href="#opportunities"> &#160; Insights to opportunities</a></li>
+            <li class="rightPanel"><a href="#priorityMatrix"> &#160; Priority matrix</a></li>
+            <li class="rightPanel"><a href="#useTypes"> &#160; Personas</a></li>
+            <li class="rightPanel"><a href="#userFlow"> &#160; User flow </a></li>
+            <li class="rightPanel"><a href="#informationArchitecture"> &#160; Site Map</a>
+            </li>
+            <li class="rightPanel"><a href="#sketch"> &#160; Lo-fi sketch</a></li>
+            <li class="rightPanel"><a href="#mfScreens"> &#160; Mid-fi screen flow &#38; testing </a></li>
+            <li class="rightPanel"><a href="#mfScreensUpdate"> &#160; Mid-fi screen flow &#38; Iteration
+              </a></li>
+
+          </ul>
+        </li>
+        <li><a href="#deliver" class="titleRightPanel">Deliver</a>
+          <ul>
+            <li class="rightPanel"><a href="#screens"> &#160; Hi-fi screens</a></li>
+            <li class="rightPanel"><a href="#prototype"> &#160; Clickable prototype </a></li>
+            <li class="rightPanel"><a href="#components"> &#160; UI components </a></li>
+
+          </ul>
+        </li>
+        <li><a href="#takeaways">Outcomes </a></li>
+      </ol>
+    </nav>
+    <div>
+      <section id="discover" class="colorBgAPPOINTA">
+        <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
+          <div class="Grid-cell">
+            <h1 class="Grid Grid--center"> <span>Discover</span><img class="moveUpDown widthLogo"
+                src="../icon/icon_research.svg" alt="Research">
+            </h1>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="Grid Grid--gutters Grid--cols-3 Grid--center">
+            <div class="Grid-cell BGappointa">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Research</strong></h4>
+                  <h5>&#8226; The problem space </h5>
+                  <h5>&#8226; Understand users </h5>
+
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell BGappointa">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Framing</strong></h4>
+                  <h5>&#8226; The problem(s) to be solved </h5>
+                  <h5>&#8226; Opportunities </h5>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid-cell BGappointa">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Gathering</strong></h4>
+                  <h5>&#8226; Enough evidence </h5>
+                  <h5>&#8226; Initial direction on next step
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <section id="research">
+
+
+          <div class="blankHS"></div>
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow">User research goals <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+              </p>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+
+                  <p class="specialTextL colorAPPOINTALt">What&#63; &nbsp; When&#63; &nbsp; Why&#63;
+                    &nbsp; How&#63; &nbsp; </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- insights -->
+          <div class="wrapper">
+            <!-- key pain points -->
+            <div class="wrapper">
+              <div class="Grid Grid--gutters Grid--cols-2">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightS">
+                      <img class="iconM" src="iconSearch.svg" alt="search">
+
+                      <div class="blankHXS"></div>
+                      <h4> <strong> Challenges of scheduling</strong> </h4>
+                      <ul>
+                        <li>What are the challenges of scheduling job interviews?</li>
+                        <li>When did the problem occur?</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightS">
+                      <img class="iconM" src="iconSearch.svg" alt="search">
+
+                      <div class="blankHXS"></div>
+
+                      <h4> <strong>Harder to schedule within a reasonable timeframe</strong> </h4>
+
+                      <ul>
+                        <li>
+                          What are the types of situations that are most likely to spend longer time
+                          scheduling an interview?</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Grid Grid--gutters Grid--cols-2">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightS">
+                      <img class="iconM" src="iconSearch.svg" alt="search">
+
+                      <div class="blankHXS"></div>
+                      <h4> <strong> Tools/methods</strong> </h4>
+                      <ul>
+                        <li>What tools/methods are successful in scheduling job interviews, why do
+                          you
+                          need them?</li>
+                        <li>
+                          How do the scheduling tools help the recruiters to schedule job
+                          interviews?
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightS">
+                      <img class="iconM" src="iconSearch.svg" alt="search">
+
+                      <div class="blankHXS"></div>
+
+                      <h4> <strong> Improvement/wishlist</strong> </h4>
+
+                      <ul>
+                        <li>
+                          Is there anything you wish you could do with these products which is
+                          currently not possible?</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element">
+                    <p class="specialTextNote colorAPPOINTAYellow u-textCenter">Discover the
+                      opportunity to improve the interview scheduling experience for recruiting team
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blankHXS"></div>
+          </div>
+          <!-- insights -->
+        </section>
+        <section id="insights">
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow">Interview insights gathering <img class="seArrow" src="../icon/arrow-se.svg"
+                  alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+
+          <div class="blankHXS"></div>
+
+          <!-- key pain points -->
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--cols-3">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="elementInnerL cardAPPOINTA heightM">
+                    <img class="iconM" src="IconCalendarSearch.svg" alt="se-arrow">
+                    <div class="blankHXS"></div>
+                    <h4> <strong> Find availabilities</strong> </h4>
+
+                    <ul>
+                      <li> Find a time that works for everyone</li>
+                      <li> Trying to schedule around people's busy schedules </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="elementInnerL cardAPPOINTA heightM">
+                    <img class="iconM" src="IconCalendar.svg" alt="se-arrow">
+
+                    <div class="blankHXS"></div>
+                    <h4> <strong> Aware of the schedule</strong> </h4>
+                    <ul>
+                      <li>Keeping track of all the different scheduling requests </li>
+                      <li>Making sure everyone is aware of the schedule</li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="elementInnerL cardAPPOINTA heightM">
+                    <img class="iconM" src="IconCollaboration.svg" alt="se-arrow">
+
+                    <div class="blankHXS"></div>
+
+                    <h4> <strong> Collaborate with people</strong> </h4>
+
+                    <ul>
+                      <li>Schedule around people's busy schedules</li>
+                      <li>Coordinate with multiple people</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- key pain points -->
+
+          <div class="wrapper">
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element">
+                    <p class="specialTextS colorAPPOINTALt">Having to coordinate with multiple
+                      people
+                      in order to find a time that works for everyone</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <div class="element cardAPPOINTA">
+                    <div class="element BGappointaQuote">
+                      <h4>&#8220;Finding a time that works
+                        for both the potential candidate and the recruiter/hiring
+                        manager is a challenge sometimes. This can be difficult to
+                        coordinate, especially if the potential candidate is located in a
+                        different time zone.&#8221;
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <div class="element cardAPPOINTA">
+                    <div class="element BGappointaQuote">
+                      <h4 class=""> &#8220;I need to schedule as many interviews as possible in the
+                        allotted time. The
+                        goal is to schedule the interviews in such a way that no interviewer is
+                        overworked and all of the interviews are conducted in a timely
+                        manner.&#8221;
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blankHXS"></div>
+
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <p class="specialTextS colorAPPOINTALt">Trying to schedule around people's busy
+                    schedules</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <div class="element cardAPPOINTA">
+                    <div class="element BGappointaQuote">
+                      <h4>&#8220;If the candidates are not responsive or if the hiring manager's
+                        schedule is full, I have to spend more time and effort working on the
+                        interview schedule.&#8221;
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <div class="element cardAPPOINTA">
+                    <div class="element BGappointaQuote">
+                      <h4>&#8220;I feel that it is best to schedule interviews in advance so that
+                        both parties have time to prepare. This also allows the us to gauge the
+                        interest of the
+                        candidate and ensure that they are still interested in the
+                        position.&#8221;</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blankHXS"></div>
+
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <p class="specialTextS colorAPPOINTALt">Keeping track of all the different
+                    scheduling
+                    requests</p>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <div class="element cardAPPOINTA">
+                    <div class="element BGappointaQuote">
+                      <h4>&#8220;Sometimes, I feel pressure to ensure that the interviews are
+                        conducted in a timely and efficient manner, in order to avoid any delays in
+                        the hiring process.&#8221;</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <div class="element cardAPPOINTA">
+                    <div class="element BGappointaQuote">
+                      <h4>&#8220;Ideally, the potential candidate is prepared for the interview.
+                        This means that the candidate should have
+                        all of the necessary documents and materials ready. The recruiter
+                        should also give the candidate a list of questions to prepare for in
+                        advance.&#8221;
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blankHXS"></div>
+
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <p class="specialTextS colorAPPOINTALt">Making sure everyone is aware of the
+                    schedule
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <div class="element cardAPPOINTA">
+                    <div class="element BGappointaQuote">
+                      <h4>&#8220;I coordinate with hiring managers and other employees to ensure
+                        that
+                        the interview process runs
+                        smoothly. I also follow up with candidates after an interview to provide
+                        feedback.&#8221;
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <div class="element cardAPPOINTA">
+                    <div class="element BGappointaQuote">
+                      <h4>&#8220;I use the scheduling tools like Google Calendar or Calendly to
+                        help me to automate part of the scheduling process. Google Calendar is a
+                        great
+                        tool for keeping track of events and setting reminders. Calendly is a great
+                        tool for setting up appointments and managing your schedule.&#8221;</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blankHXS"></div>
+          </div>
+
+        </section>
+        <section id="empathyMap">
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow">Empathy map <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+
+          <div class="blankHXS"></div>
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--1of1 Grid--full forFullResponsiveGrid Grid--nested">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="Grid">
+                    <img class="modal-target" src="diagram_empathyMap.svg" alt="Pain points">
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <div class="blankHS"></div>
+
+        <section id="personas">
+
+          <div class="blankHS"></div>
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow">Personas <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+
+          <div class="blankHXS"></div>
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--1of1 Grid--full forFullResponsiveGrid Grid--nested">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="Grid">
+                    <img class="modal-target" src="diagram_personas.svg" alt="Pain points">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="blankHS"></div>
+        <section id="customerJoutney">
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow">Customer journey map <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+              </p>
+            </div>
+          </div>
+          <!-- Arrow -->
+
+          <div class="blankHXS"></div>
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--1of1 Grid--full forFullResponsiveGrid Grid--nested">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="Grid">
+                    <img class="modal-target" src="diagram_customerJourneyMap.png" alt="Pain points">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element colorAPPOINTABg leftVerLine APPOINTA">
+                    <h4 class="">
+                      <p>Recruiters main touchpoints</p>
+                      <img src="Diagram_1.svg" alt="Diagram">
+
+
+                    </h4>
+                  </div>
+                  <div class="element colorAPPOINTABg leftVerLine APPOINTA">
+                    <h4 class="">
+
+                      <p>The reason why scheduling is time consuming:</p>
+
+                      <img src="Diagram_2.svg" alt="Diagram">
+                    </h4>
+                  </div>
+                  <div class="element colorAPPOINTABg leftVerLine APPOINTA">
+                    <h4 class="">
+                      <p>The recruitment app and scheduling app currently they are using are not very
+                        efficient for scheduling job interviews</p>
+                      <p> The existing tools such as Greenhouse and Calendly
+                        schedule for a specific interviewer.
+                        Most time, finding an interviewer from an interview pool is unnecessary
+                        because it is a uniform predetermined interview. </p>
+                    </h4>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element">
+                    <p class="specialTextNote colorAPPOINTAYellow u-textCenter">The most significant hurdle is aligning
+                      the availability of both candidates and hiring managers
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </section>
+        <div class="blankHS"></div>
+      </section>
+
+      <section id="define">
+        <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
+          <div class="Grid-cell">
+            <h1 class="Grid Grid--center"> <span>Define</span><img class="moveUpDown widthLogo"
+                src="../icon/icon_research.svg" alt="Research">
+            </h1>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="Grid Grid--gutters Grid--cols-3 Grid--center">
+            <div class="Grid-cell BGappointaColor">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Capture</strong></h4>
+                  <h5>&#8226; The user needs </h5>
+                  <h5>&#8226; Problem statement </h5>
+
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell BGappointaColor">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Align</strong></h4>
+                  <h5>&#8226; a concise goal </h5>
+                  <h5>&#8226; Problem seek to solved </h5>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid-cell BGappointaColor">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Identify</strong></h4>
+                  <h5>&#8226; metrics for success </h5>
+                  <h5>&#8226; set a clear vision</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+        <section id="keyPainPoints">
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow">Identify key pain points <img class="seArrow" src="../icon/arrow-se.svg"
+                  alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+
+          <div class="blankHXS"></div>
+
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--1of1 Grid--full forFullResponsiveGrid Grid--nested">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="Grid">
+                    <img class="modal-target" src="diagram_painPoints.svg" alt="se-arrow">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </section>
+
+        <div class="colorBgAPPOINTA">
+
+
+
+          <section id="affinityMap">
+            <!-- Arrow -->
+            <div class="wrapper">
+              <div class="element">
+                <p class="tArrow">Affinity diagrams <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                </p>
+              </div>
+            </div>
+            <!-- Arrow -->
+
+
+            <div class="wrapper">
+              <div class="Grid Grid--gutters Grid--1of1 Grid--full forFullResponsiveGrid Grid--nested">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="Grid">
+                      <img class="modal-target" src="diagram_affinityDiagrams.svg" alt="Affinity Map">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blankHS"></div>
+          </section>
+          <section id="earlyConcepts">
+
+            <!-- Arrow -->
+            <div class="wrapper">
+              <div class="element">
+                <p class="tArrow">Early concepts <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+              </div>
+            </div>
+            <!-- Arrow -->
+            <div class="blankHS"></div>
+            <!-- Product / Features -->
+            <div class="wrapper">
+              <div class="Grid Grid--gutters Grid--cols-3 ">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightM">
+                      <img class="iconM" src="IconFolder.svg" alt="se-arrow">
+                      <div class="blankHXS"></div>
+                      <h4> <strong> Efficiency</strong> </h4>
+
+                      <ul>
+                        <li> Be able to share availability without spending time and effort</li>
+                        <li> Let each individual manage their own schedule</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightM">
+                      <img class="iconM" src="iconSHare.svg" alt="se-arrow">
+
+                      <div class="blankHXS"></div>
+
+                      <h4> <strong> Collaboration</strong> </h4>
+
+                      <ul>
+                        <li>Everyone can see the available appointments</li>
+                        <li>A way to share information such as availability, interview skills,
+                          working
+                          hour, time zone</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightM">
+                      <img class="iconM" src="IconCategory.svg" alt="se-arrow">
+
+                      <div class="blankHXS"></div>
+                      <h4> <strong> Optimization</strong> </h4>
+                      <ul>
+                        <li>Optimize the availability for a better scheduling experience</li>
+                        <li>Handle the recruiting team's specific needs</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Grid Grid--gutters Grid--cols-3 ">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightM">
+                      <img class="iconM" src="iconClock.svg" alt="se-arrow">
+                      <div class="blankHXS"></div>
+                      <h4> <strong> Time-saving</strong> </h4>
+                      <ul>
+                        <li>Book with a few clicks</li>
+                        <li>Easy to cancel&#47;reschedule users' own appointment</li>
+                        <li>Upcoming interviews in one place</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightM">
+                      <img class="iconM" src="IconDocument.svg" alt="se-arrow">
+
+                      <div class="blankHXS"></div>
+
+                      <h4> <strong> Flexibility</strong> </h4>
+                      <ul>
+                        <li>Allow users to view available timeslots</li>
+                        <li>Allow users to make a booking on their own</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="elementInnerL cardAPPOINTA heightM">
+                      <img class="iconM" src="iconNotification.svg" alt="se-arrow">
+                      <div class="blankHXS"></div>
+
+                      <h4> <strong> Effectiveness</strong> </h4>
+                      <ul>
+                        <li>Offer the option to cancel or reschedule interviews</li>
+                        <li>Receive reminders for upcoming appointments</li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blankHS"></div>
+
+            </div>
+            <!-- Product / Features -->
+          </section>
+        </div>
+
+      </section>
+      <div class="blankHXS"></div>
+
+      <section id="ideation">
+        <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
+          <div class="Grid-cell">
+            <h1 class="Grid Grid--center"> <span>Develop</span><img class="moveUpDown widthLogo"
+                src="../icon/icon_Redesign.svg" alt="Redesign">
+            </h1>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="Grid Grid--gutters Grid--cols-3 Grid--center ">
+            <div class="Grid-cell BGappointaColor">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Ideate</strong></h4>
+                  <h5>&#8226; Brainstorm solutions </h5>
+                  <h5>&#8226; Prioritize opportunities </h5>
+
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell BGappointaColor">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Generate</strong></h4>
+                  <h5>&#8226; Key flow charts </h5>
+                  <h5>&#8226; Wireframes</h5>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid-cell BGappointaColor">
+              <div class="element">
+                <div class="elementInnerL">
+
+                  <h4><strong>Test</strong></h4>
+                  <h5>&#8226; Test with potential users </h5>
+                  <h5>&#8226; Iterate based on user feedback</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHS"></div>
+
+
+
+        <section id="opportunities" class="colorBgAPPOINTA">
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow">Turn Insights into Opportunities <img class="seArrow" src="../icon/arrow-se.svg"
+                  alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="wrapper">
+
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element">
+                    <p class="specialTextNote colorAPPOINTAYellow u-textCenter">How might we provide a
+                      better scheduling experience for the recruiting team and candidates&#63;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--full forFullResponsiveGrid ">
+              <div class="Grid-cell">
+                <div class="element">
+                  <p class="colorAPPOINTALt specialText">How Might We &#8230;</p>
+
+                  <div class="element colorAPPOINTABg leftVerLine APPOINTA">
+
+                    <h4 class="">
+                      <p>&#8230;allow the recruiter to <strong class="textDecor APPOINTA">see all of
+                          the available appointment</strong> times in one place?</p>
+
+                      <p>&#8230;allow recruiter <strong class="textDecor APPOINTA">book appointments
+                          directly</strong> from a place such as a calendar?</p>
+                      <p>&#8230;let recruiters find <strong class="textDecor APPOINTA">interviewers'
+                          skill</strong> easily?</p>
+                      <p>&#8230;let the recruiting team know some colleges are <strong class="textDecor APPOINTA">not
+                          available</strong> for appointments?</p>
+                      <p>&#8230;let the <strong class="textDecor APPOINTA">team use shared time
+                          slots</strong> that all team members can access?</p>
+                      <p>&#8230;let the recruiter <strong class="textDecor APPOINTA">share the
+                          available time slots</strong> with candidates easily?</p>
+                      <p>&#8230;allow the recruiter to see when potential candidates are available at
+                        certain time and location?</p>
+                      <p>&#8230;<strong class="textDecor APPOINTA">avoid any delays</strong> in the
+                        scheduling process?</p>
+                      <p>&#8230;ensure that the <strong class="textDecor APPOINTA">interview
+                          process</strong> runs smoothly?</p>
+                      <p>&#8230;ensure that the best candidates are interviewed?</p>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blankHS"></div>
+        </section>
+        <section id="priorityMatrix">
+
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow"> Priority matrix <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--1of1 Grid--full forFullResponsiveGrid Grid--nested">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="Grid">
+                    <img class="modal-target" src="diagram_priorityMatrix.svg" alt="Priority matrix">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blankHS"></div>
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element">
+                    <p class="specialTextNote colorAPPOINTAYellow u-textCenter">A recruiter needs to be
+                      able to quickly and easily schedule an interview with a potential candidate. The
+                      process should be simple and streamlined, so that the recruiter can focus on
+                      finding the best candidates for the job.
+
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section id="useTypes">
+
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow"> Personas <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="blankHXS"></div>
+          <!-- uses cases -->
+          <div class="wrapper">
+            <div class="Grid Grid--full forFullResponsiveGrid ">
+              <div class="element ">
+                <div class="Grid-cell">
+                  <div class="Grid Grid--gutters Grid--cols-3">
+
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <div class="elementInnerL cardAPPOINTA heightM">
+                          <img class="iconM" src="ppl_recruiter.png" alt="Hiring managers, HR, Recruiters">
+
+                          <div class="blankHXS"></div>
+                          <h5> <strong> Recruiters &#47; Hiring managers </strong> </h5>
+                          <ul>
+                            <li> Invite team members to share availability</li>
+                            <li> Invite candidate to schedule interview</li>
+                            <li> Set team member interview skills</li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <div class="elementInnerL cardAPPOINTA heightM">
+                          <img class="iconM" src="ppl_teammember.png" alt="Team members">
+
+                          <div class="blankHXS"></div>
+                          <h5> <strong> Team members</strong> </h5>
+                          <ul>
+                            <li> Share availability by connecting calendar </li>
+                            <li> Connect to video conference account</li>
+                            <li> Manage interviews</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <div class="elementInnerL cardAPPOINTA heightM">
+                          <img class="iconM" src="ppl_candidate.png" alt="Team members">
+                          <div class="blankHXS"></div>
+                          <h5> <strong> Candidates</strong> </h5>
+                          <ul>
+                            <li> Schedule an interview via link </li>
+                            <li> Provide information</li>
+                            <li> Reschedule and cancel interview</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="modal-target" src="usersRelationship.svg" alt="Pain points">
+
+          </div>
+          <!-- uses cases -->
+        </section>
+
+
+        <section id="userFlow">
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow"> Key flows <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+
+          <!-- user flow -->
+          <div class="wrapper">
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+
+                  <img class="modal-target" src="diagram_keyFlows_team.svg" alt="user flow">
+                  <img class="modal-target" src="diagram_keyFlows_scheduling.svg" alt="user flow">
+
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element colorAPPOINTABgBlue leftVerLine APPOINTA">
+                    <h4 class="">
+                      <p><strong>Key user flows</strong>
+                      </p>
+                      <p>Step 1: Recruiters invite team </p>
+                      <p>Step 2: Team member create account and sync calendar </p>
+                      <p>Step 3: Create interview type, setup required interview skills </p>
+                      <p>Step 4: Schedule interview </p>
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- user flow -->
+        </section>
+        <section id="informationArchitecture">
+
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow"> Site Map <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="blankHS"></div>
+          <!-- Sitemap -->
+          <div class="wrapper">
+
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="shadowFilter modal-target" src="diagram_informationArchitecture_V1.svg" alt="Sitemap">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sitemap -->
+        </section>
+
+        <section id="sketch">
+
+
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow"> Lo-fi Sketch <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="blankHS"></div>
+          <div class="wrapper">
+
+            <!-- wireframes -->
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class=" modal-target" src="userflow_Sketch.svg" alt="Pain points">
+                </div>
+              </div>
+            </div>
+            <!-- wireframes -->
+            <div class="blankHS"></div>
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element">
+                    <p class="specialTextNote colorAPPOINTAYellow u-textCenter">The goal of the lo-fi sketch is to
+                      arrange
+                      the key steps in order and pair candidates with interviewers who have both the necessary
+                      availability
+                      and relevant skill set.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="blankHS"></div>
+        <section id="mfScreens">
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow"> Mid-fi screen flows &#38; testing <img class="seArrow" src="../icon/arrow-se.svg"
+                  alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="blankHS"></div>
+          <div class="wrapper">
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="colorAPPOINTA">Invite team </h3>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="diagram_keyFlows_horizontal_inviteTeam.svg" alt="Invite team">
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="shadowFilter modal-target" src="userflow_Recruiter_teamManagement.svg"
+                    alt="Log in or sign up">
+                </div>
+              </div>
+            </div>
+
+            <div class="blankHS"></div>
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="colorAPPOINTA">Join as team member</h3>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="diagram_keyFlows_horizontal_memberJoin.svg" alt="Team member join">
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="shadowFilter modal-target" src="userflow_Member_signup.svg" alt="Log in or sign up">
+                </div>
+              </div>
+            </div>
+
+            <div class="blankHS"></div>
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="colorAPPOINTA">Create interview </h3>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="diagram_keyFlows_horizontal_createInterview.svg" alt="Create interview">
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="shadowFilter modal-target" src="userflow_Recruiter_createInterview.svg"
+                    alt="Log in or sign up">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="blankHXS"></div>
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="colorAPPOINTA">Schedule interview </h3>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="diagram_keyFlows_horizontal_schedulingInterview.svg" alt="Schedule interview">
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="shadowFilter modal-target" src="userflow_Recruiter_scheduleInterview.svg"
+                    alt="Log in or sign up">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="blankHXS"></div>
+          </div>
+
+          <div class="wrapper">
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element colorAPPOINTABgBlue leftVerLine APPOINTA">
+                    <h4>
+
+                      <p> <strong>Goal of the testing</strong></p>
+                      <ul>
+                        <li> Does the design solve the scheduling problem? </li>
+                        <li> Is it easy to schedule an interview than before? </li>
+                      </ul>
+                      <p> <strong>Test with potential users</strong></p>
+                      <ul>
+                        <li> Test each flow separately </li>
+                        <li> Test the all flows together </li>
+                      </ul>
+                      <p> <strong>Insights from testing</strong></p>
+                      <ul>
+                        <li>Ability to manage recruiter or hiring manage account</li>
+                        <li>A better way to create on site interview</li>
+                        <li> A way to share a link with everyone in the company instead of entering
+                          all
+                          emails in the small box </li>
+                        <li> Able to adjust each team member's skills from the table </li>
+                        <li> Ability to manage interview skills </li>
+                        <li> The interview may include multiple interviewers </li>
+
+                      </ul>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element">
+                    <p class="specialTextNote colorAPPOINTAYellow u-textCenter">Test
+                      wireframes can be a helpful tool for evaluating the user experience of a
+                      proposed design.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="blankHS"></div>
+
+
+
+
+
+
+
+        </section>
+        <section id="mfScreensUpdate">
+
+          <!-- Arrow -->
+          <div class="wrapper">
+            <div class="element">
+              <p class="tArrow"> Mid-fi screen iteration<img class="seArrow" src="../icon/arrow-se.svg"
+                  alt="icon arrow"></p>
+            </div>
+          </div>
+          <!-- Arrow -->
+          <div class="blankHS"></div>
+          <div class="wrapper">
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="colorAPPOINTA">Invite team </h3>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="diagram_keyFlows_horizontal_inviteTeamV2.svg" alt="Invite team">
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="shadowFilter modal-target" src="userflow_Recruiter_teamManagementV2.svg"
+                    alt="Log in or sign up">
+                </div>
+              </div>
+            </div>
+
+            <div class="blankHS"></div>
+
+
+
+            <div class="blankHXS"></div>
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="colorAPPOINTA">Schedule interview </h3>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="diagram_keyFlows_horizontal_schedulingInterviewV2.svg" alt="Schedule interview">
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="shadowFilter modal-target" src="userflow_Recruiter_scheduleInterviewV2.svg"
+                    alt="Log in or sign up">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="blankHXS"></div>
+          </div>
+
+
+          <div class="wrapper">
+
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element colorAPPOINTABgBlue leftVerLine APPOINTA">
+                    <h4>
+
+
+                      <p> <strong>Updated mid-fi screens based on the feedback from testing</strong>
+                      </p>
+                      <ul>
+                        <li> Allow user to select multiple interviewer</li>
+                        <li> Allow user invite members with link </li>
+                      </ul>
+                      <p> <strong>Insights from iteration</strong></p>
+                      <ul>
+                        <li> A way to select a type of team member from interview team </li>
+                      </ul>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="blankHS"></div>
+
+
+            <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="element">
+                    <p class="specialTextNote colorAPPOINTAYellow u-textCenter">Continue focus on the flow and
+                      navigation.
+                      enhance wireframes with additional details..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </section>
+      </section>
+      <div class="blankHS"></div>
+      <section id="deliver">
+        <div class="colorBgAPPOINTA">
+          <div class="blankHS"></div>
+
+          <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
+            <div class="Grid-cell">
+              <h1 class="Grid Grid--center"> <span>Deliver</span><img class="moveUpDown widthLogo"
+                  src="../icon/icon_clipboard-tick.svg" alt="Redesign">
+              </h1>
+            </div>
+          </div>
+          <div class="wrapper">
+
+            <div class="Grid Grid--gutters Grid--cols-3 Grid--center ">
+              <div class="Grid-cell BGappointa">
+                <div class="element">
+                  <div class="elementInnerL">
+
+                    <h4><strong>Enhance</strong></h4>
+                    <h5>&#8226; Mockup and Prototype </h5>
+                    <h5>&#8226; Tactile representation of ideas </h5>
+
+                  </div>
+                </div>
+              </div>
+              <div class="Grid-cell BGappointa">
+                <div class="element">
+                  <div class="elementInnerL">
+
+                    <h4><strong>Test</strong></h4>
+                    <h5>&#8226; Key flow charts </h5>
+                    <h5>&#8226; Tactile representation of ideas</h5>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="Grid-cell BGappointa">
+                <div class="element">
+                  <div class="elementInnerL">
+
+                    <h4><strong>Document</strong></h4>
+                    <h5>&#8226; Design system </h5>
+                    <h5>&#8226; Outcome</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blankHS"></div>
+          <section id="screens">
+            <!-- Arrow -->
+            <div class="wrapper">
+              <div class="element">
+                <p class="tArrow"> Hi-fi design<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+              </div>
+            </div>
+            <!-- Arrow -->
+
+            <div class="blankHS"></div>
+
+
+            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+              <div class="Grid-cell">
+                <img class="iconM" src="ppl_recruiter.png" alt="Administration account">
+                <h3>Administration account</h3>
+                <h6>Recruiters &#47; Hiring managers</h6>
+              </div>
+            </div>
+
+            <div class="blankHS"></div>
+
+            <div class="wrapper">
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h4 class="allCaps colorAPPOINTA">Interview type</h4>
+                    <ul>
+                      <li>Create different type of interview</li>
+                      <li>Add required interview skills</li>
+
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="Grid-cell">
+                  <div class="element"> <img class="cardAPPOINTA shadowBox" src="hi-fi_interviewType.gif"
+                      alt="New User">
+                  </div>
+                </div>
+              </div>
+              <div class="blankHM"></div>
+
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h4 class="allCaps colorAPPOINTA">Interview set</h4>
+                    <ul>
+                      <li class="">Combine interviews as a set of interview </li>
+                      <li class="">Edit or reorder interviews</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="Grid-cell">
+                  <div class="element"> <img class="cardAPPOINTA shadowBox" src="hi-fi_interviewSet.gif" alt="New User">
+                  </div>
+                </div>
+              </div>
+              <div class="blankHM"></div>
+
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h4 class="allCaps colorAPPOINTA">Invite team</h4>
+                    <ul>
+                      <li>Invite team members with emails</li>
+                      <li>Invite team members with a link</li>
+
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="Grid-cell">
+                  <div class="element"> <img class="cardAPPOINTA shadowBox" src="hi-fi_interviewTeam.gif"
+                      alt="New User">
+                  </div>
+                </div>
+              </div>
+
+              <div class="blankHM"></div>
+
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h4 class="allCaps colorAPPOINTA">Interview skills</h4>
+                    <ul>
+                      <li>Add &#38; remove skills </li>
+                      <li>Add &#38; remove team members </li>
+
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="Grid-cell">
+
+                  <div class="element"> <img class="cardAPPOINTA shadowBox" src="hi-fi_interviewSkills.gif"
+                      alt="New User">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blankHM"></div>
+
+          </section>
+          <div class="blankHS"></div>
+          <section id="prototype">
+            <div class="wrapper">
+              <iframe style="border: 6px solid rgba(255, 255, 255, 0.9);     border-radius: 35px;
+          " width="100%" height="920"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0APvIwRfsXK7XTGaBXhD05%2FAPPOINTA%3Fpage-id%3D501%253A9560%26node-id%3D501%253A9561%26viewport%3D1138%252C453%252C0.48%26scaling%3Dscale-down%26starting-point-node-id%3D501%253A9561%26hotspot-hints%3D0"></iframe>
+            </div>
+          </section>
+          <div class="blankHS"></div>
+          <section id="designsystem">
+
+            <!-- Arrow -->
+            <div class="wrapper">
+              <div class="element">
+                <p class="tArrow">Design system<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+              </div>
+            </div>
+            <!-- Arrow -->
+            <div class="wrapper">
+              <div class="flex-container cardAPPOINTA">
+                <div class="left-zone">
+                  <ul class="list">
+                    <li class="item">
+                      <input type="radio" id="Color" name="DS" checked="checked" />
+                      <label class="Color" for="Color">Color styles</label>
+                      <div class="content-test">
+                        <img class="shadowFilterL" src="DS_color.svg" alt="Components">
+                      </div>
+                    </li>
+                    <li class="item">
+                      <input type="radio" id="Text" name="DS" />
+                      <label class="Text" for="Text">Text styles</label>
+                      <div class="content-test">
+                        <img class="shadowFilterL" src="DS_Text.svg" alt="Components">
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="right-zone"></div>
+              </div>
+
+
+
+
+            </div>
+
+
+            <!-- UI -->
+
+          </section>
+          <section id="components">
+
+            <!-- Arrow -->
+            <div class="wrapper">
+              <div class="element">
+                <p class="tArrow">UI Components<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+              </div>
+            </div>
+            <!-- Arrow -->
+            <div class="wrapper">
+              <div class="flex-container cardAPPOINTA">
+                <div class="left-zone">
+                  <ul class="list">
+                    <li class="item">
+                      <input type="radio" id="dropdown" name="UI" checked="checked" />
+                      <label class="dropdown" for="dropdown">Dropdown and tab</label>
+                      <div class="content-test">
+                        <img class="shadowFilterL" src="Components_dropdown.svg" alt="Components">
+                      </div>
+                    </li>
+                    <li class="item">
+                      <input type="radio" id="callout" name="UI" />
+                      <label class="callout" for="callout">Callouts and iconS</label>
+                      <div class="content-test">
+                        <img class="shadowFilterL" src="Components_callout.svg" alt="Components">
+                      </div>
+                    </li>
+                    <li class="item">
+                      <input type="radio" id="headerUI" name="UI" />
+                      <label class="headerUI" for="headerUI">Headers</label>
+                      <div class="content-test">
+                        <img class="shadowFilterL" src="Components_header.svg" alt="Components">
+                      </div>
+                    </li>
+                    <li class="item">
+                      <input type="radio" id="pill" name="UI" />
+                      <label class="pill" for="pill">Pills</label>
+                      <div class="content-test">
+                        <img class="shadowFilterL" src="Components_pill.svg" alt="Components">
+                      </div>
+                    </li>
+                    <li class="item">
+                      <input type="radio" id="textbox" name="UI" />
+                      <label class="textbox" for="textbox">Textboxes</label>
+                      <div class="content-test">
+                        <img class="shadowFilterL" src="Components_textbox.svg" alt="Components">
+                      </div>
+                    </li>
+
+                    <li class="item">
+                      <input type="radio" id="button" name="UI" />
+                      <label class="button" for="button">Buttons</label>
+                      <div class="content-test">
+                        <img class="shadowFilterL" src="Components_button.svg" alt="Components">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right-zone"></div>
+              </div>
+
+              <div class="Grid Grid--full forFullResponsiveGrid">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <div class="element">
+                      <p class="specialTextNote colorAPPOINTAYellow u-textCenter">A design system helps
+                        to
+                        ensure that all UI elements are consistent in terms of style, color, and
+                        layout.
+                        This helps to create a cohesive look and feel for a product, and makes it
+                        easier
+                        for users to navigate and use the product.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- UI -->
+
+          </section>
+
+          <div class="blankHS"></div>
+
+        </div>
+
+      </section>
+      <div class="blankHM"></div>
+      <hr>
+      <div class="blankHM"></div>
+      <!-- takeaways -->
+      <section id="takeaways">
+
+
+        <!-- Arrow -->
+        <div class="wrapper">
+          <div class="element">
+            <p class="tArrow">Outcomes<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></p>
+          </div>
+        </div>
+        <!-- Arrow -->
+        <div class="wrapper">
+          <div class="Grid Grid--full forFullResponsiveGrid">
+
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element colorAPPOINTABgBlue leftVerLine APPOINTA">
+                  <h4>
+
+
+
+                    <p> <strong>What went well so far&#58;</strong></p>
+                    <ul>
+                      <li> Navigation needs to be more
+                        straightforward </li>
+                      <li> Need to design the profile page
+                      </li>
+
+                    </ul>
+                    <p> <strong>What could be improved&#58;</strong></p>
+
+                    <p> <strong>Next step&#58;</strong></p>
+                    <ul>
+                      <li> Recruiters may sometimes book interviews for condidates</li>
+                      <li> Ability to book a set of interviews</li>
+                      <li> May need to have interview groups for next version</li>
+                      <li> team member bulk edit feature is not necessary for
+                        the first version </li>
+                    </ul>
+
+
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- takeaways -->
+    </div>
+
+  </main>
+  <div class="blankHS"></div>
+  <!-- Arrow -->
+  <div class="wrapper">
+    <div class="element">
+      <h2 class="tArrow">Skills & Experiences <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+      </h2>
+    </div>
+  </div>
+  <!-- Arrow -->
+  <div class="blankHM"></div>
+  <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+    <ul class="tags" id="TagsCloud">
+
+      <li class="tag"><span class="box"> User-centered Design</span></li>
+
+      <li class="tag"><span class="box"> Experience Design</span></li>
+      <li class="tag"><span class="box"> User Experience Design </span></li>
+      <li class="tag"><span class="box"> User Interface Design</span></li>
+      <li class="tag"><span class="box"> Interaction Design</span></li>
+
+      <li class="tag"><span class="box"> Product Design</span></li>
+      <li class="tag"><span class="box"> Service Design</span></li>
+
+      <li class="tag"><span class="box"> Design Thinking</span></li>
+      <li class="tag"><span class="box"> Surveys &#38; Questionnaires</span></li>
+      <li class="tag"><span class="box"> Journey Mapping </span></li>
+      <li class="tag"><span class="box"> Data Analysis </span></li>
+
+
+
+      <li class="tag"><span class="box"> Responsive &#38; Adaptive Design</span></li>
+      <li class="tag"><span class="box"> Web Application Design</span></li>
+      <li class="tag"><span class="box"> Design System</span></li>
+      <li class="tag"><span class="box"> Graphic Design</span></li>
+
+      <li class="tag"><span class="box"> UX Research</span></li>
+      <li class="tag"><span class="box"> Design Research</span></li>
+
+      <li class="tag"><span class="box"> Design Research</span></li>
+      <li class="tag"><span class="box"> Collaborative Problem Solving</span></li>
+      <li class="tag"><span class="box"> Concept Testing</span></li>
+      <li class="tag"><span class="box"> Usability Testing</span></li>
+      <li class="tag"><span class="box"> Wireframing &#38; Prototyping</span></li>
+
+      <li class="tag"><span class="box"> SaaS Application Design</span></li>
+      <li class="tag"><span class="box"> B2B Application Design</span></li>
+      <li class="tag"><span class="box"> Consumer-Facing Design</span></li>
+
+
+      <li class="tag"><span class="box"> Figma</span></li>
+      <li class="tag"><span class="box"> Adobe CS </span></li>
+      <li class="tag"><span class="box"> 3D Modeling</span></li>
+
+      <li class="tag"><span class="box">HTML</span></li>
+      <li class="tag"><span class="box">CSS</span></li>
+      <li class="tag"><span class="box">JavaScript</span></li>
+      <li class="tag"><span class="box">GitHub</span></li>
+
+    </ul>
+  </div>
+  <!-- message -->
+  <div class="blankHL"></div>
+  <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+    <div class="Grid-cell">
+      <div data-aos="fade-up">
+        <h4 class="element">
+          Thank you for dropping by! If you have any feedback about this site or would like to get in touch, please feel
+          free to shoot me an <a href="mailto:vickyw.design@gmail.com" class="textUnderline"> email</a>&#33; </h4>
+      </div>
+      <a href="/" class=""><img class="widthXS" src="../icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
+    </div>
+  </div>
+  <!-- message -->
+
+
+  <div class="blankHL"></div>
+
+
+  <!-- The Modal -->
+  <div id="modal" class="modal">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <img id="modal-content" class="modal-content shadowFilter">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+  <!-- The Modal -->
+  <!--back to top-->
+  <button id="myBtn" title="Back to top">
+    <div id="dad">
+      <div id="bro">
+        <img id="bottom-arrow" src="../icon/arrow-top.svg" alt="back to top">
+      </div>
+      <div id="sis">
+        <h4>TOP</h4>
+      </div>
+    </div>
+  </button>
+  <!--back to top-->
+  <!--footer-->
+  <footer class="GreyBg100">
+
+    <div class="blankHS"></div>
+    <div class="wrapper">
+      <div class="element">
+  
+        <div class="Grid Grid--gutters Grid--1of3">
+          <div class="Grid-cell">
+  
+            <a href="/" class=""><img class="widthXXS" src="../icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
+            <div class="blankHXS"></div>
+  
+            <div class="Grid Grid--gutters">
+              <div class="ClipboardBoxIconOnly">
+                <button class="ClipboardIconOnly">
+                  <img title="Copy Email Address to Clipboard" class="iconS hoverGrey300 paddingS borderRadiusMax"
+                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                </button>
+              </div>
+              <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
+                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/in.svg" alt="LinkedIn">
+              </a>
+  
+              <a target="_blank" href="https://github.com/vicky-wyq">
+                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/git.svg" alt="GitHub"
+                  title="GitHub">
+              </a>
+  
+              <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
+                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
+              </a>
+  
+              <a target="_blank" href="https://www.instagram.com/vw_yiqi/">
+                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/ins.svg" alt="Instagram"
+                  title="Instagram">
+              </a>
+            </div>
+            <div class="blankHXS"></div>
+          </div>
+          <div class="Grid-cell">
+            <div class="Grid Grid--gutters Grid--cols-6">
+              <div class="Grid-cell">
+                <h5> <strong> Project </strong> </h5>
+                <div class="blankHXXS"></div>
+                <a href="/glorify/">
+                  <h6 class="fontWeight400"> Glorify</h6>
+                </a>
+  
+  
+                <h6>Elevating Community Involvement</h6>
+                <div class="blankHXXS"></div>
+                <a href="/appointa/">
+                  <h6 class="fontWeight400"> APPOINTA</h6>
+  
+                </a>
+                <h6>Simplifying Interview Coordination</h6>
+                <div class="blankHXXS"></div>
+                <a href="/seer/">
+                  <h6 class="fontWeight400">SEER</h6>
+  
+                </a>
+                <h6>Empowering Brand Managers with Insights</h6>
+              </div>
+  
+              <div class="Grid-cell">
+                <h5> <strong> Service </strong> </h5>
+                <div class="blankHXXS"></div>
+  
+                <a href="/">
+                  <h6 class="fontWeight400">UX/UI Design</h6>
+                </a>
+                <h6>Creating Intuitive User Experiences</h6>
+                <div class="blankHXXS"></div>
+  
+                <a href="/">
+                  <h6 class="fontWeight400">Design Research</h6>
+                </a>
+                <h6>In-depth Analysis for Targeted Solutions</h6>
+                <div class="blankHXXS"></div>
+                <a href="/">
+                  <h6 class="fontWeight400">Web Development</h6>
+                </a>
+                <h6>Seamless Design Implementation</h6>
+                <div class="blankHXXS"></div>
+                <a href="/">
+                  <h6 class="fontWeight400">Branding</h6>
+                </a>
+                <h6>Crafting Memorable Brand Identities</h6>
+              </div>
+  
+              <div class="Grid-cell">
+                <h5> <strong> About </strong> </h5>
+                <div class="blankHXXS"></div>
+  
+                <a href="/about">
+                  <h6>About me</h6>
+                </a>
+                <a href="mailto:vickyw.design@gmail.com">
+                  <h6>Email me</h6>
+                </a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <div class="blankHS"></div>
+      <div class="Grid Grid--full forFullResponsiveGrid">
+        <div class="Grid-cell">
+          <div class="footerBorder">
+            <div class="element">
+              <h5 class="Grey700"> &#169; 2023 &#8212; vickywang.me | All rights reserved.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+  <!--footer-->
+
+</body>
+
+
+
+
+</html>
