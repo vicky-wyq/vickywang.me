@@ -10,6 +10,7 @@ const partialsDir = 'shared'; // Directory name for partials
 const templateData = {
   // Example: 'path/to/template.ejs': { variableName: 'value' }
   templatePath: path.join(__dirname, 'templates'),
+  websitePath: '',
 };
 
 // Function to clear the html directory
