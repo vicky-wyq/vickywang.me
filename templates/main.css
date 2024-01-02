@@ -241,7 +241,29 @@ body .displayPhone {
 }
 
 /* ========= display =========*/
+.headerDEMO {
+    position:relative;
 
+    background: rgba(255, 255, 255, 0.7);
+    /*  10% opaque green */
+    height: 64px;
+    transition: transform 0.25s ease-in-out;
+    border-bottom: 1px solid var(--Grey200);
+    z-index: 98;
+}
+.backgroundColorNavDEMO {
+    position: relative;
+
+    max-width: 1160px;
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    align-items: center;
+    transition: ease 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* ========= header =========*/
 
 .backgroundColorNav {
@@ -262,7 +284,7 @@ body .displayPhone {
 }
 
 .header {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -844,7 +866,6 @@ polygon {
 
 .cardBorderThick {
     border: 0.1em solid var(--Grey900);
-
 }
 
 .cardBorderGreen {
