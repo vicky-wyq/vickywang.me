@@ -242,7 +242,7 @@ body .displayPhone {
 
 /* ========= display =========*/
 .headerDEMO {
-    position:relative;
+    position: relative;
 
     background: rgba(255, 255, 255, 0.7);
     /*  10% opaque green */
@@ -251,6 +251,7 @@ body .displayPhone {
     border-bottom: 1px solid var(--Grey200);
     z-index: 98;
 }
+
 .backgroundColorNavDEMO {
     position: relative;
 
@@ -264,6 +265,7 @@ body .displayPhone {
     flex-direction: row;
     justify-content: space-between;
 }
+
 /* ========= header =========*/
 
 .backgroundColorNav {
@@ -284,7 +286,7 @@ body .displayPhone {
 }
 
 .header {
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -2193,7 +2195,7 @@ input {
     height: 100%;
 
 
-    
+
     background: transparent;
     border: none;
     cursor: pointer;
@@ -2201,7 +2203,7 @@ input {
 }
 
 button.passwordArr {
-    margin-top: 34px;
+    margin-top: 36px;
     z-index: 98;
     padding: 0;
     color: var(--Grey900);
@@ -4495,10 +4497,16 @@ body .flex-container.Mobile {
 /* ===== hover effect ====== */
 .hoverGrey100 {
     background-color: none;
+    border: 0.06em solid var(--white);
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Smooth transition for hover effect */
+
 }
 
 .hoverGrey100:hover {
     background-color: var(--Grey100);
+    border: 0.06em solid var(--Grey300);
+
 }
 
 .hoverGrey300 {
@@ -5548,6 +5556,9 @@ button.Clipboard.clickTxt:active {
     padding: 12px;
     background-color: var(--white);
     border-radius: 0px 0px 8px 8px;
+    height: 12em;
+    overflow: hidden;
+    overflow-y: scroll; /* Show vertical scrollbar */
 
 }
 

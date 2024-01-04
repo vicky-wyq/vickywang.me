@@ -245,26 +245,39 @@ function initializeToggles() {
   });
 }
 
-function initializePassword() {
-  // ====== Password Starts ====== //
-  const pass = document.getElementById("password");
-  const submit = document.querySelectorAll(".passwordArr")[0];
-  const msg = document.getElementById("pwIncorrect");
-  const w = 'U2FsdGVkX1+qBYYpwqY4fxufbaVwlCa29R7uRhGBWGzr5X6zmNO/9WfCnL7sVkCf';
+const k = {
+  adminPanel: 'U2FsdGVkX1+7hB29vRLgpugTZAk78ZWVKqw6LeK75yAC3XE//53o9OCRIuzS9qScJW4nJntUt4QcFu1Rnl6D+w==',
+  productPage: 'U2FsdGVkX181y7L4uo6gdjmpWCHIqk0Zi9DZ+qdBTrur3VhFOQ7zId49a6i0pao05Hj9dXla3I+rURQ55SJcEQ==',
+  bookingApp: 'U2FsdGVkX1+qBYYpwqY4fxufbaVwlCa29R7uRhGBWGzr5X6zmNO/9WfCnL7sVkCf',
+  rxZero: 'U2FsdGVkX19+/k7v6VWGge0wYIz8BMrRkKFKrVfjMRY+WunqYOt+2R/s1Hi+ygc6',
+  consumerBooking: '',
+}
 
-  // Get the input field
-  // Execute a function when the user presses a key on the keyboard
-  if (pass && submit) {
+function initializePassword() {
+  // Select all password fields and submit buttons
+  const passwordFields = document.querySelectorAll(".PWinputLanding");
+  const submitButtons = document.querySelectorAll(".passwordArr");
+
+  // Iterate over each password field
+  passwordFields.forEach((pass, index) => {
+    const submit = submitButtons[index]; // Corresponding submit button
+    const msg = pass.nextElementSibling.querySelector(".pwIncorrectHeight span"); // Corresponding message element
+
+    // Add event listener for keypress on password field
     pass.addEventListener("keypress", function (event) {
-      // If the user presses the "Enter" key on the keyboard
       if (event.key === "Enter") {
-        // Cancel the default action, if needed
         event.preventDefault();
-        // Trigger the button element with a click
         submit.click();
       }
     });
+
+    // Add event listener for click on submit button
     submit.addEventListener("click", () => {
+      if (!k[pass.id]) {
+        throw new Error(`${pass.id} is not a valid page. Please ensure the "id" field of the password input is correct`);
+      }
+      const w = k[pass.id];
+
       let redirect;
       try {
         let decrypted = CryptoJS.AES.decrypt(w, pass.value);
@@ -272,17 +285,14 @@ function initializePassword() {
       } catch (e) {
         console.log(e);
       }
-
       if (redirect && redirect.includes("lsh")) {
         window.location.href = redirect;
         msg.style.display = "none";
       } else {
-        // handle some error
         msg.style.display = "block";
       }
     });
-  }
-  // ====== Password Ends ====== //
+  });
 }
 //Read more/less
 

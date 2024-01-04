@@ -129,33 +129,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
   </div>
 
-  <div class='wrapper'>
 
-    <div class='filed'>
-
-      <div class="tab-container">
-        <div class="tabs">
-          <input type="radio" class="select-ejs" name="code-type-1" id="select-ejs-1" checked>
-          <label for="select-ejs-1" class="tab">EJS</label>
-          <input type="radio" class="select-html" name="code-type-1" id="select-html-1">
-          <label for="select-html-1" class="tab">HTML</label>
-        </div>
-        <button class="copy-btn" style="display:inline;">Copy Code</button>
-      </div>
-
-      <div class="ejs-block code-block">
-        <pre class="ejs-code"><code>&lt;%-- EJS code for first field goes here --%&gt;</code></pre>
-      </div>
-
-      <div class="html-block code-block" style="display:none;">
-        <pre class="html-code"><code>&lt;!-- HTML code for first field goes here --%&gt;</code></pre>
-      </div>
-
-    </div>
-
-
-
-  </div>
 
   <div class="wrapper">
 
@@ -170,7 +144,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
     <div class="blankHS"></div>
 
 
-    <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
       <div class="Grid-cell">
         <h1 class="Grid Grid--center"> <span class="specialTextL">Design System Breakdown</span><img class="moveUpDown widthLogo" src="../icon/arrow-down.svg" alt="Scroll down">
         </h1>
@@ -204,7 +178,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             <li class="rightPanel"><a href="#content33"> &#160; Organisms</a></li>
           </ul>
         </li>
-        <li><a href="#content4" class="titleRightPanel">Global Elements</a>
+        <li><a href="#content4" class="titleRightPanel">Navigation</a>
           <ul>
             <li class="rightPanel"><a href="#content41"> &#160; Header</a></li>
             <li class="rightPanel"><a href="#content42"> &#160; Footer</a></li>
@@ -217,7 +191,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
     <section id="content1">
-      <div class="Grid Grid--full forFullResponsiveGrid u-textCenter wrapper">
+      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
         <div class="Grid-cell">
           <h1 class="Grid Grid--center"> <span>Styles</span><img class="widthLogo" src="../icon/library.svg" alt="Research">
           </h1>
@@ -225,28 +199,16 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       </div>
       <section id="content11">
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt">Color Guidance</strong> </h1>
               </div>
             </div>
           </div>
-          <div class="blankHXS"></div>
+          <%- include('../shared/arrowSubtitle', {message: 'Tonal Palettes' }) %>
 
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Tonal Palettes<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
+
 
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
@@ -343,94 +305,22 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
 
+          <%- include('../shared/copyCode', 
+          {Name:'Item1', idTab1:'ONE1',idTab2:'ONE2',idTab3:'ONE3', tab1:'',tab2:'',tab3:'checked',
+          EJS: `ejs`,
+          HTML: `html`,
+          CSS:`css
+            `
+            }) %>
 
 
-          <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">CSS</div>
-
-                    <code> 
-                      /* ===== color grey ===== */
-                        .Grey900 {
-                            color: var(--Grey900);
-                        }
-                        .Grey800 {
-                            color: var(--Grey800);
-                        }
-                        .Grey700 {
-                            color: var(--Grey700);
-                        }
-                        .Grey600 {
-                            color: var(--Grey600);
-                        }
-                        .Grey500 {
-                            color: var(--Grey500);
-                        }
-                        .Grey400 {
-                            color: var(--Grey400);
-                        }
-                        .Grey300 {
-                            color: var(--Grey300);
-                        }
-                        .Grey200 {
-                            color: var(--Grey200);
-                        }
-                        .Grey100 {
-                            color: var(--Grey100);
-                        }
-                      /* ===== color grey ===== */
-                      /* ===== bg color grey ===== */
-                        .GreyBg900 {
-                            background: var(--Grey900);
-                        }
-                        .GreyBg800 {
-                            background: var(--Grey800);
-                        }
-                        .GreyBg700 {
-                            background: var(--Grey700);
-                        }
-                        .GreyBg600 {
-                            background: var(--Grey600);
-                        }
-                        .GreyBg500 {
-                            background: var(--Grey500);
-                        }
-                        .GreyBg400 {
-                            background: var(--Grey400);
-                        }
-                        .GreyBg300 {
-                            background: var(--Grey300);
-                        }
-                        .GreyBg200 {
-                            background: var(--Grey200);
-                        }
-                        .GreyBg100 {
-                            background: var(--Grey100);
-                        }
-                        .WhiteBg {
-                            background-color: var(--white);
-                        
-                        }
-                        .WhiteBgTrans {
-                            background-color: var(--White-transparent);
-                        }
-                      /* ===== bg color grey ===== */
-                    </code>
-                   </pre>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="blankHM"></div>
 
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Action &#38; Error<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -531,61 +421,8 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           </div>
           <!-- Color -->
-          <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">CSS</div>
 
-                    <code> 
-                      /* ===== color vickywang.me ===== */
-                        .Warm {
-                            color: var(--Warm);
-                        }
-                        .SkylineBlue {
-                            color: var(--colorTealDk);
-                        }
-                        .SkylineBlueLt {
-                            color: var(--colorTealLt);
-                        }
-                        .SkylineBlueLter {
-                            color: var(--colorTealLtr);
-                        }
-                        .SkylineBlueLtest {
-                            color: var(--colorTealLtest);
-                        }
-                        .BgAlet {
-                            color: var(--alert);
-                        }
-                      /* ===== color vickywang.me ===== */
-                      /* ===== bg color vickywang.me ===== */
-                        .BgWarm {
-                            background-color: var(--Warm);
-                        }
-                        .BgSkylineBlue {
-                            background-color: var(--colorTealDk);
-                        }
-                        .BgSkylineBlueLt {
-                            background-color: var(--colorTealLt);
-                        }
-                        .BgSkylineBlueLter {
-                            background-color: var(--colorTealLtr);
-                        }
-                        .BgSkylineBlueLtest {
-                            background-color: var(--colorTealLtest);
-                        }
-                        .BgAlet {
-                            background-color: var(--alert);
-                            color: var(--Grey200);
-                        }
-                      /* ===== bg color vickywang.me ===== */
-                    </code>
-                  </pre>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
           <div class="blankHM"></div>
 
@@ -598,7 +435,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="wrapper">
 
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt"> Typography </strong> </h1>
@@ -610,7 +447,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Font Family<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -622,7 +459,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <!-- Arrow -->
           <div class="blankHXS"></div>
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <p class="specialTextS Grey700">Lato</p>
@@ -635,7 +472,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <div class="blankHS"></div>
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Font Weight<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -676,7 +513,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Font Sizes<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -736,7 +573,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Font - Others<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -779,7 +616,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="wrapper">
 
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt"> Wordmark </strong> </h1>
@@ -792,7 +629,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Logo with Text<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -817,7 +654,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Web Logo<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -847,7 +684,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       </section>
       <section id="content14">
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt"> Elevation </strong> </h1>
@@ -858,7 +695,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Shadow &#38; Depth<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -915,7 +752,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
     <section id="content2">
 
-      <div class="Grid Grid--full forFullResponsiveGrid u-textCenter wrapper">
+      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
         <div class="Grid-cell">
           <h1 class="Grid Grid--center"> <span>Spacing &#38; Grid</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
           </h1>
@@ -924,7 +761,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       <div class="blankHXS"></div>
       <section id="content21">
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt">Layout</strong> </h1>
@@ -936,7 +773,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Devices<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -982,7 +819,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Break Points<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -996,12 +833,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHXS"></div>
         <div class="wrapper">
 
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="element">
               <h3>Monitor</h3>
             </div>
           </div>
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell paddingNone">
               <div class="element">
                 <div class="Demo shadowBox">1880 px &#43;</div>
@@ -1015,7 +852,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
 
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="element">
               <h3>Laptop</h3>
             </div>
@@ -1032,7 +869,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="element">
               <h3>Tablet</h3>
             </div>
@@ -1054,7 +891,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="element">
               <h3>Mobile</h3>
             </div>
@@ -1072,29 +909,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
-            <div class="Grid-cell">
-              <div class="element">
-                <pre>
-                    <div class="codeTiltle">CSS</div>
-                    <code>
-                      @media all and (min-width: 1880px) {}
-                      @media all and (max-width: 1080px) {}
-                      @media all and (max-width: 680px) {}
-                      @media screen and (max-width: 480px) {}
 
-                    </code>
-                  </pre>
-              </div>
-            </div>
-          </div>
 
-        </div>
+
         <div class="blankHM"></div>
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Spacing &#38; Margin<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1153,7 +974,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Padding<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1217,31 +1038,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
-            <div class="Grid-cell">
-              <div class="element">
-                <pre>
-              <div class="codeTiltle">HTML</div>
-              <code>
-                &lt;div class="paddingXS"&gt;&lt;/div&gt;
-                &lt;div class="paddingS"&gt;&lt;/div&gt;
-                &lt;div class="paddingM"&gt;&lt;/div&gt;
-                &lt;div class="paddingL"&gt;&lt;/div&gt;
-                &lt;div class="paddingXL"&gt;&lt;/div&gt;
-                &lt;div class="paddingMax"&gt;&lt;/div&gt;
-              </code>
-            </pre>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         </div>
         <div class="blankHM"></div>
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Border Radius<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1298,8 +1101,9 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           </div>
         </div>
+
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -1325,7 +1129,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       </section>
       <section id="content22">
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt">Responsive Grid</strong> </h1>
@@ -1336,7 +1140,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
           <div class="blankHXS"></div>
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Basic Grid <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1483,7 +1287,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -1536,7 +1340,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="blankHM"></div>
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Left &#47; Center &#47; Right Content Alignment<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1568,7 +1372,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -1598,7 +1402,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <div class="blankHM"></div>
 
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Vertical Alignment <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1701,7 +1505,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -1726,7 +1530,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <div class="blankHM"></div>
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Nesting <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1766,7 +1570,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -1795,7 +1599,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <div class="blankHM"></div>
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Sidebar and Main Content <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1842,7 +1646,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -1868,7 +1672,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
           <div class="blankHM"></div>
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Fixed-width Container on the Right Side <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -1877,7 +1681,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="blankHXS"></div>
-          <div class="forFullResponsiveGrid">
+          <div class="Grid--gutters">
 
             <div class="rowToColumn">
               <div class="widthMax">
@@ -1893,7 +1697,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -1926,7 +1730,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
     </section>
 
     <section id="content3">
-      <div class="Grid Grid--full forFullResponsiveGrid u-textCenter wrapper">
+      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
         <div class="Grid-cell">
           <h1 class="Grid Grid--center"> <span>UI Components</span><img class="widthLogo" src="../icon/components.svg" alt="Iterate">
           </h1>
@@ -1936,7 +1740,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       <div class="blankHXS"></div>
       <section id="content31">
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt">Atoms</strong> </h1>
@@ -1948,7 +1752,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Buttons<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2012,7 +1816,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -2037,7 +1841,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Icons<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2514,7 +2318,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -2563,7 +2367,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Inputs<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2608,7 +2412,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Copy to Clipboard - Icon<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2709,7 +2513,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Copy to Clipboard - Textbox<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2733,7 +2537,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Copy to Clipboard - Paragraph<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2744,7 +2548,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
           <!-- Arrow -->
           <div class="blankHXS"></div>
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <div class="ClipboardBox clickTxt">
@@ -2766,7 +2570,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
               <div class="Grid-cell">
                 <div class="element">
                   <h2 class="tArrow">Copy to Clipboard - Code<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2778,7 +2582,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <!-- Arrow -->
           <div class="blankHXS"></div>
           <div class="wrapper">
-            <div class="Grid Grid--full forFullResponsiveGrid">
+            <div class="Grid Grid--full Grid--gutters">
               <div class="Grid-cell">
                 <div class="element">
                   <pre>
@@ -2798,7 +2602,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       <section id="content32">
 
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt">Molecules</strong> </h1>
@@ -2810,7 +2614,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Note without Background<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2822,7 +2626,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <!-- Arrow -->
         <div class="wrapper">
           <div class="blankHXS"></div>
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <p class="specialTextNote colorGrey u-textCenter">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -2833,13 +2637,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
                     <div class="codeTiltle">HTML</div>
                     <code>
-                      &lt;div class="Grid Grid--full forFullResponsiveGrid"&gt;
+                      &lt;div class="Grid Grid--full Grid--gutters"&gt;
                         &lt;div class="Grid-cell"&gt;
                           &lt;div class="element"&gt;
                             &lt;p class="specialTextNote colorGrey u-textCenter"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -2857,7 +2661,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHM"></div>
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Note with Background<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2870,7 +2674,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHXS"></div>
 
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <div class="element leftVerLine border-radius GreyBg100">
@@ -2893,13 +2697,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
                     <div class="codeTiltle">HTML</div>
                     <code>
-                      &lt;div class="Grid Grid--full forFullResponsiveGrid wrapper"&gt;
+                      &lt;div class="Grid Grid--full Grid--gutters wrapper"&gt;
                         &lt;div class="Grid-cell"&gt;
                           &lt;div class="element"&gt;
                             &lt;div class="element leftVerLine border-radius GreyBg100"&gt;
@@ -2929,7 +2733,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHM"></div>
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Card<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -2943,7 +2747,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHXS"></div>
         <div class="wrapper">
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="Grid Grid--gutters Grid--cols-2">
                 <div class="Grid-cell">
@@ -2987,7 +2791,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
 
@@ -2995,7 +2799,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                   <pre>
                     <div class="codeTiltle">HTML</div>
                     <code>
-                      &lt;div class="Grid Grid--full forFullResponsiveGrid"&gt;
+                      &lt;div class="Grid Grid--full Grid--gutters"&gt;
                         &lt;div class="Grid-cell"&gt;
                           &lt;div class="Grid Grid--gutters Grid--cols-2"&gt;
                             &lt;div class="Grid-cell"&gt;
@@ -3050,7 +2854,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Card &#43; Border<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3093,7 +2897,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
 
@@ -3140,7 +2944,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHS"></div>
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Card &#43; Gradient<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3197,7 +3001,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
 
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
 
@@ -3256,7 +3060,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Image &#43; Screen Sizes<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3267,7 +3071,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <div class="ShadowBox">
@@ -3283,14 +3087,14 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
                     <div class="codeTiltle">HTML</div>
                       <code>
                         &lt;div class="wrapper"&gt;
-                          &lt;div class="Grid Grid--full forFullResponsiveGrid"&gt;
+                          &lt;div class="Grid Grid--full Grid--gutters"&gt;
                             &lt;div class="Grid-cell"&gt;
                               &lt;div class="element"&gt;
                                 &lt;div class="ShadowBox"&gt;
@@ -3316,7 +3120,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Card &#43; image <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3363,7 +3167,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -3415,7 +3219,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Card &#43; Image &#43; Link <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3469,7 +3273,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -3526,7 +3330,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Audio Player<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3574,7 +3378,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Graph - Bar<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3586,7 +3390,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <!-- Arrow -->
         <div class="blankHXS"></div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
 
               <div class="barGraph  element">
@@ -3611,7 +3415,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHS"></div>
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Graph - Rate<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3625,7 +3429,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHXS"></div>
         <div class="wrapper">
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="RateGraph element">
                 <div class="widthXS">Lorem ipsum
@@ -3643,7 +3447,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
         <div class="wrapper">
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="RateGraph element">
                 <div class="widthXS GraphText"> <strong class="Grey800">Lorem ipsum</strong>
@@ -3663,7 +3467,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Graph - Rate<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -3676,7 +3480,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <div class="wrapper">
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
 
             <div class="Grid-cell">
               <div class="element">
@@ -3697,7 +3501,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       </section>
       <section id="content33">
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h1> <strong class="SkylineBlueLt">Organisms </strong> </h1>
@@ -3710,7 +3514,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Read More / Less Toggle<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></h2>
@@ -3721,7 +3525,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <!-- Arrow -->
         <div class="wrapper">
 
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
 
@@ -3768,13 +3572,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
                   <div class="codeTiltle">HTML</div>
                   <code>
-                    &lt;div class="Grid Grid--full forFullResponsiveGrid wrapper"&gt;
+                    &lt;div class="Grid Grid--full Grid--gutters wrapper"&gt;
                     &lt;div class="Grid-cell"&gt;
                       &lt;div class="element"&gt;
                         &lt;h3&gt;&lt;strong&gt;Title &lt;/strong&gt;&lt;/h3&gt;
@@ -3859,7 +3663,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -3924,7 +3728,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               <div class="accordion-content">
                 <div class="blankHXS"></div>
 
-                <div class="Grid Grid--full forFullResponsiveGrid">
+                <div class="Grid Grid--full Grid--gutters">
                   <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat.</h4>
@@ -3958,7 +3762,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHS"></div>
 
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -3973,7 +3777,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                         &lt;div class="accordion-content"&gt;
                           &lt;div class="blankHXS"&gt;&lt;/div&gt;
                   
-                          &lt;div class="Grid Grid--full forFullResponsiveGrid"&gt;
+                          &lt;div class="Grid Grid--full Grid--gutters"&gt;
                             &lt;h4&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                               laboris nisi ut aliquip ex ea commodo consequat.&lt;/h4&gt;
@@ -4062,7 +3866,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHS"></div>
 
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -4157,7 +3961,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <div class="blankHXS"></div>
         </div>
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -4224,7 +4028,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               <h2 class="element">Slideshow Title</h2>
             </div>
           </div>
-          <div class="wrapper TBcarousel Grid--center Grid Grid--full forFullResponsiveGrid u-textCenter" aria-label="TBcarousel" Tabindex="0" id="TBcarousel1">
+          <div class="wrapper TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" Tabindex="0" id="TBcarousel1">
             <div class="TBslides">
               <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
                 <img src="./Placeholder.svg" alt="">
@@ -4252,7 +4056,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHS"></div>
 
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -4265,7 +4069,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                         &lt;h2 class="element"&gt;Vertical layout with background color&lt;/h2&gt;
                       &lt;/div&gt;
                     &lt;/div&gt;
-                    &lt;div class="wrapper TBcarousel Grid--center Grid Grid--full forFullResponsiveGrid u-textCenter" aria-label="TBcarousel" Tabindex="0"
+                    &lt;div class="wrapper TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" Tabindex="0"
                       id="TBcarousel1"&gt;
                       &lt;div class="TBslides"&gt;
                         &lt;div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0"&gt;
@@ -4305,7 +4109,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid u-textCenter">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
                 <h2 class="tArrow">Vertical Layout Slideshows without Background<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
@@ -4323,7 +4127,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               <h2 class="element">Slideshow Title</h2>
             </div>
           </div>
-          <div class="wrapper TBcarousel Grid--center Grid Grid--full forFullResponsiveGrid u-textCenter" aria-label="TBcarousel" Tabindex="0" id="TBcarousel2">
+          <div class="wrapper TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" Tabindex="0" id="TBcarousel2">
             <div class="TBslides">
               <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
                 <img src="./PlaceholderDark.svg" alt="">
@@ -4351,7 +4155,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
         <div class="wrapper">
-          <div class="Grid Grid--full forFullResponsiveGrid">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <pre>
@@ -4364,7 +4168,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                         &lt;h2 class="element"&gt;Vertical layout without background color&lt;/h2&gt;
                       &lt;/div&gt;
                     &lt;/div&gt;
-                    &lt;div class="wrapper TBcarousel Grid--center Grid Grid--full forFullResponsiveGrid u-textCenter" aria-label="TBcarousel" Tabindex="0"
+                    &lt;div class="wrapper TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" Tabindex="0"
                       id="TBcarousel2"&gt;
                       &lt;div class="TBslides"&gt;
                         &lt;div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0"&gt;
@@ -4437,7 +4241,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
         <!-- Arrow -->
         <div class="blankHXS"></div>
-        <div class="Grid Grid--full forFullResponsiveGrid u-textCenter wrapper">
+        <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
           <div class="Grid-cell">
             <div class="element">
               <img src="./Placeholder.svg" alt="Background Color: White" class="modal-target" data-bgcolor="rgba(255, 255, 255, 0.96)">
@@ -4454,7 +4258,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <!-- Arrow -->
-        <div class="Grid Grid--full forFullResponsiveGrid u-textCenter wrapper">
+        <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
           <div class="Grid-cell">
             <div class="element">
               <p class="specialTextNote colorGrey u-textCenter">Please refer to the specified site for examples of the
@@ -4467,9 +4271,15 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
     </section>
     <section id="content4">
+      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
+        <div class="Grid-cell">
+          <h1 class="Grid Grid--center"> <span>Navigation</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
+          </h1>
+        </div>
+      </div>
       <section id="content41">
         <!--Arrow subtitle-->
-        <%- include('../shared/arrowSubtitle', {message: 'Main Header' }) %>
+        <%- include('../shared/arrowSubtitle', {message: 'MainHeader' }) %>
         <!--Arrow subtitle-->
         <div class="wrapper">
           <nav class="headerDEMO" id="">
@@ -4536,80 +4346,85 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </nav>
         </div>
+        <div class="blankHM"></div>
+
         <!--Arrow subtitle-->
-        <%- include('../shared/arrowSubtitle', {message: 'Main Header + back' }) %>
+        <%- include('../shared/arrowSubtitle', {message: 'BackHeader' }) %>
         <!--Arrow subtitle-->
         <!-- header -->
         <div class="wrapper">
-        <nav class="headerDEMO navbarN" id="">
+          <nav class="headerDEMO navbarN" id="">
 
 
-          <div class="backgroundColorNavDEMO">
+            <div class="backgroundColorNavDEMO">
 
-            <a href="/" class="widthFitContent centerVer logo pointer colorBlack Grid--center"><img class="moveLeftRight iconS" src="../../icon/arrow-back.svg" alt="Go back">
-              <h6>BACK</h6>
-            </a>
-            <div class="navbar">
-              <ul class="nav-menu">
-                <li class="dropdown nav-item active  marginZero"><a href="/" class="nav-link box">PROJECT</a>
+              <a href="/" class="widthFitContent centerVer logo pointer colorBlack Grid--center"><img class="moveLeftRight iconS" src="../../icon/arrow-back.svg" alt="Go back">
+                <h6>BACK</h6>
+              </a>
+              <div class="navbar">
+                <ul class="nav-menu">
+                  <li class="dropdown nav-item active  marginZero"><a href="/" class="nav-link box">PROJECT</a>
 
-                  <div class="dropdown-content">
-                    <a href="/glorify/">
-                      <div class="cardBorder borderRadiusS GLORIFY">
-                        <img src="../../ProjectImages/Cover_Glorify.png" alt="GLORIFY">
-                        <div class="element">
-                          <h5 class="colorBlack">GLORIFY | Daily worship</h5>
+                    <div class="dropdown-content">
+                      <a href="/glorify/">
+                        <div class="cardBorder borderRadiusS GLORIFY">
+                          <img src="../ProjectImages/Cover_Glorify.png" alt="GLORIFY">
+                          <div class="element">
+                            <h5 class="colorBlack">GLORIFY | Daily worship</h5>
+                          </div>
                         </div>
-                      </div>
-                    </a>
-                    <a href="/appointa/">
-                      <div class="cardBorder borderRadiusS APPOINTA">
-                        <img src="../../ProjectImages/Cover_APPOINTA.png" alt="APPOINTA">
-                        <div class="element">
-                          <h5 class="colorBlack">APPOINTA | Scheduling</h5>
+                      </a>
+                      <a href="/appointa/">
+                        <div class="cardBorder borderRadiusS APPOINTA">
+                          <img src="../ProjectImages/Cover_APPOINTA.png" alt="APPOINTA">
+                          <div class="element">
+                            <h5 class="colorBlack">APPOINTA | Scheduling</h5>
+                          </div>
                         </div>
-                      </div>
-                    </a>
-                    <a href="/seer/">
-                      <div class="cardBorder borderRadiusS SEER ">
-                        <img src="../../ProjectImages/Cover_SEER.png" alt="SEER">
-                        <div class="element">
-                          <h5 class="colorBlack">SEER | Business performance</h5>
+                      </a>
+                      <a href="/seer/">
+                        <div class="cardBorder borderRadiusS SEER ">
+                          <img src="../ProjectImages/Cover_SEER.png" alt="SEER">
+                          <div class="element">
+                            <h5 class="colorBlack">SEER | Business performance</h5>
+                          </div>
                         </div>
-                      </div>
-                    </a>
-                    <a href="/design_system/">
-                      <div class="cardBorder borderRadiusS ">
-                        <img src="../../ProjectImages/Cover_portfolioWeb.svg" alt="Design System">
-                        <div class="element">
-                          <h5 class="colorBlack">Design System | vickywang.me</h5>
+                      </a>
+                      <a href="/design_system/">
+                        <div class="cardBorder borderRadiusS ">
+                          <img src="../ProjectImages/vicky_website.png" alt="Design System">
+                          <div class="element">
+                            <h5 class="colorBlack">Design System | vickywang.me</h5>
+                          </div>
                         </div>
-                      </div>
-                    </a>
-                  </div>
-                </li>
+                      </a>
+                    </div>
+                  </li>
 
-                <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box">ARCHITECTURE</a>
-                </li>
-                <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
-                </li>
-                <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
-                </li>
+                  <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box">ARCHITECTURE</a>
+                  </li>
+                  <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
+                  </li>
+                  <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
+                  </li>
 
-                <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box">ABOUT</a></li>
-              </ul>
+                  <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box">ABOUT</a></li>
+                </ul>
+              </div>
+              <div class="hamburger">
+                <span class="bar APPOINTA"></span>
+                <span class="bar APPOINTA"></span>
+                <span class="bar APPOINTA"></span>
+              </div>
             </div>
-            <div class="hamburger">
-              <span class="bar APPOINTA"></span>
-              <span class="bar APPOINTA"></span>
-              <span class="bar APPOINTA"></span>
-            </div>
-          </div>
-        </nav></div>
+          </nav>
+        </div>
         <!-- header -->
 
 
       </section>
+      <div class="blankHM"></div>
+
       <section id="content42">
         <!--Arrow subtitle-->
         <%- include('../shared/arrowSubtitle', {message: 'Footer' }) %>
@@ -4720,7 +4535,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                 </div>
               </div>
               <div class="blankHS"></div>
-              <div class="Grid Grid--full forFullResponsiveGrid">
+              <div class="Grid Grid--full Grid--gutters">
                 <div class="Grid-cell">
                   <div class="footerBorder">
                     <div class="element">
@@ -4741,6 +4556,9 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       </section>
 
       <section id="content43">
+        <!--Arrow subtitle-->
+        <%- include('../shared/arrowSubtitle', {message: 'SubNavigation' }) %>
+        <!--Arrow subtitle-->
 
 
       </section>
