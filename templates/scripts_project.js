@@ -434,7 +434,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
 
 
-// Initialize each 'filed' component
+
+  // Initialize each 'filed' component
 var fileds = document.querySelectorAll('.filed');
 fileds.forEach(function (filed) {
   initializeFiled(filed);
@@ -450,26 +451,28 @@ document.querySelectorAll('.select-EJS, .select-HTML, .select-CSS').forEach(func
 function initializeFiled(filed) {
   var ejsRadio = filed.querySelector('.select-EJS');
   var ejsBlock = filed.querySelector('.ejs-block');
+  var htmlRadio = filed.querySelector('.select-HTML');
   var htmlBlock = filed.querySelector('.html-block');
   var cssBlock = filed.querySelector('.css-block');
-
   var copyButton = filed.querySelector('.copy-btn');
 
-  // Set initial visibility and copy button functionality
-  if (ejsRadio.checked) {
+  // Check the initially selected radio button
+  var checkedRadio = filed.querySelector('.select-EJS:checked, .select-HTML:checked, .select-CSS:checked');
+
+  if (checkedRadio === ejsRadio) {
     ejsBlock.style.display = 'block';
     htmlBlock.style.display = 'none';
-    cssBlock.style.display = 'none'; // Add this line
+    cssBlock.style.display = 'none';
     setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
-  } else if (htmlRadio.checked) {
+  } else if (checkedRadio === htmlRadio) {
     ejsBlock.style.display = 'none';
     htmlBlock.style.display = 'block';
-    cssBlock.style.display = 'none'; // Add this line
+    cssBlock.style.display = 'none';
     setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
   } else {
     ejsBlock.style.display = 'none';
     htmlBlock.style.display = 'none';
-    cssBlock.style.display = 'block'; // Add this line
+    cssBlock.style.display = 'block';
     setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
   }
 }
@@ -479,7 +482,6 @@ function showCode(radioBtn, type) {
   var ejsBlock = container.querySelector('.ejs-block');
   var htmlBlock = container.querySelector('.html-block');
   var cssBlock = container.querySelector('.css-block');
-
   var copyButton = container.querySelector('.copy-btn');
 
   if (type === 'ejs') {
@@ -523,6 +525,7 @@ function copyToClipboard(codeBlock, btnElement) {
     btnElement.textContent = 'Copy Code';
   }, 2000);
 }
+
   //copy code to clipboard + tabs
 
 
