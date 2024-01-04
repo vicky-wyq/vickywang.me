@@ -2203,7 +2203,7 @@ input {
 }
 
 button.passwordArr {
-    margin-top: 36px;
+    margin-top: 38px;
     z-index: 98;
     padding: 0;
     color: var(--Grey900);

@@ -38,6 +38,7 @@
 
   <div class="wrapper">
 
+
     <div class="Grid Grid--gutters Grid--cols-2">
       <div class="Grid-cell">
         <div class="element">
@@ -51,7 +52,7 @@
                       <label for="password">
                         <h5>Password</h5>
                       </label>
-                      <input class="PWinputLanding" type="password" id="bookingApp" placeholder="Enter password">
+                      <input class="PWinputLanding" type="password" id="onboardingSubscription" placeholder="Enter password">
 
                       <div class="pwIncorrectHeight">
                         <span id="pwIncorrect">Password is incorrect </span>
@@ -201,7 +202,7 @@
                       <label for="password">
                         <h5>Password</h5>
                       </label>
-                      <input class="PWinputLanding" type="password" id="productPage" placeholder="Enter password">
+                      <input class="PWinputLanding" type="password" id="costCalculator" placeholder="Enter password">
 
                       <div class="pwIncorrectHeight">
                         <span id="pwIncorrect">Password is incorrect </span>
@@ -346,7 +347,15 @@
 
   <%- include('shared/backTop') %>
   <%- include('shared/footer') %>
-
+  <!-- The Modal -->
+  <div id="modal" class="modal">
+    <span id="modal-close" class="modal-close">
+      <img class="iconXforModal" src="../icon/delete.svg" alt="&times;">
+    </span>
+    <img id="modal-content" class="modal-content">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+  <!-- The Modal -->
 </body>
 
 </html>

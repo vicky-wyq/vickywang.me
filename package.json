@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server html",
     "build-pug": "node pug/build.js",
-    "build-ejs": "node build.js"
+    "build-ejs": "node build.js",
+    "generate-password": "node generate_password.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "crypto-js": "^4.2.0",
     "ejs": "^3.1.9",
     "ejs-lint": "^2.0.0",
     "fs-extra": "^11.2.0",
