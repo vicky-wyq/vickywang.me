@@ -246,11 +246,13 @@ function initializeToggles() {
 }
 
 const k = {
-  adminPanel: 'U2FsdGVkX1+7hB29vRLgpugTZAk78ZWVKqw6LeK75yAC3XE//53o9OCRIuzS9qScJW4nJntUt4QcFu1Rnl6D+w==',
-  productPage: 'U2FsdGVkX181y7L4uo6gdjmpWCHIqk0Zi9DZ+qdBTrur3VhFOQ7zId49a6i0pao05Hj9dXla3I+rURQ55SJcEQ==',
-  bookingApp: 'U2FsdGVkX1+qBYYpwqY4fxufbaVwlCa29R7uRhGBWGzr5X6zmNO/9WfCnL7sVkCf',
-  rxZero: 'U2FsdGVkX19+/k7v6VWGge0wYIz8BMrRkKFKrVfjMRY+WunqYOt+2R/s1Hi+ygc6',
-  consumerBooking: '',
+  onboardingSubscription: 'U2FsdGVkX1/flTfDtan9WXoDnkCK30v0Y5pr4g5B680u6cXGNODszTEE+d0dCpzHn1coOmfqkGnppGteFyeRmn8ogiL8n2JOH2IyzJ2ygMU=',
+  consumerBooking: 'U2FsdGVkX1+VI5o7dvnsAbt6FozAHMjH4sdn9h0J39WmKfWQNAEz2YSscVzqJMF3P9e0jZAOqfvspeHkrDkmYA==',
+  reportDashboard: 'U2FsdGVkX18Z2dWz5GK/EO+7PK/3YIzwGzsIprovMAIRhty//ju8XJucom0hVJc9IxVLutYG370p04QhtuF+IO2U7eeof9Z/znjSkQQ4Fog=',
+  b2bPayment: 'U2FsdGVkX19Uce5voQ0Q4b/a5B0LT6weF9bp/oUKbcGnyA8rXm7v93bU6txTPFJ3M1xXp5IAB7AdCT2sGfkRrQ==',
+  adminPanel: 'U2FsdGVkX19K1sDLgl3F24dUiedAbfbc+45iz09vBJtd1gB97S1G9o0KzVVroLCBb2nZ1scw21KiZFSO4OXzPg==',
+  costCalculator: 'U2FsdGVkX1/2lRGAhqW904kCtrCxk6BDNW/6OEzFa7lpDi0+mAcRz1TmS6BOm/EwSh5A8LMTshIgcaaeHJzuJjHeeq/180eXb0eDZitlj98=',
+  rxZero: 'U2FsdGVkX1/IJBtSaeMqta+AxGqEUk0aAWJWTn5PNgNcBe/c0pmDLVT544lK0G2wfOzexAFV6g2C6E+d0hx3Fw==',
 }
 
 function initializePassword() {
@@ -285,7 +287,7 @@ function initializePassword() {
       } catch (e) {
         console.log(e);
       }
-      if (redirect && redirect.includes("lsh")) {
+      if (redirect && redirect.includes("BYP_LH")) {
         window.location.href = redirect;
         msg.style.display = "none";
       } else {

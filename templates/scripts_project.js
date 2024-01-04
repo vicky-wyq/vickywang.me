@@ -7,32 +7,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
  
 
+ // Helper function to copy text to the clipboard
+ function copyToClipboard(textElement, feedbackElement) {
+  textElement.select();
+  document.execCommand("copy");
+  feedbackElement.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    feedbackElement.classList.remove("active");
+  }, 2500);
+}
+// Attach event listener to all .copy-text button elements
+let copyTextContainers = document.querySelectorAll(".copy-text");
 
-  // Helper function to copy text to the clipboard
-  function copyToClipboard(textElement, feedbackElement) {
-    textElement.select();
-    document.execCommand("copy");
-    feedbackElement.classList.add("active");
-    window.getSelection().removeAllRanges();
-    setTimeout(function () {
-      feedbackElement.classList.remove("active");
-    }, 2500);
-  }
-  // Attach event listener to all .copy-text button elements
-  let copyTextContainers = document.querySelectorAll(".copy-text");
+copyTextContainers.forEach(function (container) {
+  let button = container.querySelector("button");
+  let input = container.querySelector("input.text");
 
-  copyTextContainers.forEach(function (container) {
-    let button = container.querySelector("button");
-    let input = container.querySelector("input.text");
-
-    button.addEventListener("click", function () {
-      copyToClipboard(input, container);
-    });
+  button.addEventListener("click", function () {
+    copyToClipboard(input, container);
   });
+});
 
-  // ====== textbox copy to clipboard ======
-
-
+// ====== textbox copy to clipboard ======
 
 
 
@@ -153,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //copy Clipboard
 
 
-
+ 
 
 
   const gifImages = document.querySelectorAll('.gif-toggle');
@@ -431,106 +428,112 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+
+
+
+
   
 
+  (function() {
+    // Initialize each 'filed' component
+    var fileds = document.querySelectorAll('.filed');
+    fileds.forEach(function(filed) {
+        initializeFiled(filed);
+    });
 
+    // Event listeners for radio buttons
+    document.querySelectorAll('.select-EJS, .select-HTML, .select-CSS').forEach(function(radioBtn) {
+        radioBtn.addEventListener('click', function() {
+            showCode(this, this.classList.contains('select-EJS') ? 'ejs' : (this.classList.contains('select-HTML') ? 'html' : 'css'));
+        });
+    });
 
-  // Initialize each 'filed' component
-var fileds = document.querySelectorAll('.filed');
-fileds.forEach(function (filed) {
-  initializeFiled(filed);
-});
+    function initializeFiled(filed) {
+        var ejsRadio = filed.querySelector('.select-EJS');
+        var ejsBlock = filed.querySelector('.ejs-block');
+        var htmlRadio = filed.querySelector('.select-HTML');
+        var htmlBlock = filed.querySelector('.html-block');
+        var cssBlock = filed.querySelector('.css-block');
+        var copyButton = filed.querySelector('.copy-btn');
 
-// Event listeners for radio buttons
-document.querySelectorAll('.select-EJS, .select-HTML, .select-CSS').forEach(function (radioBtn) {
-  radioBtn.addEventListener('click', function () {
-    showCode(this, this.classList.contains('select-EJS') ? 'ejs' : (this.classList.contains('select-HTML') ? 'html' : 'css'));
-  });
-});
+        // Check the initially selected radio button
+        var checkedRadio = filed.querySelector('.select-EJS:checked, .select-HTML:checked, .select-CSS:checked');
 
-function initializeFiled(filed) {
-  var ejsRadio = filed.querySelector('.select-EJS');
-  var ejsBlock = filed.querySelector('.ejs-block');
-  var htmlRadio = filed.querySelector('.select-HTML');
-  var htmlBlock = filed.querySelector('.html-block');
-  var cssBlock = filed.querySelector('.css-block');
-  var copyButton = filed.querySelector('.copy-btn');
+        if (checkedRadio === ejsRadio) {
+            ejsBlock.style.display = 'block';
+            htmlBlock.style.display = 'none';
+            cssBlock.style.display = 'none';
+            setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
+        } else if (checkedRadio === htmlRadio) {
+            ejsBlock.style.display = 'none';
+            htmlBlock.style.display = 'block';
+            cssBlock.style.display = 'none';
+            setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+        } else {
+            ejsBlock.style.display = 'none';
+            htmlBlock.style.display = 'none';
+            cssBlock.style.display = 'block';
+            setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
+        }
+    }
 
-  // Check the initially selected radio button
-  var checkedRadio = filed.querySelector('.select-EJS:checked, .select-HTML:checked, .select-CSS:checked');
+    function showCode(radioBtn, type) {
+        var container = radioBtn.closest('.filed');
+        var ejsBlock = container.querySelector('.ejs-block');
+        var htmlBlock = container.querySelector('.html-block');
+        var cssBlock = container.querySelector('.css-block');
+        var copyButton = container.querySelector('.copy-btn');
 
-  if (checkedRadio === ejsRadio) {
-    ejsBlock.style.display = 'block';
-    htmlBlock.style.display = 'none';
-    cssBlock.style.display = 'none';
-    setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
-  } else if (checkedRadio === htmlRadio) {
-    ejsBlock.style.display = 'none';
-    htmlBlock.style.display = 'block';
-    cssBlock.style.display = 'none';
-    setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
-  } else {
-    ejsBlock.style.display = 'none';
-    htmlBlock.style.display = 'none';
-    cssBlock.style.display = 'block';
-    setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
-  }
-}
+        if (type === 'ejs') {
+            ejsBlock.style.display = 'block';
+            htmlBlock.style.display = 'none';
+            cssBlock.style.display = 'none';
+            setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
+        } else if (type === 'html') {
+            ejsBlock.style.display = 'none';
+            htmlBlock.style.display = 'block';
+            cssBlock.style.display = 'none';
+            setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+        } else {
+            ejsBlock.style.display = 'none';
+            htmlBlock.style.display = 'none';
+            cssBlock.style.display = 'block';
+            setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
+        }
+    }
 
-function showCode(radioBtn, type) {
-  var container = radioBtn.closest('.filed');
-  var ejsBlock = container.querySelector('.ejs-block');
-  var htmlBlock = container.querySelector('.html-block');
-  var cssBlock = container.querySelector('.css-block');
-  var copyButton = container.querySelector('.copy-btn');
+    function setupCopyButton(button, codeBlock) {
+        button.onclick = function() {
+            copyToClipboard(codeBlock, button);
+        };
+    }
 
-  if (type === 'ejs') {
-    ejsBlock.style.display = 'block';
-    htmlBlock.style.display = 'none';
-    cssBlock.style.display = 'none';
-    setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
-  } else if (type === 'html') {
-    ejsBlock.style.display = 'none';
-    htmlBlock.style.display = 'block';
-    cssBlock.style.display = 'none';
-    setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
-  } else {
-    ejsBlock.style.display = 'none';
-    htmlBlock.style.display = 'none';
-    cssBlock.style.display = 'block';
-    setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
-  }
-}
+    function copyToClipboard(codeBlock, btnElement) {
+        var copyText = codeBlock.innerText;
+        var textarea = document.createElement("textarea");
+        textarea.textContent = copyText;
+        document.body.appendChild(textarea);
 
-function setupCopyButton(button, codeBlock) {
-  button.onclick = function () {
-    copyToClipboard(codeBlock, button);
-  };
-}
+        textarea.select();
+        document.execCommand("copy");
 
-function copyToClipboard(codeBlock, btnElement) {
-  var copyText = codeBlock.innerText;
-  var textarea = document.createElement("textarea");
-  textarea.textContent = copyText;
-  document.body.appendChild(textarea);
+        document.body.removeChild(textarea);
 
-  textarea.select();
-  document.execCommand("copy");
+        btnElement.textContent = 'Copied!';
 
-  document.body.removeChild(textarea);
-
-  btnElement.textContent = 'Copied!';
-
-  setTimeout(function () {
-    btnElement.textContent = 'Copy Code';
-  }, 2000);
-}
+        setTimeout(function() {
+            btnElement.textContent = 'Copy Code';
+        }, 2000);
+    }
+})();
 
   //copy code to clipboard + tabs
 
 
 
-});
 
+
+
+});
 
 
