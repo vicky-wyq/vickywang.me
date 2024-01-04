@@ -306,10 +306,76 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
           <%- include('../shared/copyCode', 
-          {Name:'Item1', idTab1:'ONE1',idTab2:'ONE2',idTab3:'ONE3', tab1:'',tab2:'',tab3:'checked',
-          EJS: `ejs`,
-          HTML: `html`,
-          CSS:`css
+          {Name:'Item1', idTab1:'T11',idTab2:'T12',idTab3:'T13', tab1:'',tab2:'',tab3:'checked',
+          EJS: ``,
+          HTML: ``,
+          CSS:` 
+                      /* ===== color grey ===== */
+                        .Grey900 {
+                            color: var(--Grey900);
+                        }
+                        .Grey800 {
+                            color: var(--Grey800);
+                        }
+                        .Grey700 {
+                            color: var(--Grey700);
+                        }
+                        .Grey600 {
+                            color: var(--Grey600);
+                        }
+                        .Grey500 {
+                            color: var(--Grey500);
+                        }
+                        .Grey400 {
+                            color: var(--Grey400);
+                        }
+                        .Grey300 {
+                            color: var(--Grey300);
+                        }
+                        .Grey200 {
+                            color: var(--Grey200);
+                        }
+                        .Grey100 {
+                            color: var(--Grey100);
+                        }
+                      /* ===== color grey ===== */
+                      /* ===== bg color grey ===== */
+                        .GreyBg900 {
+                            background: var(--Grey900);
+                        }
+                        .GreyBg800 {
+                            background: var(--Grey800);
+                        }
+                        .GreyBg700 {
+                            background: var(--Grey700);
+                        }
+                        .GreyBg600 {
+                            background: var(--Grey600);
+                        }
+                        .GreyBg500 {
+                            background: var(--Grey500);
+                        }
+                        .GreyBg400 {
+                            background: var(--Grey400);
+                        }
+                        .GreyBg300 {
+                            background: var(--Grey300);
+                        }
+                        .GreyBg200 {
+                            background: var(--Grey200);
+                        }
+                        .GreyBg100 {
+                            background: var(--Grey100);
+                        }
+                        .WhiteBg {
+                            background-color: var(--white);
+                        
+                        }
+                        .WhiteBgTrans {
+                            background-color: var(--White-transparent);
+                        }
+                      /* ===== bg color grey ===== */
+                    
             `
             }) %>
 
@@ -422,6 +488,57 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
           <!-- Color -->
 
+          <%- include('../shared/copyCode', 
+          {Name:'Item2', idTab1:'T21',idTab2:'T22',idTab3:'T23', tab1:'',tab2:'',tab3:'checked',
+          EJS: ``,
+          HTML: ``,
+          CSS:` 
+ 
+            /* ===== color vickywang.me ===== */
+              .Warm {
+                  color: var(--Warm);
+              }
+              .SkylineBlue {
+                  color: var(--colorTealDk);
+              }
+              .SkylineBlueLt {
+                  color: var(--colorTealLt);
+              }
+              .SkylineBlueLter {
+                  color: var(--colorTealLtr);
+              }
+              .SkylineBlueLtest {
+                  color: var(--colorTealLtest);
+              }
+              .BgAlet {
+                  color: var(--alert);
+              }
+            /* ===== color vickywang.me ===== */
+            /* ===== bg color vickywang.me ===== */
+              .BgWarm {
+                  background-color: var(--Warm);
+              }
+              .BgSkylineBlue {
+                  background-color: var(--colorTealDk);
+              }
+              .BgSkylineBlueLt {
+                  background-color: var(--colorTealLt);
+              }
+              .BgSkylineBlueLter {
+                  background-color: var(--colorTealLtr);
+              }
+              .BgSkylineBlueLtest {
+                  background-color: var(--colorTealLtest);
+              }
+              .BgAlet {
+                  background-color: var(--alert);
+                  color: var(--Grey200);
+              }
+             /* ===== bg color vickywang.me ===== */
+                    
+                    
+            `
+            }) %>
 
 
           <div class="blankHM"></div>
@@ -910,7 +1027,17 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
 
-
+        <%- include('../shared/copyCode', 
+        {Name:'Item3', idTab1:'T31',idTab2:'T32',idTab3:'T33', tab1:'',tab2:'',tab3:'checked',
+        EJS: ``,
+        HTML: ``,
+        CSS:` 
+          @media all and (min-width: 1880px) {}
+          @media all and (max-width: 1080px) {}
+          @media all and (max-width: 680px) {}
+          @media screen and (max-width: 480px) {}
+          `
+          }) %>
 
         <div class="blankHM"></div>
         <!-- Arrow -->
@@ -968,7 +1095,42 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-
+        <%- include('../shared/copyCode', 
+        {Name:'Item4', idTab1:'T41',idTab2:'T42',idTab3:'T43', tab1:'',tab2:'',tab3:'checked',
+        EJS: ``,
+        HTML: `
+          <div class="noMargin"></div>
+          <div class="marginXS"></div>
+          <div class="marginS"></div>
+          <div class="marginM"></div>
+          <div class="marginL"></div>
+          <div class="marginXL"></div>
+          <div class="marginMax"></div>
+        `,
+        CSS:` 
+          .noMargin {
+              margin: 0 !important;
+          }
+          .marginXS {
+              margin: 0.5em;
+          }
+          .marginS {
+              margin: 1em;
+          }
+          .marginM {
+              margin: 1.5em;
+          }
+          .marginL {
+              margin: 2em;
+          }
+          .marginXL {
+              margin: 2.5em;
+          }
+          .marginMax {
+              margin: 3em;
+          }
+          `
+          }) %>
         <div class="blankHM"></div>
 
 
@@ -1039,8 +1201,45 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
 
+        <%- include('../shared/copyCode', 
+        {Name:'Item5', idTab1:'T51',idTab2:'T52',idTab3:'T53', tab1:'',tab2:'',tab3:'checked',
+        EJS: ``,
+        HTML: `
+          <div class="paddingXS"></div>
+          <div class="paddingS"></div>
+          <div class="paddingM"></div>
+          <div class="paddingL"></div>
+          <div class="paddingXL"></div>
+          <div class="paddingMax"></div>
+        `,
+        CSS:` 
+          .paddingXS {
+            padding: var(--paddingXS);
+            width: fit-content;
+          }
+          .paddingS {
+              padding: var(--paddingS);
+              width: fit-content;
+          }
+          .paddingM {
+              padding: var(--paddingM);
+              width: fit-content;
+          }
 
-        </div>
+          .paddingL {
+              padding: var(--paddingL);
+              width: fit-content;
+          }
+          .paddingXL {
+              padding: var(--paddingXL);
+              width: fit-content;
+          }
+          .paddingMax {
+              padding: var(--paddingMax);
+              width: fit-content;
+          }
+          `
+          }) %>
         <div class="blankHM"></div>
         <!-- Arrow -->
         <div class="wrapper">
@@ -1101,26 +1300,52 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
           </div>
         </div>
+        <%- include('../shared/copyCode', 
+        {Name:'Item6', idTab1:'T61',idTab2:'T62',idTab3:'T63', tab1:'',tab2:'',tab3:'checked',
+        EJS: ``,
+        HTML: `
+          <div class="borderRadiusXS"></div>
+          <div class="borderRadiusS"></div>
+          <div class="borderRadiusM"></div>
+          <div class="borderRadiusL"></div>
+          <div class="borderRadiusXL"></div>
+          <div class="borderRadiusMax"></div>
+        `,
+        CSS:` 
+          .borderRadiusXS {
+              border-radius: var(--border-radiusXS);
+              -webkit-border-radius: var(--border-radiusXS);
+              -moz-border-radius: var(--border-radiusXS);
+          }
+          .borderRadiusS {
+              border-radius: var(--border-radiusS);
+              -webkit-border-radius: var(--border-radiusS);
+              -moz-border-radius: var(--border-radiusS);
+          }
+          .borderRadiusM {
+              border-radius: var(--border-radiusM);
+              -webkit-border-radius: var(--border-radiusM);
+              -moz-border-radius: var(--border-radiusM);
+          }
+          .borderRadiusL {
+              border-radius: var(--border-radiusL);
+              -webkit-border-radius: var(--border-radiusL);
+              -moz-border-radius: var(--border-radiusL);
+          }
+          .borderRadiusXL {
+              border-radius: var(--border-radiusXL);
+              -webkit-border-radius: var(--border-radiusXL);
+              -moz-border-radius: var(--border-radiusXL);
+          }
 
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <pre>
-                  <div class="codeTiltle">HTML</div>
-                  <code>
-                    &lt;div class="borderRadiusXS"&gt;&lt;/div&gt;
-                    &lt;div class="borderRadiusS"&gt;&lt;/div&gt;
-                    &lt;div class="borderRadiusM"&gt;&lt;/div&gt;
-                    &lt;div class="borderRadiusL"&gt;&lt;/div&gt;
-                    &lt;div class="borderRadiusXL"&gt;&lt;/div&gt;
-                    &lt;div class="borderRadiusMax"&gt;&lt;/div&gt;
-                  </code>
-                </pre>
-              </div>
-            </div>
-          </div>
-        </div>
+          .borderRadiusMax {
+              border-radius: var(--border-radiusMax);
+              -webkit-border-radius: var(--border-radiusMax);
+              -moz-border-radius: var(--border-radiusMax);
+          }
+          `
+          }) %>
+ 
 
 
 
@@ -1286,59 +1511,55 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">HTML</div>
-                    <code>
-                          &lt;div class="Grid Grid--gutters Grid--full u-textCenter"&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of1"&gt;&lt;/div&gt;&lt;/div&gt;
-                          &lt;/div&gt;
-                          &lt;div class="Grid Grid--gutters Grid--cols-2 u-textCenter"&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
-                          &lt;/div&gt;
-                          &lt;div class="Grid Grid--gutters Grid--cols-3 u-textCenter"&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
-                          &lt;/div&gt;
-                          &lt;div class="Grid Grid--gutters Grid--cols-4 u-textCenter"&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
-                          &lt;/div&gt;
-                          &lt;div class="Grid Grid--gutters Grid--cols-6 u-textCenter"&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
-                          &lt;/div&gt;
-                          &lt;div class="Grid Grid--gutters Grid--cols-8 u-textCenter"&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of8"&gt;&lt;/div&gt;&lt;/div&gt;
-                          &lt;/div&gt;  
-                    </code>
-                  </pre>
-                </div>
-              </div>
+
+          <%- include('../shared/copyCode', 
+          {Name:'Item7', idTab1:'T71',idTab2:'T72',idTab3:'T73', tab1:'',tab2:'checked',tab3:'',
+          EJS: ``,
+          HTML: `
+            <div class="Grid Grid--gutters Grid--full u-textCenter">
+              <div class="Grid-cell"><div class="Demo content-1of1"></div></div>
             </div>
-          </div>
+            <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
+              <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
+            </div>
+            <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
+              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
+            </div>
+            <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
+              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
+            </div>
+            <div class="Grid Grid--gutters Grid--cols-6 u-textCenter">
+              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
+            </div>
+            <div class="Grid Grid--gutters Grid--cols-8 u-textCenter">
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
+            </div>  
+          `,
+          CSS:` 
+            `
+            }) %>
           <div class="blankHM"></div>
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
@@ -1371,34 +1592,27 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">HTML</div>
 
-                    <code>
-                      &lt;div class="Grid Grid--gutters Grid--1of6"&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class="Grid Grid--gutters Grid--1of4"&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class="Grid Grid--gutters Grid--1of3"&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
-                    &lt;/div&gt;
-                    
-                    </code>
-                  </pre>
-                </div>
-              </div>
+          <%- include('../shared/copyCode', 
+          {Name:'Item8', idTab1:'T81',idTab2:'T82',idTab3:'T83', tab1:'',tab2:'checked',tab3:'',
+          EJS: ``,
+          HTML: `
+            <div class="Grid Grid--gutters Grid--1of6">
+              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
+              <div class="Grid-cell"><div class="Demo">auto</div></div>
             </div>
-          </div>
-
+            <div class="Grid Grid--gutters Grid--1of4">
+              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
+              <div class="Grid-cell"><div class="Demo">auto</div></div>
+            </div>
+            <div class="Grid Grid--gutters Grid--1of3">
+              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
+              <div class="Grid-cell"><div class="Demo">auto</div></div>
+            </div>
+          `,
+          CSS:` 
+            `
+            }) %>
           <div class="blankHM"></div>
 
 
@@ -1504,30 +1718,25 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">HTML</div>
-                    <code>
-                      &lt;div class="Grid Grid--gutters Grid--1of2"&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;/div&gt;
-                      
-                      &lt;div class="Grid Grid--gutters Grid--1of2 Grid--center"&gt;
-                        &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;/div&gt;
-                      
-                      &lt;div class="Grid Grid--gutters Grid--1of2 Grid--right"&gt;
-                        &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of2"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;/div&gt;
-                    </code>
-                  </pre>
-                </div>
-              </div>
+          <%- include('../shared/copyCode', 
+          {Name:'Item9', idTab1:'T91',idTab2:'T92',idTab3:'T93', tab1:'',tab2:'checked',tab3:'',
+          EJS: ``,
+          HTML: `
+            <div class="Grid Grid--gutters Grid--1of2">
+            <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
             </div>
-          </div>
+            
+            <div class="Grid Grid--gutters Grid--1of2 Grid--center">
+              <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
+            </div>
+            
+            <div class="Grid Grid--gutters Grid--1of2 Grid--right">
+              <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
+            </div>
+          `,
+          CSS:` 
+            `
+            }) %>
 
           <div class="blankHM"></div>
           <div class="Grid Grid--full Grid--gutters">
@@ -1569,33 +1778,29 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">HTML</div>
-                    <code> 
-                      &lt;div class="Grid Grid--gutters Grid--1of3 Grid--nested"&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
-                        &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;
-                          &lt;div class="Grid Grid--gutters Grid--1of3 Grid--nested"&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
-                            &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;
-                              &lt;div class="Grid Grid--gutters Grid--1of3 Grid--nested"&gt;
-                                &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
-                                &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
-                              &lt;/div&gt;
-                            &lt;/div&gt;&lt;/div&gt;
-                          &lt;/div&gt;
-                        &lt;/div&gt;&lt;/div&gt;
-                      &lt;/div&gt;
-                    </code>
-                </pre>
+
+          <%- include('../shared/copyCode', 
+          {Name:'Item10', idTab1:'T101',idTab2:'T102',idTab3:'T103', tab1:'',tab2:'checked',tab3:'',
+          EJS: ``,
+          HTML: `
+            <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
+            <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
+              <div class="Grid-cell"><div class="Demo">
+                <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
+                  <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
+                  <div class="Grid-cell"><div class="Demo">
+                    <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
+                      <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
+                      <div class="Grid-cell"><div class="Demo">auto</div></div>
+                    </div>
+                  </div></div>
                 </div>
-              </div>
+              </div></div>
             </div>
-          </div>
+          `,
+          CSS:` 
+            `
+          }) %>
 
           <div class="blankHM"></div>
 
@@ -1645,31 +1850,27 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">HTML</div>
-                    <code> 
-                    &lt;div class="Grid Grid--gutters Grid--1of6"&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of6"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class="Grid Grid--gutters Grid--1of4"&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of4"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class="Grid Grid--gutters Grid--1of3"&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo content-1of3"&gt;&lt;/div&gt;&lt;/div&gt;
-                      &lt;div class="Grid-cell"&gt;&lt;div class="Demo"&gt;auto&lt;/div&gt;&lt;/div&gt;
-                    &lt;/div&gt;
-                    </code>
-                  </pre>
-                </div>
-              </div>
+          <%- include('../shared/copyCode', 
+          {Name:'Item11', idTab1:'T111',idTab2:'T112',idTab3:'T113', tab1:'',tab2:'checked',tab3:'',
+          EJS: ``,
+          HTML: `
+            <div class="Grid Grid--gutters Grid--1of6">
+              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
+              <div class="Grid-cell"><div class="Demo">auto</div></div>
             </div>
-          </div>
+            <div class="Grid Grid--gutters Grid--1of4">
+              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
+              <div class="Grid-cell"><div class="Demo">auto</div></div>
+            </div>
+            <div class="Grid Grid--gutters Grid--1of3">
+              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
+              <div class="Grid-cell"><div class="Demo">auto</div></div>
+            </div>
+          `,
+          CSS:` 
+            `
+          }) %>
+
           <div class="blankHM"></div>
 
           <div class="Grid Grid--full Grid--gutters">
@@ -1696,31 +1897,27 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">HTML</div>
-                    <code>
-                      &lt;div class="rowToColumn"&gt;
-                        &lt;div class="widthMax"&gt;
-                          &lt;div class="Demo "&gt;
-                            &lt;div class="elementInnerDemo max-width"&gt;&lt;/div&gt;
-                          &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div class="paddingleft"&gt;
-                          &lt;div class="Demo widthFitContent"&gt;
-                            &lt;div class="elementInnerDemo fix-width"&gt;&lt;/div&gt;
-                          &lt;/div&gt;
-                        &lt;/div&gt;
-                      &lt;/div&gt;
-                      </code>
-                  </pre>
+          <%- include('../shared/copyCode', 
+          {Name:'Item12', idTab1:'T121',idTab2:'T122',idTab3:'T123', tab1:'',tab2:'checked',tab3:'',
+          EJS: ``,
+          HTML: `
+            <div class="rowToColumn">
+              <div class="widthMax">
+                <div class="Demo ">
+                  <div class="elementInnerDemo max-width"></div>
+                </div>
+              </div>
+              <div class="paddingleft">
+                <div class="Demo widthFitContent">
+                  <div class="elementInnerDemo fix-width"></div>
                 </div>
               </div>
             </div>
-          </div>
+          `,
+          CSS:` 
+            `
+          }) %>
+
           <div class="blankHM"></div>
         </div>
 
@@ -1813,29 +2010,24 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
 
+          <%- include('../shared/copyCode', 
+          {Name:'Item13', idTab1:'T131',idTab2:'T132',idTab3:'T133', tab1:'',tab2:'checked',tab3:'',
+          EJS: ``,
+          HTML: `
+            <!-- Large button -->
+            <a> <button class="buttonLanding">Button &nbsp; </button></a>
+            <a> <button class="buttonLanding arrButton">Button &nbsp;</button></a>
+            <!-- Large button -->
+
+            <!-- Small button -->
+            <a> <button class="button-35 DS">Button</button></a>
+            <!-- Small button -->
+          `,
+          CSS:` 
+            `
+          }) %>
 
 
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">HTML</div>
-                    <code>
-                      &lt;!-- Large button --&gt;
-                      &lt;a&gt; &lt;button class="buttonLanding"&gt;Button &amp;nbsp; &lt;/button&gt;&lt;/a&gt;
-                      &lt;a&gt; &lt;button class="buttonLanding arrButton"&gt;Button &amp;nbsp;&lt;/button&gt;&lt;/a&gt;
-                      &lt;!-- Large button --&gt;
-
-                      &lt;!-- Small button --&gt;
-                      &lt;a&gt; &lt;button class="button-35 DS"&gt;Button&lt;/button&gt;&lt;/a&gt;
-                      &lt;!-- Small button --&gt;
-                    </code>
-                  </pre>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="blankHM"></div>
 
 
@@ -2316,52 +2508,80 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
+          <%- include('../shared/copyCode', 
+          {Name:'Item14', idTab1:'T141',idTab2:'T142',idTab3:'T143', tab1:'',tab2:'',tab3:'checked',
+          EJS: ``,
+          HTML: `
+            <img src="../icon/arrow-down.svg" alt="Arrow Down">
+            <img src="../icon/arrow-up.svg" alt="Arrow Uo">
+            <img src="../icon/arrow-back.svg" alt="Arrow Back">
+            <img src="../icon/arrow-forward.svg" alt="Arrow Forward">
+            <img src="../icon/plus.svg" alt="Plus">
+            <img src="../icon/minus.svg" alt="Minus">
+            <img src="../icon/delete.svg" alt="Delete">
+            <img src="../icon/arrow-nw.svg" alt="Arrow NW">
+            <img src="../icon/arrow-ne.svg" alt="Arrow NE">
+            <img src="../icon/arrow-sw.svg" alt="Arrow SW">
+            <img src="../icon/arrow-se.svg" alt="Arrow SE">
+            <img src="../icon/in.svg" alt="LinkedIn">
+            <img src="../icon/ins.svg" alt="Instagram">
+            <img src="../icon/git.svg" alt="GitHub">
+            <img src="../icon/Codepen.svg" alt="CodePen">
+            <img src="../icon/iconFigma.svg" alt="Figma">
+            <img src="../icon/mail.svg" alt="Mail">
+            <img src="../icon/icon_clipboard-tick.svg">
+            <img src="../icon/icon_Testing.svg">
+            <img src="../icon/Document.svg" alt="Document">
+            <img src="../icon/Receipt.svg" alt="Arrow Up">
+            <img src="../icon/icon_research.svg" alt="Research">
+            <img src="../icon/iconAlert.svg" alt="Alert">
+            <img src="../icon/copy.svg" alt="CodePen">
+            <img src="../icon/link.svg" alt="Link">
+            <img src="../icon/icon_Final.svg">
+            <img src="../icon/note.svg">
+            <img src="../icon/Category.svg">
+            <img src="../icon/layout.svg">
+            <img src="../icon/tag.svg">
+            <img src="../icon/icon_Iteration.svg">
+            <img src="../icon/iconCalendar.svg">
+            <img src="../icon/icon_Redesign.svg">
+            <img src="../icon/library.svg">
+            <img src="../icon/components.svg">
+            <img src="../icon/icon_promotion.svg">
+            <img src="../icon/IconCompass.svg">
+            <img src="../icon/Profile.svg">
+          `,
+          CSS:` 
+            .iconXS {
+                width: 16px;
+                margin: 0;
+            }
+            .iconS {
+                width: 24px;
+                margin: 0;
+            }
+            .iconM {
+                width: 32px;
+            }
+            .iconL {
+                width: 40px;
+            }
+            .iconXL {
+                width: 48px;
+            }
+            .iconMax {
+                width: 56px;
+            }
+            .iconDemo {
+                margin: 0.6em;
+                padding: 1.2em;
+                width: 2em;
+                height: auto;
+                cursor: pointer;
+            }
+            `
+          }) %>
 
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <pre>
-                    <div class="codeTiltle">CSS - Sizes</div>
-                    <code>
-                      .iconXS {
-                        width: 16px;
-                        margin: 0;
-                    }
-                    
-                    .iconS {
-                        width: 24px;
-                        margin: 0;
-                    }
-                    
-                    .iconM {
-                        width: 32px;
-                    }
-                    
-                    .iconL {
-                        width: 40px;
-                    }
-                    
-                    .iconXL {
-                        width: 48px;
-                    }
-                    .iconMax {
-                        width: 56px;
-                    }
-                    .iconDemo {
-                        margin: 0.6em;
-                        padding: 1.2em;
-                        width: 2em;
-                        height: auto;
-                        cursor: pointer;
-                    }
-
-                    </code>
-                  </pre>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="blankHM"></div>
 
 
