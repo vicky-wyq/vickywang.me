@@ -5,7 +5,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
-
+ 
 
 
   // Helper function to copy text to the clipboard
@@ -430,44 +430,47 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-  //copy to clipboard + tabs
 
   
 
 
-
-
+// Initialize each 'filed' component
+var fileds = document.querySelectorAll('.filed');
+fileds.forEach(function (filed) {
+  initializeFiled(filed);
 });
-document.addEventListener('DOMContentLoaded', function () {
-  // Initialize each 'filed' component
-  var fileds = document.querySelectorAll('.filed');
-  fileds.forEach(function (filed) {
-    initializeFiled(filed);
-  });
 
-  // Event listeners for radio buttons
-  document.querySelectorAll('.select-ejs, .select-html').forEach(function (radioBtn) {
-    radioBtn.addEventListener('click', function () {
-      showCode(this, this.classList.contains('select-ejs') ? 'ejs' : 'html');
-    });
+// Event listeners for radio buttons
+document.querySelectorAll('.select-EJS, .select-HTML, .select-CSS').forEach(function (radioBtn) {
+  radioBtn.addEventListener('click', function () {
+    showCode(this, this.classList.contains('select-EJS') ? 'ejs' : (this.classList.contains('select-HTML') ? 'html' : 'css'));
   });
 });
 
 function initializeFiled(filed) {
-  var ejsRadio = filed.querySelector('.select-ejs');
+  var ejsRadio = filed.querySelector('.select-EJS');
   var ejsBlock = filed.querySelector('.ejs-block');
   var htmlBlock = filed.querySelector('.html-block');
+  var cssBlock = filed.querySelector('.css-block');
+
   var copyButton = filed.querySelector('.copy-btn');
 
   // Set initial visibility and copy button functionality
   if (ejsRadio.checked) {
     ejsBlock.style.display = 'block';
     htmlBlock.style.display = 'none';
+    cssBlock.style.display = 'none'; // Add this line
     setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
-  } else {
+  } else if (htmlRadio.checked) {
     ejsBlock.style.display = 'none';
     htmlBlock.style.display = 'block';
+    cssBlock.style.display = 'none'; // Add this line
     setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+  } else {
+    ejsBlock.style.display = 'none';
+    htmlBlock.style.display = 'none';
+    cssBlock.style.display = 'block'; // Add this line
+    setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
   }
 }
 
@@ -475,16 +478,25 @@ function showCode(radioBtn, type) {
   var container = radioBtn.closest('.filed');
   var ejsBlock = container.querySelector('.ejs-block');
   var htmlBlock = container.querySelector('.html-block');
+  var cssBlock = container.querySelector('.css-block');
+
   var copyButton = container.querySelector('.copy-btn');
 
   if (type === 'ejs') {
     ejsBlock.style.display = 'block';
     htmlBlock.style.display = 'none';
+    cssBlock.style.display = 'none';
     setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
-  } else {
+  } else if (type === 'html') {
     ejsBlock.style.display = 'none';
     htmlBlock.style.display = 'block';
+    cssBlock.style.display = 'none';
     setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+  } else {
+    ejsBlock.style.display = 'none';
+    htmlBlock.style.display = 'none';
+    cssBlock.style.display = 'block';
+    setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
   }
 }
 
@@ -511,3 +523,11 @@ function copyToClipboard(codeBlock, btnElement) {
     btnElement.textContent = 'Copy Code';
   }, 2000);
 }
+  //copy code to clipboard + tabs
+
+
+
+});
+
+
+
