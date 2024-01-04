@@ -1582,6 +1582,44 @@ li .newPanelV3 {
 
 /* =========== new sub nav V3 =========== */
 
+.section-navDEMO{
+    position: relative;
+    border-radius: 6px;
+    width: max-content;
+    background-color: var(--White-transparent);
+    /* 💡 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 12px;
+         */
+    overflow-y: auto;
+    height: fit-content;
+    z-index: 98;
+    height: fit-content;
+    left: 50%;
+
+}
+.section-navDEMO li.active>a {
+    font-weight: 500;
+    border-left: var(--Grey900) .08em solid;
+    background-color: var(--Grey100);
+}
+.section-navDEMO a {
+    border-left: var(--Grey400) 0.04em solid;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    color: var(--Grey700);
+    transition: all 50ms ease-in-out;
+    /* 💡 This small transition makes setting of the active state smooth */
+    border-radius: 0 8px 8px 0;
+}
+
+.section-navDEMO a:hover,
+.section-nav a:focus {
+    background-color: var(--Grey300) !important;
+    color: var(--Grey900) !important;
+}
 /* =========== sub nav V1 =========== */
 /* 1. Enable smooth scrolling */
 /* 2. Make nav sticky */
@@ -1594,7 +1632,6 @@ main>nav {
     font-weight: 500;
     border-left: var(--Grey900) .08em solid;
     background-color: var(--Grey100);
-
 }
 
 /* Sidebar Navigation */
@@ -2203,10 +2240,11 @@ input {
 }
 
 button.passwordArr {
-    margin-top: 38px;
-    z-index: 98;
+    margin-top: 11%;
     padding: 0;
     color: var(--Grey900);
+
+
 }
 
 
@@ -5551,15 +5589,23 @@ button.Clipboard.clickTxt:active {
 }
 
 .code-block {
+    display: block;
     margin-top: -1px;
     border: 1px solid var(--Grey500);
-    padding: 12px;
     background-color: var(--white);
     border-radius: 0px 0px 8px 8px;
-    height: 12em;
+    height: 10em;
     overflow: hidden;
-    overflow-y: scroll; /* Show vertical scrollbar */
-
+    overflow-y: scroll;
+    overflow-x: auto;
+    padding: 12px;
 }
+pre code {
+    top: 0;
+    width: 100%;
+    display: block;
+    white-space: pre-wrap; /* Updated to allow wrapping */
+}
+
 
 /* =================== tabs + copy to clipboard  ===================*/
