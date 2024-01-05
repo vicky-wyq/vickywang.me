@@ -1,92 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Basic Metadata -->
-  <link rel="canonical" href="https://vickywang.me/seer">
-  <title>Seer: Reddit Keyword Analyzer for Business Insights by Vicky Wang</title>
-  <meta name="author" content="Vicky W.">
-  <meta name="description"
-    content="Discover Seer by Vicky Wang, a sophisticated Reddit keyword analyzer designed for businesses seeking valuable insights. Dive into the world of social media analytics to understand market trends, customer sentiments, and competitive intelligence. Enhance your business strategy with data-driven decisions powered by Seer.">
-  <!-- Open Graph / Facebook -->
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Seer: Reddit Keyword Analyzer for Business Insights by Vicky Wang">
-  <meta property="og:description"
-    content="Discover Seer by Vicky Wang, a sophisticated Reddit keyword analyzer designed for businesses seeking valuable insights. Dive into the world of social media analytics to understand market trends, customer sentiments, and competitive intelligence. Enhance your business strategy with data-driven decisions powered by Seer.">
-  <meta property="og:url" content="https://vickywang.me/seer">
-  <meta property="og:site_name" content="Vicky's Website">
-  <meta property="og:image" content="https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_web.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://vickywang.me/seer">
-  <meta property="twitter:title" content="Seer: Reddit Keyword Analyzer for Business Insights by Vicky Wang">
-  <meta property="twitter:description"
-    content="Discover Seer by Vicky Wang, a sophisticated Reddit keyword analyzer designed for businesses seeking valuable insights. Dive into the world of social media analytics to understand market trends, customer sentiments, and competitive intelligence. Enhance your business strategy with data-driven decisions powered by Seer.">
-  <meta property="twitter:image" content="https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_web.png">
-
-  <!-- favicon -->
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-
-
-  <!-- Google Font Preconnect-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Google Font Preconnect-->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <!--sitewide font-family: 'Lato', sans-serif; -->
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <!--handwriting -  font-family: 'Caveat', sans-serif; -->
-  <!--handwriting -  font-family: 'Caveat Brush', sans-serif; -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  <!--handwriting font-family: 'Indie Flower'; -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <!--handwriting font-family: 'Gloria Hallelujah';  | Hello font|-->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
-    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- crypto js -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <!--jQuery-->
-
-  <!--aos-->
-  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-  <!-- google analytics-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-E8YXDWJST2');
-  </script>
-
-
-  <link rel="stylesheet" href="../main.css" />
-  <script type="text/javascript" src="../scripts.js"></script>
-  <script type="text/javascript" src="../scripts_project.js"></script>
-</head>
+<!--Head-->
+<%- include('../shared/head', {
+  SEO:true, Title:'SEER: Advanced Reddit Analytics Tool for Brand Managers | Vicky Wang UX Case Study', 
+  description:'Elevate your brand with SEER, the premier Reddit Analytics Tool for marketers. Streamline insights with our intuitive workflow, uncover user sentiments and trends, and enhance your marketing strategy on Reddit effectively.', 
+  pageURL:'', thumbnailImgURL: 'https://vickywang.me/projectImages/Cover_SEER.png'
+  }) %>
+<!--Head-->
 
 
 <body class="">
@@ -126,7 +46,7 @@
               </a>
               <a href="/design_system/">
                 <div>
-                  <img src="../ProjectImages/Cover_portfolioWeb.svg" alt="Design System">
+                  <img src="../ProjectImages/vicky_website.png" alt="Design System">
                   <div class="element">
                     <h5 class="colorBlack">Design System | Efficiently Bulid &#38; Maintain Components</h5>
                   </div>
@@ -134,7 +54,7 @@
               </a>
               <a href="/navigation/">
                 <div>
-                  <img src="../ProjectImages/Cover_portfolioWeb.svg" alt="Design System">
+                  <img src="../ProjectImages/vicky_website.png" alt="Navigation System">
                   <div class="element">
                     <h5 class="colorBlack">Navigation Design | Secondary Menu Options for vickywang.me</h5>
                   </div>
@@ -203,42 +123,34 @@
     <div class="Grid Grid--gutters Grid--cols-3">
       <div class="Grid-cell">
         <div class="element">
-          <div class="elementInner">
 
-            <h3><strong>Opportunity</strong></h3>
-            <h4>Reddit is the platform where people comes to discuss product and brands. Business
-              owners want to know the engagement and sentiment of people.
+            <h3><strong>Problem</strong></h3>
+            <h4>Brand managers and marketers lack a streamlined and effective method to analyze and understand user engagement and sentiment about their brands on Reddit. This leads to challenges in leveraging Reddit for brand promotion and user understanding.
             </h4>
 
-          </div>
         </div>
       </div>
       <div class="Grid-cell">
         <div class="element">
 
-          <div class="elementInner">
+
+            <h3><strong>Solution</strong></h3>
+
+            <h4>SEER, a Reddit Keywords Analyzer, offers a user-friendly interface that follows a simple 'keywords - filter - result' workflow. It provides a matrix view for quick insights and a detailed table for in-depth analysis. This tool aggregates and analyzes Reddit discussions, delivering clear insights into user sentiment, engagement levels, and trending discussions related to specific brands or products.</h4>
+
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+
 
             <h3><strong>Goal</strong></h3>
 
-            <h4>The marketing manager spends a lot of time on understand their users. My goal is to
-              help them further understand potential users and promote their brand more effectively on
-              Reddit.</h4>
+            <h4>To empower brand managers and marketers with actionable insights from Reddit discussions, enhancing their ability to understand potential users and promote their brand more effectively. This leads to more informed marketing strategies, better user engagement, and potentially higher conversion rates for businesses.</h4>
 
           </div>
-        </div>
       </div>
-      <div class="Grid-cell">
-        <div class="element">
 
-          <div class="elementInner">
-
-            <h3><strong>Target users</strong></h3>
-
-            <h4>Brand marketers and brand managers typically work at medium to large companies</h4>
-
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div class="blankHS"></div>
@@ -253,38 +165,22 @@
     </div>
     <!-- Arrow -->
 
+    <%- include('../shared/LRcarousel', {
+      slide: '2',
+      slideshowTitle: `SEER: Enhancing Brand Impact on Reddit`,
+      contentTitle1: 'Landing page',
+      contentTitle2: 'Dashboard',
+      contentTitle3: '',
+      contentTitle4: '',
+      contentTitle5: '',
 
-    <div class="blankHS"></div>
-    <div class="wrapper">
-      <div class="flex-container">
-        <div class="left-zone">
-          <ul class="list">
-            <li class="item">
-              <input type="radio" id="radio_testimonial-1" name="carousel" checked="checked" />
-              <label class="label_testimonial-1 SEER" for="radio_testimonial-1">Landing
-                page</label>
-              <div class="content-test">
-                <img class="shadowFilterL" src="Hi-fi_landing_short.svg" alt="team member">
-              </div>
-            </li>
-            <li class="item">
-              <input type="radio" id="radio_testimonial-2" name="carousel" />
-              <label class="label_testimonial-2 SEER" for="radio_testimonial-2">Dashboard</label>
-              <div class="content-test">
-                <img class="shadowFilterL" src="Hi-fi_main.svg" alt="Charts">
+      img1: 'Hi-fi_landing_short.svg',
+      img2: 'Hi-fi_main.svg',
+      img3: '',
+      img4: '',
+      img5: ''
 
-              </div>
-            </li>
-
-
-          </ul>
-        </div>
-        <div class="right-zone"></div>
-      </div>
-
-    </div>
-
-    <div class="blankHS"></div>
+    }) %>
 
 
   </div>
@@ -569,7 +465,7 @@
 
                     <div class="elementSEER">
                       <div class="elementInnerSEER heightS">
-                        <img class="iconM" src="iconCalendar.svg" alt="icon">
+                        <img class="iconM" src="icon_Calendar.svg" alt="icon">
 
                         <div class="blankHXS"></div>
                         <h4> <strong> Timestamp </strong> </h4>
