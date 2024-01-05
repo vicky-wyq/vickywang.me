@@ -2011,7 +2011,7 @@ hr {
     transition: all 0.25s ease-in;
 }
 
-.elementCard.WS:hover {
+.elementCard.BYP:hover {
     border-bottom: 5px solid var(--WS-Blue);
 }
 
@@ -2167,7 +2167,7 @@ padding: 0.8em 0em 0;
 /* ---- hide/show --------- */
 /* ---- password textbox --------- */
 
-.PWinputLanding:focus {
+.PWinputLH:focus {
     background-color: var(--white);
     border-radius: 10px;
 
