@@ -1,16 +1,19 @@
 const ejs = require('ejs');
 const fs = require('fs-extra');
 const path = require('path');
+const ejsLiterals = require('./ejs_literals');
 
 const templatesDir = path.join(__dirname, 'templates');
 const outputDir = path.join(__dirname, 'html');
 const partialsDir = 'shared'; // Directory name for partials
 
+console.log(ejsLiterals)
 // Data to be passed to templates
 const templateData = {
   // Example: 'path/to/template.ejs': { variableName: 'value' }
   templatePath: path.join(__dirname, 'templates'),
   websitePath: '',
+  ejsLiterals,
 };
 
 // Function to clear the html directory

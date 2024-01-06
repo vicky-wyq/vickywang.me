@@ -339,9 +339,9 @@
         </li>
         <li><a href="#content3" class="titleRightPanel">UI Components</a>
           <ul>
-            <li class="rightPanel"><a href="#content31"> &#160; Atoms</a></li>
-            <li class="rightPanel"><a href="#content32"> &#160; Molecules</a></li>
-            <li class="rightPanel"><a href="#content33"> &#160; Organisms</a></li>
+            <li class="rightPanel"><a href="#content31"> &#160; Atoms | Bases</a></li>
+            <li class="rightPanel"><a href="#content32"> &#160; Molecules | Comps</a></li>
+            <li class="rightPanel"><a href="#content33"> &#160; Organisms | Blocks</a></li>
           </ul>
         </li>
         <li><a href="#content4" class="titleRightPanel">Navigation</a>
@@ -2528,7 +2528,8 @@
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Atoms</strong> </h1>
+                <h1> <strong class="SkylineBlueLt">Atoms | Bases</strong> </h1>
+                <h4>Atoms are the fundamental building blocks of our design system, representing the smallest, basic UI elements. Examples include buttons, text fields, and icons. They can be used as-is or combined to create more complex components. Atoms are versatile and reusable across different parts of the design.</h4>
               </div>
             </div>
           </div>
@@ -3943,7 +3944,8 @@
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Molecules</strong> </h1>
+                <h1> <strong class="SkylineBlueLt">Molecules | Comps</strong> </h1>
+                <h4>Molecules are groups of atoms bonded together to form functional UI components. They exhibit more complexity and utility than individual atoms. For example, a search bar molecule could consist of a text input atom (field) and an action atom (button). Molecules serve as the foundational elements of more complex interfaces.</h4>
               </div>
             </div>
           </div>
@@ -5137,7 +5139,10 @@
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Organisms </strong> </h1>
+                <h1> <strong class="SkylineBlueLt">Organisms | Blocks </strong> </h1>
+                <h4 class="textItalic">Organisms are complex UI components composed of groups of molecules and atoms working together as a cohesive unit. They form significant sections of an interface, like a website's header, which might include logo, navigation, and search form molecules. Organisms are the culmination of smaller components assembled to function effectively in the UI ecosystem.
+
+                </h4>
               </div>
             </div>
           </div>
@@ -6227,7 +6232,129 @@
         <div class="wrapper">
           <nav class="headerDEMO" id="">
             <div class="backgroundColorNavDEMO">
-              <a href="http://vickywang.me/"><img class="logo pointer" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
+              <a href="http://vickywang.me/"><img class="logo pointer element" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
+              <div class="navbar">
+                <ul class="nav-menu">
+                  <li class="nav-item active activeNav marginZero"><a href="/" class="nav-link box">PROJECT</a>
+
+                  </li>
+
+                  <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
+                  </li>
+                  <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
+                  </li>
+                  <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
+                  </li>
+
+                  <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="hamburger">
+                <span class="bar GLORIFY"></span>
+                <span class="bar GLORIFY"></span>
+                <span class="bar GLORIFY"></span>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="blankHM"></div>
+
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item38" id="T381" checked>
+                      <label for="T381" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item38" id="T382" >
+                      <label for="T382" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item38" id="T383" >
+                      <label for="T383" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code></code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+        &lt;nav class=&#34;header header-pin&#34; id=&#34;header&#34;&gt;
+        &lt;div class=&#34;backgroundColorNav&#34;&gt;
+        &lt;a href=&#34;http://vickywang.me/&#34;&gt;&lt;img class=&#34;logo pointer&#34; src=&#34;/icon/logo.svg&#34; alt=&#34;VW&#34; title=&#34;vickywang.me&#34;&gt;&lt;/a&gt;
+        &lt;div class=&#34;navbar&#34;&gt;
+          &lt;ul class=&#34;nav-menu&#34;&gt;
+                &lt;li class=&#34;nav-item marginZero active activeNav&#34;&gt;
+                    &lt;a href=&#34;/&#34; class=&#34;nav-link box&#34;&gt;PROJECT&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                    &lt;a href=&#34;/architecture&#34; class=&#34;nav-link box&#34;&gt;ARCHITECTURE&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                    &lt;a href=&#34;/photography&#34; class=&#34;nav-link box&#34;&gt;PHOTOGRAPHY&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                    &lt;a href=&#34;/blog&#34; class=&#34;nav-link box&#34;&gt;BLOG&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                    &lt;a href=&#34;/about&#34; class=&#34;nav-link box&#34;&gt;ABOUT&lt;/a&gt;
+                &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;hamburger&#34;&gt;
+          &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+          &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+        </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code>
+        </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+        <!--Arrow subtitle-->
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    MainHeader + Dropdown Menu <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+        <!--Arrow subtitle-->
+        <div class="wrapper">
+          <nav class="headerDEMO" id="">
+            <div class="backgroundColorNavDEMO">
+              <a href="http://vickywang.me/"><img class="logo pointer element" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
               <div class="navbar">
                 <ul class="nav-menu">
                   <li class="dropdown nav-item active activeNav marginZero"><a href="/" class="nav-link box">PROJECT</a>
@@ -6291,6 +6418,7 @@
         </div>
 
         <div class="blankHM"></div>
+
         
 
     <div class="">
@@ -6302,69 +6430,54 @@
                 <div class='filed'>
                   <div class="tab-container">
                     <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Item38" id="T381" >
-                      <label for="T381" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Item38" id="T382" checked>
-                      <label for="T382" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Item38" id="T383" >
-                      <label for="T383" class="tab">CSS</label>
+                      <input type="radio" class="select-EJS" name="Item39" id="T391" checked>
+                      <label for="T391" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item39" id="T392" >
+                      <label for="T392" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item39" id="T393" >
+                      <label for="T393" class="tab">CSS</label>
                     </div>
                     <button class="copy-btn" style="display:inline;">Copy Code</button>
                   </div>
                   <div class="ejs-block code-block">
-                    <pre class="ejs-code"><code>
-        
-
-
-        </code></pre>
+                    <pre class="ejs-code"><code></code></pre>
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-        &lt;nav class=&#34;header header-pin&#34; id=&#34;header&#34;&gt;
-      &lt;div class=&#34;backgroundColorNav&#34;&gt;
-        &lt;a href=&#34;http://vickywang.me/&#34;&gt;&lt;img class=&#34;logo pointer&#34; src=&#34;/icon/logo.svg&#34; alt=&#34;VW&#34; title=&#34;vickywang.me&#34;&gt;&lt;/a&gt;
-        &lt;div class=&#34;navbar&#34;&gt;
-          &lt;ul class=&#34;nav-menu&#34;&gt;
-            
-                &lt;li class=&#34;nav-item marginZero active activeNav&#34;&gt;
-                    
-                    &lt;a href=&#34;/&#34; class=&#34;nav-link box&#34;&gt;PROJECT&lt;/a&gt;
-                &lt;/li&gt;
-            
-                &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
-                    
-                    &lt;a href=&#34;/architecture&#34; class=&#34;nav-link box&#34;&gt;ARCHITECTURE&lt;/a&gt;
-                &lt;/li&gt;
-            
-                &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
-                    
-                    &lt;a href=&#34;/photography&#34; class=&#34;nav-link box&#34;&gt;PHOTOGRAPHY&lt;/a&gt;
-                &lt;/li&gt;
-            
-                &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
-                    
-                    &lt;a href=&#34;/blog&#34; class=&#34;nav-link box&#34;&gt;BLOG&lt;/a&gt;
-                &lt;/li&gt;
-            
-                &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
-                    
-                    &lt;a href=&#34;/about&#34; class=&#34;nav-link box&#34;&gt;ABOUT&lt;/a&gt;
-                &lt;/li&gt;
-            
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;hamburger&#34;&gt;
-          &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
-          &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
-          &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/nav&gt;
-        </code></pre>
+                &lt;nav class=&#34;header header-pin&#34; id=&#34;header&#34;&gt;
+                &lt;div class=&#34;backgroundColorNav&#34;&gt;
+                &lt;a href=&#34;http://vickywang.me/&#34;&gt;&lt;img class=&#34;logo pointer&#34; src=&#34;/icon/logo.svg&#34; alt=&#34;VW&#34; title=&#34;vickywang.me&#34;&gt;&lt;/a&gt;
+                &lt;div class=&#34;navbar&#34;&gt;
+                  &lt;ul class=&#34;nav-menu&#34;&gt;
+                        &lt;li class=&#34;nav-item marginZero active activeNav&#34;&gt;
+                            &lt;a href=&#34;/&#34; class=&#34;nav-link box&#34;&gt;PROJECT&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                            &lt;a href=&#34;/architecture&#34; class=&#34;nav-link box&#34;&gt;ARCHITECTURE&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                            &lt;a href=&#34;/photography&#34; class=&#34;nav-link box&#34;&gt;PHOTOGRAPHY&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                            &lt;a href=&#34;/blog&#34; class=&#34;nav-link box&#34;&gt;BLOG&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                            &lt;a href=&#34;/about&#34; class=&#34;nav-link box&#34;&gt;ABOUT&lt;/a&gt;
+                        &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;hamburger&#34;&gt;
+                  &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+                  &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+                  &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/nav&gt;
+                </code></pre>
                   </div>
                   <div class="css-block code-block" style="display:none;">
                     <pre class="css-code"><code>
-        </code></pre>
+                </code></pre>
                   </div>
                 </div>
               </div>
@@ -6403,7 +6516,7 @@
 
             <div class="backgroundColorNavDEMO">
 
-              <a href="/" class="widthFitContent centerVer logo pointer colorBlack Grid--center"><img class="moveLeftRight iconS" src="../../icon/arrow-back.svg" alt="Go back">
+              <a href="/" class="widthFitContent centerVer logo pointer element Grid--center"><img class="moveLeftRight iconS" src="../../icon/arrow-back.svg" alt="Go back">
                 <h6>BACK</h6>
               </a>
               <div class="navbar">
@@ -6464,7 +6577,76 @@
             </div>
           </nav>
         </div>
-        <!-- header -->
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item40" id="T401" checked>
+                      <label for="T401" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item40" id="T402" >
+                      <label for="T402" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item40" id="T403" >
+                      <label for="T403" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code></code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+                &lt;nav class=&#34;header header-pin&#34; id=&#34;header&#34;&gt;
+                  &lt;div class=&#34;backgroundColorNav&#34;&gt;
+                    &lt;a href=&#34;http://vickywang.me/&#34;&gt;&lt;img class=&#34;logo pointer&#34; src=&#34;/icon/logo.svg&#34; alt=&#34;VW&#34; title=&#34;vickywang.me&#34;&gt;&lt;/a&gt;
+                    &lt;div class=&#34;navbar&#34;&gt;
+                      &lt;ul class=&#34;nav-menu&#34;&gt;
+                            &lt;li class=&#34;nav-item marginZero active activeNav&#34;&gt;
+                                &lt;a href=&#34;/&#34; class=&#34;nav-link box&#34;&gt;PROJECT&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                                &lt;a href=&#34;/architecture&#34; class=&#34;nav-link box&#34;&gt;ARCHITECTURE&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                                &lt;a href=&#34;/photography&#34; class=&#34;nav-link box&#34;&gt;PHOTOGRAPHY&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                                &lt;a href=&#34;/blog&#34; class=&#34;nav-link box&#34;&gt;BLOG&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&#34;nav-item marginZero inactive&#34;&gt;
+                                &lt;a href=&#34;/about&#34; class=&#34;nav-link box&#34;&gt;ABOUT&lt;/a&gt;
+                            &lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&#34;hamburger&#34;&gt;
+                      &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+                      &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+                      &lt;span class=&#34;bar&#34;&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                 &lt;/nav&gt;
+                </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code>
+                </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
 
 
       </section>
@@ -6609,8 +6791,50 @@
           </footer>
         </div>
         <!--footer-->
+        
 
-   
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item41" id="T411" checked>
+                      <label for="T411" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item41" id="T412" >
+                      <label for="T412" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item41" id="T413" >
+                      <label for="T413" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code></code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+
+                </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code>
+                </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+
 
       </section>
 
@@ -6636,40 +6860,116 @@
 
         <nav class="section-navDEMO">
           <ol>
-            <li class=""><a  class="titleRightPanel">Sub Nav Title </a>
+            <li class=""><a class="titleRightPanel">Sub Nav Title </a>
               <ul class="">
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
-    
-              </ul>
-            </li>
-            <li class=""><a  class="titleRightPanel">Sub Nav Title </a>
-              <ul class="">
-                <li class="rightPanel"><a > &nbsp; SubTitle </a></li>
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
 
-    
               </ul>
             </li>
-            <li class=""><a  class="titleRightPanel">Sub Nav Title </a>
+            <li class=""><a class="titleRightPanel">Sub Nav Title </a>
               <ul class="">
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle </a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+
+
               </ul>
             </li>
-            <li class=""><a  class="titleRightPanel">Sub Nav Title </a>
+            <li class=""><a class="titleRightPanel">Sub Nav Title </a>
+              <ul class="">
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+              </ul>
+            </li>
+            <li class=""><a class="titleRightPanel">Sub Nav Title </a>
               <ul class="active">
-                <li class="rightPanel"><a > &nbsp; SubTitle</a></li>
-                <li class="rightPanel active"><a > &nbsp; SubTitle</a></li>
+                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                <li class="rightPanel active"><a> &nbsp; SubTitle</a></li>
                 <li class="rightPanel active"><a> &nbsp; SubTitle</a></li>
               </ul>
             </li>
-    
+
           </ol>
         </nav>
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item42" id="T421" >
+                      <label for="T421" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item42" id="T422" checked>
+                      <label for="T422" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item42" id="T423" >
+                      <label for="T423" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code></code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+                &lt;nav class=&#34;section-nav&#34;&gt;
+                  &lt;ol&gt;
+                    &lt;li&gt;&lt;a href=&#34;#content1&#34; class=&#34;titleRightPanel&#34;&gt;Basics Styles&lt;/a&gt;
+                      &lt;ul&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content11&#34;&gt; &amp;nbsp; Color Guidance&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content12&#34;&gt; &amp;nbsp; Typography&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content13&#34;&gt; &amp;nbsp; Wordmark&lt;/a&gt;&lt;/li&gt;
+
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content14&#34;&gt; &amp;nbsp; Elevation&lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&#34;#content2&#34; class=&#34;titleRightPanel&#34;&gt;Spacing &amp;amp; Grid&lt;/a&gt;
+                      &lt;ul&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content21&#34;&gt; &amp;nbsp; Layout &lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content22&#34;&gt; &amp;nbsp; Responsive Grid&lt;/a&gt;&lt;/li&gt;
+
+                      &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&#34;#content3&#34; class=&#34;titleRightPanel&#34;&gt;UI Components&lt;/a&gt;
+                      &lt;ul&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content31&#34;&gt; &amp;nbsp; Atoms&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content32&#34;&gt; &amp;nbsp; Molecules&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content33&#34;&gt; &amp;nbsp; Organisms&lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&#34;active&#34;&gt;&lt;a href=&#34;#content4&#34; class=&#34;titleRightPanel&#34;&gt;Navigation&lt;/a&gt;
+                      &lt;ul class=&#34;active&#34;&gt;
+                        &lt;li class=&#34;rightPanel&#34;&gt;&lt;a href=&#34;#content41&#34;&gt; &amp;nbsp; Header&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&#34;rightPanel active&#34;&gt;&lt;a href=&#34;#content42&#34;&gt; &amp;nbsp; Footer&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&#34;rightPanel active&#34;&gt;&lt;a href=&#34;#content43&#34;&gt; &amp;nbsp; Navigation&lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/li&gt;
+
+                  &lt;/ol&gt;
+                &lt;/nav&gt;
+                </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code>
+                </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
 
 
       </section>
@@ -6760,6 +7060,104 @@
   </div>
   <div class="blankHL"></div>
 
+  
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item43" id="T431" checked>
+                      <label for="T431" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item43" id="T432" >
+                      <label for="T432" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item43" id="T433" >
+                      <label for="T433" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code>&lt;%- include(`${templatePath}/shared/tagCloud`) %&gt;
+</code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+&lt;div class=&#34;blankHM&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;Grid Grid--full Grid--gutters u-textCenter&#34;&gt;
+  &lt;ul class=&#34;tags&#34; id=&#34;TagsCloud&#34;&gt;
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; User-centered Design&lt;/span&gt;&lt;/li&gt;
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Experience Design&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; User Experience Design &lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; User Interface Design&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Interaction Design&lt;/span&gt;&lt;/li&gt;
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Product Design&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Service Design&lt;/span&gt;&lt;/li&gt;
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Design Thinking&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Surveys &amp;#38; Questionnaires&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Journey Mapping &lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Data Analysis &lt;/span&gt;&lt;/li&gt;
+
+
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Responsive &amp;#38; Adaptive Design&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Web Application Design&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Design System&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Graphic Design&lt;/span&gt;&lt;/li&gt;
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; UX Research&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Design Research&lt;/span&gt;&lt;/li&gt;
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Design Research&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Collaborative Problem Solving&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Concept Testing&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Usability Testing&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Wireframing &amp;#38; Prototyping&lt;/span&gt;&lt;/li&gt;
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; SaaS Application Design&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; B2B Application Design&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Consumer-Facing Design&lt;/span&gt;&lt;/li&gt;
+
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Figma&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; Adobe CS &lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt; 3D Modeling&lt;/span&gt;&lt;/li&gt;
+
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt;HTML&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt;CSS&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt;JavaScript&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&#34;tag&#34;&gt;&lt;span class=&#34;box&#34;&gt;GitHub&lt;/span&gt;&lt;/li&gt;
+
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;blankHL&#34;&gt;&lt;/div&gt;
+
+</code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code>
+  </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+
   <div class="blankHM"></div>
 
 <!-- message -->
@@ -6779,6 +7177,62 @@
 </div>
 <!-- message -->
 <div class="blankHL"></div>
+  
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item44" id="T441" >
+                      <label for="T441" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item44" id="T442" checked>
+                      <label for="T442" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item44" id="T443" >
+                      <label for="T443" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code></code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+  &lt;div class=&#34;Grid Grid--full Grid--gutters u-textCenter&#34;&gt;
+    &lt;div class=&#34;Grid-cell&#34;&gt;
+      &lt;div data-aos=&#34;fade-up&#34; class=&#34;aos-init aos-animate&#34;&gt;
+        
+        &lt;h4 class=&#34;element&#34;&gt;
+          Thank You for Visiting ! Check back soon for more updates and stay tuned !
+        &lt;/h4&gt;
+        
+      &lt;/div&gt;
+      &lt;a href=&#34;/&#34; class=&#34;&#34;&gt;&lt;img class=&#34;widthXS&#34; src=&#34;/icon/LOGOtxt.svg&#34; alt=&#34;VW&#34; title=&#34;vickywang.me&#34;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code>
+  </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+  <div class="blankHL"></div>
+
 
     <!-- back to top -->
   <button id="myBtn" title="Back to top">
@@ -6915,7 +7369,6 @@
   </footer>
   <!--footer-->
   <!-- Shared across the platform -->
-
 </body>
 
 

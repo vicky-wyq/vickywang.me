@@ -17,6 +17,7 @@
   <%- include(`${templatePath}/shared/intro`, { 
     version: 'vicky',
     contents: ['UX designer', 'Product designer'],
+    
     layoutType: '', 
     introContentP1: 'I am based in San Francisco and am deeply committed to developing web solutions for both businesses and consumers. My approach hinges on dissecting complex challenges and transforming them into clear, efficient, and impactful digital experiences.',
     introContentP2:'',
@@ -49,12 +50,8 @@
     </div>
 
     <div class="Grid Grid--gutters Grid--cols-2">
-
       <%- include(`${templatePath}/shared/cardProjects`, {card: 'LHcostCal' }) %>
-
       <%- include(`${templatePath}/shared/cardProjects`, {card: 'glorify' }) %>
-
-
     </div>
 
     <div class="Grid Grid--gutters Grid--cols-2">
@@ -77,9 +74,7 @@
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
       <%- include(`${templatePath}/shared/cardProjects`, {card: 'designSystem' }) %>
-
       <%- include(`${templatePath}/shared/cardProjects`, {card: 'navigation' }) %>
-
     </div>
   </div>
   <!-- Content -->
