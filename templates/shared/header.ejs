@@ -34,82 +34,83 @@
 </header>
 
 <% } else if (type === 'withDropdown') { %>
-  <nav class="header" id="header">
-    <div class="backgroundColorNav">
-      <a href="http://vickywang.me/"><img class="logo pointer" src="<%= websitePath %>/icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
-      <div class="navbar">
-        <ul class="nav-menu">
-            <li class="dropdown nav-item active activeNav  marginZero"><a href="/" class="nav-link box">PROJECT</a>
+<nav class="header" id="header">
+  <div class="backgroundColorNav">
+    <a href="http://vickywang.me/"><img class="logo pointer" src="<%= websitePath %>/icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
+    <div class="navbar">
+      <ul class="nav-menu">
+        <li class="dropdown nav-item active activeNav  marginZero"><a href="/" class="nav-link box">PROJECT</a>
 
-              <div class="dropdown-content">
-                <a href="/<%- projectUrl1 %>/">
-                  <div class="cardBorder borderRadiusS">
-                    <img src="<%= imgUrl1 %>" alt="<%= alt1 %>">
-                    <div class="element">
-                      <h5 class="colorBlack"><%= itemTitle1 %></h5>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="/<%- projectUrl2 %>/">
-                  <div class="cardBorder borderRadiusS">
-                    <img src="<%= imgUrl2 %>" alt="<%= alt2 %>">
-                    <div class="element">
-                      <h5 class="colorBlack"><%= itemTitle2 %></h5>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="/<%- projectUrl3 %>/">
-                  <div class="cardBorder borderRadiusS">
-                    <img src="<%= imgUrl3 %>" alt="<%= alt3 %>">
-                    <div class="element">
-                      <h5 class="colorBlack"><%= itemTitle3 %></h5>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="/<%- projectUrl4 %>/">
-                  <div class="cardBorder borderRadiusS">
-                    <img src="<%= imgUrl4 %>" alt="<%= alt4 %>">
-                    <div class="element">
-                      <h5 class="colorBlack"><%= itemTitle4 %></h5>
-                    </div>
-                  </div>
-                </a>
-
-
+          <div class="dropdown-content">
+            <a href="/<%- projectUrl1 %>/">
+              <div class="cardBorder borderRadiusS">
+                <img src="<%= imgUrl1 %>" alt="<%= alt1 %>">
+                <div class="element">
+                  <h5 class="colorBlack"><%= itemTitle1 %></h5>
+                </div>
               </div>
-            </li>
-          </li>
+            </a>
+
+            <a href="/<%- projectUrl2 %>/">
+              <div class="cardBorder borderRadiusS">
+                <img src="<%= imgUrl2 %>" alt="<%= alt2 %>">
+                <div class="element">
+                  <h5 class="colorBlack"><%= itemTitle2 %></h5>
+                </div>
+              </div>
+            </a>
+
+            <a href="/<%- projectUrl3 %>/">
+              <div class="cardBorder borderRadiusS">
+                <img src="<%= imgUrl3 %>" alt="<%= alt3 %>">
+                <div class="element">
+                  <h5 class="colorBlack"><%= itemTitle3 %></h5>
+                </div>
+              </div>
+            </a>
+
+            <a href="/<%- projectUrl4 %>/">
+              <div class="cardBorder borderRadiusS">
+                <img src="<%= imgUrl4 %>" alt="<%= alt4 %>">
+                <div class="element">
+                  <h5 class="colorBlack"><%= itemTitle4 %></h5>
+                </div>
+              </div>
+            </a>
+
+
+          </div>
+        </li>
+        </li>
 
 
 
-          <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
-          </li>
-        </ul>
+        <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
+        </li>
+        <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
+        </li>
+        <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
+        </li>
+        <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
+        </li>
+      </ul>
 
-      </div>
-      <div class="hamburger">
-        <span class="bar GLORIFY"></span>
-        <span class="bar GLORIFY"></span>
-        <span class="bar GLORIFY"></span>
-      </div>
     </div>
-  </nav>
+    <div class="hamburger">
+      <span class="bar GLORIFY"></span>
+      <span class="bar GLORIFY"></span>
+      <span class="bar GLORIFY"></span>
+    </div>
+  </div>
+</nav>
 <!-- header -->
 
 <% } else if (type === 'back') { %>
 <header>
   <nav class="header" id="header">
     <div class="backgroundColorNav">
-      <a href="/navigation/" class="widthFitContent centerVer logo pointer colorBlack Grid--center"><img class="moveLeftRight iconS" src="../../icon/arrow-back.svg" alt="Go back">
+      <a href="<%- PageUrl %>" class="widthFitContent centerVer logo pointer Grid--center"> 
+        <img class="moveLeftRight iconS" src="<%= websitePath %>/icon/arrow-back.svg" alt="Go back">
         <h6>BACK</h6>
       </a>
       <div class="navbar">

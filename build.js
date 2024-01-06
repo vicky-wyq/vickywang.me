@@ -56,3 +56,7 @@ async function buildTemplates() {
 
 // Run the build process
 buildTemplates().catch(err => console.error(err));
+
+
+
+
