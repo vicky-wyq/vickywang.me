@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
-<%- include('../shared/head', {SEO:false, Title:'Scalable Design System Design and Implementation by Vicky Wang', 
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Scalable Design System Design and Implementation by Vicky Wang', 
 description:'Vicky W. specializes in UX Design for B2B SaaS and consumer apps, expertly transforming complex challenges into user-friendly solutions.', 
 pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 }) %>
@@ -11,8 +11,8 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
 <body>
-  <%- include('../shared/progressBar') %>
-  <%- include('../shared/header', {type:'main', currentPage: 'PROJECT' }) %>
+  <%- include(`${templatePath}/shared/progressBar`) %>
+  <%- include(`${templatePath}/shared/header`, {type:'main', currentPage: 'PROJECT' }) %>
 
 
 
@@ -155,34 +155,51 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
     <nav class="section-nav">
       <ol>
-        <li><a href="#content1" class="titleRightPanel">Basics Styles</a>
+        <li><a href="#content1" class="titleRightPanel">Design Fundamentals</a>
           <ul>
             <li class="rightPanel"><a href="#content11"> &#160; Color Guidance</a></li>
             <li class="rightPanel"><a href="#content12"> &#160; Typography</a></li>
             <li class="rightPanel"><a href="#content13"> &#160; Wordmark</a></li>
-
             <li class="rightPanel"><a href="#content14"> &#160; Elevation</a></li>
+            <li class="rightPanel"><a href="#content15"> &#160; Layout </a></li>
+            <li class="rightPanel"><a href="#content16"> &#160; Responsive Grid</a></li>
           </ul>
         </li>
-        <li><a href="#content2" class="titleRightPanel">Spacing &#38; Grid</a>
+        <li><a href="#content2" class="titleRightPanel">Atoms (Bases)</a>
           <ul>
-            <li class="rightPanel"><a href="#content21"> &#160; Layout </a></li>
-            <li class="rightPanel"><a href="#content22"> &#160; Responsive Grid</a></li>
+            <li class="rightPanel"><a href="#content21"> &#160; Buttons </a></li>
+            <li class="rightPanel"><a href="#content22"> &#160; Icons </a></li>
+            <li class="rightPanel"><a href="#content23"> &#160; Icon Sizes </a></li>
+            <li class="rightPanel"><a href="#content24"> &#160; Inputs </a></li>
+
+
+          </ul>
+
+        </li>
+
+        <li><a href="#content3" class="titleRightPanel">Molecules (Comps) </a>
+          <ul>
+            <li class="rightPanel"><a href="#content31"> &#160; Textual Elements</a></li>
+            <li class="rightPanel"><a href="#content32"> &#160; Clipboard Copy Field (CCF) </a></li>
+            <li class="rightPanel"><a href="#content33"> &nbsp; Adaptive Image Loader (AIL)</a></li>
+            <li class="rightPanel"><a href="#content34"> &#160; Card Elements </a></li>
+            <li class="rightPanel"><a href="#content35"> &#160; Menu Items</a></li>
+            <li class="rightPanel"><a href="#content36"> &#160; Graphs</a></li>
+
 
           </ul>
         </li>
-        <li><a href="#content3" class="titleRightPanel">UI Components</a>
+        <li><a href="#content4" class="titleRightPanel">Organisms (Blocks)</a>
           <ul>
-            <li class="rightPanel"><a href="#content31"> &#160; Atoms | Bases</a></li>
-            <li class="rightPanel"><a href="#content32"> &#160; Molecules | Comps</a></li>
-            <li class="rightPanel"><a href="#content33"> &#160; Organisms | Blocks</a></li>
-          </ul>
-        </li>
-        <li><a href="#content4" class="titleRightPanel">Navigation</a>
-          <ul>
-            <li class="rightPanel"><a href="#content41"> &#160; Header</a></li>
-            <li class="rightPanel"><a href="#content42"> &#160; Footer</a></li>
-            <li class="rightPanel"><a href="#content43"> &#160; Navigation</a></li>
+            <li class="rightPanel"><a href="#content41"> &#160; Expandable Content</a></li>
+            <li class="rightPanel"><a href="#content42"> &#160; Interactive Accordion</a></li>
+            <li class="rightPanel"><a href="#content43"> &#160; Carousel Collection </a></li>
+            <li class="rightPanel"><a href="#content44"> &#160; Modals</a></li>
+            <li class="rightPanel"><a href="#content45"> &#160; Navigation - Header </a></li>
+            <li class="rightPanel"><a href="#content46"> &#160; Navigation - Footer </a></li>
+            <li class="rightPanel"><a href="#content47"> &#160; Navigation - Sidebar </a></li>
+            <li class="rightPanel"><a href="#content48"> &#160; Code Snippet Explorer </a></li>
+            <li class="rightPanel"><a href="#content49"> &#160; Tag Cloud</a></li>
           </ul>
         </li>
 
@@ -191,22 +208,17 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
     <section id="content1">
-      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
-        <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Styles</span><img class="widthLogo" src="../icon/library.svg" alt="Research">
-          </h1>
-        </div>
-      </div>
+      <%- include(`${templatePath}/shared/comp_content_title`, {type:'center', title: 'Styles', iconUrl:`${websitePath}/icon/library.svg` }) %>
       <section id="content11">
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Color Guidance</strong> </h1>
+                <h1> <strong class="SkylineBlueDarker">Color Guidance</strong> </h1>
               </div>
             </div>
           </div>
-          <%- include('../shared/arrowSubtitle', {message: 'Tonal Palettes' }) %>
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Tonal Palettes' }) %>
 
 
 
@@ -407,7 +419,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS BgSkylineBlueLt shadowBox">
+                <div class="blockS SkylineBlueDarker shadowBox">
                   <div>Beach 300</div>
                   <div>HEX:292929</div>
                 </div>
@@ -415,7 +427,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS BgSkylineBlueLter shadowBox">
+                <div class="blockS SkylineBlueDarkerer shadowBox">
                   <div>Beach 200</div>
                   <div>HEX:4f4f4f</div>
                 </div>
@@ -423,7 +435,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS BgSkylineBlueLtest shadowBox">
+                <div class="blockS SkylineBlueDarkerest shadowBox">
                   <div>Beach 100</div>
                   <div>HEX:757575</div>
                 </div>
@@ -501,13 +513,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               .SkylineBlue {
                   color: var(--colorTealDk);
               }
-              .SkylineBlueLt {
+              .SkylineBlueDarker {
                   color: var(--colorTealLt);
               }
-              .SkylineBlueLter {
+              .SkylineBlueDarkerer {
                   color: var(--colorTealLtr);
               }
-              .SkylineBlueLtest {
+              .SkylineBlueDarkerest {
                   color: var(--colorTealLtest);
               }
               .BgAlet {
@@ -521,13 +533,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               .BgSkylineBlue {
                   background-color: var(--colorTealDk);
               }
-              .BgSkylineBlueLt {
+              .SkylineBlueDarker {
                   background-color: var(--colorTealLt);
               }
-              .BgSkylineBlueLter {
+              .SkylineBlueDarkerer {
                   background-color: var(--colorTealLtr);
               }
-              .BgSkylineBlueLtest {
+              .SkylineBlueDarkerest {
                   background-color: var(--colorTealLtest);
               }
               .BgAlet {
@@ -555,7 +567,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Typography </strong> </h1>
+                <h1> <strong class="SkylineBlueDarker"> Typography </strong> </h1>
               </div>
             </div>
           </div>
@@ -736,7 +748,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Wordmark </strong> </h1>
+                <h1> <strong class="SkylineBlueDarker"> Wordmark </strong> </h1>
               </div>
             </div>
           </div>
@@ -804,7 +816,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Elevation </strong> </h1>
+                <h1> <strong class="SkylineBlueDarker"> Elevation </strong> </h1>
               </div>
             </div>
           </div>
@@ -864,24 +876,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         </div>
       </section>
-
-    </section>
-
-    <section id="content2">
-
-      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
-        <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Spacing &#38; Grid</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
-          </h1>
-        </div>
-      </div>
-      <div class="blankHXS"></div>
-      <section id="content21">
+      <section id="content15">
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Layout</strong> </h1>
+                <h1> <strong class="SkylineBlueDarker">Layout</strong> </h1>
               </div>
             </div>
           </div>
@@ -1351,12 +1351,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
       </section>
-      <section id="content22">
+      <section id="content16">
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Responsive Grid</strong> </h1>
+                <h1> <strong class="SkylineBlueDarker">Responsive Grid</strong> </h1>
               </div>
             </div>
           </div>
@@ -1921,32 +1921,24 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
 
       </section>
-
-
     </section>
-
-    <section id="content3">
-      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
-        <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>UI Components</span><img class="widthLogo" src="../icon/components.svg" alt="Iterate">
-          </h1>
-        </div>
-      </div>
-
-      <div class="blankHXS"></div>
-      <section id="content31">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt">Atoms | Bases</strong> </h1>
-                <h4>Atoms are the fundamental building blocks of our design system, representing the smallest, basic UI elements. Examples include buttons, text fields, and icons. They can be used as-is or combined to create more complex components. Atoms are versatile and reusable across different parts of the design.</h4>
-              </div>
+    <section id="content2">
+      <%- include('../shared/comp_content_title', {type:'center', title: `Atoms (Basic Elements)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4>Atoms are the fundamental building blocks of our design system, representing the smallest, basic UI elements. Examples include buttons, text fields, and icons. They can be used as-is or combined to create more complex components. Atoms are versatile and reusable across different parts of the design.</h4>
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
+      </div>
+      <section id="content21">
 
+        <div class="blankHXS"></div>
+        <%- include('../shared/comp_content_title', {type:'left', title: `base_buttons`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+        <div class="blankHS"></div>
         <!-- Arrow -->
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters u-textCenter">
@@ -2011,32 +2003,36 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <%- include('../shared/copyCode', 
-          {Demo: false, Name: 'Item13', idTab1:'T131',idTab2:'T132',idTab3:'T133', tab1:'',tab2:'checked',tab3:'',
-          EJS: ``,
-          HTML: `
-            <!-- Large button -->
-            <a> <button class="buttonLanding">Button &nbsp; </button></a>
-            <a> <button class="buttonLanding arrButton">Button &nbsp;</button></a>
-            <!-- Large button -->
+        {Demo: false, Name: 'Item13', idTab1:'T131',idTab2:'T132',idTab3:'T133', tab1:'',tab2:'checked',tab3:'',
+        EJS: ``,
+        HTML: `
+          <!-- Large button -->
+          <a> <button class="buttonLanding">Button &nbsp; </button></a>
+          <a> <button class="buttonLanding arrButton">Button &nbsp;</button></a>
+          <!-- Large button -->
 
-            <!-- Small button -->
-            <a> <button class="button-35 DS">Button</button></a>
-            <!-- Small button -->
-          `,
-          CSS:` 
-            `
-          }) %>
-
-
-          <div class="blankHM"></div>
+          <!-- Small button -->
+          <a> <button class="button-35 DS">Button</button></a>
+          <!-- Small button -->
+        `,
+        CSS:` 
+          `
+        }) %>
 
 
 
-          <!-- Arrow -->
-          <%- include('../shared/arrowSubtitle', {message: 'Icons' }) %>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
 
+      </section>
+      <section id="content22">
+        <%- include('../shared/comp_content_title', {type:'left', title: `base_icons`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+
+        <!-- Arrow -->
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Icons' }) %>
+        <!-- Arrow -->
+        <div class="blankHXS"></div>
+
+        <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-8 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
@@ -2430,8 +2426,6 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
 
           </div>
-
-
           <div class="Grid Grid--gutters Grid--cols-8 u-textCenter">
 
             <div class="Grid-cell">
@@ -2501,253 +2495,89 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include('../shared/copyCode', 
-          {Demo: false, Name: 'Item14', idTab1:'T141',idTab2:'T142',idTab3:'T143', tab1:'',tab2:'',tab3:'checked',
-          EJS: ``,
-          HTML: `
-            <img src="../icon/arrow-down.svg" alt="Arrow Down">
-            <img src="../icon/arrow-up.svg" alt="Arrow Uo">
-            <img src="../icon/arrow-back.svg" alt="Arrow Back">
-            <img src="../icon/arrow-forward.svg" alt="Arrow Forward">
-            <img src="../icon/plus.svg" alt="Plus">
-            <img src="../icon/minus.svg" alt="Minus">
-            <img src="../icon/delete.svg" alt="Delete">
-            <img src="../icon/arrow-nw.svg" alt="Arrow NW">
-            <img src="../icon/arrow-ne.svg" alt="Arrow NE">
-            <img src="../icon/arrow-sw.svg" alt="Arrow SW">
-            <img src="../icon/arrow-se.svg" alt="Arrow SE">
-            <img src="../icon/in.svg" alt="LinkedIn">
-            <img src="../icon/ins.svg" alt="Instagram">
-            <img src="../icon/git.svg" alt="GitHub">
-            <img src="../icon/Codepen.svg" alt="CodePen">
-            <img src="../icon/iconFigma.svg" alt="Figma">
-            <img src="../icon/mail.svg" alt="Mail">
-            <img src="../icon/icon_clipboard-tick.svg">
-            <img src="../icon/icon_Testing.svg">
-            <img src="../icon/Document.svg" alt="Document">
-            <img src="../icon/Receipt.svg" alt="Arrow Up">
-            <img src="../icon/icon_research.svg" alt="Research">
-            <img src="../icon/iconAlert.svg" alt="Alert">
-            <img src="../icon/copy.svg" alt="CodePen">
-            <img src="../icon/link.svg" alt="Link">
-            <img src="../icon/icon_Final.svg">
-            <img src="../icon/note.svg">
-            <img src="../icon/Category.svg">
-            <img src="../icon/layout.svg">
-            <img src="../icon/tag.svg">
-            <img src="../icon/icon_Iteration.svg">
-            <img src="../icon/iconCalendar.svg">
-            <img src="../icon/icon_Redesign.svg">
-            <img src="../icon/library.svg">
-            <img src="../icon/components.svg">
-            <img src="../icon/icon_promotion.svg">
-            <img src="../icon/IconCompass.svg">
-            <img src="../icon/Profile.svg">
-          `,
-          CSS:` 
-            .iconXS {
-                width: 16px;
-                margin: 0;
-            }
-            .iconS {
-                width: 24px;
-                margin: 0;
-            }
-            .iconM {
-                width: 32px;
-            }
-            .iconL {
-                width: 40px;
-            }
-            .iconXL {
-                width: 48px;
-            }
-            .iconMax {
-                width: 56px;
-            }
-            .iconDemo {
-                margin: 0.6em;
-                padding: 1.2em;
-                width: 2em;
-                height: auto;
-                cursor: pointer;
-            }
-            `
-          }) %>
+        {Demo: false, Name: 'Item14', idTab1:'T141',idTab2:'T142',idTab3:'T143', tab1:'',tab2:'',tab3:'checked',
+        EJS: ``,
+        HTML: `
+          <img src="../icon/arrow-down.svg" alt="Arrow Down">
+          <img src="../icon/arrow-up.svg" alt="Arrow Uo">
+          <img src="../icon/arrow-back.svg" alt="Arrow Back">
+          <img src="../icon/arrow-forward.svg" alt="Arrow Forward">
+          <img src="../icon/plus.svg" alt="Plus">
+          <img src="../icon/minus.svg" alt="Minus">
+          <img src="../icon/delete.svg" alt="Delete">
+          <img src="../icon/arrow-nw.svg" alt="Arrow NW">
+          <img src="../icon/arrow-ne.svg" alt="Arrow NE">
+          <img src="../icon/arrow-sw.svg" alt="Arrow SW">
+          <img src="../icon/arrow-se.svg" alt="Arrow SE">
+          <img src="../icon/in.svg" alt="LinkedIn">
+          <img src="../icon/ins.svg" alt="Instagram">
+          <img src="../icon/git.svg" alt="GitHub">
+          <img src="../icon/Codepen.svg" alt="CodePen">
+          <img src="../icon/iconFigma.svg" alt="Figma">
+          <img src="../icon/mail.svg" alt="Mail">
+          <img src="../icon/icon_clipboard-tick.svg">
+          <img src="../icon/icon_Testing.svg">
+          <img src="../icon/Document.svg" alt="Document">
+          <img src="../icon/Receipt.svg" alt="Arrow Up">
+          <img src="../icon/icon_research.svg" alt="Research">
+          <img src="../icon/iconAlert.svg" alt="Alert">
+          <img src="../icon/copy.svg" alt="CodePen">
+          <img src="../icon/link.svg" alt="Link">
+          <img src="../icon/icon_Final.svg">
+          <img src="../icon/note.svg">
+          <img src="../icon/Category.svg">
+          <img src="../icon/layout.svg">
+          <img src="../icon/tag.svg">
+          <img src="../icon/icon_Iteration.svg">
+          <img src="../icon/iconCalendar.svg">
+          <img src="../icon/icon_Redesign.svg">
+          <img src="../icon/library.svg">
+          <img src="../icon/components.svg">
+          <img src="../icon/icon_promotion.svg">
+          <img src="../icon/IconCompass.svg">
+          <img src="../icon/Profile.svg">
+        `,
+        CSS:` 
+          .iconXS {
+              width: 16px;
+              margin: 0;
+          }
+          .iconS {
+              width: 24px;
+              margin: 0;
+          }
+          .iconM {
+              width: 32px;
+          }
+          .iconL {
+              width: 40px;
+          }
+          .iconXL {
+              width: 48px;
+          }
+          .iconMax {
+              width: 56px;
+          }
+          .iconDemo {
+              margin: 0.6em;
+              padding: 1.2em;
+              width: 2em;
+              height: auto;
+              cursor: pointer;
+          }
+          `
+        }) %>
+        </div>
 
-          <div class="blankHM"></div>
+        <div class="blankHM"></div>
+      </section>
+      <section id="content23">
+        <%- include('../shared/comp_content_title', {type:'left', title: `base_iconsSizes`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Icons Sizes' }) %>
 
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Inputs<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-
-
-
-          <div class="img__wrap widthS heightS element">
-            <div class="img__descriptionDesignSystem">
-              <div class="input-field">
-
-
-                <div class="column">
-                  <label for="password">
-                    <h5>Password</h5>
-                  </label>
-
-                  <input class="PWinput" type="password" id="password" placeholder="Enter password">
-
-                  <div class="pwIncorrectHeight">
-                    <span id="pwIncorrect">Password is incorrect </span>
-                  </div>
-                </div>
-                <button class="passwordArr" type="submit">
-                  <img src="../icon/arrow-forward.svg" alt="Enter">
-                  <!--  <i class="fas fa-chevron-right"></i> -->
-                </button>
-
-
-              </div>
-            </div>
-
-          </div>
-          <%- include('../shared/copyCode', 
-          {Demo: false, Name: 'Item15', idTab1:'T151',idTab2:'T152',idTab3:'T153', tab1:'',tab2:'checked',tab3:'',
-          EJS: ``,
-          HTML: `
-            <div class="img__wrap widthS heightS element">
-              <div class="img__descriptionDesignSystem">
-                <div class="input-field">
-
-
-                  <div class="column">
-                    <label for="password">
-                      <h5>Password</h5>
-                    </label>
-
-                    <input class="PWinput" type="password" id="password" placeholder="Enter password">
-
-                    <div class="pwIncorrectHeight">
-                      <span id="pwIncorrect">Password is incorrect </span>
-                    </div>
-                  </div>
-                  <button class="passwordArr" type="submit">
-                    <img src="../icon/arrow-forward.svg" alt="Enter">
-                    <!--  <i class="fas fa-chevron-right"></i> -->
-                  </button>
-
-
-                </div>
-              </div>
-
-            </div>
-          `,
-          CSS:` 
-            .PWinputLanding:focus {
-                background-color: var(--white);
-                border-radius: 10px;
-
-                /* Keep the border width the same as in the default state */
-                border: 1px solid rgba(170, 182, 217, 0.3);
-                /* Add an additional box-shadow to simulate the 2px extra border */
-                box-shadow:
-                    inset 0 0 0 1px rgba(64, 109, 192, 0.9),
-                    0 0 0 2px rgba(142, 187, 255, 0.3)
-                    /* This is the original box-shadow for the 4px offset */
-            }
-            .PWinput:focus {
-                background-color: var(--white);
-                border-radius: 10px;
-                /* Keep the border width the same as in the default state */
-                border: 1px solid rgba(170, 217, 217, 0.3);
-                /* Add an additional box-shadow to simulate the 2px extra border */
-                box-shadow:
-                    inset 0 0 0 1px rgba(143, 191, 191, 0.9),
-                    0 0 0 2px rgba(170, 217, 217, 0.3)
-                    /* This is the original box-shadow for the 4px offset */
-            }
-            input {
-                width: 16em;
-                height: 42px;
-                padding: 0 12px;
-                background: var(--white);
-                font-size: 16px;
-                border-radius: 10px;
-                outline: none;
-                border: 1px solid var(--Grey800);
-            }
-            .input-field {
-                display: flex;
-                /* Add flex */
-                flex-direction: row;
-                align-items: left;
-                /* Vertically center children */
-                justify-content: flex-end;
-                /* Horizontally center children */
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            .input-field button img {
-                animation: arrowani 0.8s linear infinite alternate;
-            }
-            .input-field button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 1.8rem;
-                height: 100%;
-                background: transparent;
-                border: none;
-                cursor: pointer;
-                color: var(--Grey900);
-            }
-            button.passwordArr {
-                margin-top: 11%;
-                padding: 0;
-                color: var(--Grey900);
-            }
-            .pwIncorrectHeight {
-                height: 3em;
-            }
-            #pwIncorrect {
-                margin: 0;
-                padding: 8px;
-                font-weight: 500;
-                color: var(--alert);
-                display: none;
-            }
-            @keyframes arrowani {
-                100% {
-                    margin-right: -8px;
-                }
-            }
-            `
-          }) %>
-          <div class="blankHM"></div>
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Copy to Clipboard - Icon<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
+        <div class="blankHXS"></div>
+        <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-8 u-textCenter Grid--center">
             <div class="Grid-cell">
               <div class="element">
@@ -2833,286 +2663,333 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
 
           </div>
-          <%- include('../shared/copyCode', 
-          {Demo: false, Name: 'Item16', idTab1:'T161',idTab2:'T162',idTab3:'T163', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-            <div class="Grid-cell">
-                <div class="element">
-                  <div class="ClipboardBoxIconOnly">
-                    <button class="ClipboardIconOnly">
-                      <img class="iconXS hoverGrey100 paddingXL borderRadiusMax" 
-                        title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
+        </div>
 
-                  <div class="ClipboardBoxIconOnly">
-                    <button class="ClipboardIconOnly">
-                      <img class="iconS hoverGrey100 paddingXL borderRadiusMax" 
-                        title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                    </button>
-                  </div>
 
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="ClipboardBoxIconOnly">
-                    <button class="ClipboardIconOnly">
-                      <img class="iconM hoverGrey100 paddingXL borderRadiusMax" 
-                        title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="ClipboardBoxIconOnly">
-                    <button class="ClipboardIconOnly">
-                      <img class="iconL hoverGrey100 paddingXL borderRadiusMax" 
-                        title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="ClipboardBoxIconOnly">
-                    <button class="ClipboardIconOnly">
-                      <img class="iconXL hoverGrey100 paddingXL borderRadiusMax" 
-                        title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="ClipboardBoxIconOnly">
-                    <button class="ClipboardIconOnly">
-                      <img class="iconMax hoverGrey100 paddingXL borderRadiusMax" 
-                        title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                    </button>
-                  </div>
-                </div>
-              </div>
-          `,
-          CSS:` 
- 
- 
-            `
-          }) %>
-          <div class="blankHM"></div>
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Copy to Clipboard - Textbox<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="containerCopy">
-                  <div class="ClickandCopy">Lorem ipsum</div>
-                  <div class="copy-text">
-                    <input type="text" class="text" value="https://www.vickywang.me" />
-                    <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <%- include('../shared/copyCode', 
-          {Demo: false, Name: 'Item17', idTab1:'T171',idTab2:'T172',idTab3:'T173', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-            <div class="containerCopy element">
-              <div class="ClickandCopy">Lorem ipsum</div>
-              <div class="copy-text">
-                <input type="text" class="text" value="https://www.vickywang.me" />
-                <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
+        <%- include('../shared/copyCode', 
+      {Demo: false, Name: 'Item16', idTab1:'T161',idTab2:'T162',idTab3:'T163', tab1:'',tab2:'checked',tab3:'',
+      EJS: `
+      `,
+      HTML: `
+        <div class="Grid-cell">
+            <div class="element">
+              <div class="ClipboardBoxIconOnly">
+                <button class="ClipboardIconOnly">
+                  <img class="iconXS hoverGrey100 paddingXL borderRadiusMax" 
+                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
                 </button>
               </div>
             </div>
-          `,
-          CSS:` 
-            `
-          }) %>
-          <div class="blankHM"></div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
 
+              <div class="ClipboardBoxIconOnly">
+                <button class="ClipboardIconOnly">
+                  <img class="iconS hoverGrey100 paddingXL borderRadiusMax" 
+                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                </button>
+              </div>
 
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Copy to Clipboard - Paragraph<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ClipboardBoxIconOnly">
+                <button class="ClipboardIconOnly">
+                  <img class="iconM hoverGrey100 paddingXL borderRadiusMax" 
+                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                </button>
               </div>
             </div>
           </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="Grid Grid--gutters Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBox clickTxt">
-                  <button class="Clipboard clickTxt" contenteditable="false">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                  </button>
-                </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ClipboardBoxIconOnly">
+                <button class="ClipboardIconOnly">
+                  <img class="iconL hoverGrey100 paddingXL borderRadiusMax" 
+                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                </button>
               </div>
             </div>
           </div>
-          <%- include('../shared/copyCode', 
-          {Demo: false, Name: 'Item18', idTab1:'T181',idTab2:'T182',idTab3:'T183', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-          <div class="Grid Grid--gutters Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBox clickTxt">
-                  <button class="Clipboard clickTxt" contenteditable="false">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                  </button>
-                </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ClipboardBoxIconOnly">
+                <button class="ClipboardIconOnly">
+                  <img class="iconXL hoverGrey100 paddingXL borderRadiusMax" 
+                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                </button>
               </div>
             </div>
           </div>
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
-          <div class="blankHM"></div>
-
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Copy to Clipboard - Code<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ClipboardBoxIconOnly">
+                <button class="ClipboardIconOnly">
+                  <img class="iconMax hoverGrey100 paddingXL borderRadiusMax" 
+                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                </button>
               </div>
             </div>
           </div>
-          <!-- Arrow -->
-          <%- include('../shared/copyCode', 
-          {Demo: '', Name: 'Item19', idTab1:'T191',idTab2:'T192',idTab3:'T193', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-          <div class="Grid Grid--gutters Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBox clickTxt">
-                  <button class="Clipboard clickTxt" contenteditable="false">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      `,
+      CSS:` 
 
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
 
-          <%- include('../shared/copyCode', 
-          {Demo: false, Name: 'Item19', idTab1:'T191',idTab2:'T192',idTab3:'T193', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-          <div class="Grid Grid--gutters Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBox clickTxt">
-                  <button class="Clipboard clickTxt" contenteditable="false">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        `
+      }) %>
 
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
       </section>
-      <section id="content32">
+      <section id="content24">
+        <%- include('../shared/comp_content_title', {type:'left', title: `base_inputs`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt">Molecules | Comps</strong> </h1>
-                <h4>Molecules are groups of atoms bonded together to form functional UI components. They exhibit more complexity and utility than individual atoms. For example, a search bar molecule could consist of a text input atom (field) and an action atom (button). Molecules serve as the foundational elements of more complex interfaces.</h4>
-              </div>
-            </div>
-          </div>
-          <div class="blankHXS"></div>
-        </div>
 
         <!-- Arrow -->
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Note without Background<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                <h2 class="tArrow">Inputs<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
                 </h2>
               </div>
             </div>
           </div>
         </div>
         <!-- Arrow -->
+        <div class="blankHXS"></div>
+
+        <div class="wrapper">
+
+
+          <div class="img__wrap widthS heightS element">
+            <div class="img__descriptionDesignSystem">
+              <div class="input-field">
+
+
+                <div class="column">
+                  <label for="password">
+                    <h5>Password</h5>
+                  </label>
+
+                  <input class="PWinput" type="password" id="password" placeholder="Enter password">
+
+                  <div class="pwIncorrectHeight">
+                    <span id="pwIncorrect">Password is incorrect </span>
+                  </div>
+                </div>
+                <button class="passwordArr" type="submit">
+                  <img src="../icon/arrow-forward.svg" alt="Enter">
+                  <!--  <i class="fas fa-chevron-right"></i> -->
+                </button>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <%- include('../shared/copyCode', 
+        {Demo: false, Name: 'Item15', idTab1:'T151',idTab2:'T152',idTab3:'T153', tab1:'',tab2:'checked',tab3:'',
+        EJS: ``,
+        HTML: `
+          <div class="img__wrap widthS heightS element">
+            <div class="img__descriptionDesignSystem">
+              <div class="input-field">
+
+
+                <div class="column">
+                  <label for="password">
+                    <h5>Password</h5>
+                  </label>
+
+                  <input class="PWinput" type="password" id="password" placeholder="Enter password">
+
+                  <div class="pwIncorrectHeight">
+                    <span id="pwIncorrect">Password is incorrect </span>
+                  </div>
+                </div>
+                <button class="passwordArr" type="submit">
+                  <img src="../icon/arrow-forward.svg" alt="Enter">
+                  <!--  <i class="fas fa-chevron-right"></i> -->
+                </button>
+
+
+              </div>
+            </div>
+
+          </div>
+        `,
+        CSS:` 
+          .PWinputLanding:focus {
+              background-color: var(--white);
+              border-radius: 10px;
+
+              /* Keep the border width the same as in the default state */
+              border: 1px solid rgba(170, 182, 217, 0.3);
+              /* Add an additional box-shadow to simulate the 2px extra border */
+              box-shadow:
+                  inset 0 0 0 1px rgba(64, 109, 192, 0.9),
+                  0 0 0 2px rgba(142, 187, 255, 0.3)
+                  /* This is the original box-shadow for the 4px offset */
+          }
+          .PWinput:focus {
+              background-color: var(--white);
+              border-radius: 10px;
+              /* Keep the border width the same as in the default state */
+              border: 1px solid rgba(170, 217, 217, 0.3);
+              /* Add an additional box-shadow to simulate the 2px extra border */
+              box-shadow:
+                  inset 0 0 0 1px rgba(143, 191, 191, 0.9),
+                  0 0 0 2px rgba(170, 217, 217, 0.3)
+                  /* This is the original box-shadow for the 4px offset */
+          }
+          input {
+              width: 16em;
+              height: 42px;
+              padding: 0 12px;
+              background: var(--white);
+              font-size: 16px;
+              border-radius: 10px;
+              outline: none;
+              border: 1px solid var(--Grey800);
+          }
+          .input-field {
+              display: flex;
+              /* Add flex */
+              flex-direction: row;
+              align-items: left;
+              /* Vertically center children */
+              justify-content: flex-end;
+              /* Horizontally center children */
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+          }
+          .input-field button img {
+              animation: arrowani 0.8s linear infinite alternate;
+          }
+          .input-field button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 1.8rem;
+              height: 100%;
+              background: transparent;
+              border: none;
+              cursor: pointer;
+              color: var(--Grey900);
+          }
+          button.passwordArr {
+              margin-top: 11%;
+              padding: 0;
+              color: var(--Grey900);
+          }
+          .pwIncorrectHeight {
+              height: 3em;
+          }
+          #pwIncorrect {
+              margin: 0;
+              padding: 8px;
+              font-weight: 500;
+              color: var(--alert);
+              display: none;
+          }
+          @keyframes arrowani {
+              100% {
+                  margin-right: -8px;
+              }
+          }
+          `
+        }) %>
+        <div class="blankHM"></div>
+
+
+      </section>
+    </section>
+
+    <section id="content3">
+
+      <%- include(`${templatePath}/shared/comp_content_title`, {type:'center', title: `Molecules (Composite Components)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4>Molecules are groups of atoms bonded together to form functional UI components. They exhibit more complexity and utility than individual atoms. For example, a search bar molecule could consist of a text input atom (field) and an action atom (button). Molecules serve as the foundational elements of more complex interfaces.</h4>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+      <div class="blankHXS"></div>
+
+      <section id="content31">
+        <%- include('../shared/comp_content_title', {type:'left', title: `comp_textualElements`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Title' }) %>
+
+        <div class="GreyBg200 wrapper">
+          <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+            <div class="Grid-cell">
+              <div class="element">
+                <h3 class="fontWeight300">comp_content_title
+                </h3>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="Grid Grid--center"> <span>Title</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+            <div class="Grid-cell">
+              <div class="element">
+                <h3 class="fontWeight300">comp_content_title
+                </h3>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h2 class="tArrow">Buttons<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <%- include(`${templatePath}/shared/copyCode`, 
+                {Demo: false, Name: 'content', idTab1:'contentT1',idTab2:'contentT2',idTab3:'contentT3', tab1:'checked',tab2:'',tab3:'',
+                EJS: ``,
+                HTML: `
+                  <!-- Large button -->
+                  <a> <button class="buttonLanding">Button &nbsp; </button></a>
+                  <a> <button class="buttonLanding arrButton">Button &nbsp;</button></a>
+                  <!-- Large button -->
+        
+                  <!-- Small button -->
+                  <a> <button class="button-35 DS">Button</button></a>
+                  <!-- Small button -->
+                `,
+                CSS:` 
+                  `
+                }) %>
+
+
+
+
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Note without Background' }) %>
         <div class="wrapper">
           <div class="blankHXS"></div>
           <div class="Grid Grid--full Grid--gutters">
@@ -3223,19 +3100,233 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           `
         }) %>
 
-        <div class="blankHM"></div>
-        <!-- Arrow -->
+        <%- include('../shared/comp_content_title', {type:'left', title: `comp_closingMessage`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include('../shared/comp_content_subtitle_arrow', {message: `comp_closingMessage` }) %>
+
+
+        <%- include(`${templatePath}/shared/thankYouMessage`, { version: '', message:''}) %>
+        <%- include('../shared/copyCode', 
+        {Demo: false, Name: 'Item44', idTab1:'T441',idTab2:'T442',idTab3:'T443', tab1:'',tab2:'checked',tab3:'',
+        EJS: '',
+        HTML: `
+        <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid-cell">
+            <div data-aos="fade-up" class="aos-init aos-animate">
+              
+              <h4 class="element">
+                Thank You for Visiting ! Check back soon for more updates and stay tuned !
+              </h4>
+              
+            </div>
+            <a href="/" class=""><img class="widthXS" src="/icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
+          </div>
+        </div>
+        `,
+        CSS:
+        `
+        `
+        }) %>
+
+
+
+
+
+      </section>
+      <section id="content32">
+        <%- include('../shared/comp_content_title', {type:'left', title: `comp_clipboardCopyField`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Icon Copy Trigger (ICT)` }) %>
+
+        <div class="blankHXS"></div>
         <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid Grid--gutters Grid--cols-8 u-textCenter Grid--center">
+
+
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Card<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
+                <div class="ClipboardBoxIconOnly">
+                  <button class="ClipboardIconOnly">
+                    <img class="iconMax hoverGrey100 paddingXL borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                    <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="blankHM"></div>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Input Icon Copy Trigger (IICT)` }) %>
+
+
+        <div class="blankHXS"></div>
+        <div class="wrapper">
+
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="containerCopy">
+                  <div class="ClickandCopy">Lorem ipsum</div>
+                  <div class="copy-text">
+                    <input type="text" class="text" value="https://www.vickywang.me" />
+                    <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Arrow -->
+
+        <%- include('../shared/copyCode', 
+      {Demo: false, Name: 'Item17', idTab1:'T171',idTab2:'T172',idTab3:'T173', tab1:'',tab2:'checked',tab3:'',
+      EJS: `
+      `,
+      HTML: `
+        <div class="containerCopy element">
+          <div class="ClickandCopy">Lorem ipsum</div>
+          <div class="copy-text">
+            <input type="text" class="text" value="https://www.vickywang.me" />
+            <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
+            </button>
+          </div>
+        </div>
+      `,
+      CSS:` 
+        `
+      }) %>
+        <div class="blankHM"></div>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Text Field Copy Trigger (TFCT)` }) %>
+
+
+        <div class="blankHXS"></div>
+        <div class="wrapper">
+
+          <div class="Grid Grid--gutters Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="ClipboardBox clickTxt">
+                  <button class="Clipboard clickTxt" contenteditable="false">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%- include('../shared/copyCode', 
+      {Demo: false, Name: 'Item18', idTab1:'T181',idTab2:'T182',idTab3:'T183', tab1:'',tab2:'checked',tab3:'',
+      EJS: `
+      `,
+      HTML: `
+      <div class="Grid Grid--gutters Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="ClipboardBox clickTxt">
+              <button class="Clipboard clickTxt" contenteditable="false">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      `,
+      CSS:
+      ` 
+        `
+      }) %>
+        <div class="blankHM"></div>
+
+      </section>
+      <section id="content33">
+        <%- include('../shared/comp_content_title', {type:'left', title: `comp_adaptiveImageLoader`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Adaptive Image Loader' }) %>
+
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="ShadowBox">
+                  <picture>
+                    <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
+                    <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_placeholder.jpg">
+                    <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
+                    <img src="./medium_default_placeholder.jpg" alt="Testing" style="width:100%;">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%- include('../shared/copyCode', 
+      {Demo: false, Name: 'Item25', idTab1:'T251',idTab2:'T252',idTab3:'T253', tab1:'',tab2:'checked',tab3:'',
+      EJS: `
+      `,
+      HTML: `
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="ShadowBox">
+                  <picture>
+                    <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
+                    <source media="(min-width:651px) and (max-width:1080px)"
+                      srcset="./medium(default)_placeholder.jpg">
+                    <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
+                    <img src="./medium(default)_placeholder.jpg" alt="Testing" style="width:100%;">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>             
+      `,
+      CSS:
+      ` 
+        `
+      }) %>
+      </section>
+      <section id="content34">
+
+        <div class="blankHM"></div>
+        <%- include('../shared/comp_content_title', {type:'left', title: `comp_cards`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card' }) %>
+
 
         <div class="blankHXS"></div>
         <div class="wrapper">
@@ -3271,62 +3362,49 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
 
         <%- include('../shared/copyCode', 
-        {Demo: false, Name: 'Item22', idTab1:'T221',idTab2:'T222',idTab3:'T223', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <div class="element">
-                    <h4> <strong> Title</strong> </h4>
-                    <ul>
-                      <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. </li>
-                      <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. </li>
-                    </ul>
+          {Demo: false, Name: 'Item22', idTab1:'T221',idTab2:'T222',idTab3:'T223', tab1:'',tab2:'checked',tab3:'',
+          EJS: `
+          `,
+          HTML: `
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutters">
+              <div class="Grid-cell">
+                <div class="Grid Grid--gutters Grid--cols-2">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h4> <strong> Title</strong> </h4>
+                      <ul>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. </li>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="Grid-cell">
-                  <div class="element">
-                    <h4> <strong> Title</strong> </h4>
-                    <ul>
-                      <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. </li>
-                      <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. </li>
-                    </ul>
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h4> <strong> Title</strong> </h4>
+                      <ul>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. </li>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
+          `,
+          CSS:
+          ` 
+            `
+          }) %>
+        <%- include('../shared/comp_content_title', {type:'left', title: `comp_card`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
 
-        <div class="blankHS"></div>
-
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Card &#43; Border<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card & Border' }) %>
 
         <div class="blankHXS"></div>
         <div class="wrapper">
@@ -3401,18 +3479,8 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
         <div class="blankHS"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Card &#43; Gradient<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card & Gradient' }) %>
 
         <div class="blankHXS"></div>
         <div class="wrapper">
@@ -3511,76 +3579,10 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         <div class="blankHM"></div>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Image &#43; Screen Sizes<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <picture>
-                    <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
-                    <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_placeholder.jpg">
-                    <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
-                    <img src="./medium_default_placeholder.jpg" alt="Testing" style="width:100%;">
-                  </picture>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <%- include('../shared/copyCode', 
-        {Demo: false, Name: 'Item25', idTab1:'T251',idTab2:'T252',idTab3:'T253', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="ShadowBox">
-                    <picture>
-                      <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
-                      <source media="(min-width:651px) and (max-width:1080px)"
-                        srcset="./medium(default)_placeholder.jpg">
-                      <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
-                      <img src="./medium(default)_placeholder.jpg" alt="Testing" style="width:100%;">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>             
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
 
         <div class="blankHM"></div>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card & Image' }) %>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Card &#43; image <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-2">
             <div class="Grid-cell">
@@ -3666,19 +3668,8 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         }) %>
 
         <div class="blankHM"></div>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card & Image' }) %>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Card &#43; Image &#43; Link <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
         <div class="blankHXS"></div>
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-2">
@@ -3773,20 +3764,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         }) %>
 
 
-        <div class="blankHM"></div>
+      </section>
+      <section id="content35">
+        <%- include('../shared/comp_content_title', {type:'left', title: `comp_content`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include('../shared/comp_content_title', {type:'left', title: `comp_audioPlayer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Audio Player' }) %>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Audio Player<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
         <div class="blankHXS"></div>
         <div class="wrapper">
 
@@ -3861,7 +3844,11 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         ` 
           `
         }) %>
-        <div class="blankHM"></div>
+
+
+      </section>
+      <section id="content36">
+
 
         <!-- Arrow -->
         <div class="wrapper">
@@ -3986,33 +3973,24 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
-      <section id="content33">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt">Organisms | Blocks </strong> </h1>
-                <h4 class="textItalic">Organisms are complex UI components composed of groups of molecules and atoms working together as a cohesive unit. They form significant sections of an interface, like a website's header, which might include logo, navigation, and search form molecules. Organisms are the culmination of smaller components assembled to function effectively in the UI ecosystem.
 
-                </h4>
-              </div>
+    </section>
+    <section id="content4">
+      <%- include(`${templatePath}/shared/comp_content_title`, {type:'center', title: `Molecules (Structured Block)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="textItalic">Organisms are complex UI components composed of groups of molecules and atoms working together as a cohesive unit. They form significant sections of an interface, like a website's header, which might include logo, navigation, and search form molecules. Organisms are the culmination of smaller components assembled to function effectively in the UI ecosystem.
+
+              </h4>
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
-
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Read More / Less Toggle<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+      </div>
+      <section id="content41">
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_expandableContentBlock`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Read More / Less Toggle' }) %>
         <div class="wrapper">
 
           <div class="Grid Grid--full Grid--gutters">
@@ -4106,19 +4084,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           `
         }) %>
 
+      </section>
+      <section id="content42">
 
-        <div class="blankHS"></div>
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_accordion`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Accordion without Background' }) %>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="element">
-            <h2 class="tArrow">Accordion without Background <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="blankHXS"></div>
 
         <div class="wrapper">
           <div class="element">
@@ -4297,15 +4269,14 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           `
         }) %>
 
+      </section>
+      <section id="content43">
+
         <div class="blankHM"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="element">
-            <h2 class="tArrow">Horizontal Layout Slideshows with Background <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
-          </div>
-        </div>
-        <!-- Arrow -->
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_carousel`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Horizontal Layout Slideshows with Background' }) %>
+
 
         <div class="blankHXS"></div>
 
@@ -4351,7 +4322,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         EJS: `
         `,
         HTML: `
-        <div class="BgSkylineBlueLter">
+        <div class="SkylineBlueDarkerer">
           <div class="blankHXS"></div>
           <div class="wrapper">
             <div class="Grid-cell">
@@ -4443,7 +4414,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           EJS: `
           `,
           HTML: `
-          <div class="BgSkylineBlueLter">
+          <div class="SkylineBlueDarkerer">
             <div class="blankHXS"></div>
             <div class="wrapper">
               <div class="Grid-cell">
@@ -4537,7 +4508,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           EJS: `
           `,
           HTML: `
-          <div class="BgSkylineBlueLter">
+          <div class="SkylineBlueDarkerer">
             <div class="blankHXS"></div>
             <div class="wrapper">
               <div class="Grid-cell">
@@ -4674,33 +4645,30 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             `
           }) %>
 
+      </section>
+      <section id="content44">
 
-          <div class="blankHM"></div>
+        <div class="blankHM"></div>
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_modals`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Modal - Background Color: Others' }) %>
 
 
-          <!-- Arrow -->
+        <div class="BgSkylineBlueLter">
+          <div class="blankHS"></div>
           <div class="wrapper">
-            <div class="element">
-              <h2 class="tArrow">Modal - Background Color: Others <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-              </h2>
+            <div class="Grid-cell">
+              <img src="./Placeholder.svg" alt="Background Color: Others" class="modal-target" data-bgcolor="rgba(230, 246, 246, 0.96)">
             </div>
           </div>
-          <!-- Arrow -->
-          <div class="BgSkylineBlueLter">
-            <div class="blankHS"></div>
-            <div class="wrapper">
-              <div class="Grid-cell">
-                <img src="./Placeholder.svg" alt="Background Color: Others" class="modal-target" data-bgcolor="rgba(230, 246, 246, 0.96)">
-              </div>
-            </div>
-            <div class="blankHS"></div>
-          </div>
-          <%- include('../shared/copyCode', 
+          <div class="blankHS"></div>
+        </div>
+        <%- include('../shared/copyCode', 
           {Demo: false, Name: 'Item36', idTab1:'T361',idTab2:'T362',idTab3:'T363', tab1:'',tab2:'checked',tab3:'',
           EJS: `
           `,
           HTML: `
-            <div class="BgSkylineBlueLter">
+            <div class="SkylineBlueDarkerer">
               <div class="blankHS"></div>
               <div class="wrapper">
                 <div class="Grid-cell">
@@ -4716,26 +4684,26 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           }) %>
 
 
-          <div class="blankHM"></div>
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="element">
-              <h2 class="tArrow">Modal - Background Color: White <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-              </h2>
-            </div>
+        <div class="blankHM"></div>
+        <!-- Arrow -->
+        <div class="wrapper">
+          <div class="element">
+            <h2 class="tArrow">Modal - Background Color: White <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+            </h2>
           </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <img src="./Placeholder.svg" alt="Background Color: White" class="modal-target" data-bgcolor="rgba(255, 255, 255, 0.96)">
-                </div>
+        </div>
+        <!-- Arrow -->
+        <div class="blankHXS"></div>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img src="./Placeholder.svg" alt="Background Color: White" class="modal-target" data-bgcolor="rgba(255, 255, 255, 0.96)">
               </div>
             </div>
           </div>
-          <%- include('../shared/copyCode', 
+        </div>
+        <%- include('../shared/copyCode', 
           {Demo: false, Name: 'Item37', idTab1:'T371',idTab2:'T372',idTab3:'T373', tab1:'',tab2:'checked',tab3:'',
           EJS: `
           `,
@@ -4754,21 +4722,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           ` 
             `
           }) %>
-
       </section>
+      <section id="content45">
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_header`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-    </section>
-    <section id="content4">
-      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
-        <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Navigation</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
-          </h1>
-        </div>
-      </div>
-      <section id="content41">
-        <!--Arrow subtitle-->
-        <%- include('../shared/arrowSubtitle', {message: 'MainHeader' }) %>
-        <!--Arrow subtitle-->
+        <%- include('../shared/comp_content_subtitle_arrow', {message: `MainHeader` }) %>
+
         <div class="wrapper">
           <nav class="headerDEMO" id="">
             <div class="backgroundColorNavDEMO">
@@ -4841,7 +4800,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         `
         }) %>
         <!--Arrow subtitle-->
-        <%- include('../shared/arrowSubtitle', {message: 'MainHeader + Dropdown Menu' }) %>
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'MainHeader + Dropdown Menu' }) %>
         <!--Arrow subtitle-->
         <div class="wrapper">
           <nav class="headerDEMO" id="">
@@ -4951,7 +4910,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                 }) %>
 
         <!--Arrow subtitle-->
-        <%- include('../shared/arrowSubtitle', {message: 'BackHeader' }) %>
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'BackHeader' }) %>
         <!--Arrow subtitle-->
         <!-- header -->
         <div class="wrapper">
@@ -5061,11 +5020,11 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                 }) %>
 
       </section>
-      <div class="blankHM"></div>
+      <section id="content46">
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_footer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-      <section id="content42">
         <!--Arrow subtitle-->
-        <%- include('../shared/arrowSubtitle', {message: 'Footer' }) %>
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Footer' }) %>
         <!--Arrow subtitle-->
         <!--footer-->
         <div class="wrapper">
@@ -5200,10 +5159,11 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
       </section>
+      <section id="content47">
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_sideNav`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-      <section id="content43">
         <!--Arrow subtitle-->
-        <%- include('../shared/arrowSubtitle', {message: 'SubNavigation' }) %>
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'SubNavigation' }) %>
         <!--Arrow subtitle-->
 
         <nav class="section-navDEMO">
@@ -5288,12 +5248,90 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                 }) %>
 
       </section>
+      <section id="content48">
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_copyCode`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Code Snippet Explorer (CSE)` }) %>
+
+
+        <%- include('../shared/copyCode', 
+        {Demo: '', Name: 'Item19', idTab1:'T191',idTab2:'T192',idTab3:'T193', tab1:'',tab2:'checked',tab3:'',
+          EJS: `
+          `,
+          HTML: `
+          <div class="Grid Grid--gutters Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="ClipboardBox clickTxt">
+                  <button class="Clipboard clickTxt" contenteditable="false">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          `,
+          CSS:
+          ` 
+            `
+        }) %>
+
+        <%- include('../shared/copyCode', 
+          {Demo: false, Name: 'Item19', idTab1:'T191',idTab2:'T192',idTab3:'T193', tab1:'',tab2:'checked',tab3:'',
+            EJS: `
+            `,
+            HTML: `
+            <div class="Grid Grid--gutters Grid--full Grid--gutters">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="ClipboardBox clickTxt">
+                    <button class="Clipboard clickTxt" contenteditable="false">
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            `,
+            CSS:
+            ` 
+              `
+          }) %>
+      </section>
+      <section id="content49">
+        <%- include('../shared/comp_content_title', {type:'left', title: `block_tagCloud`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Skills & Experiences' }) %>
+        <%- include(`${templatePath}/shared/tagCloud`) %>
+        <%- include('../shared/copyCode', 
+        {Demo: false, Name: 'Item43', idTab1:'T431',idTab2:'T432',idTab3:'T433', tab1:'checked',tab2:'',tab3:'',
+        EJS: ejsLiterals.ejs.comp_tagCloud,
+        HTML: ejsLiterals.html.comp_tagCloud,
+        CSS:
+        `
+        `
+        }) %>
+
+      </section>
+
     </section>
   </main>
 
 
 
 
+
+  <div class="blankHL"></div>
 
   <!-- The Modal -->
   <div id="modal" class="modal">
@@ -5304,44 +5342,8 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
     <div id="modal-caption" class="modal-caption"></div>
   </div>
   <!-- The Modal -->
-  <!-- Shared across the platform -->
-  <%- include(`${templatePath}/shared/arrowSubtitle`, {message: 'Skills & Experiences' }) %>
-  <%- include(`${templatePath}/shared/tagCloud`) %>
-  <%- include('../shared/copyCode', 
-  {Demo: false, Name: 'Item43', idTab1:'T431',idTab2:'T432',idTab3:'T433', tab1:'checked',tab2:'',tab3:'',
-  EJS: ejsLiterals.ejs.comp_tagCloud,
-  HTML: ejsLiterals.html.comp_tagCloud,
-  CSS:
-  `
-  `
-  }) %>
 
-  <%- include(`${templatePath}/shared/thankYouMessage`, { version: '', message:''}) %>
-  <%- include('../shared/copyCode', 
-  {Demo: false, Name: 'Item44', idTab1:'T441',idTab2:'T442',idTab3:'T443', tab1:'',tab2:'checked',tab3:'',
-  EJS: '',
-  HTML: `
-  <div class="Grid Grid--full Grid--gutters u-textCenter">
-    <div class="Grid-cell">
-      <div data-aos="fade-up" class="aos-init aos-animate">
-        
-        <h4 class="element">
-          Thank You for Visiting ! Check back soon for more updates and stay tuned !
-        </h4>
-        
-      </div>
-      <a href="/" class=""><img class="widthXS" src="/icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
-    </div>
-  </div>
-  `,
-  CSS:
-  `
-  `
-  }) %>
-  <div class="blankHL"></div>
-
-
-  <%- include(`${templatePath}/shared/backTop`) %>
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
   <%- include(`${templatePath}/shared/footer`) %>
   <!-- Shared across the platform -->
 </body>
