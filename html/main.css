@@ -66,6 +66,8 @@
     --Grey100: #fafafa;
 
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
+    --colorTealDker: #228e92;
+
     --colorTealDk: #8fbfbf;
     --colorTealLt: #AAD9D9;
     /*never change    AAD9D9*/
@@ -644,7 +646,9 @@ a.active.SEER {
 .Warm {
     color: var(--Warm);
 }
-
+.SkylineBlueDarker {
+    color: var(--colorTealDker);
+}
 .SkylineBlue {
     color: var(--colorTealDk);
 }
@@ -1707,8 +1711,8 @@ li {
 }
 
 li .rightPanel {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
     margin-left: 0;
     z-index: 98;
 

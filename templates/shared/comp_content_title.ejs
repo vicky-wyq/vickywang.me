@@ -1,0 +1,37 @@
+<% if (type === 'center' ) { %>
+
+
+
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters u-textCenter">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid Grid--center"> <span>
+            <%= title %>
+          </span><img class="widthLogo" src="<%= iconUrl %>" alt="Research">
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<% } else if (type ==='left' ) { %>
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="<%= textColor %>">
+            <%= title %>
+            <% if (iconUrl === '' ) { %>
+            <% } else { %>
+                </span><img class="widthLogo" src="<%= iconUrl %>" alt="Research">
+             <% } %>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+<% } %>

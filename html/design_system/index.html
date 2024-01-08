@@ -321,34 +321,51 @@
 
     <nav class="section-nav">
       <ol>
-        <li><a href="#content1" class="titleRightPanel">Basics Styles</a>
+        <li><a href="#content1" class="titleRightPanel">Design Fundamentals</a>
           <ul>
             <li class="rightPanel"><a href="#content11"> &#160; Color Guidance</a></li>
             <li class="rightPanel"><a href="#content12"> &#160; Typography</a></li>
             <li class="rightPanel"><a href="#content13"> &#160; Wordmark</a></li>
-
             <li class="rightPanel"><a href="#content14"> &#160; Elevation</a></li>
+            <li class="rightPanel"><a href="#content15"> &#160; Layout </a></li>
+            <li class="rightPanel"><a href="#content16"> &#160; Responsive Grid</a></li>
           </ul>
         </li>
-        <li><a href="#content2" class="titleRightPanel">Spacing &#38; Grid</a>
+        <li><a href="#content2" class="titleRightPanel">Atoms (Bases)</a>
           <ul>
-            <li class="rightPanel"><a href="#content21"> &#160; Layout </a></li>
-            <li class="rightPanel"><a href="#content22"> &#160; Responsive Grid</a></li>
+            <li class="rightPanel"><a href="#content21"> &#160; Buttons </a></li>
+            <li class="rightPanel"><a href="#content22"> &#160; Icons </a></li>
+            <li class="rightPanel"><a href="#content23"> &#160; Icon Sizes </a></li>
+            <li class="rightPanel"><a href="#content24"> &#160; Inputs </a></li>
+
+
+          </ul>
+
+        </li>
+
+        <li><a href="#content3" class="titleRightPanel">Molecules (Comps) </a>
+          <ul>
+            <li class="rightPanel"><a href="#content31"> &#160; Textual Elements</a></li>
+            <li class="rightPanel"><a href="#content32"> &#160; Clipboard Copy Field (CCF) </a></li>
+            <li class="rightPanel"><a href="#content33"> &nbsp; Adaptive Image Loader (AIL)</a></li>
+            <li class="rightPanel"><a href="#content34"> &#160; Card Elements </a></li>
+            <li class="rightPanel"><a href="#content35"> &#160; Menu Items</a></li>
+            <li class="rightPanel"><a href="#content36"> &#160; Graphs</a></li>
+
 
           </ul>
         </li>
-        <li><a href="#content3" class="titleRightPanel">UI Components</a>
+        <li><a href="#content4" class="titleRightPanel">Organisms (Blocks)</a>
           <ul>
-            <li class="rightPanel"><a href="#content31"> &#160; Atoms | Bases</a></li>
-            <li class="rightPanel"><a href="#content32"> &#160; Molecules | Comps</a></li>
-            <li class="rightPanel"><a href="#content33"> &#160; Organisms | Blocks</a></li>
-          </ul>
-        </li>
-        <li><a href="#content4" class="titleRightPanel">Navigation</a>
-          <ul>
-            <li class="rightPanel"><a href="#content41"> &#160; Header</a></li>
-            <li class="rightPanel"><a href="#content42"> &#160; Footer</a></li>
-            <li class="rightPanel"><a href="#content43"> &#160; Navigation</a></li>
+            <li class="rightPanel"><a href="#content41"> &#160; Expandable Content</a></li>
+            <li class="rightPanel"><a href="#content42"> &#160; Interactive Accordion</a></li>
+            <li class="rightPanel"><a href="#content43"> &#160; Carousel Collection </a></li>
+            <li class="rightPanel"><a href="#content44"> &#160; Modals</a></li>
+            <li class="rightPanel"><a href="#content45"> &#160; Navigation - Header </a></li>
+            <li class="rightPanel"><a href="#content46"> &#160; Navigation - Footer </a></li>
+            <li class="rightPanel"><a href="#content47"> &#160; Navigation - Sidebar </a></li>
+            <li class="rightPanel"><a href="#content48"> &#160; Code Snippet Explorer </a></li>
+            <li class="rightPanel"><a href="#content49"> &#160; Tag Cloud</a></li>
           </ul>
         </li>
 
@@ -357,18 +374,32 @@
 
 
     <section id="content1">
-      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
-        <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Styles</span><img class="widthLogo" src="../icon/library.svg" alt="Research">
-          </h1>
-        </div>
+      
+
+
+
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters u-textCenter">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid Grid--center"> <span>
+            Styles
+          </span><img class="widthLogo" src="/icon/library.svg" alt="Research">
+        </h1>
       </div>
+    </div>
+  </div>
+</div>
+
+
+
       <section id="content11">
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Color Guidance</strong> </h1>
+                <h1> <strong class="SkylineBlueDarker">Color Guidance</strong> </h1>
               </div>
             </div>
           </div>
@@ -622,7 +653,7 @@
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS BgSkylineBlueLt shadowBox">
+                <div class="blockS SkylineBlueDarker shadowBox">
                   <div>Beach 300</div>
                   <div>HEX:292929</div>
                 </div>
@@ -630,7 +661,7 @@
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS BgSkylineBlueLter shadowBox">
+                <div class="blockS SkylineBlueDarkerer shadowBox">
                   <div>Beach 200</div>
                   <div>HEX:4f4f4f</div>
                 </div>
@@ -638,7 +669,7 @@
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS BgSkylineBlueLtest shadowBox">
+                <div class="blockS SkylineBlueDarkerest shadowBox">
                   <div>Beach 100</div>
                   <div>HEX:757575</div>
                 </div>
@@ -739,13 +770,13 @@
               .SkylineBlue {
                   color: var(--colorTealDk);
               }
-              .SkylineBlueLt {
+              .SkylineBlueDarker {
                   color: var(--colorTealLt);
               }
-              .SkylineBlueLter {
+              .SkylineBlueDarkerer {
                   color: var(--colorTealLtr);
               }
-              .SkylineBlueLtest {
+              .SkylineBlueDarkerest {
                   color: var(--colorTealLtest);
               }
               .BgAlet {
@@ -759,13 +790,13 @@
               .BgSkylineBlue {
                   background-color: var(--colorTealDk);
               }
-              .BgSkylineBlueLt {
+              .SkylineBlueDarker {
                   background-color: var(--colorTealLt);
               }
-              .BgSkylineBlueLter {
+              .SkylineBlueDarkerer {
                   background-color: var(--colorTealLtr);
               }
-              .BgSkylineBlueLtest {
+              .SkylineBlueDarkerest {
                   background-color: var(--colorTealLtest);
               }
               .BgAlet {
@@ -804,7 +835,7 @@
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Typography </strong> </h1>
+                <h1> <strong class="SkylineBlueDarker"> Typography </strong> </h1>
               </div>
             </div>
           </div>
@@ -985,7 +1016,7 @@
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Wordmark </strong> </h1>
+                <h1> <strong class="SkylineBlueDarker"> Wordmark </strong> </h1>
               </div>
             </div>
           </div>
@@ -1053,7 +1084,7 @@
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt"> Elevation </strong> </h1>
+                <h1> <strong class="SkylineBlueDarker"> Elevation </strong> </h1>
               </div>
             </div>
           </div>
@@ -1113,24 +1144,12 @@
 
         </div>
       </section>
-
-    </section>
-
-    <section id="content2">
-
-      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
-        <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Spacing &#38; Grid</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
-          </h1>
-        </div>
-      </div>
-      <div class="blankHXS"></div>
-      <section id="content21">
+      <section id="content15">
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Layout</strong> </h1>
+                <h1> <strong class="SkylineBlueDarker">Layout</strong> </h1>
               </div>
             </div>
           </div>
@@ -1736,12 +1755,12 @@
 
 
       </section>
-      <section id="content22">
+      <section id="content16">
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="SkylineBlueLt">Responsive Grid</strong> </h1>
+                <h1> <strong class="SkylineBlueDarker">Responsive Grid</strong> </h1>
               </div>
             </div>
           </div>
@@ -2510,32 +2529,58 @@
         </div>
 
       </section>
-
-
     </section>
+    <section id="content2">
+      
 
-    <section id="content3">
-      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
-        <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>UI Components</span><img class="widthLogo" src="../icon/components.svg" alt="Iterate">
-          </h1>
-        </div>
+
+
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters u-textCenter">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid Grid--center"> <span>
+            Atoms (Basic Elements)
+          </span><img class="widthLogo" src="/icon/components.svg" alt="Research">
+        </h1>
       </div>
+    </div>
+  </div>
+</div>
 
-      <div class="blankHXS"></div>
-      <section id="content31">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt">Atoms | Bases</strong> </h1>
-                <h4>Atoms are the fundamental building blocks of our design system, representing the smallest, basic UI elements. Examples include buttons, text fields, and icons. They can be used as-is or combined to create more complex components. Atoms are versatile and reusable across different parts of the design.</h4>
-              </div>
+
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4>Atoms are the fundamental building blocks of our design system, representing the smallest, basic UI elements. Examples include buttons, text fields, and icons. They can be used as-is or combined to create more complex components. Atoms are versatile and reusable across different parts of the design.</h4>
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
+      </div>
+      <section id="content21">
 
+        <div class="blankHXS"></div>
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            base_buttons
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="blankHS"></div>
         <!-- Arrow -->
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters u-textCenter">
@@ -2624,19 +2669,19 @@
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-            &lt;!-- Large button --&gt;
-            &lt;a&gt; &lt;button class=&#34;buttonLanding&#34;&gt;Button &amp;nbsp; &lt;/button&gt;&lt;/a&gt;
-            &lt;a&gt; &lt;button class=&#34;buttonLanding arrButton&#34;&gt;Button &amp;nbsp;&lt;/button&gt;&lt;/a&gt;
-            &lt;!-- Large button --&gt;
+          &lt;!-- Large button --&gt;
+          &lt;a&gt; &lt;button class=&#34;buttonLanding&#34;&gt;Button &amp;nbsp; &lt;/button&gt;&lt;/a&gt;
+          &lt;a&gt; &lt;button class=&#34;buttonLanding arrButton&#34;&gt;Button &amp;nbsp;&lt;/button&gt;&lt;/a&gt;
+          &lt;!-- Large button --&gt;
 
-            &lt;!-- Small button --&gt;
-            &lt;a&gt; &lt;button class=&#34;button-35 DS&#34;&gt;Button&lt;/button&gt;&lt;/a&gt;
-            &lt;!-- Small button --&gt;
-          </code></pre>
+          &lt;!-- Small button --&gt;
+          &lt;a&gt; &lt;button class=&#34;button-35 DS&#34;&gt;Button&lt;/button&gt;&lt;/a&gt;
+          &lt;!-- Small button --&gt;
+        </code></pre>
                   </div>
                   <div class="css-block code-block" style="display:none;">
                     <pre class="css-code"><code> 
-            </code></pre>
+          </code></pre>
                   </div>
                 </div>
               </div>
@@ -2651,12 +2696,30 @@
 
 
 
-          <div class="blankHM"></div>
+
+
+      </section>
+      <section id="content22">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            base_icons
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-          <!-- Arrow -->
-          <div class="blankHS"></div>
+        <!-- Arrow -->
+        <div class="blankHS"></div>
 <!-- Arrow -->
 <div class="wrapper">
     <div class="Grid Grid--full Grid--gutters u-textCenter">
@@ -2672,9 +2735,10 @@
 <!-- Arrow -->
 <div class="blankHXS"></div>
 
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
+        <!-- Arrow -->
+        <div class="blankHXS"></div>
 
+        <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-8 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
@@ -3068,8 +3132,6 @@
             </div>
 
           </div>
-
-
           <div class="Grid Grid--gutters Grid--cols-8 u-textCenter">
 
             <div class="Grid-cell">
@@ -3163,76 +3225,76 @@
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-            &lt;img src=&#34;../icon/arrow-down.svg&#34; alt=&#34;Arrow Down&#34;&gt;
-            &lt;img src=&#34;../icon/arrow-up.svg&#34; alt=&#34;Arrow Uo&#34;&gt;
-            &lt;img src=&#34;../icon/arrow-back.svg&#34; alt=&#34;Arrow Back&#34;&gt;
-            &lt;img src=&#34;../icon/arrow-forward.svg&#34; alt=&#34;Arrow Forward&#34;&gt;
-            &lt;img src=&#34;../icon/plus.svg&#34; alt=&#34;Plus&#34;&gt;
-            &lt;img src=&#34;../icon/minus.svg&#34; alt=&#34;Minus&#34;&gt;
-            &lt;img src=&#34;../icon/delete.svg&#34; alt=&#34;Delete&#34;&gt;
-            &lt;img src=&#34;../icon/arrow-nw.svg&#34; alt=&#34;Arrow NW&#34;&gt;
-            &lt;img src=&#34;../icon/arrow-ne.svg&#34; alt=&#34;Arrow NE&#34;&gt;
-            &lt;img src=&#34;../icon/arrow-sw.svg&#34; alt=&#34;Arrow SW&#34;&gt;
-            &lt;img src=&#34;../icon/arrow-se.svg&#34; alt=&#34;Arrow SE&#34;&gt;
-            &lt;img src=&#34;../icon/in.svg&#34; alt=&#34;LinkedIn&#34;&gt;
-            &lt;img src=&#34;../icon/ins.svg&#34; alt=&#34;Instagram&#34;&gt;
-            &lt;img src=&#34;../icon/git.svg&#34; alt=&#34;GitHub&#34;&gt;
-            &lt;img src=&#34;../icon/Codepen.svg&#34; alt=&#34;CodePen&#34;&gt;
-            &lt;img src=&#34;../icon/iconFigma.svg&#34; alt=&#34;Figma&#34;&gt;
-            &lt;img src=&#34;../icon/mail.svg&#34; alt=&#34;Mail&#34;&gt;
-            &lt;img src=&#34;../icon/icon_clipboard-tick.svg&#34;&gt;
-            &lt;img src=&#34;../icon/icon_Testing.svg&#34;&gt;
-            &lt;img src=&#34;../icon/Document.svg&#34; alt=&#34;Document&#34;&gt;
-            &lt;img src=&#34;../icon/Receipt.svg&#34; alt=&#34;Arrow Up&#34;&gt;
-            &lt;img src=&#34;../icon/icon_research.svg&#34; alt=&#34;Research&#34;&gt;
-            &lt;img src=&#34;../icon/iconAlert.svg&#34; alt=&#34;Alert&#34;&gt;
-            &lt;img src=&#34;../icon/copy.svg&#34; alt=&#34;CodePen&#34;&gt;
-            &lt;img src=&#34;../icon/link.svg&#34; alt=&#34;Link&#34;&gt;
-            &lt;img src=&#34;../icon/icon_Final.svg&#34;&gt;
-            &lt;img src=&#34;../icon/note.svg&#34;&gt;
-            &lt;img src=&#34;../icon/Category.svg&#34;&gt;
-            &lt;img src=&#34;../icon/layout.svg&#34;&gt;
-            &lt;img src=&#34;../icon/tag.svg&#34;&gt;
-            &lt;img src=&#34;../icon/icon_Iteration.svg&#34;&gt;
-            &lt;img src=&#34;../icon/iconCalendar.svg&#34;&gt;
-            &lt;img src=&#34;../icon/icon_Redesign.svg&#34;&gt;
-            &lt;img src=&#34;../icon/library.svg&#34;&gt;
-            &lt;img src=&#34;../icon/components.svg&#34;&gt;
-            &lt;img src=&#34;../icon/icon_promotion.svg&#34;&gt;
-            &lt;img src=&#34;../icon/IconCompass.svg&#34;&gt;
-            &lt;img src=&#34;../icon/Profile.svg&#34;&gt;
-          </code></pre>
+          &lt;img src=&#34;../icon/arrow-down.svg&#34; alt=&#34;Arrow Down&#34;&gt;
+          &lt;img src=&#34;../icon/arrow-up.svg&#34; alt=&#34;Arrow Uo&#34;&gt;
+          &lt;img src=&#34;../icon/arrow-back.svg&#34; alt=&#34;Arrow Back&#34;&gt;
+          &lt;img src=&#34;../icon/arrow-forward.svg&#34; alt=&#34;Arrow Forward&#34;&gt;
+          &lt;img src=&#34;../icon/plus.svg&#34; alt=&#34;Plus&#34;&gt;
+          &lt;img src=&#34;../icon/minus.svg&#34; alt=&#34;Minus&#34;&gt;
+          &lt;img src=&#34;../icon/delete.svg&#34; alt=&#34;Delete&#34;&gt;
+          &lt;img src=&#34;../icon/arrow-nw.svg&#34; alt=&#34;Arrow NW&#34;&gt;
+          &lt;img src=&#34;../icon/arrow-ne.svg&#34; alt=&#34;Arrow NE&#34;&gt;
+          &lt;img src=&#34;../icon/arrow-sw.svg&#34; alt=&#34;Arrow SW&#34;&gt;
+          &lt;img src=&#34;../icon/arrow-se.svg&#34; alt=&#34;Arrow SE&#34;&gt;
+          &lt;img src=&#34;../icon/in.svg&#34; alt=&#34;LinkedIn&#34;&gt;
+          &lt;img src=&#34;../icon/ins.svg&#34; alt=&#34;Instagram&#34;&gt;
+          &lt;img src=&#34;../icon/git.svg&#34; alt=&#34;GitHub&#34;&gt;
+          &lt;img src=&#34;../icon/Codepen.svg&#34; alt=&#34;CodePen&#34;&gt;
+          &lt;img src=&#34;../icon/iconFigma.svg&#34; alt=&#34;Figma&#34;&gt;
+          &lt;img src=&#34;../icon/mail.svg&#34; alt=&#34;Mail&#34;&gt;
+          &lt;img src=&#34;../icon/icon_clipboard-tick.svg&#34;&gt;
+          &lt;img src=&#34;../icon/icon_Testing.svg&#34;&gt;
+          &lt;img src=&#34;../icon/Document.svg&#34; alt=&#34;Document&#34;&gt;
+          &lt;img src=&#34;../icon/Receipt.svg&#34; alt=&#34;Arrow Up&#34;&gt;
+          &lt;img src=&#34;../icon/icon_research.svg&#34; alt=&#34;Research&#34;&gt;
+          &lt;img src=&#34;../icon/iconAlert.svg&#34; alt=&#34;Alert&#34;&gt;
+          &lt;img src=&#34;../icon/copy.svg&#34; alt=&#34;CodePen&#34;&gt;
+          &lt;img src=&#34;../icon/link.svg&#34; alt=&#34;Link&#34;&gt;
+          &lt;img src=&#34;../icon/icon_Final.svg&#34;&gt;
+          &lt;img src=&#34;../icon/note.svg&#34;&gt;
+          &lt;img src=&#34;../icon/Category.svg&#34;&gt;
+          &lt;img src=&#34;../icon/layout.svg&#34;&gt;
+          &lt;img src=&#34;../icon/tag.svg&#34;&gt;
+          &lt;img src=&#34;../icon/icon_Iteration.svg&#34;&gt;
+          &lt;img src=&#34;../icon/iconCalendar.svg&#34;&gt;
+          &lt;img src=&#34;../icon/icon_Redesign.svg&#34;&gt;
+          &lt;img src=&#34;../icon/library.svg&#34;&gt;
+          &lt;img src=&#34;../icon/components.svg&#34;&gt;
+          &lt;img src=&#34;../icon/icon_promotion.svg&#34;&gt;
+          &lt;img src=&#34;../icon/IconCompass.svg&#34;&gt;
+          &lt;img src=&#34;../icon/Profile.svg&#34;&gt;
+        </code></pre>
                   </div>
                   <div class="css-block code-block" style="display:none;">
                     <pre class="css-code"><code> 
-            .iconXS {
-                width: 16px;
-                margin: 0;
-            }
-            .iconS {
-                width: 24px;
-                margin: 0;
-            }
-            .iconM {
-                width: 32px;
-            }
-            .iconL {
-                width: 40px;
-            }
-            .iconXL {
-                width: 48px;
-            }
-            .iconMax {
-                width: 56px;
-            }
-            .iconDemo {
-                margin: 0.6em;
-                padding: 1.2em;
-                width: 2em;
-                height: auto;
-                cursor: pointer;
-            }
-            </code></pre>
+          .iconXS {
+              width: 16px;
+              margin: 0;
+          }
+          .iconS {
+              width: 24px;
+              margin: 0;
+          }
+          .iconM {
+              width: 32px;
+          }
+          .iconL {
+              width: 40px;
+          }
+          .iconXL {
+              width: 48px;
+          }
+          .iconMax {
+              width: 56px;
+          }
+          .iconDemo {
+              margin: 0.6em;
+              padding: 1.2em;
+              width: 2em;
+              height: auto;
+              cursor: pointer;
+          }
+          </code></pre>
                   </div>
                 </div>
               </div>
@@ -3245,215 +3307,47 @@
 
 
 
+        </div>
 
-          <div class="blankHM"></div>
+        <div class="blankHM"></div>
+      </section>
+      <section id="content23">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
 
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Inputs<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-
-
-
-          <div class="img__wrap widthS heightS element">
-            <div class="img__descriptionDesignSystem">
-              <div class="input-field">
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            base_iconsSizes
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-                <div class="column">
-                  <label for="password">
-                    <h5>Password</h5>
-                  </label>
-
-                  <input class="PWinput" type="password" id="password" placeholder="Enter password">
-
-                  <div class="pwIncorrectHeight">
-                    <span id="pwIncorrect">Password is incorrect </span>
-                  </div>
-                </div>
-                <button class="passwordArr" type="submit">
-                  <img src="../icon/arrow-forward.svg" alt="Enter">
-                  <!--  <i class="fas fa-chevron-right"></i> -->
-                </button>
-
-
-              </div>
-            </div>
-
-          </div>
-          
-
-    <div class="">
         <div class="blankHS"></div>
-        <div class='wrapper'>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class='filed'>
-                  <div class="tab-container">
-                    <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Item15" id="T151" >
-                      <label for="T151" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Item15" id="T152" checked>
-                      <label for="T152" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Item15" id="T153" >
-                      <label for="T153" class="tab">CSS</label>
-                    </div>
-                    <button class="copy-btn" style="display:inline;">Copy Code</button>
-                  </div>
-                  <div class="ejs-block code-block">
-                    <pre class="ejs-code"><code></code></pre>
-                  </div>
-                  <div class="html-block code-block" style="display:none;">
-                    <pre class="html-code"><code>
-            &lt;div class=&#34;img__wrap widthS heightS element&#34;&gt;
-              &lt;div class=&#34;img__descriptionDesignSystem&#34;&gt;
-                &lt;div class=&#34;input-field&#34;&gt;
-
-
-                  &lt;div class=&#34;column&#34;&gt;
-                    &lt;label for=&#34;password&#34;&gt;
-                      &lt;h5&gt;Password&lt;/h5&gt;
-                    &lt;/label&gt;
-
-                    &lt;input class=&#34;PWinput&#34; type=&#34;password&#34; id=&#34;password&#34; placeholder=&#34;Enter password&#34;&gt;
-
-                    &lt;div class=&#34;pwIncorrectHeight&#34;&gt;
-                      &lt;span id=&#34;pwIncorrect&#34;&gt;Password is incorrect &lt;/span&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                  &lt;button class=&#34;passwordArr&#34; type=&#34;submit&#34;&gt;
-                    &lt;img src=&#34;../icon/arrow-forward.svg&#34; alt=&#34;Enter&#34;&gt;
-                    &lt;!--  &lt;i class=&#34;fas fa-chevron-right&#34;&gt;&lt;/i&gt; --&gt;
-                  &lt;/button&gt;
-
-
-                &lt;/div&gt;
-              &lt;/div&gt;
-
-            &lt;/div&gt;
-          </code></pre>
-                  </div>
-                  <div class="css-block code-block" style="display:none;">
-                    <pre class="css-code"><code> 
-            .PWinputLanding:focus {
-                background-color: var(--white);
-                border-radius: 10px;
-
-                /* Keep the border width the same as in the default state */
-                border: 1px solid rgba(170, 182, 217, 0.3);
-                /* Add an additional box-shadow to simulate the 2px extra border */
-                box-shadow:
-                    inset 0 0 0 1px rgba(64, 109, 192, 0.9),
-                    0 0 0 2px rgba(142, 187, 255, 0.3)
-                    /* This is the original box-shadow for the 4px offset */
-            }
-            .PWinput:focus {
-                background-color: var(--white);
-                border-radius: 10px;
-                /* Keep the border width the same as in the default state */
-                border: 1px solid rgba(170, 217, 217, 0.3);
-                /* Add an additional box-shadow to simulate the 2px extra border */
-                box-shadow:
-                    inset 0 0 0 1px rgba(143, 191, 191, 0.9),
-                    0 0 0 2px rgba(170, 217, 217, 0.3)
-                    /* This is the original box-shadow for the 4px offset */
-            }
-            input {
-                width: 16em;
-                height: 42px;
-                padding: 0 12px;
-                background: var(--white);
-                font-size: 16px;
-                border-radius: 10px;
-                outline: none;
-                border: 1px solid var(--Grey800);
-            }
-            .input-field {
-                display: flex;
-                /* Add flex */
-                flex-direction: row;
-                align-items: left;
-                /* Vertically center children */
-                justify-content: flex-end;
-                /* Horizontally center children */
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            .input-field button img {
-                animation: arrowani 0.8s linear infinite alternate;
-            }
-            .input-field button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 1.8rem;
-                height: 100%;
-                background: transparent;
-                border: none;
-                cursor: pointer;
-                color: var(--Grey900);
-            }
-            button.passwordArr {
-                margin-top: 11%;
-                padding: 0;
-                color: var(--Grey900);
-            }
-            .pwIncorrectHeight {
-                height: 3em;
-            }
-            #pwIncorrect {
-                margin: 0;
-                padding: 8px;
-                font-weight: 500;
-                color: var(--alert);
-                display: none;
-            }
-            @keyframes arrowani {
-                100% {
-                    margin-right: -8px;
-                }
-            }
-            </code></pre>
-                  </div>
-                </div>
-              </div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Icons Sizes <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
             </div>
-          </div>
         </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
         <div class="blankHXS"></div>
-      </div>
-
-
-
-
-          <div class="blankHM"></div>
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Copy to Clipboard - Icon<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
+        <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-8 u-textCenter Grid--center">
             <div class="Grid-cell">
               <div class="element">
@@ -3539,7 +3433,10 @@
             </div>
 
           </div>
-          
+        </div>
+
+
+        
 
     <div class="">
         <div class="blankHS"></div>
@@ -3561,370 +3458,85 @@
                   </div>
                   <div class="ejs-block code-block">
                     <pre class="ejs-code"><code>
-          </code></pre>
+      </code></pre>
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-            &lt;div class=&#34;Grid-cell&#34;&gt;
-                &lt;div class=&#34;element&#34;&gt;
-                  &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
-                    &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
-                      &lt;img class=&#34;iconXS hoverGrey100 paddingXL borderRadiusMax&#34; 
-                        title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
-                      &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
-                    &lt;/button&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&#34;Grid-cell&#34;&gt;
-                &lt;div class=&#34;element&#34;&gt;
-
-                  &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
-                    &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
-                      &lt;img class=&#34;iconS hoverGrey100 paddingXL borderRadiusMax&#34; 
-                        title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
-                      &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
-                    &lt;/button&gt;
-                  &lt;/div&gt;
-
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&#34;Grid-cell&#34;&gt;
-                &lt;div class=&#34;element&#34;&gt;
-                  &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
-                    &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
-                      &lt;img class=&#34;iconM hoverGrey100 paddingXL borderRadiusMax&#34; 
-                        title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
-                      &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
-                    &lt;/button&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&#34;Grid-cell&#34;&gt;
-                &lt;div class=&#34;element&#34;&gt;
-                  &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
-                    &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
-                      &lt;img class=&#34;iconL hoverGrey100 paddingXL borderRadiusMax&#34; 
-                        title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
-                      &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
-                    &lt;/button&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&#34;Grid-cell&#34;&gt;
-                &lt;div class=&#34;element&#34;&gt;
-                  &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
-                    &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
-                      &lt;img class=&#34;iconXL hoverGrey100 paddingXL borderRadiusMax&#34; 
-                        title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
-                      &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
-                    &lt;/button&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&#34;Grid-cell&#34;&gt;
-                &lt;div class=&#34;element&#34;&gt;
-                  &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
-                    &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
-                      &lt;img class=&#34;iconMax hoverGrey100 paddingXL borderRadiusMax&#34; 
-                        title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
-                      &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
-                    &lt;/button&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-          </code></pre>
-                  </div>
-                  <div class="css-block code-block" style="display:none;">
-                    <pre class="css-code"><code> 
- 
- 
-            </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHXS"></div>
-      </div>
-
-
-
-
-          <div class="blankHM"></div>
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Copy to Clipboard - Textbox<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="containerCopy">
-                  <div class="ClickandCopy">Lorem ipsum</div>
-                  <div class="copy-text">
-                    <input type="text" class="text" value="https://www.vickywang.me" />
-                    <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-
-    <div class="">
-        <div class="blankHS"></div>
-        <div class='wrapper'>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class='filed'>
-                  <div class="tab-container">
-                    <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Item17" id="T171" >
-                      <label for="T171" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Item17" id="T172" checked>
-                      <label for="T172" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Item17" id="T173" >
-                      <label for="T173" class="tab">CSS</label>
-                    </div>
-                    <button class="copy-btn" style="display:inline;">Copy Code</button>
-                  </div>
-                  <div class="ejs-block code-block">
-                    <pre class="ejs-code"><code>
-          </code></pre>
-                  </div>
-                  <div class="html-block code-block" style="display:none;">
-                    <pre class="html-code"><code>
-            &lt;div class=&#34;containerCopy element&#34;&gt;
-              &lt;div class=&#34;ClickandCopy&#34;&gt;Lorem ipsum&lt;/div&gt;
-              &lt;div class=&#34;copy-text&#34;&gt;
-                &lt;input type=&#34;text&#34; class=&#34;text&#34; value=&#34;https://www.vickywang.me&#34; /&gt;
-                &lt;button class=&#34;centerHorz&#34;&gt; &lt;img class=&#34;iconS&#34; src=&#34;../icon/copyWt.svg&#34;&gt;
+        &lt;div class=&#34;Grid-cell&#34;&gt;
+            &lt;div class=&#34;element&#34;&gt;
+              &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
+                &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
+                  &lt;img class=&#34;iconXS hoverGrey100 paddingXL borderRadiusMax&#34; 
+                    title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
+                  &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
                 &lt;/button&gt;
               &lt;/div&gt;
             &lt;/div&gt;
-          </code></pre>
-                  </div>
-                  <div class="css-block code-block" style="display:none;">
-                    <pre class="css-code"><code> 
-            </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHXS"></div>
-      </div>
+          &lt;/div&gt;
+          &lt;div class=&#34;Grid-cell&#34;&gt;
+            &lt;div class=&#34;element&#34;&gt;
 
+              &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
+                &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
+                  &lt;img class=&#34;iconS hoverGrey100 paddingXL borderRadiusMax&#34; 
+                    title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
+                  &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
 
-
-
-          <div class="blankHM"></div>
-
-
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Copy to Clipboard - Paragraph<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="Grid Grid--gutters Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBox clickTxt">
-                  <button class="Clipboard clickTxt" contenteditable="false">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-
-    <div class="">
-        <div class="blankHS"></div>
-        <div class='wrapper'>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class='filed'>
-                  <div class="tab-container">
-                    <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Item18" id="T181" >
-                      <label for="T181" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Item18" id="T182" checked>
-                      <label for="T182" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Item18" id="T183" >
-                      <label for="T183" class="tab">CSS</label>
-                    </div>
-                    <button class="copy-btn" style="display:inline;">Copy Code</button>
-                  </div>
-                  <div class="ejs-block code-block">
-                    <pre class="ejs-code"><code>
-          </code></pre>
-                  </div>
-                  <div class="html-block code-block" style="display:none;">
-                    <pre class="html-code"><code>
-          &lt;div class=&#34;Grid Grid--gutters Grid--full Grid--gutters&#34;&gt;
-            &lt;div class=&#34;Grid-cell&#34;&gt;
-              &lt;div class=&#34;element&#34;&gt;
-                &lt;div class=&#34;ClipboardBox clickTxt&#34;&gt;
-                  &lt;button class=&#34;Clipboard clickTxt&#34; contenteditable=&#34;false&#34;&gt;
-                    &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-                  &lt;/button&gt;
-                &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&#34;Grid-cell&#34;&gt;
+            &lt;div class=&#34;element&#34;&gt;
+              &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
+                &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
+                  &lt;img class=&#34;iconM hoverGrey100 paddingXL borderRadiusMax&#34; 
+                    title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
+                  &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
+                &lt;/button&gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-          </code></pre>
-                  </div>
-                  <div class="css-block code-block" style="display:none;">
-                    <pre class="css-code"><code> 
-            </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHXS"></div>
-      </div>
-
-
-
-
-          <div class="blankHM"></div>
-
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Copy to Clipboard - Code<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          
-
-      <div class="blankHS"></div>
-
-      <div class="wrapper">
-        <div class="Grid Grid--full Grid--gutters">
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="filed">
-                <div class="tab-container">
-                  <div class="tabs">
-                    <input type="radio" class="select-EJS" name="Demo" id="Tdemo1" checked="">
-                    <label for="Tdemo1" class="tab">EJS</label>
-                    <input type="radio" class="select-HTML" name="Demo" id="Tdemo2">
-                    <label for="Tdemo2" class="tab">HTML</label>
-                    <input type="radio" class="select-CSS" name="Demo" id="Tdemo3">
-                    <label for="Tdemo3" class="tab">CSS</label>
-                  </div>
-                  <button class="copy-btn" style="display:inline;">Copy Code</button>
-                </div>
-                <div class="ejs-block code-block" style="display: none;">
-                  <pre class="ejs-code"><code>Insert ejs code</code></pre>
-                </div>
-                <div class="html-block code-block" style="display:none;">
-                  <pre class="html-code"><code>Insert html code</code></pre>
-                </div>
-                <div class="css-block code-block" style="display: block;">
-                  <pre class="css-code"><code>Insert css code</code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="blankHXS"></div>
-
-
-
-          
-
-    <div class="">
-        <div class="blankHS"></div>
-        <div class='wrapper'>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class='filed'>
-                  <div class="tab-container">
-                    <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Item19" id="T191" >
-                      <label for="T191" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Item19" id="T192" checked>
-                      <label for="T192" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Item19" id="T193" >
-                      <label for="T193" class="tab">CSS</label>
-                    </div>
-                    <button class="copy-btn" style="display:inline;">Copy Code</button>
-                  </div>
-                  <div class="ejs-block code-block">
-                    <pre class="ejs-code"><code>
-          </code></pre>
-                  </div>
-                  <div class="html-block code-block" style="display:none;">
-                    <pre class="html-code"><code>
-          &lt;div class=&#34;Grid Grid--gutters Grid--full Grid--gutters&#34;&gt;
-            &lt;div class=&#34;Grid-cell&#34;&gt;
-              &lt;div class=&#34;element&#34;&gt;
-                &lt;div class=&#34;ClipboardBox clickTxt&#34;&gt;
-                  &lt;button class=&#34;Clipboard clickTxt&#34; contenteditable=&#34;false&#34;&gt;
-                    &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-                  &lt;/button&gt;
-                &lt;/div&gt;
+          &lt;div class=&#34;Grid-cell&#34;&gt;
+            &lt;div class=&#34;element&#34;&gt;
+              &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
+                &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
+                  &lt;img class=&#34;iconL hoverGrey100 paddingXL borderRadiusMax&#34; 
+                    title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
+                  &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
+                &lt;/button&gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-          </code></pre>
+          &lt;div class=&#34;Grid-cell&#34;&gt;
+            &lt;div class=&#34;element&#34;&gt;
+              &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
+                &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
+                  &lt;img class=&#34;iconXL hoverGrey100 paddingXL borderRadiusMax&#34; 
+                    title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
+                  &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&#34;Grid-cell&#34;&gt;
+            &lt;div class=&#34;element&#34;&gt;
+              &lt;div class=&#34;ClipboardBoxIconOnly&#34;&gt;
+                &lt;button class=&#34;ClipboardIconOnly&#34;&gt;
+                  &lt;img class=&#34;iconMax hoverGrey100 paddingXL borderRadiusMax&#34; 
+                    title=&#34;Copy to Clipboard&#34; src=&#34;../icon/mail.svg&#34; alt=&#34;LinkedIn&#34;&gt;
+                  &lt;p class=&#34;clickIconCopy&#34;&gt;vickyw.design@gmail.com&lt;/p&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+      </code></pre>
                   </div>
                   <div class="css-block code-block" style="display:none;">
                     <pre class="css-code"><code> 
-            </code></pre>
+
+
+        </code></pre>
                   </div>
                 </div>
               </div>
@@ -3933,37 +3545,402 @@
         </div>
         <div class="blankHXS"></div>
       </div>
+
 
 
 
 
       </section>
-      <section id="content32">
+      <section id="content24">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
 
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt">Molecules | Comps</strong> </h1>
-                <h4>Molecules are groups of atoms bonded together to form functional UI components. They exhibit more complexity and utility than individual atoms. For example, a search bar molecule could consist of a text input atom (field) and an action atom (button). Molecules serve as the foundational elements of more complex interfaces.</h4>
-              </div>
-            </div>
-          </div>
-          <div class="blankHXS"></div>
-        </div>
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            base_inputs
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
         <!-- Arrow -->
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Note without Background<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                <h2 class="tArrow">Inputs<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
                 </h2>
               </div>
             </div>
           </div>
         </div>
         <!-- Arrow -->
+        <div class="blankHXS"></div>
+
+        <div class="wrapper">
+
+
+          <div class="img__wrap widthS heightS element">
+            <div class="img__descriptionDesignSystem">
+              <div class="input-field">
+
+
+                <div class="column">
+                  <label for="password">
+                    <h5>Password</h5>
+                  </label>
+
+                  <input class="PWinput" type="password" id="password" placeholder="Enter password">
+
+                  <div class="pwIncorrectHeight">
+                    <span id="pwIncorrect">Password is incorrect </span>
+                  </div>
+                </div>
+                <button class="passwordArr" type="submit">
+                  <img src="../icon/arrow-forward.svg" alt="Enter">
+                  <!--  <i class="fas fa-chevron-right"></i> -->
+                </button>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item15" id="T151" >
+                      <label for="T151" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item15" id="T152" checked>
+                      <label for="T152" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item15" id="T153" >
+                      <label for="T153" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code></code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+          &lt;div class=&#34;img__wrap widthS heightS element&#34;&gt;
+            &lt;div class=&#34;img__descriptionDesignSystem&#34;&gt;
+              &lt;div class=&#34;input-field&#34;&gt;
+
+
+                &lt;div class=&#34;column&#34;&gt;
+                  &lt;label for=&#34;password&#34;&gt;
+                    &lt;h5&gt;Password&lt;/h5&gt;
+                  &lt;/label&gt;
+
+                  &lt;input class=&#34;PWinput&#34; type=&#34;password&#34; id=&#34;password&#34; placeholder=&#34;Enter password&#34;&gt;
+
+                  &lt;div class=&#34;pwIncorrectHeight&#34;&gt;
+                    &lt;span id=&#34;pwIncorrect&#34;&gt;Password is incorrect &lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;button class=&#34;passwordArr&#34; type=&#34;submit&#34;&gt;
+                  &lt;img src=&#34;../icon/arrow-forward.svg&#34; alt=&#34;Enter&#34;&gt;
+                  &lt;!--  &lt;i class=&#34;fas fa-chevron-right&#34;&gt;&lt;/i&gt; --&gt;
+                &lt;/button&gt;
+
+
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+        </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code> 
+          .PWinputLanding:focus {
+              background-color: var(--white);
+              border-radius: 10px;
+
+              /* Keep the border width the same as in the default state */
+              border: 1px solid rgba(170, 182, 217, 0.3);
+              /* Add an additional box-shadow to simulate the 2px extra border */
+              box-shadow:
+                  inset 0 0 0 1px rgba(64, 109, 192, 0.9),
+                  0 0 0 2px rgba(142, 187, 255, 0.3)
+                  /* This is the original box-shadow for the 4px offset */
+          }
+          .PWinput:focus {
+              background-color: var(--white);
+              border-radius: 10px;
+              /* Keep the border width the same as in the default state */
+              border: 1px solid rgba(170, 217, 217, 0.3);
+              /* Add an additional box-shadow to simulate the 2px extra border */
+              box-shadow:
+                  inset 0 0 0 1px rgba(143, 191, 191, 0.9),
+                  0 0 0 2px rgba(170, 217, 217, 0.3)
+                  /* This is the original box-shadow for the 4px offset */
+          }
+          input {
+              width: 16em;
+              height: 42px;
+              padding: 0 12px;
+              background: var(--white);
+              font-size: 16px;
+              border-radius: 10px;
+              outline: none;
+              border: 1px solid var(--Grey800);
+          }
+          .input-field {
+              display: flex;
+              /* Add flex */
+              flex-direction: row;
+              align-items: left;
+              /* Vertically center children */
+              justify-content: flex-end;
+              /* Horizontally center children */
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+          }
+          .input-field button img {
+              animation: arrowani 0.8s linear infinite alternate;
+          }
+          .input-field button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 1.8rem;
+              height: 100%;
+              background: transparent;
+              border: none;
+              cursor: pointer;
+              color: var(--Grey900);
+          }
+          button.passwordArr {
+              margin-top: 11%;
+              padding: 0;
+              color: var(--Grey900);
+          }
+          .pwIncorrectHeight {
+              height: 3em;
+          }
+          #pwIncorrect {
+              margin: 0;
+              padding: 8px;
+              font-weight: 500;
+              color: var(--alert);
+              display: none;
+          }
+          @keyframes arrowani {
+              100% {
+                  margin-right: -8px;
+              }
+          }
+          </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+        <div class="blankHM"></div>
+
+
+      </section>
+    </section>
+
+    <section id="content3">
+
+      
+
+
+
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters u-textCenter">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid Grid--center"> <span>
+            Molecules (Composite Components)
+          </span><img class="widthLogo" src="/icon/components.svg" alt="Research">
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4>Molecules are groups of atoms bonded together to form functional UI components. They exhibit more complexity and utility than individual atoms. For example, a search bar molecule could consist of a text input atom (field) and an action atom (button). Molecules serve as the foundational elements of more complex interfaces.</h4>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+      <div class="blankHXS"></div>
+
+      <section id="content31">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            comp_textualElements
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Title <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
+        <div class="GreyBg200 wrapper">
+          <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+            <div class="Grid-cell">
+              <div class="element">
+                <h3 class="fontWeight300">comp_content_title
+                </h3>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="Grid Grid--center"> <span>Title</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+            <div class="Grid-cell">
+              <div class="element">
+                <h3 class="fontWeight300">comp_content_title
+                </h3>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h2 class="tArrow">Buttons<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="content" id="contentT1" checked>
+                      <label for="contentT1" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="content" id="contentT2" >
+                      <label for="contentT2" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="content" id="contentT3" >
+                      <label for="contentT3" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code></code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+                  &lt;!-- Large button --&gt;
+                  &lt;a&gt; &lt;button class=&#34;buttonLanding&#34;&gt;Button &amp;nbsp; &lt;/button&gt;&lt;/a&gt;
+                  &lt;a&gt; &lt;button class=&#34;buttonLanding arrButton&#34;&gt;Button &amp;nbsp;&lt;/button&gt;&lt;/a&gt;
+                  &lt;!-- Large button --&gt;
+        
+                  &lt;!-- Small button --&gt;
+                  &lt;a&gt; &lt;button class=&#34;button-35 DS&#34;&gt;Button&lt;/button&gt;&lt;/a&gt;
+                  &lt;!-- Small button --&gt;
+                </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code> 
+                  </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+
+
+
+
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Note without Background <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
         <div class="wrapper">
           <div class="blankHXS"></div>
           <div class="Grid Grid--full Grid--gutters">
@@ -4140,19 +4117,534 @@
 
 
 
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            comp_closingMessage
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    comp_closingMessage <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
+
         <div class="blankHM"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
+
+<!-- message -->
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters u-textCenter">
+    <div class="Grid-cell">
+      <div data-aos="fade-up">
+        
+        <h4 class="element">
+          Thank You for Visiting &#33; Check back soon for more updates and stay tuned &#33;
+        </h4>
+        
+      </div>
+      <a href="/" class=""><img class="widthXS" src="/icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
+    </div>
+  </div>
+</div>
+<!-- message -->
+<div class="blankHL"></div>
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h2 class="tArrow">Card<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item44" id="T441" >
+                      <label for="T441" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item44" id="T442" checked>
+                      <label for="T442" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item44" id="T443" >
+                      <label for="T443" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code></code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+        &lt;div class=&#34;Grid Grid--full Grid--gutters u-textCenter&#34;&gt;
+          &lt;div class=&#34;Grid-cell&#34;&gt;
+            &lt;div data-aos=&#34;fade-up&#34; class=&#34;aos-init aos-animate&#34;&gt;
+              
+              &lt;h4 class=&#34;element&#34;&gt;
+                Thank You for Visiting ! Check back soon for more updates and stay tuned !
+              &lt;/h4&gt;
+              
+            &lt;/div&gt;
+            &lt;a href=&#34;/&#34; class=&#34;&#34;&gt;&lt;img class=&#34;widthXS&#34; src=&#34;/icon/LOGOtxt.svg&#34; alt=&#34;VW&#34; title=&#34;vickywang.me&#34;&gt;&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code>
+        </code></pre>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Arrow -->
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+
+
+
+
+
+      </section>
+      <section id="content32">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            comp_clipboardCopyField
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Icon Copy Trigger (ICT) <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
+        <div class="blankHXS"></div>
+        <div class="wrapper">
+          <div class="Grid Grid--gutters Grid--cols-8 u-textCenter Grid--center">
+
+
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="ClipboardBoxIconOnly">
+                  <button class="ClipboardIconOnly">
+                    <img class="iconMax hoverGrey100 paddingXL borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                    <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element displayNone">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="blankHM"></div>
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Input Icon Copy Trigger (IICT) <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
+
+        <div class="blankHXS"></div>
+        <div class="wrapper">
+
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="containerCopy">
+                  <div class="ClickandCopy">Lorem ipsum</div>
+                  <div class="copy-text">
+                    <input type="text" class="text" value="https://www.vickywang.me" />
+                    <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item17" id="T171" >
+                      <label for="T171" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item17" id="T172" checked>
+                      <label for="T172" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item17" id="T173" >
+                      <label for="T173" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code>
+      </code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+        &lt;div class=&#34;containerCopy element&#34;&gt;
+          &lt;div class=&#34;ClickandCopy&#34;&gt;Lorem ipsum&lt;/div&gt;
+          &lt;div class=&#34;copy-text&#34;&gt;
+            &lt;input type=&#34;text&#34; class=&#34;text&#34; value=&#34;https://www.vickywang.me&#34; /&gt;
+            &lt;button class=&#34;centerHorz&#34;&gt; &lt;img class=&#34;iconS&#34; src=&#34;../icon/copyWt.svg&#34;&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code> 
+        </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+        <div class="blankHM"></div>
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Text Field Copy Trigger (TFCT) <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
+
+        <div class="blankHXS"></div>
+        <div class="wrapper">
+
+          <div class="Grid Grid--gutters Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="ClipboardBox clickTxt">
+                  <button class="Clipboard clickTxt" contenteditable="false">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item18" id="T181" >
+                      <label for="T181" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item18" id="T182" checked>
+                      <label for="T182" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item18" id="T183" >
+                      <label for="T183" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code>
+      </code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+      &lt;div class=&#34;Grid Grid--gutters Grid--full Grid--gutters&#34;&gt;
+        &lt;div class=&#34;Grid-cell&#34;&gt;
+          &lt;div class=&#34;element&#34;&gt;
+            &lt;div class=&#34;ClipboardBox clickTxt&#34;&gt;
+              &lt;button class=&#34;Clipboard clickTxt&#34; contenteditable=&#34;false&#34;&gt;
+                &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code> 
+        </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+        <div class="blankHM"></div>
+
+      </section>
+      <section id="content33">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            comp_adaptiveImageLoader
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Adaptive Image Loader <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="ShadowBox">
+                  <picture>
+                    <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
+                    <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_placeholder.jpg">
+                    <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
+                    <img src="./medium_default_placeholder.jpg" alt="Testing" style="width:100%;">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item25" id="T251" >
+                      <label for="T251" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item25" id="T252" checked>
+                      <label for="T252" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item25" id="T253" >
+                      <label for="T253" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code>
+      </code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+        &lt;div class=&#34;wrapper&#34;&gt;
+          &lt;div class=&#34;Grid Grid--full Grid--gutters&#34;&gt;
+            &lt;div class=&#34;Grid-cell&#34;&gt;
+              &lt;div class=&#34;element&#34;&gt;
+                &lt;div class=&#34;ShadowBox&#34;&gt;
+                  &lt;picture&gt;
+                    &lt;source media=&#34;(min-width:1081px)&#34; srcset=&#34;./large_placeholder.jpg&#34;&gt;
+                    &lt;source media=&#34;(min-width:651px) and (max-width:1080px)&#34;
+                      srcset=&#34;./medium(default)_placeholder.jpg&#34;&gt;
+                    &lt;source media=&#34;(max-width:650px)&#34; srcset=&#34;./small_placeholder.jpg&#34;&gt;
+                    &lt;img src=&#34;./medium(default)_placeholder.jpg&#34; alt=&#34;Testing&#34; style=&#34;width:100%;&#34;&gt;
+                  &lt;/picture&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;             
+      </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code> 
+        </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+      </section>
+      <section id="content34">
+
+        <div class="blankHM"></div>
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            comp_cards
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Card <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
 
         <div class="blankHXS"></div>
         <div class="wrapper">
@@ -4209,45 +4701,45 @@
                   </div>
                   <div class="ejs-block code-block">
                     <pre class="ejs-code"><code>
-        </code></pre>
+          </code></pre>
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-        &lt;div class=&#34;wrapper&#34;&gt;
-          &lt;div class=&#34;Grid Grid--full Grid--gutters&#34;&gt;
-            &lt;div class=&#34;Grid-cell&#34;&gt;
-              &lt;div class=&#34;Grid Grid--gutters Grid--cols-2&#34;&gt;
-                &lt;div class=&#34;Grid-cell&#34;&gt;
-                  &lt;div class=&#34;element&#34;&gt;
-                    &lt;h4&gt; &lt;strong&gt; Title&lt;/strong&gt; &lt;/h4&gt;
-                    &lt;ul&gt;
-                      &lt;li&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. &lt;/li&gt;
-                      &lt;li&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. &lt;/li&gt;
-                    &lt;/ul&gt;
+          &lt;div class=&#34;wrapper&#34;&gt;
+            &lt;div class=&#34;Grid Grid--full Grid--gutters&#34;&gt;
+              &lt;div class=&#34;Grid-cell&#34;&gt;
+                &lt;div class=&#34;Grid Grid--gutters Grid--cols-2&#34;&gt;
+                  &lt;div class=&#34;Grid-cell&#34;&gt;
+                    &lt;div class=&#34;element&#34;&gt;
+                      &lt;h4&gt; &lt;strong&gt; Title&lt;/strong&gt; &lt;/h4&gt;
+                      &lt;ul&gt;
+                        &lt;li&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. &lt;/li&gt;
+                        &lt;li&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. &lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
                   &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&#34;Grid-cell&#34;&gt;
-                  &lt;div class=&#34;element&#34;&gt;
-                    &lt;h4&gt; &lt;strong&gt; Title&lt;/strong&gt; &lt;/h4&gt;
-                    &lt;ul&gt;
-                      &lt;li&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. &lt;/li&gt;
-                      &lt;li&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. &lt;/li&gt;
-                    &lt;/ul&gt;
+                  &lt;div class=&#34;Grid-cell&#34;&gt;
+                    &lt;div class=&#34;element&#34;&gt;
+                      &lt;h4&gt; &lt;strong&gt; Title&lt;/strong&gt; &lt;/h4&gt;
+                      &lt;ul&gt;
+                        &lt;li&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. &lt;/li&gt;
+                        &lt;li&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. &lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-        &lt;/div&gt;
-        </code></pre>
+          </code></pre>
                   </div>
                   <div class="css-block code-block" style="display:none;">
                     <pre class="css-code"><code> 
-          </code></pre>
+            </code></pre>
                   </div>
                 </div>
               </div>
@@ -4260,23 +4752,40 @@
 
 
 
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            comp_card
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
         <div class="blankHS"></div>
-
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Card &#43; Border<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Card &amp; Border <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
                 </h2>
-              </div>
             </div>
-          </div>
         </div>
-        <!-- Arrow -->
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
 
         <div class="blankHXS"></div>
         <div class="wrapper">
@@ -4384,18 +4893,23 @@
 
 
         <div class="blankHS"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Card &#43; Gradient<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Card &amp; Gradient <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
                 </h2>
-              </div>
             </div>
-          </div>
         </div>
-        <!-- Arrow -->
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
 
         <div class="blankHXS"></div>
         <div class="wrapper">
@@ -4527,109 +5041,25 @@
 
         <div class="blankHM"></div>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Image &#43; Screen Sizes<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <picture>
-                    <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
-                    <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_placeholder.jpg">
-                    <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
-                    <img src="./medium_default_placeholder.jpg" alt="Testing" style="width:100%;">
-                  </picture>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-
-    <div class="">
-        <div class="blankHS"></div>
-        <div class='wrapper'>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class='filed'>
-                  <div class="tab-container">
-                    <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Item25" id="T251" >
-                      <label for="T251" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Item25" id="T252" checked>
-                      <label for="T252" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Item25" id="T253" >
-                      <label for="T253" class="tab">CSS</label>
-                    </div>
-                    <button class="copy-btn" style="display:inline;">Copy Code</button>
-                  </div>
-                  <div class="ejs-block code-block">
-                    <pre class="ejs-code"><code>
-        </code></pre>
-                  </div>
-                  <div class="html-block code-block" style="display:none;">
-                    <pre class="html-code"><code>
-          &lt;div class=&#34;wrapper&#34;&gt;
-            &lt;div class=&#34;Grid Grid--full Grid--gutters&#34;&gt;
-              &lt;div class=&#34;Grid-cell&#34;&gt;
-                &lt;div class=&#34;element&#34;&gt;
-                  &lt;div class=&#34;ShadowBox&#34;&gt;
-                    &lt;picture&gt;
-                      &lt;source media=&#34;(min-width:1081px)&#34; srcset=&#34;./large_placeholder.jpg&#34;&gt;
-                      &lt;source media=&#34;(min-width:651px) and (max-width:1080px)&#34;
-                        srcset=&#34;./medium(default)_placeholder.jpg&#34;&gt;
-                      &lt;source media=&#34;(max-width:650px)&#34; srcset=&#34;./small_placeholder.jpg&#34;&gt;
-                      &lt;img src=&#34;./medium(default)_placeholder.jpg&#34; alt=&#34;Testing&#34; style=&#34;width:100%;&#34;&gt;
-                    &lt;/picture&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;             
-        </code></pre>
-                  </div>
-                  <div class="css-block code-block" style="display:none;">
-                    <pre class="css-code"><code> 
-          </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHXS"></div>
-      </div>
-
-
-
-
 
         <div class="blankHM"></div>
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Card &#43; image <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Card &amp; Image <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
                 </h2>
-              </div>
             </div>
-          </div>
         </div>
-        <!-- Arrow -->
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-2">
             <div class="Grid-cell">
@@ -4748,19 +5178,23 @@
 
 
         <div class="blankHM"></div>
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Card &#43; Image &#43; Link <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Card &amp; Image <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
                 </h2>
-              </div>
             </div>
-          </div>
         </div>
-        <!-- Arrow -->
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
         <div class="blankHXS"></div>
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-2">
@@ -4888,20 +5322,57 @@
 
 
 
-        <div class="blankHM"></div>
+      </section>
+      <section id="content35">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Audio Player<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            comp_content
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            comp_audioPlayer
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Audio Player <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
                 </h2>
-              </div>
             </div>
-          </div>
         </div>
-        <!-- Arrow -->
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
         <div class="blankHXS"></div>
         <div class="wrapper">
 
@@ -5009,7 +5480,11 @@
 
 
 
-        <div class="blankHM"></div>
+
+
+      </section>
+      <section id="content36">
+
 
         <!-- Arrow -->
         <div class="wrapper">
@@ -5134,33 +5609,73 @@
           </div>
         </div>
       </section>
-      <section id="content33">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="SkylineBlueLt">Organisms | Blocks </strong> </h1>
-                <h4 class="textItalic">Organisms are complex UI components composed of groups of molecules and atoms working together as a cohesive unit. They form significant sections of an interface, like a website's header, which might include logo, navigation, and search form molecules. Organisms are the culmination of smaller components assembled to function effectively in the UI ecosystem.
 
-                </h4>
-              </div>
+    </section>
+    <section id="content4">
+      
+
+
+
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters u-textCenter">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid Grid--center"> <span>
+            Molecules (Structured Block)
+          </span><img class="widthLogo" src="/icon/components.svg" alt="Research">
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="textItalic">Organisms are complex UI components composed of groups of molecules and atoms working together as a cohesive unit. They form significant sections of an interface, like a website's header, which might include logo, navigation, and search form molecules. Organisms are the culmination of smaller components assembled to function effectively in the UI ecosystem.
+
+              </h4>
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
+      </div>
+      <section id="content41">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
 
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_expandableContentBlock
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Read More / Less Toggle<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></h2>
-              </div>
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Read More / Less Toggle <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
             </div>
-          </div>
         </div>
-        <!-- Arrow -->
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
         <div class="wrapper">
 
           <div class="Grid Grid--full Grid--gutters">
@@ -5287,19 +5802,43 @@
 
 
 
+      </section>
+      <section id="content42">
+
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_accordion
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <div class="blankHS"></div>
-
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="element">
-            <h2 class="tArrow">Accordion without Background <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
-          </div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Accordion without Background <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
         </div>
-        <!-- Arrow -->
-        <div class="blankHXS"></div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
 
         <div class="wrapper">
           <div class="element">
@@ -5544,15 +6083,44 @@
 
 
 
+      </section>
+      <section id="content43">
+
         <div class="blankHM"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="element">
-            <h2 class="tArrow">Horizontal Layout Slideshows with Background <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
-          </div>
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_carousel
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Horizontal Layout Slideshows with Background <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
         </div>
-        <!-- Arrow -->
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
 
         <div class="blankHXS"></div>
 
@@ -5619,7 +6187,7 @@
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-        &lt;div class=&#34;BgSkylineBlueLter&#34;&gt;
+        &lt;div class=&#34;SkylineBlueDarkerer&#34;&gt;
           &lt;div class=&#34;blankHXS&#34;&gt;&lt;/div&gt;
           &lt;div class=&#34;wrapper&#34;&gt;
             &lt;div class=&#34;Grid-cell&#34;&gt;
@@ -5744,7 +6312,7 @@
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-          &lt;div class=&#34;BgSkylineBlueLter&#34;&gt;
+          &lt;div class=&#34;SkylineBlueDarkerer&#34;&gt;
             &lt;div class=&#34;blankHXS&#34;&gt;&lt;/div&gt;
             &lt;div class=&#34;wrapper&#34;&gt;
               &lt;div class=&#34;Grid-cell&#34;&gt;
@@ -5871,7 +6439,7 @@
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-          &lt;div class=&#34;BgSkylineBlueLter&#34;&gt;
+          &lt;div class=&#34;SkylineBlueDarkerer&#34;&gt;
             &lt;div class=&#34;blankHXS&#34;&gt;&lt;/div&gt;
             &lt;div class=&#34;wrapper&#34;&gt;
               &lt;div class=&#34;Grid-cell&#34;&gt;
@@ -6053,28 +6621,55 @@
 
 
 
+      </section>
+      <section id="content44">
 
-          <div class="blankHM"></div>
+        <div class="blankHM"></div>
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_modals
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-          <!-- Arrow -->
-          <div class="wrapper">
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
             <div class="element">
-              <h2 class="tArrow">Modal - Background Color: Others <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-              </h2>
+                <h2 class="tArrow">
+                    Modal - Background Color: Others <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
+
+        <div class="BgSkylineBlueLter">
+          <div class="blankHS"></div>
+          <div class="wrapper">
+            <div class="Grid-cell">
+              <img src="./Placeholder.svg" alt="Background Color: Others" class="modal-target" data-bgcolor="rgba(230, 246, 246, 0.96)">
             </div>
           </div>
-          <!-- Arrow -->
-          <div class="BgSkylineBlueLter">
-            <div class="blankHS"></div>
-            <div class="wrapper">
-              <div class="Grid-cell">
-                <img src="./Placeholder.svg" alt="Background Color: Others" class="modal-target" data-bgcolor="rgba(230, 246, 246, 0.96)">
-              </div>
-            </div>
-            <div class="blankHS"></div>
-          </div>
-          
+          <div class="blankHS"></div>
+        </div>
+        
 
     <div class="">
         <div class="blankHS"></div>
@@ -6100,7 +6695,7 @@
                   </div>
                   <div class="html-block code-block" style="display:none;">
                     <pre class="html-code"><code>
-            &lt;div class=&#34;BgSkylineBlueLter&#34;&gt;
+            &lt;div class=&#34;SkylineBlueDarkerer&#34;&gt;
               &lt;div class=&#34;blankHS&#34;&gt;&lt;/div&gt;
               &lt;div class=&#34;wrapper&#34;&gt;
                 &lt;div class=&#34;Grid-cell&#34;&gt;
@@ -6128,26 +6723,26 @@
 
 
 
-          <div class="blankHM"></div>
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="element">
-              <h2 class="tArrow">Modal - Background Color: White <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-              </h2>
-            </div>
+        <div class="blankHM"></div>
+        <!-- Arrow -->
+        <div class="wrapper">
+          <div class="element">
+            <h2 class="tArrow">Modal - Background Color: White <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+            </h2>
           </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <img src="./Placeholder.svg" alt="Background Color: White" class="modal-target" data-bgcolor="rgba(255, 255, 255, 0.96)">
-                </div>
+        </div>
+        <!-- Arrow -->
+        <div class="blankHXS"></div>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img src="./Placeholder.svg" alt="Background Color: White" class="modal-target" data-bgcolor="rgba(255, 255, 255, 0.96)">
               </div>
             </div>
           </div>
-          
+        </div>
+        
 
     <div class="">
         <div class="blankHS"></div>
@@ -6199,19 +6794,25 @@
 
 
 
-
       </section>
+      <section id="content45">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
 
-    </section>
-    <section id="content4">
-      <div class="Grid Grid--full Grid--gutters u-textCenter wrapper">
-        <div class="Grid-cell">
-          <h1 class="Grid Grid--center"> <span>Navigation</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
-          </h1>
-        </div>
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_header
+            
+            
+        </h1>
       </div>
-      <section id="content41">
-        <!--Arrow subtitle-->
+    </div>
+  </div>
+</div>
+
+
         <div class="blankHS"></div>
 <!-- Arrow -->
 <div class="wrapper">
@@ -6228,7 +6829,7 @@
 <!-- Arrow -->
 <div class="blankHXS"></div>
 
-        <!--Arrow subtitle-->
+
         <div class="wrapper">
           <nav class="headerDEMO" id="">
             <div class="backgroundColorNavDEMO">
@@ -6650,9 +7251,24 @@
 
 
       </section>
-      <div class="blankHM"></div>
+      <section id="content46">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
 
-      <section id="content42">
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_footer
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
         <!--Arrow subtitle-->
         <div class="blankHS"></div>
 <!-- Arrow -->
@@ -6837,8 +7453,24 @@
 
 
       </section>
+      <section id="content47">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
 
-      <section id="content43">
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_sideNav
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
         <!--Arrow subtitle-->
         <div class="blankHS"></div>
 <!-- Arrow -->
@@ -6973,24 +7605,159 @@
 
 
       </section>
-    </section>
-  </main>
+      <section id="content48">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
 
-
-
-
-
-  <!-- The Modal -->
-  <div id="modal" class="modal">
-    <span id="modal-close" class="modal-close">
-      <img class="iconXforModal" src="../icon/delete.svg" alt="&times;">
-    </span>
-    <img id="modal-content" class="modal-content">
-    <div id="modal-caption" class="modal-caption"></div>
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_copyCode
+            
+            
+        </h1>
+      </div>
+    </div>
   </div>
-  <!-- The Modal -->
-  <!-- Shared across the platform -->
-  <div class="blankHS"></div>
+</div>
+
+
+        <div class="blankHS"></div>
+<!-- Arrow -->
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="element">
+                <h2 class="tArrow">
+                    Code Snippet Explorer (CSE) <img class="seArrow" src="/icon/arrow-se.svg" alt="icon arrow">
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Arrow -->
+<div class="blankHXS"></div>
+
+
+
+        
+
+      <div class="blankHS"></div>
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="filed">
+                <div class="tab-container">
+                  <div class="tabs">
+                    <input type="radio" class="select-EJS" name="Demo" id="Tdemo1" checked="">
+                    <label for="Tdemo1" class="tab">EJS</label>
+                    <input type="radio" class="select-HTML" name="Demo" id="Tdemo2">
+                    <label for="Tdemo2" class="tab">HTML</label>
+                    <input type="radio" class="select-CSS" name="Demo" id="Tdemo3">
+                    <label for="Tdemo3" class="tab">CSS</label>
+                  </div>
+                  <button class="copy-btn" style="display:inline;">Copy Code</button>
+                </div>
+                <div class="ejs-block code-block" style="display: none;">
+                  <pre class="ejs-code"><code>Insert ejs code</code></pre>
+                </div>
+                <div class="html-block code-block" style="display:none;">
+                  <pre class="html-code"><code>Insert html code</code></pre>
+                </div>
+                <div class="css-block code-block" style="display: block;">
+                  <pre class="css-code"><code>Insert css code</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blankHXS"></div>
+
+
+
+        
+
+    <div class="">
+        <div class="blankHS"></div>
+        <div class='wrapper'>
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class='filed'>
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Item19" id="T191" >
+                      <label for="T191" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Item19" id="T192" checked>
+                      <label for="T192" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Item19" id="T193" >
+                      <label for="T193" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block">
+                    <pre class="ejs-code"><code>
+            </code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>
+            &lt;div class=&#34;Grid Grid--gutters Grid--full Grid--gutters&#34;&gt;
+              &lt;div class=&#34;Grid-cell&#34;&gt;
+                &lt;div class=&#34;element&#34;&gt;
+                  &lt;div class=&#34;ClipboardBox clickTxt&#34;&gt;
+                    &lt;button class=&#34;Clipboard clickTxt&#34; contenteditable=&#34;false&#34;&gt;
+                      &lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display:none;">
+                    <pre class="css-code"><code> 
+              </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHXS"></div>
+      </div>
+
+
+
+
+      </section>
+      <section id="content49">
+        
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+
+        <h1 class="Grid centerVer"> <span class="SkylineBlueDarker">
+            block_tagCloud
+            
+            
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="blankHS"></div>
 <!-- Arrow -->
 <div class="wrapper">
     <div class="Grid Grid--full Grid--gutters u-textCenter">
@@ -7006,7 +7773,7 @@
 <!-- Arrow -->
 <div class="blankHXS"></div>
 
-  <div class="blankHM"></div>
+        <div class="blankHM"></div>
 
 <div class="Grid Grid--full Grid--gutters u-textCenter">
     <ul class="tags" id="TagsCloud">
@@ -7060,7 +7827,7 @@
   </div>
   <div class="blankHL"></div>
 
-  
+        
 
     <div class="">
         <div class="blankHS"></div>
@@ -7144,7 +7911,7 @@
                   </div>
                   <div class="css-block code-block" style="display:none;">
                     <pre class="css-code"><code>
-  </code></pre>
+        </code></pre>
                   </div>
                 </div>
               </div>
@@ -7158,81 +7925,26 @@
 
 
 
-  <div class="blankHM"></div>
+      </section>
 
-<!-- message -->
-<div class="wrapper">
-  <div class="Grid Grid--full Grid--gutters u-textCenter">
-    <div class="Grid-cell">
-      <div data-aos="fade-up">
-        
-        <h4 class="element">
-          Thank You for Visiting &#33; Check back soon for more updates and stay tuned &#33;
-        </h4>
-        
-      </div>
-      <a href="/" class=""><img class="widthXS" src="/icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
-    </div>
-  </div>
-</div>
-<!-- message -->
-<div class="blankHL"></div>
-  
+    </section>
+  </main>
 
-    <div class="">
-        <div class="blankHS"></div>
-        <div class='wrapper'>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class='filed'>
-                  <div class="tab-container">
-                    <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Item44" id="T441" >
-                      <label for="T441" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Item44" id="T442" checked>
-                      <label for="T442" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Item44" id="T443" >
-                      <label for="T443" class="tab">CSS</label>
-                    </div>
-                    <button class="copy-btn" style="display:inline;">Copy Code</button>
-                  </div>
-                  <div class="ejs-block code-block">
-                    <pre class="ejs-code"><code></code></pre>
-                  </div>
-                  <div class="html-block code-block" style="display:none;">
-                    <pre class="html-code"><code>
-  &lt;div class=&#34;Grid Grid--full Grid--gutters u-textCenter&#34;&gt;
-    &lt;div class=&#34;Grid-cell&#34;&gt;
-      &lt;div data-aos=&#34;fade-up&#34; class=&#34;aos-init aos-animate&#34;&gt;
-        
-        &lt;h4 class=&#34;element&#34;&gt;
-          Thank You for Visiting ! Check back soon for more updates and stay tuned !
-        &lt;/h4&gt;
-        
-      &lt;/div&gt;
-      &lt;a href=&#34;/&#34; class=&#34;&#34;&gt;&lt;img class=&#34;widthXS&#34; src=&#34;/icon/LOGOtxt.svg&#34; alt=&#34;VW&#34; title=&#34;vickywang.me&#34;&gt;&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  </code></pre>
-                  </div>
-                  <div class="css-block code-block" style="display:none;">
-                    <pre class="css-code"><code>
-  </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHXS"></div>
-      </div>
 
 
 
 
   <div class="blankHL"></div>
 
+  <!-- The Modal -->
+  <div id="modal" class="modal">
+    <span id="modal-close" class="modal-close">
+      <img class="iconXforModal" src="../icon/delete.svg" alt="&times;">
+    </span>
+    <img id="modal-content" class="modal-content">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+  <!-- The Modal -->
 
     <!-- back to top -->
   <button id="myBtn" title="Back to top">

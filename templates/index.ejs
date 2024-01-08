@@ -32,33 +32,33 @@
 
 
   <!-- Arrow -->
-  <%- include(`${templatePath}/shared/arrowSubtitle`, {message: 'Case Study' }) %>
+  <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Case Study' }) %>
   <!-- Arrow -->
 
   <!-- Content -->
 
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
-    <%- include(`${templatePath}/shared/cardProjects`, {card: 'BYPb2bOnboarding' }) %>
-    <%- include(`${templatePath}/shared/cardProjects`, {card: 'BYPb2cConsumerBooking' }) %>
+    <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'BYPb2bOnboarding' }) %>
+    <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'BYPb2cConsumerBooking' }) %>
     </div>
 
     <div class="Grid Grid--gutters Grid--cols-2">
-      <%- include(`${templatePath}/shared/cardProjects`, {card: 'LHadminPanel' }) %>
-      <%- include(`${templatePath}/shared/cardProjects`, {card: 'rxZero' }) %>
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'LHadminPanel' }) %>
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'rxZero' }) %>
 
     </div>
 
     <div class="Grid Grid--gutters Grid--cols-2">
-      <%- include(`${templatePath}/shared/cardProjects`, {card: 'LHcostCal' }) %>
-      <%- include(`${templatePath}/shared/cardProjects`, {card: 'glorify' }) %>
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'LHcostCal' }) %>
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'glorify' }) %>
     </div>
 
     <div class="Grid Grid--gutters Grid--cols-2">
 
-      <%- include(`${templatePath}/shared/cardProjects`, {card: 'appointa' }) %>
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'appointa' }) %>
 
-      <%- include(`${templatePath}/shared/cardProjects`, {card: 'seer' }) %>
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'seer' }) %>
 
 
     </div>
@@ -67,26 +67,26 @@
   <!-- Content -->
 
   <!-- Arrow -->
-  <%- include('shared/arrowSubtitle', {message: 'Design System' }) %>
+  <%- include('shared/comp_content_subtitle_arrow', {message: 'Design System' }) %>
   <!-- Arrow -->
   <!-- Content -->
 
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
-      <%- include(`${templatePath}/shared/cardProjects`, {card: 'designSystem' }) %>
-      <%- include(`${templatePath}/shared/cardProjects`, {card: 'navigation' }) %>
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'designSystem' }) %>
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'navigation' }) %>
     </div>
   </div>
   <!-- Content -->
 
   <!-- Arrow -->
-  <%- include('shared/arrowSubtitle', {message: 'Skills & Experiences' }) %>
+  <%- include('shared/comp_content_subtitle_arrow', {message: 'Skills & Experiences' }) %>
   <!-- Arrow -->
 
   <%- include('shared/tagCloud') %>
   <%- include('shared/thankYouMessage', { version: '', message: '999'}) %>
 
-  <%- include('shared/backTop') %>
+  <%- include('shared/comp_backTop') %>
   <%- include('shared/footer') %>
   <!-- The Modal -->
   <div id="modal" class="modal">
