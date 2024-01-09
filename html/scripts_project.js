@@ -530,6 +530,13 @@ copyTextContainers.forEach(function (container) {
   //copy code to clipboard + tabs
 
 
+// Simulate a click on the default tab link when the page loads
+window.onload = function () {
+  var defaultTabLink = document.getElementById("default-tab");
+  if (defaultTabLink) {
+    defaultTabLink.click();
+  }
+};
 
 
 

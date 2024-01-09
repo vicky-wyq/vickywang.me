@@ -1663,7 +1663,7 @@ main>nav {
     border-left: var(--Grey400) 0.04em solid;
     text-decoration: none;
     display: block;
-    padding: 8px 16px;
+    padding: 6px 12px;
     color: var(--Grey700);
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
@@ -5538,7 +5538,7 @@ button.Clipboard.clickTxt:active {
 }
 
 /* ===== Share to Social Media ====== */
-
+/* =================== tabs + copy to clipboard  ===================*/
 
 .tab-container {
     display: flex;
@@ -5613,3 +5613,75 @@ pre code {
 
 
 /* =================== tabs + copy to clipboard  ===================*/
+
+
+/* =================== tabs for design system  ===================*/
+#TabsContent::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.tabContent-switch {
+    position: fixed;
+}
+
+.tabContent-switch:first-child + .tabContent-link + .tab-content {
+   display: block;
+}
+.tabContent-switch:target + .tabContent-link + .tab-content {
+    display: block;
+}
+.tabContent-link {
+    display: inline-block;
+}
+.tab-content {
+    box-sizing: border-box;
+    float: right;
+    display: none;
+    width: 100%;
+}
+#TabsContent {
+    background-color: var(--Grey100);
+    border: 1px solid var(--Grey500);
+    border-radius: 12px;
+    font-size: 0;
+}
+.tabContent-link {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--Grey700);
+}
+.tabContent-link:hover {
+    border-radius: 12px;
+
+    background-color: var(--white);
+    color: var(--grey900);
+}
+.tabContent-link ~ .tabContent-link {
+    margin-left: 0;
+}
+.tabContent-switch:target + .tabContent-link {
+    background-color: var(--white);
+    border-radius: 12px;
+
+    color: var(--grey900);
+}
+.tab-content {
+    padding: 35px;
+    font-size: 13px;
+}
+.tab-content p {
+    line-height: 1.65;
+}
+.tab-content ul, .tab-content ol {
+    padding: 0 0 0 15px;
+    margin: 0;
+    line-height: 1.25;
+}
+.tab-content ul > li, .tab-content ol > li {
+    margin: 5px 0;
+}
+/* =================== tabs for design system  ===================*/
