@@ -5611,77 +5611,65 @@ pre code {
     white-space: pre-wrap; /* Updated to allow wrapping */
 }
 
-
-/* =================== tabs + copy to clipboard  ===================*/
-
-
 /* =================== tabs for design system  ===================*/
-#TabsContent::after {
-    display: block;
+#tabsContent::after {
     content: "";
+    display: block;
     clear: both;
 }
-.tabContent-switch {
-    position: fixed;
+.tabContent{
+    background: var(--Grey100);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--Grey200);
+
 }
 
-.tabContent-switch:first-child + .tabContent-link + .tab-content {
-   display: block;
+.tabContent-switch {
+    display: none; /* Hide the actual radio buttons */
 }
-.tabContent-switch:target + .tabContent-link + .tab-content {
-    display: block;
-}
+
 .tabContent-link {
     display: inline-block;
-}
-.tab-content {
-    box-sizing: border-box;
-    float: right;
-    display: none;
-    width: 100%;
-}
-#TabsContent {
-    background-color: var(--Grey100);
-    border: 1px solid var(--Grey500);
     border-radius: 12px;
-    font-size: 0;
-}
-.tabContent-link {
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 20px;
+    border: 1px solid var(--Grey100);
+    margin-left: 8px;
+    margin-top: 8px;
+    padding: 18px;
     text-decoration: none;
     font-size: 18px;
     color: var(--Grey700);
 }
+
 .tabContent-link:hover {
-    border-radius: 12px;
-
     background-color: var(--white);
     color: var(--grey900);
 }
-.tabContent-link ~ .tabContent-link {
-    margin-left: 0;
-}
-.tabContent-switch:target + .tabContent-link {
-    background-color: var(--white);
-    border-radius: 12px;
 
-    color: var(--grey900);
-}
-.tab-content {
-    padding: 35px;
+.tabContent-content {
+    box-sizing: border-box;
+    float: right;
+    display: none; /* Initially hide all content */
+    width: 100%;
+    padding: var(--paddingS);
     font-size: 13px;
 }
-.tab-content p {
+
+.tabContent-switch:checked + .tabContent-link + .tabContent-content {
+    display: block; /* Show content when the corresponding tab is selected */
+}
+
+.tabContent-switch:checked + .tabContent-link {
+    background-color: var(--white);
+    border: 1px solid var(--Grey200);
+    color: var(--grey900);
+}
+
+.tabContent-content p, .tabContent-content ul, .tabContent-content ol {
     line-height: 1.65;
 }
-.tab-content ul, .tab-content ol {
-    padding: 0 0 0 15px;
-    margin: 0;
-    line-height: 1.25;
-}
-.tab-content ul > li, .tab-content ol > li {
+
+.tabContent-content ul > li, .tabContent-content ol > li {
     margin: 5px 0;
 }
+
 /* =================== tabs for design system  ===================*/

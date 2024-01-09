@@ -316,18 +316,22 @@
         </h1>
       </div>
     </div>
+
     <div class="wrapper">
-      <div id="TabsContent">
-          <span id="tab-1" class="tabContent-switch"></span>
-          <a href="#tab-1" class="tabContent-link" id="default-tab">Tab 1</a>
-          <div class="tab-content">
+      <div id="tabsContent" class="tabContent">
+          <!-- Tab 1 -->
+          <input type="radio" name="tabs" id="tab-1" class="tabContent-switch" checked="">
+          <label for="tab-1" class="tabContent-link">Tab 1</label>
+          <div class="tabContent-content">
               <h2>Lorem ipsum</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          </div>
 
-          <span id="tab-2" class="tabContent-switch"></span>
-          <a href="#tab-2" class="tabContent-link">Tab 2</a>
-          <div class="tab-content">
+          </div>
+  
+          <!-- Tab 2 -->
+          <input type="radio" name="tabs" id="tab-2" class="tabContent-switch">
+          <label for="tab-2" class="tabContent-link">Tab 2</label>
+          <div class="tabContent-content">
               <h2>Lorem list</h2>
               <ul>
                   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
@@ -335,15 +339,17 @@
                   <li>Vestibulum auctor dapibus neque.</li>
               </ul>
           </div>
-
-          <span id="tab-3" class="tabContent-switch"></span>
-          <a href="#tab-3" class="tabContent-link">Tab 3</a>
-          <div class="tab-content">
+  
+          <!-- Tab 3 -->
+          <input type="radio" name="tabs" id="tab-3" class="tabContent-switch">
+          <label for="tab-3" class="tabContent-link">Tab 3</label>
+          <div class="tabContent-content">
               <h2>Yolo</h2>
               <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
           </div>
       </div>
   </div>
+  
 
 
     <nav class="section-nav">
