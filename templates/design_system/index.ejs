@@ -182,11 +182,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <li><a href="#content3" class="titleRightPanel">Molecules (Comps) </a>
           <ul>
             <li class="rightPanel"><a href="#content31"> &#160; Textual Elements</a></li>
-            <li class="rightPanel"><a href="#content32"> &#160; Clipboard Copy Field (CCF) </a></li>
-            <li class="rightPanel"><a href="#content33"> &nbsp; Adaptive Image Loader (AIL)</a></li>
+            <li class="rightPanel"><a href="#content32"> &#160; Clipboard Copy Field </a></li>
+            <li class="rightPanel"><a href="#content33"> &nbsp; Adaptive Image Loader</a></li>
             <li class="rightPanel"><a href="#content34"> &#160; Card Elements </a></li>
-            <li class="rightPanel"><a href="#content35"> &#160; Menu Items</a></li>
-            <li class="rightPanel"><a href="#content36"> &#160; Graphs</a></li>
+            <li class="rightPanel"><a href="#content35"> &#160; Card & Image </a></li>
+
+            <li class="rightPanel"><a href="#content36"> &#160; Audio Player </a></li>
+            <li class="rightPanel"><a href="#content37"> &#160; Graphs</a></li>
 
 
           </ul>
@@ -320,7 +322,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item1', idTab1:'T11',idTab2:'T12',idTab3:'T13', tab1:'',tab2:'',tab3:'checked',
+          {Name: 'Item1', idTab1:'T11',idTab2:'T12',idTab3:'T13', tab1:'',tab2:'',tab3:'checked',
           EJS: ``,
           HTML: ``,
           CSS:` 
@@ -503,7 +505,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <!-- Color -->
 
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item2', idTab1:'T21',idTab2:'T22',idTab3:'T23', tab1:'',tab2:'',tab3:'checked',
+          {Name: 'Item2', idTab1:'T21',idTab2:'T22',idTab3:'T23', tab1:'',tab2:'',tab3:'checked',
           EJS: ``,
           HTML: ``,
           CSS:` 
@@ -1030,7 +1032,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
 
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item3', idTab1:'T31',idTab2:'T32',idTab3:'T33', tab1:'',tab2:'',tab3:'checked',
+        {Name: 'Item3', idTab1:'T31',idTab2:'T32',idTab3:'T33', tab1:'',tab2:'',tab3:'checked',
         EJS: ``,
         HTML: ``,
         CSS:` 
@@ -1098,7 +1100,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item4', idTab1:'T41',idTab2:'T42',idTab3:'T43', tab1:'',tab2:'',tab3:'checked',
+        {Name: 'Item4', idTab1:'T41',idTab2:'T42',idTab3:'T43', tab1:'',tab2:'',tab3:'checked',
         EJS: ``,
         HTML: `
           <div class="noMargin"></div>
@@ -1204,7 +1206,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
 
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item5', idTab1:'T51',idTab2:'T52',idTab3:'T53', tab1:'',tab2:'',tab3:'checked',
+        {Name: 'Item5', idTab1:'T51',idTab2:'T52',idTab3:'T53', tab1:'',tab2:'',tab3:'checked',
         EJS: ``,
         HTML: `
           <div class="paddingXS"></div>
@@ -1303,7 +1305,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item6', idTab1:'T61',idTab2:'T62',idTab3:'T63', tab1:'',tab2:'',tab3:'checked',
+        {Name: 'Item6', idTab1:'T61',idTab2:'T62',idTab3:'T63', tab1:'',tab2:'',tab3:'checked',
         EJS: ``,
         HTML: `
           <div class="borderRadiusXS"></div>
@@ -1514,7 +1516,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item7', idTab1:'T71',idTab2:'T72',idTab3:'T73', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item7', idTab1:'T71',idTab2:'T72',idTab3:'T73', tab1:'',tab2:'checked',tab3:'',
           EJS: ``,
           HTML: `
             <div class="Grid Grid--gutters Grid--full u-textCenter">
@@ -1595,7 +1597,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item8', idTab1:'T81',idTab2:'T82',idTab3:'T83', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item8', idTab1:'T81',idTab2:'T82',idTab3:'T83', tab1:'',tab2:'checked',tab3:'',
           EJS: ``,
           HTML: `
             <div class="Grid Grid--gutters Grid--1of6">
@@ -1720,7 +1722,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item9', idTab1:'T91',idTab2:'T92',idTab3:'T93', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item9', idTab1:'T91',idTab2:'T92',idTab3:'T93', tab1:'',tab2:'checked',tab3:'',
           EJS: ``,
           HTML: `
             <div class="Grid Grid--gutters Grid--1of2">
@@ -1781,7 +1783,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item10', idTab1:'T101',idTab2:'T102',idTab3:'T103', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item10', idTab1:'T101',idTab2:'T102',idTab3:'T103', tab1:'',tab2:'checked',tab3:'',
           EJS: ``,
           HTML: `
             <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
@@ -1852,7 +1854,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item11', idTab1:'T111',idTab2:'T112',idTab3:'T113', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item11', idTab1:'T111',idTab2:'T112',idTab3:'T113', tab1:'',tab2:'checked',tab3:'',
           EJS: ``,
           HTML: `
             <div class="Grid Grid--gutters Grid--1of6">
@@ -1899,7 +1901,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item12', idTab1:'T121',idTab2:'T122',idTab3:'T123', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item12', idTab1:'T121',idTab2:'T122',idTab3:'T123', tab1:'',tab2:'checked',tab3:'',
           EJS: ``,
           HTML: `
             <div class="rowToColumn">
@@ -1925,7 +1927,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       </section>
     </section>
     <section id="content2">
-      <%- include('../shared/comp_content_title', {type:'center', title: `Atoms (Basic Elements)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
+      <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'center', title: `Atoms (Basic Elements)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
       <div class="wrapper">
         <div class="Grid Grid--full Grid--gutters">
           <div class="Grid-cell">
@@ -1938,7 +1940,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       <section id="content21">
 
         <div class="blankHXS"></div>
-        <%- include('../shared/comp_content_title', {type:'left', title: `base_buttons`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_buttons`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <div class="blankHS"></div>
         <!-- Arrow -->
@@ -2005,7 +2007,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item13', idTab1:'T131',idTab2:'T132',idTab3:'T133', tab1:'',tab2:'checked',tab3:'',
+        {Name: 'Item13', idTab1:'T131',idTab2:'T132',idTab3:'T133', tab1:'',tab2:'checked',tab3:'',
         EJS: ``,
         HTML: `
           <!-- Large button -->
@@ -2026,7 +2028,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content22">
-        <%- include('../shared/comp_content_title', {type:'left', title: `base_icons`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_icons`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
 
         <!-- Arrow -->
@@ -2497,7 +2499,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item14', idTab1:'T141',idTab2:'T142',idTab3:'T143', tab1:'',tab2:'',tab3:'checked',
+        {Name: 'Item14', idTab1:'T141',idTab2:'T142',idTab3:'T143', tab1:'',tab2:'',tab3:'checked',
         EJS: ``,
         HTML: `
           <img src="../icon/arrow-down.svg" alt="Arrow Down">
@@ -2574,7 +2576,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHM"></div>
       </section>
       <section id="content23">
-        <%- include('../shared/comp_content_title', {type:'left', title: `base_iconsSizes`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_iconsSizes`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Icons Sizes' }) %>
 
@@ -2669,7 +2671,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
         <%- include('../shared/block_tabs_copyCode', 
-      {Demo: false, Name: 'Item16', idTab1:'T161',idTab2:'T162',idTab3:'T163', tab1:'',tab2:'checked',tab3:'',
+      {Name: 'Item16', idTab1:'T161',idTab2:'T162',idTab3:'T163', tab1:'',tab2:'checked',tab3:'',
       EJS: `
       `,
       HTML: `
@@ -2750,21 +2752,10 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content24">
-        <%- include('../shared/comp_content_title', {type:'left', title: `base_inputs`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Inputs' }) %>
 
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_inputs`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Inputs<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
         <div class="blankHXS"></div>
 
         <div class="wrapper">
@@ -2798,7 +2789,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item15', idTab1:'T151',idTab2:'T152',idTab3:'T153', tab1:'',tab2:'checked',tab3:'',
+        {Name: 'Item15', idTab1:'T151',idTab2:'T152',idTab3:'T153', tab1:'',tab2:'checked',tab3:'',
         EJS: ``,
         HTML: `
           <div class="img__wrap widthS heightS element">
@@ -2933,14 +2924,15 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       <div class="blankHXS"></div>
 
       <section id="content31">
-        <%- include('../shared/comp_content_title', {type:'left', title: `comp_textualElements`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Textual Elements' }) %>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_textualElements`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
         <div class="wrapper">
           <div id="tabsContent" class="tabContent">
             <!-- Tab 1 -->
             <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab1`, lableTxt:'_title', checked:'checked'}) %>
 
             <div class="tabContent-content">
-              <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {spacing: false, message: 'Title for Each Section' }) %>
 
               <div class="Grid Grid--gutters Grid--1of6 Grid--center">
                 <div class="Grid-cell">
@@ -2958,7 +2950,6 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               </div>
               <%- include(`${templatePath}/shared/comp_hr`) %>
 
-              <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {spacing: false, message: 'Title for Each Sub Section' }) %>
 
               <div class="Grid Grid--gutters Grid--1of6 Grid--center">
                 <div class="Grid-cell">
@@ -2975,16 +2966,16 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                 </div>
               </div>
               <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                {Demo: false, Name: 'content', idTab1:'contentT1',idTab2:'contentT2',idTab3:'contentT3', tab1:'checked',tab2:'',tab3:'',
-                EJS: ejsLiterals.ejs.comp_textualElements_title,
-                HTML: ejsLiterals.html.comp_textualElements_title,
-                CSS:``
+                { Name: 'content', idTab1:'contentT1',idTab2:'contentT2',idTab3:'contentT3', tab1:'checked',tab2:'',tab3:'',
+                  CCspacing: false,
+                  EJS: ejsLiterals.ejs.comp_textualElements_title,
+                  HTML: ejsLiterals.html.comp_textualElements_title,
+                  CSS:``
                 }) %>
             </div>
             <!-- Tab 2 -->
             <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab2`, lableTxt:'_note'}) %>
             <div class="tabContent-content">
-              <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {spacing: false, message: 'Note without Background' }) %>
               <div class="wrapper">
                 <div class="blankHXS"></div>
 
@@ -3010,7 +3001,6 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
 
-              <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {spacing: false, message: 'Note with Background' }) %>
               <div class="wrapper">
                 <div class="Grid Grid--gutters Grid--1of6 Grid--center">
                   <div class="Grid-cell">
@@ -3040,8 +3030,10 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                   </div>
                 </div>
               </div>
-              <%- include('../shared/block_tabs_copyCode', 
-                {Demo: false, Name: 'Item21', idTab1:'T211',idTab2:'T212',idTab3:'T213', tab1:'',tab2:'checked',tab3:'',
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+                { Name: 'Item21', idTab1:'T211',idTab2:'T212',idTab3:'T213', tab1:'',tab2:'checked',tab3:'',
+                  CCspacing: false,
+
                 EJS: `
                 `,
                 HTML: `
@@ -3073,17 +3065,17 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               }) %>
 
             </div>
-            <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab3`, lableTxt:'_closingMessage'}) %>
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'textualElements', idTab: `teTab3`, lableTxt:'_closingMessage'}) %>
             <!-- Tab 3 -->
             <div class="tabContent-content">
-              <%- include('../shared/comp_content_subtitle_arrow', {spacing: false, message: `Closing Message` }) %>
-              <%- include(`${templatePath}/shared/comp_closingMessage`, {spacing: false, version: '', message: '999'}) %>
+              <%- include(`${templatePath}/shared/comp_closingMessage`, {CMspacing: false, version: '', message: '999'}) %>
 
-              <%- include('../shared/block_tabs_copyCode', 
-              {Demo: false, Name: 'Item44', idTab1:'T441',idTab2:'T442',idTab3:'T443', tab1:'checked',tab2:'',tab3:'',
-              EJS: ejsLiterals.ejs.comp_textualElements_closingMessage,
-              HTML: ejsLiterals.html.comp_textualElements_closingMessage,
-              CSS: ``
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'Item44', idTab1:'T441',idTab2:'T442',idTab3:'T443', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_textualElements_closingMessage,
+                HTML: ejsLiterals.html.comp_textualElements_closingMessage,
+                CSS: ``
               }) %>
 
             </div>
@@ -3091,7 +3083,9 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
       </section>
       <section id="content32">
-        <%- include('../shared/comp_content_title', {type:'left', title: `comp_clipboardCopy`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Clipboard Copy Field' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_clipboardCopy`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
         <div class="wrapper">
           <div id="tabsContent" class="tabContent">
             <!-- Tab 1 -->
@@ -3111,9 +3105,16 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                   </div>
                 </div>
               </div>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'iconTriger', idTab1:'iconTriger1',idTab2:'iconTriger2',idTab3:'iconTriger3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_clipboardCopy_iconTriger,
+                HTML: ejsLiterals.html.comp_clipboardCopy_iconTriger,
+                CSS:``
+              }) %>
             </div>
 
-            <%- include('../shared/comp_tabs_content', {name:'clipboardCopy', idTab: `ccTab2`, lableTxt:'_inputIconTrigger', checked:''}) %>
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'clipboardCopy', idTab: `ccTab2`, lableTxt:'_inputIconTrigger', checked:''}) %>
             <div class="tabContent-content">
               <div class="Grid Grid--full Grid--gutters">
                 <div class="Grid-cell">
@@ -3129,22 +3130,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                   </div>
                 </div>
               </div>
-              <%- include('../shared/block_tabs_copyCode', 
-              {Demo: false, Name: 'Item17', idTab1:'T171',idTab2:'T172',idTab3:'T173', tab1:'',tab2:'checked',tab3:'',
-              EJS: `
-              `,
-              HTML: `
-                <div class="containerCopy element">
-                  <div class="ClickandCopy">Lorem ipsum</div>
-                  <div class="copy-text">
-                    <input type="text" class="text" value="https://www.vickywang.me" />
-                    <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
-                    </button>
-                  </div>
-                </div>
-              `,
-              CSS:` 
-                `
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'Item17', idTab1:'T171',idTab2:'T172',idTab3:'T173', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_clipboardCopy_inputIconTriger,
+                HTML: ejsLiterals.html.comp_clipboardCopy_inputIconTriger,
+                CSS:``
               }) %>
             </div>
             <%- include('../shared/comp_tabs_content', {name:'clipboardCopy', idTab: `ccTab3`, lableTxt:'_textFieldTrigger', checked:''}) %>
@@ -3160,100 +3151,28 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                           laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                           voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
+
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
               <%- include('../shared/block_tabs_copyCode', 
-              {Demo: false, Name: 'Item18', idTab1:'T181',idTab2:'T182',idTab3:'T183', tab1:'',tab2:'checked',tab3:'',
-              EJS: `
-              `,
-              HTML: `
-              <div class="Grid Grid--gutters Grid--full Grid--gutters">
-                <div class="Grid-cell">
-                  <div class="element">
-                    <div class="ClipboardBox clickTxt">
-                      <button class="Clipboard clickTxt" contenteditable="false">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              `,
-              CSS:
-              ` 
-                `
+              {Name: 'Item18', idTab1:'T181',idTab2:'T182',idTab3:'T183', tab1:'',tab2:'checked',tab3:'',
+              CCspacing: false,
+              EJS: ejsLiterals.ejs.comp_clipboardCopy_textFieldTriger,
+              HTML: ejsLiterals.html.comp_clipboardCopy_textFieldTriger,
+              CSS: ``
               }) %>
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
-
-
-        <div class="blankHM"></div>
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Input Icon Copy Trigger (IICT)` }) %>
-
-
-        <div class="blankHXS"></div>
-        <div class="wrapper">
-
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="containerCopy">
-                  <div class="ClickandCopy">Lorem ipsum</div>
-                  <div class="copy-text">
-                    <input type="text" class="text" value="https://www.vickywang.me" />
-                    <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="blankHM"></div>
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Text Field Copy Trigger (TFCT)` }) %>
-
-
-        <div class="blankHXS"></div>
-        <div class="wrapper">
-
-          <div class="Grid Grid--gutters Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBox clickTxt">
-                  <button class="Clipboard clickTxt" contenteditable="false">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="blankHM"></div>
-
       </section>
       <section id="content33">
-        <%- include('../shared/comp_content_title', {type:'left', title: `comp_adaptiveImageLoader`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Adaptive Image Loader' }) %>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_adaptiveImageLoader`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
 
 
         <div class="wrapper">
@@ -3273,7 +3192,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-      {Demo: false, Name: 'Item25', idTab1:'T251',idTab2:'T252',idTab3:'T253', tab1:'',tab2:'checked',tab3:'',
+      {Name: 'Item25', idTab1:'T251',idTab2:'T252',idTab3:'T253', tab1:'',tab2:'checked',tab3:'',
       EJS: `
       `,
       HTML: `
@@ -3301,453 +3220,111 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       }) %>
       </section>
       <section id="content34">
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card Elements' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_card`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-        <div class="blankHM"></div>
-        <%- include('../shared/comp_content_title', {type:'left', title: `comp_cards`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card' }) %>
-
-
-        <div class="blankHXS"></div>
         <div class="wrapper">
+          <div id="tabsContent" class="tabContent">
+            <!-- Tab 1 -->
+            <%- include('../shared/comp_tabs_content', {name:'cardElement', idTab: `ceTab1`, lableTxt:'_clean', checked:'checked'}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/comp_card_clean`, {
+                cardTitle: 'Lorem ipsum', 
+                cardText:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              ` }) %>
 
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="Grid Grid--gutters Grid--cols-2">
-                <div class="Grid-cell">
-                  <div class="element">
-                    <h4> <strong> Title</strong> </h4>
-                    <ul>
-                      <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. </li>
-                      <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="Grid-cell">
-                  <div class="element">
-                    <h4> <strong> Title</strong> </h4>
-                    <ul>
-                      <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. </li>
-                      <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'cardClean', idTab1:'cardCleanT1',idTab2:'cardCleanT2',idTab3:'cardCleanT3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_card_clean,
+                HTML: ejsLiterals.html.comp_card_clean,
+                CSS:``
+              }) %>
+            </div>
+            <!-- Tab 2 -->
+
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'cardElement', idTab: `ceTab2`, lableTxt:'_border', checked:''}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/comp_card_border`, {
+                cardTitle: `Lorem ipsum`, 
+                cardText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` 
+                }) %>
+
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'cardBorder', idTab1:'cardBorderT1',idTab2:'cardBorderT2',idTab3:'cardBorderT3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_card_border,
+                HTML: ejsLiterals.html.comp_card_border,
+                CSS:``
+              }) %>
+            </div>
+
+            <!-- Tab 3 -->
+            <%- include('../shared/comp_tabs_content', {name:'cardElement', idTab: `ceTab3`, lableTxt:'_gradient', checked:''}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/comp_card_gradient`, {
+                cardTitle: `Lorem ipsum`, 
+                cardText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` 
+                }) %>
+              <%- include('../shared/block_tabs_copyCode', 
+              { Name: 'cardGradient', idTab1:'cardGradientT1',idTab2:'cardGradientT2',idTab3:'cardGradientT3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_card_gradient,
+                HTML: ejsLiterals.html.comp_card_gradient,
+                CSS: ``
+              }) %>
             </div>
           </div>
         </div>
-
-        <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item22', idTab1:'T221',idTab2:'T222',idTab3:'T223', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="Grid Grid--gutters Grid--cols-2">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <h4> <strong> Title</strong> </h4>
-                      <ul>
-                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua. </li>
-                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua. </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <h4> <strong> Title</strong> </h4>
-                      <ul>
-                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua. </li>
-                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua. </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
-        <%- include('../shared/comp_content_title', {type:'left', title: `comp_card`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
-
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card & Border' }) %>
-
-        <div class="blankHXS"></div>
-        <div class="wrapper">
-
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementInnerL cardAPPOINTA">
-                  <h4> <strong> Title</strong> </h4>
-                  <ul>
-                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. </li>
-                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementInnerL cardAPPOINTA">
-                  <h4> <strong> Title</strong> </h4>
-                  <ul>
-                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. </li>
-                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item23', idTab1:'T231',idTab2:'T232',idTab3:'T233', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementInnerL cardAPPOINTA">
-                  <h4> <strong> Title</strong> </h4>
-                  <ul>
-                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. </li>
-                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementInnerL cardAPPOINTA">
-                  <h4> <strong> Title</strong> </h4>
-                  <ul>
-                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. </li>
-                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                      ut labore et dolore magna aliqua. </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
-
-
-        <div class="blankHS"></div>
-
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card & Gradient' }) %>
-
-        <div class="blankHXS"></div>
-        <div class="wrapper">
-
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementDemoCard">
-                  <div class="elementInnerDemoCard heightS">
-                    <h4> <strong> Title </strong> </h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies. </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementDemoCard">
-                  <div class="elementInnerDemoCard heightS">
-                    <h4> <strong> Title </strong> </h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies. </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementDemoCard">
-                  <div class="elementInnerDemoCard heightS">
-                    <h4> <strong> Title </strong> </h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies.
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item24', idTab1:'T241',idTab2:'T242',idTab3:'T243', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementDemoCard">
-                  <div class="elementInnerDemoCard heightS">
-                    <h4> <strong> Title </strong> </h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies. </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementDemoCard">
-                  <div class="elementInnerDemoCard heightS">
-                    <h4> <strong> Title </strong> </h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies. </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementDemoCard">
-                  <div class="elementInnerDemoCard heightS">
-                    <h4> <strong> Title </strong> </h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies. </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
-
-
-        <div class="blankHM"></div>
-
-
-        <div class="blankHM"></div>
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card & Image' }) %>
+      </section>
+      <section id="content35">
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card with Image' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_cardnImg`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="shadowBox">
-                  <img src="./PlaceholderDark_zeroBorderRadius.svg" alt="Placeholder">
-                  <div class="element">
-                    <div class="element">
-                      <h5>Lorem</h5>
-                      <h3><strong>Lorem ipsum</strong> </h3>
-                      <p class="lineHorizAll"></p>
-                      <h6> Lorem ipsum dolor sit amet</h6>
-                      <h6> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="shadowBox">
-                  <img src="./PlaceholderDark_zeroBorderRadius.svg" alt="Placeholder">
-                  <div class="element">
-                    <div class="element">
-                      <h5>Lorem</h5>
-                      <h3><strong>Lorem ipsum</strong> </h3>
-                      <p class="lineHorizAll"></p>
-                      <h6> Lorem ipsum dolor sit amet</h6>
-                      <h6> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item26', idTab1:'T261',idTab2:'T262',idTab3:'T263', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-          <div class="wrapper">
-            <div class="Grid Grid--gutters Grid--cols-2">
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="shadowBox">
-                    <img src="./Placeholder.svg" alt="Placeholder">
-                    <div class="element">
-                      <div class="element">
-                        <h5>Lorem</h5>
-                        <h3><strong>Lorem ipsum</strong> </h3>
-                        <p class="lineHorizAll"></p>
-                        <h6> Lorem ipsum dolor sit amet</h6>
-                        <h6> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="shadowBox">
-                    <img src="./Placeholder.svg" alt="Placeholder">
-                    <div class="element">
-                      <div class="element">
-                        <h5>Lorem</h5>
-                        <h3><strong>Lorem ipsum</strong> </h3>
-                        <p class="lineHorizAll"></p>
-                        <h6> Lorem ipsum dolor sit amet</h6>
-                        <h6> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-                             
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
+          <div id="tabsContent" class="tabContent">
+            <!-- Tab 1 -->
+            <%- include('../shared/comp_tabs_content', {name:'cardnImg', idTab: `ciTab1`, lableTxt:'_nolink', checked:'checked'}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/comp_cardnImg_nolink`, {
+                cardTitle: ``, 
+                cardText: ``
+                }) %>
 
-        <div class="blankHM"></div>
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card & Image' }) %>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'cardnImg_noLink', idTab1:'cardnImgT1',idTab2:'cardnImgT2',idTab3:'cardnImgT3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_cardnImg_nolink,
+                HTML: ejsLiterals.html.comp_cardnImg_nolink,
+                CSS:``
+              }) %>
+            </div>
+            <!-- Tab 2 -->
 
-        <div class="blankHXS"></div>
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="">
-                  <div class="elementCard float cardBorder borderRadiusS shadowBoxLt">
-                    <img src="./PlaceholderDark_zeroBottomBorderRadius.svg" alt="Placeholder">
-                    <div class="element">
-                      <div class="element">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <h3 class="arrCard" data-aos="fade-up"><strong>Lorem ipsum</strong></h3>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                          incididunt
-                          ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus
-                          commodo.</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'cardnImg', idTab: `ciTab2`, lableTxt:'_link', checked:''}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/comp_cardnImg_link`, {
+                cardTitle: ``, 
+                cardText: ``
+                }) %>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'cardnImg_link', idTab1:'cardnImg_linkT1',idTab2:'cardnImg_linkT2',idTab3:'cardnImg_linkT3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_cardnImg_link,
+                HTML: ejsLiterals.html.comp_cardnImg_link,
+                CSS:``
+              }) %>
             </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementCard float cardBorder borderRadiusS shadowBoxLt">
-                  <img src="./PlaceholderDark_zeroBottomBorderRadius.svg" alt="Placeholder">
-                  <div class="element">
-                    <div class="element">
-                      <h5>Lorem ipsum dolor sit amet</h5>
-                      <h3 class="arrCard" data-aos="fade-up"><strong>Lorem ipsum</strong></h3>
-                      <!--Analysis Report-->
-                      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus
-                        commodo.
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item27', idTab1:'T271',idTab2:'T272',idTab3:'T273', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="">
-                  <div class="elementCard float cardBorder borderRadiusS shadowBoxLt">
-                    <img src="./Placeholder.svg" alt="Placeholder">
-                    <div class="element">
-                      <div class="element">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <h3 class="arrCard" data-aos="fade-up"><strong>Lorem ipsum</strong></h3>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                          ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo.</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="elementCard float cardBorder borderRadiusS shadowBoxLt">
-                  <img src="./Placeholder.svg" alt="Placeholder">
-                  <div class="element">
-                    <div class="element">
-                      <h5>Lorem ipsum dolor sit amet</h5>
-                      <h3 class="arrCard" data-aos="fade-up"><strong>Lorem ipsum</strong></h3>
-                      <!--Analysis Report-->
-                      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo.</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-                      
-                             
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
+
 
 
       </section>
-      <section id="content35">
-        <%- include('../shared/comp_content_title', {type:'left', title: `comp_content`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-        <%- include('../shared/comp_content_title', {type:'left', title: `comp_audioPlayer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+      <section id="content36">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Audio Player' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_audioPlayer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <div class="blankHXS"></div>
         <div class="wrapper">
@@ -3783,7 +3360,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item28', idTab1:'T281',idTab2:'T282',idTab3:'T283', tab1:'',tab2:'checked',tab3:'',
+        {Name: 'Item28', idTab1:'T281',idTab2:'T282',idTab3:'T283', tab1:'',tab2:'checked',tab3:'',
         EJS: `
         `,
         HTML: `
@@ -3826,132 +3403,115 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
       </section>
-      <section id="content36">
+      <section id="content37">
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Graph Elements' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_graph`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-
-        <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Graph - Bar<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="blankHXS"></div>
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-
-              <div class="barGraph  element">
-                <div class="widthXS">
-                  <div class="GraphText">Lorem ipsum</div>
-                  <div class="GraphText">Lorem ipsum</div>
-                  <div class="GraphText">Lorem ipsum</div>
-                  <div class="GraphText">Lorem ipsum</div>
-                </div>
-                <div class="barGraphInner">
-                  <article id="bar_graph">
-                    <div title="Assess whether users understand the overall concept and can navigate through the wireframe without confusion." class="help grow100"> 100&#37; </div>
-                    <div title=" Identify how many users are able to successfully complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.)." class="help grow100"> 100&#37; </div>
-                    <div title="Collect qualitative feedback from users regarding their satisfaction with the design, aesthetics, and overall concept." class="help grow90"> 90&#37; </div>
-                    <div title="Monitor the number of errors or misunderstandings users make while interacting with the wireframe. " class="help grow10"> 10&#37; </div>
-                  </article>
+          <div id="tabsContent" class="tabContent">
+            <!-- Tab 1 -->
+            <%- include('../shared/comp_tabs_content', {name:'compGraph', idTab: `gbTab1`, lableTxt:'_bar', checked:'checked'}) %>
+            <div class="tabContent-content">
+              <div class="Grid Grid--full Grid--gutters">
+                <div class="Grid-cell">
+    
+                  <div class="barGraph  element">
+                    <div class="widthXS">
+                      <div class="GraphText">Lorem ipsum</div>
+                      <div class="GraphText">Lorem ipsum</div>
+                      <div class="GraphText">Lorem ipsum</div>
+                      <div class="GraphText">Lorem ipsum</div>
+                    </div>
+                    <div class="barGraphInner">
+                      <article id="bar_graph">
+                        <div title="Assess whether users understand the overall concept and can navigate through the wireframe without confusion." class="help grow100"> 100&#37; </div>
+                        <div title=" Identify how many users are able to successfully complete key tasks within the wireframe (e.g., creating a group prayer, joining one, etc.)." class="help grow100"> 100&#37; </div>
+                        <div title="Collect qualitative feedback from users regarding their satisfaction with the design, aesthetics, and overall concept." class="help grow90"> 90&#37; </div>
+                        <div title="Monitor the number of errors or misunderstandings users make while interacting with the wireframe. " class="help grow10"> 10&#37; </div>
+                      </article>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHS"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Graph - Rate<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
 
-        <div class="blankHXS"></div>
-        <div class="wrapper">
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'graphBar', idTab1:'graphBarT1',idTab2:'graphBarT2',idTab3:'graphBarT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_card_clean,
+                HTML: ejsLiterals.html.comp_card_clean,
+                CSS:``
+              }) %>
+            </div>
+            <!-- Tab 2 -->
 
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="RateGraph element">
-                <div class="widthXS">Lorem ipsum
-                </div>
-                <div class="RateGraphInner">
-                  <article id="RateGraph">
-                    <div class="RateGrow100">3/1</div>
-                    <div class="RateGrow100">3/1</div>
-                    <div class="RateGrow0">3/1</div>
-                  </article>
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'compGraph', idTab: `gbTab2`, lableTxt:'_rate', checked:''}) %>
+            <div class="tabContent-content">
+              <div class="Grid Grid--full Grid--gutters">
+                <div class="Grid-cell">
+                  <div class="RateGraph element">
+                    <div class="widthXS">Lorem ipsum
+                    </div>
+                    <div class="RateGraphInner">
+                      <article id="RateGraph">
+                        <div class="RateGrow100">3/1</div>
+                        <div class="RateGrow100">3/1</div>
+                        <div class="RateGrow0">3/1</div>
+                      </article>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="wrapper">
-
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="RateGraph element">
-                <div class="widthXS GraphText"> <strong class="Grey800">Lorem ipsum</strong>
-                </div>
-                <div class="RateGraphInner">
-                  <article id="RateGraph">
-                    <div class="RateGrow100">1 of 3</div>
-                    <div class="RateGrow100">1 of 3</div>
-                    <div class="RateGrow100">1 of 3</div>
-                  </article>
+              <div class="Grid Grid--full Grid--gutters">
+                <div class="Grid-cell">
+                  <div class="RateGraph element">
+                    <div class="widthXS GraphText"> <strong class="Grey800">Lorem ipsum</strong>
+                    </div>
+                    <div class="RateGraphInner">
+                      <article id="RateGraph">
+                        <div class="RateGrow100">1 of 3</div>
+                        <div class="RateGrow100">1 of 3</div>
+                        <div class="RateGrow100">1 of 3</div>
+                      </article>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'graphRate', idTab1:'cardBorderT1',idTab2:'cardBorderT2',idTab3:'cardBorderT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_card_border,
+                HTML: ejsLiterals.html.comp_card_border,
+                CSS:``
+              }) %>
             </div>
-          </div>
-        </div>
-        <div class="blankHS"></div>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Graph - Rate<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
+            <!-- Tab 3 -->
+            <%- include('../shared/comp_tabs_content', {name:'compGraph', idTab: `gbTab3`, lableTxt:'_vote', checked:''}) %>
+            <div class="tabContent-content">
+              <div class="Grid Grid--full Grid--gutters">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h5 class="centerVer">
+                      <strong class="Grey800">Lorem ipsum&#58; </strong> &#160; 2/3 &#160;
+                      <div class="iconS"><img src="../glorify/Profile_Color.svg"></div>
+                      <div class="iconS"><img src="../glorify/Profile_Color.svg"></div>
+                      <div class="iconS"><img src="../glorify/Profile_Grey.svg"></div>
+                    </h5>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-
-        <div class="wrapper">
-
-          <div class="Grid Grid--full Grid--gutters">
-
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h5 class="centerVer">
-                  <strong class="Grey800">Lorem ipsum&#58; </strong> &#160; 2/3 &#160;
-
-                  <div class="iconS"><img src="../glorify/Profile_Color.svg"></div>
-                  <div class="iconS"><img src="../glorify/Profile_Color.svg"></div>
-                  <div class="iconS"><img src="../glorify/Profile_Grey.svg"></div>
-                </h5>
-
-
-              </div>
+              <%- include('../shared/block_tabs_copyCode', 
+              { Name: 'graphVote', idTab1:'cardGradientT1',idTab2:'cardGradientT2',idTab3:'cardGradientT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_card_gradient,
+                HTML: ejsLiterals.html.comp_card_gradient,
+                CSS: ``
+              }) %>
             </div>
           </div>
         </div>
       </section>
+
 
     </section>
     <section id="content4">
@@ -3968,8 +3528,9 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
       </div>
       <section id="content41">
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_expandableContentBlock`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
         <%- include('../shared/comp_content_subtitle_arrow', {message: 'Read More / Less Toggle' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_expandableContentBlock`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
         <div class="wrapper">
 
           <div class="Grid Grid--full Grid--gutters">
@@ -4019,7 +3580,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item29', idTab1:'T291',idTab2:'T292',idTab3:'T293', tab1:'',tab2:'checked',tab3:'',
+        {Name: 'Item29', idTab1:'T291',idTab2:'T292',idTab3:'T293', tab1:'',tab2:'checked',tab3:'',
         EJS: `
         `,
         HTML: `
@@ -4065,10 +3626,10 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content42">
-
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_accordion`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
         <%- include('../shared/comp_content_subtitle_arrow', {message: 'Accordion without Background' }) %>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_accordion`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
 
 
         <div class="wrapper">
@@ -4104,7 +3665,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
 
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item30', idTab1:'T301',idTab2:'T302',idTab3:'T303', tab1:'',tab2:'checked',tab3:'',
+        {Name: 'Item30', idTab1:'T301',idTab2:'T302',idTab3:'T303', tab1:'',tab2:'checked',tab3:'',
         EJS: `
         `,
         HTML: `
@@ -4199,7 +3760,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item31', idTab1:'T311',idTab2:'T312',idTab3:'T313', tab1:'',tab2:'checked',tab3:'',
+        {Name: 'Item31', idTab1:'T311',idTab2:'T312',idTab3:'T313', tab1:'',tab2:'checked',tab3:'',
         EJS: `
         `,
         HTML: `
@@ -4252,9 +3813,10 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       <section id="content43">
 
         <div class="blankHM"></div>
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_carousel`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
         <%- include('../shared/comp_content_subtitle_arrow', {message: 'Horizontal Layout Slideshows with Background' }) %>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_carousel`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
 
 
         <div class="blankHXS"></div>
@@ -4297,7 +3859,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
         <div class="blankHS"></div>
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item32', idTab1:'T321',idTab2:'T322',idTab3:'T323', tab1:'',tab2:'checked',tab3:'',
+        {Name: 'Item32', idTab1:'T321',idTab2:'T322',idTab3:'T323', tab1:'',tab2:'checked',tab3:'',
         EJS: `
         `,
         HTML: `
@@ -4389,7 +3951,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item33', idTab1:'T331',idTab2:'T332',idTab3:'T333', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item33', idTab1:'T331',idTab2:'T332',idTab3:'T333', tab1:'',tab2:'checked',tab3:'',
           EJS: `
           `,
           HTML: `
@@ -4483,7 +4045,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item34', idTab1:'T341',idTab2:'T342',idTab3:'T343', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item34', idTab1:'T341',idTab2:'T342',idTab3:'T343', tab1:'',tab2:'checked',tab3:'',
           EJS: `
           `,
           HTML: `
@@ -4580,7 +4142,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
 
           <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item35', idTab1:'T351',idTab2:'T352',idTab3:'T353', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item35', idTab1:'T351',idTab2:'T352',idTab3:'T353', tab1:'',tab2:'checked',tab3:'',
           EJS: `
           `,
           HTML: `
@@ -4628,9 +4190,10 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
       <section id="content44">
 
         <div class="blankHM"></div>
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_modals`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
         <%- include('../shared/comp_content_subtitle_arrow', {message: 'Modal - Background Color: Others' }) %>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_modals`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
 
 
         <div class="BgSkylineBlueLter">
@@ -4643,7 +4206,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           <div class="blankHS"></div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item36', idTab1:'T361',idTab2:'T362',idTab3:'T363', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item36', idTab1:'T361',idTab2:'T362',idTab3:'T363', tab1:'',tab2:'checked',tab3:'',
           EJS: `
           `,
           HTML: `
@@ -4683,7 +4246,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item37', idTab1:'T371',idTab2:'T372',idTab3:'T373', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item37', idTab1:'T371',idTab2:'T372',idTab3:'T373', tab1:'',tab2:'checked',tab3:'',
           EJS: `
           `,
           HTML: `
@@ -4703,9 +4266,9 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           }) %>
       </section>
       <section id="content45">
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_header`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <%- include('../shared/comp_content_subtitle_arrow', {message: `MainHeader` }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_header`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <div class="wrapper">
           <nav class="headerDEMO" id="">
@@ -4741,7 +4304,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHM"></div>
 
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item38', idTab1:'T381',idTab2:'T382',idTab3:'T383', tab1:'checked',tab2:'',tab3:'',
+        {Name: 'Item38', idTab1:'T381',idTab2:'T382',idTab3:'T383', tab1:'checked',tab2:'',tab3:'',
         EJS: ejsLiterals.nav_header,
         HTML: `
         <nav class="header header-pin" id="header">
@@ -4850,7 +4413,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHM"></div>
 
         <%- include('../shared/block_tabs_copyCode', 
-                {Demo: false, Name: 'Item39', idTab1:'T391',idTab2:'T392',idTab3:'T393', tab1:'checked',tab2:'',tab3:'',
+                {Name: 'Item39', idTab1:'T391',idTab2:'T392',idTab3:'T393', tab1:'checked',tab2:'',tab3:'',
                 EJS: ejsLiterals.nav_headerDropdown,
                 HTML: `
                 <nav class="header header-pin" id="header">
@@ -4960,7 +4523,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </nav>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-                {Demo: false, Name: 'Item40', idTab1:'T401',idTab2:'T402',idTab3:'T403', tab1:'checked',tab2:'',tab3:'',
+                {Name: 'Item40', idTab1:'T401',idTab2:'T402',idTab3:'T403', tab1:'checked',tab2:'',tab3:'',
                 EJS: ejsLiterals.nav_headerBack,
                 HTML: `
                 <nav class="header header-pin" id="header">
@@ -5000,11 +4563,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content46">
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_footer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <!--Arrow subtitle-->
         <%- include('../shared/comp_content_subtitle_arrow', {message: 'Footer' }) %>
         <!--Arrow subtitle-->
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_footer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
         <!--footer-->
         <div class="wrapper">
           <footer class="GreyBg100">
@@ -5126,7 +4690,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
         <!--footer-->
         <%- include('../shared/block_tabs_copyCode', 
-                {Demo: false, Name: 'Item41', idTab1:'T411',idTab2:'T412',idTab3:'T413', tab1:'checked',tab2:'',tab3:'',
+                {Name: 'Item41', idTab1:'T411',idTab2:'T412',idTab3:'T413', tab1:'checked',tab2:'',tab3:'',
                 EJS: ejsLiterals.nav_footer,
                 HTML: `
 
@@ -5139,11 +4703,9 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content47">
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_sideNav`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-        <!--Arrow subtitle-->
         <%- include('../shared/comp_content_subtitle_arrow', {message: 'SubNavigation' }) %>
-        <!--Arrow subtitle-->
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_sideNav`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <nav class="section-navDEMO">
           <ol>
@@ -5182,7 +4744,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </ol>
         </nav>
         <%- include('../shared/block_tabs_copyCode', 
-                {Demo: false, Name: 'Item42', idTab1:'T421',idTab2:'T422',idTab3:'T423', tab1:'',tab2:'checked',tab3:'',
+                {Name: 'Item42', idTab1:'T421',idTab2:'T422',idTab3:'T423', tab1:'',tab2:'checked',tab3:'',
                 EJS: '',
                 HTML: `
                 <nav class="section-nav">
@@ -5228,40 +4790,47 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content48">
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_block_tabs_copyCode`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Code Snippet Explorer (CSE)` }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_tabs_copyCode`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
 
-        <%- include('../shared/block_tabs_copyCode', 
-        {Demo: '', Name: 'Item19', idTab1:'T191',idTab2:'T192',idTab3:'T193', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-          <div class="Grid Grid--gutters Grid--full Grid--gutters">
+        <div class="blankHS"></div>
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <div class="ClipboardBox clickTxt">
-                  <button class="Clipboard clickTxt" contenteditable="false">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                  </button>
+                <div class="filed">
+                  <div class="tab-container">
+                    <div class="tabs">
+                      <input type="radio" class="select-EJS" name="Demo" id="Tdemo1" checked="">
+                      <label for="Tdemo1" class="tab">EJS</label>
+                      <input type="radio" class="select-HTML" name="Demo" id="Tdemo2">
+                      <label for="Tdemo2" class="tab">HTML</label>
+                      <input type="radio" class="select-CSS" name="Demo" id="Tdemo3">
+                      <label for="Tdemo3" class="tab">CSS</label>
+                    </div>
+                    <button class="copy-btn" style="display:inline;">Copy Code</button>
+                  </div>
+                  <div class="ejs-block code-block" style="display: none;">
+                    <pre class="ejs-code"><code>Insert ejs code</code></pre>
+                  </div>
+                  <div class="html-block code-block" style="display:none;">
+                    <pre class="html-code"><code>Insert html code</code></pre>
+                  </div>
+                  <div class="css-block code-block" style="display: block;">
+                    <pre class="css-code"><code>Insert css code</code></pre>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          `,
-          CSS:
-          ` 
-            `
-        }) %>
+        </div>
+        <div class="blankHXS"></div>
 
         <%- include('../shared/block_tabs_copyCode', 
-          {Demo: false, Name: 'Item19', idTab1:'T191',idTab2:'T192',idTab3:'T193', tab1:'',tab2:'checked',tab3:'',
+          {Name: 'Item19', idTab1:'T191',idTab2:'T192',idTab3:'T193', tab1:'',tab2:'checked',tab3:'',
             EJS: `
             `,
             HTML: `
@@ -5288,12 +4857,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           }) %>
       </section>
       <section id="content49">
-        <%- include('../shared/comp_content_title', {type:'left', title: `block_tagCloud`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Skills & Experiences' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_tagCloud`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
         <%- include(`${templatePath}/shared/tagCloud`) %>
         <%- include('../shared/block_tabs_copyCode', 
-        {Demo: false, Name: 'Item43', idTab1:'T431',idTab2:'T432',idTab3:'T433', tab1:'checked',tab2:'',tab3:'',
+        {Name: 'Item43', idTab1:'T431',idTab2:'T432',idTab3:'T433', tab1:'checked',tab2:'',tab3:'',
         EJS: ejsLiterals.ejs.comp_tagCloud,
         HTML: ejsLiterals.html.comp_tagCloud,
         CSS:

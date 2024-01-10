@@ -1,0 +1,25 @@
+<% if (typeof textColor === 'undefined') { 
+    textColor = ''; 
+  } 
+  %>
+<% if (typeof iconUrl === 'undefined') { 
+    iconUrl = ''; 
+  } 
+  %>
+
+<div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters">
+      <div class="Grid-cell">
+        <div class="element">
+  
+          <h3 class="Grid centerVer"> <span class="<%= textColor %>">
+              <%= title %>
+              <% if (iconUrl === '' ) { %>
+              <% } else { %>
+                  </span><img class="widthLogo" src="<%= iconUrl %>" alt="Research">
+               <% } %>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>

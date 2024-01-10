@@ -1,0 +1,20 @@
+<% if (typeof copyContent === 'undefined') { 
+    copyContent = ''; 
+  } 
+  %>
+  <% if (typeof iconUrl === 'undefined') { 
+    iconUrl = ''; 
+  } 
+  %>
+<div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+        <div class="ClipboardBoxIconOnly">
+          <button class="ClipboardIconOnly">
+            <img class="iconMax hoverGrey100 paddingXL borderRadiusMax" title="Copy to Clipboard" src="<%- iconUrl %>" alt="LinkedIn">
+            <p class="clickIconCopy"><%= copyContent %></p>
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
