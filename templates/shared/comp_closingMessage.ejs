@@ -1,0 +1,46 @@
+<% if (typeof spacing === 'undefined') { 
+  spacing = ''; 
+} 
+%>
+<% if (typeof message === 'undefined') { 
+  message = ''; 
+} 
+%>
+
+<% if (spacing === false) { %>
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters u-textCenter">
+    <div class="Grid-cell">
+      <div data-aos="fade-up">
+        <% if (version === 'addMessage' ) { %>
+        <h4> <%- message %></h4>
+        <% } else { %>
+        <h4 class="element">
+          Thank You for Visiting &#33; Check back soon for more updates and stay tuned &#33;
+        </h4>
+        <% } %>
+      </div>
+      <a href="/" class=""><img class="widthXS" src="<%= websitePath %>/icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
+    </div>
+  </div>
+</div>
+<% } else { %>
+<div class="blankHM"></div>
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters u-textCenter">
+    <div class="Grid-cell">
+      <div data-aos="fade-up">
+        <% if (version === 'addMessage' ) { %>
+        <h4> <%- message %></h4>
+        <% } else { %>
+        <h4 class="element">
+          Thank You for Visiting &#33; Check back soon for more updates and stay tuned &#33;
+        </h4>
+        <% } %>
+      </div>
+      <a href="/" class=""><img class="widthXS" src="<%= websitePath %>/icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
+    </div>
+  </div>
+</div>
+<div class="blankHL"></div>
+<% } %>

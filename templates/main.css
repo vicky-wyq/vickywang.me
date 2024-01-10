@@ -1967,6 +1967,7 @@ hr {
     border: none;
     height: 1px;
     border-bottom: 1px solid var(--Grey200);
+    width: 100%;
 
 }
 
@@ -5617,7 +5618,7 @@ pre code {
     display: block;
     clear: both;
 }
-.tabContent{
+.tabContent {
     background: var(--Grey100);
     border-radius: var(--border-radius);
     border: 1px solid var(--Grey200);
@@ -5632,9 +5633,9 @@ pre code {
     display: inline-block;
     border-radius: 12px;
     border: 1px solid var(--Grey100);
-    margin-left: 8px;
-    margin-top: 8px;
-    padding: 18px;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding: 1em;
     text-decoration: none;
     font-size: 18px;
     color: var(--Grey700);
@@ -5651,7 +5652,6 @@ pre code {
     display: none; /* Initially hide all content */
     width: 100%;
     padding: var(--paddingS);
-    font-size: 13px;
 }
 
 .tabContent-switch:checked + .tabContent-link + .tabContent-content {
