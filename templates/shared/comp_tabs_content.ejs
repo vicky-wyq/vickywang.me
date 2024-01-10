@@ -1,0 +1,10 @@
+<% if (typeof checked === 'undefined') { 
+  checked = ''; 
+} 
+%>
+
+
+<input type="radio" name="<%= name %>" id="<%= idTab %>" class="tabContent-switch" <%= checked %>>
+<label for="<%= idTab %>" class="tabContent-link"><%= lableTxt %></label>
+
+
