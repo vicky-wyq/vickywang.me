@@ -1593,11 +1593,7 @@ li .newPanelV3 {
     border-radius: 6px;
     width: max-content;
     background-color: var(--White-transparent);
-    /* 💡 
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 12px;
-         */
+
     overflow-y: auto;
     height: fit-content;
     z-index: 98;
@@ -1613,7 +1609,7 @@ li .newPanelV3 {
 }
 
 .section-navDEMO a {
-    border-left: var(--Grey400) 0.04em solid;
+    border-left: var(--Grey400) .08em solid;
     text-decoration: none;
     display: block;
     padding: 8px 16px;
@@ -1639,24 +1635,18 @@ main>nav {
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active>a {
     font-weight: 500;
+    color: var(--grey900);
     border-left: var(--Grey900) .08em solid;
     background-color: var(--Grey100);
 }
 
 /* Sidebar Navigation */
 .section-nav {
-    position: -webkit-sticky;
     position: sticky;
     border-radius: 6px;
     width: max-content;
     background-color: var(--White-transparent);
-    /* 💡 
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 12px;
-         */
     overflow-y: auto;
-    height: fit-content;
     top: 50%;
     transform: translateY(-50%);
     left: 100%;
@@ -1665,7 +1655,7 @@ main>nav {
 }
 
 .section-nav a {
-    border-left: var(--Grey400) 0.04em solid;
+    border-left: var(--Grey400) 0.08em solid;
     text-decoration: none;
     display: block;
     padding: 6px 12px;
@@ -1697,13 +1687,6 @@ main>nav {
 .section-nav a:focus {
     color: var(--WS-Blue);
 }
-
-/** Poor man's reset 
-* {
-    box-sizing: border-box;
-}
-**/
-
 ul,
 ol {
     list-style: none;
@@ -1722,15 +1705,6 @@ li .rightPanel {
     z-index: 98;
 
 }
-
-/*
-.titleRightPanel {
-    font-size: 16px;
-    line-height: 18px;
-}
-
-*/
-
 ul .rightPanel {
     list-style-type: none;
 }
@@ -2724,6 +2698,7 @@ button.passwordArr {
         display: flex;
         flex-direction: column;
     }
+
     body .iconXforModal {
         height: 26px;
         width: 26px;
@@ -2806,10 +2781,12 @@ button.passwordArr {
     body .wrapper {
         margin: 0;
     }
+
     body .elementCard {
         opacity: 1.0;
         filter: alpha(opacity=100);
     }
+
     body .hamburger {
         padding: 1.06em 1.8em;
     }
@@ -2817,6 +2794,7 @@ button.passwordArr {
     body .se-arrow {
         width: 1.16em;
     }
+
     body .progress__item:after {
         left: -2.2rem;
     }
@@ -2825,10 +2803,12 @@ button.passwordArr {
         left: -1.2rem;
         /*line btw dots*/
     }
+
     body .progress {
         padding: 0;
         margin: 0;
     }
+
     body .progress__item {
         padding-left: 1.5rem;
     }
