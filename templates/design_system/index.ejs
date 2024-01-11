@@ -189,7 +189,9 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             <li class="rightPanel"><a href="#content35"> &#160; Card & Image </a></li>
 
             <li class="rightPanel"><a href="#content36"> &#160; Audio Player </a></li>
-            <li class="rightPanel"><a href="#content37"> &#160; Graphs</a></li>
+            <li class="rightPanel"><a href="#content37"> &#160; Tag Cloud</a></li>
+
+            <li class="rightPanel"><a href="#content38"> &#160; Graphs</a></li>
 
 
           </ul>
@@ -202,7 +204,6 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             <li class="rightPanel"><a href="#content44"> &#160; Modals</a></li>
             <li class="rightPanel"><a href="#content45"> &#160; Navigation </a></li>
             <li class="rightPanel"><a href="#content46"> &#160; Code Snippet Explorer </a></li>
-            <li class="rightPanel"><a href="#content47"> &#160; Tag Cloud</a></li>
           </ul>
         </li>
 
@@ -3403,6 +3404,75 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content37">
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Tag Cloud` }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_tagCloud`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+        <div class="wrapper">
+          <div id="tabsContent" class="tabContent">
+            <div class="blankHXS"></div>
+            <!-- Tab 1 -->
+            <div class="Grid Grid--full Grid--gutters u-textCenter">
+              <ul class="tags" id="TagsCloud">
+          
+                <li class="tag"><span class="box"> User-centered Design</span></li>
+          
+                <li class="tag"><span class="box"> Experience Design</span></li>
+                <li class="tag"><span class="box"> User Experience Design </span></li>
+                <li class="tag"><span class="box"> User Interface Design</span></li>
+                <li class="tag"><span class="box"> Interaction Design</span></li>
+          
+                <li class="tag"><span class="box"> Product Design</span></li>
+                <li class="tag"><span class="box"> Service Design</span></li>
+          
+                <li class="tag"><span class="box"> Design Thinking</span></li>
+                <li class="tag"><span class="box"> Surveys &#38; Questionnaires</span></li>
+                <li class="tag"><span class="box"> Journey Mapping </span></li>
+                <li class="tag"><span class="box"> Data Analysis </span></li>
+          
+          
+          
+                <li class="tag"><span class="box"> Responsive &#38; Adaptive Design</span></li>
+                <li class="tag"><span class="box"> Web Application Design</span></li>
+                <li class="tag"><span class="box"> Design System</span></li>
+                <li class="tag"><span class="box"> Graphic Design</span></li>
+          
+                <li class="tag"><span class="box"> UX Research</span></li>
+                <li class="tag"><span class="box"> Design Research</span></li>
+          
+                <li class="tag"><span class="box"> Design Research</span></li>
+                <li class="tag"><span class="box"> Collaborative Problem Solving</span></li>
+                <li class="tag"><span class="box"> Concept Testing</span></li>
+                <li class="tag"><span class="box"> Usability Testing</span></li>
+                <li class="tag"><span class="box"> Wireframing &#38; Prototyping</span></li>
+          
+                <li class="tag"><span class="box"> SaaS Application Design</span></li>
+                <li class="tag"><span class="box"> B2B Application Design</span></li>
+                <li class="tag"><span class="box"> Consumer-Facing Design</span></li>
+          
+          
+                <li class="tag"><span class="box"> Figma</span></li>
+                <li class="tag"><span class="box"> Adobe CS </span></li>
+                <li class="tag"><span class="box"> 3D Modeling</span></li>
+          
+                <li class="tag"><span class="box">HTML</span></li>
+                <li class="tag"><span class="box">CSS</span></li>
+                <li class="tag"><span class="box">JavaScript</span></li>
+                <li class="tag"><span class="box">GitHub</span></li>
+              </ul>
+            </div>
+            <div class="blankHXS"></div>
+
+            <%- include('../shared/block_tabs_copyCode', 
+            {Name: 'tagCloud', idTab1:'tagCloud1',idTab2:'tagCloud2',idTab3:'tagCloud3', tab1:'checked',tab2:'',tab3:'',
+              CCspacing: false,
+              EJS: ejsLiterals.ejs.comp_tagCloud,
+              HTML: ejsLiterals.html.comp_tagCloud,
+              CSS:` `
+            }) %>
+          </div>
+        </div>
+      </section>
+
+      <section id="content38">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Graph Elements' }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_graph`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
@@ -3688,7 +3758,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               <%- include(`${templatePath}/shared/block_carouselHoriz_bg`) %>
 
               <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'carousel_verticalCarousel', idTab1:'verticalCarouselT1',idTab2:'verticalCarouselT2',idTab3:'_verticalCarouselT3', tab1:'checked',tab2:'',tab3:'',
+              { Name: 'carousel_verticalCarousel', idTab1:'verticalCarouselT1',idTab2:'verticalCarouselT2',idTab3:'_verticalCarouselT3', tab1:'',tab2:'checked',tab3:'',
                 CCspacing: false,
                 EJS: ejsLiterals.ejs.block_accordion_bg,
                 HTML: ejsLiterals.html.block_accordion_bg,
@@ -3696,11 +3766,11 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
               }) %>
             </div>
             <!-- Tab 3 -->
-            <%- include('../shared/comp_tabs_content', {name:'Carousel', idTab: `carouselTab3`, lableTxt:'_carouselVert_noBg', checked:'checked'}) %>
+            <%- include('../shared/comp_tabs_content', {name:'Carousel', idTab: `carouselTab3`, lableTxt:'_carouselVert_noBg', checked:''}) %>
             <div class="tabContent-content">
               <%- include(`${templatePath}/shared/block_carouselVert_noBg`) %>
               <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                { Name: 'carouselVert_noBg', idTab1:'carouselVert_noBgT1',idTab2:'carouselVert_noBgT2',idTab3:'carouselVert_noBgT3', tab1:'checked',tab2:'',tab3:'',
+                { Name: 'carouselVert_noBg', idTab1:'carouselVert_noBgT1',idTab2:'carouselVert_noBgT2',idTab3:'carouselVert_noBgT3', tab1:'',tab2:'checked',tab3:'',
                   CCspacing: false,
                   EJS: ejsLiterals.ejs.block_accordion_noBg,
                   HTML: ejsLiterals.html.block_accordion_noBg,
@@ -3818,14 +3888,14 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                       </h3>
                     </div>
                   </div>
-                  
+
                 </div>
 
                 <nav class="headerDEMO navbarN" id="">
 
 
                   <div class="backgroundColorNavDEMO">
-      
+
                     <a href="/" class="widthFitContent centerVer logo pointer element Grid--center"><img class="moveLeftRight iconS" src="../../icon/arrow-back.svg" alt="Go back">
                       <h6>BACK</h6>
                     </a>
@@ -3872,7 +3942,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                       <ul class="nav-menu">
                         <li class="dropdown nav-item active activeNav marginZero"><a href="/" class="nav-link box">PROJECT</a>
                           <div class="dropdown-content">
-      
+
                             <a href="/seer/">
                               <div class="SEER">
                                 <img src="../projectImages/Cover_SEER.png" alt="SEER">
@@ -3905,21 +3975,21 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                                 </div>
                               </div>
                             </a>
-      
+
                           </div>
                         </li>
-      
+
                         <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
                         </li>
                         <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
                         </li>
                         <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
                         </li>
-      
+
                         <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
                         </li>
                       </ul>
-      
+
                     </div>
                     <div class="hamburger">
                       <span class="bar GLORIFY"></span>
@@ -3948,7 +4018,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                       <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
                       <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
                       <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-      
+
                     </ul>
                   </li>
                   <li class=""><a class="titleRightPanel">Sub Nav Title </a>
@@ -3956,12 +4026,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                       <li class="rightPanel"><a> &nbsp; SubTitle </a></li>
                       <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
                       <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-      
-      
+
+
                     </ul>
                   </li>
 
-      
+
                 </ol>
               </nav>
               <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
@@ -3980,13 +4050,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                 <div class="blankHS"></div>
                 <div class="wrapper">
                   <div class="element">
-    
+
                     <div class="Grid Grid--gutters Grid--1of3">
                       <div class="Grid-cell">
-    
+
                         <a href="/" class=""><img class="widthXXS" src="../icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
                         <div class="blankHXS"></div>
-    
+
                         <div class="Grid Grid--gutters">
                           <div class="ClipboardBoxIconOnly">
                             <button class="ClipboardIconOnly">
@@ -3997,15 +4067,15 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                           <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
                             <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/in.svg" alt="LinkedIn">
                           </a>
-    
+
                           <a target="_blank" href="https://github.com/vicky-wyq">
                             <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/git.svg" alt="GitHub" title="GitHub">
                           </a>
-    
+
                           <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
                             <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
                           </a>
-    
+
                           <a target="_blank" href="https://www.instagram.com/vw_yiqi/">
                             <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/ins.svg" alt="Instagram" title="Instagram">
                           </a>
@@ -4020,33 +4090,33 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                             <a href="/glorify/">
                               <h6 class="fontWeight400"> Glorify</h6>
                             </a>
-    
-    
+
+
                             <h6>Elevating Community Involvement</h6>
                             <div class="blankHXXS"></div>
                             <a href="/appointa/">
                               <h6 class="fontWeight400"> APPOINTA</h6>
-    
+
                             </a>
                             <h6>Simplifying Interview Coordination</h6>
                             <div class="blankHXXS"></div>
                             <a href="/seer/">
                               <h6 class="fontWeight400">SEER</h6>
-    
+
                             </a>
                             <h6>Empowering Brand Managers with Insights</h6>
                           </div>
-    
+
                           <div class="Grid-cell">
                             <h5> <strong> Service </strong> </h5>
                             <div class="blankHXXS"></div>
-    
+
                             <a href="/">
                               <h6 class="fontWeight400">UX/UI Design</h6>
                             </a>
                             <h6>Creating Intuitive User Experiences</h6>
                             <div class="blankHXXS"></div>
-    
+
                             <a href="/">
                               <h6 class="fontWeight400">Design Research</h6>
                             </a>
@@ -4062,11 +4132,11 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                             </a>
                             <h6>Crafting Memorable Brand Identities</h6>
                           </div>
-    
+
                           <div class="Grid-cell">
                             <h5> <strong> About </strong> </h5>
                             <div class="blankHXXS"></div>
-    
+
                             <a href="/about">
                               <h6>About me</h6>
                             </a>
@@ -4075,7 +4145,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                             </a>
                           </div>
                         </div>
-    
+
                       </div>
                     </div>
                   </div>
@@ -4090,7 +4160,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </div>
                 </div>
-    
+
               </footer>
               <%- include('../shared/block_tabs_copyCode', 
               { Name: 'navFooter', idTab1:'navFooterT1',idTab2:'navFooterT2',idTab3:'navFooterT3', tab1:'',tab2:'checked',tab3:'',
@@ -4103,135 +4173,35 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
-      <section id="content46_1">
+      <section id="content46">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Code Snippet Explorer` }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_tabs_copyCode`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <div class="wrapper">
           <div id="tabsContent" class="tabContent">
+            <div class="blankHXS"></div>
+
             <!-- Tab 1 -->
-            
-        <div class="blankHS"></div>
-
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="filed">
-                  <div class="tab-container">
-                    <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Demo" id="Tdemo1" checked="">
-                      <label for="Tdemo1" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Demo" id="Tdemo2">
-                      <label for="Tdemo2" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Demo" id="Tdemo3">
-                      <label for="Tdemo3" class="tab">CSS</label>
-                    </div>
-                    <button class="copy-btn" style="display:inline;">Copy Code</button>
-                  </div>
-                  <div class="ejs-block code-block" style="display: none;">
-                    <pre class="ejs-code"><code>Insert ejs code</code></pre>
-                  </div>
-                  <div class="html-block code-block" style="display:none;">
-                    <pre class="html-code"><code>Insert html code</code></pre>
-                  </div>
-                  <div class="css-block code-block" style="display: block;">
-                    <pre class="css-code"><code>Insert css code</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHXS"></div>
-
-
+            <%- include('../shared/block_tabs_copyCode', 
+            {Name: 'copyCodeDemo', idTab1:'copyCodeDemo1',idTab2:'copyCodeDemo2',idTab3:'copyCodeDemo3', tab1:'checked',tab2:'',tab3:'',
+              CCspacing: false,
+              EJS: `Demo - Insert ejs code`,
+              HTML: `Demo - Insert html code`,
+              CSS:`Demo - Insert css code`
+            }) %>
+            <%- include('../shared/block_tabs_copyCode', 
+            {Name: 'copyCode', idTab1:'copyCode1',idTab2:'copyCode2',idTab3:'copyCode3', tab1:'',tab2:'checked',tab3:'',
+              CCspacing: false,
+              EJS: ejsLiterals.ejs.block_tabs_copyCode,
+              HTML: ejsLiterals.html.block_tabs_copyCode,
+              CSS:
+              ` `
+            }) %>
           </div>
         </div>
       </section>
-      <section id="content46">
-
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Code Snippet Explorer (CSE)` }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_tabs_copyCode`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
 
-        <div class="blankHS"></div>
-
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="filed">
-                  <div class="tab-container">
-                    <div class="tabs">
-                      <input type="radio" class="select-EJS" name="Demo" id="Tdemo1" checked="">
-                      <label for="Tdemo1" class="tab">EJS</label>
-                      <input type="radio" class="select-HTML" name="Demo" id="Tdemo2">
-                      <label for="Tdemo2" class="tab">HTML</label>
-                      <input type="radio" class="select-CSS" name="Demo" id="Tdemo3">
-                      <label for="Tdemo3" class="tab">CSS</label>
-                    </div>
-                    <button class="copy-btn" style="display:inline;">Copy Code</button>
-                  </div>
-                  <div class="ejs-block code-block" style="display: none;">
-                    <pre class="ejs-code"><code>Insert ejs code</code></pre>
-                  </div>
-                  <div class="html-block code-block" style="display:none;">
-                    <pre class="html-code"><code>Insert html code</code></pre>
-                  </div>
-                  <div class="css-block code-block" style="display: block;">
-                    <pre class="css-code"><code>Insert css code</code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHXS"></div>
-
-        <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item19', idTab1:'T191',idTab2:'T192',idTab3:'T193', tab1:'',tab2:'checked',tab3:'',
-            EJS: `
-            `,
-            HTML: `
-            <div class="Grid Grid--gutters Grid--full Grid--gutters">
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="ClipboardBox clickTxt">
-                    <button class="Clipboard clickTxt" contenteditable="false">
-                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            `,
-            CSS:
-            ` 
-              `
-          }) %>
-      </section>
-      <section id="content47">
-
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Skills & Experiences' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_tagCloud`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
-        <%- include(`${templatePath}/shared/tagCloud`) %>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item43', idTab1:'T431',idTab2:'T432',idTab3:'T433', tab1:'checked',tab2:'',tab3:'',
-        EJS: ejsLiterals.ejs.comp_tagCloud,
-        HTML: ejsLiterals.html.comp_tagCloud,
-        CSS:
-        `
-        `
-        }) %>
-
-      </section>
 
     </section>
   </main>
@@ -4240,24 +4210,13 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 
 
-  <div class="blankHL"></div>
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { 
+    version:``,  message:``}) %>
 
-  <!-- The Modal -->
-  <div id="modal" class="modal">
-    <span id="modal-close" class="modal-close">
-      <img class="iconXforModal" src="../icon/delete.svg" alt="&times;">
-    </span>
-    <img id="modal-content" class="modal-content">
-    <div id="modal-caption" class="modal-caption"></div>
-  </div>
-  <!-- The Modal -->
-
+  <%- include(`${templatePath}/shared/modal`) %>
   <%- include(`${templatePath}/shared/comp_backTop`) %>
   <%- include(`${templatePath}/shared/block_nav_footer`) %>
   <!-- Shared across the platform -->
 </body>
-
-
-
-
 </html>
