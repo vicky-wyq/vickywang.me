@@ -646,9 +646,11 @@ a.active.SEER {
 .Warm {
     color: var(--Warm);
 }
+
 .SkylineBlueDarker {
     color: var(--colorTealDker);
 }
+
 .SkylineBlue {
     color: var(--colorTealDk);
 }
@@ -1586,7 +1588,7 @@ li .newPanelV3 {
 
 /* =========== new sub nav V3 =========== */
 
-.section-navDEMO{
+.section-navDEMO {
     position: relative;
     border-radius: 6px;
     width: max-content;
@@ -1603,11 +1605,13 @@ li .newPanelV3 {
     left: 50%;
 
 }
+
 .section-navDEMO li.active>a {
     font-weight: 500;
     border-left: var(--Grey900) .08em solid;
     background-color: var(--Grey100);
 }
+
 .section-navDEMO a {
     border-left: var(--Grey400) 0.04em solid;
     text-decoration: none;
@@ -1624,6 +1628,7 @@ li .newPanelV3 {
     background-color: var(--Grey300) !important;
     color: var(--Grey900) !important;
 }
+
 /* =========== sub nav V1 =========== */
 /* 1. Enable smooth scrolling */
 /* 2. Make nav sticky */
@@ -2715,13 +2720,10 @@ button.passwordArr {
 
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
-
-
     body .rowToColumn {
         display: flex;
         flex-direction: column;
     }
-
     body .iconXforModal {
         height: 26px;
         width: 26px;
@@ -2804,17 +2806,10 @@ button.passwordArr {
     body .wrapper {
         margin: 0;
     }
-
-
-
-
     body .elementCard {
         opacity: 1.0;
         filter: alpha(opacity=100);
     }
-
-
-
     body .hamburger {
         padding: 1.06em 1.8em;
     }
@@ -2822,20 +2817,6 @@ button.passwordArr {
     body .se-arrow {
         width: 1.16em;
     }
-
-
-
-    body .tTQ {
-        font-size: 1rem;
-        margin: 2em;
-    }
-
-    body .textM {
-        font-size: 0.7em;
-
-        margin: 4em;
-    }
-
     body .progress__item:after {
         left: -2.2rem;
     }
@@ -2844,66 +2825,13 @@ button.passwordArr {
         left: -1.2rem;
         /*line btw dots*/
     }
-
     body .progress {
         padding: 0;
         margin: 0;
     }
-
     body .progress__item {
         padding-left: 1.5rem;
     }
-
-    .widthCarouselImg {
-        width: 15em !important;
-    }
-
-    body .AboutProjectNav {
-        top: 32%;
-        width: 35px;
-        height: 35px;
-    }
-
-    .navigation {
-        -webkit-flex-flow: column wrap;
-        flex-flow: column wrap;
-        padding: 0;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-    }
-
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
-
-    body .flex-container {
-        height: 520px;
-        /* position: absolute; */
-    }
-
-
-    body label {
-        width: 95%;
-    }
-
-    body input:checked~label {
-        border-bottom: solid 1px var(--APPOINTA-blue);
-        border-right: none;
-    }
-
-    body input:checked~label.WS {
-        border-bottom: solid 1px var(--WS-Teal);
-        border-right: none;
-    }
-
-    body .content-test {
-        right: 0;
-
-    }
-
 }
 
 /* ======================= Responsive grid ======================= */
@@ -5605,11 +5533,13 @@ button.Clipboard.clickTxt:active {
     overflow-x: auto;
     padding: 12px;
 }
+
 pre code {
     top: 0;
     width: 100%;
     display: block;
-    white-space: pre-wrap; /* Updated to allow wrapping */
+    white-space: pre-wrap;
+    /* Updated to allow wrapping */
 }
 
 /* =================== tabs for design system  ===================*/
@@ -5618,6 +5548,7 @@ pre code {
     display: block;
     clear: both;
 }
+
 .tabContent {
     background: var(--Grey100);
     border-radius: var(--border-radius);
@@ -5626,7 +5557,8 @@ pre code {
 }
 
 .tabContent-switch {
-    display: none; /* Hide the actual radio buttons */
+    display: none;
+    /* Hide the actual radio buttons */
 }
 
 .tabContent-link {
@@ -5649,28 +5581,33 @@ pre code {
 .tabContent-content {
     box-sizing: border-box;
     float: right;
-    display: none; /* Initially hide all content */
+    display: none;
+    /* Initially hide all content */
     width: 100%;
     padding-right: var(--paddingM);
     padding-left: var(--paddingS);
 
 }
 
-.tabContent-switch:checked + .tabContent-link + .tabContent-content {
-    display: block; /* Show content when the corresponding tab is selected */
+.tabContent-switch:checked+.tabContent-link+.tabContent-content {
+    display: block;
+    /* Show content when the corresponding tab is selected */
 }
 
-.tabContent-switch:checked + .tabContent-link {
+.tabContent-switch:checked+.tabContent-link {
     background-color: var(--white);
     border: 1px solid var(--Grey200);
     color: var(--grey900);
 }
 
-.tabContent-content p, .tabContent-content ul, .tabContent-content ol {
+.tabContent-content p,
+.tabContent-content ul,
+.tabContent-content ol {
     line-height: 1.65;
 }
 
-.tabContent-content ul > li, .tabContent-content ol > li {
+.tabContent-content ul>li,
+.tabContent-content ol>li {
     margin: 5px 0;
 }
 
