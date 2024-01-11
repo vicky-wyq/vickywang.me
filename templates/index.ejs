@@ -10,7 +10,7 @@
 
 <body>
   <%- include( `${templatePath}/shared/progressBar`) %>
-  <%- include(`${templatePath}/shared/header`, {type:'main', currentPage: 'PROJECT' }) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'PROJECT' }) %>
 
   <div class="blankHM"></div>
 
@@ -83,11 +83,11 @@
   <%- include('shared/comp_content_subtitle_arrow', {message: 'Skills & Experiences' }) %>
   <!-- Arrow -->
 
-  <%- include('shared/tagCloud') %>
-  <%- include('shared/comp_closingMessage', { version: '', message: ''}) %>
+  <%- include(`${templatePath}/shared/tagCloud`) %>
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
 
-  <%- include('shared/comp_backTop') %>
-  <%- include('shared/footer') %>
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
   <!-- The Modal -->
   <div id="modal" class="modal">
     <span id="modal-close" class="modal-close">

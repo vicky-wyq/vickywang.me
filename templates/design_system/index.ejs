@@ -12,7 +12,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
 <body>
   <%- include(`${templatePath}/shared/progressBar`) %>
-  <%- include(`${templatePath}/shared/header`, {type:'main', currentPage: 'PROJECT' }) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'PROJECT' }) %>
 
 
 
@@ -143,11 +143,12 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
   <main>
     <div class="blankHS"></div>
 
-
-    <div class="Grid Grid--full Grid--gutters u-textCenter">
-      <div class="Grid-cell">
-        <h1 class="Grid Grid--center"> <span class="specialTextL">Design System Breakdown</span><img class="moveUpDown widthLogo" src="../icon/arrow-down.svg" alt="Scroll down">
-        </h1>
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+          <h1 class="Grid Grid--center"> <span class="specialTextL">Design System Breakdown</span><img class="moveUpDown widthLogo" src="../icon/arrow-down.svg" alt="Scroll down">
+          </h1>
+        </div>
       </div>
     </div>
 
@@ -3414,7 +3415,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
             <div class="tabContent-content">
               <div class="Grid Grid--full Grid--gutters">
                 <div class="Grid-cell">
-    
+
                   <div class="barGraph  element">
                     <div class="widthXS">
                       <div class="GraphText">Lorem ipsum</div>
@@ -3528,7 +3529,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
         </div>
       </div>
       <section id="content41">
-        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Read More / Less Toggle' }) %>
+        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Expandable Content' }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_expandableContentBlock`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
         <div class="wrapper">
@@ -3626,1169 +3627,485 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content42">
-        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Accordion without Background' }) %>
-
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Accordion' }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_accordion`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-
-
         <div class="wrapper">
-          <div class="element">
-            <h3 class="accordion accordionBorderTop noMargin "><strong>Title</strong> </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h4>
-              <div class="blankHXS"></div>
+          <div id="tabsContent" class="tabContent">
+            <!-- Tab 1 -->
+            <%- include('../shared/comp_tabs_content', {name:'accordion', idTab: `accordionTab1`, lableTxt:'_noBg', checked:'checked'}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/block_accordion_noBg`, {
+                cardTitle: ``, 
+                cardText: ``
+                }) %>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'accordion_noBg', idTab1:'accordion_noBgT1',idTab2:'accordion_noBgT2',idTab3:'accordion_noBgT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.block_accordion_noBg,
+                HTML: ejsLiterals.html.block_accordion_noBg,
+                CSS:``
+              }) %>
             </div>
-
-            <h3 class="accordion noMargin "><strong>Title</strong> </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h4>
-              <div class="blankHXS"></div>
-            </div>
-            <h3 class="accordion accordionBorderBottom noMargin "><strong>Title</strong> </h3>
-
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h4>
-              <div class="blankHXS"></div>
-            </div>
-          </div>
-        </div>
-
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item30', idTab1:'T301',idTab2:'T302',idTab3:'T303', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-        <div class="wrapper">
-          <div class="element">
-            <h3 class="accordion accordionBorderTop noMargin "><strong>Title</strong> </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h4>
-              <div class="blankHXS"></div>
-            </div>
-        
-            <h3 class="accordion noMargin "><strong>Title</strong> </h3>
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-        
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h4>
-              <div class="blankHXS"></div>
-            </div>
-            <h3 class="accordion accordionBorderBottom noMargin "><strong>Title</strong> </h3>
-        
-            <div class="accordion-content">
-              <div class="blankHXS"></div>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h4>
-              <div class="blankHXS"></div>
+            <!-- Tab 2 -->
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'accordion', idTab: `accordionTab2`, lableTxt:'_bg', checked:''}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/block_accordion_bg`, {
+                cardTitle: ``, 
+                cardText: ``
+                }) %>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'accordion_bg', idTab1:'accordion_bgT1',idTab2:'accordion_bgT2',idTab3:'accordion_bgT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.block_accordion_bg,
+                HTML: ejsLiterals.html.block_accordion_bg,
+                CSS:``
+              }) %>
             </div>
           </div>
         </div>
-                                         
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
-
-        <div class="blankHM"></div>
-
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="element">
-            <h2 class="tArrow">Accordion with Background <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="blankHXS"></div>
-
-        <div class="GreyBg100">
-          <div class="blankHXS"></div>
-
-          <div class="wrapper">
-            <div class="element">
-              <h3 class="accordion accordionBorderTop noMargin withBg"><strong>Title</strong> </h3>
-              <div class="accordion-content">
-                <div class="blankHXS"></div>
-
-                <div class="Grid Grid--full Grid--gutters">
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                </div>
-                <div class="blankHXS"></div>
-              </div>
-
-              <h3 class="accordion noMargin withBg"><strong>Title</strong> </h3>
-              <div class="accordion-content">
-                <div class="blankHXS"></div>
-
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                <div class="blankHXS"></div>
-              </div>
-              <h3 class="accordion accordionBorderBottom noMargin withBg"><strong>Title</strong> </h3>
-              <div class="accordion-content">
-                <div class="blankHXS"></div>
-
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                <div class="blankHXS"></div>
-              </div>
-            </div>
-          </div>
-          <div class="blankHXS"></div>
-
-        </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item31', idTab1:'T311',idTab2:'T312',idTab3:'T313', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-        <div class="GreyBg100">
-          <div class="blankHXS"></div>
-        
-          <div class="wrapper">
-            <div class="element">
-              <h3 class="accordion accordionBorderTop noMargin withBg"><strong>Title</strong> </h3>
-              <div class="accordion-content">
-                <div class="blankHXS"></div>
-        
-                <div class="Grid Grid--full Grid--gutters">
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                </div>
-                <div class="blankHXS"></div>
-              </div>
-        
-              <h3 class="accordion noMargin withBg"><strong>Title</strong> </h3>
-              <div class="accordion-content">
-                <div class="blankHXS"></div>
-        
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                <div class="blankHXS"></div>
-              </div>
-              <h3 class="accordion accordionBorderBottom noMargin withBg"><strong>Title</strong> </h3>
-              <div class="accordion-content">
-                <div class="blankHXS"></div>
-        
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.</h4>
-                <div class="blankHXS"></div>
-              </div>
-            </div>
-          </div>
-          <div class="blankHXS"></div>
-        </div>                      
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
-
       </section>
       <section id="content43">
-
-        <div class="blankHM"></div>
-        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Horizontal Layout Slideshows with Background' }) %>
-
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Carouses' }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_carousel`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-
-
-        <div class="blankHXS"></div>
-
-        <div class="BgSkylineBlueLter">
-          <div class="blankHXS"></div>
-          <div class="wrapper">
-            <div class="Grid-cell">
-              <h2 class="element">Slideshow Title</h2>
-            </div>
-          </div>
-          <div class="wrapper">
-            <div class=" LRcarousel Grid Grid--gutters Grid--1of4 Grid--center u-textCenter" aria-label="LRcarousel" Tabindex="0" id="carousel1">
-              <div class="carousel__nav Grid-cell">
-                <a class="slider-nav" aria-label="Go to slide 1">
-                  <div>Lorem ipsum</div>
-                </a>
-                <a class="slider-nav" aria-label="Go to slide 2">
-                  <div>Lorem ipsum</div>
-                </a>
-                <a class="slider-nav" aria-label="Go to slide 3">
-                  <div>Lorem ipsum</div>
-                </a>
-              </div>
-              <div class="LRslides Grid-cell">
-                <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-                </div>
-                <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-
-                </div>
-                <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blankHXS"></div>
-        </div>
-        <div class="blankHS"></div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item32', idTab1:'T321',idTab2:'T322',idTab3:'T323', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-        <div class="SkylineBlueDarkerer">
-          <div class="blankHXS"></div>
-          <div class="wrapper">
-            <div class="Grid-cell">
-              <h2 class="element">Slideshow Title</h2>
-            </div>
-          </div>
-          <div class="wrapper">
-            <div class=" LRcarousel Grid Grid--gutters Grid--1of4 Grid--center u-textCenter" aria-label="LRcarousel" Tabindex="0" id="carousel1">
-              <div class="carousel__nav Grid-cell">
-                <a class="slider-nav" aria-label="Go to slide 1">
-                  <div>Lorem ipsum</div>
-                </a>
-                <a class="slider-nav" aria-label="Go to slide 2">
-                  <div>Lorem ipsum</div>
-                </a>
-                <a class="slider-nav" aria-label="Go to slide 3">
-                  <div>Lorem ipsum</div>
-                </a>
-              </div>
-              <div class="LRslides Grid-cell">
-                <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-                </div>
-                <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-
-                </div>
-                <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blankHXS"></div>
-        </div>                                    
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
-
-        <div class="blankHM"></div>
-        <!-- Arrow -->
         <div class="wrapper">
-          <div class="element">
-            <h2 class="tArrow">Horizontal Layout Slideshows without Background <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="blankHXS"></div>
-        <div class="WhiteBg">
-          <div class="blankHXS"></div>
-          <div class="wrapper">
-            <div class="Grid-cell">
-              <h2 class="element">Slideshow Title</h2>
+          <div id="tabsContent" class="tabContent">
+            <!-- Tab 1 -->
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab1`, lableTxt:'_carouselHoriz_noBg', checked:'checked'}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/block_carouselHoriz_noBg`) %>
+
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'carousel_horizontalCarousel', idTab1:'horizontalCarouselT1',idTab2:'horizontalCarouselT2',idTab3:'horizontalCarouselT3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.block_carouselHoriz_noBg,
+                HTML: ejsLiterals.html.block_carouselHoriz_noBg,
+                CSS:``
+              }) %>
             </div>
-          </div>
-          <div class="wrapper">
+            <!-- Tab 2 -->
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab2`, lableTxt:'_carouselHoriz_bg', checked:''}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/block_carouselHoriz_bg`) %>
 
-            <div class=" LRcarousel Grid Grid--gutters Grid--1of4 Grid--center u-textCenter" aria-label="LRcarousel" Tabindex="0" id="carousel2">
-              <div class="carousel__nav noBg Grid-cell">
-                <a class="slider-nav" aria-label="Go to slide 1">
-                  <div>Lorem ipsum</div>
-                </a>
-                <a class="slider-nav" aria-label="Go to slide 2">
-                  <div>Lorem ipsum</div>
-                </a>
-                <a class="slider-nav" aria-label="Go to slide 3">
-                  <div>Lorem ipsum</div>
-                </a>
-              </div>
-              <div class="LRslides Grid-cell">
-                <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                  <img src="./PlaceholderDark.svg" alt="">
-                </div>
-                <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
-                  <img src="./PlaceholderDark.svg" alt="">
-
-                </div>
-                <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
-                  <img src="./PlaceholderDark.svg" alt="">
-                </div>
-              </div>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'carousel_verticalCarousel', idTab1:'verticalCarouselT1',idTab2:'verticalCarouselT2',idTab3:'_verticalCarouselT3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.block_accordion_bg,
+                HTML: ejsLiterals.html.block_accordion_bg,
+                CSS:``
+              }) %>
             </div>
-          </div>
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item33', idTab1:'T331',idTab2:'T332',idTab3:'T333', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-          <div class="SkylineBlueDarkerer">
-            <div class="blankHXS"></div>
-            <div class="wrapper">
-              <div class="Grid-cell">
-                <h2 class="element">Horizontal layout with background color</h2>
-              </div>
-            </div>
-            <div class="wrapper LRcarousel Grid Grid--gutters Grid--1of4 Grid--center u-textCenter"
-              aria-label="LRcarousel" Tabindex="0" id="carousel1">
-              <div class="carousel__nav Grid-cell">
-                <a class="slider-nav" aria-label="Go to slide 1">
-                  <div>Lorem ipsum</div>
-                </a>
-                <a class="slider-nav" aria-label="Go to slide 2">
-                  <div>Lorem ipsum</div>
-                </a>
-                <a class="slider-nav" aria-label="Go to slide 3">
-                  <div>Lorem ipsum</div>
-                </a>
-              </div>
-              <div class="LRslides Grid-cell">
-                <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-                </div>
-                <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-                </div>
-                <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
-                  <img src="./Placeholder.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="blankHXS"></div>
-          </div>
-                                                     
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
-          <div class="blankHXS"></div>
-
-
-          <div class="blankHM"></div>
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="element">
-              <h2 class="tArrow">Vertical Layout Slideshows with Background <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-              </h2>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-
-          <div class="BgSkylineBlueLter">
-            <div class="blankHXS"></div>
-            <div class="wrapper">
-              <div class="Grid-cell">
-                <h2 class="element">Slideshow Title</h2>
-              </div>
-            </div>
-            <div class="wrapper">
-              <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" Tabindex="0" id="TBcarousel1">
-                <div class="TBslides">
-                  <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                    <img src="./Placeholder.svg" alt="">
-                  </div>
-                  <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"> <img src="./Placeholder.svg" alt="">
-                  </div>
-                  <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"> <img src="./Placeholder.svg" alt="">
-                  </div>
-                </div>
-                <div class="TBcarouselNav Grid-cell">
-                  <a class="TBsliderNav" aria-label="Go to slide 1">
-                    <div>Lorem ipsum</div>
-                  </a>
-                  <a class="TBsliderNav" aria-label="Go to slide 2">
-                    <div>Lorem ipsum</div>
-                  </a>
-                  <a class="TBsliderNav" aria-label="Go to slide 3">
-                    <div>Lorem ipsum</div>
-                  </a>
-                </div>
-                <div class="blankHS"></div>
-              </div>
-            </div>
-            <div class="blankHXS"></div>
-          </div>
-
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item34', idTab1:'T341',idTab2:'T342',idTab3:'T343', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-          <div class="SkylineBlueDarkerer">
-            <div class="blankHXS"></div>
-            <div class="wrapper">
-              <div class="Grid-cell">
-                <h2 class="element">Slideshow Title</h2>
-              </div>
-            </div>
-            <div class="wrapper">
-              <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" Tabindex="0" id="TBcarousel1">
-                <div class="TBslides">
-                  <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                    <img src="./Placeholder.svg" alt="">
-                  </div>
-                  <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"> <img src="./Placeholder.svg" alt="">
-                  </div>
-                  <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"> <img src="./Placeholder.svg" alt="">
-                  </div>
-                </div>
-                <div class="TBcarouselNav Grid-cell">
-                  <a class="TBsliderNav" aria-label="Go to slide 1">
-                    <div>Lorem ipsum</div>
-                  </a>
-                  <a class="TBsliderNav" aria-label="Go to slide 2">
-                    <div>Lorem ipsum</div>
-                  </a>
-                  <a class="TBsliderNav" aria-label="Go to slide 3">
-                    <div>Lorem ipsum</div>
-                  </a>
-                </div>
-                <div class="blankHS"></div>
-              </div>
-            </div>
-            <div class="blankHXS"></div>
-          </div>                         
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
-          <div class="blankHS"></div>
-
-
-          <div class="blankHM"></div>
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Vertical Layout Slideshows without Background<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="WhiteBg">
-            <div class="blankHXS"></div>
-            <div class="wrapper">
-              <div class="Grid-cell">
-                <h2 class="element">Slideshow Title</h2>
-              </div>
-            </div>
-            <div class="wrapper">
-              <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" Tabindex="0" id="TBcarousel2">
-                <div class="TBslides">
-                  <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                    <img src="./PlaceholderDark.svg" alt="">
-                  </div>
-                  <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"> <img src="./PlaceholderDark.svg" alt="">
-                  </div>
-                  <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"> <img src="./PlaceholderDark.svg" alt="">
-                  </div>
-                </div>
-                <div class="TBcarouselNav Grid-cell noBg">
-                  <a class="TBsliderNav" aria-label="Go to slide 1">
-                    <div>Lorem ipsum</div>
-                  </a>
-                  <a class="TBsliderNav" aria-label="Go to slide 2">
-                    <div>Lorem ipsum</div>
-                  </a>
-                  <a class="TBsliderNav" aria-label="Go to slide 3">
-                    <div>Lorem ipsum</div>
-                  </a>
-                </div>
-                <div class="blankHS"></div>
-              </div>
-            </div>
-            <div class="blankHXS"></div>
-          </div>
-
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item35', idTab1:'T351',idTab2:'T352',idTab3:'T353', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-            <div class="WhiteBg">
-              <div class="blankHXS"></div>
-              <div class="wrapper">
-                <div class="Grid-cell">
-                  <h2 class="element">Slideshow Title</h2>
-                </div>
-              </div>
-              <div class="wrapper">
-                <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" Tabindex="0" id="TBcarousel2">
-                  <div class="TBslides">
-                    <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
-                      <img src="./PlaceholderDark.svg" alt="">
-                    </div>
-                    <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"> <img src="./PlaceholderDark.svg" alt="">
-                    </div>
-                    <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"> <img src="./PlaceholderDark.svg" alt="">
-                    </div>
-                  </div>
-                  <div class="TBcarouselNav Grid-cell noBg">
-                    <a class="TBsliderNav" aria-label="Go to slide 1">
-                      <div>Lorem ipsum</div>
-                    </a>
-                    <a class="TBsliderNav" aria-label="Go to slide 2">
-                      <div>Lorem ipsum</div>
-                    </a>
-                    <a class="TBsliderNav" aria-label="Go to slide 3">
-                      <div>Lorem ipsum</div>
-                    </a>
-                  </div>
-                  <div class="blankHS"></div>
-                </div>
-              </div>
-              <div class="blankHXS"></div>
-            </div>                     
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
-
-      </section>
-      <section id="content44">
-
-        <div class="blankHM"></div>
-        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Modal - Background Color: Others' }) %>
-
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_modals`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
-
-
-        <div class="BgSkylineBlueLter">
-          <div class="blankHS"></div>
-          <div class="wrapper">
-            <div class="Grid-cell">
-              <img src="./Placeholder.svg" alt="Background Color: Others" class="modal-target" data-bgcolor="rgba(230, 246, 246, 0.96)">
-            </div>
-          </div>
-          <div class="blankHS"></div>
-        </div>
-        <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item36', idTab1:'T361',idTab2:'T362',idTab3:'T363', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-            <div class="SkylineBlueDarkerer">
-              <div class="blankHS"></div>
-              <div class="wrapper">
-                <div class="Grid-cell">
-                  <img src="./Placeholder.svg" alt="Background Color: Others" class="modal-target" data-bgcolor="rgba(230, 246, 246, 0.96)">
-                </div>
-              </div>
-              <div class="blankHS"></div>
-            </div>                   
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
-
-
-        <div class="blankHM"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="element">
-            <h2 class="tArrow">Modal - Background Color: White <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-            </h2>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="blankHXS"></div>
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <img src="./Placeholder.svg" alt="Background Color: White" class="modal-target" data-bgcolor="rgba(255, 255, 255, 0.96)">
-              </div>
-            </div>
-          </div>
-        </div>
-        <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item37', idTab1:'T371',idTab2:'T372',idTab3:'T373', tab1:'',tab2:'checked',tab3:'',
-          EJS: `
-          `,
-          HTML: `
-            <div class="wrapper">
-              <div class="Grid Grid--full Grid--gutters u-textCenter">
-                <div class="Grid-cell">
-                  <div class="element">
-                    <img src="./Placeholder.svg" alt="Background Color: White" class="modal-target" data-bgcolor="rgba(255, 255, 255, 0.96)">
-                  </div>
-                </div>
-              </div>
-            </div>                 
-          `,
-          CSS:
-          ` 
-            `
-          }) %>
-      </section>
-      <section id="content45">
-
-        <%- include('../shared/comp_content_subtitle_arrow', {message: `MainHeader` }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_header`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
-        <div class="wrapper">
-          <nav class="headerDEMO" id="">
-            <div class="backgroundColorNavDEMO">
-              <a href="http://vickywang.me/"><img class="logo pointer element" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
-              <div class="navbar">
-                <ul class="nav-menu">
-                  <li class="nav-item active activeNav marginZero"><a href="/" class="nav-link box">PROJECT</a>
-
-                  </li>
-
-                  <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
-                  </li>
-                  <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
-                  </li>
-                  <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
-                  </li>
-
-                  <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="hamburger">
-                <span class="bar GLORIFY"></span>
-                <span class="bar GLORIFY"></span>
-                <span class="bar GLORIFY"></span>
-              </div>
-            </div>
-          </nav>
-        </div>
-
-        <div class="blankHM"></div>
-
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item38', idTab1:'T381',idTab2:'T382',idTab3:'T383', tab1:'checked',tab2:'',tab3:'',
-        EJS: ejsLiterals.nav_header,
-        HTML: `
-        <nav class="header header-pin" id="header">
-        <div class="backgroundColorNav">
-        <a href="http://vickywang.me/"><img class="logo pointer" src="/icon/logo.svg" alt="VW" title="vickywang.me"></a>
-        <div class="navbar">
-          <ul class="nav-menu">
-                <li class="nav-item marginZero active activeNav">
-                    <a href="/" class="nav-link box">PROJECT</a>
-                </li>
-                <li class="nav-item marginZero inactive">
-                    <a href="/architecture" class="nav-link box">ARCHITECTURE</a>
-                </li>
-                <li class="nav-item marginZero inactive">
-                    <a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
-                </li>
-                <li class="nav-item marginZero inactive">
-                    <a href="/blog" class="nav-link box">BLOG</a>
-                </li>
-                <li class="nav-item marginZero inactive">
-                    <a href="/about" class="nav-link box">ABOUT</a>
-                </li>
-          </ul>
-        </div>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
-    </nav>
-        `,
-        CSS:
-        `
-        `
-        }) %>
-        <!--Arrow subtitle-->
-        <%- include('../shared/comp_content_subtitle_arrow', {message: 'MainHeader + Dropdown Menu' }) %>
-        <!--Arrow subtitle-->
-        <div class="wrapper">
-          <nav class="headerDEMO" id="">
-            <div class="backgroundColorNavDEMO">
-              <a href="http://vickywang.me/"><img class="logo pointer element" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
-              <div class="navbar">
-                <ul class="nav-menu">
-                  <li class="dropdown nav-item active activeNav marginZero"><a href="/" class="nav-link box">PROJECT</a>
-                    <div class="dropdown-content">
-
-                      <a href="/seer/">
-                        <div class="SEER">
-                          <img src="../projectImages/Cover_SEER.png" alt="SEER">
-                          <div class="element">
-                            <h5 class="colorBlack">SEER | Marketing Manager Tracking Business Performance</h5>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="/appointa/">
-                        <div class="APPOINTA">
-                          <img src="../ProjectImages/Cover_APPOINTA.png" alt="APPOINTA">
-                          <div class="element">
-                            <h5 class="colorBlack">APPOINTA | Recruiter Appointment Scheduling</h5>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="/design_system/">
-                        <div>
-                          <img src="../ProjectImages/vicky_website.png" alt="Design System">
-                          <div class="element">
-                            <h5 class="colorBlack">Design System | Efficiently Bulid &#38; Maintain Components</h5>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="/navigation/">
-                        <div>
-                          <img src="../ProjectImages/vicky_website.png" alt="Navigation Design">
-                          <div class="element">
-                            <h5 class="colorBlack">Navigation Design | Secondary Menu Options for vickywang.me</h5>
-                          </div>
-                        </div>
-                      </a>
-
-                    </div>
-                  </li>
-
-                  <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
-                  </li>
-                  <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
-                  </li>
-                  <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
-                  </li>
-
-                  <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
-                  </li>
-                </ul>
-
-              </div>
-              <div class="hamburger">
-                <span class="bar GLORIFY"></span>
-                <span class="bar GLORIFY"></span>
-                <span class="bar GLORIFY"></span>
-              </div>
-            </div>
-          </nav>
-        </div>
-
-        <div class="blankHM"></div>
-
-        <%- include('../shared/block_tabs_copyCode', 
-                {Name: 'Item39', idTab1:'T391',idTab2:'T392',idTab3:'T393', tab1:'checked',tab2:'',tab3:'',
-                EJS: ejsLiterals.nav_headerDropdown,
-                HTML: `
-                <nav class="header header-pin" id="header">
-                <div class="backgroundColorNav">
-                <a href="http://vickywang.me/"><img class="logo pointer" src="/icon/logo.svg" alt="VW" title="vickywang.me"></a>
-                <div class="navbar">
-                  <ul class="nav-menu">
-                        <li class="nav-item marginZero active activeNav">
-                            <a href="/" class="nav-link box">PROJECT</a>
-                        </li>
-                        <li class="nav-item marginZero inactive">
-                            <a href="/architecture" class="nav-link box">ARCHITECTURE</a>
-                        </li>
-                        <li class="nav-item marginZero inactive">
-                            <a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
-                        </li>
-                        <li class="nav-item marginZero inactive">
-                            <a href="/blog" class="nav-link box">BLOG</a>
-                        </li>
-                        <li class="nav-item marginZero inactive">
-                            <a href="/about" class="nav-link box">ABOUT</a>
-                        </li>
-                  </ul>
-                </div>
-                <div class="hamburger">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </nav>
-                `,
-                CSS:
-                `
-                `
+            <!-- Tab 3 -->
+            <%- include('../shared/comp_tabs_content', {name:'Carousel', idTab: `carouselTab3`, lableTxt:'_carouselVert_noBg', checked:'checked'}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/block_carouselVert_noBg`) %>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+                { Name: 'carouselVert_noBg', idTab1:'carouselVert_noBgT1',idTab2:'carouselVert_noBgT2',idTab3:'carouselVert_noBgT3', tab1:'checked',tab2:'',tab3:'',
+                  CCspacing: false,
+                  EJS: ejsLiterals.ejs.block_accordion_noBg,
+                  HTML: ejsLiterals.html.block_accordion_noBg,
+                  CSS:``
                 }) %>
-
-        <!--Arrow subtitle-->
-        <%- include('../shared/comp_content_subtitle_arrow', {message: 'BackHeader' }) %>
-        <!--Arrow subtitle-->
-        <!-- header -->
-        <div class="wrapper">
-          <nav class="headerDEMO navbarN" id="">
-
-
-            <div class="backgroundColorNavDEMO">
-
-              <a href="/" class="widthFitContent centerVer logo pointer element Grid--center"><img class="moveLeftRight iconS" src="../../icon/arrow-back.svg" alt="Go back">
-                <h6>BACK</h6>
-              </a>
-              <div class="navbar">
-                <ul class="nav-menu">
-                  <li class="dropdown nav-item active  marginZero"><a href="/" class="nav-link box">PROJECT</a>
-
-                    <div class="dropdown-content">
-                      <a href="/glorify/">
-                        <div class="cardBorder borderRadiusS GLORIFY">
-                          <img src="../ProjectImages/Cover_Glorify.png" alt="GLORIFY">
-                          <div class="element">
-                            <h5 class="colorBlack">GLORIFY | Daily worship</h5>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="/appointa/">
-                        <div class="cardBorder borderRadiusS APPOINTA">
-                          <img src="../ProjectImages/Cover_APPOINTA.png" alt="APPOINTA">
-                          <div class="element">
-                            <h5 class="colorBlack">APPOINTA | Scheduling</h5>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="/seer/">
-                        <div class="cardBorder borderRadiusS SEER ">
-                          <img src="../ProjectImages/Cover_SEER.png" alt="SEER">
-                          <div class="element">
-                            <h5 class="colorBlack">SEER | Business performance</h5>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="/design_system/">
-                        <div class="cardBorder borderRadiusS ">
-                          <img src="../ProjectImages/vicky_website.png" alt="Design System">
-                          <div class="element">
-                            <h5 class="colorBlack">Design System | vickywang.me</h5>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </li>
-
-                  <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box">ARCHITECTURE</a>
-                  </li>
-                  <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
-                  </li>
-                  <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
-                  </li>
-
-                  <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box">ABOUT</a></li>
-                </ul>
-              </div>
-              <div class="hamburger">
-                <span class="bar APPOINTA"></span>
-                <span class="bar APPOINTA"></span>
-                <span class="bar APPOINTA"></span>
-              </div>
             </div>
-          </nav>
+            <!-- Tab 4 -->
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab4`, lableTxt:'_carouselVert_bg', checked:''}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/block_carouselVert_bg`) %>
+
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+                { Name: 'carouselVert_bg', idTab1:'carouselVert_bgT1',idTab2:'carouselVert_bgT2',idTab3:'carouselVert_bgT3', tab1:'',tab2:'checked',tab3:'',
+                  CCspacing: false,
+                  EJS: ejsLiterals.ejs.block_accordion_bg,
+                  HTML: ejsLiterals.html.block_accordion_bg,
+                  CSS:``
+                }) %>
+            </div>
+          </div>
         </div>
-        <%- include('../shared/block_tabs_copyCode', 
-                {Name: 'Item40', idTab1:'T401',idTab2:'T402',idTab3:'T403', tab1:'checked',tab2:'',tab3:'',
-                EJS: ejsLiterals.nav_headerBack,
-                HTML: `
-                <nav class="header header-pin" id="header">
-                  <div class="backgroundColorNav">
-                    <a href="http://vickywang.me/"><img class="logo pointer" src="/icon/logo.svg" alt="VW" title="vickywang.me"></a>
+      </section>
+
+
+
+      <section id="content44">
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Modals' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_modal`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+        <div class="wrapper">
+          <div id="tabsContent" class="tabContent">
+            <!-- Tab 1 -->
+            <%- include('../shared/comp_tabs_content', {name:'modal', idTab: `modalTab1`, lableTxt:'_noBg', checked:'checked'}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/block_modal_noBg`) %>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'modal_noBg', idTab1:'modal_noBgT1',idTab2:'modal_noBgT2',idTab3:'modal_noBgT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.block_modal_noBg,
+                HTML: ejsLiterals.html.block_modal_noBg,
+                CSS:``
+              }) %>
+            </div>
+            <!-- Tab 2 -->
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'modal', idTab: `modal2`, lableTxt:'_bg', checked:''}) %>
+            <div class="tabContent-content">
+              <%- include(`${templatePath}/shared/block_modal_bg`) %>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'modal_bg', idTab1:'modal_bgT1',idTab2:'modal_bgT2',idTab3:'modal_bgT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.block_modal_bg,
+                HTML: ejsLiterals.html.block_modal_bg,
+                CSS:``
+              }) %>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="content45">
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Navigation' }) %>
+        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_nav`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+
+        <div class="wrapper">
+          <div id="tabsContent" class="tabContent">
+            <!-- Tab 1 -->
+            <%- include('../shared/comp_tabs_content', {name:'navigation', idTab: `navigationTab1`, lableTxt:'_header', checked:'checked'}) %>
+            <div class="tabContent-content">
+              <div>
+                <div class="Grid Grid--full Grid--gutters">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h3 class="fontWeight300">Main
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                <nav class="headerDEMO" id="">
+                  <div class="backgroundColorNavDEMO">
+                    <a href="http://vickywang.me/"><img class="logo pointer element" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
                     <div class="navbar">
                       <ul class="nav-menu">
-                            <li class="nav-item marginZero active activeNav">
-                                <a href="/" class="nav-link box">PROJECT</a>
-                            </li>
-                            <li class="nav-item marginZero inactive">
-                                <a href="/architecture" class="nav-link box">ARCHITECTURE</a>
-                            </li>
-                            <li class="nav-item marginZero inactive">
-                                <a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
-                            </li>
-                            <li class="nav-item marginZero inactive">
-                                <a href="/blog" class="nav-link box">BLOG</a>
-                            </li>
-                            <li class="nav-item marginZero inactive">
-                                <a href="/about" class="nav-link box">ABOUT</a>
-                            </li>
+                        <li class="nav-item active activeNav marginZero"><a href="/" class="nav-link box">PROJECT</a>
+
+                        </li>
+
+                        <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
+                        </li>
+                        <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
+                        </li>
+                        <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
+                        </li>
+
+                        <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
+                        </li>
                       </ul>
+
                     </div>
                     <div class="hamburger">
-                      <span class="bar"></span>
-                      <span class="bar"></span>
-                      <span class="bar"></span>
+                      <span class="bar GLORIFY"></span>
+                      <span class="bar GLORIFY"></span>
+                      <span class="bar GLORIFY"></span>
                     </div>
                   </div>
-                 </nav>
-                `,
-                CSS:
-                `
-                `
-                }) %>
-
-      </section>
-      <section id="content46">
-
-        <!--Arrow subtitle-->
-        <%- include('../shared/comp_content_subtitle_arrow', {message: 'Footer' }) %>
-        <!--Arrow subtitle-->
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_footer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
-        <!--footer-->
-        <div class="wrapper">
-          <footer class="GreyBg100">
-            <div class="blankHS"></div>
-            <div class="wrapper">
-              <div class="element">
-
-                <div class="Grid Grid--gutters Grid--1of3">
-                  <div class="Grid-cell">
-
-                    <a href="/" class=""><img class="widthXXS" src="../icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
-                    <div class="blankHXS"></div>
-
-                    <div class="Grid Grid--gutters">
-                      <div class="ClipboardBoxIconOnly">
-                        <button class="ClipboardIconOnly">
-                          <img title="Copy Email Address to Clipboard" class="iconS hoverGrey300 paddingS borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                          <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                        </button>
-                      </div>
-                      <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
-                        <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/in.svg" alt="LinkedIn">
-                      </a>
-
-                      <a target="_blank" href="https://github.com/vicky-wyq">
-                        <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/git.svg" alt="GitHub" title="GitHub">
-                      </a>
-
-                      <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
-                        <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
-                      </a>
-
-                      <a target="_blank" href="https://www.instagram.com/vw_yiqi/">
-                        <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/ins.svg" alt="Instagram" title="Instagram">
-                      </a>
-                    </div>
-                    <div class="blankHXS"></div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="Grid Grid--gutters Grid--cols-6">
-                      <div class="Grid-cell">
-                        <h5> <strong> Project </strong> </h5>
-                        <div class="blankHXXS"></div>
-                        <a href="/glorify/">
-                          <h6 class="fontWeight400"> Glorify</h6>
-                        </a>
-
-
-                        <h6>Elevating Community Involvement</h6>
-                        <div class="blankHXXS"></div>
-                        <a href="/appointa/">
-                          <h6 class="fontWeight400"> APPOINTA</h6>
-
-                        </a>
-                        <h6>Simplifying Interview Coordination</h6>
-                        <div class="blankHXXS"></div>
-                        <a href="/seer/">
-                          <h6 class="fontWeight400">SEER</h6>
-
-                        </a>
-                        <h6>Empowering Brand Managers with Insights</h6>
-                      </div>
-
-                      <div class="Grid-cell">
-                        <h5> <strong> Service </strong> </h5>
-                        <div class="blankHXXS"></div>
-
-                        <a href="/">
-                          <h6 class="fontWeight400">UX/UI Design</h6>
-                        </a>
-                        <h6>Creating Intuitive User Experiences</h6>
-                        <div class="blankHXXS"></div>
-
-                        <a href="/">
-                          <h6 class="fontWeight400">Design Research</h6>
-                        </a>
-                        <h6>In-depth Analysis for Targeted Solutions</h6>
-                        <div class="blankHXXS"></div>
-                        <a href="/">
-                          <h6 class="fontWeight400">Web Development</h6>
-                        </a>
-                        <h6>Seamless Design Implementation</h6>
-                        <div class="blankHXXS"></div>
-                        <a href="/">
-                          <h6 class="fontWeight400">Branding</h6>
-                        </a>
-                        <h6>Crafting Memorable Brand Identities</h6>
-                      </div>
-
-                      <div class="Grid-cell">
-                        <h5> <strong> About </strong> </h5>
-                        <div class="blankHXXS"></div>
-
-                        <a href="/about">
-                          <h6>About me</h6>
-                        </a>
-                        <a href="mailto:vickyw.design@gmail.com">
-                          <h6>Email me</h6>
-                        </a>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
+                </nav>
               </div>
-              <div class="blankHS"></div>
-              <div class="Grid Grid--full Grid--gutters">
-                <div class="Grid-cell">
-                  <div class="footerBorder">
+
+              <div>
+                <div class="Grid Grid--full Grid--gutters">
+                  <div class="Grid-cell">
                     <div class="element">
-                      <h5 class="Grey700"> &#169; 2023 &#8212; vickywang.me | All rights reserved.</h5>
+                      <h3 class="fontWeight300">Back
+                      </h3>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <nav class="headerDEMO navbarN" id="">
+
+
+                  <div class="backgroundColorNavDEMO">
+      
+                    <a href="/" class="widthFitContent centerVer logo pointer element Grid--center"><img class="moveLeftRight iconS" src="../../icon/arrow-back.svg" alt="Go back">
+                      <h6>BACK</h6>
+                    </a>
+                    <div class="navbar">
+                      <ul class="nav-menu">
+                        <li class="nav-item active activeNav marginZero"><a href="/" class="nav-link box">PROJECT</a>
+
+                        </li>
+
+                        <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
+                        </li>
+                        <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
+                        </li>
+                        <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
+                        </li>
+
+                        <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <div class="hamburger">
+                      <span class="bar APPOINTA"></span>
+                      <span class="bar APPOINTA"></span>
+                      <span class="bar APPOINTA"></span>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div>
+                <div class="Grid Grid--full Grid--gutters">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h3 class="fontWeight300">DropdownMenu
+                      </h3>
                     </div>
                   </div>
                 </div>
+
+                <nav class="headerDEMO" id="">
+                  <div class="backgroundColorNavDEMO">
+                    <a href="http://vickywang.me/"><img class="logo pointer element" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
+                    <div class="navbar">
+                      <ul class="nav-menu">
+                        <li class="dropdown nav-item active activeNav marginZero"><a href="/" class="nav-link box">PROJECT</a>
+                          <div class="dropdown-content">
+      
+                            <a href="/seer/">
+                              <div class="SEER">
+                                <img src="../projectImages/Cover_SEER.png" alt="SEER">
+                                <div class="element">
+                                  <h5 class="colorBlack">SEER | Marketing Manager Tracking Business Performance</h5>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="/appointa/">
+                              <div class="APPOINTA">
+                                <img src="../ProjectImages/Cover_APPOINTA.png" alt="APPOINTA">
+                                <div class="element">
+                                  <h5 class="colorBlack">APPOINTA | Recruiter Appointment Scheduling</h5>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="/design_system/">
+                              <div>
+                                <img src="../ProjectImages/vicky_website.png" alt="Design System">
+                                <div class="element">
+                                  <h5 class="colorBlack">Design System | Efficiently Bulid &amp; Maintain Components</h5>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="/navigation/">
+                              <div>
+                                <img src="../ProjectImages/vicky_website.png" alt="Navigation Design">
+                                <div class="element">
+                                  <h5 class="colorBlack">Navigation Design | Secondary Menu Options for vickywang.me</h5>
+                                </div>
+                              </div>
+                            </a>
+      
+                          </div>
+                        </li>
+      
+                        <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
+                        </li>
+                        <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
+                        </li>
+                        <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
+                        </li>
+      
+                        <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
+                        </li>
+                      </ul>
+      
+                    </div>
+                    <div class="hamburger">
+                      <span class="bar GLORIFY"></span>
+                      <span class="bar GLORIFY"></span>
+                      <span class="bar GLORIFY"></span>
+                    </div>
+                  </div>
+                </nav>
               </div>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'navHeader', idTab1:'navHeaderT1',idTab2:'navHeaderT2',idTab3:'navHeaderT3', tab1:'checked',tab2:'',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.block_nav_header,
+                HTML: ejsLiterals.html.block_nav_header,
+                CSS:``
+              }) %>
+            </div>
+            <!-- Tab 2 -->
+
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'navigation', idTab: `navigationTab2`, lableTxt:'_rightPanel', checked:''}) %>
+            <div class="tabContent-content">
+              <nav class="section-navDEMO">
+                <ol>
+                  <li class=""><a class="titleRightPanel">Sub Nav Title </a>
+                    <ul class="">
+                      <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                      <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                      <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+      
+                    </ul>
+                  </li>
+                  <li class=""><a class="titleRightPanel">Sub Nav Title </a>
+                    <ul class="">
+                      <li class="rightPanel"><a> &nbsp; SubTitle </a></li>
+                      <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+                      <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
+      
+      
+                    </ul>
+                  </li>
+
+      
+                </ol>
+              </nav>
+              <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+              { Name: 'navRightPanel', idTab1:'navRightPanelT1',idTab2:'navRightPanelT2',idTab3:'navRightPanelT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ``,
+                HTML: ejsLiterals.html.block_nav_rightPanel,
+                CSS:``
+              }) %>
             </div>
 
-          </footer>
+            <!-- Tab 3 -->
+            <%- include('../shared/comp_tabs_content', {name:'navigation', idTab: `navigationTab3`, lableTxt:'_footer', checked:''}) %>
+            <div class="tabContent-content">
+              <footer class="GreyBg100">
+                <div class="blankHS"></div>
+                <div class="wrapper">
+                  <div class="element">
+    
+                    <div class="Grid Grid--gutters Grid--1of3">
+                      <div class="Grid-cell">
+    
+                        <a href="/" class=""><img class="widthXXS" src="../icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
+                        <div class="blankHXS"></div>
+    
+                        <div class="Grid Grid--gutters">
+                          <div class="ClipboardBoxIconOnly">
+                            <button class="ClipboardIconOnly">
+                              <img title="Copy Email Address to Clipboard" class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/mail.svg" alt="LinkedIn">
+                              <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                            </button>
+                          </div>
+                          <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
+                            <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/in.svg" alt="LinkedIn">
+                          </a>
+    
+                          <a target="_blank" href="https://github.com/vicky-wyq">
+                            <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/git.svg" alt="GitHub" title="GitHub">
+                          </a>
+    
+                          <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
+                            <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
+                          </a>
+    
+                          <a target="_blank" href="https://www.instagram.com/vw_yiqi/">
+                            <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/ins.svg" alt="Instagram" title="Instagram">
+                          </a>
+                        </div>
+                        <div class="blankHXS"></div>
+                      </div>
+                      <div class="Grid-cell">
+                        <div class="Grid Grid--gutters Grid--cols-6">
+                          <div class="Grid-cell">
+                            <h5> <strong> Project </strong> </h5>
+                            <div class="blankHXXS"></div>
+                            <a href="/glorify/">
+                              <h6 class="fontWeight400"> Glorify</h6>
+                            </a>
+    
+    
+                            <h6>Elevating Community Involvement</h6>
+                            <div class="blankHXXS"></div>
+                            <a href="/appointa/">
+                              <h6 class="fontWeight400"> APPOINTA</h6>
+    
+                            </a>
+                            <h6>Simplifying Interview Coordination</h6>
+                            <div class="blankHXXS"></div>
+                            <a href="/seer/">
+                              <h6 class="fontWeight400">SEER</h6>
+    
+                            </a>
+                            <h6>Empowering Brand Managers with Insights</h6>
+                          </div>
+    
+                          <div class="Grid-cell">
+                            <h5> <strong> Service </strong> </h5>
+                            <div class="blankHXXS"></div>
+    
+                            <a href="/">
+                              <h6 class="fontWeight400">UX/UI Design</h6>
+                            </a>
+                            <h6>Creating Intuitive User Experiences</h6>
+                            <div class="blankHXXS"></div>
+    
+                            <a href="/">
+                              <h6 class="fontWeight400">Design Research</h6>
+                            </a>
+                            <h6>In-depth Analysis for Targeted Solutions</h6>
+                            <div class="blankHXXS"></div>
+                            <a href="/">
+                              <h6 class="fontWeight400">Web Development</h6>
+                            </a>
+                            <h6>Seamless Design Implementation</h6>
+                            <div class="blankHXXS"></div>
+                            <a href="/">
+                              <h6 class="fontWeight400">Branding</h6>
+                            </a>
+                            <h6>Crafting Memorable Brand Identities</h6>
+                          </div>
+    
+                          <div class="Grid-cell">
+                            <h5> <strong> About </strong> </h5>
+                            <div class="blankHXXS"></div>
+    
+                            <a href="/about">
+                              <h6>About me</h6>
+                            </a>
+                            <a href="mailto:vickyw.design@gmail.com">
+                              <h6>Email me</h6>
+                            </a>
+                          </div>
+                        </div>
+    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blankHS"></div>
+                  <div class="Grid Grid--full Grid--gutters">
+                    <div class="Grid-cell">
+                      <div class="footerBorder">
+                        <div class="element">
+                          <h5 class="Grey700"> © 2023 — vickywang.me | All rights reserved.</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+              </footer>
+              <%- include('../shared/block_tabs_copyCode', 
+              { Name: 'navFooter', idTab1:'navFooterT1',idTab2:'navFooterT2',idTab3:'navFooterT3', tab1:'',tab2:'checked',tab3:'',
+                CCspacing: false,
+                EJS: ejsLiterals.ejs.comp_card_gradient,
+                HTML: ejsLiterals.html.comp_card_gradient,
+                CSS: ``
+              }) %>
+            </div>
+          </div>
         </div>
-        <!--footer-->
-        <%- include('../shared/block_tabs_copyCode', 
-                {Name: 'Item41', idTab1:'T411',idTab2:'T412',idTab3:'T413', tab1:'checked',tab2:'',tab3:'',
-                EJS: ejsLiterals.nav_footer,
-                HTML: `
-
-                `,
-                CSS:
-                `
-                `
-                }) %>
-
-
       </section>
-      <section id="content47">
 
-        <%- include('../shared/comp_content_subtitle_arrow', {message: 'SubNavigation' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_sideNav`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
-        <nav class="section-navDEMO">
-          <ol>
-            <li class=""><a class="titleRightPanel">Sub Nav Title </a>
-              <ul class="">
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-
-              </ul>
-            </li>
-            <li class=""><a class="titleRightPanel">Sub Nav Title </a>
-              <ul class="">
-                <li class="rightPanel"><a> &nbsp; SubTitle </a></li>
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-
-
-              </ul>
-            </li>
-            <li class=""><a class="titleRightPanel">Sub Nav Title </a>
-              <ul class="">
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-              </ul>
-            </li>
-            <li class=""><a class="titleRightPanel">Sub Nav Title </a>
-              <ul class="active">
-                <li class="rightPanel"><a> &nbsp; SubTitle</a></li>
-                <li class="rightPanel active"><a> &nbsp; SubTitle</a></li>
-                <li class="rightPanel active"><a> &nbsp; SubTitle</a></li>
-              </ul>
-            </li>
-
-          </ol>
-        </nav>
-        <%- include('../shared/block_tabs_copyCode', 
-                {Name: 'Item42', idTab1:'T421',idTab2:'T422',idTab3:'T423', tab1:'',tab2:'checked',tab3:'',
-                EJS: '',
-                HTML: `
-                <nav class="section-nav">
-                  <ol>
-                    <li><a href="#content1" class="titleRightPanel">Basics Styles</a>
-                      <ul>
-                        <li class="rightPanel"><a href="#content11"> &nbsp; Color Guidance</a></li>
-                        <li class="rightPanel"><a href="#content12"> &nbsp; Typography</a></li>
-                        <li class="rightPanel"><a href="#content13"> &nbsp; Wordmark</a></li>
-
-                        <li class="rightPanel"><a href="#content14"> &nbsp; Elevation</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#content2" class="titleRightPanel">Spacing &amp; Grid</a>
-                      <ul>
-                        <li class="rightPanel"><a href="#content21"> &nbsp; Layout </a></li>
-                        <li class="rightPanel"><a href="#content22"> &nbsp; Responsive Grid</a></li>
-
-                      </ul>
-                    </li>
-                    <li><a href="#content3" class="titleRightPanel">UI Components</a>
-                      <ul>
-                        <li class="rightPanel"><a href="#content31"> &nbsp; Atoms</a></li>
-                        <li class="rightPanel"><a href="#content32"> &nbsp; Molecules</a></li>
-                        <li class="rightPanel"><a href="#content33"> &nbsp; Organisms</a></li>
-                      </ul>
-                    </li>
-                    <li class="active"><a href="#content4" class="titleRightPanel">Navigation</a>
-                      <ul class="active">
-                        <li class="rightPanel"><a href="#content41"> &nbsp; Header</a></li>
-                        <li class="rightPanel active"><a href="#content42"> &nbsp; Footer</a></li>
-                        <li class="rightPanel active"><a href="#content43"> &nbsp; Navigation</a></li>
-                      </ul>
-                    </li>
-
-                  </ol>
-                </nav>
-                `,
-                CSS:
-                `
-                `
-                }) %>
-
-      </section>
       <section id="content48">
 
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Code Snippet Explorer (CSE)` }) %>
@@ -4893,7 +4210,7 @@ pageURL:'', thumbnailImgURL: 'vickywang_web.png'
   <!-- The Modal -->
 
   <%- include(`${templatePath}/shared/comp_backTop`) %>
-  <%- include(`${templatePath}/shared/footer`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
   <!-- Shared across the platform -->
 </body>
 
