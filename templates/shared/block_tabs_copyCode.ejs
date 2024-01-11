@@ -14,13 +14,13 @@
   idTab3 ='' ; 
 } %>
 <% if (typeof tab1 === 'undefined' ) { 
-  idTab3 ='' ; 
+  tab1 ='' ; 
 } %>
 <% if (typeof tab2 === 'undefined' ) { 
-  idTab3 ='' ; 
+  tab2 ='' ; 
 } %>
 <% if (typeof tab3 === 'undefined' ) { 
-  idTab3 ='' ; 
+  tab3 ='' ; 
 } %>
 
 
@@ -56,8 +56,8 @@
   </div>
 </div>
 <% } else { %>
-<div class="blankHS"></div>
 <div class="wrapper">
+  <div class="blankHS"></div>
   <div class="Grid Grid--full Grid--gutters">
     <div class="Grid-cell">
       <div class="element">
@@ -87,7 +87,4 @@
     </div>
   </div>
 </div>
-
-<div class="blankHXS"></div>
-
 <% } %>

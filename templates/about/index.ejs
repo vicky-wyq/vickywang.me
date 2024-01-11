@@ -9,8 +9,8 @@
 
 
 <body>
-  <%- include('../shared/progressBar') %>
-  <%- include('../shared/header', {type:'main', currentPage: 'ABOUT' }) %>
+  <%- include(`${templatePath}/shared/progressBar`) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'ABOUT' }) %>
 
   <div class="blankHM"></div>
   <%- include('../shared/intro', { version: 'defult',
@@ -345,7 +345,7 @@
   `}) %>
 
   <%- include(`${templatePath}/shared/comp_backTop`) %>
-  <%- include(`${templatePath}/shared/footer`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
   <!-- Shared across the platform -->
 </body>
 

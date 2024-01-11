@@ -5652,6 +5652,8 @@ pre code {
     display: none; /* Initially hide all content */
     width: 100%;
     padding-right: var(--paddingM);
+    padding-left: var(--paddingS);
+
 }
 
 .tabContent-switch:checked + .tabContent-link + .tabContent-content {
