@@ -1,3 +1,7 @@
+* {
+    border-style: none !important;
+}
+
 :root {
     --border-radius: 0.5em;
 
@@ -1971,7 +1975,7 @@ hr {
 .elementCard {
     padding: 0;
     margin: 0;
-    border-style: ridge;
+    border-style: none;
     border-radius: var(--border-radius);
     -moz-border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);
