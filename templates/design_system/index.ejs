@@ -222,7 +222,7 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Tonal Palettes' }) %>
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Neutral Shades' }) %>
 
 
 
@@ -397,25 +397,55 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
 
 
 
-          <div class="blankHM"></div>
 
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Action &#38; Error<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Brand Colors' }) %>
+          <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS bgTeal800 shadowBox">
+                  <div>teal800</div>
+                  <div>HEX:e6e6e6</div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS bgTeal600 shadowBox">
+                  <div>teal600</div>
+                  <div>HEX:292929</div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS bgTeal500 shadowBox">
+                  <div>teal500</div>
+                  <div>HEX:757575</div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS bgTeal300 shadowBox">
+                  <div>teal300</div>
+                  <div>HEX:757575</div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="blockS bgTeal100 shadowBox">
+                  <div>teal100</div>
+                  <div>HEX:fcf5eb</div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Arrow -->
+
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS BgSkylineBlue shadowBox">
+                <div class="blockS BgWarm shadowBox">
                   <div>Beach 400</div>
                   <div>HEX:e6e6e6</div>
                 </div>
@@ -423,39 +453,27 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS SkylineBlueDarker shadowBox">
-                  <div>Beach 300</div>
-                  <div>HEX:292929</div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blockS SkylineBlueDarkerer shadowBox">
-                  <div>Beach 200</div>
-                  <div>HEX:4f4f4f</div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blockS SkylineBlueDarkerest shadowBox">
-                  <div>Beach 100</div>
-                  <div>HEX:757575</div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blockS BgWarm shadowBox">
-                  <div>Sandy</div>
-                  <div>HEX:fcf5eb</div>
-                </div>
-              </div>
-            </div>
 
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
 
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+              </div>
+            </div>
           </div>
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Functional Colors' }) %>
+
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
@@ -534,7 +552,7 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               .BgWarm {
                   background-color: var(--Warm);
               }
-              .BgSkylineBlue {
+              .bgTeal800 {
                   background-color: var(--colorTealDk);
               }
               .SkylineBlueDarker {
@@ -576,173 +594,270 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <div class="blankHXS"></div>
-
-
-          <!-- Arrow -->
           <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Font Family<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
+            <div id="tabsContent" class="tabContent">
+              <!-- Tab 1 -->
+              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'typography', idTab: `typographyTab1`, lableTxt:'fontFamily', checked:'checked'}) %>
+              <div class="tabContent-content">
+                <div class="Grid Grid--full Grid--gutters">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <p class="specialTextS Grey700">Lato</p>
+                    </div>
+                  </div>
                 </div>
+                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+                { Name: 'fontFamily', idTab1:'horizontalCarouselT1',idTab2:'horizontalCarouselT2',idTab3:'horizontalCarouselT3', tab1:'',tab2:'',tab3:'checked',
+                  CCspacing: false,
+                  EJS: ``,
+                  HTML: ``,
+                  CSS:`font-family: 'Lato', sans-serif;`
+                }) %>
               </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
+              <!-- Tab 2 -->
+              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'typography', idTab: `typographyTab2`, lableTxt:'fontWeight', checked:''}) %>
+              <div class="tabContent-content">
+                <div class="Grid Grid--gutters Grid--1of6">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h3 class="fontWeight300">Light
+                      </h3>
+                      <h3 class="fontWeight300">Regular
+                      </h3>
+                      <h3 class="fontWeight300">Medium
+                      </h3>
+                      <h3 class="fontWeight300">Bold
+                      </h3>
 
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <p class="specialTextS Grey700">Lato</p>
-              </div>
-            </div>
-          </div>
-          <div class="blankHS"></div>
-
-
-          <div class="blankHS"></div>
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Font Weight<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
+                    </div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h3 class="fontWeight100">Font-weight: 100</h3>
+                      <h3 class="fontWeight300">Font-weight: 300</h3>
+                      <h3 class="fontWeight400">Font-weight: 400</h3>
+                      <h3 class="fontWeight700">Font-weight: 700</h3>
+                    </div>
+                  </div>
                 </div>
+                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+                { Name: 'fontWeight', idTab1:'verticalCarouselT1',idTab2:'verticalCarouselT2',idTab3:'_verticalCarouselT3', tab1:'',tab2:'',tab3:'checked',
+                CCspacing: false,
+                  EJS: ``,
+                  HTML: ``,
+                  CSS:`.fontWeight100 {
+                            font-weight: 100;
+
+                        }
+                        .fontWeight300 {
+                            font-weight: 300;
+
+                        }
+                        .fontWeight400 {
+                            font-weight: 400;
+                        }
+
+                        .fontWeight700 {
+                            font-weight: 700;
+                        }`
+                }) %>
               </div>
-            </div>
-          </div>
-          <!-- Arrow -->
+              <!-- Tab 3 -->
+              <%- include('../shared/comp_tabs_content', {name:'typography', idTab: `typographyTab3`, lableTxt:'fontSize', checked:''}) %>
+              <div class="tabContent-content">
+                <div class="Grid Grid--gutters Grid--1of6">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <p class="specialTextL">Display</p>
+                      <p class="specialTextS">Display</p>
 
-          <div class="blankHXS"></div>
+                      <h1 class="fontWeight300">h1
+                      </h1>
+                      <h2 class="fontWeight300">h2
+                      </h2>
+                      <h3 class="fontWeight300">h3
+                      </h3>
+                      <h4 class="fontWeight300">h4
+                      </h4>
+                      <h5 class="fontWeight300">h5
+                      </h5>
+                      <h6 class="fontWeight300">h6
+                      </h6>
+                      <p class="fontWeight300">p
+                      </p>
+                    </div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <p class="specialTextL">Display 1, Lorem ipsum dolor sit amet</p>
+                      <p class="specialTextS">Display 2, Lorem ipsum dolor sit amet</p>
 
-          <div class="Grid Grid--gutters Grid--1of6">
-            <div class="Grid-cell">
-              <div class="element">
-                <h3 class="fontWeight300">Light
-                </h3>
-                <h3 class="fontWeight300">Regular
-                </h3>
-                <h3 class="fontWeight300">Medium
-                </h3>
-                <h3 class="fontWeight300">Bold
-                </h3>
-
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h3 class="fontWeight100">Font-weight: 100</h3>
-                <h3 class="fontWeight300">Font-weight: 300</h3>
-                <h3 class="fontWeight400">Font-weight: 400</h3>
-                <h3 class="fontWeight700">Font-weight: 700</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="blankHS"></div>
-
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Font Sizes<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
+                      <h1 class="fontWeight300">h1 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
+                      </h1>
+                      <h2 class="fontWeight300">h2 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
+                      </h2>
+                      <h3 class="fontWeight300">h3 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
+                      </h3>
+                      <h4 class="fontWeight300">h4 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
+                      </h4>
+                      <h5 class="fontWeight300">h5 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
+                      </h5>
+                      <h6 class="fontWeight300">h6 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
+                      </h6>
+                      <p class="fontWeight300">Paragraph - Lorem ipsum dolor sit amet
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+                  { Name: 'fontSize', idTab1:'carouselVert_noBgT1',idTab2:'carouselVert_noBgT2',idTab3:'carouselVert_noBgT3', tab1:'',tab2:'',tab3:'checked',
+                  CCspacing: false,
+
+                  EJS: ``,
+                  HTML: ``,
+                  CSS:`h1 {
+                          font-size: clamp(1.3em, 1.8vw, 2.2em);
+                          /* - first one is the minimum allowed font-size.
+                            - third one is the maximum allowed font-size.
+                            - second argument is font-size that you wish to always have. */
+                          margin-top: clamp(0.67em, 0.75em, 1.5em);
+                          margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+                      }
+
+                      h2 {
+                          font-size: clamp(1.2em, 1.46vw, 1.68em);
+                          margin-top: clamp(0.67em, 0.75em, 1.5em);
+                          margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+                      }
+
+                      h3 {
+                          font-size: clamp(1.04em, 1.26vw, 1.48em);
+                          margin-top: clamp(0.42em, 0.56em, 1.2em);
+                          margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+                      }
+
+                      h4 {
+                          font-size: clamp(0.92em, 1.12vw, 1.2em);
+                          margin-top: clamp(0.36em, 0.4em, 1em);
+                          margin-bottom: clamp(0.36em, 0.4em, 1em);
+                      }
+
+
+                      h5 {
+                          font-size: clamp(0.84em, 0.92vw, 1em);
+                          margin-top: clamp(0.2em, 0.4em, 1em);
+                          margin-bottom: clamp(0.2em, 0.4em, 1em);
+                      }
+
+                      h6 {
+                          font-size: clamp(0.72em, 0.78vw, 0.86em);
+                          margin: 0.26em 0;
+                      }
+
+                      p.light {
+                          font-weight: 100;
+                      }
+
+                      p {
+                          /*     font-size: clamp(0.83em, 1.06vw, 1.2em); */
+
+                          font-size: clamp(0.8em, 1vw, 1.1em);
+
+                          font-weight: 300;
+                      }
+
+                      /* default/normal */
+                      p.thick {
+                          font-weight: 500;
+                      }
+
+                      strong {
+                          font-family: 'lato', sans-serif;
+                          font-weight: 400;
+                          color: var(--Grey900);
+                          margin: 1em, 0;
+                      }
+
+                      .styleCap {
+                          text-transform: uppercase;
+                      }
+
+                      .textItalic {
+                          font-style: italic;
+                      }
+                      `
+                }) %>
               </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="Grid Grid--gutters Grid--1of6">
-            <div class="Grid-cell">
-              <div class="element">
-                <p class="specialTextL">Display</p>
-                <p class="specialTextS">Display</p>
+              <!-- Tab 4 -->
+              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'typography', idTab: `typographyTab4`, lableTxt:'fontOthers', checked:''}) %>
+              <div class="tabContent-content">
+                <div class="Grid Grid--gutters Grid--1of6">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <p class="specialTextNote">Note</p>
+                      <div class="t-hello">Note</div>
 
-                <h1 class="fontWeight300">h1
-                </h1>
-                <h2 class="fontWeight300">h2
-                </h2>
-                <h3 class="fontWeight300">h3
-                </h3>
-                <h4 class="fontWeight300">h4
-                </h4>
-                <h5 class="fontWeight300">h5
-                </h5>
-                <h6 class="fontWeight300">h6
-                </h6>
-                <p class="fontWeight300">p
-                </p>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <p class="specialTextL">Display 1, Lorem ipsum dolor sit amet</p>
-                <p class="specialTextS">Display 2, Lorem ipsum dolor sit amet</p>
+                      <h3 class="textUnderline fontWeight300">text decoration</h3>
 
-                <h1 class="fontWeight300">h1 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
-                </h1>
-                <h2 class="fontWeight300">h2 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
-                </h2>
-                <h3 class="fontWeight300">h3 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
-                </h3>
-                <h4 class="fontWeight300">h4 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
-                </h4>
-                <h5 class="fontWeight300">h5 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
-                </h5>
-                <h6 class="fontWeight300">h6 - margin: top &#38; button 0.75em, Lorem ipsum dolor sit amet
-                </h6>
-                <p class="fontWeight300">Paragraph - Lorem ipsum dolor sit amet
-                </p>
-              </div>
-            </div>
-          </div>
+                      <h3 class="textDecor fontWeight300">text decoration</h3>
 
-          <div class="blankHS"></div>
 
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Font - Others<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
+                    </div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <p class="specialTextNote">Note, Lorem ipsum dolor sit amet</p>
+
+                      <div class="t-hello">Note, Lorem ipsum dolor sit amet</div>
+
+                      <h3 class="textUnderline fontWeight300">text decoration</h3>
+
+
+                      <h3 class="textDecor fontWeight300">text decoration</h3>
+                    </div>
+                  </div>
                 </div>
+                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
+                  { Name: 'fontOthers', idTab1:'carouselVert_bgT1',idTab2:'carouselVert_bgT2',idTab3:'carouselVert_bgT3', tab1:'',tab2:'',tab3:'checked',
+                    CCspacing: false,
+                    EJS: ``,
+                    HTML: ``,
+                    CSS:`a:link.textUnderline {
+                          text-decoration-line: underline;
+                          text-decoration-thickness: 0.03em;
+                          text-underline-offset: 6px;
+                          text-decoration-color: var(--Grey900);
+                      }
+
+                      .textUnderline {
+                          text-decoration-line: underline;
+                          text-decoration-thickness: 0.03em;
+                          text-underline-offset: 6px;
+                          text-decoration-color: var(--Grey900);
+                      }
+
+                      /* text*/
+
+                      .allCaps {
+                          text-transform: uppercase;
+                      }
+
+                      .strikethrough {
+                          text-decoration: line-through;
+                      }
+
+                      .textDecor {
+                          text-decoration: underline;
+                          text-decoration-style: double;
+                          text-decoration-thickness: 2px;
+                      }`
+                  }) %>
               </div>
             </div>
           </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
-          <div class="Grid Grid--gutters Grid--1of6">
-            <div class="Grid-cell">
-              <div class="element">
-                <p class="specialTextNote">Note</p>
-                <div class="t-hello">Note</div>
-
-                <h3 class="textUnderline fontWeight300">text decoration</h3>
-
-                <h3 class="textDecor fontWeight300">text decoration</h3>
 
 
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <p class="specialTextNote">Note, Lorem ipsum dolor sit amet</p>
 
-                <div class="t-hello">Note, Lorem ipsum dolor sit amet</div>
-
-                <h3 class="textUnderline fontWeight300">text decoration</h3>
-
-
-                <h3 class="textDecor fontWeight300">text decoration</h3>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <section id="content13">
@@ -3412,47 +3527,47 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             <!-- Tab 1 -->
             <div class="Grid Grid--full Grid--gutters u-textCenter">
               <ul class="tags" id="TagsCloud">
-          
+
                 <li class="tag"><span class="box"> User-centered Design</span></li>
-          
+
                 <li class="tag"><span class="box"> Experience Design</span></li>
                 <li class="tag"><span class="box"> User Experience Design </span></li>
                 <li class="tag"><span class="box"> User Interface Design</span></li>
                 <li class="tag"><span class="box"> Interaction Design</span></li>
-          
+
                 <li class="tag"><span class="box"> Product Design</span></li>
                 <li class="tag"><span class="box"> Service Design</span></li>
-          
+
                 <li class="tag"><span class="box"> Design Thinking</span></li>
                 <li class="tag"><span class="box"> Surveys &#38; Questionnaires</span></li>
                 <li class="tag"><span class="box"> Journey Mapping </span></li>
                 <li class="tag"><span class="box"> Data Analysis </span></li>
-          
-          
-          
+
+
+
                 <li class="tag"><span class="box"> Responsive &#38; Adaptive Design</span></li>
                 <li class="tag"><span class="box"> Web Application Design</span></li>
                 <li class="tag"><span class="box"> Design System</span></li>
                 <li class="tag"><span class="box"> Graphic Design</span></li>
-          
+
                 <li class="tag"><span class="box"> UX Research</span></li>
                 <li class="tag"><span class="box"> Design Research</span></li>
-          
+
                 <li class="tag"><span class="box"> Design Research</span></li>
                 <li class="tag"><span class="box"> Collaborative Problem Solving</span></li>
                 <li class="tag"><span class="box"> Concept Testing</span></li>
                 <li class="tag"><span class="box"> Usability Testing</span></li>
                 <li class="tag"><span class="box"> Wireframing &#38; Prototyping</span></li>
-          
+
                 <li class="tag"><span class="box"> SaaS Application Design</span></li>
                 <li class="tag"><span class="box"> B2B Application Design</span></li>
                 <li class="tag"><span class="box"> Consumer-Facing Design</span></li>
-          
-          
+
+
                 <li class="tag"><span class="box"> Figma</span></li>
                 <li class="tag"><span class="box"> Adobe CS </span></li>
                 <li class="tag"><span class="box"> 3D Modeling</span></li>
-          
+
                 <li class="tag"><span class="box">HTML</span></li>
                 <li class="tag"><span class="box">CSS</span></li>
                 <li class="tag"><span class="box">JavaScript</span></li>
@@ -4219,4 +4334,5 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
   <%- include(`${templatePath}/shared/block_nav_footer`) %>
   <!-- Shared across the platform -->
 </body>
+
 </html>

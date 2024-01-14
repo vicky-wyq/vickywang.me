@@ -51,33 +51,31 @@
 
     --Grey800: #505050;
     /* 5f6368 4f4f4f*/
-
     --Grey700: #707070;
-
     /* #505050 83878a 787878  757575*/
-
     --Grey600: #a5a5a5;
-
     /* #909090, 999D9F, 8e8787 a7a7a7*/
-
     --Grey500: #cacaca;
-
     /* #c8c8c8 e0e0e0*/
-
     --Grey400: #e6e6e6;
     /* e4e4e4; e6e6e6*/
-
     --Grey300: #efefef;
     /* efefef, f2f2f2*/
-
     --Grey200: #f2f2f2;
     /* F8F8F8, f2f2f2*/
-
     --Grey100: #fafafa;
 
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
-    --colorTealDker: #228e92;
 
+    --teal800:#448686;
+    --teal600:#84BFBF;
+    --teal500:#AAD9D9;
+    --teal300:#D0ECEA;
+    --teal100:#EFF9F8;
+    /* ======================== */
+
+
+    --colorTealDker: #228e92;
     --colorTealDk: #8fbfbf;
     --colorTealLt: #AAD9D9;
     /*never change    AAD9D9*/
@@ -183,20 +181,6 @@ a.no-hover-effect:hover {
     /* Add other properties if needed to undo the hover effect */
 }
 
-
-a:link.textUnderline {
-    text-decoration-line: underline;
-    text-decoration-thickness: 0.03em;
-    text-underline-offset: 6px;
-    text-decoration-color: var(--Grey900);
-}
-
-.textUnderline {
-    text-decoration-line: underline;
-    text-decoration-thickness: 0.03em;
-    text-underline-offset: 6px;
-    text-decoration-color: var(--Grey900);
-}
 
 a:link.textProject {
     text-decoration-line: underline;
@@ -657,24 +641,21 @@ a.active.SEER {
     color: var(--Warm);
 }
 
-.SkylineBlueDarker {
-    color: var(--colorTealDker);
+.teal800 {
+    color: var(--teal800);
+}
+.teal600 {
+    color: var(--teal600);
+}
+.teal500 {
+    color: var(--teal500);
+}
+.teal300 {
+    color: var(--teal300);
 }
 
-.SkylineBlue {
-    color: var(--colorTealDk);
-}
-
-.SkylineBlueLt {
-    color: var(--colorTealLt);
-}
-
-.SkylineBlueLter {
-    color: var(--colorTealLtr);
-}
-
-.SkylineBlueLtest {
-    color: var(--colorTealLtest);
+.teal100 {
+    color: var(--teal100);
 }
 
 .Alet {
@@ -691,20 +672,22 @@ a.active.SEER {
     background-color: var(--Warm);
 }
 
-.BgSkylineBlue {
-    background-color: var(--colorTealDk);
+.bgTeal800 {
+    background-color: var(--teal800);
 }
 
-.BgSkylineBlueLt {
-    background-color: var(--colorTealLt);
+.bgTeal600 {
+    background-color: var(--teal600);
+}
+.bgTeal500 {
+    background-color: var(--teal500);
+}
+.bgTeal300 {
+    background-color: var(--teal300);
 }
 
-.BgSkylineBlueLter {
-    background-color: var(--colorTealLtr);
-}
-
-.BgSkylineBlueLtest {
-    background-color: var(--colorTealLtest);
+.bgTeal100 {
+    background-color: var(--teal100);
 }
 
 .BgAlet {
@@ -1907,6 +1890,20 @@ strong {
 
 .textItalic {
     font-style: italic;
+}
+
+a:link.textUnderline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.03em;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--Grey900);
+}
+
+.textUnderline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.03em;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--Grey900);
 }
 
 /* text*/
@@ -5508,7 +5505,7 @@ button.Clipboard.clickTxt:active {
 }
 
 .copy-btn:hover {
-    background-color: var(--colorTealDk);
+    background-color: var(--teal600);
 }
 
 .code-block {
