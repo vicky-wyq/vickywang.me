@@ -1,6 +1,12 @@
 * {
+    border-style: none;
+}
+
+/* 
+    .my-class {
     border-style: none !important;
 }
+ */
 
 :root {
     --border-radius: 0.5em;
