@@ -82,8 +82,9 @@
 
 
 
+        <!-- <link href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.2/css/reset.min.css" rel="stylesheet"> -->
 
-        <!-- Links -->
+        <!-- CSS Reset -->
         <link rel="stylesheet" href="/main.css">
         <script type="text/javascript" src="/scripts.js"></script>
 
@@ -4917,20 +4918,17 @@
       </div>
     </div>
   </div>
-
-
-
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <div class="ShadowBox">
                   <picture>
-                    <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
-                    <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_placeholder.jpg">
-                    <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
-                    <img src="./medium_default_placeholder.jpg" alt="Testing" style="width:100%;">
-                  </picture>
+  <source media="(min-width:1081px)" srcset="placeholderDarkBg_large.jpg">
+  <source media="(min-width:651px) and (max-width:1080px)" srcset="placeholderDarkBg_medium.jpg">
+  <source media="(max-width:650px)" srcset="placeholderDarkBg_small.jpg">
+  <img src="placeholderDarkBg_medium.jpg" alt="Adaptive Img" style="width:100%;">
+</picture>
                 </div>
               </div>
             </div>
@@ -4948,16 +4946,15 @@
 
 
 <div class="wrapper">
-  <div class="blankHS"></div>
   <div class="Grid Grid--full Grid--gutters">
     <div class="Grid-cell">
       <div class="element">
         <div class='filed'>
           <div class="tab-container">
             <div class="tabs">
-              <input type="radio" class="select-EJS" name="Item25" id="T251" >
+              <input type="radio" class="select-EJS" name="Item25" id="T251" checked>
               <label for="T251" class="tab">EJS</label>
-              <input type="radio" class="select-HTML" name="Item25" id="T252" checked>
+              <input type="radio" class="select-HTML" name="Item25" id="T252" >
               <label for="T252" class="tab">HTML</label>
               <input type="radio" class="select-CSS" name="Item25" id="T253" >
               <label for="T253" class="tab">CSS</label>
@@ -4965,29 +4962,20 @@
             <button class="copy-btn" style="display:inline;">Copy Code</button>
           </div>
           <div class="ejs-block code-block">
-            <pre class="ejs-code"><code>
-      </code></pre>
+            <pre class="ejs-code"><code>&lt;%- include(`${templatePath}/shared/comp_adaptiveImageLoader`, {
+    imgMediumUrl: ``
+    imgLargeUrl: ``
+    imgSmallUrl: ``
+    }) %&gt;</code></pre>
           </div>
           <div class="html-block code-block" style="display:none;">
-            <pre class="html-code"><code>
-        &lt;div class=&#34;wrapper&#34;&gt;
-          &lt;div class=&#34;Grid Grid--full Grid--gutters&#34;&gt;
-            &lt;div class=&#34;Grid-cell&#34;&gt;
-              &lt;div class=&#34;element&#34;&gt;
-                &lt;div class=&#34;ShadowBox&#34;&gt;
-                  &lt;picture&gt;
-                    &lt;source media=&#34;(min-width:1081px)&#34; srcset=&#34;./large_placeholder.jpg&#34;&gt;
-                    &lt;source media=&#34;(min-width:651px) and (max-width:1080px)&#34;
-                      srcset=&#34;./medium(default)_placeholder.jpg&#34;&gt;
-                    &lt;source media=&#34;(max-width:650px)&#34; srcset=&#34;./small_placeholder.jpg&#34;&gt;
-                    &lt;img src=&#34;./medium(default)_placeholder.jpg&#34; alt=&#34;Testing&#34; style=&#34;width:100%;&#34;&gt;
-                  &lt;/picture&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;             
-      </code></pre>
+            <pre class="html-code"><code>&lt;picture&gt;
+  &lt;source media=&#34;(min-width:1081px)&#34; srcset=&#34;./large_placeholder.jpg&#34;&gt;
+  &lt;source media=&#34;(min-width:651px) and (max-width:1080px)&#34;
+    srcset=&#34;./medium(default)_placeholder.jpg&#34;&gt;
+  &lt;source media=&#34;(max-width:650px)&#34; srcset=&#34;./small_placeholder.jpg&#34;&gt;
+  &lt;img src=&#34;./medium(default)_placeholder.jpg&#34; alt=&#34;Adaptive Image Loader&#34; style=&#34;width:100%;&#34;&gt;
+&lt;/picture&gt;</code></pre>
           </div>
           <div class="css-block code-block" style="display:none;">
             <pre class="css-code"><code> 
@@ -5229,16 +5217,16 @@
 
             <div class="tabContent-content">
               <div class="Grid Grid--full Grid--gutters">
-    <div class="Grid-cell">
-        <div class="element">
-            <div class="elementDemoCard">
-                <div class="elementInnerDemoCard heightS">
-                    <h4> <strong> Lorem ipsum</strong> </h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-            </div>
+  <div class="Grid-cell">
+    <div class="element">
+      <div class="elementDemoCard">
+        <div class="elementInnerDemoCard heightS">
+          <h4> <strong> Lorem ipsum</strong> </h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+      </div>
     </div>
+  </div>
 </div>
               
 
@@ -5301,6 +5289,7 @@
           </div>
         </div>
       </section>
+
       <section id="content35">
         
 
@@ -5341,15 +5330,14 @@
       </div>
     </div>
   </div>
-
         <div class="wrapper">
           <div id="tabsContent" class="tabContent">
             <!-- Tab 1 -->
             
 
 
-<input type="radio" name="cardnImg" id="ciTab1" class="tabContent-switch" checked>
-<label for="ciTab1" class="tabContent-link">_nolink</label>
+<input type="radio" name="cardAndImage" id="cardAndImageTab1" class="tabContent-switch" checked>
+<label for="cardAndImageTab1" class="tabContent-link">_nolink</label>
 
 
 
@@ -5373,7 +5361,6 @@
         </div>
     </div>
 </div>
-
               
 
 
@@ -5438,36 +5425,30 @@
 
             </div>
             <!-- Tab 2 -->
-
             
 
 
-<input type="radio" name="cardnImg" id="ciTab2" class="tabContent-switch" >
-<label for="ciTab2" class="tabContent-link">_link</label>
+<input type="radio" name="cardAndImage" id="cardAndImageTab2" class="tabContent-switch" >
+<label for="cardAndImageTab2" class="tabContent-link">_bg</label>
 
 
 
             <div class="tabContent-content">
               <div class="Grid Grid--full Grid--gutters">
-    <div class="Grid-cell">
+  <div class="Grid-cell">
+    <div class="element">
+      <div class="elementCard float cardBorder borderRadiusS shadowBoxLt">
+        <img src="./PlaceholderDark_zeroBorderRadius.svg" alt="Placeholder">
         <div class="element">
-        <div class="">
-          <div class="elementCard float cardBorder borderRadiusS shadowBoxLt">
-            <img src="./PlaceholderDark_zeroBottomBorderRadius.svg" alt="Placeholder">
-            <div class="element">
-              <div class="element">
-                <h5>Lorem ipsum dolor sit amet</h5>
-                <h3 class="arrCard aos-init aos-animate" data-aos="fade-up"><strong>Lorem ipsum</strong></h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus
-                  commodo.</h4>
-              </div>
-            </div>
-          </div>
+          <h5>tag(s)</h5>
+          <h3 class="arrCard aos-init aos-animate" data-aos="fade-up"><strong>Title</strong></h3>
+          <h4>Description</h4>
         </div>
       </div>
     </div>
   </div>
+</div>
+
               
 
 
@@ -5497,31 +5478,30 @@
           </div>
           <div class="ejs-block code-block">
             <pre class="ejs-code"><code>&lt;%- include(`${templatePath}/shared/comp_cardnImg_link`, {
-    cardTitle: ``, 
-    cardText: ``
+    cardnLinkTopText:`tag(s)`,
+    cardnLinkTitle: `Title`, 
+    cardnLinkText: `Description`
     }) %&gt;</code></pre>
           </div>
           <div class="html-block code-block" style="display:none;">
             <pre class="html-code"><code>&lt;div class=&#34;Grid Grid--full Grid--gutters&#34;&gt;
-    &lt;div class=&#34;Grid-cell&#34;&gt;
+  &lt;div class=&#34;Grid-cell&#34;&gt;
+    &lt;div class=&#34;element&#34;&gt;
+      &lt;div class=&#34;elementCard float cardBorder borderRadiusS shadowBoxLt&#34;&gt;
+        &lt;img src=&#34;./PlaceholderDark_zeroBottomBorderRadius.svg&#34; alt=&#34;Placeholder&#34;&gt;
         &lt;div class=&#34;element&#34;&gt;
-        &lt;div class=&#34;&#34;&gt;
-          &lt;div class=&#34;elementCard float cardBorder borderRadiusS shadowBoxLt&#34;&gt;
-            &lt;img src=&#34;./PlaceholderDark_zeroBottomBorderRadius.svg&#34; alt=&#34;Placeholder&#34;&gt;
-            &lt;div class=&#34;element&#34;&gt;
-              &lt;div class=&#34;element&#34;&gt;
-                &lt;h5&gt;Lorem ipsum dolor sit amet&lt;/h5&gt;
-                &lt;h3 class=&#34;arrCard aos-init aos-animate&#34; data-aos=&#34;fade-up&#34;&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt;&lt;/h3&gt;
-                &lt;h4&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus
-                  commodo.&lt;/h4&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
+          &lt;div class=&#34;element&#34;&gt;
+            &lt;h5&gt;Lorem ipsum dolor sit amet&lt;/h5&gt;
+            &lt;h3 class=&#34;arrCard aos-init aos-animate&#34; data-aos=&#34;fade-up&#34;&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt;&lt;/h3&gt;
+            &lt;h4&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus
+              commodo.&lt;/h4&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
           <div class="css-block code-block" style="display:none;">
             <pre class="css-code"><code></code></pre>
@@ -5533,13 +5513,11 @@
 </div>
 
             </div>
-
           </div>
         </div>
 
-
-
       </section>
+
       <section id="content36">
         
 
