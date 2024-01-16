@@ -3287,48 +3287,26 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Adaptive Image Loader' }) %>
 
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_adaptiveImageLoader`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
-
-
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <div class="ShadowBox">
-                  <picture>
-                    <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
-                    <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_placeholder.jpg">
-                    <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
-                    <img src="./medium_default_placeholder.jpg" alt="Testing" style="width:100%;">
-                  </picture>
+                  <%- include(`${templatePath}/shared/comp_adaptiveImageLoader`, {
+                    imgMediumUrl: `${websitePath}placeholderDarkBg_medium.jpg`,
+                    imgLargeUrl: `${websitePath}placeholderDarkBg_large.jpg`,
+                    imgSmallUrl: `${websitePath}placeholderDarkBg_small.jpg`
+                    }) %>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <%- include('../shared/block_tabs_copyCode', 
-      {Name: 'Item25', idTab1:'T251',idTab2:'T252',idTab3:'T253', tab1:'',tab2:'checked',tab3:'',
-      EJS: `
-      `,
-      HTML: `
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <picture>
-                    <source media="(min-width:1081px)" srcset="./large_placeholder.jpg">
-                    <source media="(min-width:651px) and (max-width:1080px)"
-                      srcset="./medium(default)_placeholder.jpg">
-                    <source media="(max-width:650px)" srcset="./small_placeholder.jpg">
-                    <img src="./medium(default)_placeholder.jpg" alt="Testing" style="width:100%;">
-                  </picture>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>             
-      `,
+      {Name: 'Item25', idTab1:'T251',idTab2:'T252',idTab3:'T253', tab1:'checked',tab2:'',tab3:'',
+      CCspacing: false,
+              EJS: ejsLiterals.ejs.comp_adaptiveImageLoader,
+              HTML: ejsLiterals.html.comp_adaptiveImageLoader,
       CSS:
       ` 
         `
@@ -3392,20 +3370,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+
       <section id="content35">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card with Image' }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_cardnImg`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
         <div class="wrapper">
           <div id="tabsContent" class="tabContent">
             <!-- Tab 1 -->
-            <%- include('../shared/comp_tabs_content', {name:'cardnImg', idTab: `ciTab1`, lableTxt:'_nolink', checked:'checked'}) %>
+            <%- include('../shared/comp_tabs_content', {name:'cardAndImage', idTab: `cardAndImageTab1`, lableTxt:'_nolink', checked:'checked'}) %>
             <div class="tabContent-content">
               <%- include(`${templatePath}/shared/comp_cardnImg_nolink`, {
                 cardTitle: ``, 
                 cardText: ``
                 }) %>
-
               <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
               { Name: 'cardnImg_noLink', idTab1:'cardnImgT1',idTab2:'cardnImgT2',idTab3:'cardnImgT3', tab1:'checked',tab2:'',tab3:'',
                 CCspacing: false,
@@ -3415,12 +3392,12 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               }) %>
             </div>
             <!-- Tab 2 -->
-
-            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'cardnImg', idTab: `ciTab2`, lableTxt:'_link', checked:''}) %>
+            <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'cardAndImage', idTab: `cardAndImageTab2`, lableTxt:'_bg', checked:''}) %>
             <div class="tabContent-content">
               <%- include(`${templatePath}/shared/comp_cardnImg_link`, {
-                cardTitle: ``, 
-                cardText: ``
+                cardnLinkTopText:`tag(s)`,
+                cardnLinkTitle: `Title`, 
+                cardnLinkText: `Description`
                 }) %>
               <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
               { Name: 'cardnImg_link', idTab1:'cardnImg_linkT1',idTab2:'cardnImg_linkT2',idTab3:'cardnImg_linkT3', tab1:'checked',tab2:'',tab3:'',
@@ -3430,13 +3407,11 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 CSS:``
               }) %>
             </div>
-
           </div>
         </div>
 
-
-
       </section>
+
       <section id="content36">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Audio Player' }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_audioPlayer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
