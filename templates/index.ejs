@@ -39,28 +39,59 @@
 
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
-    <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'BYPb2bOnboarding' }) %>
-    <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'BYPb2cConsumerBooking' }) %>
+      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        hoverBorderColor:`BYP`,
+        inputColor:`PWinput`,
+        cardPwImgURL:`${websitePath}/projectImages/Cover_BYP_AppB2B.png`,
+        cardPwTitle: `Streamlined Onboarding & Engagement: Mastering B2B SaaS Subscription Success`, 
+        cardPwDescription:`enhancing the onboarding and subscription experience for B2B clients in the SaaS domain. Our focus was on demystifying and refining these critical processes to ensure a seamless and engaging transition for new users.` 
+        }) %>
+      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        hoverBorderColor:`BYP`,
+        inputColor:`PWinput`,
+        cardPwImgURL:`${websitePath}/projectImages/Cover_BYP_B2C.png`,
+        cardPwTitle: `Consumer Booking Experience: A Journey to Enhanced Engagement and Conversion`, 
+        cardPwDescription:`Improving the consumer booking flow within a dynamic service platform. Our mission was to identify and alleviate pain points in the existing booking process, with a goal to substantially elevate user engagement and increase conversion rates.` 
+        }) %>
+    </div>
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        hoverBorderColor:`LASO`,
+        inputColor:`PWinputLH`,
+        cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_AdminPanel.png`,
+        cardPwTitle: `LASO Admin Panel: From Concept to Reality - Simplified User Management`, 
+        cardPwDescription:`The core focus of this panel was to efficiently manage a diverse range of user accounts, including B2B, D2C, and guest users. A unique aspect of this project was accommodating users from B2B with company sponsorship, adding another layer of complexity to the design process.` 
+        }) %>
+      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        hoverBorderColor:`LASO`,
+        inputColor:`PWinputLH`,
+        cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_RXZero.png`,
+        cardPwTitle: `Shifting Focus: The Evolution of LASO to RX Zero`, 
+        cardPwDescription:`This case study delves into LASO Health's strategic pivot towards the RX Zero model, moving away from RX Local and Telemedicine services. It highlights the key objectives of RX Zero, centering on credibility and affordability. The study showcases the streamlined onboarding and subscription process, along with a simplified ordering system.` 
+        }) %>
+    </div>
+    <div class="Grid Grid--gutters Grid--cols-2">
+      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        hoverBorderColor:`LASO`,
+        inputColor:`PWinputLH`,
+        cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_CostCalculator.png`,
+        cardPwTitle: `RX Zero Savings Explorer - Cost-benefit Calculator`, 
+        cardPwDescription:`This tool enables users to compare their current medication costs with the RX Zero subscription model, offering a seamless experience that simplifies making healthcare financial decisions.` 
+        }) %>
+      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+        hoverBorderColor:`GLORIFY`,
+        cardNoPwURL:`${websitePath}/glorify/`,
+        cardNoPwImgURL:`${websitePath}/projectImages/Cover_Glorify.png`,
+        cardNoPwTitle: `Glorify: Transforming Solitary Devotion into Community Engagement`, 
+        cardNoPwDescription:`This case study explores the evolution of the Glorify app, a mobile platform dedicated to enhancing individual spiritual journeys, into a vibrant community hub for collective faith building.` 
+        }) %>
+
     </div>
 
-    <div class="Grid Grid--gutters Grid--cols-2">
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'LHadminPanel' }) %>
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'rxZero' }) %>
-
-    </div>
 
     <div class="Grid Grid--gutters Grid--cols-2">
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'LHcostCal' }) %>
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'glorify' }) %>
-    </div>
-
-    <div class="Grid Grid--gutters Grid--cols-2">
-
       <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'appointa' }) %>
-
       <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'seer' }) %>
-
-
     </div>
 
   </div>
@@ -70,6 +101,11 @@
   <%- include('shared/comp_content_subtitle_arrow', {message: 'Design System' }) %>
   <!-- Arrow -->
   <!-- Content -->
+  <div class="wrapper">
+
+    <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'designSystem' }) %>
+
+  </div>
 
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
