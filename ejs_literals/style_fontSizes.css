@@ -1,0 +1,70 @@
+h1 {
+    font-size: clamp(1.3em, 1.8vw, 2.2em);
+    /* - first one is the minimum allowed font-size.
+      - third one is the maximum allowed font-size.
+      - second argument is font-size that you wish to always have. */
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+}
+
+h2 {
+    font-size: clamp(1.2em, 1.46vw, 1.68em);
+    margin-top: clamp(0.67em, 0.75em, 1.5em);
+    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+}
+
+h3 {
+    font-size: clamp(1.04em, 1.26vw, 1.48em);
+    margin-top: clamp(0.42em, 0.56em, 1.2em);
+    margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+}
+
+h4 {
+    font-size: clamp(0.92em, 1.12vw, 1.2em);
+    margin-top: clamp(0.36em, 0.4em, 1em);
+    margin-bottom: clamp(0.36em, 0.4em, 1em);
+}
+
+
+h5 {
+    font-size: clamp(0.84em, 0.92vw, 1em);
+    margin-top: clamp(0.2em, 0.4em, 1em);
+    margin-bottom: clamp(0.2em, 0.4em, 1em);
+}
+
+h6 {
+    font-size: clamp(0.72em, 0.78vw, 0.86em);
+    margin: 0.26em 0;
+}
+
+p.light {
+    font-weight: 100;
+}
+
+p {
+    /*     font-size: clamp(0.83em, 1.06vw, 1.2em); */
+
+    font-size: clamp(0.8em, 1vw, 1.1em);
+
+    font-weight: 300;
+}
+
+/* default/normal */
+p.thick {
+    font-weight: 500;
+}
+
+strong {
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    color: var(--Grey900);
+    margin: 1em, 0;
+}
+
+.styleCap {
+    text-transform: uppercase;
+}
+
+.textItalic {
+    font-style: italic;
+}

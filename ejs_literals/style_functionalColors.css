@@ -1,0 +1,41 @@
+            /* ===== color vickywang.me ===== */
+            .Warm {
+                color: var(--Warm);
+            }
+            .SkylineBlue {
+                color: var(--colorTealDk);
+            }
+            .SkylineBlueDarker {
+                color: var(--colorTealLt);
+            }
+            .SkylineBlueDarkerer {
+                color: var(--colorTealLtr);
+            }
+            .SkylineBlueDarkerest {
+                color: var(--colorTealLtest);
+            }
+            .BgAlet {
+                color: var(--alert);
+            }
+          /* ===== color vickywang.me ===== */
+          /* ===== bg color vickywang.me ===== */
+            .BgWarm {
+                background-color: var(--Warm);
+            }
+            .bgTeal800 {
+                background-color: var(--colorTealDk);
+            }
+            .SkylineBlueDarker {
+                background-color: var(--colorTealLt);
+            }
+            .SkylineBlueDarkerer {
+                background-color: var(--colorTealLtr);
+            }
+            .SkylineBlueDarkerest {
+                background-color: var(--colorTealLtest);
+            }
+            .BgAlet {
+                background-color: var(--alert);
+                color: var(--Grey200);
+            }
+           /* ===== bg color vickywang.me ===== */

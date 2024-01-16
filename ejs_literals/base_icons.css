@@ -1,0 +1,27 @@
+.iconXS {
+    width: 16px;
+    margin: 0;
+}
+.iconS {
+    width: 24px;
+    margin: 0;
+}
+.iconM {
+    width: 32px;
+}
+.iconL {
+    width: 40px;
+}
+.iconXL {
+    width: 48px;
+}
+.iconMax {
+    width: 56px;
+}
+.iconDemo {
+    margin: 0.6em;
+    padding: 1.2em;
+    width: 2em;
+    height: auto;
+    cursor: pointer;
+}
