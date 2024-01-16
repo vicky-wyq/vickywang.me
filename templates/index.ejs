@@ -40,6 +40,7 @@
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        cardPwID:`onboardingSubscription`,
         hoverBorderColor:`BYP`,
         inputColor:`PWinput`,
         cardPwImgURL:`${websitePath}/projectImages/Cover_BYP_AppB2B.png`,
@@ -47,6 +48,7 @@
         cardPwDescription:`enhancing the onboarding and subscription experience for B2B clients in the SaaS domain. Our focus was on demystifying and refining these critical processes to ensure a seamless and engaging transition for new users.` 
         }) %>
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        cardPwID:`consumerBooking`,
         hoverBorderColor:`BYP`,
         inputColor:`PWinput`,
         cardPwImgURL:`${websitePath}/projectImages/Cover_BYP_B2C.png`,
@@ -56,6 +58,7 @@
     </div>
     <div class="Grid Grid--gutters Grid--cols-2">
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        cardPwID:`adminPanel`,
         hoverBorderColor:`LASO`,
         inputColor:`PWinputLH`,
         cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_AdminPanel.png`,
@@ -63,6 +66,7 @@
         cardPwDescription:`The core focus of this panel was to efficiently manage a diverse range of user accounts, including B2B, D2C, and guest users. A unique aspect of this project was accommodating users from B2B with company sponsorship, adding another layer of complexity to the design process.` 
         }) %>
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        cardPwID:`rxZero`,
         hoverBorderColor:`LASO`,
         inputColor:`PWinputLH`,
         cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_RXZero.png`,
@@ -72,6 +76,7 @@
     </div>
     <div class="Grid Grid--gutters Grid--cols-2">
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        cardPwID:`costCalculator`,
         hoverBorderColor:`LASO`,
         inputColor:`PWinputLH`,
         cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_CostCalculator.png`,
@@ -100,15 +105,12 @@
   <!-- Arrow -->
   <%- include('shared/comp_content_subtitle_arrow', {message: 'Design System' }) %>
   <!-- Arrow -->
-  <!-- Content -->
-  <div class="wrapper">
 
-    <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'designSystem' }) %>
-
-  </div>
 
   <div class="wrapper">
-    <div class="Grid Grid--gutters Grid--cols-2">
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'designSystem' }) %>
+
       <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'designSystem' }) %>
       <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'navigation' }) %>
     </div>

@@ -262,6 +262,8 @@ function initializeToggles() {
     });
   });
 }
+//Read more/less
+
 
 const k = {
   onboardingSubscription: 'U2FsdGVkX1/flTfDtan9WXoDnkCK30v0Y5pr4g5B680u6cXGNODszTEE+d0dCpzHn1coOmfqkGnppGteFyeRmn8ogiL8n2JOH2IyzJ2ygMU=',
@@ -275,7 +277,7 @@ const k = {
 
 function initializePassword() {
   // Select all password fields and submit buttons
-  const passwordFields = document.querySelectorAll(".PWinputLanding");
+  const passwordFields = document.querySelectorAll(".psJS");
   const submitButtons = document.querySelectorAll(".passwordArr");
 
   // Iterate over each password field
@@ -314,7 +316,11 @@ function initializePassword() {
     });
   });
 }
-//Read more/less
+
+
+
+
+
 
 
 // ====== Components ====== //
