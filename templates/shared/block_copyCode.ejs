@@ -1,3 +1,38 @@
+<% if (typeof wrapperGrid === 'undefined' ) { 
+    wrapperGrid ='' ; 
+  } %>
+<% if (wrapperGrid === true) { %>
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+        <div class='filed'>
+          <div class="tab-container">
+            <div class="tabs">
+              <input type="radio" class="select-EJS" name="<%= copyCodeName %>" id="<%= copyCodeT1 %>" <%=t1Checked %>>
+              <label for="<%= copyCodeT1 %>" class="tab">EJS</label>
+              <input type="radio" class="select-HTML" name="<%= copyCodeName %>" id="<%= copyCodeT2 %>" <%=t2Checked %>>
+              <label for="<%= copyCodeT2 %>" class="tab">HTML</label>
+              <input type="radio" class="select-CSS" name="<%= copyCodeName %>" id="<%= copyCodeT3 %>" <%=t3Checked %>>
+              <label for="<%= copyCodeT3 %>" class="tab">CSS</label>
+            </div>
+            <button class="copy-btn" style="display:inline;">Copy Code</button>
+          </div>
+          <div class="ejs-block code-block">
+            <pre class="ejs-code"><code><%= EJS %></code></pre>
+          </div>
+          <div class="html-block code-block" style="display:none;">
+            <pre class="html-code"><code><%= HTML %></code></pre>
+          </div>
+          <div class="css-block code-block" style="display:none;">
+            <pre class="css-code"><code><%= CSS %></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% } else { %>
 <div class="Grid-cell">
   <div class="element">
     <div class='filed'>
@@ -24,3 +59,4 @@
     </div>
   </div>
 </div>
+<% } %>

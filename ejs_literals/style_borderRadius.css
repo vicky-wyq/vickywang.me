@@ -1,0 +1,31 @@
+.borderRadiusXS {
+    border-radius: var(--border-radiusXS);
+    -webkit-border-radius: var(--border-radiusXS);
+    -moz-border-radius: var(--border-radiusXS);
+}
+.borderRadiusS {
+    border-radius: var(--border-radiusS);
+    -webkit-border-radius: var(--border-radiusS);
+    -moz-border-radius: var(--border-radiusS);
+}
+.borderRadiusM {
+    border-radius: var(--border-radiusM);
+    -webkit-border-radius: var(--border-radiusM);
+    -moz-border-radius: var(--border-radiusM);
+}
+.borderRadiusL {
+    border-radius: var(--border-radiusL);
+    -webkit-border-radius: var(--border-radiusL);
+    -moz-border-radius: var(--border-radiusL);
+}
+.borderRadiusXL {
+    border-radius: var(--border-radiusXL);
+    -webkit-border-radius: var(--border-radiusXL);
+    -moz-border-radius: var(--border-radiusXL);
+}
+
+.borderRadiusMax {
+    border-radius: var(--border-radiusMax);
+    -webkit-border-radius: var(--border-radiusMax);
+    -moz-border-radius: var(--border-radiusMax);
+}

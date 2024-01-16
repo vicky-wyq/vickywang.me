@@ -319,81 +319,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
 
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'neutralShades', 
+            copyCodeT1:`neutralShadesT1`, 
+            copyCodeT2:`neutralShadesT2`, 
+            copyCodeT3:`neutralShadesT3`,
+            t1Checked:``,          
+            t2Checked:``,
+            t3Checked:`checked`,
+            EJS: ejsLiterals.ejs.style_neutralShades,
+            HTML: ejsLiterals.html.style_neutralShades,
+            CSS: ejsLiterals.css.style_neutralShades,
+          }) %>
 
-
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item1', idTab1:'T11',idTab2:'T12',idTab3:'T13', tab1:'',tab2:'',tab3:'checked',
-          EJS: ``,
-          HTML: ``,
-          CSS:` 
-                      /* ===== color grey ===== */
-                        .Grey900 {
-                            color: var(--Grey900);
-                        }
-                        .Grey800 {
-                            color: var(--Grey800);
-                        }
-                        .Grey700 {
-                            color: var(--Grey700);
-                        }
-                        .Grey600 {
-                            color: var(--Grey600);
-                        }
-                        .Grey500 {
-                            color: var(--Grey500);
-                        }
-                        .Grey400 {
-                            color: var(--Grey400);
-                        }
-                        .Grey300 {
-                            color: var(--Grey300);
-                        }
-                        .Grey200 {
-                            color: var(--Grey200);
-                        }
-                        .Grey100 {
-                            color: var(--Grey100);
-                        }
-                      /* ===== color grey ===== */
-                      /* ===== bg color grey ===== */
-                        .GreyBg900 {
-                            background: var(--Grey900);
-                        }
-                        .GreyBg800 {
-                            background: var(--Grey800);
-                        }
-                        .GreyBg700 {
-                            background: var(--Grey700);
-                        }
-                        .GreyBg600 {
-                            background: var(--Grey600);
-                        }
-                        .GreyBg500 {
-                            background: var(--Grey500);
-                        }
-                        .GreyBg400 {
-                            background: var(--Grey400);
-                        }
-                        .GreyBg300 {
-                            background: var(--Grey300);
-                        }
-                        .GreyBg200 {
-                            background: var(--Grey200);
-                        }
-                        .GreyBg100 {
-                            background: var(--Grey100);
-                        }
-                        .WhiteBg {
-                            background-color: var(--white);
-                        
-                        }
-                        .WhiteBgTrans {
-                            background-color: var(--White-transparent);
-                        }
-                      /* ===== bg color grey ===== */
-                    
-            `
-            }) %>
 
 
 
@@ -522,60 +461,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
           </div>
           <!-- Color -->
 
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item2', idTab1:'T21',idTab2:'T22',idTab3:'T23', tab1:'',tab2:'',tab3:'checked',
-          EJS: ``,
-          HTML: ``,
-          CSS:` 
- 
-            /* ===== color vickywang.me ===== */
-              .Warm {
-                  color: var(--Warm);
-              }
-              .SkylineBlue {
-                  color: var(--colorTealDk);
-              }
-              .SkylineBlueDarker {
-                  color: var(--colorTealLt);
-              }
-              .SkylineBlueDarkerer {
-                  color: var(--colorTealLtr);
-              }
-              .SkylineBlueDarkerest {
-                  color: var(--colorTealLtest);
-              }
-              .BgAlet {
-                  color: var(--alert);
-              }
-            /* ===== color vickywang.me ===== */
-            /* ===== bg color vickywang.me ===== */
-              .BgWarm {
-                  background-color: var(--Warm);
-              }
-              .bgTeal800 {
-                  background-color: var(--colorTealDk);
-              }
-              .SkylineBlueDarker {
-                  background-color: var(--colorTealLt);
-              }
-              .SkylineBlueDarkerer {
-                  background-color: var(--colorTealLtr);
-              }
-              .SkylineBlueDarkerest {
-                  background-color: var(--colorTealLtest);
-              }
-              .BgAlet {
-                  background-color: var(--alert);
-                  color: var(--Grey200);
-              }
-             /* ===== bg color vickywang.me ===== */
-                    
-                    
-            `
-            }) %>
-
-
-          <div class="blankHM"></div>
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'functionalColors', 
+            copyCodeT1:`functionalColorsT1`, 
+            copyCodeT2:`functionalColorsT2`, 
+            copyCodeT3:`functionalColorsT3`,
+            t1Checked:``,          
+            t2Checked:``,
+            t3Checked:`checked`,
+            EJS: ejsLiterals.ejs.style_functionalColors,
+            HTML: ejsLiterals.html.style_functionalColors,
+            CSS: ejsLiterals.css.style_functionalColors,
+          }) %>
 
         </div>
 
@@ -608,13 +506,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                       </div>
                     </div>
                   </div>
-                  <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                { Name: 'fontFamily', idTab1:'horizontalCarouselT1',idTab2:'horizontalCarouselT2',idTab3:'horizontalCarouselT3', tab1:'',tab2:'',tab3:'checked',
-                  CCspacing: false,
-                  EJS: ``,
-                  HTML: ``,
-                  CSS:`font-family: 'Lato', sans-serif;`
-                }) %>
+                  <%- include(`${templatePath}/shared/block_copyCode`, {
+                    wrapperGrid: ``, 
+                    copyCodeName:'fontFamily', 
+                    copyCodeT1:`fontFamilyT1`, 
+                    copyCodeT2:`fontFamilyT2`, 
+                    copyCodeT3:`fontFamilyT3`,
+                    t1Checked:``,          
+                    t2Checked:``,
+                    t3Checked:`checked`,
+                    EJS: ``,
+                    HTML: ``,
+                    CSS:`font-family: 'Lato', sans-serif;`
+                  }) %>
+
                 </div>
                 <!-- Tab 2 -->
                 <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'typography', idTab: `typographyTab2`, lableTxt:'fontWeight', checked:''}) %>
@@ -642,27 +547,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                       </div>
                     </div>
                   </div>
-                  <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                { Name: 'fontWeight', idTab1:'verticalCarouselT1',idTab2:'verticalCarouselT2',idTab3:'_verticalCarouselT3', tab1:'',tab2:'',tab3:'checked',
-                CCspacing: false,
-                  EJS: ``,
-                  HTML: ``,
-                  CSS:`.fontWeight100 {
-                            font-weight: 100;
+                  <%- include(`${templatePath}/shared/block_copyCode`, {
+                    wrapperGrid: ``, 
+                    copyCodeName:'fontWeight', 
+                    copyCodeT1:`fontWeightT1`, 
+                    copyCodeT2:`fontWeightT2`, 
+                    copyCodeT3:`fontWeightT3`,
+                    t1Checked:``,          
+                    t2Checked:``,
+                    t3Checked:`checked`,
+                    EJS: ``,
+                    HTML: ``,
+                    CSS: ejsLiterals.css.style_fontWeight,
+                     }) %>
 
-                        }
-                        .fontWeight300 {
-                            font-weight: 300;
-
-                        }
-                        .fontWeight400 {
-                            font-weight: 400;
-                        }
-
-                        .fontWeight700 {
-                            font-weight: 700;
-                        }`
-                }) %>
                 </div>
                 <!-- Tab 3 -->
                 <%- include('../shared/comp_tabs_content', {name:'typography', idTab: `typographyTab3`, lableTxt:'fontSize', checked:''}) %>
@@ -711,84 +609,21 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                       </div>
                     </div>
                   </div>
-                  <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                  { Name: 'fontSize', idTab1:'carouselVert_noBgT1',idTab2:'carouselVert_noBgT2',idTab3:'carouselVert_noBgT3', tab1:'',tab2:'',tab3:'checked',
-                  CCspacing: false,
 
-                  EJS: ``,
-                  HTML: ``,
-                  CSS:`h1 {
-                          font-size: clamp(1.3em, 1.8vw, 2.2em);
-                          /* - first one is the minimum allowed font-size.
-                            - third one is the maximum allowed font-size.
-                            - second argument is font-size that you wish to always have. */
-                          margin-top: clamp(0.67em, 0.75em, 1.5em);
-                          margin-bottom: clamp(0.67em, 0.75em, 1.5em);
-                      }
+                  <%- include(`${templatePath}/shared/block_copyCode`, {
+                    wrapperGrid: ``, 
+                    copyCodeName:'fontSize', 
+                    copyCodeT1:`fontSizeT1`, 
+                    copyCodeT2:`fontSizeT2`, 
+                    copyCodeT3:`fontSizeT3`,
+                    t1Checked:``,          
+                    t2Checked:``,
+                    t3Checked:`checked`,
+                    EJS: ``,
+                    HTML: ``,
+                    CSS: ejsLiterals.css.style_fontSizes,
+                     }) %>
 
-                      h2 {
-                          font-size: clamp(1.2em, 1.46vw, 1.68em);
-                          margin-top: clamp(0.67em, 0.75em, 1.5em);
-                          margin-bottom: clamp(0.67em, 0.75em, 1.5em);
-                      }
-
-                      h3 {
-                          font-size: clamp(1.04em, 1.26vw, 1.48em);
-                          margin-top: clamp(0.42em, 0.56em, 1.2em);
-                          margin-bottom: clamp(0.42em, 0.56em, 1.2em);
-                      }
-
-                      h4 {
-                          font-size: clamp(0.92em, 1.12vw, 1.2em);
-                          margin-top: clamp(0.36em, 0.4em, 1em);
-                          margin-bottom: clamp(0.36em, 0.4em, 1em);
-                      }
-
-
-                      h5 {
-                          font-size: clamp(0.84em, 0.92vw, 1em);
-                          margin-top: clamp(0.2em, 0.4em, 1em);
-                          margin-bottom: clamp(0.2em, 0.4em, 1em);
-                      }
-
-                      h6 {
-                          font-size: clamp(0.72em, 0.78vw, 0.86em);
-                          margin: 0.26em 0;
-                      }
-
-                      p.light {
-                          font-weight: 100;
-                      }
-
-                      p {
-                          /*     font-size: clamp(0.83em, 1.06vw, 1.2em); */
-
-                          font-size: clamp(0.8em, 1vw, 1.1em);
-
-                          font-weight: 300;
-                      }
-
-                      /* default/normal */
-                      p.thick {
-                          font-weight: 500;
-                      }
-
-                      strong {
-                          font-family: 'lato', sans-serif;
-                          font-weight: 400;
-                          color: var(--Grey900);
-                          margin: 1em, 0;
-                      }
-
-                      .styleCap {
-                          text-transform: uppercase;
-                      }
-
-                      .textItalic {
-                          font-style: italic;
-                      }
-                      `
-                }) %>
                 </div>
                 <!-- Tab 4 -->
                 <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'typography', idTab: `typographyTab4`, lableTxt:'fontOthers', checked:''}) %>
@@ -819,41 +654,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                       </div>
                     </div>
                   </div>
-                  <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                  { Name: 'fontOthers', idTab1:'carouselVert_bgT1',idTab2:'carouselVert_bgT2',idTab3:'carouselVert_bgT3', tab1:'',tab2:'',tab3:'checked',
-                    CCspacing: false,
+                  <%- include(`${templatePath}/shared/block_copyCode`, {
+                    wrapperGrid: ``, 
+                    copyCodeName:'fontOthers', 
+                    copyCodeT1:`fontOthersT1`, 
+                    copyCodeT2:`fontOthersT2`, 
+                    copyCodeT3:`fontOthersT3`,
+                    t1Checked:``,          
+                    t2Checked:``,
+                    t3Checked:`checked`,
                     EJS: ``,
                     HTML: ``,
-                    CSS:`a:link.textUnderline {
-                          text-decoration-line: underline;
-                          text-decoration-thickness: 0.03em;
-                          text-underline-offset: 6px;
-                          text-decoration-color: var(--Grey900);
-                      }
+                    CSS: ejsLiterals.css.style_fontOthers,
+                     }) %>
 
-                      .textUnderline {
-                          text-decoration-line: underline;
-                          text-decoration-thickness: 0.03em;
-                          text-underline-offset: 6px;
-                          text-decoration-color: var(--Grey900);
-                      }
-
-                      /* text*/
-
-                      .allCaps {
-                          text-transform: uppercase;
-                      }
-
-                      .strikethrough {
-                          text-decoration: line-through;
-                      }
-
-                      .textDecor {
-                          text-decoration: underline;
-                          text-decoration-style: double;
-                          text-decoration-thickness: 2px;
-                      }`
-                  }) %>
                 </div>
               </div>
             </div>
@@ -873,23 +687,10 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="blankHXS"></div>
 
 
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Logo with Text` }) %>
 
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Logo with Text<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
-          <div class="blankHXS"></div>
 
           <div class="Grid Grid--gutters Grid--cols-2">
             <div class="Grid-cell">
@@ -900,20 +701,8 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="blankHS"></div>
 
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Web Logo<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Web Logo` }) %>
 
           <div class="blankHXS"></div>
 
@@ -941,20 +730,9 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="blankHXS"></div>
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Shadow & Depth` }) %>
 
-          <!-- Arrow -->
-          <div class="wrapper">
-            <div class="Grid Grid--full Grid--gutters u-textCenter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h2 class="tArrow">Shadow &#38; Depth<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Arrow -->
+
           <div class="blankHXS"></div>
           <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
             <div class="Grid-cell">
@@ -1008,19 +786,9 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <div class="blankHXS"></div>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Devices` }) %>
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Devices<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+
         <div class="blankHXS"></div>
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
@@ -1052,23 +820,10 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <div class="blankHM"></div>
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Break Points` }) %>
 
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Break Points<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-
-        <div class="blankHXS"></div>
         <div class="wrapper">
 
           <div class="Grid Grid--full Grid--gutters u-textCenter">
@@ -1147,32 +902,30 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
+        <div class="blankHXS"></div>
 
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item3', idTab1:'T31',idTab2:'T32',idTab3:'T33', tab1:'',tab2:'',tab3:'checked',
-        EJS: ``,
-        HTML: ``,
-        CSS:` 
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'breakPoints', 
+          copyCodeT1:`breakPointsT1`, 
+          copyCodeT2:`breakPointsT2`, 
+          copyCodeT3:`breakPointsT3`,
+          t1Checked:``,          
+          t2Checked:``,
+          t3Checked:`checked`,
+          EJS: ``,
+          HTML: ``,
+          CSS:` 
           @media all and (min-width: 1880px) {}
           @media all and (max-width: 1080px) {}
           @media all and (max-width: 680px) {}
           @media screen and (max-width: 480px) {}
-          `
+          `           
           }) %>
 
-        <div class="blankHM"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Spacing &#38; Margin<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Spacing & Margin` }) %>
+
+
 
 
         <div class="blankHXS"></div>
@@ -1216,58 +969,25 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item4', idTab1:'T41',idTab2:'T42',idTab3:'T43', tab1:'',tab2:'',tab3:'checked',
-        EJS: ``,
-        HTML: `
-          <div class="noMargin"></div>
-          <div class="marginXS"></div>
-          <div class="marginS"></div>
-          <div class="marginM"></div>
-          <div class="marginL"></div>
-          <div class="marginXL"></div>
-          <div class="marginMax"></div>
-        `,
-        CSS:` 
-          .noMargin {
-              margin: 0 !important;
-          }
-          .marginXS {
-              margin: 0.5em;
-          }
-          .marginS {
-              margin: 1em;
-          }
-          .marginM {
-              margin: 1.5em;
-          }
-          .marginL {
-              margin: 2em;
-          }
-          .marginXL {
-              margin: 2.5em;
-          }
-          .marginMax {
-              margin: 3em;
-          }
-          `
+
+
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'spacingMargin', 
+          copyCodeT1:`spacingMarginT1`, 
+          copyCodeT2:`spacingMarginT2`, 
+          copyCodeT3:`spacingMarginT3`,
+          t1Checked:``,          
+          t2Checked:``,
+          t3Checked:`checked`,
+          EJS: ``,
+          HTML: ejsLiterals.html.style_spacingMargin,
+          CSS: ejsLiterals.css.style_spacingMargin,
           }) %>
-        <div class="blankHM"></div>
 
 
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Padding<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="blankHXS"></div>
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Padding` }) %>
+
         <div class="wrapper">
 
           <div class="Grid Grid--gutters Grid--cols-6 Grid--bottom">
@@ -1321,64 +1041,24 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item5', idTab1:'T51',idTab2:'T52',idTab3:'T53', tab1:'',tab2:'',tab3:'checked',
-        EJS: ``,
-        HTML: `
-          <div class="paddingXS"></div>
-          <div class="paddingS"></div>
-          <div class="paddingM"></div>
-          <div class="paddingL"></div>
-          <div class="paddingXL"></div>
-          <div class="paddingMax"></div>
-        `,
-        CSS:` 
-          .paddingXS {
-            padding: var(--paddingXS);
-            width: fit-content;
-          }
-          .paddingS {
-              padding: var(--paddingS);
-              width: fit-content;
-          }
-          .paddingM {
-              padding: var(--paddingM);
-              width: fit-content;
-          }
-
-          .paddingL {
-              padding: var(--paddingL);
-              width: fit-content;
-          }
-          .paddingXL {
-              padding: var(--paddingXL);
-              width: fit-content;
-          }
-          .paddingMax {
-              padding: var(--paddingMax);
-              width: fit-content;
-          }
-          `
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'spacingPadding', 
+          copyCodeT1:`spacingPaddingT1`, 
+          copyCodeT2:`spacingPaddingT2`, 
+          copyCodeT3:`spacingPaddingT3`,
+          t1Checked:``,          
+          t2Checked:``,
+          t3Checked:`checked`,
+          EJS: ``,
+          HTML: ejsLiterals.html.style_spacingPadding,
+          CSS: ejsLiterals.css.style_spacingPadding,
           }) %>
-        <div class="blankHM"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Border Radius<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="wrapper">
 
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Border Radius` }) %>
+        <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-6 Grid--bottom">
-
-
             <div class="Grid-cell">
               <div class="element">
                 <div class="WarmBg spacing6 borderRadiusXS"></div>
@@ -1397,8 +1077,6 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 <p><strong>M</strong> 12 px &#47; 0.75 em</p>
               </div>
             </div>
-
-
             <div class="Grid-cell">
               <div class="element">
                 <div class="WarmBg spacing6 borderRadiusL"></div>
@@ -1417,54 +1095,21 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 <p><strong>Max</strong> 50%</p>
               </div>
             </div>
-
-
           </div>
         </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item6', idTab1:'T61',idTab2:'T62',idTab3:'T63', tab1:'',tab2:'',tab3:'checked',
-        EJS: ``,
-        HTML: `
-          <div class="borderRadiusXS"></div>
-          <div class="borderRadiusS"></div>
-          <div class="borderRadiusM"></div>
-          <div class="borderRadiusL"></div>
-          <div class="borderRadiusXL"></div>
-          <div class="borderRadiusMax"></div>
-        `,
-        CSS:` 
-          .borderRadiusXS {
-              border-radius: var(--border-radiusXS);
-              -webkit-border-radius: var(--border-radiusXS);
-              -moz-border-radius: var(--border-radiusXS);
-          }
-          .borderRadiusS {
-              border-radius: var(--border-radiusS);
-              -webkit-border-radius: var(--border-radiusS);
-              -moz-border-radius: var(--border-radiusS);
-          }
-          .borderRadiusM {
-              border-radius: var(--border-radiusM);
-              -webkit-border-radius: var(--border-radiusM);
-              -moz-border-radius: var(--border-radiusM);
-          }
-          .borderRadiusL {
-              border-radius: var(--border-radiusL);
-              -webkit-border-radius: var(--border-radiusL);
-              -moz-border-radius: var(--border-radiusL);
-          }
-          .borderRadiusXL {
-              border-radius: var(--border-radiusXL);
-              -webkit-border-radius: var(--border-radiusXL);
-              -moz-border-radius: var(--border-radiusXL);
-          }
 
-          .borderRadiusMax {
-              border-radius: var(--border-radiusMax);
-              -webkit-border-radius: var(--border-radiusMax);
-              -moz-border-radius: var(--border-radiusMax);
-          }
-          `
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'borderRadius', 
+          copyCodeT1:`borderRadiusT1`, 
+          copyCodeT2:`borderRadiusT2`, 
+          copyCodeT3:`borderRadiusT3`,
+          t1Checked:``,          
+          t2Checked:``,
+          t3Checked:`checked`,
+          EJS: ``,
+          HTML: ejsLiterals.html.style_borderRadius,
+          CSS: ejsLiterals.css.style_borderRadius,
           }) %>
 
 
@@ -1631,64 +1276,24 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item7', idTab1:'T71',idTab2:'T72',idTab3:'T73', tab1:'',tab2:'checked',tab3:'',
-          EJS: ``,
-          HTML: `
-            <div class="Grid Grid--gutters Grid--full u-textCenter">
-              <div class="Grid-cell"><div class="Demo content-1of1"></div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
-              <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
-              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
-              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--cols-6 u-textCenter">
-              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--cols-8 u-textCenter">
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-              <div class="Grid-cell"><div class="Demo content-1of8"></div></div>
-            </div>  
-          `,
-          CSS:` 
-            `
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'basicGrid', 
+            copyCodeT1:`basicGridT1`, 
+            copyCodeT2:`basicGridT2`, 
+            copyCodeT3:`basicGridT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ``,
+            HTML: ejsLiterals.html.style_basicGrid,
+            CSS: ejsLiterals.css.style_basicGrid,
             }) %>
-          <div class="blankHM"></div>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Left &#47; Center &#47; Right Content Alignment<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
+
+
+
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Left / Center / Right Content Alignment` }) %>
+
 
           <div class="Grid Grid--gutters Grid--1of2">
             <div class="Grid-cell">
@@ -1712,38 +1317,24 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item8', idTab1:'T81',idTab2:'T82',idTab3:'T83', tab1:'',tab2:'checked',tab3:'',
-          EJS: ``,
-          HTML: `
-            <div class="Grid Grid--gutters Grid--1of6">
-              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
-              <div class="Grid-cell"><div class="Demo">auto</div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--1of4">
-              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
-              <div class="Grid-cell"><div class="Demo">auto</div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--1of3">
-              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
-              <div class="Grid-cell"><div class="Demo">auto</div></div>
-            </div>
-          `,
-          CSS:` 
-            `
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'contentAlignment', 
+            copyCodeT1:`contentAlignmentT1`, 
+            copyCodeT2:`contentAlignmentT2`, 
+            copyCodeT3:`contentAlignmentT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ``,
+            HTML: ejsLiterals.html.style_contentAlignment,
+            CSS: ejsLiterals.css.style_contentAlignment,
             }) %>
-          <div class="blankHM"></div>
+
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Vertical Alignment` }) %>
 
 
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Vertical Alignment <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
+
           <div class="Grid Grid--gutters Grid--cols-3 Grid--top">
             <div class="Grid-cell">
               <div class="Demo">
@@ -1838,36 +1429,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item9', idTab1:'T91',idTab2:'T92',idTab3:'T93', tab1:'',tab2:'checked',tab3:'',
-          EJS: ``,
-          HTML: `
-            <div class="Grid Grid--gutters Grid--1of2">
-            <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
-            </div>
-            
-            <div class="Grid Grid--gutters Grid--1of2 Grid--center">
-              <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
-            </div>
-            
-            <div class="Grid Grid--gutters Grid--1of2 Grid--right">
-              <div class="Grid-cell"><div class="Demo content-1of2"></div></div>
-            </div>
-          `,
-          CSS:` 
-            `
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'vertAlignment', 
+            copyCodeT1:`vertAlignmentT1`, 
+            copyCodeT2:`vertAlignmentT2`, 
+            copyCodeT3:`vertAlignmentT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ``,
+            HTML: ejsLiterals.html.style_vertAlignment,
+            CSS: ejsLiterals.css.style_vertAlignment,
             }) %>
-
-          <div class="blankHM"></div>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Nesting <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Nesting` }) %>
           <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
             <div class="Grid-cell">
               <div class="Demo">
@@ -1898,29 +1473,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'nesting', 
+            copyCodeT1:`nestingT1`, 
+            copyCodeT2:`nestingT2`, 
+            copyCodeT3:`nestingT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ``,
+            HTML: ejsLiterals.html.style_nesting,
+            CSS: ejsLiterals.css.style_nesting,
+            }) %>
 
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item10', idTab1:'T101',idTab2:'T102',idTab3:'T103', tab1:'',tab2:'checked',tab3:'',
-          EJS: ``,
-          HTML: `
-            <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
-            <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
-              <div class="Grid-cell"><div class="Demo">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
-                  <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
-                  <div class="Grid-cell"><div class="Demo">
-                    <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
-                      <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
-                      <div class="Grid-cell"><div class="Demo">auto</div></div>
-                    </div>
-                  </div></div>
-                </div>
-              </div></div>
-            </div>
-          `,
-          CSS:` 
-            `
-          }) %>
 
           <div class="blankHM"></div>
 
@@ -1970,38 +1536,22 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item11', idTab1:'T111',idTab2:'T112',idTab3:'T113', tab1:'',tab2:'checked',tab3:'',
-          EJS: ``,
-          HTML: `
-            <div class="Grid Grid--gutters Grid--1of6">
-              <div class="Grid-cell"><div class="Demo content-1of6"></div></div>
-              <div class="Grid-cell"><div class="Demo">auto</div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--1of4">
-              <div class="Grid-cell"><div class="Demo content-1of4"></div></div>
-              <div class="Grid-cell"><div class="Demo">auto</div></div>
-            </div>
-            <div class="Grid Grid--gutters Grid--1of3">
-              <div class="Grid-cell"><div class="Demo content-1of3"></div></div>
-              <div class="Grid-cell"><div class="Demo">auto</div></div>
-            </div>
-          `,
-          CSS:` 
-            `
-          }) %>
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'sidebarContent', 
+            copyCodeT1:`sidebarContentT1`, 
+            copyCodeT2:`sidebarContentT2`, 
+            copyCodeT3:`sidebarContentT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ``,
+            HTML: ejsLiterals.html.style_sidebarContent,
+            CSS: ejsLiterals.css.style_sidebarContent,
+            }) %>
 
-          <div class="blankHM"></div>
+<%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Fixed-width Container on the Right Side` }) %>
 
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Fixed-width Container on the Right Side <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="blankHXS"></div>
           <div class="Grid--gutters">
 
             <div class="rowToColumn">
@@ -2017,28 +1567,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <%- include('../shared/block_tabs_copyCode', 
-          {Name: 'Item12', idTab1:'T121',idTab2:'T122',idTab3:'T123', tab1:'',tab2:'checked',tab3:'',
-          EJS: ``,
-          HTML: `
-            <div class="rowToColumn">
-              <div class="widthMax">
-                <div class="Demo ">
-                  <div class="elementInnerDemo max-width"></div>
-                </div>
-              </div>
-              <div class="paddingleft">
-                <div class="Demo widthFitContent">
-                  <div class="elementInnerDemo fix-width"></div>
-                </div>
-              </div>
-            </div>
-          `,
-          CSS:` 
-            `
-          }) %>
-
-          <div class="blankHM"></div>
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'sidebarRight', 
+            copyCodeT1:`sidebarRightT1`, 
+            copyCodeT2:`sidebarRightT2`, 
+            copyCodeT3:`sidebarRightT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ``,
+            HTML: ejsLiterals.html.style_sidebarRight,
+            CSS: ejsLiterals.css.style_sidebarRight,
+            }) %>
         </div>
 
       </section>
@@ -2059,19 +1600,9 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
         <div class="blankHXS"></div>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_buttons`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
 
-        <div class="blankHS"></div>
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Buttons<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Buttons` }) %>
+
         <div class="blankHXS"></div>
 
         <div class="wrapper">
@@ -2123,26 +1654,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
 
-          <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item13', idTab1:'T131',idTab2:'T132',idTab3:'T133', tab1:'',tab2:'checked',tab3:'',
-        EJS: ``,
-        HTML: `
-          <!-- Large button -->
-          <a> <button class="buttonLanding">Button &nbsp; </button></a>
-          <a> <button class="buttonLanding arrButton">Button &nbsp;</button></a>
-          <!-- Large button -->
-
-          <!-- Small button -->
-          <a> <button class="button-35 DS">Button</button></a>
-          <!-- Small button -->
-        `,
-        CSS:` 
-          `
-        }) %>
-
-
-
-
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'buttons', 
+            copyCodeT1:`buttonsT1`, 
+            copyCodeT2:`buttonsT2`, 
+            copyCodeT3:`buttonsT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ejsLiterals.ejs.base_buttons,
+            HTML: ejsLiterals.html.base_buttons,
+            CSS: ejsLiterals.css.base_buttons,
+          }) %>
       </section>
       <section id="content22">
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_icons`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
@@ -2615,79 +2139,22 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item14', idTab1:'T141',idTab2:'T142',idTab3:'T143', tab1:'',tab2:'',tab3:'checked',
-        EJS: ``,
-        HTML: `
-          <img src="../icon/arrow-down.svg" alt="Arrow Down">
-          <img src="../icon/arrow-up.svg" alt="Arrow Uo">
-          <img src="../icon/arrow-back.svg" alt="Arrow Back">
-          <img src="../icon/arrow-forward.svg" alt="Arrow Forward">
-          <img src="../icon/plus.svg" alt="Plus">
-          <img src="../icon/minus.svg" alt="Minus">
-          <img src="../icon/delete.svg" alt="Delete">
-          <img src="../icon/arrow-nw.svg" alt="Arrow NW">
-          <img src="../icon/arrow-ne.svg" alt="Arrow NE">
-          <img src="../icon/arrow-sw.svg" alt="Arrow SW">
-          <img src="../icon/arrow-se.svg" alt="Arrow SE">
-          <img src="../icon/in.svg" alt="LinkedIn">
-          <img src="../icon/ins.svg" alt="Instagram">
-          <img src="../icon/git.svg" alt="GitHub">
-          <img src="../icon/Codepen.svg" alt="CodePen">
-          <img src="../icon/iconFigma.svg" alt="Figma">
-          <img src="../icon/mail.svg" alt="Mail">
-          <img src="../icon/icon_clipboard-tick.svg">
-          <img src="../icon/icon_Testing.svg">
-          <img src="../icon/Document.svg" alt="Document">
-          <img src="../icon/Receipt.svg" alt="Arrow Up">
-          <img src="../icon/icon_research.svg" alt="Research">
-          <img src="../icon/iconAlert.svg" alt="Alert">
-          <img src="../icon/copy.svg" alt="CodePen">
-          <img src="../icon/link.svg" alt="Link">
-          <img src="../icon/icon_Final.svg">
-          <img src="../icon/note.svg">
-          <img src="../icon/Category.svg">
-          <img src="../icon/layout.svg">
-          <img src="../icon/tag.svg">
-          <img src="../icon/icon_Iteration.svg">
-          <img src="../icon/iconCalendar.svg">
-          <img src="../icon/icon_Redesign.svg">
-          <img src="../icon/library.svg">
-          <img src="../icon/components.svg">
-          <img src="../icon/icon_promotion.svg">
-          <img src="../icon/IconCompass.svg">
-          <img src="../icon/Profile.svg">
-        `,
-        CSS:` 
-          .iconXS {
-              width: 16px;
-              margin: 0;
-          }
-          .iconS {
-              width: 24px;
-              margin: 0;
-          }
-          .iconM {
-              width: 32px;
-          }
-          .iconL {
-              width: 40px;
-          }
-          .iconXL {
-              width: 48px;
-          }
-          .iconMax {
-              width: 56px;
-          }
-          .iconDemo {
-              margin: 0.6em;
-              padding: 1.2em;
-              width: 2em;
-              height: auto;
-              cursor: pointer;
-          }
-          `
-        }) %>
+
+
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'icons', 
+            copyCodeT1:`iconsT1`, 
+            copyCodeT2:`iconsT2`, 
+            copyCodeT3:`iconsT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ejsLiterals.ejs.base_icons,
+            HTML: ejsLiterals.html.base_icons,
+            CSS: ejsLiterals.css.base_icons,
+          }) %>
+
         </div>
 
         <div class="blankHM"></div>
@@ -2785,104 +2252,30 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
 
           </div>
         </div>
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'iconSizes', 
+          copyCodeT1:`iconSizesT1`, 
+          copyCodeT2:`iconSizesT2`, 
+          copyCodeT3:`iconSizesT3`,
+          t1Checked:``,          
+          t2Checked:`checked`,
+          t3Checked:``,
+          EJS: ejsLiterals.ejs.base_iconSizes,
+          HTML: ejsLiterals.html.base_iconSizes,
+          CSS: ejsLiterals.css.base_iconSizes,
+        }) %>
 
-
-        <%- include('../shared/block_tabs_copyCode', 
-      {Name: 'Item16', idTab1:'T161',idTab2:'T162',idTab3:'T163', tab1:'',tab2:'checked',tab3:'',
-      EJS: `
-      `,
-      HTML: `
-        <div class="Grid-cell">
-            <div class="element">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img class="iconXS hoverGrey100 paddingXL borderRadiusMax" 
-                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img class="iconS hoverGrey100 paddingXL borderRadiusMax" 
-                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img class="iconM hoverGrey100 paddingXL borderRadiusMax" 
-                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img class="iconL hoverGrey100 paddingXL borderRadiusMax" 
-                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img class="iconXL hoverGrey100 paddingXL borderRadiusMax" 
-                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img class="iconMax hoverGrey100 paddingXL borderRadiusMax" 
-                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-            </div>
-          </div>
-      `,
-      CSS:` 
-
-
-        `
-      }) %>
 
       </section>
       <section id="content24">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Inputs' }) %>
-
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_inputs`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
         <div class="blankHXS"></div>
-
         <div class="wrapper">
-
-
           <div class="img__wrap widthS heightS element">
             <div class="img__descriptionDesignSystem">
               <div class="input-field">
-
-
                 <div class="column">
                   <label for="password">
                     <h5>Password</h5>
@@ -2897,131 +2290,25 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     <span id="pwIncorrect">Password is incorrect </span>
                   </div>
                 </div>
-
-
-
               </div>
             </div>
-
           </div>
         </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item15', idTab1:'T151',idTab2:'T152',idTab3:'T153', tab1:'',tab2:'checked',tab3:'',
-        EJS: ``,
-        HTML: `
-          <div class="img__wrap widthS heightS element">
-            <div class="img__descriptionDesignSystem">
-              <div class="input-field">
 
 
-                <div class="column">
-                  <label for="password">
-                    <h5>Password</h5>
-                  </label>
-
-                  <input class="PWinput" type="password" id="password" placeholder="Enter password">
-
-                  <div class="pwIncorrectHeight">
-                    <span id="pwIncorrect">Password is incorrect </span>
-                  </div>
-                </div>
-                <button class="passwordArr" type="submit">
-                  <img src="../icon/arrow-forward.svg" alt="Enter">
-                  <!--  <i class="fas fa-chevron-right"></i> -->
-                </button>
-
-
-              </div>
-            </div>
-
-          </div>
-        `,
-        CSS:` 
-          .PWinputLanding:focus {
-              background-color: var(--white);
-              border-radius: 10px;
-
-              /* Keep the border width the same as in the default state */
-              border: 1px solid rgba(170, 182, 217, 0.3);
-              /* Add an additional box-shadow to simulate the 2px extra border */
-              box-shadow:
-                  inset 0 0 0 1px rgba(64, 109, 192, 0.9),
-                  0 0 0 2px rgba(142, 187, 255, 0.3)
-                  /* This is the original box-shadow for the 4px offset */
-          }
-          .PWinput:focus {
-              background-color: var(--white);
-              border-radius: 10px;
-              /* Keep the border width the same as in the default state */
-              border: 1px solid rgba(170, 217, 217, 0.3);
-              /* Add an additional box-shadow to simulate the 2px extra border */
-              box-shadow:
-                  inset 0 0 0 1px rgba(143, 191, 191, 0.9),
-                  0 0 0 2px rgba(170, 217, 217, 0.3)
-                  /* This is the original box-shadow for the 4px offset */
-          }
-          input {
-              width: 16em;
-              height: 42px;
-              padding: 0 12px;
-              background: var(--white);
-              font-size: 16px;
-              border-radius: 10px;
-              outline: none;
-              border: 1px solid var(--Grey800);
-          }
-          .input-field {
-              display: flex;
-              /* Add flex */
-              flex-direction: row;
-              align-items: left;
-              /* Vertically center children */
-              justify-content: flex-end;
-              /* Horizontally center children */
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-          }
-          .input-field button img {
-              animation: arrowani 0.8s linear infinite alternate;
-          }
-          .input-field button {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 1.8rem;
-              height: 100%;
-              background: transparent;
-              border: none;
-              cursor: pointer;
-              color: var(--Grey900);
-          }
-          button.passwordArr {
-              margin-top: 11%;
-              padding: 0;
-              color: var(--Grey900);
-          }
-          .pwIncorrectHeight {
-              height: 3em;
-          }
-          #pwIncorrect {
-              margin: 0;
-              padding: 8px;
-              font-weight: 500;
-              color: var(--alert);
-              display: none;
-          }
-          @keyframes arrowani {
-              100% {
-                  margin-right: -8px;
-              }
-          }
-          `
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'baseInput', 
+          copyCodeT1:`baseInputT1`, 
+          copyCodeT2:`baseInputT2`, 
+          copyCodeT3:`baseInputT3`,
+          t1Checked:``,          
+          t2Checked:`checked`,
+          t3Checked:``,
+          EJS: ejsLiterals.ejs.base_input,
+          HTML: ejsLiterals.html.base_input,
+          CSS: ejsLiterals.css.base_input,
         }) %>
-        <div class="blankHM"></div>
-
-
       </section>
     </section>
 
@@ -3084,9 +2371,15 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </div>
                 </div>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                { Name: 'content', idTab1:'contentT1',idTab2:'contentT2',idTab3:'contentT3', tab1:'checked',tab2:'',tab3:'',
-                  CCspacing: false,
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'textualElementsTitle', 
+                  copyCodeT1:`textualElementsTitleT1`, 
+                  copyCodeT2:`textualElementsTitleT2`, 
+                  copyCodeT3:`textualElementsTitleT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
                   EJS: ejsLiterals.ejs.comp_textualElements_title,
                   HTML: ejsLiterals.html.comp_textualElements_title,
                   CSS:``
@@ -3149,54 +2442,38 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </div>
                 </div>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                { Name: 'Item21', idTab1:'T211',idTab2:'T212',idTab3:'T213', tab1:'',tab2:'checked',tab3:'',
-                  CCspacing: false,
-
-                EJS: `
-                `,
-                HTML: `
-                  <div class="Grid Grid--full Grid--gutters wrapper">
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <div class="element leftVerLine border-radius GreyBg100">
-                          <h4>
-                            <p> <strong>Title </strong></p>
-                            <ul>
-                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. </li>
-                              <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu
-                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia
-                                deserunt mollit anim id est laborum.</li>
-                            </ul>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                `,
-                CSS:
-                ` 
-                  `
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'textualElementsNote', 
+                  copyCodeT1:`textualElementsNoteT1`, 
+                  copyCodeT2:`textualElementsNoteT2`, 
+                  copyCodeT3:`textualElementsNoteT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_textualElements_note,
+                  HTML: ejsLiterals.html.comp_textualElements_note,
+                  CSS:``
+                }) %>
 
               </div>
               <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'textualElements', idTab: `teTab3`, lableTxt:'_closingMessage'}) %>
               <!-- Tab 3 -->
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/comp_closingMessage`, {CMspacing: false, version: '', message: '999'}) %>
-
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'Item44', idTab1:'T441',idTab2:'T442',idTab3:'T443', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.comp_textualElements_closingMessage,
-                HTML: ejsLiterals.html.comp_textualElements_closingMessage,
-                CSS: ``
-              }) %>
-
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'closingMessage', 
+                  copyCodeT1:`closingMessageT1`, 
+                  copyCodeT2:`closingMessageT2`, 
+                  copyCodeT3:`closingMessageT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_textualElements_closingMessage,
+                  HTML: ejsLiterals.html.comp_textualElements_closingMessage,
+                  CSS:``
+                }) %>
               </div>
             </div>
           </div>
@@ -3227,13 +2504,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </div>
                 </div>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'iconTriger', idTab1:'iconTriger1',idTab2:'iconTriger2',idTab3:'iconTriger3', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.comp_clipboardCopy_iconTriger,
-                HTML: ejsLiterals.html.comp_clipboardCopy_iconTriger,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'iconTriger', 
+                  copyCodeT1:`iconTrigerT1`, 
+                  copyCodeT2:`iconTrigerT2`, 
+                  copyCodeT3:`iconTrigerT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_clipboardCopy_iconTriger,
+                  HTML: ejsLiterals.html.comp_clipboardCopy_iconTriger,
+                  CSS:``
+                }) %>
               </div>
 
               <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'clipboardCopy', idTab: `ccTab2`, lableTxt:'_inputIconTrigger', checked:''}) %>
@@ -3252,13 +2535,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </div>
                 </div>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'Item17', idTab1:'T171',idTab2:'T172',idTab3:'T173', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.comp_clipboardCopy_inputIconTriger,
-                HTML: ejsLiterals.html.comp_clipboardCopy_inputIconTriger,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'inputIconTriger', 
+                  copyCodeT1:`inputIconTrigerT1`, 
+                  copyCodeT2:`inputIconTrigerT2`, 
+                  copyCodeT3:`inputIconTrigerT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_clipboardCopy_inputIconTriger,
+                  HTML: ejsLiterals.html.comp_clipboardCopy_inputIconTriger,
+                  CSS:``
+                }) %>
+
               </div>
               <%- include('../shared/comp_tabs_content', {name:'clipboardCopy', idTab: `ccTab3`, lableTxt:'_textFieldTrigger', checked:''}) %>
 
@@ -3279,13 +2569,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </div>
                 </div>
-                <%- include('../shared/block_tabs_copyCode', 
-              {Name: 'Item18', idTab1:'T181',idTab2:'T182',idTab3:'T183', tab1:'',tab2:'checked',tab3:'',
-              CCspacing: false,
-              EJS: ejsLiterals.ejs.comp_clipboardCopy_textFieldTriger,
-              HTML: ejsLiterals.html.comp_clipboardCopy_textFieldTriger,
-              CSS: ``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'textFieldTrigger', 
+                  copyCodeT1:`textFieldTriggerT1`, 
+                  copyCodeT2:`textFieldTriggerT2`, 
+                  copyCodeT3:`textFieldTriggerT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_clipboardCopy_textFieldTriger,
+                  HTML: ejsLiterals.html.comp_clipboardCopy_textFieldTriger,
+                  CSS:``
+                }) %>
+
               </div>
             </div>
           </div>
@@ -3310,15 +2607,21 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <%- include('../shared/block_tabs_copyCode', 
-      {Name: 'Item25', idTab1:'T251',idTab2:'T252',idTab3:'T253', tab1:'checked',tab2:'',tab3:'',
-      CCspacing: false,
-              EJS: ejsLiterals.ejs.comp_adaptiveImageLoader,
-              HTML: ejsLiterals.html.comp_adaptiveImageLoader,
-      CSS:
-      ` 
-        `
-      }) %>
+
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'adaptiveImageLoader', 
+          copyCodeT1:`adaptiveImageLoaderT1`, 
+          copyCodeT2:`adaptiveImageLoaderT2`, 
+          copyCodeT3:`adaptiveImageLoaderT3`,
+          t1Checked:`checked`,          
+          t2Checked:``,
+          t3Checked:``,
+          EJS: ejsLiterals.ejs.comp_adaptiveImageLoader,
+          HTML: ejsLiterals.html.comp_adaptiveImageLoader,
+          CSS:``
+        }) %>
+
       </section>
       <section id="content34">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Card Elements' }) %>
@@ -3335,10 +2638,15 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 cardTitle: 'Lorem ipsum', 
                 cardText:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               ` }) %>
-
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'cardClean', idTab1:'cardCleanT1',idTab2:'cardCleanT2',idTab3:'cardCleanT3', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                wrapperGrid: ``, 
+                copyCodeName:'cardClean', 
+                copyCodeT1:`cardCleanT1`, 
+                copyCodeT2:`cardCleanT2`, 
+                copyCodeT3:`cardCleanT3`,
+                t1Checked:`checked`,          
+                t2Checked:``,
+                t3Checked:``,
                 EJS: ejsLiterals.ejs.comp_card_clean,
                 HTML: ejsLiterals.html.comp_card_clean,
                 CSS:``
@@ -3352,14 +2660,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 cardTitle: `Lorem ipsum`, 
                 cardText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` 
                 }) %>
-
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'cardBorder', idTab1:'cardBorderT1',idTab2:'cardBorderT2',idTab3:'cardBorderT3', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.comp_card_border,
-                HTML: ejsLiterals.html.comp_card_border,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'cardBorder', 
+                  copyCodeT1:`cardBorderT1`, 
+                  copyCodeT2:`cardBorderT2`, 
+                  copyCodeT3:`cardBorderT3`,
+                  t1Checked:`checked`,          
+                  t2Checked:``,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_card_border,
+                  HTML: ejsLiterals.html.comp_card_border,
+                  CSS:``
+                }) %>
               </div>
 
               <!-- Tab 3 -->
@@ -3369,12 +2682,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 cardTitle: `Lorem ipsum`, 
                 cardText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.` 
                 }) %>
-                <%- include('../shared/block_tabs_copyCode', 
-              { Name: 'cardGradient', idTab1:'cardGradientT1',idTab2:'cardGradientT2',idTab3:'cardGradientT3', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
+
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                wrapperGrid: ``, 
+                copyCodeName:'cardGradient', 
+                copyCodeT1:`cardGradientT1`, 
+                copyCodeT2:`cardGradientT2`, 
+                copyCodeT3:`cardGradientT3`,
+                t1Checked:``,          
+                t2Checked:`checked`,
+                t3Checked:``,
                 EJS: ejsLiterals.ejs.comp_card_gradient,
                 HTML: ejsLiterals.html.comp_card_gradient,
-                CSS: ``
+                CSS:``
               }) %>
               </div>
             </div>
@@ -3396,13 +2716,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 cardTitle: ``, 
                 cardText: ``
                 }) %>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'cardnImg_noLink', idTab1:'cardnImgT1',idTab2:'cardnImgT2',idTab3:'cardnImgT3', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.comp_cardnImg_nolink,
-                HTML: ejsLiterals.html.comp_cardnImg_nolink,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'cardnImg_noLink', 
+                  copyCodeT1:`cardnImgT1`, 
+                  copyCodeT2:`cardnImgT2`, 
+                  copyCodeT3:`cardnImgT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_cardnImg_nolink,
+                  HTML: ejsLiterals.html.comp_cardnImg_nolink,
+                  CSS:``
+                }) %>
               </div>
               <!-- Tab 2 -->
               <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'cardAndImage', idTab: `cardAndImageTab2`, lableTxt:'_bg', checked:''}) %>
@@ -3412,9 +2738,18 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 cardnLinkTitle: `Title`, 
                 cardnLinkText: `Description`
                 }) %>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'cardnImg_link', idTab1:'cardnImg_linkT1',idTab2:'cardnImg_linkT2',idTab3:'cardnImg_linkT3', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
+
+
+
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                wrapperGrid: ``, 
+                copyCodeName:'cardnImg_link', 
+                copyCodeT1:`cardnImg_linkT1`, 
+                copyCodeT2:`cardnImg_linkT2`, 
+                copyCodeT3:`cardnImg_linkT3`,
+                t1Checked:``,          
+                t2Checked:`checked`,
+                t3Checked:``,
                 EJS: ejsLiterals.ejs.comp_cardnImg_link,
                 HTML: ejsLiterals.html.comp_cardnImg_link,
                 CSS:``
@@ -3429,83 +2764,60 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
       <section id="content36">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Audio Player' }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_audioPlayer`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
-
-        <div class="blankHXS"></div>
         <div class="wrapper">
-
           <div class="element">
-            <div class="rowToColumn cardAPPOINTA shadowBox wrapper centerVer">
-              <div class="widthMax paddingM">
-                <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui
-                  officia deserunt mollit anim id est laborum.
-                </h4>
-              </div>
-              <div class="paddingleft">
-                <div class="widthFitContent">
-                  <div class="audio-container">
-                    <audio id="myAudio1">
-                      <source src="https://res.cloudinary.com/kreiva/video/upload/v1680162890/new-edm-music-beet-mr-sandeep-rock-141616_zjykff.mp3">
-                      Your browser does not support the audio element.
-                    </audio>
-                    <br>
-                    <button class="play-button">Play</button>
-                    <div class="time-display">0:00 / 0:00</div>
+            <div id="tabsContent" class="tabContent">
+              <div class="blankHXS"></div>
+              <!-- Tab 1 -->
+              <div class="Grid Grid--full Grid--gutters">
+                <div class="Grid-cell">
+                  <div class="rowToColumn cardAPPOINTA shadowBox centerVer">
+                    <div class="widthMax paddingM">
+                      <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui
+                        officia deserunt mollit anim id est laborum.
+                      </h4>
+                    </div>
+                    <div class="paddingleft">
+                      <div class="widthFitContent">
+                        <div class="audio-container">
+                          <audio id="myAudio1">
+                            <source src="https://res.cloudinary.com/kreiva/video/upload/v1680162890/new-edm-music-beet-mr-sandeep-rock-141616_zjykff.mp3">
+                            Your browser does not support the audio element.
+                          </audio>
+                          <br>
+                          <button class="play-button">Play</button>
+                          <div class="time-display">0:00 / 0:00</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="blankHXS"></div>
+
+              <%- include(`${templatePath}/shared/block_copyCode`, {
+                wrapperGrid: ``, 
+                copyCodeName:'audioPlayer', 
+                copyCodeT1:`audioPlayerT1`, 
+                copyCodeT2:`audioPlayerT2`, 
+                copyCodeT3:`audioPlayerT3`,
+                t1Checked:``,          
+                t2Checked:`checked`,
+                t3Checked:``,
+                EJS: ejsLiterals.ejs.comp_audioPlayer,
+                HTML: ejsLiterals.html.comp_audioPlayer,
+                CSS:``
+              }) %>
             </div>
           </div>
         </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item28', idTab1:'T281',idTab2:'T282',idTab3:'T283', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-        <div class="wrapper">
-          <div class="element">
-            <div class="rowToColumn cardAPPOINTA shadowBox wrapper centerVer">
-              <div class="widthMax paddingM">
-                <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui
-                  officia deserunt mollit anim id est laborum.
-                </h4>
-              </div>
-              <div class="paddingleft">
-                <div class="widthFitContent">
-                  <div class="audio-container">
-                    <audio id="myAudio1">
-                      <source src="https://res.cloudinary.com/kreiva/video/upload/v1680162890/new-edm-music-beet-mr-sandeep-rock-141616_zjykff.mp3">
-                      Your browser does not support the audio element.
-                    </audio>
-                    <br>
-                    <button class="play-button">Play</button>
-                    <div class="time-display">0:00 / 0:00</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>                         
-        `,
-        CSS:
-        ` 
-          `
-        }) %>
-
-
       </section>
       <section id="content37">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Tag Cloud` }) %>
@@ -3567,14 +2879,22 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               </div>
               <div class="blankHXS"></div>
 
-              <%- include('../shared/block_tabs_copyCode', 
-            {Name: 'tagCloud', idTab1:'tagCloud1',idTab2:'tagCloud2',idTab3:'tagCloud3', tab1:'checked',tab2:'',tab3:'',
-              CCspacing: false,
-              EJS: ejsLiterals.ejs.comp_tagCloud,
-              HTML: ejsLiterals.html.comp_tagCloud,
-              CSS:` `
-            }) %>
+
+              <%- include(`${templatePath}/shared/block_copyCode`, {
+                wrapperGrid: ``, 
+                copyCodeName:'tagCloud', 
+                copyCodeT1:`tagCloudT1`, 
+                copyCodeT2:`tagCloudT2`, 
+                copyCodeT3:`tagCloudT3`,
+                t1Checked:``,          
+                t2Checked:`checked`,
+                t3Checked:``,
+                EJS: ejsLiterals.ejs.comp_tagCloud,
+                  HTML: ejsLiterals.html.comp_tagCloud,
+                CSS:``
+              }) %>
             </div>
+
           </div>
         </div>
       </section>
@@ -3612,9 +2932,16 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                   </div>
                 </div>
 
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'graphBar', idTab1:'graphBarT1',idTab2:'graphBarT2',idTab3:'graphBarT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
+
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                wrapperGrid: ``, 
+                copyCodeName:'graphBar', 
+                copyCodeT1:`graphBarT1`, 
+                copyCodeT2:`graphBarT2`, 
+                copyCodeT3:`graphBarT3`,
+                t1Checked:``,          
+                t2Checked:`checked`,
+                t3Checked:``,
                 EJS: ejsLiterals.ejs.comp_card_clean,
                 HTML: ejsLiterals.html.comp_card_clean,
                 CSS:``
@@ -3654,13 +2981,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </div>
                 </div>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'graphRate', idTab1:'cardBorderT1',idTab2:'cardBorderT2',idTab3:'cardBorderT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.comp_card_border,
-                HTML: ejsLiterals.html.comp_card_border,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                    wrapperGrid: ``, 
+                    copyCodeName:'graphRate', 
+                    copyCodeT1:`cardBorderT1`, 
+                    copyCodeT2:`cardBorderT2`, 
+                    copyCodeT3:`cardBorderT3`,
+                    t1Checked:``,          
+                    t2Checked:`checked`,
+                    t3Checked:``,
+                    EJS: ejsLiterals.ejs.comp_card_gradient,
+                    HTML: ejsLiterals.html.comp_card_gradient,
+                    CSS:``
+                  }) %>
               </div>
 
               <!-- Tab 3 -->
@@ -3678,13 +3011,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </div>
                 </div>
-                <%- include('../shared/block_tabs_copyCode', 
-              { Name: 'graphVote', idTab1:'cardGradientT1',idTab2:'cardGradientT2',idTab3:'cardGradientT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.comp_card_gradient,
-                HTML: ejsLiterals.html.comp_card_gradient,
-                CSS: ``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'graphVote', 
+                  copyCodeT1:`cardGradientT1`, 
+                  copyCodeT2:`cardGradientT2`, 
+                  copyCodeT3:`cardGradientT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_card_gradient,
+                  HTML: ejsLiterals.html.comp_card_gradient,
+                  CSS:``
+                }) %>
               </div>
             </div>
           </div>
@@ -3758,50 +3097,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <%- include('../shared/block_tabs_copyCode', 
-        {Name: 'Item29', idTab1:'T291',idTab2:'T292',idTab3:'T293', tab1:'',tab2:'checked',tab3:'',
-        EJS: `
-        `,
-        HTML: `
-        <div class="Grid Grid--full Grid--gutters wrapper">
-          <div class="Grid-cell">
-            <div class="element">
-              <h3><strong>Title </strong></h3>
-              <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                officia deserunt mollit anim id est laborum.</h4>
-              <div class="more">
-                <div class="blankHXS"></div>
-                <h5> <strong> Subtitle </strong> </h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque. Tristique senectus et netus
-                  et malesuada fames ac. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Nisl suscipit
-                  adipiscing bibendum est ultricies integer quis. Mauris a diam maecenas sed enim ut. Fusce id velit ut
-                  tortor pretium viverra. Feugiat sed lectus vestibulum mattis. Lacus suspendisse faucibus interdum
-                  posuere lorem ipsum. In aliquam sem fringilla ut morbi tincidunt augue. Dolor sit amet consectetur
-                  adipiscing elit pellentesque habitant morbi tristique. In arcu cursus euismod quis viverra nibh. Nisl
-                  tincidunt eget nullam non nisi est sit. Porttitor massa id neque aliquam vestibulum morbi blandit.
-                  Blandit libero volutpat sed cras. Ut porttitor leo a diam sollicitudin tempor. Tellus molestie nunc
-                  non blandit.</p>
-                <h5> <strong> Subtitle </strong> </h5>
-                <ul>
-                  <li class="listCircle">Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.</li>
-                  <li class="listCircle">Viverra orci sagittis eu volutpat odio facilisis mauris. Eleifend donec pretium vulputate sapien nec. Tortor condimentum lacinia quis vel eros.</li>
-                </ul>
-                <div class="blankHXS"></div>
-              </div>
-              <button class="toggle buttonTextOnly" >Read More &#8744;</button>
-            </div>
-          </div>
-        </div>
-                                         
-        `,
-        CSS:
-        ` 
-          `
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'expandableContent', 
+          copyCodeT1:`expandableContentT1`, 
+          copyCodeT2:`expandableContentT2`, 
+          copyCodeT3:`expandableContentT3`,
+          t1Checked:``,          
+          t2Checked:`checked`,
+          t3Checked:``,
+          EJS: ejsLiterals.ejs.block_expandableContent,
+          HTML: ejsLiterals.html.block_expandableContent,
+          CSS:``
         }) %>
+
 
       </section>
       <section id="content42">
@@ -3818,13 +3127,18 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 cardTitle: ``, 
                 cardText: ``
                 }) %>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'accordion_noBg', idTab1:'accordion_noBgT1',idTab2:'accordion_noBgT2',idTab3:'accordion_noBgT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.block_accordion_noBg,
-                HTML: ejsLiterals.html.block_accordion_noBg,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'accordion_noBg', 
+                  copyCodeT1:`accordion_noBgT1`, 
+                  copyCodeT2:`accordion_noBgT2`, 
+                  copyCodeT3:`accordion_noBgT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.block_accordion_noBg,
+                  HTML: ejsLiterals.html.block_accordion_noBg,
+                  CSS:``
+                }) %>
               </div>
               <!-- Tab 2 -->
               <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'accordion', idTab: `accordionTab2`, lableTxt:'_bg', checked:''}) %>
@@ -3833,13 +3147,18 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 cardTitle: ``, 
                 cardText: ``
                 }) %>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'accordion_bg', idTab1:'accordion_bgT1',idTab2:'accordion_bgT2',idTab3:'accordion_bgT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.block_accordion_bg,
-                HTML: ejsLiterals.html.block_accordion_bg,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'accordion_bg', 
+                  copyCodeT1:`accordion_bgT1`, 
+                  copyCodeT2:`accordion_bgT2`, 
+                  copyCodeT3:`accordion_bgT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.block_accordion_bg,
+                  HTML: ejsLiterals.html.block_accordion_bg,
+                  CSS:``
+                }) %>
               </div>
             </div>
           </div>
@@ -3856,37 +3175,50 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab1`, lableTxt:'_carouselHoriz_noBg', checked:'checked'}) %>
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/block_carouselHoriz_noBg`) %>
-
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'carousel_horizontalCarousel', idTab1:'horizontalCarouselT1',idTab2:'horizontalCarouselT2',idTab3:'horizontalCarouselT3', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.block_carouselHoriz_noBg,
-                HTML: ejsLiterals.html.block_carouselHoriz_noBg,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'carousel_horizontalCarousel', 
+                  copyCodeT1:`horizontalCarouselT1`, 
+                  copyCodeT2:`horizontalCarouselT2`, 
+                  copyCodeT3:`horizontalCarouselT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.block_carouselHoriz_noBg,
+                  HTML: ejsLiterals.html.block_carouselHoriz_noBg,
+                  CSS:``
+                }) %>
               </div>
               <!-- Tab 2 -->
               <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab2`, lableTxt:'_carouselHoriz_bg', checked:''}) %>
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/block_carouselHoriz_bg`) %>
-
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'carousel_verticalCarousel', idTab1:'verticalCarouselT1',idTab2:'verticalCarouselT2',idTab3:'_verticalCarouselT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.block_accordion_bg,
-                HTML: ejsLiterals.html.block_accordion_bg,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'carousel_verticalCarousel', 
+                  copyCodeT1:`verticalCarouselT1`, 
+                  copyCodeT2:`verticalCarouselT2`, 
+                  copyCodeT3:`_verticalCarouselT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.block_carouselHoriz_bg,
+                  HTML: ejsLiterals.html.block_carouselHoriz_bg,
+                  CSS:``
+                }) %>
               </div>
               <!-- Tab 3 -->
               <%- include('../shared/comp_tabs_content', {name:'Carousel', idTab: `carouselTab3`, lableTxt:'_carouselVert_noBg', checked:''}) %>
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/block_carouselVert_noBg`) %>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                { Name: 'carouselVert_noBg', idTab1:'carouselVert_noBgT1',idTab2:'carouselVert_noBgT2',idTab3:'carouselVert_noBgT3', tab1:'',tab2:'checked',tab3:'',
-                  CCspacing: false,
-                  EJS: ejsLiterals.ejs.block_accordion_noBg,
-                  HTML: ejsLiterals.html.block_accordion_noBg,
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'carouselVert_noBg', 
+                  copyCodeT1:`carouselVert_noBgT1`, 
+                  copyCodeT2:`carouselVert_noBgT2`, 
+                  copyCodeT3:`carouselVert_noBgT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.block_carouselVert_noBg,
+                  HTML: ejsLiterals.html.block_carouselVert_noBg,
                   CSS:``
                 }) %>
               </div>
@@ -3894,12 +3226,16 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab4`, lableTxt:'_carouselVert_bg', checked:''}) %>
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/block_carouselVert_bg`) %>
-
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-                { Name: 'carouselVert_bg', idTab1:'carouselVert_bgT1',idTab2:'carouselVert_bgT2',idTab3:'carouselVert_bgT3', tab1:'',tab2:'checked',tab3:'',
-                  CCspacing: false,
-                  EJS: ejsLiterals.ejs.block_accordion_bg,
-                  HTML: ejsLiterals.html.block_accordion_bg,
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'carouselVert_bg', 
+                  copyCodeT1:`carouselVert_bgT1`, 
+                  copyCodeT2:`carouselVert_bgT2`, 
+                  copyCodeT3:`carouselVert_bgT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.block_carouselVert_bg,
+                  HTML: ejsLiterals.html.block_carouselVert_bg,
                   CSS:``
                 }) %>
               </div>
@@ -3921,9 +3257,15 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               <%- include('../shared/comp_tabs_content', {name:'modal', idTab: `modalTab1`, lableTxt:'_noBg', checked:'checked'}) %>
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/block_modal_noBg`) %>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'modal_noBg', idTab1:'modal_noBgT1',idTab2:'modal_noBgT2',idTab3:'modal_noBgT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
+
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                copyCodeName:'modal_noBg', 
+                copyCodeT1:`modal_noBgT1`, 
+                copyCodeT2:`modal_noBgT2`, 
+                copyCodeT3:`modal_noBgT3`,
+                t1Checked:``,          
+                t2Checked:`checked`,
+                t3Checked:``,
                 EJS: ejsLiterals.ejs.block_modal_noBg,
                 HTML: ejsLiterals.html.block_modal_noBg,
                 CSS:``
@@ -3933,9 +3275,14 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
               <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'modal', idTab: `modal2`, lableTxt:'_bg', checked:''}) %>
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/block_modal_bg`) %>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'modal_bg', idTab1:'modal_bgT1',idTab2:'modal_bgT2',idTab3:'modal_bgT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                copyCodeName:'modal_bg', 
+                copyCodeT1:`modal_bgT1`, 
+                copyCodeT2:`modal_bgT2`, 
+                copyCodeT3:`modal_bgT3`,
+                t1Checked:``,          
+                t2Checked:`checked`,
+                t3Checked:``,
                 EJS: ejsLiterals.ejs.block_modal_bg,
                 HTML: ejsLiterals.html.block_modal_bg,
                 CSS:``
@@ -4116,13 +3463,20 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </nav>
                 </div>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'navHeader', idTab1:'navHeaderT1',idTab2:'navHeaderT2',idTab3:'navHeaderT3', tab1:'checked',tab2:'',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.block_nav_header,
-                HTML: ejsLiterals.html.block_nav_header,
-                CSS:``
-              }) %>
+
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'navHeader', 
+                  copyCodeT1:`navHeaderT1`, 
+                  copyCodeT2:`navHeaderT2`, 
+                  copyCodeT3:`navHeaderT3`,
+                  t1Checked:`checked`,          
+                  t2Checked:``,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.block_nav_header,
+                  HTML: ejsLiterals.html.block_nav_header,
+                  CSS: ``
+                }) %>
+
               </div>
               <!-- Tab 2 -->
 
@@ -4151,13 +3505,19 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
 
                   </ol>
                 </nav>
-                <%- include(`${templatePath}/shared/block_tabs_copyCode`, 
-              { Name: 'navRightPanel', idTab1:'navRightPanelT1',idTab2:'navRightPanelT2',idTab3:'navRightPanelT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
-                EJS: ``,
-                HTML: ejsLiterals.html.block_nav_rightPanel,
-                CSS:``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'navRightPanel', 
+                  copyCodeT1:`navRightPanelT1`, 
+                  copyCodeT2:`navRightPanelT2`, 
+                  copyCodeT3:`navRightPanelT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ``,
+                  HTML: ejsLiterals.html.block_nav_rightPanel,
+                  CSS: ``
+                }) %>
+
               </div>
 
               <!-- Tab 3 -->
@@ -4271,21 +3631,26 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                       <div class="Grid-cell">
                         <div class="footerBorder">
                           <div class="element">
-                            <h5 class="Grey700"> © 2023 — vickywang.me | All rights reserved.</h5>
+                            <h5 class="Grey700"> © 2024 — vickywang.me | All rights reserved.</h5>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
                 </footer>
-                <%- include('../shared/block_tabs_copyCode', 
-              { Name: 'navFooter', idTab1:'navFooterT1',idTab2:'navFooterT2',idTab3:'navFooterT3', tab1:'',tab2:'checked',tab3:'',
-                CCspacing: false,
-                EJS: ejsLiterals.ejs.comp_card_gradient,
-                HTML: ejsLiterals.html.comp_card_gradient,
-                CSS: ``
-              }) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  copyCodeName:'navFooter', 
+                  copyCodeT1:`navFooterT1`, 
+                  copyCodeT2:`navFooterT2`, 
+                  copyCodeT3:`navFooterT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_card_gradient,
+                  HTML: ejsLiterals.html.comp_card_gradient,
+                  CSS: ``
+                }) %>
+
               </div>
 
             </div>
@@ -4310,7 +3675,6 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_tabs_copyCode`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
         <div class="wrapper">
           <div class="element">
-
             <div id="tabsContent" class="tabContent">
               <div class="blankHXS"></div>
               <%- include(`${templatePath}/shared/block_copyCode`, {
