@@ -7,36 +7,23 @@
   }) %>
 <!--Head-->
 
-
 <body>
   <%- include( `${templatePath}/shared/progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'PROJECT' }) %>
-
   <div class="blankHM"></div>
-
   <%- include(`${templatePath}/shared/intro`, { 
     version: 'vicky',
     contents: ['UX designer', 'Product designer'],
-    
     layoutType: '', 
     introContentP1: 'I am based in San Francisco and am deeply committed to developing web solutions for both businesses and consumers. My approach hinges on dissecting complex challenges and transforming them into clear, efficient, and impactful digital experiences.',
     introContentP2:'',
     introContentP3:''
-
 }) %>
-
   <%- include(`${templatePath}/shared/homePage_icons-buttons`) %>
-
-
-
-
-
   <!-- Arrow -->
   <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Case Study' }) %>
   <!-- Arrow -->
-
   <!-- Content -->
-
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2">
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
@@ -45,7 +32,7 @@
         inputColor:`PWinput`,
         cardPwImgURL:`${websitePath}/projectImages/Cover_BYP_AppB2B.png`,
         cardPwTitle: `Streamlined Onboarding & Engagement: Mastering B2B SaaS Subscription Success`, 
-        cardPwDescription:`enhancing the onboarding and subscription experience for B2B clients in the SaaS domain. Our focus was on demystifying and refining these critical processes to ensure a seamless and engaging transition for new users.` 
+        cardPwDescription:`Enhancing the onboarding and subscription experience for B2B clients in the SaaS domain. Our focus was on demystifying and refining these critical processes to ensure a seamless and engaging transition for new users.` 
         }) %>
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
         cardPwID:`consumerBooking`,
@@ -90,13 +77,27 @@
         cardNoPwTitle: `Glorify: Transforming Solitary Devotion into Community Engagement`, 
         cardNoPwDescription:`This case study explores the evolution of the Glorify app, a mobile platform dedicated to enhancing individual spiritual journeys, into a vibrant community hub for collective faith building.` 
         }) %>
-
     </div>
-
-
     <div class="Grid Grid--gutters Grid--cols-2">
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'appointa' }) %>
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'seer' }) %>
+      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+        hoverBorderColor:`SEER`,
+        cardNoPwURL:`${websitePath}/seer/`,
+        cardNoPwImgURL:`${websitePath}/projectImages/Cover_SEER.png`,
+        cardNoPwTitle: `SEER: Enhancing Brand Impact on Reddit`, 
+        cardNoPwDescription:`A conceptual UX case study aimed at transforming Reddit data into actionable
+              insights for brand marketers. This design explores the potential of intuitive
+              analytics to understand user sentiment and engagement, offering a glimpse into the
+              future of targeted marketing strategies.` 
+        }) %>
+      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+        hoverBorderColor:`APPOINTA`,
+        cardNoPwURL:`${websitePath}/appointa/`,
+        cardNoPwImgURL:`${websitePath}/projectImages/Cover_APPOINTA.png`,
+        cardNoPwTitle: `APPOINTA: Interview Scheduling Made Simple`, 
+        cardNoPwDescription:`Explore my UX case study aimed at revamping interview scheduling. This project
+                streamlines the recruiter's tasks, speeds up hiring, and enhances scheduling
+                experiences, reducing interview coordination time and boosting recruitment efficiency.` 
+        }) %>
     </div>
 
   </div>
@@ -105,25 +106,40 @@
   <!-- Arrow -->
   <%- include('shared/comp_content_subtitle_arrow', {message: 'Design System' }) %>
   <!-- Arrow -->
-
-
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-3">
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'designSystem' }) %>
-
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'designSystem' }) %>
-      <%- include(`${templatePath}/shared/block_cardProjects`, {card: 'navigation' }) %>
+      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+        hoverBorderColor:``,
+        cardNoPwURL:`${websitePath}/design_system/`,
+        cardNoPwImgURL:`${websitePath}/projectImages/vicky_website.svg`,
+        cardNoPwTitle: `Design & Iterate`, 
+        cardNoPwDescription:`Creating a design system to establish consistent branding and styling across the
+                entire website` 
+        }) %>
+      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+          hoverBorderColor:``,
+          cardNoPwURL:`${websitePath}/design_systemBYP/`,
+          cardNoPwImgURL:`${websitePath}/projectImages/vicky_website.svg`,
+          cardNoPwTitle: `Design & Iterate`, 
+          cardNoPwDescription:`Creating a design system to establish consistent branding and styling across the
+                  entire website` 
+          }) %>
+      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+            hoverBorderColor:``,
+            cardNoPwURL:`${websitePath}/design_systemLASO/`,
+            cardNoPwImgURL:`${websitePath}/projectImages/vicky_website.svg`,
+            cardNoPwTitle: `Design & Iterate`, 
+            cardNoPwDescription:`Creating a design system to establish consistent branding and styling across the
+                    entire website` 
+            }) %>
     </div>
   </div>
-  <!-- Content -->
-
   <!-- Arrow -->
   <%- include('shared/comp_content_subtitle_arrow', {message: 'Skills & Experiences' }) %>
   <!-- Arrow -->
 
   <%- include(`${templatePath}/shared/comp_tagCloud`) %>
   <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
-
   <%- include(`${templatePath}/shared/comp_backTop`) %>
   <%- include(`${templatePath}/shared/block_nav_footer`) %>
   <!-- The Modal -->
