@@ -3,33 +3,33 @@
 } 
 %>
 
-<% if (typeof figmaUrl === 'undefined') { 
-  figmaUrl = ''; 
+<% if (typeof SlideDeckUrl === 'undefined') { 
+  SlideDeckUrl = ''; 
 } 
 %>
-  <div class="<%= bgColor %>">
+  <div class="<%= bannerBgColor %>">
     <div class="blankPhone"></div>
     <div class="blankHS"></div>
     <div class="ProjectBanner displayLaptop">
       <div class="blankMin1880"></div>
-      <img src="Mockup.png" alt="APPOINTA">
+      <img src="<%- bannerMockupL %>" alt="APPOINTA">
       <div class="ProjectBannerInner">
-        <a href="<%= figmaUrl %>" target="_blank"> <button class="button-35 APPOINTA">Slide Decks</button></a>
+        <a href="<%= SlideDeckUrl %>" target="_blank"> <button class="button-35 <%= bannerButtonColor %>">Slide Decks</button></a>
       </div>
     </div>
     <div class="ProjectBanner displayTablet">
       <div class="blankMin1880"></div>
-      <img class="displayTablet" src="MockupS.png" alt="APPOINTA">
+      <img class="displayTablet" src="<%- bannerMockupM %>" alt="APPOINTA">
       <div class="ProjectBannerInner">
-        <a href="<%= figmaUrl %>" target="_blank"> <button class="button-35 APPOINTA">Slide Decks</button></a>
+        <a href="<%= SlideDeckUrl %>" target="_blank"> <button class="button-35  <%= bannerButtonColor %>">Slide Decks</button></a>
         <div class="blankHXS"></div>
       </div>
     </div>
     <div class="ProjectBanner displayPhone">
       <div class="blankMin1880"></div>
-      <img class="displayPhone" src="MockupXS.png" alt="APPOINTA">
+      <img class="displayPhone" src="<%- bannerMockupS %>" alt="APPOINTA">
       <div class="ProjectBannerInner">
-        <a href="<%= figmaUrl %>" target="_blank"> <button class="button-35 APPOINTA">Slide Decks</button></a>
+        <a href="<%= SlideDeckUrl %>" target="_blank"> <button class="button-35  <%= bannerButtonColor %>">Slide Decks</button></a>
         <div class="blankHXS"></div>
       </div>
     </div>

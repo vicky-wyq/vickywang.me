@@ -173,7 +173,9 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             <li class="rightPanel"><a href="#content21"> &#160; Buttons </a></li>
             <li class="rightPanel"><a href="#content22"> &#160; Icons </a></li>
             <li class="rightPanel"><a href="#content23"> &#160; Icon Sizes </a></li>
-            <li class="rightPanel"><a href="#content24"> &#160; Inputs </a></li>
+            <li class="rightPanel"><a href="#content24"> &#160; Link </a></li>
+
+            <li class="rightPanel"><a href="#content25"> &#160; Inputs </a></li>
 
 
           </ul>
@@ -1442,7 +1444,7 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             HTML: ejsLiterals.html.style_vertAlignment,
             CSS: ejsLiterals.css.style_vertAlignment,
             }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Nesting` }) %>
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Nesting` }) %>
           <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
             <div class="Grid-cell">
               <div class="Demo">
@@ -1550,7 +1552,7 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
             CSS: ejsLiterals.css.style_sidebarContent,
             }) %>
 
-<%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Fixed-width Container on the Right Side` }) %>
+          <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: `Fixed-width Container on the Right Side` }) %>
 
           <div class="Grid--gutters">
 
@@ -2269,6 +2271,30 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
 
       </section>
       <section id="content24">
+        <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Links' }) %>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters">
+            <%- include(`${templatePath}/shared/base_link`, {
+              linkUrl:``,
+              linkText:`LinkText`          
+              }) %>
+          </div>
+        </div>
+        <%- include(`${templatePath}/shared/block_copyCode`, {
+          wrapperGrid: true, 
+          copyCodeName:'linkTxt', 
+          copyCodeT1:`linkTxtT1`, 
+          copyCodeT2:`linkTxtT2`, 
+          copyCodeT3:`linkTxtT3`,
+          t1Checked:`checked`,          
+          t2Checked:``,
+          t3Checked:``,
+          EJS: ejsLiterals.ejs.base_link,
+          HTML: ejsLiterals.html.base_link,
+          CSS: ejsLiterals.css.base_link,
+        }) %>
+      </section>
+      <section id="content25">
         <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Inputs' }) %>
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_inputs`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
         <div class="blankHXS"></div>
@@ -2356,6 +2382,21 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                 </div>
                 <%- include(`${templatePath}/shared/comp_hr`) %>
 
+                <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h3 class="fontWeight300">_subTitle
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h2 class="element">Sub Title</h2>
+                    </div>
+                  </div>
+                </div>
+                <%- include(`${templatePath}/shared/comp_hr`) %>
+
 
                 <div class="Grid Grid--gutters Grid--1of6 Grid--center">
                   <div class="Grid-cell">
@@ -2366,7 +2407,7 @@ pageURL:'/design_system/', thumbnailImgURL: 'vickywang_web.png'
                   </div>
                   <div class="Grid-cell">
                     <div class="element">
-                      <h2 class="tArrow">Buttons<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                      <h2 class="tArrow">Sub Title<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
                       </h2>
                     </div>
                   </div>
