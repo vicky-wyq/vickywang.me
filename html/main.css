@@ -2256,12 +2256,17 @@ input {
     cursor: pointer;
     color: var(--Grey900);
 }
+.pwContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
 
 button.passwordArr {
     padding: 0;
     color: var(--Grey900);
-
-
+    position: absolute;
+    right: 0.8em;
 }
 
 
