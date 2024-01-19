@@ -67,11 +67,21 @@
 
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
-    --teal800:#448686;
-    --teal600:#84BFBF;
-    --teal500:#AAD9D9;
-    --teal300:#D0ECEA;
-    --teal100:#EFF9F8;
+    --teal800: #448686;
+    --teal600: #84BFBF;
+    --teal500: #AAD9D9;
+    --teal300: #D0ECEA;
+    --teal100: #EFF9F8;
+    /* ======================== */
+    --LASOblue800: #0159A6;
+    --LASOblue700: #016FD0;
+    --LASOblue500: #80b7e8;
+
+    --LASOblue300: #E6F1FA;
+    --LASOblue200: #F2F8FC;
+    --LASOblue100: #FBFDFF;
+
+
     /* ======================== */
 
 
@@ -91,6 +101,7 @@
     --WS-Blue: #35B9C5;
     /* 2AA5F3*/
     --WS-Teal: #35B9C5;
+    --WS-Teal-Light1: #c8ebee;
     --WS-Teal-lighter: #D4F1F3;
     --WS-Teal-light: #f3f4f4;
     --WS-lightBG: rgba(243, 250, 253, 0.4);
@@ -644,12 +655,15 @@ a.active.SEER {
 .teal800 {
     color: var(--teal800);
 }
+
 .teal600 {
     color: var(--teal600);
 }
+
 .teal500 {
     color: var(--teal500);
 }
+
 .teal300 {
     color: var(--teal300);
 }
@@ -679,9 +693,11 @@ a.active.SEER {
 .bgTeal600 {
     background-color: var(--teal600);
 }
+
 .bgTeal500 {
     background-color: var(--teal500);
 }
+
 .bgTeal300 {
     background-color: var(--teal300);
 }
@@ -863,8 +879,17 @@ polygon {
 
 .cardGlorifyBg {
     background: var(--White-transparent);
-    border-radius: 0.8em;
     border: 2px solid var(--GLORIFY-orange);
+    height: auto;
+}
+.audioPlayerBordernLASO {
+    background: var(--White-transparent);
+    border: 2px solid var(--LASOblue500);
+    height: auto;
+}
+.audioPlayerBordernBYP {
+    background: var(--White-transparent);
+    border: 2px solid var(--WS-Teal-Light1);
     height: auto;
 }
 
@@ -1680,6 +1705,7 @@ main>nav {
 .section-nav a:focus {
     color: var(--WS-Blue);
 }
+
 ul,
 ol {
     list-style: none;
@@ -1698,6 +1724,7 @@ li .rightPanel {
     z-index: 98;
 
 }
+
 ul .rightPanel {
     list-style-type: none;
 }
@@ -2007,7 +2034,7 @@ hr {
 }
 
 .elementCard.LASO:hover {
-    border-bottom: 5px solid var(--AMBlue);
+    border-bottom: 5px solid var(--LASOblue700);
 }
 
 .elementCard.GLORIFY:hover {
@@ -3985,7 +4012,7 @@ body .flex-container.Mobile {
 
 .ProjectBannerInnerND {
     position: absolute;
-    top: calc(100% - 128px);
+    top: calc(100% - 152px);
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
@@ -4971,7 +4998,7 @@ button.Clipboard.clickTxt:active {
 }
 
 .button-35.LASO:hover {
-    box-shadow: var(--AMBlue) 0 0 0 0.1em, transparent 0 0 0 0;
+    box-shadow: var(--LASOblue700) 0 0 0 0.1em, transparent 0 0 0 0;
     color: var(--);
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -5341,10 +5368,23 @@ button.Clipboard.clickTxt:active {
 .play-button:hover {
     background-color: var(--colorTealDk);
 }
+.LASO.play-button {
+    background-color: var(--LASOblue500);
+    color: var(--white);
+}
+.LASO.play-button:hover {
+    background-color: var(--LASOblue700);
+}
 
+.BYP.play-button {
+    background-color: var(--WS-Teal-Light1);
+    color: var(--grey900);
+}
+.BYP.play-button:hover {
+    background-color: var(--WS-Teal);
+}
 .Glorify.play-button {
     background-color: var(--GLORIFY-orangeLt);
-
     color: var(--grey900);
 }
 
