@@ -1,0 +1,41 @@
+<% if (typeof slideNumber === 'undefined') { 
+    slideNumber = '3'; 
+  } 
+  %>
+
+
+<% if (slideNumber === '2') { %>
+
+<% } else if (slideNumber === '3') { %>
+
+<div class="LRcarousel Grid Grid--gutters Grid--1of4 Grid--center u-textCenter" aria-label="LRcarousel" Tabindex="0" id="<%= vertCarouselID %>">
+
+  <div class="carousel__nav Grid-cell">
+    <a class="slider-nav" aria-label="Go to slide 1">
+      <div> <%= vertCarouselTitle1 %> </div>
+    </a>
+    <a class="slider-nav" aria-label="Go to slide 2">
+      <div><%= vertCarouselTitle2 %></div>
+    </a>
+    <a class="slider-nav" aria-label="Go to slide 3">
+      <div><%= vertCarouselTitle3 %></div>
+    </a>
+  </div>
+  <div class="LRslides Grid-cell">
+    <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 3" tabindex="0">
+      <img src="<%- vertCarouselImg1 %>" alt="">
+    </div>
+    <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 3" tabindex="0">
+      <img src="<%- vertCarouselImg2 %>" alt="">
+
+    </div>
+    <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 3" tabindex="0">
+      <img src="<%- vertCarouselImg3 %>" alt="">
+    </div>
+  </div>
+</div>
+
+<% } else if (slideNumber === '4') { %>
+
+
+<% } %>

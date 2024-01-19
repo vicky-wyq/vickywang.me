@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
-<%- include('../shared/head', {SEO:true, Title:'Architectural Innovation and Academic Exploration - Vicky Wang', 
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Architectural Innovation and Academic Exploration - Vicky Wang', 
   description:' a showcase of innovative design projects from her M.Arch program, highlighting expertise in building form, spatial arrangement, and environmental considerations.', 
-  pageURL:'', thumbnailImgURL: 'vickywang_web.png'
+  pageURL:'architecture', thumbnailImgURL: 'vickywang_web.png'
   }) %>
 <!--Head-->
 
@@ -11,7 +11,7 @@
 <body>
   <%- include(`${templatePath}/shared/progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'ARCHITECTURE' }) %>
-  <div class="blankHM"></div>
+  <div class="blankHL"></div>
   <!--intro-->
   <div class="wrapper">
     <div class="element">
@@ -66,7 +66,7 @@
   <div class="blankHS"></div>
 
   <!-- Arrow -->
-  <%- include('../shared/comp_content_subtitle_arrow', {message: 'Selected Projects' }) %>
+  <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Selected Projects' }) %>
 
   <!-- Arrow -->
   <div class="blankHXS"></div>
