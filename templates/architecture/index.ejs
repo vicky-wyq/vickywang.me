@@ -12,61 +12,24 @@
   <%- include(`${templatePath}/shared/progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'ARCHITECTURE' }) %>
   <div class="blankHM"></div>
-  <!--intro-->
-  <div class="wrapper">
-    <div class="element">
+  <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`hi there!`}) %>
+  <%- include(`${templatePath}/shared/comp_titleWeb`,{
+    introTitle1: `Architecture`,
+    divider1: true, 
+    introTitle2: `Academic projects`,
+    divider2: false, 
+    introTitle3: ``,
+    divider3: false, 
+    introTitle4: ``
+  }) %>
+  <%- include(`${templatePath}/shared/base_paragraph`,{
+    paragraphTxt:`Throughout my three-year M.Arch program, I delved into design theories, methods, and practices, which are exemplified in the following projects. These projects placed great emphasis on the significant determinants of building form, encompassing format, spatial arrangement, materiality, tectonics, social considerations, technology, and environmental factors.`
+  }) %>
 
-      <div class="Grid--gutters">
-        <div class="intro">
-          <div class="t-hello">hi there! </div>
-        </div>
-        <div class="row">
-          <div class="widthMax">
-            <strong>
-              <div class="intro" data-aos="fade-up">
-                <h1> Architecture &nbsp;</h1>
-                <span class="divider1"></span>
-                <h1> Academic projects </h1>
-              </div>
-            </strong>
-          </div>
-
-          <div class="paddingleft">
-            <div class="widthFitContent">
-              <div class="dropdownSM">
-                <img title="Share" class="iconS hoverGrey100 paddingM borderRadiusMax dropbtn" src="../icon/share.svg" alt="Share">
-                <div class="dropdownSM-content">
-                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me/architecture" target="_blank">Share on LinkedIn</a>
-
-                  <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me/blog&media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&description=Architectural%20Portfolio%20-%20Vicky%20Wang" target="_blank">
-                    Share on Pinterest
-                  </a>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="Grid Grid--full Grid--gutters">
-        <div class="Grid-cell Grey700">
-          <h3>Throughout my three-year M.Arch program, I delved into design theories, methods, and practices, which are
-            exemplified in the following projects. These projects placed great emphasis on the significant determinants
-            of building form, encompassing format, spatial arrangement, materiality, tectonics, social considerations,
-            technology, and environmental factors.</h3>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-  <!--intro-->
   <div class="blankHS"></div>
 
   <!-- Arrow -->
-  <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Selected Projects' }) %>
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Selected Projects' }) %>
 
   <!-- Arrow -->
   <div class="blankHXS"></div>
@@ -289,7 +252,7 @@
 
 
   <!-- Shared across the platform -->
-  <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Skills & Experiences' }) %>
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Skills & Experiences' }) %>
   <%- include(`${templatePath}/shared/comp_tagCloud`) %>
   <%- include(`${templatePath}/shared/comp_closingMessage`, { version: 'addMessage', message: `Thank You for Visiting! please <a class="textUnderline" href="mailto:vickyw.design@gmail.com">email</a> me
   about professional projects.`}) %>
