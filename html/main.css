@@ -65,6 +65,8 @@
     /* F8F8F8, f2f2f2*/
     --Grey100: #fafafa;
 
+    --GreyFooter: #faf9f8;
+    --GreyHTMLBg: #fefdfc;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
     --teal800: #448686;
@@ -151,7 +153,9 @@ html {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     height: var(--height100);
+    background-color: var(--GreyHTMLBg);
 }
+
 
 body {
     width: 100%;
@@ -298,8 +302,11 @@ body .displayPhone {
     left: 0;
     right: 0;
     margin: 0 auto;
+    background: rgba(255, 252, 252, 0.7);
+    /*     
+    background: rgba(250, 249, 248, 0.7);
     background: rgba(255, 255, 255, 0.7);
-    /*  10% opaque green */
+    */
     height: 64px;
     transition: transform 0.25s ease-in-out;
     border-bottom: 1px solid var(--Grey200);
@@ -894,7 +901,7 @@ polygon {
 }
 
 .cardBorder {
-    border: 0.06em solid var(--Grey200);
+    border: 0.06em solid var(--Grey200) !important;
 
 }
 
@@ -4520,7 +4527,9 @@ body .flex-container.Mobile {
     padding: 1.2em;
 
 }
-
+.footerBg{
+    background-color: var(--GreyFooter);
+}
 /* ===== hover effect ====== */
 
 /* ======== table ======== */

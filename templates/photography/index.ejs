@@ -11,19 +11,20 @@
   <%- include(`${templatePath}/shared/progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'PHOTOGRAPHY' }) %>
   <div class="blankHM"></div>
+  <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`hi there!`}) %>
 
-  <%- include('../shared/intro', { 
-    version: '',
-    contents: ['UX designer', 'Nature & wildlife'],
-    
-
-    layoutType: '', 
-    introContentP1: `Through my unique perspective and lens, I find joy in capturing the intricate narratives and inherent beauty of natural elements in my photography. Whether it's a sweeping landscape or a tiny detail, I strive to recompose nature in a way that showcases its stunning aspects. I am passionate about observing the intricate details of natural components and crafting their stories through my art, sharing the wonders of the natural world with others.
-`,
-    introContentP2:'',
-    introContentP3:''
-
-}) %>
+  <%- include(`${templatePath}/shared/comp_titleWeb`,{
+    introTitle1: `Nature`,
+    divider1: true, 
+    introTitle2: `wildlife`,
+    divider2: false, 
+    introTitle3: ``,
+    divider3: false, 
+    introTitle4: ``
+  }) %>
+  <%- include(`${templatePath}/shared/base_paragraph`,{
+    paragraphTxt:`Through my unique perspective and lens, I find joy in capturing the intricate narratives and inherent beauty of natural elements in my photography. Whether it's a sweeping landscape or a tiny detail, I strive to recompose nature in a way that showcases its stunning aspects. I am passionate about observing the intricate details of natural components and crafting their stories through my art, sharing the wonders of the natural world with others.`
+  }) %>
 
 
 
@@ -731,7 +732,7 @@
 
 
   <!-- Shared across the platform -->
-  <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Skills & Experiences' }) %>
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Skills & Experiences' }) %>
   <%- include(`${templatePath}/shared/comp_tagCloud`) %>
   <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
 

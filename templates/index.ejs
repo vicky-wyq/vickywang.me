@@ -11,17 +11,24 @@
   <%- include( `${templatePath}/shared/progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'PROJECT' }) %>
   <div class="blankHM"></div>
-  <%- include(`${templatePath}/shared/intro`, { 
-    version: 'vicky',
-    contents: ['UX designer', 'Product designer'],
-    layoutType: '', 
-    introContentP1: 'I am based in San Francisco and am deeply committed to developing web solutions for both businesses and consumers. My approach hinges on dissecting complex challenges and transforming them into clear, efficient, and impactful digital experiences.',
-    introContentP2:'',
-    introContentP3:''
-}) %>
+  <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`hello, I'm Vicky.
+  `}) %>
+    <%- include(`${templatePath}/shared/comp_titleWeb`,{
+      introTitle1: `UX designer`,
+      divider1: true, 
+      introTitle2: `Product designer`,
+      divider2: false, 
+      introTitle3: ``,
+      divider3: false, 
+      introTitle4: ``
+    }) %>
+  <%- include(`${templatePath}/shared/base_paragraph`,{
+    paragraphTxt:`I am based in San Francisco and am deeply committed to developing web solutions for both businesses and consumers. My approach hinges on dissecting complex challenges and transforming them into clear, efficient, and impactful digital experiences.`
+  }) %>
+
   <%- include(`${templatePath}/shared/homePage_icons-buttons`) %>
   <!-- Arrow -->
-  <%- include(`${templatePath}/shared/comp_content_subtitle_arrow`, {message: 'Case Study' }) %>
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Case Study' }) %>
   <!-- Arrow -->
   <!-- Content -->
   <div class="wrapper">
@@ -104,7 +111,7 @@
   <!-- Content -->
 
   <!-- Arrow -->
-  <%- include('shared/comp_content_subtitle_arrow', {message: 'Design System' }) %>
+  <%- include('shared/comp_textualElements_arrow', {message: 'Design System' }) %>
   <!-- Arrow -->
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-3">
@@ -119,7 +126,7 @@
     </div>
   </div>
   <!-- Arrow -->
-  <%- include('shared/comp_content_subtitle_arrow', {message: 'Skills & Experiences' }) %>
+  <%- include('shared/comp_textualElements_arrow', {message: 'Skills & Experiences' }) %>
   <!-- Arrow -->
 
   <%- include(`${templatePath}/shared/comp_tagCloud`) %>

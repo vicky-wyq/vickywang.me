@@ -5,116 +5,36 @@
   pageURL:'/blog', thumbnailImgURL: 'vickywang_web.png'
   }) %>
 <!--Head-->
+
 <body>
-  <!--progressBarScroll-->
-  <div class="progressContainer">
-    <div class="progress-container">
-      <div class="progress-bar" id="progressBar"></div>
-    </div>
-  </div>
-  <!--progressBarScroll-->
-  <!-- header -->
-  <nav class="header" id="header">
-    <div class="backgroundColorNav">
-      <a href="http://vickywang.me/"><img class="logo pointer" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
-      <div class="navbar">
-        <ul class="nav-menu">
-          <li class="nav-item inactive marginZero"><a href="/" class=" nav-link box ">PROJECT</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
-          </li>
-          <li class="nav-item active activeNav marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
-          </li>
-          <li class="nav-item inactive  marginZero"><a href="/about" class="nav-link box">ABOUT</a></li>
-        </ul>
-      </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </nav>
-  <!-- header -->
+  <%- include(`${templatePath}/shared/progressBar`) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'BLOG' }) %>
   <div class="blankHM"></div>
   <!--intro-->
-  <div class="wrapper">
-    <div class="element">
-      <div class="Grid--gutters">
+  <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`hi there!`}) %>
+  <%- include(`${templatePath}/shared/comp_titleWeb`,{
+      introTitle1: `Welcome to the UX Odyssey`,
+      divider1: true, 
+      introTitle2: `Insights & Innovations`,
+      divider2: ``, 
+      introTitle3: ``,
+      divider3: ``, 
+      introTitle4: ``
+    }) %>
 
-        <div class="intro">
-          <div class="t-hello">hi there! </div>
-        </div>
-        <div class="row">
-          <div class="widthMax">
-            <strong>
-              <div class="intro" data-aos="fade-up">
-                <h1> Welcome to the UX Odyssey &nbsp;</h1>
-                <span class="divider1"></span>
-                <h1> Insights &#38; Innovations &nbsp;</h1>
-              </div>
-            </strong>
-          </div>
+  <%- include(`${templatePath}/shared/base_paragraph`,{
+    paragraphTxt:`Welcome to my digital corner, where the intricate world of User Experience design unfolds. I’m Vicky, a UX designer with a passion for transforming complex challenges into intuitive and impactful user experiences.`
+  }) %>
+  <%- include(`${templatePath}/shared/base_paragraph`,{
+    paragraphTxt:`In this blog, we'll journey through the multifaceted landscape of UX design. From the depths of B2B SaaS solutions to the vibrant realm of consumer applications, every post is a new adventure. Whether you’re a fellow designer seeking inspiration, a business owner aiming to enhance your digital presence, or just someone curious about the art and science of UX design, you've landed in the right place.`
+  }) %>
+  <%- include(`${templatePath}/shared/base_paragraph`,{
+    paragraphTxt:`Here, you'll find a rich collection of articles, case studies, and practical tips. I’ll share insights from my own experiences in simplifying intricate UX problems, delve into the latest trends, and explore the crossroads of creativity and usability. Expect to uncover the secrets behind effective user-centric designs, how to cater to diverse user needs, and much more.`
+  }) %>
+  <%- include(`${templatePath}/shared/base_paragraph`,{
+    paragraphTxt:`So, buckle up and join me on this exhilarating journey to explore, learn, and grow in the ever-evolving world of UX design. Let's make the digital space more accessible, engaging, and delightful, one design at a time.`
+  }) %>
 
-          <div class="paddingleft">
-            <div class="widthFitContent">
-              <div class="dropdownSM">
-                <img title="Share" class="iconS hoverGrey100 paddingM borderRadiusMax dropbtn" src="../icon/share.svg"
-                  alt="Share">
-                <div class="dropdownSM-content">
-                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me/blog"
-                    target="_blank">Share on LinkedIn</a>
-
-                  <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me/blog&media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&description=Innovative%20UX%20Strategy%20%26%20Web%20Development%20Insights%20-%20Blog%20by%20Vicky%20Wang"
-                    target="_blank" target="_blank">Share on Pinterest</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="Grid Grid--full Grid--gutters">
-        <div class="Grid-cell">
-          <h3>Welcome to my digital corner, where the intricate world of User Experience design unfolds. I’m Vicky,
-            a UX designer with a passion for transforming complex challenges into intuitive and impactful
-            user experiences.
-          </h3>
-          <h3>
-            In this blog, we'll journey through the multifaceted landscape of UX design. From the depths of B2B SaaS
-            solutions to the vibrant realm of consumer applications, every post is a new adventure. Whether you’re a
-            fellow designer seeking inspiration, a business owner aiming to enhance your digital presence, or just
-            someone curious about the art and science of UX design, you've landed in the right place.
-          </h3>
-          <h3>Here, you'll find a rich collection of articles, case studies, and practical tips. I’ll share insights
-            from my own experiences in simplifying intricate UX problems, delve into the latest trends, and explore the
-            crossroads of creativity and usability. Expect to uncover the secrets behind effective user-centric designs,
-            how to cater to diverse user needs, and much more.
-          </h3>
-          <h3>
-            So, buckle up and join me on this exhilarating journey to explore, learn, and grow in the ever-evolving
-            world of UX design. Let's make the digital space more accessible, engaging, and delightful, one design at a
-            time.
-
-
-          </h3>
-        </div>
-
-      </div>
-
-
-      <div class="Grid Grid--full Grid--gutters">
-        <div class="Grid-cell Grey700">
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
   <!--intro-->
   <div class="blankHS"></div>
 
@@ -319,8 +239,7 @@
             <div class="Grid Grid--gutters">
               <div class="ClipboardBoxIconOnly">
                 <button class="ClipboardIconOnly">
-                  <img title="Copy Email Address to Clipboard" class="iconS hoverGrey300 paddingS borderRadiusMax"
-                    title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                  <img title="Copy Email Address to Clipboard" class="iconS hoverGrey300 paddingS borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
                   <p class="clickIconCopy">vickyw.design@gmail.com</p>
                 </button>
               </div>
@@ -329,8 +248,7 @@
               </a>
 
               <a target="_blank" href="https://github.com/vicky-wyq">
-                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/git.svg" alt="GitHub"
-                  title="GitHub">
+                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/git.svg" alt="GitHub" title="GitHub">
               </a>
 
               <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
@@ -338,8 +256,7 @@
               </a>
 
               <a target="_blank" href="https://www.instagram.com/vw_yiqi/">
-                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/ins.svg" alt="Instagram"
-                  title="Instagram">
+                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../icon/ins.svg" alt="Instagram" title="Instagram">
               </a>
             </div>
             <div class="blankHXS"></div>
