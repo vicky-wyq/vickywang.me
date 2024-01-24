@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Scalable Design System Design and Implementation by Vicky Wang', 
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Scalable Design System Design and Implementation by Vicky Wang', 
 description:`A comprehensive system that enhances the scalability and consistency of UX design. It serves as a practical guide for designing scalable, efficient, and cohesive user interfaces and experiences. `, 
 pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 }) %>
@@ -12,9 +12,13 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
 <body>
   <%- include(`${templatePath}/shared/progressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'PROJECT' }) %>
 
-
+  <%- include(`${templatePath}/shared/progressBar`) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'back', 
+    currentPage: 'PROJECT',
+    PageUrl:`/`
+    }) %>
 
 
   <!-- header image -->
@@ -3702,7 +3706,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Navigation Exploration' }) %>
           <%- include(`${templatePath}/shared/block_cardNoPassword`, {
           hoverBorderColor:``,
-          cardNoPwURL:`${websitePath}/navigation/`,
+          cardNoPwURL:`${websitePath}/design_system/navigation/`,
           cardNoPwImgURL:`${websitePath}/projectImages/vicky_website_short.svg`,
           cardNoPwTitle: `Navigation Exploration`, 
           cardNoPwDescription:`Developing a more structured and logical navigation system for displaying case

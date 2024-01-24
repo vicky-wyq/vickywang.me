@@ -9,75 +9,12 @@
 <!--Head-->
 
 <body>
-  <!--progressBarScroll-->
-  <div class="progressContainer">
-    <div class="progress-container">
-      <div class="progress-bar APPOINTA" id="progressBar"></div>
-    </div>
-  </div>
-  <!--progressBarScroll-->
-  <!-- header -->
-  <nav class="header" id="header">
-    <div class="backgroundColorNav">
-      <a href="http://vickywang.me/"><img class="logo pointer" src="../icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
-      <div class="navbar">
-        <ul class="nav-menu">
-          <li class="dropdown nav-item active activeNav marginZero"><a href="/" class=" nav-link box ">PROJECT</a>
-            <div class="dropdown-content">
-
-              <a href="/glorify/">
-
-                <div>
-                  <img src="../ProjectImages/Cover_Glorify.png" alt="GLORIFY">
-                  <div class="element">
-                    <h5 class="colorBlack">GLORIFY | Daily Worship in Christian Practice</h5>
-                  </div>
-                </div>
-              </a>
-              <a href="/seer/">
-                <div>
-                  <img src="../ProjectImages/Cover_SEER.png" alt="SEER">
-                  <div class="element">
-                    <h5 class="colorBlack">SEER | Marketing Manager Tracking Business Performance</h5>
-                  </div>
-                </div>
-              </a>
-              <a href="/design_system/">
-                <div>
-                  <img src="../ProjectImages/vicky_website.png" alt="Design System">
-                  <div class="element">
-                    <h5 class="colorBlack">Design System | Efficiently Bulid &amp; Maintain Components</h5>
-                  </div>
-                </div>
-              </a>
-              <a href="/navigation/">
-                <div>
-                  <img src="../ProjectImages/vicky_website.png" alt="Navigation System">
-                  <div class="element">
-                    <h5 class="colorBlack">Navigation Design | Secondary Menu Options for vickywang.me</h5>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box">ABOUT</a></li>
-        </ul>
-      </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </nav>
-  <!-- header -->
+  <%- include(`${templatePath}/shared/progressBar`) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'back', 
+    currentPage: 'PROJECT',
+    PageUrl:`/`
+    }) %>
 
 
   <!-- Working process -->
