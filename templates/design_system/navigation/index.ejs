@@ -1,0 +1,182 @@
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Navigation Solutions - User Interface & Digital Experience by Vicky Wang', 
+description:`A comprehensive system that enhances the scalability and consistency of UX design. It serves as a practical guide for designing scalable, efficient, and cohesive user interfaces and experiences. `, 
+pageURL:'design_system/navigation/', thumbnailImgURL: 'vickywang_web.png'
+}) %>
+<!--Head-->
+
+
+<body>
+  <%- include(`${templatePath}/shared/progressBar`) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'back', 
+    currentPage: 'PROJECT',
+    PageUrl:`/design_system`
+    }) %>
+  <main>
+    <div class="GreyBg200">
+      <div class="blankPhone"></div>
+      <div class="blankHS"></div>
+      <div class="ProjectBanner displayLaptop">
+        <div class="blankMin1880"></div>
+        <img src="Mockup.png" alt="vickywang.me">
+
+        <div class="ProjectBannerInnerND">
+          <h1 class=""><strong>Navigation design</strong> </h1>
+          <h3 class="Grid Grid--center colorBlack">Enhancing the readability of UX projects</h3>
+          <div class="blankHXS"></div>
+        </div>
+      </div>
+
+      <div class="ProjectBanner displayTablet">
+        <div class="blankMin1880"></div>
+        <img class="displayTablet" src="MockupS.png" alt="vickywang.me">
+        <div class="ProjectBannerInnerND">
+          <h1 class=""><strong>Navigation design</strong> </h1>
+          <h3 class="Grid Grid--center colorBlack">Enhancing the readability of UX projects</h3>
+          <div class="blankHXS"></div>
+
+
+        </div>
+      </div>
+      <div class="ProjectBanner displayPhone">
+        <div class="blankMin1880"></div>
+        <img class="displayPhone" src="MockupXS.png" alt="vickywang.me">
+        <div class="ProjectBannerInnerND">
+          <h1 class=""><strong>Navigation Design</strong> </h1>
+          <h3 class="Grid Grid--center colorBlack">Enhancing the readability of UX projects</h3>
+          <div class="blankHXS"></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="blankHXS"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3><strong>Main goal</strong></h3>
+            <h4>The goal of this navigation update is to present the design thinking process in a clear and logical
+              manner.
+            </h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3><strong>Breakdown</strong></h3>
+
+            <ul>
+              <li class="listCircle">Able to understand the context easily</li>
+              <li class="listCircle"> easily determine where the user is looking/reading </li>
+              <li class="listCircle"> skip or jump to the sections they are interested in </li>
+              <li class="listCircle">revisiting previous sections if desired</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="blankHXS"></div>
+
+      <div class="Grid Grid--gutters Grid--cols-4">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3><strong>Duration</strong></h3>
+            <h4>April - May 2023 </h4>
+            <h4>20 Hours </h4>
+
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3><strong>Team</strong></h3>
+            <h4>Individual work</h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3><strong>Role</strong></h3>
+            <h4>Design</h4>
+            <h4>implement</h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h3><strong>Tool</strong></h3>
+            <h4>HTML CSS JS</h4>
+            <h4>VS Code, AWS S3</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="blankHS"></div>
+
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+          hoverBorderColor:``,
+          cardNoPwURL:`${websitePath}/design_system/navigation/V1/`,
+          cardNoPwImgURL:`${websitePath}/ProjectImages/Cover_NavigationV1.svg`,
+          cardNoPwTitle: `Version 1`, 
+          cardNoPwDescription:`The main goal of the initial version was to improve the readability, scannability,
+                      scrollability, and skippability of the UX case study projects.` 
+          }) %>
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+          hoverBorderColor:``,
+          cardNoPwURL:`${websitePath}/design_system/navigation/V2/`,
+          cardNoPwImgURL:`${websitePath}/ProjectImages/Cover_NavigationV2.svg`,
+          cardNoPwTitle: `Version 2`, 
+          cardNoPwDescription:`After receiving feedback and conducting testing, the goal for the iteration was to streamline
+                      the content and ensure that users can find what they're looking for with minimal effort.` 
+          }) %>
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+          hoverBorderColor:``,
+          cardNoPwURL:`${websitePath}/design_system/navigation/V3/`,
+          cardNoPwImgURL:`${websitePath}/ProjectImages/Cover_NavigationV3.svg`,
+          cardNoPwTitle: `Version 3`, 
+          cardNoPwDescription:`After conducting additional usability testing, I have refined the method of displaying content
+                    in a single location, which is more organized and avoids the need for a lengthy list.` 
+          }) %>
+      </div>
+    </div>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  <div class="blankHL"></div>
+
+
+
+
+
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { 
+    version:``,  message:``}) %>
+
+  <%- include(`${templatePath}/shared/modal`) %>
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- Shared across the platform -->
+
+
+</body>
+
+
+
+
+</html>

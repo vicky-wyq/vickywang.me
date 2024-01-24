@@ -1,172 +1,19 @@
 <html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Exploring Navigation V2 - Digital Interfaces & User Engagement by Vicky Wang', 
+description:`Discover Vicky Wang's Navigation V2 Development, focusing on user engagement through innovative digital interfaces. A step forward in digital navigation and design.`, 
+pageURL:'design_system/navigation/V2/', thumbnailImgURL: 'vickywang_web.png'
+}) %>
+<!--Head-->
 
-<head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Basic Metadata -->
-  <link rel="canonical" href="https://vickywang.me/navigation/V2/">
-  <title>Exploring Navigation V2 - Digital Interfaces & User Engagement by Vicky Wang</title>
-  <meta name="author" content="Vicky W.">
-  <meta name="description" content="Discover Vicky Wang's Navigation V2 Development, focusing on user engagement through innovative digital interfaces. A step forward in digital navigation and design.">
-  <!-- Open Graph / Facebook -->
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Exploring Navigation V2 - Digital Interfaces & User Engagement by Vicky Wang">
-  <meta property="og:description"
-    content="Discover Vicky Wang's Navigation V2 Development, focusing on user engagement through innovative digital interfaces. A step forward in digital navigation and design.">
-  <meta property="og:url" content="https://vickywang.me/navigation/V2/">
-  <meta property="og:site_name" content="Vicky's Website">
-  <meta property="og:image" content="https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_web.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://vickywang.me/navigation/V2/">
-  <meta property="twitter:title" content="Exploring Navigation V2 - Digital Interfaces & User Engagement by Vicky Wang">
-  <meta property="twitter:description"
-    content="Discover Vicky Wang's Navigation V2 Development, focusing on user engagement through innovative digital interfaces. A step forward in digital navigation and design.">
-  <meta property="twitter:image" content="https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_web.png">
-
-  <!-- favicon -->
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-
-
-  <!-- Google Font Preconnect-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Google Font Preconnect-->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <!--sitewide font-family: 'Lato', sans-serif; -->
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <!--handwriting -  font-family: 'Caveat', sans-serif; -->
-  <!--handwriting -  font-family: 'Caveat Brush', sans-serif; -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  <!--handwriting font-family: 'Indie Flower'; -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <!--handwriting font-family: 'Gloria Hallelujah';  | Hello font|-->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
-    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- crypto js -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <!--jQuery-->
-
-  <!--aos-->
-  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-  <!-- google analytics-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-E8YXDWJST2');
-  </script>
-
-
-
-
-
-  <link rel="stylesheet" href="../../main.css">
-  <script type="text/javascript" src="../../scripts.js"></script>
-  <script type="text/javascript" src="../../scripts_project.js"></script>
-
-</head>
 
 <body>
-
-  <!--progressBarScroll-->
-  <div class="progressContainer">
-    <div class="progress-container">
-      <div class="progress-bar " id="progressBar"></div>
-    </div>
-  </div>
-  <!--progressBarScroll-->
-  <!-- header -->
-  <nav class="header navbarN" id="header">
-
-
-    <div class="backgroundColorNav">
-
-      <a href="/navigation/" class="widthFitContent centerVer logo pointer colorBlack Grid--center"><img class="moveLeftRight iconS"
-          src="../../icon/arrow-back.svg" alt="Go back">
-        <h6>BACK</h6>
-      </a>
-      <div class="navbar">
-        <ul class="nav-menu">
-          <li class="dropdown nav-item active  marginZero"><a href="/" class="nav-link box">PROJECT</a>
-
-            <div class="dropdown-content">
-              <a href="/glorify/">
-                <div class="cardBorder borderRadiusS GLORIFY">
-                  <img src="../../ProjectImages/Cover_Glorify.png" alt="GLORIFY">
-                  <div class="element">
-                    <h5 class="colorBlack">GLORIFY | Daily worship</h5>
-                  </div>
-                </div>
-              </a>
-              <a href="/appointa/">
-                <div class="cardBorder borderRadiusS APPOINTA">
-                  <img src="../../ProjectImages/Cover_APPOINTA.png" alt="APPOINTA">
-                  <div class="element">
-                    <h5 class="colorBlack">APPOINTA | Scheduling</h5>
-                  </div>
-                </div>
-              </a>
-              <a href="/seer/">
-                <div class="cardBorder borderRadiusS SEER ">
-                  <img src="../../ProjectImages/Cover_SEER.png" alt="SEER">
-                  <div class="element">
-                    <h5 class="colorBlack">SEER | Business performance</h5>
-                  </div>
-                </div>
-              </a>
-              <a href="/design_system/">
-                <div class="cardBorder borderRadiusS ">
-                  <img src="../../ProjectImages/Cover_portfolioWeb.svg" alt="Design System">
-                  <div class="element">
-                    <h5 class="colorBlack">Design System | vickywang.me</h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-
-          <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box">ARCHITECTURE</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box">PHOTOGRAPHY</a>
-          </li>
-          <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
-          </li>
-
-          <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box">ABOUT</a></li>
-        </ul>
-      </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </nav>
-  <!-- header -->
+  <%- include(`${templatePath}/shared/progressBar`) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'back', 
+    currentPage: 'PROJECT',
+    PageUrl:`/design_system/navigation`
+    }) %>
   <main>
     <div class="GreyBg200">
       <div class="blankPhone"></div>
@@ -312,7 +159,7 @@
               <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
                 <div class="Grid-cell">
                   <h1 class="Grid Grid--center"> <span>C1 - SC 1</span><img class="moveUpDown widthLogo"
-                      src="../../icon/icon_research.svg" alt="Research">
+                      src="../../../icon/icon_research.svg" alt="Research">
                   </h1>
                 </div>
               </div>
@@ -320,7 +167,7 @@
               <!-- Arrow -->
               <div class="wrapper">
                 <div class="element">
-                  <h2 class="tArrow">Image <img class="seArrow" src="../../icon/arrow-se.svg" alt="icon arrow"></h2>
+                  <h2 class="tArrow">Image <img class="seArrow" src="../../../icon/arrow-se.svg" alt="icon arrow"></h2>
                 </div>
               </div>
               <!-- Arrow -->
@@ -328,7 +175,7 @@
 
               <div class="Grid Grid--full Grid--gutters u-textCenter">
                 <div class="Grid-cell">
-                  <div class="element"> <img class="cardAPPOINTA " src="../../design_system/Placeholder.svg"
+                  <div class="element"> <img class="cardAPPOINTA " src="../../../design_system/Placeholder.svg"
                       alt="New User">
                   </div>
                 </div>
@@ -339,7 +186,7 @@
               <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
                 <div class="Grid-cell">
                   <h1 class="Grid Grid--center"> <span>C1 - SC 2</span><img class="moveUpDown widthLogo"
-                      src="../../icon/icon_research.svg" alt="Research">
+                      src="../../../icon/icon_research.svg" alt="Research">
                   </h1>
                 </div>
               </div>
@@ -347,7 +194,7 @@
               <!-- Arrow -->
               <div class="wrapper">
                 <div class="element">
-                  <h2 class="tArrow">Note <img class="seArrow" src="../../icon/arrow-se.svg" alt="icon arrow"></h2>
+                  <h2 class="tArrow">Note <img class="seArrow" src="../../../icon/arrow-se.svg" alt="icon arrow"></h2>
                 </div>
               </div>
               <!-- Arrow -->
@@ -373,7 +220,7 @@
               <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
                 <div class="Grid-cell">
                   <h1 class="Grid Grid--center"> <span>C1 - SC 1</span><img class="moveUpDown widthLogo"
-                      src="../../icon/icon_research.svg" alt="Research">
+                      src="../../../icon/icon_research.svg" alt="Research">
                   </h1>
                 </div>
               </div>
@@ -381,7 +228,7 @@
               <!-- Arrow -->
               <div class="wrapper">
                 <div class="element">
-                  <h2 class="tArrow">Image <img class="seArrow" src="../../icon/arrow-se.svg" alt="icon arrow"></h2>
+                  <h2 class="tArrow">Image <img class="seArrow" src="../../../icon/arrow-se.svg" alt="icon arrow"></h2>
                 </div>
               </div>
               <!-- Arrow -->
@@ -389,7 +236,7 @@
 
               <div class="Grid Grid--full Grid--gutters u-textCenter">
                 <div class="Grid-cell">
-                  <div class="element"> <img class="cardAPPOINTA " src="../../design_system/Placeholder.svg"
+                  <div class="element"> <img class="cardAPPOINTA " src="../../../design_system/Placeholder.svg"
                       alt="New User">
                   </div>
                 </div>
@@ -400,7 +247,7 @@
               <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
                 <div class="Grid-cell">
                   <h1 class="Grid Grid--center"> <span>C1 - SC 2</span><img class="moveUpDown widthLogo"
-                      src="../../icon/icon_research.svg" alt="Research">
+                      src="../../../icon/icon_research.svg" alt="Research">
                   </h1>
                 </div>
               </div>
@@ -408,7 +255,7 @@
               <!-- Arrow -->
               <div class="wrapper">
                 <div class="element">
-                  <h2 class="tArrow">Image <img class="seArrow" src="../../icon/arrow-se.svg" alt="icon arrow"></h2>
+                  <h2 class="tArrow">Image <img class="seArrow" src="../../../icon/arrow-se.svg" alt="icon arrow"></h2>
                 </div>
               </div>
               <!-- Arrow -->
@@ -416,7 +263,7 @@
 
               <div class="Grid Grid--full Grid--gutters u-textCenter">
                 <div class="Grid-cell">
-                  <div class="element"> <img class="cardAPPOINTA " src="../../design_system/Placeholder.svg"
+                  <div class="element"> <img class="cardAPPOINTA " src="../../../design_system/Placeholder.svg"
                       alt="New User">
                   </div>
                 </div>
@@ -460,7 +307,7 @@
                 <!-- Arrow -->
                 <div class="wrapper">
                   <div class="element">
-                    <h2 class="tArrow">Tag <img class="seArrow" src="../../icon/arrow-se.svg" alt="icon arrow"></h2>
+                    <h2 class="tArrow">Tag <img class="seArrow" src="../../../icon/arrow-se.svg" alt="icon arrow"></h2>
                   </div>
                 </div>
                 <!-- Arrow -->
@@ -508,7 +355,7 @@
                 <!-- Arrow -->
                 <div class="wrapper">
                   <div class="element">
-                    <h2 class="tArrow">Note <img class="seArrow" src="../../icon/arrow-se.svg" alt="icon arrow"></h2>
+                    <h2 class="tArrow">Note <img class="seArrow" src="../../../icon/arrow-se.svg" alt="icon arrow"></h2>
                   </div>
                 </div>
                 <!-- Arrow -->
@@ -531,7 +378,7 @@
                 <!-- Arrow -->
                 <div class="wrapper">
                   <div class="element">
-                    <h2 class="tArrow">Note <img class="seArrow" src="../../icon/arrow-se.svg" alt="icon arrow"></h2>
+                    <h2 class="tArrow">Note <img class="seArrow" src="../../../icon/arrow-se.svg" alt="icon arrow"></h2>
                   </div>
                 </div>
                 <!-- Arrow -->
@@ -552,7 +399,7 @@
                 <!-- Arrow -->
                 <div class="wrapper">
                   <div class="element">
-                    <h2 class="tArrow">Tag <img class="seArrow" src="../../icon/arrow-se.svg" alt="icon arrow"></h2>
+                    <h2 class="tArrow">Tag <img class="seArrow" src="../../../icon/arrow-se.svg" alt="icon arrow"></h2>
                   </div>
                 </div>
                 <div class="Grid Grid--gutters Grid--cols-2">
@@ -609,7 +456,7 @@
       <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
         <div class="Grid-cell">
           <h1 class="Grid Grid--center"> <span>Title</span><img class="moveUpDown widthLogo"
-              src="../../icon/icon_research.svg" alt="Research">
+              src="../../../icon/icon_research.svg" alt="Research">
           </h1>
         </div>
       </div>
@@ -703,142 +550,14 @@
 
 
 
-  <div class="blankHL"></div>
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { 
+    version:``,  message:``}) %>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--footer-->
-  <footer class="GreyBg100">
-
-    <div class="blankHS"></div>
-    <div class="wrapper">
-      <div class="element">
-
-        <div class="Grid Grid--gutters Grid--1of3">
-          <div class="Grid-cell">
-
-            <a href="/" class=""><img class="widthXXS" src="../../icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
-            <div class="blankHXS"></div>
-
-            <div class="Grid Grid--gutters">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img title="Copy Email Address to Clipboard" class="iconS hoverGrey300 paddingS borderRadiusMax"
-                    title="Copy to Clipboard" src="../../icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-              <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
-                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../../icon/in.svg" alt="LinkedIn">
-              </a>
-
-              <a target="_blank" href="https://github.com/vicky-wyq">
-                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../../icon/git.svg" alt="GitHub"
-                  title="GitHub">
-              </a>
-
-              <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
-                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../../icon/Codepen.svg" alt="CodePen">
-              </a>
-
-              <a target="_blank" href="https://www.instagram.com/vw_yiqi/">
-                <img class="iconS hoverGrey300 paddingS borderRadiusMax" src="../../icon/ins.svg" alt="Instagram"
-                  title="Instagram">
-              </a>
-            </div>
-            <div class="blankHXS"></div>
-          </div>
-          <div class="Grid-cell">
-            <div class="Grid Grid--gutters Grid--cols-6">
-              <div class="Grid-cell">
-                <h5> <strong> Project </strong> </h5>
-                <div class="blankHXXS"></div>
-                <a href="/glorify/">
-                  <h6 class="fontWeight400"> Glorify</h6>
-                </a>
-
-
-                <h6>Elevating Community Involvement</h6>
-                <div class="blankHXXS"></div>
-                <a href="/appointa/">
-                  <h6 class="fontWeight400"> APPOINTA</h6>
-
-                </a>
-                <h6>Simplifying Interview Coordination</h6>
-                <div class="blankHXXS"></div>
-                <a href="/seer/">
-                  <h6 class="fontWeight400">SEER</h6>
-
-                </a>
-                <h6>Empowering Brand Managers with Insights</h6>
-              </div>
-
-              <div class="Grid-cell">
-                <h5> <strong> Service </strong> </h5>
-                <div class="blankHXXS"></div>
-
-                <a href="/">
-                  <h6 class="fontWeight400">UX/UI Design</h6>
-                </a>
-                <h6>Creating Intuitive User Experiences</h6>
-                <div class="blankHXXS"></div>
-
-                <a href="/">
-                  <h6 class="fontWeight400">Design Research</h6>
-                </a>
-                <h6>In-depth Analysis for Targeted Solutions</h6>
-                <div class="blankHXXS"></div>
-                <a href="/">
-                  <h6 class="fontWeight400">Web Development</h6>
-                </a>
-                <h6>Seamless Design Implementation</h6>
-                <div class="blankHXXS"></div>
-                <a href="/">
-                  <h6 class="fontWeight400">Branding</h6>
-                </a>
-                <h6>Crafting Memorable Brand Identities</h6>
-              </div>
-
-              <div class="Grid-cell">
-                <h5> <strong> About </strong> </h5>
-                <div class="blankHXXS"></div>
-
-                <a href="/about">
-                  <h6>About me</h6>
-                </a>
-                <a href="mailto:vickyw.design@gmail.com">
-                  <h6>Email me</h6>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="blankHS"></div>
-      <div class="Grid Grid--full Grid--gutters">
-        <div class="Grid-cell">
-          <div class="footerBorder">
-            <div class="element">
-              <h5 class="Grey700"> &#169; 2023 &#8212; vickywang.me | All rights reserved.</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </footer>
-  <!--footer-->
+  <%- include(`${templatePath}/shared/modal`) %>
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- Shared across the platform -->
 
 
 
