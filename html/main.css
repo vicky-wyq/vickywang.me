@@ -69,7 +69,9 @@
     --GreyHTMLBg: #fefdfc;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
-    --teal800: #448686;
+    --teal800: #2fa097;
+        /* #448686, */
+
     --teal600: #84BFBF;
     --teal500: #AAD9D9;
     --teal300: #D0ECEA;
@@ -187,9 +189,11 @@ a:link {
 }
 
 a:hover {
-    color: var(--colorTealDk) !important;
+    color: var(--teal800) !important;
 }
-
+.LASO a:hover {
+    color: var(--LASOblue800) !important;
+}
 a.no-hover-effect:hover {
     color: inherit !important;
     /* This resets the hover color to the default */
@@ -745,7 +749,10 @@ a.active.SEER {
     background-color: #E2EDFD !important;
 }
 
-
+.colorBgLASO{
+    background-color: var(--LASOblue200);
+    margin: 0 auto;
+}
 .colorBgAPPOINTA {
     background-color: var(--APPOINTA-bg);
     margin: 0 auto;
@@ -4024,7 +4031,7 @@ body .flex-container.Mobile {
 
 .ProjectBannerInnerND {
     position: absolute;
-    top: calc(100% - 152px);
+    top: calc(100% - 132px);
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
@@ -5656,3 +5663,51 @@ pre code {
 }
 
 /* =================== tabs for design system  ===================*/
+
+/* =================== left arrow  ===================*/
+.arrow-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-arrow {
+    display: inline-block;
+    margin: 0.2em;
+    width: 0.5em;
+    height: 0.5em;
+    border-top: 2px solid var(--Grey900);
+    border-left: 2px solid var(--Grey900);
+    border-top-left-radius: 2px; /* Added rounded corner */
+    transform-origin: center;
+    transform: rotate(-45deg);
+    border-radius: 2px; /* Added rounded edge */
+
+}
+
+
+
+.left-arrow:hover {
+    border-color: inherit;
+}
+
+.moveBackArrow {
+    -webkit-animation: moverBackArrow 1s infinite alternate;
+    animation: moverLR 1s infinite alternate;
+}
+
+@keyframes moverBackArrow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-6px);
+    }
+}
+a:hover .left-arrow {
+    border-top: 2px solid inherit;
+    border-left: 2px solid inherit;
+}
+
+/* =================== left arrow  ===================*/
+
