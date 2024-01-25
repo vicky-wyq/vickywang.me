@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Glorify: Transforming Solitary Devotion into Community Engagement by Vicky Wang', 
-description:`This case study explores the evolution of the Glorify app, a mobile platform dedicated to enhancing individual spiritual journeys, into a vibrant community hub for collective faith building.`, 
-pageURL:'glorify/', thumbnailImgURL: 'vickywang_web.png'
+<%- include(`${templatePath}/shared/head`, {
+  SEO:true, 
+  Title:'Glorify: Transforming Solitary Devotion into Community Engagement by Vicky Wang', 
+  description:`This case study explores the evolution of the Glorify app, a mobile platform dedicated to enhancing individual spiritual journeys, into a vibrant community hub for collective faith building.`, 
+  pageURL:'glorify/', 
+  thumbnailImgURL: 'vickywang_web.png'
 }) %>
 <!--Head-->
 
-<body>
-  <%- include(`${templatePath}/shared/progressBar`) %>
+<body class="GLORIFY">
+  <%- include(`${templatePath}/shared/compProgressBar`,{
+    barColor:`GLORIFY`
+  }) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {
     type:'back', 
+    leftArrowColor:`GLORIFY`,
     currentPage: 'PROJECT',
     PageUrl:`/`
     }) %>

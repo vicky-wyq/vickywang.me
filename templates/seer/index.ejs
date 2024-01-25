@@ -4,15 +4,20 @@
 <%- include(`${templatePath}/shared/head`, {
   SEO:true, Title:'SEER: Advanced Reddit Analytics Tool for Brand Managers | Vicky Wang UX Case Study', 
   description:'Elevate your brand with SEER, the premier Reddit Analytics Tool for marketers. Streamline insights with our intuitive workflow, uncover user sentiments and trends, and enhance your marketing strategy on Reddit effectively.', 
-  pageURL:'seer', thumbnailImgURL: 'https://vickywang.me/projectImages/Cover_SEER.png'
+  pageURL:'seer/', 
+  thumbnailImgURL: 'https://vickywang.me/projectImages/Cover_SEER.png'
   }) %>
 <!--Head-->
 
 
-<body class="">
-  <%- include(`${templatePath}/shared/progressBar`) %>
+<body class="SEER">
+  <%- include(`${templatePath}/shared/compProgressBar`,{
+    barColor:`SEER`
+  }) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {
     type:'back', 
+    leftArrowColor:`SEER`,
+
     currentPage: 'PROJECT',
     PageUrl:`/`
     }) %>

@@ -2,16 +2,22 @@
 <html lang="en">
 <!--Head-->
 <%- include(`${templatePath}/shared/head`, {
-  SEO:true, Title:'Efficient Interview Scheduling Solution for Recruiters | Vicky Wang UX Case Study', 
+  SEO:true, 
+  Title:'Efficient Interview Scheduling Solution for Recruiters | Vicky Wang UX Case Study', 
   description:`Discover Vicky Wang's innovative UX case study on streamlining interview scheduling for recruiters, hiring managers, and candidates.`, 
-  pageURL:'appointa', thumbnailImgURL: 'https://vickywang.me/projectImages/Cover_APPOINTA.png'
+  pageURL:'appointa', 
+  thumbnailImgURL: 'https://vickywang.me/projectImages/Cover_APPOINTA.png'
   }) %>
 <!--Head-->
 
-<body>
-  <%- include(`${templatePath}/shared/progressBar`) %>
+<body class="APPOINTA">
+  <%- include(`${templatePath}/shared/compProgressBar`,{
+    barColor:`APPOINTA`
+  }) %>  
+  
   <%- include(`${templatePath}/shared/block_nav_header`, {
     type:'back', 
+    leftArrowColor:`APPOINTA`,
     currentPage: 'PROJECT',
     PageUrl:`/`
     }) %>
