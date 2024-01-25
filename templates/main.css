@@ -70,13 +70,16 @@
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
     --teal800: #2fa097;
-        /* #448686, */
+    /* #448686, */
 
     --teal600: #84BFBF;
     --teal500: #AAD9D9;
     --teal300: #D0ECEA;
     --teal100: #EFF9F8;
     /* ======================== */
+
+    --LASOblueMobile: #4396D8;
+
     --LASOblue800: #0159A6;
     --LASOblue700: #016FD0;
     --LASOblue500: #80b7e8;
@@ -191,9 +194,20 @@ a:link {
 a:hover {
     color: var(--teal800) !important;
 }
+.APPOINTA a:hover {
+    color: var(--APPOINTA-blue) !important;
+}
+.SEER a:hover {
+    color: var(--seer-purple) !important;
+}
+.GLORIFY a:hover {
+    color: var(--GLORIFY-orange) !important;
+}
+
 .LASO a:hover {
     color: var(--LASOblue800) !important;
 }
+
 a.no-hover-effect:hover {
     color: inherit !important;
     /* This resets the hover color to the default */
@@ -335,7 +349,7 @@ body .displayPhone {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 21px 1.6vw;
+    padding: 22px 1.6vw;
     border-radius: 0;
     transition: .2s all;
 }
@@ -749,10 +763,11 @@ a.active.SEER {
     background-color: #E2EDFD !important;
 }
 
-.colorBgLASO{
+.colorBgLASO {
     background-color: var(--LASOblue200);
     margin: 0 auto;
 }
+
 .colorBgAPPOINTA {
     background-color: var(--APPOINTA-bg);
     margin: 0 auto;
@@ -896,11 +911,13 @@ polygon {
     border: 2px solid var(--GLORIFY-orange);
     height: auto;
 }
+
 .audioPlayerBordernLASO {
     background: var(--White-transparent);
     border: 2px solid var(--LASOblue500);
     height: auto;
 }
+
 .audioPlayerBordernBYP {
     background: var(--White-transparent);
     border: 2px solid var(--WS-Teal-Light1);
@@ -2270,6 +2287,7 @@ input {
     cursor: pointer;
     color: var(--Grey900);
 }
+
 .pwContainer {
     position: relative;
     display: flex;
@@ -3567,7 +3585,12 @@ body .flex-container.Mobile {
     height: 3px;
     width: 0%;
 }
+.progress-bar.LASO {
 
+    background-color: var(--LASOblue800);
+    height: 3px;
+    width: 0%;
+}
 .progress-bar.SEER {
 
     background-color: var(--seer-purple);
@@ -4514,10 +4537,14 @@ body .flex-container.Mobile {
 
 .hoverGrey300 {
     background-color: none;
+    border: 0.06em solid transparent;
+
 }
 
 .hoverGrey300:hover {
     background-color: var(--Grey300);
+    border: 0.06em solid var(--Grey400);
+
 }
 
 .footer-logo {
@@ -4534,9 +4561,11 @@ body .flex-container.Mobile {
     padding: 1.2em;
 
 }
-.footerBg{
+
+.footerBg {
     background-color: var(--GreyFooter);
 }
+
 /* ===== hover effect ====== */
 
 /* ======== table ======== */
@@ -5389,10 +5418,12 @@ button.Clipboard.clickTxt:active {
 .play-button:hover {
     background-color: var(--colorTealDk);
 }
+
 .LASO.play-button {
     background-color: var(--LASOblue500);
     color: var(--white);
 }
+
 .LASO.play-button:hover {
     background-color: var(--LASOblue700);
 }
@@ -5401,9 +5432,11 @@ button.Clipboard.clickTxt:active {
     background-color: var(--WS-Teal-Light1);
     color: var(--grey900);
 }
+
 .BYP.play-button:hover {
     background-color: var(--WS-Teal);
 }
+
 .Glorify.play-button {
     background-color: var(--GLORIFY-orangeLt);
     color: var(--grey900);
@@ -5663,6 +5696,12 @@ pre code {
 }
 
 /* =================== tabs for design system  ===================*/
+/* =================== left arrow + back button ===================*/
+
+.backText {
+    font-size: 16px;
+    font-weight: 400;
+}
 
 /* =================== left arrow  ===================*/
 .arrow-container {
@@ -5677,17 +5716,38 @@ pre code {
     height: 0.5em;
     border-top: 2px solid var(--Grey900);
     border-left: 2px solid var(--Grey900);
-    border-top-left-radius: 2px; /* Added rounded corner */
+    border-top-left-radius: 2px;
+    /* Added rounded corner */
     transform-origin: center;
     transform: rotate(-45deg);
-    border-radius: 2px; /* Added rounded edge */
+    border-radius: 2px;
+    /* Added rounded edge */
 
 }
+a:hover .left-arrow.APPOINTA {
+    border-top: 2px solid var(--APPOINTA-blue);
+    border-left: 2px solid var(--APPOINTA-blue);
+}
+a:hover .left-arrow.GLORIFY {
+    border-top: 2px solid var(--GLORIFY-orange);
+    border-left: 2px solid var(--GLORIFY-orange);
+}
+a:hover .left-arrow.SEER {
+    border-top: 2px solid var(--seer-purple);
+    border-left: 2px solid var(--seer-purple);
+}
+a:hover .left-arrow.LASO {
+    border-top: 2px solid var(--LASOblue800);
+    border-left: 2px solid var(--LASOblue800);
+}
 
+a:hover .left-arrow {
+    border-top: 2px solid var(--teal800);
+    border-left: 2px solid var(--teal800);
+}
 
-
-.left-arrow:hover {
-    border-color: inherit;
+a:hover .backText {
+    color: inherit;
 }
 
 .moveBackArrow {
@@ -5704,10 +5764,15 @@ pre code {
         transform: translateX(-6px);
     }
 }
+
+/*
+.left-arrow:hover {
+    border-color: inherit;
+}
 a:hover .left-arrow {
     border-top: 2px solid inherit;
     border-left: 2px solid inherit;
 }
+*/
 
 /* =================== left arrow  ===================*/
-
