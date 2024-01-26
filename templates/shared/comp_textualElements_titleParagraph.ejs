@@ -1,23 +1,118 @@
-<% if (typeof textBlockDescription2 === 'undefined') { 
-    textBlockDescription2 = ''; 
+<% if (typeof subTitleFont === 'undefined') { 
+    subTitleFont = ''; 
   } 
   %>
 
-<% if (typeof textBlockDescription3 === 'undefined') { 
-    textBlockDescription3 = ''; 
+<% if (typeof paragraphFont === 'undefined') { 
+    paragraphFont = ''; 
   } 
   %>
-<% if (typeof textBlockDescription4 === 'undefined') { 
-    textBlockDescription4 = ''; 
+<% if (typeof paragraphTxt1 === 'undefined') { 
+    paragraphTxt1 = ''; 
   } 
   %>
-
+<% if (typeof paragraphTxt2 === 'undefined') { 
+  paragraphTxt2 = ''; 
+} 
+%>
+<% if (typeof paragraphTxt3 === 'undefined') { 
+  paragraphTxt3 = ''; 
+} 
+%>
+<% if (typeof paragraphTxt4 === 'undefined') { 
+  paragraphTxt4 = ''; 
+} 
+%>
 <div class="Grid-cell">
-    <div class="element">
-        <h3><strong><%= textBlockTitle %></strong></h3>
-        <h4> <%= textBlockDescription1 %> </h4>
-        <h4> <%= textBlockDescription2 %> </h4>
-        <h4> <%= textBlockDescription3 %> </h4>
-        <h4> <%= textBlockDescription4 %> </h4>
-    </div>
+  <div class="element">
+
+    <% if (subTitleFont==='h2' ) { %>
+    <h2>
+      <strong>
+        <%= subTitle %>
+      </strong>
+    </h2>
+    <% } else if (subTitleFont==='h3' ) { %>
+    <h3><strong>
+        <%= subTitle %>
+      </strong>
+    </h3>
+    <% } else if (subTitleFont==='h4' ) { %>
+    <h4><strong>
+        <%= subTitle %>
+      </strong>
+    </h4>
+    <% } %>
+
+
+
+    <% if (paragraphFont==='h2' ) { %>
+    <h2>
+      <%= paragraphTxt1 %>
+    </h2>
+
+    <h2>
+      <%= paragraphTxt2 %>
+    </h2>
+    <h2>
+      <%= paragraphTxt3 %>
+    </h2>
+    <h2>
+      <%= paragraphTxt4 %>
+    </h2>
+
+    <% } else if (paragraphFont==='h3' ) { %>
+    <h3>
+      <%= paragraphTxt1 %>
+    </h3>
+    <h3>
+      <%= paragraphTxt2 %>
+    </h3>
+    <h3>
+      <%= paragraphTxt3 %>
+    </h3>
+    <h3>
+      <%= paragraphTxt4 %>
+    </h3>
+    <% } else if (paragraphFont==='h4' ) { %>
+    <h4>
+      <%= paragraphTxt1 %>
+    </h4>
+    <h4>
+      <%= paragraphTxt2 %>
+    </h4>
+    <h4>
+      <%= paragraphTxt3 %>
+    </h4>
+    <h4>
+      <%= paragraphTxt4 %>
+    </h4>
+    <% } else if (paragraphFont==='h5' ) { %>
+    <h5>
+      <%= paragraphTxt1 %>
+    </h5>
+    <h5>
+      <%= paragraphTxt2 %>
+    </h5>
+    <h5>
+      <%= paragraphTxt3 %>
+    </h5>
+    <h5>
+      <%= paragraphTxt4 %>
+    </h5>
+    <% } else if (paragraphFont==='h6' ) { %>
+    <h6>
+      <%= paragraphTxt1 %>
+    </h6>
+    <h6>
+      <%= paragraphTxt2 %>
+    </h6>
+    <h6>
+      <%= paragraphTxt3 %>
+    </h6>
+    <h6>
+      <%= paragraphTxt4 %>
+    </h6>
+    <% } %>
+  </div>
 </div>

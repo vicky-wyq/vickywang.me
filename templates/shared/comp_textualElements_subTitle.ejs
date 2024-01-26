@@ -1,13 +1,24 @@
-<% if (typeof subTitleFont === 'undefined') { 
-    subTitleFont = ''; 
-  } 
-  %>
+<% if (typeof subTitleFont==='undefined' ) { subTitleFont='' ; } %>
+
 <div class="Grid-cell">
   <div class="element">
-    <% if (subTitleFont === 'h2' ) { %>
-    <h2><%= subTitle %></h2>
-    <% } else if (subTitleFont ==='h3' ) { %>
-    <h3><%= subTitle %></h3>
+    <% if (subTitleFont==='h2' ) { %>
+    <h2>
+      <strong>
+        <%= subTitle %>
+      </strong>
+    </h2>
+    <% } else if (subTitleFont==='h3' ) { %>
+    <h3><strong>
+        <%= subTitle %>
+      </strong>
+    </h3>
+    <% } else if (subTitleFont==='h4' ) { %>
+    <h4><strong>
+        <%= subTitle %>
+      </strong>
+    </h4>
     <% } %>
+
   </div>
 </div>

@@ -194,6 +194,9 @@ a:link {
 a:hover {
     color: var(--teal800) !important;
 }
+.BYP a:hover {
+    color: var(--WS-Teal) !important;
+}
 .APPOINTA a:hover {
     color: var(--APPOINTA-blue) !important;
 }
@@ -762,6 +765,10 @@ a.active.SEER {
 .colorAPbg {
     background-color: #E2EDFD !important;
 }
+.colorBgBYP {
+    background-color: var(--WS-Teal-light);
+    margin: 0 auto;
+}
 
 .colorBgLASO {
     background-color: var(--LASOblue200);
@@ -911,7 +918,11 @@ polygon {
     border: 2px solid var(--GLORIFY-orange);
     height: auto;
 }
-
+.audioPlayerBordernBYP {
+    background: var(--White-transparent);
+    border: 2px solid var(--WS-Teal-Light1);
+    height: auto;
+}
 .audioPlayerBordernLASO {
     background: var(--White-transparent);
     border: 2px solid var(--LASOblue500);
@@ -1513,7 +1524,7 @@ section {
 
 @media all and (min-width: 1880px) {
     body .blankMin1880 {
-        height: 8rem;
+        height: 8em;
     }
 
     body .section-nav {
@@ -2032,8 +2043,8 @@ hr {
 
 
 
-/* elementCard = bottom border */
-.elementCard {
+/* cardBottomBorder = bottom border */
+.cardBottomBorder {
     padding: 0;
     margin: 0;
     border-style: none;
@@ -2049,35 +2060,35 @@ hr {
     filter: alpha(opacity=70); */
 
     /* Add an invisible border */
-    border-bottom: 5px solid transparent;
+    border-bottom: 5px solid transparent !important;
     /* Make the border transparent */
     transition: all 0.25s ease-in;
 }
 
-.elementCard:hover {
+.cardBottomBorder:hover {
     cursor: pointer;
-    border-bottom: 5px solid var(--Grey900);
+    border-bottom: 5px solid var(--Grey900) !important;
     transition: all 0.25s ease-in;
 }
 
-.elementCard.BYP:hover {
-    border-bottom: 5px solid var(--WS-Blue);
+.cardBottomBorder.BYP:hover {
+    border-bottom: 5px solid var(--WS-Blue) !important;
 }
 
-.elementCard.LASO:hover {
-    border-bottom: 5px solid var(--LASOblue700);
+.cardBottomBorder.LASO:hover {
+    border-bottom: 5px solid var(--LASOblue700) !important;
 }
 
-.elementCard.GLORIFY:hover {
-    border-bottom: 5px solid var(--GLORIFY-orangeBgLt);
+.cardBottomBorder.GLORIFY:hover {
+    border-bottom: 5px solid var(--GLORIFY-orangeBgLt) !important;
 }
 
-.elementCard.APPOINTA:hover {
-    border-bottom: 5px solid var(--APPOINTA-blue);
+.cardBottomBorder.APPOINTA:hover {
+    border-bottom: 5px solid var(--APPOINTA-blue) !important;
 }
 
-.elementCard.SEER:hover {
-    border-bottom: 5px solid var(--seer-purple);
+.cardBottomBorder.SEER:hover {
+    border-bottom: 5px solid var(--seer-purple) !important;
 }
 
 
@@ -2852,10 +2863,6 @@ button.passwordArr {
         margin: 0;
     }
 
-    body .elementCard {
-        opacity: 1.0;
-        filter: alpha(opacity=100);
-    }
 
     body .hamburger {
         padding: 1.06em 1.8em;
@@ -3565,7 +3572,7 @@ body .flex-container.Mobile {
 /*progressStepTracker*/
 
 
-/*progressBarScroll*/
+/*progressBarScroll progress bar*/
 
 .progressContainer {
     z-index: 99;
@@ -3585,9 +3592,15 @@ body .flex-container.Mobile {
     height: 3px;
     width: 0%;
 }
+.progress-bar.BYP {
+
+    background-color: var(--WS-Teal);
+    height: 3px;
+    width: 0%;
+}
 .progress-bar.LASO {
 
-    background-color: var(--LASOblue800);
+    background-color: var(--LASOblue500);
     height: 3px;
     width: 0%;
 }
@@ -5027,8 +5040,6 @@ button.Clipboard.clickTxt:active {
     color: var(--Grey800);
     background-color: rgba(255, 255, 255, 0.8);
     transition: all 0.5s;
-
-
 }
 
 .button-35.APPOINTA:hover {
@@ -5724,6 +5735,11 @@ pre code {
     /* Added rounded edge */
 
 }
+a:hover .left-arrow.BYP {
+    border-top: 2px solid var(--WS-Teal);
+    border-left: 2px solid var(--WS-Teal);
+}
+
 a:hover .left-arrow.APPOINTA {
     border-top: 2px solid var(--APPOINTA-blue);
     border-left: 2px solid var(--APPOINTA-blue);
