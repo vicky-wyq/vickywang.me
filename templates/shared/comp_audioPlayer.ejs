@@ -1,8 +1,21 @@
+<% if (typeof audioPlayerText2 === 'undefined' ) { 
+  audioPlayerText2 ='' ; 
+} %>
+<% if (typeof audioPlayerTextStrong1 === 'undefined' ) { 
+  audioPlayerTextStrong1 ='' ; 
+} %>
+<% if (typeof audioPlayerTextStrong2 === 'undefined' ) { 
+  audioPlayerTextStrong2 ='' ; 
+} %>
 <div class="Grid-cell">
   <div class="element">
     <div class="rowToColumn <%= audioPlayerBorderColor %> shadowBox centerVer borderRadiusM">
       <div class="widthMax paddingM">
-        <h4><%= audioPlayerText %>
+        <h4>
+          <strong><%= audioPlayerTextStrong1 %></strong><%= audioPlayerText %>
+        </h4>
+        <h4>
+          <strong><%= audioPlayerTextStrong2 %></strong><%= audioPlayerText2 %>
         </h4>
       </div>
       <div class="paddingleft">

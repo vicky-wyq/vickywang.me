@@ -540,31 +540,33 @@ a.active.SEER {
 }
 
 /* =================== border radius ends =================== */
-/* =================== scroll bar starts =================== */
+/* =================== Scroll bar starts =================== */
 
-/* width */
-::-webkit-scrollbar {
+/* Hide scrollbar by default */
+body::-webkit-scrollbar {
     width: 0.8em;
+    opacity: 0;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px var(--white);
     border-radius: 10px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background: var(--Grey400);
     border-radius: 6px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
     background: var(--Grey600);
 }
 
-/* =================== scroll bar ends =================== */
+/* =================== Scroll bar ends =================== */
+
 
 
 .help:hover {
@@ -4072,6 +4074,10 @@ body .flex-container.Mobile {
     left: 50%;
     width: 100%;
 }
+.ProjectBannerInnerElement {
+    transform: translate(50%, 50%);
+    width: 50%;
+}
 
 .divider {
     width: 1px;
@@ -4347,6 +4353,7 @@ body .flex-container.Mobile {
 .widthM {
     width: 35em;
 }
+
 
 .widthMPhHalf {
     width: 40rem;

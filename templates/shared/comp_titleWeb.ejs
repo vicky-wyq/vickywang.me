@@ -26,6 +26,25 @@
   shareSocialMedia = ''; 
 } 
 %>
+
+
+
+<% if (typeof ShowIntroTitle1 === 'undefined') { 
+  ShowIntroTitle1 = ''; 
+} 
+%>
+<% if (typeof ShowIntroTitle2 === 'undefined') { 
+  ShowIntroTitle2 = ''; 
+} 
+%>
+<% if (typeof ShowIntroTitle3 === 'undefined') { 
+  ShowIntroTitle3 = ''; 
+} 
+%>
+<% if (typeof ShowIntroTitle4 === 'undefined') { 
+  ShowIntroTitle4 = ''; 
+} 
+%>
 <div class="wrapper">
   <div class="Grid Grid--gutters">
     <div class="Grid-cell">
@@ -35,46 +54,67 @@
           <div class="element">
             <strong>
               <div class="intro aos-init aos-animate" data-aos="fade-up">
+                <% if (ShowIntroTitle1 === true) { %>
                 <h1> <%= introTitle1 %> </h1>
+                <% } else { %>
+                <% } %>
+
                 <% if (divider1 === true) { %>
                 <span class="divider1"></span>
                 <% } else { %>
                 <% } %>
 
+                <% if (ShowIntroTitle2 === true) { %>
+
                 <h1> <%= introTitle2 %> </h1>
+
+                <% } else { %>
+                <% } %>
+
+
                 <% if (divider2 === true) { %>
                 <span class="divider1"></span>
                 <% } else { %>
                 <% } %>
 
 
+                <% if (ShowIntroTitle3 === true) { %>
+
                 <h1> <%= introTitle3 %> </h1>
+
+                <% } else { %>
+                <% } %>
 
                 <% if (divider3 === true) { %>
                 <span class="divider1"></span>
                 <% } else { %>
                 <% } %>
 
+                <% if (ShowIntroTitle4 === true) { %>
+
                 <h1> <%= introTitle4 %> </h1>
+
+                <% } else { %>
+                <% } %>
               </div>
             </strong>
           </div>
         </div>
         <% if (shareSocialMedia === ``) { %>
-          <div class="paddingleft">
-            <div class="element">
-              <div class="widthFitContent">
-                <div class="dropdownSM">
-                  <img title="Share" class="iconS hoverGrey300 paddingM borderRadiusMax dropbtn" src="/icon/share.svg" alt="Share">
-                  <div class="dropdownSM-content">
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
-                      on LinkedIn</a>
-                    <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me&amp;media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&amp;description=Skilled%20UX%20Designer%20for%20B2B%20Solutions%20%26%20Consumer%20Apps%20-%20Vicky%20Wang" target="_blank">Share on Pinterest</a>
-                  </div>
+        <div class="paddingleft">
+          <div class="element">
+            <div class="widthFitContent">
+              <div class="dropdownSM">
+                <img title="Share" class="iconS hoverGrey300 paddingM borderRadiusMax dropbtn" src="/icon/share.svg" alt="Share">
+                <div class="dropdownSM-content">
+                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
+                    on LinkedIn</a>
+                  <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me&amp;media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&amp;description=Skilled%20UX%20Designer%20for%20B2B%20Solutions%20%26%20Consumer%20Apps%20-%20Vicky%20Wang" target="_blank">Share on Pinterest</a>
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
+        </div>
         <% } else { %>
 
 
