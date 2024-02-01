@@ -1,3 +1,7 @@
+
+
+
+
 class FibonacciSphere {
   #points;
 
@@ -331,7 +335,9 @@ function initializePassword() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
-  
+
+  // ====== Scroll bar ====== //
+
   initializeToggles();
   // ====== accordion Starts ====== //
   const accordionBtns = document.querySelectorAll(".accordion");
