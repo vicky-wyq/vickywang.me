@@ -287,10 +287,10 @@ function initializePassword() {
   // Iterate over each password field
   passwordFields.forEach((pass, index) => {
     const submit = submitButtons[index]; // Corresponding submit button
-    const msg = pass.nextElementSibling.querySelector(".pwIncorrectHeight span"); // Corresponding message element
+    const msg = pass.closest(".input-field").querySelector(".pwIncorrectHeight span");
 
     // Add event listener for keypress on password field
-    pass.addEventListener("keypress", function (event) {
+    pass.addEventListener("keypress", function(event) {
       if (event.key === "Enter") {
         event.preventDefault();
         submit.click();
@@ -299,11 +299,11 @@ function initializePassword() {
 
     // Add event listener for click on submit button
     submit.addEventListener("click", () => {
+      // Your existing logic to check password and handle redirection
       if (!k[pass.id]) {
         throw new Error(`${pass.id} is not a valid page. Please ensure the "id" field of the password input is correct`);
       }
       const w = k[pass.id];
-
       let redirect;
       try {
         let decrypted = CryptoJS.AES.decrypt(w, pass.value);
@@ -315,10 +315,13 @@ function initializePassword() {
         window.location.href = redirect;
         msg.style.display = "none";
       } else {
+        // Correctly display the message when the password is incorrect
         msg.style.display = "block";
       }
     });
   });
+
+
 }
 
 
