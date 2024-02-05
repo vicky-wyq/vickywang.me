@@ -273,7 +273,7 @@ const k = {
   onboardingSubscription: 'U2FsdGVkX1/flTfDtan9WXoDnkCK30v0Y5pr4g5B680u6cXGNODszTEE+d0dCpzHn1coOmfqkGnppGteFyeRmn8ogiL8n2JOH2IyzJ2ygMU=',
   consumerBooking: 'U2FsdGVkX1+VI5o7dvnsAbt6FozAHMjH4sdn9h0J39WmKfWQNAEz2YSscVzqJMF3P9e0jZAOqfvspeHkrDkmYA==',
   reportDashboard: 'U2FsdGVkX18Z2dWz5GK/EO+7PK/3YIzwGzsIprovMAIRhty//ju8XJucom0hVJc9IxVLutYG370p04QhtuF+IO2U7eeof9Z/znjSkQQ4Fog=',
-  b2bPayment: 'U2FsdGVkX19Uce5voQ0Q4b/a5B0LT6weF9bp/oUKbcGnyA8rXm7v93bU6txTPFJ3M1xXp5IAB7AdCT2sGfkRrQ==',
+  b2bAppRedesign: 'U2FsdGVkX19Uce5voQ0Q4b/a5B0LT6weF9bp/oUKbcGnyA8rXm7v93bU6txTPFJ3M1xXp5IAB7AdCT2sGfkRrQ==',
   adminPanel: 'U2FsdGVkX19K1sDLgl3F24dUiedAbfbc+45iz09vBJtd1gB97S1G9o0KzVVroLCBb2nZ1scw21KiZFSO4OXzPg==',
   costCalculator: 'U2FsdGVkX1/2lRGAhqW904kCtrCxk6BDNW/6OEzFa7lpDi0+mAcRz1TmS6BOm/EwSh5A8LMTshIgcaaeHJzuJjHeeq/180eXb0eDZitlj98=',
   rxZero: 'U2FsdGVkX1/IJBtSaeMqta+AxGqEUk0aAWJWTn5PNgNcBe/c0pmDLVT544lK0G2wfOzexAFV6g2C6E+d0hx3Fw==',
