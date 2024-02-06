@@ -2358,64 +2358,125 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
       <section id="content31">
         <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Textual Elements' }) %>
-
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_textualElements`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
         <div class="wrapper">
           <div class="element">
 
             <div id="tabsContent" class="tabContent">
               <!-- Tab 1 -->
-              <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab1`, lableTxt:'_title', checked:'checked'}) %>
+              <%- include('../shared/comp_tabs_content', {name:'textualElement_TitleParagraph', idTab: `tetpTab1`, lableTxt:'_titleParagraph', checked:'checked'}) %>
 
               <div class="tabContent-content">
-
-                <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <h3 class="fontWeight300">_title
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <h1 class="Grid Grid--center"> <span>_Title</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-                <%- include(`${templatePath}/shared/comp_hr`) %>
-
-                <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <h3 class="fontWeight300">_subTitle
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <h2 class="element">Sub Title</h2>
-                    </div>
-                  </div>
-                </div>
-                <%- include(`${templatePath}/shared/comp_hr`) %>
-
-
-                <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <h3 class="fontWeight300">_subTitle
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <h2 class="tArrow">Sub Title<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                      </h2>
-                    </div>
-                  </div>
-                </div>
+                <%- include(`${templatePath}/shared/comp_textualElements_titleParagraph`, { 
+                  subTitleFont:`h3`,
+                  subTitle:`Problem Overview:`, 
+                  paragraphFont:`h4`, 
+                  paragraphTxt1:`The onboarding process for new users on the BookYourPet platform was cumbersome and unintuitive, leading to user frustration, high dropout rates, and consequently, a decrease in subscription conversions.` }) %>
+                  
                 <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'textualElementsTitleParagraph', 
+                  copyCodeT1:`textualElementsTitleParagraphT1`, 
+                  copyCodeT2:`textualElementsTitleParagraphT2`, 
+                  copyCodeT3:`textualElementsTitleParagraphT3`,
+                  t1Checked:`checked`,          
+                  t2Checked:``,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_textualElements_titleParagraph,
+                  HTML: ``,
+                  CSS:``
+                }) %>
+              </div>
+              <!-- Tab 2 -->
+              <%- include('../shared/comp_tabs_content', {name:'textualElement_TitleParagraph', idTab: `tetpTab2`, lableTxt:'_titleList'}) %>
+              <div class="tabContent-content">
+                <div class="wrapper">
+                  <div class="blankHXS"></div>
+                  <%- include(`${templatePath}/shared/comp_textualElements_titleList`, { 
+                    listType:`withCircle`,
+                    listCircleTitleFontSize:`h3`,
+                    listCircleTitle:`Primary Objective:`,
+                    listTxt1:`Simplify the onboarding flow to reduce user overwhelm.`,
+                    listTxt2:`Improve user understanding of the platform's features and benefits.`, 
+                    listTxt3:`Increase the rate of successful onboarding completions and conversions to paid subscriptions.`, 
+                    listTxt4:``,
+                    }) %>
+                  <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: ``, 
+                  copyCodeName:'textualElementsTitleList', 
+                  copyCodeT1:`textualElementsTitleListT1`, 
+                  copyCodeT2:`textualElementsTitleListT2`, 
+                  copyCodeT3:`textualElementsTitleListT3`,
+                  t1Checked:`checked`,          
+                  t2Checked:``,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_textualElements_titleList,
+                  HTML: ``,
+                  CSS:``
+                  }) %>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_textualElements`, textColor:'SkylineBlueDarker', iconUrl:''}) %>
+          <div class="wrapper">
+            <div class="element">
+
+              <div id="tabsContent" class="tabContent">
+                <!-- Tab 1 -->
+                <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab1`, lableTxt:'_title', checked:'checked'}) %>
+
+                <div class="tabContent-content">
+
+                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <h3 class="fontWeight300">_title
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <h1 class="Grid Grid--center"> <span>_Title</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                  <%- include(`${templatePath}/shared/comp_hr`) %>
+
+                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <h3 class="fontWeight300">_subTitle
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <h2 class="element">Sub Title</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <%- include(`${templatePath}/shared/comp_hr`) %>
+
+
+                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <h3 class="fontWeight300">_subTitle
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <h2 class="tArrow">Sub Title<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <%- include(`${templatePath}/shared/block_copyCode`, {
                   wrapperGrid: ``, 
                   copyCodeName:'textualElementsTitle', 
                   copyCodeT1:`textualElementsTitleT1`, 
@@ -2428,65 +2489,65 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   HTML: ejsLiterals.html.comp_textualElements_title,
                   CSS:``
                 }) %>
-              </div>
-              <!-- Tab 2 -->
-              <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab2`, lableTxt:'_note'}) %>
-              <div class="tabContent-content">
-                <div class="wrapper">
-                  <div class="blankHXS"></div>
-
-                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <h3 class="fontWeight300">_noBg
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <p class="specialTextNote colorGrey u-textCenter">Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
+                <!-- Tab 2 -->
+                <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab2`, lableTxt:'_note'}) %>
+                <div class="tabContent-content">
+                  <div class="wrapper">
+                    <div class="blankHXS"></div>
 
-
-                <%- include(`${templatePath}/shared/comp_hr`) %>
-
-
-
-                <div class="wrapper">
-                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <h3 class="fontWeight300">_bg
-                        </h3>
+                    <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                      <div class="Grid-cell">
+                        <div class="element">
+                          <h3 class="fontWeight300">_noBg
+                          </h3>
+                        </div>
                       </div>
-                    </div>
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <div class="element leftVerLine border-radius GreyBg100">
-                          <h4>
-                            <p> <strong>Title </strong></p>
-                            <ul>
-                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. </li>
-                              <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu
-                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia
-                                deserunt mollit anim id est laborum.</li>
-                            </ul>
-                          </h4>
+                      <div class="Grid-cell">
+                        <div class="element">
+                          <p class="specialTextNote colorGrey u-textCenter">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <%- include(`${templatePath}/shared/block_copyCode`, {
+
+
+                  <%- include(`${templatePath}/shared/comp_hr`) %>
+
+
+
+                  <div class="wrapper">
+                    <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                      <div class="Grid-cell">
+                        <div class="element">
+                          <h3 class="fontWeight300">_bg
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="Grid-cell">
+                        <div class="element">
+                          <div class="element leftVerLine border-radius GreyBg100">
+                            <h4>
+                              <p> <strong>Title </strong></p>
+                              <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                  ut labore et dolore magna aliqua. </li>
+                                <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                  dolore eu
+                                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                  officia
+                                  deserunt mollit anim id est laborum.</li>
+                              </ul>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <%- include(`${templatePath}/shared/block_copyCode`, {
                   wrapperGrid: ``, 
                   copyCodeName:'textualElementsNote', 
                   copyCodeT1:`textualElementsNoteT1`, 
@@ -2500,12 +2561,12 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   CSS:``
                 }) %>
 
-              </div>
-              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'textualElements', idTab: `teTab3`, lableTxt:'_closingMessage'}) %>
-              <!-- Tab 3 -->
-              <div class="tabContent-content">
-                <%- include(`${templatePath}/shared/comp_closingMessage`, {CMspacing: false, version: '', message: '999'}) %>
-                <%- include(`${templatePath}/shared/block_copyCode`, {
+                </div>
+                <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'textualElements', idTab: `teTab3`, lableTxt:'_closingMessage'}) %>
+                <!-- Tab 3 -->
+                <div class="tabContent-content">
+                  <%- include(`${templatePath}/shared/comp_closingMessage`, {CMspacing: false, version: '', message: '999'}) %>
+                  <%- include(`${templatePath}/shared/block_copyCode`, {
                   wrapperGrid: ``, 
                   copyCodeName:'closingMessage', 
                   copyCodeT1:`closingMessageT1`, 
@@ -2518,10 +2579,10 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   HTML: ejsLiterals.html.comp_textualElements_closingMessage,
                   CSS:``
                 }) %>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
       <section id="content32">
         <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Clipboard Copy Field' }) %>

@@ -1,0 +1,104 @@
+<% if (typeof listTxt1 === 'undefined') { 
+  listTxt1 = ''; 
+} 
+%>
+<% if (typeof listTxt2 === 'undefined') { 
+  listTxt2 = ''; 
+} 
+%>
+<% if (typeof listTxt3 === 'undefined') { 
+  listTxt3 = ''; 
+} 
+%>
+<% if (typeof listTxt4 === 'undefined') { 
+  listTxt4 = ''; 
+} 
+%>
+
+<% if (typeof listType === 'undefined') { 
+    listType = ''; 
+  } 
+  %>
+<div class="Grid-cell">
+  <div class="element">
+
+    <% if (listCircleTitleFontSize==='h2' ) { %>
+    <h2>
+      <strong>
+        <%= listCircleTitle %>
+      </strong>
+    </h2>
+
+    <% } else if (listCircleTitleFontSize==='h3' ) { %>
+    <h3><strong>
+        <%= listCircleTitle %>
+      </strong>
+    </h3>
+
+    <% } else if (listCircleTitleFontSize==='h4' ) { %>
+    <h4><strong>
+        <%= listCircleTitle %>
+      </strong>
+    </h4>
+    <% } %>
+
+    <% if (listType === 'withCircle' ) { %>
+
+
+    <ul>
+      <% if (listTxt1 === '' ) { %>
+      <% } else { %>
+      <li class="listCircle"><%= listTxt1 %></li>
+      <% } %>
+
+
+      <% if (listTxt2 === '' ) { %>
+      <% } else { %>
+      <li class="listCircle"><%= listTxt2 %></li>
+      <% } %>
+
+      <% if (listTxt3 === '' ) { %>
+      <% } else { %>
+      <li class="listCircle"><%= listTxt3 %></li>
+      <% } %>
+
+
+      <% if (listTxt4 === '' ) { %>
+      <% } else { %>
+      <li class="listCircle"><%= listTxt4 %></li>
+      <% } %>
+    </ul>
+
+
+
+    <% } else { %>
+
+
+    <ul>
+      <% if (listTxt1 === '' ) { %>
+      <% } else { %>
+      <li><%= listTxt1 %></li>
+      <% } %>
+
+
+      <% if (listTxt2 === '' ) { %>
+      <% } else { %>
+      <li><%= listTxt2 %></li>
+      <% } %>
+
+      <% if (listTxt3 === '' ) { %>
+      <% } else { %>
+      <li><%= listTxt3 %></li>
+      <% } %>
+
+
+      <% if (listTxt4 === '' ) { %>
+      <% } else { %>
+      <li><%= listTxt4 %></li>
+      <% } %>
+    </ul>
+
+    <% } %>
+
+  </div>
+</div>
