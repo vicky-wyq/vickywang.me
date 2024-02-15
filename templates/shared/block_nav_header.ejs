@@ -4,6 +4,14 @@
 } 
 %>
 
+
+<% if (typeof backNoMenu === 'undefined') { 
+  backNoMenu = ''; 
+} 
+%>
+
+
+
 <!-- header -->
 
 
@@ -143,5 +151,39 @@
 
 </header>
 
+<% } else if (type === 'backNoMenu') { %>
+  <header>
+    <nav class="header" id="header">
+      <div class="backgroundColorNav">
+        <a href="<%- PageUrl %>" class="marginS centerVer pointer Grid--center"> 
+          <div class="arrow-container moveBackArrow">
+            <div class="left-arrow <%= leftArrowColor %>"></div>
+         </div>
+         <h4 class="backText">BACK</h4>
+        </a>
+        <div class="navbar">
+          <a href="http://vickywang.me/"><img class="pointer widthXXS marginS" src="<%= websitePath %>/icon/LOGOtxtOnly.svg" alt="VW" title="vickywang.me"></a>
+
+        </div>
+
+      </div>
+    </nav>
+  
+  </header>
+  <% } else if (type === 'lognLogo') { %>
+    <header>
+      <nav class="header" id="header">
+        <div class="backgroundColorNav">
+          <a href="http://vickywang.me/"><img class="logo pointer" src="<%= websitePath %>/icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
+
+          <div class="navbar">
+            <a href="http://vickywang.me/"><img class="pointer widthXXS marginS" src="<%= websitePath %>/icon/LOGOtxtOnly.svg" alt="VW" title="vickywang.me"></a>
+  
+          </div>
+
+        </div>
+      </nav>
+    
+    </header>
 
 <% } %>

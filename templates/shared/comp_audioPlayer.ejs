@@ -1,28 +1,60 @@
+<% if (typeof audioPlayerText1 === 'undefined' ) { 
+  audioPlayerText1 ='' ; 
+} %>
 <% if (typeof audioPlayerText2 === 'undefined' ) { 
   audioPlayerText2 ='' ; 
 } %>
+<% if (typeof audioPlayerText3 === 'undefined' ) { 
+  audioPlayerText3 ='' ; 
+} %>
+<% if (typeof audioPlayerText4 === 'undefined' ) { 
+  audioPlayerText4 ='' ; 
+} %>
+<% if (typeof audioPlayerText5 === 'undefined' ) { 
+  audioPlayerText5 ='' ; 
+} %>
+
+
 <% if (typeof audioPlayerTextStrong1 === 'undefined' ) { 
   audioPlayerTextStrong1 ='' ; 
 } %>
 <% if (typeof audioPlayerTextStrong2 === 'undefined' ) { 
   audioPlayerTextStrong2 ='' ; 
 } %>
+<% if (typeof audioPlayerTextStrong3 === 'undefined' ) { 
+  audioPlayerTextStrong3 ='' ; 
+} %>
+<% if (typeof audioPlayerTextStrong4 === 'undefined' ) { 
+  audioPlayerTextStrong4 ='' ; 
+} %>
+<% if (typeof audioPlayerTextStrong5 === 'undefined' ) { 
+  audioPlayerTextStrong5 ='' ; 
+} %>
 <div class="Grid-cell">
   <div class="element">
     <div class="rowToColumn <%= audioPlayerBorderColor %> shadowBox centerVer borderRadiusM">
       <div class="widthMax paddingM">
         <h4>
-          <strong><%= audioPlayerTextStrong1 %></strong><%= audioPlayerText %>
+          <strong><%= audioPlayerTextStrong1 %></strong><%= audioPlayerText1 %>
         </h4>
         <h4>
           <strong><%= audioPlayerTextStrong2 %></strong><%= audioPlayerText2 %>
+        </h4>
+        <h4>
+          <strong><%= audioPlayerTextStrong3 %></strong><%= audioPlayerText3 %>
+        </h4>
+        <h4>
+          <strong><%= audioPlayerTextStrong4 %></strong><%= audioPlayerText4 %>
+        </h4>
+        <h4>
+          <strong><%= audioPlayerTextStrong5 %></strong><%= audioPlayerText5 %>
         </h4>
       </div>
       <div class="paddingleft">
         <div class=" widthFitContent">
           <div class="audio-container">
             <audio id="myAudio1">
-              <source src="<%- audioPlayerButtonColor %>">
+              <source src="<%- audioPlayerAudioUrl %>">
               Your browser does not support the audio element.
             </audio>
             <br>

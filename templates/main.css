@@ -69,13 +69,7 @@
     --GreyHTMLBg: #fefdfc;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
-    --teal800: #2fa097;
-    /* #448686, */
 
-    --teal600: #84BFBF;
-    --teal500: #AAD9D9;
-    --teal300: #D0ECEA;
-    --teal100: #EFF9F8;
     /* ======================== */
 
     --LASOblueMobile: #4396D8;
@@ -112,6 +106,23 @@
     --WS-Teal-lighter: #D4F1F3;
     --WS-Teal-light: #f3f4f4;
     --WS-lightBG: rgba(243, 250, 253, 0.4);
+    /* ======================== */
+    --BYP-Teal800: #019A89;
+    --BYP-Teal700: #02C6B0;
+    --BYP-Teal600: #02DCC3;
+    --BYP-Teal400: #CCF8F3;
+    --BYP-Teal100: #EAFCFC;
+    --BYP-Teal-bg: #f5fafa;
+    /* ======================== */
+    --teal800: #2fa097;
+    /* #448686, */
+
+    --teal600: #84BFBF;
+    --teal500: #AAD9D9;
+    --teal300: #D0ECEA;
+    --teal200: #EFF9F8;
+    --teal100: #fafdfd;
+    /* ======================== */
 
     --seer-purpleDark: #1513A0;
 
@@ -767,11 +778,11 @@ body::-webkit-scrollbar-thumb:hover {
 .colorAPbg {
     background-color: #E2EDFD !important;
 }
+
 .colorBgBYP {
-    background-color: var(--WS-Teal-light);
+    background-color: var(--BYP-Teal-bg);
     margin: 0 auto;
 }
-
 .colorBgLASO {
     background-color: var(--LASOblue200);
     margin: 0 auto;
@@ -790,7 +801,16 @@ body::-webkit-scrollbar-thumb:hover {
 .colorBlack {
     color: var(--Grey900);
 }
+.colorBYPTeal800 {
+    color: var(--BYP-Teal800);
+}
 
+.colorBYPTeal700 {
+    color: var(--BYP-Teal700);
+}
+.colorLASObule700 {
+    color: var(--LASOblue700);
+}
 .colorGLORIFYBlue {
     color: var(--GlorifyBlue);
 }
@@ -922,7 +942,7 @@ polygon {
 }
 .audioPlayerBordernBYP {
     background: var(--White-transparent);
-    border: 2px solid var(--WS-Teal-Light1);
+    border: 2px solid var(--BYP-Teal400);
     height: auto;
 }
 .audioPlayerBordernLASO {
@@ -931,11 +951,7 @@ polygon {
     height: auto;
 }
 
-.audioPlayerBordernBYP {
-    background: var(--White-transparent);
-    border: 2px solid var(--WS-Teal-Light1);
-    height: auto;
-}
+
 
 .cardBorder {
     border: 0.06em solid var(--Grey200) !important;
@@ -2023,7 +2039,7 @@ a:link.textUnderline {
 hr {
     border: none;
     height: 1px;
-    border-bottom: 1px solid var(--Grey200);
+    border-bottom: 1px solid var(--Grey400);
     width: 100%;
 
 }
@@ -2804,10 +2820,7 @@ button.passwordArr {
         width: 8em;
     }
 
-    body .widthXXS {
-        width: 5em;
 
-    }
 
     body .displayPhone {
         display: block;
@@ -3401,7 +3414,7 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 .TBsliderNav {
-    font-weight: 300 !important;
+    font-weight: 500 !important;
     color: var(--Grey800);
     transition: 0.65s;
     background: none;
@@ -3424,13 +3437,12 @@ flex: 0 0 calc(33.3333% - 1em);
     border-color: var(--White-transparent);
     color: var(--Grey900);
     box-shadow: inset -4.25em 0 0 0 var(--White-transparent);
-    font-weight: 500 !important;
     box-shadow: inset 18em 0 0 0 var(--white);
 }
 
 .noBg .TBsliderNav:hover,
 .noBg .TBsliderNav.active {
-    border: 0.06em solid var(--Grey900);
+    border: 1px solid var(--Grey900);
     color: var(--Grey900);
     box-shadow: inset -4.25em 0 0 0 var(--hover);
     font-weight: 500 !important;
@@ -4068,7 +4080,7 @@ body .flex-container.Mobile {
 
 .ProjectBannerInnerND {
     position: absolute;
-    top: calc(100% - 132px);
+    top: calc(100% - 146px);
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
@@ -4344,6 +4356,7 @@ body .flex-container.Mobile {
 .widthXS {
     width: 12em;
 }
+
 
 .widthS {
     width: 20em;
@@ -5392,14 +5405,13 @@ button.Clipboard.clickTxt:active {
 .buttonTextOnly.Glorify {
     background: none;
     color: var(--GlorifyBlue);
-    border: none;
-    border-radius: 3px;
-    padding: 5px 2px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-}
 
+}
+.buttonTextOnly.LASO {
+    background: none;
+    color: var(--LASOblue700);
+
+}
 /* ===== button ====== */
 
 
@@ -5446,12 +5458,12 @@ button.Clipboard.clickTxt:active {
 }
 
 .BYP.play-button {
-    background-color: var(--WS-Teal-Light1);
+    background-color: var(--BYP-Teal400);
     color: var(--grey900);
 }
 
 .BYP.play-button:hover {
-    background-color: var(--WS-Teal);
+    background-color: var(--BYP-Teal700);
 }
 
 .Glorify.play-button {
