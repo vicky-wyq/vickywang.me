@@ -1,3 +1,30 @@
-<%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: '' }) %>
-<%- include(`${templatePath}/shared/block_nav_header`, {type:'back', currentPage: '' }) %>
-<%- include(`${templatePath}/shared/block_nav_header`, {type:'withDropdown', currentPage: '' }) %>
+<!-- Main -->
+
+<%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'main', 
+    currentPage: '',
+    PageUrl:`${websitePath}` 
+    }) %>
+
+
+<!-- Back + Text -->
+<%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'Back with Menu', 
+    currentPage: '',
+    PageUrl:`${websitePath}` 
+    }) %>
+
+<!-- Back + Text -->
+<%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'backText', 
+    currentPage: '',
+    PageUrl:`${websitePath}` 
+    }) %>
+
+
+<!-- Logo + Text -->
+<%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'logoText', 
+    currentPage: '',
+    PageUrl:`${websitePath}` 
+    }) %>
