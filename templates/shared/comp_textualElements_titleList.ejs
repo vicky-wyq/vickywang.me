@@ -21,26 +21,28 @@
   %>
 <div class="Grid-cell">
   <div class="element">
+    <!-- title font size -->
 
-    <% if (listCircleTitleFontSize==='h2' ) { %>
+    <% if (listCircleTitleFontSize ==='h2' ) { %>
     <h2>
       <strong>
         <%= listCircleTitle %>
       </strong>
     </h2>
 
-    <% } else if (listCircleTitleFontSize==='h3' ) { %>
+    <% } else if (listCircleTitleFontSize ==='h3' ) { %>
     <h3><strong>
         <%= listCircleTitle %>
       </strong>
     </h3>
 
-    <% } else if (listCircleTitleFontSize==='h4' ) { %>
+    <% } else if (listCircleTitleFontSize ==='h4' ) { %>
     <h4><strong>
         <%= listCircleTitle %>
       </strong>
     </h4>
     <% } %>
+    <!-- with circle -->
 
     <% if (listType === 'withCircle' ) { %>
 
@@ -72,6 +74,7 @@
 
 
     <% } else { %>
+    <!-- without circle -->
 
 
     <ul>

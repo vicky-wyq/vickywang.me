@@ -1,6 +1,39 @@
-<div class="Grid-cell">
+  
+   <% if (typeof titleFontSize === 'undefined') { 
+    titleFontSize = ''; 
+  } 
+  %>
+ <% if (typeof titleColor === 'undefined') { 
+    titleColor = ''; 
+  } 
+  %>
+  <div class="Grid-cell">
     <div class="element">
-      <h1 class="Grid Grid--center"> <span>_Title</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
+      <% if (titleFontSize ==='h1' ) { %>
+      <h1>
+        <strong class="<%= titleColor %>">
+          <%= contentTitle %>
+        </strong>
       </h1>
+      <% } else if (titleFontSize==='h2' ) { %>
+      <h2>
+        <strong class="<%= titleColor %>">
+          <%= contentTitle %>
+        </strong>
+      </h2>
+      <% } else if (titleFontSize==='h3' ) { %>
+      <h3>
+        <strong class="<%= titleColor %>">
+          <%= contentTitle %>
+        </strong>
+      </h3>
+
+      <% } else if (titleFontSize==='h4' ) { %>
+      <h4>
+        <strong class="<%= titleColor %>">
+          <%= contentTitle %>
+        </strong>
+      </h4>
+      <% } %>
     </div>
   </div>
