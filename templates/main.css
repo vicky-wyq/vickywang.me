@@ -77,6 +77,8 @@
     --LASOblue800: #0159A6;
     --LASOblue700: #016FD0;
     --LASOblue500: #80b7e8;
+    --LASOblue400: #b2d5f4;
+
 
     --LASOblue300: #E6F1FA;
     --LASOblue200: #F2F8FC;
@@ -792,7 +794,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--APPOINTA-bg);
     margin: 0 auto;
 }
-
+.colorBgLASO200 {
+    background-color: var(--LASOblue200);
+    margin: 0 auto;
+}
 .colorBgHighlight {
     background-color: var(--Highlight);
     margin: 0 auto;
@@ -2027,6 +2032,9 @@ a:link.textUnderline {
 
 .textDecor.WS {
     text-decoration-color: var(--WS-Blue);
+}
+.textDecor.LASO {
+    text-decoration-color: var(--LASOblue400);
 }
 
 .textDecor.Glorify {
