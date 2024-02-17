@@ -27,8 +27,14 @@
     introTitle4: ``
   }) %>
 
-
-  <%- include(`${templatePath}/shared/homePage_icons-buttons`) %>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <a href="/resume" target="_blank"> <button class="buttonLanding arrButtonResume">Resume &nbsp;
+        </button></a>
+      <a href="/about"> <button class="buttonLanding arrButton">About me &nbsp;
+        </button></a>
+    </div>
+  </div>
   <!-- Arrow -->
   <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'UX Case Study' }) %>
   <!-- Arrow -->
