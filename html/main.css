@@ -207,15 +207,19 @@ a:link {
 a:hover {
     color: var(--teal800) !important;
 }
+
 .BYP a:hover {
     color: var(--WS-Teal) !important;
 }
+
 .APPOINTA a:hover {
     color: var(--APPOINTA-blue) !important;
 }
+
 .SEER a:hover {
     color: var(--seer-purple) !important;
 }
+
 .GLORIFY a:hover {
     color: var(--GLORIFY-orange) !important;
 }
@@ -780,18 +784,22 @@ body::-webkit-scrollbar-thumb:hover {
 .colorAPbg {
     background-color: #E2EDFD !important;
 }
+
 .colorBgWhie {
     background-color: var(--white);
     margin: 0 auto;
 }
+
 .colorBgVW {
     background-color: var(--teal200);
     margin: 0 auto;
 }
+
 .colorBgBYP {
     background-color: var(--BYP-Teal-bg);
     margin: 0 auto;
 }
+
 .colorBgLASO {
     background-color: var(--LASOblue200);
     margin: 0 auto;
@@ -801,10 +809,12 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--APPOINTA-bg);
     margin: 0 auto;
 }
+
 .colorBgLASO200 {
     background-color: var(--LASOblue200);
     margin: 0 auto;
 }
+
 .colorBgHighlight {
     background-color: var(--Highlight);
     margin: 0 auto;
@@ -813,6 +823,11 @@ body::-webkit-scrollbar-thumb:hover {
 .colorBlack {
     color: var(--Grey900);
 }
+.colorWhie{
+    color: var(--white);
+
+    
+}
 .colorBYPTeal800 {
     color: var(--BYP-Teal800);
 }
@@ -820,9 +835,11 @@ body::-webkit-scrollbar-thumb:hover {
 .colorBYPTeal700 {
     color: var(--BYP-Teal700);
 }
+
 .colorLASObule700 {
     color: var(--LASOblue700);
 }
+
 .colorGLORIFYBlue {
     color: var(--GlorifyBlue);
 }
@@ -919,6 +936,7 @@ polygon {
 .colorVW {
     color: var(--teal600);
 }
+
 .imgBorder {
     border: 1px solid var(--Grey400);
     border-radius: var(--border-radius);
@@ -955,11 +973,13 @@ polygon {
     border: 2px solid var(--GLORIFY-orange);
     height: auto;
 }
+
 .audioPlayerBordernBYP {
     background: var(--White-transparent);
     border: 2px solid var(--BYP-Teal400);
     height: auto;
 }
+
 .audioPlayerBordernLASO {
     background: var(--White-transparent);
     border: 2px solid var(--LASOblue500);
@@ -2043,6 +2063,7 @@ a:link.textUnderline {
 .textDecor.WS {
     text-decoration-color: var(--WS-Blue);
 }
+
 .textDecor.LASO {
     text-decoration-color: var(--LASOblue400);
 }
@@ -2076,7 +2097,7 @@ hr {
 }
 
 
-.cardHeightMax{
+.cardHeightMax {
     align-items: stretch;
 }
 
@@ -2176,7 +2197,7 @@ hr {
 /* ---- must always have for responsive*/
 .element {
     padding: 0.4em 0.8em 0;
-    
+
     /* ----     0.8em 1em 0 0;  top, right, bottom, left;
    ;
 
@@ -3623,18 +3644,21 @@ body .flex-container.Mobile {
     height: 3px;
     width: 0%;
 }
+
 .progress-bar.BYP {
 
     background-color: var(--WS-Teal);
     height: 3px;
     width: 0%;
 }
+
 .progress-bar.LASO {
 
     background-color: var(--LASOblue500);
     height: 3px;
     width: 0%;
 }
+
 .progress-bar.SEER {
 
     background-color: var(--seer-purple);
@@ -4103,6 +4127,7 @@ body .flex-container.Mobile {
     left: 50%;
     width: 100%;
 }
+
 .ProjectBannerInnerElement {
     transform: translate(50%, 50%);
     width: 50%;
@@ -4596,6 +4621,16 @@ body .flex-container.Mobile {
     border: 0.06em solid var(--Grey400);
 
 }
+.hoverGrey900 {
+    background-color: var(--White-transparent);
+    border: 0.075em solid var(--Grey900)
+}
+
+.hoverGrey900:hover {
+    background-color: var(--white);
+
+}
+
 
 .footer-logo {
     border-radius: 50%;
@@ -5425,11 +5460,13 @@ button.Clipboard.clickTxt:active {
     color: var(--GlorifyBlue);
 
 }
+
 .buttonTextOnly.LASO {
     background: none;
     color: var(--LASOblue700);
 
 }
+
 /* ===== button ====== */
 
 
@@ -5771,6 +5808,7 @@ pre code {
     /* Added rounded edge */
 
 }
+
 a:hover .left-arrow.BYP {
     border-top: 2px solid var(--WS-Teal);
     border-left: 2px solid var(--WS-Teal);
@@ -5780,14 +5818,17 @@ a:hover .left-arrow.APPOINTA {
     border-top: 2px solid var(--APPOINTA-blue);
     border-left: 2px solid var(--APPOINTA-blue);
 }
+
 a:hover .left-arrow.GLORIFY {
     border-top: 2px solid var(--GLORIFY-orange);
     border-left: 2px solid var(--GLORIFY-orange);
 }
+
 a:hover .left-arrow.SEER {
     border-top: 2px solid var(--seer-purple);
     border-left: 2px solid var(--seer-purple);
 }
+
 a:hover .left-arrow.LASO {
     border-top: 2px solid var(--LASOblue800);
     border-left: 2px solid var(--LASOblue800);
@@ -5828,3 +5869,255 @@ a:hover .left-arrow {
 */
 
 /* =================== left arrow  ===================*/
+
+/* =================== carousel intro  ===================*/
+.carouselIntro {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3) inset;
+    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        border-radius: 0;
+        box-shadow: none;
+        opacity: 1;
+    }
+
+    &:nth-child(3) {
+        left: 22%;
+    }
+
+    &:nth-child(4) {
+        left: calc(22% - 220px);
+    }
+
+    &:nth-child(5) {
+        left: calc(22% - 440px);
+    }
+
+    &:nth-child(6) {
+        left: calc(22% - 660px);
+        opacity: 0;
+    }
+}
+
+button.intro {
+    font-size: clamp(1.04em, 1.26vw, 1.48em);
+    width: fit-content;
+    background-color: var(--White-transparent);
+    color: var(--Grey900);
+    border: 0.125em solid var(--Grey900);
+    border-radius: 0.25em;
+    padding: 0.75em 1em;
+    cursor: pointer;
+}
+
+button.intro:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--white);
+
+}
+
+.content {
+
+    width: min(30vw, 400px);
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    font: 400 0.85rem helvetica, sans-serif;
+    color: var(--Grey900);
+    text-shadow: 0 3px 8px rgba(135, 135, 135, 0.5);
+    opacity: 0;
+    display: none;
+
+    & .title {
+        font-family: "arial-black";
+        text-transform: uppercase;
+    }
+
+    & .description {
+        line-height: 1.7;
+        margin: 1rem 0 1.5rem;
+        font-size: 0.8rem;
+    }
+
+
+}
+
+.item:nth-of-type(2) .content {
+    display: block;
+    animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+    0% {
+        filter: blur(5px);
+        transform: translateY(calc(-50% + 75px));
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.carouselIntoNav {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    user-select: none;
+
+
+}
+
+@media (width > 650px) and (width < 900px) {
+    .content {
+        & .title {
+            font-size: 1rem;
+        }
+
+        & .description {
+            font-size: 0.7rem;
+        }
+
+        & button {
+            font-size: 0.7rem;
+        }
+    }
+
+    .item {
+        width: 160px;
+        height: 270px;
+
+        &:nth-child(3) {
+            left: 22%;
+        }
+
+        &:nth-child(4) {
+            left: calc(22% - 170px);
+        }
+
+        &:nth-child(5) {
+            left: calc(22% - 340px);
+        }
+
+        &:nth-child(6) {
+            left: calc(22% - 510px);
+            opacity: 0;
+        }
+    }
+}
+
+@media (width < 650px) {
+    .content {
+        & .title {
+            font-size: 0.9rem;
+        }
+
+        & .description {
+            font-size: 0.65rem;
+        }
+
+        & button {
+            font-size: 0.7rem;
+        }
+    }
+
+
+    .item {
+
+
+
+        width: 130px;
+        height: 220px;
+
+        &:nth-child(3) {
+            left: 22%;
+        }
+
+        &:nth-child(4) {
+            left: calc(22% - 140px);
+        }
+
+        &:nth-child(5) {
+            left: calc(22% - 280px);
+        }
+
+        &:nth-child(6) {
+            left: calc(22% - 420px);
+            opacity: 0;
+        }
+    }
+}
+
+
+/* =================== carousel intro  ===================*/
+
+/* =================== Logo Carousel Blur  ===================*/
+.carouselLogoBlurContainer {
+    background: none;
+    margin: 0;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes moveBg {
+    from {
+        background-position: 0 50%;
+    }
+
+    to {
+        background-position: -1134px 50%;
+    }
+}
+
+.carouselLogoBlur {
+    --blur: 6px;
+    --contrast: 105%;
+    --speed: 33s;
+    height: 100px;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+
+
+    .logos {
+        animation: moveBg var(--speed) linear infinite;
+        position: absolute;
+        inset: 0;
+        background: url(marquee.svg) 0 50% / 1134px 150px repeat-x;
+        -webkit-mask: linear-gradient(90deg, #0000 5px, #000 50px calc(100% - 50px), #0000 calc(100% - 5px));
+    }
+}
+
+/* =================== Logo Carousel Blur  ===================*/

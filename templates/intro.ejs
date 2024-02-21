@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Innovative UX Designer Specializing in B2B SaaS & Mobile Workflow Efficiency - Vicky Wang', 
+  description:'Vicky W. specializes in UX Design for B2B SaaS and consumer apps, expertly transforming complex challenges into user-friendly solutions.', 
+  pageURL:'', thumbnailImgURL: 'vickywang_web.png'
+  }) %>
+<!--Head-->
+
+<body>
+  <%- include( `${templatePath}/shared/compProgressBar`) %>
+
+  <%- include(`${templatePath}/shared/block_nav_header`, { 
+    type:'logoText', 
+    leftArrowColor:``,
+    currentPage: '', 
+    PageUrl:'/worksamples/BYP_LH_wsbeebr' }) %>
+
+  <!--- carousel intro -->
+
+  <div class="carouselIntro">
+    <ul class='slider'>
+
+      <!--- slide 1 -->
+
+      <li class='item' style="background-image: url('/introImg/BYP_AppB2B_Redesign.png')">
+        <div class='content'>
+          <h2 class='title'>The Redesign of Pet Booking App</h2>
+          <p class='description'>From White Glove to Self-Service: Empowering Users to Take Control
+          </p>
+          <a href="/"><button class="intro">View Project</button></a>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('/introImg/BYP_AppB2B.png')">
+        <div class='content'>
+          <h2 class='title'>Simplified B2B Onboarding & Enhanced Engagement for Business Owners </h2>
+          <p class='description'> Mastering B2B SaaS Subscription Success </p>
+          <a href="/"><button class="intro">View Project</button></a>
+
+        </div>
+      </li>
+      <li class='item' style="background-image: url('/introImg/LASO_AdminPanel.png')">
+        <div class='content'>
+          <h2 class='title colorWhie'>LASO Admin Panel</h2>
+          <p class='description colorWhie'>
+            From Concept to Reality - Simplified User Management
+          </p>
+          <a href="/"><button class="intro">View Project</button></a>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('/introImg/LASO_RXZero.png')">
+        <div class='content'>
+          <h2 class='title'>Shifting Focus</h2>
+          <p class='description'>
+            The Evolution of LASO Local & Telehealth to RX Zero
+          </p>
+          <a href="/"><button class="intro">View Project</button></a>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('/introImg/LASO_CostCalculator.png')">
+        <div class='content'>
+          <h2 class='title colorLASObule700'>RX Zero Savings Explorer</h2>
+          <p class='description colorLASObule700'> Cost-benefit Calculator: a tool enables users to compare their current medication costs with the RX Zero subscription model</p>
+          <a href="/"><button class="intro">View Project</button></a>
+        </div>
+      </li>
+
+    </ul>
+    <div class='carouselIntoNav'>
+
+      <img class="iconL hoverGrey900 paddingXS borderRadiusMax btn prev" title="Left" src="../icon/arrow-back.svg" alt="Arrow Left">
+      <img class="iconL hoverGrey900 paddingXS borderRadiusMax btn next" title="Right" src="../icon/arrow-forward.svg" alt="Arrow Right">
+
+
+
+    </div>
+
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!--- carousel intro -->
+
+  <div class="blankHS"></div>
+
+  <!--- carouselLogoBlur -->
+
+  <div class="wrapper">
+
+    <div class="Grid Grid--gutters Grid--full u-textCenter">
+      <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+    titleColor:``,
+    titleFontSize:`h1`,
+    contentTitle:`Expertise`,
+    }) %>
+    </div>
+  </div>
+  <div class="blankHXS"></div>
+
+
+  <div class="carouselLogoBlurContainer">
+
+    <div class="carouselLogoBlur">
+      <div class="logos"></div>
+    </div>
+
+  </div>
+  <!--- carouselLogoBlur -->
+
+  <div class="blankHS"></div>
+
+  <div class="wrapper">
+
+    <div class="Grid Grid--gutters Grid--full u-textCenter ">
+      <div class="Grid-cell centerVH">
+        <a href="/"><button class="intro">View Projects</button></a>
+
+      </div>
+      <div class="blankHS"></div>
+
+
+
+
+      <div class="Grid-cell">
+        <%- include(`${templatePath}/shared/base_logoText`) %>
+      </div>
+
+    </div>
+  </div>
+  <div class="blankHS"></div>
+
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- The Modal -->
+  <div id="modal" class="modal">
+    <span id="modal-close" class="modal-close">
+      <img class="iconXforModal" src="../icon/delete.svg" alt="&times;">
+    </span>
+    <img id="modal-content" class="modal-content">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+  <!-- The Modal -->
+</body>
+
+</html>
