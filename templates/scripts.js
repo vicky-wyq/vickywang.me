@@ -1,7 +1,4 @@
 
-
-
-
 class FibonacciSphere {
   #points;
 
@@ -338,6 +335,76 @@ function initializePassword() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
+
+/* =================== carousel intro  ===================*/
+
+//autoplay  
+
+
+(function() {
+  const slider = document.querySelector(".slider");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+
+  // Check if the required elements exist
+  if (!slider || !prevButton || !nextButton) {
+    return; // Exit the function if any element is missing
+  }
+
+  let autoplayIntervalID;
+  let isAutoplayPaused = false;
+
+  function activate(e) {
+    const items = document.querySelectorAll(".item");
+    if (e.target.matches(".next") || e.type === "autoplay") {
+      slider.append(items[0]);
+    } else if (e.target.matches(".prev")) {
+      slider.prepend(items[items.length - 1]);
+    }
+  }
+
+  document.addEventListener("click", activate, false);
+
+  // Autoplay functionality
+  const autoplayInterval = 5000; // 5000 milliseconds = 5 seconds
+
+  function autoplay() {
+    if (!isAutoplayPaused) {
+      const items = document.querySelectorAll(".item");
+      slider.append(items[0]); // Move the first item to the end of the slider
+    }
+  }
+
+  autoplayIntervalID = setInterval(autoplay, autoplayInterval);
+
+  // Pause autoplay on button click
+  function pauseAutoplay() {
+    isAutoplayPaused = true;
+    clearInterval(autoplayIntervalID);
+  }
+
+  prevButton.addEventListener("click", pauseAutoplay);
+  nextButton.addEventListener("click", pauseAutoplay);
+})();
+
+
+
+/* ===================
+//no autoplay
+const slider = document.querySelector(".slider");
+
+function activate(e) {
+  const items = document.querySelectorAll(".item");
+  e.target.matches(".next") && slider.append(items[0]);
+  e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
+}
+
+document.addEventListener("click", activate, false);
+===================*/
+
+/* =================== carousel intro  ===================*/
+
+
 
   // ====== Scroll bar ====== //
 
