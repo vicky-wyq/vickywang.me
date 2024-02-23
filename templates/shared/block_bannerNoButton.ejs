@@ -1,0 +1,73 @@
+<% if (typeof bgColor === 'undefined') { 
+    bgColor = ''; 
+  } 
+  %>
+  
+  <% if (typeof SlideDeckUrl === 'undefined') { 
+    SlideDeckUrl = ''; 
+  } 
+  %>
+  <% if (typeof bannerLogoUrl === 'undefined') { 
+    bannerLogoUrl = ''; 
+  } 
+  %>
+  <% if (typeof bannerTitle === 'undefined') { 
+    bannerTitle = ''; 
+  } 
+  %>
+  <% if (typeof bannerSubTitle === 'undefined') { 
+    bannerSubTitle = ''; 
+  } 
+  %>
+  <% if (typeof bannerButtonColor === '') { 
+    bannerButtonColor = ''; 
+  } 
+  %>
+  
+  
+  <div class="<%= bannerBgColor %>">
+  
+  
+  
+    <div class="ProjectBanner displayLaptop">
+  
+      <img src="<%- bannerMockupL %>" alt="Mockup">
+      <div class="ProjectBannerInnerND">
+        <img class="widthXXS" src="<%- bannerLogoUrl %>" alt="Logo">
+        <h2 class="ProjectBannerInnerElement"><strong><%= bannerTitle %></strong> </h2>
+        <h3 class="Grid Grid--center colorBlack"><%= bannerSubTitle %></h3>
+  
+  
+  
+  
+      </div>
+    </div>
+  
+    <div class="ProjectBanner displayTablet">
+  
+  
+      <img class="displayTablet" src="<%- bannerMockupM %>" alt="APPOINTA">
+      <div class="ProjectBannerInnerND">
+        <img class="widthXXS" src="<%- bannerLogoUrl %>" alt="Logo">
+        <h2><strong><%= bannerTitle %></strong> </h2>
+        <h3 class="Grid Grid--center colorBlack"><%= bannerSubTitle %></h3>
+  
+  
+        <div class="blankHXS"></div>
+      </div>
+    </div>
+  
+  
+    <div class="ProjectBanner displayPhone">
+  
+      <img class="displayPhone" src="<%- bannerMockupS %>" alt="APPOINTA">
+      <div class="ProjectBannerInnerND">
+        <img class="widthXXS" src="<%- bannerLogoUrl %>" alt="Logo">
+        <h2><strong><%= bannerTitle %></strong> </h2>
+        <h3 class="Grid Grid--center colorBlack"><%= bannerSubTitle %></h3>
+  
+  
+        <div class="blankHXS"></div>
+      </div>
+    </div>
+  </div>

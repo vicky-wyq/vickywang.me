@@ -1,28 +1,30 @@
 <% if (typeof paragraphFont==='undefined' ) { paragraphFont='' ; } %>
-<% if (typeof paragraphTxt==='undefined' ) { paragraphFont='' ; } %>
+<% if (typeof paragraphTxt==='undefined' ) { paragraphTxt='' ; } %>
+<% if (typeof txtColor==='undefined' ) { txtColor='' ; } %>
+
 
 <div class="Grid-cell">
   <div class="element">
     <% if (paragraphFont==='h2' ) { %>
-    <h2>
+    <h2 class="<%= txtColor %>">
       <%= paragraphTxt %>
     </h2>
     <% } else if (paragraphFont==='h3' ) { %>
-    <h3>
+    <h3 class="<%= txtColor %>">
       <%= paragraphTxt %>
     </h3>
     <% } else if (paragraphFont==='h4' ) { %>
-    <h4>
+    <h4 class="<%= txtColor %>">
       <%= paragraphTxt %>
     </h4>
     <% } else if (paragraphFont==='h5' ) { %>
-    <h5>
+    <h5 class="<%= txtColor %>">
       <%= paragraphTxt %>
     </h5>
     <% } else if (paragraphFont==='h6' ) { %>
-        <h6>
-          <%= paragraphTxt %>
-        </h6>
+    <h6 class="<%= txtColor %>">
+      <%= paragraphTxt %>
+    </h6>
     <% } %>
 
   </div>
