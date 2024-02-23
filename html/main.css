@@ -2282,7 +2282,22 @@ padding: 0.8em 0em 0;
     transition: opacity .2s, visibility .2s;
 }
 
+/*
 .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+*/
+/* Add this rule for initial hidden state */
+.img__description {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+/* Add this rule for visible state */
+.img__description--visible {
     visibility: visible;
     opacity: 1;
 }
