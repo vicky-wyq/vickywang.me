@@ -336,6 +336,23 @@ function initializePassword() {
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
+/* =================== click show pw  ===================*/
+var cards = document.querySelectorAll('.img__wrap');
+
+cards.forEach(function(card) {
+    card.addEventListener('click', function() {
+        var description = card.querySelector('.img__description');
+        description.classList.add('img__description--visible');
+    });
+
+    card.addEventListener('mouseleave', function() {
+        var description = card.querySelector('.img__description');
+        description.classList.remove('img__description--visible');
+    });
+});
+
+/* =================== click show pw  ===================*/
+
 /* =================== carousel intro  ===================*/
 
 //autoplay  
