@@ -55,13 +55,13 @@
         hoverBorderColor:`BYP`,
         inputColor:`PWinput`,
         cardPwImgURL:`${websitePath}/projectImages/Cover_BYP_AppB2B_Redesign.png`,
-        cardPwTitle: `The Redesign of Pet Booking App`, 
-        cardPwDescription:`Revolutionized BookYourPet with a strategic platform redesign, elevating user engagement and streamlining operations. Our focused overhaul on essential features led to a 45% surge in user satisfaction, reshaping pet care services. Discover our journey towards a seamless pet service experience.` 
+        cardPwTitle: `Pet B2B Booking App Revamp: The Transition from White-Glove to Self-Service`, 
+        cardPwDescription:`Discover how we transformed the BookYourPet app with a strategic redesign, shifting from a white-glove service to a user-friendly self-service platform. This overhaul focused on enhancing key features, resulting in a significant 45% increase in user satisfaction and a more streamlined experience for pet owners. Join us on our journey to revolutionize pet care services with a seamless and intuitive booking experience.
+      ` 
         }) %>
     </div>
     <div class="Grid Grid--gutters Grid--cols-2">
-
-
+      <!--
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
         cardPwID:`consumerBooking`,
         hoverBorderColor:`BYP`,
@@ -70,6 +70,16 @@
         cardPwTitle: `Consumer Booking Experience: A Journey to Enhanced Engagement and Conversion`, 
         cardPwDescription:`Improving the consumer booking flow within a dynamic service platform. Our mission was to identify and alleviate pain points in the existing booking process, with a goal to substantially elevate user engagement and increase conversion rates.` 
         }) %>
+        -->
+        <%- include(`${templatePath}/shared/block_cardnPassword`, {
+
+          cardPwID:`rxZero`,
+          hoverBorderColor:`LASO`,
+          inputColor:`PWinputLH`,
+          cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_RXZero.png`,
+          cardPwTitle: `Shifting Focus: The Evolution of LASO Local & Telehealth to RX Zero`, 
+          cardPwDescription:`This case study delves into LASO Health's strategic pivot towards the RX Zero model, moving away from RX Local and Telemedicine services. It highlights the key objectives of RX Zero, centering on credibility and affordability. The study showcases the streamlined onboarding and subscription process, along with a simplified ordering system.` 
+          }) %>
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
 
         cardPwID:`adminPanel`,
@@ -84,15 +94,6 @@
     <div class="Grid Grid--gutters Grid--cols-2">
       <%- include(`${templatePath}/shared/block_cardnPassword`, {
 
-        cardPwID:`rxZero`,
-        hoverBorderColor:`LASO`,
-        inputColor:`PWinputLH`,
-        cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_RXZero.png`,
-        cardPwTitle: `Shifting Focus: The Evolution of LASO Local & Telehealth to RX Zero`, 
-        cardPwDescription:`This case study delves into LASO Health's strategic pivot towards the RX Zero model, moving away from RX Local and Telemedicine services. It highlights the key objectives of RX Zero, centering on credibility and affordability. The study showcases the streamlined onboarding and subscription process, along with a simplified ordering system.` 
-        }) %>
-      <%- include(`${templatePath}/shared/block_cardnPassword`, {
-
         cardPwID:`costCalculator`,
         hoverBorderColor:`LASO`,
         inputColor:`PWinputLH`,
@@ -100,12 +101,6 @@
         cardPwTitle: `RX Zero Savings Explorer - Cost-benefit Calculator`, 
         cardPwDescription:`This tool enables users to compare their current medication costs with the RX Zero subscription model, offering a seamless experience that simplifies making healthcare financial decisions.` 
         }) %>
-
-    </div>
-    <div class="Grid Grid--gutters Grid--full">
-
-    </div>
-    <div class="Grid Grid--gutters Grid--cols-3">
       <%- include(`${templatePath}/shared/block_cardNoPassword`, {
         hoverBorderColor:`GLORIFY`,
         cardNoPwURL:`${websitePath}/glorify/`,
@@ -113,6 +108,14 @@
         cardNoPwTitle: `Glorify: Transforming Solitary Devotion into Community Engagement`, 
         cardNoPwDescription:`This case study explores the evolution of the Glorify app, a mobile platform dedicated to enhancing individual spiritual journeys, into a vibrant community hub for collective faith building.` 
         }) %>
+
+
+    </div>
+    <div class="Grid Grid--gutters Grid--full">
+
+    </div>
+    <div class="Grid Grid--gutters Grid--cols-3">
+
       <%- include(`${templatePath}/shared/block_cardNoPassword`, {
         hoverBorderColor:`SEER`,
         cardNoPwURL:`${websitePath}/seer/`,
