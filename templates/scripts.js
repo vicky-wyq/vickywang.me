@@ -317,25 +317,10 @@ function initializePassword() {
       }
     });
   });
-
-
 }
-
-
-
-
-
-
-
-// ====== Components ====== //
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
-
 /* =================== click show pw  ===================*/
 var cards = document.querySelectorAll('.img__wrap');
 
@@ -350,7 +335,6 @@ cards.forEach(function(card) {
         description.classList.remove('img__description--visible');
     });
 });
-
 /* =================== click show pw  ===================*/
 
 /* =================== carousel intro  ===================*/

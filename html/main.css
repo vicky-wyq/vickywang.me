@@ -2303,7 +2303,10 @@ padding: 0.8em 0em 0;
 }
 
 /* ---- hide/show --------- */
-/* ---- password textbox --------- */
+
+
+
+/* ======== password textbox ======== */
 
 .PWinputLH:focus {
     background-color: var(--white);
@@ -2376,6 +2379,12 @@ input {
     cursor: pointer;
     color: var(--Grey900);
 }
+.input-error {
+    border: 1px solid var(--alert);
+    box-shadow: 0 0 0 2px var(--alert);
+}
+
+
 
 .pwContainer {
     position: relative;
@@ -2409,7 +2418,7 @@ button.passwordArr {
     }
 }
 
-/* ---- password textbox --------- */
+/* ======== password textbox ======== */
 .moveUpDown {
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 1s infinite alternate;
@@ -2513,6 +2522,7 @@ button.passwordArr {
     width: 22px;
     float: right;
 }
+/* =================== accordion ===================*/
 
 .accordion {
     /*    border-bottom: 1px solid var(--Grey200);
@@ -2528,7 +2538,6 @@ button.passwordArr {
     transition: background-color 0.3s linear;
 }
 
-/* =================== accordion ===================*/
 
 
 .accordionBorderTop {
