@@ -11,21 +11,50 @@
   <%- include( `${templatePath}/shared/compProgressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'PROJECT' }) %>
   <div class="blankHM"></div>
-  <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`👋🏻 hello, I'm Vicky.`}) %>
-  <%- include(`${templatePath}/shared/comp_titleWeb`,{
-    ShowIntroTitle1:true,
-    ShowIntroTitle2:false,
-    ShowIntroTitle3:false,
-    ShowIntroTitle4:false,
 
-    introTitle1: `I'm a UX Designer focused on bridging efficiency and engagement in SaaS, administrative Interfaces, and user-Driven applications`,
-    divider1: false, 
-    introTitle2: ``,
-    divider2: false, 
-    introTitle3: ``,
-    divider3: false, 
-    introTitle4: ``
-  }) %>
+  <div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters">
+      <div class="Grid-cell">
+        <div class="element">
+          <p class="t-hello">👋🏻 hello, I'm Vicky.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="wrapper">
+  <div class="Grid Grid--gutters">
+    <div class="Grid-cell">
+
+      <div class="row">
+        <div class="widthMax">
+          <div class="element">
+            <strong>
+              <div class="intro aos-init aos-animate" data-aos="fade-up">           
+                <h1> I'm a UX Designer passionate about creating simple, smooth and engaging experiences. </h1>
+              </div>
+            </strong>
+          </div>
+        </div>
+        
+        <div class="paddingleft">
+          <div class="element">
+            <div class="widthFitContent">
+              <div class="dropdownSM">
+                <img title="Share" class="iconS hoverGrey300 paddingM borderRadiusMax dropbtn" src="/icon/share.svg" alt="Share">
+                <div class="dropdownSM-content">
+                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
+                    on LinkedIn</a>
+                  <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me&amp;media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&amp;description=Skilled%20UX%20Designer%20for%20B2B%20Solutions%20%26%20Consumer%20Apps%20-%20Vicky%20Wang" target="_blank">Share on Pinterest</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-3">
