@@ -30,8 +30,6 @@
 
     --img-APPOINT: url('./image/Cover_APPOINTA.jpg');
     --img-SEER: url('./image/Cover_SEER.jpg');
-    --img-WS: url('./image/Cover_worksample.png');
-    --img-DS: url('./image/Cover_portfolioWeb.png');
 
 
 
@@ -2043,6 +2041,7 @@ a:link.textUnderline {
     text-decoration-style: double;
     text-decoration-thickness: 2px;
 }
+
 
 .textDecor.SEER {
     text-decoration-color: var(--seer-purple);
@@ -6139,7 +6138,7 @@ button.intro:hover {
         animation: moveBg var(--speed) linear infinite;
         position: absolute;
         inset: 0;
-        background: url(marquee.svg) 0 50% / 1134px 150px repeat-x;
+        background: url(/about/marquee.svg) 0 50% / 1134px 150px repeat-x;
         -webkit-mask: linear-gradient(90deg, #0000 5px, #000 50px calc(100% - 50px), #0000 calc(100% - 5px));
     }
 }
