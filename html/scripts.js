@@ -865,6 +865,8 @@ copyTextContainers.forEach(function (container) {
     // Usage
     initLRcarousel('carousel1');
     initLRcarousel('carousel2');
+    initLRcarousel('carousel3');
+
   })();
   // LRCarousel ends
 
