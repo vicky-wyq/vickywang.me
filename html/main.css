@@ -267,8 +267,25 @@ a:link.textProject {
 
 /* ========= a link / states =========*/
 
+/* ========= 
+
+.positionFixed {
+    position: fixed;
+    top: calc(100% - 64px);
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
+=========*/
+
+.positionFixed {
+    position: fixed;
+    bottom: 12px;
+
+    right: 12px;
+}
 /* ========= display =========*/
 
 .displayNone {
@@ -5176,12 +5193,64 @@ button.Clipboard.clickTxt:active {
     background-color: rgba(255, 255, 255, 0.8);
 
 }
+.buttonBlack {
+    border-radius: 10em;
+    align-self: center;
+    border: solid 1px;
+    background: var(--white);
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    box-shadow: rgba(112, 112, 112, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+    color: var(--Grey900);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.2em;
+    outline: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 12px;
+}
+/* ====== buttonResume ====== */
+.buttonFlip {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+
+	display: block;
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 120px;
+	padding: 12px 16px;
+    color: var(--Grey900);
+	box-shadow: rgb(0, 0, 0) 0 0px 0px .08em inset;
+    font-weight: 500;
+    background-color: var(--white);
+}
+
+
+.buttonFlip:hover {
+	color: var(--white);
+	box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
+}
+/* ====== buttonResume ====== */
+
 
 .buttonLanding {
     border-radius: 0.6em;
     align-self: center;
     border: none;
-
     background-color: var(--white);
     background-image: none;
     background-position: 0 90%;
