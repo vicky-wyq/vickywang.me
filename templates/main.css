@@ -2520,6 +2520,16 @@ button.passwordArr {
     margin-left: 4px;
 
 }
+.arrButtonUpRight:after {
+    content: "";
+    background-image: url("icon/arrow-upRight.svg");
+    height: 1.2em;
+    width: 1.2em;
+    float: right;
+    margin-left: 4px;
+    top: 0;
+
+}
 
 .arrButtonSmall:after {
     content: "";

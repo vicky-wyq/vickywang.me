@@ -11,7 +11,14 @@
 
 <body>
   <%- include(`${templatePath}/shared/compProgressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'ARCHITECTURE' }) %>
+
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'backText', 
+    leftArrowColor:``,
+    currentPage: 'ARCHITECTURE',
+    PageUrl:`/architecture`
+    }) %>
+
   <div class="blankHL"></div>
   <!-- cover -->
   <div class="wrapper">
