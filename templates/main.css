@@ -4938,7 +4938,35 @@ button.ClipboardIconOnly {
     border-radius: var(--border-radiusMax);
 
 }
-
+/* exception */
+button.ClipboardIconOnly.excluded {
+    border-radius: 0.6em;
+    align-self: center;
+    border: none;
+    background-color: var(--white);
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    box-shadow: rgba(112, 112, 112, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+    color: var(--Grey900);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.2em;
+    outline: none;
+    padding: 16px 28px;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 12px;
+}
+/* exception */
 
 
 /* ===== click paragraph to copy ====== */
@@ -4986,6 +5014,7 @@ button.ClipboardIconOnly:active {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 /* ===== click icon copy to clipboard ====== */
 /* ===== textbox copy to clipboard ====== */
