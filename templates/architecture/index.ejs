@@ -10,7 +10,12 @@
 
 <body>
   <%- include(`${templatePath}/shared/compProgressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'ARCHITECTURE' }) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'backText', 
+    leftArrowColor:``,
+    currentPage: 'ARCHITECTURE',
+    PageUrl:`/about`
+    }) %>
   <div class="blankHM"></div>
   <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`👋🏻 hi there!`}) %>
   <%- include(`${templatePath}/shared/comp_titleWeb`,{
