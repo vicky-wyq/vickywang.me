@@ -6245,7 +6245,7 @@ button.intro:hover {
     --contrast: 105%;
     --speed: 33s;
     height: 100px;
-    max-width: 900px;
+    max-width: 1200px auto;
     width: 100%;
     position: relative;
 
