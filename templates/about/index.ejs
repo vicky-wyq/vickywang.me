@@ -37,32 +37,58 @@
           </h3>
         </div>
 
-          <div class="row">
-            <a href="mailto:vickyw.design@gmail.com"> <button class="buttonLanding">Email me
-              </button></a>
-            <div class="ClipboardBoxIconOnly">
-              <button class="ClipboardIconOnly">
-                <img class="iconM hoverGrey100 paddingMax borderRadiusMax" title="Copy Email Address to Clipboard" src="/icon/copy.svg">
-                <p class="clickIconCopy">vickyw.design@gmail.com
-                </p>
-              </button>
-            </div>
+        <div class="row">
+          <a href="mailto:vickyw.design@gmail.com"> <button class="buttonLanding">Email me
+            </button></a>
+          <div class="ClipboardBoxIconOnly">
+            <button class="ClipboardIconOnly">
+              <img class="iconM hoverGrey100 paddingMax borderRadiusMax" title="Copy Email Address to Clipboard" src="/icon/copy.svg">
+              <p class="clickIconCopy">vickyw.design@gmail.com
+              </p>
+            </button>
           </div>
+        </div>
       </div>
 
     </div>
 
 
   </div>
-  <!-- My Journey -->
 
-  <!--Arrow subtitle-->
-  <%- include('../shared/comp_textualElements_arrow', {message: 'My Journey' }) %>
-  <!--Arrow subtitle-->
-
+  <!-- video -->
 
   <div class="wrapper">
 
+      <div class="video-container">
+        <video class="video" src="https://ia802500.us.archive.org/35/items/three-legged-legs/3000kbs_starbucks.mp4" type="video/mp4">
+          <!--poster="me.png"-->
+
+        </video>
+        <div class="controls">
+          <div class="playButtons">
+            <button id="playPause"></button>
+          </div>
+        </div>
+
+
+
+        <div class="barContainer">
+
+          <div class="bar">
+            <div class="barColor"></div>
+          </div>
+
+        </div> 
+
+
+      </div>
+
+  </div>
+
+  <!-- video -->
+  <!-- My Journey -->
+  <%- include('../shared/comp_textualElements_arrow', {message: 'My Journey' }) %>
+  <div class="wrapper">
     <div class="Grid Grid--full Grid--gutters">
       <div class="Grid-cell">
         <div class="element">
@@ -114,9 +140,9 @@
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--full">
       <div class="Grid-cell">
-          <a href="/resume"> <button class="buttonLanding arrButton">Resume &nbsp;
-            </button></a>
-        </div>
+        <a href="/resume"> <button class="buttonLanding arrButton">Resume &nbsp;
+          </button></a>
+      </div>
     </div>
   </div>
   <!-- My Journey -->
