@@ -155,67 +155,67 @@ function main() {
 // TagsCloud
 
 
-(function() {
+(function () {
   var lastKnownScrollY = 0;
   var currentScrollY = 0;
   var ticking = false;
   var idOfHeader = 'header';
   var eleHeader = null;
   const classes = {
-      pinned: 'header-pin',
-      unpinned: 'header-unpin'
+    pinned: 'header-pin',
+    unpinned: 'header-unpin'
   };
 
   function onScroll() {
-      currentScrollY = window.pageYOffset;
-      requestTick();
+    currentScrollY = window.pageYOffset;
+    requestTick();
   }
 
   function requestTick() {
-      if (!ticking) {
-          requestAnimationFrame(update);
-      }
-      ticking = true;
+    if (!ticking) {
+      requestAnimationFrame(update);
+    }
+    ticking = true;
   }
 
   function update() {
-      if (currentScrollY < lastKnownScrollY) {
-          pin();
-      } else if (currentScrollY > lastKnownScrollY) {
-          unpin();
-      }
-      lastKnownScrollY = currentScrollY;
-      ticking = false;
+    if (currentScrollY < lastKnownScrollY) {
+      pin();
+    } else if (currentScrollY > lastKnownScrollY) {
+      unpin();
+    }
+    lastKnownScrollY = currentScrollY;
+    ticking = false;
   }
 
   function pin() {
-      if (eleHeader && eleHeader.classList.contains(classes.unpinned)) {
-          eleHeader.classList.remove(classes.unpinned);
-          eleHeader.classList.add(classes.pinned);
-      }
+    if (eleHeader && eleHeader.classList.contains(classes.unpinned)) {
+      eleHeader.classList.remove(classes.unpinned);
+      eleHeader.classList.add(classes.pinned);
+    }
   }
 
   function unpin() {
-      if (eleHeader && (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned))) {
-          eleHeader.classList.remove(classes.pinned);
-          eleHeader.classList.add(classes.unpinned);
-      }
+    if (eleHeader && (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned))) {
+      eleHeader.classList.remove(classes.pinned);
+      eleHeader.classList.add(classes.unpinned);
+    }
   }
 
   function initHeader() {
-      eleHeader = document.getElementById(idOfHeader);
-      if (eleHeader) {
-          document.addEventListener('scroll', onScroll, false);
-      } else {
-          console.error('Header element not found');
-      }
+    eleHeader = document.getElementById(idOfHeader);
+    if (eleHeader) {
+      document.addEventListener('scroll', onScroll, false);
+    } else {
+      console.error('Header element not found');
+    }
   }
 
   // Ensuring this code doesn't conflict with other window.onload events
   if (window.addEventListener) {
-      window.addEventListener('load', initHeader);
+    window.addEventListener('load', initHeader);
   } else if (window.attachEvent) {
-      window.attachEvent('onload', initHeader);
+    window.attachEvent('onload', initHeader);
   }
 })();
 
@@ -256,9 +256,9 @@ function toggleContent(button) {
 function initializeToggles() {
   const toggles = document.querySelectorAll('.toggle')
 
-  toggles.forEach(function(toggle) {
+  toggles.forEach(function (toggle) {
     // Add the click event listener to each button
-    toggle.addEventListener('click', function() {
+    toggle.addEventListener('click', function () {
       toggleContent(toggle);
     });
   });
@@ -287,7 +287,7 @@ function initializePassword() {
     const msg = pass.closest(".input-field").querySelector(".pwIncorrectHeight span");
 
     // Add event listener for keypress on password field
-    pass.addEventListener("keypress", function(event) {
+    pass.addEventListener("keypress", function (event) {
       if (event.key === "Enter") {
         event.preventDefault();
         submit.click();
@@ -321,89 +321,89 @@ function initializePassword() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
-/* =================== click show pw  ===================*/
-var cards = document.querySelectorAll('.img__wrap');
+  /* =================== click show pw  ===================*/
+  var cards = document.querySelectorAll('.img__wrap');
 
-cards.forEach(function(card) {
-    card.addEventListener('click', function() {
-        var description = card.querySelector('.img__description');
-        description.classList.add('img__description--visible');
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      var description = card.querySelector('.img__description');
+      description.classList.add('img__description--visible');
     });
 
-    card.addEventListener('mouseleave', function() {
-        var description = card.querySelector('.img__description');
-        description.classList.remove('img__description--visible');
+    card.addEventListener('mouseleave', function () {
+      var description = card.querySelector('.img__description');
+      description.classList.remove('img__description--visible');
     });
-});
-/* =================== click show pw  ===================*/
+  });
+  /* =================== click show pw  ===================*/
 
-/* =================== carousel intro  ===================*/
+  /* =================== carousel intro  ===================*/
 
-//autoplay  
+  //autoplay  
 
 
-(function() {
+  (function () {
+    const slider = document.querySelector(".slider");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+
+    // Check if the required elements exist
+    if (!slider || !prevButton || !nextButton) {
+      return; // Exit the function if any element is missing
+    }
+
+    let autoplayIntervalID;
+    let isAutoplayPaused = false;
+
+    function activate(e) {
+      const items = document.querySelectorAll(".item");
+      if (e.target.matches(".next") || e.type === "autoplay") {
+        slider.append(items[0]);
+      } else if (e.target.matches(".prev")) {
+        slider.prepend(items[items.length - 1]);
+      }
+    }
+
+    document.addEventListener("click", activate, false);
+
+    // Autoplay functionality
+    const autoplayInterval = 5000; // 5000 milliseconds = 5 seconds
+
+    function autoplay() {
+      if (!isAutoplayPaused) {
+        const items = document.querySelectorAll(".item");
+        slider.append(items[0]); // Move the first item to the end of the slider
+      }
+    }
+
+    autoplayIntervalID = setInterval(autoplay, autoplayInterval);
+
+    // Pause autoplay on button click
+    function pauseAutoplay() {
+      isAutoplayPaused = true;
+      clearInterval(autoplayIntervalID);
+    }
+
+    prevButton.addEventListener("click", pauseAutoplay);
+    nextButton.addEventListener("click", pauseAutoplay);
+  })();
+
+
+
+  /* ===================
+  //no autoplay
   const slider = document.querySelector(".slider");
-  const prevButton = document.querySelector(".prev");
-  const nextButton = document.querySelector(".next");
-
-  // Check if the required elements exist
-  if (!slider || !prevButton || !nextButton) {
-    return; // Exit the function if any element is missing
-  }
-
-  let autoplayIntervalID;
-  let isAutoplayPaused = false;
-
+  
   function activate(e) {
     const items = document.querySelectorAll(".item");
-    if (e.target.matches(".next") || e.type === "autoplay") {
-      slider.append(items[0]);
-    } else if (e.target.matches(".prev")) {
-      slider.prepend(items[items.length - 1]);
-    }
+    e.target.matches(".next") && slider.append(items[0]);
+    e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
   }
-
+  
   document.addEventListener("click", activate, false);
+  ===================*/
 
-  // Autoplay functionality
-  const autoplayInterval = 5000; // 5000 milliseconds = 5 seconds
-
-  function autoplay() {
-    if (!isAutoplayPaused) {
-      const items = document.querySelectorAll(".item");
-      slider.append(items[0]); // Move the first item to the end of the slider
-    }
-  }
-
-  autoplayIntervalID = setInterval(autoplay, autoplayInterval);
-
-  // Pause autoplay on button click
-  function pauseAutoplay() {
-    isAutoplayPaused = true;
-    clearInterval(autoplayIntervalID);
-  }
-
-  prevButton.addEventListener("click", pauseAutoplay);
-  nextButton.addEventListener("click", pauseAutoplay);
-})();
-
-
-
-/* ===================
-//no autoplay
-const slider = document.querySelector(".slider");
-
-function activate(e) {
-  const items = document.querySelectorAll(".item");
-  e.target.matches(".next") && slider.append(items[0]);
-  e.target.matches(".prev") && slider.prepend(items[items.length - 1]);
-}
-
-document.addEventListener("click", activate, false);
-===================*/
-
-/* =================== carousel intro  ===================*/
+  /* =================== carousel intro  ===================*/
 
 
 
@@ -443,7 +443,7 @@ document.addEventListener("click", activate, false);
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
     });
-  
+
     document.querySelectorAll(".nav-link").forEach((link) =>
       link.addEventListener("click", () => {
         hamburger.classList.remove("active");
@@ -498,7 +498,7 @@ document.addEventListener("click", activate, false);
 
 
   // ====== Call TagsCloud Starts ====== //
-  
+
 
 
   main();
@@ -507,29 +507,29 @@ document.addEventListener("click", activate, false);
 
 
 
-   // Helper function to copy text to the clipboard
- function copyToClipboard(textElement, feedbackElement) {
-  textElement.select();
-  document.execCommand("copy");
-  feedbackElement.classList.add("active");
-  window.getSelection().removeAllRanges();
-  setTimeout(function () {
-    feedbackElement.classList.remove("active");
-  }, 2500);
-}
-// Attach event listener to all .copy-text button elements
-let copyTextContainers = document.querySelectorAll(".copy-text");
+  // Helper function to copy text to the clipboard
+  function copyToClipboard(textElement, feedbackElement) {
+    textElement.select();
+    document.execCommand("copy");
+    feedbackElement.classList.add("active");
+    window.getSelection().removeAllRanges();
+    setTimeout(function () {
+      feedbackElement.classList.remove("active");
+    }, 2500);
+  }
+  // Attach event listener to all .copy-text button elements
+  let copyTextContainers = document.querySelectorAll(".copy-text");
 
-copyTextContainers.forEach(function (container) {
-  let button = container.querySelector("button");
-  let input = container.querySelector("input.text");
+  copyTextContainers.forEach(function (container) {
+    let button = container.querySelector("button");
+    let input = container.querySelector("input.text");
 
-  button.addEventListener("click", function () {
-    copyToClipboard(input, container);
+    button.addEventListener("click", function () {
+      copyToClipboard(input, container);
+    });
   });
-});
 
-// ====== textbox copy to clipboard ======
+  // ====== textbox copy to clipboard ======
 
 
 
@@ -650,7 +650,7 @@ copyTextContainers.forEach(function (container) {
   //copy Clipboard
 
 
- 
+
 
 
   const gifImages = document.querySelectorAll('.gif-toggle');
@@ -921,111 +921,140 @@ copyTextContainers.forEach(function (container) {
 
   // Initialize each audio player
   document.querySelectorAll('.audio-container').forEach(initAudioPlayer);
-  (function() {
+  (function () {
     // Initialize each 'filed' component
     var fileds = document.querySelectorAll('.filed');
-    fileds.forEach(function(filed) {
-        initializeFiled(filed);
+    fileds.forEach(function (filed) {
+      initializeFiled(filed);
     });
 
     // Event listeners for radio buttons
-    document.querySelectorAll('.select-EJS, .select-HTML, .select-CSS').forEach(function(radioBtn) {
-        radioBtn.addEventListener('click', function() {
-            showCode(this, this.classList.contains('select-EJS') ? 'ejs' : (this.classList.contains('select-HTML') ? 'html' : 'css'));
-        });
+    document.querySelectorAll('.select-EJS, .select-HTML, .select-CSS').forEach(function (radioBtn) {
+      radioBtn.addEventListener('click', function () {
+        showCode(this, this.classList.contains('select-EJS') ? 'ejs' : (this.classList.contains('select-HTML') ? 'html' : 'css'));
+      });
     });
 
     function initializeFiled(filed) {
-        var ejsRadio = filed.querySelector('.select-EJS');
-        var ejsBlock = filed.querySelector('.ejs-block');
-        var htmlRadio = filed.querySelector('.select-HTML');
-        var htmlBlock = filed.querySelector('.html-block');
-        var cssBlock = filed.querySelector('.css-block');
-        var copyButton = filed.querySelector('.copy-btn');
+      var ejsRadio = filed.querySelector('.select-EJS');
+      var ejsBlock = filed.querySelector('.ejs-block');
+      var htmlRadio = filed.querySelector('.select-HTML');
+      var htmlBlock = filed.querySelector('.html-block');
+      var cssBlock = filed.querySelector('.css-block');
+      var copyButton = filed.querySelector('.copy-btn');
 
-        // Check the initially selected radio button
-        var checkedRadio = filed.querySelector('.select-EJS:checked, .select-HTML:checked, .select-CSS:checked');
+      // Check the initially selected radio button
+      var checkedRadio = filed.querySelector('.select-EJS:checked, .select-HTML:checked, .select-CSS:checked');
 
-        if (checkedRadio === ejsRadio) {
-            ejsBlock.style.display = 'block';
-            htmlBlock.style.display = 'none';
-            cssBlock.style.display = 'none';
-            setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
-        } else if (checkedRadio === htmlRadio) {
-            ejsBlock.style.display = 'none';
-            htmlBlock.style.display = 'block';
-            cssBlock.style.display = 'none';
-            setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
-        } else {
-            ejsBlock.style.display = 'none';
-            htmlBlock.style.display = 'none';
-            cssBlock.style.display = 'block';
-            setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
-        }
+      if (checkedRadio === ejsRadio) {
+        ejsBlock.style.display = 'block';
+        htmlBlock.style.display = 'none';
+        cssBlock.style.display = 'none';
+        setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
+      } else if (checkedRadio === htmlRadio) {
+        ejsBlock.style.display = 'none';
+        htmlBlock.style.display = 'block';
+        cssBlock.style.display = 'none';
+        setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+      } else {
+        ejsBlock.style.display = 'none';
+        htmlBlock.style.display = 'none';
+        cssBlock.style.display = 'block';
+        setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
+      }
     }
 
     function showCode(radioBtn, type) {
-        var container = radioBtn.closest('.filed');
-        var ejsBlock = container.querySelector('.ejs-block');
-        var htmlBlock = container.querySelector('.html-block');
-        var cssBlock = container.querySelector('.css-block');
-        var copyButton = container.querySelector('.copy-btn');
+      var container = radioBtn.closest('.filed');
+      var ejsBlock = container.querySelector('.ejs-block');
+      var htmlBlock = container.querySelector('.html-block');
+      var cssBlock = container.querySelector('.css-block');
+      var copyButton = container.querySelector('.copy-btn');
 
-        if (type === 'ejs') {
-            ejsBlock.style.display = 'block';
-            htmlBlock.style.display = 'none';
-            cssBlock.style.display = 'none';
-            setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
-        } else if (type === 'html') {
-            ejsBlock.style.display = 'none';
-            htmlBlock.style.display = 'block';
-            cssBlock.style.display = 'none';
-            setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
-        } else {
-            ejsBlock.style.display = 'none';
-            htmlBlock.style.display = 'none';
-            cssBlock.style.display = 'block';
-            setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
-        }
+      if (type === 'ejs') {
+        ejsBlock.style.display = 'block';
+        htmlBlock.style.display = 'none';
+        cssBlock.style.display = 'none';
+        setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
+      } else if (type === 'html') {
+        ejsBlock.style.display = 'none';
+        htmlBlock.style.display = 'block';
+        cssBlock.style.display = 'none';
+        setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+      } else {
+        ejsBlock.style.display = 'none';
+        htmlBlock.style.display = 'none';
+        cssBlock.style.display = 'block';
+        setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
+      }
     }
 
     function setupCopyButton(button, codeBlock) {
-        button.onclick = function() {
-            copyToClipboard(codeBlock, button);
-        };
+      button.onclick = function () {
+        copyToClipboard(codeBlock, button);
+      };
     }
 
     function copyToClipboard(codeBlock, btnElement) {
-        var copyText = codeBlock.innerText;
-        var textarea = document.createElement("textarea");
-        textarea.textContent = copyText;
-        document.body.appendChild(textarea);
+      var copyText = codeBlock.innerText;
+      var textarea = document.createElement("textarea");
+      textarea.textContent = copyText;
+      document.body.appendChild(textarea);
 
-        textarea.select();
-        document.execCommand("copy");
+      textarea.select();
+      document.execCommand("copy");
 
-        document.body.removeChild(textarea);
+      document.body.removeChild(textarea);
 
-        btnElement.textContent = 'Copied!';
+      btnElement.textContent = 'Copied!';
 
-        setTimeout(function() {
-            btnElement.textContent = 'Copy Code';
-        }, 2000);
+      setTimeout(function () {
+        btnElement.textContent = 'Copy Code';
+      }, 2000);
     }
-})();
+  })();
 
   //copy code to clipboard + tabs
 
 
-// Simulate a click on the default tab link when the page loads
-window.onload = function () {
-  var defaultTabLink = document.getElementById("default-tab");
-  if (defaultTabLink) {
-    defaultTabLink.click();
+  // Simulate a click on the default tab link when the page loads
+  window.onload = function () {
+    var defaultTabLink = document.getElementById("default-tab");
+    if (defaultTabLink) {
+      defaultTabLink.click();
+    }
+  };
+
+
+
+  // video
+
+  var video = document.querySelector(".video");
+  
+  var barColor = document.querySelector(".barColor");
+  var playerBtn = document.getElementById("playPause");
+  
+  function togglePlayPause() {
+    if (video.paused) {
+      playerBtn.className = "pause";
+      video.play();
+    } else {
+      playerBtn.className = "play";
+      video.pause();
+    }
   }
-};
+  playerBtn.onclick = function() {
+    togglePlayPause();
+  };
+  video.addEventListener('timeupdate', function(){
+    var barColorPos = video.currentTime / video.duration;
+    barColor.style.width = barColorPos * 100 + "%";
+    if(video.ended){
+      playerBtn.className = "play"
+    }
+  })
 
-
+  // video
 
 
 
