@@ -1027,34 +1027,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-  // video
-
-  var video = document.querySelector(".video");
-  
-  var barColor = document.querySelector(".barColor");
-  var playerBtn = document.getElementById("playPause");
-  
-  function togglePlayPause() {
-    if (video.paused) {
-      playerBtn.className = "pause";
-      video.play();
-    } else {
-      playerBtn.className = "play";
-      video.pause();
-    }
-  }
-  playerBtn.onclick = function() {
-    togglePlayPause();
-  };
-  video.addEventListener('timeupdate', function(){
-    var barColorPos = video.currentTime / video.duration;
-    barColor.style.width = barColorPos * 100 + "%";
-    if(video.ended){
-      playerBtn.className = "play"
-    }
-  })
-
-  // video
+ 
 
 
 
