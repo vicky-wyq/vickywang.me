@@ -5961,14 +5961,19 @@ button.intro:hover {
     width: 100%;
     position: relative;
     background: #4cf455;
+
+    
+    border-radius: 90px; /* Adjust this value for the desired roundness */
+    overflow: hidden; /* This ensures that any content inside the element is clipped to the rounded corners */
 }
+
+
+
 
 .video {
     width: 100%;
     display: block;
     /* Add this line */
-
-
 
 }
 
