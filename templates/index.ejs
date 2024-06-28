@@ -9,7 +9,8 @@
 
 <body>
   <%- include( `${templatePath}/shared/compProgressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, {type:'main', currentPage: 'PROJECT' }) %>
+  <%- include(`${templatePath}/shared/block_nav_header2024`, {sectionURL1:'#projects', sectionURL2:'#experiments', sectionURL3:'#design_system', sectionURL4:'#aboutme' }) %>
+
   <div class="blankHM"></div>
 
   <div class="wrapper">
@@ -108,14 +109,18 @@
         </button></a>
     </div>
   </div>
-  <!-- Arrow -->
-  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'UX Case Study' }) %>
-  <!-- Arrow -->
-  <!-- Content -->
-  <div class="wrapper">
-    <div class="Grid Grid--gutters Grid--cols-3">
 
-      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+  <!-- Content -->
+  <section id="projects">
+    <!-- Arrow -->
+    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'UX Case Study' }) %>
+    <!-- Arrow -->
+    <div class="blankHXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-3">
+
+        <%- include(`${templatePath}/shared/block_cardnPassword`, {
         cardPwID:`booking_management`,
         hoverBorderColor:`BYP`,
         inputColor:`PWinput`,
@@ -123,12 +128,12 @@
         cardPwTitle: `Enhancing Appointment Management for BookYourPet SaaS Platform`, 
         cardPwDescription:`I led the redesign of the appointment details screen for a pet booking app, aiming to improve usability, streamline management, and enhance efficiency. Using user interviews, usability testing, and data analysis, we identified key areas for improvement: easier navigation, better visibility of pet and client info, and efficient appointment adjustments. The redesigned screen features simplified navigation, enhanced visual hierarchy, and quick-access management tools, resulting in a 30% increase in user satisfaction and a 40% reduction in time spent managing appointments. This case study highlights my ability to solve complex usability issues and deliver impactful design solutions.` 
         }) %>
-    </div>
+      </div>
 
-    <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid Grid--gutters Grid--cols-2">
 
 
-      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        <%- include(`${templatePath}/shared/block_cardnPassword`, {
         cardPwID:`onboardingSubscription`,
         hoverBorderColor:`BYP`,
         inputColor:`PWinput`,
@@ -136,7 +141,7 @@
         cardPwTitle: `Mastering B2B SaaS Subscription Success`, 
         cardPwDescription:`This case study delves into the strategic enhancements made to the onboarding process of a B2B SaaS platform, aimed at simplifying user experience and boosting subscription rates. It explores the challenges faced, the solutions implemented, and the significant impact these changes had on user satisfaction and conversion rates, ultimately driving subscription success in a competitive market.` 
         }) %>
-      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+        <%- include(`${templatePath}/shared/block_cardnPassword`, {
         cardPwID:`b2bAppRedesign`,
         hoverBorderColor:`BYP`,
         inputColor:`PWinput`,
@@ -145,19 +150,11 @@
         cardPwDescription:`Discover how we transformed the pet booking app with a strategic redesign, shifting from a white-glove service to a user-friendly self-service platform. This overhaul focused on enhancing key features, resulting in a significant 45% increase in user satisfaction and a more streamlined experience for pet owners. Join us on our journey to revolutionize pet care services with a seamless and intuitive booking experience.
       ` 
         }) %>
-    </div>
-    <div class="Grid Grid--gutters Grid--cols-2">
-      <!--
-      <%- include(`${templatePath}/shared/block_cardnPassword`, {
-        cardPwID:`consumerBooking`,
-        hoverBorderColor:`BYP`,
-        inputColor:`PWinput`,
-        cardPwImgURL:`${websitePath}/projectImages/Cover_BYP_B2C.png`,
-        cardPwTitle: `Consumer Booking Experience: A Journey to Enhanced Engagement and Conversion`, 
-        cardPwDescription:`Improving the consumer booking flow within a dynamic service platform. Our mission was to identify and alleviate pain points in the existing booking process, with a goal to substantially elevate user engagement and increase conversion rates.` 
-        }) %>
-        -->
-      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+
+
+        <%- include(`${templatePath}/shared/block_cardnPassword`, {
 
           cardPwID:`rxZero`,
           hoverBorderColor:`LASO`,
@@ -166,7 +163,31 @@
           cardPwTitle: `Shifting Focus: The Evolution of LASO Local & Telehealth to RX Zero`, 
           cardPwDescription:`This case study delves into LASO Health's strategic pivot towards the RX Zero model, moving away from RX Local and Telemedicine services. It highlights the key objectives of RX Zero, centering on credibility and affordability. The study showcases the streamlined onboarding and subscription process, along with a simplified ordering system.` 
           }) %>
-      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <!--
+          <%- include(`${templatePath}/shared/block_cardnPassword`, {
+            cardPwID:`consumerBooking`,
+            hoverBorderColor:`BYP`,
+            inputColor:`PWinput`,
+            cardPwImgURL:`${websitePath}/projectImages/Cover_BYP_B2C.png`,
+            cardPwTitle: `Consumer Booking Experience: A Journey to Enhanced Engagement and Conversion`, 
+            cardPwDescription:`Improving the consumer booking flow within a dynamic service platform. Our mission was to identify and alleviate pain points in the existing booking process, with a goal to substantially elevate user engagement and increase conversion rates.` 
+            }) 
+            %>
+        -->
+        <%- include(`${templatePath}/shared/block_cardnPassword`, {
+
+          cardPwID:`costCalculator`,
+          hoverBorderColor:`LASO`,
+          inputColor:`PWinputLH`,
+          cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_CostCalculator.png`,
+          cardPwTitle: `RX Zero Savings Explorer: Uncover Prescription Meds Savings`, 
+          cardPwDescription:`This tool enables users to compare their current medication costs with the RX Zero subscription model, offering a seamless experience that simplifies making healthcare financial decisions.` 
+          }) %>
+
+        <%- include(`${templatePath}/shared/block_cardnPassword`, {
 
         cardPwID:`adminPanel`,
         hoverBorderColor:`LASO`,
@@ -176,18 +197,22 @@
         cardPwDescription:`The core focus of this panel was to efficiently manage a diverse range of user accounts, including B2B, D2C, and guest users. A unique aspect of this project was accommodating users from B2B with company sponsorship, adding another layer of complexity to the design process.` 
         }) %>
 
-    </div>
-    <div class="Grid Grid--gutters Grid--cols-2">
-      <%- include(`${templatePath}/shared/block_cardnPassword`, {
+      </div>
 
-        cardPwID:`costCalculator`,
-        hoverBorderColor:`LASO`,
-        inputColor:`PWinputLH`,
-        cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_CostCalculator.png`,
-        cardPwTitle: `RX Zero Savings Explorer: Uncover Prescription Meds Savings`, 
-        cardPwDescription:`This tool enables users to compare their current medication costs with the RX Zero subscription model, offering a seamless experience that simplifies making healthcare financial decisions.` 
-        }) %>
-      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+
+
+    </div>
+    <!-- Content -->
+  </section>
+  <section id="experiments">
+    <!-- Arrow -->
+    <%- include('shared/comp_textualElements_arrow', {message: 'Experiments' }) %>
+    <!-- Arrow -->
+    <div class="blankHXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
         hoverBorderColor:`GLORIFY`,
         cardNoPwURL:`${websitePath}/glorify/`,
         cardNoPwImgURL:`${websitePath}/projectImages/Cover_Glorify.png`,
@@ -195,41 +220,40 @@
         cardNoPwDescription:`This case study explores the evolution of the Glorify app, a mobile platform dedicated to enhancing individual spiritual journeys, into a vibrant community hub for collective faith building.` 
         }) %>
 
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
 
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+      hoverBorderColor:`SEER`,
+      cardNoPwURL:`${websitePath}/seer/`,
+      cardNoPwImgURL:`${websitePath}/projectImages/Cover_SEER.png`,
+      cardNoPwTitle: `SEER: Enhancing Brand Impact on Reddit`, 
+      cardNoPwDescription:`A conceptual UX case study aimed at transforming Reddit data into actionable
+            insights for brand marketers. This design explores the potential of intuitive
+            analytics to understand user sentiment and engagement, offering a glimpse into the
+            future of targeted marketing strategies.` 
+      }) %>
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+      hoverBorderColor:`APPOINTA`,
+      cardNoPwURL:`${websitePath}/appointa/`,
+      cardNoPwImgURL:`${websitePath}/projectImages/Cover_APPOINTA.png`,
+      cardNoPwTitle: `APPOINTA: Interview Scheduling Made Simple`, 
+      cardNoPwDescription:`Explore my UX case study aimed at revamping interview scheduling. This project
+              streamlines the recruiter's tasks, speeds up hiring, and enhances scheduling
+              experiences, reducing interview coordination time and boosting recruitment efficiency.` 
+      }) %>
+      </div>
     </div>
+  </section>
+  <section id="design_system">
+    <!-- Arrow -->
+    <%- include('shared/comp_textualElements_arrow', {message: 'Design System' }) %>
+    <!-- Arrow -->
+    <div class="blankHXS"></div>
 
-    <div class="Grid Grid--gutters Grid--cols-2">
-
-      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
-        hoverBorderColor:`SEER`,
-        cardNoPwURL:`${websitePath}/seer/`,
-        cardNoPwImgURL:`${websitePath}/projectImages/Cover_SEER.png`,
-        cardNoPwTitle: `SEER: Enhancing Brand Impact on Reddit`, 
-        cardNoPwDescription:`A conceptual UX case study aimed at transforming Reddit data into actionable
-              insights for brand marketers. This design explores the potential of intuitive
-              analytics to understand user sentiment and engagement, offering a glimpse into the
-              future of targeted marketing strategies.` 
-        }) %>
-      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
-        hoverBorderColor:`APPOINTA`,
-        cardNoPwURL:`${websitePath}/appointa/`,
-        cardNoPwImgURL:`${websitePath}/projectImages/Cover_APPOINTA.png`,
-        cardNoPwTitle: `APPOINTA: Interview Scheduling Made Simple`, 
-        cardNoPwDescription:`Explore my UX case study aimed at revamping interview scheduling. This project
-                streamlines the recruiter's tasks, speeds up hiring, and enhances scheduling
-                experiences, reducing interview coordination time and boosting recruitment efficiency.` 
-        }) %>
-    </div>
-
-  </div>
-  <!-- Content -->
-
-  <!-- Arrow -->
-  <%- include('shared/comp_textualElements_arrow', {message: 'Design System' }) %>
-  <!-- Arrow -->
-  <div class="wrapper">
-    <div class="Grid Grid--gutters Grid--cols-3">
-      <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
         hoverBorderColor:``,
         cardNoPwURL:`${websitePath}/design_system/`,
         cardNoPwImgURL:`${websitePath}/projectImages/vicky_website.svg`,
@@ -237,12 +261,153 @@
         cardNoPwDescription:`A comprehensive system that enhances the scalability and consistency of UX design. It serves as a practical guide for designing scalable, efficient, and cohesive user interfaces and experiences.` 
         }) %>
 
+      </div>
     </div>
-  </div>
+
+  </section>
+
+  <section id="aboutme">
+    <!-- Arrow -->
+    <%- include('shared/comp_textualElements_arrow', {message: 'About Me' }) %>
+    <!-- Arrow -->
+    <div class="blankHXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="" src="me.png" alt="Vicky">
+
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h3>As a UX designer, I possess a diverse range of skills and have gained experience in startup environments. I am fully involved in every aspect of the design process and continuously aim to create seamless user experiences that align with business objectives. My approach emphasizes simplicity, using the fewest design elements necessary to address core issues effectively.
+            </h3>
+            <h3>My fascination with craftsmanship extends beyond just UX. It is evident both in the art of crafting user-centric interfaces and in appreciating the finer details of everyday life.
+            </h3>
+            <h3>
+              I take pleasure in immersing myself in new technologies. Doing so not only fosters smoother collaboration with developers but also deepens my understanding of design, ultimately driving productivity.
+            </h3>
+          </div>
+
+          <div class="row">
+            <a href="mailto:vickyw.design@gmail.com"> <button class="buttonLanding">Email me
+              </button></a>
+            <div class="ClipboardBoxIconOnly">
+              <button class="ClipboardIconOnly">
+                <img class="iconM hoverGrey100 paddingMax borderRadiusMax" title="Copy Email Address to Clipboard" src="/icon/copy.svg">
+                <p class="clickIconCopy">vickyw.design@gmail.com
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <!-- Arrow -->
+    <%- include('shared/comp_textualElements_arrow', {message: 'My Journey' }) %>
+    <!-- Arrow -->
+    <div class="blankHXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="element">
+
+              <div class="progressStepContainer">
+                <ul class="progressX">
+                  <li class="progress__item progress__item--active" data-aos="fade-up">
+                    <h3> <strong class="">The Art of Drawing & Painting</strong> </h3>
+                    <h3>Art is my way of turning emotions and ideas into visual expression. It deepens my understanding of design and opens up new perspectives. Through color, composition, and other elements, art helps me create unique designs.
+                    </h3>
+
+                  </li>
+                  <div class="blankHXS"></div>
+
+                  <li class="progress__item progress__item--active" data-aos="fade-up">
+                    <h3> <strong class=""><a href="/architecture" class="textUnderline" title="Academic Projects"> Architectural Design</a> & <a href="/photography" class="textUnderline" title="Nature & Wildlife"> Photography </a></strong></h3>
+                    <h3>In design, my heart lies in a vibrant creative vision that marries creativity, innovation, and precision with out-of-the-box thinking.
+                      In architecture, I focus on creating functional and visually appealing buildings that meet client' needs, balance different elements, and achieve a harmonious aesthetic.
+                    </h3>
+                  </li>
+                  <div class="blankHXS"></div>
+
+                  <li class="progress__item progress__item--active" data-aos="fade-up">
+                    <h3> <strong>Web Implementation & <a href="/design_system" class="textUnderline" title="Academic Projects">Design System Management</a> </strong> </h3>
+                    <h3>Since 2020, I have been designing, implementing, and maintaining my website. I've learned a lot during this process, including managing a design system with HTML/CSS/JS/EJS, analyzing website traffic with tools like Posthog and Google Analytics, and even gaining some SEO knowledge.
+                    </h3>
+                    <div class="blankHXS"></div>
+
+                  <li class="progress__item progress__item--active" data-aos="fade-up">
+                    <h3> <strong>User Experience Design</strong> </h3>
+                    <h3>I love UX because it empowers users in the design process. My goal is always to solve problems through feedback and data analysis. The short design and development cycle in UX turns all my design dreams into reality.
+
+
+
+
+
+                    </h3>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <%- include('shared/comp_textualElements_arrow', {message: 'Design Process' }) %>
+
+    <div class="blankHXS"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-3">
+  
+        <div class="Grid-cell  cardBorderThick borderRadiusM  paddingNone marginXS">
+          <div class="element">
+            <div class="element">
+  
+              <h2 data-aos="fade-up"> <strong> Understanding Users and Products</strong> </h2>
+              <h3>In my view, a deep understanding of both business goals and user needs is fundamental to UX design. By prioritizing these aspects, I'm able to create immersive user experiences that truly resonate. This dual focus is crucial in ensuring that my design projects have a meaningful impact. It also aids in the planning and prioritization process, ensuring that we focus on what matters most.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell   cardBorderThick borderRadiusM  paddingNone marginXS">
+          <div class="element">
+            <div class="element">
+              <h2 data-aos="fade-up"> <strong> Building Strong Cross-Functional Partnerships </strong> </h2>
+              <h3>I transform ambiguous projects into articulated plans, ensuring cross-functional alignment throughout the process. By setting early deadlines and establishing feedback loops for each milestone, I encourage timely feedback and iterative improvement. Collaborating closely with various teams, I enhance both the value and validity of research, leading to more informed and impactful design decisions.
+  
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell   cardBorderThick borderRadiusM  paddingNone marginXS">
+          <div class="element">
+            <div class="element">
+              <h2 data-aos="fade-up"> <strong> Managing the Design Process </strong> </h2>
+              <h3>Throughout each phase of the design process, from planning research to iterating designs and delivering high-quality final products, my focus is on maintaining a feedback loop to continuously refine and improve the design. I ensure that each phase has a clear deadline to keep the project on track. By documenting each iteration and evaluating the strengths and weaknesses of each iteration, I aim to build a more effective and impactful design.
+  
+  
+              </h3>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+  
+    </div>
+  </section>
   <!-- Arrow -->
   <%- include('shared/comp_textualElements_arrow', {message: 'Skills & Experiences' }) %>
   <!-- Arrow -->
-
   <%- include(`${templatePath}/shared/comp_tagCloud`) %>
   <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
   <%- include(`${templatePath}/shared/comp_backTop`) %>
