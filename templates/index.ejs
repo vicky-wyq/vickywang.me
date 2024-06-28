@@ -8,7 +8,7 @@
 <!--Head-->
 
 <body>
-  <%- include( `${templatePath}/shared/compProgressBar`) %>
+  <%- include(`${templatePath}/shared/compProgressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header2024`, {sectionURL1:'#projects', sectionURL2:'#experiments', sectionURL3:'#design_system', sectionURL4:'#aboutme' }) %>
 
   <div class="blankHM"></div>
@@ -105,7 +105,7 @@
     <div class="Grid Grid--gutters Grid--cols-3">
       <a href="/resume" target="_blank"> <button class="buttonLanding arrButtonResume">Resume &nbsp;
         </button></a>
-      <a href="/about"> <button class="buttonLanding arrButton">About me &nbsp;
+      <a href="#aboutme"> <button class="buttonLanding arrButton">About me &nbsp;
         </button></a>
     </div>
   </div>
@@ -113,11 +113,12 @@
   <!-- Content -->
   <section id="projects">
     <!-- Arrow -->
-    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'UX Case Study' }) %>
+    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Projects' }) %>
     <!-- Arrow -->
     <div class="blankHXS"></div>
 
     <div class="wrapper">
+
       <div class="Grid Grid--gutters Grid--cols-3">
 
         <%- include(`${templatePath}/shared/block_cardnPassword`, {
@@ -129,7 +130,6 @@
         cardPwDescription:`I led the redesign of the appointment details screen for a pet booking app, aiming to improve usability, streamline management, and enhance efficiency. Using user interviews, usability testing, and data analysis, we identified key areas for improvement: easier navigation, better visibility of pet and client info, and efficient appointment adjustments. The redesigned screen features simplified navigation, enhanced visual hierarchy, and quick-access management tools, resulting in a 30% increase in user satisfaction and a 40% reduction in time spent managing appointments. This case study highlights my ability to solve complex usability issues and deliver impactful design solutions.` 
         }) %>
       </div>
-
       <div class="Grid Grid--gutters Grid--cols-2">
 
 
