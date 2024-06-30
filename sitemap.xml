@@ -4,57 +4,55 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<!-- Manually created sitemap -->
 <url>
   <loc>https://vickywang.me/</loc>
-  <lastmod>2024-03-17T03:53:00+00:00</lastmod>
+  <lastmod>2024-06-28T22:36:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://vickywang.me/about/</loc>
-  <lastmod>2024-03-17T03:47:05+00:00</lastmod>
-  <priority>0.90</priority>
+  <loc>https://vickywang.me/resume/</loc>
+  <lastmod>2024-04-08T19:51:06+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://vickywang.me/resume/</loc>
-  <lastmod>2024-03-09T08:07:38+00:00</lastmod>
-  <priority>0.90</priority>
+  <loc>https://vickywang.me/refining_rx_zero/</loc>
+  <lastmod>2024-06-28T23:00:00+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/glorify/</loc>
-  <lastmod>2024-03-02T08:23:15+00:00</lastmod>
+  <lastmod>2024-06-25T23:45:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/seer/</loc>
-  <lastmod>2024-03-17T03:48:20+00:00</lastmod>
+  <lastmod>2024-06-25T23:44:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/appointa/</loc>
-  <lastmod>2024-03-17T03:47:55+00:00</lastmod>
+  <lastmod>2024-06-25T23:44:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/design_system/</loc>
-  <lastmod>2024-02-20T02:59:35+00:00</lastmod>
+  <lastmod>2024-06-25T23:45:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/</loc>
-  <lastmod>2024-03-17T03:48:58+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2024-06-25T23:41:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/photography/</loc>
-  <lastmod>2024-03-17T03:49:40+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2024-06-25T23:43:31+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/resume/resume.pdf</loc>
-  <lastmod>2024-03-07T05:36:56+00:00</lastmod>
+  <lastmod>2024-04-08T19:51:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -66,41 +64,6 @@
   <loc>https://vickywang.me/design_system/navigation/</loc>
   <lastmod>2024-02-20T02:54:33+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/recreation_commons/</loc>
-  <lastmod>2024-02-20T02:55:59+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/narrow_stripes/</loc>
-  <lastmod>2024-02-20T02:54:46+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/recovery_of_river_edges/</loc>
-  <lastmod>2024-02-20T02:54:51+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/thesis_studio/</loc>
-  <lastmod>2024-02-20T02:55:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/the_rotation_of_curves/</loc>
-  <lastmod>2024-02-20T02:54:58+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/manifold_ground/</loc>
-  <lastmod>2024-02-20T02:56:09+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/architecture/LACAMA/</loc>
-  <lastmod>2024-02-20T02:55:27+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://vickywang.me/design_system/navigation/V1/</loc>
@@ -117,6 +80,40 @@
   <lastmod>2024-02-20T02:54:24+00:00</lastmod>
   <priority>0.51</priority>
 </url>
-
+<url>
+  <loc>https://vickywang.me/architecture/recreation_commons/</loc>
+  <lastmod>2024-06-25T23:44:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/architecture/narrow_stripes/</loc>
+  <lastmod>2024-06-25T23:44:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/architecture/recovery_of_river_edges/</loc>
+  <lastmod>2024-06-25T23:44:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/architecture/thesis_studio/</loc>
+  <lastmod>2024-06-25T23:43:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/architecture/the_rotation_of_curves/</loc>
+  <lastmod>2024-06-25T23:43:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/architecture/manifold_ground/</loc>
+  <lastmod>2024-06-25T23:45:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/architecture/LACAMA/</loc>
+  <lastmod>2024-06-25T23:44:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 </urlset>

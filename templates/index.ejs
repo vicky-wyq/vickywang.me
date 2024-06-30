@@ -151,18 +151,17 @@
       ` 
         }) %>
       </div>
+
+
+
       <div class="Grid Grid--gutters Grid--cols-2">
-
-
-        <%- include(`${templatePath}/shared/block_cardnPassword`, {
-
-          cardPwID:`rxZero`,
-          hoverBorderColor:`LASO`,
-          inputColor:`PWinputLH`,
-          cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_RXZero.png`,
-          cardPwTitle: `Shifting Focus: The Evolution of LASO Local & Telehealth to RX Zero`, 
-          cardPwDescription:`This case study delves into LASO Health's strategic pivot towards the RX Zero model, moving away from RX Local and Telemedicine services. It highlights the key objectives of RX Zero, centering on credibility and affordability. The study showcases the streamlined onboarding and subscription process, along with a simplified ordering system.` 
-          }) %>
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+        hoverBorderColor:`LASO`,
+        cardNoPwURL:`${websitePath}/refining_rx_zero/`,
+        cardNoPwImgURL:`${websitePath}/projectImages/Cover_LASO_RXZero.png`,
+        cardNoPwTitle: `Shifting Focus: The Evolution of LASO Local & Telehealth to RX Zero`, 
+        cardNoPwDescription:`This case study delves into LASO Health's strategic pivot towards the RX Zero model, moving away from RX Local and Telemedicine services. It highlights the key objectives of RX Zero, centering on credibility and affordability. The study showcases the streamlined onboarding and subscription process, along with a simplified ordering system.` 
+        }) %>
 
       </div>
       <div class="Grid Grid--gutters Grid--cols-2">
@@ -367,11 +366,11 @@
     <div class="blankHXS"></div>
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--cols-3">
-  
+
         <div class="Grid-cell  cardBorderThick borderRadiusM  paddingNone marginXS">
           <div class="element">
             <div class="element">
-  
+
               <h2 data-aos="fade-up"> <strong> Understanding Users and Products</strong> </h2>
               <h3>In my view, a deep understanding of both business goals and user needs is fundamental to UX design. By prioritizing these aspects, I'm able to create immersive user experiences that truly resonate. This dual focus is crucial in ensuring that my design projects have a meaningful impact. It also aids in the planning and prioritization process, ensuring that we focus on what matters most.
               </h3>
@@ -383,7 +382,7 @@
             <div class="element">
               <h2 data-aos="fade-up"> <strong> Building Strong Cross-Functional Partnerships </strong> </h2>
               <h3>I transform ambiguous projects into articulated plans, ensuring cross-functional alignment throughout the process. By setting early deadlines and establishing feedback loops for each milestone, I encourage timely feedback and iterative improvement. Collaborating closely with various teams, I enhance both the value and validity of research, leading to more informed and impactful design decisions.
-  
+
               </h3>
             </div>
           </div>
@@ -393,22 +392,23 @@
             <div class="element">
               <h2 data-aos="fade-up"> <strong> Managing the Design Process </strong> </h2>
               <h3>Throughout each phase of the design process, from planning research to iterating designs and delivering high-quality final products, my focus is on maintaining a feedback loop to continuously refine and improve the design. I ensure that each phase has a clear deadline to keep the project on track. By documenting each iteration and evaluating the strengths and weaknesses of each iteration, I aim to build a more effective and impactful design.
-  
-  
+
+
               </h3>
             </div>
-  
+
           </div>
         </div>
       </div>
-  
-  
+
+
     </div>
+    <!-- Arrow -->
+    <%- include('shared/comp_textualElements_arrow', {message: 'Skills & Experiences' }) %>
+    <!-- Arrow -->
+    <%- include(`${templatePath}/shared/comp_tagCloud`) %>
   </section>
-  <!-- Arrow -->
-  <%- include('shared/comp_textualElements_arrow', {message: 'Skills & Experiences' }) %>
-  <!-- Arrow -->
-  <%- include(`${templatePath}/shared/comp_tagCloud`) %>
+
   <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
   <%- include(`${templatePath}/shared/comp_backTop`) %>
   <%- include(`${templatePath}/shared/block_nav_footer`) %>
