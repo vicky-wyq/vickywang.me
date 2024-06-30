@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {
+  SEO:false, 
+  Title:`The Evolution of LASO Local & Telehealth to RX Zero by Vicky Wang`, 
+  description:'', 
+  pageURL:'/worksamples/BYP_LH_wsbeebr/LHRefiningRXZero/',
+  thumbnailImgURL: 'vickywang_web.png' }) %>
+<!--Head-->
+
+<body class="LASO">
+  <%- include(`${templatePath}/shared/compProgressBar`,{ barColor:`LASO` }) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, { 
+    type:'backText', 
+    leftArrowColor:`LASO`,
+    currentPage: 'PROJECT', 
+    PageUrl:'/' }) %>
+
+  <%- include(`${templatePath}/shared/block_banner`, { 
+    bannerTitle:`The Evolution of LASO Local & Telehealth to RX Zero`, 
+    bannerSubTitle:`Focus on RX Zero model, moving away from RX Local and Telemedicine services`,
+    bannerLogoUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/logo_LASO_lightBlue.svg`,
+    bannerMockupL:`MockupL.png`, bannerMockupM:`MockupM.png`, bannerMockupS:`MockupS.png`,
+    bannerBgColor:`colorBgLASO`, bannerButtonColor:`LASO`, phoneBanner:`yes`,
+    SlideDeckUrl:`https://www.figma.com/proto/5MHwSOuVqD9mKiG3IgL0Tw/LASO-Health-2024?page-id=2025%3A4261&type=design&node-id=2025-4273&viewport=-9%2C118%2C0.02&t=AP4w77T0v7n5ZVRI-1&scaling=scale-down&starting-point-node-id=2025%3A4273&mode=design`,
+    }) %>
+  <div class="wrapper">
+    <div class="blankHXS"></div>
+
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><strong>Project Overview</strong></h4>
+        </div>
+      </div>
+      <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHRefiningRXZero/audio_projectOverview.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerText1:`Dive into the transformative journey of LASO from Local and Telehealth services to the innovative RX Zero model. This case study explores the strategic shift towards providing unlimited access to generic medications for a flat monthly fee, highlighting the UX design considerations that facilitated this transition. Discover how the focus on the RX Zero model reshaped the user experience and positioned LASO as a pioneer in affordable and accessible healthcare solutions.` }) %>
+      <%- include(`${templatePath}/shared/base_link`, {
+        linkUrl:`https://www.figma.com/design/ZdwqjVE0mvdadHVSqcycpa/Untitled?node-id=0-1&t=mSf2uO6hr0DLmw5v-1`,
+        linkText:`Screenshot/current state` }) %>
+    </div>
+
+    <div class="Grid Grid--gutters Grid--cols-4">
+      <!-- subTitleFont1 -->
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Timeline </strong> </h3>
+          <h4> September 2023 </h4>
+          <h4> 6 Hours </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Collaboration </strong> </h3>
+          <h4> Independent Assignment </h4>
+          <h4> Presented to interviewers </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Task list </strong> </h3>
+          <h4> User Research/interview </h4>
+          <h4> Brainstorming ideas</h4>
+          <h4> Wireframes</h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Tools </strong> </h3>
+          <h4> Figma </h4>
+          <h4> Sketch </h4>
+          <h4> Google Meet </h4>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blankHS"></div>
+
+
+
+  <div class="colorBgAPPOINTA">
+    <div class="blankHXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`Problem Statement`,
+        }) %>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+
+        <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHRefiningRXZero/audio_problemStatement.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`As Rx Zero transitions from its initial offerings to a new model focusing on providing affordable and accessible generic medications, there is a pressing need to address the challenges faced by our target users, including elderly individuals and those with chronic health conditions. These users often struggle with medication affordability, access, and management, compounded by potential limitations in technological proficiency. The challenge lies in designing an Rx Zero experience that aligns with this business shift, ensuring that the platform is not only financially beneficial but also intuitive, accessible, and tailored to simplify the medication management process for these key user groups.`,                  
+
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,
+        }) %>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <img src="img_bizShift.png" alt="icon arrow">
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Objective</strong></h4>
+            <h5>To transition LASO's focus from RX Local and Telemedicine services to the innovative RX Zero
+              model, a subscription-based service offering unlimited access to generic medications.</h5>
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Scope</strong></h4>
+            <h5> <strong class="Grey800">User Experience Design: </strong>Redesign the interface to support the
+              RX Zero model, emphasizing user accessibility, credibility, and a streamlined subscription and
+              ordering process.</h5>
+            <h5> <strong class="Grey800">Market Adaptation: </strong>Position RX Zero in the market as a
+              competitive, affordable healthcare solution.</h5>
+
+            <h5> <strong class="Grey800">Technology Integration: </strong>Enhance backend systems to support unlimited orders and efficient medication distribution.</h5>
+            <h5> <strong class="Grey800">Compliance and Security: </strong>Ensure full compliance with healthcare regulations and data security standards.</h5>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Pain Points:</strong></h4>
+            <ul>
+              <li class="listCircle">Unlimited access to FDA-approved generic medications.</li>
+              <li class="listCircle">Monthly subscription model priced at $24.99.</li>
+              <li class="listCircle">Free shipping for all orders.</li>
+              <li class="listCircle">User-friendly platform for easy medication ordering and management.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Target Audience:</strong></h4>
+            <h5> Individuals seeking affordable, convenient access to generic medications, especially those with
+              regular medication needs.
+            </h5>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`Findings`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHRefiningRXZero/audio_findings.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`The findings from our user research shed light on key insights that are crucial for the design and development of our platform. These insights are centered around four main themes: Strengthening Trust & Credibility, Value and Pricing, Challenges & Barriers, and Support & Assistance - Human in the loop. Each theme captures the essential needs and preferences of our users, guiding us in creating a platform that is not only user-friendly but also trustworthy and valuable`,                  
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,
+        }) %>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <img src="diagram_affinityMap.png" alt="icon arrow">
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Finding #1 Strengthen Trust & Credibility: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>All participants emphasized the importance of trusting the platform from which they purchase medications. </strong></h4>
+
+
+                  <h4>P1: "I need to be 100% sure about the authenticity of the medications I buy. If there's even a slight doubt, I won't proceed with the purchase."</h4>
+                  <h4>P2: "Certifications and positive user reviews are what I look for before making a purchase. I need to know I can trust the platform."</h4>
+                  <h4>P3: "A reputable platform should have affiliations with known health bodies. That gives me peace of mind."</h4>
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                  </div>
+                  <h3><strong>Transparency &#183; Positive user reviews &#183; Certifications &#183; Professional design &#183; Affiliations</strong></h3>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Finding #2 - Value and Pricing: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>The perceived value and transparency in pricing were highlighted as crucial aspects. </strong></h4>
+
+                  <h4>P2: "Value doesn't always mean the cheapest. It's about the quality I get for the price I pay."</h4>
+                  <h4>P1: "I don't mind paying a bit more if I know I'm getting genuine and high-quality medication. But hidden costs? That's a deal-breaker for me."</h4>
+                  <h4>P3: "Clear pricing and maybe even some loyalty rewards or discounts would make me choose one platform over another."</h4>
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                  </div>
+
+                  <h3><strong>Implement transparent pricing with no hidden costs.</strong></h3>
+                  <h3><strong>Ensure high-quality medications by partnering with reputable pharmaceutical companies.</strong></h3>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Finding #3 - Clarity &amp; Challenges & Barriers: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>A clear and straightforward purchasing process is essential</strong></h4>
+
+                  <h4>P2: "I've left sites just because the checkout was too tedious. Simplicity is key."</h4>
+                  <h4>P1: "Platforms should guide users, not confuse them. Overwhelming options without clear guidance just pushes me away."</h4>
+                  <h4>P3: "I have once received a wrong medication. It makes you second guess every online purchase after that."</h4>
+                  <div class="blankHXS"></div>
+
+                  <div class="Grid-cell">
+                    <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                  </div>
+
+                  <h3><strong>Discovering Medications:</strong> medication details, alternatives, and usage instructions.</h3>
+                  <h3><strong>Sign in / sign up </strong>new users can be guided through the sign-up process and initial setup</h3>
+                  <h3><strong>Adding to Cart:</strong>Provide users with the option to chat or consult with a pharmacist or support agent when selecting medications, ensuring they make informed decisions</h3>
+                  <h3><strong>Placing an Order: </strong>Enable a 'human in the loop' support system during the checkout process to assist users with payment queries, discount applications, or shipping details.</h3>
+
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+
+            <h3 class="accordion accordionBorderBottom noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Finding #4 Support & Assistance - Human in the loop: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>Having a 'human in the loop' to provide support, especially during uncertainties, is invaluable for users. </strong></h4>
+
+                  <h4>P1: "The option to chat with a pharmacist or expert would make online purchasing as good as, if not better than, a physical store experience." </h4>
+                  <h4>P3: "Online platforms should strive to match the human touch we get from our local pharmacies. That's the gold standard." </h4>
+
+                  <div class="Grid-cell">
+                    <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                  </div>
+
+                  <h3><strong>Discovering Medications:</strong> medication details, alternatives, and usage instructions.</h3>
+                  <h3><strong>Sign in / sign up </strong>new users can be guided through the sign-up process and initial setup</h3>
+                  <h3><strong>Adding to Cart:</strong>Provide users with the option to chat or consult with a pharmacist or support agent when selecting medications, ensuring they make informed decisions</h3>
+                  <h3><strong>Placing an Order: </strong>Enable a 'human in the loop' support system during the checkout process to assist users with payment queries, discount applications, or shipping details.</h3>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="blankHS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`The design solution for RX Zero`,
+        }) %>
+      </div>
+      <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHRefiningRXZero/audio_solution.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`The design solution for RX Zero focuses on providing a seamless user experience. A streamlined onboarding process ensures users quickly understand the platform's value. The discovery feature empowers them to effortlessly find the right medications and secure better deals. The ordering and return system is designed for convenience, simplifying each step of the process. Additionally, the integration of human support, such as real-time assistance from pharmacists, adds a personal touch to the digital experience, bridging the gap between online convenience and traditional pharmacy care. This comprehensive design approach aims to make RX Zero not just a platform but a trusted companion in users' healthcare journeys.`,                  
+
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,
+        }) %>
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--full u-textCenter">
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter " aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
+          <div class="TBslides">
+            <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <img src="Slideshow1_left.png" alt="">
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <img class="cardImgCropWS " src="Slideshow1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <img src="Slideshow2_left.png" alt="">
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <img class="cardImgCropWS " src="Slideshow2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <img src="Slideshow3_left.png" alt="">
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <img class="cardImgCropWS " src="Slideshow3.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 4 of 5" tabindex="0">
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <img src="Slideshow3_left.png" alt="">
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <img class="cardImgCropWS " src="Slideshow4.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 5 of 5" tabindex="0">
+              <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+                <div class="Grid-cell">
+                  <img src="Slideshow3_left.png" alt="">
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <img class="cardImgCropWS " src="Slideshow5.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="TBcarouselNav Grid-cell">
+            <a class="TBsliderNav active" aria-label="Go to slide 1">
+              <div>Shift Business</div>
+            </a>
+            <a class="TBsliderNav" aria-label="Go to slide 2">
+              <div>Streamline Onboarding</div>
+            </a>
+            <a class="TBsliderNav" aria-label="Go to slide 3">
+              <div>Discover Meds</div>
+            </a>
+            <a class="TBsliderNav" aria-label="Go to slide 4">
+              <div>Convenience</div>
+            </a>
+            <a class="TBsliderNav" aria-label="Go to slide 5">
+              <div>Human Support</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`Impact`,
+        }) %>
+      </div>
+      <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHRefiningRXZero/audio_impact.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`The user-centric enhancements to RX Zero are expected to significantly improve the platform's usability and appeal. By making the service more intuitive and aligned with user needs, particularly for the target groups of elderly individuals and those with chronic conditions, we anticipate a noticeable increase in subscription rates. This is because the streamlined experience directly addresses common pain points around medication management and affordability. Additionally, customer satisfaction is expected to rise as users experience a more seamless and supportive journey on the platform, from onboarding to ongoing medication management.`,          
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,        
+        }) %>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #1 - Higher Subscription Rates and User Satisfaction:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>The user-centric design is expected to attract more users to the platform, leading to increased subscription rates. Additionally, the tailored experience should result in higher user satisfaction, as the platform aligns more closely with their specific needs.
+                  </h4>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #2 - Enhanced User Trust and Confidence:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>By prioritizing transparency and credibility in the platform's design, users are likely to develop greater trust in RX Zero. This is especially important for elderly individuals and those with chronic health conditions who rely heavily on their medications.
+                  </h4>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #3 - Increased Accessibility &#38; Affordability:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>The RX Zero subscription model offers a cost-effective solution for users, potentially reducing their overall healthcare expenses. The platform's design, focused on clarity and efficiency, should further enhance accessibility for users.
+                  </h4>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion accordionBorderBottom noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #4 - Streamlined Operations and Enhanced Efficiency:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>The design solutions aim to streamline operations, improving efficiency in medication distribution. This not only benefits the users but also contributes to the overall operational effectiveness of RX Zero.
+                  </h4>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <a href="https://www.figma.com/proto/5MHwSOuVqD9mKiG3IgL0Tw/LASO-Health-2024?page-id=2025%3A4261&type=design&node-id=2025-4273&viewport=-9%2C118%2C0.02&t=AP4w77T0v7n5ZVRI-1&scaling=scale-down&starting-point-node-id=2025%3A4273&mode=design" target="_blank"> <button class="button-35 LASO">Slide Deck</button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Skills & Experiences' }) %>
+  <%- include(`${templatePath}/shared/comp_tagCloud`) %>
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '' , message:''}) %>
+  <%- include(`${templatePath}/shared/comp_modal`) %>
+
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- Shared across the platform -->
+
+
+
+</body>
+
+</html>
