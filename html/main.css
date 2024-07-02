@@ -364,7 +364,7 @@ body .displayPhone {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 22px 1.6vw;
+    padding: 19px 1.6vw;
     border-radius: 0;
     transition: 0.2s all;
 }
@@ -1531,28 +1531,6 @@ section {
     body .section-nav {
         margin-left: cals(100% - 332px);
     }
-
-    /* 
-        body .section-nav {
-        top: 20rem;
-        left: 10vw;
-    }
-
-    body li .rightPanel {
-        font-size: 16px;
-        line-height: 20px;
-    }
-        body .titleRightPanel {
-        font-size: 22px;
-        line-height: 32px;
-    }
-
-    body main>nav {
-        position: -webkit-sticky;
-        position: sticky;
-        bottom: 32vh;
-    }
- */
 }
 
 /* ====== for nav 2 ======*/
@@ -1611,18 +1589,15 @@ li .newPanel {
     /*for V3     display: none; */
     list-style: none;
     font-size: 12px;
-    line-height: 16px;
 }
 
 li .newPanelV3 {
     /*for V3     display: none; */
     font-size: 14px;
-    line-height: 14px;
 }
 
 .newTitlePanel {
     font-size: 18px;
-    line-height: 16px;
 }
 
 /*====== new sub nav 2 or 3====== */
@@ -1634,7 +1609,6 @@ li .newPanelV3 {
     transition: opacity 1s ease-out;
     list-style: none;
     font-size: 12px;
-    line-height: 16px;
 }
 
 .newPanelV3.active {
@@ -1755,7 +1729,7 @@ li {
 
 li .rightPanel {
     font-size: 16px;
-    line-height: 18px;
+    line-height: inherit;
     margin-left: 0;
     z-index: 98;
 }
@@ -1771,16 +1745,19 @@ ul .rightPanel {
 ul {
     list-style-type: none;
     font-family: inherit;
-    font-size: clamp(0.8em, 1vw, 1.1em);
+    font-size: clamp(0.84em, 0.92vw, 1em);
     font-weight: 300;
     list-style-position: outside;
     margin-left: 0;
-    padding-left: 20px;
+    padding-left: 20px;    
+    line-height: 1.6em;
+
 }
 
 ul .listCircle {
     list-style-type: circle;
     margin-left: 1em;
+
 }
 
 ol .listABC {
@@ -1865,6 +1842,8 @@ section .padding {
 h1,
 h2 {
     font-weight: 400;
+    line-height: 2em;
+
 }
 
 h3,
@@ -1872,6 +1851,8 @@ h4,
 h5,
 h6 {
     font-weight: 300;
+    line-height: 1.6em;
+
 }
 
 h1 {
@@ -1881,18 +1862,21 @@ h1 {
        - second argument is font-size that you wish to always have. */
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+
 }
 
 h2 {
     font-size: clamp(1.2em, 1.46vw, 1.68em);
     margin-top: clamp(0.67em, 0.75em, 1.5em);
     margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+
 }
 
 h3 {
     font-size: clamp(1.04em, 1.26vw, 1.48em);
     margin-top: clamp(0.42em, 0.56em, 1.2em);
     margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+
 }
 
 h4 {
@@ -1905,11 +1889,13 @@ h5 {
     font-size: clamp(0.84em, 0.92vw, 1em);
     margin-top: clamp(0.2em, 0.4em, 1em);
     margin-bottom: clamp(0.2em, 0.4em, 1em);
+
 }
 
 h6 {
     font-size: clamp(0.72em, 0.78vw, 0.86em);
     margin: 0.26em 0;
+
 }
 
 p.light {
@@ -3266,7 +3252,7 @@ flex: 0 0 calc(33.3333% - 1em);
     background: none;
     border: 1px solid var(--white);
     font: inherit;
-    line-height: 1;
+    line-height: inherit;
     margin: 0.5em;
     padding: 1em 2em;
     border-radius: 12px;
@@ -3353,7 +3339,7 @@ flex: 0 0 calc(33.3333% - 1em);
     background: none;
     border: 1px solid var(--white);
     font: inherit;
-    line-height: 1;
+    line-height: inherit;
     margin: 0.5em;
     padding: 1em 2em;
     border-radius: 1em;
@@ -3921,27 +3907,6 @@ body .flex-container.Mobile {
     color: var(--Grey700);
 }
 
-.t-hi {
-    font-family: "Lato", sans-serif;
-    font-size: 2.6em;
-}
-
-.t-me {
-    font-family: "Lato", sans-serif;
-    font-size: 1.6em;
-    margin-left: 0px;
-    line-height: 1.8em;
-    font-weight: 300;
-}
-
-.tTQ {
-    font-family: "Lato", sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    font-weight: 300;
-    margin: 0;
-}
-
 .containerTQ {
     position: relative;
     text-align: center;
@@ -4504,6 +4469,7 @@ ul.iconx {
 body ul {
     list-style-position: outside;
     padding: 0;
+
 }
 
 /*     list-style-type: none;
