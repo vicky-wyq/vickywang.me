@@ -9,7 +9,7 @@
 
 <body>
   <%- include(`${templatePath}/shared/compProgressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header2024`, {sectionURL1:'#projects', sectionURL2:'#experiments', sectionURL3:'#design_system', sectionURL4:'#aboutme' }) %>
+  <%- include(`${templatePath}/shared/block_nav_header2024`, {sectionURL1:'#projects', sectionURL2:'#experiments', sectionURL3:'#design_system', sectionURL4:'#about' }) %>
 
   <div class="blankHM"></div>
 
@@ -105,7 +105,7 @@
     <div class="Grid Grid--gutters Grid--cols-3">
       <a href="/resume" target="_blank"> <button class="buttonLanding arrButtonResume">Resume &nbsp;
         </button></a>
-      <a href="#aboutme"> <button class="buttonLanding arrButton">About me &nbsp;
+      <a href="#about"> <button class="buttonLanding arrButton">About me &nbsp;
         </button></a>
     </div>
   </div>
@@ -118,8 +118,7 @@
     <div class="blankHXS"></div>
 
     <div class="wrapper">
-
-      <div class="Grid Grid--gutters Grid--cols-3">
+    <!-- <div class="Grid Grid--gutters Grid--cols-3">
 
         <%- include(`${templatePath}/shared/block_cardnPassword`, {
         cardPwID:`booking_management`,
@@ -129,7 +128,10 @@
         cardPwTitle: `Enhancing Appointment Management for BookYourPet SaaS Platform`, 
         cardPwDescription:`I led the redesign of the appointment details screen for a pet booking app, aiming to improve usability, streamline management, and enhance efficiency. Using user interviews, usability testing, and data analysis, we identified key areas for improvement: easier navigation, better visibility of pet and client info, and efficient appointment adjustments. The redesigned screen features simplified navigation, enhanced visual hierarchy, and quick-access management tools, resulting in a 30% increase in user satisfaction and a 40% reduction in time spent managing appointments. This case study highlights my ability to solve complex usability issues and deliver impactful design solutions.` 
         }) %>
-      </div>
+      </div> -->
+
+      
+
       <div class="Grid Grid--gutters Grid--cols-2">
 
 
@@ -176,26 +178,23 @@
             }) 
             %>
         -->
-        <%- include(`${templatePath}/shared/block_cardnPassword`, {
 
-          cardPwID:`costCalculator`,
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
           hoverBorderColor:`LASO`,
-          inputColor:`PWinputLH`,
-          cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_CostCalculator.png`,
-          cardPwTitle: `RX Zero Savings Explorer: Uncover Prescription Meds Savings`, 
-          cardPwDescription:`This tool enables users to compare their current medication costs with the RX Zero subscription model, offering a seamless experience that simplifies making healthcare financial decisions.` 
+          cardNoPwURL:`${websitePath}/savings_explorer/`,
+          cardNoPwImgURL:`${websitePath}/projectImages/Cover_LASO_CostCalculator.png`,
+          cardNoPwTitle: `RX Zero Savings Explorer: Uncover Prescription Meds Savings`, 
+          cardNoPwDescription:`This tool enables users to compare their current medication costs with the RX Zero subscription model, offering a seamless experience that simplifies making healthcare financial decisions.` 
           }) %>
 
-        <%- include(`${templatePath}/shared/block_cardnPassword`, {
 
-        cardPwID:`adminPanel`,
-        hoverBorderColor:`LASO`,
-        inputColor:`PWinputLH`,
-        cardPwImgURL:`${websitePath}/projectImages/Cover_LASO_AdminPanel.png`,
-        cardPwTitle: `LASO Admin Panel: From Concept to Reality - Simplified User Management`, 
-        cardPwDescription:`The core focus of this panel was to efficiently manage a diverse range of user accounts, including B2B, D2C, and guest users. A unique aspect of this project was accommodating users from B2B with company sponsorship, adding another layer of complexity to the design process.` 
-        }) %>
-
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+          hoverBorderColor:`LASO`,
+          cardNoPwURL:`${websitePath}/admin_panel/`,
+          cardNoPwImgURL:`${websitePath}/projectImages/Cover_LASO_AdminPanel.png`,
+          cardNoPwTitle: `LASO Admin Panel: From Concept to Reality - Simplified User Management`, 
+          cardNoPwDescription:`The core focus of this panel was to efficiently manage a diverse range of user accounts, including B2B, D2C, and guest users. A unique aspect of this project was accommodating users from B2B with company sponsorship, adding another layer of complexity to the design process.` 
+          }) %>
       </div>
 
 
@@ -265,7 +264,7 @@
 
   </section>
 
-  <section id="aboutme">
+  <section id="about">
     <!-- Arrow -->
     <%- include('shared/comp_textualElements_arrow', {message: 'About Me' }) %>
     <!-- Arrow -->
