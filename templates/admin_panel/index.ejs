@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:`Simplified B2B Onboarding & Enhanced Engagement for Business Owners by Vicky Wang`, 
+description:'', 
+pageURL:'/worksamples/BYP_LH_wsbeebr/LHAdminPanel', thumbnailImgURL: 'vickywang_web.png'
+}) %>
+<!--Head-->
+
+<body class="LASO">
+  <%- include(`${templatePath}/shared/compProgressBar`,{
+    barColor:`LASO`
+  }) %>
+
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'backText', 
+    leftArrowColor:`LASO`,
+    currentPage: 'PROJECT',
+    PageUrl:'/' 
+    }) %>
+
+  <%- include(`${templatePath}/shared/block_bannerNoButton`, { 
+    bannerTitle:`LASO Super Admin Panel for User Management`,
+    bannerSubTitle:`From Concept to Reality`,
+    bannerLogoUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/logo_LASO_darkBlue.svg`,
+    bannerBgColor: `colorBgLASO200`,
+    bannerMockupL:`MockupL.png`,
+    bannerMockupM:`MockupM.png`,
+    bannerMockupS:`MockupS.png`,
+    bannerButtonColor:`LASO`,
+    }) %>
+
+  <div class="wrapper">
+    <div class="blankHXS"></div>
+
+
+
+    <div class="Grid Grid--gutters Grid--cols-4">
+      <!-- subTitleFont1 -->
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Timeline </strong> </h3>
+          <h4> December 2023 </h4>
+          <h4> 6 Weeks (Part Time)</h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Team </strong> </h3>
+          <h4> Marketing, Sales </h4>
+          <h4> Product Manager </h4>
+
+          <h4> Engineers </h4>
+          <h4> Other Stakeholders </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Role </strong> </h3>
+
+          <h4> UX Research </h4>
+          <h4> UX Design </h4>
+          <h4> Design System</h4>
+          <h4> PRD Written </h4>
+
+
+
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Tools </strong> </h3>
+          <h4> Figma (Wireframe & Design & Prototype)</h4>
+          <h4> Asana (Roadmap & milestone) </h4>
+          <h4> Jira (Tasks)</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blankHS"></div>
+
+
+
+  <div class="colorBgLASO200">
+    <div class="blankHXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`Understand the Problems & the Goals`,
+        }) %></div>
+
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Current State</strong></h4>
+            <h3> LASO offers a range of products, including health services and medications, catering to various user types such as B2B, D2C, and guests. Currently, there is no unified super admin panel, posing challenges for our CX managers and sales teams. They spend considerable time identifying users, tracking membership histories, and managing B2B clients, including providing detailed breakdowns for monthly payments based on employee usage of our platform. </h3>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="" src="img_userType.png" alt="icon arrow">
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Goal of Admin Panel:</strong></h4>
+            <h3>The primary goal of the V1 admin panel is to streamline user management, incorporating essential payment and refund functionalities. Centralizing the management of various user types and providing access to user and B2B customer histories aim to significantly enhance sales efforts. Additionally, the integration of payment and refund capabilities is expected to optimize financial operations and reduce time spent on financial tasks.</h3>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Stakeholder meetings</strong></h4>
+
+
+            <img class="" src="diagram_timeline.png" alt="icon arrow">
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Requirements</strong></h4>
+            <ul>
+              <li class="listCircle">To enable easy management and tracking of B2B, D2C, and guest user statuses.</li>
+              <li class="listCircle">To simplify the process of viewing and handling various invoice states.</li>
+              <li class="listCircle">To create an efficient onboarding system for B2B employers and their employees.</li>
+              <li class="listCircle">To provide clear and accessible summaries and metrics of all user types.</li>
+              <li class="listCircle">To facilitate the management of user accounts, including setup and customization of communication preferences.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>Key Features</strong></h4>
+            <ul>
+              <li class="listCircle">The challenge of developing a unified system to manage diverse user groups (B2B, D2C, guests) efficiently.</li>
+              <li class="listCircle">The need for a user-friendly interface for invoice and account status management.</li>
+              <li class="listCircle">The complexity of creating an intuitive onboarding process for B2B employers and their employees.</li>
+              <li class="listCircle">The difficulty in providing easily accessible and understandable user data and metrics.</li>
+              <li class="listCircle">The requirement for a flexible and effective system to set up and manage various user accounts and communication methods.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="blankHM"></div>
+
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`Insights`,
+        }) %></div>
+
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="" src="diagram_affinityMap.png" alt="icon arrow">
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <ul>
+              <li class=""><strong>CX Managers:</strong> Utilizing the panel for tracking customer interactions, managing feedback, and analyzing customer satisfaction metrics to improve overall customer experience.</li>
+              <li class=""><strong>Sales Teams:</strong> Accessing client data, monitoring sales metrics, and managing B2B relationships directly through the panel.</li>
+              <li class=""><strong>Financial Managers:</strong> Using the panel for overseeing invoices, financial transactions, and budget allocations specific to customer accounts and sales operations.</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight">Insight #1 - Enhanced User Management and Transition Handling:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>Develop a system that not only allows for <span class="textDecor LASO">flexible user categorization</span> but also provides a seamless <span class="textDecor LASO">transition process between user types (e.g., B2B to D2C)</span>. This system should enable sales and CX teams to view and modify user statuses and sponsorships easily, ensuring a smooth adaptation to user changes.
+                  </h4>
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                  </div>
+
+                  <h4><strong>A dashboard that displays real-time user statuses (active, inactive, transitioning) with filters for user types (B2B, D2C, guest) and quick actions to modify statuses or view detailed profiles.
+                    </strong></h4>
+                  <ul>
+                    <li class="listCircle">View user status, ex. active/inactive users</li>
+                    <li class="listCircle">View user type and the product type</li>
+                    <li class="listCircle">View sponsorship</li>
+                    <li class="listCircle">View user status</li>
+                  </ul>
+
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #2 - Advanced Data Accessibility for Informed Decision-Making:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>Equip the panel with features that offer not just real-time data access but also the ability to <span class="textDecor LASO">understand and track LASO account statuses and updates</span>. This will provide sales and CX managers with <span class="textDecor LASO">deeper insights into customer behaviors and sales trends</span>, enabling more proactive and strategic decision-making.
+                  </h4>
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                  </div>
+
+                  <h4><strong>A comprehensive analytics section within the admin panel that aggregates data from various sources, offering customizable reports and visualizations to highlight customer behaviors and sales trends.
+                    </strong></h4>
+                  <ul>
+                    <li class="listCircle">Understand user LASO account status</li>
+                    <li class="listCircle">View the user account update</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #3 - Automated Financial Management for Precision and Efficiency:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>Integrate tools that automate key financial processes, such as account management and commission reconciliation, to <span class="textDecor LASO">enhance the precision and efficiency of financial operations</span>. This will <span class="textDecor LASO">streamline payment management and ensure accurate financial reporting</span>, reducing the manual effort required from financial managers.
+                  </h4>
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                  </div>
+                  <h4><strong>Design: A financial module that automates the reconciliation of accounts and transactions, with features for streamlined commission calculations and payment management, and alerts for discrepancies.
+                    </strong></h4>
+                  <ul>
+                    <li class="listCircle">Streamlined commission & payment reconciliation.</li>
+                    <li class="listCircle">Efficient payment management</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion accordionBorderBottom noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #4 - Comprehensive Sales Tracking and Analysis: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>Implement tools that enable thorough <span class="textDecor LASO">analysis of sales data, both current and historical</span>. This will allow sales teams to access real-time sales tracking and compare data effectively, helping them identify performance trends and refine their strategies for better outcomes.
+                  </h4>
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                  </div>
+
+
+                  <h4><strong>A specialized sales tracking interface that provides access to real-time sales data, historical comparisons, and advanced analytics to evaluate performance trends and refine sales strategies.
+                    </strong></h4>
+                  <ul>
+                    <li class="listCircle">Access to real-time sales tracking</li>
+                    <li class="listCircle">Able to compare data</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blankHM"></div>
+
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--full u-textCenter">
+      <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+      titleColor:`colorLASObule700`,
+      titleFontSize:`h2`,
+      contentTitle:`User Typs & Product Types`,
+      }) %></div>
+    <div class="Grid Grid--gutters Grid--full">
+
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="" src="diagram_userType.svg" alt="icon arrow">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blankHM"></div>
+
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--full u-textCenter">
+      <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`Admin Panel Design`,
+        }) %>
+    </div>
+    <div class="Grid Grid--gutters Grid--full">
+      <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHAdminPanel/audio_primaryObjectives.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`The design of the Admin Panel is informed by insights gained from our research, focusing on key areas such as User Management, Data Accessibility, Financial Management, and Comprehensive Sales Tracking. These elements are crucial in creating a platform that meets the diverse needs of LASO's stakeholders and enhances their overall experience.`,                  
+
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,
+        }) %>
+    </div>
+
+    <div class="wrapper">
+
+
+
+
+
+      <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter " aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
+        <div class="TBslides">
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+              <div class="Grid-cell">
+                <img src="Slideshow1_left.png" alt="">
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="cardImgCropWS shadowBoxPrototype" src="Slideshow1.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+              <div class="Grid-cell">
+                <img src="Slideshow2_left.png" alt="">
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="cardImgCropWS shadowBoxPrototype" src="Slideshow2.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+              <div class="Grid-cell">
+                <img src="Slideshow3_left.png" alt="">
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="cardImgCropWS shadowBoxPrototype" src="Slideshow3.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 4 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+              <div class="Grid-cell">
+                <img src="Slideshow4_left.png" alt="">
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="cardImgCropWS shadowBoxPrototype" src="Slideshow4.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="TBcarouselNav Grid-cell">
+          <a class="TBsliderNav active" aria-label="Go to slide 1">
+            <div>User Management</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 2">
+            <div>Data Accessibility</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 3">
+            <div>Financial Management</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 4">
+            <div>Comprehensive Sales Tracking</div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="blankHM"></div>
+
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--full u-textCenter">
+      <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`Potential Impacts of Implementing initial version of the Admin`,
+        }) %>
+    </div>
+    <div class="Grid Grid--gutters Grid--full">
+
+      <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHAdminPanel/audio_impact.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`The first version of the Admin Panel at LASO has shed light on crucial insights that promise to enhance operational efficiency, offer real-time data accessibility, and provide immediate insights, all of which contribute to more effective strategies and improved business outcomes. By streamlining processes such as commission calculations and payment reconciliations, the admin panel simplifies complex financial tasks. Moreover, its ability to manage transitions between various user types and adapt to changing user statuses ensures that the platform remains adaptable and responsive to the dynamic needs of LASO's diverse user base.`,          
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,        
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,        
+        }) %>
+    </div>
+
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h3 class="accordion accordionBorderTop noMargin withBg">
+            <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #1 - Improved Operational Efficiency: </strong>
+          </h3>
+          <div class="accordion-content">
+            <div class="Grid Grid--gutters Grid--full">
+              <div class="blankHXS"></div>
+              <div class="Grid-cell">
+                <h4>By centralizing user management and automating key processes, the admin panel is expected to reduce manual workload and streamline administrative tasks, leading to increased productivity and operational smoothness.
+                </h4>
+              </div>
+            </div>
+
+            <div class="blankHXS"></div>
+          </div>
+          <h3 class="accordion noMargin withBg">
+            <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #2 - Enhanced User Experience: </strong>
+          </h3>
+          <div class="accordion-content">
+            <div class="Grid Grid--gutters Grid--full">
+
+              <div class="blankHXS"></div>
+              <div class="Grid-cell">
+                <h4>With a focus on user-friendly design and real-time data accessibility, the platform aims to provide a seamless experience for different user groups, including sales teams, CX managers, and financial officers, thereby improving user satisfaction and adoption rates.
+
+                </h4>
+              </div>
+            </div>
+            <div class="blankHXS"></div>
+          </div>
+          <h3 class="accordion noMargin withBg">
+            <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #3 - Data-Driven Decision Making: </strong>
+          </h3>
+          <div class="accordion-content">
+            <div class="Grid Grid--gutters Grid--full">
+
+              <div class="blankHXS"></div>
+              <div class="Grid-cell">
+                <h4>The integration of advanced analytics and sales tracking tools will empower stakeholders to make informed decisions based on real-time insights, leading to more effective strategies and better business outcomes.
+
+                </h4>
+              </div>
+            </div>
+            <div class="blankHXS"></div>
+          </div>
+
+
+          <h3 class="accordion noMargin withBg">
+            <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #4 - Streamlined Financial Management: </strong>
+          </h3>
+          <div class="accordion-content">
+            <div class="Grid Grid--gutters Grid--full">
+              <div class="blankHXS"></div>
+              <div class="Grid-cell">
+                <h4>Automated financial features are expected to enhance the accuracy and efficiency of financial operations, simplifying processes like commission calculations and payment reconciliations, and ultimately contributing to the organization's financial health.
+                </h4>
+              </div>
+            </div>
+
+            <div class="blankHXS"></div>
+          </div>
+
+          <h3 class="accordion accordionBorderBottom noMargin withBg">
+            <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #5 - Adaptability to User Needs: </strong>
+          </h3>
+          <div class="accordion-content">
+            <div class="Grid Grid--gutters Grid--full">
+              <div class="blankHXS"></div>
+              <div class="Grid-cell">
+                <h4>The flexibility of the admin panel to handle transitions between different user types and adapt to changing user statuses will ensure that the platform remains relevant and responsive to the evolving needs of LASO's diverse user base.
+
+                </h4>
+              </div>
+            </div>
+
+            <div class="blankHXS"></div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <div class="blankHM"></div>
+
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--full u-textCenter">
+      <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h2`,
+        contentTitle:`Reflection for the Admin Panel Project`,
+        }) %>
+    </div>
+    <div class="Grid Grid--gutters Grid--full">
+
+      <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHAdminPanel/audio_reflection.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`Reflecting on this project, we encountered significant challenges in organizing different types of users, a task that presented not only user experience challenges but also limitations and deadlines related to backend work. Initially, we envisioned a unified tab for all users in the left navigation, aligning with stakeholders' goals and receiving approval from the engineering lead. However, after several rounds of review, it became clear that integrating users from different databases would require more time than anticipated. Following discussions with stakeholders and engineers, we ultimately decided to separate users into distinct B2B and D2C categories. This decision, while a departure from our initial approach, was a necessary adaptation to the project's constraints and a testament to the collaborative and flexible nature of our team's problem-solving process.
+        `,          
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,        
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,        
+        }) %>
+    </div>
+
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><strong>Organizing Different User Types</strong></h4>
+          <h4>The task of organizing different types of users presented a multifaceted challenge. It was not just a matter of designing an intuitive user experience; we also had to contend with limitations and deadlines imposed by the existing backend infrastructure. Initially, our approach was to consolidate all users into one tab on the left navigation panel. This solution aligned well with the stakeholders' goals, and our lead engineer agreed with this direction.
+
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><strong>Challenges with Data Integration</strong></h4>
+          <h4>However, as we delved deeper into the implementation, we encountered significant hurdles. Our engineering team pointed out that combining different users from separate databases would require more time than anticipated. This revelation prompted us to reevaluate our strategy.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><strong>Revising the Approach </strong></h4>
+          <h4>After several rounds of review and discussions with both stakeholders and engineers, we made the decision to separate users into distinct categories: B2B and D2C. This adjustment was a crucial pivot in our project, ensuring that we could meet our deadlines without compromising the integrity of our data.
+
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><strong>Lessons Learned</strong></h4>
+          <ul>
+            <li class="listCircle"><strong>Flexibility is Key: </strong>In UX design, especially for complex systems, it's essential to remain adaptable and open to revising initial plans based on technical constraints and new insights. </li>
+            <li class="listCircle"><strong>Collaboration is Crucial: </strong>Regular communication and collaboration between designers, engineers, and stakeholders are vital to aligning design solutions with technical feasibility and business objectives.</li>
+            <li class="listCircle"><strong>Iterative Process: </strong>The project reinforced the importance of an iterative design process, where feedback and reviews at each stage can lead to significant shifts in direction to better meet the project's needs.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><strong>Moving Forward </strong></h4>
+          <h4>As we continue to develop the Admin Panel, these reflections will guide our approach, ensuring that we prioritize user needs while being mindful of technical limitations. The experience has underscored the importance of a balanced and collaborative approach to design and development.
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="blankHS"></div>
+
+
+
+  <div class="blankHXS"></div>
+
+  </div>
+
+
+
+
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Skills & Experiences' }) %>
+  <%- include(`${templatePath}/shared/comp_tagCloud`) %>
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message:''}) %>
+
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- Shared across the platform -->
+
+
+
+</body>
+
+</html>

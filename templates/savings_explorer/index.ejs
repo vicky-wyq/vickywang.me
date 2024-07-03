@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:`Simplified B2B Onboarding & Enhanced Engagement for Business Owners by Vicky Wang`, 
+description:'', 
+pageURL:'/worksamples/BYP_LH_wsbeebr/LHCost_benefitCalculator/', thumbnailImgURL: 'vickywang_web.png'
+}) %>
+<!--Head-->
+
+<body class="LASO">
+  <%- include(`${templatePath}/shared/compProgressBar`,{
+    barColor:`LASO`
+  }) %>
+
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'backText', 
+    leftArrowColor:`LASO`,
+
+    currentPage: 'PROJECT',
+    PageUrl:'/' 
+    }) %>
+
+  <%- include(`${templatePath}/shared/block_banner`, { 
+    bannerTitle:`RX Zero Savings Explorer: Uncover Prescription Meds Savings`,
+    bannerSubTitle:`Compare current medication costs with the RX Zero subscription model`,
+    bannerLogoUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/logo_LASO_darkBlue.svg`,
+    bannerBgColor: `colorBgLASO`,
+    bannerMockupL:`MockupL.png`,
+    bannerMockupM:`MockupM.png`,
+    bannerMockupS:`MockupS.png`,
+    bannerButtonColor:`LASO`,
+    SlideDeckUrl:`https://www.figma.com/proto/5MHwSOuVqD9mKiG3IgL0Tw/LASO-Health-2024?page-id=1822%3A17539&type=design&node-id=2008-18185&viewport=152%2C2386%2C0.08&t=AwZir7Z5eMFgUFvo-1&scaling=scale-down&starting-point-node-id=2008%3A18185&mode=design&mode=design&mode=design`
+
+    }) %>
+  <div class="wrapper">
+    <div class="blankHXS"></div>
+    <div class="Grid Grid--gutters Grid--cols-4">
+      <!-- subTitleFont1 -->
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Timeline </strong> </h3>
+          <h4> December 2023 </h4>
+          <h4> 2 Weeks (adound 3hr/day) </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Team </strong> </h3>
+          <h4> Marketing, Sales Workshop </h4>
+          <h4> Stakeholder Review </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Role </strong> </h3>
+          <h4> UX Research </h4>
+          <h4> UX Design </h4>
+          <h4> Visual design </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Tools </strong> </h3>
+          <h4> Figma </h4>
+          <h4> Jira </h4>
+          <h4> Asana </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="blankHS"></div>
+
+
+  </div>
+
+
+  <div class="colorBgLASO">
+
+    <div class="blankHXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h1`,
+        contentTitle:`Opportunity & challenge`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+          titleFontSize:`h4`,
+          contentTitle:`Problem Overview`,
+          }) %>
+
+
+        <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+          audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHCost_benefitCalculator/audio_problemOverview.mp3`,
+          audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+          audioPlayerButtonColor:`LASO`,
+          audioPlayerTextStrong1:`Context: `,
+          audioPlayerText1:`Patients with chronic illnesses, elderly individuals, and uninsured persons often struggle with the complexities and high costs of managing their medication expenses. With varying insurance coverages and diverse prescription needs, these patients find it difficult to determine the most cost-effective medication solutions.`,                  
+          audioPlayerTextStrong2:`RX Zero: `,
+          audioPlayerText2:`RX Zero's subscription service offers a potential alternative with its fixed monthly fee for unlimited access to generic medications.`,
+          audioPlayerTextStrong3:`Problem/Challenge: `,
+          audioPlayerText3:`However, there is a lack of a simple, effective tool for these potential subscribers to compare RX Zero’s cost with their current medication expenses.`,
+          audioPlayerTextStrong4:`Hypothesis: `,
+          audioPlayerText4:`Therefore, there is a significant need for an easy-to-use value calculator that can clearly demonstrate the financial advantages of RX Zero's subscription model, considering individual medication requirements and insurance details, to aid in informed decision-making.`,
+          audioPlayerTextStrong5:``,
+          audioPlayerText5:``,
+
+        }) %>
+
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+          titleFontSize:`h4`,
+          contentTitle:`Primary Objectives`,
+          }) %>
+
+
+        <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+  audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHCost_benefitCalculator/audio_primaryObjectives.mp3`,
+  audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+  audioPlayerButtonColor:`LASO`,
+  audioPlayerTextStrong1:`Understanding of Subscription Costs: `,
+  audioPlayerText1:`Understand the pricing model of RX Zero and how it compares to traditional pay-per-medication models. This understanding can influence their perception of value and affordability.`,                  
+  audioPlayerTextStrong2:`Comparison with Traditional Pricing: `,
+  audioPlayerText2:`Users might want to know how the cost of a flat subscription fee compares to traditional medication expenses, especially if they are used to paying per medication or have varying monthly medication costs. Transparency in this comparison can impact their decision to switch to or choose RX Zero.`,
+  audioPlayerTextStrong3:`Trust and Confidence in the Service: `,
+  audioPlayerText3:`Clear communication about costs, savings, and the pricing model can build trust and confidence in the service. This is crucial for people who rely heavily on medication, such as those with chronic illnesses or the elderly, who may be more cautious about changing their medication procurement method.`,
+  audioPlayerTextStrong4:`Relevance for Target Users: `,
+  audioPlayerText4:`For the target users of RX Zero, such as patients with chronic illnesses or those who are uninsured, understanding how the subscription model might offer a more predictable and potentially more affordable solution compared to traditional models is key. Their need for regular medication makes the concept of cost transparency even more important.`,
+  audioPlayerTextStrong5:``,
+  audioPlayerText5:``,
+
+}) %>
+
+
+
+      </div>
+    </div>
+    <div class="blankHS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h1`,
+        contentTitle:`Insights`,
+        }) %>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+
+        <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHCost_benefitCalculator/audio_insight.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`Drawing from insights gathered through user and stakeholder interviews, as well as customer feedback, it's evident that highlighting the value of RX Zero is paramount. Ensuring the credibility and persuasiveness of the calculator's outcomes is critical to this endeavor. The ability to accurately and swiftly compute potential costs plays a key role in enhancing the user experience, facilitating a straightforward understanding of their prospective expenses. It's essential for users to receive transparent information regarding their financial obligations, the benefits they stand to gain.`,   
+
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,
+        audioPlayerTextStrong4:``,
+        audioPlayerText4:``,
+        audioPlayerTextStrong5:``,
+        audioPlayerText5:``,
+
+      }) %>
+      </div>
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaLASO.svg" alt="Insight"><strong class="colorLASObule700">Insight #1 Transparent & Credibility</strong></h2>
+            <div class="element">
+              <h3> <strong>Calculator results are trustworthy & convincing</strong></h3>
+              <h3>1. Ensure that the calculator results are trustworthy and convincing to users. This can be achieved by clearly displaying the sources of pricing information, thereby enhancing the credibility of the results.
+              </h3>
+              <h3>2. Highlight how the pricing results are derived and the accuracy of the data, which reinforces user trust in the calculator.</h3>
+              <div class="blankHXS"></div>
+              <div class="more">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                </div>
+                <h2>Show average market prices data sources. Integration with reliable data sources or APIs for real-time or updated average pricing of traditional medications. </h2>
+                <div class="blankHXS"></div>
+              </div>
+              <button class="toggle buttonTextOnly LASO">Read More ∨</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaLASO.svg" alt="Insight"><strong class="colorLASObule700">Insight #2 Clarity, Accuracy, and Efficiency</strong></h2>
+            <div class="element">
+              <h3> <strong>Understandable Pricing & Medicine Dosage</strong></h3>
+              <h3>1. If a certain medication is not available, ensuring clarity and efficiency in their search.</h3>
+              <h3>2. Focus on accurately collecting and conveying dosage information to users</h3>
+              <h3>3. Clearly communicate the names of medicines, both in their generic and branded forms.</h3>
+              <h3>4. Streamline the process, reducing any potential confusion or misunderstandings. </h3>
+
+              <div class="blankHXS"></div>
+              <div class="more">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                </div>
+                <h2>Gather precise information about the dosage amount per pill and the required number of pills per day for each medication. Ensure that price comparisons are made for equivalent dosages, taking into account both the dosage amount per pill and the daily pill count. </h2>
+                <div class="blankHXS"></div>
+              </div>
+              <button class="toggle buttonTextOnly LASO">Read More ∨</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaLASO.svg" alt="Insight"><strong class="colorLASObule700">Insight #3 Value of RX Zero</strong></h2>
+            <div class="element">
+              <h3> <strong>Understand & Trust in RX Zero’s Subscription Model</strong></h3>
+              <h3>1. Clearly communicate the benefits of the RX Zero subscription model, including the 30-day refund policy. This should be prominently displayed to reassure users about the flexibility and risk-free nature of trying the service.</h3>
+              <h3>2. Emphasize the 'cancel anytime' feature to underscore the subscription's adaptability to the user's changing needs and circumstances, thereby enhancing the appeal of the service.</h3>
+
+              <div class="blankHXS"></div>
+              <div class="more">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/arrDownLASO.svg" alt="Arrow">
+                </div>
+                <h2>Emphasize the Refund Policy - “30-day refund guarantee” & Subscription Flexibility - “cancel anytime”</h2>
+                <div class="blankHXS"></div>
+              </div>
+              <button class="toggle buttonTextOnly LASO">Read More ∨</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blankHS"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h1`,
+        contentTitle:`Solution`,
+        }) %>
+      </div>
+
+      <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHCost_benefitCalculator/audio_solution.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`The solution focuses on the essential value of RX Zero. Our aim is to compellingly demonstrate the value of our service, enhancing customer trust in the quality of our medications. We are committed to ensuring customers fully grasp RX Zero's unique value proposition—offering access to all necessary medications via an uncomplicated monthly subscription, designed to make their medication costs both predictable and manageable.`,   
+
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,
+        audioPlayerTextStrong4:``,
+        audioPlayerText4:``,
+        audioPlayerTextStrong5:``,
+        audioPlayerText5:``,
+
+      }) %>
+
+
+      <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter " aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
+        <div class="TBslides">
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 3" tabindex="0">
+            <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+              <div class="Grid-cell">
+                <img src="Slideshow1_left.png" alt="">
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="cardImgCropWS shadowBoxPrototype" src="Slideshow1.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 3" tabindex="0">
+            <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+              <div class="Grid-cell">
+                <img src="Slideshow2_left.png" alt="">
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="cardImgCropWS shadowBoxPrototype" src="Slideshow2.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 3" tabindex="0">
+            <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+              <div class="Grid-cell">
+                <img src="Slideshow3_left.png" alt="">
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="cardImgCropWS shadowBoxPrototype" src="Slideshow3.gif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="TBcarouselNav Grid-cell">
+          <a class="TBsliderNav active" aria-label="Go to slide 1">
+            <div>Value of RX Zero</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 2">
+            <div>Transparent & Credibility</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 3">
+            <div>Clarity, Accuracy, and Efficiency</div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="blankHS"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorLASObule700`,
+        titleFontSize:`h1`,
+        contentTitle:`Projected Impact of the Cost-Benefit Calculator`,
+        }) %>
+      </div>
+
+      <%- include(`${templatePath}/shared/comp_audioPlayer`, { 
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHCost_benefitCalculator/audio_impact.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, 
+        audioPlayerButtonColor:`LASO`,
+        audioPlayerTextStrong1:``,
+        audioPlayerText1:`The cost-benefit calculator is poised to significantly impact RX Zero's market entry and growth. By vividly demonstrating the value of RX Zero, enhancing brand transparency and credibility, and prioritizing clarity, accuracy, and efficiency, the tool is set to become a cornerstone of RX Zero's strategy to attract, engage, and retain subscribers. It will not only serve as a practical utility for users but also as a powerful testament to RX Zero's commitment to innovation, customer satisfaction, and trustworthiness in the healthcare industry.`,   
+
+        audioPlayerTextStrong2:``,
+        audioPlayerText2:``,
+        audioPlayerTextStrong3:``,
+        audioPlayerText3:``,
+        audioPlayerTextStrong4:``,
+        audioPlayerText4:``,
+        audioPlayerTextStrong5:``,
+        audioPlayerText5:``,
+
+      }) %>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #1 - Highlighting the Economic Advantage of RX Zero: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>By enabling customers to directly compare their current medication expenses with the potential savings offered by RX Zero, the tool will vividly showcase the financial benefits of switching to the subscription service. This clear demonstration of value is anticipated to resonate strongly with cost-conscious consumers, highlighting RX Zero as a financially savvy choice for managing medication costs.
+                  </h4>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #2 - Enhanced User Trust and Confidence: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>With the calculator's focus on providing trustworthy and convincing results, users are likely to develop a higher level of trust in RX Zero. Transparently displaying the sources of pricing information and ensuring the accuracy of the data will reinforce user confidence in the calculator's reliability and, by extension, in RX Zero as a brand.
+                  </h4>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion accordionBorderBottom noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #3 - Fostering Informed Healthcare Choices:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>By demystifying medication costs and savings, the calculator empowers patients to make informed choices about their healthcare. This empowerment is crucial in an era where patients often feel sidelined in decisions affecting their health and financial well-being. The RX Zero Cost-Benefit Calculator places control back into the hands of the users, enabling them to evaluate and decide on their medication plans with a level of insight previously inaccessible to many.
+                  </h4>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #4 - Increased Subscription Adoption:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>A clear understanding of the RX Zero subscription model, backed by the ability to trust the service due to its transparent policies (such as the 30-day refund policy and the option to cancel anytime), is expected to encourage more users to adopt the subscription. This could lead to an increase in customer acquisition and retention, as potential users see the tangible benefits and flexibility offered by RX Zero.
+                  </h4>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #5 - Feedback Loop for Continuous Improvement:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>The launch of the calculator also opens up avenues for collecting user feedback, providing invaluable insights into user needs and preferences. This feedback loop will enable continuous improvement of the tool, ensuring that it remains aligned with user expectations and evolves in response to changing healthcare and technology landscapes.
+
+
+                  </h4>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="wrapper">
+
+
+
+      <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <a href="https://www.figma.com/proto/5MHwSOuVqD9mKiG3IgL0Tw/LASO-Health-2024?page-id=1822%3A17539&type=design&node-id=2008-18185&viewport=152%2C2386%2C0.08&t=AwZir7Z5eMFgUFvo-1&scaling=scale-down&starting-point-node-id=2008%3A18185&mode=design&mode=design&mode=design" target="_blank"> <button class="button-35 LASO">Slide Deck</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blankHS"></div>
+  </div>
+
+
+
+
+
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Skills & Experiences' }) %>
+  <%- include(`${templatePath}/shared/comp_tagCloud`) %>
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message:''}) %>
+
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- Shared across the platform -->
+
+
+
+</body>
+
+</html>
