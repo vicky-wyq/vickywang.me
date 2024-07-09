@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:`Mastering B2B SaaS Subscription Success by Vicky Wang`, 
+description:'', 
+pageURL:'worksamples/BYP_LH_wsbeebr/', thumbnailImgURL: 'vickywang_web.png'
+}) %>
+<!--Head-->
+
+<body>
+  <%- include( `${templatePath}/shared/compProgressBar`) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'backText', 
+    currentPage: '',
+    PageUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr` 
+    }) %>
+
+  <%- include(`${templatePath}/shared/block_banner`, { 
+    bannerTitle:`Mastering B2B SaaS Subscription Success`,
+    bannerSubTitle:``,
+    bannerLogoUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/logo_BYP.svg`,
+    SlideDeckUrl:`https://www.figma.com/proto/2MrhSGMpQRH3kDJEzSHnUg/BYP---Business-facing-(2024-Current)?page-id=2131%3A15721&type=design&node-id=2131-15722&viewport=746%2C528%2C0.07&t=4bgh0kiJHLl1Uld3-1&scaling=scale-down&starting-point-node-id=2131%3A15722&mode=design`,
+    bannerBgColor:`colorBgBYP`,
+    bannerMockupL:`MockupL.png`,
+    bannerMockupM:`MockupM.png`,
+    bannerMockupS:`MockupS.png`,
+    bannerButtonColor:`BYP`
+    }) %>
+  <div class="wrapper">
+    <div class="blankHXS"></div>
+    <div class="Grid Grid--gutters Grid--cols-4">
+      <!-- subTitleFont1 -->
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Timeline </strong> </h3>
+          <h4> January 2024 </h4>
+          <h4> 2 Weeks </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Team </strong> </h3>
+          <h4> Marketing, Sales </h4>
+          <h4> Engineer Lead </h4>
+          <h4> Stakeholder Review </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Role </strong> </h3>
+          <h4> UX Research </h4>
+          <h4> UX Design </h4>
+          <h4> Visual design </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Tools </strong> </h3>
+          <h4> Figma </h4>
+          <h4> Trello </h4>
+          <h4> monday.com </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="blankHS"></div>
+
+
+  </div>
+
+
+  <div class="colorBgBYP">
+    <div class="blankHXS"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h1`,
+        contentTitle:`Current State`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4> Current b2b onboarding flow:</h4>
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <img src="diagram_flowChat_currentState.svg">
+        </div>
+
+        <div class="Grid-cell">
+          <img src="mockup_currentState.png">
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>User Feedback:</h4>
+            <h4><strong>Several <span class="textDecor WS">large business owners</span> were seeking accounts for 10 - 20 team members, but with the current design, it's unclear whether our platform supports this.</strong></h4>
+            <h4><strong>Some users expressed a desire to add their card and <span class="textDecor WS">purchase a subscription immediately</span> but couldn't navigate the process.</strong></h4>
+            <h4><strong>Others experienced <span class="textDecor WS">confusion</span> when they selected a pricing plan and then encountered similar pricing options at the end of the flow.</strong></h4>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--gutters Grid--full">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>The Problems:</h4>
+          </div>
+        </div>
+
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+
+              <h4><strong class="colorBYPTeal700">Low conversion rate:</strong></h4>
+
+              <h4><strong>We currently do not offer a way to add a payment card during the onboarding process. This absence contributes to a lower conversion rate, with users signing up but not returning to complete their subscription.</strong></h4>
+
+            </div>
+          </div>
+
+          <div class="Grid-cell">
+            <div class="element">
+
+              <h4><strong class="colorBYPTeal700">Redundancy & confusion:</strong></h4>
+
+
+              <h4><strong>Users are required to reselect their pricing plan if they have already made a selection from the pricing page, leading to redundancy and potential confusion.</strong> </h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="Grid Grid--gutters Grid--full">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Metrics and Performance Data:</h4>
+
+            <h4><strong> Drop-off rates at step 2 - step 4 of the onboarding process </strong></h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>User Segmentation:</h4>
+            <h4><strong>Users can be categorized into different segments with distinct onboarding needs. For instance, larger businesses may require the ability to add more team members or multiple locations, in contrast to smaller businesses.</strong></h4>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h1`,
+        contentTitle:`Research Focus`,
+        }) %>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Research Question:</h4>
+            <h4><strong> How can we optimize the B2B onboarding and subscription flow on our platform to enhance user understanding, satisfaction, and conversion rates, particularly for large business accounts and immediate subscription actions?</strong></h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Research Focus Areas:</h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Focus #1 - User Understanding and Clarity: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <ul>
+                    <li class="listCircle">Investigate how clearly the current onboarding and subscription process communicates the platform's capacity to support large business accounts.</li>
+                    <li class="listCircle">Identify where users struggle to understand subscription options and the platform's support for their specific needs.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Focus #2 - Ease of Subscription: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <ul>
+                    <li class="listCircle">Explore the obstacles preventing users from easily adding payment details and subscribing immediately within the onboarding flow.</li>
+                    <li class="listCircle">Examine user expectations regarding the ease of entering payment information and activating subscriptions.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Focus #3 - Pricing Plan Selection and Presentation: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <ul>
+                    <li class="listCircle">Assess user experiences and confusion around selecting pricing plans, especially when similar options are presented multiple times throughout the onboarding process.</li>
+                    <li class="listCircle">Determine how pricing information can be streamlined and made more intuitive to aid decision-making.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+
+            <h3 class="accordion accordionBorderBottom noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Focus #4 - Tailored Solutions for Diverse Businesses: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <ul>
+                    <li class="listCircle">Address the unique requirements of businesses of varying sizes, with a special emphasis on customization for their specific operational needs.</li>
+                    <li class="listCircle">Investigate adaptable features that can accommodate different team structures and account management preferences, ensuring a personalized experience for each business." </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div class="blankHXS"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="wrapper">
+      <div class="blankHS"></div>
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+
+        titleFontSize:`h1`,
+        contentTitle:`Insights & Potential Solutions`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Gather and analyze user research and feedback:</h4>
+            <h4><strong> We aim to gain a deeper understanding of users' true needs and preferences, and identify any gaps or areas in our platform that require enhancement. </strong></h4>
+          </div>
+        </div>
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #1 - Streamlining Onboarding to Eliminate Confusion in Pricing Plan Selection </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>Users encounter confusion during the onboarding process when selecting a pricing plan, leading to a lack of clarity and potential drop-offs.</strong></h4>
+                </div>
+              </div>
+              <div class="Grid Grid--gutters Grid--full u-textCenter">
+                <div class="Grid-cell">
+                  <img class="iconS paddingXS" src="arrDown.svg" alt="Arrow">
+                </div>
+              </div>
+              <div class="Grid Grid--gutters Grid--cols-2">
+                <div class="Grid-cell">
+                  <h4> <strong>Clear Plan Descriptors</strong> </h4>
+
+                </div>
+                <div class="Grid-cell">
+                  <h4> <strong>Interactive Pricing Calculator</strong> </h4>
+
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #2 - Difficulty in Immediate Subscription Activation </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>Simplify the process for adding payment details and subscribing within the onboarding flow. Introduce a more prominent and intuitive 'Add Card and Subscribe' option, with step-by-step guidance to ensure users can easily complete this action.</strong></h4>
+
+                </div>
+              </div>
+              <div class="Grid Grid--gutters Grid--full u-textCenter">
+                <div class="Grid-cell">
+                  <img class="iconS paddingXS" src="arrDown.svg" alt="Arrow">
+                </div>
+              </div>
+              <div class="Grid Grid--gutters Grid--cols-2">
+                <div class="Grid-cell">
+                  <h4> <strong>Add Payment Option</strong> </h4>
+
+                </div>
+                <div class="Grid-cell">
+                  <h4> <strong> Easily complete this action</strong> </h4>
+
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+
+
+
+
+            <h3 class="accordion accordionBorderBottom noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #3 - Enhancing Subscription Plan Clarity for Varied Business Sizes</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>Enhance the onboarding flow with clear messaging and visual cues that indicate support for different business accounts, including the ability to accommodate 20 team members or more.</strong></h4>
+
+                </div>
+              </div>
+              <div class="Grid Grid--gutters Grid--full u-textCenter">
+                <div class="Grid-cell">
+                  <img class="iconS paddingXS" src="arrDown.svg" alt="Arrow">
+                </div>
+              </div>
+              <div class="Grid Grid--gutters Grid--cols-3">
+                <div class="Grid-cell">
+                  <h4> <strong>Simplified Pricing Options</strong> </h4>
+
+                </div>
+                <div class="Grid-cell">
+                  <h4> <strong>Comparative Breakdowns </strong> </h4>
+                </div>
+                <div class="Grid-cell">
+                  <h4> <strong>Straightforward Pricing Information </strong> </h4>
+
+                </div>
+
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="iconXS moveUpDown" src="/worksamples/BYP_LH_wsbeebr/Note_Arrow.svg" alt="Pause">
+            <p class="specialTextDemo colorGLORIFYBlue">Click to open/close
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="wrapper">
+      <div class="blankHS"></div>
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h2`,
+        contentTitle:`Design & Solution`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Streamlining the pricing and payment aspects of the platform:</h4>
+            <h4><strong> It aims to simplify the process by retaining only essential information, ensuring clear communication with business owners regarding pricing for different categories, locations, and team member options. The focus is on making the information as clear and concise as possible to facilitate better understanding and decision-making. </strong></h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img src="diagram_flowChat.svg">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter " aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
+        <div class="TBslides">
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--full">
+
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="Slideshow1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 2 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--full">
+
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="Slideshow2.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 3 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+              <div class="Grid-cell">
+                <img src="Slideshow2_left.png" alt="">
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="Slideshow2.gif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="TBslidesItem slide-4" id="slide-4" aria-label="slide 4 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--full">
+
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="Slideshow4.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="TBcarouselNav Grid-cell">
+          <a class="TBsliderNav active" aria-label="Go to slide 1">
+            <div>Simplify & Reduce Confusion 1</div>
+          </a>
+          <a class="TBsliderNav active" aria-label="Go to slide 2">
+            <div>Simplify & Reduce Confusion 2</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 3">
+            <div>Subscription Plan Clarity</div>
+          </a>
+
+          <a class="TBsliderNav" aria-label="Go to slide 4">
+            <div>Subscription Activation</div>
+          </a>
+
+        </div>
+      </div>
+      <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="iconXS moveUpDown" src="/worksamples/BYP_LH_wsbeebr/Note_Arrow.svg" alt="Pause">
+            <p class="specialTextDemo colorGLORIFYBlue">Hover to pause or navigate through the slideshow
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="blankHS"></div>
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h2`,
+        contentTitle:`Impact of Onboarding - Subscription Enhancement`,
+        }) %>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><strong> The impact of the upcoming enhancements </strong></h4>
+          <h4>Streamline essential processes, enhance clarity in pricing, and ultimately increase user satisfaction and conversion rates.</h4>
+        </div>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #1 - Reduced Onboarding Time, Improved Clarity and Decision-Making </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>By streamlining the process and providing clear, concise information, we expect business owners to make more informed decisions regarding their subscription choices, leading to increased satisfaction and trust in our platform.</h4>
+                </div>
+              </div>
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #2 - Increase in Onboarding Completion Rates:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>By simplifying and enhancing the user journey, we anticipate an increase in onboarding completion rates by approximately 40%. These improvements will likely result from making the process more intuitive and engaging, thus retaining the user’s interest through to completion.</h4>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #3 - Uplift in Conversion to Paid Subscriptions:</strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4>With a more streamlined and user-friendly onboarding experience, we project an uplift in conversion rates to paid subscriptions by 25%. This increase is expected as a direct consequence of a more satisfying initial engagement with our platform, demonstrating immediate value to users.</h4>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+
+            <h3 class="accordion accordionBorderBottom noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #4 - User Satisfaction & Insights-Driven Improvement: </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid Grid--gutters Grid--full">
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <h4> By redesigning the onboarding process to be more personalized and user-friendly, we aim to significantly enhance user satisfaction. This tailored approach not only meets users' specific needs more effectively, fostering a positive perception and long-term platform loyalty, but also allows us to collect valuable data on user behavior and preferences. Leveraging these insights enables continuous refinement of the platform, ensuring it evolves in alignment with user needs and market trends, thereby maintaining a high level of user satisfaction over time.</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+
+        <div class="Grid Grid--gutters Grid--full u-textCenter">
+          <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+          titleColor:`colorBYPTeal700`,
+          titleFontSize:`h2`,
+          contentTitle:`Reflection`,
+          }) %>
+        </div>
+        <div class="Grid Grid--gutters Grid--full">
+
+          <div class="Grid-cell">
+            <div class="element">
+              <h4>Simplicity and clarity</h4>
+              <h4> <strong>The key takeaways from this study is the importance of simplicity and clarity in the user experience. By streamlining processes and providing transparent information, we've seen the potential to significantly reduce user confusion and increase satisfaction.</strong>
+              </h4>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <h4>Insight to digital journey</h4>
+              <h4> <strong>In reflecting on our approach, we recognize that while we understand the diverse needs of businesses of different sizes, we did not adequately consider this aspect in the design of our onboarding process.</strong>
+              </h4>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <h4>Focus on business goals</h4>
+              <h4> <strong>The focus on business goals, particularly on encouraging users to subscribe, was central to the strategy, guiding the design and messaging throughout the onboarding process.</strong>
+              </h4>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid-cell">
+            <div class="element">
+              <a href="https://www.figma.com/proto/2MrhSGMpQRH3kDJEzSHnUg/BYP---Business-facing-(2024-Current)?page-id=2131%3A15721&type=design&node-id=2131-15722&viewport=746%2C528%2C0.07&t=4bgh0kiJHLl1Uld3-1&scaling=scale-down&starting-point-node-id=2131%3A15722&mode=design" target="_blank"> <button class="button-35 BYP">Slide Deck</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blankHS"></div>
+
+
+    </div>
+  </div>
+
+
+  <!-- Shared across the platform -->
+
+
+
+
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Skills & Experiences' }) %>
+  <%- include(`${templatePath}/shared/comp_tagCloud`) %>
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message:''}) %>
+  <%- include(`${templatePath}/shared/block_modal`) %>
+
+
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- Shared across the platform -->
+
+
+
+</body>
+
+</html>
