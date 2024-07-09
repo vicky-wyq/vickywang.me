@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:`Revolutionizing User Experience: A Comprehensive Redesign of the BookYourPet Platform by Vicky Wang`, 
+description:'', 
+pageURL:'worksamples/BYP_LH_wsbeebr/', thumbnailImgURL: 'vickywang_web.png'
+}) %>
+<!--Head-->
+
+<body>
+  <%- include( `${templatePath}/shared/compProgressBar`) %>
+  <%- include(`${templatePath}/shared/block_nav_header`, {
+    type:'backText', 
+    currentPage: 'PROJECT',
+    PageUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr` 
+    }) %>
+
+  <%- include(`${templatePath}/shared/block_banner`, { 
+    bannerTitle:`B2B Pet Booking App Revamp`,
+    bannerSubTitle:`The Transition from White-Glove to Self-Service`,
+    bannerLogoUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/logo_BYP.svg`,
+    SlideDeckUrl:`https://www.figma.com/proto/2MrhSGMpQRH3kDJEzSHnUg/BYP---Business-facing-(2024-Current)?page-id=1906%3A6513&type=design&node-id=1912-6941&viewport=-1549%2C-2194%2C0.15&t=HPeYNIFq6Fpjo3Mm-1&scaling=scale-down&starting-point-node-id=1912%3A6941&show-proto-sidebar=1&mode=design`,
+    bannerBgColor:`colorBgBYP`,
+    bannerMockupL:`MockupL.png`,
+    bannerMockupM:`MockupM.png`,
+    bannerMockupS:`MockupS.png`,
+    bannerButtonColor:`BYP`
+    }) %>
+
+
+  <div class="wrapper">
+    <div class="blankHXS"></div>
+
+    <div class="Grid Grid--gutters Grid--cols-4">
+      <!-- subTitleFont1 -->
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Timeline </strong> </h3>
+          <h4> January 2023 - April 2023 </h4>
+          <h4> 3 Months </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Team </strong> </h3>
+          <h4> Marketing, Sales </h4>
+          <h4> Engineer Lead </h4>
+          <h4> Stakeholder Review </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Role </strong> </h3>
+          <h4> UX Research </h4>
+          <h4> UX Design </h4>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h3> <strong class=""> Tools </strong> </h3>
+          <h4> Figma </h4>
+          <h4> Trello </h4>
+          <h4> monday.com </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="blankHS"></div>
+
+
+  </div>
+
+
+  <div class="colorBgBYP">
+    <div class="blankHXS"></div>
+
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h2`,
+        contentTitle:`About Our App`,
+        }) %>
+      </div>
+      <div class="Grid Grid--full Grid--gutters">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="rowToColumn centerVH">
+              <div class="widthMax">
+                <h4>About BookYourPet</h4>
+                <h4><strong>The BYP BookYourPet B2B app is a platform designed to connect pet service providers (businesses) with pet owners. It serves as a comprehensive solution for businesses to manage their operations, including scheduling appointments, managing team members, and processing payments. The app aims to streamline the booking and service management process, making it easier for businesses to offer their services and for pet owners to find and book the services they need for their pets.</strong></h4>
+               
+                <img class="" src="diagram_userTypes.svg" alt="icon arrow">
+
+              </div>
+              <div class="paddingleft">
+                <div class="widthFitContent">
+                  <img class="widthXS" src="img_grooming.png" alt="icon arrow">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="rowToColumn centerVH">
+              <div class="widthMax">
+                <h4>About the legacy flow</h4>
+                <h4><strong>Our B2B app, built several years ago, was complex and time-consuming to learn and use. This complexity limited product growth and negatively impacted the user experience. We were moving away from a white-glove service model, our mission was to empower business users with a platform that supports seamless self-onboarding and streamlined service, booking, and team management.</strong></h4>
+              </div>
+              <div class="paddingleft">
+                <div class="widthFitContent">
+                  <img class="widthXS" src="img_bizOwner.png" alt="icon arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Goal of the app</h4>
+            <h4><strong>The main goal of the app is to partially automate business operations. It allows business owners to input their location, services, and team information into the system. This setup enables clients to easily book appointments or allows business owners to manage bookings on their behalf.
+              </strong></h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="" src="diagram_keyElements.svg" alt="icon arrow">
+          </div>
+        </div>
+
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Current challenges</h4>
+            <h4><strong>Initially, our platform had a limited user base, and the sales team provided white-glove services to customers. The process of onboarding, adding team members, and managing services was extremely challenging, consuming significant time and effort. This complexity in onboarding and poor usability led to difficulties in retaining users.
+              </strong>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="Grid Grid--gutters Grid--full">
+        <%- include(`${templatePath}/shared/base_link`, {          
+          linkUrl:`https://www.figma.com/proto/evkELaXDCpKfUA71QYfkUM/BYP-B2B-Web-App-%7C-Legacy-Flow?page-id=0%3A1&type=design&node-id=1-1038&viewport=-142%2C405%2C0.1&t=AfTHCGxnu1kuaqmz-1&scaling=scale-down&starting-point-node-id=1%3A1038&mode=design`,
+          linkText:`BookYourPet Legacy Flow`
+            }) %>
+      </div>
+
+    </div>
+
+    <div class="blankHS"></div>
+
+
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h2`,
+        contentTitle:`Identify User Needs & Drop-Off Points`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>As business owners/service providers, the key needs include:</h4>
+            <h4><strong>&#9786; Allowing clients to book appointments easily. </strong> </h4>
+            <h4><strong>&#9786; Processing payments efficiently. </strong> </h4>
+            <h4><strong>&#9786; Managing team members effectively. </strong> </h4>
+            <h4><strong>&#9786; Adjusting appointments as needed. </strong> </h4>
+            <h4><strong>&#9786; Communicating with clients seamlessly. </strong> </h4>
+            <h4><strong> </strong> </h4>
+
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Feedback from users</h4>
+            <h4><strong>&#9785; Onboarding is challenging, requiring the creation of a business, team, and services before accessing the account. </strong> </h4>
+            <h4><strong>&#9785; Difficulty in adjusting team member shifts. </strong> </h4>
+
+            <h4><strong>&#9785; Issues in controlling appointments. </strong> </h4>
+
+            <h4><strong>&#9785; Problems connecting to the payment system. </strong> </h4>
+
+            <h4><strong></strong> </h4>
+            <h4><strong></strong> </h4>
+
+            </h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Main drop-off points</h4>
+            <h4><strong>&#9758; The onboarding process was a major drop-off point, but at that time, we were utilizing a white-glove service approach </strong>
+              <h4><strong>&#9758; Semi white-glove approach, users struggle to manage their services independently. </strong>
+
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Prioritization of improvements</h4>
+            <h4><strong>&#9872; Data Entry: Entering business information, services, and team member details is crucial. </strong> </h4>
+            <h4><strong>&#9872; Booking: The process should be simple, straightforward, and flexible, allowing for easy adjustments or changes. </strong> </h4>
+
+            <h4><strong>&#9872; Payment Integration: Essential for selling products, the payment system must be seamlessly integrated. </strong> </h4>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="wrapper">
+      <div class="blankHS"></div>
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h2`,
+        contentTitle:`Exploring the Essential Needs of Business Owners in the Pet Industry`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Research Objective</h4>
+            <h4><strong> Needs and challenges faced by business owners in the pet industry. This understanding will guide the design and enhancement of the app to better support the operational and business growth needs of these users.
+            </strong> </h4>
+          </div>
+        </div>
+
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Research Questions:            </h4>
+            <h4><strong> &#9999; What are the primary tasks that business owners in the pet industry need to perform using the pet booking app?            </strong> </h4>
+            <h4><strong> &#9999; What challenges and pain points do business owners encounter with the current app interface and functionality?            </strong> </h4>
+
+            <h4><strong> &#9999; How do business owners manage appointments, team members, and client communication within the app?            </strong> </h4>
+            <h4><strong> &#9999; What features are lacking or underperforming in the current app from the perspective of business owners?            </strong> </h4>
+            <h4><strong> &#9999; How do payment processing and service management impact the overall user experience for business owners?            </strong> </h4>
+
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Research Methods:            </h4>
+            <h4><strong> &#9999; Surveys </strong> </h4>
+            <h4><strong> &#9999; Interviews </strong> </h4>
+
+            <h4><strong> &#9999; Usability Testing  </strong> </h4>
+
+            <h4><strong> &#9999; Competitive Analysis        </strong> </h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="blankHS"></div>
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+
+        titleFontSize:`h2`,
+        contentTitle:`Key Insights for the First Iteration of App Enhancement:`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="accordion accordionBorderTop noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> insight #1 - Streamlined Appointment Management:
+              </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>Business owners seek a user-friendly system for scheduling, rescheduling, and managing appointments to optimize operations and boost client satisfaction. Flexibility in modifying bookings and accommodating changes is key.
+
+
+                  </strong></h4>
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #2 - Seamless Payment Integration:  </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>The integration of secure and dependable payment systems is crucial for business owners, facilitating effortless invoicing, payment processing, and financial management.
+
+
+                  </strong></h4>
+
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+            <h3 class="accordion noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #3 - Efficient Team Management:
+              </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>Effective management of team schedules, availability, and client preferences for team member selection is essential. Tools that allow for assigning tasks to specific team members and tracking their performance are highly valued.
+
+                  </strong></h4>
+
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+
+            <h3 class="accordion accordionBorderBottom noMargin withBg">
+              <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconIdeaBw.svg" alt="Insight"> Insight #4 - Sharing Services with Clients:
+              </strong>
+            </h3>
+            <div class="accordion-content">
+              <div class="Grid Grid--gutters Grid--full">
+
+                <div class="blankHXS"></div>
+                <div class="Grid-cell">
+                  <h4><strong>Owners appreciate the flexibility to customize and share their service offerings, pricing, and availability with clients. The capability to provide special promotions or discounts is also important for attracting and retaining clientele.
+                  </strong></h4>
+
+                </div>
+              </div>
+
+              <div class="blankHXS"></div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="iconXS moveUpDown" src="/worksamples/BYP_LH_wsbeebr/Note_Arrow.svg" alt="Pause">
+            <p class="specialTextDemo colorGLORIFYBlue">Click to open/close
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="wrapper">
+      <div class="blankHS"></div>
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h2`,
+        contentTitle:`Design Updates`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Sitemap version 1 (current state):            </h4>
+            <h4><strong> This version of the app highlights the difficulty users faced in creating services. The service creation process involved complex elements such as location, team management, email alert, and capacity, making it challenging for users. </strong> </h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <img class="modal-target" src="diagram_SitemapV1.svg" alt="Desgin Thinking Process">
+        </div>
+      </div>
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Sitemap version 2 (updated version):            </h4>
+            <h4><strong> In this updated version, we concentrated on simplifying the service creation process, which was previously extremely challenging and had the lowest completion rate. Key changes include moving the location to a global level, associating eligibility for services with team members, and integrating email alerts into the settings.</strong> </h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <img class="modal-target" src="diagram_SitemapV2.svg" alt="Desgin Thinking Process">
+        </div>
+      </div>
+
+      <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter " aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
+        <div class="TBslides">
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--full">
+
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="mockup_booking.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 2 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--full">
+
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="mockup_payment.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 3 of 4" tabindex="0">
+            <div class="Grid-cell">
+              <div class="element">
+                <img src="mockup_team.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="TBslidesItem slide-4" id="slide-4" aria-label="slide 4 of 4" tabindex="0">
+            <div class="Grid Grid--gutters Grid--full">
+
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="mockup_service.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="TBcarouselNav Grid-cell">
+          <a class="TBsliderNav" aria-label="Go to slide 1">
+            <div>Scheduling &amp; Management</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 2">
+            <div>Process Payment</div>
+          </a>
+          <a class="TBsliderNav active" aria-label="Go to slide 3">
+            <div>Team Management</div>
+          </a>
+
+          <a class="TBsliderNav" aria-label="Go to slide 4">
+            <div>Sharing Services</div>
+          </a>
+
+        </div>
+      </div>
+      <div class="Grid Grid--full Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="iconXS moveUpDown" src="/worksamples/BYP_LH_wsbeebr/Note_Arrow.svg" alt="Pause">
+            <p class="specialTextDemo colorGLORIFYBlue">Hover to pause or navigate through the slideshow
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="blankHS"></div>
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h2`,
+        contentTitle:`Impact of Redesign for B2B Pet Service Booking App`,
+        }) %>
+      </div>
+
+
+        <div class="Grid Grid--gutters Grid--full">
+          <div class="Grid-cell">
+            <div class="element">
+              <h3 class="accordion accordionBorderTop noMargin withBg">
+                <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #1 - Improved Operational Efficiency: </strong>
+              </h3>
+              <div class="accordion-content">
+                <div class="Grid Grid--gutters Grid--full">
+
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <h4>The streamlined appointment management and seamless payment integration will significantly reduce administrative burdens, allowing business owners to focus more on service delivery and client engagement. This leads to smoother operations and faster response times to client inquiries and bookings.
+
+                    </h4>
+                  </div>
+                </div>
+                <div class="blankHXS"></div>
+              </div>
+              <h3 class="accordion noMargin withBg">
+                <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #2 - Enhanced User Experience:</strong>
+              </h3>
+              <div class="accordion-content">
+                <div class="Grid Grid--gutters Grid--full">
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <h4>With a more intuitive interface and efficient team management tools, both business owners and their clients will enjoy a more seamless and satisfying interaction with the app. This includes easier navigation, quicker appointment scheduling, and more personalized service experiences.
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="blankHXS"></div>
+              </div>
+              <h3 class="accordion noMargin withBg">
+                <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #3 - Increased Client Satisfaction:</strong>
+              </h3>
+              <div class="accordion-content">
+                <div class="Grid Grid--gutters Grid--full">
+                  <div class="blankHXS"></div>
+                  <div class="Grid-cell">
+                    <h4>The flexibility to modify bookings and the ability to offer customized services and promotions will result in higher client satisfaction. Clients will appreciate the convenience and personalized attention, leading to positive reviews and increased client retention.
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="blankHXS"></div>
+              </div>
+
+
+              <h3 class="accordion accordionBorderBottom noMargin withBg">
+                <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #4 - Boosted Revenue Growth: </strong>
+              </h3>
+              <div class="accordion-content">
+                <div class="Grid Grid--gutters Grid--full">
+
+                  <div class="blankHXS"></div>
+                  <div class="Grid Grid--gutters Grid--full">
+                    <div class="blankHXS"></div>
+                    <div class="Grid-cell">
+                      <h4> The improved user experience and increased client satisfaction can translate into higher booking rates and repeat business. Additionally, the seamless payment integration and the ability to offer promotions can lead to increased revenue streams for business owners.
+
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="blankHXS"></div>
+              </div>
+              <h3 class="accordion accordionBorderBottom noMargin withBg">
+                <strong class="centerVer"><img class="iconS paddingXS" src="/worksamples/BYP_LH_wsbeebr/IconTestBw.svg" alt="Insight"> Impact #5 - Competitive Advantage: </strong>
+              </h3>
+              <div class="accordion-content">
+                <div class="Grid Grid--gutters Grid--full">
+
+                  <div class="blankHXS"></div>
+                  <div class="Grid Grid--gutters Grid--full">
+                    <div class="blankHXS"></div>
+                    <div class="Grid-cell">
+                      <h4> By addressing the specific needs of the pet service industry and providing a platform that caters to both business owners and clients, the redesigned app will offer a competitive advantage. It will position the platform as a leader in the market, attracting more users and fostering business growth.
+
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="blankHXS"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="wrapper">
+
+
+
+        <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid-cell">
+            <div class="element">
+              <a href="https://www.figma.com/proto/2MrhSGMpQRH3kDJEzSHnUg/BYP---Business-facing-(2024-Current)?page-id=1906%3A6513&type=design&node-id=1912-6941&viewport=-1549%2C-2194%2C0.15&t=HPeYNIFq6Fpjo3Mm-1&scaling=scale-down&starting-point-node-id=1912%3A6941&show-proto-sidebar=1&mode=design" target="_blank"> <button class="button-35 BYP">Slide Deck</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blankHS"></div>
+
+
+    </div>
+
+
+    <div class="wrapper">
+      <div class="blankHS"></div>
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
+        titleColor:`colorBYPTeal700`,
+        titleFontSize:`h2`,
+        contentTitle:`Reflections and Learnings:`,
+        }) %>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4> Understanding User Needs: </h4>
+            <h4> <strong>One of the most crucial learnings from this project was the importance of deeply understanding the user needs and pain points. Engaging with business owners and conducting thorough research helped us identify critical areas for improvement.</strong></h4>
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h4> Simplifying Complex Processes: </h4>
+            <h4> <strong>We learned that simplifying complex processes, such as service creation and team management, significantly enhances user experience. Making these processes more intuitive led to a higher completion rate and user satisfaction.
+
+            </strong></h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4> Importance of Flexibility:  </h4>
+            <h4> <strong>Flexibility in appointment scheduling and service offerings was highlighted as a key need for business owners. This insight guided us to implement features that allow for easy modifications and customization, catering to the dynamic nature of the pet service industry.</strong></h4>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4> Future Considerations:  </h4>
+            <h4> <strong>Customizable Service Offerings: Enhancing the flexibility for business owners to tailor their services, pricing, and availability to meet the diverse needs of their clientele.</strong></h4>
+            <h4> <strong>Enhanced Communication Channels: Improving communication channels between business owners, their teams, and clients to facilitate smoother operations and better customer service.            </strong></h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blankHS"></div>
+
+  </div>
+
+
+  <!-- Shared across the platform -->
+
+
+
+
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Skills & Experiences' }) %>
+  <%- include(`${templatePath}/shared/comp_tagCloud`) %>
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message:''}) %>
+  <%- include(`${templatePath}/shared/block_modal`) %>
+
+
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- Shared across the platform -->
+
+
+
+</body>
+
+</html>

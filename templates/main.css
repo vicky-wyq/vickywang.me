@@ -823,7 +823,9 @@ body::-webkit-scrollbar-thumb:hover {
 .colorLASObule700 {
     color: var(--LASOblue700);
 }
-
+.colorLASObule500 {
+    color: var(--LASOblue500);
+}
 .colorGLORIFYBlue {
     color: var(--GlorifyBlue);
 }
@@ -1745,7 +1747,7 @@ ul .rightPanel {
 ul {
     list-style-type: none;
     font-family: inherit;
-    font-size: clamp(0.84em, 0.92vw, 1em);
+    font-size: clamp(0.9em, 1.1vw, 1.3em); /* Adjusted to match paragraph font size */
     font-weight: 300;
     list-style-position: outside;
     margin-left: 0;
@@ -1775,7 +1777,7 @@ section .padding {
 
 /* =========== sub nav V1 =========== */
 
-/* =========== special text =========== */
+/* =========== Special Text =========== */
 .colorAPPOINTAYellow::selection {
     background: var(--APPOINTA-yellow);
     color: var(--white);
@@ -1790,27 +1792,21 @@ section .padding {
     font-family: inherit;
     font-weight: 600;
     font-size: clamp(1.6em, 2.8vw, 3.2em);
-    margin: 0;
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+    margin: clamp(0.67em, 0.75em, 1.5em) 0;
 }
 
 .specialTextS {
     font-family: inherit;
     font-weight: 600;
     font-size: clamp(1em, 2vw, 2.2em);
-    margin: 0;
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+    margin: clamp(0.67em, 0.75em, 1.5em) 0;
 }
 
 .specialTextNote {
     font-family: "Indie Flower", sans-serif;
     font-weight: 100;
     font-size: clamp(1.3em, 1.46vw, 1.68em);
-
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+    margin: clamp(0.67em, 0.75em, 1.5em) 0;
 }
 
 .specialTextDemo {
@@ -1819,140 +1815,82 @@ section .padding {
     font-size: clamp(1.3em, 1.46vw, 1.68em);
 }
 
-/* =========== special text =========== */
+/* =========== Font Weights =========== */
+.fontWeight100 { font-weight: 100; }
+.fontWeight300 { font-weight: 300; }
+.fontWeight400 { font-weight: 400; }
+.fontWeight700 { font-weight: 700; }
 
-/* ================== Font ========================*/
-
-.fontWeight100 {
-    font-weight: 100;
-}
-
-.fontWeight300 {
-    font-weight: 300;
-}
-
-.fontWeight400 {
+/* =========== Headings =========== */
+h1, h2 {
     font-weight: 400;
+    line-height: 2em; /* Adjusted for better readability */
+    margin: clamp(0.67em, 0.75em, 1.5em) 0;
 }
 
-.fontWeight700 {
-    font-weight: 700;
-}
-
-h1,
-h2 {
-    font-weight: 400;
-    line-height: 2em;
-
-}
-
-h3,
-h4,
-h5,
-h6 {
+h3, h4, h5, h6 {
     font-weight: 300;
-    line-height: 1.6em;
-
+    line-height: 1.6em; /* Adjusted for consistency */
+    margin: clamp(0.42em, 0.56em, 1.2em) 0;
 }
 
 h1 {
-    font-size: clamp(1.3em, 1.8vw, 2.2em);
-    /* - first one is the minimum allowed font-size.
-       - third one is the maximum allowed font-size.
-       - second argument is font-size that you wish to always have. */
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
-
+    font-size: clamp(1.5em, 2vw, 2.5em); /* Increased for emphasis */
 }
 
 h2 {
-    font-size: clamp(1.2em, 1.46vw, 1.68em);
-    margin-top: clamp(0.67em, 0.75em, 1.5em);
-    margin-bottom: clamp(0.67em, 0.75em, 1.5em);
-
+    font-size: clamp(1.4em, 1.8vw, 2em); /* Adjusted for better hierarchy */
 }
 
 h3 {
-    font-size: clamp(1.04em, 1.26vw, 1.48em);
-    margin-top: clamp(0.42em, 0.56em, 1.2em);
-    margin-bottom: clamp(0.42em, 0.56em, 1.2em);
-
+    font-size: clamp(1.2em, 1.5vw, 1.7em); /* Increased size */
 }
 
 h4 {
-    font-size: clamp(0.92em, 1.12vw, 1.2em);
-    margin-top: clamp(0.36em, 0.4em, 1em);
-    margin-bottom: clamp(0.36em, 0.4em, 1em);
+    font-size: clamp(1em, 1.3vw, 1.5em); /* Adjusted for clarity */
 }
 
 h5 {
-    font-size: clamp(0.84em, 0.92vw, 1em);
-    margin-top: clamp(0.2em, 0.4em, 1em);
-    margin-bottom: clamp(0.2em, 0.4em, 1em);
-
+    font-size: clamp(0.9em, 1.1vw, 1.3em); /* Adjusted for clarity */
 }
 
 h6 {
-    font-size: clamp(0.72em, 0.78vw, 0.86em);
-    margin: 0.26em 0;
-
+    font-size: clamp(0.8em, 1vw, 1.1em); /* Adjusted for clarity */
+    margin: 0.3em 0;
 }
 
-p.light {
-    font-weight: 100;
-}
-
+/* =========== Paragraphs =========== */
 p {
-    /*     font-size: clamp(0.83em, 1.06vw, 1.2em); */
-
-    font-size: clamp(0.8em, 1vw, 1.1em);
-
+    font-size: clamp(0.9em, 1.1vw, 1.3em); /* Slightly increased */
     font-weight: 300;
+    line-height: 1.6em; /* Added for readability */
 }
 
-/* default/normal */
-p.thick {
-    font-weight: 500;
-}
+p.light { font-weight: 100; }
 
+p.thick { font-weight: 500; }
+
+/* =========== Text Styles =========== */
 strong {
-    font-family: "lato", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     color: var(--Grey900);
-    margin: 1em, 0;
+    margin: 1em 0;
 }
 
-.styleCap {
-    text-transform: uppercase;
-}
+.styleCap { text-transform: uppercase; }
+.textItalic { font-style: italic; }
 
-.textItalic {
-    font-style: italic;
-}
-
-a:link.textUnderline {
+a:link.textUnderline,
+.textUnderline {
     text-decoration-line: underline;
     text-decoration-thickness: 0.06em;
     text-underline-offset: 6px;
     text-decoration-color: var(--Grey900);
 }
 
-.textUnderline {
-    text-decoration-line: underline;
-    text-decoration-thickness: 0.03em;
-    text-underline-offset: 6px;
-    text-decoration-color: var(--Grey900);
-}
-
-/* text*/
-
-.allCaps {
-    text-transform: uppercase;
-}
-
-.strikethrough {
-    text-decoration: line-through;
-}
+.allCaps { text-transform: uppercase; }
+.strikethrough { text-decoration: line-through; }
 
 .textDecor {
     text-decoration: underline;
@@ -1960,35 +1898,17 @@ a:link.textUnderline {
     text-decoration-thickness: 2px;
 }
 
-.textDecor.SEER {
-    text-decoration-color: var(--seer-purple);
-}
+.textDecor.SEER { text-decoration-color: var(--seer-purple); }
+.textDecor.GLORIFY { text-decoration-color: var(--GLORIFY-orangeLt); }
+.textDecor.APPOINTA { text-decoration-color: var(--APPOINTA-blueLight); }
+.textDecor.GREEN { text-decoration-color: var(--colorTeal-light); }
+.textDecor.WS { text-decoration-color: var(--BYP-Teal400); }
+.textDecor.LASO { text-decoration-color: var(--LASOblue400); }
 
-.textDecor.GLORIFY {
-    text-decoration-color: var(--GLORIFY-orangeLt);
-}
+.textDecor.Glorify { color: var(--GLORIFY-orange) !important; }
 
-.textDecor.APPOINTA {
-    text-decoration-color: var(--APPOINTA-blueLight);
-}
+/* =========== Font Styles =========== */
 
-.textDecor.GREEN {
-    text-decoration-color: var(--colorTeal-light);
-}
-
-.textDecor.WS {
-    text-decoration-color: var(--BYP-Teal400);
-}
-
-.textDecor.LASO {
-    text-decoration-color: var(--LASOblue400);
-}
-
-.textDecor.Glorify {
-    color: var(--GLORIFY-orange) !important;
-}
-
-/* ================== Font ========================*/
 
 hr {
     border: none;
@@ -3933,7 +3853,7 @@ body .flex-container.Mobile {
 
 .ProjectBannerInnerND {
     position: absolute;
-    top: calc(100% - 146px);
+    top: calc(100% - 186px);
     transform: translate(-50%, -50%);
     left: 50%;
     width: 100%;
