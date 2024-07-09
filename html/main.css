@@ -359,12 +359,15 @@ body .displayPhone {
 }
 
 /*head tool bar scroll end*/
-/* blur hover*/
+/* blur hover
+    padding: 18px 1.6vw;
+
+
+*/
 .box {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 19px 1.6vw;
     border-radius: 0;
     transition: 0.2s all;
 }
@@ -405,6 +408,7 @@ body .displayPhone {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
+    
     text-align: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -447,7 +451,9 @@ body .displayPhone {
     transition: background-color 2s ease-in 100ms;
 }
 
-/* drop down menu*/
+/* drop down menu
+
+    */
 
 a.nav-link {
     font-family: "Lato", sans-serif;
@@ -457,6 +463,9 @@ a.nav-link {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     color: var(--Grey600);
+    padding: 20px 1.6vw;
+
+
 }
 
 a.active.SEER {
@@ -1533,6 +1542,7 @@ section {
     body .section-nav {
         margin-left: cals(100% - 332px);
     }
+
 }
 
 /* ====== for nav 2 ======*/
@@ -2435,6 +2445,9 @@ button.passwordArr {
 }
 
 @media all and (max-width: 1080px) {
+    body a.nav-link {
+
+    }
     body .dropdown-content a:hover {
         display: none;
     }
