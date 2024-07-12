@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Creative UX Designer Focused on Streamlining Workflows - Vicky Wang', 
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Vicky W. | UX Designer', 
   description:'Specializing in crafting seamless user experiences for B2B SaaS and consumer applications, Vicky Wang transforms complexity into user-friendly solutions.', 
   pageURL:'', thumbnailImgURL: 'vickywang_web.png'
   }) %>
@@ -36,11 +36,11 @@
               </strong>
             </div>
           </div>
-          <div class="paddingleft">
+          <div class="paddingL fitContenteft">
             <div class="element">
               <div class="widthFitContent">
                 <div class="dropdownSM">
-                  <img title="Share" class="iconS hoverGrey300 paddingM borderRadiusMax dropbtn" src="/icon/share.svg" alt="Share">
+                  <img title="Share" class="iconS hoverGrey300 paddingM fitContent borderRadiusMax dropbtn" src="/icon/share.svg" alt="Share">
                   <div class="dropdownSM-content">
                     <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
                       on LinkedIn</a>
@@ -58,7 +58,7 @@
       <div class="Grid-cell">
         <div class="ClipboardBoxIconOnly">
           <button class="ClipboardIconOnly">
-            <img title="Copy Email to Clipboard" class="iconM hoverGrey300 paddingMax borderRadiusMax" src="./icon/mail.svg" alt="LinkedIn">
+            <img title="Copy Email to Clipboard" class="iconM hoverGrey300 paddingM fitContentax borderRadiusMax" src="./icon/mail.svg" alt="LinkedIn">
             <p class="clickIconCopy">vickyw.design@gmail.com</p>
           </button>
         </div>
@@ -66,18 +66,18 @@
       </div>
       <div class="Grid-cell">
         <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" title="LinkedIn">
-          <img class="iconM hoverGrey300 paddingMax borderRadiusMax borderRadiusS" src="./icon/in.svg" alt="LinkedIn">
+          <img class="iconM hoverGrey300 paddingM fitContentax borderRadiusMax borderRadiusS" src="./icon/in.svg" alt="LinkedIn">
         </a>
       </div>
 
       <div class="Grid-cell">
         <a href="https://github.com/vicky-wyq" target="_blank" title="GitHub">
-          <img class="iconM hoverGrey300 paddingMax borderRadiusMax" src="./icon/git.svg" alt="GitHub">
+          <img class="iconM hoverGrey300 paddingM fitContentax borderRadiusMax" src="./icon/git.svg" alt="GitHub">
         </a>
       </div>
       <div class="Grid-cell">
         <a href="https://codepen.io/vicky-wyq" target="_blank" title="CodePen">
-          <img class="iconM hoverGrey300 paddingMax borderRadiusMax" src="./icon/Codepen.svg" alt="CodePen">
+          <img class="iconM hoverGrey300 paddingM fitContentax borderRadiusMax" src="./icon/Codepen.svg" alt="CodePen">
         </a>
       </div>
       <div class="Grid-cell">
@@ -118,6 +118,19 @@
     <div class="blankHXS"></div>
 
     <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-2">
+
+        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
+          hoverBorderColor:`BYP`,
+          cardNoPwURL:`${websitePath}/byp_b2c_booking`,
+          cardNoPwImgURL:`${websitePath}/projectImages/Cover_b2c_booking.png`,
+          cardNoPwTitle: `Optimizing Consumer-Facing Pet Service Bookings and Enhancing the Appointment Experience `, 
+          cardNoPwDescription:`In this UX case study, we optimized the consumer-facing booking flow for pet services on the BookYourPet platform. The goal was to streamline the process, automate business operations, and boost sales and customer satisfaction. Key metrics included a 25% increase in add-on sales, a 30% reduction in booking time, and 20% fewer clicks to complete a booking, significantly enhancing the user experience and operational efficiency.
+
+` 
+          }) %>
+
+      </div>
       <div class="Grid Grid--gutters Grid--cols-2">
 
         <%- include(`${templatePath}/shared/block_cardNoPassword`, {
@@ -279,7 +292,7 @@
               </button></a>
             <div class="ClipboardBoxIconOnly">
               <button class="ClipboardIconOnly">
-                <img class="iconM hoverGrey100 paddingMax borderRadiusMax" title="Copy Email Address to Clipboard" src="/icon/copy.svg">
+                <img class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax" title="Copy Email Address to Clipboard" src="/icon/copy.svg">
                 <p class="clickIconCopy">vickyw.design@gmail.com
                 </p>
               </button>
