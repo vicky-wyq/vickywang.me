@@ -4,127 +4,166 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- Manually created sitemap -->
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
   <loc>https://vickywang.me/</loc>
-  <lastmod>2024-06-28T22:36:01+00:00</lastmod>
+  <lastmod>2024-07-13T01:09:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://vickywang.me/resume/</loc>
-  <lastmod>2024-04-08T19:51:06+00:00</lastmod>
+  <lastmod>2024-07-03T05:21:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/refining_rx_zero/</loc>
-  <lastmod>2024-07-03T23:00:00+00:00</lastmod>
+  <lastmod>2024-07-09T19:02:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/savings_calculator/</loc>
-  <lastmod>2024-06-28T23:00:00+00:00</lastmod>
+  <lastmod>2024-07-09T19:02:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://vickywang.me/admin_panel/</loc>
-  <lastmod>2024-07-02T23:00:00+00:00</lastmod>
+  <lastmod>2024-07-09T19:02:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/glorify/</loc>
-  <lastmod>2024-06-25T23:45:34+00:00</lastmod>
+  <lastmod>2024-07-09T03:42:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/seer/</loc>
-  <lastmod>2024-06-25T23:44:03+00:00</lastmod>
+  <lastmod>2024-07-09T19:01:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/appointa/</loc>
-  <lastmod>2024-06-25T23:44:38+00:00</lastmod>
+  <lastmod>2024-07-09T19:26:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/design_system/</loc>
-  <lastmod>2024-06-25T23:45:07+00:00</lastmod>
+  <lastmod>2024-07-03T05:24:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/</loc>
-  <lastmod>2024-06-25T23:41:50+00:00</lastmod>
+  <lastmod>2024-07-09T20:05:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://vickywang.me/photography/</loc>
-  <lastmod>2024-06-25T23:43:31+00:00</lastmod>
+  <lastmod>2024-07-09T19:04:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 <url>
   <loc>https://vickywang.me/resume/resume.pdf</loc>
-  <lastmod>2024-04-08T19:51:06+00:00</lastmod>
+  <lastmod>2024-07-03T05:21:18+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/blog/</loc>
-  <lastmod>2024-03-02T08:24:49+00:00</lastmod>
+  <lastmod>2024-07-02T03:53:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/design_system/navigation/</loc>
-  <lastmod>2024-02-20T02:54:33+00:00</lastmod>
+  <lastmod>2024-07-04T04:16:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://vickywang.me/design_system/navigation/V1/</loc>
-  <lastmod>2024-02-20T02:54:38+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/design_system/navigation/V2/</loc>
-  <lastmod>2024-02-20T02:54:43+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://vickywang.me/design_system/navigation/V3/</loc>
-  <lastmod>2024-02-20T02:54:24+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://vickywang.me/savings_explorer/</loc>
+  <lastmod>2024-07-03T05:21:20+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/recreation_commons/</loc>
-  <lastmod>2024-06-25T23:44:02+00:00</lastmod>
+  <lastmod>2024-07-09T20:05:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/narrow_stripes/</loc>
-  <lastmod>2024-06-25T23:44:31+00:00</lastmod>
+  <lastmod>2024-07-09T20:03:18+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/recovery_of_river_edges/</loc>
-  <lastmod>2024-06-25T23:44:39+00:00</lastmod>
+  <lastmod>2024-07-09T20:03:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/thesis_studio/</loc>
-  <lastmod>2024-06-25T23:43:11+00:00</lastmod>
+  <lastmod>2024-07-09T20:04:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/the_rotation_of_curves/</loc>
-  <lastmod>2024-06-25T23:43:00+00:00</lastmod>
+  <lastmod>2024-07-09T20:02:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/manifold_ground/</loc>
-  <lastmod>2024-06-25T23:45:25+00:00</lastmod>
+  <lastmod>2024-07-09T20:04:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://vickywang.me/architecture/LACAMA/</loc>
-  <lastmod>2024-06-25T23:44:52+00:00</lastmod>
+  <lastmod>2024-07-09T20:05:00+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+
+
+<url>
+  <loc>https://vickywang.me/design_system/navigation/V1/</loc>
+  <lastmod>2024-07-04T04:16:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/design_system/navigation/V2/</loc>
+  <lastmod>2024-07-04T04:16:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/design_system/navigation/V3/</loc>
+  <lastmod>2024-07-04T04:16:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/javascript-learning/</loc>
+  <lastmod>2024-07-08T22:16:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/javascript-learning/project_pig_game/</loc>
+  <lastmod>2024-07-08T22:16:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/javascript-learning/exercise_behind_the_scenes/</loc>
+  <lastmod>2024-07-08T22:16:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/javascript-learning/exercise_data_structure_operators/</loc>
+  <lastmod>2024-07-08T22:16:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/javascript-learning/project_guess_number/</loc>
+  <lastmod>2024-07-08T22:16:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://vickywang.me/javascript-learning/project_modal/</loc>
+  <lastmod>2024-07-08T22:16:15+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 </urlset>
