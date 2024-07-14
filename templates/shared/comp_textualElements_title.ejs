@@ -1,12 +1,15 @@
-  
-   <% if (typeof titleFontSize === 'undefined') { 
+  <% if (typeof titleFontSize === 'undefined') { 
     titleFontSize = ''; 
   } 
   %>
- <% if (typeof titleColor === 'undefined') { 
-    titleColor = ''; 
+  <% if (typeof titleColor === 'undefined') { 
+    titleColor = 'GreyBg900'; 
   } 
   %>
+  <% if (typeof titleFontSize === 'undefined') { 
+      titleFontSize = ''; 
+    } 
+    %>
   <div class="Grid-cell">
     <div class="element">
       <% if (titleFontSize ==='h1' ) { %>
@@ -15,7 +18,7 @@
           <%= contentTitle %>
         </strong>
       </h1>
-      <% } else if (titleFontSize==='h2' ) { %>
+      <% } else if (titleFontSize ==='h2' ) { %>
       <h2>
         <strong class="<%= titleColor %>">
           <%= contentTitle %>
