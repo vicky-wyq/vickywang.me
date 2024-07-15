@@ -18,12 +18,12 @@
     --border-radiusXL: 1.25em;
     --border-radiusMax: 50%;
 
-    --paddingXS: 6px 12px;
-    --paddingS: 12px 18px;
-    --paddingM: 18px 24px;
-    --paddingL: 24px 32px;
-    --paddingXL: 32px 38px;
-    --paddingMax: 38px 44px;
+    --paddingXS: 6px 6px;
+    --paddingS: 12px 12px;
+    --paddingM: 18px 18px;
+    --paddingL: 24px 24px;
+    --paddingXL: 32px 32px;
+    --paddingMax: 38px 38px;
 
     --height100: 100%;
 
@@ -348,7 +348,7 @@ body .displayPhone {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: rgba(255, 252, 252, 0.7);
+    background: rgba(255, 252, 252, 0.8);
     /*     
     background: rgba(250, 249, 248, 0.7);
     background: rgba(255, 255, 255, 0.7);
@@ -473,7 +473,7 @@ a.nav-link {
     font-weight: 400;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    color: var(--Grey600);
+    color: var(--Grey700);
     padding: 20px 1.6vw;
 
 
