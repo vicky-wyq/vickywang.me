@@ -3917,12 +3917,21 @@ body .flex-container.Mobile {
     justify-content: flex-start;
     align-items: center;
 }
+.font-test{
+    font-family: ui-serif, serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 32px;
+    font-style: normal;
+    color: var(--Grey800);
+    }
+
 
 /* Shadows Into Light */
 
 .t-hello {
     font-family: "Gloria Hallelujah", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: clamp(1em, 1.22vw, 1.32em);
     margin: 0;
     color: var(--Grey700);
