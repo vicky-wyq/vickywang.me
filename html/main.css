@@ -1730,7 +1730,7 @@ main>nav {
     border-left: var(--Grey400) 0.08em solid;
     text-decoration: none;
     display: block;
-    padding: 6px 12px;
+    padding: 4px 12px;
     color: var(--Grey700);
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
