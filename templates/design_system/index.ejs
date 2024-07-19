@@ -161,31 +161,27 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
     <nav class="section-nav">
       <ol>
-        <li><a href="#content1" class="titleRightPanel">Design Fundamentals</a>
+        <li><a href="#content1" class="titleRightPanel"><div class="paddingXS">Design Fundamentals</div></a>
           <ul>
             <li class="rightPanel"><a href="#content11"> &#160; Color Guidance</a></li>
-            <li class="rightPanel"><a href="#content12"> &#160; Typography</a></li>
-            <li class="rightPanel"><a href="#content13"> &#160; Wordmark</a></li>
+            <li class="rightPanel"><a href="#content12"> &#160; Typography & Wordmark</a></li>
             <li class="rightPanel"><a href="#content14"> &#160; Elevation</a></li>
-            <li class="rightPanel"><a href="#content15"> &#160; Layout </a></li>
-            <li class="rightPanel"><a href="#content16"> &#160; Responsive Grid</a></li>
+            <li class="rightPanel"><a href="#content15"> &#160; Layout & Responsive Grid</a></li>
           </ul>
         </li>
-        <li><a href="#content2" class="titleRightPanel">Atoms (Bases)</a>
+        <li><a href="#content2" class="titleRightPanel"><div class="paddingXS">Atoms (Bases)</div></a>
           <ul>
             <li class="rightPanel"><a href="#content21"> &#160; Buttons </a></li>
-            <li class="rightPanel"><a href="#content22"> &#160; Icons </a></li>
-            <li class="rightPanel"><a href="#content23"> &#160; Icon Sizes </a></li>
-            <li class="rightPanel"><a href="#content24"> &#160; Link </a></li>
+            <li class="rightPanel"><a href="#content22"> &#160; Icons & Sizes</a></li>
+            <li class="rightPanel"><a href="#content24"> &#160; Link & Input</a></li>
 
-            <li class="rightPanel"><a href="#content25"> &#160; Inputs </a></li>
 
 
           </ul>
 
         </li>
 
-        <li><a href="#content3" class="titleRightPanel">Molecules (Comps) </a>
+        <li><a href="#content3" class="titleRightPanel"><div class="paddingXS">Molecules (Comps)</div> </a>
           <ul>
             <li class="rightPanel"><a href="#content31"> &#160; Textual Elements</a></li>
             <li class="rightPanel"><a href="#content32"> &#160; Clipboard Copy Field </a></li>
@@ -201,7 +197,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
           </ul>
         </li>
-        <li><a href="#content4" class="titleRightPanel">Organisms (Blocks)</a>
+        <li><a href="#content4" class="titleRightPanel"><div class="paddingXS">Organisms (Blocks)</div></a>
           <ul>
             <li class="rightPanel"><a href="#content41"> &#160; Expandable Content</a></li>
             <li class="rightPanel"><a href="#content42"> &#160; Interactive Accordion</a></li>
@@ -492,7 +488,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="teal800"> Typography </strong> </h1>
+                <h1> <strong class="teal800"> Typography & Wordmark</strong> </h1>
               </div>
             </div>
           </div>
@@ -680,52 +676,45 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
 
         </div>
+          <div class="wrapper">
+  
+  
+
+  
+  
+            <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Logo with Text` }) %>
+  
+  
+            <div class="Grid Grid--gutters Grid--cols-2">
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="widthS" src="Wordmark_LogoTxt.svg" alt="Wordmark">
+  
+  
+                </div>
+              </div>
+            </div>
+  
+            <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Web Logo` }) %>
+  
+            <div class="blankHXS"></div>
+  
+            <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+  
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="widthS" src="Wordmark_TxtFav.svg" alt="Wordmark">
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img class="widthS" src="Wordmark_Txt.svg" alt="Wordmark">
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
-      <section id="content13">
-        <div class="wrapper">
 
-
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="teal800"> Wordmark </strong> </h1>
-              </div>
-            </div>
-          </div>
-
-
-          <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Logo with Text` }) %>
-
-
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="widthS" src="Wordmark_LogoTxt.svg" alt="Wordmark">
-
-
-              </div>
-            </div>
-          </div>
-
-          <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Web Logo` }) %>
-
-          <div class="blankHXS"></div>
-
-          <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
-
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="widthS" src="Wordmark_TxtFav.svg" alt="Wordmark">
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="widthS" src="Wordmark_Txt.svg" alt="Wordmark">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="content14">
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
@@ -785,7 +774,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="teal800">Layout</strong> </h1>
+                <h1> <strong class="teal800">Layout & Responsive Grid </strong> </h1>
               </div>
             </div>
           </div>
@@ -1118,19 +1107,8 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           }) %>
 
 
-
-
-
-      </section>
-      <section id="content16">
         <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="teal800">Responsive Grid</strong> </h1>
-              </div>
-            </div>
-          </div>
+
 
 
 
@@ -1282,18 +1260,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include(`${templatePath}/shared/block_copyCode`, {
-            wrapperGrid: true, 
-            copyCodeName:'basicGrid', 
-            copyCodeT1:`basicGridT1`, 
-            copyCodeT2:`basicGridT2`, 
-            copyCodeT3:`basicGridT3`,
-            t1Checked:``,          
-            t2Checked:`checked`,
-            t3Checked:``,
-            EJS: ``,
-            HTML: ejsLiterals.html.style_basicGrid,
-            CSS: ejsLiterals.css.style_basicGrid,
-            }) %>
+      wrapperGrid: true, 
+      copyCodeName:'basicGrid', 
+      copyCodeT1:`basicGridT1`, 
+      copyCodeT2:`basicGridT2`, 
+      copyCodeT3:`basicGridT3`,
+      t1Checked:``,          
+      t2Checked:`checked`,
+      t3Checked:``,
+      EJS: ``,
+      HTML: ejsLiterals.html.style_basicGrid,
+      CSS: ejsLiterals.css.style_basicGrid,
+      }) %>
 
 
 
@@ -1323,18 +1301,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include(`${templatePath}/shared/block_copyCode`, {
-            wrapperGrid: true, 
-            copyCodeName:'contentAlignment', 
-            copyCodeT1:`contentAlignmentT1`, 
-            copyCodeT2:`contentAlignmentT2`, 
-            copyCodeT3:`contentAlignmentT3`,
-            t1Checked:``,          
-            t2Checked:`checked`,
-            t3Checked:``,
-            EJS: ``,
-            HTML: ejsLiterals.html.style_contentAlignment,
-            CSS: ejsLiterals.css.style_contentAlignment,
-            }) %>
+      wrapperGrid: true, 
+      copyCodeName:'contentAlignment', 
+      copyCodeT1:`contentAlignmentT1`, 
+      copyCodeT2:`contentAlignmentT2`, 
+      copyCodeT3:`contentAlignmentT3`,
+      t1Checked:``,          
+      t2Checked:`checked`,
+      t3Checked:``,
+      EJS: ``,
+      HTML: ejsLiterals.html.style_contentAlignment,
+      CSS: ejsLiterals.css.style_contentAlignment,
+      }) %>
 
           <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Vertical Alignment` }) %>
 
@@ -1435,18 +1413,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include(`${templatePath}/shared/block_copyCode`, {
-            wrapperGrid: true, 
-            copyCodeName:'vertAlignment', 
-            copyCodeT1:`vertAlignmentT1`, 
-            copyCodeT2:`vertAlignmentT2`, 
-            copyCodeT3:`vertAlignmentT3`,
-            t1Checked:``,          
-            t2Checked:`checked`,
-            t3Checked:``,
-            EJS: ``,
-            HTML: ejsLiterals.html.style_vertAlignment,
-            CSS: ejsLiterals.css.style_vertAlignment,
-            }) %>
+      wrapperGrid: true, 
+      copyCodeName:'vertAlignment', 
+      copyCodeT1:`vertAlignmentT1`, 
+      copyCodeT2:`vertAlignmentT2`, 
+      copyCodeT3:`vertAlignmentT3`,
+      t1Checked:``,          
+      t2Checked:`checked`,
+      t3Checked:``,
+      EJS: ``,
+      HTML: ejsLiterals.html.style_vertAlignment,
+      CSS: ejsLiterals.css.style_vertAlignment,
+      }) %>
           <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Nesting` }) %>
           <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
             <div class="Grid-cell">
@@ -1479,18 +1457,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include(`${templatePath}/shared/block_copyCode`, {
-            wrapperGrid: true, 
-            copyCodeName:'nesting', 
-            copyCodeT1:`nestingT1`, 
-            copyCodeT2:`nestingT2`, 
-            copyCodeT3:`nestingT3`,
-            t1Checked:``,          
-            t2Checked:`checked`,
-            t3Checked:``,
-            EJS: ``,
-            HTML: ejsLiterals.html.style_nesting,
-            CSS: ejsLiterals.css.style_nesting,
-            }) %>
+      wrapperGrid: true, 
+      copyCodeName:'nesting', 
+      copyCodeT1:`nestingT1`, 
+      copyCodeT2:`nestingT2`, 
+      copyCodeT3:`nestingT3`,
+      t1Checked:``,          
+      t2Checked:`checked`,
+      t3Checked:``,
+      EJS: ``,
+      HTML: ejsLiterals.html.style_nesting,
+      CSS: ejsLiterals.css.style_nesting,
+      }) %>
 
 
           <div class="blankHM"></div>
@@ -1542,18 +1520,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include(`${templatePath}/shared/block_copyCode`, {
-            wrapperGrid: true, 
-            copyCodeName:'sidebarContent', 
-            copyCodeT1:`sidebarContentT1`, 
-            copyCodeT2:`sidebarContentT2`, 
-            copyCodeT3:`sidebarContentT3`,
-            t1Checked:``,          
-            t2Checked:`checked`,
-            t3Checked:``,
-            EJS: ``,
-            HTML: ejsLiterals.html.style_sidebarContent,
-            CSS: ejsLiterals.css.style_sidebarContent,
-            }) %>
+      wrapperGrid: true, 
+      copyCodeName:'sidebarContent', 
+      copyCodeT1:`sidebarContentT1`, 
+      copyCodeT2:`sidebarContentT2`, 
+      copyCodeT3:`sidebarContentT3`,
+      t1Checked:``,          
+      t2Checked:`checked`,
+      t3Checked:``,
+      EJS: ``,
+      HTML: ejsLiterals.html.style_sidebarContent,
+      CSS: ejsLiterals.css.style_sidebarContent,
+      }) %>
 
           <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Fixed-width Container on the Right Side` }) %>
 
@@ -1573,21 +1551,24 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
           <%- include(`${templatePath}/shared/block_copyCode`, {
-            wrapperGrid: true, 
-            copyCodeName:'sidebarRight', 
-            copyCodeT1:`sidebarRightT1`, 
-            copyCodeT2:`sidebarRightT2`, 
-            copyCodeT3:`sidebarRightT3`,
-            t1Checked:``,          
-            t2Checked:`checked`,
-            t3Checked:``,
-            EJS: ``,
-            HTML: ejsLiterals.html.style_sidebarRight,
-            CSS: ejsLiterals.css.style_sidebarRight,
-            }) %>
+      wrapperGrid: true, 
+      copyCodeName:'sidebarRight', 
+      copyCodeT1:`sidebarRightT1`, 
+      copyCodeT2:`sidebarRightT2`, 
+      copyCodeT3:`sidebarRightT3`,
+      t1Checked:``,          
+      t2Checked:`checked`,
+      t3Checked:``,
+      EJS: ``,
+      HTML: ejsLiterals.html.style_sidebarRight,
+      CSS: ejsLiterals.css.style_sidebarRight,
+      }) %>
         </div>
 
+
+
       </section>
+
     </section>
     <section id="content2">
       <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'center', title: `Atoms (Basic Elements)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
@@ -2163,118 +2144,126 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
         </div>
 
         <div class="blankHM"></div>
+          <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_iconsSizes`, textColor:'teal800', iconUrl:''}) %>
+  
+          <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Icons Sizes' }) %>
+  
+          <div class="blankHXS"></div>
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--cols-8 u-textCenter Grid--center">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="ClipboardBoxIconOnly">
+                    <button class="ClipboardIconOnly">
+                      <img class="iconXS hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+  
+                  <div class="ClipboardBoxIconOnly">
+                    <button class="ClipboardIconOnly">
+                      <img class="iconS hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                    </button>
+                  </div>
+  
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="ClipboardBoxIconOnly">
+                    <button class="ClipboardIconOnly">
+                      <img class="iconM hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="ClipboardBoxIconOnly">
+                    <button class="ClipboardIconOnly">
+                      <img class="iconL hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="ClipboardBoxIconOnly">
+                    <button class="ClipboardIconOnly">
+                      <img class="iconXL hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="ClipboardBoxIconOnly">
+                    <button class="ClipboardIconOnly">
+                      <img class="iconMax hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
+                      <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element displayNone">
+  
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element displayNone">
+  
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element displayNone">
+  
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element displayNone">
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: true, 
+            copyCodeName:'iconSizes', 
+            copyCodeT1:`iconSizesT1`, 
+            copyCodeT2:`iconSizesT2`, 
+            copyCodeT3:`iconSizesT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ejsLiterals.ejs.base_iconSizes,
+            HTML: ejsLiterals.html.base_iconSizes,
+            CSS: ejsLiterals.css.base_iconSizes,
+          }) %>
+  
+  
       </section>
-      <section id="content23">
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_iconsSizes`, textColor:'teal800', iconUrl:''}) %>
 
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Icons Sizes' }) %>
-
-        <div class="blankHXS"></div>
+      <section id="content24">
         <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-8 u-textCenter Grid--center">
+          <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <div class="ClipboardBoxIconOnly">
-                  <button class="ClipboardIconOnly">
-                    <img class="iconXS hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                    <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                  </button>
-                </div>
+                <h1> <strong class="teal800">Link & Input </strong> </h1>
               </div>
             </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <div class="ClipboardBoxIconOnly">
-                  <button class="ClipboardIconOnly">
-                    <img class="iconS hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                    <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                  </button>
-                </div>
-
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBoxIconOnly">
-                  <button class="ClipboardIconOnly">
-                    <img class="iconM hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                    <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBoxIconOnly">
-                  <button class="ClipboardIconOnly">
-                    <img class="iconL hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                    <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBoxIconOnly">
-                  <button class="ClipboardIconOnly">
-                    <img class="iconXL hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                    <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ClipboardBoxIconOnly">
-                  <button class="ClipboardIconOnly">
-                    <img class="iconMax hoverGrey100 paddingXL fitContent borderRadiusMax" title="Copy to Clipboard" src="../icon/mail.svg" alt="LinkedIn">
-                    <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element displayNone">
-
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element displayNone">
-
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element displayNone">
-
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element displayNone">
-
-              </div>
-            </div>
-
           </div>
         </div>
-        <%- include(`${templatePath}/shared/block_copyCode`, {
-          wrapperGrid: true, 
-          copyCodeName:'iconSizes', 
-          copyCodeT1:`iconSizesT1`, 
-          copyCodeT2:`iconSizesT2`, 
-          copyCodeT3:`iconSizesT3`,
-          t1Checked:``,          
-          t2Checked:`checked`,
-          t3Checked:``,
-          EJS: ejsLiterals.ejs.base_iconSizes,
-          HTML: ejsLiterals.html.base_iconSizes,
-          CSS: ejsLiterals.css.base_iconSizes,
-        }) %>
-
-
-      </section>
-      <section id="content24">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Links' }) %>
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Link' }) %>
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <%- include(`${templatePath}/shared/base_link`, {
@@ -2296,49 +2285,48 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           HTML: ejsLiterals.html.base_link,
           CSS: ejsLiterals.css.base_link,
         }) %>
-      </section>
-      <section id="content25">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Inputs' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_inputs`, textColor:'teal800', iconUrl:''}) %>
-        <div class="blankHXS"></div>
-        <div class="wrapper">
-          <div class="img__wrap widthS heightS element">
-            <div class="img__descriptionDesignSystem">
-              <div class="input-field">
-                <div class="column">
-                  <label for="password">
-                    <h5>Password</h5>
-                  </label>
-                  <div class="pwContainer">
-                    <input class="PWinput" type="password" id="password" placeholder="Enter password">
-                    <button class="passwordArr" type="submit">
-                      <img src="../icon/arrow-forward.svg" alt="Enter">
-                    </button>
-                  </div>
-                  <div class="pwIncorrectHeight">
-                    <span id="pwIncorrect">Password is incorrect </span>
+                <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Inputs' }) %>
+                <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_inputs`, textColor:'teal800', iconUrl:''}) %>
+                <div class="blankHXS"></div>
+                <div class="wrapper">
+                  <div class="img__wrap widthS heightS element">
+                    <div class="img__descriptionDesignSystem">
+                      <div class="input-field">
+                        <div class="column">
+                          <label for="password">
+                            <h5>Password</h5>
+                          </label>
+                          <div class="pwContainer">
+                            <input class="PWinput" type="password" id="password" placeholder="Enter password">
+                            <button class="passwordArr" type="submit">
+                              <img src="../icon/arrow-forward.svg" alt="Enter">
+                            </button>
+                          </div>
+                          <div class="pwIncorrectHeight">
+                            <span id="pwIncorrect">Password is incorrect </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <%- include(`${templatePath}/shared/block_copyCode`, {
-          wrapperGrid: true, 
-          copyCodeName:'baseInput', 
-          copyCodeT1:`baseInputT1`, 
-          copyCodeT2:`baseInputT2`, 
-          copyCodeT3:`baseInputT3`,
-          t1Checked:``,          
-          t2Checked:`checked`,
-          t3Checked:``,
-          EJS: ejsLiterals.ejs.base_input,
-          HTML: ejsLiterals.html.base_input,
-          CSS: ejsLiterals.css.base_input,
-        }) %>
+        
+        
+                <%- include(`${templatePath}/shared/block_copyCode`, {
+                  wrapperGrid: true, 
+                  copyCodeName:'baseInput', 
+                  copyCodeT1:`baseInputT1`, 
+                  copyCodeT2:`baseInputT2`, 
+                  copyCodeT3:`baseInputT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.base_input,
+                  HTML: ejsLiterals.html.base_input,
+                  CSS: ejsLiterals.css.base_input,
+                }) %>
       </section>
+
     </section>
 
     <section id="content3">
