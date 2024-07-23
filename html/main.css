@@ -2405,41 +2405,33 @@ button.passwordArr {
     }
 }
 
-.arrButton:after {
+.arrDown:after {
     content: "";
-    background-image: url("icon/button-arrow-right.svg");
+    background-image: url("icon/24_arrow-down.svg");
     height: 1.2em;
     width: 1.2em;
     float: right;
     margin-left: 4px;
 }
 
-.arrButtonResume:after {
+.arrUpRight:after {
     content: "";
-    background-image: url("icon/button-link.svg");
+    background-image: url("icon/24_arrow-up_right.svg");
     height: 1.2em;
     width: 1.2em;
     float: right;
     margin-left: 4px;
 }
 
-.arrButtonUpRight:after {
+
+.iconEmail:after {
     content: "";
-    background-image: url("icon/arrow-upRight.svg");
+    background-image: url("icon/24_email.svg");
     height: 1.2em;
     width: 1.2em;
     float: right;
     margin-left: 4px;
     top: 0;
-}
-
-.arrButtonSmall:after {
-    content: "";
-    background-image: url("icon/button-arrow-rightS.svg");
-    height: 0.8em;
-    width: 0.8em;
-    float: right;
-    margin-left: 6px;
 }
 
 .arrCard:after {
