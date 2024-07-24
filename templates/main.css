@@ -4146,7 +4146,7 @@ body .flex-container.Mobile {
 /* alignment */
 
 .tArrow {
-    font-size: clamp(1.4em, 2vw, 2em);
+    font-size: clamp(2.4em, 3.2vw, 3.6em);
     font-weight: 100;
     margin: 0px;
     /* text-transform: capitalize; */

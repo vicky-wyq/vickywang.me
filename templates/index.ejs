@@ -12,6 +12,7 @@
   <%- include(`${templatePath}/shared/block_nav_header2024`, {sectionURL1:'#projects', sectionURL2:'#experiments', sectionURL3:'#design_system', sectionURL4:'#about' }) %>
 
   <div class="blankHM"></div>
+  <div class="blankHS"></div>
 
   <div class="wrapper">
     <div class="Grid Grid--full Grid--gutters">
@@ -116,7 +117,10 @@
   <!-- Content -->
   <section id="projects">
     <!-- Arrow -->
-    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Projects' }) %>
+    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {
+      message: 'Projects' ,
+      spacing:''
+      }) %>
     <!-- Arrow -->
     <div class="blankHXS"></div>
 
@@ -298,9 +302,13 @@
           </div>
 
           <div class="row centerVer">
-
-            <a href="mailto:vickyw.design@gmail.com"> <button class="buttonLanding">Email me &nbsp;
+            <div class="element">
+              <a href="mailto:vickyw.design@gmail.com"> <button class="buttonFlipLarge">Email me
               </button></a>
+            </div>
+
+
+            <div class="element">
 
             <div class="ClipboardBoxIconOnly">
               <button class="ClipboardIconOnly">
@@ -310,7 +318,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </div></div>
 
       </div>
 
