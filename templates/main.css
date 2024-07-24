@@ -63,6 +63,8 @@
     --GreyHTMLBg: #fefdfc;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
+    --VW--Yellow: #FFB400;
+    --VW--Grey2024:#F8F7F4;
     /* ======================== */
 
     --LASOblueMobile: #4396d8;
@@ -196,7 +198,7 @@ a:link {
 }
 
 a:hover {
-    color: var(--teal800) !important;
+    color: #FFB400 !important;
 }
 
 .BYP a:hover {
@@ -796,13 +798,8 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--white);
     margin: 0 auto;
 }
-
 .colorBgVW {
-    background-color: #F8F7F4;
-
-    /* =====     background-color: var(--teal200);
- ===== */
-
+    background-color: var(--VW--Grey2024);
     margin: 0 auto;
 }
 .pattern1 {
@@ -974,7 +971,7 @@ polygon {
 
 .colorVW {
     
-    color: #FFB400;
+    color: var(--VW--Yellow);
 }
 
 .imgBorder {
@@ -2676,10 +2673,7 @@ button.passwordArr {
         width: 2em;
     }
 
-    .header {
-        background: rgba(255, 255, 255, 1);
 
-    }
 
     .active .bar:nth-child(2) {
         opacity: 0;
@@ -5672,8 +5666,8 @@ a:hover .left-arrow.LASO {
 }
 
 a:hover .left-arrow {
-    border-top: 2px solid var(--teal800);
-    border-left: 2px solid var(--teal800);
+    border-top: 2px solid #FFB400;
+    border-left: 2px solid  #FFB400;
 }
 
 a:hover .backText {
