@@ -350,13 +350,10 @@ body .displayPhone {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: rgba(255, 252, 252, 0.9);
+    background:var(--VW--Grey2024);
     /*     
+    background: rgba(255, 252, 252, 0.9);
 
-
-    background: rgba(250, 249, 248, 0.7);
-
-    background: rgba(255, 255, 255, 0.7);
     */
     height: 64px;
     transition: transform 0.25s ease-in-out;
@@ -4392,13 +4389,28 @@ body .flex-container.Mobile {
 /* ======== spacing ========= */
 
 /* ===== hover effect ====== */
+.hoverWhite {
+    background-color: var(--VW--Grey2024);
+    border: 0.06em solid var(--VW--Grey2024);
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+.hoverWhite:hover {
+    background-color: var(--white);
+    border: 0.06em solid var(--Grey400);
+}
+
+
 .hoverGrey100 {
     background-color: none;
     border: 0.06em solid var(--white);
     transition: background-color 0.3s, border-color 0.3s;
     /* Smooth transition for hover effect */
 }
-
+.hoverGrey100:hover {
+    background-color: var(--Grey100);
+    border: 0.06em solid var(--Grey300);
+}
 .hoverGrey100:hover {
     background-color: var(--Grey100);
     border: 0.06em solid var(--Grey300);
@@ -4438,7 +4450,7 @@ body .flex-container.Mobile {
 }
 
 .footerBg {
-    background-color: var(--GreyFooter);
+    background-color: var(--VW--Grey2024);
 }
 
 /* ===== hover effect ====== */
