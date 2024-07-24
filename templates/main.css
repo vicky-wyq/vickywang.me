@@ -350,7 +350,10 @@ body .displayPhone {
     margin: 0 auto;
     background: rgba(255, 252, 252, 0.9);
     /*     
+
+
     background: rgba(250, 249, 248, 0.7);
+
     background: rgba(255, 255, 255, 0.7);
     */
     height: 64px;
@@ -795,9 +798,23 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .colorBgVW {
-    background-color: var(--teal200);
+    background-color: #F8F7F4;
+
+    /* =====     background-color: var(--teal200);
+ ===== */
+
     margin: 0 auto;
 }
+.pattern1 {
+    background-image: repeating-linear-gradient(-45deg, rgba(204, 204, 204, 0.25), rgba(194, 194, 194, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 8px 8px;
+}
+.pattern2 {
+    background-image: repeating-linear-gradient(-45deg, rgba(187, 187, 187, 0.25), rgba(227, 227, 227, 0.25) 2px, transparent 2px, transparent 12px);
+    background-size: 8px 8px;
+}
+
+
 
 .colorBgBYP {
     background-color: var(--BYP-Teal-bg);
@@ -956,7 +973,8 @@ polygon {
 }
 
 .colorVW {
-    color: var(--teal600);
+    
+    color: #FFB400;
 }
 
 .imgBorder {
@@ -2660,7 +2678,7 @@ button.passwordArr {
 
     .header {
         background: rgba(255, 255, 255, 1);
-        /*  10% opaque green */
+
     }
 
     .active .bar:nth-child(2) {
