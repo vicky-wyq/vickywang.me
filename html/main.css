@@ -63,7 +63,8 @@
     --GreyHTMLBg: #fefdfc;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
-    --VW--Yellow: #FFB400;
+    --VW--Yellow: #FFB400; 
+    --VW--Yellow-Light: #F9DB87;
     --VW--Grey2024:#F8F7F4;
     /* ======================== */
 
@@ -1840,6 +1841,17 @@ section .padding {
     background: var(--APPOINTA-blueLight);
     color: var(--white);
 }
+.txt-type {
+    color: #FFB400; /* Add your desired color here */
+    transition: opacity 0.5s ease-in-out;
+}
+.specialTextTitle {
+    font-family: inherit;
+    line-height:140%;
+    font-weight: 600;
+    font-size: clamp(3.4em, 6.2vw, 5.2em);
+    margin:0;
+}
 
 .specialTextL {
     font-family: inherit;
@@ -2755,6 +2767,9 @@ button.passwordArr {
 
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
+    body .heighMobileTitle {
+        height: 24em;
+    }
     body .carouselLogoBlur {
         .logos {
             background: url(/about/marquee_small.svg) 0 50% / 1134px 150px repeat-x;
@@ -5008,14 +5023,36 @@ button.Clipboard.clickTxt:active {
     color: var(--white);
     box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
 }
+.buttonFlipLarge {
+    -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
 
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 120px;
+    padding: 16px 28px;
+    color: var(--Grey900);
+    box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: var(--VW--Grey2024);
+}
+
+.buttonFlipLarge:hover {
+    color: var(--white);
+    box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
+}
 /* ====== buttonResume ====== */
 
 .buttonLanding {
     border-radius: 0.6em;
     align-self: center;
     border: none;
-    background-color: var(--white);
+    background-color: var(--VW--Grey2024);
     background-image: none;
     background-position: 0 90%;
     background-repeat: repeat no-repeat;
