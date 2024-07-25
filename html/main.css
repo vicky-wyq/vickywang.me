@@ -1849,7 +1849,7 @@ section .padding {
     font-family: inherit;
     line-height:140%;
     font-weight: 600;
-    font-size: clamp(3.4em, 6.2vw, 5.2em);
+    font-size: clamp(2.2em, 3.2vw, 4.2em);
     margin:0;
 }
 
@@ -4022,17 +4022,27 @@ body .flex-container.Mobile {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 6px;
+    bottom: 18px;
     z-index: 98;
-    font-size: 22px;
-    font-weight: 100;
+    font-size: 28px;
+    font-weight: 300;
     font-family: inherit;
     border: none;
     outline: none;
     background-color: Transparent;
     cursor: pointer;
     border-radius: 50px;
-    opacity: 0.9;
+
+    color: #000000; /* Base font color */
+
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff; /* Outline effect */
+}
+#bro{
+    height: fit-content;
 }
 
 #dad:hover #bro {
