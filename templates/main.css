@@ -344,18 +344,33 @@ body .displayPhone {
     flex-direction: row;
     justify-content: space-between;
 }
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1160px;
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    align-items: center;
+    transition: ease 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bgVWGrey{
+    background:var(--VW--Grey2024);
 
+}
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    background:var(--VW--Grey2024);
-    /*     
-    background: rgba(255, 252, 252, 0.9);
 
-    */
     height: 64px;
     transition: transform 0.25s ease-in-out;
     border-bottom: 1px solid var(--Grey200);
@@ -479,7 +494,11 @@ a.nav-link {
     color: var(--Grey700);
     padding: 20px 1.6vw;
 
-
+    text-shadow:
+        -1px -1px 0 var(--VW--Grey2024),
+         1px -1px 0 var(--VW--Grey2024),
+        -1px  1px 0 var(--VW--Grey2024),
+         1px  1px 0 var(--VW--Grey2024);
 }
 
 a.active.SEER {
@@ -1832,6 +1851,11 @@ section .padding {
 /* =========== sub nav V1 =========== */
 
 /* =========== Special Text =========== */
+::selection {
+    background: var(--VW--Yellow);
+    color: var(--white);
+}
+
 .colorAPPOINTAYellow::selection {
     background: var(--APPOINTA-yellow);
     color: var(--white);
@@ -1849,7 +1873,7 @@ section .padding {
     font-family: inherit;
     line-height:140%;
     font-weight: 600;
-    font-size: clamp(2.2em, 3.2vw, 4.2em);
+    font-size: clamp(2.2em, 4.8vw, 5.2em);
     margin:0;
 }
 
@@ -2703,7 +2727,6 @@ button.passwordArr {
     /*  1 - 1080 */
 
     .nav-menu {
-        background-color: var(--white);
         width: 100%;
         height: 100vh;
         overflow-y: auto;
@@ -2728,7 +2751,7 @@ button.passwordArr {
     }
 
     .nav-item {
-        background-color: var(--white);
+        background-color: none;
     }
 
     body .box {
@@ -4156,7 +4179,7 @@ body .flex-container.Mobile {
 /* alignment */
 
 .tArrow {
-    font-size: clamp(2.4em, 3.2vw, 3.6em);
+    font-size: clamp(2.2em, 3.6vw, 3.2em);
     font-weight: 100;
     margin: 0px;
     /* text-transform: capitalize; */
@@ -5676,6 +5699,11 @@ pre code {
 .backText {
     font-size: 16px;
     font-weight: 400;
+    text-shadow:
+    -1px -1px 0 var(--VW--Grey2024),
+     1px -1px 0 var(--VW--Grey2024),
+    -1px  1px 0 var(--VW--Grey2024),
+     1px  1px 0 var(--VW--Grey2024);
 }
 
 /* =================== left arrow  ===================*/

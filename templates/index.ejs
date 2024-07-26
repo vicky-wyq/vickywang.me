@@ -9,7 +9,15 @@
 
 <body>
   <%- include(`${templatePath}/shared/compProgressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header2024`, {sectionURL1:'#projects', sectionURL2:'#experiments', sectionURL3:'#design_system', sectionURL4:'#about' }) %>
+  <%- include(`${templatePath}/shared/block_nav_header_main`, {
+    sectionURL1:'#projects', 
+    sectionURL2:'#experiments', 
+    sectionURL3:'#design_system', 
+    sectionURL4:'#about',
+
+    headerBackgroundColor:'bgVWGrey',
+    hamburgerMenuBgColor:'colorBgVW'
+    }) %>
 
   <div class="blankHM"></div>
   <div class="blankHXS"></div>
@@ -31,7 +39,7 @@
         <div class="row">
           <div class="widthMax">
             <div class="element">
-              <h1 class="specialTextTitle"> I'm a <span class="txt-type widthXXS" data-wait="3000" data-words='["UX Designer", "Product Designer", "Brand Designer"]'></span>
+              <h1 class="specialTextTitle"> I'm a <span class="txt-type widthXXS" data-wait="3000" data-words='["UX Designer", "Product Designer", "Web Designer"]'></span>
               </h1>
               <h1 class="specialTextTitle"> Passionate about creating simple, smooth, engaging experiences.
 
@@ -284,7 +292,7 @@
     <div class="blankHXS"></div>
 
     <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--1of3 Grid--center">
+      <div class="Grid Grid--gutters Grid--1of3 Grid--top">
 
 
         <div class="Grid-cell">

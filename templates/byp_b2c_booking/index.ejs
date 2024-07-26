@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="colorBgBYPOrange100 pattern2">
 <!--Head-->
 <%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Optimizing Pet Service Bookings by Vicky Wang`,
   description:'Enhancing the Consumer Booking Experience', pageURL:'byp_b2c_booking/',
@@ -8,15 +8,24 @@
 
 <body>
   <%- include( `${templatePath}/shared/compProgressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, { type:'backText', currentPage: 'PROJECT' ,
-        PageUrl:`${websitePath}/` }) %>
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
+        PageUrl:`${websitePath}/`,
+        headerBackgroundColor:`colorBgBYPOrange100`,
+        leftArrowColor:``,
 
-  <%- include(`${templatePath}/shared/block_banner`, { bannerTitle:`Optimizing Pet Service Bookings`,
-          bannerSubTitle:`Enhancing the Consumer Booking Experience`,
-          bannerLogoUrl:`${websitePath}/byp_b2c_booking/logo_BYP.svg`,
-          SlideDeckUrl:`https://www.figma.com/proto/apacUjNvkG8t767EbkrxyG/Grooming---Consumer-facing?page-id=403%3A6906&node-id=403-6907&recovery=true&viewport=1341%2C1627%2C0.04&t=WKx1QQyW1B6dGhjQ-1&scaling=contain&content-scaling=fixed&starting-point-node-id=403%3A6907`,
-          bannerBgColor:``, bannerMockupL:`MockupL.png`, bannerMockupM:`MockupM.png`, bannerMockupS:`MockupS.png`,
-          bannerButtonColor:`BYP` }) %>
+        hamburgerMenuBgColor:`colorBgBYPOrange100`,
+        sectionURL1:'/#projects', 
+        sectionURL2:'/#experiments', 
+        sectionURL3:'/#design_system', 
+        sectionURL4:'/#about',
+        }) %>
+
+  <%- include(`${templatePath}/shared/block_banner`, { bannerTitle:`Optimizing    Pet Service Bookings`,
+        bannerSubTitle:`Enhancing the Consumer Booking Experience`,
+        bannerLogoUrl:`${websitePath}/byp_b2c_booking/logo_BYP.svg`,
+        SlideDeckUrl:`https://www.figma.com/proto/apacUjNvkG8t767EbkrxyG/Grooming---Consumer-facing?page-id=403%3A6906&node-id=403-6907&recovery=true&viewport=1341%2C1627%2C0.04&t=WKx1QQyW1B6dGhjQ-1&scaling=contain&content-scaling=fixed&starting-point-node-id=403%3A6907`,
+        bannerBgColor:``, bannerMockupL:`MockupL.png`, bannerMockupM:`MockupM.png`, bannerMockupS:`MockupS.png`,
+        bannerButtonColor:`BYP` }) %>
 
   <!-- timeline -->
   <div class="wrapper">
@@ -611,7 +620,7 @@
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
           <div class="element">
-            <h3> <strong class="Grey800">Design and Test Version 1:            </strong></h3>
+            <h3> <strong class="Grey800">Design and Test Version 1: </strong></h3>
 
             <ul>
               <li class="listCircle">
@@ -630,7 +639,7 @@
           <div class="element">
             <h3> <strong class="Grey800">Design and Test Version 2:
 
-            </strong></h3>
+              </strong></h3>
 
             <ul>
               <li class="listCircle">
@@ -646,7 +655,7 @@
           <div class="element">
             <h3> <strong class="Grey800">Design and Test Version 3:
 
-            </strong></h3>
+              </strong></h3>
 
             <ul>
               <li class="listCircle">
