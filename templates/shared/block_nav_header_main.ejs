@@ -1,0 +1,35 @@
+<% 
+if (typeof headerBackgroundColor === 'undefined') { 
+  headerBackgroundColor = ''; 
+} 
+
+%>
+
+<header>
+  <nav class="header <%= headerBackgroundColor %>" id="header">
+    <div class="headerContainer">
+      <a href="/"><img class="logo pointer" src="/icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
+      <div class="navbar">
+        <ol class="nav-menu <%= hamburgerMenuBgColor %>">
+          <li class="nav-item active activeNav box">
+            <a href="<%- sectionURL1 %>" class="nav-link">PROJECTS</a>
+          </li>
+          <li class="nav-item active activeNav box">
+            <a href="<%- sectionURL2 %>" class="nav-link ">EXPERIMENTS</a>
+          </li>
+          <li class="nav-item active activeNav box">
+            <a href="<%- sectionURL3 %>" class="nav-link ">DESIGN SYSTEM</a>
+          </li>
+          <li class="nav-item active activeNav box">
+            <a href="<%- sectionURL4 %>" class="nav-link ">ABOUT</a>
+          </li>
+        </ol>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+</header>
