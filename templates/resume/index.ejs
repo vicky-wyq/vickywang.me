@@ -10,9 +10,15 @@
 <body>
   <%- include( `${templatePath}/shared/compProgressBar`) %>
 
-  <%- include(`${templatePath}/shared/block_nav_header`, { 
-    type:'backText', 
-    PageUrl:'/' }) %>
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
+    PageUrl:`${websitePath}/`,
+    leftArrowColor:``,
+    headerBackgroundColor:`colorBgVW`,
+    sectionURL1:'/#projects', 
+    sectionURL2:'/#experiments', 
+    sectionURL3:'/#design_system', 
+    sectionURL4:'/#about',
+    }) %>
 
   <div class="wrapper">
     <div class="blankHS"></div>
