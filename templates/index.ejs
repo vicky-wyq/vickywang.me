@@ -14,8 +14,7 @@
     sectionURL2:'#experiments', 
     sectionURL3:'#design_system', 
     sectionURL4:'#about',
-
-    headerBackgroundColor:'bgVWGrey',
+    arrTxtColor:'',
     headerBackgroundColor:'colorBgVW'
     }) %>
 
@@ -26,7 +25,7 @@
     <div class="Grid Grid--full Grid--gutters">
       <div class="Grid-cell">
         <div class="element">
-          <p class="t-hello">👋🏻 hello, my name is Vicky, </p>
+          <p class="t-hello">👋🏻 hello, I'm Vicky, a UX Designer</p>
 
         </div>
       </div>
@@ -39,9 +38,10 @@
         <div class="row">
           <div class="widthMax">
             <div class="element">
-              <h1 class="specialTextTitle"> I'm a <span class="txt-type widthXXS" data-wait="3000" data-words='["UX Designer", "Product Designer", "Web Designer"]'></span>
-              </h1>
-              <h1 class="specialTextTitle"> Passionate about creating simple, smooth, engaging experiences.
+
+
+
+              <h1 class="specialTextTitle">  Passionate about creating <span class="">simple, smooth, engaging</span> experiences.
 
               </h1>
             </div>
@@ -314,8 +314,9 @@
 
           <div class="row centerVer">
             <div class="element">
-              <a href="mailto:vickyw.design@gmail.com"> <button class="buttonFlipLarge">Email me
+              <a href="mailto:vickyw.design@gmail.com"> <button class="buttonFlipLarge bgVWGrey">Email me
                 </button></a>
+
             </div>
 
 
@@ -445,7 +446,11 @@
 
   <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
   <%- include(`${templatePath}/shared/comp_backTop`) %>
-  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`, { 
+    iconHoverColor: 'hoverWhite',
+    footerBackgroundColor:'colorBgVW'
+  }) %>
+
   <!-- The Modal -->
   <div id="modal" class="modal">
     <span id="modal-close" class="modal-close">

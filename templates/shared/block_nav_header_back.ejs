@@ -8,8 +8,8 @@ if (typeof headerBackgroundColor === 'undefined') {
   headerBackgroundColor = ''; 
 } 
 
-if (typeof leftArrowColor === 'undefined') { 
-  leftArrowColor = ''; 
+if (typeof arrTxtColor === 'undefined') { 
+  arrTxtColor = ''; 
 } 
 %>
 
@@ -18,25 +18,13 @@ if (typeof leftArrowColor === 'undefined') {
     <div class="headerContainer">
       <a href="<%- PageUrl %>" class="marginS centerVer pointer Grid--center">
         <div class="arrow-container moveBackArrow">
-          <div class="left-arrow <%= leftArrowColor %>"></div>
-        </div>
-        <h4 class="backText">BACK</h4>
+          <div class="left-arrow <%= arrTxtColor %>"></div>
+       </div>
+       <h4 class="backText <%= arrTxtColor %>">Back</h4>
       </a>
       <div class="navbar">
-        <ol class="nav-menu <%= headerBackgroundColor %>">
-          <li class="nav-item  activeNav box">
-            <a href="<%- sectionURL1 %>" class="nav-link">PROJECTS</a>
-          </li>
-          <li class="nav-item  activeNav box">
-            <a href="<%- sectionURL2 %>" class="nav-link ">EXPERIMENTS</a>
-          </li>
-          <li class="nav-item  activeNav box">
-            <a href="<%- sectionURL3 %>" class="nav-link ">DESIGN SYSTEM</a>
-          </li>
-          <li class="nav-item  activeNav box">
-            <a href="<%- sectionURL4 %>" class="nav-link ">ABOUT</a>
-          </li>
-        </ol>
+        <a href="/"><img class="pointer widthXXS marginS" src="<%= websitePath %>/icon/LOGOtxtOnly.svg" alt="VW" title="vickywang.me"></a>
+
       </div>
       <div class="hamburger">
         <span class="bar"></span>

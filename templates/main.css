@@ -1851,17 +1851,26 @@ section .padding {
 /* =========== sub nav V1 =========== */
 
 /* =========== Special Text =========== */
+
+
+
+
+
 ::selection {
     background: var(--VW--Yellow);
     color: var(--white);
 }
+.LASO ::selection {
+    background: var(--LASOblue700);
+    color: var(--white);
+}
 
-.colorAPPOINTAYellow::selection {
+.colorAPPOINTAYellow ::selection {
     background: var(--APPOINTA-yellow);
     color: var(--white);
 }
 
-.colorAPPOINTALt::selection {
+.colorAPPOINTALt ::selection {
     background: var(--APPOINTA-blueLight);
     color: var(--white);
 }
@@ -3584,7 +3593,7 @@ body .flex-container.Mobile {
 }
 
 .progress-bar.LASO {
-    background-color: var(--LASOblue500);
+    background-color: var(--LASOblue700);
     height: 3px;
     width: 0%;
 }
@@ -4437,6 +4446,8 @@ body .flex-container.Mobile {
 /* ======== spacing ========= */
 
 /* ===== hover effect ====== */
+
+
 .hoverWhite {
     background-color: var(--VW--Grey2024);
     border: 0.06em solid var(--VW--Grey2024);
@@ -4500,7 +4511,9 @@ body .flex-container.Mobile {
 .footerBg {
     background-color: var(--VW--Grey2024);
 }
-
+.borderTop {
+    border-top: 1px solid var(--Grey300);
+}
 /* ===== hover effect ====== */
 
 /* ======== table ======== */
@@ -5056,7 +5069,10 @@ button.Clipboard.clickTxt:active {
     color: var(--white);
     box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
 }
+
+
 .buttonFlipLarge {
+
     -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
@@ -5698,11 +5714,13 @@ pre code {
 .backText {
     font-size: 16px;
     font-weight: 400;
-    text-shadow:
+
+     /* ===================     text-shadow:
     -1px -1px 0 var(--VW--Grey2024),
      1px -1px 0 var(--VW--Grey2024),
     -1px  1px 0 var(--VW--Grey2024),
-     1px  1px 0 var(--VW--Grey2024);
+     1px  1px 0 var(--VW--Grey2024); ===================*/
+
 }
 
 /* =================== left arrow  ===================*/

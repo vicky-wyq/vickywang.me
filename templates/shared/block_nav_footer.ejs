@@ -1,5 +1,13 @@
-  <!--footer-->
-  <footer class="footerBg">
+  <% if (typeof iconHoverColor === 'undefined') { 
+    iconHoverColor = ''; 
+  }
+  %>
+  <% if (typeof footerBackgroundColor === 'undefined') { 
+    footerBackgroundColor = ''; 
+  }
+  %>
+    
+  <footer class="borderTop <%= footerBackgroundColor %> ">
 
     <div class="blankHS"></div>
     <div class="wrapper">
@@ -12,20 +20,20 @@
             <div class="Grid Grid--gutters">
               <div class="ClipboardBoxIconOnly">
                 <button class="ClipboardIconOnly">
-                  <img title="Copy Email Address to Clipboard" class="iconM hoverWhite paddingS fitContent borderRadiusMax" title="Copy to Clipboard" src="<%= websitePath %>/icon/mail.svg" alt="LinkedIn">
+                  <img title="Copy Email Address to Clipboard" class="iconM  <%= iconHoverColor %> paddingS fitContent borderRadiusMax" title="Copy to Clipboard" src="<%= websitePath %>/icon/mail.svg" alt="LinkedIn">
                   <p class="clickIconCopy">vickyw.design@gmail.com</p>
                 </button>
               </div>
               <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
-                <img class="iconM hoverWhite paddingS fitContent borderRadiusMax" src="<%= websitePath %>/icon/in.svg" alt="LinkedIn">
+                <img class="iconM <%= iconHoverColor %> paddingS fitContent borderRadiusMax" src="<%= websitePath %>/icon/in.svg" alt="LinkedIn">
               </a>
 
               <a target="_blank" href="https://github.com/vicky-wyq">
-                <img class="iconM hoverWhite paddingS fitContent borderRadiusMax" src="<%= websitePath %>/icon/git.svg" alt="GitHub" title="GitHub">
+                <img class="iconM <%= iconHoverColor %> paddingS fitContent borderRadiusMax" src="<%= websitePath %>/icon/git.svg" alt="GitHub" title="GitHub">
               </a>
 
               <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
-                <img class="iconM hoverWhite paddingS fitContent borderRadiusMax" src="<%= websitePath %>/icon/Codepen.svg" alt="CodePen">
+                <img class="iconM <%= iconHoverColor %> paddingS fitContent borderRadiusMax" src="<%= websitePath %>/icon/Codepen.svg" alt="CodePen">
               </a>
 
             </div>
@@ -133,4 +141,3 @@
     </div>
 
   </footer>
-  <!--footer-->

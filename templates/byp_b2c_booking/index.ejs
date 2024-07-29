@@ -10,8 +10,8 @@
   <%- include( `${templatePath}/shared/compProgressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header_back`, { 
         PageUrl:`${websitePath}/`,
-        leftArrowColor:``,
         headerBackgroundColor:`colorBgBYPOrange100`,
+        arrTxtColor:``,
         sectionURL1:'/#projects', 
         sectionURL2:'/#experiments', 
         sectionURL3:'/#design_system', 
@@ -762,13 +762,7 @@
     </div>
 
 
-    <div class="Grid Grid--full Grid--gutters u-textCenter">
-      <div class="Grid-cell">
-        <div class="element">
-          <a href="https://www.figma.com/proto/apacUjNvkG8t767EbkrxyG/Grooming---Consumer-facing?page-id=403%3A6906&node-id=403-6907&recovery=true&viewport=1341%2C1627%2C0.04&t=WKx1QQyW1B6dGhjQ-1&scaling=contain&content-scaling=fixed&starting-point-node-id=403%3A6907" target="_blank"> <button class="button-35 BYP">Slide Deck</button></a>
-        </div>
-      </div>
-    </div>
+
     <div class="blankHM"></div>
 
   </div>
@@ -795,10 +789,12 @@
 
 
   <%- include(`${templatePath}/shared/comp_backTop`) %>
-  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+
+  <%- include(`${templatePath}/shared/block_nav_footer`, { 
+    iconHoverColor: '',
+    footerBackgroundColor:'colorBgBYPOrange100'
+  }) %>
   <!-- Shared across the platform -->
-
-
 
 </body>
 

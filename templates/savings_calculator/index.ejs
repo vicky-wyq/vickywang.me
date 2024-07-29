@@ -12,33 +12,39 @@ pageURL:'/worksamples/BYP_LH_wsbeebr/LHCost_benefitCalculator/', thumbnailImgURL
     barColor:`LASO`
   }) %>
 
-  <%- include(`${templatePath}/shared/block_nav_header`, {
-    type:'backText', 
-    leftArrowColor:`LASO`,
 
-    currentPage: 'PROJECT',
-    PageUrl:'/' 
-    }) %>
+
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
+  PageUrl:`${websitePath}/`,
+  headerBackgroundColor:`colorBgLASO`,
+  arrTxtColor:`LASO`,
+  sectionURL1:'/#projects', 
+  sectionURL2:'/#experiments', 
+  sectionURL3:'/#design_system', 
+  sectionURL4:'/#about',
+  }) %>
+
+
+
 
   <%- include(`${templatePath}/shared/block_banner`, { 
-    bannerTitle:`RX Zero Savings Calculator`,
-    bannerSubTitle:`Uncover Prescription Meds Savings`,
-    bannerLogoUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/logo_LASO_darkBlue.svg`,
-    bannerBgColor: `colorBgLASO`,
-    bannerMockupL:`MockupL.png`,
-    bannerMockupM:`MockupM.png`,
-    bannerMockupS:`MockupS.png`,
-    bannerButtonColor:`LASO`,
-    SlideDeckUrl:`https://www.figma.com/proto/5MHwSOuVqD9mKiG3IgL0Tw/LASO-Health-2024?page-id=1822%3A17539&type=design&node-id=2008-18185&viewport=152%2C2386%2C0.08&t=AwZir7Z5eMFgUFvo-1&scaling=scale-down&starting-point-node-id=2008%3A18185&mode=design&mode=design&mode=design`
+  bannerTitle:`RX Zero Savings Calculator`,
+  bannerSubTitle:`Uncover Prescription Meds Savings`,  
+  bannerLogoUrl:`logo_LASO_darkBlue.svg`,
+  SlideDeckUrl:`https://www.figma.com/proto/5MHwSOuVqD9mKiG3IgL0Tw/LASO-Health-2024?page-id=1822%3A17539&type=design&node-id=2008-18185&viewport=152%2C2386%2C0.08&t=AwZir7Z5eMFgUFvo-1&scaling=scale-down&starting-point-node-id=2008%3A18185&mode=design&mode=design&mode=design`,
+  bannerBgColor:`colorBgLASO`, 
+  bannerMockupL:`MockupL.png`, 
+  bannerMockupM:`MockupM.png`, 
+  bannerMockupS:`MockupS.png`,
+  bannerButtonColor:`colorBgLASO` }) %>
 
-    }) %>
   <div class="wrapper">
     <div class="blankHXS"></div>
     <div class="Grid Grid--gutters Grid--cols-4">
       <!-- subTitleFont1 -->
       <div class="Grid-cell">
         <div class="element">
-          <h3> <strong class=""> Timeline </strong> </h3>
+          <h3> <strong> Timeline </strong> </h3>
           <h4> December 2023 </h4>
           <h4> 2 Weeks (adound 3hr/day) </h4>
         </div>
