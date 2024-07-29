@@ -8,8 +8,6 @@ if (typeof headerBackgroundColor === 'undefined') {
   headerBackgroundColor = ''; 
 } 
 
-
-
 if (typeof leftArrowColor === 'undefined') { 
   leftArrowColor = ''; 
 } 
@@ -25,7 +23,7 @@ if (typeof leftArrowColor === 'undefined') {
         <h4 class="backText">BACK</h4>
       </a>
       <div class="navbar">
-        <ol class="nav-menu <%= hamburgerMenuBgColor %>">
+        <ol class="nav-menu <%= headerBackgroundColor %>">
           <li class="nav-item  activeNav box">
             <a href="<%- sectionURL1 %>" class="nav-link">PROJECTS</a>
           </li>
