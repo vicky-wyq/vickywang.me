@@ -12,11 +12,15 @@ pageURL:'admin_panel/', thumbnailImgURL: 'vickywang_web.png'
     barColor:`LASO`
   }) %>
 
-  <%- include(`${templatePath}/shared/block_nav_header`, {
-    type:'backText', 
-    leftArrowColor:`LASO`,
-    currentPage: 'PROJECT',
-    PageUrl:'/' 
+
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
+    PageUrl:`${websitePath}/`,
+    headerBackgroundColor:`colorBgLASO200`,
+    arrTxtColor:`LASO`,
+    sectionURL1:'/#projects', 
+    sectionURL2:'/#experiments', 
+    sectionURL3:'/#design_system', 
+    sectionURL4:'/#about',
     }) %>
 
   <%- include(`${templatePath}/shared/block_bannerNoButton`, { 
