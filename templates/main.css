@@ -64,7 +64,7 @@
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
     --VW--Yellow: #FFB400; 
-    --VW--Yellow-Light: #F9DB87;
+    --VW--Yellow-Light: #FFDA79;
     --VW--Grey2024:#F8F7F4;
     /* ======================== */
 
@@ -91,6 +91,13 @@
     --Warm: #fcf5eb;
 
     --AMBlue: #5384ed;
+    /* BYP Color 2024*/
+    --BYP2024-Blue900: #1E40AF;
+    --BYP2024-Blue800: #3B81F6;
+ 
+    --BYP2024-Blue200: #EAF7FF;
+    --BYP2024-Blue100: #F5FBFF;
+
 
     --WS-Blue: #35b9c5;
     /* 2AA5F3*/
@@ -105,7 +112,7 @@
     --BYP-Teal600: #02dcc3;
     --BYP-Teal400: #ccf8f3;
     --BYP-Teal100: #eafcfc;
-    --BYP-Teal-bg: #f5fafa;
+    --BYP-Teal-50: #fcffff;    
 
 
     --BYP-Orange100: #FFFAF3;  /* New lighter shade */
@@ -831,7 +838,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 .colorBgBYP {
-    background-color: var(--BYP-Teal-bg);
+    background-color: var(--BYP-Teal-50);
     margin: 0 auto;
 }
 
@@ -2120,6 +2127,12 @@ hr {
 
 .cardBottomBorder.BYP:hover {
     border-bottom: 5px solid var(--WS-Blue) !important;
+}
+.cardBottomBorder.bypOrange:hover {
+    border-bottom: 5px solid var(--BYP-Orange800) !important;
+}
+.cardBottomBorder.bypBlue:hover {
+    border-bottom: 5px solid var(--BYP2024-Blue800) !important;
 }
 
 .cardBottomBorder.LASO:hover {
@@ -3973,7 +3986,7 @@ body .flex-container.Mobile {
 .t-hello {
     font-family: "Gloria Hallelujah", sans-serif;
     font-weight: 700;
-    font-size: clamp(1em, 1.22vw, 1.32em);
+    font-size: clamp(1.3em, 2.8vw, 1.8em);
     margin: 0;
     color: var(--Grey700);
 }

@@ -8,7 +8,7 @@
 <!--Head-->
 
 <body>
-  <%- include(`${templatePath}/shared/compProgressBar`) %>
+  <%- include(`${templatePath}/shared/comp_progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header_main`, {
     sectionURL1:'#projects', 
     sectionURL2:'#experiments', 
@@ -25,7 +25,7 @@
     <div class="Grid Grid--full Grid--gutters">
       <div class="Grid-cell">
         <div class="element">
-          <p class="t-hello">👋🏻 hello, I'm Vicky, a UX Designer</p>
+          <h1 class="t-hello">👋🏻 hello, I'm Vicky, a UX Designer</h1>
 
         </div>
       </div>
@@ -41,7 +41,7 @@
 
 
 
-              <h1 class="specialTextTitle">  Passionate about creating <span class="">simple, smooth, engaging</span> experiences.
+              <h1 class="specialTextTitle"> Passionate about creating <span class="">simple, smooth, engaging</span> experiences.
 
               </h1>
             </div>
@@ -137,23 +137,40 @@
 
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder bypBlue paddingNone marginXS">
+          <a class="no-hover-effect" href="/byp_b2b_booking">
+            <img src="/projectImages/Cover_byp_b2b_booking.png" alt="Enhancing the Booking Experience">
+            <div class="element">
+              <h3 class="arrCard"><strong>Enhancing the Business Booking Experience</strong></h3>
+              <h5>Business owners managing appointments for their clients.
+              </h5>
+              <ul>
 
-        <%- include(`${templatePath}/shared/block_cardNoPassword`, {
-          hoverBorderColor:`BYP`,
-          cardNoPwURL:`${websitePath}/byp_b2c_booking`,
-          cardNoPwImgURL:`${websitePath}/projectImages/Cover_b2c_booking.png`,
-          cardNoPwTitle: `Optimizing Consumer-Facing Pet Service Bookings and Enhancing the Appointment Experience `, 
-          cardNoPwDescription:`In this UX case study, we optimized the booking flow for pet services on the BookYourPet platform. Our redesign led to a 169% increase in booking conversions, a 48% decrease in booking time, a 67% reduction in booking abandonment, a 124% increase in repeat bookings, and a 73% rise in add-on sales. These improvements streamlined the process, enhanced user experience, and boosted business efficiency.
+                <li class="listCircle">Reduced average booking time from 5 minutes to 3.5 minutes, making the process 30% faster. 
+                </li>
+                <li class="listCircle">
+                  Decreased errors from 15 to 5 per 100 bookings, resulting in 67% fewer booking errors.
 
+                </li>
 
+              </ul>
 
+            </div>
+          </a>
+        </div>
+        <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder bypOrange paddingNone marginXS">
+          <a class="no-hover-effect" href="/byp_b2c_booking">
+            <img src="/projectImages/Cover_b2c_booking.png" alt="Enhancing the Booking Experience">
+            <div class="element">
+              <h3 class="arrCard"><strong>Enhancing the Consumer Service Booking Experience</strong></h3>
+              <h4>We optimized the booking flow for pet services on the BookYourPet platform. These improvements streamlined the process, enhanced user experience, and boosted business efficiency.
 
+              </h4>
 
+            </div>
+          </a>
+        </div>
 
-
-
-` 
-          }) %>
 
       </div>
       <div class="Grid Grid--gutters Grid--cols-2">
@@ -396,39 +413,29 @@
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--cols-3">
 
-        <div class="Grid-cell  cardBorderThick borderRadiusM  paddingNone marginXS">
+        <div class="Grid-cell cardBorderThick borderRadiusM paddingNone marginXS colorBgVW">
           <div class="element">
             <div class="element">
-
               <h3 data-aos="fade-up"> <strong> Understanding Users and Products</strong> </h3>
               <h4>A deep understanding of both business goals and user needs is crucial in UX design. I leverage both qualitative and quantitative data to make informed decisions.
-
-
               </h4>
             </div>
           </div>
         </div>
-        <div class="Grid-cell   cardBorderThick borderRadiusM  paddingNone marginXS">
+        <div class="Grid-cell cardBorderThick borderRadiusM paddingNone marginXS colorBgVW">
           <div class="element">
             <div class="element">
               <h3 data-aos="fade-up"> <strong> Building Strong Cross-Functional Partnerships </strong> </h3>
               <h4>I collaborate closely with cross-functional teams from research planning to product delivery. Continuous feedback loops help refine and enhance designs.
-
-
               </h4>
             </div>
           </div>
         </div>
-        <div class="Grid-cell   cardBorderThick borderRadiusM  paddingNone marginXS">
+        <div class="Grid-cell cardBorderThick borderRadiusM paddingNone marginXS colorBgVW">
           <div class="element">
             <div class="element">
               <h3 data-aos="fade-up"> <strong> Managing the Design Process </strong> </h3>
               <h4>Clear deadlines for each phase keep projects on track. Documenting and evaluating each iteration ensures the creation of impactful and effective designs.
-
-
-
-
-
               </h4>
             </div>
 
