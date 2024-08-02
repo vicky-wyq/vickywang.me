@@ -7,17 +7,31 @@
 <!--Head-->
 
 <body class="LASO">
-  <%- include(`${templatePath}/shared/compProgressBar`,{ barColor:`LASO` }) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, { type:'backText', arrTxtColor:`LASO`,
-        currentPage: 'PROJECT' , PageUrl:'/' }) %>
+  <%- include(`${templatePath}/shared/comp_progressBar`,{ barColor:`LASO` }) %>
 
-  <%- include(`${templatePath}/shared/block_banner`, { bannerTitle:`The Evolution of LASO Local & Telehealth to RX
-          Zero`, bannerSubTitle:`Focus on RX Zero model, moving away from RX Local and Telemedicine services`,
-          bannerLogoUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/logo_LASO_lightBlue.svg`,
-          bannerMockupL:`MockupL.png`, bannerMockupM:`MockupM.png`, bannerMockupS:`MockupS.png`,
-          bannerBgColor:`colorBgLASO`, bannerButtonColor:`LASO`, phoneBanner:`yes`,
-          SlideDeckUrl:`https://www.figma.com/proto/5MHwSOuVqD9mKiG3IgL0Tw/LASO-Health-2024?page-id=2025%3A4261&type=design&node-id=2025-4273&viewport=-9%2C118%2C0.02&t=AP4w77T0v7n5ZVRI-1&scaling=scale-down&starting-point-node-id=2025%3A4273&mode=design`,
-          }) %>
+
+
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
+  PageUrl:`${websitePath}/`,
+  headerBackgroundColor:`colorBgLASO`,
+  arrTxtColor:`LASO`,
+  }) %>
+
+
+<%- include(`${templatePath}/shared/block_banner`, { 
+  bannerTitle: `The Evolution of LASO Local & Telehealth to RX Zero`, 
+  bannerSubTitle: `Focus on RX Zero model, moving away from RX Local and Telemedicine services`,
+  bannerLogoUrl: `logo_LASO.svg`,
+  SlideDeckUrl: `https://www.figma.com/proto/5MHwSOuVqD9mKiG3IgL0Tw/LASO-Health-2024?page-id=2025%3A4261&type=design&node-id=2025-4273&viewport=-9%2C118%2C0.02&t=AP4w77T0v7n5ZVRI-1&scaling=scale-down&starting-point-node-id=2025%3A4273&mode=design`,
+  bannerBgColor: `colorBgLASO`, 
+  bannerButtonColor: `colorBgLASO`, 
+  bannerMockupL: `MockupL.png`, 
+  bannerMockupM: `MockupM.png`, 
+  bannerMockupS: `MockupS.png`,
+}) %>
+
+
+
   <div class="wrapper">
     <div class="blankHXS"></div>
 
@@ -28,16 +42,16 @@
         </div>
       </div>
       <%- include(`${templatePath}/shared/comp_audioPlayer`, {
-                audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHRefiningRXZero/audio_projectOverview.mp3`,
-                audioPlayerBorderColor:`audioPlayerBordernLASO`, audioPlayerButtonColor:`LASO`, audioPlayerText1:`Dive
-                into the transformative journey of LASO from Local and Telehealth services to the innovative RX Zero
-                model. This case study explores the strategic shift towards providing unlimited access to generic
-                medications for a flat monthly fee, highlighting the UX design considerations that facilitated this
-                transition. Discover how the focus on the RX Zero model reshaped the user experience and positioned LASO
-                as a pioneer in affordable and accessible healthcare solutions.` }) %>
+        audioPlayerAudioUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/LHRefiningRXZero/audio_projectOverview.mp3`,
+        audioPlayerBorderColor:`audioPlayerBordernLASO`, audioPlayerButtonColor:`LASO`, audioPlayerText1:`Dive
+        into the transformative journey of LASO from Local and Telehealth services to the innovative RX Zero
+        model. This case study explores the strategic shift towards providing unlimited access to generic
+        medications for a flat monthly fee, highlighting the UX design considerations that facilitated this
+        transition. Discover how the focus on the RX Zero model reshaped the user experience and positioned LASO
+        as a pioneer in affordable and accessible healthcare solutions.` }) %>
       <%- include(`${templatePath}/shared/base_link`, {
-                  linkUrl:`https://www.figma.com/design/ZdwqjVE0mvdadHVSqcycpa/Untitled?node-id=0-1&t=mSf2uO6hr0DLmw5v-1`,
-                  linkText:`Screenshot/current state` }) %>
+        linkUrl:`https://www.figma.com/design/ZdwqjVE0mvdadHVSqcycpa/Untitled?node-id=0-1&t=mSf2uO6hr0DLmw5v-1`,
+        linkText:`Screenshot/current state` }) %>
     </div>
 
     <div class="Grid Grid--gutters Grid--cols-4">

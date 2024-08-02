@@ -8,24 +8,32 @@
 <!--Head-->
 
 <body>
-  <%- include( `${templatePath}/shared/compProgressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, {
-    type:'backText', 
-    currentPage: '',
-    PageUrl:`${websitePath}/` 
-    }) %>
 
-  <%- include(`${templatePath}/shared/block_banner`, { 
+  <%- include(`${templatePath}/shared/comp_progressBar`,{ barColor:`BYP` }) %>
+
+<%- include(`${templatePath}/shared/block_nav_header_back`, { 
+  PageUrl:`${websitePath}/`,
+  headerBackgroundColor:`colorBgBYP`,
+  arrTxtColor:``,
+
+  }) %>
+
+
+
+
+<%- include(`${templatePath}/shared/block_banner`, { 
     bannerTitle:`Mastering B2B SaaS Subscription Success`,
     bannerSubTitle:``,
-    bannerLogoUrl:`${websitePath}/worksamples/BYP_LH_wsbeebr/logo_BYP.svg`,
+    bannerLogoUrl:`logo_BYP.svg`,
     SlideDeckUrl:`https://www.figma.com/proto/2MrhSGMpQRH3kDJEzSHnUg/BYP---Business-facing-(2024-Current)?page-id=2131%3A15721&type=design&node-id=2131-15722&viewport=746%2C528%2C0.07&t=4bgh0kiJHLl1Uld3-1&scaling=scale-down&starting-point-node-id=2131%3A15722&mode=design`,
-    bannerBgColor:`colorBgBYP`,
-    bannerMockupL:`MockupL.png`,
-    bannerMockupM:`MockupM.png`,
+    bannerBgColor:`colorBgBYP`, 
+    bannerMockupL:`MockupL.png`, 
+    bannerMockupM:`MockupM.png`, 
     bannerMockupS:`MockupS.png`,
-    bannerButtonColor:`BYP`
-    }) %>
+    bannerButtonColor:`colorBgBYP` }) %>
+
+
+
   <div class="wrapper">
     <div class="blankHXS"></div>
     <div class="Grid Grid--gutters Grid--cols-4">
@@ -634,7 +642,7 @@
         <div class="Grid Grid--full Grid--gutters u-textCenter">
           <div class="Grid-cell">
             <div class="element">
-              <a href="https://www.figma.com/proto/2MrhSGMpQRH3kDJEzSHnUg/BYP---Business-facing-(2024-Current)?page-id=2131%3A15721&type=design&node-id=2131-15722&viewport=746%2C528%2C0.07&t=4bgh0kiJHLl1Uld3-1&scaling=scale-down&starting-point-node-id=2131%3A15722&mode=design" target="_blank"> <button class="button-35 BYP">Slide Deck</button></a>
+              <a href="https://www.figma.com/proto/2MrhSGMpQRH3kDJEzSHnUg/BYP---Business-facing-(2024-Current)?page-id=2131%3A15721&type=design&node-id=2131-15722&viewport=746%2C528%2C0.07&t=4bgh0kiJHLl1Uld3-1&scaling=scale-down&starting-point-node-id=2131%3A15722&mode=design" target="_blank"> <button class="buttonFlipLarge colorBgBYP">Slide Deck</button></a>
             </div>
           </div>
         </div>
