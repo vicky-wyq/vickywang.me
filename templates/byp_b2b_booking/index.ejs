@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="colorBgBYPOrange100 pattern2">
+<html lang="en" class="colorBgBYPblue100 pattern2 BYPb2b">
 <!--Head-->
 <%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Optimizing Pet Service Bookings by Vicky Wang`,
   description:'Enhancing the Consumer Booking Experience', pageURL:'byp_b2c_booking/',
@@ -10,20 +10,20 @@
   <%- include( `${templatePath}/shared/comp_progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header_back`, { 
         PageUrl:`${websitePath}/`,
-        headerBackgroundColor:`colorBgBYPOrange100`,
+        headerBackgroundColor:`colorBgBYPblue100`,
         arrTxtColor:``,
 
         }) %>
 
   <%- include(`${templatePath}/shared/block_banner`, {            bannerTitle:`Optimizing Pet Service Bookings`,
         bannerSubTitle:`Enhancing the Consumer Booking Experience`,
-        bannerLogoUrl:`${websitePath}/byp_b2c_booking/logo_BYP.svg`,
+        bannerLogoUrl:`logo_BYP.svg`,
         SlideDeckUrl:`https://www.figma.com/proto/g0r9aZkxovW1vD5oJ4jvDZ/Enhancing-the-B2B-Selling-%26-Booking-Experience?page-id=2001%3A38623&node-id=2001-39176&viewport=4032%2C1924%2C0.09&t=sBVSsXxg9STW6os4-1&scaling=contain&content-scaling=fixed&starting-point-node-id=2001%3A39176`,
         bannerBgColor:``, 
         bannerMockupL:`MockupL.png`, 
         bannerMockupM:`MockupM.png`, 
         bannerMockupS:`MockupS.png`,
-        bannerButtonColor:`colorBgBYPOrange100` }) %>
+        bannerButtonColor:`colorBgBYPblue100` }) %>
 
   <!-- timeline -->
   <div class="wrapper">
@@ -75,22 +75,25 @@
 
   <!-- Case study starts -->
 
-  <div class="colorBgBYPOrange100">
+  <div class="colorBgBYPblue100">
     <div class="blankHXS"></div>
 
     <div class="wrapper">
 
       <div class="Grid Grid--gutters Grid--full u-textCenter">
-        <%- include(`${templatePath}/shared/comp_textualElements_title`, { titleColor:`colorBYPorange800`,
-                  titleFontSize:`h1`, contentTitle:`Background`, }) %>
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {    fontColor:`colorBYPblue800`,
+        fontSize:`h1`, 
+        titleText:`Background`,
+        fontWeight:'fontWeight900'
+        }) %>
       </div>
+
       <div class="Grid Grid--gutters Grid--full">
 
         <div class="Grid-cell">
           <div class="element">
             <h3><strong>Context</strong></h3>
-            <h4>BookYourPet provides a tool for pet industry business owners to streamline appointment
-              management, service tracking, and payment processing.</h4>
+            <h4>BookYourPet provides a tool for pet industry business owners to streamline appointment management, service tracking, and payment processing.</h4>
 
             <img class="" src="img_diveces.svg" alt="icon arrow">
 
@@ -98,33 +101,31 @@
 
           </div>
         </div>
+        <div class="blankHS"></div>
 
         <div class="Grid-cell">
           <div class="element">
             <div class="rowToColumn centerVH">
               <div class="widthMax">
-                <h3><strong>Goals</strong></h3>
-                <h3 class="colorBYPorange800">Pet owners:</h3>
+                <h3><strong>Target Users - Pet Business Owners</strong></h3>
+                <h5 class="colorBYPblue800 fontWeight400">Role:</h5>
+                <p>Business owners and managers who handle bookings and appointments for their pet services.</p>
+                <h5 class="colorBYPblue800 fontWeight400">Needs:</h5>
 
                 <ul>
-                  <li class="listCircle">
-                    Easy, reliable way to book services for their pets
-                  </li>
+                  <li class="listCircle"> A smooth, easy, and quick booking process. </li>
+                  <li class="listCircle">Efficient management of client and pet information.</li>
 
+                  <li class="listCircle">Flexible pricing adjustments and upselling opportunities.</li>
 
                 </ul>
-                <h3 class="colorBYPorange800">For business/Service providers:</h3>
+                <h5 class="colorBYPblue800 fontWeight400">Goals:</h5>
 
                 <ul>
-                  <li class="listCircle">
-                    Automates business operations
-                  </li>
-                  <li class="listCircle">
-                    Increases sales for pet businesses
-                  </li>
-                  <li class="listCircle">
-                    Boosts customer satisfaction
-                  </li>
+                  <li class="listCircle">Streamline operations to save time and reduce effort.</li>
+                  <li class="listCircle">Increase revenue through effective upselling during the booking process.</li>
+                  <li class="listCircle">Ensure a clear and user-friendly interface to enhance overall satisfaction.</li>
+
 
                 </ul>
 
@@ -132,7 +133,7 @@
               </div>
               <div class="paddingL fitContenteft">
                 <div class="widthFitContent">
-                  <img class="widthS" src="img_pet_parents.png" alt="icon arrow">
+                  <img class="widthXS" src="img_target_user.png" alt="icon arrow">
                 </div>
               </div>
 
@@ -142,22 +143,11 @@
 
 
       </div>
+      <div class="blankHS"></div>
 
       <div class="Grid Grid--gutters Grid--full">
 
 
-        <div class="Grid-cell">
-          <div class="element">
-            <h3><strong>Customer journey</strong></h3>
-            <div class="element">
-              <div class="Grid">
-                <img class="modal-target" src="diagram_customer_journey.svg" alt="Customer Journey">
-              </div>
-            </div>
-
-
-          </div>
-        </div>
 
         <div class="Grid-cell">
           <div class="element">
@@ -176,10 +166,16 @@
       </div>
 
 
+      <div class="blankHM"></div>
+
+
 
       <div class="Grid Grid--gutters Grid--full u-textCenter">
-        <%- include(`${templatePath}/shared/comp_textualElements_title`, { titleColor:`colorBYPorange800`,
-                  titleFontSize:`h1`, contentTitle:`Understand`, }) %>
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {    fontColor:'colorBYPblue800',
+        fontSize:'h1', 
+        fontWeight:'fontWeight900',       
+        titleText:'Research',
+        }) %>
       </div>
 
       <div class="Grid Grid--full Grid--gutters">
@@ -193,7 +189,7 @@
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
           <div class="element">
-            <h3><strong>Customer Feedback</strong></h3>
+            <h2><strong>Customer Feedback</strong></h2>
           </div>
         </div>
       </div>
@@ -205,8 +201,7 @@
           <div class="element">
             <img class="" src="img_feedback.svg" alt="icon arrow">
 
-            <h4 class=" borderRadiusXS colorBgBYPOrange200 paddingS">Combining feedback from both B2B and B2C
-              users gives us a comprehensive overview of the areas needing improvement:
+            <h4 class=" borderRadiusXS colorBgBYPblue200 paddingS">Customer feedback gathered by our marketing and sales teams over the past several months, highlighting the most frequent requests and categorizing them for analysis.
             </h4>
           </div>
         </div>
@@ -215,31 +210,22 @@
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
           <div class="element">
-            <h3><strong class="colorBYPorange800">Ease of Use:</strong></h3>
-            <h4> <strong class="Grey800">"The app is somewhat confusing to navigate. It took me a while to
-                figure out how to schedule an appointment. The interface could be more intuitive." </strong>
+            <h3><strong class="colorBYPblue800">Pricing Flexibility:</strong></h3>
+            <h4> "It would be great to have more flexibility in adjusting prices for services, both during and after the booking process."
+            </h4>
+            <h4>"I find it challenging to modify the prices for individual line items. More options here would be helpful."
             </h4>
 
+            <h3><strong class="colorBYPblue800">Search Functionality:</strong></h3>
+            <h4>"The search feature could be improved. Sometimes it’s difficult to find clients or pets using just their name."</h4>
+            <h4>"It would be helpful to have more robust search options, like searching by email or phone number."</h4>
+            <h3><strong class="colorBYPblue800">Payment Methods:</strong></h3>
+            <h4>"We need more payment options. Currently, the choices are limited, and it would be beneficial to offer methods like cash tip or invoice."</h4>
+            <h4>"Partial payment options would be a fantastic addition. Sometimes clients prefer to pay in installments."</h4>
+            <h3><strong class="colorBYPblue800">Service Clarifications:</strong></h3>
+            <h4>"The service descriptions could be clearer. Sometimes it’s hard to understand what’s included in each package."</h4>
+            <h4>"Providing more detailed information about each service and membership would help in making informed decisions."</h4>
 
-            <h3><strong class="colorBYPorange800">Efficiency:</strong></h3>
-            <h4> <strong class="Grey800">"The booking process feels a bit slow. It often takes too many steps to
-                complete an appointment, and sometimes the app lags." </strong></h4>
-
-
-            <h3><strong class="colorBYPorange800">Convenience: </strong></h3>
-            <h4> <strong class="Grey800">"While it's handy to have all services in one place, finding specific
-                services can be challenging. The search function could be improved."</strong></h4>
-
-
-            <h3><strong class="colorBYPorange800">Clarity: </strong></h3>
-            <h4> <strong class="Grey800">"Information about services and costs isn't always clear. I had trouble
-                understanding what was included in each service, which made it hard to make decisions."
-              </strong></h4>
-
-
-            <h3><strong class="colorBYPorange800">Notifications: </strong></h3>
-            <h4> <strong class="Grey800">"I've missed a few appointments because the notifications didn't come
-                through or were too late. More reliable alerts would be helpful."</strong></h4>
           </div>
         </div>
 
@@ -250,7 +236,7 @@
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
           <div class="element">
-            <h3><strong>User Interview</strong></h3>
+            <h2><strong>User Interview</strong></h2>
           </div>
         </div>
       </div>
@@ -259,17 +245,42 @@
           <div class="element">
             <img class="" src="img_user_interview.svg" alt="user interview">
 
-            <h4 class=" borderRadiusXS colorBgBYPOrange200 paddingS">Obtain in-depth qualitative data on user
+            <h4 class=" borderRadiusXS colorBgBYPblue200 paddingS">Obtain in-depth qualitative data on user
               experiences, behaviors, and expectations.
             </h4>
           </div>
         </div>
       </div>
+      <div class="blankHS"></div>
 
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
           <div class="element">
-            <h3><strong>Affinity Map</strong></h3>
+            <h3>Focus Areas</h3>
+
+            <h3 class="fontWeight400 colorBYPblue800">&#9758; User Needs During Booking </h3>
+
+            <h3 class="fontWeight400 colorBYPblue800">&#9758; Booking Problems & Blockers
+
+            </h3>
+            <h3 class="fontWeight400 colorBYPblue800">&#9758; Reasons for Problems
+
+            </h3>
+            <h3 class="fontWeight400 colorBYPblue800">&#9758; Current Problem-Solving Methods
+            </h3>
+
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="blankHS"></div>
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3>Affinity Map</h3>
           </div>
         </div>
       </div>
@@ -282,70 +293,17 @@
           </div>
           <div class="element">
 
-            <div class="borderRadiusXS colorBgBYPOrange200 paddingS">
+            <img class="" src="img_efficiency.png" alt="user interview">
 
-              <h4>Then we created an affinity map. The main points are:
+
+            <div class="borderRadiusXS colorBgBYPblue200 paddingS">
+
+              <h4>Pet business owners primarily care about a booking system that is efficient, easy to use, accurate, flexible, and reliable. They want to provide a smooth and satisfactory experience for their clients while also having the ability to promote additional services and clearly communicate costs.
               </h4>
-              <ul>
-                <li class="listCircle">
-                  <h4>Easy to use is the most important for pet owner</h4>
-                </li>
-                <li class="listCircle">
-                  <h4>Efficient for comparing service details and price</h4>
-                </li>
-                <li class="listCircle">
-                  <h4>Reliability & flixibility such as Ability to cancel and reschedule appt, and get refund
-                  </h4>
-                </li>
 
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--full Grid--gutters">
-        <div class="Grid-cell">
-          <div class="element">
-            <h3><strong>Competitive Analysis</strong></h3>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--full Grid--gutters">
-        <div class="Grid-cell ">
-          <div class="element">
-            <div class="Grid">
-              <img class="modal-target" src="text_competitive_analysis.png" alt="Competitive Analysis">
             </div>
           </div>
-
         </div>
-      </div>
-      <div class="element">
-
-        <div class="borderRadiusXS colorBgBYPOrange200 paddingS">
-
-          <h4 data-aos="fade-up" class="aos-init aos-animate"> <strong> Additional Comparison
-            </strong> </h4>
-
-          <h5>
-            <strong>Booksy and StyleSeat:</strong>These platforms were tested for better booking practices. They
-            offer robust booking flows, intuitive user interfaces, and comprehensive features for managing
-            appointments and customer relationships.
-          </h5>
-          <ul>
-            <li class="listCircle"> <strong>Booksy:</strong>Known for its seamless booking process and excellent
-              customer service.</li>
-            <li class="listCircle"> <strong>StyleSeat:</strong> Offers a sleek and user-friendly interface,
-              making it easy for users to book and manage appointments. </li>
-
-            <li class="listCircle"> <strong>Feature-Rich:</strong> Offers comprehensive features for pet service
-              providers, including scheduling, customer management, and marketing tools. </li>
-            <li class="listCircle"> <strong>Customer Support: </strong> Known for responsive customer service,
-              which helps in resolving user issues promptly.</li>
-          </ul>
-        </div>
-
       </div>
 
       <div class="blankHS"></div>
@@ -353,32 +311,217 @@
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
           <div class="element">
-            <h3><strong>Insight #1: Ease of Use, Efficiency & Clarity</strong></h3>
-            <h3 class="specialTextL colorBYPorange800">Streamline the Booking Process:</h3>
+            <h2><strong>Competitor Research</strong></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell ">
+          <div class="element">
 
 
-            <div class="rowToColumn centerVH colorBgBYPOrange200 paddingS borderRadiusS">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>B2B BYP App</th>
+                  <th>Time To Pet</th>
+                  <th>MyTime</th>
+                  <th>SimplyBook.me</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Booking Process</strong></td>
+                  <td>User-friendly, needs improvement in visibility and ease of use</td>
+                  <td>Highly intuitive, real-time updates</td>
+                  <td>Integrated with advanced scheduling, robust calendar management</td>
+                  <td>Easy-to-use, customizable booking pages</td>
+                </tr>
+                <tr>
+                  <td><strong>Sales Promotion</strong></td>
+                  <td>Needs enhancement for upsell features and visibility</td>
+                  <td>Supports add-ons, promotions, discounts</td>
+                  <td>Strong upselling, loyalty programs, membership discounts</td>
+                  <td>Add-ons, promotional codes, loyalty programs</td>
+                </tr>
+                <tr>
+                  <td><strong>Payment Flexibility</strong></td>
+                  <td>Limited options, needs improvement in partial payments</td>
+                  <td>Multiple options, automated invoicing, partial payments supported</td>
+                  <td>Extensive options, partial payments, payment plans</td>
+                  <td>Multiple gateways, deposits, partial payments</td>
+                </tr>
+                <tr>
+                  <td><strong>Strengths</strong></td>
+                  <td>Needs UI improvement, flexible pricing</td>
+                  <td>Easy-to-use interface, comprehensive payment options</td>
+                  <td>Advanced scheduling, extensive payment options, strong upselling features</td>
+                  <td>Customizable booking pages, strong promotion features</td>
+                </tr>
+                <tr>
+                  <td><strong>Weaknesses</strong></td>
+                  <td>Limited flexibility and customization</td>
+                  <td>Limited customization options, basic reporting</td>
+                  <td>Complex interface, higher pricing</td>
+                  <td>Limited advanced reporting, setup required for some integrations</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="blankHXS"></div>
+
+            <div class="borderRadiusXS colorBgBYPblue200 paddingS">
+
+              <h4>Conduct competitor research to compare the B2B BYP app with other popular booking and management solutions: Time To Pet, MyTime, and SimplyBook.me. The focus is on booking processes, sales promotion features, and payment flexibility.
+              </h4>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="blankHS"></div>
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3><strong>Usability Testing</strong></h3>
+          </div>
+        </div>
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="rowToColumn centerVH">
               <div class="widthMax">
+                <h3>Testing Plan</h3>
+                <div class="blankHXS"></div>
+
+
+                <h5 class="colorBYPblue800 fontWeight400">Participants:</h5>
+                <ul>
+                  <li class="listCircle">Number of Participants: 8 B2B clients </li>
+                  <li class="listCircle">Experience Levels: 4 novice users, 4 experienced users</li>
+
+
+                </ul>
+                <h5 class="colorBYPblue800 fontWeight400">Testing Scenarios:</h5>
+
+                <ul>
+                  <li class="listCircle">Booking a Service</li>
+                  <li class="listCircle">Searching for a Client and Pet</li>
+
+                  <li class="listCircle">Adjusting Service Pricing</li>
+                  <li class="listCircle">Completing a Payment</li>
+                </ul>
+                <h5 class="colorBYPblue800 fontWeight400">Metrics:</h5>
+
+                <ul>
+                  <li class="listCircle">Task Completion Rate</li>
+                  <li class="listCircle">Time on Task</li>
+                  <li class="listCircle">Error Rate</li>
+                  <li class="listCircle">User Satisfaction</li>
+                  <li class="listCircle">Qualitative Feedback</li>
+
+
+                </ul>
+
+
+              </div>
+              <div class="paddingL fitContenteft">
+                <div class="widthFitContent">
+                  <img class="widthM" src="img_testing.png" alt="icon arrow">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="blankHXS"></div>
+
+
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3>Overall Insights</h3>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3><strong class="colorBYPblue800">Task Completion Rate:</strong></h3>
+            <h4>Generally high, indicating that most users could complete tasks successfully.
+            </h4>
+
+
+            <h3><strong class="colorBYPblue800">Time on Task:</strong></h3>
+            <h4>Experienced users completed tasks faster, highlighting a learning curve for novice users.</h4>
+
+            <h3><strong class="colorBYPblue800">Error Rate:</strong></h3>
+            <h4>Most errors were minor but pointed to areas needing clarity and improved guidance.</h4>
+            <h3><strong class="colorBYPblue800">User Satisfaction:</strong></h3>
+            <h4>Overall positive. Some areas, such as search functionality and price adjustments, require further refinement.</h4>
+            <h3><strong class="colorBYPblue800">Qualitative Feedback:</strong></h3>
+            <h4>Positive feedback on the streamlined interface and improved booking process.</h4>
+            <h4>Constructive feedback on the need for better search filters, clearer price adjustment options, and more transparent payment confirmations.</h4>
+
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="borderRadiusXS colorBgBYPblue200 paddingS">
+              <h4>The usability testing revealed that the redesigned booking flow significantly improved user satisfaction and efficiency. However, further enhancements are needed in the search functionality, price adjustment interface, and clarity of payment and order summaries. By addressing these areas, the booking experience can be further optimized for both novice and experienced users.
+              </h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blankHS"></div>
+      <div class="Grid Grid--gutters Grid--full u-textCenter">
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, {    fontColor:'colorBYPblue800',
+        fontSize:'h1', 
+        fontWeight:'fontWeight900',       
+        titleText:'Key Findings',
+        }) %>
+      </div>
+      <div class="Grid Grid--full Grid--gutters">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="specialTextL colorBYPblue800">#1 Streamlining the Booking Process</h3>
+
+
+            <div class="rowToColumn centerVH colorBgBYPblue200 paddingS borderRadiusS">
+              <div class="widthMax">
+                <h3><strong class="colorBYPblue800">Finding:</strong></h3>
 
                 <ul>
                   <li class="listCircle">
-                    <h4><strong>Reduce Steps:</strong> Minimize the number of steps required to book a service.
+                    <h4><strong>Complex Interface:</strong> Minimize the number of steps required to book a service.
                     </h4>
                   </li>
                   <li class="listCircle">
                     <h4><strong>Simplify Navigation: </strong>Make the booking process more intuitive and
                       user-friendly.</h4>
                   </li>
+                  
+                </ul>
+                <h3><strong class="colorBYPblue800">Insight:</strong></h3>
+                <ul>
                   <li class="listCircle">
                     <h4><strong>Comprehensive Service Listings:</strong> Include detailed service descriptions
                       and pricing (WYSIWYG in the B2B platform).</h4>
                   </li>
                   <li class="listCircle">
-                    <h4><strong>Reduce Screen Clutter:</strong>Simplify the screen layout to avoid overwhelming
-                      users with too much information.</h4>
+                    <h4><strong>Reduce Screen Clutter:</strong> </h4>
                   </li>
                 </ul>
-
               </div>
               <div class="paddingL fitContenteft">
                 <div class="widthFitContent">
@@ -396,10 +539,10 @@
         <div class="Grid-cell">
           <div class="element">
             <h3><strong>Insight #2: Transparency & Trust</strong></h3>
-            <h3 class="specialTextL colorBYPorange800">Transparent Pricing and Trust Signals</h3>
+            <h3 class="specialTextL colorBYPblue800">Transparent Pricing and Trust Signals</h3>
 
 
-            <div class="rowToColumn centerVH colorBgBYPOrange200 paddingS borderRadiusS">
+            <div class="rowToColumn centerVH colorBgBYPblue200 paddingS borderRadiusS">
               <div class="widthMax">
 
                 <ul>
@@ -432,10 +575,10 @@
         <div class="Grid-cell">
           <div class="element">
             <h3><strong>Insight #3: Convenience, Reliability</strong></h3>
-            <h3 class="specialTextL colorBYPorange800">Personalized Experience</h3>
+            <h3 class="specialTextL colorBYPblue800">Personalized Experience</h3>
 
 
-            <div class="rowToColumn centerVH colorBgBYPOrange200 paddingS borderRadiusS">
+            <div class="rowToColumn centerVH colorBgBYPblue200 paddingS borderRadiusS">
               <div class="widthMax">
 
                 <ul>
@@ -466,10 +609,10 @@
         <div class="Grid-cell">
           <div class="element">
             <h3><strong>Insight #4: Accessible & Effective</strong></h3>
-            <h3 class="specialTextL colorBYPorange800">Customer Support</h3>
+            <h3 class="specialTextL colorBYPblue800">Customer Support</h3>
 
 
-            <div class="rowToColumn centerVH colorBgBYPOrange200 paddingS borderRadiusS">
+            <div class="rowToColumn centerVH colorBgBYPblue200 paddingS borderRadiusS">
               <div class="widthMax">
 
                 <ul>
@@ -498,8 +641,8 @@
       <div class="blankHM"></div>
 
       <div class="Grid Grid--gutters Grid--full u-textCenter">
-        <%- include(`${templatePath}/shared/comp_textualElements_title`, { titleColor:`colorBYPorange800`,
-                  titleFontSize:`h1`, contentTitle:`Solutions`, }) %>
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, { fontColor:`colorBYPblue800`,
+                  fontSize:`h1`, titleText:`Solutions`, }) %>
       </div>
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
@@ -612,8 +755,8 @@
       </div>
       <div class="blankHM"></div>
       <div class="Grid Grid--gutters Grid--full u-textCenter">
-        <%- include(`${templatePath}/shared/comp_textualElements_title`, { titleColor:`colorBYPorange800`,
-                  titleFontSize:`h1`, contentTitle:`Design, Testing & Iteration`, }) %>
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, { fontColor:`colorBYPblue800`,
+                  fontSize:`h1`, titleText:`Design, Testing & Iteration`, }) %>
       </div>
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
@@ -675,14 +818,14 @@
 
 
       <div class="Grid Grid--gutters Grid--full u-textCenter">
-        <%- include(`${templatePath}/shared/comp_textualElements_title`, { titleColor:`colorBYPorange800`,
-                  titleFontSize:`h1`, contentTitle:`Outcome & Reflection`, }) %>
+        <%- include(`${templatePath}/shared/comp_textualElements_title`, { fontColor:`colorBYPblue800`,
+                  fontSize:`h1`, titleText:`Outcome & Reflection`, }) %>
       </div>
 
       <div class="Grid Grid--full Grid--gutters">
         <div class="Grid-cell">
           <div class="element">
-            <h2><strong class="colorBYPorange800">What went well so far 👍</strong></h2>
+            <h2><strong class="colorBYPblue800">What went well so far 👍</strong></h2>
             <h3> <strong class="Grey800">Streamline the Booking Process </strong></h3>
 
             <ul>
@@ -725,7 +868,7 @@
               </li>
 
             </ul>
-            <h2><strong class="colorBYPorange800">What could be improved 💪</strong></h2>
+            <h2><strong class="colorBYPblue800">What could be improved 💪</strong></h2>
             <ul>
 
               <li class="listCircle">
@@ -741,7 +884,7 @@
 
             </ul>
 
-            <h3><strong class="colorBYPorange800">Reflection 📚</strong></h3>
+            <h3><strong class="colorBYPblue800">Reflection 📚</strong></h3>
             <h4> Using both qualitative and quantitative data during the research phase was crucial, providing a well-rounded understanding of user behavior and needs. With more time, conducting a larger survey group could further enhance the insights as we gain more users and improve the app.</h4>
 
 
@@ -789,7 +932,7 @@
 
   <%- include(`${templatePath}/shared/block_nav_footer`, { 
     iconHoverColor: '',
-    footerBackgroundColor:'colorBgBYPOrange100'
+    footerBackgroundColor:'colorBgBYPblue100'
   }) %>
   <!-- Shared across the platform -->
 
