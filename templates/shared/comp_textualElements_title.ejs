@@ -1,42 +1,50 @@
-  <% if (typeof titleFontSize === 'undefined') { 
-    titleFontSize = ''; 
+  <% if (typeof fontSize === 'undefined') { 
+    fontSize = ''; 
   } 
   %>
-  <% if (typeof titleColor === 'undefined') { 
-    titleColor = 'Grey900'; 
+  <% if (typeof fontColor === 'undefined') { 
+    fontColor = 'Grey900'; 
   } 
   %>
-  <% if (typeof titleFontSize === 'undefined') { 
-      titleFontSize = ''; 
+  <% if (typeof fontSize === 'undefined') { 
+      fontSize = ''; 
     } 
-    %>
+  %>
+
+<% if (typeof fontWeight === 'undefined') { 
+  fontWeight = ''; 
+} 
+%>
+<% if (typeof titleText === 'undefined') { 
+  titleText = ''; 
+} 
+%>
+
+
+
+
+
+
   <div class="Grid-cell">
     <div class="element">
-      <% if (titleFontSize ==='h1' ) { %>
-      <h1>
-        <strong class="<%= titleColor %>">
-          <%= contentTitle %>
-        </strong>
-      </h1>
-      <% } else if (titleFontSize ==='h2' ) { %>
-      <h2>
-        <strong class="<%= titleColor %>">
-          <%= contentTitle %>
-        </strong>
-      </h2>
-      <% } else if (titleFontSize==='h3' ) { %>
-      <h3>
-        <strong class="<%= titleColor %>">
-          <%= contentTitle %>
-        </strong>
-      </h3>
+      <% if (fontSize ==='h1' ) { %>
+        <h1 class="<%= fontColor %> <%= fontWeight %>">
+          <%= titleText %>
+        </h1>
 
-      <% } else if (titleFontSize==='h4' ) { %>
-      <h4>
-        <strong class="<%= titleColor %>">
-          <%= contentTitle %>
-        </strong>
-      </h4>
+      <% } else if (fontSize ==='h2' ) { %>
+        <h2 class="<%= fontColor %> <%= fontWeight %>">
+          <%= titleText %>
+        </h2>
+      <% } else if (fontSize==='h3' ) { %>
+        <h3 class="<%= fontColor %> <%= fontWeight %>">
+          <%= titleText %>
+        </h3>
+
+      <% } else if (fontSize==='h4' ) { %>
+        <h4 class="<%= fontColor %> <%= fontWeight %>">
+          <%= titleText %>
+        </h4>
       <% } %>
     </div>
   </div>

@@ -94,7 +94,8 @@
     /* BYP Color 2024*/
     --BYP2024-Blue900: #1E40AF;
     --BYP2024-Blue800: #3B81F6;
- 
+    --BYP2024-Blue300: #D4EDFD;
+
     --BYP2024-Blue200: #EAF7FF;
     --BYP2024-Blue100: #F5FBFF;
 
@@ -841,7 +842,18 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--BYP-Teal-50);
     margin: 0 auto;
 }
-
+.colorBgBYPblue100 {
+    background-color: var(--BYP2024-Blue100);
+    margin: 0 auto;
+}
+.colorBgBYPblue200 {
+    background-color: var(--BYP2024-Blue200);
+    margin: 0 auto;
+}
+.colorBgBYPblue300 {
+    background-color: var(--BYP2024-Blue300);
+    margin: 0 auto;
+}
 .colorBgBYPOrange100 {
     background-color: var(--BYP-Orange100);
     margin: 0 auto;
@@ -878,6 +890,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .colorWhie {
     color: var(--white);
+}
+.colorBYPblue800 {
+    color: var(--BYP2024-Blue800);
 }
 .colorBYPorange800 {
     color: var(--BYP-Orange800);
@@ -1867,6 +1882,11 @@ section .padding {
     background: var(--VW--Yellow);
     color: var(--white);
 }
+.BYPb2b ::selection {
+    background: var(--BYP2024-Blue800);
+    color: var(--white);
+}
+
 .LASO ::selection {
     background: var(--LASOblue700);
     color: var(--white);
@@ -1936,8 +1956,14 @@ section .padding {
 .fontWeight700 {
     font-weight: 700;
 }
+.fontWeight900 {
+    font-weight: 900;
+}
 
 /* =========== Headings =========== */
+
+
+
 h1,
 h2 {
     font-weight: 400;
@@ -4557,11 +4583,15 @@ th {
     font-weight: 300;
 }
 
+
+
+/* table 
+
 td:nth-child(even) {
     background-color: #f5f5f5c5;
 }
 
-/* table */
+*/
 
 /* ul.iconx {
     list-style-position: outside;

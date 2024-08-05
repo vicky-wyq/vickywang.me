@@ -44,13 +44,13 @@
 } 
 %>
 
-<% if (typeof titleColor1 === 'undefined') { 
-  titleColor1 = ''; 
+<% if (typeof fontColor1 === 'undefined') { 
+  fontColor1 = ''; 
 } 
 %>
 
-<% if (typeof titleColor2 === 'undefined') { 
-  titleColor2 = ''; 
+<% if (typeof fontColor2 === 'undefined') { 
+  fontColor2 = ''; 
 } 
 %>
 
@@ -76,20 +76,20 @@
   <div class="element">
     <% if (subTitleFont1==='h2' ) { %>
     <h2>
-      <strong class="<%= titleColor1 %>">
+      <strong class="<%= fontColor1 %>">
         <%= subTitle1 %>
       </strong>
     </h2>
     <% } else if (subTitleFont1==='h3' ) { %>
     <h3>
-      <strong class="<%= titleColor1 %>">
+      <strong class="<%= fontColor1 %>">
 
         <%= subTitle1 %>
       </strong>
     </h3>
     <% } else if (subTitleFont1==='h4' ) { %>
     <h4>
-      <strong class="<%= titleColor1 %>">
+      <strong class="<%= fontColor1 %>">
         <%= subTitle1 %>
       </strong>
     </h4>
@@ -100,20 +100,20 @@
 
     <% if (subTitleFont2==='h2' ) { %>
     <h2>
-      <strong class="<%= titleColor2 %>">
+      <strong class="<%= fontColor2 %>">
         <%= subTitle2 %>
       </strong>
     </h2>
     <% } else if (subTitleFont2==='h3' ) { %>
     <h3>
-      <strong class="<%= titleColor2 %>">
+      <strong class="<%= fontColor2 %>">
 
         <%= subTitle2 %>
       </strong>
     </h3>
     <% } else if (subTitleFont2==='h4' ) { %>
     <h4>
-      <strong class="<%= titleColor2 %>">
+      <strong class="<%= fontColor2 %>">
         <%= subTitle2 %>
       </strong>
     </h4>
