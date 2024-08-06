@@ -1035,7 +1035,22 @@ polygon {
     border-radius: 1.2em;
     border: 1px solid var(--border);
 }
+.crop_byp_b2b {
+    background: var(--Grey900);
+    border-radius: 2.2em;
+    border: 1px solid var(--white);
+    padding: 5px; /* Adjust padding to ensure the border doesn't overlap the image */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    overflow: hidden; /* Crop any overflowing content, such as the image */
+    display: inline-block; /* Ensures the container fits around the image */
+  }
 
+  .crop_byp_b2b img {
+    display: block;
+    width: 100%; /* Make the image fit the container's width */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 1.8em; /* Apply the same border radius to the image */
+  }
 .cardGlorify {
     background: var(--GLORIFY-orangeLtest);
     border-radius: 0.8em;
