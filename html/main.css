@@ -63,9 +63,9 @@
     --GreyHTMLBg: #fefdfc;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
 
-    --VW--Yellow: #FFB400; 
-    --VW--Yellow-Light: #FFDA79;
-    --VW--Grey2024:#F8F7F4;
+    --VW--Yellow: #ffb400;
+    --VW--Yellow-Light: #ffda79;
+    --VW--Grey2024: #f8f7f4;
     /* ======================== */
 
     --LASOblueMobile: #4396d8;
@@ -92,12 +92,15 @@
 
     --AMBlue: #5384ed;
     /* BYP Color 2024*/
-    --BYP2024-Blue900: #1E40AF;
-    --BYP2024-Blue800: #3B81F6;
-    --BYP2024-Blue300: #D4EDFD;
+    --BYP2024-Blue900: #1e40af;
+    --BYP2024-Blue800: #3b81f6;
+    --BYP2024-Blue300: #d4edfd;
 
-    --BYP2024-Blue200: #EAF7FF;
-    --BYP2024-Blue100: #F5FBFF;
+    --BYP2024-Blue200: #EEF4FD;
+    /* blue 200 eaf7ff*/
+
+    --BYP2024-Blue100: #f5fbff;
+    --BYP-b2b-booking-grey: #FBFBFB;
 
 
     --WS-Blue: #35b9c5;
@@ -113,17 +116,19 @@
     --BYP-Teal600: #02dcc3;
     --BYP-Teal400: #ccf8f3;
     --BYP-Teal100: #eafcfc;
-    --BYP-Teal-50: #fcffff;    
+    --BYP-Teal-50: #fcffff;
 
+    --BYP-Orange100: #fffaf3;
+    /* New lighter shade */
+    --BYP-Orange200: #fff1dd;
+    /* New lighter shade */
 
-    --BYP-Orange100: #FFFAF3;  /* New lighter shade */
-    --BYP-Orange200: #fff1dd;  /* New lighter shade */
-
-    --BYP-Orange600: #FBBF7D;  /* Mid-tone */
-    --BYP-Orange700: #EE9F4A;  /* Darker shade */
-    --BYP-Orange800: #EE9F4A;  /* Darker shade */
-
-
+    --BYP-Orange600: #fbbf7d;
+    /* Mid-tone */
+    --BYP-Orange700: #ee9f4a;
+    /* Darker shade */
+    --BYP-Orange800: #ee9f4a;
+    /* Darker shade */
 
     /* =========== New | Site Wide ============= */
     --teal800: #2fa097;
@@ -207,7 +212,11 @@ a:link {
 }
 
 a:hover {
-    color: #FFB400 !important;
+    color: #ffb400 !important;
+}
+
+.BYPb2b a:hover {
+    color: var(--BYP2024-Blue800) !important;
 }
 
 .BYP a:hover {
@@ -352,6 +361,7 @@ body .displayPhone {
     flex-direction: row;
     justify-content: space-between;
 }
+
 .headerContainer {
     position: fixed;
     top: 0;
@@ -368,10 +378,11 @@ body .displayPhone {
     flex-direction: row;
     justify-content: space-between;
 }
-.bgVWGrey{
-    background:var(--VW--Grey2024);
 
+.bgVWGrey {
+    background: var(--VW--Grey2024);
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -502,11 +513,8 @@ a.nav-link {
     color: var(--Grey700);
     padding: 20px 1.6vw;
 
-    text-shadow:
-        -1px -1px 0 var(--VW--Grey2024),
-         1px -1px 0 var(--VW--Grey2024),
-        -1px  1px 0 var(--VW--Grey2024),
-         1px  1px 0 var(--VW--Grey2024);
+    text-shadow: -1px -1px 0 var(--VW--Grey2024), 1px -1px 0 var(--VW--Grey2024),
+        -1px 1px 0 var(--VW--Grey2024), 1px 1px 0 var(--VW--Grey2024);
 }
 
 a.active.SEER {
@@ -823,37 +831,50 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--white);
     margin: 0 auto;
 }
+
 .colorBgVW {
     background-color: var(--VW--Grey2024);
     margin: 0 auto;
 }
+
 .pattern1 {
-    background-image: repeating-linear-gradient(-45deg, rgba(204, 204, 204, 0.25), rgba(194, 194, 194, 0.25) 1px, transparent 1px, transparent 6px);
+    background-image: repeating-linear-gradient(-45deg,
+            rgba(204, 204, 204, 0.25),
+            rgba(194, 194, 194, 0.25) 1px,
+            transparent 1px,
+            transparent 6px);
     background-size: 8px 8px;
 }
+
 .pattern2 {
-    background-image: repeating-linear-gradient(-45deg, rgba(187, 187, 187, 0.25), rgba(227, 227, 227, 0.25) 2px, transparent 2px, transparent 12px);
+    background-image: repeating-linear-gradient(-45deg,
+            rgba(187, 187, 187, 0.25),
+            rgba(227, 227, 227, 0.25) 2px,
+            transparent 2px,
+            transparent 12px);
     background-size: 8px 8px;
 }
-
-
 
 .colorBgBYP {
     background-color: var(--BYP-Teal-50);
     margin: 0 auto;
 }
-.colorBgBYPblue100 {
-    background-color: var(--BYP2024-Blue100);
+
+.colorBgBYPgrey {
+    background-color: var(--BYP-b2b-booking-grey);
     margin: 0 auto;
 }
+
 .colorBgBYPblue200 {
     background-color: var(--BYP2024-Blue200);
     margin: 0 auto;
 }
+
 .colorBgBYPblue300 {
     background-color: var(--BYP2024-Blue300);
     margin: 0 auto;
 }
+
 .colorBgBYPOrange100 {
     background-color: var(--BYP-Orange100);
     margin: 0 auto;
@@ -891,15 +912,19 @@ body::-webkit-scrollbar-thumb:hover {
 .colorWhie {
     color: var(--white);
 }
+
 .colorBYPblue800 {
     color: var(--BYP2024-Blue800);
 }
+
 .colorBYPorange800 {
     color: var(--BYP-Orange800);
 }
+
 .colorBYPorange700 {
     color: var(--BYP-Orange700);
 }
+
 .colorBYPTeal800 {
     color: var(--BYP-Teal800);
 }
@@ -1009,7 +1034,6 @@ polygon {
 }
 
 .colorVW {
-    
     color: var(--VW--Yellow);
 }
 
@@ -1035,22 +1059,31 @@ polygon {
     border-radius: 1.2em;
     border: 1px solid var(--border);
 }
+
 .crop_byp_b2b {
     background: var(--Grey900);
     border-radius: 2.2em;
     border: 1px solid var(--white);
-    padding: 5px; /* Adjust padding to ensure the border doesn't overlap the image */
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    overflow: hidden; /* Crop any overflowing content, such as the image */
-    display: inline-block; /* Ensures the container fits around the image */
-  }
+    padding: 5px;
+    /* Adjust padding to ensure the border doesn't overlap the image */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
+    overflow: hidden;
+    /* Crop any overflowing content, such as the image */
+    display: inline-block;
+    /* Ensures the container fits around the image */
+}
 
-  .crop_byp_b2b img {
+.crop_byp_b2b img {
     display: block;
-    width: 100%; /* Make the image fit the container's width */
-    height: auto; /* Maintain the image's aspect ratio */
-    border-radius: 1.8em; /* Apply the same border radius to the image */
-  }
+    width: 100%;
+    /* Make the image fit the container's width */
+    height: auto;
+    /* Maintain the image's aspect ratio */
+    border-radius: 1.8em;
+    /* Apply the same border radius to the image */
+}
+
 .cardGlorify {
     background: var(--GLORIFY-orangeLtest);
     border-radius: 0.8em;
@@ -1075,9 +1108,11 @@ polygon {
     border: 2px solid var(--LASOblue500);
     height: auto;
 }
+
 .cardBorderbypB2C {
     border: 0.06em solid var(--BYP-Orange600) !important;
 }
+
 .cardBorder {
     border: 0.06em solid var(--Grey200) !important;
 }
@@ -1641,7 +1676,6 @@ section {
     body .section-nav {
         margin-left: cals(100% - 332px);
     }
-
 }
 
 /* ====== for nav 2 ======*/
@@ -1766,7 +1800,45 @@ li .newPanelV3 {
     color: var(--Grey900) !important;
 }
 
-/* =========== sub nav V1 =========== */
+/* =========== new sidebar =========== */
+
+
+.new_side_bar {
+    position: sticky;
+    width: max-content;
+    height: fit-content;
+    padding: 8px;
+    overflow-y: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    z-index: 98;
+    text-align: center;
+}
+.new_side_bar li {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 32px;
+    padding: var(--paddingM);
+    margin: 18px 0;
+    border-radius: 64px;
+}
+.new_side_bar li.active {
+    outline: var(--Grey900) 0.04em solid;
+}
+.new_side_bar li.active:hover {
+    outline: var(--BYP2024-Blue800) 0.04em solid;
+}
+
+.new_side_bar,a,li:hover {
+
+    color: var(--BYP2024-Blue800);
+
+}
+
+
+/* =========== new sidebar =========== */
+
 /* 1. Enable smooth scrolling */
 /* 2. Make nav sticky */
 main>nav {
@@ -1863,13 +1935,11 @@ ul {
     margin-left: 0;
     padding-left: 20px;
     line-height: 1.6em;
-
 }
 
 ul .listCircle {
     list-style-type: circle;
     margin-left: 1em;
-
 }
 
 ol .listABC {
@@ -1889,14 +1959,11 @@ section .padding {
 
 /* =========== Special Text =========== */
 
-
-
-
-
 ::selection {
     background: var(--VW--Yellow);
     color: var(--white);
 }
+
 .BYPb2b ::selection {
     background: var(--BYP2024-Blue800);
     color: var(--white);
@@ -1916,16 +1983,19 @@ section .padding {
     background: var(--APPOINTA-blueLight);
     color: var(--white);
 }
+
 .txt-type {
-    color: #FFB400; /* Add your desired color here */
+    color: #ffb400;
+    /* Add your desired color here */
     transition: opacity 0.5s ease-in-out;
 }
+
 .specialTextTitle {
     font-family: inherit;
-    line-height:140%;
+    line-height: 140%;
     font-weight: 600;
     font-size: clamp(2.2em, 4.8vw, 5.2em);
-    margin:0;
+    margin: 0;
 }
 
 .specialTextL {
@@ -1971,13 +2041,12 @@ section .padding {
 .fontWeight700 {
     font-weight: 700;
 }
+
 .fontWeight900 {
     font-weight: 900;
 }
 
 /* =========== Headings =========== */
-
-
 
 h1,
 h2 {
@@ -2113,7 +2182,6 @@ a:link.textUnderline,
 
 /* =========== Font Styles =========== */
 
-
 hr {
     border: none;
     height: 1px;
@@ -2169,9 +2237,11 @@ hr {
 .cardBottomBorder.BYP:hover {
     border-bottom: 5px solid var(--WS-Blue) !important;
 }
+
 .cardBottomBorder.bypOrange:hover {
     border-bottom: 5px solid var(--BYP-Orange800) !important;
 }
+
 .cardBottomBorder.bypBlue:hover {
     border-bottom: 5px solid var(--BYP2024-Blue800) !important;
 }
@@ -2534,7 +2604,6 @@ button.passwordArr {
     margin-left: 4px;
 }
 
-
 .iconEmail:after {
     content: "";
     background-image: url("icon/24_email.svg");
@@ -2698,7 +2767,9 @@ button.passwordArr {
     body .section-nav {
         display: none;
     }
-
+    body .new_side_bar {
+        display: none;
+    }
     .navigation {
         justify-content: space-around;
     }
@@ -2768,8 +2839,6 @@ button.passwordArr {
         padding: 1.1em 2.2em;
         width: 2em;
     }
-
-
 
     .active .bar:nth-child(2) {
         opacity: 0;
@@ -2856,6 +2925,7 @@ button.passwordArr {
     body .heighMobileTitle {
         height: 24em;
     }
+
     body .carouselLogoBlur {
         .logos {
             background: url(/about/marquee_small.svg) 0 50% / 1134px 150px repeat-x;
@@ -4020,8 +4090,6 @@ body .flex-container.Mobile {
     align-items: center;
 }
 
-
-
 /* Shadows Into Light */
 
 .t-hello {
@@ -4119,15 +4187,15 @@ body .flex-container.Mobile {
     cursor: pointer;
     border-radius: 50px;
 
-    color: #000000; /* Base font color */
+    color: #000000;
+    /* Base font color */
 
-    text-shadow: 
-    -1px -1px 0 #ffffff,  
-     1px -1px 0 #ffffff,
-    -1px  1px 0 #ffffff,
-     1px  1px 0 #ffffff; /* Outline effect */
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+    /* Outline effect */
 }
-#bro{
+
+#bro {
     height: fit-content;
 }
 
@@ -4404,6 +4472,7 @@ body .flex-container.Mobile {
 .fitContent {
     width: fit-content;
 }
+
 .paddingXS {
     padding: var(--paddingXS);
 }
@@ -4501,18 +4570,17 @@ body .flex-container.Mobile {
 
 /* ===== hover effect ====== */
 
-
 .hoverWhite {
     background-color: var(--VW--Grey2024);
     border: 0.06em solid var(--VW--Grey2024);
     transition: background-color 0.3s, border-color 0.3s;
     /* Smooth transition for hover effect */
 }
+
 .hoverWhite:hover {
     background-color: var(--white);
     border: 0.06em solid var(--Grey400);
 }
-
 
 .hoverGrey100 {
     background-color: none;
@@ -4520,10 +4588,12 @@ body .flex-container.Mobile {
     transition: background-color 0.3s, border-color 0.3s;
     /* Smooth transition for hover effect */
 }
+
 .hoverGrey100:hover {
     background-color: var(--Grey100);
     border: 0.06em solid var(--Grey300);
 }
+
 .hoverGrey100:hover {
     background-color: var(--Grey100);
     border: 0.06em solid var(--Grey300);
@@ -4565,9 +4635,11 @@ body .flex-container.Mobile {
 .footerBg {
     background-color: var(--VW--Grey2024);
 }
+
 .borderTop {
     border-top: 1px solid var(--Grey300);
 }
+
 /* ===== hover effect ====== */
 
 /* ======== table ======== */
@@ -4598,8 +4670,6 @@ th {
     font-weight: 300;
 }
 
-
-
 /* table 
 
 td:nth-child(even) {
@@ -4623,7 +4693,6 @@ ul.iconx {
 body ul {
     list-style-position: outside;
     padding: 0;
-
 }
 
 /*     list-style-type: none;
@@ -5128,9 +5197,7 @@ button.Clipboard.clickTxt:active {
     box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
 }
 
-
 .buttonFlipLarge {
-
     -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
@@ -5152,6 +5219,7 @@ button.Clipboard.clickTxt:active {
     color: var(--white);
     box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
 }
+
 /* ====== buttonResume ====== */
 
 .buttonLanding {
@@ -5773,12 +5841,11 @@ pre code {
     font-size: 16px;
     font-weight: 400;
 
-     /* ===================     text-shadow:
+    /* ===================     text-shadow:
     -1px -1px 0 var(--VW--Grey2024),
      1px -1px 0 var(--VW--Grey2024),
     -1px  1px 0 var(--VW--Grey2024),
      1px  1px 0 var(--VW--Grey2024); ===================*/
-
 }
 
 /* =================== left arrow  ===================*/
@@ -5800,6 +5867,11 @@ pre code {
     transform: rotate(-45deg);
     border-radius: 2px;
     /* Added rounded edge */
+}
+
+a:hover .left-arrow.BYPb2b {
+    border-top: 2px solid var(--BYP2024-Blue800);
+    border-left: 2px solid var(--BYP2024-Blue800);
 }
 
 a:hover .left-arrow.BYP {
@@ -5828,8 +5900,8 @@ a:hover .left-arrow.LASO {
 }
 
 a:hover .left-arrow {
-    border-top: 2px solid #FFB400;
-    border-left: 2px solid  #FFB400;
+    border-top: 2px solid #ffb400;
+    border-left: 2px solid #ffb400;
 }
 
 a:hover .backText {
