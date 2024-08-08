@@ -911,7 +911,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0 auto;
 }
 
-
 .colorBlack {
     color: var(--Grey900);
 }
@@ -1221,7 +1220,38 @@ section {
     padding: 0;
 }
 
-/* ============ background image ============ */
+/* ============ landing ============ */
+.typing-demo {
+    display: inline-block;
+    max-width: max-content; /* Adjust to fit the content */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    animation: typing 2s steps(22) forwards, blink 1s step-end 2s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 22ch; /* Ensure the width matches the text */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-right-color: transparent; /* Blink cursor */
+    }
+    100% {
+        border-right-color: transparent; /* Make cursor disappear but keep the space */
+    }
+}
+
+
+
+  /* ============ background image ============ */
 
 .BGseer0 {
     background-image: url("./seer/bg0.svg");
@@ -1984,18 +2014,17 @@ section .padding {
     background: var(--APPOINTA-blueLight);
     color: var(--white);
 }
-
-.txt-type {
-    color: #ffb400;
-    /* Add your desired color here */
-    transition: opacity 0.5s ease-in-out;
-}
+.colorLandingText{
+    background: linear-gradient(to right, #ffda79 0%, #ffb400 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
 
 .specialTextTitle {
     font-family: inherit;
     line-height: 140%;
     font-weight: 600;
-    font-size: clamp(2.2em, 4.8vw, 5.2em);
+    font-size: clamp(3.2em, 6.8vw, 6.2em);
     margin: 0;
 }
 
@@ -2776,6 +2805,10 @@ button.passwordArr {
     }
     body .new_side_bar {
         display: none;
+    }
+    .typing-demo {
+        display: none;
+
     }
     .navigation {
         justify-content: space-around;
@@ -5679,7 +5712,7 @@ button.Clipboard.clickTxt:active {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radiusS);
     z-index: 1;
-    right: 0;
+    left: 0;
 }
 
 .dropdownSM-content a {
@@ -5702,10 +5735,6 @@ button.Clipboard.clickTxt:active {
     display: block;
 }
 
-.dropbtnSM:hover,
-.dropbtn:focus {
-    background-color: #3e8e41;
-}
 
 .iconM {
     cursor: pointer;
