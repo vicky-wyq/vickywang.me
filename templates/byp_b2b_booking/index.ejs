@@ -7,10 +7,11 @@
 <!--Head-->
 
 <body class="BYPb2b">
-  <%- include( `${templatePath}/shared/comp_progressBar`) %>
+
+  <%- include(`${templatePath}/shared/comp_progressBar`, { barColor: 'b2bBYP' }) %>
   <%- include(`${templatePath}/shared/block_nav_header_back`, { 
         PageUrl:`${websitePath}/`,
-        headerBackgroundColor:`colorBgBYPblue100`,
+        headerBackgroundColor:`colorBgBYPgrey`,
         arrTxtColor:`BYPb2b`,
 
         }) %>
@@ -153,21 +154,23 @@
     <nav class="new_side_bar">
       <ul>
         <li><a href="#content1" class="side_bar_content">
-          Background
-        </a></li>
+            Background
+          </a></li>
 
         <li><a href="#content2" class="side_bar_content">
-          Research
-        </a></li>
+            Research
+          </a></li>
 
         <li><a href="#content3" class="side_bar_content">
-          Design
-        </a></li>
+            Design
+          </a></li>
 
         <li><a href="#content4" class="side_bar_content">
-          Iteration
-        </a></li>
-
+            Iteration
+          </a></li>
+        <li><a href="#content5" class="side_bar_content">
+            Reflection
+          </a></li>
       </ul>
     </nav>
     <div class="colorBgBYPblue100">
@@ -802,190 +805,315 @@
           <div class="Grid Grid--gutters Grid--full u-textCenter">
             <%- include(`${templatePath}/shared/comp_textualElements_title`, {    
               fontColor:'colorBYPblue800',
-            fontSize:'h1', 
-            fontWeight:'fontWeight900',       
-            titleText:'Design',
-            }) %>
+              fontSize:'h1', 
+              fontWeight:'fontWeight900',       
+              titleText:'Design',
+              }) %>
           </div>
-
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
-                <h3><strong>Streamline the Booking Process</strong></h3>
-                <ul>
-                  <li class="listCircle">
-                    <h4>Reduce total booking time </h4>
-                  </li>
-                  <li class="listCircle">
-                    <h4>Minimize the number of clicks </h4>
-                  </li>
-                  <li class="listCircle">
-                    <h4>Simplify user interface </h4>
-                  </li>
-                  <li class="listCircle">
-                    <h4>Reduce clicks</h4>
-                  </li>
-                </ul>
+                <h3><strong>Workflow</strong></h3>
               </div>
             </div>
-          </div>
-          <div class="Grid Grid--full Grid--gutters">
+
+
             <div class="Grid-cell ">
               <div class="element">
                 <div class="Grid">
-                  <img class="modal-target" src="img_booking.svg" alt="Competitive Analysis">
+                  <img class="modal-target" src="diagram_workflow.svg" alt="Workflow">
                 </div>
+              </div>
+              <div class="element">
+
+
+
+                <div class="borderRadiusXS colorBgBYPblue200 paddingS">
+
+                  <h3>The goal is to enhance the appointment booking process by increasing flexibility, efficiency, and clarity. Our objectives are to reduce booking time and improve overall efficiency.</h3>
+                  <h3>Feedback indicates that some users, in certain situations, prefer to skip the payment step for added flexibility. Additionally, improving price clarity and making prices easy to understand and editable are critical for reducing booking time and effort.
+
+
+
+
+
+
+                  </h3>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="blankHS"></div>
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters">
+            <div class="Grid-cell">
+              <div class="element">
+                <h3><strong>Mockups</strong></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="colorBgBYPblue200">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutters">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="specialTextL ">#1 Remind main flow, payment step is optional </h3>
+
+                  <div class="Grid Grid--full Grid--gutters">
+                    <div class="Grid-cell ">
+                      <div class="element">
+                        <div class="Grid">
+                          <img class="modal-target" src="flow_overview.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="element">
+
+
+
+                        <div class="borderRadiusXS colorBgBYPblue200 paddingS">
+
+                          <h3>The overall key flow remains the same, but now the appointment and payment pages are clearly separated. All appointment details are on the appointment page, allowing users to communicate about the appointment before proceeding to payment. Users can also edit prices at the line item level, not on the payment page.
+
+
+
+
+
+
+                          </h3>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHS"></div>
+        <hr class="wrapper">
+        <div class="blankHS"></div>
+        <div class="colorBgBYPblue200">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutters">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="specialTextL ">#2 Auto fill clicked date & time </h3>
+
+                  <div class="Grid Grid--full Grid--gutters">
+                    <div class="Grid-cell ">
+                      <div class="element">
+                        <div class="Grid">
+                          <img class="modal-target" src="flow_auto_select_date.svg" alt="">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="element">
+
+              <div class="crop_byp_b2b">
+                <img src="gif_click_calendar.gif" alt="Clickable Calendar">
+              </div>
+            </div>
+            <div class="element">
+              <div>
+                <h3>Clicking the calendar automatically selects the appointment date and time based on user's selection.</h3>
               </div>
             </div>
           </div>
           <div class="blankHS"></div>
 
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h3><strong>Comprehensive Service Listings & Transparent Pricing</strong></h3>
-                <ul>
-                  <li class="listCircle">
-                    <h4> Clear display of service names, descriptions, prices, and quantities </h4>
-                  </li>
-                  <li class="listCircle">
-                    <h4> Transparent pricing for all services </h4>
-                  </li>
-                  <li class="listCircle">
-                    <h4>Clear instructions and prompts </h4>
-                  </li>
+        </div>
+        <div class="blankHS"></div>
+        <hr class="wrapper">
+        <div class="blankHS"></div>
+        <div class="colorBgBYPblue200">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutters">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="specialTextL ">#3 Easy to override the duration </h3>
 
-                </ul>
+                  <div class="Grid Grid--full Grid--gutters">
+                    <div class="Grid-cell ">
+                      <div class="element">
+                        <div class="Grid">
+                          <img class="modal-target" src="flow_override_duration.svg" alt="">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell ">
-              <div class="element">
-                <div class="Grid">
-                  <img class="modal-target" src="img_service_listing.png" alt="Competitive Analysis">
-                </div>
+            <div class="element">
+
+              <div class="crop_byp_b2b">
+                <img src="gif_adjust_duration.gif" alt="">
+              </div>
+            </div>
+            <div class="element">
+              <div>
+                <h3>Default service duration will auto popup after service selection. Users can adjust the duration as needed during service selection.
+                </h3>
               </div>
             </div>
           </div>
           <div class="blankHS"></div>
 
+        </div>
+        <div class="blankHS"></div>
+        <hr class="wrapper">
+        <div class="blankHS"></div>
 
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell ">
-              <div class="element">
-                <div class="Grid">
-                  <img class="modal-target" src="img_cost_fee.png" alt="Competitive Analysis">
+
+        <div class="colorBgBYPblue200">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutters">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="specialTextL ">#4 Easy to see the price </h3>
+
+                  <div class="Grid Grid--full Grid--gutters">
+                    <div class="Grid-cell ">
+                      <div class="element">
+                        <div class="Grid">
+                          <img class="modal-target" src="flow_see_price.png" alt="">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="element">
+
+              <div class="crop_byp_b2b">
+                <img src="gif_price_dropdown.gif" alt="">
+              </div>
+            </div>
+            <div class="element">
+              <div>
+                <h3>The dropdown menu shows the price, making it easy for business owners to see and communicate with customers. After selecting a service, the price becomes editable, with the default price staying the same.
+                </h3>
               </div>
             </div>
           </div>
           <div class="blankHS"></div>
 
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h3><strong>Personalized Experience:</strong></h3>
-                <ul>
-                  <li class="listCircle">
-                    <h4>Provide quick booking options </h4>
-
-                  </li>
-                  <li class="listCircle">
-                    <h4>Offer recommendations based on past bookings </h4>
-
-                  </li>
-                  <li class="listCircle">
-                    <h4>Facilitate easy rebooking of appointments </h4>
-
-                  </li>
-                  <li class="listCircle">
-                    <h4>Simplify rescheduling and cancellations </h4>
-
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell ">
-              <div class="element">
-                <div class="Grid">
-                  <img class="modal-target" src="img_personalized.png" alt="Competitive Analysis">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blankHM"></div>
+        </div>
+      </section>
+      <section id="content4">
+        <div class="wrapper">
           <div class="Grid Grid--gutters Grid--full u-textCenter">
-            <%- include(`${templatePath}/shared/comp_textualElements_title`, { fontColor:`colorBYPblue800`,
-                  fontSize:`h1`, titleText:`Design, Testing & Iteration`, }) %>
+            <%- include(`${templatePath}/shared/comp_textualElements_title`, {    
+              fontColor:'colorBYPblue800',
+              fontSize:'h1', 
+              fontWeight:'fontWeight900',       
+              titleText:'Iteration',
+              }) %>
           </div>
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h3> <strong class="Grey800">Design and Test Version 1: </strong></h3>
+        </div>
 
-                <ul>
-                  <li class="listCircle">
-                    <h4>Focus on streamlining the booking process
-                    </h4>
-                  </li>
-                  <li class="listCircle">
-                    <h4>Improve the entire flow
-                    </h4>
-                  </li>
-                </ul>
+
+
+        <div class="colorBgBYPblue200">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutters">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="specialTextL ">#1 Reduct click & avoid back and force </h3>
+
+                </div>
               </div>
             </div>
 
-            <div class="Grid-cell">
-              <div class="element">
-                <h3> <strong class="Grey800">Design and Test Version 2:
 
-                  </strong></h3>
-
-                <ul>
-                  <li class="listCircle">
-                    <h4>Focus on the comprehensive appointment process
-                    </h4>
-                  </li>
-
-                </ul>
+            <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="gif_note.gif" alt="">
+                </div>
+                <div class="element">
+                  <h3>Current Version </h3>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="gif_note_enhance.gif" alt="">
+                </div>
+                <div class="element">
+                  <h3>Enhancement </h3>
+                </div>
               </div>
             </div>
-
-            <div class="Grid-cell">
-              <div class="element">
-                <h3> <strong class="Grey800">Design and Test Version 3:
-
-                  </strong></h3>
-
-                <ul>
-                  <li class="listCircle">
-                    <h4>Reduce total booking time and number of clicks
-
-
-
-
-
-                    </h4>
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-
           </div>
-          <div class="blankHM"></div>
+          <div class="blankHS"></div>
+
+        </div>
+        <div class="blankHS"></div>
+        <hr class="wrapper">
+        <div class="blankHS"></div>
+
+        <div class="colorBgBYPblue200">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutters">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h3 class="specialTextL ">#2 Hide order details by default to avoid confusion                  </h3>
+
+                </div>
+              </div>
+            </div>
 
 
+            <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="mockup_payment.svg" alt="">
+                </div>
+                <div class="element">
+                  <h3>Current Version </h3>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <img src="gif_hide_details.gif" alt="">
+                </div>
+                <div class="element">
+                  <h3>Enhancement </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blankHS"></div>
+
+        </div>
+      </section>
+      <section id="content5">
+        <div class="wrapper">
           <div class="Grid Grid--gutters Grid--full u-textCenter">
-            <%- include(`${templatePath}/shared/comp_textualElements_title`, { fontColor:`colorBYPblue800`,
-                  fontSize:`h1`, titleText:`Outcome & Reflection`, }) %>
+            <%- include(`${templatePath}/shared/comp_textualElements_title`, {    
+              fontColor:'colorBYPblue800',
+              fontSize:'h1', 
+              fontWeight:'fontWeight900',       
+              titleText:'Reflection',
+              }) %>
           </div>
-
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
@@ -994,24 +1122,21 @@
 
                 <ul>
                   <li class="listCircle">
-                    <h4>Reduce booking steps. </h4>
+                    <h4>Reduce booking time</h4>
                   </li>
                   <li class="listCircle">
-                    <h4>Minimize clicks for a better user experience. </h4>
+                    <h4>Improve booking efficiency</h4>
                   </li>
                   <li class="listCircle">
-                    <h4>Streamline service and add-on options. </h4>
+                    <h4>Improve clarity of line items </h4>
                   </li>
 
-                  <li class="listCircle">
-                    <h4>Display upfront costs and potential fees. </h4>
-                  </li>
-                  <li class="listCircle">
-                    <h4>Provide comprehensive service info and detailed pricing descriptions. </h4>
-                  </li>
+
 
                 </ul>
-                <h3> <strong class="Grey800">KPIs since launch</strong></h3>
+
+                <!--
+                                <h3> <strong class="Grey800">KPIs since launch</strong></h3>
                 <ul>
 
                   <li class="listCircle">
@@ -1050,21 +1175,18 @@
 
                 <h3><strong class="colorBYPblue800">Reflection 📚</strong></h3>
                 <h4> Using both qualitative and quantitative data during the research phase was crucial, providing a well-rounded understanding of user behavior and needs. With more time, conducting a larger survey group could further enhance the insights as we gain more users and improve the app.</h4>
-
+                
+                -->
 
 
               </div>
             </div>
 
           </div>
-          <div class="blankHM"></div>
-
-
-
-
-
         </div>
+
       </section>
+
     </div>
   </main>
 
@@ -1097,9 +1219,10 @@
   <%- include(`${templatePath}/shared/comp_backTop`) %>
 
   <%- include(`${templatePath}/shared/block_nav_footer`, { 
-    iconHoverColor: '',
-    footerBackgroundColor:'colorBgBYPblue100'
+    iconHoverColor: 'hoverWhite',
+    footerBackgroundColor:'colorBgVW'
   }) %>
+
   <!-- Shared across the platform -->
 
 </body>

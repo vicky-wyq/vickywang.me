@@ -831,7 +831,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--white);
     margin: 0 auto;
 }
-
+.colorBgWhieTrans {
+    background-color: var(--White-transparent);
+    margin: 0 auto;
+}
 .colorBgVW {
     background-color: var(--VW--Grey2024);
     margin: 0 auto;
@@ -904,6 +907,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--Highlight);
     margin: 0 auto;
 }
+
 
 .colorBlack {
     color: var(--Grey900);
@@ -1828,10 +1832,6 @@ li .newPanelV3 {
 }
 .new_side_bar li.active:hover {
     outline: var(--BYP2024-Blue800) 0.04em solid;
-}
-
-.new_side_bar,a,li:hover {
-    color: var(--BYP2024-Blue800);
 }
 
 
@@ -3704,6 +3704,11 @@ body .flex-container.Mobile {
 
 .progress-bar {
     background-color: var(--Grey900);
+    height: 3px;
+    width: 0%;
+}
+.progress-bar.b2bBYP {
+    background-color: var(--BYP2024-Blue800);
     height: 3px;
     width: 0%;
 }
