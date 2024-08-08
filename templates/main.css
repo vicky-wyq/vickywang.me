@@ -839,7 +839,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--VW--Grey2024);
     margin: 0 auto;
 }
-
+.colorBgYellowVW {
+    background-color: var(--VW--Yellow-Light);
+    margin: 0 auto;
+}
 .pattern1 {
     background-image: repeating-linear-gradient(-45deg,
             rgba(204, 204, 204, 0.25),
@@ -2186,6 +2189,12 @@ hr {
     border-bottom: 1px solid var(--Grey400);
     width: 100%;
 }
+hr.colorBlack {
+    border: none;
+    height: 1px;
+    border-bottom: 0.02em solid var(--Grey900);
+    width: 100%;
+}
 
 .lineVer {
     border-left: 1px solid gray;
@@ -2924,11 +2933,6 @@ button.passwordArr {
         height: 24em;
     }
 
-    body .carouselLogoBlur {
-        .logos {
-            background: url(/about/marquee_small.svg) 0 50% / 1134px 150px repeat-x;
-        }
-    }
 
     body .rowToColumn {
         display: flex;
@@ -4313,7 +4317,7 @@ body .flex-container.Mobile {
 /* alignment */
 
 .tArrow {
-    font-size: clamp(2.2em, 3.6vw, 3.2em);
+    font-size: clamp(1.6em, 2.2vw, 2.6em);
     font-weight: 100;
     margin: 0px;
     /* text-transform: capitalize; */
@@ -5177,22 +5181,54 @@ button.Clipboard.clickTxt:active {
 }
 
 /* ====== buttonResume ====== */
+
+  
+
+  /* And so on for other button classes... */
+  
+  .buttonCTA {
+    border-radius: 120px;
+    padding: 22px 32px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.buttonLarge {
+    --hover: #ffda79;
+    border: 1px solid var(--Grey900);
+
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--Grey900);
+    transition: box-shadow 1s; /* Ensure smooth transition for box-shadow */
+}
+
+.buttonLarge:hover, .buttonLarge:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+    100% {
+        box-shadow: 0 0 0 2em transparent;
+    }
+}
+
 .buttonFlip {
     -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-
     display: block;
-    max-width: 180px;
     text-decoration: none;
-    border-radius: 120px;
-    padding: 12px 16px;
     color: var(--Grey900);
     box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
-    font-weight: 500;
-    background-color: var(--white);
 }
 
 .buttonFlip:hover {
@@ -5200,28 +5236,7 @@ button.Clipboard.clickTxt:active {
     box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
 }
 
-.buttonFlipLarge {
-    -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-    -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-    -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-    -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
 
-    display: block;
-    width: fit-content;
-    text-decoration: none;
-    border-radius: 120px;
-    padding: 16px 28px;
-    color: var(--Grey900);
-    box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.buttonFlipLarge:hover {
-    color: var(--white);
-    box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
-}
 
 /* ====== buttonResume ====== */
 
@@ -6137,7 +6152,7 @@ button.intro:hover {
 
 /* =================== carousel intro  ===================*/
 
-/* =================== Logo Carousel Blur  ===================*/
+/* =================== Logo Carousel Blur  =================== */
 .carouselLogoBlurContainer {
     background: none;
     margin: 0;
@@ -6166,17 +6181,19 @@ button.intro:hover {
     max-width: 1120px;
     width: 100%;
     position: relative;
-
-    .logos {
-        animation: moveBg var(--speed) linear infinite;
-        position: absolute;
-        inset: 0;
-        background: url(/about/marquee.svg) 0 50% / 1134px 150px repeat-x;
-        -webkit-mask: linear-gradient(90deg,
-                #0000 5px,
-                #000 50px calc(100% - 50px),
-                #0000 calc(100% - 5px));
-    }
 }
 
-/* =================== Logo Carousel Blur  ===================*/
+.carouselLogoBlur .logos {
+    animation: moveBg var(--speed) linear infinite;
+    position: absolute;
+    inset: 0;
+    background: url(marquee.svg) 0 50% / 1134px 150px repeat-x;
+    -webkit-mask: linear-gradient(90deg, #0000 5px, #000 50px calc(100% - 50px), #0000 calc(100% - 5px));
+    animation-play-state: running; /* Ensure it starts running */
+}
+
+.carouselLogoBlur .logos:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+/* =================== Logo Carousel Blur  =================== */
