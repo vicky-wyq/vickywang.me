@@ -1758,7 +1758,7 @@ section {
     padding: 12px;
     color: var(--Grey600);
     transition: all 50ms ease-in-out;
-    /* 💡 This small transition makes setting of the active state smooth */
+    /* ðŸ’¡ This small transition makes setting of the active state smooth */
 }
 
 .subNav a:hover,
@@ -1827,7 +1827,7 @@ li .newPanelV3 {
     padding: 8px 16px;
     color: var(--Grey700);
     transition: all 50ms ease-in-out;
-    /* 💡 This small transition makes setting of the active state smooth */
+    /* ðŸ’¡ This small transition makes setting of the active state smooth */
     border-radius: 0 8px 8px 0;
 }
 
@@ -1905,7 +1905,7 @@ main>nav {
     padding: 4px 12px;
     color: var(--Grey700);
     transition: all 50ms ease-in-out;
-    /* 💡 This small transition makes setting of the active state smooth */
+    /* ðŸ’¡ This small transition makes setting of the active state smooth */
     border-radius: 0 8px 8px 0;
 }
 
@@ -2031,8 +2031,8 @@ section .padding {
 .specialTextL {
     font-family: inherit;
     font-weight: 600;
+    margin: 0;
     font-size: clamp(1.6em, 2.8vw, 3.2em);
-    margin: clamp(0.67em, 0.75em, 1.5em) 0;
 }
 
 .specialTextS {
@@ -3561,12 +3561,11 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 .TBsliderNav {
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     color: var(--Grey800);
     transition: 0.65s;
     background: none;
     border: 1px solid var(--white);
-    font: inherit;
     line-height: inherit;
     margin: 0.5em;
     padding: 1em 2em;
