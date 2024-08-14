@@ -211,7 +211,7 @@ a:link {
 }
 
 a:hover {
-    color: #ffb400 !important;
+    color: var(--VW--Yellow) !important;
 }
 
 .BYPb2b a:hover {
@@ -2024,7 +2024,7 @@ section .padding {
 }
 
 .colorLandingText {
-    background: linear-gradient(to right, #ffda79 0%, #ffb400 100%);
+    background: linear-gradient(to right, var(--VW--Yellow-Light) 0%, var(--VW--Yellow) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2043,6 +2043,13 @@ section .padding {
     margin: 0;
     font-size: clamp(1.6em, 2.8vw, 3.2em);
 }
+.specialTextM {
+    font-family: inherit;
+    font-weight: 600;
+    margin: 0;
+    font-size: clamp(1.3em, 2.4vw, 2.8em);
+}
+
 
 .specialTextS {
     font-family: inherit;
@@ -5967,8 +5974,8 @@ a:hover .left-arrow.LASO {
 }
 
 a:hover .left-arrow {
-    border-top: 2px solid #ffb400;
-    border-left: 2px solid #ffb400;
+    border-top: 2px solid var(--VW--Yellow) ;
+    border-left: 2px solid var(--VW--Yellow) ;
 }
 
 a:hover .backText {
@@ -6383,9 +6390,24 @@ button.intro:hover {
 }
 
 /* =================== circle on about me =================== */
+/*      
+background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+ */
 
-.gradient_background{
-    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+.gradient_background1 {
+    background: linear-gradient(45deg,#FCD0BB, #F6D8FA, #FCD0BB , #F6D8FA,#FCD0BB, #F6D8FA);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+.gradient_background2 {
+    background: linear-gradient(45deg,#ECFBF8, #E5FCDF, #ECFBF8 , #E5FCDF,#ECFBF8, #E5FCDF);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+.gradient_background3 {
+    background: linear-gradient(45deg,#3D8FDD, #F7C3F2, #3D8FDD , #F7C3F2,#3D8FDD, #F7C3F2);
     background-size: 600% 100%;
     animation: gradient 16s linear infinite;
     animation-direction: alternate;
@@ -6394,3 +6416,4 @@ button.intro:hover {
     0% {background-position: 0%}
     100% {background-position: 100%}
 }
+
