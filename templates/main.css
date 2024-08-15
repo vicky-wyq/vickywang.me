@@ -2031,21 +2031,18 @@ section .padding {
 
 .specialTextTitle {
     font-family: inherit;
-    line-height: 140%;
-    font-weight: 600;
     font-size: clamp(3.2em, 6.8vw, 6.2em);
     margin: 0;
 }
 
 .specialTextL {
     font-family: inherit;
-    font-weight: 600;
     margin: 0;
     font-size: clamp(1.6em, 2.8vw, 3.2em);
 }
+
 .specialTextM {
     font-family: inherit;
-    font-weight: 600;
     margin: 0;
     font-size: clamp(1.3em, 2.4vw, 2.8em);
 }
@@ -2053,7 +2050,6 @@ section .padding {
 
 .specialTextS {
     font-family: inherit;
-    font-weight: 600;
     font-size: clamp(1em, 2vw, 2.2em);
     margin: 0;
 }
@@ -2113,9 +2109,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {   
+h6 {
     line-height: 1.5em;
- 
+
     margin: clamp(0.42em, 0.56em, 1.2em) 0;
 }
 
@@ -2766,6 +2762,11 @@ button.passwordArr {
     margin: auto;
 }
 
+.wrapperL {
+    max-width: 1000px;
+    margin: auto;
+}
+
 @media all and (max-width: 1080px) {
     body a.nav-link {}
 
@@ -2872,21 +2873,6 @@ button.passwordArr {
         height: 150px;
     }
 
-    body .blankHS {
-        height: 1.5rem;
-    }
-
-    body .blankHM {
-        height: 6rem;
-    }
-
-    body .blankHL {
-        height: 8rem;
-    }
-
-    body .blankHXL {
-        height: 14rem;
-    }
 
     body .divider {
         margin: 10px;
@@ -3935,32 +3921,47 @@ body .flex-container.Mobile {
 
 .blankHXXS {
     display: block;
-    height: 0.8rem;
-}
+    /*     height: 0.8rem;
+ */
 
+    height: clamp(2em, 3vw, 4em);
+
+
+}
+.blankHTiny{
+height: 0.8em;
+
+}
 .blankHXS {
     display: block;
-    height: 1.2rem;
+    /*height: 1.2rem;*/
+    height: clamp(4em, 5vw, 6em);
+
 }
 
 .blankHS {
     display: block;
-    height: 6rem;
+    /*height: 6rem;*/
+    height: clamp(6em, 9vw, 14em);
+
 }
 
 .blankHM {
     display: block;
-    height: 8rem;
+    /*height: 8rem;*/
+    height: clamp(10em, 13vw, 18em);
 }
 
 .blankHL {
     display: block;
-    height: 20rem;
+    /*height: 20rem;*/
+    height: clamp(14em, 20vw, 22em);
 }
 
 .blankHXL {
     display: block;
-    height: 28rem;
+    /*height: 28rem;*/
+    height: clamp(18em, 26vw, 28em);
 }
 
 .blankVer {
@@ -4453,6 +4454,7 @@ body .flex-container.Mobile {
 .widthS {
     width: 20em;
 }
+
 .widthSM {
     width: 26em;
 }
@@ -5974,8 +5976,8 @@ a:hover .left-arrow.LASO {
 }
 
 a:hover .left-arrow {
-    border-top: 2px solid var(--VW--Yellow) ;
-    border-left: 2px solid var(--VW--Yellow) ;
+    border-top: 2px solid var(--VW--Yellow);
+    border-left: 2px solid var(--VW--Yellow);
 }
 
 a:hover .backText {
@@ -6273,7 +6275,7 @@ button.intro:hover {
 
 #circle_container {
     position: absolute;
-    top: 78px;
+    top: 178px;
     left: 0;
     display: inline-block;
     width: auto;
@@ -6395,25 +6397,32 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
  */
 
 .gradient_background1 {
-    background: linear-gradient(45deg,#FCD0BB, #F6D8FA, #FCD0BB , #F6D8FA,#FCD0BB, #F6D8FA);
+    background: linear-gradient(45deg, #FCD0BB, #F6D8FA, #FCD0BB, #F6D8FA, #FCD0BB, #F6D8FA);
     background-size: 600% 100%;
     animation: gradient 16s linear infinite;
     animation-direction: alternate;
-}
-.gradient_background2 {
-    background: linear-gradient(45deg,#ECFBF8, #E5FCDF, #ECFBF8 , #E5FCDF,#ECFBF8, #E5FCDF);
-    background-size: 600% 100%;
-    animation: gradient 16s linear infinite;
-    animation-direction: alternate;
-}
-.gradient_background3 {
-    background: linear-gradient(45deg,#3D8FDD, #F7C3F2, #3D8FDD , #F7C3F2,#3D8FDD, #F7C3F2);
-    background-size: 600% 100%;
-    animation: gradient 16s linear infinite;
-    animation-direction: alternate;
-}
-@keyframes gradient {
-    0% {background-position: 0%}
-    100% {background-position: 100%}
 }
 
+.gradient_background2 {
+    background: linear-gradient(45deg, #ECFBF8, #E5FCDF, #ECFBF8, #E5FCDF, #ECFBF8, #E5FCDF);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+.gradient_background3 {
+    background: linear-gradient(45deg, #3D8FDD, #F7C3F2, #3D8FDD, #F7C3F2, #3D8FDD, #F7C3F2);
+    background-size: 1200% 100%;
+    animation: gradient 26s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
