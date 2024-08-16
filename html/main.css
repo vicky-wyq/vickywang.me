@@ -367,7 +367,7 @@ body .displayPhone {
     left: 0;
     right: 0;
     margin: 0 auto;
-    max-width: 1160px;
+    max-width: 1320px;
     width: 100%;
     height: 64px;
     text-align: center;
@@ -2033,6 +2033,7 @@ section .padding {
     font-family: inherit;
     font-size: clamp(3.2em, 6.8vw, 6.2em);
     margin: 0;
+    line-height: 120%;
 }
 
 .specialTextL {
@@ -3919,48 +3920,43 @@ body .flex-container.Mobile {
     height: 150px;
 }
 
-.blankHXXS {
-    display: block;
-    /*     height: 0.8rem;
- */
 
-    height: clamp(2em, 3vw, 4em);
-
-
-}
 .blankHTiny{
 height: 0.8em;
 
 }
+.blankHXXS {
+    display: block;
+
+
+    height: clamp(2em, 2.6vw, 4em);
+
+
+}
 .blankHXS {
     display: block;
-    /*height: 1.2rem;*/
     height: clamp(4em, 5vw, 6em);
 
 }
 
 .blankHS {
     display: block;
-    /*height: 6rem;*/
     height: clamp(6em, 9vw, 14em);
 
 }
 
 .blankHM {
     display: block;
-    /*height: 8rem;*/
     height: clamp(10em, 13vw, 18em);
 }
 
 .blankHL {
     display: block;
-    /*height: 20rem;*/
     height: clamp(14em, 20vw, 22em);
 }
 
 .blankHXL {
     display: block;
-    /*height: 28rem;*/
     height: clamp(18em, 26vw, 28em);
 }
 
