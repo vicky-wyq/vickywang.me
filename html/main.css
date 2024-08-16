@@ -5248,14 +5248,20 @@ button.Clipboard.clickTxt:active {
 
 /* And so on for other button classes... */
 
-.buttonCTA {
+.buttonLarge {
     border-radius: 120px;
-    padding: 22px 32px;
+    padding: 22px 36px;
     font-size: 18px;
     font-weight: 500;
 }
+.buttonSmall {
+    border-radius: 120px;
+    padding: 16px 28px;
+    font-size: 14px;
+    font-weight: 500;
+}
 
-.buttonLarge {
+.buttonPrimary {
     --hover: #ffda79;
     border: 1px solid var(--Grey900);
 
@@ -5268,8 +5274,8 @@ button.Clipboard.clickTxt:active {
     /* Ensure smooth transition for box-shadow */
 }
 
-.buttonLarge:hover,
-.buttonLarge:focus {
+.buttonPrimary:hover,
+.buttonPrimary:focus {
     animation: pulse 1s;
     box-shadow: 0 0 0 2em transparent;
 }
