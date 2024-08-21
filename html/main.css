@@ -2762,8 +2762,11 @@ button.passwordArr {
     max-width: 1320px;
     margin: auto;
 }
-
 .wrapperL {
+    max-width: 660px;
+    margin: auto;
+}
+.wrapperS {
     max-width: 1000px;
     margin: auto;
 }
