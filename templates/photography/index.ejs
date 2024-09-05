@@ -11,18 +11,20 @@
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header`, {
     type:'backText', 
+    headerBackgroundColor:`colorBgWhieTrans`,
+
     arrTxtColor:``,
     currentPage: 'PHOTOGRAPHY',
     PageUrl:`/`
-    }) %>  <div class="blankHM"></div>
-  <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`👋🏻 hi there!`}) %>
+    }) %> <div class="blankHM"></div>
+  <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`👋🏻 hi there!, `}) %>
 
   <%- include(`${templatePath}/shared/comp_titleWeb`,{
     ShowIntroTitle1:true,
     ShowIntroTitle2:false,
     ShowIntroTitle3:false,
     ShowIntroTitle4:false,
-    introTitle1: `Capturing the essence of the natural world: a photographic journey
+    introTitle1: `Welcome to my photography journey, where I aim to capture the natural world in all its beauty and complexity.
 
 `,
     divider1: false, 
@@ -33,7 +35,7 @@
     introTitle4: ``
   }) %>
   <%- include(`${templatePath}/shared/base_textualElements_paragraph`,{
-    paragraphTxt:`My photography is a celebration of nature's complexity and splendor, viewed through my unique lens and perspective. It's an artistic endeavor to capture and share the intricate stories and stunning beauty found in natural elements. From vast landscapes to the minutest details, my goal is to present nature in its most breathtaking light. This passion for observation and storytelling drives me to explore the natural world, bringing its wonders closer to others through my photographic art.`
+    paragraphTxt:`Through my lens, I seek to share the breathtaking landscapes and intricate details that make nature so captivating. Each photograph tells a story, inviting you to see the wonders of the world from a fresh perspective. This passion for exploration and storytelling drives me to connect others with the remarkable moments I find in nature.`
   }) %>
 
 
@@ -47,40 +49,376 @@
 
     <nav class="new_side_bar">
       <ul>
-        <li class="active"><a href="#content1" class="side_bar_content">
+        <li class="active"><a href="#2024" class="side_bar_content">
+            2024
+          </a></li>
+
+        <li><a href="#2023" class="side_bar_content">
             2023
           </a></li>
 
-        <li><a href="#content2" class="side_bar_content">
+        <li><a href="#2020" class="side_bar_content">
             2020
           </a></li>
 
-        <li><a href="#content3" class="side_bar_content">
+        <li><a href="#2019" class="side_bar_content">
             2019
           </a></li>
 
 
       </ul>
     </nav>
-
-
-    <section id="content1">
-
-      <section id="content11">
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Pacific Grove Rocky View <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></h2>
+    <section id="2024">
+      <div class="wrapper">
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Old Fisherman's Wharf` }) %>
+        <div class="blankHXXS"></div>
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./seal3.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>Gliding in Blue</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./seal2.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>A Playful Bite</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Arrow -->
-
-
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./seal.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>Gliding in Blue</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./seal1.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>At Ease in the Deep</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="blankHS"></div>
+
+        <hr>
+        <div class="blankHXS"></div>
+
+      <div class="wrapper">
+
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Lovers Point Park in Pacific Grove' }) %>
+        <div class="blankHXXS"></div>
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./in_focus.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>In focus</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./in_focus1.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>In focus</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHS"></div>
+
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./snack_time2.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>Snack time</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./snack_time.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>Snack time</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./snack_time1.jpg" alt="Wildlife">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>Snack time</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHS"></div>
+
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./standing_tall.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>Standing Tall</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./standing_tall1.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Wildlife</h5>
+                  <h3><strong>Standing Tall</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHS"></div>
+
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Pacific Grove, Monterey' }) %>
+        <div class="blankHXS"></div>
+
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <picture>
+                  <source media="(min-width:1081px)" srcset="./large_sunset2.jpg">
+                  <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_sunset2.jpg">
+                  <source media="(max-width:650px)" srcset="./small_sunset2.jpg">
+                  <img src="./medium_sunset2.jpg" alt="Nature">
+                </picture>
+                <div class="elementInner">
+                  <h5>Nature</h5>
+
+                  <h3><strong>Flight at Dusk</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <picture>
+                  <source media="(min-width:1081px)" srcset="./large_sunset1.jpg">
+                  <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_sunset1.jpg">
+                  <source media="(max-width:650px)" srcset="./small_sunset1.jpg">
+                  <img src="./medium_sunset1.jpg" alt="Sunset">
+                </picture>
+
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Sinking Sun</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <picture>
+                  <source media="(min-width:1081px)" srcset="./large_sunset.jpg">
+                  <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_sunset.jpg">
+                  <source media="(max-width:650px)" srcset="./small_sunset.jpg">
+                  <img src="./medium_sunset.jpg" alt="Testing">
+                </picture>
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Last Light</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blankHS"></div>
+
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <picture>
+                  <source media="(min-width:1081px)" srcset="./large_after_glow.jpg">
+                  <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_after_glow.jpg">
+                  <source media="(max-width:650px)" srcset="./small_after_glow.jpg">
+                  <img src="./medium_after_glow.jpg" alt="Testing">
+                </picture>
+
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Evening Flight</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <picture>
+                  <source media="(min-width:1081px)" srcset="./large_after_glow1.jpg">
+                  <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_after_glow1.jpg">
+                  <source media="(max-width:650px)" srcset="./small_after_glow1.jpg">
+                  <img src="./medium_after_glow1.jpg" alt="Testing">
+                </picture>
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Waves at Dusk</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <picture>
+                  <source media="(min-width:1081px)" srcset="./large_after_glow3.jpg">
+                  <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_after_glow3.jpg">
+                  <source media="(max-width:650px)" srcset="./small__after_glow3.jpg">
+                  <img src="./medium_after_glow3" alt="Testing">
+                </picture>
+
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Ocean Calm</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <picture>
+                  <source media="(min-width:1081px)" srcset="./large_after_glow2.jpg">
+                  <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_after_glow2.jpg">
+                  <source media="(max-width:650px)" srcset="./small_after_glow2.jpg">
+                  <img src="./medium_after_glow2.jpg" alt="Testing">
+                </picture>
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Quiet Horizon</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> August, 2024</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="blankHS"></div>
+    <hr>
+
+    <section id="2023">
+
+      <section id="content11">
+
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Pacific Grove Rocky View' }) %>
+
+        <div class="blankHXS"></div>
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
@@ -91,11 +429,11 @@
                     <source media="(min-width:1081px)" srcset="./large_Squirrel_Stand.jpg">
                     <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_Squirrel_Stand.jpg">
                     <source media="(max-width:650px)" srcset="./small_Squirrel_Stand.jpg">
-                    <img src="./medium_default_Squirrel_Stand.jpg" alt="Testing" style="width:100%;">
+                    <img src="./medium_default_Squirrel_Stand.jpg" alt="Testing">
                   </picture>
                   <div class="elementInner">
                     <h5>Wildlife</h5>
-                    <h3><strong>Grove Rocky View, Monterey, CA</strong> </h3>
+                    <h3><strong>Curious Observer</strong> </h3>
                     <p class="lineHorizAll"></p>
                     <h6>September, 2023</h6>
                     <h6>Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
@@ -105,7 +443,6 @@
             </div>
           </div>
         </div>
-        <div class="blankHS"></div>
 
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-2">
@@ -116,12 +453,12 @@
                     <source media="(min-width:1081px)" srcset="./large_Squirrel_Eat.jpg">
                     <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_Squirrel_Eat.jpg">
                     <source media="(max-width:650px)" srcset="./small_Squirrel_Eat.jpg">
-                    <img src="./medium_default_Squirrel_Eat.jpg" alt="Testing" style="width:100%;">
+                    <img src="./medium_default_Squirrel_Eat.jpg" alt="Testing">
                   </picture>
 
                   <div class="elementInner">
                     <h5>Wildlife</h5>
-                    <h3><strong>Grove Rocky View, Monterey, CA</strong> </h3>
+                    <h3><strong>Snack Time</strong> </h3>
                     <p class="lineHorizAll"></p>
                     <h6> February, 2023</h6>
                     <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
@@ -136,11 +473,11 @@
                     <source media="(min-width:1081px)" srcset="./large_Squirrel_Crawl.jpg">
                     <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_Squirrel_Crawl.jpg">
                     <source media="(max-width:650px)" srcset="./small_Squirrel_Crawl.jpg">
-                    <img src="./medium_default_Squirrel_Crawl.jpg" alt="Testing" style="width:100%;">
+                    <img src="./medium_default_Squirrel_Crawl.jpg" alt="Testing">
                   </picture>
                   <div class="elementInner">
                     <h5>Wildlife</h5>
-                    <h3><strong>Grove Rocky View, Monterey, CA</strong> </h3>
+                    <h3><strong>Scaling the Rocks</strong> </h3>
                     <p class="lineHorizAll"></p>
                     <h6> February, 2023</h6>
                     <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
@@ -151,26 +488,16 @@
           </div>
         </div>
       </section>
-      <div class="blankHM"></div>
+
+      <div class="blankHS"></div>
       <hr>
-      <div class="blankHM"></div>
 
       <section id="content12">
-
-        <!-- Arrow -->
         <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Monarch Butterfly Sanctuary <img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-        <div class="blankHS"></div>
+          <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Monarch Butterfly Sanctuary ' }) %>
 
-        <div class="wrapper">
+          <div class="blankHXS"></div>
+
           <div class="Grid Grid--gutters Grid--cols-2">
             <div class="Grid-cell">
               <div class="element">
@@ -179,11 +506,11 @@
                     <source media="(min-width:1081px)" srcset="./large_butterfly_lands_on_a_branch.jpg">
                     <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_butterfly_lands_on_a_branch.jpg">
                     <source media="(max-width:650px)" srcset="./small_butterfly_lands_on_a_branch.jpg">
-                    <img src="./medium_default_butterfly_lands_on_a_branch.jpg" alt="Testing" style="width:100%;">
+                    <img src="./medium_default_butterfly_lands_on_a_branch.jpg" alt="Testing">
                   </picture>
                   <div class="elementInner">
                     <h5>Wildlife</h5>
-                    <h3><strong>Monarch Butterfly Sanctuary</strong> </h3>
+                    <h3><strong>Delicate Landing</strong> </h3>
 
                     <p class="lineHorizAll"></p>
                     <h6> February, 2023</h6>
@@ -198,7 +525,7 @@
                   <img src="./Butterfly02.jpg" alt="Wildlife">
                   <div class="elementInner">
                     <h5>Wildlife</h5>
-                    <h3><strong>Monarch Butterfly Sanctuary</strong> </h3>
+                    <h3><strong>Floral Feast</strong> </h3>
                     <p class="lineHorizAll"></p>
                     <h6> February, 2023</h6>
                     <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
@@ -210,26 +537,16 @@
         </div>
       </section>
     </section>
-    <div class="blankHM"></div>
+    <div class="blankHS"></div>
     <hr>
-    <div class="blankHM"></div>
-    <section id="content2">
+    <section id="2020">
       <section id="content21">
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Yellowstone National Park<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow"></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
 
-        <div class="blankHS"></div>
 
         <div class="wrapper">
+          <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Yellowstone National Park' }) %>
+          <div class="blankHXS"></div>
+
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
@@ -238,12 +555,12 @@
                     <source media="(min-width:1081px)" srcset="./large_wood_reflection.jpg">
                     <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_wood_reflection.jpg">
                     <source media="(max-width:650px)" srcset="./small_wood_reflection.jpg">
-                    <img src="./medium_default_wood_reflection.jpg" alt="Nature" style="width:100%;">
+                    <img src="./medium_default_wood_reflection.jpg" alt="Nature">
                   </picture>
                   <div class="elementInner">
                     <h5>Nature</h5>
 
-                    <h3><strong>Yellowstone National Park</strong> </h3>
+                    <h3><strong>Echoes in Stillness</strong> </h3>
                     <p class="lineHorizAll"></p>
                     <h6>September, 2020</h6>
                     <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
@@ -264,11 +581,11 @@
                     <source media="(min-width:1081px)" srcset="./large_mule_deer.jpg">
                     <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_mule_deer.jpg">
                     <source media="(max-width:650px)" srcset="./small_mule_deer.jpg">
-                    <img src="./medium_default_mule_deer.jpg" alt="Wildlife" style="width:100%;">
+                    <img src="./medium_default_mule_deer.jpg" alt="Wildlife">
                   </picture>
                   <div class="elementInner">
                     <h5>Wildlife</h5>
-                    <h3><strong>Yellowstone National Park</strong> </h3>
+                    <h3><strong>Forest Wanderer</strong> </h3>
                     <p class="lineHorizAll"></p>
                     <h6>September, 2020</h6>
                     <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
@@ -290,11 +607,11 @@
                     <source media="(min-width:1081px)" srcset="./large_hotSpring_yellowstone_tree.jpg">
                     <source media="(min-width:651px) and (max-width:1080px)" srcset="./medium_default_hotSpring_yellowstone_tree.jpg">
                     <source media="(max-width:650px)" srcset="./small_hotSpring_yellowstone_tree.jpg">
-                    <img src="./medium_default_hotSpring_yellowstone_tree.jpg" alt="Nature" style="width:100%;">
+                    <img src="./medium_default_hotSpring_yellowstone_tree.jpg" alt="Nature">
                   </picture>
                   <div class="elementInner">
                     <h5>Nature</h5>
-                    <h3><strong>Yellowstone National Park</strong> </h3>
+                    <h3><strong>Solitary Sentinel</strong> </h3>
                     <p class="lineHorizAll"></p>
                     <h6>September, 2020</h6>
                     <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
@@ -305,24 +622,11 @@
           </div>
         </div>
       </section>
-      <div class="blankHM"></div>
+      <div class="blankHS"></div>
       <hr>
-      <div class="blankHM"></div>
       <section id="content22">
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Teton National Park<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-
-        <div class="blankHS"></div>
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Teton National Park' }) %>
+        <div class="blankHXS"></div>
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
@@ -331,7 +635,7 @@
                   <img src="./07.jpg" alt="Nature">
                   <div class="elementInner">
                     <h5>Nature</h5>
-                    <h3><strong>Teton National Park</strong> </h3>
+                    <h3><strong>Autumn's Mirror</strong> </h3>
 
                     <p class="lineHorizAll"></p>
                     <h6> September, 2020 </h6>
@@ -343,381 +647,325 @@
           </div>
         </div>
       </section>
-      <div class="blankHM"></div>
+      <div class="blankHS"></div>
       <hr>
-      <div class="blankHM"></div>
+      <div class="blankHS"></div>
 
-      <section id="content23">
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Donner Lake<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+      <div class="wrapper">
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Donner Lake' }) %>
+        <div class="blankHXS"></div>
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./17.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Reflections of Winter</strong> </h3>
 
-        <div class="blankHS"></div>
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./17.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>Donner Lake</strong> </h3>
-
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2020</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2020</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
                 </div>
               </div>
             </div>
-
           </div>
+
         </div>
-      </section>
+      </div>
     </section>
-    <div class="blankHM"></div>
+    <div class="blankHS"></div>
     <hr>
-    <div class="blankHM"></div>
-    <section id="content3">
-      <section id="content31">
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Bosque Del Apache National Wildlife Refuge<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+    <section id="2019">
 
-        <div class="blankHS"></div>
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./01.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>Bosque Del Apache National Wildlife Refuge</strong> </h3>
 
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
+      <div class="wrapper">
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Bosque Del Apache National Wildlife Refuge' }) %>
+        <div class="blankHXS"></div>
+
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./01.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Clouds on Water</strong> </h3>
+
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
                 </div>
               </div>
             </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./02.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>Bosque Del Apache National Wildlife Refuge</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./02.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Clouds on Water</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="blankHS"></div>
+      </div>
 
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./03.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>Bosque Del Apache National Wildlife Refuge</strong> </h3>
 
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
+
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./03.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Twilight Reflections</strong> </h3>
+
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <div class="blankHM"></div>
+      </div>
+
+      <div class="blankHS"></div>
       <hr>
-      <div class="blankHM"></div>
-      <section id="content32">
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Sacramento National Wildlife Refuge<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+      <div class="blankHS"></div>
 
-        <div class="blankHS"></div>
+      <div class="wrapper">
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Sacramento National Wildlife Refuge' }) %>
+        <div class="blankHXS"></div>
 
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./05.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>Sacramento National Wildlife Refuge</strong> </h3>
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./05.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Sunset Silhouettes</strong> </h3>
 
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
                 </div>
               </div>
             </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./06.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>Sacramento National Wildlife Refuge</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./06.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Ducks at Dusk</strong> </h3>
+
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="blankHS"></div>
+      </div>
+      <div class="blankHS"></div>
 
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--1of2 Grid--center">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./04.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>Sacramento National Wildlife Refuge</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--1of2 Grid--center">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./04.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Twilight Grass Reflections</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="blankHS"></div>
+      </div>
 
-      </section>
-
-      <section id="content33">
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">White Sands National Monument<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
-
-        <div class="blankHS"></div>
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--1of2 Grid--center">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./10.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>White Sands National Monument</strong> </h3>
-
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHS"></div>
-
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./09.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>White Sands National Monument</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./08.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>White Sands National Monument</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHS"></div>
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./11.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>White Sands National Monument</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./12.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>White Sands National Monument</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="blankHS"></div>
-
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./13.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>White Sands National Monument</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./14.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>White Sands National Monument</strong> </h3>
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <div class="blankHM"></div>
+      <div class="blankHS"></div>
       <hr>
-      <div class="blankHM"></div>
-      <section id="content34">
-        <!-- Arrow -->
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h2 class="tArrow">Taos Pueblo Indian Reservation<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Arrow -->
+      <div class="blankHS"></div>
 
-        <div class="blankHS"></div>
 
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
+      <div class="wrapper">
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'White Sands National Monument' }) %>
+        <div class="blankHXS"></div>
 
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <img src="./16.jpg" alt="Nature">
-                  <div class="elementInner">
-                    <h5>Nature</h5>
-                    <h3><strong>Taos Pueblo Indian Reservation</strong> </h3>
+        <div class="Grid Grid--gutters Grid--1of2 Grid--center">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./10.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Dunes Under the Blue Sky</strong> </h3>
 
-                    <p class="lineHorizAll"></p>
-                    <h6> December, 2019</h6>
-                    <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
-                  </div>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="blankHS"></div>
+
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./09.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Path to the Peaks</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./08.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Into the Dunes</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blankHS"></div>
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./11.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Traces in the Sand</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./12.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Traces in the Sand</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blankHS"></div>
+
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--cols-2">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./13.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Imprints and Patterns</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./14.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Imprints and Patterns</strong> </h3>
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blankHS"></div>
+      <hr>
+      <div class="blankHS"></div>
+
+
+
+      <div class="wrapper">
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Taos Pueblo Indian Reservation' }) %>
+        <div class="blankHXS"></div>
+
+        <div class="Grid Grid--full Grid--gutters">
+
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="ShadowBox">
+                <img src="./16.jpg" alt="Nature">
+                <div class="elementInner">
+                  <h5>Nature</h5>
+                  <h3><strong>Timeless Pueblo</strong> </h3>
+
+                  <p class="lineHorizAll"></p>
+                  <h6> December, 2019</h6>
+                  <h6> Canon 5d mark iii | EF 70-200mm f/2.8L IS </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </section>
 
   </main>
 
 
-
+  <div class="blankHS"></div>
 
 
 
