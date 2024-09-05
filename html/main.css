@@ -1879,10 +1879,12 @@ li .newPanelV3 {
 }
 
 .new_side_bar li.active:hover {
-    outline: var(--BYP2024-Blue800) 0.04em solid;
+    outline: var(--VW--Yellow) 0.04em solid;
 }
 
-
+.new_side_bar.BlueBYP li.active:hover {
+    outline: var(--BYP2024-Blue800) 0.04em solid;
+}
 /* =========== new sidebar =========== */
 
 /* 1. Enable smooth scrolling */
