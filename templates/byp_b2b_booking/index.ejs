@@ -31,7 +31,7 @@
   <div class="wrapper">
     <div class="blankHXS"></div>
 
-    <div class="Grid Grid--gutters Grid--cols-4">
+    <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
       <!-- subTitleFont1 -->
       <div class="Grid-cell">
         <div class="element">
@@ -53,15 +53,16 @@
           <h3> <strong class=""> Role </strong> </h3>
           <h4> User Research </h4>
           <h4> Design, Test & Iterate </h4>
+          <h4> Deliverable & Q/A </h4>
+
         </div>
       </div>
       <div class="Grid-cell">
         <div class="element">
           <h3> <strong class=""> Tools </strong> </h3>
           <h4> Figma </h4>
-          <h4> Trello </h4>
+          <h4> Trello & Notion </h4>
           <h4> Slack </h4>
-          <h4> Notion </h4>
 
 
         </div>
@@ -76,7 +77,7 @@
   <div class="colorBgBYPblue200">
     <div class="blankHXS"></div>
 
-    <div class="wrapper">
+    <div class="wrapperM">
 
       <div class="Grid Grid--gutters Grid--full u-textCenter">
         <%- include(`${templatePath}/shared/comp_textualElements_title`, {
@@ -86,16 +87,106 @@
         fontWeight:'fontWeight900'
         }) %>
       </div>
-      <div class="Grid Grid--full Grid--gutters">
+      <div class="blankHTiny"></div>
+
+      <div class="Grid Grid--full Grid--gutters u-textCenter">
         <div class="Grid-cell ">
           <div class="element">
 
-            <h4>Improve the user experience for pet business owners booking appointments for their customers by streamlining the booking process. Make the booking process smooth, easy, and quick for business owners.
-            </h4>
+            <h3>Improve the user experience for pet business owners booking appointments for their customers by streamlining the booking process.
+            </h3>
           </div>
         </div>
       </div>
     </div>
+    <div class="blankHTiny"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-3 u-textCenter" data-module="countup">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="stat">
+              <%- include(`${templatePath}/shared/base_chip`, {
+                chipTxt: 'Monthly'
+                }) %>
+              <h2 class="stat-figure">
+                <span class="stat-prefix specialTextL fontWeight700">+</span>
+                <span class="stat-number specialTextL fontWeight700" data-countup-number="169">169</span>
+                <span class="stat-suffix">%</span>
+              </h2>
+
+              <h5 class="fontWeight400">
+                Booking Conversion
+              </h5>
+              <h6 class="">
+                from 20% to 75%
+              </h6>
+              <h6 class="">
+                from 30,445 to 81,700 </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="stat">
+              <%- include(`${templatePath}/shared/base_chip`, {
+                chipTxt: 'Overtime'
+                }) %>
+           
+              <h2 class="stat-figure">
+                <span class="stat-prefix specialTextL fontWeight700">-</span>
+                <span class="stat-number specialTextL fontWeight700" data-countup-number="80">80</span>
+                <span class="stat-suffix">%</span>
+              </h2>
+              <h5 class="fontWeight400">
+                Time to Book </h5>
+              <h6 class="">
+                from 5 mins (2021)
+              </h6>
+              <h6 class="">
+                to less than 1 min (2024)
+              </h6>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="stat">
+              <%- include(`${templatePath}/shared/base_chip`, {
+                chipTxt: 'Monthly'
+                }) %>
+              <h2 class="stat-figure">
+                <span class="stat-prefix specialTextL fontWeight700">+</span>
+                <span class="stat-number specialTextL fontWeight700" data-countup-number="15">15</span>
+                <span class="stat-suffix">%</span>
+              </h2>
+
+              <h5 class="fontWeight400">
+                Upsell Success Rate </h5>
+              <h6 class="">
+                from 20% to 35%
+              </h6>
+              <h6 class="">
+                increased 15,000+
+              </h6>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+    <div class="blankHXS"></div>
+
     <div class="wrapper">
       <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
         <div class="TBslides">
@@ -155,7 +246,7 @@
   <main>
     <nav class="new_side_bar BlueBYP">
       <ul>
-        
+
         <li><a href="#content1" class="side_bar_content">
             Background
           </a></li>
@@ -484,65 +575,74 @@
             </div>
           </div>
           <div class="blankHS"></div>
-
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
                 <h3><strong>Usability Testing</strong></h3>
               </div>
             </div>
-
-
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <!-- subTitleFont1 -->
             <div class="Grid-cell">
               <div class="element">
-                <div class="rowToColumn centerVH">
-                  <div class="widthMax">
-                    <h3>Testing Plan</h3>
-                    <div class="blankHXS"></div>
 
 
-                    <h3 class="colorBYPblue800 fontWeight400">Participants:</h3>
-                    <ul>
-                      <li class="listCircle">Number of Participants: 8 B2B clients </li>
-                      <li class="listCircle">Experience Levels: 4 novice users, 4 experienced users</li>
+                <h3 class="colorBYPblue800 fontWeight400">Participants:</h3>
+                <ul>
+                  <li class="listCircle">Number of Participants: 8 B2B clients </li>
+                  <li class="listCircle">Experience Levels: 4 novice users, 4 experienced users</li>
 
 
-                    </ul>
-                    <h3 class="colorBYPblue800 fontWeight400">Testing Scenarios:</h3>
-
-                    <ul>
-                      <li class="listCircle">Booking a Service</li>
-                      <li class="listCircle">Searching for a Client and Pet</li>
-
-                      <li class="listCircle">Adjusting Service Pricing</li>
-                      <li class="listCircle">Completing a Payment</li>
-                    </ul>
-                    <h3 class="colorBYPblue800 fontWeight400">Metrics:</h3>
-
-                    <ul>
-                      <li class="listCircle">Task Completion Rate</li>
-                      <li class="listCircle">Time on Task</li>
-                      <li class="listCircle">Error Rate</li>
-                      <li class="listCircle">User Satisfaction</li>
-                      <li class="listCircle">Qualitative Feedback</li>
+                </ul>
 
 
-                    </ul>
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
 
 
-                  </div>
-                  <div class="paddingL fitContenteft">
-                    <div class="widthFitContent">
-                      <img class="widthM" src="img_testing.png" alt="icon arrow">
-                    </div>
-                  </div>
+                <h3 class="colorBYPblue800 fontWeight400">Testing Scenarios:</h3>
 
-                </div>
+                <ul>
+                  <li class="listCircle">Booking a Service</li>
+                  <li class="listCircle">Searching for a Client and Pet</li>
+
+                  <li class="listCircle">Adjusting Service Pricing</li>
+                  <li class="listCircle">Completing a Payment</li>
+                </ul>
+
+
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+
+                <h3 class="colorBYPblue800 fontWeight400">Metrics:</h3>
+
+                <ul>
+                  <li class="listCircle">Task Completion Rate</li>
+                  <li class="listCircle">Time on Task</li>
+                  <li class="listCircle">Error Rate</li>
+                  <li class="listCircle">User Satisfaction</li>
+                  <li class="listCircle">Qualitative Feedback</li>
+
+
+                </ul>
+
+
               </div>
             </div>
 
           </div>
+          <div class="Grid Grid--full Grid--gutters">
 
+            <img class="" src="img_testing.png" alt="icon arrow">
+          </div>
 
           <div class="blankHXS"></div>
 
@@ -956,7 +1056,8 @@
                 <h3>Clicking the calendar automatically selects the appointment date and time based on user's selection.</h3>
               </div>
             </div>
-          </div>          <div class="blankHXS"></div>
+          </div>
+          <div class="blankHXS"></div>
 
           <div class="blankHS"></div>
 
@@ -998,7 +1099,8 @@
                 </h3>
               </div>
             </div>
-          </div>          <div class="blankHXS"></div>
+          </div>
+          <div class="blankHXS"></div>
 
           <div class="blankHS"></div>
 
@@ -1185,7 +1287,7 @@
                       Booking Conversion Rate: Improved by 169% </h4>
                   </li>
 
-          
+
                   <li class="listCircle">
                     <h4><strong>Time to Book:</strong>Decreased by 42%, reducing average booking time from 5 minutes to 3.5 minutes
                     </h4>
@@ -1209,7 +1311,7 @@
                     <h4><strong>Enhance the search functionality:</strong> Make it easier to find clients and pets, especially with common names.</h4>
                   </li>
 
-          
+
                   <li class="listCircle">
                     <h4><strong>Improve service categorization:</strong>Allow business owners to categorize and reorder services based on their specific needs.
                     </h4>
