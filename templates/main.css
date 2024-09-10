@@ -874,7 +874,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--BYP-b2b-booking-grey);
     margin: 0 auto;
 }
-
+.colorBgBYPblue100 {
+    background-color: var(--BYP2024-Blue100);
+    margin: 0 auto;
+}
 .colorBgBYPblue200 {
     background-color: var(--BYP2024-Blue200);
     margin: 0 auto;
@@ -2120,8 +2123,6 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: 1.5em;
-
     margin: clamp(0.42em, 0.56em, 1.2em) 0;
 }
 
@@ -2152,9 +2153,8 @@ h5 {
 }
 
 h6 {
-    font-size: clamp(0.8em, 1vw, 1.1em);
-    /* Adjusted for clarity */
-    margin: 0.3em 0;
+    font-size: clamp(0.78em, 1vw, 1.1em);
+
 }
 
 /* =========== Paragraphs =========== */
@@ -2162,7 +2162,7 @@ p {
     font-size: clamp(0.9em, 1.1vw, 1.3em);
     /* Slightly increased */
     font-weight: 300;
-    line-height: 1.6em;
+    line-height: 1.0em;
     /* Added for readability */
 }
 
@@ -2770,19 +2770,20 @@ button.passwordArr {
 }
 
 /* =================== accordion ===================*/
-
-.wrapper {
-    max-width: 1320px;
-    margin: auto;
-}
 .wrapperL {
     max-width: 660px;
     margin: auto;
 }
-.wrapperS {
+.wrapperM {
     max-width: 1000px;
     margin: auto;
 }
+.wrapper {
+    max-width: 1320px;
+    margin: auto;
+}
+
+
 
 @media all and (max-width: 1080px) {
     body a.nav-link {}
@@ -3590,11 +3591,12 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 .TBsliderNav {
-    font-weight: 400 !important;
+    font-weight: 700 !important;
+    font-size: 22px;
     color: var(--Grey800);
     transition: 0.65s;
     background: none;
-    border: 1px solid var(--white);
+    border: 2px solid var(--white);
     line-height: inherit;
     margin: 0.5em;
     padding: 1em 2em;
@@ -3609,6 +3611,7 @@ flex: 0 0 calc(33.3333% - 1em);
 
 .TBsliderNav:hover,
 .TBsliderNav.active {
+
     border-color: var(--White-transparent);
     color: var(--Grey900);
     box-shadow: inset -4.25em 0 0 0 var(--White-transparent);
@@ -3617,6 +3620,7 @@ flex: 0 0 calc(33.3333% - 1em);
 
 .noBg .TBsliderNav:hover,
 .noBg .TBsliderNav.active {
+
     border: 1px solid var(--Grey900);
     color: var(--Grey900);
     box-shadow: inset -4.25em 0 0 0 var(--hover);
@@ -4554,6 +4558,10 @@ height: 0.8em;
 /* ======== paddings ========= */
 .fitContent {
     width: fit-content;
+}
+
+.paddingLRXS {
+    padding: 3px 12px;
 }
 
 .paddingXS {
@@ -6444,3 +6452,7 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
         background-position: 100%
     }
 }
+
+/* =================== count number =================== */
+
+/* =================== count number =================== */
