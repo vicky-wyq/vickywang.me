@@ -8,6 +8,8 @@
 <!--Head-->
 
 <body>
+
+
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header_main`, {
     sectionURL1:'#projects', 
@@ -152,7 +154,15 @@
           </div>
 
           <div class="Grid-cell aside aside-2">
+
             <div class="element">
+              <%- include(`${templatePath}/shared/base_chip`, {
+                chipSmallTxt: 'Initial Launch',
+                colorBg: 'colorBgYellowVW',
+                colorTxt: 'colorWhie'
+              }) %>
+      <div class="blankHTiny"></div>
+
               <h1 class="specialTextM fontWeight700">Business Booking Experience</h1>
 
               <h4 class="colorLandingText fontWeight700">Business owners managing appointments for their clients </h4>
@@ -244,7 +254,7 @@
             <div class="element">
 
               <div class="paddingXL borderRadiusL gradient_background3">
-                <a href="/byp_b2b_booking">
+                <a href="/byp_b2c_booking">
                   <img src="/projectImages/mobile_b2c_booking.svg" alt="Business Booking Experience"></a>
               </div>
             </div>
@@ -704,7 +714,7 @@
     <div class="blankHS"></div>
 
 
-    <div class="colorBgYellowVW">
+    <div class="colorBgYellowVW_light">
       <div class="blankHXS"></div>
 
       <div class="wrapper">

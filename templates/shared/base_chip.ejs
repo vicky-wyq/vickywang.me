@@ -1,4 +1,10 @@
-<h6 class="fitContent colorBgBYPblue100 colorBYPblue800 colorBgBYPblue300 paddingLRXS borderRadiusM fontWeight400">
-    <%= chipTxt %>
+<% if (typeof colorTxt === 'undefined') { 
+  colorTxt = ''; 
+} %>  
+<% if (typeof colorBg === 'undefined') { 
+  colorBg = ''; 
+} %>
 
-  </h6>
+<h6 class="chipSmall <%= colorBg %> <%= colorTxt %>">
+  <%= chipSmallTxt %>
+</h6>
