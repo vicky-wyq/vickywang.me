@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="<%= websitePath %>/main.css">
+
+  <title>Human Verification</title>
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</head>
+
+<body class="wrapperL">
+  <div class="Grid Grid--gutters Grid--full u-textCenter">
+    <div class="Grid-cell">
+      <div class="element">
+        <div class="blankHS"></div>
+
+        <h1>Human Verification</h1>
+
+        <p class="fontWeight400 Grey700">Please verify that you're not a robot before proceeding to vickywang.me.</p>
+        <div class="blankHTiny"></div>
+        <div class="blankHTiny"></div>
+
+        <!-- reCAPTCHA Form -->
+        <form action="vickywang.html" method="GET">
+          <!-- CAPTCHA widget -->
+          <div class="h-captcha" data-sitekey="0788d3f8-3090-4392-bcea-a72ac240402a"></div>
+          <div class="blankHTiny"></div>
+          <div class="blankHTiny"></div>
+
+          <div class="centerVH">
+            <button type="submit" class="buttonLarge buttonPrimary bgVWGrey">Submit
+            </button>
+          </div>
+
+        </form>
+        <!-- reCAPTCHA Form ends -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

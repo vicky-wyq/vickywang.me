@@ -292,6 +292,7 @@ a:link.textProject {
 
 =========*/
 
+
 .positionFixed {
     position: fixed;
     bottom: 12px;
@@ -841,8 +842,11 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--VW--Grey2024);
     margin: 0 auto;
 }
-
 .colorBgYellowVW {
+    background-color: var(--VW--Yellow);
+    margin: 0 auto;
+}
+.colorBgYellowVW_light {
     background-color: var(--VW--Yellow-Light);
     margin: 0 auto;
 }
@@ -2993,6 +2997,9 @@ button.passwordArr {
 
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
+    body .paddingXL {
+        padding: var(--paddingM);
+    }
     body .heighMobileTitle {
         height: 24em;
     }
@@ -3856,6 +3863,9 @@ body .flex-container.Mobile {
 }
 
 @media screen and (max-width: 480px) {
+    body .paddingXL {
+        padding: var(--paddingS);
+    }
     body .rowToColumn {
         display: flex;
         flex-direction: column;
@@ -4361,11 +4371,15 @@ height: 0.8em;
 .align-left {
     display: flex;
     justify-content: flex-start;
+    text-align: left;
+
 }
 
 .align-right {
     display: flex;
     justify-content: flex-end;
+    text-align: right;
+
 }
 
 .centerHorz {
@@ -4423,14 +4437,7 @@ height: 0.8em;
     background-color: var(--Grey100);
 }
 
-.chip {
-    font-family: inherit;
-    padding: 0.6em;
-    border-radius: 2em;
-    font-size: 12px;
-    width: min-content;
-    background-color: var(--Warm);
-}
+
 
 .blockS {
     font-family: inherit;
@@ -4560,9 +4567,7 @@ height: 0.8em;
     width: fit-content;
 }
 
-.paddingLRXS {
-    padding: 3px 12px;
-}
+
 
 .paddingXS {
     padding: var(--paddingXS);
@@ -5268,6 +5273,14 @@ button.Clipboard.clickTxt:active {
 
 /* And so on for other button classes... */
 
+.chipSmall {
+    border-radius: 120px;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block; /* Ensures the element does not take full width */
+    text-align: left; /* This is redundant for inline-block but can be left */
+}
 .buttonLarge {
     border-radius: 120px;
     padding: 22px 36px;
