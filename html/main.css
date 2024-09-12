@@ -5275,9 +5275,9 @@ button.Clipboard.clickTxt:active {
 
 .chipSmall {
     border-radius: 120px;
-    padding: 3px 12px;
-    font-size: 12px;
-    font-weight: 700;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 400;
     display: inline-block; /* Ensures the element does not take full width */
     text-align: left; /* This is redundant for inline-block but can be left */
 }
