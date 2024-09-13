@@ -252,7 +252,8 @@ a:link.textProject {
 .active a {
     font-weight: 400;
     color: var(--Grey900);
-    transition: font-weight 0.3s ease; /* Add transition for font-weight */
+    transition: font-weight 0.3s ease;
+    /* Add transition for font-weight */
 }
 
 .active.activeNav a {
@@ -842,10 +843,12 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--VW--Grey2024);
     margin: 0 auto;
 }
+
 .colorBgYellowVW {
     background-color: var(--VW--Yellow);
     margin: 0 auto;
 }
+
 .colorBgYellowVW_light {
     background-color: var(--VW--Yellow-Light);
     margin: 0 auto;
@@ -878,10 +881,12 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--BYP-b2b-booking-grey);
     margin: 0 auto;
 }
+
 .colorBgBYPblue100 {
     background-color: var(--BYP2024-Blue100);
     margin: 0 auto;
 }
+
 .colorBgBYPblue200 {
     background-color: var(--BYP2024-Blue200);
     margin: 0 auto;
@@ -1866,9 +1871,11 @@ li .newPanelV3 {
     left: 100%;
     z-index: 98;
     text-align: center;
-    font-weight: 300; /* Default font-weight for non-active items */
+    font-weight: 300;
+    /* Default font-weight for non-active items */
     font-size: 22px;
-    transition: font-weight 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    transition: font-weight 0.3s ease, text-shadow 0.3s ease;
+    /* Smooth transition */
 
 }
 
@@ -1892,6 +1899,7 @@ li .newPanelV3 {
 .new_side_bar.BlueBYP li.active:hover {
     outline: var(--BYP2024-Blue800) 0.04em solid;
 }
+
 /* =========== new sidebar =========== */
 
 /* 1. Enable smooth scrolling */
@@ -2201,10 +2209,12 @@ a:link.textUnderline {
     text-underline-offset: 6px;
     text-decoration-color: var(--Grey900);
 }
+
 a:link.textUnderline:hover {
     color: inherit;
-    text-decoration: underline; /* Ensure underline on hover */
-  }
+    text-decoration: underline;
+    /* Ensure underline on hover */
+}
 
 .allCaps {
     text-transform: uppercase;
@@ -2778,10 +2788,12 @@ button.passwordArr {
     max-width: 660px;
     margin: auto;
 }
+
 .wrapperM {
     max-width: 1000px;
     margin: auto;
 }
+
 .wrapper {
     max-width: 1320px;
     margin: auto;
@@ -2997,9 +3009,58 @@ button.passwordArr {
 
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
+
+    body table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        /* Makes each element a block */
+    }
+
+    body tr {
+        margin-bottom: 22px;
+        /* Adds spacing between rows */
+    }
+
+    body th,
+    td {
+        box-sizing: border-box;
+        width: 100%;
+        /* Ensures cells take full width */
+    }
+
+    body thead tr {
+        display: none;
+        /* Hides the header row */
+    }
+
+    body td {
+        position: relative;
+        height: 2vh;
+        /* Adjust as needed */
+    }
+
+    body td::before {
+        content: attr(data-label);
+        /* Uses data-label attribute for headings */
+        position: absolute;
+        left: 0;
+        width: 45%;
+        /* Adjust as needed */
+        padding-left: 15px;
+        font-weight: bold;
+    }
+
+
+
+
     body .paddingXL {
         padding: var(--paddingM);
     }
+
     body .heighMobileTitle {
         height: 24em;
     }
@@ -3866,6 +3927,7 @@ body .flex-container.Mobile {
     body .paddingXL {
         padding: var(--paddingS);
     }
+
     body .rowToColumn {
         display: flex;
         flex-direction: column;
@@ -3951,10 +4013,11 @@ body .flex-container.Mobile {
 }
 
 
-.blankHTiny{
-height: 0.8em;
+.blankHTiny {
+    height: 0.8em;
 
 }
+
 .blankHXXS {
     display: block;
 
@@ -3963,6 +4026,7 @@ height: 0.8em;
 
 
 }
+
 .blankHXS {
     display: block;
     height: clamp(4em, 5vw, 6em);
@@ -4743,6 +4807,9 @@ height: 0.8em;
 table {
     border-collapse: collapse;
     width: 100%;
+    table-layout: auto;
+    /* Allows the table to adjust based on content */
+
     border-style: hidden;
     font-size: clamp(0.73em, 0.92vw, 1em);
     font-family: "Lato", sans-serif;
@@ -4755,6 +4822,11 @@ th {
     padding: 0.6vh;
     height: 0.6vh;
     font-weight: 500;
+
+    white-space: normal;
+    /* Allows text to wrap */
+    word-wrap: break-word;
+    /* Breaks long words to wrap them to the next line */
 }
 
 td {
@@ -5278,15 +5350,19 @@ button.Clipboard.clickTxt:active {
     padding: 4px 12px;
     font-size: 14px;
     font-weight: 400;
-    display: inline-block; /* Ensures the element does not take full width */
-    text-align: left; /* This is redundant for inline-block but can be left */
+    display: inline-block;
+    /* Ensures the element does not take full width */
+    text-align: left;
+    /* This is redundant for inline-block but can be left */
 }
+
 .buttonLarge {
     border-radius: 120px;
     padding: 22px 36px;
     font-size: 18px;
     font-weight: 500;
 }
+
 .buttonSmall {
     border-radius: 120px;
     padding: 16px 28px;
