@@ -62,9 +62,16 @@
     --GreyFooter: #faf9f8;
     --GreyHTMLBg: #fefdfc;
     /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
+    --VW--Pink800: #e40074;
+    --VW--Pink200: #fff1f7;
 
-    --VW--Yellow: #ffb400;
-    --VW--Yellow-Light: #ffda79;
+
+    --VW--Yellow900: #d48c00;
+    --VW--Yellow700: #ffb400; /* main */
+    --VW--Yellow500: #ffda79; /* secondary */
+    --VW--Yellow300: #fff1cc;
+    --VW--Yellow100: #fff9e6;
+
     --VW--Grey2024: #f8f7f4;
     /* ======================== */
 
@@ -211,7 +218,7 @@ a:link {
 }
 
 a:hover {
-    color: var(--VW--Yellow) !important;
+    color: var(--VW--Yellow700) !important;
 }
 
 .BYPb2b a:hover {
@@ -843,17 +850,23 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--VW--Grey2024);
     margin: 0 auto;
 }
-
-.colorBgYellowVW {
-    background-color: var(--VW--Yellow);
+.colorBgYellowVW700 {
+    background-color: var(--VW--Yellow700);
     margin: 0 auto;
 }
 
-.colorBgYellowVW_light {
-    background-color: var(--VW--Yellow-Light);
+.colorBgYellowVW500 {
+    background-color: var(--VW--Yellow500);
     margin: 0 auto;
 }
-
+.colorBgYellowVW300 {
+    background-color: var(--VW--Yellow300);
+    margin: 0 auto;
+}
+.colorBgYellowVW100 {
+    background-color: var(--VW--Yellow100);
+    margin: 0 auto;
+}
 .pattern1 {
     background-image: repeating-linear-gradient(-45deg,
             rgba(204, 204, 204, 0.25),
@@ -1054,9 +1067,18 @@ polygon {
 .colorWtBg {
     background-color: #ffffff;
 }
+.color_VW_Pink800 {
+    color: var(--VW--Pink800);
+}
+.colorBg_VW_Pink200 {
+    background: var(--VW--Pink200);
+}
+.colorYellowVW900 {
+    color: var(--VW--Yellow900);
+}
 
-.colorVWYellow {
-    color: var(--VW--Yellow);
+.colorYellowVW700 {
+    color: var(--VW--Yellow700);
 }
 
 .imgBorder {
@@ -1893,7 +1915,7 @@ li .newPanelV3 {
 }
 
 .new_side_bar li.active:hover {
-    outline: var(--VW--Yellow) 0.04em solid;
+    outline: var(--VW--Yellow700) 0.04em solid;
 }
 
 .new_side_bar.BlueBYP li.active:hover {
@@ -2023,7 +2045,7 @@ section .padding {
 /* =========== Special Text =========== */
 
 ::selection {
-    background: var(--VW--Yellow);
+    background: var(--VW--Yellow700);
     color: var(--white);
 }
 
@@ -2048,7 +2070,7 @@ section .padding {
 }
 
 .colorLandingText {
-    background: linear-gradient(to right, var(--VW--Yellow-Light) 0%, var(--VW--Yellow) 100%);
+    background: linear-gradient(to right, var(  --VW--Yellow500) 0%, var(--VW--Yellow700) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -5348,7 +5370,7 @@ button.Clipboard.clickTxt:active {
 .chipSmall {
     border-radius: 120px;
     padding: 4px 12px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     display: inline-block;
     /* Ensures the element does not take full width */
@@ -6091,8 +6113,8 @@ a:hover .left-arrow.LASO {
 }
 
 a:hover .left-arrow {
-    border-top: 2px solid var(--VW--Yellow);
-    border-left: 2px solid var(--VW--Yellow);
+    border-top: 2px solid var(--VW--Yellow700);
+    border-left: 2px solid var(--VW--Yellow700);
 }
 
 a:hover .backText {
