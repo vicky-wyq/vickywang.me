@@ -1893,34 +1893,69 @@ li .newPanelV3 {
     left: 100%;
     z-index: 98;
     text-align: center;
-    font-weight: 300;
-    /* Default font-weight for non-active items */
-    font-size: 22px;
-    transition: font-weight 0.3s ease, text-shadow 0.3s ease;
-    /* Smooth transition */
+
+    
+
 
 }
-
 .new_side_bar li {
+    font-weight: 400;
+    font-size: 22px;
     box-sizing: border-box;
     width: 100%;
     padding: var(--paddingM);
     margin: 18px 0;
     border-radius: 64px;
+    color: var(--Grey900);
+    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    display: block;
+    text-decoration: none;
+    box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
 }
 
+.new_side_bar li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--Grey900); /* Default text color */
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+.new_side_bar li:hover,
+.new_side_bar li.active { /* Apply hover and active styles */
+    border-color: var(--White-transparent);
+    box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
+    transform: scale(1.02); /* Slight scaling effect */
+}
+
+.new_side_bar li:hover a,
+.new_side_bar li.active a { /* Change text color on hover and active */
+    color: var(--white);
+}
+
+/* Active state */
 .new_side_bar li.active {
-    outline: var(--Grey900) 0.04em solid;
-
+    background-color: var(--Grey900); /* Keep hover effect when active */
 }
 
-.new_side_bar li.active:hover {
-    outline: var(--VW--Yellow700) 0.04em solid;
+.new_side_bar li:active {
+    transform: scale(0.98); /* Slight scale down to mimic press effect */
 }
 
-.new_side_bar.BlueBYP li.active:hover {
-    outline: var(--BYP2024-Blue800) 0.04em solid;
+
+/* Active state */
+.new_side_bar li:active {
+    border-color: var(--White-transparent);
+    box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
+    transform: scale(0.98); /* Slight scale down to mimic press effect */
 }
+
+.new_side_bar li:active a {
+    color: var(--white); /* Keep the text color white */
+}
+
+
 
 /* =========== new sidebar =========== */
 
@@ -3682,7 +3717,7 @@ flex: 0 0 calc(33.3333% - 1em);
 
 .TBsliderNav {
     font-weight: 400 !important;
-    font-size: 22px;
+    font-size: clamp(0.78em, 1vw, 1.1em);
     color: var(--grey900);
     transition: 0.65s;
     background: none;
@@ -3706,7 +3741,6 @@ flex: 0 0 calc(33.3333% - 1em);
 .TBsliderNav:hover,
 .TBsliderNav.active {
     border-color: var(--White-transparent);
-    color: var(--white);
     color: var(--white);
     box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
 }
