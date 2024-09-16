@@ -221,8 +221,8 @@ a:hover {
     color: var(--VW--Yellow700) !important;
 }
 
-.BYPb2b a:hover {
-    color: var(--BYP2024-Blue800) !important;
+.flipBtn a:hover {
+    color: var(--white) !important;
 }
 
 .BYP a:hover {
@@ -3681,31 +3681,43 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 .TBsliderNav {
-    font-weight: 700 !important;
+    font-weight: 400 !important;
     font-size: 22px;
-    color: var(--Grey800);
+    color: var(--grey900);
     transition: 0.65s;
     background: none;
-    border: 2px solid var(--white);
+    border: 2px solid var(--grey900);
     line-height: inherit;
     margin: 0.5em;
     padding: 1em 2em;
-    border-radius: 1em;
+    border-radius: 2em;
     display: inline-block;
+
+    -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    display: block;
+    text-decoration: none;
+    color: var(--Grey900);
+    box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
 }
+.TBsliderNav:hover,
+.TBsliderNav.active {
+    border-color: var(--White-transparent);
+    color: var(--white);
+    color: var(--white);
+    box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
+}
+
+
+
+/* ======================= TBcarousel ======================= */
 
 .TBsliderNav.noBg {
     color: var(--Grey900);
     border: 0.01em solid var(--Grey100);
-}
-
-.TBsliderNav:hover,
-.TBsliderNav.active {
-
-    border-color: var(--White-transparent);
-    color: var(--Grey900);
-    box-shadow: inset -4.25em 0 0 0 var(--White-transparent);
-    box-shadow: inset 18em 0 0 0 var(--white);
 }
 
 .noBg .TBsliderNav:hover,
