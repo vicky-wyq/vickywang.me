@@ -1080,7 +1080,7 @@ polygon {
     color: var(--VW--Yellow900);
 }
 
-.colorYellowVW700 {
+.colorYellowVW900 {
     color: var(--VW--Yellow700);
 }
 
@@ -2195,8 +2195,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin: clamp(0.42em, 0.56em, 1.2em) 0;
-}
+    margin-top: clamp(0.42em, 0.56em, 1.2em);
+    margin-bottom: clamp(0.42em, 0.56em, 1.2em);}
 
 
 h1 {
@@ -6621,8 +6621,6 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
 
 .timeline,
 .timeline * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -6662,10 +6660,11 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
 }
 
 .timeline ul li div {
+  border-radius: 4px;
   position: relative;
   bottom: 0;
   width: 400px;
-  padding: 15px;
+  padding: 12px 32px;
   background: var(--VW--Yellow500);
 }
 
@@ -6759,7 +6758,7 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent var(--VW--Yellow500) transparent transparent;
   }
 }
 
