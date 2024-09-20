@@ -2881,7 +2881,6 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
-    body a.nav-link {}
 
     body .dropdown-content a:hover {
         display: none;
@@ -2893,8 +2892,8 @@ button.passwordArr {
 
     body .logo {
         padding: 0.5em 1.2em !important;
-        left: 8px;
-        top: 8px;
+        left: 4px !important;
+        top: 4px !important;
     }
 
     body .se-arrow {
@@ -3090,6 +3089,9 @@ button.passwordArr {
 
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
+    body .logo {
+        padding: 0.48em 0.8em !important;
+    }
 
     body table,
     thead,
@@ -3159,9 +3161,7 @@ button.passwordArr {
         padding: 0.1em;
     }
 
-    body .logo {
-        padding: 0.5em 0.6em !important;
-    }
+
 
     body .widthXS {
         width: 8em;
@@ -4000,13 +4000,7 @@ body .flex-container.Mobile {
 /*head tool bar scroll*/
 
 
-@media (max-width: 1200px) {
-    body .logo {
-        padding: 0.5em 0.6em;
-        left: 8px;
-        top: 8px;
-    }
-}
+
 
 @media screen and (max-width: 480px) {
     body .paddingXL {
@@ -6871,70 +6865,35 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
     left: 12px;
     top: 12px;
     position: absolute;
-    font-size: 1.8rem;
-    font-weight: 300;
-    /* margin-right: 8%; 
-        padding: 0.5em 0;
-
-    */
-    color: var(--colorBlack);
-    width: 1.2em;
-
-    opacity: 0;
-    /* Both logos are initially hidden */
-
+    width: 2.2em;
+    opacity: 0; /* Both logos are initially hidden */
     transition: opacity 0.5s ease-in-out;
 }
-
 /* Faster fade-out for LOGO_0 and quicker transition back from LOGO_1 */
 @keyframes logo-switch-0 {
-
-    0%,
-    45% {
-        opacity: 1;
-        /* LOGO_0 stays visible for the first 45% of the animation cycle */
+    0%, 70% {
+        opacity: 1; /* LOGO_0 stays visible for 70% of the animation cycle */
     }
-
-    46%,
-    100% {
-        opacity: 0;
-        /* LOGO_0 fades out quickly */
+    71%, 100% {
+        opacity: 0; /* LOGO_0 fades out quickly */
     }
 }
 
 @keyframes logo-switch-1 {
-
-    0%,
-    45% {
-        opacity: 0;
-        /* LOGO_1 stays hidden for the first 45% */
+    0%, 70% {
+        opacity: 0; /* LOGO_1 stays hidden for the first 70% */
     }
-
-    46%,
-    55% {
-        opacity: 1;
-        /* LOGO_1 fades in quickly */
-    }
-
-    56%,
-    100% {
-        opacity: 1;
-        /* LOGO_1 remains visible until the next cycle */
+    71%, 100% {
+        opacity: 1; /* LOGO_1 fades in quickly */
     }
 }
 
-/* LOGO_0 fades in and out */
+/* LOGO_0 fades in and out with a longer duration of 2.5s */
 .logo-0 {
-    animation: logo-switch-0 3s ease-in-out infinite;
-    /* Faster total cycle of 3 seconds */
+    animation: logo-switch-0 2.5s ease-in-out infinite;
 }
 
-/* LOGO_1 fades in and out */
+/* LOGO_1 fades in and out with a shorter duration of 1.6s */
 .logo-1 {
-    animation: logo-switch-1 3s ease-in-out infinite;
-    /* Faster total cycle of 3 seconds */
+    animation: logo-switch-1 2.5s ease-in-out infinite;
 }
-
-
-
-/* =================== logo =================== */
