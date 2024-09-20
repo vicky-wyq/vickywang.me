@@ -67,8 +67,10 @@
 
 
     --VW--Yellow900: #d48c00;
-    --VW--Yellow700: #ffb400; /* main */
-    --VW--Yellow500: #ffda79; /* secondary */
+    --VW--Yellow700: #ffb400;
+    /* main */
+    --VW--Yellow500: #ffda79;
+    /* secondary */
     --VW--Yellow300: #fff1cc;
     --VW--Yellow100: #fff9e6;
 
@@ -190,7 +192,7 @@ html {
     background-color: var(--GreyHTMLBg);
 }
 
-  
+
 body {
     width: 100%;
     height: var(--height100);
@@ -853,6 +855,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--VW--Grey2024);
     margin: 0 auto;
 }
+
 .colorBgYellowVW700 {
     background-color: var(--VW--Yellow700);
     margin: 0 auto;
@@ -862,14 +865,17 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--VW--Yellow500);
     margin: 0 auto;
 }
+
 .colorBgYellowVW300 {
     background-color: var(--VW--Yellow300);
     margin: 0 auto;
 }
+
 .colorBgYellowVW100 {
     background-color: var(--VW--Yellow100);
     margin: 0 auto;
 }
+
 .pattern1 {
     background-image: repeating-linear-gradient(-45deg,
             rgba(204, 204, 204, 0.25),
@@ -1070,12 +1076,15 @@ polygon {
 .colorWtBg {
     background-color: #ffffff;
 }
+
 .color_VW_Pink800 {
     color: var(--VW--Pink800);
 }
+
 .colorBg_VW_Pink200 {
     background: var(--VW--Pink200);
 }
+
 .colorYellowVW900 {
     color: var(--VW--Yellow900);
 }
@@ -1897,10 +1906,11 @@ li .newPanelV3 {
     z-index: 98;
     text-align: center;
 
-    
+
 
 
 }
+
 .new_side_bar li {
     font-weight: 400;
     font-size: 22px;
@@ -1920,30 +1930,36 @@ li .newPanelV3 {
     display: block;
     width: 100%;
     height: 100%;
-    color: var(--Grey900); /* Default text color */
+    color: var(--Grey900);
+    /* Default text color */
     text-decoration: none;
     font-weight: inherit;
 }
 
 .new_side_bar li:hover,
-.new_side_bar li.active { /* Apply hover and active styles */
+.new_side_bar li.active {
+    /* Apply hover and active styles */
     border-color: var(--White-transparent);
     box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
-    transform: scale(1.02); /* Slight scaling effect */
+    transform: scale(1.02);
+    /* Slight scaling effect */
 }
 
 .new_side_bar li:hover a,
-.new_side_bar li.active a { /* Change text color on hover and active */
+.new_side_bar li.active a {
+    /* Change text color on hover and active */
     color: var(--white);
 }
 
 /* Active state */
 .new_side_bar li.active {
-    background-color: var(--Grey900); /* Keep hover effect when active */
+    background-color: var(--Grey900);
+    /* Keep hover effect when active */
 }
 
 .new_side_bar li:active {
-    transform: scale(0.98); /* Slight scale down to mimic press effect */
+    transform: scale(0.98);
+    /* Slight scale down to mimic press effect */
 }
 
 
@@ -1951,11 +1967,13 @@ li .newPanelV3 {
 .new_side_bar li:active {
     border-color: var(--White-transparent);
     box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
-    transform: scale(0.98); /* Slight scale down to mimic press effect */
+    transform: scale(0.98);
+    /* Slight scale down to mimic press effect */
 }
 
 .new_side_bar li:active a {
-    color: var(--white); /* Keep the text color white */
+    color: var(--white);
+    /* Keep the text color white */
 }
 
 
@@ -2108,7 +2126,7 @@ section .padding {
 }
 
 .colorLandingText {
-    background: linear-gradient(to right, var(  --VW--Yellow500) 0%, var(--VW--Yellow700) 100%);
+    background: linear-gradient(to right, var(--VW--Yellow500) 0%, var(--VW--Yellow700) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2196,7 +2214,8 @@ h4,
 h5,
 h6 {
     margin-top: clamp(0.42em, 0.56em, 1.2em);
-    margin-bottom: clamp(0.42em, 0.56em, 1.2em);}
+    margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+}
 
 
 h1 {
@@ -2874,6 +2893,8 @@ button.passwordArr {
 
     body .logo {
         padding: 0.5em 1.2em !important;
+        left: 8px;
+        top: 8px;
     }
 
     body .se-arrow {
@@ -3741,6 +3762,7 @@ flex: 0 0 calc(33.3333% - 1em);
     color: var(--Grey900);
     box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
 }
+
 .TBsliderNav:hover,
 .TBsliderNav.active {
     border-color: var(--White-transparent);
@@ -3977,20 +3999,12 @@ body .flex-container.Mobile {
 /* intro */
 /*head tool bar scroll*/
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 300;
-    /* margin-right: 8%; 
-        padding: 0.5em 0;
-
-    */
-    color: var(--colorBlack);
-    width: 1.2em;
-}
 
 @media (max-width: 1200px) {
     body .logo {
         padding: 0.5em 0.6em;
+        left: 8px;
+        top: 8px;
     }
 }
 
@@ -6621,7 +6635,7 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
 
 .timeline,
 .timeline * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -6634,67 +6648,67 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 
 .timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #fff;
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
 }
 
 .timeline ul li::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: inherit;
-  z-index: 1;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+    z-index: 1;
 }
 
 .timeline ul li div {
-  border-radius: 4px;
-  position: relative;
-  bottom: 0;
-  width: 400px;
-  padding: 12px 32px;
-  background: var(--VW--Yellow500);
+    border-radius: 4px;
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 12px 32px;
+    background: var(--VW--Yellow500);
 }
 
 .timeline ul li div::before {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  width: 0;
-  height: 0;
-  border-style: solid;
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
 }
 
 .timeline ul li:nth-child(odd) div {
-  left: 45px;
+    left: 45px;
 }
 
 .timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent var(--VW--Yellow500) transparent transparent;
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--VW--Yellow500) transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+    left: -439px;
 }
 
 .timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent var(--VW--Yellow500);
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent var(--VW--Yellow500);
 }
 
 
@@ -6704,31 +6718,31 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul li::after {
-  transition: background 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
-  background: var(--VW--Yellow500);
+    background: var(--VW--Yellow500);
 }
 
 .timeline ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
+    transform: translate3d(200px, 0, 0);
 }
 
 .timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
+    transform: translate3d(-200px, 0, 0);
 }
 
 .timeline ul li.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
+    transform: none;
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -6736,109 +6750,191 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: -289px;
-    /*250+45-6*/
-  }
+    .timeline ul li div {
+        width: 250px;
+    }
+
+    .timeline ul li:nth-child(even) div {
+        left: -289px;
+        /*250+45-6*/
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
-  }
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-  .timeline ul li:nth-child(even) div {
-    left: 45px;
-  }
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent var(--VW--Yellow500) transparent transparent;
-  }
+    .timeline ul li {
+        margin-left: 20px;
+    }
+
+    .timeline ul li div {
+        width: calc(100vw - 91px);
+    }
+
+    .timeline ul li:nth-child(even) div {
+        left: 45px;
+    }
+
+    .timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--VW--Yellow500) transparent transparent;
+    }
 }
 
 
 /* EXTRA/CLIP PATH STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline-clippy ul li::after {
-  width: 40px;
-  height: 40px;
-  border-radius: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
 }
 
 .timeline-rhombus ul li::after {
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .timeline-rhombus ul li div::before {
-  bottom: 12px;
+    bottom: 12px;
 }
 
 .timeline-star ul li::after {
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
 }
 
 .timeline-heptagon ul li::after {
-  clip-path: polygon(
-    50% 0%,
-    90% 20%,
-    100% 60%,
-    75% 100%,
-    25% 100%,
-    0% 60%,
-    10% 20%
-  );
+    clip-path: polygon(50% 0%,
+            90% 20%,
+            100% 60%,
+            75% 100%,
+            25% 100%,
+            0% 60%,
+            10% 20%);
 }
 
 .timeline-infinite ul li::after {
-  animation: scaleAnimation 2s infinite;
+    animation: scaleAnimation 2s infinite;
 }
 
 @keyframes scaleAnimation {
-  0% {
-    transform: translateX(-50%) scale(1);
-  }
-  50% {
-    transform: translateX(-50%) scale(1.25);
-  }
-  100% {
-    transform: translateX(-50%) scale(1);
-  }
+    0% {
+        transform: translateX(-50%) scale(1);
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.25);
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
 }
 
 
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
-  position: fixed;
-  right: 0;
-  bottom: 20px;
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  color: black;
-  background: rgba(255, 255, 255, 0.65);
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: black;
+    background: rgba(255, 255, 255, 0.65);
 }
 
 .page-footer a {
-  display: flex;
-  margin-left: 4px;
+    display: flex;
+    margin-left: 4px;
 }
 
 /* =================== timeline =================== */
+/* =================== logo =================== */
+/* Basic setup for the logo container */
+.logo-container {
+    position: relative;
+    height: 60px;
+    width: 60px;
+}
+
+/* Common styles for both logos */
+.logo {
+    left: 12px;
+    top: 12px;
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 300;
+    /* margin-right: 8%; 
+        padding: 0.5em 0;
+
+    */
+    color: var(--colorBlack);
+    width: 1.2em;
+
+    opacity: 0;
+    /* Both logos are initially hidden */
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Faster fade-out for LOGO_0 and quicker transition back from LOGO_1 */
+@keyframes logo-switch-0 {
+
+    0%,
+    45% {
+        opacity: 1;
+        /* LOGO_0 stays visible for the first 45% of the animation cycle */
+    }
+
+    46%,
+    100% {
+        opacity: 0;
+        /* LOGO_0 fades out quickly */
+    }
+}
+
+@keyframes logo-switch-1 {
+
+    0%,
+    45% {
+        opacity: 0;
+        /* LOGO_1 stays hidden for the first 45% */
+    }
+
+    46%,
+    55% {
+        opacity: 1;
+        /* LOGO_1 fades in quickly */
+    }
+
+    56%,
+    100% {
+        opacity: 1;
+        /* LOGO_1 remains visible until the next cycle */
+    }
+}
+
+/* LOGO_0 fades in and out */
+.logo-0 {
+    animation: logo-switch-0 3s ease-in-out infinite;
+    /* Faster total cycle of 3 seconds */
+}
+
+/* LOGO_1 fades in and out */
+.logo-1 {
+    animation: logo-switch-1 3s ease-in-out infinite;
+    /* Faster total cycle of 3 seconds */
+}
+
+
+
+/* =================== logo =================== */
