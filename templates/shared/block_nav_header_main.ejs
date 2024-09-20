@@ -1,14 +1,17 @@
-<% 
-if (typeof headerBackgroundColor === 'undefined') { 
-  headerBackgroundColor = ''; 
-} 
-
-%>
+<% if (typeof headerBackgroundColor==='undefined' ) { headerBackgroundColor='' ; } %>
 
 <header>
   <nav class="header <%= headerBackgroundColor %>" id="header">
     <div class="headerContainer">
-      <a href="/"><img class="logo pointer" src="/icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
+      <a href="/">
+        <div class="logo-container">
+          <!-- LOGO_0.svg -->
+          <img src="/icon/LOGO_0.svg" alt="VW" class="pointer logo logo-0">
+          <!-- LOGO_1.svg -->
+          <img src="/icon/LOGO_1.svg" alt="VW" class="pointer logo logo-1">
+        </div>
+      </a>
+
       <div class="navbar">
         <ol class="nav-menu <%= headerBackgroundColor %>">
           <li class="nav-item active activeNav box">
