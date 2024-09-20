@@ -1,5 +1,6 @@
 
 //
+
   // ====== timeline ====== //
 
 (function () {
@@ -37,24 +38,7 @@
   // ====== timeline ====== //
 
 
-  // ====== Hamburger Menu Starts ====== //
-  const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav-menu");
 
-  if (hamburger && navMenu) {
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-    });
-
-    document.querySelectorAll(".nav-link").forEach((link) =>
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-      })
-    );
-  }
-  // ====== Hamburger Menu Ends ====== //
 
 
 
@@ -380,7 +364,24 @@ function initializePassword() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
+  // ====== Hamburger Menu Starts ====== //
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
 
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-link").forEach((link) =>
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      })
+    );
+  }
+  // ====== Hamburger Menu Ends ====== //
 
   /* =================== number animation  ===================*/
   class CountUp {
