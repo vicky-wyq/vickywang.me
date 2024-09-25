@@ -2137,7 +2137,9 @@ section .padding {
     margin: 0;
     line-height: 120%;
 }
-
+.TextPoppins {
+    font-family: "Poppins", sans-serif;
+}
 .specialTextL {
     font-family: inherit;
     margin: 0;
@@ -2174,7 +2176,9 @@ section .padding {
 .fontWeight100 {
     font-weight: 100;
 }
-
+.fontWeight200 {
+    font-weight: 200;
+}
 .fontWeight300 {
     font-weight: 300;
 }
@@ -2182,11 +2186,18 @@ section .padding {
 .fontWeight400 {
     font-weight: 400;
 }
-
+.fontWeight500 {
+    font-weight: 500;
+}
+.fontWeight600 {
+    font-weight: 600;
+}
 .fontWeight700 {
     font-weight: 700;
 }
-
+.fontWeight800 {
+    font-weight: 800;
+}
 .fontWeight900 {
     font-weight: 900;
 }
@@ -3326,6 +3337,9 @@ flex: 0 0 calc(33.3333% - 1em);
 
 /* Tablet (medium) screens 480px + */
 @media (min-width: 30em) {
+
+    
+
     body .Grid--full>.Grid-cell {
         flex: 0 0 96%;
     }
@@ -3558,7 +3572,6 @@ flex: 0 0 calc(33.3333% - 1em);
 
 .Grid--gutters {
     margin-left: 0.4em;
-    /* margin-left: -0.4em; */
 }
 
 .Grid--gutters .Grid-cell {
@@ -4003,6 +4016,7 @@ body .flex-container.Mobile {
 
 
 @media screen and (max-width: 480px) {
+
     body .paddingXL {
         padding: var(--paddingS);
     }
