@@ -2322,18 +2322,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include(`${templatePath}/shared/block_copyCode`, {
-            wrapperGrid: true, 
-            copyCodeName:'iconSizes', 
-            copyCodeT1:`iconSizesT1`, 
-            copyCodeT2:`iconSizesT2`, 
-            copyCodeT3:`iconSizesT3`,
-            t1Checked:``,          
-            t2Checked:`checked`,
-            t3Checked:``,
-            EJS: ejsLiterals.ejs.base_iconSizes,
-            HTML: ejsLiterals.html.base_iconSizes,
-            CSS: ejsLiterals.css.base_iconSizes,
-          }) %>
+          wrapperGrid: ``, 
+          copyCodeName:'iconSizes', 
+          copyCodeT1:`iconSizesT1`, 
+          copyCodeT2:`iconSizesT2`, 
+          copyCodeT3:`iconSizesT3`,
+          t1Checked:``,          
+          t2Checked:`checked`,
+          t3Checked:``,
+          EJS: ejsLiterals.ejs.base_iconSizes,
+          HTML: ejsLiterals.html.base_iconSizes,
+          CSS: ejsLiterals.css.base_iconSizes,
+        }) %>
 
 
       </section>
@@ -2358,7 +2358,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include(`${templatePath}/shared/block_copyCode`, {
-          wrapperGrid: true, 
+          wrapperGrid: ``, 
           copyCodeName:'linkTxt', 
           copyCodeT1:`linkTxtT1`, 
           copyCodeT2:`linkTxtT2`, 
@@ -2398,18 +2398,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
 
         <%- include(`${templatePath}/shared/block_copyCode`, {
-                  wrapperGrid: true, 
-                  copyCodeName:'baseInput', 
-                  copyCodeT1:`baseInputT1`, 
-                  copyCodeT2:`baseInputT2`, 
-                  copyCodeT3:`baseInputT3`,
-                  t1Checked:``,          
-                  t2Checked:`checked`,
-                  t3Checked:``,
-                  EJS: ejsLiterals.ejs.base_input,
-                  HTML: ejsLiterals.html.base_input,
-                  CSS: ejsLiterals.css.base_input,
-                }) %>
+          wrapperGrid: ``, 
+          copyCodeName:'baseInput', 
+          copyCodeT1:`baseInputT1`, 
+          copyCodeT2:`baseInputT2`, 
+          copyCodeT3:`baseInputT3`,
+          t1Checked:``,          
+          t2Checked:`checked`,
+          t3Checked:``,
+          EJS: ejsLiterals.ejs.base_input,
+          HTML: ejsLiterals.html.base_input,
+          CSS: ejsLiterals.css.base_input,
+        }) %>
       </section>
 
     </section>
@@ -2768,40 +2768,36 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+
       <section id="content33">
         <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Adaptive Image Loader' }) %>
 
         <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_adaptiveImageLoader`, textColor:'teal800', iconUrl:''}) %>
+
         <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="ShadowBox">
-                  <%- include(`${templatePath}/shared/comp_adaptiveImageLoader`, {
-                    imgMediumUrl: `${websitePath}placeholderDarkBg_medium.jpg`,
-                    imgLargeUrl: `${websitePath}placeholderDarkBg_large.jpg`,
-                    imgSmallUrl: `${websitePath}placeholderDarkBg_small.jpg`
-                    }) %>
-                </div>
-              </div>
+          <div class="element">
+            <div class="ShadowBox">
+              <%- include(`${templatePath}/shared/comp_adaptiveImageLoader`, {
+                imgMediumUrl: `${websitePath}placeholderDarkBg_medium.jpg`,
+                imgLargeUrl: `${websitePath}placeholderDarkBg_large.jpg`,
+                imgSmallUrl: `${websitePath}placeholderDarkBg_small.jpg`
+                }) %>
             </div>
+            <%- include(`${templatePath}/shared/block_copyCode`, {
+              wrapperGrid: ``, 
+              copyCodeName:'adaptiveImageLoader', 
+              copyCodeT1:`adaptiveImageLoaderT1`, 
+              copyCodeT2:`adaptiveImageLoaderT2`, 
+              copyCodeT3:`adaptiveImageLoaderT3`,
+              t1Checked:`checked`,          
+              t2Checked:``,
+              t3Checked:``,
+              EJS: ejsLiterals.ejs.comp_adaptiveImageLoader,
+                  HTML: ejsLiterals.html.comp_adaptiveImageLoader,
+                  CSS:``
+            }) %>
           </div>
         </div>
-
-        <%- include(`${templatePath}/shared/block_copyCode`, {
-          wrapperGrid: true, 
-          copyCodeName:'adaptiveImageLoader', 
-          copyCodeT1:`adaptiveImageLoaderT1`, 
-          copyCodeT2:`adaptiveImageLoaderT2`, 
-          copyCodeT3:`adaptiveImageLoaderT3`,
-          t1Checked:`checked`,          
-          t2Checked:``,
-          t3Checked:``,
-          EJS: ejsLiterals.ejs.comp_adaptiveImageLoader,
-          HTML: ejsLiterals.html.comp_adaptiveImageLoader,
-          CSS:``
-        }) %>
-
       </section>
       <section id="content34">
         <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Card Elements' }) %>
@@ -2817,20 +2813,20 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                 <%- include(`${templatePath}/shared/comp_card_clean`, {
                 cardTitle: 'Lorem ipsum', 
                 cardText:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              ` }) %>
+                ` }) %>
                 <%- include(`${templatePath}/shared/block_copyCode`, {
-                wrapperGrid: ``, 
-                copyCodeName:'cardClean', 
-                copyCodeT1:`cardCleanT1`, 
-                copyCodeT2:`cardCleanT2`, 
-                copyCodeT3:`cardCleanT3`,
-                t1Checked:`checked`,          
-                t2Checked:``,
-                t3Checked:``,
-                EJS: ejsLiterals.ejs.comp_card_clean,
-                HTML: ejsLiterals.html.comp_card_clean,
-                CSS:``
-              }) %>
+                  wrapperGrid: ``, 
+                  copyCodeName:'cardClean', 
+                  copyCodeT1:`cardCleanT1`, 
+                  copyCodeT2:`cardCleanT2`, 
+                  copyCodeT3:`cardCleanT3`,
+                  t1Checked:`checked`,          
+                  t2Checked:``,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_card_clean,
+                  HTML: ejsLiterals.html.comp_card_clean,
+                  CSS:``
+                  }) %>
               </div>
               <!-- Tab 2 -->
 
@@ -2864,18 +2860,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                 }) %>
 
                 <%- include(`${templatePath}/shared/block_copyCode`, {
-                wrapperGrid: ``, 
-                copyCodeName:'cardGradient', 
-                copyCodeT1:`cardGradientT1`, 
-                copyCodeT2:`cardGradientT2`, 
-                copyCodeT3:`cardGradientT3`,
-                t1Checked:``,          
-                t2Checked:`checked`,
-                t3Checked:``,
-                EJS: ejsLiterals.ejs.comp_card_gradient,
-                HTML: ejsLiterals.html.comp_card_gradient,
-                CSS:``
-              }) %>
+                  wrapperGrid: ``, 
+                  copyCodeName:'cardGradient', 
+                  copyCodeT1:`cardGradientT1`, 
+                  copyCodeT2:`cardGradientT2`, 
+                  copyCodeT3:`cardGradientT3`,
+                  t1Checked:``,          
+                  t2Checked:`checked`,
+                  t3Checked:``,
+                  EJS: ejsLiterals.ejs.comp_card_gradient,
+                  HTML: ejsLiterals.html.comp_card_gradient,
+                  CSS:``
+                }) %>
               </div>
             </div>
           </div>
@@ -3278,7 +3274,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
         <%- include(`${templatePath}/shared/block_copyCode`, {
-          wrapperGrid: true, 
+          wrapperGrid: ``, 
           copyCodeName:'expandableContent', 
           copyCodeT1:`expandableContentT1`, 
           copyCodeT2:`expandableContentT2`, 

@@ -1,46 +1,4 @@
-
 //
-
-  // ====== timeline ====== //
-
-(function () {
-  "use strict";
-
-  // define variables
-  var items = document.querySelectorAll(".timeline li");
-
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function callbackFunc() {
-    for (var i = 0; i < items.length; i++) {
-      if (isElementInViewport(items[i])) {
-        items[i].classList.add("in-view");
-      }
-    }
-  }
-
-  // listen for events
-  window.addEventListener("load", callbackFunc);
-  window.addEventListener("resize", callbackFunc);
-  window.addEventListener("scroll", callbackFunc);
-})();
-  // ====== timeline ====== //
-
-
-
-
-
 
 class FibonacciSphere {
   #points;
@@ -79,7 +37,7 @@ class TagsCloud {
   constructor(root) {
     this.#root = root;
     this.#size = this.#root.offsetWidth;
-    this.#tags = root.querySelectorAll('.tag');
+    this.#tags = root.querySelectorAll(".tag");
     this.#sphere = new FibonacciSphere(this.#tags.length);
     this.#rotationAxis = [1, 0, 0];
     this.#rotationAngle = 0;
@@ -87,12 +45,12 @@ class TagsCloud {
 
     this.#updatePositions();
     this.#initEventListeners();
-    this.#root.classList.add('-loaded');
+    this.#root.classList.add("-loaded");
   }
 
   #initEventListeners() {
-    window.addEventListener('resize', this.#updatePositions.bind(this));
-    document.addEventListener('mousemove', this.#onMouseMove.bind(this));
+    window.addEventListener("resize", this.#updatePositions.bind(this));
+    document.addEventListener("mousemove", this.#onMouseMove.bind(this));
   }
 
   #updatePositions() {
@@ -185,9 +143,9 @@ class TagsCloud {
 
 function main() {
   {
-    const root = document.getElementById('TagsCloud');
+    const root = document.getElementById("TagsCloud");
     if (!root) {
-      console.info('TagsCloud not found, skipping initialization');
+      console.info("TagsCloud not found, skipping initialization");
       return;
     }
 
@@ -197,16 +155,15 @@ function main() {
 }
 // TagsCloud
 
-
 (function () {
   var lastKnownScrollY = 0;
   var currentScrollY = 0;
   var ticking = false;
-  var idOfHeader = 'header';
+  var idOfHeader = "header";
   var eleHeader = null;
   const classes = {
-    pinned: 'header-pin',
-    unpinned: 'header-unpin'
+    pinned: "header-pin",
+    unpinned: "header-unpin",
   };
 
   function onScroll() {
@@ -239,7 +196,11 @@ function main() {
   }
 
   function unpin() {
-    if (eleHeader && (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned))) {
+    if (
+      eleHeader &&
+      (eleHeader.classList.contains(classes.pinned) ||
+        !eleHeader.classList.contains(classes.unpinned))
+    ) {
       eleHeader.classList.remove(classes.pinned);
       eleHeader.classList.add(classes.unpinned);
     }
@@ -248,30 +209,28 @@ function main() {
   function initHeader() {
     eleHeader = document.getElementById(idOfHeader);
     if (eleHeader) {
-      document.addEventListener('scroll', onScroll, false);
+      document.addEventListener("scroll", onScroll, false);
     } else {
-      console.error('Header element not found');
+      console.error("Header element not found");
     }
   }
 
   // Ensuring this code doesn't conflict with other window.onload events
   if (window.addEventListener) {
-    window.addEventListener('load', initHeader);
+    window.addEventListener("load", initHeader);
   } else if (window.attachEvent) {
-    window.attachEvent('onload', initHeader);
+    window.attachEvent("onload", initHeader);
   }
 })();
-
 
 function progressBarScroll() {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
     height = document.body.scrollHeight - document.body.clientHeight,
     scrolled = (winScroll / height) * 100;
   document.getElementById("progressBar").style.width = scrolled + "%";
-  console.log('height', height);
-  console.log('scrollHeight', document.documentElement.scrollHeight);
-  console.log('clientHeight', document.documentElement.clientHeight);
-
+  console.log("height", height);
+  console.log("scrollHeight", document.documentElement.scrollHeight);
+  console.log("clientHeight", document.documentElement.clientHeight);
 }
 
 window.onscroll = function () {
@@ -279,10 +238,7 @@ window.onscroll = function () {
 };
 //progressBarScroll
 
-
-
 // ====== Components ====== //
-
 
 function toggleContent(button) {
   const content = button.previousElementSibling;
@@ -297,27 +253,33 @@ function toggleContent(button) {
 }
 
 function initializeToggles() {
-  const toggles = document.querySelectorAll('.toggle')
+  const toggles = document.querySelectorAll(".toggle");
 
   toggles.forEach(function (toggle) {
     // Add the click event listener to each button
-    toggle.addEventListener('click', function () {
+    toggle.addEventListener("click", function () {
       toggleContent(toggle);
     });
   });
 }
 //Read more/less
 
-
 const k = {
-  onboardingSubscription: 'U2FsdGVkX1/flTfDtan9WXoDnkCK30v0Y5pr4g5B680u6cXGNODszTEE+d0dCpzHn1coOmfqkGnppGteFyeRmn8ogiL8n2JOH2IyzJ2ygMU=',
-  consumerBooking: 'U2FsdGVkX1+VI5o7dvnsAbt6FozAHMjH4sdn9h0J39WmKfWQNAEz2YSscVzqJMF3P9e0jZAOqfvspeHkrDkmYA==',
-  reportDashboard: 'U2FsdGVkX18Z2dWz5GK/EO+7PK/3YIzwGzsIprovMAIRhty//ju8XJucom0hVJc9IxVLutYG370p04QhtuF+IO2U7eeof9Z/znjSkQQ4Fog=',
-  b2bAppRedesign: 'U2FsdGVkX19Uce5voQ0Q4b/a5B0LT6weF9bp/oUKbcGnyA8rXm7v93bU6txTPFJ3M1xXp5IAB7AdCT2sGfkRrQ==',
-  adminPanel: 'U2FsdGVkX19K1sDLgl3F24dUiedAbfbc+45iz09vBJtd1gB97S1G9o0KzVVroLCBb2nZ1scw21KiZFSO4OXzPg==',
-  costCalculator: 'U2FsdGVkX1/2lRGAhqW904kCtrCxk6BDNW/6OEzFa7lpDi0+mAcRz1TmS6BOm/EwSh5A8LMTshIgcaaeHJzuJjHeeq/180eXb0eDZitlj98=',
-  rxZero: 'U2FsdGVkX1/IJBtSaeMqta+AxGqEUk0aAWJWTn5PNgNcBe/c0pmDLVT544lK0G2wfOzexAFV6g2C6E+d0hx3Fw==',
-}
+  onboardingSubscription:
+    "U2FsdGVkX1/flTfDtan9WXoDnkCK30v0Y5pr4g5B680u6cXGNODszTEE+d0dCpzHn1coOmfqkGnppGteFyeRmn8ogiL8n2JOH2IyzJ2ygMU=",
+  consumerBooking:
+    "U2FsdGVkX1+VI5o7dvnsAbt6FozAHMjH4sdn9h0J39WmKfWQNAEz2YSscVzqJMF3P9e0jZAOqfvspeHkrDkmYA==",
+  reportDashboard:
+    "U2FsdGVkX18Z2dWz5GK/EO+7PK/3YIzwGzsIprovMAIRhty//ju8XJucom0hVJc9IxVLutYG370p04QhtuF+IO2U7eeof9Z/znjSkQQ4Fog=",
+  b2bAppRedesign:
+    "U2FsdGVkX19Uce5voQ0Q4b/a5B0LT6weF9bp/oUKbcGnyA8rXm7v93bU6txTPFJ3M1xXp5IAB7AdCT2sGfkRrQ==",
+  adminPanel:
+    "U2FsdGVkX19K1sDLgl3F24dUiedAbfbc+45iz09vBJtd1gB97S1G9o0KzVVroLCBb2nZ1scw21KiZFSO4OXzPg==",
+  costCalculator:
+    "U2FsdGVkX1/2lRGAhqW904kCtrCxk6BDNW/6OEzFa7lpDi0+mAcRz1TmS6BOm/EwSh5A8LMTshIgcaaeHJzuJjHeeq/180eXb0eDZitlj98=",
+  rxZero:
+    "U2FsdGVkX1/IJBtSaeMqta+AxGqEUk0aAWJWTn5PNgNcBe/c0pmDLVT544lK0G2wfOzexAFV6g2C6E+d0hx3Fw==",
+};
 
 function initializePassword() {
   // Select all password fields and submit buttons
@@ -327,7 +289,9 @@ function initializePassword() {
   // Iterate over each password field
   passwordFields.forEach((pass, index) => {
     const submit = submitButtons[index]; // Corresponding submit button
-    const msg = pass.closest(".input-field").querySelector(".pwIncorrectHeight span");
+    const msg = pass
+      .closest(".input-field")
+      .querySelector(".pwIncorrectHeight span");
 
     // Add event listener for keypress on password field
     pass.addEventListener("keypress", function (event) {
@@ -341,7 +305,9 @@ function initializePassword() {
     submit.addEventListener("click", () => {
       // Your existing logic to check password and handle redirection
       if (!k[pass.id]) {
-        throw new Error(`${pass.id} is not a valid page. Please ensure the "id" field of the password input is correct`);
+        throw new Error(
+          `${pass.id} is not a valid page. Please ensure the "id" field of the password input is correct`
+        );
       }
       const w = k[pass.id];
       let redirect;
@@ -364,6 +330,19 @@ function initializePassword() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
+// ====== AOS Starts ====== //
+
+AOS.init({
+  delay: 180,
+  duration: 1000
+});
+
+
+// ====== AOS Ends ====== //
+
+  
+
+
   // ====== Hamburger Menu Starts ====== //
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
@@ -390,10 +369,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
       this.setVars();
       this.init();
     }
-  
+
     setVars() {
       this.number = this.el.querySelectorAll("[data-countup-number]");
-      this.observerOptions = { root: null, rootMargin: "0px 0px", threshold: 0 };
+      this.observerOptions = {
+        root: null,
+        rootMargin: "0px 0px",
+        threshold: 0,
+      };
       this.observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           const end = parseFloat(
@@ -406,7 +389,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
       }, this.observerOptions);
     }
-  
+
     init() {
       if (this.number.length > 0) {
         this.number.forEach((el) => {
@@ -414,12 +397,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
       }
     }
-  
+
     iterateValue(el, end, decimals) {
       const start = 0;
       const duration = 2500;
       let startTimestamp = null;
-  
+
       const step = (timestamp) => {
         if (!startTimestamp) startTimestamp = timestamp;
         const elapsedPercent = (timestamp - startTimestamp) / duration;
@@ -430,60 +413,55 @@ document.addEventListener("DOMContentLoaded", function (event) {
           window.requestAnimationFrame(step);
         }
       };
-  
+
       window.requestAnimationFrame(step);
     }
-  
+
     easeOutQuint(x) {
       return 1 - Math.pow(1 - x, 5);
     }
-  
+
     countDecimals(val) {
       if (Math.floor(val) === val) return 0;
       return val.toString().split(".")[1]?.length || 0;
     }
-  
+
     formatNumber(val, decimals) {
       return val.toLocaleString("en-US", {
         minimumFractionDigits: decimals,
-        maximumFractionDigits: decimals
+        maximumFractionDigits: decimals,
       });
     }
   }
-  
+
   // Simplified version to attach instances for this demo
   const dataModules = [...document.querySelectorAll('[data-module="countup"]')];
-  
+
   dataModules.forEach((element) => {
     new CountUp(element);
   });
-  
+
   /* =================== number animation  ===================*/
 
-
   /* =================== click show pw  ===================*/
-  var cards = document.querySelectorAll('.img__wrap');
+  var cards = document.querySelectorAll(".img__wrap");
 
   cards.forEach(function (card) {
-    card.addEventListener('click', function () {
-      var description = card.querySelector('.img__description');
-      description.classList.add('img__description--visible');
+    card.addEventListener("click", function () {
+      var description = card.querySelector(".img__description");
+      description.classList.add("img__description--visible");
     });
 
-    card.addEventListener('mouseleave', function () {
-      var description = card.querySelector('.img__description');
-      description.classList.remove('img__description--visible');
+    card.addEventListener("mouseleave", function () {
+      var description = card.querySelector(".img__description");
+      description.classList.remove("img__description--visible");
     });
   });
   /* =================== click show pw  ===================*/
 
   /* =================== carousel intro  ===================*/
 
-
-
-
-  //autoplay  
-
+  //autoplay
 
   (function () {
     const slider = document.querySelector(".slider");
@@ -531,8 +509,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     nextButton.addEventListener("click", pauseAutoplay);
   })();
 
-
-
   /* ===================
   //no autoplay
   const slider = document.querySelector(".slider");
@@ -547,8 +523,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   ===================*/
 
   /* =================== carousel intro  ===================*/
-
-
 
   // ====== Scroll bar ====== //
 
@@ -578,16 +552,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   initializePassword();
 
 
-  // ====== AOS Starts ====== //
-
-  AOS.init({
-    delay: 180, // values from 0 to 3000, with step 50ms
-    duration: 1000, // values from 0 to 3000, with step 50ms
-    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  });
-  //  2 links on html 
-  // ====== AOS Ends ====== //
-
 
   // ====== Back to Top Starts ====== //
 
@@ -595,16 +559,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //Get the button
 
   if (mybutton) {
-    window.addEventListener('scroll', function () {
-      scrollFunction()
-    })
-    mybutton.addEventListener('click', topFunction)
+    window.addEventListener("scroll", function () {
+      scrollFunction();
+    });
+    mybutton.addEventListener("click", topFunction);
   }
 
   // When the user scrolls down 20px from the top of the document, show the button
 
   function scrollFunction() {
-    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    if (
+      document.body.scrollTop > 1200 ||
+      document.documentElement.scrollTop > 1200
+    ) {
       mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
@@ -617,20 +584,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   // When the user clicks on the button, scroll to the top of the document
 
-
   // ====== Back to Top Ends ====== //
 
-
-
   // ====== Call TagsCloud Starts ====== //
-
-
 
   main();
   // Call TagsCloud
   // ====== Call TagsCloud Ends ====== //
-
-
 
   // Helper function to copy text to the clipboard
   function copyToClipboard(textElement, feedbackElement) {
@@ -656,17 +616,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // ====== textbox copy to clipboard ======
 
-
-
-
-
   function copyTextToClipboard(text, callback) {
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(text).then(function () {
-        callback(null);
-      }, function (err) {
-        callback(err);
-      });
+      navigator.clipboard.writeText(text).then(
+        function () {
+          callback(null);
+        },
+        function (err) {
+          callback(err);
+        }
+      );
     } else {
       // Fallback for older browsers without clipboard API
       try {
@@ -676,7 +635,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         textArea.focus();
         textArea.select();
 
-        var successful = document.execCommand('copy');
+        var successful = document.execCommand("copy");
         document.body.removeChild(textArea);
 
         if (!successful) throw new Error("Failed to copy");
@@ -688,13 +647,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   // Attach event listener to all .ClipboardIconOnly buttons
-  document.querySelectorAll('.ClipboardIconOnly').forEach(function (button) {
-    button.addEventListener('click', function (e) {
+  document.querySelectorAll(".ClipboardIconOnly").forEach(function (button) {
+    button.addEventListener("click", function (e) {
       e.preventDefault(); // Prevent default action
 
       var currentButton = e.currentTarget;
       // Extract text from the .clickIconCopy element inside the clicked button
-      var textToCopy = currentButton.querySelector('.clickIconCopy').innerText;
+      var textToCopy = currentButton.querySelector(".clickIconCopy").innerText;
 
       // Copy the extracted text to the clipboard
       copyTextToClipboard(textToCopy, function (err) {
@@ -702,10 +661,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
           throw err;
         } else {
           // Optional: Show a temporary "Copied!" message or any other feedback mechanism
-          var feedback = document.createElement('div');
+          var feedback = document.createElement("div");
 
           feedback.className = "copiedByClickIcon";
-          feedback.innerText = 'Copied!';
+          feedback.innerText = "Copied!";
           currentButton.appendChild(feedback);
           setTimeout(function () {
             currentButton.removeChild(feedback);
@@ -716,18 +675,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
   // Append the copyAlert inside the ClipboardBox
 
-  // ========== click icon to copy  
+  // ========== click icon to copy
 
   function copyTargetText(e, callback) {
     var textToCopy = e.target.innerText;
 
-
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(textToCopy).then(function () {
-        callback(null);
-      }, function (err) {
-        callback(err);
-      });
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          callback(null);
+        },
+        function (err) {
+          callback(err);
+        }
+      );
     } else {
       try {
         var textArea = document.createElement("textarea");
@@ -736,7 +697,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         textArea.focus();
         textArea.select();
 
-        var successful = document.execCommand('copy');
+        var successful = document.execCommand("copy");
         document.body.removeChild(textArea);
 
         if (!successful) throw new Error("Failed to copy");
@@ -760,7 +721,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var ClipboardBox = e.target.closest(".ClipboardBox"); // Find the closest .ClipboardBox parent of the clicked button
         var copyAlert = document.createElement("div");
         copyAlert.className = "copied";
-        copyAlert.innerText = 'Copied';
+        copyAlert.innerText = "Copied";
 
         // Append the copyAlert inside the ClipboardBox
         ClipboardBox.appendChild(copyAlert);
@@ -774,25 +735,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   //copy Clipboard
 
+  const gifImages = document.querySelectorAll(".gif-toggle");
 
+  gifImages.forEach((gifImage) => {
+    let isPlaying = false; // Initially, the GIF is not playing
 
-
-
-  const gifImages = document.querySelectorAll('.gif-toggle');
-
-  gifImages.forEach(gifImage => {
-    let isPlaying = false;  // Initially, the GIF is not playing
-
-    gifImage.addEventListener('mouseover', function () {
+    gifImage.addEventListener("mouseover", function () {
       this.src = this.dataset.gif;
     });
 
-    gifImage.addEventListener('mouseout', function () {
+    gifImage.addEventListener("mouseout", function () {
       this.src = this.dataset.static;
     });
 
     // Handling touch devices
-    gifImage.addEventListener('touchend', function () {
+    gifImage.addEventListener("touchend", function () {
       if (isPlaying) {
         this.src = this.dataset.static;
       } else {
@@ -804,31 +761,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //gif hover/tap to play
 
   // Modal Setup
-  var modal = document.getElementById('modal');
-  var modalClose = document.getElementById('modal-close');
+  var modal = document.getElementById("modal");
+  var modalClose = document.getElementById("modal-close");
 
   if (modalClose) {
-    modalClose.addEventListener('click', function () {
+    modalClose.addEventListener("click", function () {
       modal.style.display = "none";
     });
   }
 
   if (modal) {
-    modal.addEventListener('click', function () {
+    modal.addEventListener("click", function () {
       modal.style.display = "none";
     });
   }
 
-
   // global handler
-  document.addEventListener('click', function (e) {
-    if (e.target.className.indexOf('modal-target') !== -1) {
+  document.addEventListener("click", function (e) {
+    if (e.target.className.indexOf("modal-target") !== -1) {
       var img = e.target;
       var modalImg = document.getElementById("modal-content");
       var captionText = document.getElementById("modal-caption");
 
       // Read background color from the clicked element's data attribute
-      var bgColor = img.getAttribute('data-bgcolor');
+      var bgColor = img.getAttribute("data-bgcolor");
       if (bgColor) {
         modal.style.backgroundColor = bgColor;
       }
@@ -839,27 +795,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
 
-
   // Scroll add/remove classes Starts
-  window.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
+  window.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute("id");
         const anchor = document.querySelector(`nav li a[href="#${id}"]`);
 
         if (anchor) {
           const activeLi = anchor.parentElement;
-          const ul = activeLi.querySelector('ul');
+          const ul = activeLi.querySelector("ul");
 
           if (entry.intersectionRatio > 0) {
-            activeLi.classList.add('active');
+            activeLi.classList.add("active");
             if (ul) {
-              ul.classList.add('active');
+              ul.classList.add("active");
             }
           } else {
-            activeLi.classList.remove('active');
+            activeLi.classList.remove("active");
             if (ul) {
-              ul.classList.remove('active');
+              ul.classList.remove("active");
             }
           }
         }
@@ -867,7 +822,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
 
     // Track all sections that have an `id` applied
-    document.querySelectorAll('section[id]').forEach((section) => {
+    document.querySelectorAll("section[id]").forEach((section) => {
       observer.observe(section);
     });
   });
@@ -880,64 +835,65 @@ document.addEventListener("DOMContentLoaded", function (event) {
       let activeIndex = 0;
 
       function updateActiveSlide(carousel) {
-        const slides = carousel.querySelectorAll('.TBslidesItem');
-        const navLinks = carousel.querySelectorAll('.TBsliderNav');
-        const slidesContainer = carousel.querySelector('.TBslides');
-        activeIndex = Math.round(slidesContainer.scrollLeft / slidesContainer.clientWidth);
+        const slides = carousel.querySelectorAll(".TBslidesItem");
+        const navLinks = carousel.querySelectorAll(".TBsliderNav");
+        const slidesContainer = carousel.querySelector(".TBslides");
+        activeIndex = Math.round(
+          slidesContainer.scrollLeft / slidesContainer.clientWidth
+        );
 
         navLinks.forEach((navLink, index) => {
           if (index === activeIndex) {
-            navLink.classList.add('active');
+            navLink.classList.add("active");
           } else {
-            navLink.classList.remove('active');
+            navLink.classList.remove("active");
           }
         });
       }
 
       function scrollToSlide(slideIndex, carousel) {
-        const slidesContainer = carousel.querySelector('.TBslides');
+        const slidesContainer = carousel.querySelector(".TBslides");
         slidesContainer.scrollTo({
           left: slideIndex * slidesContainer.clientWidth,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       }
 
       const carousels = document.querySelectorAll(carouselSelector);
-      carousels.forEach(carousel => {
+      carousels.forEach((carousel) => {
         // If the carousel doesn't exist, skip this iteration
         if (!carousel) return;
 
-        const navLinks = carousel.querySelectorAll('.TBsliderNav');
+        const navLinks = carousel.querySelectorAll(".TBsliderNav");
         navLinks.forEach((navLink, index) => {
-          navLink.addEventListener('mouseenter', () => {
+          navLink.addEventListener("mouseenter", () => {
             scrollToSlide(index, carousel);
             updateActiveSlide(carousel);
           });
         });
 
-        carousel.querySelector('.TBslides').addEventListener('scroll', () => updateActiveSlide(carousel));
+        carousel
+          .querySelector(".TBslides")
+          .addEventListener("scroll", () => updateActiveSlide(carousel));
 
         updateActiveSlide(carousel);
       });
     }
 
     // Usage
-    initCarousel('#TBcarousel1');
-    initCarousel('#TBcarousel2');
-    initCarousel('#TBcarouselGlorify1');
-    initCarousel('#TBcarouselGlorify2');
-    initCarousel('#TBcarouselGlorify3');
-    initCarousel('#TBcarouselGlorify4');
-    initCarousel('#TBcarouselGlorify5');
-    initCarousel('#TBcarouselGlorify6');
-    initCarousel('#TBcarouselGlorify7');
-    initCarousel('#TBcarouselGlorify8');
-    initCarousel('#TBcarouselGlorify9');
+    initCarousel("#TBcarousel1");
+    initCarousel("#TBcarousel2");
+    initCarousel("#TBcarouselGlorify1");
+    initCarousel("#TBcarouselGlorify2");
+    initCarousel("#TBcarouselGlorify3");
+    initCarousel("#TBcarouselGlorify4");
+    initCarousel("#TBcarouselGlorify5");
+    initCarousel("#TBcarouselGlorify6");
+    initCarousel("#TBcarouselGlorify7");
+    initCarousel("#TBcarouselGlorify8");
+    initCarousel("#TBcarouselGlorify9");
   })();
   // TBcarousel Ends
-
-
-
 
   // LRCarousel starts
   (function () {
@@ -952,64 +908,67 @@ document.addEventListener("DOMContentLoaded", function (event) {
       let activeIndex = 0;
 
       function updateActiveSlide() {
-        const slides = carousel.querySelectorAll('.slides-item');
-        const navLinks = carousel.querySelectorAll('.slider-nav');
-        const slidesContainer = carousel.querySelector('.LRslides');
-        activeIndex = Math.round(slidesContainer.scrollTop / slidesContainer.clientHeight);
+        const slides = carousel.querySelectorAll(".slides-item");
+        const navLinks = carousel.querySelectorAll(".slider-nav");
+        const slidesContainer = carousel.querySelector(".LRslides");
+        activeIndex = Math.round(
+          slidesContainer.scrollTop / slidesContainer.clientHeight
+        );
 
         navLinks.forEach((navLink, index) => {
           if (index === activeIndex) {
-            navLink.classList.add('active');
+            navLink.classList.add("active");
           } else {
-            navLink.classList.remove('active');
+            navLink.classList.remove("active");
           }
         });
       }
 
       function scrollToSlide(slideIndex) {
-        const slidesContainer = carousel.querySelector('.LRslides');
+        const slidesContainer = carousel.querySelector(".LRslides");
         slidesContainer.scrollTo({
           top: slideIndex * slidesContainer.clientHeight,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       }
 
-      const navLinks = carousel.querySelectorAll('.slider-nav');
+      const navLinks = carousel.querySelectorAll(".slider-nav");
       navLinks.forEach((navLink, index) => {
-        navLink.addEventListener('mouseenter', () => {
+        navLink.addEventListener("mouseenter", () => {
           scrollToSlide(index);
           updateActiveSlide();
         });
       });
 
-      carousel.querySelector('.LRslides').addEventListener('scroll', updateActiveSlide);
+      carousel
+        .querySelector(".LRslides")
+        .addEventListener("scroll", updateActiveSlide);
 
       updateActiveSlide();
     }
 
     // Usage
-    initLRcarousel('carousel1');
-    initLRcarousel('carousel2');
-    initLRcarousel('carousel3');
-
+    initLRcarousel("carousel1");
+    initLRcarousel("carousel2");
+    initLRcarousel("carousel3");
   })();
   // LRCarousel ends
-
-
 
   // Global variable to hold the currently playing audio element
   let currentlyPlaying = null;
 
   function initAudioPlayer(audioContainer) {
-    const audioElement = audioContainer.querySelector('audio');
-    const playButton = audioContainer.querySelector('.play-button');
-    const timeDisplay = audioContainer.querySelector('.time-display');
+    const audioElement = audioContainer.querySelector("audio");
+    const playButton = audioContainer.querySelector(".play-button");
+    const timeDisplay = audioContainer.querySelector(".time-display");
 
     playButton.addEventListener("click", function () {
       // Pause the currently playing audio if there is one
       if (currentlyPlaying && currentlyPlaying !== audioElement) {
         currentlyPlaying.pause();
-        currentlyPlaying.closest('.audio-container').querySelector('.play-button').innerHTML = "Play";
+        currentlyPlaying
+          .closest(".audio-container")
+          .querySelector(".play-button").innerHTML = "Play";
       }
 
       // Play or pause the clicked audio element
@@ -1028,7 +987,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     audioElement.addEventListener("timeupdate", function () {
       const currentTime = audioElement.currentTime;
       const duration = audioElement.duration;
-      timeDisplay.innerHTML = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+      timeDisplay.innerHTML = `${formatTime(currentTime)} / ${formatTime(
+        duration
+      )}`;
     });
 
     // Reset the play button and currentlyPlaying when the audio ends
@@ -1040,77 +1001,88 @@ document.addEventListener("DOMContentLoaded", function (event) {
     function formatTime(time) {
       const minutes = Math.floor(time / 60);
       const seconds = Math.floor(time % 60);
-      return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+      return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
     }
   }
 
   // Initialize each audio player
-  document.querySelectorAll('.audio-container').forEach(initAudioPlayer);
+  document.querySelectorAll(".audio-container").forEach(initAudioPlayer);
   (function () {
     // Initialize each 'filed' component
-    var fileds = document.querySelectorAll('.filed');
+    var fileds = document.querySelectorAll(".filed");
     fileds.forEach(function (filed) {
       initializeFiled(filed);
     });
 
     // Event listeners for radio buttons
-    document.querySelectorAll('.select-EJS, .select-HTML, .select-CSS').forEach(function (radioBtn) {
-      radioBtn.addEventListener('click', function () {
-        showCode(this, this.classList.contains('select-EJS') ? 'ejs' : (this.classList.contains('select-HTML') ? 'html' : 'css'));
+    document
+      .querySelectorAll(".select-EJS, .select-HTML, .select-CSS")
+      .forEach(function (radioBtn) {
+        radioBtn.addEventListener("click", function () {
+          showCode(
+            this,
+            this.classList.contains("select-EJS")
+              ? "ejs"
+              : this.classList.contains("select-HTML")
+              ? "html"
+              : "css"
+          );
+        });
       });
-    });
 
     function initializeFiled(filed) {
-      var ejsRadio = filed.querySelector('.select-EJS');
-      var ejsBlock = filed.querySelector('.ejs-block');
-      var htmlRadio = filed.querySelector('.select-HTML');
-      var htmlBlock = filed.querySelector('.html-block');
-      var cssBlock = filed.querySelector('.css-block');
-      var copyButton = filed.querySelector('.copy-btn');
+      var ejsRadio = filed.querySelector(".select-EJS");
+      var ejsBlock = filed.querySelector(".ejs-block");
+      var htmlRadio = filed.querySelector(".select-HTML");
+      var htmlBlock = filed.querySelector(".html-block");
+      var cssBlock = filed.querySelector(".css-block");
+      var copyButton = filed.querySelector(".copy-btn");
 
       // Check the initially selected radio button
-      var checkedRadio = filed.querySelector('.select-EJS:checked, .select-HTML:checked, .select-CSS:checked');
+      var checkedRadio = filed.querySelector(
+        ".select-EJS:checked, .select-HTML:checked, .select-CSS:checked"
+      );
 
       if (checkedRadio === ejsRadio) {
-        ejsBlock.style.display = 'block';
-        htmlBlock.style.display = 'none';
-        cssBlock.style.display = 'none';
-        setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
+        ejsBlock.style.display = "block";
+        htmlBlock.style.display = "none";
+        cssBlock.style.display = "none";
+        setupCopyButton(copyButton, ejsBlock.querySelector(".ejs-code"));
       } else if (checkedRadio === htmlRadio) {
-        ejsBlock.style.display = 'none';
-        htmlBlock.style.display = 'block';
-        cssBlock.style.display = 'none';
-        setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+        ejsBlock.style.display = "none";
+        htmlBlock.style.display = "block";
+        cssBlock.style.display = "none";
+        setupCopyButton(copyButton, htmlBlock.querySelector(".html-code"));
       } else {
-        ejsBlock.style.display = 'none';
-        htmlBlock.style.display = 'none';
-        cssBlock.style.display = 'block';
-        setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
+        ejsBlock.style.display = "none";
+        htmlBlock.style.display = "none";
+        cssBlock.style.display = "block";
+        setupCopyButton(copyButton, cssBlock.querySelector(".css-code"));
       }
     }
 
     function showCode(radioBtn, type) {
-      var container = radioBtn.closest('.filed');
-      var ejsBlock = container.querySelector('.ejs-block');
-      var htmlBlock = container.querySelector('.html-block');
-      var cssBlock = container.querySelector('.css-block');
-      var copyButton = container.querySelector('.copy-btn');
+      var container = radioBtn.closest(".filed");
+      var ejsBlock = container.querySelector(".ejs-block");
+      var htmlBlock = container.querySelector(".html-block");
+      var cssBlock = container.querySelector(".css-block");
+      var copyButton = container.querySelector(".copy-btn");
 
-      if (type === 'ejs') {
-        ejsBlock.style.display = 'block';
-        htmlBlock.style.display = 'none';
-        cssBlock.style.display = 'none';
-        setupCopyButton(copyButton, ejsBlock.querySelector('.ejs-code'));
-      } else if (type === 'html') {
-        ejsBlock.style.display = 'none';
-        htmlBlock.style.display = 'block';
-        cssBlock.style.display = 'none';
-        setupCopyButton(copyButton, htmlBlock.querySelector('.html-code'));
+      if (type === "ejs") {
+        ejsBlock.style.display = "block";
+        htmlBlock.style.display = "none";
+        cssBlock.style.display = "none";
+        setupCopyButton(copyButton, ejsBlock.querySelector(".ejs-code"));
+      } else if (type === "html") {
+        ejsBlock.style.display = "none";
+        htmlBlock.style.display = "block";
+        cssBlock.style.display = "none";
+        setupCopyButton(copyButton, htmlBlock.querySelector(".html-code"));
       } else {
-        ejsBlock.style.display = 'none';
-        htmlBlock.style.display = 'none';
-        cssBlock.style.display = 'block';
-        setupCopyButton(copyButton, cssBlock.querySelector('.css-code'));
+        ejsBlock.style.display = "none";
+        htmlBlock.style.display = "none";
+        cssBlock.style.display = "block";
+        setupCopyButton(copyButton, cssBlock.querySelector(".css-code"));
       }
     }
 
@@ -1131,16 +1103,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       document.body.removeChild(textarea);
 
-      btnElement.textContent = 'Copied!';
+      btnElement.textContent = "Copied!";
 
       setTimeout(function () {
-        btnElement.textContent = 'Copy Code';
+        btnElement.textContent = "Copy Code";
       }, 2000);
     }
   })();
 
   //copy code to clipboard + tabs
-
 
   // Simulate a click on the default tab link when the page loads
   window.onload = function () {
@@ -1149,11 +1120,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
       defaultTabLink.click();
     }
   };
-
-
-
- 
-
-
-
 });
