@@ -3,6 +3,5 @@ Disallow: /
 
 User-agent: Googlebot
 User-agent: AdsBot-Google
-Disallow: /worksamples/
 
 Sitemap: https://vickywang.me/sitemap.xml
