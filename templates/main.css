@@ -7032,13 +7032,14 @@ UIA-TIMELINE
     font-size: var(--_uia-timeline-dot-size);
 
     border-radius: 50%;
-    box-shadow: 0 0 0 var(--uia-timeline-dot-border-thickness, 1px), var(--_uia-timeline-line-color_default));
+    box-shadow: 0 0 0 var(--uia-timeline-dot-border-thickness, 1px), var(--_uia-timeline-line-color_default);
     border: .5em solid var(--uia-timeline-dot-color, var(--_uia-timeline-line-color_default));
 
     position: absolute;
     inset-block-start: var(--uia-timeline-dot-position, -1px);
     inset-inline-start: var(--uia-timeline-dot-main-position, calc(-1 * var(--_uia-timeline-space)));
 }
+
 
 [data-uia-timeline-skin="5"] .uia-timeline__group:last-child::after {
     content: "";
