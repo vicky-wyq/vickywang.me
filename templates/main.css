@@ -3351,7 +3351,6 @@ flex: 0 0 calc(33.3333% - 1em);
 @media (min-width: 30em) {
 
 
-
     body .Grid--full>.Grid-cell {
         flex: 0 0 96%;
     }
@@ -4010,9 +4009,7 @@ body .flex-container.Mobile {
 /* intro */
 
 @media screen and (max-width: 1480px) {
-    body .rowChng {
-        flex-direction: column;
-    }
+
 
     body .nav {
         top: 16%;
