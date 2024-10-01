@@ -5468,8 +5468,8 @@ button.Clipboard.clickTxt:active {
 
 .buttonSmall {
     border-radius: 120px;
-    padding: 16px 28px;
-    font-size: 14px;
+    padding: 14px 24px;
+    font-size: 16px;
     font-weight: 500;
 }
 
