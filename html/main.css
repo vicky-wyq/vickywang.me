@@ -7241,7 +7241,6 @@ UIA-TIMELINE
 .page {
     box-sizing: border-box;
     inline-size: min(100%, 90ch);
-    padding: 5rem 2rem 3rem;
     margin-inline: auto;
 }
 
