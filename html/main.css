@@ -2904,6 +2904,11 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+
+    
+        
+    
+    
     body .paddingXL {
         padding: var(--paddingL);
     }
@@ -2973,7 +2978,9 @@ button.passwordArr {
     body .new_side_bar {
         display: none;
     }
-
+    body .section-nav {
+        display: none;
+    }
     .typing-demo {
         display: none;
     }
@@ -3397,7 +3404,7 @@ flex: 0 0 calc(33.3333% - 1em);
 /* when the screens more than an ipad === 768px + */
 @media (min-width: 48em) {
     body .Grid--full>.Grid-cell {
-        flex: 0 0 100%;
+        flex: 0 0 99%;
     }
 
     .Grid--cols-2>.Grid-cell,
