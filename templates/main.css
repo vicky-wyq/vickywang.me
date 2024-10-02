@@ -66,7 +66,7 @@
     --VW--Pink200: #fff1f7;
 
 
-    --VW--Yellow900: #d48c00;
+    --VW--Yellow900: #e7a200;
     --VW--Yellow700: #ffb400;
     /* main */
     --VW--Yellow500: #ffda79;
@@ -855,7 +855,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--VW--Grey2024);
     margin: 0 auto;
 }
-
+.colorBgYellowVW900 {
+    background-color: var(--VW--Yellow900);
+    margin: 0 auto;
+}
 .colorBgYellowVW700 {
     background-color: var(--VW--Yellow700);
     margin: 0 auto;
@@ -5476,12 +5479,19 @@ button.Clipboard.clickTxt:active {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
-.buttonSmall {
+.buttonMedium {
     border-radius: 120px;
     padding: 12px 20px;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+}
+.buttonSmall {
+    border-radius: 120px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 .buttonPrimary {

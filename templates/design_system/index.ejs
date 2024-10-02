@@ -13,20 +13,20 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 <body>
 
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, {
-    type:'backText', 
-    currentPage: 'PROJECT',
-    PageUrl:`/`
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
+    PageUrl:`${websitePath}/`,
+    headerBackgroundColor:`WhiteBgTrans`,
+    arrTxtColor:``,
+
     }) %>
 
 
   <!-- header image -->
-  <div class="GreyBg200">
+  <div class="colorBgVW pattern2">
     <div class="blankPhone"></div>
-    <div class="blankHS"></div>
     <div class="ProjectBanner displayLaptop">
       <div class="blankMin1880"></div>
-      <img src="Mockup.png" alt="vickywang.me">
+      <img src="MockupL.png" alt="vickywang.me">
 
       <div class="ProjectBannerInnerND">
         <h1><strong>Design System</strong> </h1>
@@ -42,7 +42,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
     <div class="ProjectBanner displayTablet">
       <div class="blankMin1880"></div>
-      <img class="displayTablet" src="MockupS.png" alt="vickywang.me">
+      <img class="displayTablet" src="MockupM.png" alt="vickywang.me">
       <div class="ProjectBannerInnerND">
         <h1><strong>Design System</strong> </h1>
         <h3 class="Grid Grid--center colorBlack">Click, hover, or adjust the viewport to observe the responsive layout
@@ -53,7 +53,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
     </div>
     <div class="ProjectBanner displayPhone">
       <div class="blankMin1880"></div>
-      <img class="displayPhone" src="MockupXS.png" alt="vickywang.me">
+      <img class="displayPhone" src="MockupS.png" alt="vickywang.me">
       <div class="ProjectBannerInnerND">
         <h1><strong>Design System</strong> </h1>
         <h3 class="Grid Grid--center colorBlack">Click, hover, or adjust the viewport to observe the responsive layout
@@ -64,18 +64,16 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
     </div>
   </div>
-  <div class="blankHXS"></div>
+
   <div class="wrapper">
+    <div class="blankHXXS"></div>
 
     <div class="Grid Grid--gutters Grid--cols-2">
       <div class="Grid-cell">
         <div class="element">
 
           <h3><strong>Context</strong></h3>
-          <h4>As a UX designer, I've always had a passion for learning basic coding. I've designed and maintained this
-            site since the end of 2020. This journey has been a valuable learning experience. It has allowed me to not
-            only update the design system and contemplate layout and grid choices but also to focus on component reuse,
-            ensuring scalability, and implementing effective UX design patterns.
+          <h4>I have always been passionate about enhancing design quality and improving management efficiency. Since late 2020, I have been designing and building my website, creating a design system that focuses on component organization for easy comparison and reuse. This system ensures scalability and implements effective UX design patterns, ultimately contributing to a more cohesive and user-friendly experience.
           </h4>
         </div>
       </div>
@@ -134,11 +132,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
 
 
-  <div class="wrapper">
 
-
-
-  </div>
 
 
 
@@ -161,14 +155,16 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
     <nav class="section-nav">
       <ol>
-        <li><a href="#content1" class="titleRightPanel">
+        <li>
+          <a href="#content1" class="titleRightPanel">
             <div class="paddingXS">Design Fundamentals</div>
           </a>
+
           <ul>
             <li class="rightPanel"><a href="#content11"> &#160; Color Guidance</a></li>
             <li class="rightPanel"><a href="#content12"> &#160; Typography & Wordmark</a></li>
-            <li class="rightPanel"><a href="#content14"> &#160; Elevation</a></li>
-            <li class="rightPanel"><a href="#content15"> &#160; Layout & Responsive Grid</a></li>
+            <li class="rightPanel"><a href="#content13"> &#160; Elevation</a></li>
+            <li class="rightPanel"><a href="#content14"> &#160; Layout & Responsive Grid</a></li>
           </ul>
         </li>
         <li><a href="#content2" class="titleRightPanel">
@@ -177,7 +173,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           <ul>
             <li class="rightPanel"><a href="#content21"> &#160; Buttons </a></li>
             <li class="rightPanel"><a href="#content22"> &#160; Icons & Sizes</a></li>
-            <li class="rightPanel"><a href="#content24"> &#160; Link & Input</a></li>
+            <li class="rightPanel"><a href="#content23"> &#160; Link & Input</a></li>
 
 
 
@@ -221,13 +217,21 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
 
     <section id="content1">
-      <%- include(`${templatePath}/shared/comp_content_title`, {type:'center', title: 'Styles', iconUrl:`${websitePath}/icon/library.svg` }) %>
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h1 class="specialTextL"> Design Fundamentals</h1>
+            </div>
+          </div>
+        </div>
+      </div>
       <section id="content11">
         <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="teal800">Color Guidance</strong> </h1>
+                <h1 class="colorYellowVW700 fontWeight400">Color Guidance</h1>
               </div>
             </div>
           </div>
@@ -351,87 +355,47 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS bgTeal800 shadowBox">
-                  <div>teal800</div>
-                  <div>HEX:e6e6e6</div>
+                <div class="blockS colorBgYellowVW900 shadowBox">
+                  <div>Yellow 900</div>
+                  <div>HEX:d48c00</div>
                 </div>
               </div>
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS bgTeal600 shadowBox">
-                  <div>teal600</div>
-                  <div>HEX:292929</div>
+                <div class="blockS colorBgYellowVW700 shadowBox">
+                  <div>Yellow 700</div>
+                  <div>HEX:ffb400</div>
                 </div>
               </div>
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS bgTeal500 shadowBox">
-                  <div>teal500</div>
-                  <div>HEX:757575</div>
+                <div class="blockS colorBgYellowVW500 shadowBox">
+                  <div>Yello 500</div>
+                  <div>HEX:ffda79</div>
                 </div>
               </div>
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS bgTeal300 shadowBox">
-                  <div>teal300</div>
-                  <div>HEX:757575</div>
+                <div class="blockS colorBgYellowVW300 shadowBox">
+                  <div>Yellow 300</div>
+                  <div>HEX:fff1cc</div>
                 </div>
               </div>
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="blockS bgTeal100 shadowBox">
-                  <div>teal100</div>
-                  <div>HEX:fcf5eb</div>
+                <div class="blockS colorBgYellowVW100 shadowBox">
+                  <div>Yellow 100</div>
+                  <div>HEX:fff9e6</div>
                 </div>
               </div>
             </div>
+
           </div>
-          <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blockS bgTeal800 shadowBox">
-                  <div>teal800</div>
-                  <div>HEX:e6e6e6</div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blockS bgTeal600 shadowBox">
-                  <div>teal600</div>
-                  <div>HEX:292929</div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blockS bgTeal500 shadowBox">
-                  <div>teal500</div>
-                  <div>HEX:757575</div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blockS bgTeal300 shadowBox">
-                  <div>teal300</div>
-                  <div>HEX:757575</div>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blockS bgTeal100 shadowBox">
-                  <div>teal100</div>
-                  <div>HEX:fcf5eb</div>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
           <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
             <div class="Grid-cell">
@@ -532,18 +496,19 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
 
       </section>
+      <div class="blankHS"></div>
+
       <section id="content12">
         <div class="wrapper">
 
-
-          <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="teal800"> Typography & Wordmark</strong> </h1>
+                <h1 class="colorYellowVW700 fontWeight400">Typography & Wordmark</h1>
               </div>
             </div>
           </div>
-          <div class="blankHXS"></div>
+
           <div class="wrapper">
             <div class="element">
 
@@ -748,7 +713,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
           <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Web Logo` }) %>
 
-          <div class="blankHXS"></div>
+
 
           <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
 
@@ -765,20 +730,22 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+      <div class="blankHS"></div>
 
-      <section id="content14">
+      <section id="content13">
         <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="teal800"> Elevation </strong> </h1>
+                <h1 class="colorYellowVW700 fontWeight400">Elevation</h1>
               </div>
             </div>
           </div>
+
           <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Shadow & Depth` }) %>
 
 
-          <div class="blankHXS"></div>
+
           <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
             <div class="Grid-cell">
               <div class="element">
@@ -820,21 +787,23 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
         </div>
       </section>
-      <section id="content15">
+      <div class="blankHS"></div>
+
+      <section id="content14">
         <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
             <div class="Grid-cell">
               <div class="element">
-                <h1> <strong class="teal800">Layout & Responsive Grid </strong> </h1>
+                <h1 class="colorYellowVW700 fontWeight400">Layout & Responsive Grid</h1>
               </div>
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
+
         <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Devices` }) %>
 
 
-        <div class="blankHXS"></div>
+
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
             <div class="Grid-cell">
@@ -947,7 +916,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
+
 
         <%- include(`${templatePath}/shared/block_copyCode`, {
           wrapperGrid: true, 
@@ -1007,7 +976,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
+
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-6 Grid--bottom">
             <div class="Grid-cell">
@@ -1112,7 +1081,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
             <div class="Grid-cell">
               <div class="element">
-                <div class="WarmBg paddingM fitContentax">
+                <div class="WarmBg paddingMax fitContentax">
                   <div class="WhiteBg spacing4"></div>
                 </div>
                 <p><strong>Max</strong> 26 px</p>
@@ -1197,7 +1166,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
 
 
-          <div class="blankHXS"></div>
+
           <div class="Grid Grid--full Grid--gutters">
             <div class="Grid-cell">
               <div class="element">
@@ -1566,7 +1535,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
               </div>
             </div>
           </div>
-          <div class="blankHXS"></div>
+
 
           <div class="Grid Grid--gutters Grid--1of6">
             <div class="Grid-cell">
@@ -1655,8 +1624,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
       </section>
 
     </section>
+    <div class="blankHM"></div>
+
     <section id="content2">
-      <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'center', title: `Atoms (Basic Elements)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h1 class="specialTextL"> Atoms (Basic Elements)</h1>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="wrapper">
         <div class="Grid Grid--full Grid--gutters">
           <div class="Grid-cell">
@@ -1667,17 +1646,73 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
         </div>
       </div>
       <section id="content21">
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Buttons</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `2024 Buttons` }) %>
 
-        <div class="blankHXS"></div>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_buttons`, textColor:'teal800', iconUrl:''}) %>
-
-
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Buttons` }) %>
-
-        <div class="blankHXS"></div>
 
         <div class="wrapper">
+          <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <a> <button class="buttonLarge buttonPrimary">Button</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <a> <button class="buttonLarge buttonFlip bgVWGrey">Button</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <a> <button class="buttonMedium buttonPrimary">Button</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <a> <button class="buttonMedium buttonFlip bgVWGrey">Button</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <a> <button class="buttonSmall buttonPrimary">Button</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <a> <button class="buttonSmall buttonFlip bgVWGrey">Button</button></a>
+                </div>
+              </div>
+            </div>
 
+          </div>
+          <div class="blankHXXS"></div>
+
+          <hr>
+          <div class="blankHXXS"></div>
+          <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Other Buttons` }) %>
           <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
             <div class="Grid-cell">
               <div class="element">
@@ -1695,6 +1730,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
 
           </div>
+
           <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
             <div class="Grid-cell">
               <div class="element">
@@ -1739,14 +1775,23 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             CSS: ejsLiterals.css.base_buttons,
           }) %>
       </section>
-      <section id="content22">
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_icons`, textColor:'teal800', iconUrl:''}) %>
+      <div class="blankHS"></div>
 
+      <section id="content22">
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Icon & Size</h1>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Arrow -->
         <%- include('../shared/comp_textualElements_arrow', {message: 'Icons' }) %>
         <!-- Arrow -->
-        <div class="blankHXS"></div>
 
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-8 u-textCenter">
@@ -2228,12 +2273,10 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
         </div>
 
-        <div class="blankHM"></div>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_iconsSizes`, textColor:'teal800', iconUrl:''}) %>
+
 
         <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Icons Sizes' }) %>
 
-        <div class="blankHXS"></div>
         <div class="wrapper">
           <div class="Grid Grid--gutters Grid--cols-8 u-textCenter Grid--center">
             <div class="Grid-cell">
@@ -2320,8 +2363,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
 
           </div>
-        </div>
-        <%- include(`${templatePath}/shared/block_copyCode`, {
+          <%- include(`${templatePath}/shared/block_copyCode`, {
           wrapperGrid: ``, 
           copyCodeName:'iconSizes', 
           copyCodeT1:`iconSizesT1`, 
@@ -2335,19 +2377,22 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           CSS: ejsLiterals.css.base_iconSizes,
         }) %>
 
+        </div>
 
       </section>
+      <div class="blankHS"></div>
 
-      <section id="content24">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutters">
-            <div class="Grid-cell">
-              <div class="element">
-                <h1> <strong class="teal800">Link & Input </strong> </h1>
-              </div>
+      <section id="content23">
+        <div class="wrapper"></div>
+        <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h1 class="colorYellowVW700 fontWeight400">Link &amp; Input</h1>
             </div>
           </div>
         </div>
+        </div>
+
         <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Link' }) %>
         <div class="wrapper">
           <div class="Grid Grid--full Grid--gutters">
@@ -2356,8 +2401,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
               linkText:`LinkText`          
               }) %>
           </div>
-        </div>
-        <%- include(`${templatePath}/shared/block_copyCode`, {
+          <%- include(`${templatePath}/shared/block_copyCode`, {
           wrapperGrid: ``, 
           copyCodeName:'linkTxt', 
           copyCodeT1:`linkTxtT1`, 
@@ -2370,10 +2414,17 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           HTML: ejsLiterals.html.base_link,
           CSS: ejsLiterals.css.base_link,
         }) %>
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Inputs' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `base_inputs`, textColor:'teal800', iconUrl:''}) %>
-        <div class="blankHXS"></div>
+
+
+
+        </div>
+
+
+
+
+
         <div class="wrapper">
+          <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Inputs' }) %>
           <div class="img__wrap widthS heightS element">
             <div class="img__descriptionDesignSystem">
               <div class="input-field">
@@ -2395,9 +2446,10 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
+        <div class="wrapper">
 
 
-        <%- include(`${templatePath}/shared/block_copyCode`, {
+          <%- include(`${templatePath}/shared/block_copyCode`, {
           wrapperGrid: ``, 
           copyCodeName:'baseInput', 
           copyCodeT1:`baseInputT1`, 
@@ -2407,16 +2459,27 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           t2Checked:`checked`,
           t3Checked:``,
           EJS: ejsLiterals.ejs.base_input,
-          HTML: ejsLiterals.html.base_input,
-          CSS: ejsLiterals.css.base_input,
-        }) %>
+            HTML: ejsLiterals.html.base_input,
+            CSS: ejsLiterals.css.base_input,
+          }) %>
+
+        </div>
+
       </section>
 
     </section>
+    <div class="blankHM"></div>
 
     <section id="content3">
-
-      <%- include(`${templatePath}/shared/comp_content_title`, {type:'center', title: `Molecules (Composite Components)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h1 class="specialTextL">Molecules (Composite Components)</h1>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="wrapper">
         <div class="Grid Grid--full Grid--gutters">
           <div class="Grid-cell">
@@ -2425,133 +2488,80 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
             </div>
           </div>
         </div>
-        <div class="blankHXS"></div>
+
       </div>
-      <div class="blankHXS"></div>
+      <div class="blankHS"></div>
+
 
       <section id="content31">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Textual Elements' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_textualElements`, textColor:'teal800', iconUrl:''}) %>
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Textual Elements</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="wrapper">
           <div class="element">
 
             <div id="tabsContent" class="tabContent">
               <!-- Tab 1 -->
-              <%- include('../shared/comp_tabs_content', {name:'textualElement_TitleParagraph', idTab: `tetpTab1`, lableTxt:'_titleParagraph', checked:'checked'}) %>
+              <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab1`, lableTxt:'_title', checked:'checked'}) %>
 
               <div class="tabContent-content">
-                <%- include(`${templatePath}/shared/comp_textualElements_titleParagraph`, { 
-                  descriptionType:`paragraph`,
 
-                  subTitleFont1:`h3`,
-                  subTitle1:`Problem Overview:`, 
-                  paragraphFont:`h4`, 
-                  paragraphTxt1:`The onboarding process for new users on the BookYourPet platform was cumbersome and unintuitive, leading to user frustration, high dropout rates, and consequently, a decrease in subscription conversions.` }) %>
-
-                <%- include(`${templatePath}/shared/block_copyCode`, {
-                  wrapperGrid: ``, 
-                  copyCodeName:'textualElementsTitleParagraph', 
-                  copyCodeT1:`textualElementsTitleParagraphT1`, 
-                  copyCodeT2:`textualElementsTitleParagraphT2`, 
-                  copyCodeT3:`textualElementsTitleParagraphT3`,
-                  t1Checked:`checked`,          
-                  t2Checked:``,
-                  t3Checked:``,
-                  EJS: ejsLiterals.ejs.comp_textualElements_titleParagraph,
-                  HTML: ``,
-                  CSS:``
-                }) %>
-              </div>
-              <!-- Tab 2 -->
-              <%- include('../shared/comp_tabs_content', {name:'textualElement_TitleParagraph', idTab: `tetpTab2`, lableTxt:'_titleList'}) %>
-              <div class="tabContent-content">
-                <div class="wrapper">
-                  <div class="blankHXS"></div>
-                  <%- include(`${templatePath}/shared/comp_textualElements_titleList`, { 
-                    listType:`withCircle`,
-                    listCirclefontSize:`h3`,
-                    listCircleTitle:`Primary Objective:`,
-                    listTxt1:`Simplify the onboarding flow to reduce user overwhelm.`,
-                    listTxt2:`Improve user understanding of the platform's features and benefits.`, 
-                    listTxt3:`Increase the rate of successful onboarding completions and conversions to paid subscriptions.`, 
-                    listTxt4:``,
-                    }) %>
-                  <%- include(`${templatePath}/shared/block_copyCode`, {
-                  wrapperGrid: ``, 
-                  copyCodeName:'textualElementsTitleList', 
-                  copyCodeT1:`textualElementsTitleListT1`, 
-                  copyCodeT2:`textualElementsTitleListT2`, 
-                  copyCodeT3:`textualElementsTitleListT3`,
-                  t1Checked:`checked`,          
-                  t2Checked:``,
-                  t3Checked:``,
-                  EJS: ejsLiterals.ejs.comp_textualElements_titleList,
-                  HTML: ``,
-                  CSS:``
-                  }) %>
-
+                <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h3 class="fontWeight300">_title
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h1 class="Grid Grid--center"> <span>_Title</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
+                      </h1>
+                    </div>
+                  </div>
                 </div>
+                <%- include(`${templatePath}/shared/comp_hr`) %>
 
-              </div>
-            </div>
-          </div>
-          <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_textualElements`, textColor:'teal800', iconUrl:''}) %>
-          <div class="wrapper">
-            <div class="element">
-
-              <div id="tabsContent" class="tabContent">
-                <!-- Tab 1 -->
-                <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab1`, lableTxt:'_title', checked:'checked'}) %>
-
-                <div class="tabContent-content">
-
-                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <h3 class="fontWeight300">_title
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <h1 class="Grid Grid--center"> <span>_Title</span><img class="widthLogo" src="../icon/layout.svg" alt="Design">
-                        </h1>
-                      </div>
+                <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h3 class="fontWeight300">_subTitle
+                      </h3>
                     </div>
                   </div>
-                  <%- include(`${templatePath}/shared/comp_hr`) %>
-
-                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <h3 class="fontWeight300">_subTitle
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <h2 class="element">Sub Title</h2>
-                      </div>
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h2 class="element">Sub Title</h2>
                     </div>
                   </div>
-                  <%- include(`${templatePath}/shared/comp_hr`) %>
+                </div>
+                <%- include(`${templatePath}/shared/comp_hr`) %>
 
 
-                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <h3 class="fontWeight300">_subTitle
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="Grid-cell">
-                      <div class="element">
-                        <h2 class="tArrow">Sub Title<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
-                        </h2>
-                      </div>
+                <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h3 class="fontWeight300">_subTitle
+                      </h3>
                     </div>
                   </div>
-                  <%- include(`${templatePath}/shared/block_copyCode`, {
+                  <div class="Grid-cell">
+                    <div class="element">
+                      <h2 class="tArrow">Sub Title<img class="seArrow" src="../icon/arrow-se.svg" alt="icon arrow">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
                   wrapperGrid: ``, 
                   copyCodeName:'textualElementsTitle', 
                   copyCodeT1:`textualElementsTitleT1`, 
@@ -2564,65 +2574,65 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   HTML: ejsLiterals.html.comp_textualElements_title,
                   CSS:``
                 }) %>
+              </div>
+              <!-- Tab 2 -->
+              <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab2`, lableTxt:'_note'}) %>
+              <div class="tabContent-content">
+                <div class="wrapper">
+
+
+                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <h3 class="fontWeight300">_noBg
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <p class="specialTextNote colorGrey u-textCenter">Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- Tab 2 -->
-                <%- include('../shared/comp_tabs_content', {name:'textualElements', idTab: `teTab2`, lableTxt:'_note'}) %>
-                <div class="tabContent-content">
-                  <div class="wrapper">
-                    <div class="blankHXS"></div>
 
-                    <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                      <div class="Grid-cell">
-                        <div class="element">
-                          <h3 class="fontWeight300">_noBg
-                          </h3>
-                        </div>
+
+                <%- include(`${templatePath}/shared/comp_hr`) %>
+
+
+
+                <div class="wrapper">
+                  <div class="Grid Grid--gutters Grid--1of6 Grid--center">
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <h3 class="fontWeight300">_bg
+                        </h3>
                       </div>
-                      <div class="Grid-cell">
-                        <div class="element">
-                          <p class="specialTextNote colorGrey u-textCenter">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </p>
+                    </div>
+                    <div class="Grid-cell">
+                      <div class="element">
+                        <div class="element leftVerLine border-radius GreyBg100">
+                          <h4>
+                            <p> <strong>Title </strong></p>
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. </li>
+                              <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu
+                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia
+                                deserunt mollit anim id est laborum.</li>
+                            </ul>
+                          </h4>
                         </div>
                       </div>
                     </div>
                   </div>
-
-
-                  <%- include(`${templatePath}/shared/comp_hr`) %>
-
-
-
-                  <div class="wrapper">
-                    <div class="Grid Grid--gutters Grid--1of6 Grid--center">
-                      <div class="Grid-cell">
-                        <div class="element">
-                          <h3 class="fontWeight300">_bg
-                          </h3>
-                        </div>
-                      </div>
-                      <div class="Grid-cell">
-                        <div class="element">
-                          <div class="element leftVerLine border-radius GreyBg100">
-                            <h4>
-                              <p> <strong>Title </strong></p>
-                              <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                  ut labore et dolore magna aliqua. </li>
-                                <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                  dolore eu
-                                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                  officia
-                                  deserunt mollit anim id est laborum.</li>
-                              </ul>
-                            </h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <%- include(`${templatePath}/shared/block_copyCode`, {
+                </div>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
                   wrapperGrid: ``, 
                   copyCodeName:'textualElementsNote', 
                   copyCodeT1:`textualElementsNoteT1`, 
@@ -2636,12 +2646,12 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   CSS:``
                 }) %>
 
-                </div>
-                <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'textualElements', idTab: `teTab3`, lableTxt:'_closingMessage'}) %>
-                <!-- Tab 3 -->
-                <div class="tabContent-content">
-                  <%- include(`${templatePath}/shared/comp_closingMessage`, {CMspacing: false, version: '', message: '999'}) %>
-                  <%- include(`${templatePath}/shared/block_copyCode`, {
+              </div>
+              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'textualElements', idTab: `teTab3`, lableTxt:'_closingMessage'}) %>
+              <!-- Tab 3 -->
+              <div class="tabContent-content">
+                <%- include(`${templatePath}/shared/comp_closingMessage`, {CMspacing: false, version: '', message: '999'}) %>
+                <%- include(`${templatePath}/shared/block_copyCode`, {
                   wrapperGrid: ``, 
                   copyCodeName:'closingMessage', 
                   copyCodeT1:`closingMessageT1`, 
@@ -2654,14 +2664,26 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   HTML: ejsLiterals.html.comp_textualElements_closingMessage,
                   CSS:``
                 }) %>
-                </div>
               </div>
             </div>
           </div>
+        </div>
       </section>
+      <div class="blankHS"></div>
+
       <section id="content32">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Clipboard Copy Field' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_clipboardCopy`, textColor:'teal800', iconUrl:''}) %>
+
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Clipboard Copy Field</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="wrapper">
           <div class="element">
@@ -2768,11 +2790,20 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+      <div class="blankHS"></div>
 
       <section id="content33">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Adaptive Image Loader' }) %>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Adaptive Image Loader</h1>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_adaptiveImageLoader`, textColor:'teal800', iconUrl:''}) %>
+
 
         <div class="wrapper">
           <div class="element">
@@ -2799,9 +2830,18 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+      <div class="blankHS"></div>
+
       <section id="content34">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Card Elements' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_card`, textColor:'teal800', iconUrl:''}) %>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Card Elements</h1>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="wrapper">
           <div class="element">
@@ -2877,10 +2917,19 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+      <div class="blankHS"></div>
 
       <section id="content35">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Card with Image' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_cardnImg`, textColor:'teal800', iconUrl:''}) %>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Card with Image</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="wrapper">
           <div class="element">
 
@@ -2936,14 +2985,25 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
         </div>
 
       </section>
+      <div class="blankHS"></div>
 
       <section id="content36">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Audio Player' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_audioPlayer`, textColor:'teal800', iconUrl:''}) %>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Audio Player</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="wrapper">
           <div class="element">
             <div id="tabsContent" class="tabContent">
-              <div class="blankHXS"></div>
+              <div class="blankHTiny"></div>
+
               <!-- Tab 1 -->
               <div class="Grid Grid--full Grid--gutters">
                 <div class="Grid-cell">
@@ -2976,7 +3036,8 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   </div>
                 </div>
               </div>
-              <div class="blankHXS"></div>
+              <div class="blankHTiny"></div>
+
 
               <%- include(`${templatePath}/shared/block_copyCode`, {
                 wrapperGrid: ``, 
@@ -2995,14 +3056,24 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+      <div class="blankHS"></div>
+
       <section id="content37">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Tag Cloud` }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_tagCloud`, textColor:'teal800', iconUrl:''}) %>
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Tag Cloud</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="wrapper">
           <div class="element">
 
             <div id="tabsContent" class="tabContent">
-              <div class="blankHXS"></div>
+
               <!-- Tab 1 -->
               <div class="Grid Grid--full Grid--gutters u-textCenter">
                 <ul class="tags" id="TagsCloud">
@@ -3053,7 +3124,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   <li class="tag"><span class="box">GitHub</span></li>
                 </ul>
               </div>
-              <div class="blankHXS"></div>
+
 
 
               <%- include(`${templatePath}/shared/block_copyCode`, {
@@ -3074,11 +3145,19 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+      <div class="blankHS"></div>
 
       <section id="content38">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Graph Elements' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `comp_graph`, textColor:'teal800', iconUrl:''}) %>
 
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Graph Elements</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="wrapper">
           <div class="element">
 
@@ -3208,8 +3287,20 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
 
     </section>
+    <div class="blankHM"></div>
+
     <section id="content4">
-      <%- include(`${templatePath}/shared/comp_content_title`, {type:'center', title: `Molecules (Structured Block)`, iconUrl:`${websitePath}/icon/components.svg` }) %>
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutters u-textCenter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h1 class="specialTextL">Organisms (Structured Block)</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="wrapper">
         <div class="Grid Grid--full Grid--gutters">
           <div class="Grid-cell">
@@ -3222,9 +3313,16 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
         </div>
       </div>
       <section id="content41">
-        <%- include('../shared/comp_textualElements_arrow', {message: 'Expandable Content' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_expandableContentBlock`, textColor:'teal800', iconUrl:''}) %>
 
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Expandable Content</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="wrapper">
 
           <div class="Grid Grid--full Grid--gutters">
@@ -3238,7 +3336,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.</h4>
                 <div class="more">
-                  <div class="blankHXS"></div>
+
                   <h5> <strong> Subtitle </strong> </h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque. Tristique senectus et
@@ -3265,34 +3363,45 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                       vulputate sapien nec. Tortor condimentum lacinia quis vel eros.</li>
                   </ul>
 
-                  <div class="blankHXS"></div>
+
 
                 </div>
                 <button class="toggle buttonTextOnly">Read More &#8744;</button>
               </div>
             </div>
           </div>
+          <%- include(`${templatePath}/shared/block_copyCode`, {
+            wrapperGrid: ``, 
+            copyCodeName:'expandableContent', 
+            copyCodeT1:`expandableContentT1`, 
+            copyCodeT2:`expandableContentT2`, 
+            copyCodeT3:`expandableContentT3`,
+            t1Checked:``,          
+            t2Checked:`checked`,
+            t3Checked:``,
+            EJS: ejsLiterals.ejs.block_expandableContent,
+            HTML: ejsLiterals.html.block_expandableContent,
+            CSS:``
+          }) %>
+
         </div>
-        <%- include(`${templatePath}/shared/block_copyCode`, {
-          wrapperGrid: ``, 
-          copyCodeName:'expandableContent', 
-          copyCodeT1:`expandableContentT1`, 
-          copyCodeT2:`expandableContentT2`, 
-          copyCodeT3:`expandableContentT3`,
-          t1Checked:``,          
-          t2Checked:`checked`,
-          t3Checked:``,
-          EJS: ejsLiterals.ejs.block_expandableContent,
-          HTML: ejsLiterals.html.block_expandableContent,
-          CSS:``
-        }) %>
+
 
 
       </section>
-      <section id="content42">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Accordion' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_accordion`, textColor:'teal800', iconUrl:''}) %>
+      <div class="blankHS"></div>
 
+      <section id="content42">
+
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Accordion</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="wrapper">
           <div class="element">
             <div id="tabsContent" class="tabContent">
@@ -3340,15 +3449,25 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+      <div class="blankHS"></div>
+
       <section id="content43">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Carouses' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_carousel`, textColor:'teal800', iconUrl:''}) %>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Carousel</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="wrapper">
           <div class="element">
             <div id="tabsContent" class="tabContent">
               <!-- Tab 1 -->
-              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab1`, lableTxt:'_carouselHoriz_noBg', checked:'checked'}) %>
+              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab1`, lableTxt:'_carouselHoriz_noBg', checked:''}) %>
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/block_carouselHoriz_noBg`) %>
                 <%- include(`${templatePath}/shared/block_copyCode`, {
@@ -3399,7 +3518,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                 }) %>
               </div>
               <!-- Tab 4 -->
-              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab4`, lableTxt:'_carouselVert_bg', checked:''}) %>
+              <%- include(`${templatePath}/shared/comp_tabs_content`, {name:'Carousel', idTab: `carouselTab4`, lableTxt:'_carouselVert_bg', checked:'checked'}) %>
               <div class="tabContent-content">
                 <%- include(`${templatePath}/shared/block_carouselVert_bg`) %>
                 <%- include(`${templatePath}/shared/block_copyCode`, {
@@ -3420,11 +3539,20 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
         </div>
       </section>
 
+      <div class="blankHS"></div>
 
 
       <section id="content44">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Modals' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_modal`, textColor:'teal800', iconUrl:''}) %>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Modals</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="wrapper">
           <div class="element">
@@ -3468,12 +3596,19 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
       </section>
+      <div class="blankHS"></div>
 
 
       <section id="content45">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Navigation' }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_nav`, textColor:'teal800', iconUrl:''}) %>
-
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Navigation</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="wrapper">
           <div class="element">
             <div id="tabsContent" class="tabContent">
@@ -3481,18 +3616,13 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
               <%- include('../shared/comp_tabs_content', {name:'navigation', idTab: `navigationTab1`, lableTxt:'_header', checked:'checked'}) %>
               <div class="tabContent-content">
                 <div>
-
                   <div class="Grid Grid--gutters Grid--full">
-                    <div class="blankHXS"></div>
-
                     <%- include(`${templatePath}/shared/comp_textualElements_title`, {
                     fontColor:``,
                     fontSize:`h4`,
                     titleText:`Default`,
                     }) %>
                   </div>
-
-
                   <nav class="headerDEMO" id="">
                     <div class="backgroundColorNavDEMO">
                       <a href="http://vickywang.me/"><img class="logo pointer marginS" src="/icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
@@ -3538,7 +3668,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                 <div>
 
                   <div class="Grid Grid--gutters Grid--full">
-                    <div class="blankHXS"></div>
+
 
                     <%- include(`${templatePath}/shared/comp_textualElements_title`, {
                     fontColor:``,
@@ -3584,7 +3714,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                 <div>
 
                   <div class="Grid Grid--gutters Grid--full">
-                    <div class="blankHXS"></div>
+
 
                     <%- include(`${templatePath}/shared/comp_textualElements_title`, {
                     fontColor:``,
@@ -3607,31 +3737,8 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                     </div>
                   </nav>
                 </div>
-                <div>
-                  <div class="Grid Grid--gutters Grid--full">
-                    <div class="blankHXS"></div>
+                <div class="blankHTiny"></div>
 
-                    <%- include(`${templatePath}/shared/comp_textualElements_title`, {
-                    fontColor:``,
-                    fontSize:`h4`,
-                    titleText:`Logo + Text`,
-                    }) %>
-                  </div>
-
-
-                  <nav class="headerDEMO" id="">
-                    <div class="backgroundColorNavDEMO">
-
-                      <a href="http://vickywang.me/"><img class="logo pointer marginS" src="/icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
-
-                      <div class="navbar">
-                        <a href="http://vickywang.me/"><img class="pointer widthXXS marginS" src="/icon/LOGOtxtOnly.svg" alt="VW" title="vickywang.me"></a>
-
-
-                      </div>
-                    </div>
-                  </nav>
-                </div>
                 <%- include(`${templatePath}/shared/block_copyCode`, {
                   copyCodeName:'navHeader', 
                   copyCodeT1:`navHeaderT1`, 
@@ -3700,7 +3807,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                         <div class="Grid-cell">
 
                           <a href="/" class=""><img class="widthXXS" src="../icon/LOGOtxt.svg" alt="VW" title="vickywang.me"></a>
-                          <div class="blankHXS"></div>
+
 
                           <div class="Grid Grid--gutters">
                             <div class="ClipboardBoxIconOnly">
@@ -3725,7 +3832,7 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
                               <img class="iconS hoverGrey300 paddingS fitContent borderRadiusMax" src="../icon/ins.svg" alt="Instagram" title="Instagram">
                             </a>
                           </div>
-                          <div class="blankHXS"></div>
+
                         </div>
                         <div class="Grid-cell">
                           <div class="Grid Grid--gutters Grid--cols-6">
@@ -3825,8 +3932,19 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
           </div>
         </div>
 
+
+
         <div class="wrapper">
-          <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Navigation Exploration' }) %>
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Navigation Exploration</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+
           <%- include(`${templatePath}/shared/block_cardNoPassword`, {
           hoverBorderColor:``,
           cardNoPwURL:`${websitePath}/design_system/navigation/`,
@@ -3838,13 +3956,24 @@ pageURL:'design_system', thumbnailImgURL: 'vickywang_web.png'
 
         </div>
       </section>
+
+      <div class="blankHS"></div>
+
       <section id="content46">
-        <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: `Code Snippet Explorer` }) %>
-        <%- include(`${templatePath}/shared/comp_content_subtitle`, {type:'left', title: `block_tabs_copyCode`, textColor:'teal800', iconUrl:''}) %>
+        <div class="wrapper">
+          <div class="Grid Grid--full Grid--gutters u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h1 class="colorYellowVW700 fontWeight400">Code Snippet Explorer</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="wrapper">
           <div class="element">
             <div id="tabsContent" class="tabContent">
-              <div class="blankHXS"></div>
+
               <%- include(`${templatePath}/shared/block_copyCode`, {
                 copyCodeName:'copyCodeDemo', 
                 copyCodeT1:`copyCodeDemo1`, 
