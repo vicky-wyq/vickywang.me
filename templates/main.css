@@ -2904,6 +2904,9 @@ button.passwordArr {
 
 
 @media all and (max-width: 1080px) {
+    body .paddingXL {
+        padding: var(--paddingL);
+    }
 
     body .dropdown-content a:hover {
         display: none;
