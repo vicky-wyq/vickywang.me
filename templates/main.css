@@ -5464,16 +5464,17 @@ button.Clipboard.clickTxt:active {
 
 .buttonLarge {
     border-radius: 120px;
-    padding: 22px 36px;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 16px 26px;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
-
 .buttonSmall {
     border-radius: 120px;
-    padding: 14px 24px;
-    font-size: 16px;
-    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .buttonPrimary {
