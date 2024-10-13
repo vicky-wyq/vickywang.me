@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Work Sample by Vicky Wang', description:'',
+  pageURL:'/worksamples/BYP_LH_wsbeebr', thumbnailImgURL: 'vickywang_web.png' }) %>
+<!--Head-->
+
+<body>
+  <%- include( `${templatePath}/shared/comp_progressBar`) %>
+
+  <%- include(`${templatePath}/shared/block_nav_header`, { type:'logoText', arrTxtColor:``, currentPage: '' ,
+        PageUrl:'/worksamples/BYP_LH_wsbeebr' }) %>
+
+
+
+  <div class="blankHM"></div>
+
+  <div class="wrapper">
+    <div class="Grid Grid--full Grid--gutter u-textCenter">
+      <div class="Grid-cell">
+        <div class="element">
+          <h1 class="t-hello">👋🏻 hello, I'm Vicky, a UX Designer</h1>
+          <div class="blankHTiny"></div>
+
+          <h1 class="specialTextTitle fontWeight700">Thank you for visiting!</h1>
+          <div class="blankHXS"></div>
+
+          <hr class="wrapperL">
+          <div class="blankHXXS"></div>
+
+          <h1 class="fontWeight400">My work samples are now public.</h1>
+          <h1 class="fontWeight400">Feel free to explore them at <a href="https://www.vickywang.me/" class="textUnderline">vickywang.me</a>
+          </h1>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="blankHM"></div>
+
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Skills & Experiences' }) %>
+  <%- include(`${templatePath}/shared/comp_tagCloud`) %>
+  <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '' , message:''}) %>
+
+  <%- include(`${templatePath}/shared/comp_backTop`) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`) %>
+  <!-- Shared across the platform -->
+</body>
+
+</html>

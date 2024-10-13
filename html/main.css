@@ -5476,7 +5476,7 @@ button.Clipboard.clickTxt:active {
 .buttonLarge {
     border-radius: 120px;
     padding: 16px 26px;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
@@ -7078,6 +7078,8 @@ UIA-TIMELINE
 
 @container timeline-skin-5 (min-width: 600px) {
 
+    
+
     [data-uia-timeline-skin="5"] .uia-timeline__container {
         --uia-timeline-line-main-position: calc(50% - (var(--uia-timeline-line-thickness) / 2));
         --uia-timeline-dot-main-position: 50%;
@@ -7261,6 +7263,8 @@ UIA-TIMELINE
     box-sizing: border-box;
     inline-size: min(100%, 90ch);
     margin-inline: auto;
+    padding: var(--paddingL);
+
 }
 
 
