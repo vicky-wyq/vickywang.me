@@ -13,7 +13,7 @@ node_modules
 *.png
 *.CR2
 *.docx
-worksamples
+
 backup
 application_info
 archive
@@ -21,6 +21,5 @@ Archive
 pug/html/
 html/
 
-resumeWS.pdf
 resume.pdf
 templates/javascript-learning
