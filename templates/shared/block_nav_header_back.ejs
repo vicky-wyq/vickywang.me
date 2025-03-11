@@ -16,12 +16,13 @@ if (typeof arrTxtColor === 'undefined') {
 <header>
   <nav class="header <%= headerBackgroundColor %>" id="header">
     <div class="headerContainer">
-      <a href="<%- PageUrl %>" class="marginS centerVer pointer Grid--center">
+      <a class="row marginS" href="javascript:void(0);" onclick="history.back(); return false;">
         <div class="arrow-container moveBackArrow">
           <div class="left-arrow <%= arrTxtColor %>"></div>
-       </div>
-       <h4 class="backText <%= arrTxtColor %>">Back</h4>
+        </div>
+        <h4 class="backText <%= arrTxtColor %>">Back</h4>
       </a>
+      
       <div class="navbar">
         <a href="/"><img class="pointer widthXXS marginS" src="<%= websitePath %>/icon/LOGOtxtOnly.svg" alt="VW" title="vickywang.me"></a>
 
