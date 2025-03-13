@@ -2137,7 +2137,7 @@ section .padding {
 
 .specialTextTitle {
     font-family: inherit;
-    font-size: clamp(3.2em, 6.8vw, 6.2em);
+    font-size: clamp(2.3em, 5.8vw, 6.2em);
     margin: 0;
     line-height: 120%;
 }
