@@ -2135,9 +2135,15 @@ section .padding {
     -webkit-text-fill-color: transparent;
 }
 
+.specialTextTitleMidLine{
+    font-family: inherit;
+    font-size: clamp(2.3em, 5.3vw, 6.2em);
+    margin: 0;
+    line-height: 120%;
+}
 .specialTextTitle {
     font-family: inherit;
-    font-size: clamp(2.3em, 5.8vw, 6.2em);
+    font-size: clamp(1.8em, 4.2vw, 5.3em);
     margin: 0;
     line-height: 120%;
 }
