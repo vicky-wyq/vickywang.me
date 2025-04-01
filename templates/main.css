@@ -2072,7 +2072,7 @@ ul .rightPanel {
 ul {
     list-style-type: none;
     font-family: inherit;
-    font-size: clamp(0.98em, 1.18vw, 1.3em);
+    font-size: clamp(1.2em, 1.18vw, 1.3em);
 
     /* font size =h5 */
     font-weight: 300;
@@ -2137,16 +2137,21 @@ section .padding {
 
 .specialTextTitleMidLine{
     font-family: inherit;
-    font-size: clamp(2.3em, 5.3vw, 6.2em);
+    font-size: clamp(3.4em, 5.3vw, 6.2em);
     margin: 0;
     line-height: 120%;
 }
 .specialTextTitle {
     font-family: inherit;
-    font-size: clamp(1.8em, 4.2vw, 5.3em);
+    font-size: clamp(2.6em, 4.2vw, 5.3em);
     margin: 0;
     line-height: 120%;
 }
+.emoji {
+    font-size: 0.9em;
+    vertical-align: middle;
+  }
+  
 
 .TextPoppins {
     font-family: "Poppins", sans-serif;
@@ -2170,7 +2175,7 @@ section .padding {
 
 .specialTextS {
     font-family: inherit;
-    font-size: clamp(1em, 2vw, 2.2em);
+    font-size: clamp(1.4em, 2vw, 2.2em);
     margin: 0;
 }
 
@@ -2246,8 +2251,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: clamp(0.42em, 0.56em, 1.2em);
-    margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+    margin-top: clamp(0.68em, 0.96em, 1.2em);
+    margin-bottom: clamp(0.68em, 0.96em, 1.2em);
 }
 
 
@@ -2257,27 +2262,27 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.4em, 1.8vw, 2em);
+    font-size: clamp(1.46em, 1.8vw, 2em);
     /* Adjusted for better hierarchy */
 }
 
 h3 {
-    font-size: clamp(1.2em, 1.5vw, 1.7em);
+    font-size: clamp(1.38em, 1.5vw, 1.7em);
     /* Increased size */
 }
 
 h4 {
-    font-size: clamp(1em, 1.3vw, 1.5em);
+    font-size: clamp(1.26em, 1.3vw, 1.5em);
     /* Adjusted for clarity */
 }
 
 h5 {
-    font-size: clamp(0.98em, 1.18vw, 1.3em);
+    font-size: clamp(1.2em, 1.18vw, 1.3em);
     /* Adjusted for clarity */
 }
 
 h6 {
-    font-size: clamp(0.86em, 1.05vw, 1.2em);
+    font-size: clamp(1em, 1.05vw, 1.2em);
 
 }
 
@@ -2989,9 +2994,6 @@ button.passwordArr {
         display: none;
     }
     body .section-nav {
-        display: none;
-    }
-    .typing-demo {
         display: none;
     }
 
