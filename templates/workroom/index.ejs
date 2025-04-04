@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="colorBgVW pattern1">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Vicky W. | UX Designer', 
-  description:'Specializing in crafting seamless user experiences for B2B SaaS and consumer applications, Vicky Wang transforms complexity into user-friendly solutions.', 
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Workroom | Vicky Wang', 
+  description:'A snapshot of what I focus on and build.', 
   pageURL:'', thumbnailImgURL: 'vickywang_photography.png'
   }) %>
 <!--Head-->
@@ -12,6 +12,7 @@
 
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header_main`, {
+    logoURL:'/workroom',
     sectionURL1:'#projects', 
     sectionURL2:'#experiments', 
     sectionURL3:'#design_system', 
@@ -20,26 +21,47 @@
     headerBackgroundColor:'colorBgVW'
     }) %>
 
-  <div class="blankHS"></div>
-  <div class="wrapper">
-    <div class="Grid Grid--full Grid--gutter u-textCenter">
-      <div class="Grid-cell">
+<div class="blankHS"></div>
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutter">
+    <div class="Grid-cell">
+      <div class="element displayLaptop u-textCenter">
+        <h1 class="t-hello">👋🏻 hello, I'm Vicky</h1>
+        <div class="blankHTiny"></div>
+
+        <h1 class="specialTextTitle fontWeight700">Designing experiences that are </h1>
+ 
+        <h1 class="specialTextTitleMidLine fontWeight700 typing-demo colorLandingText"> smooth, intuitive, impactful</h1>
+        <h1 class="specialTextTitle fontWeight700">for businesses & users.</h1>
+      </div>
+      <div class="element displayTablet  u-textCenter">
+        <h1 class="t-hello">👋🏻 hello, I'm Vicky</h1>
+        <div class="blankHTiny"></div>
+
+        <h1 class="specialTextTitle fontWeight700">Designing experiences that are </h1>
+ 
+        <h1 class="specialTextTitleMidLine fontWeight700 typing-demo colorLandingText"> smooth, intuitive, impactful</h1>
+        <h1 class="specialTextTitle fontWeight700">for businesses & users.</h1>
+      </div>
+      <div class="element displayPhone">
         <div class="element">
-          <h1 class="t-hello">👋🏻 hello, I'm Vicky</h1>
+          <h1 class="t-hello"> 👋🏻 hello, I'm Vicky</h1>
           <div class="blankHTiny"></div>
 
-          <h1 class="specialTextTitle fontWeight700">Designing experiences that are</h1>
-          <h1 class="specialTextTitleMidLine fontWeight700 displayTablet colorLandingText"> smooth, intuitive, impactful</h1>
-          <h1 class="specialTextTitleMidLine fontWeight700 displayPhone colorLandingText"> smooth, intuitive, impactful</h1>
-          <h1 class="specialTextTitleMidLine fontWeight700 typing-demo colorLandingText"> smooth, intuitive, impactful</h1>
+          <h1 class="specialTextTitle fontWeight700">Designing experiences</h1>
+          <h1 class="specialTextTitle fontWeight700">that are </h1>
+
+          <h1 class="specialTextTitleMidLine fontWeight700 colorLandingText"> smooth, </h1>
+
+          <h1 class="specialTextTitleMidLine fontWeight700 colorLandingText"> intuitive, </h1>
+
+          <h1 class="specialTextTitleMidLine fontWeight700 colorLandingText"> impactful</h1>
           <h1 class="specialTextTitle fontWeight700">for businesses & users.</h1>
-
-
-          </h1>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 
   <div class="blankHXXS"></div>
@@ -56,7 +78,7 @@
       <div class="Grid-cell centerVH">
         <div class="ClipboardBoxIconOnly">
           <button class="ClipboardIconOnly">
-            <img title="Copy Email to Clipboard" class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="./icon/mail.svg" alt="LinkedIn">
+            <img title="Copy Email to Clipboard" class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="../icon/mail.svg" alt="LinkedIn">
             <p class="clickIconCopy">vickyw.design@gmail.com</p>
           </button>
         </div>
@@ -64,23 +86,23 @@
       </div>
       <div class="Grid-cell centerVH">
         <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" title="LinkedIn">
-          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax borderRadiusS" src="./icon/in.svg" alt="LinkedIn">
+          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax borderRadiusS" src="../icon/in.svg" alt="LinkedIn">
         </a>
       </div>
 
       <div class="Grid-cell centerVH">
         <a href="https://github.com/vicky-wyq" target="_blank" title="GitHub">
-          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="./icon/git.svg" alt="GitHub">
+          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="../icon/git.svg" alt="GitHub">
         </a>
       </div>
       <div class="Grid-cell centerVH">
         <a href="https://codepen.io/vicky-wyq" target="_blank" title="CodePen">
-          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="./icon/Codepen.svg" alt="CodePen">
+          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
         </a>
       </div>
       <div class="Grid-cell centerVH displayLaptop">
         <div class="dropdownSM">
-          <img title="Share" class="iconM hoverWhite paddingM fitContent borderRadiusMax dropbtn" src="/icon/share.svg" alt="Share">
+          <img title="Share" class="iconM hoverWhite paddingM fitContent borderRadiusMax dropbtn" src="../icon/share.svg" alt="Share">
           <div class="dropdownSM-content">
             <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
               on LinkedIn</a>
@@ -101,8 +123,34 @@
   </div>
 
   <div class="blankHXXS"></div>
-  <div class="wrapper">
+  <div class="wrapper displayLaptop">
     <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="element">
+        <a href="/resume"> <button class="buttonLarge buttonPrimary bgVWGrey">Resume & Experience
+          </button></a>
+
+      </div>
+      <div class="element">
+        <a href="#about"> <button class="buttonLarge buttonFlip bgVWGrey">Learn more about me
+          </button></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper displayTablet">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+      <div class="element">
+        <a href="/resume"> <button class="buttonLarge buttonPrimary bgVWGrey">Resume & Experience
+          </button></a>
+
+      </div>
+      <div class="element">
+        <a href="#about"> <button class="buttonLarge buttonFlip bgVWGrey">Learn more about me
+          </button></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper displayPhone">
+    <div class="Grid Grid--full Grid--gutters">
       <div class="element">
         <a href="/resume"> <button class="buttonLarge buttonPrimary bgVWGrey">Resume & Experience
           </button></a>
@@ -604,7 +652,7 @@
   </section>
   <section id="experiments">
     <!-- Arrow -->
-    <%- include('shared/comp_textualElements_arrow', {message: 'Experiments' }) %>
+    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Experiments' }) %>
     <!-- Arrow -->
     <div class="blankHXXS"></div>
 
@@ -705,7 +753,7 @@
       <div class="blankHXS"></div>
 
       <!-- Arrow -->
-      <%- include('shared/comp_textualElements_arrow', {message: 'Design System' }) %>
+      <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Design System' }) %>
       <!-- Arrow -->
 
       <div class="blankHXXS"></div>
@@ -805,7 +853,7 @@
 
         <div class="Grid-cell">
           <div class="element">
-            <img class="" src="me.png" alt="Vicky">
+            <img class="" src="../me.png" alt="Vicky">
 
           </div>
         </div>
@@ -815,10 +863,14 @@
             </h3>
             <h4>As a UX designer with hands-on startup experience, I’m involved in every design stage. My focus is on creating effective, straightforward user experiences that align with business objectives.
             </h4>
+            <div class="blankHXXS displayPhone"></div>
+
             <h3 class="fontWeight400">Craftsmanship & Product Impact
             </h3>
             <h3>I’m driven by a passion for quality design, aiming to create products that not only look great but also achieve business success through thoughtful, user-centered details.
             </h3>
+            <div class="blankHXXS displayPhone"></div>
+
             <h3 class="fontWeight400">Embracing Technology
             </h3>
             <h3>
@@ -893,7 +945,7 @@
           <div class="Grid-cell">
             <div class="element">
               <div class="element">
-                <img class="iconMax" src="icon/landing_understand.svg" alt="Collaborate">
+                <img class="iconMax" src="../icon/landing_understand.svg" alt="Understand">
                 <h2 data-aos="fade-up"> <strong> Understand</strong> </h2>
                 <h3>Understand business goals and user needs using both qualitative and quantitative data to make informed UX decisions.
                 </h3>
@@ -907,7 +959,7 @@
             <div class="element">
 
               <div class="element">
-                <img class="iconMax" src="icon/landing_collaborate.svg" alt="Collaborate">
+                <img class="iconMax" src="../icon/landing_collaborate.svg" alt="Collaborate">
 
                 <h2 data-aos="fade-up"> <strong> Collaborate </strong> </h2>
                 <h3>Collaborate closely with teams from planning to delivery. Continuous feedback refines and improves designs.
@@ -918,7 +970,7 @@
           <div class="Grid-cell">
             <div class="element">
               <div class="element">
-                <img class="iconMax" src="icon/landing_facilitate.svg" alt="Collaborate">
+                <img class="iconMax" src="../icon/landing_facilitate.svg" alt="Facilitate">
                 <h2 data-aos="fade-up"> <strong> Facilitate</strong> </h2>
                 <h3>Manage the design process with clear deadlines to stay on track. Document and review each step to create effective, impactful designs.
                 </h3>
@@ -952,7 +1004,7 @@
 
 
     <!-- Arrow -->
-    <%- include('shared/comp_textualElements_arrow', {message: 'Timeline' }) %>
+    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Timeline' }) %>
     <!-- Arrow -->
 
     <div class="blankHXXS"></div>
@@ -1351,9 +1403,10 @@
       </div>
     </div>
 
+    <div class="blankHXS"></div>
 
     <!-- Arrow -->
-    <%- include('shared/comp_textualElements_arrow', {message: 'Skills & Experiences' }) %>
+    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'UX Skills & Product Experience' }) %>
     <!-- Arrow -->
     <%- include(`${templatePath}/shared/comp_tagCloud`) %>
   </section>
