@@ -1,9 +1,10 @@
 <% if (typeof headerBackgroundColor==='undefined' ) { headerBackgroundColor='' ; } %>
+<% if (typeof logoURL==='undefined' ) { logoURL='/' ; } %>
 
 <header>
   <nav class="header <%= headerBackgroundColor %>" id="header">
     <div class="headerContainer">
-      <a href="/">
+      <a href="<%- logoURL %>">
         <div class="logo-container">
           <!-- LOGO_0.svg -->
           <img src="/icon/LOGO_0.svg" alt="VW Studio Logo V0" class=" logo logo-0">
