@@ -1770,6 +1770,9 @@ section {
     body .section-nav {
         margin-left: cals(100% - 332px);
     }
+    body #circle_container {
+        top: 16em;
+    }
 }
 
 /* ====== for nav 2 ======*/
@@ -2043,16 +2046,7 @@ main>nav {
     color: var(--WS-Blue);
 }
 
-ul,
-ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-li {
-    margin-left: 0;
-}
 
 li .rightPanel {
     font-size: 16px;
@@ -2069,23 +2063,7 @@ ul .rightPanel {
     list-style: none !important;
 }
 
-ul {
-    list-style-type: none;
-    font-family: inherit;
-    font-size: clamp(1.2em, 1.18vw, 1.3em);
 
-    /* font size =h5 */
-    font-weight: 300;
-    list-style-position: outside;
-    margin-left: 0;
-    padding-left: 20px;
-    line-height: clamp(1.76em, 1.8vw, 1.2em);
-}
-
-ul .listCircle {
-    list-style-type: circle;
-    margin-left: 1em;
-}
 
 ol .listABC {
     list-style-type: lower-alpha;
@@ -2166,13 +2144,13 @@ section .padding {
 .specialTextM {
     font-family: inherit;
     margin: 0;
-    font-size: clamp(1.3em, 2.4vw, 2.8em);
+    font-size: clamp(1.8em, 2.4vw, 2.8em);
 }
 
 
 .specialTextS {
     font-family: inherit;
-    font-size: clamp(1.4em, 2vw, 2.2em);
+    font-size: clamp(1.6em, 2vw, 2.2em);
     margin: 0;
 }
 
@@ -2227,6 +2205,28 @@ section .padding {
 }
 
 /* =========== Headings =========== */
+ul .listCircle {
+    list-style-type: circle;
+    margin-left: 1em;
+}
+ul {
+    list-style-type: none;
+    font-family: inherit;
+    list-style-position: outside;
+    margin-left: 0;
+    padding-left: 20px;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 0;
+}
+
 
 h1,
 h2 {
@@ -2236,7 +2236,7 @@ h2 {
 
 h3,
 h4,
-h5,
+h5, ul, li,
 h6 {
     font-weight: 300;
     /* Adjusted for consistency */
@@ -2247,41 +2247,45 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    margin-top: clamp(0.68em, 0.96em, 1.2em);
-    margin-bottom: clamp(0.68em, 0.96em, 1.2em);
-}
+h6, ul, li {
+        /* 
 
+        margin-top: clamp(0.42em, 0.66em, 1.2em);
+
+        */
+        margin-top: clamp(0.28em, 0.56em, 1.2em);
+        margin-bottom: clamp(0.42em, 0.66em, 1.2em);
+        line-height: clamp(1.56em, 1.8vw, 1.2em);
+
+}
 
 h1 {
-    font-size: clamp(1.58em, 2vw, 2.6em);
-    /* Increased for emphasis */
+    font-size: clamp(1.6em, 2.2vw, 2.2em);
+  }
+  
+  h2 {
+    font-size: clamp(1.4em, 1.8vw, 2em);
+  }
+  
+  h3 {
+    font-size: clamp(1.3em, 1.6vw, 1.7em);
+  }
+  
+  h4 {
+    font-size: clamp(1.2em, 1.4vw, 1.5em);
+  }
+  
+  h5, ul {
+    font-size: clamp(1.15em, 1.3vw, 1.35em);
 }
+  
+  h6 {
+    font-size: clamp(1em, 1vw, 1.2em);
+  }
+  
+  
 
-h2 {
-    font-size: clamp(1.46em, 1.8vw, 2em);
-    /* Adjusted for better hierarchy */
-}
 
-h3 {
-    font-size: clamp(1.38em, 1.5vw, 1.7em);
-    /* Increased size */
-}
-
-h4 {
-    font-size: clamp(1.26em, 1.3vw, 1.5em);
-    /* Adjusted for clarity */
-}
-
-h5 {
-    font-size: clamp(1.2em, 1.18vw, 1.3em);
-    /* Adjusted for clarity */
-}
-
-h6 {
-    font-size: clamp(1em, 1.05vw, 1.2em);
-
-}
 
 /* =========== Paragraphs =========== */
 p {
@@ -5468,6 +5472,7 @@ button.Clipboard.clickTxt:active {
 /* And so on for other button classes... */
 
 .chipSmall {
+    margin: 0;
     border-radius: 120px;
     padding: 4px 12px;
     font-size: 16px;
@@ -6520,7 +6525,7 @@ button.intro:hover {
 
 #circle_container {
     position: absolute;
-    top: 178px;
+    top: 12em;
     left: 0;
     display: inline-block;
     width: auto;
