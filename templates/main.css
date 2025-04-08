@@ -2511,14 +2511,11 @@ hr.colorBlack {
 /* ---- must always have for responsive*/
 .element {
     padding: 0.4em 0.8em 0;
-
-    /* ----     0.8em 1em 0 0;  top, right, bottom, left;
-   ;
-
-
-padding: 0.8em 0em 0;
-/* ----     padding: 0.8em top 1em right and left 0 bottom; ----*/
-
+    margin-bottom: 0.8em;
+    transition: background-color 0.3s ease;
+}
+.elementTB {
+    padding: 0.8em 0;
     margin-bottom: 0.8em;
     transition: background-color 0.3s ease;
 }
@@ -3216,6 +3213,10 @@ button.passwordArr {
     body .displayPhone {
         display: block;
     }
+    body .notDisplayMobile {
+        display: none;
+    }
+
 
     body .displayTablet {
         display: none;
