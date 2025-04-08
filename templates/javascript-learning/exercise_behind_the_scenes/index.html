@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>How JavaScript Works Behind the Scenes</title>
+  <link rel="stylesheet" href="../../main.css" />
+    <!-- Include Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet">
+  <!-- Google Font Preconnect-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Font Preconnect-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--sitewide font-family: 'Lato', sans-serif; -->
+</head>
+
+<body class="wrapper">
+  <header>
+    <h1>
+      <a class="textUnderline inactive" href="/javascript-learning"> JavaScript Learning </a> / How JavaScript Works Behind the Scenes
+    </h1>
+  </header>
+
+  <pre><code class="language-javascript">
+    restaurant.numGuests = 0;
+    const guests2 = restaurant.numGuests || 10;
+    console.log(guests2);
+    
+    // nullish: null and underfined (NOT 0 or )
+    const guestCorrect =  restaurant.numGuests ?? 10;
+    console.log(guestCorrect);
+  </code></pre>
+  <script src="scripts.js"></script>
+    <!-- Include Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-javascript.min.js"></script>
+</body>
+
+</html>
