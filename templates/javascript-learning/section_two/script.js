@@ -235,3 +235,11 @@ const gradeFeedback =  function(score){
 console.log(gradeFeedback(99));
 
 */
+
+
+function calcAge(birthYear){
+  return 2037 - birthYear
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+console.log(calcAge(years[0]));

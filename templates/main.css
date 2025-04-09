@@ -1771,7 +1771,7 @@ section {
     margin-left: cals(100% - 332px);
   }
   body #circle_container {
-    top: 16em;
+    top: 10em;
   }
 }
 
@@ -2215,12 +2215,20 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   margin-top: clamp(0.6em, 1vw, 1.2em);
   margin-bottom: clamp(0.3em, 0.6vw, 0.8em);
   line-height: clamp(1.4, 1.8vw, 1.6);
 }
+
+h6 {
+  margin-top: clamp(0.5em, 0.8vw, 1em);
+  margin-bottom: clamp(0.2em, 0.5vw, 0.6em);
+  line-height: 1.5;
+}
+
+
+
 /* Reset + base spacing */
 ul,
 ol {
@@ -2259,7 +2267,7 @@ li {
 ul.listCircle {
   list-style-type: circle;
   list-style-position: outside;
-  padding-left: 20px;
+  padding-left: 22px;
   margin-left: 0;
 }
 
@@ -4613,6 +4621,8 @@ body .flex-container.Mobile {
 }
 
 .widthFitContent {
+  display: inline-block;
+
   width: max-content;
 }
 
@@ -6453,7 +6463,7 @@ button.intro:hover {
 
 #circle_container {
   position: absolute;
-  top: 12em;
+  top: 4em;
   left: 0;
   display: inline-block;
   width: auto;
@@ -6639,7 +6649,7 @@ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #
 /* Common styles for both logos */
 .logo {
   left: 12px;
-  top: 12px;
+  top: 16px;
   position: absolute;
   width: 2.4em;
   opacity: 0;
