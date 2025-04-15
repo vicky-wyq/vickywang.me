@@ -25,6 +25,7 @@ const calcSalary = employees.reduce((total, emp1, emp2) => {
 console.log(calcSalary);
  */
 
+// ======= lesson 1
 
 // Select elements
 const title = document.querySelector('#main-title');
@@ -34,5 +35,61 @@ const button = document.querySelector('#change-btn');
 button.addEventListener('click', function () {
   title.textContent = 'You Clicked!';
   title.style.color = '#13fc03';
-  title.style.fontSize = '6.5rem';
 });
+// ======= lesson 2 =========
+
+
+const titlel2 = document.querySelector('#main-title-l2');
+const buttonl2 = document.querySelector('#toggle-btn-l2');
+
+buttonl2.addEventListener('click', function () {
+  titlel2.classList.toggle('highlight');
+});
+// ======= lesson 3 =========
+const multiTitle = document.querySelector('#multi-title');
+const multiBtn = document.querySelector('#multi-btn');
+
+multiBtn.addEventListener('click', function () {
+  multiTitle.classList.toggle('colorChange');
+  multiTitle.classList.toggle('bigText');
+});
+
+// ======= lesson 4 =========
+
+
+const titlel4 = document.querySelector('#multi-title-l4');
+const buttonl4 = document.querySelector('#multi-btn-l4');
+
+buttonl4.addEventListener('click', function () {
+  titlel4.classList.add('colorChange-l4');
+  titlel4.classList.remove('bigText-l4');
+});
+// ======= lesson 5 =========
+
+
+const titlel5 = document.querySelector('#multi-title-l5');
+const buttonl5 = document.querySelector('#multi-btn-l5');
+
+buttonl5.addEventListener('click', function () {
+  if (titlel5.classList.contains('bigText-l5')) {
+    titlel5.classList.remove('bigText-l5');
+  } else {
+    titlel5.classList.add('bigText-l5');
+  }
+});
+// ======= lesson 6 =========
+
+
+const titlel6 = document.querySelector('#multi-title-l6');
+const buttonl6 = document.querySelector('#multi-btn-l6');
+
+buttonl6.addEventListener('click', function () {
+  if (titlel6.classList.contains('bigText-l6')) {
+    titlel6.classList.remove('bigText-l6');
+    buttonl6.textContent = 'Enlarge';
+  } else {
+    titlel6.classList.add('bigText-l6');
+    buttonl6.textContent = 'Shrink';
+  }
+});
+// ======= lesson 7 =========
