@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 const employees = [
   { name: "Vicky", department: "Design", salary: 85000 },
   { name: "Jonas", department: "Engineering", salary: 65000 },
@@ -23,4 +23,16 @@ const calcSalary = employees.reduce((total, emp1, emp2) => {
 }, 0);
 
 console.log(calcSalary);
+ */
 
+
+// Select elements
+const title = document.querySelector('#main-title');
+const button = document.querySelector('#change-btn');
+
+// Add click interaction
+button.addEventListener('click', function () {
+  title.textContent = 'You Clicked!';
+  title.style.color = '#13fc03';
+  title.style.fontSize = '6.5rem';
+});
