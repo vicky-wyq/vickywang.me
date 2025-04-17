@@ -93,3 +93,18 @@ buttonl6.addEventListener('click', function () {
   }
 });
 // ======= lesson 7 =========
+const titlel7 = document.querySelector('#title-l7');
+const buttonl7 = document.querySelector('#btn-l7');
+
+// 1. Check saved state on load
+if (localStorage.getItem('isBig') === 'true') {
+  titlel7.classList.add('bigText-l7');
+  buttonl7.textContent = 'Shrink';
+}
+
+// 2. Handle toggle + save
+buttonl7.addEventListener('click', function () {
+  const isBig = title.classList.toggle('bigText-l7');
+  buttonl7.textContent = isBig ? 'Shrink' : 'Enlarge';
+  localStorage.setItem('isBig', isBig); // save boolean as string
+});
