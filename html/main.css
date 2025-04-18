@@ -2059,12 +2059,13 @@ ol .listABC {
 }
 
 section {
-  padding-top: 5em;
+  padding-top: 0;
 }
 
 section .padding {
   padding-top: 5em;
 }
+
 
 /* =========== sub nav V1 =========== */
 
@@ -2117,7 +2118,13 @@ section .padding {
   margin: 0;
   line-height: 120%;
 }
+.newLandingTitle {
+  font-family: inherit;
+  font-size: clamp(1.8em, 2vw, 2.2em);
 
+  margin: 0;
+  line-height: 120%;
+}
 .TextPoppins {
   font-family: "Poppins", sans-serif;
 }
@@ -2221,7 +2228,7 @@ h5 {
   line-height: clamp(1.4, 1.8vw, 1.6);
 }
 
-h6 {
+h6, p {
   margin-top: clamp(0.5em, 0.8vw, 1em);
   margin-bottom: clamp(0.2em, 0.5vw, 0.6em);
   line-height: 1.5;
@@ -2292,15 +2299,14 @@ ul {
   font-size: clamp(1.15em, 1.3vw, 1.35em);
 }
 
-h6 {
-  font-size: clamp(1em, 1vw, 1.25em);
+h6,
+p {
+  font-size: clamp(1.15em, 1vw, 1.25em);
 }
 
 /* =========== Paragraphs =========== */
 p {
-  font-size: clamp(0.9em, 1.1vw, 1.3em);
   font-weight: 300;
-  line-height: 1em;
 }
 
 p.light {
@@ -4121,6 +4127,23 @@ body .flex-container.Mobile {
 .blankProject {
   height: 150px;
 }
+/* ======== new ======== */
+
+.spacingLarge {
+  height: 24px;
+}
+.spacingMedium {
+  height: 12px;
+}
+
+.spacingSmall {
+  height: 6px;
+}
+.spacingXSmall {
+  height: 2px;
+}
+/* ======== new ======== */
+
 
 .blankHTiny {
   height: 0.8em;
@@ -4608,6 +4631,17 @@ body .flex-container.Mobile {
 .widthLogo {
   width: 3rem;
   margin: 9px;
+}
+.bulletWithArrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.bulletWithArrow::after {
+  content: '→';
+  font-size: 0.85em;
+  color: #999;
 }
 
 .iconSH {
@@ -5412,6 +5446,17 @@ button.Clipboard.clickTxt:active {
 
 /* And so on for other button classes... */
 
+
+.tag {
+  display: inline-block;
+
+  
+  border-radius: 120px;
+
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  padding: 4px 12px;
+}
 .chipSmall {
   margin: 0;
   border-radius: 120px;
@@ -5434,7 +5479,7 @@ button.Clipboard.clickTxt:active {
 .buttonMedium {
   border-radius: 120px;
   padding: 12px 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
