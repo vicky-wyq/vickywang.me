@@ -43,7 +43,6 @@
   </div>
 
 
-  <div class="blankHTiny"></div>
 
   <div class="wrapper">
 
@@ -105,7 +104,7 @@
   <div class="wrapper">
     <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
       <div class="element">
-        <a href="/resume"> <button class="buttonMedium buttonPrimary bgVWGrey">Resume & Experience
+        <a href="/resume2025"> <button class="buttonMedium buttonPrimary bgVWGrey">Resume & Experience
           </button></a>
 
       </div>
@@ -128,46 +127,54 @@
 
       <div class="wrapper">
         <div class="Grid Grid--full Grid--gutter">
+
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutter">
           <div class="Grid-cell">
             <div class="element">
               <h1 class="fontWeight700">BabyQuip (2024–2025)
               </h1>
               <h4>
-                Redesigning the BabyQuip mobile rental experience — from fragmented provider-first navigation to a simplified, gear-first flow that supports users from landing to checkout.
-
-
+                BabyQuip is a gear rental marketplace helping families travel stress-free by connecting them with local providers — while helping providers (mostly parents) earn income through gear rental.
 
               </h4>
-
+              <h4>
+                <span class="TextPoppins fontWeight400">My focus:</span> Aligning the mobile app and partner tools with the company's shift to a gear-first rental model. I worked across core B2C and B2B flows to simplify UX, improve clarity, and support conversion.
+              </h4>
+              <ul class="listCircle">
+                <li>Before I joined, the team had redesigned the gear-first website in mid-2024. I supported final refinements and helped launch it in early 2025.
+                </li>
+                <li>
+                  The company will rebrand as GoQuip in 2025, expanding from baby gear only to general gear rental.
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="Grid Grid--full Grid--gutter">
+
+
+
+          <%- include(`${templatePath}/shared/base_divider_short`) %>
+
           <div class="Grid-cell">
             <div class="element">
 
-
-
-              <h3 class="fontWeight700">Mobile App Redesign Customer Rental Experience
-              </h3>
-              <div class="spacingXSmall"></div>
-
-              <h5> <span class="TextPoppins fontWeight400">Role: </span>Senior UX Designer
+              <h2 class="fontWeight700">Mobile App Redesign (Gear-First Experience)
+              </h2>
+              <h5> <span class="TextPoppins fontWeight400">Role: </span>Lead UX Designer
               </h5>
 
-              <div class="spacingXSmall"></div>
-
-              <h5> <span class="TextPoppins fontWeight400">Scope: </span>Landing → Trip Info → Shopping → Cart → QP → Checkout mobile app
+              <h5> <span class="TextPoppins fontWeight400">Key Stakeholder: </span>Kim (Design Director/Manager)
               </h5>
 
-
+              <h5> <span class="TextPoppins fontWeight400">Scope: </span>Full rental flow - Landing, Trip Info, Shopping, Cart, QP Selection, Checkout
+              </h5>
+              <h5> <span class="TextPoppins fontWeight400">Impact: </span>Increased clarity and mobile conversion by simplifying key decisions and aligning with gear-first web logic.
+              </h5>
               <ul class="listCircle">
-                <li><a href="wireframe-overview.html">Rebuilt gear first flow overall in wireframe, test early, ensure everything works proper, saving time for later on back and force <span class="bulletWithArrow"></span>
-
-                </a>
-
+                <li>Rebuilt gear first flow overall in wireframe, test early, ensure everything works proper, saving time for later on back and force <span class="bulletWithArrow"></span>
                 </li>
                 <li>Rebuilt trip input flow with progressive disclosure (support quick edits or skips)(outbound icon)
 
@@ -186,64 +193,113 @@
 
               </ul>
 
-              <div class="spacingXSmall"></div>
 
-              <h5> <span class="TextPoppins fontWeight400">Goal: </span> Shift from provider-first → gear-first. Align mobile with web. Increase conversion.
-              </h5>
-              <div class="spacingXSmall"></div>
+              <h4><span class="TextPoppins fontWeight400">Key Contributions</span></h4>
 
-              <h5 class="textItalic"> <span class="TextPoppins fontWeight400"> Problem → Insight → Solution: </span> Flow had too many steps and support quick edits or skips, causing confusion and low conversion. I improved usability to address friction and increase AOV by simplifying key rental decisions.
-              </h5>
-
-
-              <div class="spacingLarge"></div>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="spacingMedium"></div>
-      <hr class="wrapperL">
-      <div class="spacingMedium"></div>
-
-      <div class="wrapper">
-        <div class="Grid Grid--full Grid--gutter">
-          <div class="Grid-cell">
-            <div class="element">
-              <%- include(`${templatePath}/shared/base_chip`, {
-                chipSmallTxt: '1-2 Feature Enhancement',
-                colorBg: 'colorBg_VW_Pink200',
-                colorTxt: 'color_VW_Pink800'
-               }) %>
-              <div class="blankHTiny"></div>
-
-              <h1 class="specialTextS fontWeight700">Business Booking Experience</h1>
-
-              <h4 class="fontWeight300">Business owners managing appointments for their clients </h4>
+              <h5><a class="textUnderline fontWeight500" href="wireframe-overview.html">System Wireframe</a></h5>
               <ul class="listCircle">
-
-                <li>Reduced average booking time from 5 minutes to less than 1 minute, making the process over 80% faster.
-                </li>
-                <li>
-                  Decreased errors from 15 to 5 per 100 bookings, resulting in 67% fewer booking errors.
-
-                </li>
-
+                <li>Mapped and wireframed the entire rental flow to validate architecture and reduce downstream issues</li>
               </ul>
 
+              <h5><a class="textUnderline fontWeight500" href="wireframe-overview.html">Landing</a></h5>
+              <ul class="listCircle">
+                <li><strong>Problem:</strong> Mobile users needed a fast way to start booking, but also needed to understand how BabyQuip worked before committing.</li>
+                <li><strong>Insight:</strong> Two user types emerged — those who wanted to search immediately and those who needed clarity before input.</li>
+                <li><strong>Solution:</strong> Designed and tested two landing paths: one direct to trip input, and one educational layout with visuals, categories, and explainer content.</li>
+              </ul>
+
+              <h5><a class="textUnderline fontWeight500" href="wireframe-overview.html">Trip Info</a></h5>
+              <ul class="listCircle">
+                <li><strong>Problem:</strong> The original trip flow asked users to enter all info up front (address, dates, time), and offered no flexibility later, leading to drop-off and user frustration.</li>
+                <li><strong>Insight:</strong> Most users accepted default time/date but wanted to adjust info after browsing gear availability.</li>
+                <li><strong>Solution:</strong> Kept address as a required input, auto-filled the rest, and made trip info editable at any point in the flow.</li>
+              </ul>
+
+              <h5><a class="textUnderline fontWeight500" href="wireframe-overview.html">Shopping</a></h5>
+              <ul class="listCircle">
+                <li><strong>Problem:</strong> Search was limited and error-prone — users needed to know exactly what to type, or they'd hit dead ends. At the same time, the business was preparing to expand into general gear rental with GoQuip, and users were unaware of the broader categories we offered.</li>
+                <li><strong>Insight:</strong> We realized the shopping experience needed to shift from search-driven to exploration-first — it had to educate, guide discovery, and scale as new categories were added.</li>
+                <li><strong>Solution:</strong> Designed a visual-first layout with a top category bar and “View All” fallback, adapted from the web. Emphasized category clarity, quick add-to-cart, and future scalability.</li>
+              </ul>
+
+              <h5><a class="textUnderline fontWeight500" href="wireframe-overview.html">Cart & QP Selection</a></h5>
+              <ul class="listCircle">
+                <li><strong>Problem:</strong> Users often changed their minds during QP selection, but the flow forced a reset or discouraged continuing.</li>
+                <li><strong>Insight:</strong> Delaying QP selection and allowing gear edits during this step increased cart size and reduced confusion.</li>
+                <li><strong>Solution:</strong> Designed logic to preserve cart state, supported QP preview/sort, and enabled item add-ons within the QP screen to increase AOV without friction.</li>
+              </ul>
+
+              <h5><a class="textUnderline fontWeight500" href="wireframe-overview.html">Checkout</a></h5>
+              <ul class="listCircle">
+                <li>Removed friction (survey, excess steps)</li>
+                <li>A/B tested single vs. multi-page flows for clarity and speed</li>
+              </ul>
             </div>
           </div>
+
+
+          <%- include(`${templatePath}/shared/base_divider_short`) %>
+          <div class="Grid-cell">
+            <div class="element">
+
+
+              <h2 class="fontWeight700"><a class="textUnderline fontWeight500" href="wireframe-overview.html">Partner Site – Inventory Management</a></h2>
+              <h5><span class="TextPoppins fontWeight400">Role: </span>Lead UX Designer</h5>
+              <h5><span class="TextPoppins fontWeight400">Stakeholders: </span>Joe (CTO), Kim (Design Director), Stefine (Service Manager)</h5>
+              <h5><span class="TextPoppins fontWeight400">Scope: </span>Gear inventory dashboard for QP listing, storefront, and search visibility</h5>
+              <h5><span class="TextPoppins fontWeight400">Impact: </span>Improved QP onboarding and gear organization, reducing friction in listing and increasing confidence in storefront quality.</h5>
+              <ul class="listCircle">
+                <li><strong>Problem:</strong> QPs had to switch between categories to find or manage items, often unaware that key gear was unlisted or hidden from storefronts.</li>
+                <li><strong>Insight:</strong> This caused confusion and missed revenue. Many users didn’t understand how their inventory impacted storefront visibility or search results.</li>
+                <li><strong>Solution:</strong> Simplified navigation with cross-category filtering, clarified item states (featured, primary, unlisted), and added tooltips to support onboarding. Enabled bulk actions and drag/drop for faster editing.</li>
+              </ul>
+
+              <h4><span class="TextPoppins fontWeight400">Key Contributions</span></h4>
+
+              <ul class="listCircle">
+                <li><strong>Problem:</strong> QPs had to switch between categories to find or manage items, often unaware that key gear was unlisted or hidden from storefronts.</li>
+                <li><strong>Insight:</strong> This caused confusion and missed revenue. Many users didn’t understand how their inventory impacted storefront visibility or search results.</li>
+                <li><strong>Solution:</strong> Simplified navigation with cross-category filtering, clarified item states (featured, primary, unlisted), and added tooltips to support onboarding. Enabled bulk actions and drag/drop for faster editing.</li>
+              </ul>
+              <%- include(`${templatePath}/shared/base_divider_short`) %>
+
+
+              <h2 class="fontWeight700">Responsive Web Redesign (Gear-First Support)</h2>
+              <h5><span class="TextPoppins fontWeight400">Role: </span>Supporting UX Designer</h5>
+              <h5><span class="TextPoppins fontWeight400">Stakeholder: </span>Kim (Design Director/Manager)</h5>
+              <h5><span class="TextPoppins fontWeight400">Scope: </span>Gear-first responsive rental flow</h5>
+              <h5><span class="TextPoppins fontWeight400">Impact: </span>Enhanced usability across devices by aligning responsive experience with desktop and mobile standards.</h5>
+
+              <ul class="listCircle">
+                <li><strong>Problem:</strong> The newly redesigned gear-first web structure lacked polish on responsive breakpoints and needed refinement before launch.</li>
+                <li><strong>Insight:</strong> Users were dropping on mobile and tablet views due to inconsistent layouts and CTA placement. Add-ons and package visibility also needed improvement.</li>
+                <li><strong>Solution:</strong> Refined responsive checkout layout, improved CTA positioning and visual hierarchy, and surfaced add-ons/packages earlier in flow to increase AOV.</li>
+              </ul>
+              <h4><span class="TextPoppins fontWeight400">Key Contributions</span></h4>
+              <ul class="listCircle">
+                <li><strong>Problem:</strong> The newly redesigned gear-first web structure lacked polish on responsive breakpoints and needed refinement before launch.</li>
+                <li><strong>Insight:</strong> Users were dropping on mobile and tablet views due to inconsistent layouts and CTA placement. Add-ons and package visibility also needed improvement.</li>
+                <li><strong>Solution:</strong> Refined responsive checkout layout, improved CTA positioning and visual hierarchy, and surfaced add-ons/packages earlier in flow to increase AOV.</li>
+              </ul>
+
+
+            </div>
+
+
+
+
+
+            <%- include(`${templatePath}/shared/base_divider`) %>
+
+
+
+          </div>
+
+
         </div>
       </div>
-
-
-
-      <%- include(`${templatePath}/shared/base_divider`) %>
-
-
-
     </div>
+
 
   </section>
 
