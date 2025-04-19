@@ -2914,6 +2914,10 @@ button.passwordArr {
 }
 
 /* =================== accordion ===================*/
+.wrapperXL {
+  max-width: 200px;
+  margin: auto;
+}
 .wrapperL {
   max-width: 660px;
   margin: auto;
