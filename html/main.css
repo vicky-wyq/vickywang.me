@@ -2845,13 +2845,14 @@ button.passwordArr {
   margin: 0;
   color: var(--Grey900);
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 0;
   display: flex;
   --webkit-flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s linear;
 }
+
 
 .accordionBorderTop {
   border-radius: 8px 8px 0px 0px;
@@ -2906,12 +2907,14 @@ button.passwordArr {
   border-bottom: 1px solid var(--Grey200);
   border-left: 1px solid var(--Grey200);
   border-right: 1px solid var(--Grey200);
-
+margin: 0;
   padding: 0 20px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
+
+
 
 /* =================== accordion ===================*/
 .wrapperXL {
