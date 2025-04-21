@@ -2845,7 +2845,8 @@ button.passwordArr {
   margin: 0;
   color: var(--Grey900);
   cursor: pointer;
-  padding: 0;
+  padding: 6px 4px 8px 4px; /* TRBL */
+
   display: flex;
   --webkit-flex-flow: row wrap;
   justify-content: space-between;
