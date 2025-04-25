@@ -2862,7 +2862,7 @@ button.passwordArr {
 .accItem:hover{
   background-color: var(--Grey100);
 }
-.iconSize{
+.iconSizeS{
   height: 22px;
   width: 22px;
   margin: 2px;
