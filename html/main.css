@@ -2836,6 +2836,63 @@ button.passwordArr {
   width: 22px;
   float: right;
 }
+/* =================== accTrigger ===================*/
+.accContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.accContent.is-open {
+  /* dynamic height will be applied inline */
+}
+
+.accTrigger {
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: none;
+
+
+}
+.accItem:hover{
+  background-color: var(--Grey100);
+}
+.iconSize{
+  height: 22px;
+  width: 22px;
+  margin: 2px;
+}
+.iconSizeM{
+  height: 24px;
+  width: 24px;
+  margin: 2px;
+
+}
+.accIcon {
+  vertical-align: text-top;
+  display: inline-block;
+
+  background-image: url("icon/plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+
+}
+
+
+.accTrigger.is-open .accIcon {
+  background-image: url("icon/minus.svg");
+  transform: rotate(180deg);
+}
+
+/* =================== accTrigger ===================*/
+
+
 
 /* =================== accordion ===================*/
 
