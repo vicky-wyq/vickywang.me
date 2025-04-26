@@ -2855,7 +2855,6 @@ button.passwordArr {
   margin-bottom: 6px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   background-color: none;
 
 
@@ -2863,17 +2862,15 @@ button.passwordArr {
 .accItem:hover{
   background-color: var(--Grey100);
 }
-.iconSizeS{
-  height: 22px;
-  width: 22px;
-  margin: 2px;
-}
-.iconSizeM{
-  height: 24px;
-  width: 24px;
-  margin: 2px;
 
+
+.iconAccTrigger{
+
+  height: 1em;
+  width: 1em;
+  margin: 0.12em;
 }
+
 .accIcon {
   vertical-align: text-top;
   display: inline-block;
