@@ -2838,39 +2838,34 @@ button.passwordArr {
   float: right;
 }
 /* =================== accTrigger ===================*/
+
+.accContent.is-open-acc {
+  /* dynamic height will be applied inline */
+}
 .accContent {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s ease;
 }
-
-.accContent.is-open {
-  /* dynamic height will be applied inline */
-}
-
 .accTrigger {
   cursor: pointer;
   font-weight: bold;
   user-select: none;
-  margin-bottom: 6px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: none;
-
-
 }
+
 .accItem:hover{
   background-color: var(--Grey100);
 }
 
-
 .iconAccTrigger{
-
   height: 1em;
   width: 1em;
   margin: 0.12em;
 }
-
 .accIcon {
   vertical-align: text-top;
   display: inline-block;
@@ -2879,11 +2874,8 @@ button.passwordArr {
   background-size: contain;
   background-repeat: no-repeat;
   transition: transform 0.4s ease;
-
 }
-
-
-.accTrigger.is-open .accIcon {
+.accTrigger.is-open-acc .accIcon {
   background-image: url("icon/minus.svg");
   transform: rotate(180deg);
 }
@@ -3591,9 +3583,7 @@ flex: 0 0 calc(33.3333% - 1em);
   height: 1px;
 }
 
-.element:hover {
-  background: var();
-}
+
 
 .element.Holly {
   background: rgba(102, 51, 255, 0.1);
