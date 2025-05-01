@@ -1,5 +1,6 @@
 "use strict";
 
+/* 
 // practice 1
 let arrayNumber = [1, 2, 3, 4, 5, 6];
 let newArrayNumber = [];
@@ -144,3 +145,71 @@ let addEven = filterNumber.map(function (num) {
 });
 
 console.log(addEven);
+*/
+
+// lesson 1
+
+const input = document.querySelector("#numberInput");
+const result = document.querySelector("#resultArea");
+
+input.addEventListener("input", function () {
+  const max = Number(input.value);
+
+  if (!max || max < 1) {
+    result.innerHTML = "";
+    return;
+  }
+
+  // Step 1: Build array from 1 to max
+  let allNumbers = []; // fill with 1 to max using a loop
+
+  for (let i = 1; i <= max; i++) {
+    allNumbers.push(i);
+  }
+
+  // Step 2: Filter even numbers from that array
+  let evenNumber = allNumbers.filter(filterEvenNum);
+
+  function filterEvenNum(arr) {
+    return arr % 2 == 0;
+  }
+
+  // Step 3: Show result in resultArea (as string or list)
+
+  result.innerHTML =
+    "<ul>" +
+    evenNumber
+      .map(function (num) {
+        return "<li>" + num + "</li>";
+      })
+      .join("") +
+    "</ul>";
+});
+
+// lesson 2
+const slider = document.querySelector("#slider");
+const arrayList = document.querySelector("#arrayList");
+
+slider.addEventListener("input", function () {
+  const max = Number(slider.value);
+
+  // Step 1: build array from 1 to max
+  let arr = [];
+  for (let i = 1; i <= max; i++) {
+    arr.push(i);
+  }
+  let filteredArr = [];
+  filteredArr = arr.filter(function(num) {
+    return num % 2 === 0;
+
+  });
+  // Step 2: show array as a list
+  arrayList.innerHTML =
+    "<ul>" +
+    filteredArr
+      .map(function (num) {
+        return "<li>" + num + "</li>";
+      })
+      .join("") +
+    "</ul>";
+});
