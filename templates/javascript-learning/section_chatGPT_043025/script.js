@@ -189,21 +189,29 @@ input.addEventListener("input", function () {
 // lesson 2
 const slider = document.querySelector("#slider");
 const arrayList = document.querySelector("#arrayList");
+const filterType = document.querySelector("#filterType");
 
-slider.addEventListener("input", function () {
+slider.addEventListener("input", updateList);
+filterType.addEventListener("input", updateList); // trigger on dropdown change too
+
+function updateList() {
   const max = Number(slider.value);
 
-  // Step 1: build array from 1 to max
   let arr = [];
   for (let i = 1; i <= max; i++) {
     arr.push(i);
   }
-  let filteredArr = [];
-  filteredArr = arr.filter(function(num) {
-    return num % 2 === 0;
 
+  let filteredArr = arr.filter(function (num) {
+    if (filterType.value === "even") {
+      return num % 2 === 0;
+    } else if (filterType.value === "odd") {
+      return num % 2 !== 0;
+    } else {
+      return true; // "all" → keep everything
+    }
   });
-  // Step 2: show array as a list
+
   arrayList.innerHTML =
     "<ul>" +
     filteredArr
@@ -212,4 +220,25 @@ slider.addEventListener("input", function () {
       })
       .join("") +
     "</ul>";
+}
+
+// lesson 3
+
+const divisibleBy = document.querySelector("#divisibleBy");
+let filteredArr = arr.filter(function (num) {
+  // First filter: even/odd/all
+  if (filterType.value === "even" && num % 2 !== 0) return false;
+  if (filterType.value === "odd" && num % 2 === 0) return false;
+
+  // Second filter: divisible by
+  if (divisibleBy.value !== "none") {
+    let divisor = Number(divisibleBy.value);
+    if (num % divisor !== 0) return false;
+  }
+
+  return true;
 });
+
+slider.addEventListener("input", updateList);
+filterType.addEventListener("input", updateList);
+divisibleBy.addEventListener("input", updateList);
