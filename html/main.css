@@ -2862,9 +2862,9 @@ button.passwordArr {
 }
 
 .iconAccTrigger{
-  height: 1em;
-  width: 1em;
-  margin: 0.12em;
+  height: 16px;
+  width: 16px;
+  margin: 18px;
 }
 .accIcon {
   vertical-align: text-top;
