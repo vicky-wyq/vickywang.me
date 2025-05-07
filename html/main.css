@@ -2859,13 +2859,20 @@ button.passwordArr {
 
 .accItem:hover{
   background-color: var(--Grey100);
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--Grey200);
 }
 
 .iconAccTrigger{
   height: 16px;
   width: 16px;
-  margin: 18px;
+  margin: 18px 10px;
+  flex-shrink: 0;
+
 }
+
+
+
 .accIcon {
   vertical-align: text-top;
   display: inline-block;
