@@ -234,7 +234,7 @@
         <div class="Grid Grid--full Grid--gutter">
           <div class="Grid-cell">
             <div class="element">
-              <img src="mobile_journey.svg" alt="">
+              <img src="cover_mobile_journey.svg" alt="">
             </div>
           </div>
         </div>
@@ -471,7 +471,7 @@
         <div class="Grid Grid--full Grid--gutter">
           <div class="Grid-cell">
             <div class="element">
-              <img src="placeholder.png" alt="">
+              <img src="cover_inventory_management.png" alt="">
             </div>
           </div>
         </div>
@@ -503,7 +503,7 @@
       </div>
 
       <div class="wrapper">
-        <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid Grid--gutters Grid--full">
           <div class="Grid-cell">
             <div class="accItem">
               <div class="accTrigger">
@@ -579,8 +579,9 @@
           </div>
         </div>
       </div>
+
       <div class="wrapper">
-        <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid Grid--gutters Grid--full">
 
           <div class="Grid-cell">
             <div class="accItem">
@@ -637,7 +638,6 @@
               </div>
             </div>
           </div>
-
 
 
 
@@ -811,120 +811,7 @@
   </section>
 
   <section id="about">
-    <div class="wrapper ">
-
-      <div id="circle_wrapper">
-        <div id="circle_container">
-          <div id="circle">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-              <defs>
-                <path id="circlePath" d="M 100, 100 m -40, 0 a 40,40 0 0,1 80,0 a 40,40 0 0,1 -80,0 " />
-              </defs>
-              <circle cx="100" cy="66.67" r="50" fill="none" />
-              <g>
-                <use xlink:href="#circlePath" fill="none" />
-                <text>
-                  <textPath xlink:href="#circlePath">User Experience Designer, Product Designer</textPath>
-                </text>
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="wrapper">
-      <div class="Grid Grid--full Grid--gutters u-textCenter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h1 class="specialTextL"> About Me</h1>
-            <div class="blankHTiny"></div>
-
-            <h2 class="specialTextS colorLandingText"> I craft simple, user-focused designs that meet business goals. </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="blankHTiny"></div>
-
-
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--1of3 Grid--center">
-
-
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="" src="../me.png" alt="Vicky">
-
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="fontWeight400">Startup Experience
-            </h3>
-            <h4>As a UX designer with hands-on startup experience, I’m involved in every design stage. My focus is on creating effective, straightforward user experiences that align with business objectives.
-            </h4>
-            <div class="blankHXXS displayPhone"></div>
-
-            <h3 class="fontWeight400">Craftsmanship & Product Impact
-            </h3>
-            <h3>I’m driven by a passion for quality design, aiming to create products that not only look great but also achieve business success through thoughtful, user-centered details.
-            </h3>
-            <div class="blankHXXS displayPhone"></div>
-
-            <h3 class="fontWeight400">Embracing Technology
-            </h3>
-            <h3>
-              I enjoy diving into new technologies, which enhances collaboration with developers and refines my design process, leading to more innovative solutions.
-            </h3>
-          </div>
-
-
-        </div>
-
-      </div>
-
-
-
-
-      <div class="Grid Grid--gutters Grid--1of3 Grid--center">
-
-
-        <div class="Grid-cell">
-          <div class="element">
-
-          </div>
-        </div>
-        <div class="Grid-cell">
-
-
-          <div class="row centerVer">
-            <div class="element">
-
-              <a href="mailto:vickyw.design@gmail.com"> <button class="buttonMedium buttonPrimary WhiteBg">Email me
-                </button></a>
-
-            </div>
-
-
-            <div class="element">
-
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax" title="Copy Email Address to Clipboard" src="/icon/copy.svg">
-                  <p class="clickIconCopy">vickyw.design@gmail.com
-                  </p>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="blankHS"></div>
-
+    <%- include(`${templatePath}/shared/block_about`) %>
 
     <div class="colorBgYellowVW500">
       <div class="blankHXS"></div>
