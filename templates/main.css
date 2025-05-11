@@ -2866,7 +2866,7 @@ button.passwordArr {
 .iconAccTrigger{
   height: 22px;
   width: 22px;
-  margin: 18px 6px;
+  margin: 27px 6px;
   flex-shrink: 0;
 
 }
@@ -4783,6 +4783,10 @@ body .flex-container.Mobile {
 
 /* ======== width & height ========= */
 /* ======== margin ========= */
+.marginLeft{
+  margin-left: 22px;
+
+}
 .noMargin {
   margin: 0 !important;
 }
