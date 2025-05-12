@@ -6271,7 +6271,7 @@ pre code {
 
 .left-arrow {
   display: inline-block;
-  margin: 0.2em;
+  margin: 0.32em;
   width: 0.5em;
   height: 0.5em;
   border-top: 2px solid var(--Grey900);
