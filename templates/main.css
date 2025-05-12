@@ -3211,6 +3211,12 @@ button.passwordArr {
 
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
+    body .accTrigger {
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
   body .logo {
     padding: 0.48em 0.8em !important;
   }
@@ -3447,6 +3453,8 @@ flex: 0 0 calc(33.3333% - 1em);
 
 /* Tablet (medium) screens 480px + */
 @media (min-width: 30em) {
+  
+
   body .Grid--full>.Grid-cell {
     flex: 0 0 96%;
   }
@@ -3489,6 +3497,9 @@ flex: 0 0 calc(33.3333% - 1em);
 
 /* when the screens more than an ipad === 768px + */
 @media (min-width: 48em) {
+
+
+
   body .Grid--full>.Grid-cell {
     flex: 0 0 99%;
   }
@@ -4850,7 +4861,9 @@ body .flex-container.Mobile {
 .fitContent {
   width: fit-content;
 }
-
+.maxContent {
+  width: max-content;
+}
 .paddingXXS {
   padding: var(--paddingXXS);
 }
