@@ -9,26 +9,29 @@
 
 <body>
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
-  <%- include(`${templatePath}/shared/block_nav_header`, {
-    type:'backText', 
-    headerBackgroundColor:`colorBgWhieTrans`,
 
-    arrTxtColor:``,
-    currentPage: 'PHOTOGRAPHY',
-    PageUrl:`/`
-    }) %> <div class="blankHM"></div>
+
+
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
+        PageUrl:`${websitePath}/`,
+        headerBackgroundColor:`colorBgWhieTrans`,
+        arrTxtColor:``,
+
+        }) %>
+
+  <div class="blankHM"></div>
   <%- include(`${templatePath}/shared/base_greeting`,{greetingTxt:`👋🏻 Hey there, welcome!`}) %>
 
 
-    <div class="wrapper">
-      <div class="Grid Grid--full Grid--gutters">
-        <div class="Grid-cell">
-          <div class="element">
-            <h1 class="specialTextL fontWeight700">I love capturing the beauty of nature.</h1>
-          </div>
+  <div class="wrapper">
+    <div class="Grid Grid--full Grid--gutters">
+      <div class="Grid-cell">
+        <div class="element">
+          <h1 class="specialTextL fontWeight700">I love capturing the beauty of nature.</h1>
         </div>
       </div>
     </div>
+  </div>
   <div class="wrapper">
     <div class="Grid Grid--full Grid--gutters">
       <div class="Grid-cell">
