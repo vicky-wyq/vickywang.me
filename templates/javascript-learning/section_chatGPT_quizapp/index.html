@@ -20,26 +20,34 @@
 
 <body class="wrapper">
   <div class="marginS">
-    <h1>Practice with ChatGPT(05/8-Present/2025) </h1>
+    <h1>Practice with ChatGPT: Quiz App (05/8-12/2025) </h1>
 
     <hr>
     <br>
 
     <div>
+      <div id="progressContainer" style="height: 10px; background: #eee; margin: 8px 0;">
+        <div id="progressBar" style="height: 100%; width: 0%; background: #4caf50;"></div>
+      </div>
+
       <h2 id="questionText">Question will go here</h2>
+      <p id="scoreDisplay">Score: 0</p>
 
       <input id="answerInput" type="text" placeholder="Type your answer" />
       <button id="checkButton">Check</button>
       <button id="nextButton" style="display: none;">Next</button>
+      <button id="restartButton" style="display: none;">Restart</button>
+
 
       <p id="feedbackArea"></p>
-      
+      <div id="summaryArea" style="margin-top: 16px;"></div>
+
 
     </div>
 
 
 
-   
+
 
   </div>
 
