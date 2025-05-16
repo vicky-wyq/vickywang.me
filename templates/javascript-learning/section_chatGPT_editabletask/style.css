@@ -239,6 +239,8 @@ input:focus {
 }
 
 #addButton {
+  background-color: #0077ff;
+  color: #fff;
   margin: 12px 12px 12px 0;
 
   padding: 12px 18px;
