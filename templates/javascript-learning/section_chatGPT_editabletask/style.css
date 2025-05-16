@@ -1,0 +1,255 @@
+:root {
+  --Grey900: #1b1b1b;
+  /*292929 2c2c2c #161616*/
+
+  --Grey800: #2f2f2f;
+  /* 5f6368 4f4f4f*/
+  --Grey700: #707070;
+  /* #505050 83878a 787878  757575*/
+  --Grey600: #a5a5a5;
+  /* #909090, 999D9F, 8e8787 a7a7a7*/
+  --Grey500: #cacaca;
+  /* #c8c8c8 e0e0e0*/
+  --Grey400: #e6e6e6;
+  /* e4e4e4; e6e6e6*/
+  --Grey300: #efefef;
+  /* efefef, f2f2f2*/
+  --Grey200: #f2f2f2;
+  /* F8F8F8, f2f2f2*/
+  --Grey100: #fafafa;
+}
+html {
+  scroll-behavior: smooth;
+  color: var(--Grey800);
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  height: var(--height100);
+  background-color: var(--GreyHTMLBg);
+}
+
+* {
+  border-style: none;
+}
+
+body {
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: var(--Grey800);
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  height: var(--height100);
+  background-color: var(--GreyHTMLBg);
+}
+
+body {
+  width: 100%;
+  height: var(--height100);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+.wrapperL {
+  max-width: 660px;
+  margin: auto;
+}
+
+.wrapperM {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.wrapper {
+  max-width: 1320px;
+  margin: auto;
+}
+.highlight {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.colorChange {
+  color: hotpink;
+}
+.bigText {
+  font-size: 3rem;
+}
+
+.colorChange-l4 {
+  color: hotpink;
+}
+.bigText-l4 {
+  font-size: 3rem;
+}
+
+.colorChange-l5 {
+  color: hotpink;
+}
+.bigText-l5 {
+  font-size: 3rem;
+}
+.bigText-l6 {
+  font-size: 3rem;
+}
+.bigText-l7 {
+  font-size: 3rem;
+}
+
+/* ======== margin ========= */
+.noMargin {
+  margin: 0 !important;
+}
+
+.marginXS {
+  margin: 0.5em;
+}
+
+.marginS {
+  margin: 1em;
+}
+
+.marginM {
+  margin: 1.5em;
+}
+
+.marginL {
+  margin: 2em;
+}
+
+.marginXL {
+  margin: 2.5em;
+}
+
+.marginMax {
+  margin: 3em;
+}
+
+/* ======== margin ========= */
+hr {
+  border: none;
+  height: 32px;
+  border-bottom: 1px solid var(--Grey400);
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  /* Adjusted for better readability */
+}
+
+h3,
+h4,
+h5,
+ul,
+li,
+h6 {
+  font-weight: 300;
+  /* Adjusted for consistency */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: clamp(0.6em, 1vw, 1.2em);
+  margin-bottom: clamp(0.3em, 0.6vw, 0.8em);
+  line-height: clamp(1.4, 1.8vw, 1.6);
+}
+
+h6 {
+  margin-top: clamp(0.5em, 0.8vw, 1em);
+  margin-bottom: clamp(0.2em, 0.5vw, 0.6em);
+  line-height: 1.5;
+}
+
+/* Reset + base spacing */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  margin-top: clamp(0.15em, 0.3vw, 0.3em);
+  margin-bottom: clamp(0.15em, 0.3vw, 0.3em);
+  line-height: 1.45;
+}
+
+/* Loose variant for readability (e.g., resume) */
+ul.listLoose li {
+  margin-top: clamp(0.35em, 0.6vw, 0.7em);
+  margin-bottom: clamp(0.35em, 0.6vw, 0.7em);
+  line-height: 1.6;
+}
+select {
+  margin-right: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+button {
+  font-size: 16px;
+  padding: 16px 26px;
+  font-weight: 400;
+  border-radius: 32px;
+  margin: 12px 0;
+}
+select {
+  margin: 12px;
+  padding: 7.5px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 250px;
+}
+select:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+input {
+  margin: 12px 12px 12px 0;
+
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 250px;
+}
+
+input:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+#addButton {
+  margin: 12px 12px 12px 0;
+
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}

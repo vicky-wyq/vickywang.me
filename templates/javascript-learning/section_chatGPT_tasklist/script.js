@@ -1,5 +1,4 @@
 "use strict";
-
 const tasks = [
   { text: "Buy eggs", done: false, tagId: 1 },
   { text: "Workout", done: true, tagId: 2 },
