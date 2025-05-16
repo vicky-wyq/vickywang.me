@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Practice with ChatGPT: Arrow function variations & usage
+
+  </title>
+
+
+  <!-- Google Font Preconnect-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Font Preconnect-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+  <!--sitewide font-family: 'Lato', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="wrapper">
+  <div class="marginS">
+    <h1>Practice with ChatGPT: Arrow function variations & usage
+
+    </h1>
+
+
+
+
+    <hr>
+
+    <br>
+
+
+    <h2>Basic</h2>
+
+    <pre class=" language-javascript" tabindex="0"><code class=" language-javascript">
+
+
+      // One parameter, one-line return
+
+      function double1(x) {
+        return x * 2;
+      }
+      const double = x => x * 2;
+
+
+      // Multiple parameters
+      const add = (a, b) => a + b;
+
+      // No parameters
+      const greet = () => "Hello";
+
+      //🔹 With curly braces ({}): need explicit return
+      const triple = x => {
+        return x * 3;
+      };
+
+      //🔹 Used with array methods (most common):
+      const nums = [1, 2, 3];
+      const doubled = nums.map(n => n * 2);  // [2, 4, 6]
+
+
+
+      /*
+      🔸 Key Differences from function keyword:
+      this is not bound (lexical scoping). Often useful in React or inside objects.
+
+      Can't be used as constructors (new ArrowFunc() will fail).
+
+      Cleaner syntax for callbacks and quick operations.
+      */
+          
+      </code></pre>
+    <h2>Arrow function + methods</h2>
+
+    <pre class=" language-javascript" tabindex="0"><code class=" language-javascript">
+
+      //✅ 1. Map – Double each number
+
+      const nums = [1, 2, 3, 4];
+
+      const doubled = nums.map(n => n * 2);
+      console.log(doubled); // [2, 4, 6, 8]
+
+
+      //✅ 2. Filter – Keep even numbers
+      const nums = [1, 2, 3, 4, 5, 6];
+
+      const evens = nums.filter(n => n % 2 === 0);
+      console.log(evens); // [2, 4, 6]
+      
+      //✅ 3. Find – First word longer than 5 chars
+      const words = ["hi", "banana", "cat", "elephant"];
+
+      const longWord = words.find(w => w.length > 5);
+      console.log(longWord); // "banana"
+
+
+
+
+
+
+      </code></pre>
+
+
+  </div>
+
+
+  <!-- lesson 2-->
+
+
+
+
+  <hr>
+
+
+
+
+
+  <!-- =====================links====================== -->
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</body>
+
+</html>
