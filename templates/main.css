@@ -1763,13 +1763,13 @@ section {
 
 @media (width > 1280px) and (width < 1880px) {
   body .iconAccTrigger {
-    margin: 21px 6px;
+    margin: 1.3em 6px;
   }
 }
 
 @media all and (min-width: 1880px) {
   body .iconAccTrigger {
-    margin: 27px 6px;
+    margin: 1.6em 6px;
   }
 
   body .blankMin1880 {
