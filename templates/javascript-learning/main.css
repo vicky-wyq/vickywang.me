@@ -178,15 +178,10 @@ a:link {
 }
 
 a:hover {
-  color: var(--teal800) !important;
+  color: var(--teal800);
 }
 
-a:link.textUnderline {
-  text-decoration-line: underline;
-  text-decoration-thickness: 0.06em;
-  text-underline-offset: 6px;
-  text-decoration-color: var(--Grey900);
-}
+
 .active a {
   color: var(--Grey900);
 }
@@ -194,12 +189,22 @@ a:link.textUnderline {
   color: var(--Grey700);
 }
 
-.textUnderline {
+
+
+a:link.textUnderline {
   text-decoration-line: underline;
-  text-decoration-thickness: 0.03em;
+  text-decoration-thickness: 0.06em;
   text-underline-offset: 6px;
   text-decoration-color: var(--Grey900);
 }
+
+a:link.textUnderline:hover {
+  color: var(--teal800);
+  /* Ensure underline on hover */
+}
+
+
+
 
 .wrapper {
   max-width: 1200px;
