@@ -57,10 +57,10 @@ function renderTasks() {
   });
 }
 function saveTasks() {
-  localStorage.setItem("myTasks", JSON.stringify(tasks)); //new to me, this is another build in feature?
+  localStorage.setItem("myTasks", JSON.stringify(tasks));
 }
 
 function loadTasks() {
-  const stored = localStorage.getItem("myTasks");//new to me, this is another build in feature?
+  const stored = localStorage.getItem("myTasks");
   return stored ? JSON.parse(stored) : [];
 }
