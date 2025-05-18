@@ -94,6 +94,7 @@ const wordsArr = ["cat", "apple", "house", "cup", "train"];
 const fiveLetters = wordsArr.find(wordlength => wordlength.length === 5);
 console.log(fiveLetters);
 
+// ==========================================
 
 
 // Double each number in the array:
@@ -112,3 +113,23 @@ console.log(withE);
 const data = [5, 3, 0, -2, -4];
 const firstNegative = data.find(n => n<0);
 console.log(firstNegative);
+
+// ==========================================
+
+
+//Make all words lowercase:
+const wordsArray = ["HELLO", "World", "JAVASCRIPT"];
+const lowercased = wordsArray.map(w => w.toLowerCase());
+console.log(lowercased);
+
+
+//Keep numbers greater than 50:
+const numbers = [12, 99, 42, 80, 3];
+const bigNums = numbers.filter(n => n > 50);
+console.log(bigNums);
+
+//Find the first string that starts with “A”:
+const items = ["cat", "Apple", "banana", "Avocado"];
+const startsWithA = items.find(s => s.startsWith('A') )
+console.log(startsWithA);
+
