@@ -59,25 +59,56 @@ console.log(longWord); // "banana"
 
  */
 
+// map
 
 const nums = [2, 4, 6];
-
-// your code here:
 const tripled = nums.map(n => n * 3);
 
 console.log(tripled);
 
-
+// filter()
 const words = ["car", "apple", "cat", "dog"];
-
-// your code here:
-const cWords = words.filter((word) ==='c');
+const cWords = words.filter(word => word.startsWith("c"));
 console.log(cWords);
 
-
-
+// find()
 const values = [3, 8, 12, 5, 20];
-
-// your code here:
 const firstBig = values.find(value => value > 10);
 console.log(firstBig);
+
+
+
+
+// map
+const names = ["alice", "bob", "charlie"];
+const uppercased = names.map(name => name.toUpperCase());
+console.log(uppercased);
+
+// filter()
+const numsArr = [2, 3, 4, 6, 9, 10];
+const divisibleBy3 = numsArr.filter(num => num % 3 === 0);
+console.log(divisibleBy3);
+
+// find()
+const wordsArr = ["cat", "apple", "house", "cup", "train"];
+const fiveLetters = wordsArr.find(wordlength => wordlength.length === 5);
+console.log(fiveLetters);
+
+
+
+// Double each number in the array:
+const numArray = [1, 2, 3, 4];
+const doubled = numArray.map(n => n * 2);
+
+console.log(doubled);
+
+//Keep only names that include the letter “e”:
+const namesArr = ["Amy", "Ben", "Leo", "Max", "Eve"];
+const withE = namesArr.filter(name => name.toLowerCase().includes("e"));
+console.log(withE);
+
+
+//Find the first number less than 0:
+const data = [5, 3, 0, -2, -4];
+const firstNegative = data.find(n => n<0);
+console.log(firstNegative);
