@@ -85,22 +85,31 @@ convertButton.addEventListener("click", function () {
     console.log(clean);
   }
 
-
-resultList.innerHTML = "";
-for (let i = 0; i < inputArr.length; i++) {
-  const li = document.createElement("li");
-  li.innerHTML = inputArr[i];
-  resultList.appendChild(li);
-}
-
+  resultList.innerHTML = "";
+  for (let i = 0; i < inputArr.length; i++) {
+    const li = document.createElement("li");
+    li.innerHTML = inputArr[i];
+    resultList.appendChild(li);
+  }
 });
 
 // =================================================
 
-const enteredValue = document.querySelector("#userInput");
-const button = document.querySelector("#convertButton");
-const returnedList = document.querySelector("#resultList");
-convertButton.addEventListener("click", function () {
+const enteredValue = document.querySelector("#enteredValue");
+const button = document.querySelector("#button");
+const returnedList = document.querySelector("#returnedList");
 
+button.addEventListener("click", function () {
+  const convertToArr = enteredValue.value.split(",");
+    console.log(convertToArr); // why here is array
 
-};
+  returnedList.innerHTML = "";
+  for (let i = 0; i < convertToArr.length; i++) {
+    const cleanValue = convertToArr[i].trim();
+    console.log(cleanValue); // why trim made array disappeared?
+
+    const li = document.createElement("li");
+    li.innerText = cleanValue;
+    returnedList.appendChild(li);
+  }
+});
