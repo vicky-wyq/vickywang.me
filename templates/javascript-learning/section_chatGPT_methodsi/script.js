@@ -101,7 +101,7 @@ const returnedList = document.querySelector("#returnedList");
 
 button.addEventListener("click", function () {
   const convertToArr = enteredValue.value.split(",");
-    console.log(convertToArr); // why here is array
+  console.log(convertToArr); // why here is array
 
   returnedList.innerHTML = "";
   for (let i = 0; i < convertToArr.length; i++) {
@@ -113,3 +113,106 @@ button.addEventListener("click", function () {
     returnedList.appendChild(li);
   }
 });
+
+
+
+/* my version
+const rawNames = "alice, bob, charlie, dave";
+
+const splitName = rawNames.split(",");
+console.log(splitName);
+
+const trimName = [];
+
+for (let i = 0; i < splitName.length; i++) {
+  const trimmed = splitName[i].trim();
+  if (trimmed !== "") {
+    trimName.push(trimmed);
+  }
+}
+console.log(trimName);
+
+const sliceName = [];
+for (let i = 0; i < trimName.length; i++) {
+  const sliced = trimName.slice([i], [i + 1]);
+  sliceName.push(sliced);
+}
+console.log(sliceName);
+
+const format = sliceName[0].toUpperCase();
+
+console.log(format);
+
+const joinData = format.Join();
+
+*/
+
+const rawNames = "alice, bob, charlie, dave";
+const splitName = rawNames.split(",");
+const cleanedNames = [];
+
+for (let i = 0; i < splitName.length; i++) {
+  const trimmed = splitName[i].trim();
+  if (trimmed !== "") {
+    const capitalized = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+    cleanedNames.push(capitalized);
+  }
+}
+
+const joinedArr = cleanedNames.join(", ");
+console.log(joinedArr); // → "Alice, Bob, Charlie, Dave"
+
+
+const names = rawNames
+  .split(",")
+  .map(name => name.trim())
+  .filter(name => name !== "")
+  .map(name => name.charAt(0).toUpperCase() + name.slice(1))
+  .join(", ");
+console.log(names);
+
+
+const oneName = "samantha";
+
+
+const firstCharacter = oneName.charAt(0); 
+console.log(firstCharacter);
+
+
+const cap = firstCharacter.charAt(0).toUpperCase(); 
+console.log(cap);
+
+const restCharacters = oneName.slice(1);
+
+console.log(restCharacters);
+
+console.log(cap + restCharacters);
+
+
+
+const anotherName = ["samantha"]
+
+const mapName = anotherName
+
+  .map(name => name.charAt(0).toUpperCase() + name.slice(1));
+
+  console.log(mapName);
+console.log(mapName.join()); 
+
+// ====================
+
+
+const nameList = ["samantha", "charlie", "dave"];
+
+const capitalized = nameList.map(name =>
+  name.charAt(0).toUpperCase() + name.slice(1)
+);
+
+console.log(capitalized); // → ["Samantha", "Charlie", "Dave"]
+
+
+const anotherNameList = ["samantha", "charlie", "dave"];
+
+const cap1 = anotherNameList.map(name=>name.charAt(0).toUpperCase() + name.slice(1)
+
+)

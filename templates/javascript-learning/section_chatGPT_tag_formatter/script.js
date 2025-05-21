@@ -5,22 +5,13 @@ const tagButton = document.querySelector("#tagButton");
 const tagOutput = document.querySelector("#tagOutput");
 
 tagButton.addEventListener("click", function () {
-  const splitInput = tagInput.value.split(",");
-  console.log(splitInput);
+  const input = tagInput.value;
 
-  const cleaned = [];
+  const tags = input
+    .split(",")                            // turn into array
+    .map(tag => tag.trim())               // trim each
+    .filter(tag => tag !== "")            // remove empty
+    .map(tag => "#" + tag);               // prepend hash
 
-  for (let i = 0; i < splitInput.length; i++) {
-    const trimmed = splitInput[i].trim();
-    if (trimmed !== "") {
-      cleaned.push(trimmed);
-    }
-  }
-  console.log(cleaned);
-
-  const finalString = "#" + cleaned.join(" #");
-    console.log(finalString);
-
-  tagOutput.innerText = finalString;
+  tagOutput.innerText = tags.join(" ");
 });
-
