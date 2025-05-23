@@ -75,7 +75,6 @@ const regroup = players1.reduce((acc, current) => {
 console.log(regroup);
 // ========================================================================
 
-
 const names = ["Alice", "Bob", "Amanda", "Charlie", "David", "Becky"];
 /*
 {
@@ -88,7 +87,8 @@ const names = ["Alice", "Bob", "Amanda", "Charlie", "David", "Becky"];
 
 const grouped = names.reduce((acc, name) => {
   const first = name.charAt(0); //store first letter
-  if (!acc[first]) { // if acc name first char does not including itself, 
+  if (!acc[first]) {
+    // if acc name first char does not including itself,
     acc[first] = []; // If there’s not already a group in acc for this letter, create an empty array
   }
 
@@ -98,3 +98,22 @@ const grouped = names.reduce((acc, name) => {
 
 console.log(grouped);
 
+// =======================================================================
+
+const groupedNames = {
+  A: ["Alice", "Amanda"],
+  B: ["Bob", "Becky"],
+  C: ["Charlie"],
+  D: ["David"],
+};
+
+const objValue = Object.values(groupedNames);
+console.log(`--- obj value ---${objValue}`);
+
+const flatten = objValue.flat();
+console.log(`--- flatten ---${flatten}`);
+
+const flattenArr = objValue.reduce((acc, nameGroup) => {
+  return acc.concat(nameGroup);
+}, []);
+console.log(flattenArr);
