@@ -73,3 +73,28 @@ const regroup = players1.reduce((acc, current) => {
 }, {}); // Start with an empty object
 
 console.log(regroup);
+// ========================================================================
+
+
+const names = ["Alice", "Bob", "Amanda", "Charlie", "David", "Becky"];
+/*
+{
+  A: ["Alice", "Amanda"],
+  B: ["Bob", "Becky"],
+  C: ["Charlie"],
+  D: ["David"]
+}
+*/
+
+const grouped = names.reduce((acc, name) => {
+  const first = name.charAt(0); //store first letter
+  if (!acc[first]) { // if acc name first char does not including itself, 
+    acc[first] = []; // If there’s not already a group in acc for this letter, create an empty array
+  }
+
+  acc[first].push(name);
+  return acc;
+}, {}); // start with an empty object {}
+
+console.log(grouped);
+
