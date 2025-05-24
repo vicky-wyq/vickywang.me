@@ -117,3 +117,87 @@ const flattenArr = objValue.reduce((acc, nameGroup) => {
   return acc.concat(nameGroup);
 }, []);
 console.log(flattenArr);
+
+// =======================================================================
+
+const nested = [["a", "b"], ["c"], ["d", "e", "f"]];
+const takeValue = Object.values(nested);
+console.log(`--- value from nested arr ---${takeValue}`);
+
+const buildArr = takeValue.reduce((acc, nameGroup) => {
+  return acc.concat(nameGroup);
+}, []);
+console.log(buildArr);
+
+// =======================================================================
+const playersTeams = [
+  { name: "Alice", team: "Red" },
+  { name: "Bob", team: "Blue" },
+  { name: "Charlie", team: "Red" },
+  { name: "David", team: "Blue" },
+  { name: "Eve", team: "Green" },
+];
+
+const countTeams = playersTeams.reduce((acc, curr) => {
+  const team = curr.team;
+
+  if (!acc[team]) {
+    acc[team] = 0;
+  }
+
+  acc[team] += 1;
+
+  console.log(`--- acc[team] ---${acc[team]}`);
+
+  return acc;
+}, {});
+console.log(countTeams);
+
+// =======================================================================
+
+const fistNames = [
+  "Alice",
+  "Amanda",
+  "Bob",
+  "Becky",
+  "Charlie",
+  "Cleo",
+  "David",
+];
+
+const countFirstChar = fistNames.reduce((acc, curr) => {
+  const firstChar = curr.charAt(0); // "A", "B", etc.
+
+  if (!acc[firstChar]) {
+    acc[firstChar] = 0; // first time: create key
+  }
+
+  acc[firstChar] += 1; // count up
+
+  return acc;
+}, {});
+
+console.log(countFirstChar);
+
+// =======================================================================
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const oddEven = numbers.reduce((acc, curr) => {
+     const even = 'even';
+    const odd = 'odd'
+  if (acc[curr] % 2 === 0) {
+    acc[even] = "even";
+    even = even +1;
+
+  console.log(`--- even ---${even}`);
+
+
+  } else {
+    acc[odd] = "odd";
+    odd = odd +1;
+  }
+
+
+  return acc;
+}, {});
+console.log(oddEven);
