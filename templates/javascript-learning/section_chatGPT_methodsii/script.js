@@ -183,21 +183,35 @@ console.log(countFirstChar);
 
 const numbers = [1, 2, 3, 4, 5, 6];
 const oddEven = numbers.reduce((acc, curr) => {
-     const even = 'even';
-    const odd = 'odd'
-  if (acc[curr] % 2 === 0) {
-    acc[even] = "even";
-    even = even +1;
+  const even = "even";
+  const odd = "odd";
 
-  console.log(`--- even ---${even}`);
-
-
+  if (curr % 2 === 0) {
+    acc[even] = (acc[even] || 0) + 1;
   } else {
-    acc[odd] = "odd";
-    odd = odd +1;
+    acc[odd] = (acc[odd] || 0) + 1;
   }
-
 
   return acc;
 }, {});
 console.log(oddEven);
+
+// =======================================================================
+
+const animals = ["cat", "giraffe", "dog", "elephant", "bee", "lion"];
+const countWords = animals.reduce((acc, curr) => {
+  const short = "short";
+  const long = "long";
+  acc[short] = 0;
+  acc[long] = 0;
+
+  if (curr.length > 3) {
+    acc[long] = (acc[long] || 0) + 1;
+  } else {
+    acc[short] = (acc[short] || 0) + 1;
+  }
+
+  return acc;
+}, {});
+console.log(`--- countWords ---`);
+console.log(countWords);
