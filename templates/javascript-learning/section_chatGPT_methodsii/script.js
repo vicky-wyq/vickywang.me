@@ -202,8 +202,6 @@ const animals = ["cat", "giraffe", "dog", "elephant", "bee", "lion"];
 const countWords = animals.reduce((acc, curr) => {
   const short = "short";
   const long = "long";
-  acc[short] = 0;
-  acc[long] = 0;
 
   if (curr.length > 3) {
     acc[long] = (acc[long] || 0) + 1;
@@ -213,5 +211,102 @@ const countWords = animals.reduce((acc, curr) => {
 
   return acc;
 }, {});
-console.log(`--- countWords ---`);
 console.log(countWords);
+
+// =======================================================================
+
+const letters = ["a", "b", "e", "f", "i", "j", "o", "u"];
+const checkWords = letters.reduce((acc, curr) => {
+  const vowel = "vowel";
+  const consonant = "consonant";
+  const arrVowel = ["a", "e", "i", "o", "u"];
+
+  if (arrVowel.includes(curr)) {
+    acc[vowel] = (acc[vowel] || 0) + 1;
+  } else {
+    acc[consonant] = (acc[consonant] || 0) + 1;
+  }
+
+  return acc;
+}, {});
+console.log(checkWords);
+
+// =======================================================================
+
+const numbersArr = [5, -3, 0, 8, -2, 0, 1];
+const countNumbers = numbersArr.reduce((acc, curr) => {
+  const positive = "positive";
+  const negative = "negative";
+  const zero = "zero";
+
+  if (curr > 0) {
+    acc[positive] = (acc[positive] || 0) + 1;
+  } else if (curr < 0) {
+    acc[negative] = (acc[negative] || 0) + 1;
+  } else {
+    acc[zero] = (acc[zero] || 0) + 1;
+  }
+
+  return acc;
+}, {});
+console.log(`--- countNumbers ---`);
+console.log(countNumbers);
+
+// =======================================================================
+
+const answers = [true, false, true, true, false, false, true];
+const trueOrFalse = answers.reduce((acc, curr) => {
+  const truthy = true;
+  const falsy = false;
+  if (curr === truthy) {
+    acc[String(truthy)] = (acc[truthy] || 0) + 1;
+  } else {
+    acc[String(falsy)] = (acc[falsy] || 0) + 1;
+  }
+
+  return acc;
+}, {});
+console.log(`--- trueOrFalse ---`);
+console.log(trueOrFalse);
+
+// =======================================================================
+
+const namesArr = ["Anna", "Alice", "Bob", "Becky", "Brian", "Coco"];
+const countFirstLetter = namesArr.reduce((acc, curr) => {
+  // const A = "A";
+  // const B = "B";
+  // const C = "C";
+
+  const key = curr.charAt(0).toUpperCase();
+  acc[key] = (acc[key] || 0) + 1;
+
+  return acc;
+}, {});
+console.log(`--- countFirstLetter ---`);
+console.log(countFirstLetter);
+
+// =======================================================================
+
+const wordsArr = ["cat", "elephant", "dog", "giraffe", "bee", "lion"];
+const countFourLetters = wordsArr.reduce((acc, curr) => {
+
+  // let fourMore = wordsArr.filter((word) => word.length > 4);
+
+  // console.log(`--- fourMore ---`);
+  // console.log(fourMore);
+
+  // if(acc.filter((curr) => curr.length > 4)){
+  //   const key = curr.charAt(0);
+  //   acc[key] = (acc[key] || 0) + 1;
+  // }
+
+  if(curr.length > 4){
+    const key = curr.charAt(0);
+    acc[key] = (acc[key] || 0) + 1;
+
+  }
+
+  return acc;
+}, {});
+console.log(`--- countFourLetters ---`);
+console.log(countFourLetters);
