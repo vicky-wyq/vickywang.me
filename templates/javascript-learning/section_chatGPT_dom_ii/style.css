@@ -1,0 +1,18 @@
+.hidden {
+  display: none;
+}
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+body.dark {
+  background-color: #222;
+  color: white;
+}
+
+body.dark button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #666;
+}
