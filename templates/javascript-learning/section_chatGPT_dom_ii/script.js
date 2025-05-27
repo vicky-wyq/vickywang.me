@@ -81,17 +81,38 @@ addItem.addEventListener("click", () => {
   deleteBtn.addEventListener("click", () => {
     li.remove(); // we did not make li why here = remove li?
   });
-
   li.appendChild(deleteBtn);
+
+  li.classList.add("flash");
+  setTimeout(() => {
+  li.classList.remove("flash"); // ⬅️ remove after animation
+}, 300);
 
   itemList.appendChild(li);
   itemInput.value = ""; // clear input
+  
 });
 // ========================================================
-
 
 const themeToggle = document.querySelector("#themeToggle");
 
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
+// ========================================================
+
+const themeToggle1 = document.querySelector("#themeToggle1");
+
+themeToggle1.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  // 🌙 → ☀️ and vice versa
+  if (document.body.classList.contains("dark")) {
+    themeToggle1.innerText = "☀️ Light Mode";
+  } else {
+    themeToggle1.innerText = "🌙 Dark Mode";
+  }
+});
+themeToggle.innerText = document.body.classList.contains("dark")
+  ? "☀️ Light Mode"
+  : "🌙 Dark Mode";

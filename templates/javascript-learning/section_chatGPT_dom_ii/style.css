@@ -16,3 +16,11 @@ body.dark button {
   color: white;
   border: 1px solid #666;
 }
+.flash {
+  animation: flash 0.3s ease;
+}
+
+@keyframes flash {
+  from { background-color: yellow; }
+  to { background-color: transparent; }
+}
