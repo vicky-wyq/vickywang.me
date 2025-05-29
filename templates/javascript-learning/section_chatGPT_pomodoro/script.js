@@ -13,6 +13,23 @@ const modeLabel = document.querySelector("#mode");
 const progress = document.querySelector("#progress");
 
 
+const alarmSound = document.querySelector("#alarmSound");
+if (timeLeft <= 0) {
+  const alarmSound = document.querySelector("#alarmSound");
+  alarmSound.play();
+
+  clearInterval(intervalId);
+  intervalId = null;
+
+  if (mode === "focus") {
+    sessionCount++;
+    switchMode(sessionCount % 4 === 0 ? "long" : "short");
+  } else {
+    switchMode("focus");
+  }
+
+  startTimer(); // auto continue
+}
 
 
 
