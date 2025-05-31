@@ -56,12 +56,19 @@ let count = 0;
 
 addBtn.addEventListener("click", () => {
   count += 1; // update state
+    if (count > 0) {
+    // color red
+    number.style.color = "green";
+  }
 
   number.innerText = count; // update DOM
 });
 subtractBtn.addEventListener("click", () => {
   count -= 1; // update state
-
+  if (count < 0) {
+    // color red
+    number.style.color = "red";
+  }
   number.innerText = count; // update DOM
 });
 resetBtn.addEventListener("click", () => {
