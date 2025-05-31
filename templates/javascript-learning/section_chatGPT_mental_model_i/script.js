@@ -55,41 +55,28 @@ const number = document.querySelector("#number");
 let count = 0;
 
 addBtn.addEventListener("click", () => {
-  count += 1; // update state
-    if (count > 0) {
-    // color red
-    number.style.color = "green";
-  }
-
-  number.innerText = count; // update DOM
+  count += 1;
+  updateDisplay();
 });
+
 subtractBtn.addEventListener("click", () => {
-  count -= 1; // update state
-  if (count < 0) {
-    // color red
-    number.style.color = "red";
-  }
-  number.innerText = count; // update DOM
+  count -= 1;
+  updateDisplay();
 });
+
 resetBtn.addEventListener("click", () => {
-  count = 0; // update state
-
-  number.innerText = count; // update DOM
+  count = 0;
+  updateDisplay();
 });
 
-/*
-Event = ?
-click to reset, so add a click event
+function updateDisplay() {
+  number.innerText = count;
 
-State = ?
-i am going to add to current practice, the default state is 0, but if user click add 1 button, it could be any
-
-DOM = ?
-change this number to 0 = reset
-const number = document.querySelector("#number");
-
-
-Logic = ?
-click - change number to 0
-
-*/
+  if (count > 0) {
+    number.style.color = "green";
+  } else if (count < 0) {
+    number.style.color = "red";
+  } else {
+    number.style.color = "black";
+  }
+}
