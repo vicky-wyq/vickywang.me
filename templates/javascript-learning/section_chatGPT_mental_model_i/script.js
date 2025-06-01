@@ -13,7 +13,7 @@ button.addEventListener("click", () => {
   }
 });
 
-// ================
+// ================================================================
 /*
 
 Answer these:
@@ -80,3 +80,72 @@ function updateDisplay() {
     number.style.color = "black";
   }
 }
+// ================================================================
+/*
+Event(s) = ?
+click to select or enter a number
+
+State(s) = ?
+no default value, probably should be a 0
+
+DOM affected = ?
+when multiply, value changed, dom need to update
+Logic = ?
+enter a number first
+choose how to multiply
+see result
+*/
+
+
+
+// DOM references
+const numInput = document.querySelector("#numInput");
+const multipliers = document.querySelector("#multipliers");
+const result = document.querySelector("#result");
+
+// Update function
+function updateResult() {
+  const inputValue = Number(numInput.value);
+  const multiplier = Number(multipliers.value);
+
+  // Only update if input is a number
+  if (!isNaN(inputValue)) {
+    result.innerText = inputValue * multiplier;
+  } else {
+    result.innerText = "–";
+  }
+}
+
+// Listen for input or multiplier change
+numInput.addEventListener("input", updateResult);
+multipliers.addEventListener("change", updateResult);
+
+
+// ==============================
+/*
+Event(s) = ?
+2 events, one from input total amount, one from tip percentage selection
+
+State(s) = ?
+enter a total(number) first, then nothing changes, when select percentage, calc
+just feel maybe we can set a default percentage, but will do it later
+
+DOM affected = ?
+when typed total, and select a percentage, then, calculate
+the moment select percentage, it start to calc, but must with the total value, or 0 * any percentage =0
+
+Logic = ?
+get total value from dom
+get percentage from dom, multiply with total, when click the percentage, total and tip amount both show up
+ */
+
+// step 1 get everything from html
+const btn10 = document.querySelector("#btn10");
+const btn15 = document.querySelector("#btn15");
+const btn20 = document.querySelector("#btn20");
+
+const billTotal = document.querySelector("#billTotal");
+const tipAmount = document.querySelector("#tipAmount");
+const totalAmount = document.querySelector("#totalAmount");
+
+
