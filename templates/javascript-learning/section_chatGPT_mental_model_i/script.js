@@ -140,12 +140,32 @@ get percentage from dom, multiply with total, when click the percentage, total a
  */
 
 // step 1 get everything from html
+
+const totalInput = document.querySelector("#totalInput");
+const tipAmount = document.querySelector("#tipAmount");
+const tipPercentages = document.querySelector("#tipPercentages");
+
 const btn10 = document.querySelector("#btn10");
 const btn15 = document.querySelector("#btn15");
 const btn20 = document.querySelector("#btn20");
 
-const billTotal = document.querySelector("#billTotal");
-const tipAmount = document.querySelector("#tipAmount");
-const totalAmount = document.querySelector("#totalAmount");
 
+function updateTip(percentage) {
+  const total = Number(totalInput.value);
 
+  if (!isNaN(total)) {
+    const tip = total * percentage;
+    const final = total + tip;
+
+    tipAmount.innerText = tip.toFixed(2); 
+    totalAmount.innerText = final.toFixed(2);
+  } else {
+    tipAmount.innerText = "–";
+    totalAmount.innerText = "–";
+  }
+}
+
+// Add click listeners to buttons
+btn10.addEventListener("click", () => updateTip(0.10)); 
+btn15.addEventListener("click", () => updateTip(0.15));
+btn20.addEventListener("click", () => updateTip(0.20));
