@@ -451,6 +451,12 @@ button {
   border-radius: 32px;
   margin: 12px 0;
 }
+
+button:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px black;
+}
+
 select {
   margin: 12px;
   padding: 7.5px 12px;
