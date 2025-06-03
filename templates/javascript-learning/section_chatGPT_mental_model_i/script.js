@@ -96,8 +96,6 @@ choose how to multiply
 see result
 */
 
-
-
 // DOM references
 const numInput = document.querySelector("#numInput");
 const multipliers = document.querySelector("#multipliers");
@@ -119,7 +117,6 @@ function updateResult() {
 // Listen for input or multiplier change
 numInput.addEventListener("input", updateResult);
 multipliers.addEventListener("change", updateResult);
-
 
 // ==============================
 /*
@@ -149,16 +146,15 @@ const btn10 = document.querySelector("#btn10");
 const btn15 = document.querySelector("#btn15");
 const btn20 = document.querySelector("#btn20");
 
-
 function updateTip(percentage) {
   const total = Number(totalInput.value);
 
   if (!isNaN(total)) {
     const tip = total * percentage;
-    const final = total + tip;
+    const finalTotal = total + tip;
 
-    tipAmount.innerText = tip.toFixed(2); 
-    totalAmount.innerText = final.toFixed(2);
+    tipAmount.innerText = tip.toFixed(2);
+    totalAmount.innerText = finalTotal.toFixed(2);
   } else {
     tipAmount.innerText = "–";
     totalAmount.innerText = "–";
@@ -166,6 +162,54 @@ function updateTip(percentage) {
 }
 
 // Add click listeners to buttons
-btn10.addEventListener("click", () => updateTip(0.10)); 
+btn10.addEventListener("click", () => updateTip(0.1));
 btn15.addEventListener("click", () => updateTip(0.15));
-btn20.addEventListener("click", () => updateTip(0.20));
+btn20.addEventListener("click", () => updateTip(0.2));
+
+// ==============================
+
+const numberInput = document.querySelector("#numberInput");
+const multi2 = document.querySelector("#multi2");
+const resultmulti2 = document.querySelector("#resultmulti2");
+
+function multiplyTow() {
+  const userInput = Number(numberInput.value);
+
+  if (!isNaN(userInput)) {
+    resultmulti2.innerText = (userInput * 2).toFixed(2);
+  } else {
+    resultmulti2.style.color = "red";
+    resultmulti2.innerText = "Please enter a number!";
+  }
+}
+numberInput.addEventListener("input", multiplyTow);
+
+// ==============================
+
+/* 
+Event(s) = ?
+2 events for each input
+
+State(s) = ?
+everytime i said something about state, i am not sure i know this state is the UI state, can u explain?
+DOM affected = ?
+take 2 numbers from dom, calc, then add them back
+Logic = ?
+number a + b
+*/
+
+const inputA = document.querySelector("#inputA");
+const inputB = document.querySelector("#inputB");
+const combineAB = document.querySelector("#combineAB");
+function addAB() {
+  const numberA = Number(inputA.value);
+  const numberB = Number(inputB.value);
+  if (!isNaN(numberA && numberB)) {
+    combineAB.innerText = numberA + numberB;
+  } else {
+    combineAB.style.color = "red";
+    combineAB.innerText = "Please enter a number!";
+  }
+}
+inputA.addEventListener("input", addAB);
+inputB.addEventListener("input", addAB);
