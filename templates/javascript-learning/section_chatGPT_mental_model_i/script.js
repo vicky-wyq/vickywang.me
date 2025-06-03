@@ -218,3 +218,61 @@ function addAB() {
 }
 inputA.addEventListener("input", addAB);
 inputB.addEventListener("input", addAB);
+
+// ==============================
+/*
+Event(s) = ?
+2 inputs by typing numbers, and 4 btns by adding click event, just realized you said using dropdown, i use btn try first round since i build html already
+
+State(s) = ?
+take number and calc logic from dom, then calc
+
+
+DOM affected = ?
+when enter first number, nothing changes, unless not a number
+then select calc methord, untill enter the 2nd number, dom update result
+
+Logic = ?
+it could be +, −, ×, or ÷, depends on which btn user clicks
+
+*/
+
+const addition = document.querySelector("#addition");
+const subtraction = document.querySelector("#subtraction");
+const multiplication = document.querySelector("#multiplication");
+const division = document.querySelector("#division");
+
+const input1stNumber = document.querySelector("#input1stNumber");
+const input2ndNumber = document.querySelector("#input2ndNumber");
+const calcResult = document.querySelector("#calcResult");
+
+function calcNumbers(method) {
+  const number1st = Number(input1stNumber.value);
+  const number2nd = Number(input2ndNumber.value);
+
+  let result;
+
+  if (!isNaN(number1st) && !isNaN(number2nd)) {
+    if (method === "+") {
+      result = number1st + number2nd;
+    } else if (method === "-") {
+      result = number1st - number2nd;
+    } else if (method === "*") {
+      result = number1st * number2nd;
+    } else if (method === "/") {
+      result = number2nd !== 0 ? number1st / number2nd : "Can't divide by 0";
+    }
+
+    calcResult.style.color = "black";
+    calcResult.innerText =
+      typeof result === "number" ? result.toFixed(2) : result;
+  } else {
+    calcResult.style.color = "red";
+    calcResult.innerText = "Please enter valid numbers";
+  }
+}
+
+addition.addEventListener("click", () => calcNumbers("+"));
+subtraction.addEventListener("click", () => calcNumbers("-"));
+multiplication.addEventListener("click", () => calcNumbers("*"));
+division.addEventListener("click", () => calcNumbers("/"));
