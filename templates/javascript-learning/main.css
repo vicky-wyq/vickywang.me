@@ -349,6 +349,9 @@ hr {
 
 
     /* ======== margin ========= */
+    .marginR {
+ margin-right: 12px;
+}
 .noMargin {
   margin: 0 !important;
 }
