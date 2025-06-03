@@ -191,7 +191,11 @@ Event(s) = ?
 2 events for each input
 
 State(s) = ?
-everytime i said something about state, i am not sure i know this state is the UI state, can u explain?
+State = any data your app is tracking internally so it can make decisions or update the UI.
+📦 Think of it like this:
+[ user types ] → [ JS stores value as state ] → [ JS updates the view ]
+
+
 DOM affected = ?
 take 2 numbers from dom, calc, then add them back
 Logic = ?
@@ -204,8 +208,9 @@ const combineAB = document.querySelector("#combineAB");
 function addAB() {
   const numberA = Number(inputA.value);
   const numberB = Number(inputB.value);
-  if (!isNaN(numberA && numberB)) {
-    combineAB.innerText = numberA + numberB;
+  if (!isNaN(numberA) && !isNaN(numberB)) {
+    combineAB.innerText = (numberA + numberB).toFixed(2);
+    combineAB.style.color = "black";
   } else {
     combineAB.style.color = "red";
     combineAB.innerText = "Please enter a number!";
