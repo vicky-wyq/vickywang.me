@@ -277,7 +277,6 @@ subtraction.addEventListener("click", () => calcNumbers("-"));
 multiplication.addEventListener("click", () => calcNumbers("*"));
 division.addEventListener("click", () => calcNumbers("/"));
 
-
 /*
 
 function test(msg) {
@@ -305,10 +304,9 @@ function logClick(message) {
   }
 }
 
-
-btnRight.addEventListener("click",() => logClick("Correct"));
-btnWrong.addEventListener("click",logClick("Wrong"));
-btnThird.addEventListener("click",logClick);
+btnRight.addEventListener("click", () => logClick("Correct"));
+btnWrong.addEventListener("click", logClick("Wrong"));
+btnThird.addEventListener("click", logClick);
 
 // =======================================================================
 
@@ -327,19 +325,40 @@ once a btn being clicked, other button will be auto resume, the clicked one add 
 
 */
 const opBtns = document.querySelectorAll(".opBtn");
-// did not know there is a select all opt
-
+console.log(opBtns);
 function updateBtn(clickedBtn) {
-  // Remove active class from all
-  opBtns.forEach(btn => btn.classList.remove("active"));
-  // did not realized loop btns, and also not familiar with arrow function
-
-  // Add active class only to clicked button
+  opBtns.forEach((btn) => btn.classList.remove("active"));
   clickedBtn.classList.add("active");
-  // this is what i can do, but even not sure where the argument clickedBtn came from
 }
+opBtns.forEach((btn) => {
+  btn.addEventListener("click", () => updateBtn(btn));
+});
+// =======================================================================
+const letterBtns = document.querySelectorAll(".letterBtn");
+console.log(letterBtns);
 
-// Add event listeners
-opBtns.forEach(btn => {
-  btn.addEventListener("click", () => updateBtn(btn)); // argument in this arrow function is btn??? why???
+// letterBtns.forEach((btn) => {
+//   btn.addEventListener("click", function addFeedback() {
+//     const feedback = document.createElement("div");
+//     feedback.textContent = `You clicked ${btn.innerText}`;
+//     btnABC.appendChild(feedback); // ← show it in the page
+//   });
+// });
+
+
+
+letterBtns.forEach((btn) => {
+  btn.addEventListener("click", function addFeedback() {
+    // Remove old feedback if it exists
+    const existing = document.querySelector(".feedback");
+    if (existing) {
+      existing.remove();
+    }
+
+    // Create and add new feedback
+    const feedback = document.createElement("div");
+    feedback.classList.add("feedback"); // mark this as "feedback"
+    feedback.textContent = `You clicked ${btn.innerText}`;
+    btnABC.appendChild(feedback);
+  });
 });
