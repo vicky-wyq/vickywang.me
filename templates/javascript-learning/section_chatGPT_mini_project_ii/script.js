@@ -26,11 +26,14 @@ function count() {
 
   feedback.innerText = `Current characters are ${currentChar}, you have ${100-currentChar} left`;
 
-  if(currentChar>100){
-    feedback.innerText = `You can not exceed 100 characters`;
-        feedback.style.color = "red";
+if (currentChar > 100) {
+  feedback.innerText = `You cannot exceed 100 characters`;
+  feedback.style.color = "red";
+} else {
+  feedback.innerText = `You have ${100 - currentChar} characters left`;
+  feedback.style.color = "black";
+}
 
-  }
 
 
 }
