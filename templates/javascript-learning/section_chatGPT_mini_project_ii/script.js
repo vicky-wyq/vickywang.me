@@ -21,7 +21,6 @@ const textarea = document.querySelector("#textarea");
 const feedback = document.querySelector("#feedback");
 const MAX_CHAR = 100;
 
-
 // function count() {
 //   let currentChar = textarea.value.trim().length;
 
@@ -50,7 +49,50 @@ function count() {
   feedback.style.color = currentChar === MAX_CHAR ? "red" : "black";
 }
 
-
-
-
 textarea.addEventListener("input", count);
+
+// ========================================================================
+/*🧩 Mini Project: Accordion
+✅ Goal
+You have multiple sections (like questions or headers)
+
+When you click one:
+
+Its content expands
+
+Others collapse (optional — for single-open behavior)
+ */
+
+/*
+Event = ?
+click any of the content
+State = ?
+open and close
+
+DOM affected = ?
+show accordion content / hide accordion content
+
+Logic = ?
+default, everything closed
+click any, open
+click any other one, close the opened one, open the one that being clicked
+click the open one, it close itself
+ */
+
+const headers = document.querySelectorAll(".accordion-header");
+
+headers.forEach((header) => {
+  header.addEventListener("click", () => {
+    const content = header.nextElementSibling;
+
+    // Close all other contents
+    document.querySelectorAll(".accordion-content").forEach((section) => {
+      if (section !== content) {
+        section.classList.remove("active");
+      }
+    });
+
+    // Toggle clicked one
+    content.classList.toggle("active");
+  });
+});
