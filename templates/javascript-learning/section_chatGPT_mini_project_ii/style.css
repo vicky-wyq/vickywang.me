@@ -6,3 +6,14 @@ textarea {
   border-radius: 6px;
   border: solid 1px rgb(221, 221, 221);
 }
+
+.accordion-content {
+  display: none;
+  margin: 5px 0;
+}
+.accordion-content.active {
+  display: block;
+}
+.accordion-header {
+  cursor: pointer;
+}
