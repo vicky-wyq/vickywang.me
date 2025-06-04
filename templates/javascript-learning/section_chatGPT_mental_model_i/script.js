@@ -312,7 +312,6 @@ btnThird.addEventListener("click",logClick);
 
 // =======================================================================
 
-const opBtn = document.querySelector("opBtn");
 /*
 Event = ?
 click
@@ -327,3 +326,20 @@ Logic = ?
 once a btn being clicked, other button will be auto resume, the clicked one add class .active
 
 */
+const opBtns = document.querySelectorAll(".opBtn");
+// did not know there is a select all opt
+
+function updateBtn(clickedBtn) {
+  // Remove active class from all
+  opBtns.forEach(btn => btn.classList.remove("active"));
+  // did not realized loop btns, and also not familiar with arrow function
+
+  // Add active class only to clicked button
+  clickedBtn.classList.add("active");
+  // this is what i can do, but even not sure where the argument clickedBtn came from
+}
+
+// Add event listeners
+opBtns.forEach(btn => {
+  btn.addEventListener("click", () => updateBtn(btn)); // argument in this arrow function is btn??? why???
+});
