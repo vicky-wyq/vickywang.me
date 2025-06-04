@@ -345,8 +345,6 @@ console.log(letterBtns);
 //   });
 // });
 
-
-
 letterBtns.forEach((btn) => {
   btn.addEventListener("click", function addFeedback() {
     // Remove old feedback if it exists
@@ -360,5 +358,8 @@ letterBtns.forEach((btn) => {
     feedback.classList.add("feedback"); // mark this as "feedback"
     feedback.textContent = `You clicked ${btn.innerText}`;
     btnABC.appendChild(feedback);
+    setTimeout(() => {
+      feedback.remove();
+    }, 1600);
   });
 });
