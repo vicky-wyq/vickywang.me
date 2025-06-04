@@ -276,3 +276,54 @@ addition.addEventListener("click", () => calcNumbers("+"));
 subtraction.addEventListener("click", () => calcNumbers("-"));
 multiplication.addEventListener("click", () => calcNumbers("*"));
 division.addEventListener("click", () => calcNumbers("/"));
+
+
+/*
+
+function test(msg) {
+  console.log("RUNNING:", msg);
+}
+//JS sees calcNumbers("/") and runs it immediately while the page is loading.
+document.querySelector("button").addEventListener("click", test("Hi"));
+
+//it waits — and runs only when clicked.
+document.querySelector("button").addEventListener("click", () => test("Hi"));
+
+*/
+const btnRight = document.querySelector("#btnRight");
+const btnWrong = document.querySelector("#btnWrong");
+
+// function logClick(message) {
+//   console.log("Feedback:", message);
+// }
+
+function logClick(message) {
+  if (typeof message === "object") {
+    console.log("You passed me an event!");
+  } else {
+    console.log("You passed me a custom message:", message);
+  }
+}
+
+
+btnRight.addEventListener("click",() => logClick("Correct"));
+btnWrong.addEventListener("click",logClick("Wrong"));
+btnThird.addEventListener("click",logClick);
+
+// =======================================================================
+
+const opBtn = document.querySelector("opBtn");
+/*
+Event = ?
+click
+
+State = ?
+change to active
+
+DOM affected = ?
+add .active to current btn
+
+Logic = ?
+once a btn being clicked, other button will be auto resume, the clicked one add class .active
+
+*/
