@@ -79,20 +79,20 @@ click any other one, close the opened one, open the one that being clicked
 click the open one, it close itself
  */
 
-const headers = document.querySelectorAll(".accordion-header");
+const headers = document.querySelectorAll(".accordion-header"); // we only select header cuz it is the only one clickble
 
-headers.forEach((header) => {
+headers.forEach((header) => { // everything in one function, which is for each loop, addEventListener inside of this loop, because any of the header could be clicked, so is it just keep looping, how the looping data flows?
   header.addEventListener("click", () => {
-    const content = header.nextElementSibling;
+    const content = header.nextElementSibling; // nextElementSibling first time see it, base on research, this is the next element next to this header?
 
     // Close all other contents
-    document.querySelectorAll(".accordion-content").forEach((section) => {
-      if (section !== content) {
+    document.querySelectorAll(".accordion-content").forEach((section) => { // another for each, this is looping through content, section as argument, not sure how section argument pass in
+      if (section !== content) { // the logic here is understandble, if section not equal to content, add class active, this is inside of click event
         section.classList.remove("active");
       }
     });
 
     // Toggle clicked one
-    content.classList.toggle("active");
+    content.classList.toggle("active"); // add remove active class
   });
 });
