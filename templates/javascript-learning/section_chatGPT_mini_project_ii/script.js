@@ -104,21 +104,40 @@ headers.forEach((header) => {
 const colorBtn = document.querySelectorAll(".colorBtn");
 const textBox = document.querySelectorAll(".textBox");
 
-console.log(colorBtn); // this is button.colorBtn, not as same as for loop
-// console.log(textBox);
+console.log(colorBtn); 
 
-for (let i = 0; i < colorBtn.length; i++) {
-  const color = colorBtn.getAttribute("data-color");
+const colorBtns = document.querySelectorAll(".colorBtn");
+const textBoxes = document.querySelectorAll(".textBox");
 
-  colorBtn.addEventListener("click", () => {
-    if (color === "red") {
-      // not sure if red is already in, this probably wrong
-      textBox.classList.add("red");
-    } else if (color === "blue") {
-      textBox.classList.add("blue");
-    } else {
-      textBox.classList.add("green");
+// colorBtns.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     const color = btn.getAttribute("data-color");
+
+//     textBoxes.forEach((box) => {
+//       box.style.color = color;
+//     });
+//   });
+// });
+
+/*
+⚙️ Summary of Data Flow (traditional loop version):
+Outer for loop → each button.
+
+addEventListener triggers when that button is clicked.
+
+Inner for loop → all text boxes get styled with the color.
+*/
+
+for (let i = 0; i < colorBtns.length; i++) {
+  const btn = colorBtns[i];
+
+  btn.addEventListener("click", () => {
+    const color = btn.getAttribute("data-color");
+
+    for (let j = 0; j < textBoxes.length; j++) {
+      textBoxes[j].style.color = color;
     }
   });
 }
-console.log(colorBtn[1]); // this is entire html, not as same as console.log colorBtn directly, anyway, lets loop btn now
+
+console.log(colorBtn[1]); 
