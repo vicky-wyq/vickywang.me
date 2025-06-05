@@ -81,13 +81,16 @@ click the open one, it close itself
 
 const headers = document.querySelectorAll(".accordion-header"); // we only select header cuz it is the only one clickble
 
-headers.forEach((header) => { // everything in one function, which is for each loop, addEventListener inside of this loop, because any of the header could be clicked, so is it just keep looping, how the looping data flows?
+headers.forEach((header) => {
+  // everything in one function, which is for each loop, addEventListener inside of this loop, because any of the header could be clicked, so is it just keep looping, how the looping data flows?
   header.addEventListener("click", () => {
     const content = header.nextElementSibling; // nextElementSibling first time see it, base on research, this is the next element next to this header?
 
     // Close all other contents
-    document.querySelectorAll(".accordion-content").forEach((section) => { // another for each, this is looping through content, section as argument, not sure how section argument pass in
-      if (section !== content) { // the logic here is understandble, if section not equal to content, add class active, this is inside of click event
+    document.querySelectorAll(".accordion-content").forEach((section) => {
+      // another for each, this is looping through content, section as argument, not sure how section argument pass in
+      if (section !== content) {
+        // the logic here is understandble, if section not equal to content, add class active, this is inside of click event
         section.classList.remove("active");
       }
     });
@@ -96,3 +99,26 @@ headers.forEach((header) => { // everything in one function, which is for each l
     content.classList.toggle("active"); // add remove active class
   });
 });
+// ========================================================================
+
+const colorBtn = document.querySelectorAll(".colorBtn");
+const textBox = document.querySelectorAll(".textBox");
+
+console.log(colorBtn); // this is button.colorBtn, not as same as for loop
+// console.log(textBox);
+
+for (let i = 0; i < colorBtn.length; i++) {
+  const color = colorBtn.getAttribute("data-color");
+
+  colorBtn.addEventListener("click", () => {
+    if (color === "red") {
+      // not sure if red is already in, this probably wrong
+      textBox.classList.add("red");
+    } else if (color === "blue") {
+      textBox.classList.add("blue");
+    } else {
+      textBox.classList.add("green");
+    }
+  });
+}
+console.log(colorBtn[1]); // this is entire html, not as same as console.log colorBtn directly, anyway, lets loop btn now
