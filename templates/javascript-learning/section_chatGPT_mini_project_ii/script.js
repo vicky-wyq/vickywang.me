@@ -141,3 +141,21 @@ for (let i = 0; i < colorBtns.length; i++) {
 }
 
 console.log(colorBtn[1]); 
+
+// ========================================================================
+
+
+const toggleBtn = document.querySelector("#toggleBtn");
+const items = document.querySelectorAll(".item");
+
+toggleBtn.addEventListener("click", function () {
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+
+    if (item.style.display === "none") {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  }
+});
