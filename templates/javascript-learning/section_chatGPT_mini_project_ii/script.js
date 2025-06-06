@@ -104,7 +104,7 @@ headers.forEach((header) => {
 const colorBtn = document.querySelectorAll(".colorBtn");
 const textBox = document.querySelectorAll(".textBox");
 
-console.log(colorBtn); 
+console.log(colorBtn);
 
 const colorBtns = document.querySelectorAll(".colorBtn");
 const textBoxes = document.querySelectorAll(".textBox");
@@ -140,9 +140,9 @@ for (let i = 0; i < colorBtns.length; i++) {
   });
 }
 
-console.log(colorBtn[1]); 
+console.log(colorBtn[1]);
 
-// ========================================================================
+// =============== Mini Exercise: Toggle Visibility on Items ================
 
 
 const toggleBtn = document.querySelector("#toggleBtn");
@@ -159,3 +159,23 @@ toggleBtn.addEventListener("click", function () {
     }
   }
 });
+// ============ Mini Challenge: Emoji Highlighter ====================
+
+const emojiBtns = document.querySelectorAll(".emojiBtn");
+const feedbackBoxes = document.querySelectorAll(".feedbackBox");
+
+for (let i = 0; i < emojiBtns.length; i++) {
+  emojiBtns[i].addEventListener("click", function () {
+    const emoji = emojiBtns[i].getAttribute("data-emoji");
+
+    let color = "white";
+    if (emoji === "😀") color = "lightgreen";
+    else if (emoji === "😐") color = "lightyellow";
+    else if (emoji === "😠") color = "lightcoral";
+
+    // Apply color to all feedback boxes
+    for (let j = 0; j < feedbackBoxes.length; j++) {
+      feedbackBoxes[j].style.backgroundColor = color;
+    }
+  });
+}
