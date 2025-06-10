@@ -5,8 +5,6 @@ const reduceBtn = document.querySelector("#reduceBtn"); // Click to -1.
 const resetBtn = document.querySelector("#resetBtn"); // Click to reset to 0.
 const feedback = document.querySelector("#feedback");
 
-feedback.style.display = "none";
-
 let count = 0;
 addBtn.addEventListener("click", function () {
   if (count < 10) {
@@ -14,8 +12,10 @@ addBtn.addEventListener("click", function () {
     console.log(count);
     display.innerText = count;
   } else {
-    addBtn.style.backgroundColor = "red";
-    feedback.style.display = "block";
+    // addBtn.style.backgroundColor = "red";
+    addBtn.classList.add("disabledBtn");
+
+    showFeedback();
   }
 });
 reduceBtn.addEventListener("click", function () {
@@ -23,11 +23,22 @@ reduceBtn.addEventListener("click", function () {
     count = count - 1;
     display.innerText = count;
   } else {
-    reduceBtn.style.backgroundColor = "red";
-    feedback.style.display = "block";
+    // reduceBtn.style.backgroundColor = "red";
+    reduceBtn.classList.add("disabledBtn");
+    showFeedback();
   }
 });
+
+function showFeedback() {
+  feedback.classList.remove("hidden");
+}
+
+//disabledBtn
 resetBtn.addEventListener("click", function () {
   count = 0;
   display.innerText = count;
+  addBtn.classList.remove("disabledBtn");
+
+  reduceBtn.classList.remove("disabledBtn");
+  feedback.classList.add("hidden"); // show
 });

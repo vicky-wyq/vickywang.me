@@ -185,6 +185,7 @@ a:hover {
 .active a {
   color: var(--Grey900);
 }
+
 .inactive {
   color: var(--Grey700);
 }
@@ -212,6 +213,7 @@ a:link.textUnderline:hover {
   max-width: 1000px;
   margin: auto;
 }
+
 .wrapper {
   max-width: 1200px;
   margin: auto;
@@ -324,34 +326,44 @@ hr {
   }
 }
 
-    /* Override Prism.js background color */
-    :not(pre)>code[class*=language-], pre[class*=language-] {
-      background: var(--Grey200) !important; /* Your preferred background color */
-      color: var(--Grey900) !important; /* Your preferred text color */
-    }
-
-    pre[class*=language-] {
-      width: 100% !important; /* Ensure the width is 100% */
-      padding: 10px;
-      border: 1px solid var(--Grey400);
-      border-radius: 4px;
-      overflow: auto;
-      box-sizing: border-box; /* Include padding and border in width */
-      margin: 0; /* Remove default margin */
-    }
-
-    code[class*=language-] {
-      font-family: Consolas, "Courier New", monospace;
-      background-color: inherit; /* Ensure background color is inherited */
-      color: inherit; /* Ensure text color is inherited */
-      font-size: 1em; /* Adjust font size */
-    }
-
-
-    /* ======== margin ========= */
-    .marginR {
- margin-right: 12px;
+/* Override Prism.js background color */
+:not(pre)>code[class*=language-],
+pre[class*=language-] {
+  background: var(--Grey200) !important;
+  /* Your preferred background color */
+  color: var(--Grey900) !important;
+  /* Your preferred text color */
 }
+
+pre[class*=language-] {
+  width: 100% !important;
+  /* Ensure the width is 100% */
+  padding: 10px;
+  border: 1px solid var(--Grey400);
+  border-radius: 4px;
+  overflow: auto;
+  box-sizing: border-box;
+  /* Include padding and border in width */
+  margin: 0;
+  /* Remove default margin */
+}
+
+code[class*=language-] {
+  font-family: Consolas, "Courier New", monospace;
+  background-color: inherit;
+  /* Ensure background color is inherited */
+  color: inherit;
+  /* Ensure text color is inherited */
+  font-size: 1em;
+  /* Adjust font size */
+}
+
+
+/* ======== margin ========= */
+.marginR {
+  margin-right: 12px;
+}
+
 .noMargin {
   margin: 0 !important;
 }
@@ -427,6 +439,7 @@ ol {
   margin: 0;
   padding: 0;
 }
+
 ul,
 li {
   margin-top: clamp(0.15em, 0.3vw, 0.3em);
@@ -440,6 +453,7 @@ ul.listLoose li {
   margin-bottom: clamp(0.35em, 0.6vw, 0.7em);
   line-height: 1.6;
 }
+
 select {
   margin-right: 12px;
   border: 1px solid #ccc;
@@ -453,13 +467,24 @@ button {
   font-weight: 400;
   border-radius: 32px;
   margin: 12px 0;
+  background-color: var(--Grey300);
 }
 
 button:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px black;
+  box-shadow: inset 0 0 0 2px var(--Grey700);
 }
 
+button:disabled {
+  outline: none;
+  color: var(--Grey400);
+  background-color: var(--Grey400);
+}
+.disabledBtn{
+  outline: none;
+  color: var(--Grey600);
+  background-color: var(--Grey400);
+}
 select {
   margin: 12px;
   padding: 7.5px 12px;
@@ -470,6 +495,7 @@ select {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   width: 250px;
 }
+
 select:focus {
   border-color: #0077ff;
   box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
