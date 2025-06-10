@@ -477,7 +477,7 @@ button:focus {
 
 button:disabled {
   outline: none;
-  color: var(--Grey400);
+  color: var(--Grey600);
   background-color: var(--Grey400);
 }
 .disabledBtn{
