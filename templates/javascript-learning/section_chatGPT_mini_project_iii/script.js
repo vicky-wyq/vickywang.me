@@ -4,8 +4,8 @@ const addBtn = document.querySelector("#addBtn"); // Click to +1.
 const reduceBtn = document.querySelector("#reduceBtn"); // Click to -1.
 const resetBtn = document.querySelector("#resetBtn"); // Click to reset to 0.
 const feedback = document.querySelector("#feedback");
-let count = 0;
 
+const progressBar = document.querySelector("#progressBar");
 
 /*
 addBtn.addEventListener("click", function () {
@@ -46,19 +46,25 @@ resetBtn.addEventListener("click", function () {
 });
  */
 
+let count = 0;
 
+const MAX = 10;
 
 function updateDisplay() {
   display.innerText = count;
   feedback.classList.add("hidden");
 
-  // Auto-disable logic
-  addBtn.disabled = count >= 10;
+  // Button disable logic
+  addBtn.disabled = count >= MAX;
   reduceBtn.disabled = count <= 0;
+
+  // Progress bar update
+  const percent = (count / MAX) * 100;
+  progressBar.style.width = percent + "%";
 }
 
 addBtn.addEventListener("click", function () {
-  if (count < 10) {
+  if (count < MAX) {
     count++;
     updateDisplay();
   } else {
@@ -83,3 +89,6 @@ resetBtn.addEventListener("click", function () {
 function showFeedback() {
   feedback.classList.remove("hidden");
 }
+
+
+
