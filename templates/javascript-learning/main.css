@@ -535,3 +535,81 @@ input:focus {
   color: gray;
   opacity: 0.7;
 }
+
+/* alignment */
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start !important;
+}
+
+.rowToColumn {
+  display: flex;
+  flex-direction: row;
+}
+
+.align-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.align-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.align-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.align-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.align-left {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.centerHorz {
+  display: flex;
+  justify-content: center;
+}
+
+.centerVer {
+  display: flex;
+  align-items: center;
+}
+
+.centerVH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.centerHorz-spacearound {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* alignment */
