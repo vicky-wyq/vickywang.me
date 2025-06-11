@@ -1,0 +1,19 @@
+#strengthBar {
+  height: 10px;
+  width: 0%;
+  background-color: red;
+  transition: width 0.3s, background-color 0.3s;
+  margin-top: 5px;
+}
+.weak {
+  width: 30%;
+  background-color: red;
+}
+.medium {
+  width: 60%;
+  background-color: orange;
+}
+.strong {
+  width: 100%;
+  background-color: green;
+}

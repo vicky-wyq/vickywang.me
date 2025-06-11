@@ -124,3 +124,49 @@ for (let i = 0; i < lights1.length; i++) {
     light.classList.toggle("on1"); // just toggle this one
   });
 }
+// ===========================================================================
+
+// add stars into js
+// loop through stars, check which one is clicked
+// from the one being clicked, fill all starts before or equal that click
+
+const stars = document.querySelectorAll(".star"); // ★
+const feedbackStar = document.querySelector("#feedbackStar");
+
+for (let i = 0; i < stars.length; i++) {
+  let star = stars[i];
+
+  star.addEventListener("click", function () {
+    for (let k = 0; k < stars.length; k++) {
+      stars[k].innerText = "☆";
+    }
+
+    for (let j = 0; j <= i; j++) {
+      stars[j].innerText = "★";
+    }
+    feedbackStar.innerText = `You rated: ${i + 1} star${i > 0 ? "s" : ""}`;
+  });
+}
+
+// ===========================================================================
+
+const box = document.querySelector("#box");
+const colorBtns = document.querySelectorAll(".colorBtn");
+
+for (let i = 0; i < colorBtns.length; i++) {
+  const btn = colorBtns[i];
+
+  btn.addEventListener("click", function () {
+    const selectedColor = btn.getAttribute("data-color");
+    box.style.backgroundColor = selectedColor;
+
+    // Restart animation
+    box.classList.remove("animate");
+    void box.offsetWidth; // 💡 forces reflow
+    box.classList.add("animate");
+
+    const clickSound = document.querySelector("#clickSound");
+    clickSound.currentTime = 0; // rewind if already playing
+    clickSound.play();
+  });
+}
