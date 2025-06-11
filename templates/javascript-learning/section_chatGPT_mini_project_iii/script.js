@@ -59,8 +59,8 @@ function updateDisplay() {
   reduceBtn.disabled = count <= 0;
 
   // Progress bar update
-  const percent = (count / MAX) * 100;
-  progressBar.style.width = percent + "%";
+  const percent = (count / MAX) * 100; // why * 100?
+  progressBar.style.width = percent + "%"; // why percent + "%"
 }
 
 addBtn.addEventListener("click", function () {
@@ -89,6 +89,16 @@ resetBtn.addEventListener("click", function () {
 function showFeedback() {
   feedback.classList.remove("hidden");
 }
+
+
+
+// ===========================================================================
+const slider = document.querySelector("#volume"); 
+const volumeValue = document.querySelector("#volumeValue");
+
+slider.addEventListener("input", function () {
+  volumeValue.textContent = slider.value;
+});
 
 
 
