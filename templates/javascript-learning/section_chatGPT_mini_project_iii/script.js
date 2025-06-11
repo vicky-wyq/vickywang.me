@@ -90,15 +90,37 @@ function showFeedback() {
   feedback.classList.remove("hidden");
 }
 
-
-
 // ===========================================================================
-const slider = document.querySelector("#volume"); 
+const slider = document.querySelector("#volume");
 const volumeValue = document.querySelector("#volumeValue");
 
 slider.addEventListener("input", function () {
   volumeValue.textContent = slider.value;
 });
 
+// ===========================================================================
+// 📌 First loop = reset all 📌 Second step = activate clicked one
+const lights = document.querySelectorAll(".light");
+console.log(lights);
+for (let i = 0; i < lights.length; i++) {
+  let light = lights[i];
 
+  light.addEventListener("click", function () {
+    // Turn off all lights first
+    for (let j = 0; j < lights.length; j++) {
+      lights[j].classList.remove("on");
+    }
 
+    // Then turn on the clicked one
+    light.classList.add("on");
+  });
+}
+// toggle
+
+const lights1 = document.querySelectorAll(".panel");
+for (let i = 0; i < lights1.length; i++) {
+  let light = lights1[i];
+  light.addEventListener("click", function () {
+    light.classList.toggle("on1"); // just toggle this one
+  });
+}
