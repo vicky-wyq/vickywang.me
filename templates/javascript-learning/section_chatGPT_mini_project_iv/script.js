@@ -30,8 +30,14 @@ const passwordInputToggle = document.querySelector("#passwordInput");
 const toggleBtn = document.querySelector("#toggleBtn"); 
 
 toggleBtn.addEventListener("click", function () { 
-  const isHidden = passwordInputToggle.type === "password"; // are you saying here by default = hidden, when passwordInputToggle.type not equal to "password"? after click show?
+  const isHidden = passwordInputToggle.type === "password";
 
-  passwordInputToggle.type = isHidden ? "text" : "password"; 
-  toggleBtn.textContent = isHidden ? "Hide" : "Show";
+if (isHidden) { // here if hidden or not hidden? current default value = "password" === hidden, then why below is passwordInputToggle.type = "text"
+  passwordInputToggle.type = "text"; 
+  toggleBtn.textContent = "Hide";    
+} else {
+  passwordInputToggle.type = "password"; 
+  toggleBtn.textContent = "Show";       
+}
+
 });
