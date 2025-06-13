@@ -26,12 +26,12 @@ passwordInput.addEventListener("input", function () {
 
 
 
-const passwordInputToggle = document.querySelector("#passwordInput"); // add input to js from html
-const toggleBtn = document.querySelector("#toggleBtn"); // add btn to js from html
+const passwordInputToggle = document.querySelector("#passwordInput");
+const toggleBtn = document.querySelector("#toggleBtn"); 
 
-toggleBtn.addEventListener("click", function () { //click btn
-  const isHidden = passwordInputToggle.type === "password"; // new variable called isHidden, not sure what is .type, what is "password"
+toggleBtn.addEventListener("click", function () { 
+  const isHidden = passwordInputToggle.type === "password"; // are you saying here by default = hidden, when passwordInputToggle.type not equal to "password"? after click show?
 
-  passwordInputToggle.type = isHidden ? "text" : "password"; // if hidden, show pw?
-  toggleBtn.textContent = isHidden ? "Hide" : "Show"; // btn txt
+  passwordInputToggle.type = isHidden ? "text" : "password"; 
+  toggleBtn.textContent = isHidden ? "Hide" : "Show";
 });
