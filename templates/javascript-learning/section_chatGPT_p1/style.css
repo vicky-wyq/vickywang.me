@@ -1,5 +1,10 @@
-#statusText {
-  font-weight: bold;
+.hidden {
+  display: none;
+}
+
+#spinner {
+  font-size: 24px;
+  margin: 10px 0;
 }
 .success {
   color: green;
