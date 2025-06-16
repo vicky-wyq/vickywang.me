@@ -38,9 +38,18 @@
   border: 1px solid #ccc;
   cursor: grab;
 }
+#sortable-list li.placeholder {
+  height: 30px;
+  background: #cce5ff;
+  border: 2px dashed #3399ff;
+  margin: 5px 0;
+}
+
 .dragging {
   opacity: 0.5;
 }
+
 .drop-target {
-  border-top: 3px dashed #aaa;
+  border-top: 4px dashed #aaa;
+  transition: border 0.2s ease;
 }
