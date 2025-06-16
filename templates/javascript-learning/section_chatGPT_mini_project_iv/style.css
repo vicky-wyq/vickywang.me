@@ -17,3 +17,11 @@
   width: 100%;
   background-color: green;
 }
+.hidden {
+  display: none;
+}
+
+#box {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}

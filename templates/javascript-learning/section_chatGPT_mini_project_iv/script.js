@@ -12,32 +12,72 @@ passwordInput.addEventListener("input", function () {
   if (/[0-9]/.test(value)) strength++;
   if (/[^A-Za-z0-9]/.test(value)) strength++;
 
-  if (strength <= 1) { // <1 then it will be nothing lol
+  if (strength <= 1) {
+    // <1 then it will be nothing lol
     strengthText.textContent = "Strength: Weak";
     strengthBar.className = "weak";
-  } else if (strength === 2 || strength === 3) { // got it
+  } else if (strength === 2 || strength === 3) {
+    // got it
     strengthText.textContent = "Strength: Medium";
     strengthBar.className = "medium";
   } else {
-    strengthText.textContent = "Strength: Strong"; 
+    strengthText.textContent = "Strength: Strong";
     strengthBar.className = "strong";
   }
 });
 
-
+// ========
 
 const passwordInputToggle = document.querySelector("#passwordInput");
-const toggleBtn = document.querySelector("#toggleBtn"); 
+const toggleBtn = document.querySelector("#toggleBtn");
 
-toggleBtn.addEventListener("click", function () { 
+toggleBtn.addEventListener("click", function () {
   const isHidden = passwordInputToggle.type === "password";
 
-if (isHidden) { // here if hidden or not hidden? current default value = "password" === hidden, then why below is passwordInputToggle.type = "text"
-  passwordInputToggle.type = "text"; 
-  toggleBtn.textContent = "Hide";    
-} else {
-  passwordInputToggle.type = "password"; 
-  toggleBtn.textContent = "Show";       
-}
+  if (isHidden) {
+    // here if hidden or not hidden? current default value = "password" === hidden, then why below is passwordInputToggle.type = "text"
+    passwordInputToggle.type = "text";
+    toggleBtn.textContent = "Hide";
+  } else {
+    passwordInputToggle.type = "password";
+    toggleBtn.textContent = "Show";
+  }
+});
+// ========
 
+const toggleSecretBtn = document.querySelector("#toggleSecretBtn");
+const message = document.querySelector("#secretMessage");
+
+toggleSecretBtn.addEventListener("click", function () {
+  const isHidden = message.classList.contains("hidden");
+
+  if (isHidden) {
+    message.classList.remove("hidden"); // Show the message
+    toggleSecretBtn.textContent = "Hide Message"; // Update button
+  } else {
+    message.classList.add("hidden"); // Hide the message
+    toggleSecretBtn.textContent = "Show Message"; // Update button
+  }
+});
+
+// ========
+
+
+const passwordInput1 = document.querySelector("#passwordInput1");
+const unlockBtn = document.querySelector("#unlockBtn");
+const box = document.querySelector("#box");
+const feedback = document.querySelector("#feedback");
+
+const SECRET = "openSesame";
+
+unlockBtn.addEventListener("click", function () {
+  const entered = passwordInput1.value;
+
+  if (entered === SECRET) {
+    box.classList.remove("hidden");
+    feedback.classList.add("hidden"); 
+  } else {
+    box.classList.add("hidden");
+    feedback.classList.remove("hidden");
+  }
 });
