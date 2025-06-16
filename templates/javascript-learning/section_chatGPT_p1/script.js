@@ -25,41 +25,48 @@ submitBtn.addEventListener("click", function () {
 });
 
 //==================================================================
+const list = document.getElementById("sortable-list");
+let draggedItem = null;
+let placeholder = document.createElement("li");
+placeholder.className = "placeholder";
 
-const listItems = document.querySelectorAll("#sortable-list li");
-let draggedItem = null; // not sure i understand null
-
-listItems.forEach(item => { // loop querySelectorAll
-  item.addEventListener("dragstart", () => {
-    draggedItem = item;
-    // item.classList.add("dragging");
-    item.classList.add("drop-target");
-
-  });
-
-  item.addEventListener("dragend", () => {
-    draggedItem = null;
-    // item.classList.remove("dragging");
-    item.classList.remove("drop-target");
-
-  });
-
-  item.addEventListener("dragover", (e) => { // never see the e before
-    e.preventDefault(); // Required for drop to work
-  });
-
-  item.addEventListener("drop", () => {
-    if (draggedItem && draggedItem !== item) { // if change order
-      const list = item.parentNode; // what is parentNode
-      const items = Array.from(list.children); // what are these???
-      const draggedIndex = items.indexOf(draggedItem); 
-      const targetIndex = items.indexOf(item);
-
-      if (draggedIndex < targetIndex) {
-        list.insertBefore(draggedItem, item.nextSibling);
-      } else {
-        list.insertBefore(draggedItem, item);
-      }
-    }
-  });
+list.addEventListener("dragstart", (e) => {
+  draggedItem = e.target;
+  setTimeout(() => draggedItem.style.display = "none", 0); // hide original while dragging
 });
+
+list.addEventListener("dragend", () => {
+  draggedItem.style.display = "block";
+  draggedItem = null;
+  placeholder.remove(); // remove gap
+});
+
+list.addEventListener("dragover", (e) => {
+  e.preventDefault();
+
+  const afterElement = getDragAfterElement(list, e.clientY);
+  if (afterElement === null) {
+    list.appendChild(placeholder);
+  } else {
+    list.insertBefore(placeholder, afterElement);
+  }
+});
+
+list.addEventListener("drop", () => {
+  list.insertBefore(draggedItem, placeholder);
+  placeholder.remove();
+});
+function getDragAfterElement(container, y) {
+  const items = [...container.querySelectorAll("li:not(.placeholder):not([style*='display: none'])")];
+
+  return items.reduce((closest, child) => {
+    const box = child.getBoundingClientRect();
+    const offset = y - box.top - box.height / 2;
+
+    if (offset < 0 && offset > closest.offset) {
+      return { offset: offset, element: child };
+    } else {
+      return closest;
+    }
+  }, { offset: Number.NEGATIVE_INFINITY }).element;
+}
