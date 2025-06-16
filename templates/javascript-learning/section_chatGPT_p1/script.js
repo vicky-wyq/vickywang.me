@@ -23,3 +23,43 @@ submitBtn.addEventListener("click", function () {
     }
   }, 2000);
 });
+
+//==================================================================
+
+const listItems = document.querySelectorAll("#sortable-list li");
+let draggedItem = null; // not sure i understand null
+
+listItems.forEach(item => { // loop querySelectorAll
+  item.addEventListener("dragstart", () => {
+    draggedItem = item;
+    // item.classList.add("dragging");
+    item.classList.add("drop-target");
+
+  });
+
+  item.addEventListener("dragend", () => {
+    draggedItem = null;
+    // item.classList.remove("dragging");
+    item.classList.remove("drop-target");
+
+  });
+
+  item.addEventListener("dragover", (e) => { // never see the e before
+    e.preventDefault(); // Required for drop to work
+  });
+
+  item.addEventListener("drop", () => {
+    if (draggedItem && draggedItem !== item) { // if change order
+      const list = item.parentNode; // what is parentNode
+      const items = Array.from(list.children); // what are these???
+      const draggedIndex = items.indexOf(draggedItem); 
+      const targetIndex = items.indexOf(item);
+
+      if (draggedIndex < targetIndex) {
+        list.insertBefore(draggedItem, item.nextSibling);
+      } else {
+        list.insertBefore(draggedItem, item);
+      }
+    }
+  });
+});

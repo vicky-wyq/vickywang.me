@@ -24,3 +24,23 @@
 .error {
   color: red;
 }
+
+
+#sortable-list {
+  list-style: none;
+  padding: 0;
+  width: 200px;
+}
+#sortable-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #eee;
+  border: 1px solid #ccc;
+  cursor: grab;
+}
+.dragging {
+  opacity: 0.5;
+}
+.drop-target {
+  border-top: 3px dashed #aaa;
+}
