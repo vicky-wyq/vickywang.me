@@ -1,0 +1,9 @@
+#statusText {
+  font-weight: bold;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
