@@ -50,10 +50,6 @@
   margin: 5px 0;
 }
 
-.dragging {
-  background-color: gold !important;
-  opacity: 0.5;
-}
 
 .drop-target {
   border-top: 4px dashed #aaa;
@@ -88,14 +84,14 @@
   border-color: #333;
 }
 .draggable {
-  width: 100px;
   padding: 10px;
-  background: lightblue;
+  background: #eee;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
   cursor: grab;
-  margin-bottom: 20px;
 }
 .drop-zone {
-  height: 100px;
+  height: 300px;
   border: 2px dashed gray;
   display: flex;
   align-items: center;
@@ -104,4 +100,14 @@
 .drop-zone.active {
   background: #f0f0f0;
   border-color: dodgerblue;
+}
+
+.dragging {
+  background-color: gold !important;
+  opacity: 0.5;
+}
+
+
+.drop-zone .draggable {
+  margin: 5px;
 }

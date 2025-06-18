@@ -84,36 +84,36 @@ function getDragAfterElement(container, y) {
 }
 
 //==================================================================
-// const box = document.querySelector("#dragBox");
-// const zone = document.querySelector("#dropZone");
+const box = document.querySelector("#dragBox");
+const zone1 = document.querySelector("#dropZone");
 
-// box.addEventListener("dragstart", function () {
-//   box.classList.add("dragging");
-// });
+box.addEventListener("dragstart", function () {
+  box.classList.add("dragging");
+});
 
-// box.addEventListener("dragend", function () {
-//   box.classList.remove("dragging");
-// });
+box.addEventListener("dragend", function () {
+  box.classList.remove("dragging");
+});
 
-// // Allow drop
-// zone.addEventListener("dragover", function (e) {
-//   e.preventDefault(); // required
-//   zone.classList.add("active");
-// });
+// Allow drop
+zone1.addEventListener("dragover", function (e) {
+  e.preventDefault(); // required
+  zone1.classList.add("active");
+});
 
-// zone.addEventListener("dragleave", function () {
-//   zone.classList.remove("active");
-// });
+zone1.addEventListener("dragleave", function () {
+  zone1.classList.remove("active");
+});
 
-// // On drop: move the box
-// zone.addEventListener("drop", function () {
-//   zone.classList.remove("active");
-//   zone.appendChild(box);
-// });
+// On drop: move the box
+zone1.addEventListener("drop", function () {
+  zone1.classList.remove("active");
+  zone1.appendChild(box);
+});
 
 
 
-//===
+//========================================================================
 let draggedItem1 = null; // buila variable as toggle for future use?
 
 const item = document.querySelector(".draggable");
@@ -143,4 +143,38 @@ zone.addEventListener("drop", function () {
     zone.appendChild(draggedItem1); // 🎯 Drop logic
   }
   zone.classList.remove("active"); // Reset visual, got it
+});
+//========================================================================
+let dragged = null;
+
+const items = document.querySelectorAll(".draggable");
+const dropZone = document.querySelector(".drop-zone");
+
+items.forEach(item => {
+  item.addEventListener("dragstart", () => {
+    dragged = item;
+    item.classList.add("dragging");
+  });
+
+  item.addEventListener("dragend", () => {
+    dragged = null;
+    item.classList.remove("dragging");
+  });
+});
+
+dropZone.addEventListener("dragover", e => {
+  e.preventDefault();
+  dropZone.classList.add("active");
+});
+
+dropZone.addEventListener("dragleave", () => {
+  dropZone.classList.remove("active");
+});
+
+dropZone.addEventListener("drop", () => {
+  dropZone.classList.remove("active");
+  if (dragged) {
+    dropZone.appendChild(dragged);
+    dragged.setAttribute("draggable", "true"); // just in case
+  }
 });
