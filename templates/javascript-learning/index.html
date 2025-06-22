@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>JavaScript Learning</title>
-  <link rel="stylesheet" href="main.css" />
+  <!-- <link rel="stylesheet" href="main.css" /> -->
+  <link rel="stylesheet" href="../main.css" />
+
   <!-- Include Prism.js CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet">
   <!-- Google Font Preconnect-->
@@ -17,163 +19,434 @@
   <!--sitewide font-family: 'Lato', sans-serif; -->
 </head>
 
-<body class="wrapper">
+<body>
   <br>
 
-  <header>
-    <h1>JavaScript Learning</h1>
+  <header class="wrapper">
+    <div class="Grid Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <h1>JavaScript Learning</h1>
+        </div>
+      </div>
+    </div>
   </header>
-  <hr>
   <br>
   <br>
   <br>
   <br>
-  <main>
-    <h1>Projects</h1>
-    <a class="textUnderline" href="project_guess_number">
-      <h3>Guess My Number!</h3>
-    </a>
-    <a class="textUnderline" href="project_modal">
-      <h3>Modal</h3>
-    </a>
-    <a class="textUnderline" href="project_pig_game">
-      <h3>Pig Game</h3>
-    </a>
-    <a class="textUnderline" href="project_filterable_list">
-      <h3>A filterable employee list</h3>
-    </a>
-    <a class="textUnderline" href="project_todo_list">
-      <h3> Simple To-Do List </h3>
-    </a>
+  <main class="wrapper">
+
+    <div class="Grid Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4 class="fontWeight500" class="fontWeight500">New Roadmap | Uses builder-loop to reinforce learning</h4>
+
+          <h6><strong>Goal</strong>: Build scalable mental models + reusable code patterns</h6>
+          <h6><strong>Principle</strong>: Every step builds both a small project and a deeper system insight</h6>
+          <h6><strong>Style</strong>: Think first, build second, then refactor with higher clarity</h6>
+          <br>
+          <br>
+
+          <a class="textUnderline" href="new_roadmap_phase1">
+            <h6 class="fontWeight500">Phase 0: Rethink Practice as System Creation</h6>
+          </a>
+          <br>
+
+          <ul class="listCircle">
+            <li>Start thinking of each JS practice project as a “unit of logic” for future reuse
+            </li>
+            <li>
+              For example, instead of "build a modal," think: → “Design a reusable visibility toggler + escape key handler”
+            </li>
+            <li>
+              Track learnings → Keep keywords: flow, trigger, state, side effect, DOM link, data layer</li>
+          </ul>
+
+
+
+
+          <br>
+          <br>
+
+          <a class="textUnderline" href="new_roadmap_phase1">
+            <h6 class="fontWeight500">Phase 1: Core Mechanics (Refined Muscle Memory)</h6>
+          </a>
+          <br>
+          <h6><strong>Objective</strong>: Deepen understanding of language fundamentals by building your own “toolkit”</h6>
+          <div tabindex="-1" class="_tableWrapper_16hzy_14 group flex w-fit flex-col-reverse">
+            <table data-start="1242" data-end="1761" class="w-fit min-w-(--thread-content-width)">
+              <thead data-start="1242" data-end="1292">
+                <tr data-start="1242" data-end="1292">
+                  <th data-start="1242" data-end="1252" data-col-size="sm"><strong>Concept</strong></th>
+                  <th data-start="1252" data-end="1267" data-col-size="sm"><strong>Mini Project</strong></th>
+                  <th data-start="1267" data-end="1292" data-col-size="sm"><strong>System Thinking Angle</strong></th>
+                </tr>
+              </thead>
+              <tbody data-start="1344" data-end="1761">
+                <tr data-start="1344" data-end="1425">
+                  <td data-start="1344" data-end="1364" data-col-size="sm">Variables &amp; Types</td>
+                  <td data-start="1364" data-end="1381" data-col-size="sm">Budget Tracker</td>
+                  <td data-start="1381" data-end="1425" data-col-size="sm">Primitive vs Reference: memory, mutation</td>
+                </tr>
+                <tr data-start="1426" data-end="1499">
+                  <td data-start="1426" data-end="1446" data-col-size="sm">Functions &amp; Scope</td>
+                  <td data-start="1446" data-end="1459" data-col-size="sm">Calculator</td>
+                  <td data-start="1459" data-end="1499" data-col-size="sm">Input/output pipeline, encapsulation</td>
+                </tr>
+                <tr data-start="1500" data-end="1576">
+                  <td data-start="1500" data-end="1519" data-col-size="sm">Arrays &amp; Objects</td>
+                  <td data-start="1519" data-end="1534" data-col-size="sm">Grocery List</td>
+                  <td data-start="1534" data-end="1576" data-col-size="sm">Structure for state, iteration control</td>
+                </tr>
+                <tr data-start="1577" data-end="1651">
+                  <td data-start="1577" data-end="1593" data-col-size="sm">Loops &amp; Logic</td>
+                  <td data-start="1593" data-end="1609" data-col-size="sm">Habit Tracker</td>
+                  <td data-start="1609" data-end="1651" data-col-size="sm">Flow control, trigger-condition-output</td>
+                </tr>
+                <tr data-start="1652" data-end="1705">
+                  <td data-start="1652" data-end="1658" data-col-size="sm">DOM</td>
+                  <td data-start="1658" data-end="1675" data-col-size="sm">Image Carousel</td>
+                  <td data-start="1675" data-end="1705" data-col-size="sm">UI as reactive data target</td>
+                </tr>
+                <tr data-start="1706" data-end="1761">
+                  <td data-start="1706" data-end="1715" data-col-size="sm">Events</td>
+                  <td data-start="1715" data-end="1729" data-col-size="sm">Modal Popup</td>
+                  <td data-start="1729" data-end="1761" data-col-size="sm">User intent as logic trigger</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <h6><strong>Tip</strong>: Always isolate 1 concept per file before merging.</h6>
+
+
+          <br>
+          <br>
+
+          <a class="textUnderline" href="new_roadmap_phase2">
+            <h6 class="fontWeight500">Phase 2: Data + Async</h6>
+          </a>
+          <br>
+          <h6><strong>Objective</strong>: Master state/data flow, async behavior, error-proof systems</h6>
+          <br>
+
+          <table data-start="1935" data-end="2285" class="w-fit min-w-(--thread-content-width)">
+            <thead data-start="1935" data-end="1975">
+              <tr data-start="1935" data-end="1975">
+                <th data-start="1935" data-end="1945" data-col-size="sm"><strong>Concept</strong></th>
+                <th data-start="1945" data-end="1960" data-col-size="sm"><strong>Mini Project</strong></th>
+                <th data-start="1960" data-end="1975" data-col-size="md"><strong>System Lens</strong></th>
+              </tr>
+            </thead>
+            <tbody data-start="2016" data-end="2285">
+              <tr data-start="2016" data-end="2089">
+                <td data-start="2016" data-end="2028" data-col-size="sm"><code data-start="2018" data-end="2027">fetch()</code></td>
+                <td data-start="2028" data-end="2042" data-col-size="sm">Weather App</td>
+                <td data-start="2042" data-end="2089" data-col-size="md">Input → API → parse → display → fail states</td>
+              </tr>
+              <tr data-start="2090" data-end="2152">
+                <td data-start="2090" data-end="2101" data-col-size="sm">Promises</td>
+                <td data-start="2101" data-end="2119" data-col-size="sm">Quote Generator</td>
+                <td data-start="2119" data-end="2152" data-col-size="md">Timing model, race conditions</td>
+              </tr>
+              <tr data-start="2153" data-end="2223">
+                <td data-start="2153" data-end="2167" data-col-size="sm">Async/Await</td>
+                <td data-start="2167" data-end="2188" data-col-size="sm">Currency Converter</td>
+                <td data-start="2188" data-end="2223" data-col-size="md">Controlled flow, fallback logic</td>
+              </tr>
+              <tr data-start="2224" data-end="2285">
+                <td data-start="2224" data-end="2239" data-col-size="sm">LocalStorage</td>
+                <td data-start="2239" data-end="2251" data-col-size="sm">To-Do App</td>
+                <td data-start="2251" data-end="2285" data-col-size="md">Persistence, sync UI ↔ storage</td>
+              </tr>
+            </tbody>
+          </table>
+          <h6><strong>Practice</strong>: Draw “data journey” diagrams per feature:</h6>
+          <h6>API call → transform → update state → re-render → save if needed</h6>
+
+
+
+
+
+          <br>
+          <br>
+
+          <a class="textUnderline" href="new_roadmap_phase3">
+            <h6 class="fontWeight500">Phase 3: Modular Design Thinking</h6>
+          </a>
+          <br>
+          <h6><strong>Objective</strong>: Treat each feature as a “logic brick” that can snap into systems</h6>
+          <br>
+
+          <h6><strong>Practice</strong>: Draw “data journey” diagrams per feature:</h6>
+          <h6>API call → transform → update state → re-render → save if needed</h6>
+          <br>
+          <ul class="listCircle">
+            <li>Rebuild to-do app using function modules (addTask, removeTask, syncState, updateDOM)
+            </li>
+            <li>
+              Try building a framework-less “Component” system:
+              <ol>
+                <li>→ Each module: state + DOM link + event logic</li>
+                <li>→ Reusable like React components, but pure JS</li>
+              </ol>
+
+            </li>
+            <li>Explore Model–View–Control (MVC-lite) breakdowns</li>
+          </ul>
+
+          <br>
+          <br>
+          <br>
+
+          <a class="textUnderline" href="new_roadmap_phase4">
+            <h6 class="fontWeight500">Phase 4: React Prep via Mental Translation</h6>
+          </a>
+          <br>
+          <h6><strong>Objective</strong>: See React not as new, but as a formalization of what you already built</h6>
+          <br>
+          <table data-start="2986" data-end="3422" class="w-fit min-w-(--thread-content-width)">
+            <thead data-start="2986" data-end="3040">
+              <tr data-start="2986" data-end="3040">
+                <th data-start="2986" data-end="2996" data-col-size="sm"><strong>Concept</strong></th>
+                <th data-start="2996" data-end="3021" data-col-size="sm"><strong>What to Practice in JS</strong></th>
+                <th data-start="3021" data-end="3040" data-col-size="sm"><strong>Future in React</strong></th>
+              </tr>
+            </thead>
+            <tbody data-start="3095" data-end="3422">
+              <tr data-start="3095" data-end="3147">
+                <td data-start="3095" data-end="3103" data-col-size="sm">Props</td>
+                <td data-start="3103" data-end="3127" data-col-size="sm">Parameterized modules</td>
+                <td data-start="3127" data-end="3147" data-col-size="sm">Component inputs</td>
+              </tr>
+              <tr data-start="3148" data-end="3206">
+                <td data-start="3148" data-end="3156" data-col-size="sm">State</td>
+                <td data-start="3156" data-end="3190" data-col-size="sm">Central state object + render()</td>
+                <td data-start="3190" data-end="3206" data-col-size="sm"><code data-start="3192" data-end="3204">useState()</code></td>
+              </tr>
+              <tr data-start="3207" data-end="3267">
+                <td data-start="3207" data-end="3216" data-col-size="sm">Events</td>
+                <td data-start="3216" data-end="3250" data-col-size="sm">Manual listeners + update logic</td>
+                <td data-start="3250" data-end="3267" data-col-size="sm">JSX + onClick</td>
+              </tr>
+              <tr data-start="3268" data-end="3345">
+                <td data-start="3268" data-end="3292" data-col-size="sm">Conditional rendering</td>
+                <td data-start="3292" data-end="3325" data-col-size="sm"><code data-start="3294" data-end="3298">if</code> blocks + DOM manipulation</td>
+                <td data-start="3325" data-end="3345" data-col-size="sm">JSX conditionals</td>
+              </tr>
+              <tr data-start="3346" data-end="3422">
+                <td data-start="3346" data-end="3365" data-col-size="sm">Componentization</td>
+                <td data-start="3365" data-end="3397" data-col-size="sm">Functions returning UI chunks</td>
+                <td data-start="3397" data-end="3422" data-col-size="sm">Functional components</td>
+              </tr>
+            </tbody>
+          </table>
+          <h6>🧠 You’re not memorizing React—you’re translating your logic model into its format.</h6>
+          <br>
+          <br>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="Grid Grid--gutters Grid--cols-2">
+
+      <div class="Grid-cell">
+        <div class="">
+          <div class="borderRadiusXS colorBgYellowVW100 paddingS">
+
+            <h4 class="fontWeight500">Ongoing: System Thinking Logs</h4>
+            <h5>Track in Notion or Obsidian: </h5>
+            <ul class="listCircle">
+              <li>What logic was hard to follow? (e.g. async, bubbling, closure) </li>
+              <li>
+                What worked better after refactor? Why? </li>
+              <li>What core patterns repeat? (e.g. loop → condition → output → store) </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="">
+
+          <div class="borderRadiusXS colorBgYellowVW100 paddingS">
+
+            <h4 class="fontWeight500">💬 Feedback Integration Loop</h4>
+            <h5>Every 2–3 mini projects: </h5>
+            <ul class="listCircle">
+              <li>Show to a dev friend or GPT</li>
+              <li>Ask: How would a React/TS engineer structure this?</li>
+              <li>Then rebuild to apply modular structure</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <br>
+
+    <br>
     <hr>
     <br>
-    <br>
-    <h1>ChatGPT Practice — Mastering the Basics</h1>
-    <a class="textUnderline" href="section_chatGPT_p2/">
-      <h3>Projects 2</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_p1/">
-      <h3>Projects 1</h3>
-    </a>
+    <div class="Grid Grid--full Grid--gutter">
 
-    <hr>
-    <br>
-    <br>
+      <div class="Grid-cell">
 
-    <h1>Practice with ChatGPT - Mental Model Building</h1>
-    <a class="textUnderline" href="section_chatGPT_mini_project_iv/">
-      <h3>Mini Projects iv</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_mini_project_iii/">
-      <h3>Mini Projects iii</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_mini_project_ii/">
-      <h3>Mini Projects ii</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_mini_project_i/">
-      <h3>Mini Projects i</h3>
-    </a>
-    <hr>
-    <br>
-    <br>
+        <h4 class="fontWeight500">ChatGPT Practice — Mastering the Basics</h4>
+        <a class="textUnderline" href="section_chatGPT_p2/">
+          <h6>Projects 2</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_p1/">
+          <h6>Projects 1</h6>
+        </a>
+        <br>
+        <hr>
+        <br>
 
-    <h1>Practice with ChatGPT</h1>
-    <a class="textUnderline" href="section_chatGPT_form_validator/">
-      <h3>Form Validator — Real-Time Email Check</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_pomodoro/">
-      <h3>⏱️ Pomodoro timer </h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_timer_lap/">
-      <h3>⏱️ Lap Recording Stopwatch </h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_timer/">
-      <h3>⏱️ Timer / Counter </h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_tag_formatter/">
-      <h3>Tag formatter</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_tag/">
-      <h3>Make a tag input field</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_domfilter/">
-      <h3>DOM filter</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_editabletask/">
-      <h3>Editable task/tag relationships (2-way sync)</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_tasklist">
-      <h3>Task List with Tags (Synced Arrays)</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_todo_persistentstate">
-      <h3>To-Do App with Persistent State</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_weatherapp">
-      <h3>Weather App</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_quotegenerator/">
-      <h3>Quote Generator</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_fetch">
-      <h3>fetch()</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_quizapp">
-      <h3>Quiz App</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_todolist">
-      <h3>Todo List</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_slider">
-      <h3>Slider</h3>
-    </a>
+        <h4 class="fontWeight500">Practice with ChatGPT - Mental Model Building</h4>
+        <a class="textUnderline" href="section_chatGPT_mini_project_iv/">
+          <h6>Mini Projects iv</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_mini_project_iii/">
+          <h6>Mini Projects iii</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_mini_project_ii/">
+          <h6>Mini Projects ii</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_mini_project_i/">
+          <h6>Mini Projects i</h6>
+        </a>
+        <br>
+        <hr>
+        <br>
 
-    <a class="textUnderline" href="section_chatGPT_dom_ii/">
-      <h3>DOM ii</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_dom_i">
-      <h3>DOM i</h3>
-    </a>
-    <hr>
-    <br>
-    <br>
+        <h4 class="fontWeight500">Practice with ChatGPT</h4>
+        <a class="textUnderline" href="section_chatGPT_form_validator/">
+          <h6>Form Validator — Real-Time Email Check</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_pomodoro/">
+          <h6>⏱️ Pomodoro timer </h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_timer_lap/">
+          <h6>⏱️ Lap Recording Stopwatch </h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_timer/">
+          <h6>⏱️ Timer / Counter </h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_tag_formatter/">
+          <h6>Tag formatter</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_tag/">
+          <h6>Make a tag input field</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_domfilter/">
+          <h6>DOM filter</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_editabletask/">
+          <h6>Editable task/tag relationships (2-way sync)</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_tasklist">
+          <h6>Task List with Tags (Synced Arrays)</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_todo_persistentstate">
+          <h6>To-Do App with Persistent State</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_weatherapp">
+          <h6>Weather App</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_quotegenerator/">
+          <h6>Quote Generator</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_fetch">
+          <h6>fetch()</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_quizapp">
+          <h6>Quiz App</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_todolist">
+          <h6>Todo List</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_slider">
+          <h6>Slider</h6>
+        </a>
 
-    <h1>Practice with ChatGPT - Refresh</h1>
-    <a class="textUnderline" href="section_chatGPT_methods_ii/">
-      <h3>Methods ii</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_methods_i/">
-      <h3>Methods i</h3>
-    </a>
-    <a class="textUnderline" href="section_chatGPT_arrowfunction/">
-      <h3>Arrow Function Variations & Usage</h3>
-    </a>
-    <hr>
-    <br>
-    <br>
+        <a class="textUnderline" href="section_chatGPT_dom_ii/">
+          <h6>DOM ii</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_dom_i">
+          <h6>DOM i</h6>
+        </a>
+        <br>
+        <hr>
+        <br>
 
-
-    <h1>Exercise</h1>
-
-    <a class="textUnderline" href="exercise_behind_the_scenes">
-      <h3>Behind the scenes</h3>
-    </a>
-    <a class="textUnderline" href="exercise_data_structure_operators">
-      <h3>Data Structure operators</h3>
-    </a>
+        <h4 class="fontWeight500">Practice with ChatGPT - Refresh</h4>
+        <a class="textUnderline" href="section_chatGPT_methods_ii/">
+          <h6>Methods ii</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_methods_i/">
+          <h6>Methods i</h6>
+        </a>
+        <a class="textUnderline" href="section_chatGPT_arrowfunction/">
+          <h6>Arrow Function Variations & Usage</h6>
+        </a>
+        <br>
+        <hr>
+        <br>
 
 
-    <h1>Sections</h1>
+        <h4 class="fontWeight500">Udemy Class </h4>
 
-    <a class="textUnderline" href="section_two">
-      <h3>Section 2</h3>
-    </a>
-    <a class="textUnderline" href="section_nine">
-      <h3>Section 9</h3>
-    </a>
+        <a class="textUnderline" href="exercise_behind_the_scenes">
+          <h6>Behind the scenes</h6>
+        </a>
+        <a class="textUnderline" href="exercise_data_structure_operators">
+          <h6>Data Structure operators</h6>
+        </a>
+        <br>
 
-    <a class="textUnderline" href="section_ten">
-      <h3>Section 10</h3>
-    </a>
+
+        <h4 class="fontWeight500">Sections</h4>
+
+        <a class="textUnderline" href="section_two">
+          <h6>Section 2</h6>
+        </a>
+        <a class="textUnderline" href="section_nine">
+          <h6>Section 9</h6>
+        </a>
+
+        <a class="textUnderline" href="section_ten">
+          <h6>Section 10</h6>
+        </a>
+
+        <br>
+
+        <h4 class="fontWeight500">Projects</h4>
+        <a class="textUnderline" href="project_guess_number">
+          <h6>Guess My Number!</h6>
+        </a>
+        <a class="textUnderline" href="project_modal">
+          <h6>Modal</h6>
+        </a>
+        <a class="textUnderline" href="project_pig_game">
+          <h6>Pig Game</h6>
+        </a>
+        <a class="textUnderline" href="project_filterable_list">
+          <h6>A filterable employee list</h6>
+        </a>
+        <a class="textUnderline" href="project_todo_list">
+          <h6> Simple To-Do List </h6>
+        </a>
+      </div>
+    </div>
 
   </main>
 

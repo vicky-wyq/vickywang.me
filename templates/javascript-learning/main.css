@@ -613,3 +613,105 @@ input:focus {
 }
 
 /* alignment */
+
+/* =================== accTrigger ===================*/
+
+.accContent.is-open-acc {
+  /* dynamic height will be applied inline */
+}
+
+.accContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  padding:8px 32px;
+}
+
+.accTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+
+  background-color: none;
+}
+
+.accItem:hover {
+  background-color: var(--Grey100);
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--Grey200);
+}
+
+.iconAccTrigger {
+  height: 22px;
+  width: 22px;
+  margin: 12px 6px;
+  flex-shrink: 0;
+}
+
+.accIcon {
+  vertical-align: text-top;
+  display: inline-block;
+
+  background-image: url("../icon/plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+}
+
+.accTrigger.is-open-acc .accIcon {
+  background-image: url("../icon/minus.svg");
+  transform: rotate(180deg);
+}
+
+/* =================== accTrigger ===================*/
+
+/* =================== table ===================*/
+
+body table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    /* Makes each element a block */
+  }
+
+  body tr {
+    margin-bottom: 22px;
+    /* Adds spacing between rows */
+  }
+
+  body th,
+  td {
+    box-sizing: border-box;
+    width: 100%;
+    /* Ensures cells take full width */
+  }
+
+  body thead tr {
+    display: none;
+    /* Hides the header row */
+  }
+
+  body td {
+    position: relative;
+    height: 2vh;
+    /* Adjust as needed */
+  }
+
+  body td::before {
+    content: attr(data-label);
+    /* Uses data-label attribute for headings */
+    position: absolute;
+    left: 0;
+    width: 45%;
+    /* Adjust as needed */
+    padding-left: 15px;
+    font-weight: bold;
+  }
+/* =================== table ===================*/
