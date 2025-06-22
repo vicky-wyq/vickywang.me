@@ -2290,29 +2290,36 @@ ul.listCircle {
 }
 
 h1 {
-  font-size: clamp(1.6em, 2vw, 2em);
+  font-size: clamp(1.8em, 3vw, 2.5em);
 }
 
 h2 {
-  font-size: clamp(1.4em, 1.8vw, 2em);
+  font-size: clamp(1.6em, 2.5vw, 2.2em);
 }
 
 h3 {
-  font-size: clamp(1.3em, 1.6vw, 1.7em);
+  font-size: clamp(1.4em, 2vw, 1.9em);
 }
 
 h4 {
-  font-size: clamp(1.2em, 1.4vw, 1.5em);
+  font-size: clamp(1.2em, 1.6vw, 1.6em);
 }
 
-h5,
-ul {
-  font-size: clamp(1.15em, 1.3vw, 1.35em);
+h5 {
+  font-size: clamp(1.05em, 1.2vw, 1.3em);
 }
 
-h6,
+h6{
+  font-size: clamp(0.95em, 1vw, 1.1em);
+}
 p {
-  font-size: clamp(1.15em, 1vw, 1.25em);
+
+
+    font-size: clamp(1em, 1vw, 1.1em);
+
+}
+ul, ol {
+  font-size: clamp(1em, 1vw, 1.1em);
 }
 
 /* =========== Paragraphs =========== */
@@ -5036,7 +5043,49 @@ body .flex-container.Mobile {
 }
 
 /* ===== hover effect ====== */
+/* ======== table ======== */
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+  /* Allows the table to adjust based on content */
+
+  border-style: hidden;
+  font-size: clamp(0.73em, 0.92vw, 1em);
+  font-family: "Lato", sans-serif;
+}
+
+td,
+th {
+  border: 1px solid #eeeeee;
+  text-align: left;
+  padding: 0.6vh;
+  height: 0.6vh;
+  font-weight: 500;
+
+  white-space: normal;
+  /* Allows text to wrap */
+  word-wrap: break-word;
+  /* Breaks long words to wrap them to the next line */
+}
+
+td {
+  height: 1vh;
+  font-weight: 300;
+}
+
+th {
+  font-weight: 300;
+}
+
+ul.iconx {
+  list-style-position: outside;
+  list-style-image: url("../../icon/list_MP.svg");
+  padding: 0;
+}
+
+/* ======== table ======== */
 /* ======== table ======== */
 
 table {
