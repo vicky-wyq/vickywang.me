@@ -53,10 +53,32 @@ function outer() {
 
   return function inner() { 
     count++;
-    console.log(`Count is: ${count}`); // here is the place to save the number? but when the function run again, "  let count = 0;" will reset the whole thing? so the function only run once? but below we called it twice
+    console.log(`Count is: ${count}`);
   };
 }
 
-const counter = outer(); // i thought we saved the data/memory here?
-counter(); // 1 we call function once
-counter(); // 2 we call it again
+const counter = outer(); // ← ✅ This calls `outer()` ONCE and stores the returned `inner()` function in `counter`
+
+counter(); // ❗ Only calls `inner()` — NOT outer()
+counter(); // ❗ Again, only calls `inner()`, NOT outer()
+
+// =============
+
+
+function createScoreTracker(name) {
+
+  let score = 0;
+
+  return function addPoint() {
+    score = score + 5;
+    console.log(`Current score: ${score}`);
+    name = `${name}'s score: ${score}`;
+    console.log(name);
+
+
+  };
+}
+const myScore = createScoreTracker('vicky'); // outer runs, returns inner
+myScore(); 
+myScore(); 
+myScore(); 
