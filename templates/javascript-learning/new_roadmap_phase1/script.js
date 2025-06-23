@@ -53,13 +53,10 @@ function outer() {
 
   return function inner() { 
     count++;
-    console.log(`Count is: ${count}`); 
+    console.log(`Count is: ${count}`); // here is the place to save the number? but when the function run again, "  let count = 0;" will reset the whole thing? so the function only run once? but below we called it twice
   };
 }
 
-const counter = outer(); // each time save the count. we call from conter > outer() > inner() > return value?. is the ourter() call inter() automatictly? or it is return, no need to call it?
-counter(); // 1
-counter(); // 2
-// Why is count still alive even though outer() already “finished”? | brcause the variable const counter saved the count number each time, it will pass into the function next time
-//What does this tell you about how JS handles memory and function logic? variables save updated data automatictly
-
+const counter = outer(); // i thought we saved the data/memory here?
+counter(); // 1 we call function once
+counter(); // 2 we call it again
