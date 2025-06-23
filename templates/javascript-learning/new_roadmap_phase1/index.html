@@ -107,27 +107,20 @@
         <br />
 
     <pre><code class="language-javascript">
-      function makeCounter() {
+      function outer() {
         let count = 0;
-        return function () {
+
+        return function inner() { 
           count++;
-          console.log(count);
+          console.log(`Count is: ${count}`);
         };
       }
-      const counterA = makeCounter();
-      counterA(); // 1
-      counterA(); // 2 ✅
-      counterA(); // 3 ✅
+      const counter = outer(); // ← ✅ This calls `outer()` ONCE and stores the returned `inner()` function in `counter
+      counter(); // ❗ Only calls `inner()` — NOT outer()
+      counter(); // ❗ Again, only calls `inner()`, NOT outer()
     </code></pre>
-    <h3>Call functions</h3>
-
-
-
-    <pre><code class="language-javascript">
-      makeCounter      // 🔍 just a reference to the function
-      makeCounter()    // 🚀 calls the outer function — returns the inner function
-      makeCounter()()  // 🔥 calls both — executes and logs "1"
-    </code></pre>
+    
+    <h3>z</h3>
 
 
 
