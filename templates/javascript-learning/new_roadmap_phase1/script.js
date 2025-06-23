@@ -44,4 +44,22 @@ function outer() {
   console.log(innerVar); // will not print, because it calling a variable inside of a function
 }
 
-outer();
+// outer();
+
+// =============
+
+function outer() {
+  let count = 0;
+
+  return function inner() { 
+    count++;
+    console.log(`Count is: ${count}`); 
+  };
+}
+
+const counter = outer(); // each time save the count. we call from conter > outer() > inner() > return value?. is the ourter() call inter() automatictly? or it is return, no need to call it?
+counter(); // 1
+counter(); // 2
+// Why is count still alive even though outer() already “finished”? | brcause the variable const counter saved the count number each time, it will pass into the function next time
+//What does this tell you about how JS handles memory and function logic? variables save updated data automatictly
+

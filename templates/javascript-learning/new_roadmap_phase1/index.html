@@ -15,32 +15,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet" />
   <!--sitewide font-family: 'Lato', sans-serif; -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+  <!-- for JS code styling-->
+
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+
 </head>
 
 <body class="wrapper">
   <div class="marginS">
     <h1>Phase 1: Core Mechanics (Refined Muscle Memory)</h1>
-
-
-
     <br />
-
-
     <br />
-
-
     <h2>Objective: Deepen understanding of language fundamentals by building your own “toolkit”</h2>
-
     <br />
     <br />
-
-
     <h2>Concept: Primitive vs Reference</h2>
     <ul class="listCircle">
       <li>Primitive = Copy by Value</li>
       <li>Object = Copy by Reference</li>
       <li>Shallow Copy</li>
     </ul>
+    <br />
+    <pre><code class="language-javascript">
+      let a = 10;
+      let b = a;
+      b = 20;
+      console.log(a); // 10
+      console.log(b); // 20
+    </code></pre>
+    <br />
+    <pre><code class="language-javascript">
+      let obj1 = { value: 10 };
+      let obj2 = obj1;
+      obj2.value = 20;
+      console.log(obj1.value); // 20
+      console.log(obj2.value); // 20
+    </code></pre>
+    <br />
+
+    <pre><code class="language-javascript">
+      let obj1 = { value: 10 };
+      let obj2 = { ...obj1 }; // create a shallow copy
+      obj2.value = 20;
+      console.log(obj1.value); // 10
+      console.log(obj2.value); // 20
+    </code></pre>
 
     <br />
 
@@ -54,6 +82,55 @@
       <li>Scope defines where variables “live” and who can “see” them.</li>
       <li>Encapsulation means each function protects its internal variables unless explicitly returned.</li>
     </ul>
+    <br />
+
+    <pre><code class="language-javascript">
+      Global Scope
+        └─ outer() Scope
+          └─ inner() Scope
+    </code></pre>
+    <br />
+
+    <h2>Concept: Open Closures </h2>
+
+    <h3>A closure is when a function “remembers” the variables from its outer scope, even after that outer function has finished running.</h3>
+
+    <pre><code class="language-javascript">
+      Global Scope
+      └─ outer() runs → creates count = 0
+          └─ inner() closes over count
+              ↓
+              Assigned to counter
+              ↓
+              counter() can access count forever
+    </code></pre>
+        <br />
+
+    <pre><code class="language-javascript">
+      function makeCounter() {
+        let count = 0;
+        return function () {
+          count++;
+          console.log(count);
+        };
+      }
+      const counterA = makeCounter();
+      counterA(); // 1
+      counterA(); // 2 ✅
+      counterA(); // 3 ✅
+    </code></pre>
+    <h3>Call functions</h3>
+
+
+
+    <pre><code class="language-javascript">
+      makeCounter      // 🔍 just a reference to the function
+      makeCounter()    // 🚀 calls the outer function — returns the inner function
+      makeCounter()()  // 🔥 calls both — executes and logs "1"
+    </code></pre>
+
+
+
   </div>
   <br />
   <br />
@@ -71,7 +148,7 @@
   <link rel="stylesheet" href="style.css" />
 
   <script src="script.js"></script>
-  <script src="../script.js"></script>
+
 
 </body>
 
