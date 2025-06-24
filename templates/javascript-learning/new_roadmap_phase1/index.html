@@ -35,7 +35,7 @@
     <h1>Phase 1: Core Mechanics (Refined Muscle Memory)</h1>
     <br />
     <br />
-    <h2>Objective: Deepen understanding of language fundamentals by building your own “toolkit”</h2>
+    <h2 class="Grey700">Objective: Deepen understanding of language fundamentals by building my own “toolkit”</h2>
     <br />
     <br />
     <h2>Concept: Primitive vs Reference</h2>
@@ -75,7 +75,7 @@
     <h2>Concept: Functions & Scope</h2>
 
 
-    <h3>Core Concepts:</h3>
+    <h4>Core Concepts:</h4>
 
     <ul class="listCircle">
       <li>Functions are logic containers: input → process → output.</li>
@@ -93,7 +93,7 @@
 
     <h2>Concept: Open Closures </h2>
 
-    <h3>A closure is when a function “remembers” the variables from its outer scope, even after that outer function has finished running.</h3>
+    <h4>A closure is when a function “remembers” the variables from its outer scope, even after that outer function has finished running.</h4>
 
     <pre><code class="language-javascript">
       Global Scope
@@ -104,7 +104,7 @@
               ↓
               counter() can access count forever
     </code></pre>
-        <br />
+    <br />
 
     <pre><code class="language-javascript">
       function outer() {
@@ -119,8 +119,86 @@
       counter(); // ❗ Only calls `inner()` — NOT outer()
       counter(); // ❗ Again, only calls `inner()`, NOT outer()
     </code></pre>
-    
-    <h3>z</h3>
+
+    <br />
+
+    <h2>Concept: Arrays & Objects as Data Containers</h2>
+
+
+    <h4> Arrays vs Objects</h4>
+    <table data-start="984" data-end="1194" class="w-fit min-w-(--thread-content-width)">
+      <thead data-start="984" data-end="1012">
+        <tr data-start="984" data-end="1012">
+          <th data-start="984" data-end="994" data-col-size="sm">Concept</th>
+          <th data-start="994" data-end="1002" data-col-size="sm">Array</th>
+          <th data-start="1002" data-end="1012" data-col-size="sm">Object</th>
+        </tr>
+      </thead>
+      <tbody data-start="1041" data-end="1194">
+        <tr data-start="1041" data-end="1065">
+          <td data-start="1041" data-end="1056" data-col-size="sm">Ordered list</td>
+          <td data-col-size="sm" data-start="1056" data-end="1060">✅</td>
+          <td data-col-size="sm" data-start="1060" data-end="1065">❌</td>
+        </tr>
+        <tr data-start="1066" data-end="1106">
+          <td data-start="1066" data-end="1086" data-col-size="sm">Indexed by number</td>
+          <td data-col-size="sm" data-start="1086" data-end="1101">✅ (<code data-start="1091" data-end="1099">arr[0]</code>)</td>
+          <td data-col-size="sm" data-start="1101" data-end="1106">❌</td>
+        </tr>
+        <tr data-start="1107" data-end="1150">
+          <td data-start="1107" data-end="1128" data-col-size="sm">Labeled properties</td>
+          <td data-col-size="sm" data-start="1128" data-end="1132">❌</td>
+          <td data-col-size="sm" data-start="1132" data-end="1150">✅ (<code data-start="1137" data-end="1147">obj.name</code>)</td>
+        </tr>
+        <tr data-start="1151" data-end="1194">
+          <td data-start="1151" data-end="1162" data-col-size="sm">Best for</td>
+          <td data-start="1162" data-end="1173" data-col-size="sm">Sequence</td>
+          <td data-start="1173" data-end="1194" data-col-size="sm">Structured record</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+
+    <pre><code class="language-javascript">
+      const inventory = [
+        { id: 1, name: "apple", quantity: 3 },
+        { id: 2, name: "banana", quantity: 5 },
+        { id: 3, name: "orange", quantity: 2 }
+      ];
+
+      function getItemByName(arr, name) {
+        return arr.find(item => item.name === name);
+      }
+
+      const result = getItemByName(inventory, "banana");
+      console.log(result); // What do you expect?
+    </code></pre>
+    <br>
+    <table data-start="924" data-end="1209" class="w-fit min-w-(--thread-content-width)">
+      <thead data-start="924" data-end="948">
+        <tr data-start="924" data-end="948">
+          <th data-start="924" data-end="937" data-col-size="sm">Method</th>
+          <th data-start="937" data-end="948" data-col-size="md">Purpose</th>
+        </tr>
+      </thead>
+      <tbody data-start="974" data-end="1209">
+        <tr data-start="974" data-end="1052">
+          <td data-start="974" data-end="988" data-col-size="sm"><code data-start="976" data-end="985">.find()</code></td>
+          <td data-col-size="md" data-start="988" data-end="1052">✅ Returns the <strong data-start="1004" data-end="1019">first match</strong> — stops as soon as it finds it</td>
+        </tr>
+        <tr data-start="1053" data-end="1128">
+          <td data-start="1053" data-end="1067" data-col-size="sm"><code data-start="1055" data-end="1063">.map()</code></td>
+          <td data-col-size="md" data-start="1067" data-end="1128">❌ Transforms every item — always returns a new full array</td>
+        </tr>
+        <tr data-start="1129" data-end="1209">
+          <td data-start="1129" data-end="1143" data-col-size="sm"><code data-start="1131" data-end="1143">.forEach()</code></td>
+          <td data-col-size="md" data-start="1143" data-end="1209">❌ Iterates, but <strong data-start="1161" data-end="1180">does not return</strong> anything (only side effects)</td>
+        </tr>
+      </tbody>
+    </table>
+
+
 
 
 
@@ -137,7 +215,7 @@
 
   <!-- ==================== links ===================== -->
 
-  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="../../main.css" />
   <link rel="stylesheet" href="style.css" />
 
   <script src="script.js"></script>
