@@ -202,14 +202,42 @@
 
       <br />
     <pre><code class="language-javascript">
-      let a = 10;
-      let b = a;
-      b = 20;
-      console.log(a); // 10
-      console.log(b); // 20
+      function createToolbox() {
+        let internalStuff = [];
+
+        return {
+          doThing() { internalStuff.push('hi'); },
+          showThings() { return internalStuff; }
+        };
+      }
+
+      const toolbox = createToolbox();
+      toolbox.doThing();
+      console.log(toolbox.showThings()); // ['hi']
+
     </code></pre>
     <br />
+    <pre><code class="language-javascript">
+      Global Scope
+      └── createInventorySystem()
+            └── inventory [] ← private
+            └── addItem(item)   ← has access to inventory
+            └── removeItem(name)
+            └── updateQuantity(name, qty)
+            └── getInventory()
+                ↑
+                returned to global
+                ↓
+      const system = {
+        addItem: fn,
+        removeItem: fn,
+        updateQuantity: fn,
+        getInventory: fn
+      }
 
+
+    </code></pre>
+    <br />
 
 
 
