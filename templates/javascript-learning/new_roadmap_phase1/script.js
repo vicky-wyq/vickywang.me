@@ -105,37 +105,32 @@ console.log(result); // is that should be 5? this is my guessing, not sure how t
 
 // =============
 
-//i am not sure i fully understand the code ...
 
 const inventorySystem = createInventorySystem();
-// we have a variable called inventorySystem, and pass function "createInventorySystem();"
-
-function createInventorySystem() { // we have a function, returen including more functions. but no premeter
-  let inventory = []; // built a variable is called inventory, clean arr
-
+function createInventorySystem() { 
+  let inventory = []; 
   return {
-    addItem: function(item) {// never see "addItem: ..." but i assume this is adding an item to arr
+    addItem: function(item) {
       inventory.push(item);
     },
-    removeItem: function(name) { // filter the differ name in the inventory
+    removeItem: function(name) { 
       inventory = inventory.filter(i => i.name !== name);
     },
-    updateQuantity: function(name, newQuantity) { //adjust quantity?
-      const target = inventory.find(i => i.name === name); // find the same name
-      if (target) target.quantity = newQuantity; // if target exist, assign new quantity
+    updateQuantity: function(name, newQuantity) { 
+      const target = inventory.find(i => i.name === name); 
+      if (target) target.quantity = newQuantity; 
     },
     getLowStock: function(threshold) {
       return inventory.filter(item => item.quantity < threshold);
     },
 
     getInventory: function() {
-      return inventory; // this is the final return you taught me before? just ensure there is a final saved and easy to access?
+      return inventory; 
     }
   };
 }
-const system = createInventorySystem(); // new variable is called system, also link the the same function like the inventorySystem
-
-system.addItem({ id: 1, name: 'apple', quantity: 3 }); // pass obj, to variable system.addItem, where this goes???🫣, obj structure: id: 1, name: 'apple', quantity: 3. oh, this goes to function createInventorySystem( then add item inner function under the return? but how can we access this inner function from here? oh, the "system.addItem"
+const system = createInventorySystem(); 
+system.addItem({ id: 1, name: 'apple', quantity: 3 });
 system.addItem({ id: 2, name: 'banana', quantity: 5 });
 system.addItem({ id: 3, name: 'orange', quantity: 2 });
 
@@ -146,7 +141,5 @@ console.log(system.getInventory());
 
 system.removeItem('apple');
 console.log(system.getInventory());
-
-
 
 console.log(system.getLowStock(3));
