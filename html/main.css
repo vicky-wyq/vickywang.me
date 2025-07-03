@@ -1760,17 +1760,24 @@ section {
 }
 
 /* ===== Graph ===== */
+@media (width > 1880px) {
+body .iconAccTrigger {
+    margin: 2vh 6px !important; 
+
+}
+}
 
 @media (width > 1280px) and (width < 1880px) {
-  body .iconAccTrigger {
-    margin: 1.3em 6px;
-  }
+body .iconAccTrigger {
+    margin: 1.3vh 6px !important; 
+
+}
 }
 
 @media all and (min-width: 1880px) {
-  body .iconAccTrigger {
+  /* body .iconAccTrigger {
     margin: 1.6em 6px;
-  }
+  } */
 
   body .blankMin1880 {
     height: 2em;
