@@ -1762,14 +1762,14 @@ section {
 /* ===== Graph ===== */
 @media (width > 1880px) {
 body .iconAccTrigger {
-    margin: 2vh 6px !important; 
+    margin: 28px 6px !important; 
 
 }
 }
 
 @media (width > 1280px) and (width < 1880px) {
 body .iconAccTrigger {
-    margin: 1.3vh 6px !important; 
+    margin: 22px 6px !important; 
 
 }
 }
