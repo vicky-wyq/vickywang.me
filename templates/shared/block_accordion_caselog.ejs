@@ -1,26 +1,30 @@
-    <% if (typeof greetingTxt === 'undefined') { 
-  greetingTxt = ''; 
-} 
-%>
-    
-    
-    
+    <% if (typeof title === 'undefined') { title = '';} %>
+    <% if (typeof summary === 'undefined') { summary = '';} %>
+    <% if (typeof problem === 'undefined') { problem = '';} %>
+    <% if (typeof insight === 'undefined') { insight = '';} %>
+    <% if (typeof insiteOrDesign === 'undefined') { insiteOrDesign = '';} %>
+    <% if (typeof insiteOrDesignDescription === 'undefined') { insiteOrDesignDescription = '';} %>
+    <% if (typeof solutionOrImpact === 'undefined') { solutionOrImpact = '';} %>
+    <% if (typeof solutionOrImpactDescription === 'undefined') { solutionOrImpactDescription = '';} %>
+
+    <% if (typeof impact === 'undefined') { impact = '';} %>
+    <% if (typeof caseURL === 'undefined') { caseURL = '';} %>
     <div class="wrapper">
       <div class="accItem">
-        <div class="Grid Grid--gutters Grid--cols-2 accTrigger is-open-acc Grid--center">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
           <div class="Grid-cell">
             <div class="element">
-              <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="/"><%= title %> &#10141;</a></h4>
+              <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="<%- caseURL %>"><%= title %> &#10141;</a></h4>
               <h5><%= summary %></h5>
             </div>
           </div>
-          <div class="Grid-cell align-right">
+          <div class="align-right">
             <div class="element">
               <div class="accIcon iconAccTrigger"></div>
             </div>
           </div>
         </div>
-        <div class="accContent is-open-acc" style="max-height: 115px;">
+        <div class="accContent">
           <div class="Grid Grid--gutters Grid--cols-3">
             <div class="Grid-cell">
               <div class="element">
@@ -28,25 +32,24 @@
                 <h5><%= problem %></h5>
               </div>
             </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Design:</strong> </h5>
-                <h5><%= design %></h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Impact:</strong> </h5>
-                <h5><%= impact %></h5>
 
+
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong><%= insiteOrDesign %></strong> </h5>
+                <h5><%= insiteOrDesignDescription %></h5>
               </div>
             </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong><%= solutionOrImpact %></strong> </h5>
+                <h5><%= solutionOrImpactDescription %></h5>
+              </div>
+            </div>
+
           </div>
+              <div class="blankHXXS"></div>
+
         </div>
       </div>
-
-
-
-  
-
     </div>

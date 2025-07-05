@@ -12,7 +12,7 @@
 
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header_main`, {
-    logoURL:'/workroom',
+    logoURL:'/caselog',
     sectionURL1:'#projects', 
     sectionURL2:'#experiments', 
     sectionURL3:'#design_system', 
@@ -367,174 +367,128 @@
     </div>
 
 
-
     <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full">
-
-        <!-- Shopping (Most Impactful) -->
-        <div class="Grid-cell">
-
-          <div class="accItem">
-            <div class="accTrigger">
-              <div class="row">
-                <div class="accIcon iconAccTrigger"></div>
-                <div>
-                  <h4 class="fontWeight400">Shopping</h4>
-                  <h5>Shifted from search-first to exploration-first. Enabled visual discovery and future scalability.</h5>
-                </div>
-              </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Shopping &amp; Landing Experience ➝</a></h4>
+              <h5>Shifted the rental journey from search-first to exploration-first and redesigned the landing to serve both fast movers and cautious explorers. Enabled gear discovery at scale and clearer onboarding context.</h5>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--gutters Grid--cols-4">
+            <div class="Grid-cell">
               <div class="element">
-                <a href="mobile_wireframe/"> <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button></a>
+                <h5><strong>Problem:</strong> </h5>
+                <h5>Users either dropped off early due to rigid search requirements, or got stuck trying to understand how BabyQuip worked before feeling comfortable booking</h5>
               </div>
             </div>
-            <div class="accContent">
+            <div class="Grid-cell">
               <div class="element">
-                <ul class="listCircle">
-                  <li><strong>Problem:</strong> Search was rigid and error-prone. Users had to know what to type.</li>
-                  <li><strong>Insight:</strong> Gear discovery needed to support exploration as BabyQuip expanded into general rentals.</li>
-                  <li><strong>Solution:</strong> Introduced category-based navigation and visual browsing. Allowed fast add-to-cart and scalable layout. Result: +32% product views, +26% cart adds (replace with actual).</li>
-                </ul>
+                <h5><strong>Insight:</strong> </h5>
+                <h5>There were two distinct user mindsets:</h5>
+                <h5>&#9999; Fast Searchers — wanted quick gear access</h5>
+                <h5>&#9999; Cautious Explorers — wanted to understand the service before engaging</h5>
+
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Solution:</strong> </h5>
+                <h5>&#9999; Introduced a category-first browsing model with visual discovery</h5>
+                <h5>&#9999; Enabled scalable layout that supports add-to-cart speed</h5>
+
+                <h5>&#9999; A/B tested educational vs direct landing paths to align with intent</h5>
+
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Impact:</strong> </h5>
+                <h5>+32% product views, +26% cart adds, and improved landing-to-search progression across both user types.</h5>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <%- include(`${templatePath}/shared/block_accordion_caselog`, {
+      title:'Cart & QP Selection',
+      summary:'Enabled flexible edits and frictionless QP logic. Increased AOV and clarity.', 
+      problem:'Flow reset during QP selection. Users lost gear changes.', 
+      insiteOrDesign:`Design`, 
 
-        <!-- Cart & QP Selection -->
-        <div class="Grid-cell">
-          <div class="accItem">
-            <div class="accTrigger">
-              <div class="row">
-                <div class="accIcon iconAccTrigger"></div>
-                <div>
-                  <h4 class="fontWeight400">Cart & QP Selection</h4>
-                  <h5>Enabled flexible edits and frictionless QP logic. Increased AOV and clarity.</h5>
-                </div>
-              </div>
-              <div class="element">
-                <a href="mobile_wireframe/"> <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button></a>
-              </div>
+      insiteOrDesignDescription:'Gear edits during QP selection increased cart size and confidence.', 
+      solutionOrImpact:`Impact`, 
+
+      solutionOrImpactDescription:'Persisted cart state, added previews/sorting. Result: +32% AOV, -59% drop-off.',
+      caseURL:'',
+    }) %>
+
+    <%- include(`${templatePath}/shared/block_accordion_caselog`, {
+      title:'Checkout',
+      summary:`Condensed multi-step form into efficient single-page checkout. Boosted completion.`, 
+      problem:'Long form and survey-like layout discouraged finishing.', 
+      insiteOrDesign:`Insight`, 
+
+      insiteOrDesignDescription:'Users felt done earlier. Final steps felt excessive.',
+      solutionOrImpact:`Impact`, 
+ 
+      solutionOrImpactDescription:'Persisted cart state, added previews/sorting. Result: +32% AOV, -59% drop-off.',
+      caseURL:'',
+    }) %>
+
+
+    <%- include(`${templatePath}/shared/block_accordion_caselog`, {
+      title:'Trip Input & Flexibility',
+      summary:`Streamlined trip entry with smart defaults and inline visibility. Users could skip, revisit, or edit trip details anytime — reducing drop-off from rigid upfront forms.`, 
+      problem:`Users had to enter full trip info up front (address, dates, time), with no option to revisit or edit later — this caused drop-off and frustration.`, 
+      insiteOrDesign:`Insight`, 
+
+      insiteOrDesignDescription:`Most users accepted default values but wanted to review or adjust info later, especially after browsing gear availability.`,
+
+      solutionOrImpact:`Solution`, 
+ 
+      solutionOrImpactDescription:`Required only address upfront, auto-filled defaults for date/time, and allowed users to view and edit trip info at any point in the flow — making the trip context always visible, skippable, and revisitable.`,
+      caseURL:'',
+    }) %>
+
+
+
+<div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Full Rental Journey Wireframe &#10141;</a></h4>
+              <h5>Validated end-to-end architecture across entry → cart → checkout to reduce downstream UX issues.</h5>
             </div>
-            <div class="accContent">
-              <div class="element">
-                <ul class="listCircle">
-                  <li><strong>Problem:</strong> Flow reset during QP selection. Users lost gear changes.</li>
-                  <li><strong>Insight:</strong> Gear edits during QP selection increased cart size and confidence.</li>
-                  <li><strong>Solution:</strong> Persisted cart state, added previews/sorting. Result: +32% AOV, -59% drop-off.</li>
-                </ul>
-              </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
             </div>
           </div>
         </div>
+        <div class="accContent">
+          <div class="Grid Grid--gutters Grid--cols-4">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Solution:</strong> </h5>
+                <h5>Audited the full rental flow, mapped system logic, and delivered detailed wireframes to align product direction and minimize rework.</h5>
+              </div>
+            </div>
 
-        <!-- Checkout -->
-        <div class="Grid-cell">
-          <div class="accItem">
-            <div class="accTrigger">
-              <div class="row">
-                <div class="accIcon iconAccTrigger"></div>
-                <div>
-                  <h4 class="fontWeight400">Checkout</h4>
-                  <h5>Condensed multi-step form into efficient single-page checkout. Boosted completion.</h5>
-                </div>
-              </div>
-              <div class="element">
-                <a href="mobile_wireframe/"> <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button></a>
-              </div>
-            </div>
-            <div class="accContent">
-              <div class="element">
-                <ul class="listCircle">
-                  <li><strong>Problem:</strong> Long form and survey-like layout discouraged finishing.</li>
-                  <li><strong>Insight:</strong> Users felt done earlier. Final steps felt excessive.</li>
-                  <li><strong>Solution:</strong> A/B tested single-page vs. multi-step. Improved perceived ease. Result: +19% checkout completion.</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
-
-        <!-- Trip Info -->
-        <div class="Grid-cell">
-          <div class="accItem">
-            <div class="accTrigger">
-              <div class="row">
-                <div class="accIcon iconAccTrigger"></div>
-                <div>
-                  <h4 class="fontWeight400">Trip Input & Flexibility</h4>
-                  <h5>Streamlined trip entry with smart defaults and inline visibility. Users could skip, revisit, or edit trip details anytime — reducing drop-off from rigid upfront forms.</h5>
-                </div>
-              </div>
-              <div class="element">
-                <a href="mobile_wireframe/"> <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button></a>
-              </div>
-            </div>
-            <div class="accContent">
-              <div class="element">
-                <ul class="listCircle">
-                  <li><strong>Problem:</strong> Users had to enter full trip info up front (address, dates, time), with no option to revisit or edit later — this caused drop-off and frustration.</li>
-                  <li><strong>Insight:</strong> Most users accepted default values but wanted to review or adjust info later, especially after browsing gear availability.</li>
-                  <li><strong>Solution:</strong> Required only address upfront, auto-filled defaults for date/time, and allowed users to view and edit trip info at any point in the flow — making the trip context always visible, skippable, and revisitable.</li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Landing -->
-        <div class="Grid-cell">
-          <div class="accItem">
-            <div class="accTrigger">
-              <div class="row">
-                <div class="accIcon iconAccTrigger"></div>
-                <div>
-                  <h4 class="fontWeight400">Landing Page</h4>
-                  <h5>Split landing into fast search vs. educational. Matched user intent.</h5>
-                </div>
-              </div>
-              <div class="element">
-                <a href="mobile_wireframe/"> <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button></a>
-              </div>
-            </div>
-            <div class="accContent">
-              <div class="element">
-                <ul class="listCircle">
-                  <li><strong>Problem:</strong> Users needed to book fast but also understand how BabyQuip worked.</li>
-                  <li><strong>Insight:</strong> Two groups: fast searchers vs. cautious explorers.</li>
-                  <li><strong>Solution:</strong> A/B tested direct vs. educational layouts. Result: +X% landing → search.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Full Journey Wireframe -->
-        <div class="Grid-cell">
-          <div class="accItem">
-            <div class="accTrigger">
-              <div class="row">
-                <div class="accIcon iconAccTrigger"></div>
-                <div>
-                  <h4 class="fontWeight400">Full Rental Journey Wireframe</h4>
-                  <h5>Validated end-to-end architecture across entry → cart → checkout to reduce downstream UX issues.</h5>
-
-                </div>
-              </div>
-              <div class="element">
-                <a href="mobile_wireframe/"> <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button></a>
-              </div>
-            </div>
-            <div class="accContent">
-              <div class="element">
-                <ul class="listCircle">
-                  <li><strong>Solution:</strong> Audited the full rental flow, mapped system logic, and delivered detailed wireframes to align product direction and minimize rework.</li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
@@ -584,120 +538,46 @@
         </div>
       </div>
     </div>
-    <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutters Grid--cols-2 accTrigger is-open-acc Grid--center">
-          <div class="Grid-cell">
-            <div class="element">
-              <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="/">Checkout Page Enhancements &#10141;</a></h4>
-              <h5>1-line summary</h5>
-            </div>
-          </div>
-          <div class="Grid-cell align-right">
-            <div class="element">
-              <div class="accIcon iconAccTrigger"></div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent is-open-acc" style="max-height: 115px;">
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Problem:</strong> </h5>
-                <h5>Users often got stuck adjusting cart quantities or finding the CTA during checkout, leading to drop-offs or longer session times. </h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Design:</strong> </h5>
-                <h5>I clarified layout hierarchy and made “Check Out” the strongest visual focus. I also enabled inline edits for quantities, addresses, and promo codes—so users could update without losing flow.</h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Impact:</strong> </h5>
-                <h5>This reduced total checkout time and increased conversion rate, especially for returning users with edits or add-ons.</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <%- include(`${templatePath}/shared/block_accordion_caselog`, {
+      title:`Checkout Page Enhancements`,
+      summary:`1-line summary`, 
+      problem:`Users often got stuck adjusting cart quantities or finding the CTA during checkout, leading to drop-offs or longer session times.`, 
+      insiteOrDesign:`Design`, 
+      insiteOrDesignDescription:'I clarified layout hierarchy and made “Check Out” the strongest visual focus. I also enabled inline edits for quantities, addresses, and promo codes—so users could update without losing flow.', 
+      solutionOrImpact:`Impact`, 
+
+      solutionOrImpactDescription:`This reduced total checkout time and increased conversion rate, especially for returning users with edits or add-ons.`,
+      caseURL:``,
+    }) %>
 
 
+    <%- include(`${templatePath}/shared/block_accordion_caselog`, {
+      title:`QP Selection Improvements`,
+      summary:`1-line summary`, 
+      problem:`Users had to switch back and forth between QP cards and the item list to compare options, making it hard to decide or stay in context. `, 
+      insiteOrDesign:`Design`, 
+      insiteOrDesignDescription:`I introduced an inline modal with QP info (service area, rating, etc.) and improved filtering during selection. I also enhanced the map layout to visually group QPs and show availability.`, 
+      solutionOrImpact:`Impact`, 
 
-  
+      solutionOrImpactDescription:`This reduced bounce and added-to-cart friction—users made faster decisions and added more items per session.`,
+      caseURL:``,
+    }) %>
 
-    </div>
+    <%- include(`${templatePath}/shared/block_accordion_caselog`, {
+      title:`Item Details Polish`,
+      summary:`1-line summary`, 
+      problem:`Users couldn’t easily compare gear options—item pages were visually dense, image browsing was clunky, and key info (like manufacturer or features) was buried. This made it harder to build trust and commit to adding items.`, 
+      insiteOrDesign:`Design`, 
+      insiteOrDesignDescription:`I improved the image carousel for quicker scanning and upgraded text hierarchy for titles, descriptions, and specs. I also collapsed long details like manufacturer info to reduce clutter, while surfacing upsell cues (e.g., "also available" or similar items).`, 
+      solutionOrImpact:`Impact`, 
+
+      solutionOrImpactDescription:`Users browsed more confidently and were more likely to complete gear selection. By making relevant details easier to see and compare, we increased AOV and reduced decision fatigue—especially for mobile users.`,
+      caseURL:``,
+    }) %>
+
     <div class="blankHXS"></div>
 
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
-        <div class="Grid-cell">
-          <div class="element">
-            <h4 class="fontWeight400">QP Selection Improvements</h4>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element align-right">
-            <a href="mobile_wireframe/"> <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button></a>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--cols-3">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><strong>Problem:</strong> </h5>
-            <h5>Users had to switch back and forth between QP cards and the item list to compare options, making it hard to decide or stay in context. </h5>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><strong>Design:</strong> </h5>
-            <h5>I introduced an inline modal with QP info (service area, rating, etc.) and improved filtering during selection. I also enhanced the map layout to visually group QPs and show availability.</h5>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><strong>Impact:</strong> </h5>
-            <h5>This reduced bounce and added-to-cart friction—users made faster decisions and added more items per session.</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
-        <div class="Grid-cell">
-          <div class="element">
-            <h4 class="fontWeight400">Item Details Polish</h4>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element align-right">
-            <a href="mobile_wireframe/"> <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button></a>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--cols-3">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><strong>Problem:</strong> </h5>
-            <h5>Users couldn’t easily compare gear options—item pages were visually dense, image browsing was clunky, and key info (like manufacturer or features) was buried. This made it harder to build trust and commit to adding items. </h5>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><strong>Design:</strong> </h5>
-            <h5>I improved the image carousel for quicker scanning and upgraded text hierarchy for titles, descriptions, and specs. I also collapsed long details like manufacturer info to reduce clutter, while surfacing upsell cues (e.g., "also available" or similar items).</h5>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><strong>Impact:</strong> </h5>
-            <h5>Users browsed more confidently and were more likely to complete gear selection. By making relevant details easier to see and compare, we increased AOV and reduced decision fatigue—especially for mobile users.</h5>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <%- include(`${templatePath}/shared/base_divider`) %>
 
     <div class="blankHXXS"></div>
