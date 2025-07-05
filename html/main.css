@@ -1760,19 +1760,34 @@ section {
 }
 
 /* ===== Graph ===== */
-@media (width > 1880px) {
+@media (width > 1980px) {
 body .iconAccTrigger {
-    margin: 28px 6px !important; 
+    margin: 1.75em 6px !important; 
 
 }
 }
 
-@media (width > 1280px) and (width < 1880px) {
+@media (width > 1080px) and (width < 1280px) {
 body .iconAccTrigger {
-    margin: 22px 6px !important; 
+    margin: 0.75em 6px !important; 
+}
+}
 
+
+@media (width > 1280px) and (width < 1980px) {
+body .iconAccTrigger {
+    margin: 1.15em 6px !important; 
 }
 }
+
+
+
+
+
+
+
+
+
 
 @media all and (min-width: 1880px) {
   body .blankMin1880 {
@@ -2873,11 +2888,9 @@ button.passwordArr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   cursor: pointer;
   font-weight: bold;
   user-select: none;
-
   background-color: none;
 }
 

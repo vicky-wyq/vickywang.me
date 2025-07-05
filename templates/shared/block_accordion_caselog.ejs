@@ -1,0 +1,52 @@
+    <% if (typeof greetingTxt === 'undefined') { 
+  greetingTxt = ''; 
+} 
+%>
+    
+    
+    
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 accTrigger is-open-acc Grid--center">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="/"><%= title %> &#10141;</a></h4>
+              <h5><%= summary %></h5>
+            </div>
+          </div>
+          <div class="Grid-cell align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent is-open-acc" style="max-height: 115px;">
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Problem:</strong> </h5>
+                <h5><%= problem %></h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Design:</strong> </h5>
+                <h5><%= design %></h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Impact:</strong> </h5>
+                <h5><%= impact %></h5>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  
+
+    </div>
