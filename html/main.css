@@ -2323,15 +2323,18 @@ h5 {
 }
 
 h6 {
-  font-size: clamp(0.95em, 1vw, 1.1em);
+  font-size: clamp(1em, 1.1vw, 1.2em); /* was 0.95 → now 1em */
 }
+
 p {
   font-size: clamp(1em, 1vw, 1.1em);
 }
+
 ul,
 ol {
-  font-size: clamp(1em, 1vw, 1.1em);
+  font-size: clamp(1.05em, 1.05vw, 1.15em); /* was 1em → now 1.05em */
 }
+
 
 /* =========== Paragraphs =========== */
 p {
