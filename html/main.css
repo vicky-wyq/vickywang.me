@@ -2136,7 +2136,7 @@ section .padding {
 
 .newLandingTitle {
   font-family: inherit;
-  font-size: clamp(1.8em, 2vw, 2.2em);
+  font-size: clamp(2.8em, 3.4vw, 3.8em);
 
   margin: 0;
   line-height: 120%;
@@ -2902,7 +2902,7 @@ button.passwordArr {
   box-shadow: 0 0 0 1px var(--Grey200);
 }
 
-.iconAccTrigger {
+/* .iconAccTrigger {
   height: 28px;
   width: 28px;
   margin: 12px;
@@ -2910,6 +2910,7 @@ button.passwordArr {
 }
 
 .accIcon {
+  margin-left: auto;
   vertical-align: text-top;
   display: inline-block;
 
@@ -2917,7 +2918,21 @@ button.passwordArr {
   background-size: contain;
   background-repeat: no-repeat;
   transition: transform 0.4s ease;
+} */
+ .accIcon.iconAccTrigger {
+  width: 28px;
+  height: 28px;
+  margin: 12px 0 12px auto; /* top/right/bottom/left */
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: text-top;
+
+  background-image: url("icon/plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
 }
+
 
 .accTrigger.is-open-acc .accIcon {
   background-image: url("icon/minus.svg");
@@ -4636,6 +4651,8 @@ body .flex-container.Mobile {
 .row {
   display: flex;
   flex-direction: row;
+    justify-content: space-between;
+
   align-items: flex-start !important;
 }
 
@@ -4661,7 +4678,10 @@ body .flex-container.Mobile {
   align-items: flex-end;
   justify-content: flex-end;
 }
+.rightIcon{
+  right:0;
 
+}
 .align-bottom {
   display: flex;
   align-items: flex-end;
