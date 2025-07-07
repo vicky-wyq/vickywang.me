@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="colorBgVW pattern1">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Caselog | Vicky Wang', 
-  description:'A snapshot of what I focus on and build.', 
-  pageURL:'', thumbnailImgURL: 'vickywang_photography.png'
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Workself | Vicky Wang', 
+  description:'UX designer focused on system clarity, scalable flows, and meaningful product impact—across both B2B platforms and consumer journeys.', 
+  pageURL:'workshelf', thumbnailImgURL: 'vickywang.svg'
   }) %>
 <!--Head-->
 
@@ -12,358 +12,996 @@
 
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header_main`, {
-    logoURL:'/caselog',
+    logoURL:'/workshelf',
     sectionURL1:'#projects', 
     sectionURL2:'#experiments', 
     sectionURL3:'#design_system', 
     sectionURL4:'#about',
     arrTxtColor:'',
-    headerBackgroundColor:'colorBgVW'
+    headerBackgroundColor:'colorWhie'
     }) %>
 
-  <div class="blankHXS"></div>
-  <div class="wrapper">
-    <div class="Grid Grid--full Grid--gutter">
-      <div class="Grid-cell">
-        <div class="element u-textCenter">
-          <h1 class="t-hello">👋🏻 hello, I'm Vicky</h1>
-          <div class="blankHTiny"></div>
-
-          <h1 class="fontWeight700 newLandingTitle">a UX designer focused on clean, scalable experiences that drive real impact.
-          </h1>
-          <h5 class="fontWeight300">Led end-to-end rental experience redesigns for consumer and partner tools across B2C/B2B. I focus on simplifying flows, aligning system logic, and increasing product clarity. Currently expanding frontend skills (JS/React) to bridge design and dev.
-
-          </h5>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="wrapper">
-
-    <div class="Grid Grid--gutters Grid--cols-8 ">
-      <div class="Grid-cell displayLaptop">
-      </div>
-      <div class="Grid-cell displayLaptop">
-      </div>
-      <div class="Grid-cell displayTablet">
-      </div>
-      <div class="Grid-cell centerVH">
-        <div class="ClipboardBoxIconOnly">
-          <button class="ClipboardIconOnly">
-            <img title="Copy Email to Clipboard" class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="../icon/mail.svg" alt="LinkedIn">
-            <p class="clickIconCopy">vickyw.design@gmail.com</p>
-          </button>
-        </div>
-
-      </div>
-      <div class="Grid-cell centerVH">
-        <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" title="LinkedIn">
-          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax borderRadiusS" src="../icon/in.svg" alt="LinkedIn">
-        </a>
-      </div>
-
-      <div class="Grid-cell centerVH">
-        <a href="https://github.com/vicky-wyq" target="_blank" title="GitHub">
-          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="../icon/git.svg" alt="GitHub">
-        </a>
-      </div>
-      <div class="Grid-cell centerVH">
-        <a href="https://codepen.io/vicky-wyq" target="_blank" title="CodePen">
-          <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
-        </a>
-      </div>
-      <div class="Grid-cell centerVH displayLaptop">
-        <div class="dropdownSM">
-          <img title="Share" class="iconM hoverWhite paddingM fitContent borderRadiusMax dropbtn" src="../icon/share.svg" alt="Share">
-          <div class="dropdownSM-content">
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
-              on LinkedIn</a>
-            <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me&amp;media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&amp;description=Skilled%20UX%20Designer%20for%20B2B%20Solutions%20%26%20Consumer%20Apps%20-%20Vicky%20Wang" target="_blank">Share on Pinterest</a>
-          </div>
-        </div>
-      </div>
-      <div class="Grid-cell displayTablet">
-      </div>
-
-      <div class="Grid-cell displayLaptop">
-      </div>
-      <div class="Grid-cell displayLaptop">
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="blankHTiny"></div>
-  <div class="wrapper">
-    <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
-      <div class="element">
-        <a href="/resume2025"> <button class="buttonMedium buttonPrimary WhiteBg">Resume & Experience
-          </button></a>
-
-      </div>
-      <div class="element">
-        <a href="#about"> <button class="buttonMedium buttonFlip WhiteBg">Learn more about me
-          </button></a>
-      </div>
-    </div>
-  </div>
-  <div class="blankHXXS"></div>
-  <!-- Content -->
-  <section id="projects">
-    <div class="colorBgWhie pattern2">
-      <div class="blankHXXS"></div>
-      <div class="wrapper">
-        <div class="Grid Grid--full Grid--gutter">
-          <div class="Grid-cell">
-            <div class="element">
-              <img src="logo_babyquip.svg" class="widthXXS" alt="">
-              <h1 class="fontWeight700">BabyQuip (2024 - Present) </h1>
-              <h4>
-                BabyQuip is a gear rental marketplace helping families travel stress-free by connecting them with local providers — while helping providers (mostly parents) earn income through gear rental. </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="Grid Grid--gutters Grid--cols-2">
-          <div class="Grid-cell">
-            <div class="accItem">
-              <div class="accTrigger">
-                <div class="row">
-                  <div class="accIcon iconAccTrigger"></div>
-                  <div>
-                    <h4 class="fontWeight400">My focus:</h4>
-                    <h5>Aligning the mobile app and partner tools with the company's shift to a gear-first rental model. I worked across core B2C and B2B flows to simplify UX, improve clarity, and support conversion.</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="accContent" style="">
-                <div class="element">
-
-                  <ul class="listCircle ">
-                    <li>Before I joined, the team had redesigned the gear-first website in mid-2024. I supported final refinements and helped launch it in early 2025.
-                    </li>
-                    <li>
-                      The company will rebrand as GoQuip in 2025, expanding from baby gear only to general gear rental.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="accItem">
-              <div class="accTrigger">
-                <div class="row">
-                  <div class="accIcon iconAccTrigger"></div>
-                  <div>
-                    <h4 class="fontWeight400">Impact:</h4>
-                    <h5> Redesigned rental experience around a gear-first model — simplified entry points, streamlined shopping, and increased 7% mobile conversions.
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="accContent" style="">
-                <div class="element">
-                  <ul class="listCircle">
-                    <li>Rebuilt gear first flow overall in wireframe, test early, ensure everything works proper, saving time for later on back and force <span class="bulletWithArrow"></span>
-                    </li>
-                    <li>Rebuilt trip input flow with progressive disclosure (support quick edits or skips)
-                    </li>
-                    <li>
-                      Simplified category discovery to reduce time-to-cart
-                    </li>
-                    <li>Clear QP selection flow with upsells and fewer back buttons
-                    </li>
-                    <li>Collapsed checkout — removed survey, trust/insurance copy now clearer
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
+  <div class="colorBgWhie pattern2">
+    <div class="wrapper">
       <div class="blankHXS"></div>
 
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element u-textCenter">
+            <h1 class="t-hello">👋🏻 hello, I'm Vicky</h1>
+            <div class="blankHTiny"></div>
+            <h1 class="fontWeight700 newLandingTitle">A UX designer focused on scalable systems that reduce friction and support growth.
+            </h1>
+            <h4 class="fontWeight300">I design end-to-end product experiences for B2B and B2C platforms—streamlining complex tools, mapping journeys to business goals, and building clarity into every interaction.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="wrapper ">
+
+      <div class="Grid Grid--gutters Grid--cols-8 ">
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayTablet">
+        </div>
+        <div class="Grid-cell centerVH">
+          <div class="ClipboardBoxIconOnly">
+            <button class="ClipboardIconOnly">
+              <img title="Copy Email to Clipboard" class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/mail.svg" alt="LinkedIn">
+              <p class="clickIconCopy">vickyw.design@gmail.com</p>
+            </button>
+          </div>
+
+        </div>
+        <div class="Grid-cell centerVH">
+          <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" title="LinkedIn">
+            <img class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax borderRadiusS" src="../icon/in.svg" alt="LinkedIn">
+          </a>
+        </div>
+
+        <div class="Grid-cell centerVH">
+          <a href="https://github.com/vicky-wyq" target="_blank" title="GitHub">
+            <img class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/git.svg" alt="GitHub">
+          </a>
+        </div>
+        <div class="Grid-cell centerVH">
+          <a href="https://codepen.io/vicky-wyq" target="_blank" title="CodePen">
+            <img class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
+          </a>
+        </div>
+        <div class="Grid-cell centerVH displayLaptop">
+          <div class="dropdownSM">
+            <img title="Share" class="iconM hoverGrey100 paddingM fitContent borderRadiusMax dropbtn" src="../icon/share.svg" alt="Share">
+            <div class="dropdownSM-content">
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
+                on LinkedIn</a>
+              <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me&amp;media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&amp;description=Skilled%20UX%20Designer%20for%20B2B%20Solutions%20%26%20Consumer%20Apps%20-%20Vicky%20Wang" target="_blank">Share on Pinterest</a>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell displayTablet">
+        </div>
+
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayLaptop">
+        </div>
+
+      </div>
 
     </div>
 
+    <div class="blankHTiny"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+        <div class="element">
+          <a href="/resume2025"> <button class="buttonMedium buttonPrimary WhiteBg">Resume & Experience
+            </button></a>
 
+        </div>
+        <div class="element">
+          <a href="#about"> <button class="buttonMedium buttonFlip WhiteBg">Learn more about me
+            </button></a>
+        </div>
+      </div>
+    </div>
+    <div class="blankHXXS"></div>
+  </div>
+
+  <!-- Content -->
+  <section id="projects">
 
 
 
     <div class="wrapper">
-      <div class="blankHXXS"></div>
-
-
-      <div class="wrapper">
-        <div class="Grid Grid--full Grid--gutter">
-          <div class="Grid-cell">
-            <div class="element">
-              <h3><span class=" fontWeight700">Scaling Inventory Management for Growth (Partner Portal / B2B)
-                </span></h3>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="Grid Grid--full Grid--gutter displayLaptop">
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="blankHTiny"></div>
-
-              <img class="modal-target" src="cover_inventory_management.svg" alt="">
-              <div class="blankHTiny"></div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="Grid Grid--gutters Grid--cols-3">
-          <div class="Grid-cell">
-            <div class="element">
-
-              <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX · Redesign from structural level</h6>
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-
-              <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing & storefront control </h6>
-            </div>
-
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-
-              <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <div class="Grid Grid--gutters Grid--full">
-          <div class="Grid-cell">
-            <div class="element">
-              <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
-              <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper">
-
-        <div class="Grid Grid--gutters Grid--cols-2">
-          <div class="Grid-cell">
-            <div class="element">
-              <h5><strong>Key Fixes:</strong>
-                <ul class="listCircle">
-                  <li>Unified item view replaces 4+ screens</li>
-                  <li>Persistent filters (category, product type, status)</li>
-                  <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
-                  <li>Improved visibility into packages and gear state</li>
-                </ul>
-              </h5>
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-              <h5><strong>Results:</strong>
-                <ul class="listCircle">
-                  <li>3× faster edits for high-supply QPs</li>
-                  <li>50–75% time saved in QA</li>
-                  <li>Design reused across Superlisting, SuperAdmin</li>
-                  <li>Foundation ready for PartyQuip & GoQuip expansion</li>
-                </ul>
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="wrapper">
-        <div class="Grid Grid--gutters Grid--full">
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="blankHTiny"></div>
-              <button class="buttonSmall buttonFlip WhiteBg maxContent">View Case Study</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <%- include(`${templatePath}/shared/base_divider_short`) %>
-
       <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h3><span class=" fontWeight700">Consumer Rental Experience</span></h3>
-
+            <h3><span class=" fontWeight700">Platform Design / B2B Systems </span></h3>
+            <h4><span class=" fontWeight300 textItalic">Scalable UX for providers and internal tools—designed for system control, not just UI polish.</span></h4>
 
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Inventory Management (Partner Portal) ➝</a></h4>
+                  <h5>Redesigned the entire inventory control system to scale from hobbyist QPs to power users. Unified navigation, added inline controls, and increased efficiency 3×.</h5>
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_inventory_management.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX · Redesign from structural level</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing &amp; storefront control </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
+                  <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Key Fixes:</strong>
+                  <ul class="listCircle">
+                    <li>Unified item view replaces 4+ screens</li>
+                    <li>Persistent filters (category, product type, status)</li>
+                    <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
+                    <li>Improved visibility into packages and gear state</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Results:</strong>
+                  <ul class="listCircle">
+                    <li>3× faster edits for high-supply QPs</li>
+                    <li>50–75% time saved in QA</li>
+                    <li>Design reused across Superlisting, SuperAdmin</li>
+                    <li>Foundation ready for PartyQuip &amp; GoQuip expansion</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Onboarding Redesign (Partner Portal / GoQuip) ➝</a></h4>
+                  <h5>Replaced a 30+ screen linear flow with a modular, category-aware system that adapts by provider type and business model. Scales across Baby, Mobility, and Party categories.
+                  </h5>
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_inventory_management.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX · Redesign from structural level</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing &amp; storefront control </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
+                  <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Key Fixes:</strong>
+                  <ul class="listCircle">
+                    <li>Unified item view replaces 4+ screens</li>
+                    <li>Persistent filters (category, product type, status)</li>
+                    <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
+                    <li>Improved visibility into packages and gear state</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Results:</strong>
+                  <ul class="listCircle">
+                    <li>3× faster edits for high-supply QPs</li>
+                    <li>50–75% time saved in QA</li>
+                    <li>Design reused across Superlisting, SuperAdmin</li>
+                    <li>Foundation ready for PartyQuip &amp; GoQuip expansion</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
+      </div>
+    </div>
 
 
-      <div class="Grid Grid--full Grid--gutter displayLaptop">
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">BookYourPet B2B Platform (UX Refactor, Booking Optimization) ➝</a></h4>
+                  <h5>Led redesign of business onboarding and booking flows for pet service providers. Simplified workflows, increased signup completion, and reduced booking friction.
+                  </h5>
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_inventory_management.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX · Redesign from structural level</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing &amp; storefront control </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/sandeepchauhan1000/">Sandeep Chauhan </a>, <a class="textUnderline" href="https://www.linkedin.com/in/romeroralph">Ralph Romero</a></h6>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
+                  <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Key Fixes:</strong>
+                  <ul class="listCircle">
+                    <li>Unified item view replaces 4+ screens</li>
+                    <li>Persistent filters (category, product type, status)</li>
+                    <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
+                    <li>Improved visibility into packages and gear state</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Results:</strong>
+                  <ul class="listCircle">
+                    <li>3× faster edits for high-supply QPs</li>
+                    <li>50–75% time saved in QA</li>
+                    <li>Design reused across Superlisting, SuperAdmin</li>
+                    <li>Foundation ready for PartyQuip &amp; GoQuip expansion</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
+      </div>
+    </div>
+    <div class="blankHXXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <img class="modal-target" src="cover_mobile_journey.svg" alt="">
+            <h3><span class=" fontWeight700">Consumer Experience / B2C Growth </span></h3>
+            <h4><span class=" fontWeight300 textItalic">UX designed to reduce friction, build trust, and improve mobile/web rental conversion.</span></h4>
+
           </div>
         </div>
       </div>
-      <div class="Grid Grid--full Grid--gutter displayLaptop">
+    </div>
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400">Mobile Rental Redesign (BabyQuip)</h4>
+                  <h5>Led redesign of core consumer journey from entry to checkout. Re-architected shopping, QP flow, trip input, and cart into a scalable mobile-first experience.
+                  </h5>
+                  <h5 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Exploration ➝</a>, <a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Consideration ➝</a>, <a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Checkout ➝</a></h5>
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Context:</strong> Before the redesign, users had to select a provider before browsing gear.
+                  This “provider-first” structure caused friction for new users, who dropped off when forced to choose a QP without context. After BabyQuip shifted to a “gear-first” model on web, I redesigned the mobile experience to match—while streamlining trip input, clarifying QP flow, and reducing booking friction.
+
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_mobile_journey.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Mobile rental journey (entry → checkout) </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><a title="View full context, metrics, and case breakdown" class="textUnderline fontWeight500" href="">Exploration: Shopping & Landing ➝</a></h5>
+                <div class="blankHTiny"></div>
+                <h5><strong>Problem:</strong> Users dropped off early due to rigid trip entry or confusion about the service</h5>
+                <h5><strong>Insight:</strong> Fast vs cautious users had different booking triggers</h5>
+                <h5><strong>Solution:</strong> Category-first browse layout, flexible landing paths</h5>
+                <h5><strong>Impact:</strong> +32% product views, +26% cart adds</h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><a title="View full context, metrics, and case breakdown" class="textUnderline fontWeight500" href="">Consideration: Trip Input & QP Clarity ➝</a></h5>
+                <div class="blankHTiny"></div>
+                <h5><strong>Problem:</strong> Users had to complete rigid trip forms (dates, times, address) up front, with no way to revisit or edit later—causing drop-off and frustration.</h5>
+                <h5><strong>Insight:</strong> Most users accepted default values but needed a way to view or adjust info after exploring gear.</h5>
+                <h5><strong>Solution:</strong> Introduced modular trip inputs with inline visibility, smart defaults, and persistent edit access—making the trip context flexible, skippable, and always available.</h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><a title="View full context, metrics, and case breakdown" class="textUnderline fontWeight500" href="">Checkout Optimization ➝</a></h5>
+                <div class="blankHTiny"></div>
+                <h5><strong>Problem:</strong> Survey-style checkout discouraged completion</h5>
+                <h5><strong>Insight:</strong> Final steps felt excessive and redundant</h5>
+                <h5><strong>Solution:</strong> Condensed form into a single-page checkout</h5>
+                <h5><strong>Impact:</strong> +32% AOV, –59% drop-off</h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400">Web Support UX (BabyQuip)</h4>
+                  <h5>Improved QP selection, checkout clarity, and item detail polish on responsive web. Supported growth-stage fixes pre-launch to reduce drop-off. </h5>
+                  <h5 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Checkout Page Enhancements ➝</a>, <a title="View full context, metrics, and case breakdown" class="textUnderline" href="">QP Selection Improvements ➝</a>, <a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Item Details Polish ➝</a></h5>
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_mobile_journey_web.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Support UX Designer</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear-first rental flow optimization </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
+              </div>
+            </div>
+
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><a title="View full context, metrics, and case breakdown" class="textUnderline fontWeight500" href="">Checkout Page Enhancements ➝ ➝</a></h5>
+                <div class="blankHTiny"></div>
+                <h5><strong>Problem:</strong> Users dropped off early due to rigid trip entry or confusion about the service</h5>
+                <h5><strong>Insight:</strong> Fast vs cautious users had different booking triggers</h5>
+                <h5><strong>Solution:</strong> Category-first browse layout, flexible landing paths</h5>
+                <h5><strong>Impact:</strong> +32% product views, +26% cart adds</h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><a title="View full context, metrics, and case breakdown" class="textUnderline fontWeight500" href="">QP Selection Improvements ➝</a></h5>
+                <div class="blankHTiny"></div>
+                <h5><strong>Problem:</strong> Users had to complete rigid trip forms (dates, times, address) up front, with no way to revisit or edit later—causing drop-off and frustration.</h5>
+                <h5><strong>Insight:</strong> Most users accepted default values but needed a way to view or adjust info after exploring gear.</h5>
+                <h5><strong>Solution:</strong> Introduced modular trip inputs with inline visibility, smart defaults, and persistent edit access—making the trip context flexible, skippable, and always available.</h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><a title="View full context, metrics, and case breakdown" class="textUnderline fontWeight500" href="">Item Details Polish ➝</a></h5>
+                <div class="blankHTiny"></div>
+                <h5><strong>Problem:</strong> Survey-style checkout discouraged completion</h5>
+                <h5><strong>Insight:</strong> Final steps felt excessive and redundant</h5>
+                <h5><strong>Solution:</strong> Condensed form into a single-page checkout</h5>
+                <h5><strong>Impact:</strong> +32% AOV, –59% drop-off</h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Consumer Booking (BookYourPet) ➝</a></h4>
+                  <h5>Designed full B2C checkout for pet owners. Supported simplified business owner's landing page, easy to find service then start booking, flexible add-ons, and reduced booking time to under 1 minute.</h5>
+
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_mobile_journey.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX · Redesign from structural level</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing &amp; storefront control </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/sandeepchauhan1000/">Sandeep Chauhan </a>, <a class="textUnderline" href="https://www.linkedin.com/in/romeroralph">Ralph Romero</a></h6>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
+                  <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Key Fixes:</strong>
+                  <ul class="listCircle">
+                    <li>Unified item view replaces 4+ screens</li>
+                    <li>Persistent filters (category, product type, status)</li>
+                    <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
+                    <li>Improved visibility into packages and gear state</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Results:</strong>
+                  <ul class="listCircle">
+                    <li>3× faster edits for high-supply QPs</li>
+                    <li>50–75% time saved in QA</li>
+                    <li>Design reused across Superlisting, SuperAdmin</li>
+                    <li>Foundation ready for PartyQuip &amp; GoQuip expansion</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blankHXXS"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h4><span class=" fontWeight700">Mobile App (B2C)</span></h4>
+            <h3><span class=" fontWeight700">Strategic Systems / Experience Architecture</span></h3>
+            <h4><span class=" fontWeight300 textItalic">Work that goes beyond UI—aligns journeys, funnels, and system models across experiences.</span></h4>
           </div>
         </div>
       </div>
+    </div>
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Full Rental Journey Wireframe ➝</a></h4>
+                  <h5>Audited the entire BabyQuip rental flow and re-mapped it from system logic to UX wireframes. Reduced downstream bugs and improved conversion clarity.</h5>
 
-
-
-
-      <div class="Grid Grid--gutters Grid--cols-3">
-        <div class="Grid-cell">
-          <div class="element">
-
-            <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX Designer </h6>
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="Grid-cell">
-          <div class="element">
-
-            <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Consumer rental flow</h6>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_mobile_journey.svg" alt="">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
 
-            <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder:</span> <a href="">Kim Connolly</a> </h6>
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX · Redesign from structural level</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing &amp; storefront control </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/sandeepchauhan1000/">Sandeep Chauhan </a>, <a class="textUnderline" href="https://www.linkedin.com/in/romeroralph">Ralph Romero</a></h6>
+              </div>
+            </div>
+
           </div>
-        </div>
 
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
+                  <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Key Fixes:</strong>
+                  <ul class="listCircle">
+                    <li>Unified item view replaces 4+ screens</li>
+                    <li>Persistent filters (category, product type, status)</li>
+                    <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
+                    <li>Improved visibility into packages and gear state</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Results:</strong>
+                  <ul class="listCircle">
+                    <li>3× faster edits for high-supply QPs</li>
+                    <li>50–75% time saved in QA</li>
+                    <li>Design reused across Superlisting, SuperAdmin</li>
+                    <li>Foundation ready for PartyQuip &amp; GoQuip expansion</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
       </div>
+    </div>
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Funnel x Journey Integration ➝</a></h4>
+                  <h5>Connected emotional journey map (curiosity → trust → satisfaction) with business funnel (awareness → conversion). Used this to guide design scope and prioritization.</h5>
+
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_mobile_journey.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX · Redesign from structural level</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing &amp; storefront control </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/sandeepchauhan1000/">Sandeep Chauhan </a>, <a class="textUnderline" href="https://www.linkedin.com/in/romeroralph">Ralph Romero</a></h6>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
+                  <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Key Fixes:</strong>
+                  <ul class="listCircle">
+                    <li>Unified item view replaces 4+ screens</li>
+                    <li>Persistent filters (category, product type, status)</li>
+                    <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
+                    <li>Improved visibility into packages and gear state</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Results:</strong>
+                  <ul class="listCircle">
+                    <li>3× faster edits for high-supply QPs</li>
+                    <li>50–75% time saved in QA</li>
+                    <li>Design reused across Superlisting, SuperAdmin</li>
+                    <li>Foundation ready for PartyQuip &amp; GoQuip expansion</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--full Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="row">
+                <div class="">
+                  <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="">Inventory System Framing ➝</a></h4>
+                  <h5>Proposed scalable system refactor in response to single-feature request. Used structural thinking to replace tab-based patch with long-term IA clarity.</h5>
+
+                </div>
+                <div class="accIcon iconAccTrigger align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target" src="cover_mobile_journey.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX · Redesign from structural level</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing &amp; storefront control </h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/sandeepchauhan1000/">Sandeep Chauhan </a>, <a class="textUnderline" href="https://www.linkedin.com/in/romeroralph">Ralph Romero</a></h6>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="element">
+                  <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
+                  <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Key Fixes:</strong>
+                  <ul class="listCircle">
+                    <li>Unified item view replaces 4+ screens</li>
+                    <li>Persistent filters (category, product type, status)</li>
+                    <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
+                    <li>Improved visibility into packages and gear state</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h5><strong>Results:</strong>
+                  <ul class="listCircle">
+                    <li>3× faster edits for high-supply QPs</li>
+                    <li>50–75% time saved in QA</li>
+                    <li>Design reused across Superlisting, SuperAdmin</li>
+                    <li>Foundation ready for PartyQuip &amp; GoQuip expansion</li>
+                  </ul>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="blankHTiny"></div>
+        </div>
+      </div>
+    </div>
+    <%- include(`${templatePath}/shared/base_divider_short`) %>
+
+
+    <div class="Grid Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <h3><span class=" fontWeight700">Consumer Rental Experience</span></h3>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Grid Grid--full Grid--gutter displayLaptop">
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="modal-target" src="cover_mobile_journey.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="Grid Grid--full Grid--gutter displayLaptop">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><span class=" fontWeight700">Mobile App (B2C)</span></h4>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX Designer </h6>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Consumer rental flow</h6>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder:</span> <a href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a> </h6>
+        </div>
+      </div>
+
     </div>
 
 
@@ -463,7 +1101,7 @@
 
 
 
-<div class="wrapper">
+    <div class="wrapper">
       <div class="accItem">
         <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
           <div class="Grid-cell">
