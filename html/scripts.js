@@ -528,21 +528,30 @@ AOS.init({
 
   initializeToggles();
 /* =================== accTrigger ===================*/
-const accTriggers = document.querySelectorAll(".accTrigger");
+const accTriggers = document.querySelectorAll(".accItem > .accTrigger");
 
 accTriggers.forEach((trigger) => {
   trigger.addEventListener("click", function () {
-    const content = this.nextElementSibling;
-    content.classList.toggle("is-open-acc");
-    this.classList.toggle("is-open-acc");
+    const content = this.parentElement.querySelector(".accContent");
+    const isOpen = content.classList.contains("is-open-acc");
 
-    if (content.classList.contains("is-open-acc")) {
+    // Close all
+    accTriggers.forEach((item) => {
+      const itemContent = item.parentElement.querySelector(".accContent");
+      item.classList.remove("is-open-acc");
+      itemContent.classList.remove("is-open-acc");
+      itemContent.style.maxHeight = null;
+    });
+
+    // Open only if it wasn't open
+    if (!isOpen) {
+      this.classList.add("is-open-acc");
+      content.classList.add("is-open-acc");
       content.style.maxHeight = content.scrollHeight + "px";
-    } else {
-      content.style.maxHeight = null;
     }
   });
 });
+
 
 
 
