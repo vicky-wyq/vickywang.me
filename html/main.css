@@ -2878,16 +2878,13 @@ button.passwordArr {
 
 .accContent.is-open-acc {
   /* dynamic height will be applied inline */
-    margin-top: 1rem;
-
 }
 
 .accContent {
   overflow: hidden;
   max-height: 0;
-  /* transition: max-height 0.4s ease; */
-    transition: max-height 0.4s ease, margin 0.4s ease;
-
+  transition: max-height 0.4s ease;
+  
 }
 
 .accTrigger {
