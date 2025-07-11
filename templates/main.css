@@ -2136,7 +2136,7 @@ section .padding {
 
 .newLandingTitle {
   font-family: inherit;
-  font-size: clamp(2.8em, 3.4vw, 3.8em);
+  font-size: clamp(2.6em, 3vw, 3.2em);
 
   margin: 0;
   line-height: 120%;
