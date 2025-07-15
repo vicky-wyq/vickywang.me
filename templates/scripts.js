@@ -330,18 +330,14 @@ function initializePassword() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
-// ====== AOS Starts ====== //
+  // ====== AOS Starts ====== //
 
-AOS.init({
-  delay: 180,
-  duration: 1000
-});
+  AOS.init({
+    delay: 180,
+    duration: 1000,
+  });
 
-
-// ====== AOS Ends ====== //
-
-  
-
+  // ====== AOS Ends ====== //
 
   // ====== Hamburger Menu Starts ====== //
   const hamburger = document.querySelector(".hamburger");
@@ -527,28 +523,24 @@ AOS.init({
   // ====== Scroll bar ====== //
 
   initializeToggles();
-/* =================== accTrigger ===================*/
-const accTriggers = document.querySelectorAll(".accTrigger");
+  /* =================== accTrigger ===================*/
+  const accTriggers = document.querySelectorAll(".accTrigger");
 
-accTriggers.forEach((trigger) => {
-  trigger.addEventListener("click", function () {
-    const content = this.nextElementSibling;
-    content.classList.toggle("is-open-acc");
-    this.classList.toggle("is-open-acc");
+  accTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+      content.classList.toggle("is-open-acc");
+      this.classList.toggle("is-open-acc");
 
-    if (content.classList.contains("is-open-acc")) {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } else {
-      content.style.maxHeight = null;
-    }
+      if (content.classList.contains("is-open-acc")) {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = null;
+      }
+    });
   });
-});
 
-
-
-/* =================== accTrigger ===================*/
-
-
+  /* =================== accTrigger ===================*/
 
   // ====== accordion Starts ====== //
   const accordionBtns = document.querySelectorAll(".accordion");
@@ -573,8 +565,6 @@ accTriggers.forEach((trigger) => {
   // ====== accordion Ends ====== //
 
   initializePassword();
-
-
 
   // ====== Back to Top Starts ====== //
 
@@ -783,7 +773,7 @@ accTriggers.forEach((trigger) => {
   });
   //gif hover/tap to play
 
-  // Modal Setup
+  // img Modal Setup
   var modal = document.getElementById("modal");
   var modalClose = document.getElementById("modal-close");
 
@@ -816,6 +806,50 @@ accTriggers.forEach((trigger) => {
       modalImg.src = img.src;
       captionText.innerHTML = img.alt;
     }
+  });
+  // ESC key closes image modal
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.style.display === "block") {
+      modal.style.display = "none";
+    }
+  });
+
+  // img Modal finished
+  //modal with Triggers + Contents
+  // Open modal
+  document.querySelectorAll(".open-modal").forEach((trigger) => {
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      const modalId = trigger.getAttribute("data-modal");
+      const modal = document.getElementById(modalId);
+      if (modal) modal.classList.add("show");
+    });
+  });
+
+  // Close modal via X
+  document.querySelectorAll(".modal-close").forEach((close) => {
+    close.addEventListener("click", () => {
+      const modal = close.closest(".modal");
+      if (modal) modal.classList.remove("show");
+    });
+  });
+
+  // Close via ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".modal.show").forEach((modal) => {
+        modal.classList.remove("show");
+      });
+    }
+  });
+
+  // Close modal when clicking outside the modal content
+  document.querySelectorAll(".modal").forEach((modal) => {
+    modal.addEventListener("click", (e) => {
+      if (!e.target.closest(".modal-content")) {
+        modal.classList.remove("show");
+      }
+    });
   });
 
   // Scroll add/remove classes Starts
