@@ -1767,11 +1767,11 @@ section {
 }
 
 /* ===== Graph ===== */
-@media (width > 1980px) {
+/* @media (width > 1980px) {
   body .iconAccTrigger {
     margin: 1.75em 6px !important;
   }
-}
+} */
 
 @media (width > 1080px) and (width < 1280px) {
   body .iconAccTrigger {
@@ -2927,7 +2927,7 @@ button.passwordArr {
   background-repeat: no-repeat;
   transition: transform 0.4s ease;
 } */
- .accIcon.iconAccTrigger {
+ .accIcon {
   width: 28px;
   height: 28px;
   margin: 12px 0 12px auto; /* top/right/bottom/left */
