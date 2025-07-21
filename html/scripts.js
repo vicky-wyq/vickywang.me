@@ -772,7 +772,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   });
   //gif hover/tap to play
-
+  //======================
   // img Modal Setup
   var modal = document.getElementById("modal");
   var modalClose = document.getElementById("modal-close");
@@ -815,6 +815,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
   // img Modal finished
+  //====================================
   //modal with Triggers + Contents
   // Open modal
   document.querySelectorAll(".open-modal").forEach((trigger) => {
@@ -843,14 +844,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
 
-  // Close modal when clicking outside the modal content
+  // Click anywhere inside modal closes it (even on content)
   document.querySelectorAll(".modal").forEach((modal) => {
-    modal.addEventListener("click", (e) => {
-      if (!e.target.closest(".modal-content")) {
-        modal.classList.remove("show");
-      }
+    modal.addEventListener("click", () => {
+      modal.classList.remove("show");
     });
   });
+
+  //====================================
 
   // Scroll add/remove classes Starts
   window.addEventListener("DOMContentLoaded", () => {
