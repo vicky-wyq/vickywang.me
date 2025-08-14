@@ -2189,6 +2189,13 @@ section .padding {
 }
 
 /* =========== Font Weights =========== */
+.chip {
+  font-size: clamp(0.6em, 0.8vw, 0.9em);
+  padding: var(--paddingXS);
+  font-weight: 400;
+  background-color: var(--VW--Yellow500);
+  border-radius: var(--border-radiusXS);
+}
 .fontWeight100 {
   font-weight: 100;
 }
@@ -4716,6 +4723,10 @@ body .flex-container.Mobile {
 .centerVer {
   display: flex;
   align-items: center;
+}
+.centerTxt{
+  display: flex;
+
 }
 
 .centerVH {
