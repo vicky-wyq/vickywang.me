@@ -3265,7 +3265,7 @@ button.passwordArr {
 }
 
 /* below from web 2.0*/
-@media all and (max-width: 680px) {
+@media all and (max-width: 760px) {
   body .accTrigger {
     flex-direction: column;
     align-items: flex-start;
@@ -4283,13 +4283,12 @@ body .flex-container.Mobile {
 
 .blankHXXS {
   display: block;
-
   height: clamp(2em, 2.6vw, 4em);
 }
 
 .blankHXS {
   display: block;
-  height: clamp(4em, 5vw, 6em);
+  height: 12px;
 }
 
 .blankHS {
@@ -4538,6 +4537,13 @@ body .flex-container.Mobile {
   position: relative;
   text-align: center;
 }
+.ProjectBannerInner2025 {
+  position: absolute;
+  top: calc(100% - 216px);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 100%;
+}
 
 .ProjectBannerInner {
   position: absolute;
@@ -4548,7 +4554,7 @@ body .flex-container.Mobile {
 
 .ProjectBannerInnerND {
   position: absolute;
-  top: calc(100% - 186px);
+  top: calc(100% - 1866px);
   transform: translate(-50%, -50%);
   left: 50%;
   width: 100%;

@@ -1,32 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" class="colorBgBYPgrey pattern2 BYPb2b">
+<html lang="en" class="colorBgVW pattern1">
+
 <!--Head-->
 <%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Optimizing Pet Service Bookings by Vicky Wang`,
   description:'Enhancing the Consumer Booking Experience', pageURL:'byp_b2c_booking/',
   thumbnailImgURL: 'vickywang_web.png' }) %>
 <!--Head-->
 
-<body class="BYPb2b">
+<body class="">
 
-  <%- include(`${templatePath}/shared/comp_progressBar`, { barColor: 'b2bBYP' }) %>
+  <%- include(`${templatePath}/shared/comp_progressBar`) %>
+
   <%- include(`${templatePath}/shared/block_nav_header_back`, { 
         PageUrl:`${websitePath}/`,
-        headerBackgroundColor:`colorBgBYPgrey`,
+        headerBackgroundColor:`colorWhie`,
         arrTxtColor:``,
 
         }) %>
 
 
-  <div class="ProjectBanner">
+  <div class="ProjectBanner colorBgWhie pattern2">
 
     <img class="displayLaptop" src="MockupL.png" alt="Mockup">
     <img class="displayTablet" src="MockupM.png" alt="Mockup">
     <img class="displayPhone" src="MockupS.png" alt="Mockup">
 
 
-    <div class="ProjectBannerInnerND">
-      <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
-      <h3 class="ProjectBannerInnerElement fontWeight500 noMargin">BabyQuip Inventory Management (Partner Portal)</h3>
+    <div class="ProjectBannerInner2025">
+      <div class="wrapperM">
+        <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
+        <h1 class="fontWeight700">Scaling Inventory Management for Growth</h1>
+        <div class="Grid Grid--gutters Grid--cols-3">
+          <div class="Grid-cell">
+            <div class="element">
+              <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> </h6>
+              <h6 class="fontWeight500">Lead UX</h6>
+
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> </h6>
+              <h6 class="fontWeight500">Gear listing &amp; storefront control</h6>
+
+            </div>
+          </div>
+          <div class="Grid-cell">
+            <div class="element">
+              <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span></h6>
+              <h6><a class="textUnderline fontWeight500" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight500" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
     </div>
 
   </div>
@@ -34,73 +64,19 @@
 
 
   <!-- timeline -->
-  <div class="wrapper">
+
+
+  <div class="GreyBg100">
     <div class="blankHXS"></div>
 
-    <div class="Grid Grid--gutters Grid--cols-4 u-textCenter">
-      <!-- subTitleFont1 -->
-      <div class="Grid-cell">
-        <div class="element">
-          <h3> <strong class=""> Timeline </strong> </h3>
-          <h4> June - July 2023 </h4>
-          <h4> 4 Weeks </h4>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="element">
-          <h3> <strong class=""> Team </strong> </h3>
-          <h4> Marketing, Sales </h4>
-          <h4> Engineer Lead </h4>
-          <h4> Stakeholder Review </h4>
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="element">
-          <h3> <strong class=""> Role </strong> </h3>
-          <h4> User Research </h4>
-          <h4> Design, Test & Iterate </h4>
-          <h4> Deliverable & Q/A </h4>
-
-        </div>
-      </div>
-      <div class="Grid-cell">
-        <div class="element">
-          <h3> <strong class=""> Tools </strong> </h3>
-          <h4> Figma </h4>
-          <h4> Trello & Notion </h4>
-          <h4> Slack </h4>
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="blankHS"></div>
-
-
-  </div>
-
-  <div class="colorBgBYPblue200">
-    <div class="blankHXS"></div>
-
-    <div class="wrapperM">
-
-      <div class="Grid Grid--gutters Grid--full u-textCenter">
-        <%- include(`${templatePath}/shared/comp_textualElements_title`, {
-        fontColor:`colorBYPblue800`,
-        fontSize:`h1`, 
-        titleText:`Overview - Streamlining the Booking Process`,
-        fontWeight:'fontWeight900'
-        }) %>
-      </div>
-      <div class="blankHTiny"></div>
-
-      <div class="Grid Grid--full Grid--gutters u-textCenter">
-        <div class="Grid-cell ">
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
           <div class="element">
+            <div class="blankHXXS"></div>
+            <h2><span class=" fontWeight700">Platform Design / B2B Systems </span></h2>
+            <h4><span class=" fontWeight300 textItalic">Scalable UX for providers and internal tools—designed for system control, not just UI polish.</span></h4>
 
-            <h3>Improve the user experience for pet business owners booking appointments for their customers by streamlining the booking process.
-            </h3>
           </div>
         </div>
       </div>
@@ -108,7 +84,7 @@
     <div class="blankHTiny"></div>
 
     <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--cols-3 u-textCenter" data-module="countup">
+      <div class="Grid Grid--gutters Grid--cols-3" data-module="countup">
 
         <div class="Grid-cell">
           <div class="element">
@@ -199,55 +175,6 @@
     </div>
     <div class="blankHXS"></div>
 
-    <div class="wrapper">
-      <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
-        <div class="TBslides">
-          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
-            <div class="crop_byp_b2b">
-              <img src="gif_click_calendar.gif" alt="Clickable Calendar">
-
-            </div>
-          </div>
-          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
-            <div class="crop_byp_b2b">
-              <img src="gif_price_dropdown.gif" alt="Price Dropdown">
-
-            </div>
-          </div>
-          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
-            <div class="crop_byp_b2b">
-              <img src="gif_override_price.gif" alt="Override Price">
-            </div>
-          </div>
-          <div class="TBslidesItem slide-4" id="slide-4" aria-label="slide 4 of 4" tabindex="0">
-            <div class="crop_byp_b2b">
-              <img src="gif_adjust_duration.gif" alt="Adjust Duration">
-
-            </div>
-          </div>
-        </div>
-        <div class="blankHXXS"></div>
-
-        <div class="TBcarouselNav Grid-cell flipBtn">
-          <a class="TBsliderNav" aria-label="Go to slide 1" tabindex="0">
-            <div>Clickable Calendar</div>
-          </a>
-          <a class="TBsliderNav" aria-label="Go to slide 2" tabindex="0">
-            <div>Display Price</div>
-
-          </a>
-          <a class="TBsliderNav" aria-label="Go to slide 3" tabindex="0">
-            <div>Override Price</div>
-          </a>
-          <a class="TBsliderNav" aria-label="Go to slide 4" tabindex="0">
-            <div>Adjust Duration</div>
-
-          </a>
-        </div>
-        <div class="blankHXXS"></div>
-
-      </div>
-    </div>
 
 
     <div class="blankHXS"></div>
