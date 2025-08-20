@@ -2320,7 +2320,12 @@ ul.listCircle {
   padding-left: 22px;
   margin-left: 0;
 }
-
+ul.disc {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 22px;
+  margin-left: 0;
+}
 h1 {
   font-size: clamp(1.8em, 3vw, 2.5em);
 }
@@ -4458,7 +4463,10 @@ body .flex-container.Mobile {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-
+.leftVerLine2025 {
+  border-left: 3px solid var(--Grey700);
+  padding-left: 6px;
+}
 .leftVerLine {
   border-left: 5px solid var(--Grey300);
   padding-left: 1em;
@@ -4539,7 +4547,7 @@ body .flex-container.Mobile {
 }
 .ProjectBannerInner2025 {
   position: absolute;
-  top: calc(100% - 216px);
+  top: calc(100% - 256px);
   transform: translate(-50%, -50%);
   left: 50%;
   width: 100%;
