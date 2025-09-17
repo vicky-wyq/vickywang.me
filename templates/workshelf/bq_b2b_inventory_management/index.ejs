@@ -11,12 +11,8 @@
 
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
 
-  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
-        PageUrl:`${websitePath}/`,
-        headerBackgroundColor:`colorWhie`,
-        arrTxtColor:``,
-
-        }) %>
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { PageUrl:`${websitePath}/`,
+        headerBackgroundColor:`colorWhie`, arrTxtColor:``, }) %>
 
 
   <div class="ProjectBanner colorBgWhie pattern2">
@@ -30,7 +26,9 @@
       <div class="wrapperM">
         <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
         <h1 class="fontWeight700">Scaling Inventory Management for Growth</h1>
-        <h4 class="fontWeight300">From deep-click navigation to filter-based control</h4>
+        <h4 class="fontWeight300">From deep-click navigation to filter-based control
+
+        </h4>
 
         <div class="Grid Grid--gutters Grid--cols-3">
           <div class="Grid-cell">
@@ -50,7 +48,10 @@
           <div class="Grid-cell">
             <div class="element">
               <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span></h6>
-              <h6><a class="textUnderline fontWeight500" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight500" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
+              <h6><a class="textUnderline fontWeight500" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>,
+                <a class="textUnderline fontWeight500" href="https://www.linkedin.com/in/kimconnolly1">Kim
+                  Connolly</a>
+              </h6>
             </div>
           </div>
         </div>
@@ -69,216 +70,391 @@
 
 
   <div class="GreyBg100">
-    <div class="blankHXS"></div>
+    <div class="blankHS"></div>
 
-    <div class="wrapper">
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <div class="blankHXXS"></div>
-            <h3><span class=" fontWeight700">Before vs. After </span></h3>
-            <h4><span class=" fontWeight300 textItalic">x</span></h4>
-
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="blankHTiny"></div>
 
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-3 u-textCenter" data-module="countup">
 
-    <div class="blankHXS"></div>
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="stat">
 
 
 
-    <div class="blankHXS"></div>
+              <h6 class="chipSmall colorBQTeal100 colorBQTeal700">
+                Saves Providers Time
+              </h6>
+              <h2 class="stat-figure">
+                <span class="stat-prefix specialTextL fontWeight700">+</span>
+                <span class="stat-number specialTextL fontWeight700" data-countup-number="3">3</span>
+                <span class="stat-suffix">x</span>
+              </h2>
 
+              <h5 class="fontWeight400">
+                Faster edits for high-volume providers </h5>
+              <h6 class="">
+                Reduced clicks to update or reorganize listings </h6>
 
-  </div>
-  <!-- Case study starts -->
-  <main>
-    <nav class="new_side_bar flipBtn">
-      <ul>
-
-        <li><a href="#content1">
-            Problem
-          </a></li>
-
-        <li><a href="#content2">
-            Insight
-          </a></li>
-
-        <li><a href="#content3">
-            Design
-          </a></li>
-
-        <li><a href="#content4">
-            Key Changes
-          </a></li>
-        <li><a href="#content5">
-            Results
-          </a></li>
-      </ul>
-    </nav>
-    <div>
-      <div class="blankHXS"></div>
-      <section id="content1">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blankHXXS"></div>
-                <h3><span class=" fontWeight700">Problem </span></h3>
-                <h5><span class="fontWeight400">BabyQuip’s original inventory tools were designed for small QPs with limited listings. As high-volume QPs emerged, the system failed to scale:</span></h5>
-                <ul class="listCircle">
-                  <li>4–5 clicks just to edit a single gear item</li>
-                  <li>Unlisted, featured, or primary items were buried and hard to manage</li>
-                  <li>Navigation was linear and fragmented across multiple pages</li>
-                  <li>No persistent filters; long lists broke layout and usability</li>
-                </ul>
-                <div class="paddingS GreyBg100 borderRadiusS">
-                  <h5><span class="fontWeight300">✏️ The initial ask was to add a tab for “Unlisted Gear.” I proposed a structural redesign instead.</span></h5>
-                </div>
-
-              </div>
             </div>
           </div>
         </div>
 
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="stat">
 
-      </section>
-      <div class="blankHM"></div>
 
-      <section id="content2">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blankHXXS"></div>
-                <h3><span class=" fontWeight700">Insight </span></h3>
-                <h5><span class="fontWeight400">Platform-wide data revealed broader issues:</span></h5>
-                <ul class="listCircle">
-                  <li>Total QPs: 5,295</li>
-                  <li>Active QPs: 2,470 → under 50% active engagement</li>
-                  <li>Most QPs list fewer than 3 categories → narrow usage patterns</li>
-                  <li>46% list under 10% of available gear → platform underutilized</li>
-                  <li>Power QPs abandoned updates during peak season due to time cost</li>
-                </ul>
-                <div class="paddingS GreyBg100 borderRadiusS">
-                  <h5><span class="fontWeight300">💡 Our tools were optimized for small catalogs — but power users manage most of the inventory.</span></h5>
-                </div>
-              </div>
+
+              <h6 class="chipSmall colorBQTeal100 colorBQTeal700">
+                Reduces QA & Maintenance Overhead
+              </h6>
+
+              <h2 class="stat-figure">
+                <span class="stat-prefix specialTextL fontWeight700">-</span>
+                <span class="stat-number specialTextL fontWeight700" data-countup-number="75">75</span>
+                <span class="stat-suffix">%</span>
+              </h2>
+              <h5 class="fontWeight400">
+                Less QA overhead per release
+              </h5>
+              <h6 class="">
+                Simplified layout + reusable components = easier maintenance
+              </h6>
+
+
             </div>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5 class="fontWeight400">Too Time-Consuming to Maintain </h5>
-                <h5>During peak seasons, top QPs abandoned updates — not because they didn’t care, but because the tools cost too much time.</h5>
-              </div>
-              <div class="element">
-                <h5 class="leftVerLine2025 textItalic">“I just don’t update my listings during peak season — it takes too long to find and edit everything.”</h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5 class="fontWeight400">Navigation Breaks for Multi-Category Gear </h5>
-                <h5>For QPs managing diverse gear, the system’s breadcrumb flow became a maze. Category discovery and task continuity broke down, especially for uncommon items or multi-category updates.</h5>
-              </div>
-              <div class="element">
-                <h5 class="leftVerLine2025 textItalic">“It’s easy if I’m just listing strollers. But when I try to add one crib, one fan, and a few bath toys — I get lost. I don’t even know where to find some categories, and every time I switch, I have to start over.”</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-
-
-
-      <div class="blankHM"></div>
-      <section id="content3">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blankHXXS"></div>
-                <h3><span class=" fontWeight700">Design Goals </span></h3>
-                <ul class="listCircle">
-                  <li>Support both low- and high-supply QPs</li>
-                  <li>Flatten inventory structure, unify item states, and reduce task time</li>
-                  <li>Make it easy to scan, reorder, hide/unhide, feature, or set primary items</li>
-                  <li>Build a future-ready system with extensible filter logic</li>
-                </ul>
-
-              </div>
-            </div>
           </div>
         </div>
 
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="stat">
+              <h6 class="chipSmall colorBQTeal100 colorBQTeal700">
+                Scales Across Product Lines
+              </h6>
+              <h2 class="stat-figure">
+                <span class="stat-prefix specialTextL fontWeight700">+</span>
+                <span class="stat-number specialTextL fontWeight700" data-countup-number="3">3</span>
+                <span class="stat-suffix">+</span>
+              </h2>
 
-      </section>
-      <section id="content4">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blankHXXS"></div>
-                <h3><span class=" fontWeight700">Key Changes </span></h3>
-                <ul class="listCircle">
-                  <li><span class="fontWeight400">1 unified view</span> replaces 4–5 separate screens</li>
-                  <li><span class="fontWeight400">Persistent filters:</span> category, subcategory, product type (easy to nav without canfusion)</li>
-                  <li><span class="fontWeight400">Inline editing(add and enhancement):</span> drag/make primary item, reorder, hide/unhide, set featured items/remove featured items</li>
-                  <li><span class="fontWeight400">Clear visibility:</span> unlisted items, package context, item status</li>
-                  <li><span class="fontWeight400">Future extensibility:</span>
-                    <ul class="listCircle">
-                      <li>easy to rearrange all item(no category/structure) for future consumer facing landing all gear view</li>
-                      <li>filtering logic supports packages, featured items eventrually will be a sub filter , for biz GoQuip, PartyQuip expansion </li>
+              <h5 class="fontWeight400">
+                Business lines scaled</h5>
+              <h6 class="">
+                Supported Baby, Party, and GoQuip with no system rebuild </h6>
 
-                    </ul>
-                  </li>
-
-                </ul>
-              </div>
             </div>
+
           </div>
         </div>
 
-
-      </section>
-      <section id="content5">
-        <div class="wrapper">
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="blankHXXS"></div>
-                <h3><span class=" fontWeight700">Results </span></h3>
-                <ul class="listCircle">
-                  <li>3× faster edits for high-supply QPs</li>
-                  <li>50–75% time saved in QA and internal testing</li>
-                  <li>Increased visibility = better completeness → more reservations</li>
-                  <li>Foundation reused for Superlisting, with potential SuperAdmin use</li>
-                  <li>Responsive layout in progress for mobile support</li>
-                  <li>Reduced internal support load for inventory management</li>
-                </ul>
-
-              </div>
-              <div class="element">
-                <h5 class="leftVerLine2025 textItalic">“What once took 7 screens and 3 reloads now takes 30 seconds on a single page.”</h5>
+      </div>
 
 
-              </div>
-            </div>
-          </div>
-        </div>
 
-      </section>
 
     </div>
-  </main>
+    <div class="blankHXS"></div>
 
+    <div class="wrapper">
+      <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
+        <div class="TBslides">
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_one_unified_view.gif" alt="1 unified view">
+
+            </div>
+          </div>
+          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_persistent_filters.gif" alt="Persistent filters">
+
+            </div>
+          </div>
+          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_inline_editing.gif" alt="Inline editing">
+            </div>
+          </div>
+
+        </div>
+        <div class="blankHXXS"></div>
+
+        <div class="TBcarouselNav Grid-cell flipBtn">
+          <a class="TBsliderNav" aria-label="Go to slide 1" tabindex="0">
+            <div>1 unified view</div>
+          </a>
+          <a class="TBsliderNav active" aria-label="Go to slide 2" tabindex="0">
+            <div>Persistent filters</div>
+
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 3" tabindex="0">
+            <div>Inline editing</div>
+          </a>
+
+        </div>
+        <div class="blankHXXS"></div>
+
+      </div>
+    </div>
+
+
+    <div class="blankHXS"></div>
+
+
+
+    <!-- Case study starts -->
+    <main>
+      <nav class="new_side_bar flipBtn">
+        <ul>
+
+          <li><a href="#content1">
+              Problem
+            </a></li>
+
+          <li><a href="#content2">
+              Insight
+            </a></li>
+
+          <li><a href="#content3">
+              Design
+            </a></li>
+
+          <li><a href="#content4">
+              Key Changes
+            </a></li>
+          <li><a href="#content5">
+              Results
+            </a></li>
+        </ul>
+      </nav>
+      <div>
+        <div class="blankHXS"></div>
+        <section id="content1">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3><span class=" fontWeight700">Problem </span></h3>
+                  <h5><span class="">BabyQuip’s original inventory tools were built for small-scale providers. As the platform grew, two core issues emerged:</span></h5>
+                          <div class="blankHXS"></div>
+
+                  <h5><span class="fontWeight400"> 1. Power QPs (with dozens or hundreds of items) struggled to manage listings efficiently: </span></h5>
+                  <ul class="listCircle">
+                    <li>4–5 clicks to edit a single gear item</li>
+                    <li>Fragmented views across multiple pages</li>
+                    <li>No persistent filters; long lists broke layout and usability</li>
+                  </ul>
+
+
+                  <h5><span class="fontWeight400"> 2. Many QPs weren’t listing their full inventory — especially unlisted, featured, or popular gear:
+                    </span></h5>
+                  <ul class="listCircle">
+                    <li>Hidden “Unlisted” tab made discovery harder</li>
+                    <li>No prompts or clear calls to action</li>
+                    <li>Resulted in underutilized supply and missed bookings</li>
+                  </ul>
+      
+        <div class="blankHXS"></div>
+
+                  <div class="paddingS WhiteBg borderRadiusS">
+                    <h5><span class="fontWeight300">✏️ While the initial request was to add a “Unlisted Gear” tab, I proposed a structural redesign: A flattened, unified interface that supports both efficient editing and inventory growth.</span></h5>
+                  </div>
+                          <div class="blankHS"></div>
+
+                  <img class="crop_mockup" src="before_crib_stroller.gif" alt="before">
+
+                  <!-- Trigger -->
+                  <a href="" class="open-modal textUnderline" data-modal="modal1">
+                    <h5 class="fontWeight400" aria-label="Open legacy flow details">Legacy Flow: Inefficient for Scaling</h5>
+                  </a>
+                  <!-- Modal 1 -->
+                  <div id="modal1" class="modal hidden">
+                    <span class="modal-close">
+                      <img class="iconXforModal" src="../icon/delete.svg" alt="×">
+                    </span>
+
+                    <div class="modal-content">
+                      <h2>Legacy Flow: Inefficient for Scaling</h2>
+                      <h5> Rigid navigation → slow edits</h5>
+                      <h5> Split views → hard to scan</h5>
+                      <h5> Buried links → users missed Packages/Featured</h5>
+
+                      <img src="../flow_im_before.png" alt="legacy screens">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+        <div class="blankHM"></div>
+
+        <section id="content2">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3><span class=" fontWeight700">Insight </span></h3>
+                  <img src="distribution_of_QPs_by_status.png" alt="legacy screens">
+
+                  <h5><span class="fontWeight400">Platform-wide data revealed structural gaps in inventory management:
+                    </span></h5>
+
+                  <ul class="listCircle">
+                    <li><span class="fontWeight500">Total QPs:</span> 5,566</li>
+                    <li><span class="fontWeight500">Active QPs:</span> 2,551 → <span class="fontWeight500">~46%</span> active engagement</li>
+                    <li><span class="fontWeight500">Narrow usage patterns:</span> Most QPs list fewer than 3 categories</li>
+                    <li><span class="fontWeight500">Platform underutilized:</span> 46% list under 10% of available gear</li>
+
+                  </ul>
+                  <div class="blankHS"></div>
+
+
+                  <h5><span class="fontWeight500">Power QPs</span> abandoned updates during peak season due to time cost</h5>
+                  <div class="paddingS WhiteBg borderRadiusS">
+                    <h5><span class="fontWeight300">💡 Our tools were optimized for small catalogs — but power
+                        users manage most of the inventory.</span></h5>
+                  </div>
+                  <div class="blankHS"></div>
+
+                  <div class="paddingS WhiteBg borderRadiusS">
+                    <h5><span class="fontWeight300">💡 Most providers are inactive or underutilizing the platform, but power QPs — the few managing large inventories — need more efficient tools.
+                      </span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="Grid Grid--gutters Grid--cols-2">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h5 class="fontWeight400">Too Time-Consuming to Maintain </h5>
+                  <h5>During peak seasons, top QPs abandoned updates — not because they didn’t care, but because
+                    the tools cost too much time.</h5>
+                </div>
+                <div class="element">
+                  <h5 class="leftVerLine2025 textItalic">“I just don’t update my listings during peak season — it
+                    takes too long to find and edit everything.”</h5>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <h5 class="fontWeight400">Navigation Breaks for Multi-Category Gear </h5>
+                  <h5>For QPs managing diverse gear, the system’s breadcrumb flow became a maze. Category
+                    discovery and task continuity broke down, especially for uncommon items or multi-category
+                    updates.</h5>
+                </div>
+                <div class="element">
+                  <h5 class="leftVerLine2025 textItalic">“It’s easy if I’m just listing strollers. But when I try
+                    to add one crib, one fan, and a few bath toys — I get lost. I don’t even know where to find
+                    some categories, and every time I switch, I have to start over.”</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <div class="blankHM"></div>
+        <section id="content3">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3><span class=" fontWeight700">Design Goals </span></h3>
+                  <ul class="listCircle">
+                    <li>Support both low- and high-supply QPs</li>
+                    <li>Flatten inventory structure, unify item states, and reduce task time</li>
+                    <li>Make it easy to scan, reorder, hide/unhide, feature, or set primary items</li>
+                    <li>Build a future-ready system with extensible filter logic</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+        <section id="content4">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3><span class=" fontWeight700">Key Changes </span></h3>
+                  <ul class="listCircle">
+                    <li><span class="fontWeight400">1 unified view</span> replaces 4–5 separate screens</li>
+                    <li><span class="fontWeight400">Persistent filters:</span> category, subcategory, product type
+                      (easy to nav without canfusion)</li>
+                    <li><span class="fontWeight400">Inline editing(add and enhancement):</span> drag/make primary
+                      item, reorder, hide/unhide, set featured items/remove featured items</li>
+                    <li><span class="fontWeight400">Clear visibility:</span> unlisted items, package context, item
+                      status</li>
+                    <li><span class="fontWeight400">Future extensibility:</span>
+                      <ul class="listCircle">
+                        <li>easy to rearrange all item(no category/structure) for future consumer facing landing
+                          all gear view</li>
+                        <li>filtering logic supports packages, featured items eventrually will be a sub filter ,
+                          for biz GoQuip, PartyQuip expansion </li>
+
+                      </ul>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+        <section id="content5">
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3><span class=" fontWeight700">Results </span></h3>
+                  <ul class="listCircle">
+                    <li>3× faster edits for high-supply QPs</li>
+                    <li>50–75% time saved in QA and internal testing</li>
+                    <li>Increased visibility = better completeness → more reservations</li>
+                    <li>Foundation reused for Superlisting, with potential SuperAdmin use</li>
+                    <li>Responsive layout in progress for mobile support</li>
+                    <li>Reduced internal support load for inventory management</li>
+                  </ul>
+
+                </div>
+                <div class="element">
+                  <h5 class="leftVerLine2025 textItalic">“What once took 7 screens and 3 reloads now takes 30
+                    seconds on a single page.”</h5>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+  </div>
   <!-- Case study ends -->
 
   <div class="blankHM"></div>
@@ -307,10 +483,8 @@
 
   <%- include(`${templatePath}/shared/comp_backTop`) %>
 
-  <%- include(`${templatePath}/shared/block_nav_footer`, { 
-    iconHoverColor: 'hoverGrey300',
-    footerBackgroundColor:'colorBgWhieTrans'
-  }) %>
+  <%- include(`${templatePath}/shared/block_nav_footer`, { iconHoverColor: 'hoverGrey300' ,
+                    footerBackgroundColor:'colorBgWhieTrans' }) %>
 
   <!-- Shared across the platform -->
 
