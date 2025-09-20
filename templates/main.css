@@ -4298,25 +4298,26 @@ body .flex-container.Mobile {
   height: 150px;
 }
 
-/* ======== new ======== */
+/* ======== spacing in px ======== */
 
 .spacingLarge {
-  height: 24px;
+  height: 48px;
 }
 
 .spacingMedium {
-  height: 12px;
+  height: 24px;
 }
 
 .spacingSmall {
-  height: 6px;
+  height: 12px;
 }
 
 .spacingXSmall {
-  height: 2px;
+  height: 6px;
 }
 
-/* ======== new ======== */
+/* ======== spacing in px ======== */
+/* ======== spacing in em/vw ======== */
 
 .blankHTiny {
   height: 0.8em;
@@ -4329,12 +4330,12 @@ body .flex-container.Mobile {
 
 .blankHXS {
   display: block;
-  height: 12px;
+  height: clamp(6em, 5vw, 8em);
 }
 
 .blankHS {
   display: block;
-  height: 48px;
+  height: clamp(8em, 9vw, 12em);
 }
 
 .blankHM {
