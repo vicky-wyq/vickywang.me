@@ -208,17 +208,22 @@
                   <h5><span class="">BabyQuip’s original inventory tools were built for small-scale providers. As the platform grew, two core issues emerged:</span></h5>
                   <div class="rowToColumn centerVH">
                     <div class="widthMax">
-                      <h5><span class="fontWeight400"> 1. Power QPs (with dozens or hundreds of items) struggled to manage listings efficiently: </span></h5>
+                      <h5><span class="fontWeight400"> 1. Unlisted Gear → Missed Growth </span></h5>
                       <ul class="listCircle">
                         <li>4–5 clicks to edit a single gear item</li>
                         <li>Fragmented views across multiple pages</li>
                         <li>No persistent filters; long lists broke layout and usability</li>
                       </ul>
                     </div>
-                    <div class="widthFitContent">
+                    <div class="widthFitContent u-textCenter">
                       <img class="widthXS" src="graphic_power_user.svg" alt="icon arrow">
+                      <h5 class="fontWeight400">Power QPs </h5>
+
                     </div>
                   </div>
+                  <div class="spacingSmall"></div>
+
+
                   <div class="rowToColumn centerVH">
                     <div class="widthMax">
                       <h5><span class="fontWeight400"> 2. Many QPs weren’t listing their full inventory, especially unlisted, featured, or popular gear:
@@ -229,8 +234,10 @@
                         <li>Resulted in underutilized supply and missed bookings</li>
                       </ul>
                     </div>
-                    <div class="widthFitContent">
+                    <div class="widthFitContent u-textCenter">
                       <img class="widthXS" src="graphic_unlisted_gear.svg" alt="icon arrow">
+                      <h5 class="fontWeight400">Unlisted Gears </h5>
+
                     </div>
                   </div>
                   <div class="paddingS WhiteBg borderRadiusS">
@@ -238,9 +245,9 @@
                   </div>
                   <div class="spacingSmall"></div>
 
-                  <!-- Trigger -->
+                  <!-- Trigger 1-->
                   <a href="" class="open-modal textUnderline" data-modal="modal1">
-                    <h5 class="fontWeight400" aria-label="Open legacy flow details">View Legacy Flow: Inefficient for Scaling &#10141;</h5>
+                    <h5 class="fontWeight400" aria-label="Open legacy flow details"> View Legacy Flow Screenshots &#128270; </h5>
                   </a>
                   <!-- Modal 1 -->
                   <div id="modal1" class="modal hidden">
@@ -258,9 +265,29 @@
 
                     </div>
                   </div>
+                  <!-- Trigger 2-->
+                  <a href="" class="open-modal textUnderline" data-modal="modal2">
+                    <h5 class="fontWeight400" aria-label="Open legacy flow details">View Legacy Flow Screenrecording &#128270; </h5>
+                  </a>
+                  <!-- Modal 2 -->
+                  <div id="modal2" class="modal hidden">
+                    <span class="modal-close">
+                      <img class="iconXforModal" src="../../icon/delete.svg" alt="×">
+                    </span>
+
+                    <div class="modal-content">
+                      <h2>Legacy Flow: Inefficient for Scaling</h2>
+                      <h5> Rigid navigation → slow edits</h5>
+                      <h5> Split views → hard to scan</h5>
+                      <h5> Buried links → users missed Packages/Featured</h5>
+
+                      <img class="crop_mockup" src="before_crib_stroller.gif" alt="legacy recording">
+
+
+                    </div>
+                  </div>
                   <div class="spacingMedium"></div>
 
-                  <img class="crop_mockup" src="before_crib_stroller.gif" alt="before">
 
 
                 </div>
@@ -279,7 +306,7 @@
                 <div class="element">
                   <div class="blankHXXS"></div>
                   <h3><span class=" fontWeight700">Insight </span></h3>
-                  <img src="distribution_of_QPs_by_status.png" alt="legacy screens">
+                  <img src="distribution_of_QPs_by_status.svg" alt="legacy screens">
 
                   <h5><span class="fontWeight400">Platform-wide data revealed structural gaps in inventory management:
                     </span></h5>
@@ -300,16 +327,24 @@
 
 
           <div class="wrapper">
-            <div class="Grid Grid--gutters Grid--cols-2">
+            <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
               <div class="Grid-cell">
 
                 <div class="element">
                   <img src="graphic_powerQP.svg" alt="legacy screens">
+                  <h5 class="fontWeight400">Power QPs </h5>
+                  <h6>Easy to manage sizeble gears</h6>
+
                 </div>
               </div>
               <div class="Grid-cell">
                 <div class="element">
                   <img src="graphic_growingQP.svg" alt="legacy screens">
+                  <h5 class="fontWeight400">Growing QPs </h5>
+
+                  <h6>Easy to discover unlisted gears</h6>
+
+
                 </div>
               </div>
             </div>
@@ -333,6 +368,52 @@
             </div>
           </div>
 
+
+
+
+          <div class="wrapper">
+            <div class="Grid Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="fontWeight400">% of QPs</th>
+                        <th class="fontWeight400"># of QPs</th>
+                        <th class="fontWeight400">% of Supply Index</th>
+                        <th class="fontWeight400">What It Means</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="fontWeight400">Top 10%</td>
+                        <td>559</td>
+                        <td>46.3%</td>
+                        <td>High-volume QPs managing the most complete listings</td>
+                      </tr>
+                      <tr>
+                        <td class="fontWeight400">Next 20%</td>
+                        <td>1,117</td>
+                        <td>31.7%</td>
+                        <td>Mid-tier QPs, active but less comprehensive</td>
+
+                      </tr>
+                      <tr>
+                        <td class="fontWeight400">Remaining 70%</td>
+                        <td>3,913</td>
+                        <td>21.9%</td>
+                        <td>Smaller catalogs or lower platform engagement</td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="wrapper">
             <div class="Grid Grid--gutters Grid--cols-2">
               <div class="Grid-cell">
