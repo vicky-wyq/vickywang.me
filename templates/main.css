@@ -977,7 +977,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--Grey900);
 }
 
-.colorWhie {
+.colorWhite {
   color: var(--white);
 }
 
@@ -5217,7 +5217,7 @@ table {
 
 td,
 th {
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--Grey600);
   text-align: left;
   padding: 0.6vh;
   height: 0.6vh;
