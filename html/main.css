@@ -850,7 +850,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #e2edfd !important;
 }
 
-.colorBgWhie {
+.colorBgWhite {
   background-color: var(--white);
   margin: 0 auto;
 }
@@ -1142,6 +1142,15 @@ polygon {
   background: var(--white);
   border-radius: 1.2em;
   border: 1px solid var(--border);
+}
+.card2025 {
+  border-radius: 2.2em;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: inline-block;
+  /* this line mimics a 4px solid border */
+  box-shadow: 0 0 0 2px #1b1b1b;
 }
 
 .crop_mockup {
@@ -1988,6 +1997,7 @@ li .newPanelV3 {
   display: block;
   text-decoration: none;
   box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
+  background-color: var(--VW--Grey2024);
 }
 
 .new_side_bar li a {
@@ -2294,10 +2304,11 @@ h1,
 h2,
 h3,
 h4 {
-  margin-top: clamp(0.6em, 1vw, 1.2em);
-  margin-bottom: clamp(0.3em, 0.6vw, 0.8em);
-  line-height: clamp(1.4, 1.8vw, 1.6);
+  margin-top: clamp(0.9em, 1.5vw, 1.8em);
+  margin-bottom: clamp(0.45em, 0.9vw, 1.2em);
+  line-height: 1.3;
 }
+
 
 h5,
 h6 {
@@ -4593,9 +4604,11 @@ body .flex-container.Mobile {
   text-align: center;
 }
 
+
+
 .ProjectBannerInner2025 {
   position: absolute;
-  top: calc(100% - 256px);
+  /* top: calc(100% - 256px); */
   transform: translate(-50%, -50%);
   left: 50%;
   width: 100%;
