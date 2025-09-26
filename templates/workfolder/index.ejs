@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="colorBgVW pattern1">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Workshelf | Vicky Wang', 
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Workfolder | Vicky Wang', 
   description:'UX designer focused on system clarity, scalable flows, and meaningful product impact—across both B2B platforms and consumer journeys.', 
   pageURL:'workshelf', thumbnailImgURL: 'vickywang.svg'
   }) %>
 <!--Head-->
 
 <body>
+
+
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
   <%- include(`${templatePath}/shared/block_nav_header_main`, {
     logoURL:'/workshelf',
@@ -107,7 +109,7 @@
         </div>
       </div>
     </div>
-    <div class="blankHXXS"></div>
+    <div class="spacingSmall"></div>
   </div>
 
   <!-- Content -->
@@ -146,9 +148,7 @@
               <div class="row">
                 <div class="">
                   <h4 class="fontWeight400"><a title="View full context, metrics, and case breakdown" class="textUnderline" href="bq_b2b_inventory_management/">BabyQuip Inventory Management (Partner Portal)</a> <span class="fontWeight300 textItalic"> &#183; Q2 2025</span></h4>
-
-
-                  <h4>Redesigned the inventory system to scale from hobbyist QPs to power users. Unified navigation, added inline controls, and increased efficiency 3×.</h4>
+                  <h4>Scaled inventory from hobbyist QPs to power users with unified navigation, inline editing, and category surfacing. Increased efficiency 3×.</h4>
                 </div>
                 <div class="accIcon align-right"></div>
               </div>
@@ -159,73 +159,6 @@
 
 
         <div class="accContent">
-          <div class="Grid Grid--cols-2 u-textCenter colorBgImg">
-            <div class="Grid-cell">
-              <div class="spacingSmall"></div>
-
-
-
-              <div class="element">
-                <img class="modal-target" src="diagram_inventory_management_before.svg" alt="Legacy inventory UX">
-                <h4 class="fontWeight600">Category Navigation (Before)</h4>
-                <h6>Category navigation required restarting each time. No persistent filters. 5 clicks to edit gear.</h6>
-
-                <!-- Trigger -->
-                <a href="" class="open-modal textUnderline" data-modal="modal1">
-                  <h5 class="fontWeight400" aria-label="Open legacy flow details">Legacy Flow: Inefficient for Scaling</h5>
-                </a>
-                <!-- Modal 1 -->
-                <div id="modal1" class="modal hidden">
-                  <span class="modal-close">
-                    <img class="iconXforModal" src="../icon/delete.svg" alt="×">
-                  </span>
-
-                  <div class="modal-content">
-                    <h2>Legacy Flow: Inefficient for Scaling</h2>
-                    <h5> Rigid navigation → slow edits</h5>
-                    <h5> Split views → hard to scan</h5>
-                    <h5> Buried links → users missed Packages/Featured</h5>
-
-                    <img src="flow_im_before.png" alt="legacy screens">
-
-                  </div>
-                </div>
-                <div class="spacingSmall"></div>
-
-              </div>
-            </div>
-
-            <div class="Grid-cell">
-              <div class="spacingSmall"></div>
-
-              <div class="element">
-                <img class="modal-target" src="diagram_inventory_management_after.svg" alt="Redesigned inventory UX">
-                <h4 class="fontWeight600">Unified Inventory (After)</h4>
-                <h6>Flattened views reduced screen switching and visual scanning effort, improving speed and reducing task abandonment.</h6>
-
-                <!-- Trigger 1 -->
-                <a href="#" class="open-modal textUnderline" data-modal="modal2">
-                  <h5 class="fontWeight400" aria-label="Open new flow details">New Flow: Flattened for Efficiency & Speed</h5>
-                </a>
-                <!-- Modal 2 -->
-                <div id="modal2" class="modal hidden">
-                  <span class="modal-close">
-                    <img class="iconXforModal" src="../icon/delete.svg" alt="×">
-                  </span>
-                  <div class="modal-content">
-                    <h2>New Flow: Flattened for Efficiency & Speed</h2>
-                    <h5>Rigid navigation → Inline controls, no reloads</h5>
-                    <h5>Slow edits, hard to scan → Full inventory overview</h5>
-                    <h5>No persistent filters → Filters stay in place, easy to navigate</h5>
-                    <img src="flow_im_after.png" alt="legacy screens">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
           <div class="Grid Grid--gutters Grid--cols-3">
             <div class="Grid-cell">
               <div class="element">
@@ -246,39 +179,18 @@
           <div class="Grid Grid--full Grid--gutter">
             <div class="Grid-cell">
               <div class="element">
-                <div class="element">
-                  <h5><strong>Problem:</strong> Original tools worked for small partners but broke at scale — 4–5 clicks to edit gear, no filters, fragmented pages.</h5>
-                  <h5><strong>Insight:</strong> Top 10% of QPs manage 40% of inventory, but 46% list under 10% of gear. Power users dropped off during peak seasons due to time cost.</h5>
-                </div>
+                <h5><span class="fontWeight500">Problem:</span> Growth blocked (45% of categories unused); High effort (top 10% of QPs managed 46% of supply but needed 4–5 clicks per edit)</h5>
+                <h5><span class="fontWeight500">Insight:</span> Legacy tools couldn’t scale with power users or category expansion</h5>
+                <h5><span class="fontWeight500">Fixes:</span> Unified view (replaced 4–5 screens), persistent filters + inline editing, surfaced unlisted gear</h5>
+                <h5><span class="fontWeight500">Results:</span> 3× faster edits, 50–75% less QA overhead, reduced support load, foundation reused for SuperAdmin expansion</h5>
               </div>
             </div>
           </div>
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Key Fixes:</strong></h5>
-                <ul class="listCircle">
-                  <li>Unified item view replaces 4+ screens</li>
-                  <li>Persistent filters (category, product type, status)</li>
-                  <li>Inline actions: reorder, set primary, hide/unhide, feature</li>
-                  <li>Improved visibility into packages and gear state</li>
-                </ul>
 
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Results:</strong></h5>
-                <ul class="listCircle">
-                  <li>3× faster edits for high-supply QPs</li>
-                  <li>50–75% time saved in QA</li>
-                  <li>Design reused across Superlisting, SuperAdmin</li>
-                  <li>Foundation ready for PartyQuip &amp; GoQuip expansion</li>
-                </ul>
 
-              </div>
-            </div>
-          </div>
+    <div class="spacingSmall"></div>
+
+
           <div class="element">
             <a href="bq_b2b_inventory_management/"> <button class="buttonMedium buttonFlip WhiteBg"> View Case Study </button></a>
           </div>
@@ -1357,7 +1269,7 @@
       <div class="Grid Grid--full Grid--gutters u-textCenter">
         <div class="Grid-cell">
           <div class="element">
-                <div class="blankHS"></div>
+            <div class="blankHS"></div>
 
             <h1 class="specialTextL">About Me</h1>
           </div>
@@ -1429,7 +1341,7 @@
         <div class="Grid Grid--full Grid--gutters u-textCenter">
           <div class="Grid-cell">
             <div class="element">
-                              <div class="blankHS"></div>
+              <div class="blankHS"></div>
 
               <h1 class="specialTextL"> Design Process
 
