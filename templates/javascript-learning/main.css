@@ -13,6 +13,11 @@ html {
 }
 
 :root {
+  
+  --li-gap: 0.4em;          /* vertical space between items */
+  --li-lh: 1.5;             /* line-height for items */
+  --li-indent: 1.25em;      /* left padding for bullets/numbers */
+
   --border-radius: 0.5em;
 
   --border-radiusXS: 0.25em;
@@ -237,71 +242,118 @@ a:link.textUnderline:hover {
   font-weight: 700;
 }
 
-h1,
-h2 {
-  font-weight: 400;
-  line-height: 2em;
-}
 
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 300;
-  line-height: 1.6em;
-}
 
 h1 {
-  font-size: clamp(1.3em, 1.8vw, 2.2em);
-  /* - first one is the minimum allowed font-size.
-       - third one is the maximum allowed font-size.
-       - second argument is font-size that you wish to always have. */
-  margin-top: clamp(0.67em, 0.75em, 1.5em);
-  margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+  font-size: 2.4em;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
 }
 
 h2 {
-  font-size: clamp(1.2em, 1.46vw, 1.68em);
-  margin-top: clamp(0.67em, 0.75em, 1.5em);
-  margin-bottom: clamp(0.67em, 0.75em, 1.5em);
+  font-size: 2em;
+  margin-top: 1.1em;
+  margin-bottom: 0.55em;
 }
 
 h3 {
-  font-size: clamp(1.04em, 1.26vw, 1.48em);
-  margin-top: clamp(0.42em, 0.56em, 1.2em);
-  margin-bottom: clamp(0.42em, 0.56em, 1.2em);
+  font-size: 1.6em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 h4 {
-  font-size: clamp(0.92em, 1.12vw, 1.2em);
-  margin-top: clamp(0.36em, 0.4em, 1em);
-  margin-bottom: clamp(0.36em, 0.4em, 1em);
+  font-size: 1.3em;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
 }
 
 h5 {
-  font-size: clamp(0.84em, 0.92vw, 1em);
-  margin-top: clamp(0.2em, 0.4em, 1em);
-  margin-bottom: clamp(0.2em, 0.4em, 1em);
+  font-size: 1.1em;
+  margin-top: 0.6em;
+  margin-bottom: 0.3em;
 }
 
 h6 {
-  font-size: clamp(0.72em, 0.78vw, 0.86em);
-  margin: 0.26em 0;
+  font-size: 0.95em;
+  margin: 0.4em 0;
 }
 
-p.light {
-  font-weight: 100;
+
+/* Keep bullets unless you explicitly want a "plain" list */
+ul,
+ol {
+  margin: 0 0 1em 0;
+  padding: 0 0 0 var(--li-indent);
+}
+
+/* Vertical rhythm: only add space between siblings, not above/below the list */
+li {
+  line-height: var(--li-lh);
+}
+li + li {
+  margin-block-start: var(--li-gap);
+}
+
+/* Nested lists: slightly tighter and less indent noise */
+li > ul,
+li > ol {
+  margin: 0.3em 0 0.6em 0;
+  padding-left: calc(var(--li-indent) * 0.9);
+}
+
+/* Marker aesthetics (works in modern browsers) */
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+::marker {
+  font-weight: 600;          /* clearer bullets/numbers */
+  color: currentColor;       /* inherits text color; change if you want accent */
+}
+
+/* Optional variants */
+
+/* Plain list, no bullets, for navs or checklists */
+.list-plain {
+  list-style: none;
+  padding-left: 0;
+}
+.list-plain > li::marker { content: ""; }
+
+/* Dashes instead of bullets */
+.list-dash { list-style: none; padding-left: 0; }
+.list-dash > li { position: relative; padding-left: 1em; }
+.list-dash > li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+}
+
+/* Checkmarks (because someone will ask) */
+.list-check { list-style: none; padding-left: 0; }
+.list-check > li { position: relative; padding-left: 1.25em; }
+.list-check > li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  line-height: 1;
+  font-size: 0.9em;
 }
 
 p {
-  /*     font-size: clamp(0.83em, 1.06vw, 1.2em); */
-
-  font-size: clamp(0.8em, 1vw, 1.1em);
-
-  font-weight: 300;
+  font-size: 1rem;     /* predictable and accessible */
+  line-height: 1.6;    /* good for readability */
+  font-weight: 300;    /* your default light body */
+  margin: 0 0 1em;     /* rhythm without extra clutter */
 }
 
-/* default/normal */
+/* lighter than default */
+p.light {
+  font-weight: 200;
+}
+
+/* slightly bolder emphasis */
 p.thick {
   font-weight: 500;
 }
@@ -400,59 +452,8 @@ hr {
   width: 100%;
 }
 
-h1,
-h2 {
-  font-weight: 400;
-  /* Adjusted for better readability */
-}
 
-h3,
-h4,
-h5,
-ul,
-li,
-h6 {
-  font-weight: 300;
-  /* Adjusted for consistency */
-}
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin-top: clamp(0.6em, 1vw, 1.2em);
-  margin-bottom: clamp(0.3em, 0.6vw, 0.8em);
-  line-height: clamp(1.4, 1.8vw, 1.6);
-}
-
-h6 {
-  margin-top: clamp(0.5em, 0.8vw, 1em);
-  margin-bottom: clamp(0.2em, 0.5vw, 0.6em);
-  line-height: 1.5;
-}
-
-/* Reset + base spacing */
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-li {
-  margin-top: clamp(0.15em, 0.3vw, 0.3em);
-  margin-bottom: clamp(0.15em, 0.3vw, 0.3em);
-  line-height: 1.45;
-}
-
-/* Loose variant for readability (e.g., resume) */
-ul.listLoose li {
-  margin-top: clamp(0.35em, 0.6vw, 0.7em);
-  margin-bottom: clamp(0.35em, 0.6vw, 0.7em);
-  line-height: 1.6;
-}
 
 select {
   margin-right: 12px;
