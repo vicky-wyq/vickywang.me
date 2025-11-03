@@ -1,5 +1,32 @@
 "use strict";
 
+function makeCounter() {
+  return function () {
+    let count = 0;
+    count++;
+    return count;
+  };
+}
+
+const a = makeCounter();
+console.log(a());
+console.log(a());
+console.log(a());
+
+//1. Predict each console.log output before running it. | 1, 2, 3
+
+//2. Explain exactly where count lives after each call. (Imagine the memory box—what happens to it.)
+// "const a = makeCounter();" & "console.log(a());" call founction makeCounter() & print.
+// inside of function, "  let count = 0;" but return function +1, first console.log = 1, this 1 will store into const a, so now const a pointing 1
+// now 2nd  "console.log(a());" will call function again, this time inside of the function, count still = 0, so result from the function = 1, since a = 1, so the secound console.log just merge the 1 into the previous one, so the 2nd console.log = 2, next is the same logic
+
+//3. Then break it on purpose: move let count = 0 inside the returned function, run again, and describe why it fails to “remember.”
+// i moved, and saw the result = 1,1,1
+// wich means each time at return, count = 0 again, then return + 1 = 1. now i am confused about the previous one, so the 1 never stored into const a? or the const a never pointing to 1 or 2?
+
+
+
+/*
 // A) Resets every call (no persistent state)
 
 function counterOnce() {
