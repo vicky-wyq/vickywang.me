@@ -1,5 +1,91 @@
 "use strict";
 
+// let g = 0;
+// function bump() { g++; return g; }
+
+
+
+// function bump() { let n = 0; n++; return n; }
+
+
+function makeCounter() {
+  let count = 0;               // local box
+  return function() {          // inner function keeps reference
+    count++;
+    return count;
+  };
+}
+const c = makeCounter();
+
+
+console.log(c());
+console.log(c());
+console.log(c());
+
+
+
+// =======
+/* 
+function makeCounter() {
+  let count = 0;          // allocate a private box: count → 0
+  return function () {     // return a function that knows where that box lives
+    count++;               // mutate the same box
+    return count;
+  };
+}
+
+// prove a
+const a = makeCounter();
+console.log(typeof a); // "function"
+
+// orive instance isolation
+const x = makeCounter();
+const y = makeCounter();
+console.log(x()); // 1
+console.log(x()); // 2
+console.log(y()); // 1  <-- different box
+
+
+// Prove shared state when you move the box global:
+
+let g = 0;
+function bump() { g++; return g; }
+
+console.log(bump()); // 1
+console.log(bump()); // 2
+// No encapsulation. Every caller hits the same g.
+
+
+*/
+
+
+
+
+
+/*
+function makeCounter() {
+  let count = 0;          // allocate a private box: count → 0
+  return function () {     // return a function that knows where that box lives
+    count++;               // mutate the same box
+    return count;
+  };
+}
+
+const a = makeCounter();   // a === (function () { count++; return count; })
+                           // a closes over the *same* count box (currently 0)
+
+a(); // 1  -> increments the box: count = 1
+a(); // 2  -> same box again:    count = 2
+a(); // 3  -> same box again:    count = 3
+*/
+
+
+
+
+
+
+
+/* 
 function makeCounter() {
   return function () {
     let count = 0;
@@ -12,6 +98,10 @@ const a = makeCounter();
 console.log(a());
 console.log(a());
 console.log(a());
+*/
+
+
+
 
 //1. Predict each console.log output before running it. | 1, 2, 3
 

@@ -5,15 +5,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Closure Warmup — "Private Counter" </title>
+  <title>Scope, Function, Variable </title>
 </head>
 
 <body class="wrapper">
   <div>
     <div>
-      <h1>Closure Warmup — "Private Counter" | 2025.10 </h1>
+      <h1>Scope, Function, Variable | 2025.10 </h1>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <div>
+      <h3>Scope</h3>
+      <ul>
+        <li>One big box that lives as long as the program runs.</li>
+        <li>Variables inside it (g, window, etc.) are always reachable.</li>
+      </ul>
+      <h3>Variable</h3>
+      <ul>
+        <li>When a function runs, JavaScript creates a temporary box for its variables (n, temp, etc.).
+        </li>
+        <li>When the function finishes and no one else references that box, it’s destroyed.</li>
+      </ul>
+      <h3>Function</h3>
+      <ul>
+        <li>When a function returns another function, that inner one keeps a pointer to the outer box.
+        </li>
+        <li>Because something still points to the box, JavaScript doesn’t throw it away.
+        </li>
+        <li>That’s why count “stays alive”—the box (the scope) is still referenced.</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <h3>Global: one shared box, persistent, public.</h3>
+      <pre class="language-javascript" tabindex="0"><code class="language-javascript"> 
+  let g = 0;
+  function bump() { g++; return g; }</code>
+  </pre>
+      <h3>Local (no closure): new box each time, temporary.</h3>
+      <pre class="language-javascript" tabindex="0"><code class="language-javascript"> 
+  function bump() { let n = 0; n++; return n; } </code>
+  </pre>
+      <h3>Closure: private box tied to a specific returned function, persistent but hidden. </h3>
+      <pre class="language-javascript" tabindex="0"><code class="language-javascript"> 
+  function makeCounter() {
+    let count = 0;               // local box
+    return function() {          // inner function keeps reference
+      count++;
+      return count;
+    };
+  }
+  const c = makeCounter(); </code>
+  </pre>
+    </div>
 
 
 
@@ -21,12 +69,13 @@
   <hr>
   <!-- lesson 1-->
 
- 
+
 
 
   <!-- =====================links====================== -->
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../main.css" />
+
   <script src="script.js"></script>
 </body>
 
