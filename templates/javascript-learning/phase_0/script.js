@@ -1,13 +1,95 @@
 "use strict";
 
+function makeCounterPro(start = 0, step = 1) {
+  let n = start;
+  return {
+    next: function () {
+      n = n + step; // 0=start=0, 0+1=1
+      return n; // 1
+    },
+    add: function (k) { // if this is independent, not related with "next:". but what is k here? 
+      n = n + k; // k?
+    },
+    peek: function () {
+      return n; // if this is independent, this is 0 now, it really depends one how to call it
+    },
+  };
+}
+
+const counter = makeCounterPro();
+counter.next(); // 1
+counter.peek(); // 1
+counter.add(5); // adds 5 to the same n, no output
+counter.peek(); // 6
+
+
+// =========
+
+// global without return
+
+let count0 = 0;
+
+function makeCounter0() {
+  count0++;
+}
+makeCounter0();
+console.log(count0); // 1
+console.log(makeCounter0());
+
+console.log(makeCounter0()); // undefined | why we need return, i probably know need value so return, but why works this way
+
+// global
+let count1 = 0;
+
+function makeCounter1() {
+  count1++;
+  return count1;
+}
+
+console.log(count1); //0
+console.log(count1); //0
+console.log(count1); //0
+
+console.log(makeCounter1()); // 1
+console.log(makeCounter1()); // 2
+console.log(makeCounter1()); // 3
+console.log(count1); //3
+
+// local
+function makeCounter2() {
+  let count2 = 0;
+  count2++;
+  return count2;
+}
+console.log(makeCounter2()); // 1
+console.log(makeCounter2()); // 1
+console.log(makeCounter2()); // 1
+// console.log(count2); //not defined
+
+// closure
+function makeCounter3() {
+  let count3 = 0;
+  return function () {
+    count3++;
+    return count3;
+  };
+}
+const a = makeCounter3();
+console.log(typeof a); // "function" | ok, this is a rule, if assign a variable with function call, so this is a function?
+
+const closure = makeCounter3();
+console.log(`closeure value ${closure()}`); // 1
+console.log(`closeure value ${closure()}`); // 2
+console.log(`closeure value ${closure()}`); // 3
+
+//================================================================================
+
 // let g = 0;
 // function bump() { g++; return g; }
 
-
-
 // function bump() { let n = 0; n++; return n; }
 
-
+/*
 function makeCounter() {
   let count = 0;               // local box
   return function() {          // inner function keeps reference
@@ -22,7 +104,7 @@ console.log(c());
 console.log(c());
 console.log(c());
 
-
+*/
 
 // =======
 /* 
@@ -58,10 +140,6 @@ console.log(bump()); // 2
 
 */
 
-
-
-
-
 /*
 function makeCounter() {
   let count = 0;          // allocate a private box: count → 0
@@ -79,12 +157,6 @@ a(); // 2  -> same box again:    count = 2
 a(); // 3  -> same box again:    count = 3
 */
 
-
-
-
-
-
-
 /* 
 function makeCounter() {
   return function () {
@@ -100,9 +172,6 @@ console.log(a());
 console.log(a());
 */
 
-
-
-
 //1. Predict each console.log output before running it. | 1, 2, 3
 
 //2. Explain exactly where count lives after each call. (Imagine the memory box—what happens to it.)
@@ -113,8 +182,6 @@ console.log(a());
 //3. Then break it on purpose: move let count = 0 inside the returned function, run again, and describe why it fails to “remember.”
 // i moved, and saw the result = 1,1,1
 // wich means each time at return, count = 0 again, then return + 1 = 1. now i am confused about the previous one, so the 1 never stored into const a? or the const a never pointing to 1 or 2?
-
-
 
 /*
 // A) Resets every call (no persistent state)
