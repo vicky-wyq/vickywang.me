@@ -11,23 +11,30 @@
 <body class="wrapper">
   <div>
     <div>
-      <h1>Scope, Function, Variable | 2025.10 </h1>
+      <h1>Scope, Function, Variable | 2025.10-11 </h1>
     </div>
     <br>
     <br>
     <br>
+
     <div>
       <h3>Scope</h3>
       <ul>
         <li>One big box that lives as long as the program runs.</li>
         <li>Variables inside it (g, window, etc.) are always reachable.</li>
       </ul>
+    </div>
+    <div>
+
       <h3>Variable</h3>
       <ul>
         <li>When a function runs, JavaScript creates a temporary box for its variables (n, temp, etc.).
         </li>
         <li>When the function finishes and no one else references that box, it’s destroyed.</li>
       </ul>
+    </div>
+    <div>
+
       <h3>Function</h3>
       <ul>
         <li>When a function returns another function, that inner one keeps a pointer to the outer box.
@@ -62,7 +69,16 @@
   const c = makeCounter(); </code>
   </pre>
     </div>
+    <br>
+    <br>
+    <h3>Learnings</h3>
 
+    <ul>
+      <li>new box each call</li>
+      <li>variables live in that box</li>
+      <li>closures keep boxes alive</li>
+      <li>global boxes never die unless nuke them.</li>
+    </ul>
 
 
   </div>

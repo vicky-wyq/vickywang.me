@@ -17,10 +17,18 @@ function makeCounterPro(start = 0, step = 1) {
 }
 
 const counter = makeCounterPro();
-counter.next(); // 1
-counter.peek(); // 1
-counter.add(5); // adds 5 to the same n, no output
-counter.peek(); // 6
+console.log(counter.next()); // 1
+console.log(counter.peek()); // 1
+console.log(counter.add(5)); // why this is undefined, below still 6?
+console.log(counter.peek()); // 6
+
+
+const c = makeCounterPro(10, 2);
+// console.log(c.peek()); // 10 | n = start so = 10
+// console.log(c.next()); // 12 | n already = 10, step = 2, so 12
+// c.add(5); //n = 10 + 5 = 15
+console.log(c.peek()); // 17 = 10+2+5??? n is always = total?
+
 
 
 // =========
