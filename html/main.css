@@ -2399,8 +2399,7 @@ h4 {
   font-size: clamp(1.2em, 1.6vw, 1.6em);
 }
 
-h5 {
-  font-size: clamp(1.05em, 1.2vw, 1.3em);
+h5 { font-size: clamp(1.1em, 1.3vw, 1.4em); 
 }
 
 h6 {
@@ -3116,9 +3115,15 @@ button.passwordArr {
   margin: auto;
 }
 
-.wrapper {
+/* .wrapper {
   max-width: 1320px;
   margin: auto;
+} */
+.wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-inline: 1em; /* ensures at least 1em spacing on both sides */
+  box-sizing: border-box; /* keeps max-width inclusive of padding */
 }
 
 @media all and (max-width: 1080px) {
@@ -3469,7 +3474,7 @@ button.passwordArr {
   }
 
   body .wrapper {
-    margin: 0;
+    margin: 0 1em;
   }
 
   body .hamburger {
