@@ -198,7 +198,7 @@ html {
   scroll-behavior: smooth;
   color: var(--Grey800);
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   height: var(--height100);
   background-color: var(--GreyHTMLBg);
@@ -2196,7 +2196,7 @@ section .padding {
 
 .newLandingTitle {
   font-family: inherit;
-  font-size: clamp(2.6em, 3vw, 3.2em);
+  font-size: clamp(2.8em, 3.2vw, 3.4em);
 
   margin: 0;
   line-height: 120%;
