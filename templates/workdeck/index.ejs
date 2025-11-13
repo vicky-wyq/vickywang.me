@@ -6,6 +6,7 @@
   pageURL:'workshelf', thumbnailImgURL: 'vickywang.svg'
   }) %>
 <!--Head-->
+
 <body>
 
 
@@ -114,40 +115,16 @@
 
     <%- include(`${templatePath}/shared/workdeck_section_title_description`, {
     sectionTitle:'Launched Platforms & Measurable Impact', 
-    sectionDescription:'Delivering production-quality UX grounded in data, adoption, and efficiency gains.'
+    sectionDescription:'Shipped, in-production work with measurable outcomes.'
     }) %>
 
     <div class="spacingMedium"></div>
     <!-- =========== images =========== -->
-    <div class="wrapper">
-      <div class="Grid Grid--cols-2 u-textCenter colorBgImg">
-        <div class="Grid-cell">
-          <div class="spacingSmall"></div>
-          <div class="element">
-            <img class="modal-target" src="bq_b2b_inventory_management_diagram__before.svg" alt="Legacy inventory UX">
-            <h5 class="TextPoppins fontWeight400">Before: Category Navigation </h5>
-            <h6 class="TextPoppins fontWeight200">Click & Click ... Back & Start Over</h6>
 
-          </div>
-        </div>
-
-        <div class="Grid-cell">
-          <div class="spacingSmall"></div>
-
-          <div class="element">
-            <img class="modal-target" src="bq_b2b_inventory_management_diagram_after.svg" alt="Redesigned inventory UX">
-            <h5 class="TextPoppins fontWeight400">After: Unified Inventory</h5>
-            <h6 class="TextPoppins fontWeight200">Filter & Scan</h6>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
 
     <div class="wrapper">
       <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
+        <div class="Grid Grid--gutter Grid--top accTrigger is-open-acc">
           <div class="Grid-cell">
             <div class="element">
 
@@ -157,11 +134,9 @@
               <div class="row">
                 <div>
                   <!-- =========== project title  =========== -->
-                  <a title="" class="textUnderline" href="bq_b2b_inventory_management/">
-                    <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                      projectTitle:'BabyQuip Inventory Management (Partner Portal)'
-                    }) %>
-                  </a>
+                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
+                  projectTitle:'BabyQuip Inventory Management (Partner Portal)'
+                }) %>
                   <!-- =========== project description =========== -->
                   <%- include(`${templatePath}/shared/workdeck_project_description`, {
                   projectDescription:'Scaled inventory from hobbyist QPs to power users with unified navigation, inline editing, and category surfacing. Increased efficiency 3×.'
@@ -191,6 +166,31 @@
               </div>
             </div>
           </div>
+
+          <div class="Grid Grid--cols-2 u-textCenter colorBgImg">
+            <div class="Grid-cell">
+              <div class="spacingSmall"></div>
+              <div class="element">
+                <img class="modal-target" src="bq_b2b_inventory_management_diagram__before.svg" alt="Legacy inventory UX">
+                <h5 class="TextPoppins fontWeight400">Before: Category Navigation </h5>
+                <h6 class="TextPoppins fontWeight200">Click & Click ... Back & Start Over</h6>
+
+              </div>
+            </div>
+
+            <div class="Grid-cell">
+              <div class="spacingSmall"></div>
+
+              <div class="element">
+                <img class="modal-target" src="bq_b2b_inventory_management_diagram_after.svg" alt="Redesigned inventory UX">
+                <h5 class="TextPoppins fontWeight400">After: Unified Inventory</h5>
+                <h6 class="TextPoppins fontWeight200">Filter & Scan</h6>
+
+              </div>
+            </div>
+
+          </div>
+
           <div class="Grid Grid--full Grid--gutter">
             <div class="Grid-cell">
               <div class="element">
@@ -201,17 +201,14 @@
               </div>
             </div>
           </div>
-
-
-          <div class="spacingSmall"></div>
           <div class="Grid Grid--full Grid--gutter">
             <div class="Grid-cell">
               <div class="element">
-
-                <a href="bq_b2b_inventory_management/"> <button class="buttonMedium buttonPrimary"> View Case Study </button></a>
+                <a href="bq_b2b_inventory_management/"> <button class="buttonSmall buttonPrimary"> View Case Study </button></a>
               </div>
             </div>
           </div>
+
           <div class="spacingMedium"></div>
         </div>
       </div>
@@ -228,7 +225,7 @@
                 <div class="">
                   <%- include(`${templatePath}/shared/workdeck_project_title`, {
                     projectTitle:'Gear-First Experience Enhancements'}) %>
-  
+
                   <!-- =========== project description =========== -->
                   <%- include(`${templatePath}/shared/workdeck_project_description`, {
                   projectDescription:'Joined near launch to refine the end-to-end Gear-First marketplace flow—improving item discovery, provider selection, and checkout clarity. Focused on usability testing and UX fixes that simplified the cart-to-checkout path and increased buyer confidence.'
@@ -314,6 +311,8 @@
         </div>
       </div>
     </div>
+
+
     <div class="wrapper">
       <div class="accItem">
         <div class="Grid Grid--gutter Grid--top accTrigger">
@@ -326,11 +325,9 @@
                 <div>
                   <%- include(`${templatePath}/shared/workdeck_project_title`, {
                     projectTitle:'BabyQuip Mobile App Update'}) %>
-                    <!-- =========== project description =========== -->
-
+                  <!-- =========== project description =========== -->
                   <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Redesigned the rental flow based on the new Gear-First structure. Simplified trip search and checkout, increasing flow completion and conversion.' }) %>                  
-
+                    projectDescription:'Redesigned the rental flow based on the new Gear-First structure. Simplified trip search and checkout, increasing flow completion and conversion.' }) %>
                 </div>
                 <div class="accIcon align-right"></div>
               </div>
@@ -405,8 +402,9 @@
             </div>
           </div>
 
+
+          <div class="spacingMedium"></div>
         </div>
-        <div class="spacingMedium"></div>
       </div>
     </div>
 
@@ -418,7 +416,7 @@
 
     <%- include(`${templatePath}/shared/workdeck_section_title_description`, {
     sectionTitle:'System Architecture & Scalability', 
-    sectionDescription:'Defining modular systems and interaction models that scale with product complexity.'
+    sectionDescription:'Complex flows, IA, and interaction models behind those platforms.'
     }) %>
 
 
@@ -428,20 +426,27 @@
         <div class="Grid Grid--gutter Grid--top accTrigger">
           <div class="Grid-cell">
             <div class="element">
-
               <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'💼 Business - Facing • Q3 2025'
-              }) %>
-
+                    projectMeta:'💼 Business - Facing • Q3 2025'
+                    }) %>
               <div class="row">
+
                 <div>
+
                   <%- include(`${templatePath}/shared/workdeck_project_title`, {
                     projectTitle:'BabyQuip Package Redesign for Growth (Partner Portal /BabyQuip → GoQuip, launch in progress)'}) %>
                   <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'From ad-hoc bundles to standardized, promotable packages' }) %>                  
+                    projectDescription:'From ad-hoc bundles to standardized, promotable packages' }) %>
 
                 </div>
-                <div class="accIcon align-right"></div>
+                <div class="align-top">
+                  <div class="accIcon"></div>
+                </div>
+
+
+
+
+
               </div>
             </div>
           </div>
@@ -518,7 +523,7 @@
         </div>
       </div> -->
       <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
+        <div class="Grid Grid--gutter Grid--top accTrigger is-open-acc">
           <div class="Grid-cell">
             <div class="element">
 
@@ -532,7 +537,7 @@
                     projectTitle:'BabyQuip Onboarding Redesign (Partner Portal / BabyQuip → GoQuip)'}) %>
 
                   <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Modular, category-aware onboarding for expansion across Baby, Mobility, and Party providers. Simplified setup, clarified load logic, and reduced ordering errors.' }) %>    
+                    projectDescription:'Modular, category-aware onboarding for expansion across Baby, Mobility, and Party providers. Simplified setup, clarified load logic, and reduced ordering errors.' }) %>
                 </div>
                 <div class="accIcon align-right"></div>
               </div>
@@ -648,7 +653,7 @@
                     projectTitle:'BookYourPet Platform Simplification & Booking Flexibility'}) %>
 
                   <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Rebuilt BookYourPet’s over-engineered SaaS platform into a scalable system by simplifying onboarding, restructuring dependencies, and adding flexibility to core booking logic. Collaborated closely with the CTO to refactor business rules and enable self-serve activation.' }) %>   
+                    projectDescription:'Rebuilt BookYourPet’s over-engineered SaaS platform into a scalable system by simplifying onboarding, restructuring dependencies, and adding flexibility to core booking logic. Collaborated closely with the CTO to refactor business rules and enable self-serve activation.' }) %>
                 </div>
                 <div class="accIcon align-right"></div>
               </div>
@@ -677,7 +682,7 @@
     <div class="blankHXXS"></div>
     <%- include(`${templatePath}/shared/workdeck_section_title_description`, {
     sectionTitle:'Strategic Concepts & Research', 
-    sectionDescription:'Bridging design strategy and user insight to inform future-facing experiences.'
+    sectionDescription:'Earlier-stage explorations and forward-looking concepts.'
     }) %>
 
 
@@ -698,7 +703,7 @@
                     projectTitle:'LASO Admin Platform Concept'}) %>
 
                   <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Defined the foundation for LASO’s internal operations system—connecting B2B and D2C user management, data visibility, and early financial tracking. Shaped strategy and system design through cross-team alignment and backend architecture pivots (Pre-launch exploration).' }) %>   
+                    projectDescription:'Defined the foundation for LASO’s internal operations system—connecting B2B and D2C user management, data visibility, and early financial tracking. Shaped strategy and system design through cross-team alignment and backend architecture pivots (Pre-launch exploration).' }) %>
                 </div>
                 <div class="accIcon align-right"></div>
               </div>
@@ -842,9 +847,9 @@
                 <div>
                   <%- include(`${templatePath}/shared/workdeck_project_title`, {
                     projectTitle:'RX Zero Case Study'}) %>
-                  <h3>Defined the product vision and UX foundation for LASO’s shift from telemedicine to an integrated prescription platform.
-                    Led research and concept design to shape a subscription-based medication model that improves trust, transparency, and accessibility for chronic-care users.
-                  </h3>
+
+                  <%- include(`${templatePath}/shared/workdeck_project_description`, { projectDescription:'Defined the product vision and UX foundation for LASO’s shift from telemedicine to an integrated prescription platform.Led research and concept design to shape a subscription-based medication model that improves trust, transparency, and accessibility for chronic-care users.' }) %>
+
                 </div>
                 <div class="accIcon align-right"></div>
               </div>
@@ -947,17 +952,11 @@
         </div>
       </div>
     </div>
-    <div class="wrapper">
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <img class="modal-target" src="bq_b2c_journey_map.svg" alt="">
-        </div>
-      </div>
-    </div>
+
 
     <div class="wrapper">
       <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
+        <div class="Grid Grid--gutter Grid--top accTrigger is-open-acc">
           <div class="Grid-cell">
             <div class="element">
               <%- include(`${templatePath}/shared/workdeck_project_meta`, {
@@ -969,7 +968,7 @@
                     projectTitle:'BabyQuip → GoQuip Landing & Discovery Redesign'}) %>
 
                   <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Re-architected shopping and landing for category clarity and trip-aware UX. Designed for scalability as BabyQuip expands into B2C.' }) %>   
+                    projectDescription:'Re-architected shopping and landing for category clarity and trip-aware UX. Designed for scalability as BabyQuip expands into B2C.' }) %>
                 </div>
                 <div class="accIcon align-right"></div>
               </div>
@@ -977,8 +976,6 @@
           </div>
         </div>
         <div class="accContent">
-
-
           <div class="Grid Grid--gutters Grid--cols-3">
             <div class="Grid-cell">
               <div class="element">
@@ -1001,7 +998,11 @@
             </div>
 
           </div>
-
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <img class="modal-target" src="bq_b2c_journey_map.svg" alt="">
+            </div>
+          </div>
           <div class="Grid Grid--gutters Grid--cols-2">
             <div class="Grid-cell">
               <div class="element">
@@ -1059,7 +1060,97 @@
             </div>
           </div>
 
-          <div class="spacingSmall"></div>
+          <div class="spacingMedium"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="accItem">
+        <div class="Grid Grid--gutter Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
+              projectMeta:'🛍️ Consumer - Facing • Q4 2025'
+              }) %>
+              <div class="row">
+                <div>
+                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
+                    projectTitle:'Alternative Gear-First Marketplace Architecture (Concept Exploration)'}) %>
+
+                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
+                    projectDescription:'Explored an alternative marketplace model that reduces back-and-forth friction by merging gear filtering, provider selection, and map context into a unified three-column layout.' }) %>
+                </div>
+                <div class="accIcon align-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent">
+          <div class="Grid Grid--gutters Grid--cols-3">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX</h6>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Consumer IA, category education, conversion growth</h6>
+              </div>
+
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+
+                <%- include(`${templatePath}/shared/workdeck_project_details_title`, {
+                    detailTitle: 'Purpose'
+                  }) %>
+                <%- include(`${templatePath}/shared/workdeck_project_details_description`, {
+                    detailDescription: 'A forward-looking redesign concept to address structural usability issues observed in Gear-First: placeholder items, trust friction, rework when changing providers, and long cart-to-provider loops.'
+                  }) %>
+                <%- include(`${templatePath}/shared/workdeck_project_details_title`, {
+                    detailTitle: 'Concept Overview'
+                  }) %>
+                <%- include(`${templatePath}/shared/workdeck_project_details_description`, {
+                    detailDescription: 'A three-column marketplace layout combining:'
+                  }) %>
+                <ul class="listCircle">
+                  <li>Left: persistent filters (gear, brand, quantity, availability)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target card2025" src="laso_rxzero_ia.png" alt="">
+                <h5 class="fontWeight400">Information Architecture</h5>
+              </div>
+            </div>
+            <div class="Grid-cell">
+              <div class="element">
+                <img class="modal-target card2025" src="laso_rxzero_sitemap.png" alt="">
+                <h5 class="fontWeight400">Sitemap</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="spacingMedium"></div>
+
+
+
+
+
         </div>
       </div>
     </div>

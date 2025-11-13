@@ -5051,7 +5051,11 @@ body .flex-container.Mobile {
 .iconMax {
   width: 56px;
 }
+.workdeck_thumbnail{
+  width: 5vw;
+  margin: 8px 32px;
 
+}
 .iconDemo {
   margin: 0.6em;
   padding: 1.2em;
