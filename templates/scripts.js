@@ -524,21 +524,34 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   initializeToggles();
   /* =================== accTrigger ===================*/
-  const accTriggers = document.querySelectorAll(".accTrigger");
+const accTriggers = document.querySelectorAll(".accTrigger");
 
-  accTriggers.forEach((trigger) => {
-    trigger.addEventListener("click", function () {
-      const content = this.nextElementSibling;
-      content.classList.toggle("is-open-acc");
-      this.classList.toggle("is-open-acc");
+accTriggers.forEach((trigger) => {
+  const content = trigger.nextElementSibling;
 
-      if (content.classList.contains("is-open-acc")) {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } else {
-        content.style.maxHeight = null;
-      }
-    });
+  // 1) INITIAL STATE: if either has is-open-acc from HTML, sync + set height
+  if (
+    trigger.classList.contains("is-open-acc") ||
+    content.classList.contains("is-open-acc")
+  ) {
+    trigger.classList.add("is-open-acc");
+    content.classList.add("is-open-acc");
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+
+  // 2) CLICK HANDLER
+  trigger.addEventListener("click", function () {
+    const isOpen = content.classList.toggle("is-open-acc");
+    trigger.classList.toggle("is-open-acc", isOpen);
+
+    if (isOpen) {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      content.style.maxHeight = null;
+    }
   });
+});
+
 
   /* =================== accTrigger ===================*/
 
