@@ -9,6 +9,19 @@
  */
 
 :root {
+  --font-satoshi: "Satoshi", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-general-sans: "General Sans", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-clash-display: "Clash Display", "General Sans", system-ui, sans-serif;
+  --font-ranade: "Ranade", "Georgia", "Times New Roman", serif;
+  --font-lato: "Lato", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+
+
+
+
+
   --border-radius: 0.5em;
 
   --border-radiusXS: 0.25em;
@@ -183,7 +196,6 @@
   --toasttab: #ff4c00;
   --GardenersHub: #4c665b;
 
-  font-family: "Lato", sans-serif;
   --GLORIFY-orangeBgLt: #eddacc;
   --GLORIFY-orange: #efbd66;
   --GLORIFY-orangeLt: #f5d7a3;
@@ -198,14 +210,17 @@ html {
   scroll-behavior: smooth;
   color: var(--Grey800);
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+
   text-decoration: none;
   height: var(--height100);
-  background-color: var(--GreyHTMLBg);
+    font-family: var(--font-satoshi);
+
+  /* background-color: var(--GreyHTMLBg); */
 }
 
 body {
   width: 100%;
+
   height: var(--height100);
   margin: 0;
   padding: 0;
@@ -1147,6 +1162,7 @@ polygon {
   border-radius: 1.2em;
   border: 1px solid var(--border);
 }
+
 .card2025 {
   border-radius: 2.2em;
   border: 2px solid #1b1b1b;
@@ -2196,8 +2212,7 @@ section .padding {
 
 .newLandingTitle {
   font-family: inherit;
-  font-size: clamp(2.8em, 3.2vw, 3.4em);
-
+  font-weight: 400;
   margin: 0;
   line-height: 120%;
 }
@@ -2397,7 +2412,8 @@ h4 {
   font-size: clamp(1.2em, 1.6vw, 1.6em);
 }
 
-h5 { font-size: clamp(1.1em, 1.3vw, 1.4em); 
+h5 {
+  font-size: clamp(1.1em, 1.3vw, 1.4em);
 }
 
 h6 {
@@ -3113,12 +3129,13 @@ button.passwordArr {
   margin: auto;
 }
 
-
 .wrapper {
   max-width: 1320px;
   margin: 0 auto;
-  padding-inline: 1em; /* ensures at least 1em spacing on both sides */
-  box-sizing: border-box; /* keeps max-width inclusive of padding */
+  padding-inline: 1em;
+  /* ensures at least 1em spacing on both sides */
+  box-sizing: border-box;
+  /* keeps max-width inclusive of padding */
 }
 
 @media all and (max-width: 1080px) {
@@ -4327,6 +4344,7 @@ body .flex-container.Mobile {
 .spacingXLarge {
   height: 64px;
 }
+
 .spacingLarge {
   height: 48px;
 }
@@ -4859,6 +4877,11 @@ body .flex-container.Mobile {
   margin: 9px;
 }
 
+.landingProfileImg {
+  width: 8rem;
+  margin: 0;
+}
+
 .bulletWithArrow {
   display: inline-flex;
   align-items: center;
@@ -5051,11 +5074,12 @@ body .flex-container.Mobile {
 .iconMax {
   width: 56px;
 }
-.workdeck_thumbnail{
+
+.workdeck_thumbnail {
   width: 5vw;
   margin: 8px 32px;
-
 }
+
 .iconDemo {
   margin: 0.6em;
   padding: 1.2em;
