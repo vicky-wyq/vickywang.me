@@ -39,7 +39,7 @@
           <% for(let i = 0; i < pages.length; i++) { %>
           <li class="<%- `${baseClasses} ${(currentPage === pages[i] ? activeClasses : inactiveClasses)}` %>">
             <% const url = '/' + (pages[i] === 'PROJECT' ? '' : pages[i].toLowerCase()) %>
-            <a href="<%- url %>" class="nav-link box"><%- pages[i] %></a>
+            <a href="<%- url %>" class="nav-link_archived box"><%- pages[i] %></a>
           </li>
           <% } %>
         </ul>
@@ -70,7 +70,7 @@
           <% for(let i = 0; i < pages.length; i++) { %>
           <li class="<%- `${baseClasses} ${(currentPage === pages[i] ? activeClasses : inactiveClasses)}` %>">
             <% const url = '/' + (pages[i] === 'PROJECT' ? '' : pages[i].toLowerCase()) %>
-            <a href="<%- url %>" class="nav-link box"><%- pages[i] %></a>
+            <a href="<%- url %>" class="nav-link_archived box"><%- pages[i] %></a>
           </li>
           <% } %>
         </ul>
@@ -125,7 +125,7 @@
           <a href="/"><img class="logo pointer marginS" src="<%= websitePath %>/icon/LOGO.svg" alt="VW" title="vickywang.me"></a>
           <div class="navbar">
             <ul class="nav-menu">
-              <li class="dropdown nav-item active activeNav  marginZero"><a href="/" class="nav-link box">PROJECT</a>
+              <li class="dropdown nav-item active activeNav  marginZero"><a href="/" class="nav-link_archived box">PROJECT</a>
       
                 <div class="dropdown-content">
                   <a href="/<%- projectUrl1 %>/">
@@ -169,18 +169,18 @@
               </li>
               </li>
             <!-- 
-              <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link box ">ARCHITECTURE</a>
+              <li class="nav-item inactive marginZero"><a href="/architecture" class="nav-link_archived box ">ARCHITECTURE</a>
               </li>
-              <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link box ">PHOTOGRAPHY</a>
+              <li class="nav-item inactive marginZero"><a href="/photography" class="nav-link_archived box ">PHOTOGRAPHY</a>
               </li>
              -->
 
       
       
 
-              <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link box ">BLOG</a>
+              <li class="nav-item inactive marginZero"><a href="/blog" class="nav-link_archived box ">BLOG</a>
               </li>
-              <li class="nav-item inactive marginZero"><a href="/about" class="nav-link box ">ABOUT</a>
+              <li class="nav-item inactive marginZero"><a href="/about" class="nav-link_archived box ">ABOUT</a>
               </li>
             </ul>
       
