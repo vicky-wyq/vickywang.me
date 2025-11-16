@@ -8,1211 +8,162 @@
 <!--Head-->
 
 <body>
+  <div class="top-glass"></div>
 
-
-  <%- include(`${templatePath}/shared/comp_progressBar`) %>
-<header>
-  <nav class="header header-pin" id="header">
-    <div class="headerContainer">
-      <a href="/workshelf">
-        <div class="logo-container">
-          <!-- LOGO_0.svg -->
-          <img src="/icon/LOGO_0.svg" alt="VW Studio Logo V0" class=" logo logo-0">
-          <!-- LOGO_1.svg -->
-          <img src="/icon/LOGO_1.svg" alt="VW Studio Logo V1" class=" logo logo-1">
-        </div>
-      </a>
-
-      <div class="navbar">
-        <ol class="nav-menu colorWhite">
-          <li class="nav-item active activeNav">
-            <a href="#projects" class="nav-link">PROJECTS</a>
-          </li>
-          <li class="nav-item activeNav">
-            <a href="#experiments" class="nav-link ">EXPERIMENTS</a>
-          </li>
-          <li class="nav-item activeNav">
-            <a href="#design_system" class="nav-link ">DESIGN SYSTEM</a>
-          </li>
-          <li class="nav-item activeNav">
-            <a href="#about" class="nav-link ">ABOUT</a>
-          </li>
-        </ol>
-      </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
+  <header class="top-nav">
+    <div class="nav-pill" id="navPill">
+      <span class="nav-pill-active" id="navActive"></span>
+      <button class="nav-link is-active" data-link="about" type="button">About me</button>
+      <button class="nav-link" data-link="works" type="button">Works</button>
+      <button class="nav-link" data-link="experiments" type="button">Experiments</button>
+      <button class="nav-link" data-link="designsystem" type="button">Design System</button>
+      <button class="nav-link" data-link="contact" type="button">Contact</button>
     </div>
-  </nav>
-</header>
-
-  <div>
-      <div class="spacingXLarge"></div>
-      <div class="spacingXLarge"></div>
-
-      <div class="wrapper">
-    <div class="Grid Grid--full Grid--gutter">
-      <div class="Grid-cell">
-        <div class="element u-textCenter">
-          <div class="spacingSmall"></div>
-          <img class="landingProfileImg" src="photo_profile.png" alt="vicky">
-          <div class="spacingSmall"></div>
-
-          <h1 class="fontWeight700 newLandingTitle">Hi, I'm Vicky, systems & marketplace flows for B2B/B2C platforms.
-          </h1>
-                    <div class="spacingSmall"></div>
-
-          <h5 class="fontWeight300">I design scalable flows and tooling for platforms and high-volume users.
-
-          </h5>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
- 
-    <!-- <div class="wrapper">
-      <div class="blankHS"></div>
-      <div class="rowToColumn centerVH">
-        <div class="element">
-          <h1 class="newLandingTitle ">Hi, I'm Vicky, systems & marketplace flows for B2B/B2C platforms.
-          </h1>
-          <h3 class="fontWeight300">I design scalable flows and tooling for platforms and high-volume users.
-          </h3>
-
-          <div class="row">
-
-            <div class="Grid-cell">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img title="Copy Email to Clipboard" class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-
-            </div>
-            <div class="Grid-cell">
-              <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" title="LinkedIn">
-                <img class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax borderRadiusS" src="../icon/in.svg" alt="LinkedIn">
-              </a>
-            </div>
-
-            <div class="Grid-cell">
-              <a href="https://github.com/vicky-wyq" target="_blank" title="GitHub">
-                <img class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/git.svg" alt="GitHub">
-              </a>
-            </div>
-            <div class="Grid-cell">
-              <a href="https://codepen.io/vicky-wyq" target="_blank" title="CodePen">
-                <img class="iconM hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
-              </a>
-            </div>
-            <div class="Grid-cell">
-              <div class="dropdownSM">
-                <img title="Share" class="iconM hoverGrey100 paddingM fitContent borderRadiusMax dropbtn" src="../icon/share.svg" alt="Share">
-                <div class="dropdownSM-content">
-                  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
-                    on LinkedIn</a>
-                  <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me&amp;media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&amp;description=Skilled%20UX%20Designer%20for%20B2B%20Solutions%20%26%20Consumer%20Apps%20-%20Vicky%20Wang" target="_blank">Share on Pinterest</a>
-                </div>
-              </div>
-            </div>
-            <div class="Grid-cell displayTablet">
-            </div>
-
-            <div class="Grid-cell displayLaptop">
-            </div>
-            <div class="Grid-cell displayLaptop">
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="element">
-              <a href="/resume2025"> <button class="buttonMedium buttonPrimary WhiteBg">Resume &amp; Experience
-                </button></a>
-            </div>
-          </div>
-        </div>
-        <div class="paddingL fitContenteft">
-          <img class="landingProfileImg" src="photo_profile.png" alt="vicky">
-
-        </div>
-      </div>
-    </div> -->
-  </div>
-
-
-  <div class="spacingSmall"></div>
-
-
-
-
-  <div class="blankHXXS"></div>
-  </div>
-
-  <!-- Content -->
-  <section id="projects">
-
-    <%- include(`${templatePath}/shared/workdeck_section_title_description`, {
-    sectionTitle:'Launched Platforms & Measurable Impact', 
-    sectionDescription:'Shipped, in-production work with measurable outcomes.'
-    }) %>
-
-    <div class="spacingMedium"></div>
-    <!-- =========== images =========== -->
-
-
+  </header>
+  <section id="about" data-nav="about">
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
     <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'💼 Business - Facing • Q2 2025'
-              }) %>
-              <div class="row">
-                <div>
-                  <!-- =========== project title  =========== -->
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                  projectTitle:'BabyQuip Inventory Management (Partner Portal)'
-                }) %>
-                  <!-- =========== project description =========== -->
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                  projectDescription:'Scaled inventory from hobbyist QPs to power users with unified navigation, inline editing, and category surfacing. Increased efficiency 3×.'
-                  }) %>
-                </div>
-                <div class="accIcon align-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="accContent">
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX</h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear listing &amp; storefront control </h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--cols-2 u-textCenter colorBgImg">
-            <div class="Grid-cell">
-              <div class="spacingSmall"></div>
-              <div class="element">
-                <img class="modal-target" src="bq_b2b_inventory_management_diagram__before.svg" alt="Legacy inventory UX">
-                <h5 class="TextPoppins fontWeight400">Before: Category Navigation </h5>
-                <h6 class="TextPoppins fontWeight200">Click & Click ... Back & Start Over</h6>
-
-              </div>
-            </div>
-
-            <div class="Grid-cell">
-              <div class="spacingSmall"></div>
-
-              <div class="element">
-                <img class="modal-target" src="bq_b2b_inventory_management_diagram_after.svg" alt="Redesigned inventory UX">
-                <h5 class="TextPoppins fontWeight400">After: Unified Inventory</h5>
-                <h6 class="TextPoppins fontWeight200">Filter & Scan</h6>
-
-              </div>
-            </div>
-
-          </div>
-
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><span class="fontWeight500">Problem:</span> Growth blocked (45% of categories unused); High effort (top 10% of QPs managed 46% of supply but needed 4–5 clicks per edit)</h5>
-                <h5><span class="fontWeight500">Insight:</span> Legacy tools couldn’t scale with power users or category expansion</h5>
-                <h5><span class="fontWeight500">Fixes:</span> Unified view (replaced 4–5 screens), persistent filters + inline editing, surfaced unlisted gear</h5>
-                <h5><span class="fontWeight500">Results:</span> 3× faster edits, 50–75% less QA overhead, reduced support load, foundation reused for SuperAdmin expansion</h5>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <a href="bq_b2b_inventory_management/"> <button class="buttonSmall buttonPrimary"> View Case Study </button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="spacingMedium"></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'🛍️ Consumer - Facing • Q4 20254 - Q1 2025'
-              }) %>
-              <div class="row">
-                <div>
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'Gear-First Experience Enhancements'}) %>
-
-                  <!-- =========== project description =========== -->
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                  projectDescription:'Joined near launch to refine the end-to-end Gear-First marketplace flow—improving item discovery, provider selection, and checkout clarity. Focused on usability testing and UX fixes that simplified the cart-to-checkout path and increased buyer confidence.'
-                  }) %>
-                </div>
-                <div class="accIcon align-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent">
-
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Support UX Designer</h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Gear-first rental flow optimization </h6>
-              </div>
-
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
-              </div>
-            </div>
-
-          </div>
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h4 class="fontWeight600">Focus areas</h4>
-                <h4><span class="fontWeight500">Item detail:</span> clarified “How It Works” and pricing copy to reduce uncertainty.</h4>
-                <h4><span class="fontWeight500">Provider Quick View:</span>Introduced quick-view modals for provider details and reviews, reducing unnecessary page loads and helping users make faster, more confident selections.</h4>
-                <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="modal-target card2025" src="bq_b2c_view_provider_before.png" alt="">
-                      <h5 class="fontWeight400">Before</h5>
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="modal-target card2025" src="bq_b2c_view_provider_after.png" alt="">
-                      <h5 class="fontWeight400">After</h5>
-                    </div>
-                  </div>
-                </div>
-                <h4><span class="fontWeight500">Map view:</span> Earlier map styling made price markers blend into the background, reducing clarity between providers and locations. Reworked visual hierarchy using Google Map’s styling tool—adjusted color contrast and simplified base layers to emphasize pricing and coverage. Delivered configuration to developers for seamless rollout.</h4>
-                <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="modal-target card2025" src="bq_b2c_map_before.png" alt="">
-                      <h5 class="fontWeight400">Before</h5>
-                    </div>
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="modal-target card2025" src="bq_b2c_map_after.png" alt="">
-                      <h5 class="fontWeight400">After</h5>
-                    </div>
-                  </div>
-                </div>
-                <h4><span class="fontWeight500">Filters:</span> improved gear and brand filters for faster narrowing and quantity adjustments.</h4>
-                <h4><span class="fontWeight500">Checkout:</span> simplified form flow from cart to final booking confirmation.</h4>
-                <div class="spacingSmall"></div>
-
-                <h4 class="fontWeight600">Impact</h4>
-                <h4>Refined product for launch readiness, improving navigation speed, decision confidence, and alignment between mobile and web.
-                </h4>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="spacingMedium"></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'🛍️ Consumer - Facing • Q4 20254 - Q1 2025'
-              }) %>
-              <div class="row">
-                <div>
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'BabyQuip Mobile App Update'}) %>
-                  <!-- =========== project description =========== -->
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Redesigned the rental flow based on the new Gear-First structure. Simplified trip search and checkout, increasing flow completion and conversion.' }) %>
-                </div>
-                <div class="accIcon align-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent">
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Context:</strong> Before the redesign, users had to select a provider before browsing gear. This “provider-first” structure caused friction for new users, who dropped off when forced to choose a QP without context. After BabyQuip shifted to a “gear-first” model on web, I redesigned the mobile experience to match—while streamlining trip input, clarifying QP flow, and reducing booking friction.
-
-                </h5>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX</h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Mobile rental journey (entry → checkout) </h6>
-              </div>
-
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
-              </div>
-            </div>
-
-          </div>
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5 class="fontWeight400">Exploration: Shopping & Landing
-                </h5>
-                <div class="spacingSmall"></div>
-                <h5><strong>Problem:</strong> Users dropped off early due to rigid trip entry or confusion about the service</h5>
-                <h5><strong>Insight:</strong> Fast vs cautious users had different booking triggers</h5>
-                <h5><strong>Solution:</strong> Category-first browse layout, flexible landing paths</h5>
-                <h5><strong>Impact:</strong> +32% product views, +26% cart adds</h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5 class="fontWeight400">Consideration: Trip Input & QP Clarity
-                </h5>
-                <div class="spacingSmall"></div>
-                <h5><strong>Problem:</strong> Users had to complete rigid trip forms (dates, times, address) up front, with no way to revisit or edit later—causing drop-off and frustration.</h5>
-                <h5><strong>Insight:</strong> Most users accepted default values but needed a way to view or adjust info after exploring gear.</h5>
-                <h5><strong>Solution:</strong> Introduced modular trip inputs with inline visibility, smart defaults, and persistent edit access—making the trip context flexible, skippable, and always available.</h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5 class="fontWeight400">Checkout Optimization</h5>
-                <div class="spacingSmall"></div>
-                <h5><strong>Problem:</strong> Survey-style checkout discouraged completion</h5>
-                <h5><strong>Insight:</strong> Final steps felt excessive and redundant</h5>
-                <h5><strong>Solution:</strong> Condensed form into a single-page checkout</h5>
-                <h5><strong>Impact:</strong> +32% AOV, –59% drop-off</h5>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="spacingMedium"></div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="blankHXXS"></div>
-
-    <%- include(`${templatePath}/shared/workdeck_section_title_description`, {
-    sectionTitle:'System Architecture & Scalability', 
-    sectionDescription:'Complex flows, IA, and interaction models behind those platforms.'
-    }) %>
-
-
-    <div class="wrapper">
-
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-                    projectMeta:'💼 Business - Facing • Q3 2025'
-                    }) %>
-              <div class="row">
-
-                <div>
-
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'BabyQuip Package Redesign for Growth (Partner Portal /BabyQuip → GoQuip, launch in progress)'}) %>
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'From ad-hoc bundles to standardized, promotable packages' }) %>
-
-                </div>
-                <div class="align-top">
-                  <div class="accIcon"></div>
-                </div>
-
-
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent">
-
-
-
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX</h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Sign-up flow, modular onboarding framework </h6>
-              </div>
-
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="element">
-                  <h5><strong>Problem:</strong>1.QPs have different type of package, hard to promote seasonally. 2. Support GoQuip expansion and growth which require different type of package</h5>
-                  <h5><strong>Insight:</strong>QPs currently have custom packages, they compain about hard to manage the image for the package, also, the url, instruction, package description is not clear, a power QP can not even manage it properly</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Key Fixes:</strong></h5>
-                <ul class="listCircle">
-                  <li>unified package as standardized package, easy to convert to, and build and insprie QPs</li>
-                  <li>Simplified editing and image management</li>
-                  <li>Reduced provider setup effort</li>
-                  <li>Supported higher AOV through scalable marketing</li>
-
-                </ul>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Expected Results:</strong></h5>
-                <ul class="listCircle">
-                  <li>x</li>
-                  <li>x</li>
-                  <li>x</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="spacingMedium"></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <!-- <div class="Grid Grid--full Grid--gutter">
+      <div class="Grid Grid--full Grid--gutter u-textCenter">
         <div class="Grid-cell">
-          <img src="cover_onboarding.svg" alt="Inventory Management">
-        </div>
-      </div> -->
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'💼 Business - Facing • Q3 2025'
-              }) %>
-
-              <div class="row">
-                <div>
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'BabyQuip Onboarding Redesign (Partner Portal / BabyQuip → GoQuip)'}) %>
-
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Modular, category-aware onboarding for expansion across Baby, Mobility, and Party providers. Simplified setup, clarified load logic, and reduced ordering errors.' }) %>
-                </div>
-                <div class="accIcon align-right"></div>
+          <div class="element">
+            <div class="chat-bubble-wrap">
+              <div class="chat-bubble">
+                <span class="typing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </span>
+                <span class="bubble-text"></span>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="accContent">
-          <div class="Grid Grid--cols-2 u-textCenter colorBgImg">
-            <div class="Grid-cell">
-              <div class="spacingSmall"></div>
-
-
-
-              <div class="element">
-                <img class="modal-target" src="bq_b2b_onboarding_onboarding_diagram_before.svg" alt="Legacy inventory UX">
-                <h3 class="fontWeight600">Linear & Rigid </h3>
-                <h6>Onboarding with 30+ rigid screens</h6>
-
-
-                <div class="spacingSmall"></div>
-
-              </div>
+            <div class="spacingXSmall"></div>
+            <div class="profileImgWrapper">
+              <img class="landingProfileImg" src="photo_profile_avatar.png" alt="vicky">
             </div>
 
-            <div class="Grid-cell">
-              <div class="spacingSmall"></div>
+            <div class="spacingMedium"></div>
+            <h1 class="newLandingTitle"> Marketplaces & Platform UX, shipping scalable flows for B2B and B2C.
+            </h1>
 
-              <div class="element">
-                <img class="modal-target" src="bq_b2b_onboarding_onboarding_diagram_after.svg" Redesigned inventory UX">
-                <h3 class="fontWeight600">Modular & Adaptable</h3>
-                <h6>Category-aware onboarding</h6>
-              </div>
-            </div>
+            <h3 class="fontWeight300">I design scalable flows and tooling for platforms and high-volume users.
+
+            </h3>
 
           </div>
-
-
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX</h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Sign-up flow, modular onboarding framework </h6>
-              </div>
-
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <div class="element">
-                  <h5><strong>Problem:</strong> Legacy onboarding was rigid and slow—over 30 screens in a linear flow. No category logic, unclear progress, high drop-off, and high support load.</h5>
-                  <h5><strong>Insight:</strong> Different QP types (first-timers, experienced, mobility-focused) need different onboarding paths. A single rigid flow created friction for all. Most CS time was spent helping people finish onboarding or understanding next steps.</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Key Fixes:</strong></h5>
-                <ul class="listCircle">
-                  <li>Early category fork after signup filters QPs and tailors flow by business type</li>
-                  <li>Modular task stack replaces rigid sequence with flexible path</li>
-                  <li>Post-onboarding setup (Go Live) clearly shows what’s left, based on prior steps</li>
-                  <li>Landing content restructured to reduce CS burden by explaining up front</li>
-                  <li>Support filter: unserious QPs self-filter out early</li>
-                </ul>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Expected Results:</strong></h5>
-                <ul class="listCircle">
-                  <li>Expected to reduce CS burden and onboarding time based on internal testing and early validation</li>
-                  <li>Scalable logic now supports Baby, Mobility, Party (GoQuip-ready)</li>
-                  <li>Expected to increase clarity and signup completion</li>
-                  <li>Built-in flexibility for category growth and policy differences</li>
-                  <li>Framework is modular and ready to support future category growth.”</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="spacingMedium"></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'💼 Business - Facing • 2021 - 2024'
-              }) %>
-              <div class="row">
-                <div>
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'BookYourPet Platform Simplification & Booking Flexibility'}) %>
-
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Rebuilt BookYourPet’s over-engineered SaaS platform into a scalable system by simplifying onboarding, restructuring dependencies, and adding flexibility to core booking logic. Collaborated closely with the CTO to refactor business rules and enable self-serve activation.' }) %>
-                </div>
-                <div class="accIcon align-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent">
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5>→ Reduced onboarding time from hours to minutes by delaying payment setup, adding default data, and guiding users through skippable steps.</h5>
-                <h5>→ Introduced modular override logic for price, time, and team assignment, improving admin control and reducing booking friction.</h5>
-                <h5>→ Booking time ↓ 42%, trial activation ↑ 5×, booking errors ↓ 67%, upsell success ↑ 75%.</h5>
-              </div>
-            </div>
-          </div>
-          <div class="spacingSmall"></div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="blankHXXS"></div>
-    <%- include(`${templatePath}/shared/workdeck_section_title_description`, {
-    sectionTitle:'Strategic Concepts & Research', 
-    sectionDescription:'Earlier-stage explorations and forward-looking concepts.'
-    }) %>
-
-
-
-
-    <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'💼 Business - Facing • Q4 2023'
-              }) %>
-              <div class="row">
-                <div>
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'LASO Admin Platform Concept'}) %>
-
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Defined the foundation for LASO’s internal operations system—connecting B2B and D2C user management, data visibility, and early financial tracking. Shaped strategy and system design through cross-team alignment and backend architecture pivots (Pre-launch exploration).' }) %>
-                </div>
-                <div class="accIcon align-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent">
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> UX Designer (part-time contract)</h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder:</span><a class="textUnderline" href="https://www.linkedin.com/in/jason-yim-b7066035/"> Jason Yim</a>, <a class="textUnderline" href="https://www.linkedin.com/in/lufmx/">Alejandro Lopez Ulloa</a></h6>
-              </div>
-            </div>
-
-          </div>
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><span class="fontWeight400">Overview:</span>Defined the first unified admin system for LASO’s operations, centralizing user management across B2B and D2C accounts.
-                  Built core tools for CX and sales teams to track user activity, manage memberships, and view account histories in real time.
-                  Introduced dashboards for user metrics and onboarding completion, improving visibility into account health and engagement.
-                  Collaborated with engineering to design scalable data structures while navigating backend constraints around multi-database user types.
-                </h5>
-                <h5><span class="fontWeight400">Focus areas:</span>
-                </h5>
-                <h5>→ Unified user management for B2B/D2C</h5>
-                <h5>→ Real-time visibility for CX and sales teams</h5>
-                <h5>→ Dashboard for account health metrics </h5>
-                <h5>→ Scalable architecture within multi-database constraints</h5>
-              </div>
-            </div>
-          </div>
-          <div class="spacingSmall"></div>
-
-          <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="modal-target card2025" src="laso_admin_user_type.png" alt="">
-                <h5 class="fontWeight400">User & Membership Types</h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="modal-target card2025" src="laso_admin_user_type1.png" alt="">
-                <h5 class="fontWeight400">User & Membership Hierarchy</h5>
-              </div>
-            </div>
-          </div>
-          <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter " aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
-            <div class="TBslides">
-              <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center">
-                  <div class="Grid-cell">
-                    <img src="laso_admin_slide1_left.png" alt="">
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="cardImgCropWS shadowBoxPrototype" src="laso_admin_slide1.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center">
-                  <div class="Grid-cell">
-                    <img src="laso_admin_slide2_left.png" alt="">
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="cardImgCropWS shadowBoxPrototype" src="laso_admin_slide2.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center">
-                  <div class="Grid-cell">
-                    <img src="laso_admin_slide3_left.png" alt="">
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="cardImgCropWS shadowBoxPrototype" src="laso_admin_slide3.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 4 of 4" tabindex="0">
-                <div class="Grid Grid--gutters Grid--1of3 Grid--center">
-                  <div class="Grid-cell">
-                    <img src="laso_admin_slide4_left.png" alt="">
-                  </div>
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="cardImgCropWS shadowBoxPrototype" src="laso_admin_slide4.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-            <div class="TBcarouselNav Grid-cell flipBtn">
-              <a class="TBsliderNav" aria-label="Go to slide 1">
-                <div>User Management</div>
-              </a>
-              <a class="TBsliderNav active" aria-label="Go to slide 2">
-                <div>Data Accessibility</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 3">
-                <div>Financial Management</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 4">
-                <div>Comprehensive Sales Tracking</div>
-              </a>
-
-            </div>
-          </div>
-
-
-          <div class="spacingMedium"></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'🛍️ Consumer - Facing • Q4 2023'
-              }) %>
-              <div class="row">
-                <div>
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'RX Zero Case Study'}) %>
-
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, { projectDescription:'Defined the product vision and UX foundation for LASO’s shift from telemedicine to an integrated prescription platform.Led research and concept design to shape a subscription-based medication model that improves trust, transparency, and accessibility for chronic-care users.' }) %>
-
-                </div>
-                <div class="accIcon align-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent">
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h3><span class="fontWeight400">Focus:</span> Identified pain points in medication discovery, pricing clarity, and user confidence through qualitative research.
-                  Mapped insights into simplified onboarding, discover, and help flows emphasizing credibility, transparent value, and human support. Delivered wireframes and IA prototypes to guide the new Rx Zero platform direction.</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="modal-target card2025" src="laso_rxzero_ia.png" alt="">
-                <h5 class="fontWeight400">Information Architecture</h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="modal-target card2025" src="laso_rxzero_sitemap.png" alt="">
-                <h5 class="fontWeight400">Sitemap</h5>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="TBcarousel Grid--center Grid Grid--full Grid--gutters u-textCenter " aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
-            <div class="TBslides">
-
-              <div class="TBslidesItem slide-2" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
-                <div class="Grid Grid--gutters Grid--full">
-
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="cardImgCropWS " src="laso_rxzero1.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-3" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
-                <div class="Grid Grid--gutters Grid--full">
-
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="cardImgCropWS " src="laso_rxzero2.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
-                <div class="Grid Grid--gutters Grid--full">
-
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="cardImgCropWS " src="laso_rxzero3.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="TBslidesItem slide-3" id="slide-4" aria-label="slide 4 of 4" tabindex="0">
-                <div class="Grid Grid--gutters Grid--full">
-
-                  <div class="Grid-cell">
-                    <div class="element">
-                      <img class="cardImgCropWS " src="laso_rxzero4.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="TBcarouselNav Grid-cell">
-
-              <a class="TBsliderNav active" aria-label="Go to slide 1">
-                <div>Streamline Onboarding</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 2">
-                <div>Discover Meds</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 3">
-                <div>Convenience</div>
-              </a>
-              <a class="TBsliderNav" aria-label="Go to slide 4">
-                <div>Human Support</div>
-              </a>
-            </div>
-          </div>
-
-
-
-          <div class="spacingMedium"></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'🛍️ Consumer - Facing • Q3 2025'
-              }) %>
-              <div class="row">
-                <div>
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'BabyQuip → GoQuip Landing & Discovery Redesign'}) %>
-
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Re-architected shopping and landing for category clarity and trip-aware UX. Designed for scalability as BabyQuip expands into B2C.' }) %>
-                </div>
-                <div class="accIcon align-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent">
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX</h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Consumer IA, category education, conversion growth</h6>
-              </div>
-
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
-              </div>
-            </div>
-
-          </div>
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <img class="modal-target" src="bq_b2c_journey_map.svg" alt="">
-            </div>
-          </div>
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Problem</strong>
-                  <h5>The BabyQuip site was built for baby gear and a provider-first model. As we expand to mobility and other categories (GoQuip), our current structure doesn’t support cross-category shopping or trip-based filtering clearly.</h5>
-                  <ul class="listCircle">
-                    <li>No clear category entry points for new users</li>
-                    <li>Existing users (aging out of baby gear) unaware of mobility/party options</li>
-                    <li>Search and discovery fail to reflect new business direction</li>
-                  </ul>
-                </h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Insight</strong>
-                  <h5>Trip context and item specificity matter—but they require education and a clear IA.</h5>
-
-                  <h5>We need to support:</h5>
-
-                  <ul class="listCircle">
-                    <li>Category exploration (for GoQuip SEO and new users)</li>
-                    <li>Seamless landing-to-conversion path (for existing BabyQuip users)</li>
-                    <li>Future flexibility (multi-category growth)</li>
-                  </ul>
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="Grid Grid--gutters Grid--cols-2">
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Key Fixes (in progress):</strong> </h5>
-                <ul class="listCircle">
-                  <li>Flattened site IA with distinct landing routes for Baby, Mobility, Party</li>
-                  <li>Persistent trip context to surface accurate availability/pricing</li>
-                  <li>Reframed entry from "What do you need?" → “Where are you going?”</li>
-                  <li>Category-aware homepage & discovery logic</li>
-                  <li>SEO-friendly structure without siloing categories</li>
-                </ul>
-
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h5><strong>Expected Results:</strong></h5>
-                <ul class="listCircle">
-                  <li>Increased discoverability of non-baby categories (e.g. Mobility, Party)</li>
-                  <li>Higher trip-start to item-view conversion</li>
-                  <li>Reduced user confusion on category availability</li>
-                  <li>Future-ready foundation for cross-category growth</li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="spacingMedium"></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="accItem">
-        <div class="Grid Grid--gutter Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <%- include(`${templatePath}/shared/workdeck_project_meta`, {
-              projectMeta:'🛍️ Consumer - Facing • Q4 2025'
-              }) %>
-              <div class="row">
-                <div>
-                  <%- include(`${templatePath}/shared/workdeck_project_title`, {
-                    projectTitle:'Alternative Gear-First Marketplace Architecture (Concept Exploration)'}) %>
-
-                  <%- include(`${templatePath}/shared/workdeck_project_description`, {
-                    projectDescription:'Explored an alternative marketplace model that reduces back-and-forth friction by merging gear filtering, provider selection, and map context into a unified three-column layout.' }) %>
-                </div>
-                <div class="accIcon align-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent">
-          <div class="Grid Grid--gutters Grid--cols-3">
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Role:</span> Lead UX</h6>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Scope:</span> Consumer IA, category education, conversion growth</h6>
-              </div>
-
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <h6> <span class="colorBgYellowVW100 borderRadiusS chipBorderPadding"> Stakeholder: </span><a class="textUnderline" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-
-                <%- include(`${templatePath}/shared/workdeck_project_details_title`, {
-                    detailTitle: 'Purpose'
-                  }) %>
-                <%- include(`${templatePath}/shared/workdeck_project_details_description`, {
-                    detailDescription: 'A forward-looking redesign concept to address structural usability issues observed in Gear-First: placeholder items, trust friction, rework when changing providers, and long cart-to-provider loops.'
-                  }) %>
-                <%- include(`${templatePath}/shared/workdeck_project_details_title`, {
-                    detailTitle: 'Concept Overview'
-                  }) %>
-                <%- include(`${templatePath}/shared/workdeck_project_details_description`, {
-                    detailDescription: 'A three-column marketplace layout combining:'
-                  }) %>
-                <ul class="listCircle">
-                  <li>Left: persistent filters (gear, brand, quantity, availability)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="modal-target card2025" src="laso_rxzero_ia.png" alt="">
-                <h5 class="fontWeight400">Information Architecture</h5>
-              </div>
-            </div>
-            <div class="Grid-cell">
-              <div class="element">
-                <img class="modal-target card2025" src="laso_rxzero_sitemap.png" alt="">
-                <h5 class="fontWeight400">Sitemap</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="spacingMedium"></div>
-
-
-
-
 
         </div>
       </div>
+
+
+
+      <div class="Grid Grid--gutters Grid--cols-8">
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayTablet">
+        </div>
+        <div class="Grid-cell centerVH">
+          <div class="ClipboardBoxIconOnly">
+            <button class="ClipboardIconOnly">
+              <img title="Copy Email to Clipboard" class="iconS hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/mail.svg" alt="LinkedIn">
+              <p class="clickIconCopy">vickyw.design@gmail.com</p>
+            </button>
+          </div>
+
+        </div>
+        <div class="Grid-cell centerVH">
+          <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" title="LinkedIn">
+            <img class="iconS hoverGrey100 paddingM fitContentax borderRadiusMax borderRadiusS" src="../icon/in.svg" alt="LinkedIn">
+          </a>
+        </div>
+
+        <div class="Grid-cell centerVH">
+          <a href="https://github.com/vicky-wyq" target="_blank" title="GitHub">
+            <img class="iconS hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/git.svg" alt="GitHub">
+          </a>
+        </div>
+        <div class="Grid-cell centerVH">
+          <a href="https://codepen.io/vicky-wyq" target="_blank" title="CodePen">
+            <img class="iconS hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
+          </a>
+        </div>
+        <div class="Grid-cell centerVH displayLaptop">
+          <div class="dropdownSM">
+            <img title="Share" class="iconS hoverGrey100 paddingM fitContent borderRadiusMax dropbtn" src="../icon/share.svg" alt="Share">
+            <div class="dropdownSM-content">
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
+                on LinkedIn</a>
+              <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me&amp;media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&amp;description=Skilled%20UX%20Designer%20for%20B2B%20Solutions%20%26%20Consumer%20Apps%20-%20Vicky%20Wang" target="_blank">Share on Pinterest</a>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell displayTablet">
+        </div>
+
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayLaptop">
+        </div>
+      </div>
+
+      <div class="Grid Grid--full Grid--gutter Grid--center">
+        <div class="element">
+          <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
+        </div>
+      </div>
+
     </div>
-
-
-
-    <div class="blankHXS"></div>
-
-
-    <%- include(`${templatePath}/shared/base_divider`) %>
-
-    <div class="blankHXXS"></div>
-
-    </div>
-
+    <div class="spacingSmall"></div>
 
   </section>
 
-  <section id="experiments">
+
+  <div class="vline"></div>
+
+
+  <section id="works" data-nav="works">
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <h2 class="fontWeight700">Launched Platforms & Measurable Impact</h2>
+            <h4 class="fontWeight300 textItalic">Shipped, in-production work with measurable outcomes.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+
+  </section>
+
+  <section id="experiments" data-nav="experiments">
     <!-- Arrow -->
     <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Experiments' }) %>
     <!-- Arrow -->
@@ -1307,7 +258,7 @@
     <div class="blankHXS"></div>
 
   </section>
-  <section id="design_system">
+  <section id="designsystem" data-nav="designsystem">
     <div>
       <div class="blankHXS"></div>
 
@@ -1366,204 +317,22 @@
     </div>
 
   </section>
-
-  <section id="about">
-    <div class="wrapper ">
-
-      <div id="circle_wrapper">
-        <div id="circle_container">
-          <div id="circle">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-              <defs>
-                <path id="circlePath" d="M 100, 100 m -40, 0 a 40,40 0 0,1 80,0 a 40,40 0 0,1 -80,0 " />
-              </defs>
-              <circle cx="100" cy="66.67" r="50" fill="none" />
-              <g>
-                <use xlink:href="#circlePath" fill="none" />
-                <text>
-                  <textPath xlink:href="#circlePath">User Experience Designer, Product Designer</textPath>
-                </text>
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-
-    <div class="blankHXS"></div>
-
-
-    <div class="wrapper">
-      <div class="Grid Grid--full Grid--gutters u-textCenter">
-        <div class="Grid-cell">
-          <div class="element">
-            <div class="blankHS"></div>
-
-            <h1 class="specialTextL">About Me</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spacingSmall"></div>
-
-
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--1of3 Grid--center">
-
-
-        <div class="Grid-cell">
-          <div class="element">
-            <img src="/me.png" alt="Vicky">
-
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h3>I’m a system-minded UX designer who turns complexity into clarity. My focus is building frameworks and flows that balance user intuition with business efficiency—systems that work in practice, not just in theory.
-            </h3>
-            <h3>➢ Expands slightly, but still crisp.</h3>
-            <h3>➢ Connects your systems focus to user/business outcomes.</h3>
-            <h3>➢ Echoes your homepage phrasing, so it feels consistent.</h3>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-
-
-
-      <div class="Grid Grid--gutters Grid--1of3 Grid--center">
-        <div class="Grid-cell">
-          <div class="element">
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="centerVer">
-            <div class="element">
-              <a href="mailto:vickyw.design@gmail.com"> <button class="buttonMedium buttonPrimary bgVWGrey">Email me
-                </button></a>
-            </div>
-            <div class="element">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img class="iconM hoverWhite paddingM fitContentax borderRadiusMax" title="Copy Email Address to Clipboard" src="/icon/copy.svg">
-                  <p class="clickIconCopy">vickyw.design@gmail.com
-                  </p>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="blankHS"></div>
-    <div class="colorBgYellowVW500">
-      <div class="blankHXS"></div>
-
-      <div class="wrapper">
-
-        <div class="Grid Grid--full Grid--gutters u-textCenter">
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="blankHS"></div>
-
-              <h1 class="specialTextL"> Design Process
-
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div class="spacingSmall"></div>
-
-        <div class="Grid Grid--gutters Grid--cols-3 u-textCenter">
-
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="element">
-                <img class="iconMax" src="../icon/landing_understand.svg" alt="Understand">
-                <h2 data-aos="fade-up"> <strong> Understand</strong> </h2>
-                <h3>Understand business goals and user needs using both qualitative and quantitative data to make informed UX decisions.
-                </h3>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="Grid-cell">
-            <div class="element">
-
-              <div class="element">
-                <img class="iconMax" src="../icon/landing_collaborate.svg" alt="Collaborate">
-
-                <h2 data-aos="fade-up"> <strong> Collaborate </strong> </h2>
-                <h3>Collaborate closely with teams from planning to delivery. Continuous feedback refines and improves designs.
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="Grid-cell">
-            <div class="element">
-              <div class="element">
-                <img class="iconMax" src="../icon/landing_facilitate.svg" alt="Facilitate">
-                <h2 data-aos="fade-up"> <strong> Facilitate</strong> </h2>
-                <h3>Manage the design process with clear deadlines to stay on track. Document and review each step to create effective, impactful designs.
-                </h3>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-      <div class="blankHXXS"></div>
-      <hr class="wrapperM colorBlack">
-      <div class="blankHXS"></div>
-
-
-      <div class="carouselLogoBlurContainer">
-
-        <div class="carouselLogoBlur">
-          <div class="logos"></div>
-        </div>
-
-      </div>
-      <div class="blankHS"></div>
-
-    </div>
-
-    <div class="blankHXS"></div>
-
-
-
-
-    <!-- Arrow -->
-    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Timeline' }) %>
-    <!-- Arrow -->
-    <!-- import timeline -->
-    <%- include(`${templatePath}/shared/block_timeline`) %>
-
+  <section id="contact" data-nav="contact">
 
     <!-- Arrow -->
     <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'UX Skills & Product Experience' }) %>
     <!-- Arrow -->
     <%- include(`${templatePath}/shared/comp_tagCloud`) %>
-  </section>
 
-  <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
-  <%- include(`${templatePath}/shared/comp_backTop`) %>
+
+    <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
+    <%- include(`${templatePath}/shared/comp_backTop`) %>
+
+  </section>
   <%- include(`${templatePath}/shared/block_nav_footer`, { 
     iconHoverColor: 'hoverWhite',
     footerBackgroundColor:'colorBgVW'
-  }) %>
+    }) %>
 
   <!-- Img Modal -->
   <div id="modal" class="modal">

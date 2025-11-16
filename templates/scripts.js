@@ -156,11 +156,14 @@ function main() {
 // TagsCloud
 
 (function () {
-  var lastKnownScrollY = 0;
-  var currentScrollY = 0;
-  var ticking = false;
-  var idOfHeader = "header";
-  var eleHeader = null;
+  // only run if #header actually exists
+  const eleHeader = document.getElementById("header");
+  if (!eleHeader) return; // <-- silence, no console.error, no drama
+
+  let lastKnownScrollY = 0;
+  let currentScrollY = 0;
+  let ticking = false;
+
   const classes = {
     pinned: "header-pin",
     unpinned: "header-unpin",
@@ -168,20 +171,16 @@ function main() {
 
   function onScroll() {
     currentScrollY = window.pageYOffset;
-    requestTick();
-  }
-
-  function requestTick() {
     if (!ticking) {
       requestAnimationFrame(update);
+      ticking = true;
     }
-    ticking = true;
   }
 
   function update() {
     if (currentScrollY < lastKnownScrollY) {
       pin();
-    } else if (currentScrollY > lastKnownScrollY) {
+    } else {
       unpin();
     }
     lastKnownScrollY = currentScrollY;
@@ -189,7 +188,7 @@ function main() {
   }
 
   function pin() {
-    if (eleHeader && eleHeader.classList.contains(classes.unpinned)) {
+    if (eleHeader.classList.contains(classes.unpinned)) {
       eleHeader.classList.remove(classes.unpinned);
       eleHeader.classList.add(classes.pinned);
     }
@@ -197,32 +196,20 @@ function main() {
 
   function unpin() {
     if (
-      eleHeader &&
-      (eleHeader.classList.contains(classes.pinned) ||
-        !eleHeader.classList.contains(classes.unpinned))
+      eleHeader.classList.contains(classes.pinned) ||
+      !eleHeader.classList.contains(classes.unpinned)
     ) {
       eleHeader.classList.remove(classes.pinned);
       eleHeader.classList.add(classes.unpinned);
     }
   }
 
-  function initHeader() {
-    eleHeader = document.getElementById(idOfHeader);
-    if (eleHeader) {
-      document.addEventListener("scroll", onScroll, false);
-    } else {
-      console.error("Header element not found");
-    }
-  }
-
-  // Ensuring this code doesn't conflict with other window.onload events
-  if (window.addEventListener) {
-    window.addEventListener("load", initHeader);
-  } else if (window.attachEvent) {
-    window.attachEvent("onload", initHeader);
-  }
+  window.addEventListener("scroll", onScroll);
 })();
 
+
+
+// =================
 function progressBarScroll() {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
     height = document.body.scrollHeight - document.body.clientHeight,
@@ -524,34 +511,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   initializeToggles();
   /* =================== accTrigger ===================*/
-const accTriggers = document.querySelectorAll(".accTrigger");
+  const accTriggers = document.querySelectorAll(".accTrigger");
 
-accTriggers.forEach((trigger) => {
-  const content = trigger.nextElementSibling;
+  accTriggers.forEach((trigger) => {
+    const content = trigger.nextElementSibling;
 
-  // 1) INITIAL STATE: if either has is-open-acc from HTML, sync + set height
-  if (
-    trigger.classList.contains("is-open-acc") ||
-    content.classList.contains("is-open-acc")
-  ) {
-    trigger.classList.add("is-open-acc");
-    content.classList.add("is-open-acc");
-    content.style.maxHeight = content.scrollHeight + "px";
-  }
-
-  // 2) CLICK HANDLER
-  trigger.addEventListener("click", function () {
-    const isOpen = content.classList.toggle("is-open-acc");
-    trigger.classList.toggle("is-open-acc", isOpen);
-
-    if (isOpen) {
+    // 1) INITIAL STATE: if either has is-open-acc from HTML, sync + set height
+    if (
+      trigger.classList.contains("is-open-acc") ||
+      content.classList.contains("is-open-acc")
+    ) {
+      trigger.classList.add("is-open-acc");
+      content.classList.add("is-open-acc");
       content.style.maxHeight = content.scrollHeight + "px";
-    } else {
-      content.style.maxHeight = null;
     }
-  });
-});
 
+    // 2) CLICK HANDLER
+    trigger.addEventListener("click", function () {
+      const isOpen = content.classList.toggle("is-open-acc");
+      trigger.classList.toggle("is-open-acc", isOpen);
+
+      if (isOpen) {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = null;
+      }
+    });
+  });
 
   /* =================== accTrigger ===================*/
 
@@ -1192,3 +1178,84 @@ accTriggers.forEach((trigger) => {
     }
   };
 });
+
+// ======================== 2025 nav ========================
+document.addEventListener("DOMContentLoaded", () => {
+  const navPill = document.getElementById("navPill");
+  const activeBg = document.getElementById("navActive");
+  const links = Array.from(document.querySelectorAll(".nav-link"));
+  const sections = Array.from(document.querySelectorAll("section[data-nav]"));
+
+  function moveActive(link) {
+    links.forEach((l) => l.classList.toggle("is-active", l === link));
+
+    const linkRect = link.getBoundingClientRect();
+    const pillRect = navPill.getBoundingClientRect();
+
+    const width = linkRect.width;
+    const offset = linkRect.left - pillRect.left;
+
+    activeBg.style.width = width + "px";
+    activeBg.style.transform = `translateX(${offset}px)`;
+  }
+
+  // click → smooth scroll + move pill
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      const id = link.dataset.link;
+      const section = document.getElementById(id);
+      if (!section) return;
+
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      moveActive(link);
+    });
+  });
+
+  // scroll spy – update active nav while scrolling
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.dataset.nav;
+        const link = links.find((l) => l.dataset.link === id);
+        if (link) moveActive(link);
+      });
+    },
+    {
+      root: null,
+      threshold: 0.4, // ~40% of section visible
+    }
+  );
+
+  sections.forEach((sec) => observer.observe(sec));
+
+  // initial state (landing on About)
+  moveActive(links[0]);
+});
+
+// ======================== 2025 nav ========================
+document.addEventListener("DOMContentLoaded", () => {
+  const bubble = document.querySelector(".chat-bubble");
+  const textEl = bubble.querySelector(".bubble-text");
+  const typingEl = bubble.querySelector(".typing");
+
+  const message = "Hi, I’m Vicky.";
+  const delayBeforeTyping = 1200;   // ms to show "..." first
+  const typingSpeed = 70;           // ms per character
+
+  setTimeout(() => {
+    bubble.classList.add("start-typing");
+    typingEl.style.display = "none";
+
+    let i = 0;
+    const interval = setInterval(() => {
+      textEl.textContent += message.charAt(i);
+      i++;
+
+      if (i >= message.length) {
+        clearInterval(interval);
+      }
+    }, typingSpeed);
+  }, delayBeforeTyping);
+});
+// ======================== chat bubble ====================
