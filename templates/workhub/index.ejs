@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Workhub | Vicky Wang', 
+  description:'UX designer focused on system clarity, scalable flows, and meaningful product impact—across both B2B platforms and consumer journeys.', 
+  pageURL:'workshelf', thumbnailImgURL: 'vickywang.svg'
+  }) %>
+<!--Head-->
+
+<body>
+  <div class="top-glass"></div>
+  <header class="top-nav">
+    <div class="nav-pill" id="navPill">
+      <span class="nav-pill-active" id="navActive"></span>
+      <button class="nav-link is-active" data-link="about" type="button">About me</button>
+      <button class="nav-link" data-link="works" type="button">Works</button>
+      <button class="nav-link" data-link="experiments" type="button">Experiments</button>
+      <button class="nav-link" data-link="designsystem" type="button">Design System</button>
+      <button class="nav-link" data-link="contact" type="button">Contact</button>
+    </div>
+  </header>
+  <section id="about" data-nav="about">
+    <div class="spacingXLarge"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="chat-bubble-wrap">
+              <div class="chat-bubble">
+                <span class="typing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </span>
+                <span class="bubble-text"></span>
+              </div>
+            </div>
+            <div class="spacingXSmall"></div>
+            <div class="photoWrapperWorkhub">
+              <img class="landingProfileImg" src="photo_profile_avatar.png" alt="vicky">
+            </div>
+
+            <div class="spacingMedium"></div>
+            <h1 class="newLandingTitle"> Marketplaces & Platform UX, shipping scalable flows for B2B and B2C.
+            </h1>
+
+            <h3 class="fontWeight300">I design scalable flows and tooling for platforms and high-volume users.
+
+            </h3>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="Grid Grid--gutters Grid--cols-8">
+
+        <div class="Grid-cell centerVH">
+          <div class="ClipboardBoxIconOnly">
+            <button class="ClipboardIconOnly">
+              <img title="Copy Email to Clipboard" class="iconS hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/mail.svg" alt="LinkedIn">
+              <p class="clickIconCopy">vickyw.design@gmail.com</p>
+            </button>
+          </div>
+
+        </div>
+        <div class="Grid-cell centerVH">
+          <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" title="LinkedIn">
+            <img class="iconS hoverGrey100 paddingM fitContentax borderRadiusMax borderRadiusS" src="../icon/in.svg" alt="LinkedIn">
+          </a>
+        </div>
+
+        <div class="Grid-cell centerVH">
+          <a href="https://github.com/vicky-wyq" target="_blank" title="GitHub">
+            <img class="iconS hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/git.svg" alt="GitHub">
+          </a>
+        </div>
+        <div class="Grid-cell centerVH">
+          <a href="https://codepen.io/vicky-wyq" target="_blank" title="CodePen">
+            <img class="iconS hoverGrey100 paddingM fitContentax borderRadiusMax" src="../icon/Codepen.svg" alt="CodePen">
+          </a>
+        </div>
+        <div class="Grid-cell centerVH displayLaptop">
+          <div class="dropdownSM">
+            <img title="Share" class="iconS hoverGrey100 paddingM fitContent borderRadiusMax dropbtn" src="../icon/share.svg" alt="Share">
+            <div class="dropdownSM-content">
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://vickywang.me" target="_blank">Share
+                on LinkedIn</a>
+              <a href="https://pinterest.com/pin/create/button/?url=https://vickywang.me&amp;media=https://s3.us-west-1.amazonaws.com/vickywang.me/Thumbnails/vickywang_mobile.svg&amp;description=Skilled%20UX%20Designer%20for%20B2B%20Solutions%20%26%20Consumer%20Apps%20-%20Vicky%20Wang" target="_blank">Share on Pinterest</a>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell displayTablet">
+        </div>
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayTablet">
+        </div>
+        <div class="Grid-cell displayLaptop">
+        </div>
+        <div class="Grid-cell displayLaptop">
+        </div>
+      </div>
+
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="element">
+          <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View/Download Resume </button></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="spacingSmall"></div>
+
+  </section>
+    <div class="spacingMedium"></div>
+
+
+  <section id="works" data-nav="works">
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/workshelf_section_title`, {
+              sectionTitle:'Launched Platforms & Measurable Impact'}) %>
+            <%- include(`${templatePath}/shared/workshelf_section_description`, {
+              sectionDescription:'Shipped, in-production work with measurable outcomes.'}) %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+
+    <div class="wrapper workshelf">
+      <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+
+        <div class="Grid-cell">
+          <div class="element">
+
+            <%- include(`${templatePath}/shared/workdeck_project_meta`, {
+              projectMeta:'💼 Business - Facing • Q3 2025'
+              }) %>
+            <%- include(`${templatePath}/shared/workshelf_project_title`, {
+              projectTitle:'BabyQuip Inventory Management'}) %>
+            <%- include(`${templatePath}/shared/workshelf_project_description`, {
+              projectDescription:'Scaled inventory management with unified navigation'}) %>
+            <%- include(`${templatePath}/shared/workshelf_project_description`, {
+              projectDescription:'✔ 3× faster edits'}) %>
+            <%- include(`${templatePath}/shared/workshelf_project_description`, {
+              projectDescription:'✔ 50–75% less QA overhead'}) %>
+            <%- include(`${templatePath}/shared/workshelf_project_description`, {
+              projectDescription:'✔ foundation reused for SuperAdmin expansion'}) %>
+            <div class="spacingSmall"></div>
+
+            <a href="/resume2025"> <button class="buttonSmall buttonPrimary">View Case Study</button></a>
+
+
+          </div>
+        </div>
+        <div class="Grid-cell ">
+          <div class="element">
+
+            <img src="testing1.png" alt="" class="">
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="spacingMedium"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/workshelf_section_title`, {
+              sectionTitle:'System Architecture & Scalability'}) %>
+            <%- include(`${templatePath}/shared/workshelf_section_description`, {
+              sectionDescription:'Complex flows, IA, and interaction models behind those platforms.'}) %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/workshelf_section_title`, {
+              sectionTitle:'Strategic Concepts & Research'}) %>
+            <%- include(`${templatePath}/shared/workshelf_section_description`, {
+              sectionDescription:'Earlier-stage explorations and forward-looking concepts.'}) %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+
+  </section>
+
+  <section id="experiments" data-nav="experiments">
+    <!-- Arrow -->
+    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Experiments' }) %>
+    <!-- Arrow -->
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder GLORIFY paddingNone marginXS">
+          <a class="no-hover-effect" href="/glorify/">
+            <img src="/projectImages/Cover_Glorify.png" alt="Glorify: Transforming Solitary Devotion into Community Engagement">
+            <div class="element">
+              <div class="spacingSmall"></div>
+
+              <%- include(`${templatePath}/shared/base_chip`, {
+                chipSmallTxt: '1-2 Experiment',
+                colorBg: 'colorBg_VW_Pink200',
+                colorTxt: 'color_VW_Pink800'
+              }) %>
+              <h3 class="TextPoppins fontWeight500">Glorify App</h3>
+
+              <h5 class="textItalic fontWeight300 Grey700"> For Christian daily worship</h5>
+
+              <ul class="listCircle">
+                <li> <span class="TextPoppins fontWeight400">Initiate Community:</span> Transform from a single-player to a multiplayer experience.
+                </li>
+                <li> <span class="TextPoppins fontWeight400">Drive Growth:</span> Foster engagement and expand user participation within the community.
+
+                </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder SEER paddingNone marginXS">
+          <a class="no-hover-effect" href="/seer/">
+            <img src="/projectImages/Cover_SEER.png" alt="SEER: Enhancing Brand Impact on Reddit">
+            <div class="element">
+              <div class="spacingSmall"></div>
+
+              <%- include(`${templatePath}/shared/base_chip`, {
+                chipSmallTxt: '0-1 Experiment',
+                colorBg: 'colorBg_VW_Pink200',
+                colorTxt: 'color_VW_Pink800'
+              }) %>
+              <h3 class="TextPoppins fontWeight500">Marketing Insights Dashboard</h3>
+
+              <h5 class="textItalic fontWeight300 Grey700"> For Brand marketers</h5>
+
+              <ul class="listCircle">
+                <li> <span class="TextPoppins fontWeight400">Transform Insights:</span> Turn Reddit data into actionable insights for brand marketers.
+                </li>
+                <li> <span class="TextPoppins fontWeight400">Drive Growth:</span> Utilize intuitive analytics to understand user sentiment and engagement.
+                </li>
+                <li> <span class="TextPoppins fontWeight400">Future Vision: </span> Gain a glimpse into the future of targeted marketing strategies.
+                </li>
+              </ul>
+
+
+
+            </div>
+          </a>
+        </div>
+        <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder APPOINTA paddingNone marginXS">
+          <a class="no-hover-effect" href="/appointa/">
+            <img src="/projectImages/Cover_APPOINTA.png" alt="APPOINTA: Interview Scheduling Made Simple">
+            <div class="element">
+              <div class="spacingSmall"></div>
+
+              <%- include(`${templatePath}/shared/base_chip`, {
+                chipSmallTxt: '0-1 Experiment',
+                colorBg: 'colorBg_VW_Pink200',
+                colorTxt: 'color_VW_Pink800'
+              }) %>
+              <h3 class="TextPoppins fontWeight500">Interview Scheduling</h3>
+              <h5 class="textItalic fontWeight300 Grey700"> For Recuriter & hiring managers</h5>
+
+              <ul class="listCircle">
+                <li> <span class="TextPoppins fontWeight400">Streamline Scheduling:</span> Revamp the interview scheduling process to enhance efficiency.
+                </li>
+                <li> <span class="TextPoppins fontWeight400">Reduce Coordination Time:</span> Speed up hiring by minimizing the time spent on scheduling interviews.
+                </li>
+                <li> <span class="TextPoppins fontWeight400">Boost Recruitment Efficiency: </span> Improve the overall candidate experience through better coordination.
+                </li>
+              </ul>
+
+
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="blankHXS"></div>
+
+    </div>
+    <div class="blankHXS"></div>
+
+  </section>
+  <section id="designsystem" data-nav="designsystem">
+    <div>
+      <div class="blankHXS"></div>
+
+      <!-- Arrow -->
+      <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Design System' }) %>
+      <!-- Arrow -->
+
+      <div class="blankHXXS"></div>
+      <div class="wrapper">
+        <div class="Grid Grid--holly-grail Grid--center">
+          <div class="Grid-cell main">
+            <div class="element">
+
+
+              <div class="paddingXL borderRadiusL gradient_background1">
+                <a href="/design_system/">
+                  <img src="/projectImages/vicky_website.svg" alt="Design System"></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="Grid-cell aside aside-2">
+            <div class="element">
+              <%- include(`${templatePath}/shared/base_chip`, {
+                chipSmallTxt: 'Start from Scratch',
+                colorBg: 'colorBg_VW_Pink200',
+                colorTxt: 'color_VW_Pink800'
+              }) %>
+              <div class="spacingSmall"></div>
+
+              <h1 class="specialTextS fontWeight700">Design System Creation & Optimization</h1>
+
+              <h3 class="colorLandingText fontWeight700">Design & Implementation</h3>
+              <ul class="listCircle">
+
+                <li>Efficiently structured components for seamless site navigation.
+                </li>
+                <li>
+                  Discover, compare, and reuse elements with ease, enhancing design consistency and workflow efficiency.
+
+                </li>
+
+              </ul>
+
+            </div>
+            <div class="element">
+              <a href="/design_system/"> <button class="buttonMedium buttonPrimary WhiteBg">View design system
+                </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blankHM"></div>
+
+    </div>
+
+  </section>
+  <section id="contact" data-nav="contact">
+
+    <!-- Arrow -->
+    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'UX Skills & Product Experience' }) %>
+    <!-- Arrow -->
+    <%- include(`${templatePath}/shared/comp_tagCloud`) %>
+
+
+    <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
+    <%- include(`${templatePath}/shared/comp_backTop`) %>
+
+  </section>
+  <%- include(`${templatePath}/shared/block_nav_footer`, { 
+    iconHoverColor: 'hoverWhite',
+    footerBackgroundColor:'colorBgVW'
+    }) %>
+
+  <!-- Img Modal -->
+  <div id="modal" class="modal">
+    <span id="modal-close" class="modal-close">
+      <img class="iconXforModal" src="../icon/delete.svg" alt="&times;">
+    </span>
+    <img id="modal-content" class="modal-content">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+  <!-- Img Modal -->
+</body>
+
+</html>
