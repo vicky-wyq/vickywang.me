@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Workdeck | Vicky Wang', 
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Workshelf | Vicky Wang', 
   description:'UX designer focused on system clarity, scalable flows, and meaningful product impact—across both B2B platforms and consumer journeys.', 
   pageURL:'workshelf', thumbnailImgURL: 'vickywang.svg'
   }) %>
@@ -110,7 +110,7 @@
 
       <div class="Grid Grid--full Grid--gutter Grid--center">
         <div class="element">
-          <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
+          <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View/Download Resume </button></a>
         </div>
       </div>
 
@@ -129,13 +129,89 @@
       <div class="Grid Grid--full Grid--gutter u-textCenter">
         <div class="Grid-cell">
           <div class="element">
-            <div class="blankHXXS"></div>
-            <h2 class="fontWeight700">Launched Platforms & Measurable Impact</h2>
-            <h4 class="fontWeight300 textItalic">Shipped, in-production work with measurable outcomes.</h4>
+            <%- include(`${templatePath}/shared/workshelf_section_title`, {
+              sectionTitle:'Launched Platforms & Measurable Impact'}) %>
+            <%- include(`${templatePath}/shared/workshelf_section_description`, {
+              sectionDescription:'Shipped, in-production work with measurable outcomes.'}) %>
           </div>
         </div>
       </div>
     </div>
+    <div class="spacingMedium"></div>
+
+    <div class="wrapper workshelf">
+      <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+        <div class="Grid-cell ">
+          <div class="element">
+
+            <img src="testing1.png" alt="" class="">
+          </div>
+
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+
+            <%- include(`${templatePath}/shared/workdeck_project_meta`, {
+              projectMeta:'💼 Business - Facing • Q3 2025'
+              }) %>
+            <%- include(`${templatePath}/shared/workshelf_project_title`, {
+              projectTitle:'BabyQuip Inventory Management'}) %>
+            <%- include(`${templatePath}/shared/workshelf_project_description`, {
+              projectDescription:'Scaled inventory management with unified navigation'}) %>
+            <%- include(`${templatePath}/shared/workshelf_project_description`, {
+              projectDescription:'✔ 3× faster edits'}) %>
+            <%- include(`${templatePath}/shared/workshelf_project_description`, {
+              projectDescription:'✔ 50–75% less QA overhead'}) %>
+            <%- include(`${templatePath}/shared/workshelf_project_description`, {
+              projectDescription:'✔ foundation reused for SuperAdmin expansion'}) %>
+            <div class="spacingSmall"></div>
+
+            <a href="/resume2025"> <button class="buttonSmall buttonPrimary">View Case Study</button></a>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="vline"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/workshelf_section_title`, {
+              sectionTitle:'System Architecture & Scalability'}) %>
+            <%- include(`${templatePath}/shared/workshelf_section_description`, {
+              sectionDescription:'Complex flows, IA, and interaction models behind those platforms.'}) %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vline"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/workshelf_section_title`, {
+              sectionTitle:'Strategic Concepts & Research'}) %>
+            <%- include(`${templatePath}/shared/workshelf_section_description`, {
+              sectionDescription:'Earlier-stage explorations and forward-looking concepts.'}) %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
     <div class="spacingXLarge"></div>
     <div class="spacingXLarge"></div>
