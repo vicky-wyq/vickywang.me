@@ -4578,7 +4578,12 @@ body .flex-container.Mobile {
   margin: 120px /* top&bottom*/ 60px;
   /* left&right*/
 }
+.vlineLeft {
+  width: 1px;
+  height: 60px;
+  background: #ccc;
 
+}
 .vline {
   width: 1px;
   height: 60px;
@@ -5006,6 +5011,16 @@ body .flex-container.Mobile {
   width: 3rem;
   margin: 9px;
 }
+.photoWrapperWorkhub {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  /* perfect circular shadow */
+}
+
 
 .profileImgWrapper {
   width: 6rem;
@@ -7835,6 +7850,9 @@ UIA-TIMELINE
 /* =================== TIMELINE =================== */
 
 /* =================== chat-bubble =================== */
+
+
+
 
 .chat-bubble-wrap {
   display: inline-block;
