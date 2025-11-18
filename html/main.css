@@ -9,6 +9,7 @@
  */
 
 :root {
+
   --font-poppins: "Poppins", sans-serif;
   --font-satoshi: "Satoshi", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
@@ -18,6 +19,20 @@
   --font-ranade: "Ranade", "Georgia", "Times New Roman", serif;
   --font-lato: "Lato", sans-serif;
   --font-roboto: "Roboto", sans-serif;
+
+
+  --fs-h1: clamp(1.9em, 2.3vw, 2.4em);
+  --fs-h2: clamp(1.6em, 2vw, 2.1em);
+  --fs-h3: clamp(1.4em, 1.7vw, 1.8em);
+  --fs-h4: clamp(1.2em, 1.6vw, 1.6em);
+  --fs-h5: clamp(1.1em, 1.3vw, 1.4em);
+  --fs-h6: clamp(1em, 1.1vw, 1.2em);
+
+  --fs-p: clamp(1em, 1vw, 1.1em);
+  --fs-list: clamp(1.12em, 1.2vw, 1.25em);
+  --fs-table: clamp(1.12em, 1.2vw, 1.25em);
+
+
 
   --border-radius: 0.5em;
 
@@ -1438,35 +1453,52 @@ section {
 
 /* ===== typing effect (no structural change) ===== */
 .typing-demo {
-  position: relative;
   display: inline-block;
+  max-width: max-content;
   white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  position: relative;
+
+  /* 2s typing, then stop */
+  animation: typing 2s steps(22, end) forwards;
 }
 
-/* overlay that hides text and shrinks to reveal it */
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 22ch; }
+}
+
+/* ===== cursor ===== */
+
 .typing-demo::after {
   content: "";
   position: absolute;
-  inset: 0 0 0 auto;        /* cover from the right */
-  width: 100%;
-  /* match this to your hero background color */
-  background-color: #fdfbf6; /* or your token, e.g. var(--VW--Base100) */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  background: currentColor;
 
-  border-left: 3px solid currentColor; /* cursor */
+  /* 1) blink 4 times, starting after typing (2s)
+     2) then hide permanently */
   animation:
-    typing-mask 2s steps(30, end) forwards,
-    blink-cursor 0.8s step-end 2s 3 forwards;
+    cursor-blink 0.6s step-end 4 2s,
+    cursor-hide 0s linear 4.4s forwards;
 }
 
-@keyframes typing-mask {
-  from { width: 100%; }
-  to   { width: 0; }
+/* just blinking */
+@keyframes cursor-blink {
+  0%, 49%   { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }
 
-@keyframes blink-cursor {
-  0%, 49%   { border-left-color: currentColor; }
-  50%, 100% { border-left-color: transparent; }
+/* one-shot: make it vanish and keep that state */
+@keyframes cursor-hide {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
+
 
 /* ============ background image ============ */
 
@@ -2297,6 +2329,103 @@ section .padding {
   margin: 0;
   line-height: 120%;
 }
+/* ============ work hub ============*/
+
+.workHubSectionTitle {
+  font-family: inherit;
+  font-size: var(--fs-h1);
+  font-weight: 500;
+  margin: 0.6em 0;
+  line-height: 120%;
+}
+.workHubSectionDescription {
+  font-family: inherit;
+  font-size: var(--fs-h3);
+  font-weight: 300;
+  margin: 0.6em 0;
+  line-height: 120%;
+}
+
+.workHubLandingTitle {
+  font-family: inherit;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 120%;
+}
+.workHubCardMeta {
+  font-family: inherit;
+  font-size: var(--fs-h6);
+  font-weight: 100;
+  margin: 0.2em 0.1em;
+  line-height: 120%;
+}
+.workHubCardTitle {
+  font-family: inherit;
+  font-size: var(--fs-h3);
+  font-weight: 500;
+  margin: 0.6em 0;
+  line-height: 120%;
+}
+
+.workHubCardDescription {
+  font-family: inherit;
+  font-size: var(--fs-h4);
+  font-weight: 300;
+  margin: 0.6em 0;
+  line-height: 120%;
+}
+.workHubCardList {
+  font-family: inherit;
+  font-size: var(--fs-h6);
+  font-weight: 300;
+  margin: 0.8em 0;
+  line-height: 120%;
+}
+
+
+/* your existing hover outline */
+.workHub {
+  border: 0.08em solid var(--Grey400);
+  border-radius: 12px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden; /* IMPORTANT: clip zoomed img */
+}
+
+.workHub:hover {
+  border-color: var(--Grey700);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06); /* optional, clean */
+}
+
+/* “window” for the image */
+.workHub-media {
+  position: relative;
+  overflow: hidden;         
+  border-radius: 12px;    
+  aspect-ratio: 4 / 3;    
+  background: linear-gradient(
+    135deg,
+    #d1f9df 0%,
+    #e9e9e9 100%
+  );}
+
+/* image lives inside, can move/scale */
+.workHub-media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* fill the window */
+  display: block;
+  transform: scale(1);       /* normal state */
+  transform-origin: center;
+  transition: transform 0.45s ease;
+}
+
+/* hover: zoom image INSIDE the fixed window */
+.workHub:hover .workHub-media-img {
+  transform: scale(1.06);    /* looks bigger, box stays same */
+}
+
+/* ============ work hub ============*/
 
 .newLandingTitle {
   font-family: inherit;
@@ -2511,44 +2640,16 @@ ul.disc {
   margin-left: 0;
 }
 
-h1 {
-  font-size: clamp(1.9em, 2.3vw, 2.4em);
-}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+h5 { font-size: var(--fs-h5); }
+h6 { font-size: var(--fs-h6); }
 
-h2 {
-  font-size: clamp(1.6em, 2vw, 2.1em);
-}
-
-h3 {
-  font-size: clamp(1.4em, 1.7vw, 1.8em);
-}
-
-h4 {
-  font-size: clamp(1.2em, 1.6vw, 1.6em);
-}
-
-h5 {
-  font-size: clamp(1.1em, 1.3vw, 1.4em);
-}
-
-h6 {
-  font-size: clamp(1em, 1.1vw, 1.2em);
-  /* was 0.95 → now 1em */
-}
-
-p {
-  font-size: clamp(1em, 1vw, 1.1em);
-}
-
-ul,
-ol {
-  font-size: clamp(1.12em, 1.2vw, 1.25em);
-}
-
-th,
-td {
-  font-size: clamp(1.12em, 1.2vw, 1.25em);
-}
+p       { font-size: var(--fs-p); }
+ul, ol  { font-size: var(--fs-list); }
+th, td  { font-size: var(--fs-table); }
 
 /* =========== Paragraphs =========== */
 p {
