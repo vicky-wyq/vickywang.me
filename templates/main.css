@@ -225,7 +225,7 @@ html {
 
   text-decoration: none;
   height: var(--height100);
-  font-family: var(--font-satoshi);
+  font-family: var(--font-general-sans);
 
   /* background-color: var(--GreyHTMLBg); */
 }
@@ -2331,36 +2331,36 @@ section .padding {
 }
 /* ============ work hub ============*/
 
-.workHubSectionTitle {
+.workhubSectionTitle {
   font-family: inherit;
   font-size: var(--fs-h1);
   font-weight: 500;
-  margin: 0.6em 0;
+  margin: 0.4em 0;
   line-height: 120%;
 }
-.workHubSectionDescription {
+.workhubSectionDescription {
   font-family: inherit;
   font-size: var(--fs-h3);
   font-weight: 300;
-  margin: 0.6em 0;
+  margin: 0;
   line-height: 120%;
 }
 
-.workHubLandingTitle {
+.workhubLandingTitle {
   font-family: inherit;
   font-size: 38px;
   font-weight: 500;
   margin: 0;
   line-height: 120%;
 }
-.workHubCardMeta {
+.workhubCardMeta {
   font-family: inherit;
   font-size: var(--fs-h6);
   font-weight: 100;
   margin: 0.2em 0.1em;
   line-height: 120%;
 }
-.workHubCardTitle {
+.workhubCardTitle {
   font-family: inherit;
   font-size: var(--fs-h3);
   font-weight: 500;
@@ -2368,14 +2368,14 @@ section .padding {
   line-height: 120%;
 }
 
-.workHubCardDescription {
+.workhubCardDescription {
   font-family: inherit;
   font-size: var(--fs-h4);
   font-weight: 300;
   margin: 0.6em 0;
   line-height: 120%;
 }
-.workHubCardList {
+.workhubCardList {
   font-family: inherit;
   font-size: var(--fs-h6);
   font-weight: 300;
@@ -2385,20 +2385,20 @@ section .padding {
 
 
 /* your existing hover outline */
-.workHub {
+.workhub {
   border: 0.08em solid var(--Grey400);
   border-radius: 12px;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden; /* IMPORTANT: clip zoomed img */
 }
 
-.workHub:hover {
+.workhub:hover {
   border-color: var(--Grey700);
   box-shadow: 0 4px 18px rgba(0,0,0,0.06); /* optional, clean */
 }
 
 /* “window” for the image */
-.workHub-media {
+.workhub-media {
   position: relative;
   overflow: hidden;         
   border-radius: 12px;    
@@ -2410,7 +2410,7 @@ section .padding {
   );}
 
 /* image lives inside, can move/scale */
-.workHub-media-img {
+.workhub-media-img {
   width: 100%;
   height: 100%;
   object-fit: cover;         /* fill the window */
@@ -2421,7 +2421,7 @@ section .padding {
 }
 
 /* hover: zoom image INSIDE the fixed window */
-.workHub:hover .workHub-media-img {
+.workhub:hover .workhub-media-img {
   transform: scale(1.06);    /* looks bigger, box stays same */
 }
 
@@ -3344,19 +3344,19 @@ button.passwordArr {
 }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 1380px;
   margin: 0 auto;
-  padding-inline: 0.6em;
-  padding-top: 1em;
-  /* larger */
-  padding-bottom: 0.8em;
-  /* smaller */
-  /* ensures at least 1em spacing on both sides */
-  box-sizing: border-box;
-  /* keeps max-width inclusive of padding */
+
 }
 
-@media all and (max-width: 1080px) {
+
+.workhubCardMargin{
+  margin: 0.4em;
+}
+.workhubImgMargin{
+  margin: 1em;
+}
+@media all and (max-width: 1380px) {
   body .paddingXL {
     padding: var(--paddingL);
   }
@@ -4992,7 +4992,7 @@ body .flex-container.Mobile {
   flex-direction: column;
 }
 
-.rowWorkHub {
+.rowWorkhub {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -7893,7 +7893,7 @@ UIA-TIMELINE
   box-shadow: none;
 }
 
-.workhub.chat-bubble::before {
+.workhubChat.chat-bubble::before {
   content: "";
   position: absolute;
   left: -8px;
