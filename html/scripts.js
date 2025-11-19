@@ -1185,10 +1185,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const activeBg = document.getElementById("navActive");
   const links = Array.from(document.querySelectorAll(".nav-link"));
   const sections = Array.from(document.querySelectorAll("section[data-nav]"));
+  const topNav = document.querySelector(".top-nav");
+
+  // tweak this: >0 moves trigger line *below* the nav, so it activates earlier
+  const ACTIVATION_OFFSET = 80;   // px below nav bottom
+  const BOTTOM_THRESHOLD = 200;   // px from page bottom to force "contact"
+
+  let currentActiveId = null;
 
   function moveActive(link) {
+    if (!link) return;
+
+    const targetId = link.dataset.link;
+    if (currentActiveId === targetId) return;
+    currentActiveId = targetId;
+
+    // toggle active state
     links.forEach((l) => l.classList.toggle("is-active", l === link));
 
+    // move sliding pill
     const linkRect = link.getBoundingClientRect();
     const pillRect = navPill.getBoundingClientRect();
 
@@ -1199,9 +1214,10 @@ document.addEventListener("DOMContentLoaded", () => {
     activeBg.style.transform = `translateX(${offset}px)`;
   }
 
-  // click → smooth scroll + move pill
+  // click → smooth scroll + immediate pill move
   links.forEach((link) => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
       const id = link.dataset.link;
       const section = document.getElementById(id);
       if (!section) return;
@@ -1211,29 +1227,79 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // scroll spy – update active nav while scrolling
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const id = entry.target.dataset.nav;
-        const link = links.find((l) => l.dataset.link === id);
-        if (link) moveActive(link);
-      });
-    },
-    {
-      root: null,
-      threshold: 0.4, // ~40% of section visible
+  function getSectionFromScroll() {
+    const navRect = topNav.getBoundingClientRect();
+    const triggerLine = navRect.bottom + ACTIVATION_OFFSET;
+
+    const doc = document.documentElement;
+    const scrollTop = window.scrollY || window.pageYOffset;
+    const viewportHeight = window.innerHeight || doc.clientHeight;
+    const scrollBottom = scrollTop + viewportHeight;
+    const docHeight = doc.scrollHeight;
+
+    // 1) Near bottom of page → force last section (contact)
+    if (docHeight - scrollBottom < BOTTOM_THRESHOLD) {
+      return sections[sections.length - 1];
     }
-  );
 
-  sections.forEach((sec) => observer.observe(sec));
+    let bestSection = null;
+    let bestDistance = Infinity;
 
-  // initial state (landing on About)
-  moveActive(links[0]);
+    // 2) Ideal: section that crosses the trigger line
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top <= triggerLine && rect.bottom >= triggerLine) {
+        const distance = Math.abs(rect.top - triggerLine);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          bestSection = section;
+        }
+      }
+    });
+
+    // 3) Fallback: last section whose top is above the trigger line
+    if (!bestSection) {
+      let fallback = null;
+      let fallbackTop = -Infinity;
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= triggerLine && rect.top > fallbackTop) {
+          fallbackTop = rect.top;
+          fallback = section;
+        }
+      });
+
+      bestSection = fallback || sections[0];
+    }
+
+    return bestSection;
+  }
+
+  function onScroll() {
+    const section = getSectionFromScroll();
+    if (!section) return;
+
+    const id = section.dataset.nav;
+    if (id === currentActiveId) return;
+
+    const link = links.find((l) => l.dataset.link === id);
+    if (link) moveActive(link);
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // initial state on load / refresh / deep link
+  onScroll();
+  if (!currentActiveId && links[0]) {
+    moveActive(links[0]); // default to Case Studies
+  }
 });
-
 // ======================== 2025 nav ========================
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const bubble = document.querySelector(".chat-bubble");
   const textEl = bubble.querySelector(".bubble-text");
