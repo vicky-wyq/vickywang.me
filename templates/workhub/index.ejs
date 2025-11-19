@@ -14,7 +14,6 @@
       <span class="nav-pill-active" id="navActive"></span>
       <button class="nav-link is-active" data-link="casestudies" type="button">Case Studies</button>
       <button class="nav-link" data-link="experiments" type="button">Experiments</button>
-      <button class="nav-link" data-link="designsystem" type="button">Design System</button>
       <button class="nav-link" data-link="contact" type="button">Contact</button>
     </div>
   </header>
@@ -77,7 +76,7 @@
     </div>
     <div class="spacingMedium"></div>
 
-    <div class="wrapper ">
+    <div class="wrapper">
       <div class="workhubCardMargin">
         <div class="Grid Grid--gutters Grid--cols-2 Grid--center workhub">
           <div class="Grid-cell">
@@ -132,10 +131,6 @@
         </div>
       </div>
     </div>
-
-
-
-
     <div class="spacingLarge"></div>
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
@@ -249,9 +244,6 @@
       </div>
     </div>
     <div class="spacingSmall"></div>
-
-
-
     <div class="wrapper">
       <div class="workhubCardMargin">
         <div class="Grid Grid--gutters Grid--cols-2 Grid--center workhub">
@@ -282,7 +274,6 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-
     <div class="wrapper">
       <div class="workhubCardMargin">
 
@@ -333,15 +324,16 @@
               </h5>
             </div>
           </div>
-        </div>
-        <div class="Grid-cell ">
-          <div class="element">
-            <div class="workhubImgMargin">
+          <div class="Grid-cell ">
+            <div class="element">
+              <div class="workhubImgMargin">
 
-              <div class="workhub-media"> <img src="testing1.png" alt="" class="workhub-media-img"></div>
+                <div class="workhub-media"> <img src="testing1.png" alt="" class="workhub-media-img"></div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <div class="spacingLarge"></div>
@@ -373,13 +365,18 @@
       </div>
     </div>
   </section>
+  <div class="blankHM"></div>
 
   <section id="experiments" data-nav="experiments">
-    <!-- Arrow -->
-    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Experiments' }) %>
-    <!-- Arrow -->
-
     <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="workhubSectionTitle">Title</h1>
+            <h4 class="workhubSectionDescription">Description</h4>
+          </div>
+        </div>
+      </div>
       <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder GLORIFY paddingNone marginXS">
           <a class="no-hover-effect" href="/glorify/">
@@ -463,88 +460,132 @@
           </a>
         </div>
       </div>
-      <div class="blankHXS"></div>
 
     </div>
-    <div class="blankHXS"></div>
+
+    <div class="blankHM"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="element">
+          <div class="paddingXL borderRadiusL gradient_background1">
+            <a href="/design_system/">
+              <img src="/projectImages/vicky_website2025.svg" alt="Design System"></a>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="fontWeight500">Site Design System & Front-end Library
+            </h2>
+            <h5>Design system powering vickywang.me since 2020. Layout, tokens, and components map to matching HTML/CSS/EJS snippets so design and implementation stay in sync and easy to debug.</h5>
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element"> <a href="/design_system"> <button class="buttonMedium buttonFlip WhiteBg">View Design System </button></a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
 
   </section>
-  <section id="designsystem" data-nav="designsystem">
-    <div>
-      <div class="blankHXS"></div>
+  <div class="blankHM"></div>
 
-      <!-- Arrow -->
-      <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'Design System' }) %>
-      <!-- Arrow -->
+  <section id="contact" data-nav="contact">
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="rowWorkhub centerVer">
+              <div class="photoWrapperWorkhub">
+                <img class="landingProfileImg" src="photo_profile_avatar.png" alt="vicky">
+              </div>
+              <div class="chat-bubble-wrap">
+                <div class="workhubChat chat-bubble">
 
-      <div class="blankHXXS"></div>
-      <div class="wrapper">
-        <div class="Grid Grid--holly-grail Grid--center">
-          <div class="Grid-cell main">
-            <div class="element">
-
-
-              <div class="paddingXL borderRadiusL gradient_background1">
-                <a href="/design_system/">
-                  <img src="/projectImages/vicky_website.svg" alt="Design System"></a>
+                  <span class="bubble-text">Let's Connect</span>
+                </div>
               </div>
             </div>
+            <div class="spacingXSmall"></div>
+            <h2 class="fontWeight500"> Working on marketplaces / platform UX? I’d love to hear what you’re building.
+            </h2>
+            <h4 class="fontWeight300">Collaborations, product discussions, or feedback on my work.</h4>
+            <div class="spacingSmall"></div>
+            <a href="mailto:vickyw.design@gmail.com" class="textUnderline">
+              <h5 class="fontWeight400">Email me &#8594;</h5>
+            </a>
+            <a href="https://www.linkedin.com/in/vicky-wyq/" class="textUnderline">
+              <h5 class="fontWeight400">Message me on LinkedIn &#8599; </h5>
+            </a>
+
+
+            <div class="spacingXLarge"></div>
+
+            <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
+
+
 
           </div>
 
-          <div class="Grid-cell aside aside-2">
+        </div>
+      </div>
+
+
+    </div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+
+
+  </section>
+  <footer class="colorFooterBg">
+    <div class="spacingSmall"></div>
+    <div class="wrapper">
+      <div class="element">
+        <div class="Grid Grid--full Grid--gutter">
+          <div class="Grid-cell">
             <div class="element">
-              <%- include(`${templatePath}/shared/base_chip`, {
-                chipSmallTxt: 'Start from Scratch',
-                colorBg: 'colorBg_VW_Pink200',
-                colorTxt: 'color_VW_Pink800'
-              }) %>
-              <div class="spacingSmall"></div>
-
-              <h1 class="specialTextS fontWeight700">Design System Creation & Optimization</h1>
-
-              <h3 class="colorLandingText fontWeight700">Design & Implementation</h3>
-              <ul class="listCircle">
-
-                <li>Efficiently structured components for seamless site navigation.
-                </li>
-                <li>
-                  Discover, compare, and reuse elements with ease, enhancing design consistency and workflow efficiency.
-
-                </li>
-
-              </ul>
-
+              <h2 class="fontWeight500 Grey600">vickywang.me</h2>
+              <h4 class="">Marketplace & platform UX for high-volume users</h4>
             </div>
-            <div class="element">
-              <a href="/design_system/"> <button class="buttonMedium buttonPrimary WhiteBg">View design system
-                </button></a>
+            <div class="rowLeftAligned">
+              <div class="ClipboardBoxIconOnly">
+                <button class="ClipboardIconOnly">
+                  <img title="Copy Email Address to Clipboard" class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/mail.svg" alt="LinkedIn">
+                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
+                </button>
+              </div>
+              <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
+                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/in.svg" alt="LinkedIn">
+              </a>
+
+              <a target="_blank" href="https://github.com/vicky-wyq">
+                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/git.svg" alt="GitHub" title="GitHub">
+              </a>
+
+              <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
+                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/Codepen.svg" alt="CodePen">
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="spacingLarge"></div>
+        <div class="Grid Grid--full Grid--gutters">
+          <div class="Grid-cell">
+            <div class="footerBorder">
+              <div class="element">
+                <h6 class="Grey700"> &#169; 2020 - 2025 vickywang.me</h6>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="blankHM"></div>
-
-    </div>
-
-  </section>
-  <section id="contact" data-nav="contact">
-
-    <!-- Arrow -->
-    <%- include(`${templatePath}/shared/comp_textualElements_arrow`, {message: 'UX Skills & Product Experience' }) %>
-    <!-- Arrow -->
-    <%- include(`${templatePath}/shared/comp_tagCloud`) %>
-
-
-    <%- include(`${templatePath}/shared/comp_closingMessage`, { version: '', message: ''}) %>
-    <%- include(`${templatePath}/shared/comp_backTop`) %>
-
-  </section>
-  <%- include(`${templatePath}/shared/block_nav_footer`, { 
-    iconHoverColor: 'hoverWhite',
-    footerBackgroundColor:'colorBgVW'
-    }) %>
-
+  </footer>
   <!-- Img Modal -->
   <div id="modal" class="modal">
     <span id="modal-close" class="modal-close">
