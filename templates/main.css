@@ -2349,15 +2349,16 @@ section .padding {
 
 .workhubSectionDescription {
   font-family: inherit;
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h5);
   font-weight: 300;
   margin: 0;
   line-height: 120%;
+  color: var(--Grey700);
 }
 
 .workhubLandingTitle {
   font-family: inherit;
-  font-size: 38px;
+  font-size: 46px;
   font-weight: 500;
   margin: 0;
   line-height: 120%;
@@ -2369,11 +2370,13 @@ section .padding {
   font-weight: 100;
   margin: 0.2em 0.1em;
   line-height: 120%;
+      color: var(--Grey700);
+
 }
 
 .workhubCardTitle {
   font-family: inherit;
-  font-size: var(--fs-h1);
+  font-size: var(--fs-h3);
   font-weight: 500;
   margin: 0.6em 0;
   line-height: 120%;
@@ -2385,14 +2388,19 @@ section .padding {
   font-weight: 300;
   margin: 0.6em 0;
   line-height: 120%;
+    color: var(--Grey700);
+
 }
 
 .workhubCardList {
   font-family: inherit;
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h5);
   font-weight: 300;
   margin: 0.8em 0;
   line-height: 120%;
+      color: var(--Grey700);
+
+
 }
 
 /* your existing hover outline */
