@@ -844,11 +844,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
   // Click anywhere inside modal closes it (even on content)
-  document.querySelectorAll(".modal").forEach((modal) => {
-    modal.addEventListener("click", () => {
-      modal.classList.remove("show");
-    });
+  // document.querySelectorAll(".modal").forEach((modal) => {
+  //   modal.addEventListener("click", () => {
+  //     modal.classList.remove("show");
+  //   });
+  // });
+// Close when clicking the overlay only (not the content)
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("click", (e) => {
+    // only close if you clicked the modal backdrop itself
+    if (e.target === modal) modal.classList.remove("show");
   });
+});
+
+// Prevent clicks inside content from closing modal
+document.querySelectorAll(".modal .modal-content").forEach((content) => {
+  content.addEventListener("click", (e) => e.stopPropagation());
+});
 
   //====================================
 

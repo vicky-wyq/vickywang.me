@@ -419,7 +419,7 @@ body .displayPhone {
 
   pointer-events: none;
   /* don't block clicks */
-  z-index: 900;
+  z-index: 98;
   /* below the nav, above content */
 }
 
@@ -429,7 +429,7 @@ body .displayPhone {
   top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
+  z-index: 98;
   display: flex;
   justify-content: center;
   width: max-content;
@@ -2373,7 +2373,7 @@ section .padding {
 
 .workhubCardTitle {
   font-family: inherit;
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h1);
   font-weight: 500;
   margin: 0.6em 0;
   line-height: 120%;
@@ -2381,7 +2381,7 @@ section .padding {
 
 .workhubCardDescription {
   font-family: inherit;
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h3);
   font-weight: 300;
   margin: 0.6em 0;
   line-height: 120%;
@@ -2389,7 +2389,7 @@ section .padding {
 
 .workhubCardList {
   font-family: inherit;
-  font-size: var(--fs-h6);
+  font-size: var(--fs-h4);
   font-weight: 300;
   margin: 0.8em 0;
   line-height: 120%;
@@ -3597,12 +3597,12 @@ button.passwordArr {
 
   /*         color: var(--black-less);   */
 
-  .active {
+  /* .active {
     top: 65px;
     right: 0;
     z-index: 98;
     transition: 0.2s ease;
-  }
+  } */
 
   /* hamburger menu*/
 }
@@ -5632,25 +5632,16 @@ ul.iconx {
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 99;
-  /* Sit on top */
   padding-top: 2em;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(255, 255, 255);
-  /* Fallback color */
   background-color: rgba(255, 255, 255, 0.98);
-  /* Black w/ opacity */
 }
 
 .modal.show {
@@ -5665,11 +5656,12 @@ ul.iconx {
   width: 95%;
   height: auto;
   opacity: 1 !important;
-}
 
+}
+/* 
 .modal-content:hover {
   cursor: zoom-out;
-}
+} */
 
 /* Caption of Modal Image */
 .modal-caption {
@@ -5732,6 +5724,7 @@ ul.iconx {
   border-radius: 18px;
   margin: 1em;
   padding: 0.2em;
+  z-index: 99;
 }
 
 .iconXforModal:hover,
