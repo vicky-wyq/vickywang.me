@@ -359,7 +359,7 @@ a:link.textProject {
   display: none;
 }
 
-.displayLaptop {
+.displayDesktop {
   display: block;
 }
 
@@ -2341,8 +2341,8 @@ section .padding {
 
 .workhubSectionTitle {
   font-family: inherit;
-  font-size: var(--fs-h1);
-  font-weight: 500;
+  font-size: 46px;
+  font-weight: 300;
   margin: 0.4em 0;
   line-height: 120%;
 }
@@ -2358,7 +2358,7 @@ section .padding {
 
 .workhubLandingTitle {
   font-family: inherit;
-  font-size: 46px;
+  font-size: 52px;
   font-weight: 500;
   margin: 0;
   line-height: 120%;
@@ -2370,13 +2370,12 @@ section .padding {
   font-weight: 100;
   margin: 0.2em 0.1em;
   line-height: 120%;
-      color: var(--Grey700);
-
+  color: var(--Grey700);
 }
 
 .workhubCardTitle {
   font-family: inherit;
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h2);
   font-weight: 500;
   margin: 0.6em 0;
   line-height: 120%;
@@ -2388,8 +2387,7 @@ section .padding {
   font-weight: 300;
   margin: 0.6em 0;
   line-height: 120%;
-    color: var(--Grey700);
-
+  color: var(--Grey700);
 }
 
 .workhubCardList {
@@ -2398,9 +2396,7 @@ section .padding {
   font-weight: 300;
   margin: 0.8em 0;
   line-height: 120%;
-      color: var(--Grey700);
-
-
+  color: var(--Grey700);
 }
 
 /* your existing hover outline */
@@ -2789,7 +2785,7 @@ a:link.textUnderline:hover {
 hr {
   border: none;
   height: 1px;
-  border-bottom: 1px solid var(--Grey400);
+  border-bottom: 1px solid var(--Grey300);
   width: 100%;
 }
 
@@ -3500,7 +3496,7 @@ button.passwordArr {
     align-items: flex-start;
   }
 
-  body .displayLaptop {
+  body .displayDesktop {
     display: none;
   }
 
@@ -4980,6 +4976,20 @@ body .flex-container.Mobile {
 
 /* intro */
 
+/* ===== back to top 2025 ==== */
+
+.backToTop {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  color: var(--Grey700);
+}
+.backToTop:hover {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* ===== back to top 2025 ==== */
+
 /* back to top */
 
 #myBtn {
@@ -5664,7 +5674,6 @@ ul.iconx {
   width: 95%;
   height: auto;
   opacity: 1 !important;
-
 }
 /* 
 .modal-content:hover {

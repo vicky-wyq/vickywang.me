@@ -260,7 +260,7 @@ a:link.textProject {
     display: none;
 }
 
-.displayLaptop {
+.displayDesktop {
     display: block;
 }
 
@@ -2619,7 +2619,7 @@ button.passwordArr {
     }
 
 
-    body .displayLaptop {
+    body .displayDesktop {
         display: none;
     }
 
