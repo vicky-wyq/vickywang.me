@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="colorBgVW pattern1 colorBlack">
+<html lang="en">
 <!--Head-->
 <%- include(`${templatePath}/shared/head`, {SEO:true, Title:`Vicky's Resume`, description:`I'm a UX Designer focused on
   bridging efficiency and engagement in SaaS, administrative Interfaces, and user-Driven applications`, pageURL:'',
@@ -9,8 +9,9 @@
 <body>
   <%- include( `${templatePath}/shared/comp_progressBar`) %>
 
-  <%- include(`${templatePath}/shared/block_nav_header_back`, { PageUrl:`${websitePath}/`, arrTxtColor:``,
-        headerBackgroundColor:`colorBgVW`, sectionURL1:'/#projects', sectionURL2:'/#experiments',
+  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
+    PageUrl:`${websitePath}/`, arrTxtColor:``,
+    headerBackgroundColor:`WhiteBg`, sectionURL1:'/#projects', sectionURL2:'/#experiments',
         sectionURL3:'/#design_system', sectionURL4:'/#about', }) %>
 
   <div class="wrapper">
@@ -28,249 +29,88 @@
     </div>
   </div>
 
-  <div class="marginM">
 
-    <div class="wrapper colorBgVW pattern2 shadowBox">
-      <div class="spacingSmall"></div>
+  <div class="wrapper">
+    <div class="spacingSmall"></div>
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h1 class="fontWeight400">Vicky (Yiqi) Wang</h1>
+          <h3 class="Grey700 TextPoppins fontWeight200">Senior UX / Product Designer</h3>
+
+          <div class="spacingSmall"></div>
 
 
-      <div class="Grid Grid--gutters Grid--cols-2 Grid--center">
+          <h3 class="fontWeight300 fontWeight400">Marketplace & platform UX for providers and travelers</h3>
+          <h4 class="fontWeight200 ">I design scalable provider tools and high-traffic consumer flows for marketplaces, focusing on system clarity, conversion, and long-term growth.</h4>
 
-        <div class="Grid-cell">
-          <div class="element">
-            <h1>
-              <span class="colorYellowVW700 fontWeight700"> Vicky(Yiqi) Wang </span>
-              <span> &nbsp; </span>
-              <span class="Grey700 TextPoppins fontWeight100"> UX Design &#183; Product Design </span>
-            </h1>
-          </div>
         </div>
       </div>
-
-      <div class="Grid Grid--gutters Grid--full">
-        <div class="Grid-cell">
-          <div class="element">
-            <h4 class="textItalic TextPoppins fontWeight300 ">Strategic UX Focus Areas</h4>
-            <h5 class="textItalic TextPoppins fontWeight200 "> ➢ Platform Design: Scalable B2B tools across onboarding, inventory, admin systems </h5>
-            <h5 class="textItalic TextPoppins fontWeight200 "> ➢ Conversion-Driven UX: Web & mobile rental flows, cart, and checkout optimization </h5>
-            <h5 class="textItalic TextPoppins fontWeight200 "> ➢ Experience Architecture: Cross-surface logic, funnel mapping, and friction reduction</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="Grid Grid--gutters Grid--1of3">
-
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="colorYellowVW700 fontWeight700 widthFitContent"> EDUCATION </h3>
-
-
-
-            <h5 class="fontWeight500">University of California, Berkeley </h5>
-            <h6 class="textItalic"> Master of Architecture Graduated May 2019</h6>
-
-            <h6 class="fontWeight300">College of Environmental Design</h6>
-            <h6 class="fontWeight300">Architecture & Building Science/Technology</h6>
-
-
-
-            <div class="spacingSmall"></div>
-
-            <h5 class="fontWeight500">Beijing University of Technology </h5>
-
-            <h6 class="textItalic">Bachelor of Art Graduated June 2013 </h6>
-            <h6 class="fontWeight300"> Art &amp; Design &amp; Landscape Design</h6>
-            <div class="spacingSmall"></div>
-
-            <h5 class="fontWeight500">Certifications </h5>
-            <h6 class="textItalic TextPoppins fontWeight300">Google UX Design Professional Certificate: <span class="textItalic fontWeight200 TextPoppins Grey700"></span></h6>
-            <h6>Empathize, Define, and Ideate<span class="textItalic fontWeight200 TextPoppins Grey700"> (Oct. 2021)</span></h6>
-            <h6>Foundations of UX Design<span class="textItalic fontWeight200 TextPoppins Grey700"> (Sep. 2021)</span></h6>
-
-            <div class="spacingSmall"></div>
-
-
-            <h6 class="textItalic TextPoppins fontWeight300">Codecademy:</h6>
-            <h6>User Research <span class="textItalic fontWeight200 TextPoppins Grey700">(Apr 2023)</span></h6>
-            <h6>Design Thinking <span class="textItalic fontWeight200 TextPoppins Grey700">(Apr 2023)</span></h6>
-
-            <h6>Interaction Design <span class="textItalic fontWeight200 TextPoppins Grey700">(May 2023)</span></h6>
-            <h6>JavaScript <span class="textItalic fontWeight200 TextPoppins Grey700">(Mar 2023)</span></h6>
-
-            <div class="spacingSmall"></div>
-
-            <h6 class="textItalic TextPoppins fontWeight300">Udemy:</h6>
-            <h6>Become a Product Manager <span class="textItalic fontWeight200 TextPoppins Grey700">(Dec 2024)</span></h6>
-            <h6>The Complete JavaScript Course<span class="textItalic fontWeight200 TextPoppins Grey700">(Jun 2024)</span></h6>
-          </div>
-
-          <div class="element">
-
-            <h3 class="colorYellowVW700 fontWeight700 widthFitContent"> SKILLS</h3>
-
-            <h5 class="fontWeight500">Design & Research </h5>
-            <h6>UX Design, Usability Testing, User Research, Wireframing, Prototyping</h6>
-            <h6>Design Systems, Responsive Design, Interaction Design, Visual Design</h6>
-            <div class="spacingSmall"></div>
-
-
-            <h5 class="fontWeight500">Software</h5>
-            <h6>Figma, Adobe XD, Sketch, Adobe Creative Suite</h6>
-            <div class="spacingSmall"></div>
-
-            <h5 class="fontWeight500">Technical Skills </h5>
-            <h6>HTML, CSS, JavaScript, JQuery</h6>
-            <h6>Rhino, AutoCAD, 3D Max, Unity</h6>
-            <div class="spacingSmall"></div>
-
-            <div class="notDisplayMobile">
-              <h5 class="fontWeight500">Architectural Design </h5>
-              <h6>Buro OS | Architectural Designer <span class="textItalic fontWeight200 TextPoppins Grey700">(2017-2018)</span></h6>
-
-              <h6>In Design Studio | Summer Intern <span class="textItalic fontWeight200 TextPoppins Grey700">(2017)</span></h6>
-
-
-              <h6>PDI Design Group | Architectural Designer <span class="textItalic fontWeight200 TextPoppins Grey700">(2013-2015)</span> </h6>
-
-              <h6>Do Union | Designer <span class="textItalic fontWeight200 TextPoppins Grey700">(2010 - 2012)</span></h6>
-            </div>
-
-
-          </div>
-
-
-
-
-
-        </div>
-
-
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="colorYellowVW700 fontWeight700 widthFitContent"> EXPERIENCE</h3>
-
-
-            <h4><strong>BabyQuip | Senior User Experience Designer </strong></h4>
-            <h6 class="textItalic">Oct. 2024 - Present, Full-Time</h6>
-            <h6 class="textItalic TextPoppins fontWeight300">Led UX architecture across mobile and partner tools, collaborating with a graphic designer and VP of Product to align design and product goals.</h6>
-            <div class="spacingXSmall"></div>
-
-            <h6 class="fontWeight500"> ➢ Platform Design / B2B Systems</h6>
-            <ul class="listCircle">
-              <li>Rebuilt onboarding from a rigid 30+ screen flow into a modular, category-aware system to enable faster signups and scalable expansion across Baby, Party, and future Mobility rentals.</li>
-              <li>Designed scalable inventory tools to support high-volume QPs and reduce edit friction by 70%.</li>
-              <li>Unified inventory logic across Baby and Party; built a flexible structure to support new categories like Mobility.</li>
-              <li>Result: Reduced CS load, improved go-live clarity, and prepared GoQuip launch with minimal additional engineering work.
-              </li>
-            </ul>
-            <div class="spacingXSmall"></div>
-
-            <h6 class="fontWeight500"> ➢ Consumer Experience / B2C Growth</h6>
-            <ul class="listCircle">
-              <li>Shifted rental flow from provider-first to gear-first, boosting mobile conversion by 27% and AOV by 12%.</li>
-              <li>Designed and validated single-page checkout to improve completion and perceived speed (pending launch).</li>
-              <li>Enabled exploration-first gear discovery to increase product views and user confidence.</li>
-            </ul>
-            <div class="spacingXSmall"></div>
-
-            <h6 class="fontWeight500"> ➢ Strategic Systems / Experience Architecture</h6>
-            <ul class="listCircle">
-
-              <li>Mapped funnel stages to user emotions to guide prioritization and cross-functional alignment.</li>
-              <li>Delivered system-level wireframes across entry → cart → checkout to reduce friction and clarify ownership.</li>
-              <li>Led UX direction while collaborating with PMs, engineers, and CS to ensure holistic rollout.</li>
-            </ul>
-          </div>
-          <div class="spacingSmall"></div>
-
-          <div class="element">
-            <h4><strong>BookYourPet | User Experience Designer </strong></h4>
-
-            <h6 class="textItalic">Feb. 2024 - Oct. 2024, Full-Time | Oct. 2021 - Feb. 2024, Full-Time Contractor</h6>
-            <h6 class="textItalic TextPoppins fontWeight300 ">Sole designer driving both internal tools and customer-facing UX across the platform.</h6>
-            <div class="spacingXSmall"></div>
-
-
-            <h6 class="fontWeight500">➢ B2B SaaS Platform</h6>
-            <ul class="listCircle">
-              <li>Scaled vendor base from 10 to 500+ with redesigned booking backend and onboarding refactor.</li>
-              <li>Shifted onboarding to a self-service model, reducing CS time.</li>
-            </ul>
-            <div class="spacingXSmall"></div>
-
-            <h6 class="fontWeight500">➢ Consumer Experience</h6>
-            <ul class="listCircle">
-              <li> Improved B2C mobile UX, reducing booking time by 6 mins and increasing conversion by 169%. </li>
-            </ul>
-            <div class="spacingXSmall"></div>
-
-            <h6 class="fontWeight500">➢ Systems Thinking</h6>
-            <ul class="listCircle">
-              <li>Introduced scalable design patterns across admin tools and user panels. </li>
-
-            </ul>
-
-          </div>
-          <div class="spacingSmall"></div>
-
-          <div class="element">
-
-            <h4><strong>LASO Health | Product Designer </strong></h4>
-            <h6 class="textItalic">Aug. 2023 - Jan. 2024, Part-Time Contractor</h6>
-
-            <ul class="listCircle">
-              <li>Designed and launched the first version of an admin panel for user management.</li>
-              <li>Developed a cost-benefit calculator, improving subscription conversions.</li>
-              <li>Improved system clarity across web and mobile, supporting subscription flow and journey-funnel alignment.
-
-
-              </li>
-
-
-
-
-            </ul>
-          </div>
-          <div class="spacingSmall"></div>
-
-          <div class="element">
-            <h4><strong>Modernized Mobile LLC | UX Designer </strong></h4>
-            <h6 class="textItalic">June. 2023 - Aug.2023, Part-Time Contractor</h6>
-
-            <ul class="listCircle">
-              <li>Designed a tablet-based admin panel for the “Clean Spaces” app.
-
-              </li>
-
-
-
-
-
-            </ul>
-          </div>
-          <div class="spacingSmall"></div>
-
-          <div class="element">
-            <h4><strong>vickywang.me | Freelancer </strong></h4>
-            <h6 class="textItalic">Aug. 2020 - Present, Owner</h6>
-
-            <ul class="listCircle">
-              <li>Designed and maintained a responsive portfolio site using HTML, CSS, JavaScript, and EJS, deployed on AWS.
-
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="blankHXXS"></div>
-
-
-
-
     </div>
-    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4 class="fontWeight300 fontWeight400">Core Focus</h4>
+          <ul class="disc">
+            <li><span class="fontWeight400">Platform & Systems UX:</span> B2B tools, onboarding, inventory, admin systems</li>
+            <li><span class="fontWeight400">Marketplace & Conversion UX:</span> Discovery, cart, checkout, and trip-based flows</li>
+            <li><span class="fontWeight400">Experience Architecture:</span> Cross-surface logic, funnels, and friction reduction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacingMedium"></div>
+
+    <div class="Grid Grid--gutters Grid--full">
+      <div class="Grid-cell">
+        <div class="element">
+          <h4><strong>BabyQuip | Senior User Experience Designer </strong></h4>
+          <h6 class="textItalic">Oct 2024 – Present, Full-Time</h6>
+          <div class="spacingXSmall"></div>
+          <ul class="disc">
+            <li>Improved high-traffic consumer rental flows across checkout, item details, maps, filters, and reviews, reducing friction in a marketplace serving ~250K+ monthly active users.</li>
+            <li>Led post-launch enhancements to the gear-first mobile experience, refining discovery, selection, and checkout to better align with real marketplace behavior.</li>
+            <li>Redesigned inventory management tools for providers, reducing task completion time by ~40% and streamlining workflows from 4–5+ actions to 1–2.</li>
+            <li>Designed a standardized package system to support promotions and AOV growth while preserving provider flexibility through build-your-own options.</li>
+            <li>Supported VRBO embedded rental flows by refining entry points, trip-context display, exit affordances, and checkout clarity under tight timelines.</li>
+            <li>Partnered closely with product, engineering, and customer support to ship iterative improvements informed by analytics and provider feedback.</li>
+          </ul>
+        </div>
+        <div class="spacingSmall"></div>
+        <div class="element">
+          <h4><strong>BookYourPet | UX Designer </strong></h4>
+          <h6 class="textItalic">Oct 2021 – Oct 2024, Full-Time</h6>
+          <div class="spacingXSmall"></div>
+
+          <ul class="disc">
+            <li>Solo UX designer for an end-to-end B2B subscription platform, partnering directly with the CEO and CTO on service setup, scheduling, and booking tools.</li>
+            <li>Designed a configurable system supporting multiple business types (grooming, walking, training), enabling complex services and pricing within a unified booking model.</li>
+            <li>Built and maintained a Figma-based design system and aligned consumer booking flows so availability, add-ons, and time slots stayed consistent across surfaces.</li>
+          </ul>
+          <div class="spacingXSmall"></div>
+        </div>
+        <div class="spacingSmall"></div>
+        <div class="element">
+          <h4><strong>LASO Health | Product Designer </strong></h4>
+          <h6 class="textItalic">Aug 2023 – Jan 2024, Part-Time Contractor</h6>
+          <div class="spacingXSmall"></div>
+          <ul class="disc">
+            <li>Led the 0–1 design of an Admin Panel for user management and sales teams, partnering closely with PMs and developers.</li>
+            <li>Designed and simplified patient-facing flows, including a cost-benefit calculator and key marketing / app journeys, to clarify subscription options and reduce drop-off.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="blankHXXS"></div>
+
+
+
 
   </div>
+  <div class="blankHM"></div>
+
 
 </body>
 
