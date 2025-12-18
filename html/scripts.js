@@ -565,6 +565,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   initializePassword();
 
+
+    // ====== Back to Top 2025 ====== //
+
+  var backToTop = document.getElementById("backToTop");
+  //Get the button
+
+  if (backToTop) {
+    window.addEventListener("scroll", function () {
+      scrollFunction();
+    });
+    backToTop.addEventListener("click", topFunction);
+  }
   // ====== Back to Top Starts ====== //
 
   var mybutton = document.getElementById("myBtn");
