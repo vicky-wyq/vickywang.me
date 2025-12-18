@@ -191,7 +191,7 @@ a:link.textProject {
     display: none;
 }
 
-.displayLaptop {
+.displayDesktop {
     display: block;
 }
 
@@ -1689,7 +1689,7 @@ section {
         display: none;
     }
     
-    body .displayLaptop {
+    body .displayDesktop {
         display: block;
     }
     
@@ -2718,7 +2718,7 @@ button.passwordArr {
 
 @media all and (max-width: 1080px) {
 
-    body .displayLaptop {
+    body .displayDesktop {
         display: none;
     }
 
