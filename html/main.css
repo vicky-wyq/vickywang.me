@@ -367,7 +367,7 @@ a:link.textProject {
   display: none;
 }
 
-body .displayPhone {
+body .displayMobile {
   display: none;
 }
 
@@ -2406,13 +2406,18 @@ section .padding {
 .card {
   display: grid;
   grid-template-columns: 3fr 2fr; /* tweak ratio */
-  gap: 0;
+  gap: 12px;
   align-items: stretch;
 
   border: 0.08em solid var(--Grey400);
   border-radius: 12px;
   overflow: hidden;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  padding: 18px;
+  /* padding-top: 12px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px; */
 }
 
 .card:hover {
@@ -2424,10 +2429,10 @@ section .padding {
 .card__left {
   display: flex;
   flex-direction: column;
-  padding-top: 12px;
+  /* padding-top: 12px;
   padding-bottom: 24px;
   padding-left: 24px;
-  padding-right: 24px;
+  padding-right: 24px; */
 }
 
 .card__left .cta {
@@ -2442,10 +2447,11 @@ section .padding {
 
 }
 
-/* image window fills right column height (NO aspect-ratio on desktop) */
+
 .card25-media {
   height: 100%;
   overflow: hidden;
+  border-radius: 12px;
 }
 
 .card25-media-img {
@@ -3540,7 +3546,7 @@ button.passwordArr {
     display: block;
   }
 
-  body .displayPhone {
+  body .displayMobile {
     display: none;
   }
 
@@ -3745,7 +3751,7 @@ button.passwordArr {
     width: 8em;
   }
 
-  body .displayPhone {
+  body .displayMobile {
     display: block;
   }
 
