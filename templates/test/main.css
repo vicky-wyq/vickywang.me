@@ -268,7 +268,7 @@ a:link.textProject {
     display: none;
 }
 
-body .displayPhone {
+body .displayMobile {
     display: none;
 }
 
@@ -2627,7 +2627,7 @@ button.passwordArr {
         display: block;
     }
 
-    body .displayPhone {
+    body .displayMobile {
         display: none;
     }
 
@@ -2801,7 +2801,7 @@ button.passwordArr {
 
     }
 
-    body .displayPhone {
+    body .displayMobile {
         display: block;
     }
 

@@ -198,10 +198,10 @@ a:link.textProject {
 .displayTablet {
     display: none;
 }
-.displayPhone {
+.displayMobile {
     display: none;
 }
-body.displayPhone {
+body.displayMobile {
     display: none;
 }
 
@@ -371,7 +371,7 @@ body.displayPhone {
 
 
 
-    body .displayPhone {
+    body .displayMobile {
         display: none;
     }
 
@@ -1696,10 +1696,10 @@ section {
     body .displayTablet {
         display: none !important;
     }
-    body .displayPhone {
+    body .displayMobile {
         display: none !important;
     }
-    body.displayPhone {
+    body.displayMobile {
         display: none !important;
     }
     
@@ -2819,7 +2819,7 @@ button.passwordArr {
 
 /* below from web 2.0*/
 @media all and (max-width: 680px) {
-    body .displayPhone {
+    body .displayMobile {
         display: block;
     }
 
