@@ -446,7 +446,8 @@ body .displayPhone {
   position: relative;
   display: inline-flex;
   gap: 8px;
-  padding-right: 10px; /* top nav padding */
+  padding-right: 10px;
+  /* top nav padding */
 
   border-radius: 999px;
   background: var(--white);
@@ -2336,8 +2337,7 @@ section .padding {
   margin: 0;
   line-height: 120%;
 }
-
-/* ============ work hub ============*/
+/* ============ new card 12/19/25 ============*/
 
 .card25SectionTitle {
   font-family: inherit;
@@ -2399,48 +2399,84 @@ section .padding {
   color: var(--Grey700);
 }
 
-/* your existing hover outline */
-.card25 {
+.alignBottom {
+  margin-top: auto;
+}
+/* the card layout */
+.card {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* tweak ratio */
+  gap: 0;
+  align-items: stretch;
+
   border: 0.08em solid var(--Grey400);
   border-radius: 12px;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden;
-  /* IMPORTANT: clip zoomed img */
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.card25:hover {
+.card:hover {
   border-color: var(--Grey700);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-  /* optional, clean */
 }
 
-/* “window” for the image */
+/* left fills height, button to bottom */
+.card__left {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card__left .cta {
+  margin-top: auto;
+}
+
+/* right fills height */
+.card__right {
+  height: 100%;
+    display: flex; 
+
+
+}
+
+/* image window fills right column height (NO aspect-ratio on desktop) */
 .card25-media {
-  position: relative;
+  height: 100%;
   overflow: hidden;
-  border-radius: 12px;
-  aspect-ratio: 16 / 10;
-  background: linear-gradient(135deg, #d1f9df 0%, #e9e9e9 100%);
 }
 
-/* image lives inside, can move/scale */
 .card25-media-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* fill the window */
+  object-position: center;
   display: block;
   transform: scale(1);
-  /* normal state */
   transform-origin: center;
   transition: transform 0.45s ease;
 }
 
-/* hover: zoom image INSIDE the fixed window */
-.card25:hover .card25-media-img {
+.card:hover .card25-media-img {
   transform: scale(1.06);
-  /* looks bigger, box stays same */
 }
+
+/* mobile stack */
+@media (max-width: 767px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card25-media {
+    aspect-ratio: 16 / 10; /* OK on mobile */
+    height: auto;
+  }
+}
+
+/* ============ new card 12/19/25 ============*/
+
+/* ============ work hub ============*/
 
 /* ============ work hub ============*/
 
@@ -3403,10 +3439,6 @@ button.passwordArr {
 }
 
 @media all and (max-width: 1380px) {
-  body .card25-media {
-    aspect-ratio: 4 / 3;
-  }
-
   body .paddingXL {
     padding: var(--paddingL);
   }
@@ -3614,13 +3646,10 @@ button.passwordArr {
 /* below from web 2.0*/
 
 @media all and (max-width: 768px) {
-  .card25-media {
-    aspect-ratio: 16 / 10;
-  }
-
   body .card25ImgMargin {
     margin: 0;
   }
+
   body .top-glass {
     height: 47.5px;
   }
@@ -4990,11 +5019,13 @@ body .flex-container.Mobile {
   font-weight: 400;
   color: var(--Grey700);
 }
+
 .backToTop:hover {
   color: inherit;
   text-decoration: underline;
   cursor: pointer;
 }
+
 /* ===== back to top 2025 ==== */
 
 /* back to top */
@@ -5073,17 +5104,25 @@ body .flex-container.Mobile {
   flex-direction: column;
 }
 
+.stayBottom {
+  display: flex;
+  flex-direction: column;
+  align-content: end;
+}
+
 .rowcard25 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
+
 .rowLeftAligned {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start !important;
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -5682,6 +5721,7 @@ ul.iconx {
   height: auto;
   opacity: 1 !important;
 }
+
 /* 
 .modal-content:hover {
   cursor: zoom-out;
