@@ -2339,7 +2339,7 @@ section .padding {
 
 /* ============ work hub ============*/
 
-.workhubSectionTitle {
+.card25SectionTitle {
   font-family: inherit;
   font-size: 46px;
   font-weight: 300;
@@ -2347,7 +2347,7 @@ section .padding {
   line-height: 120%;
 }
 
-.workhubSectionDescription {
+.card25SectionDescription {
   font-family: inherit;
   font-size: var(--fs-h5);
   font-weight: 300;
@@ -2356,7 +2356,7 @@ section .padding {
   color: var(--Grey700);
 }
 
-.workhubLandingTitle {
+.card25LandingTitle {
   font-family: inherit;
   font-size: 52px;
   font-weight: 500;
@@ -2364,7 +2364,7 @@ section .padding {
   line-height: 120%;
 }
 
-.workhubCardMeta {
+.card25CardMeta {
   font-family: inherit;
   font-size: var(--fs-h6);
   font-weight: 100;
@@ -2373,7 +2373,7 @@ section .padding {
   color: var(--Grey700);
 }
 
-.workhubCardTitle {
+.card25CardTitle {
   font-family: inherit;
   font-size: var(--fs-h2);
   font-weight: 500;
@@ -2381,7 +2381,7 @@ section .padding {
   line-height: 120%;
 }
 
-.workhubCardDescription {
+.card25CardDescription {
   font-family: inherit;
   font-size: var(--fs-h3);
   font-weight: 300;
@@ -2390,7 +2390,7 @@ section .padding {
   color: var(--Grey700);
 }
 
-.workhubCardList {
+.card25CardList {
   font-family: inherit;
   font-size: var(--fs-h5);
   font-weight: 300;
@@ -2400,7 +2400,7 @@ section .padding {
 }
 
 /* your existing hover outline */
-.workhub {
+.card25 {
   border: 0.08em solid var(--Grey400);
   border-radius: 12px;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
@@ -2408,23 +2408,23 @@ section .padding {
   /* IMPORTANT: clip zoomed img */
 }
 
-.workhub:hover {
+.card25:hover {
   border-color: var(--Grey700);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
   /* optional, clean */
 }
 
 /* “window” for the image */
-.workhub-media {
+.card25-media {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   background: linear-gradient(135deg, #d1f9df 0%, #e9e9e9 100%);
 }
 
 /* image lives inside, can move/scale */
-.workhub-media-img {
+.card25-media-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2437,7 +2437,7 @@ section .padding {
 }
 
 /* hover: zoom image INSIDE the fixed window */
-.workhub:hover .workhub-media-img {
+.card25:hover .card25-media-img {
   transform: scale(1.06);
   /* looks bigger, box stays same */
 }
@@ -3394,15 +3394,19 @@ button.passwordArr {
   margin: 0 auto;
 }
 
-.workhubCardMargin {
+.card25CardMargin {
   margin: 0.4em;
 }
 
-.workhubImgMargin {
+.card25ImgMargin {
   margin: 1em;
 }
 
 @media all and (max-width: 1380px) {
+  body .card25-media {
+    aspect-ratio: 4 / 3;
+  }
+
   body .paddingXL {
     padding: var(--paddingL);
   }
@@ -3518,12 +3522,8 @@ button.passwordArr {
 
   body .divider1 {
     margin: 0 10px;
-
     border-top: 20px solid var(--Grey500);
-    /* height */
   }
-
-  /* hamburger menu 1080px*/
 
   body .hamburger {
     display: block;
@@ -3614,6 +3614,13 @@ button.passwordArr {
 /* below from web 2.0*/
 
 @media all and (max-width: 768px) {
+  .card25-media {
+    aspect-ratio: 16 / 10;
+  }
+
+  body .card25ImgMargin {
+    margin: 0;
+  }
   body .top-glass {
     height: 47.5px;
   }
@@ -5066,7 +5073,7 @@ body .flex-container.Mobile {
   flex-direction: column;
 }
 
-.rowWorkhub {
+.rowcard25 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -5202,7 +5209,7 @@ body .flex-container.Mobile {
   margin: 9px;
 }
 
-.photoWrapperWorkhub {
+.photoWrappercard25 {
   width: 2.6em;
   height: 2.6em;
   border-radius: 50%;
@@ -8054,7 +8061,7 @@ UIA-TIMELINE
   box-shadow: none;
 }
 
-.workhubChat.chat-bubble::before {
+.card25Chat.chat-bubble::before {
   content: "";
   position: absolute;
   left: -8px;
