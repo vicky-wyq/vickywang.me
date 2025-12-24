@@ -2339,6 +2339,13 @@ section .padding {
 }
 /* ============ new card 12/19/25 ============*/
 
+.displayBlock{
+  display: block;
+}
+.displayNone{
+  display:none;
+}
+
 .card25SectionTitle {
   font-family: inherit;
   font-size: 46px;
@@ -2403,6 +2410,9 @@ section .padding {
   margin-top: auto;
 }
 /* the card layout */
+.removeCAT{
+  display: none;
+}
 .card {
   display: grid;
   grid-template-columns: 3fr 2fr; /* tweak ratio */
@@ -3436,13 +3446,7 @@ button.passwordArr {
   margin: 0 auto;
 }
 
-.card25CardMargin {
-  margin: 0.4em;
-}
 
-.card25ImgMargin {
-  margin: 1em;
-}
 
 @media all and (max-width: 1380px) {
   body .paddingXL {
@@ -6234,6 +6238,7 @@ button.Clipboard.clickTxt:active {
   display: block;
   text-decoration: none;
   color: var(--Grey900);
+  background-color: var(--white);
   box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
 }
 
