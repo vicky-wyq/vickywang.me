@@ -1,0 +1,19 @@
+<%
+  sectionTitle     = (typeof sectionTitle !== 'undefined') ? sectionTitle: '';
+  sectionDescription     = (typeof sectionDescription !== 'undefined') ? sectionDescription: '';
+  spacingTop     = (typeof spacingTop !== 'undefined') ? spacingTop: '';
+
+
+%>
+<div class="<%= spacingTop %>"></div>
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutter">
+    <div class="Grid-cell">
+      <div class="element">
+        <h1 class="card25SectionTitle"><%= sectionTitle %></h1>
+        <h4 class="card25SectionDescription"><%= sectionDescription %></h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="spacingMedium"></div>

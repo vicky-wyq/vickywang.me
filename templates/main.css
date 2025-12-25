@@ -224,18 +224,74 @@ html {
   font-family: var(--font-general-sans);
 
   /* background-color: var(--GreyHTMLBg); */
+
+    line-height: 1.45;
+  letter-spacing: -0.01em;
+    font-variation-settings: "wght" 450;
+
 }
 
 body {
   width: 100%;
 
   height: var(--height100);
+  
   margin: 0;
   padding: 0;
   min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
+
+  leading-trim: both;
+  text-edge: cap alphabetic;
+    line-height: 1.5;
+  letter-spacing: -0.005em;
+
 }
+  /* letter-spacing 
+
+  Negative = denser
+  Positive = airier
+  Use em, not px 
+
+  */
+
+.tight {
+  letter-spacing: -0.02em;
+}
+
+.loose {
+  letter-spacing: 0.04em;
+}
+  /* font-stretch 
+
+  a. True width change
+  b. Requires variable fonts or families with stretch axes
+  c. Otherwise ignored silently, like bad design feedback
+  
+  */
+
+.condensed {
+  font-stretch: 90%;
+}
+
+.expanded {
+  font-stretch: 110%;
+}
+  /* Vertical density line-height / line stacking 
+
+  a. This is vertical density. Full stop.
+  b. Unitless values scale correctly across breakpoints
+  
+  */
+.compact {
+  line-height: 1.2;
+}
+
+.relaxed {
+  line-height: 1.6;
+}
+
 
 /* ========= a link / states =========*/
 
@@ -1352,6 +1408,9 @@ polygon {
 
 .cardBorder {
   border: 0.06em solid var(--Grey200) !important;
+  border-radius: 12px;
+    overflow: hidden;
+
 }
 
 .cardBorderThick {
@@ -2413,6 +2472,18 @@ section .padding {
 .removeCAT{
   display: none;
 }
+.cardNoEffect {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* tweak ratio */
+  gap: 12px;
+  align-items: stretch;
+
+  border: 0.08em solid var(--Grey200);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 18px;
+
+}
 .card {
   display: grid;
   grid-template-columns: 3fr 2fr; /* tweak ratio */
@@ -2439,6 +2510,8 @@ section .padding {
 .card__left {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
   /* padding-top: 12px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -2447,6 +2520,7 @@ section .padding {
 
 .card__left .cta {
   margin-top: auto;
+  margin-bottom: 0;
 }
 
 /* right fills height */
@@ -2613,6 +2687,15 @@ section .padding {
 }
 
 /* =========== Headings =========== */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+h4, h5 {
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
 
 h1,
 h2 {
@@ -2672,12 +2755,8 @@ li {
   line-height: 1.5;
 }
 
-/* Loose variant for readability (e.g., resume) */
-/* ul.listLoose li {
-  margin-top: clamp(0.35em, 0.6vw, 0.7em);
-  margin-bottom: clamp(0.35em, 0.6vw, 0.7em);
-  line-height: 1.6;
-} */
+
+
 
 /* Default UL layout */
 body ul {
@@ -2870,9 +2949,9 @@ hr.colorBlack {
   padding: 0;
   margin: 0;
   border-style: none;
-  border-radius: var(--border-radius);
-  -moz-border-radius: var(--border-radius);
-  -webkit-border-radius: var(--border-radius);
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
 
   /*  
     transition: background-color 0.3s ease;

@@ -1,4 +1,6 @@
 <%
+  cardType     = (typeof cardType !== 'undefined') ? cardType: '';
+
   cardMeta     = (typeof cardMeta !== 'undefined') ? cardMeta: '';
   cardTitle      = (typeof cardTitle !== 'undefined') ? cardTitle: '';
   cardDescription  = (typeof cardDescription !== 'undefined') ? cardDescription: '';
@@ -18,7 +20,7 @@
 
 
 <div class="wrapper">
-  <div class="card">
+  <div class="<%= cardType %>">
     <div class="card__left">
       <p class="card25CardMeta"><%= cardMeta %></p>
       <h2 class="card25CardTitle"><%= cardTitle %></h2>
@@ -27,9 +29,8 @@
       <h5 class="card25CardList"><%= cardList2 %></h5>
       <h5 class="card25CardList"><%= cardList3 %></h5>
       <div class="spacingLarge displayDesktop"></div>
-      <div class="spacingLarge displayTablet"></div>
-
-      <div class="spacingSmall displayMobile"></div>
+      <div class="spacingMedium displayTablet"></div>
+      <div class="spacingXSmall displayMobile"></div>
 
       <div class="<%= withCTA %>">
         <!-- Trigger 1 -->

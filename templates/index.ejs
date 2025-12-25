@@ -13,7 +13,7 @@
     <div class="nav-pill" id="navPill">
       <span class="nav-pill-active" id="navActive"></span>
       <button class="nav-link is-active" data-link="casestudies" type="button">Case Studies</button>
-      <button class="nav-link" data-link="experiments" type="button">Experiments</button>
+      <button class="nav-link" data-link="explorations" type="button">Explorations</button>
       <button class="nav-link" data-link="contact" type="button">Contact</button>
     </div>
   </header>
@@ -47,7 +47,7 @@
             <div class="spacingXSmall"></div>
             <h1 class="card25LandingTitle"> Marketplace & platform UX for providers and travelers
             </h1>
-            <h3 class="fontWeight300">I design scalable provider tools and high-traffic consumer flows for marketplaces.
+            <h3 class="fontWeight300">I design scalable provider tools and high-traffic consumer flows for marketplaces, reducing operational friction and increasing booking efficiency.
             </h3>
           </div>
 
@@ -80,6 +80,7 @@
     </div>
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/comp_card25`, {
+      cardType:'card',
       cardMeta:'Business Facing Partner Portal • Q3 2025',
       cardTitle:'BabyQuip Inventory Management',
       cardDescription:'Scaled inventory from hobbyist QPs to power users with a unified editing surface.',
@@ -92,6 +93,7 @@
       }) %>
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/comp_card25`, {
+      cardType:'card',
       cardMeta:'Consumer - Facing • Q4 2024 - Q1 2025',
       cardTitle:'Gear-First Experience Enhancements',
       cardDescription:'Stabilized a post-launch Gear-First marketplace by reducing friction across discovery, selection, and checkout without disrupting an in-production system.',
@@ -99,12 +101,13 @@
       withCTA:'',
       ctaType:'buttonPrimary',
       ctaName:'View Case Study',
-            imgURL:'/projectImages/cover_bq_inventory_management.png',
+            imgURL:'/projectImages/cover_bq_gear_first.png',
 
       }) %>
     <div class="spacingLarge"></div>
 
     <%- include(`${templatePath}/shared/comp_card25`, {
+      cardType:'card',
       cardMeta:'Business-Facing • Q3 2025 (launch in progress)',
       cardTitle:'BabyQuip Package System for Growth',
       cardDescription:'Introduced a standardized package system that enables marketing-led promotions and higher AOV, while preserving provider flexibility for custom offerings.',
@@ -112,7 +115,7 @@
       withCTA:'',
       ctaType:'buttonPrimary',
       ctaName:'View Case Study',
-            imgURL:'/projectImages/cover_bq_inventory_management.png',
+            imgURL:'/projectImages/cover_bq_package.png',
 
 
       }) %>
@@ -133,6 +136,7 @@
     </div>
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/comp_card25`, {
+      cardType:'card',
       cardMeta:'Business - Facing • Q3 2025 (Paused)',
       cardTitle:'Modular Provider Onboarding Framework (Exploratory)',
       cardDescription:'Designed a category-aware onboarding framework to replace a rigid 30+ screen flow, enabling optional setup paths and future category expansion.',
@@ -140,12 +144,13 @@
       withCTA:'removeCAT',
       ctaType:'',
             ctaName:'View Case Study',
-                  imgURL:'/projectImages/cover_bq_inventory_management.png',
+                  imgURL:'/projectImages/cover_bq_onboarding.png',
 
 
       }) %>
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/comp_card25`, {
+      cardType:'card',
       cardMeta:'Business - Facing • 2021 - 2024',
       cardTitle:'BookYourPet Platform Simplification & Booking Flexibility',
       cardDescription:'Rebuilt an over-engineered B2B platform into a configurable booking system that supports many pet-care business models without custom builds.',
@@ -155,7 +160,7 @@
       withCTA:'',
       ctaType:'buttonFlip',
       ctaName:'View Systems Case Study',
-            imgURL:'/projectImages/cover_bq_inventory_management.png',
+            imgURL:'/projectImages/cover_byp.png',
 
 
       }) %>
@@ -178,6 +183,7 @@
     </div>
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/comp_card25`, {
+      cardType:'card',
       cardMeta:'SuperAdmin – internal tool • Q4 2023',
       cardTitle:'LASO Super Admin Platform Concept',
       cardDescription:'Defined a scalable admin system to unify B2B/D2C user management, billing, and operational visibility.',
@@ -187,27 +193,15 @@
       withCTA:'',
       ctaType:'buttonFlip',
       ctaName:'Concept Overview',
-      imgURL:'/projectImages/admin_panel.svg',
+      imgURL:'/projectImages/cover_laso_super_admin.png',
 
 
       }) %>
 
+
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/comp_card25`, {
-      cardMeta:'Consumer - Facing • Q4 2023',
-      cardTitle:'RX Zero | Subscription Medication Concept',
-      cardDescription:'Explored trust, pricing transparency, and adherence flows for a subscription-based medication model.',
-      cardList1:'',
-      cardList2:'',
-      cardList3:'',
-      withCTA:'',
-      ctaType:'buttonFlip',
-      ctaName:'Research Overview',
-      imgURL:'/projectImages/rx_zero.png',
-      }) %>
-  
-    <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/comp_card25`, {
+      cardType:'cardNoEffect',
       cardMeta:'Consumer - Facing • Q3 2025 • Concept + IA direction (paused)',
       cardTitle:'Re-architected SEO-to-rent',
       cardDescription:'Discovery with trip-aware routing and category clarity to support BabyQuip’s expansion into B2C.',
@@ -217,12 +211,13 @@
       withCTA:'removeCAT',
       ctaType:'buttonFlip',
       ctaName:'Research Overview',
-      imgURL:'',
+            imgURL:'/projectImages/cover_bq_seo_entry.png',
       }) %>
-  
+
 
     <div class="spacingLarge"></div>
-        <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/comp_card25`, {
+      cardType:'cardNoEffect',
       cardMeta:'Concept Exploration • Q4 2025',
       cardTitle:'Explored an alternative marketplace model to reduce Gear-First UX friction',
       cardDescription:'Concept exploration proposing a filter-driven marketplace to eliminate placeholder inventory and shorten cart-to-provider loops.',
@@ -232,51 +227,33 @@
       withCTA:'removeCAT',
       ctaType:'',
       ctaName:'',
-      imgURL:'/projectImages/Cover_SEER.png',
+      imgURL:'/projectImages/cover_bq_alternative_marketplace_model.png',
       }) %>
 
   </section>
   <div class="spacingLarge"></div>
 
 
-  <section id="experiments" data-nav="experiments">
-    <%- include(`${templatePath}/shared/base_divider_site25`, {sectionName:'Experiments'}) %>
+  <section id="explorations" data-nav="explorations">
+    <%- include(`${templatePath}/shared/base_divider_site25`, {sectionName:'Explorations'}) %>
 
+
+    <%- include(`${templatePath}/shared/block_titleDescription25`, {
+      spacingTop:'',
+      sectionTitle:'Interview assignments',
+      sectionDescription:'Interview exercises exploring structure, flow, and decision-making under constraint.', 
+
+    }) %>
     <div class="wrapper">
-
-
-      <div class="Grid Grid--gutters Grid--cols-3">
-        <div class="Grid-cell shadowBoxLt float cardBorder borderRadiusS cardBottomBorder GLORIFY paddingNone marginXS">
-          <a class="no-hover-effect" href="/glorify/">
-            <img src="/projectImages/Cover_Glorify.png" alt="Glorify: Transforming Solitary Devotion into Community Engagement">
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder LASO paddingNone marginXS">
+          <a class="no-hover-effect" href="/">
+            <img src="/projectImages/Cover_LASO_RXZero.png" alt="">
             <div class="element">
-              <div class="spacingSmall"></div>
 
-              <%- include(`${templatePath}/shared/base_chip`, {
-                chipSmallTxt: '1-2 Experiment',
-                colorBg: 'colorBg_VW_Pink200',
-                colorTxt: 'color_VW_Pink800'
-              }) %>
-              <h3 class="TextPoppins fontWeight500">Glorify App</h3>
+              <h3 class="TextPoppins fontWeight500">RX Zero (Research & IA)</h3>
 
-              <h5 class="textItalic fontWeight300 Grey700"> A concept exploring how daily worship could shift from solo habit to shared ritual.</h5>
-            </div>
-          </a>
-        </div>
-        <div class="Grid-cell shadowBoxLt float cardBorder borderRadiusS cardBottomBorder SEER paddingNone marginXS">
-          <a class="no-hover-effect" href="/seer/">
-            <img src="/projectImages/Cover_SEER.png" alt="SEER: Enhancing Brand Impact on Reddit">
-            <div class="element">
-              <div class="spacingSmall"></div>
-
-              <%- include(`${templatePath}/shared/base_chip`, {
-                chipSmallTxt: '0-1 Experiment',
-                colorBg: 'colorBg_VW_Pink200',
-                colorTxt: 'color_VW_Pink800'
-              }) %>
-              <h3 class="TextPoppins fontWeight500">Marketing Insights Dashboard</h3>
-
-              <h5 class="textItalic fontWeight300 Grey700"> Early exploration of translating Reddit data into marketer-facing insights.
+              <h5 class="fontWeight300 Grey700">Interview assignment focused on trust, pricing transparency, and adherence flows for a subscription-based medication model, explored through research synthesis, IA, and low-fidelity wireframes rather than visual design.
               </h5>
 
 
@@ -285,19 +262,54 @@
             </div>
           </a>
         </div>
-        <div class="Grid-cell shadowBoxLt float cardBorder borderRadiusS cardBottomBorder APPOINTA paddingNone marginXS">
+
+
+        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder GLORIFY paddingNone marginXS">
+          <a class="no-hover-effect" href="/glorify/">
+            <img src="/projectImages/Cover_Glorify.png" alt="Glorify: Transforming Solitary Devotion into Community Engagement">
+            <div class="element">
+
+              <h3 class="TextPoppins fontWeight500">Glorify App (Concept + Structure)</h3>
+
+              <h5 class="fontWeight300 Grey700"> Interview assignment exploring how daily worship could shift from solo habit to shared ritual, focused on structural framing and visual hierarchy rather than production constraints.</h5>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <%- include(`${templatePath}/shared/block_titleDescription25`, {
+      spacingTop:'spacingXLarge',
+      sectionTitle:'Early product explorations',
+      sectionDescription:'Self-directed exploration focused on scalable templates, layout systems, and visual structure, used to test repeatable patterns rather than validate a market.', 
+    }) %>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-2">
+
+        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder SEER paddingNone marginXS">
+          <a class="no-hover-effect" href="/seer/">
+            <img src="/projectImages/Cover_SEER.png" alt="SEER: Enhancing Brand Impact on Reddit">
+            <div class="element">
+
+
+              <h3 class="TextPoppins fontWeight500">Marketing Insights Dashboard</h3>
+
+              <h5 class="fontWeight300 Grey700">Exploration of dashboard structure and metric legibility, independent of backend feasibility.
+              </h5>
+
+            </div>
+          </a>
+        </div>
+        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder APPOINTA paddingNone marginXS">
           <a class="no-hover-effect" href="/appointa/">
             <img src="/projectImages/Cover_APPOINTA.png" alt="APPOINTA: Interview Scheduling Made Simple">
             <div class="element">
-              <div class="spacingSmall"></div>
 
-              <%- include(`${templatePath}/shared/base_chip`, {
-                chipSmallTxt: '0-1 Experiment',
-                colorBg: 'colorBg_VW_Pink200',
-                colorTxt: 'color_VW_Pink800'
-              }) %>
               <h3 class="TextPoppins fontWeight500">Interview Scheduling</h3>
-              <h5 class="textItalic fontWeight300 Grey700">Concept study to reduce coordination overhead in recruiter-led scheduling.
+              <h5 class="fontWeight300 Grey700">Built within a predefined UI template to test IA clarity, information density, and visual hierarchy under constraints.
               </h5>
 
 
@@ -306,11 +318,12 @@
           </a>
         </div>
       </div>
-
     </div>
     <div class="spacingXLarge"></div>
-
-    <div class="spacingXLarge"></div>
+    <%- include(`${templatePath}/shared/block_titleDescription25`, {
+      sectionTitle:'Site Design System & Front-end Library',
+      sectionDescription:'A personal design system built and iterated since 2020 to test layout scalability, accessibility, and design–code parity across real production surfaces.', 
+    }) %>
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
         <div class="element">
@@ -320,20 +333,6 @@
               <img class="displayTablet" src="/projectImages/site25_tablet.svg" alt="Design System">
               <img class="displayMobile" src="/projectImages/site25_mobile.svg" alt="Design System">
             </a>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h2 class="fontWeight500">Site Design System & Front-end Library
-            </h2>
-            <h5>Design system powering vickywang.me since 2020. Layout, tokens, and components map to matching HTML/CSS/EJS snippets so design and implementation stay in sync and easy to debug.</h5>
-          </div>
-        </div>
-
-        <div class="Grid-cell">
-          <div class="element"> <a href="/design_system"> <button class="buttonMedium buttonFlip WhiteBg">View Design System </button></a>
           </div>
         </div>
       </div>
@@ -393,63 +392,9 @@
 
 
   </section>
-  <footer class="colorFooterBg">
-    <div class="spacingSmall"></div>
-    <div class="wrapper">
-      <div class="element">
-        <div class="Grid Grid--full Grid--gutter">
-          <div class="Grid-cell">
-            <div class="element">
-              <h1 class="fontWeight500 Grey600">vickywang.me</h1>
 
-              <h4 class="">Marketplace & platform UX for high-volume users</h4>
-            </div>
-            <div class="spacingSmall"></div>
+      <%- include(`${templatePath}/shared/block_footer25`, {sectionName:'Contact'}) %>
 
-            <div class="rowLeftAligned">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img title="Copy Email Address to Clipboard" class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-              <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
-                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/in.svg" alt="LinkedIn">
-              </a>
-
-              <a target="_blank" href="https://github.com/vicky-wyq">
-                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/git.svg" alt="GitHub" title="GitHub">
-              </a>
-
-              <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
-                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/Codepen.svg" alt="CodePen">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="spacingXLarge"></div>
-        <div class="spacingMedium"></div>
-
-
-
-
-        <div class="row centerVer footerBorder">
-          <div class="element">
-
-            <h6 class="Grey700"> &#169; 2020 - 2025 vickywang.me</h6>
-          </div>
-          <div class="element backToTop" id="backToTop">
-
-            <h5 class="">Back to top</h5>
-          </div>
-
-
-        </div>
-      </div>
-  </footer>
   <!-- Img Modal -->
   <div id="modal" class="modal">
     <span id="modal-close" class="modal-close">
