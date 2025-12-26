@@ -4,9 +4,13 @@
   cardMeta     = (typeof cardMeta !== 'undefined') ? cardMeta: '';
   cardTitle      = (typeof cardTitle !== 'undefined') ? cardTitle: '';
   cardDescription  = (typeof cardDescription !== 'undefined') ? cardDescription: '';
-  cardList1   = (typeof cardList1 !== 'undefined') ? cardList1: '';
-  cardList2   = (typeof cardList2 !== 'undefined') ? cardList2: '';
-  cardList3   = (typeof cardList3 !== 'undefined') ? cardList3: '';
+  cardListContent1   = (typeof cardListContent1 !== 'undefined') ? cardListContent1: '';
+  cardListContent2   = (typeof cardListContent2 !== 'undefined') ? cardListContent2: '';
+  cardListContent3   = (typeof cardListContent3 !== 'undefined') ? cardListContent3: '';
+
+  cardList1   = (typeof showCardList1 !== 'undefined') ? showCardList1: '';
+  cardList2   = (typeof showCardList2 !== 'undefined') ? showCardList2: '';
+  cardList3   = (typeof showCardList3 !== 'undefined') ? showCardList3: '';
 
   ctaType   = (typeof ctaType !== 'undefined') ? ctaType: '';
   ctaName   = (typeof ctaName !== 'undefined') ? ctaName: '';
@@ -25,14 +29,12 @@
       <p class="card25CardMeta"><%= cardMeta %></p>
       <h2 class="card25CardTitle"><%= cardTitle %></h2>
       <h5 class="card25CardDescription"><%= cardDescription %></h5>
-      <h5 class="card25CardList"><%= cardList1 %></h5>
-      <h5 class="card25CardList"><%= cardList2 %></h5>
-      <h5 class="card25CardList"><%= cardList3 %></h5>
-      <div class="spacingLarge displayDesktop"></div>
-      <div class="spacingMedium displayTablet"></div>
-      <div class="spacingXSmall displayMobile"></div>
+      <h5 class="card25CardList <%= showCardList1 %>"><%= cardListContent1 %></h5>
+      <h5 class="card25CardList <%= showCardList2 %>"><%= cardListContent2 %></h5>
+      <h5 class="card25CardList <%= showCardList3 %>"><%= cardListContent3 %></h5>
 
-      <div class="<%= withCTA %>">
+
+      <div class="<%= withCTA %> card__cta">
         <!-- Trigger 1 -->
         <a href="" class="open-modal alignBottom cta" data-modal="modal1">
           <button class="buttonMedium <%= ctaType %>"><%= ctaName %></button>

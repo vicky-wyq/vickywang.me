@@ -79,12 +79,18 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/card25`, {
       cardType:'card',
       cardMeta:'Business Facing Partner Portal • Q3 2025',
       cardTitle:'BabyQuip Inventory Management',
       cardDescription:'Scaled inventory from hobbyist QPs to power users with a unified editing surface.',
-      cardList1:'→ 3× faster edits for high-volume providers',
+      showCardList1:'',
+      cardListContent1:'→ 3× faster edits for high-volume providers',
+      cardListContent2:'',
+      cardListContent3:'',
+
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
       withCTA:'',
       ctaType:'buttonPrimary',
       ctaName:'View Case Study',
@@ -92,12 +98,15 @@
 
       }) %>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/card25`, {
       cardType:'card',
       cardMeta:'Consumer - Facing • Q4 2024 - Q1 2025',
       cardTitle:'Gear-First Experience Enhancements',
       cardDescription:'Stabilized a post-launch Gear-First marketplace by reducing friction across discovery, selection, and checkout without disrupting an in-production system.',
-      cardList1:'',
+      cardListContent1:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
       withCTA:'',
       ctaType:'buttonPrimary',
       ctaName:'View Case Study',
@@ -106,12 +115,15 @@
       }) %>
     <div class="spacingLarge"></div>
 
-    <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/card25`, {
       cardType:'card',
       cardMeta:'Business-Facing • Q3 2025 (launch in progress)',
       cardTitle:'BabyQuip Package System for Growth',
       cardDescription:'Introduced a standardized package system that enables marketing-led promotions and higher AOV, while preserving provider flexibility for custom offerings.',
-      cardList1:'',
+      cardListContent1:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
       withCTA:'',
       ctaType:'buttonPrimary',
       ctaName:'View Case Study',
@@ -135,28 +147,34 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/card25`, {
       cardType:'card',
       cardMeta:'Business - Facing • Q3 2025 (Paused)',
       cardTitle:'Modular Provider Onboarding Framework (Exploratory)',
       cardDescription:'Designed a category-aware onboarding framework to replace a rigid 30+ screen flow, enabling optional setup paths and future category expansion.',
-      cardList1:'',
+      cardListContent1:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
       withCTA:'removeCAT',
       ctaType:'',
-            ctaName:'View Case Study',
-                  imgURL:'/projectImages/cover_bq_onboarding.png',
+      ctaName:'View Case Study',
+      imgURL:'/projectImages/cover_bq_onboarding.png',
 
 
       }) %>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/card25`, {
       cardType:'card',
       cardMeta:'Business - Facing • 2021 - 2024',
       cardTitle:'BookYourPet Platform Simplification & Booking Flexibility',
       cardDescription:'Rebuilt an over-engineered B2B platform into a configurable booking system that supports many pet-care business models without custom builds.',
-      cardList1:'→ Unified services, pricing, duration, and add-ons into one flexible booking + calendar model',
-      cardList2:'→ Reduced setup time, booking errors, and support load by aligning the UI with real business workflows',
-      cardList3:'',
+      cardListContent1:'→ Unified services, pricing, duration, and add-ons into one flexible booking + calendar model',
+      cardListContent2:'→ Reduced setup time, booking errors, and support load by aligning the UI with real business workflows',
+      cardListContent3:'',
+      showCardList1:'',
+      showCardList2:'',
+      showCardList3:'displayNone',
       withCTA:'',
       ctaType:'buttonFlip',
       ctaName:'View Systems Case Study',
@@ -182,14 +200,17 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/card25`, {
       cardType:'card',
       cardMeta:'SuperAdmin – internal tool • Q4 2023',
       cardTitle:'LASO Super Admin Platform Concept',
       cardDescription:'Defined a scalable admin system to unify B2B/D2C user management, billing, and operational visibility.',
-      cardList1:'',
-      cardList2:'',
-      cardList3:'',
+      cardListContent1:'',
+      cardListContent2:'',
+      cardListContent3:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
       withCTA:'',
       ctaType:'buttonFlip',
       ctaName:'Concept Overview',
@@ -200,30 +221,36 @@
 
 
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/card25`, {
       cardType:'cardNoEffect',
       cardMeta:'Consumer - Facing • Q3 2025 • Concept + IA direction (paused)',
       cardTitle:'Re-architected SEO-to-rent',
       cardDescription:'Discovery with trip-aware routing and category clarity to support BabyQuip’s expansion into B2C.',
-      cardList1:'',
-      cardList2:'',
-      cardList3:'',
+      cardListContent1:'',
+      cardListContent2:'',
+      cardListContent3:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
       withCTA:'removeCAT',
       ctaType:'buttonFlip',
       ctaName:'Research Overview',
-            imgURL:'/projectImages/cover_bq_seo_entry.png',
+      imgURL:'/projectImages/cover_bq_seo_entry.png',
       }) %>
 
 
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/comp_card25`, {
+    <%- include(`${templatePath}/shared/card25`, {
       cardType:'cardNoEffect',
       cardMeta:'Concept Exploration • Q4 2025',
       cardTitle:'Explored an alternative marketplace model to reduce Gear-First UX friction',
       cardDescription:'Concept exploration proposing a filter-driven marketplace to eliminate placeholder inventory and shorten cart-to-provider loops.',
-      cardList1:'→ Reframed “Gear-First” as filter-first using real provider inventory instead of placeholder items',
-      cardList2:'→ Unified providers, filters, and map context into a single decision surface to reduce rework loops',
-      cardList3:'→ Removed fake inventory states to improve trust, availability clarity, and checkout efficiency',
+      cardListContent1:'→ Reframed “Gear-First” as filter-first using real provider inventory instead of placeholder items',
+      cardListContent2:'→ Unified providers, filters, and map context into a single decision surface to reduce rework loops',
+      cardListContent3:'→ Removed fake inventory states to improve trust, availability clarity, and checkout efficiency',
+      showCardList1:'',
+      showCardList2:'',
+      showCardList3:'',
       withCTA:'removeCAT',
       ctaType:'',
       ctaName:'',
@@ -393,7 +420,7 @@
 
   </section>
 
-      <%- include(`${templatePath}/shared/block_footer25`, {sectionName:'Contact'}) %>
+  <%- include(`${templatePath}/shared/block_footer25`, {sectionName:'Contact'}) %>
 
   <!-- Img Modal -->
   <div id="modal" class="modal">

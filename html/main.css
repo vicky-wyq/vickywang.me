@@ -2472,6 +2472,10 @@ section .padding {
 .removeCAT{
   display: none;
 }
+.card__cta{
+  margin-top: auto; 
+}
+
 .cardNoEffect {
   display: grid;
   grid-template-columns: 3fr 2fr; /* tweak ratio */
@@ -2556,6 +2560,9 @@ section .padding {
 /* mobile stack */
 @media (max-width: 767px) {
   .card {
+    grid-template-columns: 1fr;
+  }
+    .cardNoEffect {
     grid-template-columns: 1fr;
   }
   .card25-media {
@@ -3738,7 +3745,10 @@ button.passwordArr {
   body .card25ImgMargin {
     margin: 0;
   }
-
+body .card__cta{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
   body .top-glass {
     height: 47.5px;
   }
