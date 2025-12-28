@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'card25 | Vicky Wang', 
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Workhub', 
   description:'UX designer focused on system clarity, scalable flows, and meaningful product impact—across both B2B platforms and consumer journeys.', 
   pageURL:'card25', thumbnailImgURL: 'vickywang.svg'
   }) %>
@@ -13,7 +13,7 @@
     <div class="nav-pill" id="navPill">
       <span class="nav-pill-active" id="navActive"></span>
       <button class="nav-link is-active" data-link="casestudies" type="button">Case Studies</button>
-      <button class="nav-link" data-link="experiments" type="button">Experiments</button>
+      <button class="nav-link" data-link="explorations" type="button">Explorations</button>
       <button class="nav-link" data-link="contact" type="button">Contact</button>
     </div>
   </header>
@@ -47,7 +47,7 @@
             <div class="spacingXSmall"></div>
             <h1 class="card25LandingTitle"> Marketplace & platform UX for providers and travelers
             </h1>
-            <h3 class="fontWeight300">I design scalable provider tools and high-traffic consumer flows for marketplaces.
+            <h3 class="fontWeight300">I design scalable provider tools and high-traffic consumer flows for marketplaces, reducing operational friction and increasing booking efficiency.
             </h3>
           </div>
 
@@ -60,9 +60,13 @@
       </div>
 
     </div>
+    <%- include(`${templatePath}/shared/base_divider_site25`, {
+      sectionName:'Case Studies',
+      topSpacing:'spacingMedium',
+      bottomSpacing:'spacingXLarge',
+      dividerSpacing:''
+      }) %>
 
-
-    <div class="spacingMedium"></div>
 
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
@@ -74,64 +78,64 @@
         </div>
       </div>
     </div>
-    <div class="spacingMedium"></div>
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'card',
+      cardMeta:'Business Facing Partner Portal • Q3 2025',
+      cardTitle:'BabyQuip Inventory Management',
+      cardDescription:'Scaled inventory from hobbyist QPs to power users with a unified editing surface.',
+      showCardList1:'',
+      cardListContent1:'→ 3× faster edits for high-volume providers',
+      cardListContent2:'',
+      cardListContent3:'',
 
-    <div class="wrapper">
-      <div class="card25CardMargin">
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">Business Facing Partner Portal • Q3 2025</p>
-              <h3 class="card25CardTitle">BabyQuip Inventory Management</h3>
-              <h5 class="card25CardDescription">Scaled inventory from hobbyist QPs to power users with a unified, fast editing surface.</h5>
-              <h5 class="card25CardList">✔ 3× faster edits through inline, bulk, and filtered updates</h5>
-              <h5 class="card25CardList">✔ 50–75% less QA overhead by removing fragile edge-case flows</h5>
-              <h5 class="card25CardList">✔ Foundation reused for SuperAdmin expansion and future tooling</h5>
-              <div class="spacingSmall"></div>
-              <a href="bq_b2b_inventory_management"> <button class="buttonMedium buttonPrimary">View Case Study</button></a>
-            </div>
-          </div>
-          <div class="Grid-cell ">
-            <div class="element">
-              <div class="card25ImgMargin">
-                <div class="card25-media"> <img src="testing1.png" alt="" class="card25-media-img"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
+      withCTA:'',
+      ctaType:'buttonPrimary',
+      ctaName:'View Case Study',
+      imgURL:'/projectImages/cover_bq_inventory_management.png',
+
+      }) %>
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'card',
+      cardMeta:'Consumer - Facing • Q4 2024 - Q1 2025',
+      cardTitle:'Gear-First Experience Enhancements',
+      cardDescription:'Stabilized a post-launch Gear-First marketplace by reducing friction across discovery, selection, and checkout without disrupting an in-production system.',
+      cardListContent1:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
+      withCTA:'',
+      ctaType:'buttonPrimary',
+      ctaName:'View Case Study',
+            imgURL:'/projectImages/cover_bq_gear_first.png',
+
+      }) %>
     <div class="spacingLarge"></div>
 
-    <div class="wrapper">
-      <div class="card25CardMargin">
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">Consumer - Facing • Q4 2024 - Q1 2025</p>
-              <h3 class="card25CardTitle">Gear-First Experience Enhancements</h3>
-              <h5 class="card25CardDescription">Joined post-launch to stabilize and clarify the end-to-end Gear-First booking flow across web and app to reduce drop-off in provider selection and checkout. </h5>
-              <h5 class="card25CardList">✔ Improved provider selection and comparison for shoppers with inline quick-view, reviews</h5>
-              <h5 class="card25CardList">✔ Reduced checkout confusion across fees, delivery, and insurance</h5>
-              <h5 class="card25CardList">✔ Simplified map + filters so price, location, and availability are visible in one glance</h5>
-              <h5 class="card25CardList">✔ Used GA4 funnels to pinpoint step-level drop-off and prioritize fixes for mobile checkout</h5>
-              <div class="spacingSmall"></div>
-              <a href="/resume2025"> <button class="buttonMedium buttonPrimary">View Case Study</button></a>
-            </div>
-          </div>
-          <div class="Grid-cell ">
-            <div class="element">
-              <div class="card25ImgMargin">
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'card',
+      cardMeta:'Business-Facing • Q3 2025 (launch in progress)',
+      cardTitle:'BabyQuip Package System for Growth',
+      cardDescription:'Introduced a standardized package system that enables marketing-led promotions and higher AOV, while preserving provider flexibility for custom offerings.',
+      cardListContent1:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
+      withCTA:'',
+      ctaType:'buttonPrimary',
+      ctaName:'View Case Study',
+            imgURL:'/projectImages/cover_bq_package.png',
 
-                <div class="card25-media"> <img src="testing1.png" alt="" class="card25-media-img"></div>
-              </div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spacingLarge"></div>
+      }) %>
+
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+
+
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
@@ -142,96 +146,48 @@
         </div>
       </div>
     </div>
-    <div class="spacingSmall"></div>
-    <div class="wrapper">
-      <div class="card25CardMargin">
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'card',
+      cardMeta:'Business - Facing • Q3 2025 (Paused)',
+      cardTitle:'Modular Provider Onboarding Framework (Exploratory)',
+      cardDescription:'Designed a category-aware onboarding framework to replace a rigid 30+ screen flow, enabling optional setup paths and future category expansion.',
+      cardListContent1:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
+      withCTA:'removeCAT',
+      ctaType:'',
+      ctaName:'View Case Study',
+      imgURL:'/projectImages/cover_bq_onboarding.png',
 
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">Business - Facing • Q3 2025 (launch in progress)</p>
-              <h3 class="card25CardTitle">BabyQuip Package Redesign for Growth</h3>
-              <h5 class="card25CardDescription">Evolved ad-hoc “bundles” into standardized, promotable packages built for marketing and scale.</h5>
-              <h5 class="card25CardList">✔ Standardized package model that works across Baby, Mobility, and Party</h5>
-              <h5 class="card25CardList">✔ Reduced provider setup effort while keeping room for “hero” QPs to customize</h5>
-              <h5 class="card25CardList">✔ Created a marketing-friendly structure to support higher AOV campaigns</h5>
-            </div>
-          </div>
-          <div class="Grid-cell ">
-            <div class="element">
-              <div class="card25ImgMargin">
 
-                <div class="card25-media"> <img src="testing1.png" alt="" class="card25-media-img"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      }) %>
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'card',
+      cardMeta:'Business - Facing • 2021 - 2024',
+      cardTitle:'BookYourPet Platform Simplification & Booking Flexibility',
+      cardDescription:'Rebuilt an over-engineered B2B platform into a configurable booking system that supports many pet-care business models without custom builds.',
+      cardListContent1:'→ Unified services, pricing, duration, and add-ons into one flexible booking + calendar model',
+      cardListContent2:'→ Reduced setup time, booking errors, and support load by aligning the UI with real business workflows',
+      cardListContent3:'',
+      showCardList1:'',
+      showCardList2:'',
+      showCardList3:'displayNone',
+      withCTA:'',
+      ctaType:'buttonFlip',
+      ctaName:'View Systems Case Study',
+            imgURL:'/projectImages/cover_byp.png',
+
+
+      }) %>
+
     <div class="spacingLarge"></div>
 
-    <div class="wrapper">
-      <div class="card25CardMargin">
 
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">Business - Facing • Q3 2025 (Paused)</p>
-              <h3 class="card25CardTitle">BabyQuip Onboarding Redesign</h3>
-              <h5 class="card25CardDescription">Designed modular, category-aware onboarding for Baby, Mobility, and Party providers.</h5>
-              <h5 class="card25CardList">✔ Simplified provider setup into guided steps</h5>
-              <h5 class="card25CardList">✔ Clarified logic for locations, inventory, and availability</h5>
-              <h5 class="card25CardList">✔ Reduced ordering / sequencing errors in the original flow</h5>
-
-            </div>
-          </div>
-          <div class="Grid-cell ">
-            <div class="element">
-              <div class="card25ImgMargin">
-
-                <div class="card25-media"> <img src="testing1.png" alt="" class="card25-media-img"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spacingLarge"></div>
-
-    <div class="wrapper">
-      <div class="card25CardMargin">
-
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">Business - Facing • 2021 - 2024</p>
-              <h3 class="card25CardTitle">BookYourPet Platform Simplification & Booking Flexibility</h3>
-              <h5 class="card25CardDescription">Refactored an over-engineered B2B app into a flexible booking platform that business owners can self-onboard into.</h5>
-              <h5 class="card25CardList">✔ Restructured services, locations, and team rules to match real business workflows</h5>
-              <h5 class="card25CardList">✔ Cut initial onboarding from hours of manual setup to a guided self-serve experience </h5>
-              <h5 class="card25CardList">✔ Reduced booking errors and support tickets by clarifying duration, pricing, and add-on logic in the UI</h5>
-              <div class="spacingSmall"></div>
-              <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View Systems Case Study </button></a>
-            </div>
-          </div>
-          <div class="Grid-cell ">
-
-            <div class="Grid-cell ">
-              <div class="element">
-                <div class="card25ImgMargin">
-
-                  <div class="card25-media"> <img src="cover_byp_b2b_booking.png" alt="" class="card25-media-img"></div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="spacingLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
 
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
@@ -243,247 +199,167 @@
         </div>
       </div>
     </div>
-    <div class="spacingSmall"></div>
-    <div class="wrapper">
-      <div class="card25CardMargin">
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">SuperAdmin – internal tool • Q4 2023</p>
-              <h3 class="card25CardTitle">LASO Admin Platform Concept</h3>
-              <h5 class="card25CardDescription">Defined the foundation for LASO’s internal operations platform across B2B and D2C.</h5>
-              <h5 class="card25CardList">✔ Unified B2B/D2C user management </h5>
-              <h5 class="card25CardList">✔ Gave CX and sales teams real-time visibility into accounts and usage</h5>
-              <h5 class="card25CardList">✔ Dashboard for account health metrics </h5>
-              <h5 class="card25CardList">✔ Proposed a scalable architecture that works across multiple databases
-              </h5>
-
-
-            </div>
-          </div>
-          <div class="Grid-cell ">
-            <div class="element">
-              <div class="card25ImgMargin">
-
-                <div class="card25-media"> <img src="cover_laso_super_admin.svg" alt="" class="card25-media-img"></div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="spacingLarge"></div>
-    <div class="wrapper">
-      <div class="card25CardMargin">
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'card',
+      cardMeta:'SuperAdmin – internal tool • Q4 2023',
+      cardTitle:'LASO Super Admin Platform Concept',
+      cardDescription:'Defined a scalable admin system to unify B2B/D2C user management, billing, and operational visibility.',
+      cardListContent1:'',
+      cardListContent2:'',
+      cardListContent3:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
+      withCTA:'',
+      ctaType:'buttonFlip',
+      ctaName:'Concept Overview',
+      imgURL:'/projectImages/cover_laso_super_admin.png',
 
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">Consumer - Facing • Q4 2023</p>
-              <h3 class="card25CardTitle">RX Zero Case Study</h3>
-              <h5 class="card25CardDescription">Shaped the product vision and UX for LASO’s shift from telemedicine to an integrated prescription platform.</h5>
-              <h5 class="card25CardList">✔ Researched subscription-based medication models and user needs</h5>
-              <h5 class="card25CardList">✔ Defined flows for refills, adherence, and ongoing care</h5>
-              <h5 class="card25CardList">✔ Improved trust and transparency for chronic-care patients</h5>
 
-            </div>
-          </div>
-          <div class="Grid-cell ">
-            <div class="element">
-              <div class="card25ImgMargin">
+      }) %>
 
-                <div class="card25-media"> <img src="testing1.png" alt="" class="card25-media-img"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'cardNoEffect',
+      cardMeta:'Consumer - Facing • Q3 2025 • Concept + IA direction (paused)',
+      cardTitle:'Re-architected SEO-to-rent',
+      cardDescription:'Discovery with trip-aware routing and category clarity to support BabyQuip’s expansion into B2C.',
+      cardListContent1:'',
+      cardListContent2:'',
+      cardListContent3:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
+      withCTA:'removeCAT',
+      ctaType:'buttonFlip',
+      ctaName:'Research Overview',
+      imgURL:'/projectImages/cover_bq_seo_entry.png',
+      }) %>
 
-    <div class="wrapper">
-      <div class="card25CardMargin">
 
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">Consumer - Facing • Q3 2025</p>
-              <h3 class="card25CardTitle">Landing & Discovery Redesign for Business Expansion</h3>
-              <h5 class="card25CardDescription">Re-architected shopping and landing for category clarity and trip-aware UX. Designed for scalability as BabyQuip expands into B2C.</h5>
-              <h5 class="card25CardList">✔ Introduced trip-aware landing with distinct routes for Baby, Mobility, and Party use cases
-              </h5>
-              <h5 class="card25CardList">✔ Persistent trip context to surface accurate availability/pricing
-              </h5>
-              <h5 class="card25CardList">✔ Persisted trip context (“where / when”) so availability and pricing stay accurate across the flow
-              </h5>
-
-              <h5 class="card25CardList">✔ Simplified entry from vague “What do you need?” to clearer, decision-driving prompts
-              </h5>
-              <h5 class="card25CardList">✔ Designed category-aware homepage and discovery logic for future verticals
-              </h5>
-            </div>
-          </div>
-          <div class="Grid-cell ">
-            <div class="element">
-              <div class="card25ImgMargin">
-
-                <div class="card25-media"> <img src="testing1.png" alt="" class="card25-media-img"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
     <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'cardNoEffect',
+      cardMeta:'Concept Exploration • Q4 2025',
+      cardTitle:'Explored an alternative marketplace model to reduce Gear-First UX friction',
+      cardDescription:'Concept exploration proposing a filter-driven marketplace to eliminate placeholder inventory and shorten cart-to-provider loops.',
+      cardListContent1:'→ Reframed “Gear-First” as filter-first using real provider inventory instead of placeholder items',
+      cardListContent2:'→ Unified providers, filters, and map context into a single decision surface to reduce rework loops',
+      cardListContent3:'→ Removed fake inventory states to improve trust, availability clarity, and checkout efficiency',
+      showCardList1:'',
+      showCardList2:'',
+      showCardList3:'',
+      withCTA:'removeCAT',
+      ctaType:'',
+      ctaName:'',
+      imgURL:'/projectImages/cover_bq_alternative_marketplace_model.png',
+      }) %>
 
-    <div class="wrapper">
-      <div class="card25CardMargin">
-
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--center card25">
-          <div class="Grid-cell">
-            <div class="element">
-              <p class="card25CardMeta">Concept Exploration</p>
-              <h3 class="card25CardTitle">Explored an alternative marketplace model to fix structural issues in Gear-First.</h3>
-              <h5 class="card25CardDescription">✔ Unified three-column layout: left persistent filters, center providers, right map context</h5>
-              <h5 class="card25CardList">✔ Removed placeholder “fake items” to reduce trust friction and cart rework
-              </h5>
-              <h5 class="card25CardList">✔ Shortened cart-to-provider loops by keeping filters, providers, and location visible on one page
-              </h5>
-            </div>
-          </div>
-          <div class="Grid-cell ">
-            <div class="element">
-              <div class="card25ImgMargin">
-
-                <div class="card25-media"> <img src="testing1.png" alt="" class="card25-media-img"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
-  <div class="blankHM"></div>
+  <div class="spacingLarge"></div>
 
-  <section id="experiments" data-nav="experiments">
+
+  <section id="explorations" data-nav="explorations">
+    <%- include(`${templatePath}/shared/base_divider_site25`, {sectionName:'Explorations'}) %>
+
+
+    <%- include(`${templatePath}/shared/block_titleDescription25`, {
+      spacingTop:'',
+      sectionTitle:'Interview assignments',
+      sectionDescription:'Interview exercises exploring structure, flow, and decision-making under constraint.', 
+
+    }) %>
     <div class="wrapper">
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h1 class="card25SectionTitle">Title</h1>
-            <h4 class="card25SectionDescription">Description</h4>
-          </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder LASO paddingNone marginXS">
+          <a class="no-hover-effect" href="/">
+            <img src="/projectImages/Cover_LASO_RXZero.png" alt="">
+            <div class="element">
+
+              <h3 class="TextPoppins fontWeight500">RX Zero (Research & IA)</h3>
+
+              <h5 class="fontWeight300 Grey700">Interview assignment focused on trust, pricing transparency, and adherence flows for a subscription-based medication model, explored through research synthesis, IA, and low-fidelity wireframes rather than visual design.
+              </h5>
+
+
+
+
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--cols-3">
-        <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder GLORIFY paddingNone marginXS">
+
+
+        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder GLORIFY paddingNone marginXS">
           <a class="no-hover-effect" href="/glorify/">
             <img src="/projectImages/Cover_Glorify.png" alt="Glorify: Transforming Solitary Devotion into Community Engagement">
             <div class="element">
-              <div class="spacingSmall"></div>
 
-              <%- include(`${templatePath}/shared/base_chip`, {
-                chipSmallTxt: '1-2 Experiment',
-                colorBg: 'colorBg_VW_Pink200',
-                colorTxt: 'color_VW_Pink800'
-              }) %>
-              <h3 class="TextPoppins fontWeight500">Glorify App</h3>
+              <h3 class="TextPoppins fontWeight500">Glorify App (Concept + Structure)</h3>
 
-              <h5 class="textItalic fontWeight300 Grey700"> For Christian daily worship</h5>
-
-              <ul class="listCircle">
-                <li> <span class="TextPoppins fontWeight400">Initiate Community:</span> Transform from a single-player to a multiplayer experience.
-                </li>
-                <li> <span class="TextPoppins fontWeight400">Drive Growth:</span> Foster engagement and expand user participation within the community.
-
-                </li>
-              </ul>
+              <h5 class="fontWeight300 Grey700"> Interview assignment exploring how daily worship could shift from solo habit to shared ritual, focused on structural framing and visual hierarchy rather than production constraints.</h5>
             </div>
           </a>
         </div>
-        <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder SEER paddingNone marginXS">
+
+
+      </div>
+    </div>
+
+
+    <%- include(`${templatePath}/shared/block_titleDescription25`, {
+      spacingTop:'spacingXLarge',
+      sectionTitle:'Early product explorations',
+      sectionDescription:'Self-directed exploration focused on scalable templates, layout systems, and visual structure, used to test repeatable patterns rather than validate a market.', 
+    }) %>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-2">
+
+        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder SEER paddingNone marginXS">
           <a class="no-hover-effect" href="/seer/">
             <img src="/projectImages/Cover_SEER.png" alt="SEER: Enhancing Brand Impact on Reddit">
             <div class="element">
-              <div class="spacingSmall"></div>
 
-              <%- include(`${templatePath}/shared/base_chip`, {
-                chipSmallTxt: '0-1 Experiment',
-                colorBg: 'colorBg_VW_Pink200',
-                colorTxt: 'color_VW_Pink800'
-              }) %>
+
               <h3 class="TextPoppins fontWeight500">Marketing Insights Dashboard</h3>
 
-              <h5 class="textItalic fontWeight300 Grey700"> For Brand marketers</h5>
-
-              <ul class="listCircle">
-                <li> <span class="TextPoppins fontWeight400">Transform Insights:</span> Turn Reddit data into actionable insights for brand marketers.
-                </li>
-                <li> <span class="TextPoppins fontWeight400">Drive Growth:</span> Utilize intuitive analytics to understand user sentiment and engagement.
-                </li>
-                <li> <span class="TextPoppins fontWeight400">Future Vision: </span> Gain a glimpse into the future of targeted marketing strategies.
-                </li>
-              </ul>
-
-
+              <h5 class="fontWeight300 Grey700">Exploration of dashboard structure and metric legibility, independent of backend feasibility.
+              </h5>
 
             </div>
           </a>
         </div>
-        <div class="Grid-cell shadowBoxLt float cardBorder colorBgVW borderRadiusS cardBottomBorder APPOINTA paddingNone marginXS">
+        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder APPOINTA paddingNone marginXS">
           <a class="no-hover-effect" href="/appointa/">
             <img src="/projectImages/Cover_APPOINTA.png" alt="APPOINTA: Interview Scheduling Made Simple">
             <div class="element">
-              <div class="spacingSmall"></div>
 
-              <%- include(`${templatePath}/shared/base_chip`, {
-                chipSmallTxt: '0-1 Experiment',
-                colorBg: 'colorBg_VW_Pink200',
-                colorTxt: 'color_VW_Pink800'
-              }) %>
               <h3 class="TextPoppins fontWeight500">Interview Scheduling</h3>
-              <h5 class="textItalic fontWeight300 Grey700"> For Recuriter & hiring managers</h5>
+              <h5 class="fontWeight300 Grey700">Built within a predefined UI template to test IA clarity, information density, and visual hierarchy under constraints.
+              </h5>
 
-              <ul class="listCircle">
-                <li> <span class="TextPoppins fontWeight400">Streamline Scheduling:</span> Revamp the interview scheduling process to enhance efficiency.
-                </li>
-                <li> <span class="TextPoppins fontWeight400">Reduce Coordination Time:</span> Speed up hiring by minimizing the time spent on scheduling interviews.
-                </li>
-                <li> <span class="TextPoppins fontWeight400">Boost Recruitment Efficiency: </span> Improve the overall candidate experience through better coordination.
-                </li>
-              </ul>
 
 
             </div>
           </a>
         </div>
       </div>
-
     </div>
-
-    <div class="blankHM"></div>
+    <div class="spacingXLarge"></div>
+    <%- include(`${templatePath}/shared/block_titleDescription25`, {
+      sectionTitle:'Site Design System & Front-end Library',
+      sectionDescription:'A personal design system built and iterated since 2020 to test layout scalability, accessibility, and design–code parity across real production surfaces.', 
+    }) %>
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
         <div class="element">
-          <div class="paddingXL borderRadiusL gradient_background1">
+          <div class="paddingL borderRadiusL gradient_background1">
             <a href="/design_system/">
-              <img src="/projectImages/vicky_website2025.svg" alt="Design System"></a>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h2 class="fontWeight500">Site Design System & Front-end Library
-            </h2>
-            <h5>Design system powering vickywang.me since 2020. Layout, tokens, and components map to matching HTML/CSS/EJS snippets so design and implementation stay in sync and easy to debug.</h5>
-          </div>
-        </div>
-
-        <div class="Grid-cell">
-          <div class="element"> <a href="/design_system"> <button class="buttonMedium buttonFlip WhiteBg">View Design System </button></a>
+              <img class="displayDesktop" src="/projectImages/site25_desktop.svg" alt="Design System">
+              <img class="displayTablet" src="/projectImages/site25_tablet.svg" alt="Design System">
+              <img class="displayMobile" src="/projectImages/site25_mobile.svg" alt="Design System">
+            </a>
           </div>
         </div>
       </div>
@@ -492,9 +368,10 @@
     </div>
 
   </section>
-  <div class="blankHM"></div>
 
   <section id="contact" data-nav="contact">
+    <%- include(`${templatePath}/shared/base_divider_site25`, {sectionName:'Contact'}) %>
+
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
@@ -542,50 +419,9 @@
 
 
   </section>
-  <footer class="colorFooterBg">
-    <div class="spacingSmall"></div>
-    <div class="wrapper">
-      <div class="element">
-        <div class="Grid Grid--full Grid--gutter">
-          <div class="Grid-cell">
-            <div class="element">
-              <h2 class="fontWeight500 Grey600">vickywang.me</h2>
-              <h4 class="">Marketplace & platform UX for high-volume users</h4>
-            </div>
-            <div class="rowLeftAligned">
-              <div class="ClipboardBoxIconOnly">
-                <button class="ClipboardIconOnly">
-                  <img title="Copy Email Address to Clipboard" class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/mail.svg" alt="LinkedIn">
-                  <p class="clickIconCopy">vickyw.design@gmail.com</p>
-                </button>
-              </div>
-              <a target="_blank" href="https://www.linkedin.com/in/vicky-wyq/" title="LinkedIn">
-                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/in.svg" alt="LinkedIn">
-              </a>
 
-              <a target="_blank" href="https://github.com/vicky-wyq">
-                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/git.svg" alt="GitHub" title="GitHub">
-              </a>
+  <%- include(`${templatePath}/shared/block_footer25`, {sectionName:'Contact'}) %>
 
-              <a target="_blank" href="https://codepen.io/vicky-wyq" title="CodePen">
-                <img class="iconS hoverWhite paddingS fitContent borderRadiusMax" src="/icon/Codepen.svg" alt="CodePen">
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <div class="spacingLarge"></div>
-        <div class="Grid Grid--full Grid--gutters">
-          <div class="Grid-cell">
-            <div class="footerBorder">
-              <div class="element">
-                <h6 class="Grey700"> &#169; 2020 - 2025 vickywang.me</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </footer>
   <!-- Img Modal -->
   <div id="modal" class="modal">
     <span id="modal-close" class="modal-close">

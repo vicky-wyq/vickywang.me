@@ -1,0 +1,23 @@
+<%
+  cardTitle     = (typeof cardTitle !== 'undefined') ? cardTitle: '';
+  cardDescription     = (typeof cardDescription !== 'undefined') ? cardDescription: '';
+  linkURL      = (typeof linkURL !== 'undefined') ? linkURL: '';
+
+%>
+
+<div class="wrapper">
+  <div class="Grid Grid--gutter Grid--top">
+    <div class="Grid-cell">
+      <div class="element">
+        <div class="row centerVer">
+          <h4 class="fontWeight500"><%= cardTitle %></h5>
+            <a href="<%= linkURL %>" class="textUnderline paddingS">
+              <h6 class="fontWeight300">View Project</h6>
+            </a>
+        </div>
+        <h5><%= cardDescription %></h5>
+        <div class="spacingXSmall"></div>
+      </div>
+    </div>
+  </div>
+</div>
