@@ -1,0 +1,24 @@
+<% 
+if (typeof PageUrl === 'undefined') { 
+  PageUrl = ''; 
+} 
+if (typeof headerBackgroundColor === 'undefined') { 
+  headerBackgroundColor = ''; 
+} 
+if (typeof arrTxtColor === 'undefined') { 
+  arrTxtColor = ''; 
+} 
+%>
+
+<header>
+  <nav class="header <%= headerBackgroundColor %>" id="header">
+    <div class="wrapper headerContainer">
+      <a class="row marginS" href="<%= PageUrl %>">
+        <div class="arrow-container moveBackArrow">
+          <div class="left-arrow <%= arrTxtColor %>"></div>
+        </div>
+        <h4 class="backText <%= arrTxtColor %>">Back</h4>
+      </a>
+    </div>
+  </nav>
+</header>
