@@ -225,17 +225,16 @@ html {
 
   /* background-color: var(--GreyHTMLBg); */
 
-    line-height: 1.45;
+  line-height: 1.45;
   letter-spacing: -0.01em;
-    font-variation-settings: "wght" 450;
-
+  font-variation-settings: "wght" 450;
 }
 
 body {
   width: 100%;
 
   height: var(--height100);
-  
+
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -244,11 +243,11 @@ body {
 
   leading-trim: both;
   text-edge: cap alphabetic;
-    line-height: 1.5;
+  line-height: 1.5;
   letter-spacing: -0.005em;
-
 }
-  /* letter-spacing 
+
+/* letter-spacing 
 
   Negative = denser
   Positive = airier
@@ -263,7 +262,8 @@ body {
 .loose {
   letter-spacing: 0.04em;
 }
-  /* font-stretch 
+
+/* font-stretch 
 
   a. True width change
   b. Requires variable fonts or families with stretch axes
@@ -278,7 +278,8 @@ body {
 .expanded {
   font-stretch: 110%;
 }
-  /* Vertical density line-height / line stacking 
+
+/* Vertical density line-height / line stacking 
 
   a. This is vertical density. Full stop.
   b. Unitless values scale correctly across breakpoints
@@ -291,7 +292,6 @@ body {
 .relaxed {
   line-height: 1.6;
 }
-
 
 /* ========= a link / states =========*/
 
@@ -1409,8 +1409,7 @@ polygon {
 .cardBorder {
   border: 0.06em solid var(--Grey200) !important;
   border-radius: 12px;
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 .cardBorderThick {
@@ -2316,14 +2315,14 @@ main > nav {
   color: var(--WS-Blue);
 }
 
+body ul,
 li .rightPanel {
   font-size: 16px;
   line-height: inherit;
   margin-left: 0;
   z-index: 98;
-}
-
-ul .rightPanel {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   list-style-type: none;
 }
 
@@ -2396,13 +2395,15 @@ section .padding {
   margin: 0;
   line-height: 120%;
 }
+
 /* ============ new card 12/19/25 ============*/
 
-.displayBlock{
+.displayBlock {
   display: block;
 }
-.displayNone{
-  display:none;
+
+.displayNone {
+  display: none;
 }
 
 .card25SectionTitle {
@@ -2468,17 +2469,20 @@ section .padding {
 .alignBottom {
   margin-top: auto;
 }
+
 /* the card layout */
-.removeCAT{
+.removeCAT {
   display: none;
 }
-.card__cta{
-  margin-top: auto; 
+
+.card__cta {
+  margin-top: auto;
 }
 
 .cardNoEffect {
   display: grid;
-  grid-template-columns: 3fr 2fr; /* tweak ratio */
+  grid-template-columns: 3fr 2fr;
+  /* tweak ratio */
   gap: 12px;
   align-items: stretch;
 
@@ -2486,11 +2490,12 @@ section .padding {
   border-radius: 12px;
   overflow: hidden;
   padding: 18px;
-
 }
+
 .card {
   display: grid;
-  grid-template-columns: 3fr 2fr; /* tweak ratio */
+  grid-template-columns: 3fr 2fr;
+  /* tweak ratio */
   gap: 12px;
   align-items: stretch;
 
@@ -2530,11 +2535,8 @@ section .padding {
 /* right fills height */
 .card__right {
   height: 100%;
-    display: flex; 
-
-
+  display: flex;
 }
-
 
 .card25-media {
   height: 100%;
@@ -2562,11 +2564,14 @@ section .padding {
   .card {
     grid-template-columns: 1fr;
   }
-    .cardNoEffect {
+
+  .cardNoEffect {
     grid-template-columns: 1fr;
   }
+
   .card25-media {
-    aspect-ratio: 16 / 10; /* OK on mobile */
+    aspect-ratio: 16 / 10;
+    /* OK on mobile */
     height: auto;
   }
 }
@@ -2694,12 +2699,15 @@ section .padding {
 }
 
 /* =========== Headings =========== */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
-h4, h5 {
+h4,
+h5 {
   letter-spacing: -0.015em;
   line-height: 1.2;
 }
@@ -2743,10 +2751,6 @@ p {
 }
 
 /* Reset + base spacing */
-ul {
-  margin-top: clamp(0.4em, 0.6vw, 0.8em);
-  margin-bottom: clamp(0.4em, 0.6vw, 0.8em);
-}
 
 ul,
 ol {
@@ -2762,14 +2766,11 @@ li {
   line-height: 1.5;
 }
 
-
-
-
 /* Default UL layout */
 body ul {
   list-style-type: none;
   list-style-position: outside;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   margin-left: 0;
   font-family: inherit;
 }
@@ -3532,8 +3533,6 @@ button.passwordArr {
   margin: 0 auto;
 }
 
-
-
 @media all and (max-width: 1380px) {
   body .paddingXL {
     padding: var(--paddingL);
@@ -3745,10 +3744,12 @@ button.passwordArr {
   body .card25ImgMargin {
     margin: 0;
   }
-body .card__cta{
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
+
+  body .card__cta {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   body .top-glass {
     height: 47.5px;
   }
