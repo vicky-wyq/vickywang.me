@@ -297,9 +297,10 @@ body {
 
 body a {
   color: var(--Grey900);
-  cursor: pointer;
   transition: color 0.3s ease, font-weight 0.3s ease;
   /* Add this line */
+  cursor: pointer !important;
+
 }
 
 a:visited {
@@ -312,6 +313,7 @@ a:link {
 
 a:hover {
   color: var(--VW--Yellow700) !important;
+  cursor: pointer !important;
 }
 
 .flipBtn a:hover {
@@ -2577,6 +2579,12 @@ section .padding {
 }
 
 /* ============ new card 12/19/25 ============*/
+.explorations:hover {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--Grey500);
+}
+
+
 
 /* ============ work hub ============*/
 
@@ -3412,6 +3420,20 @@ button.passwordArr {
   background-repeat: no-repeat;
   transition: transform 0.4s ease;
 } */
+ .arrForwardIcon {
+  width: 28px;
+  height: 28px;
+  margin: 12px 0 12px auto;
+  /* top/right/bottom/left */
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: text-top;
+
+  background-image: url("icon/arrow-forward.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+}
 .accIcon {
   width: 28px;
   height: 28px;

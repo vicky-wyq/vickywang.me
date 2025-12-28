@@ -68,6 +68,7 @@
       }) %>
 
 
+
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
@@ -79,7 +80,7 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card25`, {
+    <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
       cardMeta:'Business Facing Partner Portal • Q3 2025',
       cardTitle:'BabyQuip Inventory Management',
@@ -98,7 +99,7 @@
 
       }) %>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card25`, {
+    <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
       cardMeta:'Consumer - Facing • Q4 2024 - Q1 2025',
       cardTitle:'Gear-First Experience Enhancements',
@@ -115,7 +116,7 @@
       }) %>
     <div class="spacingLarge"></div>
 
-    <%- include(`${templatePath}/shared/card25`, {
+    <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
       cardMeta:'Business-Facing • Q3 2025 (launch in progress)',
       cardTitle:'BabyQuip Package System for Growth',
@@ -147,7 +148,7 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card25`, {
+    <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
       cardMeta:'Business - Facing • Q3 2025 (Paused)',
       cardTitle:'Modular Provider Onboarding Framework (Exploratory)',
@@ -164,7 +165,7 @@
 
       }) %>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card25`, {
+    <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
       cardMeta:'Business - Facing • 2021 - 2024',
       cardTitle:'BookYourPet Platform Simplification & Booking Flexibility',
@@ -200,7 +201,7 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card25`, {
+    <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
       cardMeta:'SuperAdmin – internal tool • Q4 2023',
       cardTitle:'LASO Super Admin Platform Concept',
@@ -221,7 +222,7 @@
 
 
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card25`, {
+    <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'cardNoEffect',
       cardMeta:'Consumer - Facing • Q3 2025 • Concept + IA direction (paused)',
       cardTitle:'Re-architected SEO-to-rent',
@@ -240,7 +241,7 @@
 
 
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card25`, {
+    <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'cardNoEffect',
       cardMeta:'Concept Exploration • Q4 2025',
       cardTitle:'Explored an alternative marketplace model to reduce Gear-First UX friction',
@@ -271,81 +272,38 @@
       sectionDescription:'Interview exercises exploring structure, flow, and decision-making under constraint.', 
 
     }) %>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--cols-2">
-        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder LASO paddingNone marginXS">
-          <a class="no-hover-effect" href="/">
-            <img src="/projectImages/Cover_LASO_RXZero.png" alt="">
-            <div class="element">
+    <%- include(`${templatePath}/shared/card_explorations`, {
+      cardTitle:'RX Zero (Research & IA)',
+      cardDescription:'Interview assignment focused on trust, pricing transparency, and adherence flows for a subscription-based medication model, explored through research synthesis, IA, and low-fidelity wireframes rather than visual design.',
+      linkURL:'/refining_rx_zero/',
 
-              <h3 class="TextPoppins fontWeight500">RX Zero (Research & IA)</h3>
+      }) %>
+    <%- include(`${templatePath}/shared/card_explorations`, {
+      cardTitle:'Glorify App (Concept + Structure)',
+      cardDescription:' Interview assignment exploring how daily worship could shift from solo habit to shared ritual, focused on structural framing and visual hierarchy rather than production constraints.',
+      linkURL:'/glorify/',
 
-              <h5 class="fontWeight300 Grey700">Interview assignment focused on trust, pricing transparency, and adherence flows for a subscription-based medication model, explored through research synthesis, IA, and low-fidelity wireframes rather than visual design.
-              </h5>
-
-
-
-
-            </div>
-          </a>
-        </div>
-
-
-        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder GLORIFY paddingNone marginXS">
-          <a class="no-hover-effect" href="/glorify/">
-            <img src="/projectImages/Cover_Glorify.png" alt="Glorify: Transforming Solitary Devotion into Community Engagement">
-            <div class="element">
-
-              <h3 class="TextPoppins fontWeight500">Glorify App (Concept + Structure)</h3>
-
-              <h5 class="fontWeight300 Grey700"> Interview assignment exploring how daily worship could shift from solo habit to shared ritual, focused on structural framing and visual hierarchy rather than production constraints.</h5>
-            </div>
-          </a>
-        </div>
-
-
-      </div>
-    </div>
-
-
+      }) %>
     <%- include(`${templatePath}/shared/block_titleDescription25`, {
       spacingTop:'spacingXLarge',
       sectionTitle:'Early product explorations',
       sectionDescription:'Self-directed exploration focused on scalable templates, layout systems, and visual structure, used to test repeatable patterns rather than validate a market.', 
     }) %>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--cols-2">
-
-        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder SEER paddingNone marginXS">
-          <a class="no-hover-effect" href="/seer/">
-            <img src="/projectImages/Cover_SEER.png" alt="SEER: Enhancing Brand Impact on Reddit">
-            <div class="element">
-
-
-              <h3 class="TextPoppins fontWeight500">Marketing Insights Dashboard</h3>
-
-              <h5 class="fontWeight300 Grey700">Exploration of dashboard structure and metric legibility, independent of backend feasibility.
-              </h5>
-
-            </div>
-          </a>
-        </div>
-        <div class="Grid-cell shadowBoxLt float cardBorder cardBottomBorder APPOINTA paddingNone marginXS">
-          <a class="no-hover-effect" href="/appointa/">
-            <img src="/projectImages/Cover_APPOINTA.png" alt="APPOINTA: Interview Scheduling Made Simple">
-            <div class="element">
-
-              <h3 class="TextPoppins fontWeight500">Interview Scheduling</h3>
-              <h5 class="fontWeight300 Grey700">Built within a predefined UI template to test IA clarity, information density, and visual hierarchy under constraints.
-              </h5>
+    <%- include(`${templatePath}/shared/card_explorations`, {
+      cardTitle:'Marketing Insights Dashboard',
+      cardDescription:' Exploration of dashboard structure and metric legibility, independent of backend feasibility.',
+      linkURL:'/seer/',
+      }) %>
+    <%- include(`${templatePath}/shared/card_explorations`, {
+      cardTitle:'Interview Scheduling',
+      cardDescription:'Built within a predefined UI template to test IA clarity, information density, and visual hierarchy under constraints.',
+      linkURL:'/appointa/',
+      }) %>
 
 
 
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+
+
     <div class="spacingXLarge"></div>
     <%- include(`${templatePath}/shared/block_titleDescription25`, {
       sectionTitle:'Site Design System & Front-end Library',
