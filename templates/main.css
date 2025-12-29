@@ -3466,21 +3466,6 @@ button.passwordArr {
 /* ================ hanging alignment =================*/
 
 
-.txtnIcon {
-  display: inline-flex;
-  gap: 0.4em;
-  align-items: baseline;
-
-
-}
-
-.txtnIcon-icon {
-  flex: 0 0 auto;
-  line-height: 1;
-
-  
-}
-
 
 /* ================ hanging alignment =================*/
 
