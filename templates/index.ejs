@@ -54,12 +54,67 @@
         </div>
       </div>
       <div class="Grid Grid--full Grid--gutter">
-        <div class="element">
-          <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
+        <div class="Grid-cell">
+          <div class="element">
+            <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
+          </div>
         </div>
       </div>
 
     </div>
+
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight300"> My working principles
+            </h1>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell">
+
+          <h4 class="txtnIcon marginRight">
+            <!-- <span class="txtnIcon-icon">&#183;</span> -->
+            <span> Start from constraints, not ideas
+            </span>
+          </h4>
+        </div>
+        <div class="Grid-cell marginRight">
+          <h4 class="txtnIcon">
+            <!-- <span class="txtnIcon-icon">&#183;</span> -->
+            <span>
+              Collapse systems before polishing flows
+            </span>
+          </h4>
+        </div>
+        <div class="Grid-cell marginRight">
+          <h4 class="txtnIcon">
+            <!-- <span class="txtnIcon-icon">&#183;</span> -->
+            <span>
+              Measure success by reduced friction, not feature count
+            </span>
+          </h4>
+        </div>
+
+      </div>
+      <div class="spacingSmall"></div>
+
+    </div>
+
+    <div class="wrapper">
+
+    </div>
+    <div class="spacingSmall"></div>
+
+
+
+
     <%- include(`${templatePath}/shared/base_divider_site25`, {
       sectionName:'Case Studies',
       topSpacing:'spacingMedium',
@@ -86,11 +141,10 @@
       cardTitle:'BabyQuip Inventory Management',
       cardDescription:'Scaled inventory from hobbyist QPs to power users with a unified editing surface.',
       showCardList1:'',
-      cardListContent1:'→ 3× faster edits for high-volume providers',
+      cardListContent1:'3× faster edits for high-volume providers',
       cardListContent2:'',
-      cardListContent3:'',
-
       showCardList2:'displayNone',
+      cardListContent3:'',
       showCardList3:'displayNone',
       withCTA:'',
       ctaType:'buttonPrimary',
@@ -148,30 +202,36 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_case_studies`, {
-      cardType:'card',
-      cardMeta:'Business - Facing • Q3 2025 (Paused)',
-      cardTitle:'Modular Provider Onboarding Framework (Exploratory)',
-      cardDescription:'Designed a category-aware onboarding framework to replace a rigid 30+ screen flow, enabling optional setup paths and future category expansion.',
-      cardListContent1:'',
-      showCardList1:'displayNone',
-      showCardList2:'displayNone',
-      showCardList3:'displayNone',
-      withCTA:'removeCAT',
-      ctaType:'',
-      ctaName:'View Case Study',
-      imgURL:'/projectImages/cover_bq_onboarding.png',
 
 
-      }) %>
+
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell cardNoEffect1">
+          <div class="element">
+            <p class="card25CardMeta">Business - Facing • Q3 2025 (Paused)
+
+            </p>
+            <h2 class="card25CardTitle">Modular Provider Onboarding Framework (Exploratory)
+            </h2>
+            <h5 class="card25CardDescription">Designed a category-aware onboarding framework to replace a rigid 30+ screen flow, enabling optional setup paths and future category expansion.
+            </h5>
+
+            <div class="spacingXSmall displayMobile"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
       cardMeta:'Business - Facing • 2021 - 2024',
       cardTitle:'BookYourPet Platform Simplification & Booking Flexibility',
       cardDescription:'Rebuilt an over-engineered B2B platform into a configurable booking system that supports many pet-care business models without custom builds.',
-      cardListContent1:'→ Unified services, pricing, duration, and add-ons into one flexible booking + calendar model',
-      cardListContent2:'→ Reduced setup time, booking errors, and support load by aligning the UI with real business workflows',
+      cardListContent1:'Unified services, pricing, duration, and add-ons into one flexible booking + calendar model',
+      cardListContent2:'Reduced setup time, booking errors, and support load by aligning the UI with real business workflows',
       cardListContent3:'',
       showCardList1:'',
       showCardList2:'',
@@ -222,41 +282,41 @@
 
 
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_case_studies`, {
-      cardType:'cardNoEffect',
-      cardMeta:'Consumer - Facing • Q3 2025 • Concept + IA direction (paused)',
-      cardTitle:'Re-architected SEO-to-rent',
-      cardDescription:'Discovery with trip-aware routing and category clarity to support BabyQuip’s expansion into B2C.',
-      cardListContent1:'',
-      cardListContent2:'',
-      cardListContent3:'',
-      showCardList1:'displayNone',
-      showCardList2:'displayNone',
-      showCardList3:'displayNone',
-      withCTA:'removeCAT',
-      ctaType:'buttonFlip',
-      ctaName:'Research Overview',
-      imgURL:'/projectImages/cover_bq_seo_entry.png',
-      }) %>
 
 
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell cardNoEffect1">
+          <div class="element">
+            <p class="card25CardMeta">Consumer - Facing • Q3 2025 • Concept + IA direction (paused)
+
+            </p>
+            <h2 class="card25CardTitle">Re-architected SEO-to-rent
+            </h2>
+            <h5 class="card25CardDescription">Discovery with trip-aware routing and category clarity to support BabyQuip’s expansion into B2C.
+            </h5>
+
+            <div class="spacingXSmall displayMobile"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_case_studies`, {
-      cardType:'cardNoEffect',
-      cardMeta:'Concept Exploration • Q4 2025',
-      cardTitle:'Explored an alternative marketplace model to reduce Gear-First UX friction',
-      cardDescription:'Concept exploration proposing a filter-driven marketplace to eliminate placeholder inventory and shorten cart-to-provider loops.',
-      cardListContent1:'→ Reframed “Gear-First” as filter-first using real provider inventory instead of placeholder items',
-      cardListContent2:'→ Unified providers, filters, and map context into a single decision surface to reduce rework loops',
-      cardListContent3:'→ Removed fake inventory states to improve trust, availability clarity, and checkout efficiency',
-      showCardList1:'',
-      showCardList2:'',
-      showCardList3:'',
-      withCTA:'removeCAT',
-      ctaType:'',
-      ctaName:'',
-      imgURL:'/projectImages/cover_bq_alternative_marketplace_model.png',
-      }) %>
+    <div class="wrapper">
+      <div class="Grid Grid--full Grid--gutter">
+        <div class="Grid-cell cardNoEffect1">
+          <div class="element">
+            <p class="card25CardMeta">Concept Exploration • Q4 2025</p>
+            <h2 class="card25CardTitle">Explored an alternative marketplace model to reduce Gear-First UX friction</h2>
+            <h5 class="card25CardDescription">Concept exploration proposing a filter-driven marketplace to eliminate placeholder inventory and shorten cart-to-provider loops.</h5>
+            <h5 class="card25CardList ">Reframed “Gear-First” as filter-first using real provider inventory instead of placeholder items</h5>
+            <h5 class="card25CardList ">Unified providers, filters, and map context into a single decision surface to reduce rework loops</h5>
+            <h5 class="card25CardList ">Removed fake inventory states to improve trust, availability clarity, and checkout efficiency</h5>
+            <div class="spacingXSmall displayMobile"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
   <div class="spacingLarge"></div>
