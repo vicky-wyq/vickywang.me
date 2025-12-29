@@ -2463,7 +2463,7 @@ section .padding {
   font-family: inherit;
   font-size: var(--fs-h5);
   font-weight: 300;
-  margin: 0.8em 0;
+  margin: 0.4em 0;
   line-height: 120%;
   color: var(--Grey700);
 }
@@ -2481,6 +2481,13 @@ section .padding {
   margin-top: auto;
 }
 
+.cardNoEffect1 {
+
+  border: 0.08em solid var(--Grey200);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 18px;
+}
 .cardNoEffect {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -3456,6 +3463,30 @@ button.passwordArr {
 
 /* =================== accTrigger ===================*/
 
+/* ================ hanging alignment =================*/
+
+
+.txtnIcon {
+  display: inline-flex;
+  gap: 0.4em;
+  align-items: baseline;
+
+
+}
+
+.txtnIcon-icon {
+  flex: 0 0 auto;
+  line-height: 1;
+
+  
+}
+
+
+/* ================ hanging alignment =================*/
+
+
+
+
 /* =================== accordion ===================*/
 
 .accordion {
@@ -4257,15 +4288,15 @@ flex: 0 0 calc(33.3333% - 1em);
 }
 
 .Grid--gutters {
-  margin-left: 0.2em;
+  margin-left: 0.4em;
 }
 
 .Grid--gutters .Grid-cell {
-  padding-left: 0.2em;
+  padding-left: 0.4em;
 }
 
 */ .Grid--gutters .Grid--nested .Grid-cell:first-of-type .Demo {
-  margin-right: 0.2em;
+  margin-right: 0.4em;
 }
 
 /* Justify per row*/
@@ -5488,7 +5519,9 @@ body .flex-container.Mobile {
 .marginLeft {
   margin-left: 22px;
 }
-
+.marginRight {
+  margin-right: 12px;
+}
 .noMargin {
   margin: 0 !important;
 }
