@@ -2512,7 +2512,7 @@ section .padding {
   border-radius: 12px;
   overflow: hidden;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
-  padding: 18px;
+  padding: 1.6em;
   /* padding-top: 12px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -5111,7 +5111,7 @@ body .flex-container.Mobile {
 
 .ProjectBannerInnerND {
   position: absolute;
-  top: calc(100% - 1866px);
+  top: calc(100% - 186px);
   transform: translate(-50%, -50%);
   left: 50%;
   width: 100%;
@@ -5266,7 +5266,7 @@ body .flex-container.Mobile {
   flex-direction: row;
   justify-content: space-between;
 
-  align-items: flex-start !important;
+  /* align-items: flex-start !important; */
 }
 
 .rowToColumn {
@@ -5322,6 +5322,8 @@ body .flex-container.Mobile {
 .centerVer {
   display: flex;
   align-items: center;
+
+
 }
 
 .centerTxt {
