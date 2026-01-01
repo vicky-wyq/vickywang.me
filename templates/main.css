@@ -2452,7 +2452,7 @@ section .padding {
 
 .card25CardDescription {
   font-family: inherit;
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h3);
   font-weight: 300;
   margin: 0.6em 0;
   line-height: 120%;
@@ -2461,7 +2461,7 @@ section .padding {
 
 .card25CardList {
   font-family: inherit;
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h3);
   font-weight: 300;
   margin: 0.6em 0;
   line-height: 120%;

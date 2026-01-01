@@ -2,11 +2,15 @@
   sectionTitle     = (typeof sectionTitle !== 'undefined') ? sectionTitle: '';
   sectionDescription     = (typeof sectionDescription !== 'undefined') ? sectionDescription: '';
   spacingTop     = (typeof spacingTop !== 'undefined') ? spacingTop: '';
+  spacingBottom = (spacingBottom && spacingBottom.length)
+  ? spacingBottom
+  : 'spacingLarge';
 
 
 %>
-<div class="<%= spacingTop %>"></div>
 <div class="wrapper">
+  <div class="<%= spacingTop %>"></div>
+
   <div class="Grid Grid--full Grid--gutter">
     <div class="Grid-cell">
       <div class="element">
@@ -15,5 +19,7 @@
       </div>
     </div>
   </div>
+  <div class="<%= spacingBottom %>"></div>
+
 </div>
-<div class="spacingMedium"></div>
+<div class="spacingXSmall"></div>
