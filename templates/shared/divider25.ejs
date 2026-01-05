@@ -2,11 +2,11 @@
 <%
   sectionName     = (typeof sectionName     !== 'undefined') ? sectionName     : 'blankHXS';
   topSpacing      = (typeof topSpacing      !== 'undefined') ? topSpacing      : 'blankHXS';
-  dividerSpacing  = (typeof dividerSpacing  !== 'undefined') ? dividerSpacing  : 'blankHXS';
+  topNbottomSpacing  = (typeof topNbottomSpacing  !== 'undefined') ? topNbottomSpacing  : 'blankHXS';
   bottomSpacing   = (typeof bottomSpacing   !== 'undefined') ? bottomSpacing   : 'blankHXS';
 %>
 <div class="wrapperL">
-  <div class="<%= topSpacing %> <%= dividerSpacing %>"></div>
+  <div class="<%= topSpacing %> <%= topNbottomSpacing %>"></div>
 
   <div class="Grid Grid--gutters Grid--cols-3 Grid--center u-textCenter">
     <div class="Grid-cell"><hr></div>
@@ -14,5 +14,5 @@
     <div class="Grid-cell"><hr></div>
   </div>
 
-  <div class="<%= bottomSpacing %> <%= dividerSpacing %>"></div>
+  <div class="<%= bottomSpacing %> <%= topNbottomSpacing %>"></div>
 </div>

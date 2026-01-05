@@ -9,7 +9,7 @@
 
 <body>
   <div class="top-glass"></div>
-  <header class="top-nav">
+  <header class="top-nav headerShadow">
     <div class="nav-pill" id="navPill">
       <span class="nav-pill-active" id="navActive"></span>
       <button class="nav-link is-active" data-link="casestudies" type="button">Case Studies</button>
@@ -100,11 +100,11 @@
 
 
 
-    <%- include(`${templatePath}/shared/base_divider_site25`, {
+    <%- include(`${templatePath}/shared/divider25`, {
       sectionName:'Case Studies',
       topSpacing:'spacingMedium',
       bottomSpacing:'spacingXLarge',
-      dividerSpacing:''
+      topNbottomSpacing:''
       }) %>
     <%- include(`${templatePath}/shared/titleDescription25`, {
       spacingTop:'spacingXSmall',
@@ -292,7 +292,7 @@
 
 
   <section id="explorations" data-nav="explorations">
-    <%- include(`${templatePath}/shared/base_divider_site25`, {sectionName:'Explorations'}) %>
+    <%- include(`${templatePath}/shared/divider25`, {sectionName:'Explorations'}) %>
 
 
     <%- include(`${templatePath}/shared/titleDescription25`, {
@@ -367,7 +367,7 @@
   </section>
 
   <section id="contact" data-nav="contact">
-    <%- include(`${templatePath}/shared/base_divider_site25`, {sectionName:'Contact'}) %>
+    <%- include(`${templatePath}/shared/divider25`, {sectionName:'Contact'}) %>
 
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
@@ -419,15 +419,8 @@
 
   <%- include(`${templatePath}/shared/footer25`) %>
 
-  <!-- Img Modal -->
-  <div id="modal" class="modal">
-    <span id="modal-close" class="modal-close">
-      <img class="iconXforModal" src="../icon/delete.svg" alt="&times;">
-    </span>
-    <img id="modal-content" class="modal-content">
-    <div id="modal-caption" class="modal-caption"></div>
-  </div>
-  <!-- Img Modal -->
+    <%- include(`${templatePath}/shared/imgModal`) %>
+
 </body>
 
 </html>
