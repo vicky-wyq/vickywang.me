@@ -1,13 +1,14 @@
 <%
-  sectionTitle     = (typeof sectionTitle !== 'undefined') ? sectionTitle: '';
-  sectionDescription     = (typeof sectionDescription !== 'undefined') ? sectionDescription: '';
-  spacingTop     = (typeof spacingTop !== 'undefined') ? spacingTop: '';
-  spacingBottom = (spacingBottom && spacingBottom.length)
-  ? spacingBottom
-  : 'spacingLarge';
+  sectionTitle = (typeof sectionTitle !== 'undefined') ? sectionTitle : '';
+  sectionDescription = (typeof sectionDescription !== 'undefined') ? sectionDescription : '';
+  spacingTop = (typeof spacingTop !== 'undefined') ? spacingTop : '';
 
-
+  var _spacingBottom = (typeof spacingBottom !== 'undefined') ? spacingBottom : '';
+  spacingBottom = (_spacingBottom && _spacingBottom.length)
+    ? _spacingBottom
+    : 'spacingLarge';
 %>
+
 <div class="wrapper">
   <div class="<%= spacingTop %>"></div>
 
