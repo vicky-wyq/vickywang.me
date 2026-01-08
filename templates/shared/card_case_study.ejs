@@ -1,6 +1,4 @@
 <%
-  cardType     = (typeof cardType !== 'undefined') ? cardType: '';
-
   cardMeta     = (typeof cardMeta !== 'undefined') ? cardMeta: '';
   cardTitle      = (typeof cardTitle !== 'undefined') ? cardTitle: '';
   cardDescription  = (typeof cardDescription !== 'undefined') ? cardDescription: '';
@@ -15,7 +13,7 @@
   ctaType   = (typeof ctaType !== 'undefined') ? ctaType: '';
   ctaName   = (typeof ctaName !== 'undefined') ? ctaName: '';
 
-  withCTA   = (typeof withCTA !== 'undefined') ? withCTA: '';
+  caseURL   = (typeof caseURL !== 'undefined') ? caseURL: '';
   imgURL   = (typeof imgURL !== 'undefined') ? imgURL: '';
 
 
@@ -24,7 +22,7 @@
 
 
 <div class="wrapper">
-  <div class="<%= cardType %>">
+  <div class="card">
     <div class="card__left">
       <p class="card25CardMeta"><%= cardMeta %></p>
       <h2 class="card25CardTitle"><%= cardTitle %></h2>
@@ -35,40 +33,12 @@
 
 
 
-      <div class="<%= withCTA %> card__cta">
-        <!-- Trigger 1 -->
-        <a href="" class="open-modal alignBottom cta" data-modal="modal1">
+      <div class="card__cta">
+        <a href="<%= caseURL %>">
           <button class="buttonMedium <%= ctaType %>"><%= ctaName %></button>
         </a>
-
-        <!-- Modal 1 -->
-        <div id="modal1" class="modal hidden">
-          <span class="modal-close">
-            <img class="iconXforModal" src="../../icon/delete.svg" alt="×">
-          </span>
-          <div class="modal-content wrapperL">
-
-            <div class="column element">
-
-              <div class="containerCopy">
-                <div class="ClickandCopy">Email for access.</div>
-                <div class="copy-text">
-                  <input id="copyEmail" name="copyEmail" type="text" class="text" value="hello.vicky.w@gmail.com" readonly>
-                  <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
-                  </button>
-                </div>
-              </div>
-              <h5 class="textItalic">&#160; &#160; I’ll reply with a link within 24 hours.</h5>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="spacingXSmall displayMobile"></div>
-
-
-
-
-
     </div>
 
     <div class="card__right">

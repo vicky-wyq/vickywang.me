@@ -113,13 +113,13 @@
       spacingBottom:'',
 
     }) %>
-    <%- include(`${templatePath}/shared/card_case_studies`, {
-      cardType:'card',
+    <%- include(`${templatePath}/shared/card_case_study`, {
       cardMeta:'Business Facing Partner Portal • Q3 2025',
       cardTitle:'BabyQuip Inventory Management',
-      cardDescription:'Scaled inventory from hobbyist QPs to power users with a unified editing surface.',
+      cardDescription:'Prevented supply decay by simplifying inventory updates at scale',
       showCardList1:'',
-      cardListContent1:'3× faster edits for high-volume providers',
+      cardListContent1:'',
+      showCardList1:'displayNone',
       cardListContent2:'',
       showCardList2:'displayNone',
       cardListContent3:'',
@@ -127,6 +127,7 @@
       withCTA:'',
       ctaType:'buttonPrimary',
       ctaName:'View Case Study',
+      caseURL:'/bq_b2b_inventory_management',
       imgURL:'/projectImages/cover_bq_inventory_management.png',
 
       }) %>
