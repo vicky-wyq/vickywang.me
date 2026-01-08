@@ -96,6 +96,7 @@
   /* secondary */
   --VW--Yellow300: #fff1cc;
   --VW--Yellow100: #fff9e6;
+  --VW--Yellow50: #fefaed;
 
   --VW--Grey2024: #f8f7f4;
   /* ======================== */
@@ -1068,7 +1069,10 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: var(--VW--Yellow100);
   margin: 0 auto;
 }
-
+.colorBgYellowVW50 {
+  background-color: var(--VW--Yellow50);
+  margin: 0 auto;
+}
 .pattern1 {
   background-image: repeating-linear-gradient(-45deg,
       rgba(204, 204, 204, 0.25),
@@ -2309,8 +2313,7 @@ main>nav {
   color: var(--WS-Blue);
 }
 
-body ul,
-li .rightPanel {
+ul, li.rightPanel {
   font-size: 16px;
   line-height: inherit;
   margin-left: 0;
