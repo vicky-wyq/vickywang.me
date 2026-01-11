@@ -9,23 +9,20 @@
 <!--Head-->
 
 <body class="">
+  <%- include(`${templatePath}/shared/header_back`, {
+  tab1:'Overview',
+  tab1_data_link:'overview',
 
-  <div class="top-glass"></div>
+  tab2:'What Changed',
+  tab2_data_link:'changes',
+
+  tab3:'Results',
+  tab3_data_link:'results',
+
+  }) %>
 
 
-  <header class="top-nav">
-    <a class="backArrow" href="/">&#8592;</a>
-    <div class="headerShadow">
-      <div class="nav-pill" id="navPill">
-        <span class="nav-pill-active" id="navActive"></span>
-        <button class="nav-link is-active" data-link="overview" type="button">Overview</button>
-        <button class="nav-link" data-link="changes" type="button">What Changed</button>
-        <button class="nav-link" data-link="results" type="button">Results</button>
-      </div>
-    </div>
-        <div class="backArrow backArrow--ghost">&#8592;</div>
 
-  </header>
   <section id="overview" data-nav="overview">
 
     <div class="wrapper">
@@ -124,7 +121,7 @@
             <h5 class="fontWeight500">Context</h5>
           </div>
         </div>
-                <div class="Grid-cell">
+        <div class="Grid-cell">
           <div class="element">
             <h5 class="">BabyQuip is a two-sided marketplace with 3,000+ active providers and $20M+ annual GMV, where provider reliability and inventory quality are the primary drivers of customer trust.</h5>
           </div>
@@ -292,9 +289,9 @@
             topNbottomSpacing:''
             }) %>
             <h3><span class=" fontWeight500">Key Changes </span></h4>
-            <h4>Unified inventory surface (replaced multi-screen navigation)</h4>
-            <h4>Persistent filtering + inline actions (removed context loss)</h4>
-            <h4>Surfaced unlisted gear in primary workflow (made adoption default)</h4>
+              <h4>Unified inventory surface (replaced multi-screen navigation)</h4>
+              <h4>Persistent filtering + inline actions (removed context loss)</h4>
+              <h4>Surfaced unlisted gear in primary workflow (made adoption default)</h4>
           </div>
         </div>
       </div>
