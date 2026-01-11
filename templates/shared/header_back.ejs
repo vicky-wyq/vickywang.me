@@ -1,0 +1,30 @@
+  <%
+  tab1 = (typeof tab1 !== 'undefined') ? tab1: '';
+  tab1_data_link = (typeof tab1_data_link !== 'undefined') ? tab1_data_link: '';
+
+
+  tab2 = (typeof tab2 !== 'undefined') ? tab2: '';
+  tab2_data_link = (typeof tab2_data_link !== 'undefined') ? tab2_data_link: '';
+
+  tab3 = (typeof tab3 !== 'undefined') ? tab3: '';
+  tab3_data_link = (typeof tab3_data_link !== 'undefined') ? tab3_data_link: '';
+
+%>
+
+
+  <div class="top-glass"></div>
+  <header class="top-nav">
+    <a class="backArrow" href="/">&#8592;</a>
+    <div class="headerShadow">
+      <div class="nav-pill" id="navPill">
+        <span class="nav-pill-active" id="navActive"></span>
+        <button class="nav-link is-active" data-link="<%= tab1_data_link %>" type="button"><%= tab1 %></button>
+ 
+        <button class="nav-link" data-link="<%= tab2_data_link %>" type="button"><%= tab2 %></button>
+
+
+        <button class="nav-link" data-link="<%= tab3_data_link %>" type="button"><%= tab3 %></button>
+      </div>
+    </div>
+    <div class="backArrow backArrow--ghost">&#8592;</div>
+  </header>
