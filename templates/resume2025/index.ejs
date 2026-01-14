@@ -7,140 +7,159 @@
 <!--Head-->
 
 <body>
-  <%- include( `${templatePath}/shared/comp_progressBar`) %>
+  <%- include(`${templatePath}/shared/header_back`, {
+  tab1:'About',
+  tab1_data_link:'about',
 
-  <%- include(`${templatePath}/shared/block_nav_header_back`, { 
-    PageUrl:`${websitePath}/`, arrTxtColor:``,
-    headerBackgroundColor:`WhiteBg`, sectionURL1:'/#projects', sectionURL2:'/#experiments',
-        sectionURL3:'/#design_system', sectionURL4:'/#about', }) %>
+  tab2:'Experience',
+  tab2_data_link:'experience',
 
-  <div class="wrapper">
-    <div class="blankHXS"></div>
+  tab3:'Education',
+  tab3_data_link:'education',
 
-    <div class="Grid Grid--gutters Grid--full u-textCenter positionFixed">
-      <div class="Grid-cell">
-        <div class="element ">
-          <a href="/resume2025/resume.pdf" target="_blank"> <button class="buttonSmall buttonPrimary bgVWGrey">PDF Resume
-            </button></a>
-          <!--buttonBlack-->
-
-        </div>
-      </div>
-    </div>
-  </div>
+  }) %>
 
 
-  <div class="wrapper">
-    <div class="spacingSmall"></div>
-    <div class="Grid Grid--gutters Grid--full">
-      <div class="Grid-cell">
-        <div class="element">
-          <h1 class="fontWeight400">Vicky (Yiqi) Wang</h1>
-          <h3 class="Grey700 TextPoppins fontWeight200">Senior UX / Product Designer</h3>
-          <div class="spacingSmall"></div>
-          <div class="">
-            <h4 class="fontWeight300 fontWeight400">Marketplace & platform UX for providers and travelers</h4>
-            <h5 class="fontWeight200 ">I design scalable provider tools and high-traffic consumer flows for marketplaces, focusing on system clarity, conversion, and long-term growth.</h5>
+  <section id="about" data-nav="about">
+    <div class="wrapper">
+      <div class="blankHXS"></div>
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter positionFixed">
+        <div class="Grid-cell">
+          <div class="element ">
+            <a href="/resume2025/resume.pdf" target="_blank"> <button class="buttonSmall buttonPrimary bgVWGrey">PDF Resume
+              </button></a>
+            <!--buttonBlack-->
+
           </div>
         </div>
       </div>
-    </div>
-    <div class="Grid Grid--gutters Grid--full">
-      <div class="Grid-cell">
-        <div class="element">
-          <div class="">
-
-            <h5 class="fontWeight300 fontWeight400">Core Focus</h5>
-            <ul class="disc">
-              <li><span class="fontWeight400">Platform & Systems UX:</span> B2B tools, onboarding, inventory, admin systems</li>
-              <li><span class="fontWeight400">Marketplace & Conversion UX:</span> Discovery, cart, checkout, and trip-based flows</li>
-              <li><span class="fontWeight400">Experience Architecture:</span> Cross-surface logic, funnels, and friction reduction</li>
-            </ul>
+      <div class="spacingSmall"></div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Vicky (Yiqi) Wang</h1>
+            <h3 class="Grey700 TextPoppins fontWeight200">Senior UX / Product Designer</h3>
+            <div class="spacingSmall"></div>
+            <div class="">
+              <h4 class="fontWeight300 fontWeight400">Marketplace & platform UX for providers and travelers</h4>
+              <h5 class="fontWeight200 ">I design scalable provider tools and high-traffic consumer flows for marketplaces, focusing on system clarity, conversion, and long-term growth.</h5>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="Grid Grid--gutters Grid--full">
-      <div class="Grid-cell">
-        <div class="element">
-          <h5><span class="fontWeight400">Skills: </span> Platform & marketplace UX · Experience architecture · B2B admin tools · Checkout & funnels · Figma · HTML/EJS/CSS/JS</h5>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="">
+
+              <h5 class="fontWeight300 fontWeight400">Core Focus</h5>
+              <ul class="disc">
+                <li><span class="fontWeight400">Platform & Systems UX:</span> B2B tools, onboarding, inventory, admin systems</li>
+                <li><span class="fontWeight400">Marketplace & Conversion UX:</span> Discovery, cart, checkout, and trip-based flows</li>
+                <li><span class="fontWeight400">Experience Architecture:</span> Cross-surface logic, funnels, and friction reduction</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h5><span class="fontWeight400">Skills: </span> Platform & marketplace UX · Experience architecture · B2B admin tools · Checkout & funnels · Figma · HTML/EJS/CSS/JS</h5>
+          </div>
+        </div>
+      </div>
 
-    <%- include(`${templatePath}/shared/divider25`, {
+    </div>
+  </section>
+  <section id="experience" data-nav="experience">
+
+    <div class="wrapper">
+    <div class="spacingXLarge"></div>
+
+      <%- include(`${templatePath}/shared/divider25`, {
       sectionName:'Experience',
       topSpacing:'',
       bottomSpacing:'',
       topNbottomSpacing:'spacingMedium'
       }) %>
 
-    <div class="Grid Grid--gutters Grid--full">
-      <div class="Grid-cell">
-        <div class="element">
-          <h4><strong>BabyQuip | Senior User Experience Designer </strong></h4>
-          <h6 class="textItalic">Oct 2024 – Present, Full-Time</h6>
-          <div class="spacingXSmall"></div>
-          <ul class="disc">
-            <li>Improved high-traffic consumer rental flows across checkout, item details, maps, filters, and reviews, reducing friction in a marketplace serving ~250K+ monthly active users.</li>
-            <li>Led post-launch enhancements to the gear-first mobile experience, refining discovery, selection, and checkout to better align with real marketplace behavior.</li>
-            <li>Redesigned inventory management tools for providers, reducing task completion time by ~40% and streamlining workflows from 4–5+ actions to 1–2.</li>
-            <li>Designed a standardized package system to support promotions and AOV growth while preserving provider flexibility through build-your-own options.</li>
-            <li>Supported VRBO embedded rental flows by refining entry points, trip-context display, exit affordances, and checkout clarity under tight timelines.</li>
-            <li>Partnered closely with product, engineering, and customer support to ship iterative improvements informed by analytics and provider feedback.</li>
-          </ul>
-        </div>
-        <div class="spacingSmall"></div>
-        <div class="element">
-          <h4><strong>BookYourPet | UX Designer </strong></h4>
-          <h6 class="textItalic">Oct 2021 – Oct 2024, Full-Time</h6>
-          <div class="spacingXSmall"></div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>BabyQuip | Senior User Experience Designer </strong></h4>
+            <h6 class="textItalic">Oct 2024 – Present, Full-Time</h6>
+            <div class="spacingXSmall"></div>
+            <ul class="disc">
+              <li>Improved high-traffic consumer rental flows across checkout, item details, maps, filters, and reviews, reducing friction in a marketplace serving ~250K+ monthly active users.</li>
+              <li>Led post-launch enhancements to the gear-first mobile experience, refining discovery, selection, and checkout to better align with real marketplace behavior.</li>
+              <li>Redesigned inventory management tools for providers, reducing task completion time by ~40% and streamlining workflows from 4–5+ actions to 1–2.</li>
+              <li>Designed a standardized package system to support promotions and AOV growth while preserving provider flexibility through build-your-own options.</li>
+              <li>Supported VRBO embedded rental flows by refining entry points, trip-context display, exit affordances, and checkout clarity under tight timelines.</li>
+              <li>Partnered closely with product, engineering, and customer support to ship iterative improvements informed by analytics and provider feedback.</li>
+            </ul>
+          </div>
+          <div class="spacingSmall"></div>
+          <div class="element">
+            <h4><strong>BookYourPet | UX Designer </strong></h4>
+            <h6 class="textItalic">Oct 2021 – Oct 2024, Full-Time</h6>
+            <div class="spacingXSmall"></div>
 
-          <ul class="disc">
-            <li>Solo UX designer for an end-to-end B2B subscription platform, partnering directly with the CEO and CTO on service setup, scheduling, and booking tools.</li>
-            <li>Designed a configurable system supporting multiple business types (grooming, walking, training), enabling complex services and pricing within a unified booking model.</li>
-            <li>Built and maintained a Figma-based design system and aligned consumer booking flows so availability, add-ons, and time slots stayed consistent across surfaces.</li>
-          </ul>
-          <div class="spacingXSmall"></div>
-        </div>
-        <div class="spacingSmall"></div>
-        <div class="element">
-          <h4><strong>LASO Health | Product Designer </strong></h4>
-          <h6 class="textItalic">Aug 2023 – Jan 2024, Part-Time Contractor</h6>
-          <div class="spacingXSmall"></div>
-          <ul class="disc">
-            <li>Led the 0–1 design of an Admin Panel for user management and sales teams, partnering closely with PMs and developers.</li>
-            <li>Designed and simplified patient-facing flows, including a cost-benefit calculator and key marketing / app journeys, to clarify subscription options and reduce drop-off.</li>
-          </ul>
+            <ul class="disc">
+              <li>Solo UX designer for an end-to-end B2B subscription platform, partnering directly with the CEO and CTO on service setup, scheduling, and booking tools.</li>
+              <li>Designed a configurable system supporting multiple business types (grooming, walking, training), enabling complex services and pricing within a unified booking model.</li>
+              <li>Built and maintained a Figma-based design system and aligned consumer booking flows so availability, add-ons, and time slots stayed consistent across surfaces.</li>
+            </ul>
+            <div class="spacingXSmall"></div>
+          </div>
+          <div class="spacingSmall"></div>
+          <div class="element">
+            <h4><strong>LASO Health | Product Designer </strong></h4>
+            <h6 class="textItalic">Aug 2023 – Jan 2024, Part-Time Contractor</h6>
+            <div class="spacingXSmall"></div>
+            <ul class="disc">
+              <li>Led the 0–1 design of an Admin Panel for user management and sales teams, partnering closely with PMs and developers.</li>
+              <li>Designed and simplified patient-facing flows, including a cost-benefit calculator and key marketing / app journeys, to clarify subscription options and reduce drop-off.</li>
+            </ul>
+          </div>
         </div>
       </div>
+
+
     </div>
-    <%- include(`${templatePath}/shared/divider25`, {
+
+  </section>
+  <section id="education" data-nav="education">
+
+    <div class="wrapper">
+          <div class="spacingXLarge"></div>
+
+      <%- include(`${templatePath}/shared/divider25`, {
       sectionName:'Education',
       topSpacing:'',
       bottomSpacing:'',
       topNbottomSpacing:'spacingMedium'
       }) %>
 
-  <div class="Grid Grid--gutters Grid--full">
-    <div class="Grid-cell">
-      <div class="element">
-        <h4><strong>University of California, Berkeley | Master of Architecture, CED </strong></h4>
-        <h6 class="textItalic">Graduated May 2019</h6>
-        <div class="spacingXSmall"></div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>University of California, Berkeley | Master of Architecture, CED </strong></h4>
+            <h6 class="textItalic">Graduated May 2019</h6>
+            <div class="spacingXSmall"></div>
 
-        <ul class="disc">
-          <li>Focus on systems design, spatial workflows, and constraint-driven problem solving across physical and digital environments.</li>
-        </ul>
+            <ul class="disc">
+              <li>Focus on systems design, spatial workflows, and constraint-driven problem solving across physical and digital environments.</li>
+            </ul>
+          </div>
+
+        </div>
       </div>
-
+      <div class="blankHM"></div>
     </div>
-  </div>
-
-  </div>
-
-  <div class="blankHM"></div>
-
+  </section>
+  <%- include(`${templatePath}/shared/footer25`) %>
 
 </body>
 
