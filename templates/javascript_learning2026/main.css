@@ -1,0 +1,718 @@
+* {
+  border-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: var(--Grey800);
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  height: var(--height100);
+  background-color: var(--GreyHTMLBg);
+}
+
+:root {
+  
+  --li-gap: 0.4em;          /* vertical space between items */
+  --li-lh: 1.5;             /* line-height for items */
+  --li-indent: 1.25em;      /* left padding for bullets/numbers */
+
+  --border-radius: 0.5em;
+
+  --border-radiusXS: 0.25em;
+  --border-radiusS: 0.5em;
+  --border-radiusM: 0.75em;
+  --border-radiusL: 1em;
+  --border-radiusXL: 1.25em;
+  --border-radiusMax: 50%;
+
+  --paddingXS: 6px;
+  --paddingS: 10px;
+  --paddingM: 14px;
+  --paddingL: 18px;
+  --paddingXL: 22px;
+  --paddingMax: 26px;
+
+  --height100: 100%;
+
+  --img-APPOINT: url("./image/Cover_APPOINTA.jpg");
+  --img-SEER: url("./image/Cover_SEER.jpg");
+
+  /* Color */
+  --white: #ffffff;
+  --alert: #a40000;
+  --alertLight: #fdefef;
+  --success: #007b65;
+  --successLight: #eafffb;
+
+  --alertLight: #fdefef;
+  --alert--pink: #eb5757;
+  --Highlight: rgba(255, 242, 0, 0.3);
+  --Grey900: #1b1b1b;
+  /*292929 2c2c2c #161616*/
+
+  --Grey800: #2f2f2f;
+  /* 5f6368 4f4f4f*/
+  --Grey700: #707070;
+  /* #505050 83878a 787878  757575*/
+  --Grey600: #a5a5a5;
+  /* #909090, 999D9F, 8e8787 a7a7a7*/
+  --Grey500: #cacaca;
+  /* #c8c8c8 e0e0e0*/
+  --Grey400: #e6e6e6;
+  /* e4e4e4; e6e6e6*/
+  --Grey300: #efefef;
+  /* efefef, f2f2f2*/
+  --Grey200: #f2f2f2;
+  /* F8F8F8, f2f2f2*/
+  --Grey100: #fafafa;
+
+  --GreyFooter: #faf9f8;
+  --GreyHTMLBg: #fefdfc;
+  /* #296448, 6eacd9, 0762ff,4f3cc9 88c5f0 current green 1b563b*/
+
+  /* ======================== */
+
+  --LASOblueMobile: #4396d8;
+
+  --LASOblue800: #0159a6;
+  --LASOblue700: #016fd0;
+  --LASOblue500: #80b7e8;
+  --LASOblue400: #b2d5f4;
+
+  --LASOblue300: #e6f1fa;
+  --LASOblue200: #f2f8fc;
+  --LASOblue100: #fbfdff;
+
+  /* ======================== */
+
+  --colorTealDker: #228e92;
+  --colorTealDk: #8fbfbf;
+  --colorTealLt: #aad9d9;
+  /*never change    AAD9D9*/
+  /* 368661 projects 296448*/
+  --colorTealLtr: #e6f6f6;
+  --colorTealLtest: #faffff;
+  --Warm: #fcf5eb;
+
+  --AMBlue: #5384ed;
+
+  --WS-Blue: #35b9c5;
+  /* 2AA5F3*/
+  --WS-Teal: #35b9c5;
+  --WS-Teal-Light1: #c8ebee;
+  --WS-Teal-lighter: #d4f1f3;
+  --WS-Teal-light: #f3f4f4;
+  --WS-lightBG: rgba(243, 250, 253, 0.4);
+  /* ======================== */
+  --BYP-Teal800: #019a89;
+  --BYP-Teal700: #02c6b0;
+  --BYP-Teal600: #02dcc3;
+  --BYP-Teal400: #ccf8f3;
+  --BYP-Teal100: #eafcfc;
+  --BYP-Teal-bg: #f5fafa;
+  /* =========== New | Site Wide ============= */
+  --teal800: #2fa097;
+  /* #448686, */
+
+  --teal600: #84bfbf;
+  --teal500: #aad9d9;
+  --teal300: #d0ecea;
+  --teal200: #eff9f8;
+  --teal100: #fafdfd;
+  /* =========== New | Site Wide ============= */
+
+  --seer-purpleDark: #1513a0;
+
+  --seer-purple: #605dec;
+  --seer-purpleLighter: #bcbaf7;
+  --seer-purpleLightest: #f6f6fe;
+  --seer-purpleLightest1: rgba(246, 246, 254, 0.4);
+  --seer-purple--Orange: #fbbf7d;
+  --alpha: 0.8;
+
+  --APPOINTA-blue: #5384ed;
+  --APPOINTA-blueLight: #baccf4;
+
+  --APPOINTA-blueLighter: #e2edfd;
+  --APPOINTA-blueLightest: #f5f8ff;
+  --APPOINTA-yellow: #ffd109;
+
+  --APPOINTA-bg: #f5f8fa;
+  --White-transparent: rgba(255, 255, 255, 0.6);
+  --border: #f0f3fb;
+  --toasttab: #ff4c00;
+  --GardenersHub: #4c665b;
+
+  font-family: "Lato", sans-serif;
+  --GLORIFY-orangeBgLt: #eddacc;
+  --GLORIFY-orange: #efbd66;
+  --GLORIFY-orangeLt: #f5d7a3;
+
+  --GLORIFY-orangeLtest: #fffaf3;
+
+  --GlorifyBlue: #66b3fa;
+  --GlorifyGreen: #79c25a;
+}
+
+body {
+  height: var(--height100);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+/* ========= a link / states =========*/
+
+body a {
+  color: var(--Grey900);
+  cursor: pointer;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  /* Add this line */
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e7a200;
+}
+
+
+.active a {
+  color: var(--Grey900);
+}
+
+.inactive {
+  color: var(--Grey700);
+}
+
+a:link.textUnderline {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 6px;
+  text-decoration-color: var(--Grey900);
+}
+
+a:link.textUnderline:hover {
+  color: #e7a200;
+  text-decoration: underline;
+  /* Ensure underline on hover */
+}
+
+
+.wrapperL {
+  max-width: 660px;
+  margin: auto;
+}
+
+.wrapperM {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================== Font ========================*/
+
+.fontWeight100 {
+  font-weight: 100;
+}
+
+.fontWeight300 {
+  font-weight: 300;
+}
+
+.fontWeight400 {
+  font-weight: 400;
+}
+
+.fontWeight700 {
+  font-weight: 700;
+}
+
+
+
+h1 {
+  font-size: 2.4em;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1.1em;
+  margin-bottom: 0.55em;
+}
+
+h3 {
+  font-size: 1.6em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+h5 {
+  font-size: 1.1em;
+  margin-top: 0.6em;
+  margin-bottom: 0.3em;
+}
+
+h6 {
+  font-size: 0.95em;
+  margin: 0.4em 0;
+}
+
+
+/* Keep bullets unless you explicitly want a "plain" list */
+ul,
+ol {
+  margin: 0 0 1em 0;
+  padding: 0 0 0 var(--li-indent);
+}
+
+/* Vertical rhythm: only add space between siblings, not above/below the list */
+li {
+  line-height: var(--li-lh);
+}
+li + li {
+  margin-block-start: var(--li-gap);
+}
+
+/* Nested lists: slightly tighter and less indent noise */
+li > ul,
+li > ol {
+  margin: 0.3em 0 0.6em 0;
+  padding-left: calc(var(--li-indent) * 0.9);
+}
+
+/* Marker aesthetics (works in modern browsers) */
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+::marker {
+  font-weight: 600;          /* clearer bullets/numbers */
+  color: currentColor;       /* inherits text color; change if you want accent */
+}
+
+/* Optional variants */
+
+/* Plain list, no bullets, for navs or checklists */
+.list-plain {
+  list-style: none;
+  padding-left: 0;
+}
+.list-plain > li::marker { content: ""; }
+
+/* Dashes instead of bullets */
+.list-dash { list-style: none; padding-left: 0; }
+.list-dash > li { position: relative; padding-left: 1em; }
+.list-dash > li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+}
+
+/* Checkmarks (because someone will ask) */
+.list-check { list-style: none; padding-left: 0; }
+.list-check > li { position: relative; padding-left: 1.25em; }
+.list-check > li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  line-height: 1;
+  font-size: 0.9em;
+}
+
+p {
+  font-size: 1rem;     /* predictable and accessible */
+  line-height: 1.6;    /* good for readability */
+  font-weight: 300;    /* your default light body */
+  margin: 0 0 1em;     /* rhythm without extra clutter */
+}
+
+/* lighter than default */
+p.light {
+  font-weight: 200;
+}
+
+/* slightly bolder emphasis */
+p.thick {
+  font-weight: 500;
+}
+
+strong {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  color: var(--Grey900);
+  margin: 1em, 0;
+}
+
+hr {
+  border: none;
+  height: 5em;
+  border-bottom: 1px solid var(--Grey400);
+  width: 100%;
+}
+
+@media all and (max-width: 1260px) {
+  body.wrapper {
+    margin: 0 2em;
+  }
+}
+
+/* Override Prism.js background color */
+:not(pre)>code[class*=language-],
+pre[class*=language-] {
+  background: var(--Grey200) !important;
+  /* Your preferred background color */
+  color: var(--Grey900) !important;
+  /* Your preferred text color */
+}
+
+pre[class*=language-] {
+  width: 100% !important;
+  /* Ensure the width is 100% */
+  padding: 10px;
+  border: 1px solid var(--Grey400);
+  border-radius: 4px;
+  overflow: auto;
+  box-sizing: border-box;
+  /* Include padding and border in width */
+  margin: 0;
+  /* Remove default margin */
+}
+
+code[class*=language-] {
+  font-family: Consolas, "Courier New", monospace;
+  background-color: inherit;
+  /* Ensure background color is inherited */
+  color: inherit;
+  /* Ensure text color is inherited */
+  font-size: 1em;
+  /* Adjust font size */
+}
+
+
+/* ======== margin ========= */
+.marginR {
+  margin-right: 12px;
+}
+
+.noMargin {
+  margin: 0 !important;
+}
+
+.marginXS {
+  margin: 0.5em;
+}
+
+.marginS {
+  margin: 1em;
+}
+
+.marginM {
+  margin: 1.5em;
+}
+
+.marginL {
+  margin: 2em;
+}
+
+.marginXL {
+  margin: 2.5em;
+}
+
+.marginMax {
+  margin: 3em;
+}
+
+/* ======== margin ========= */
+hr {
+  border: none;
+  height: 32px;
+  border-bottom: 1px solid var(--Grey400);
+  width: 100%;
+}
+
+
+
+
+select {
+  margin-right: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+button {
+  font-size: 16px;
+  padding: 16px 26px;
+  font-weight: 400;
+  border-radius: 32px;
+  margin: 12px 0;
+  background-color: var(--Grey300);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--Grey700);
+}
+
+button:disabled {
+  outline: none;
+  color: var(--Grey600);
+  background-color: var(--Grey400);
+}
+.disabledBtn{
+  outline: none;
+  color: var(--Grey600);
+  background-color: var(--Grey400);
+}
+select {
+  margin: 12px;
+  padding: 7.5px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 250px;
+}
+
+select:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+input {
+  margin: 12px 12px 12px 0;
+
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 200px;
+}
+
+input:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+#addButton {
+  background-color: #0077ff;
+  color: #fff;
+  margin: 12px 12px 12px 0;
+
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+/* alignment */
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start !important;
+}
+
+.rowToColumn {
+  display: flex;
+  flex-direction: row;
+}
+
+.align-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.align-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.align-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.align-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.align-left {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.centerHorz {
+  display: flex;
+  justify-content: center;
+}
+
+.centerVer {
+  display: flex;
+  align-items: center;
+}
+
+.centerVH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.centerHorz-spacearound {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* alignment */
+
+/* =================== accTrigger ===================*/
+
+.accContent.is-open-acc {
+  /* dynamic height will be applied inline */
+}
+
+.accContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  padding:8px 32px;
+}
+
+.accTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+
+  background-color: none;
+}
+
+.accItem:hover {
+  background-color: var(--Grey100);
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--Grey200);
+}
+
+.iconAccTrigger {
+  height: 22px;
+  width: 22px;
+  margin: 12px 6px;
+  flex-shrink: 0;
+}
+
+.accIcon {
+  vertical-align: text-top;
+  display: inline-block;
+
+  background-image: url("../icon/plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+}
+
+.accTrigger.is-open-acc .accIcon {
+  background-image: url("../icon/minus.svg");
+  transform: rotate(180deg);
+}
+
+/* =================== accTrigger ===================*/
+
+/* =================== table ===================*/
+
+body table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    /* Makes each element a block */
+  }
+
+  body tr {
+    margin-bottom: 22px;
+    /* Adds spacing between rows */
+  }
+
+  body th,
+  td {
+    box-sizing: border-box;
+    width: 100%;
+    /* Ensures cells take full width */
+  }
+
+  body thead tr {
+    display: none;
+    /* Hides the header row */
+  }
+
+  body td {
+    position: relative;
+    height: 2vh;
+    /* Adjust as needed */
+  }
+
+  body td::before {
+    content: attr(data-label);
+    /* Uses data-label attribute for headings */
+    position: absolute;
+    left: 0;
+    width: 45%;
+    /* Adjust as needed */
+    padding-left: 15px;
+    font-weight: bold;
+  }
+/* =================== table ===================*/
