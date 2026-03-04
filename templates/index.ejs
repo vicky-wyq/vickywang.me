@@ -113,10 +113,10 @@
       spacingBottom:'',
 
     }) %>
-    <%- include(`${templatePath}/shared/card_case_study`, {
+    <!-- <%- include(`${templatePath}/shared/card_case_study`, {
       cardMeta:'Business Facing Partner Portal • Q3 2025',
       cardTitle:'BabyQuip Inventory Management',
-      cardDescription:'Prevented supply decay by simplifying inventory updates at scale',
+      cardDescription:'Identified a supply-risk concentration problem and redesigned the inventory system to reduce update abandonment and operational dependency under peak load',
       showCardList1:'',
       cardListContent1:'',
       showCardList1:'displayNone',
@@ -129,8 +129,23 @@
       ctaName:'View Case Study',
       caseURL:'/bq_b2b_inventory_management',
       imgURL:'/projectImages/cover_bq_inventory_management.png',
+      }) %> -->
+    <%- include(`${templatePath}/shared/card_case_studies`, {
+      cardType:'card',
+      cardMeta:'Business Facing Partner Portal • Q3 2025',
+      cardTitle:'BabyQuip Inventory Management',
+      cardDescription:'Identified a supply-risk concentration problem and redesigned the inventory system to reduce update abandonment and operational dependency under peak load',
+      cardListContent1:'',
+      showCardList1:'displayNone',
+      showCardList2:'displayNone',
+      showCardList3:'displayNone',
+      withCTA:'',
+      ctaType:'buttonPrimary',
+      ctaName:'View Case Study',
+      imgURL:'/projectImages/cover_bq_gear_first.png',
 
       }) %>
+
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
@@ -144,7 +159,7 @@
       withCTA:'',
       ctaType:'buttonPrimary',
       ctaName:'View Case Study',
-            imgURL:'/projectImages/cover_bq_gear_first.png',
+      imgURL:'/projectImages/cover_bq_gear_first.png',
 
       }) %>
     <div class="spacingLarge"></div>
@@ -418,9 +433,8 @@
 
   </section>
 
-  <%- include(`${templatePath}/shared/footer25`) %>
-
-    <%- include(`${templatePath}/shared/imgModal`) %>
+  <%- include(`${templatePath}/shared/footer`) %>
+  <%- include(`${templatePath}/shared/imgModal`) %>
 
 </body>
 
