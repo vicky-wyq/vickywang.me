@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, {SEO:true, Title:'Workhub', 
+<%- include(`${templatePath}/shared/head`, {SEO:false, Title:'Product Designer | Vicky W.', 
   description:'UX designer focused on system clarity, scalable flows, and meaningful product impact—across both B2B platforms and consumer journeys.', 
   pageURL:'card25', thumbnailImgURL: 'vickywang.svg'
   }) %>
@@ -59,6 +59,37 @@
         </div>
       </div>
 
+
+      <div class="wrapper">
+        <div class="Grid Grid--full Grid--gutter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight300 fontWeight400"> My working principles
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="Grid Grid--gutters Grid--cols-3">
+          <div class="Grid-cell">
+            <h5 class="marginRight">Start from constraints, not ideas
+            </h5>
+          </div>
+          <div class="Grid-cell">
+            <h5 class="marginRight"> Collapse systems before polishing flows
+            </h5>
+          </div>
+          <div class="Grid-cell marginRight">
+            <h5 class="marginRight"> Measure success by reduced friction, not feature count
+            </h5>
+          </div>
+
+        </div>
+        <div class="spacingSmall"></div>
+
+      </div>
+
+
+
     </div>
     <%- include(`${templatePath}/shared/divider25`, {
       sectionName:'Case Studies',
@@ -79,23 +110,28 @@
       </div>
     </div>
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_case_studies`, {
-      cardType:'card',
-      cardMeta:'Business Facing Partner Portal • Q3 2025',
-      cardTitle:'BabyQuip Inventory Management',
-      cardDescription:'Scaled inventory from hobbyist QPs to power users with a unified editing surface.',
-      showCardList1:'',
-      cardListContent1:'→ 3× faster edits for high-volume providers',
-      cardListContent2:'',
-      cardListContent3:'',
-      showCardList2:'displayNone',
-      showCardList3:'displayNone',
-      withCTA:'',
-      ctaType:'buttonPrimary',
-      ctaName:'View Case Study',
-      imgURL:'/projectImages/cover_bq_inventory_management.png',
+    <div class="wrapper">
+    <div class="card">
+      <div class="card__left">
+        <p class="card25CardMeta">Business Facing Partner Portal • Q3 2025</p>
+        <h2 class="card25CardTitle">BabyQuip Inventory Management</h2>
+        <h5 class="card25CardDescription">Identified a supply-risk concentration problem and redesigned the inventory system to reduce update abandonment and operational dependency under peak load</h5>
+        <h5 class="card25CardList">3× faster edits for high-volume providers</h5>
+        <div class="card__cta">
+          <a href="/bq_b2b_inventory_management">
+            <button class="buttonMedium buttonPrimary">View Case Study</button>
+          </a>
+        </div>
+        <div class="spacingXSmall displayMobile"></div>
+      </div>
 
-      }) %>
+      <div class="card__right">
+        <div class="card25-media">
+          <img src="/projectImages/cover_bq_inventory_management.png" alt="project image" class="card25-media-img">
+        </div>
+      </div>
+    </div></div>
+
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/card_case_studies`, {
       cardType:'card',
