@@ -2676,6 +2676,19 @@ section .padding {
   font-size: clamp(1.3em, 1.46vw, 1.68em);
 }
 
+.specialDS {
+  font-family: "lato", sans-serif;
+  font-weight: 100;
+  font-size: clamp(1.6em, 1.86vw, 2.8em);
+  margin: clamp(1.6em, 8vw, 4em);
+  
+
+}
+.bgTransWhite{
+        background-color: var(--White-transparent);
+
+}
+
 /* =========== Font Weights =========== */
 .chip {
   font-size: clamp(0.6em, 0.8vw, 0.9em);
@@ -5416,8 +5429,8 @@ body .flex-container.Mobile {
 }
 
 .photoWrappercard25 {
-  width: 2.6em;
-  height: 2.6em;
+  width: 3.6em;
+  height: 3.6em;
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
