@@ -1,0 +1,32 @@
+<% if (typeof ctaButton === 'undefined') { 
+  ctaButton = ''; 
+} %>
+
+
+<div class="card__cta">
+  <!-- Trigger 1 -->
+  <a href="" class="open-modal alignBottom cta" data-modal="modal1">
+    <button class="buttonMedium <%= ctaButton %>">View Case Study</button>
+  </a>
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal hidden">
+    <span class="modal-close">
+      <img class="iconXforModal" src="../../icon/delete.svg" alt="×">
+    </span>
+    <div class="modal-content wrapperL">
+
+      <div class="column element">
+
+        <div class="containerCopy">
+          <div class="ClickandCopy">Email for access.</div>
+          <div class="copy-text">
+            <input id="copyEmail" name="copyEmail" type="text" class="text" value="hello.vicky.w@gmail.com" readonly="">
+            <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
+            </button>
+          </div>
+        </div>
+        <h5 class="textItalic">&nbsp; &nbsp; I’ll reply with a link within 24 hours.</h5>
+      </div>
+    </div>
+  </div>
+</div>
