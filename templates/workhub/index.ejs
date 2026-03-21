@@ -17,80 +17,76 @@
       <button class="nav-link" data-link="contact" type="button">Contact</button>
     </div>
   </header>
+  <div class="spacingXLarge"></div>
 
-  <div class="spacingMedium"></div>
+  <div class="spacingXLarge"></div>
+  <div class="wrapper">
+    <div class="Grid Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <div class="rowcard25 centerVer">
+            <div class="photoWrappercard25">
+              <img class="landingProfileImg" src="photo_profile_avatar.png" alt="vicky">
+            </div>
+            <div class="chat-bubble-wrap">
+              <div class="card25Chat chat-bubble">
+                <span class="typing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </span>
+                <span class="bubble-text"></span>
+              </div>
+            </div>
+          </div>
+          <div class="spacingXSmall"></div>
+          <h1 class="card25LandingTitle"> Marketplace & platform UX for providers and travelers
+          </h1>
+          <h3 class="fontWeight300">I design scalable provider tools and high-traffic consumer flows for marketplaces, reducing operational friction and increasing booking conversion.
+          </h3>
+        </div>
 
-
-  <section id="casestudies" data-nav="casestudies">
-    <div class="spacingXLarge"></div>
-    <div class="spacingLarge"></div>
-
+      </div>
+    </div>
+    <div class="Grid Grid--full Grid--gutter">
+      <div class="element">
+        <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <div class="rowcard25 centerVer">
-              <div class="photoWrappercard25">
-                <img class="landingProfileImg" src="photo_profile_avatar.png" alt="vicky">
-              </div>
-              <div class="chat-bubble-wrap">
-                <div class="card25Chat chat-bubble">
-                  <span class="typing">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </span>
-                  <span class="bubble-text"></span>
-                </div>
-              </div>
-            </div>
-            <div class="spacingXSmall"></div>
-            <h1 class="card25LandingTitle"> Marketplace & platform UX for providers and travelers
-            </h1>
-            <h3 class="fontWeight300">I design scalable provider tools and high-traffic consumer flows for marketplaces, reducing operational friction and increasing booking conversion.
-            </h3>
+            <h4 class="fontWeight300 fontWeight400"> My working principles
+            </h4>
           </div>
-
         </div>
       </div>
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="element">
-          <a href="/resume2025"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell">
+          <h5 class="marginRight">Start from constraints, not ideas
+          </h5>
         </div>
-      </div>
-
-
-      <div class="wrapper">
-        <div class="Grid Grid--full Grid--gutter">
-          <div class="Grid-cell">
-            <div class="element">
-              <h4 class="fontWeight300 fontWeight400"> My working principles
-              </h4>
-            </div>
-          </div>
+        <div class="Grid-cell">
+          <h5 class="marginRight"> Collapse systems before polishing flows
+          </h5>
         </div>
-        <div class="Grid Grid--gutters Grid--cols-3">
-          <div class="Grid-cell">
-            <h5 class="marginRight">Start from constraints, not ideas
-            </h5>
-          </div>
-          <div class="Grid-cell">
-            <h5 class="marginRight"> Collapse systems before polishing flows
-            </h5>
-          </div>
-          <div class="Grid-cell marginRight">
-            <h5 class="marginRight"> Measure success by reduced friction, not feature count
-            </h5>
-          </div>
-
+        <div class="Grid-cell marginRight">
+          <h5 class="marginRight"> Measure success by reduced friction, not feature count
+          </h5>
         </div>
-        <div class="spacingLarge"></div>
 
       </div>
-
 
 
     </div>
+  </div>
+
+  
+  <section id="casestudies" data-nav="casestudies">
+
+    <div class="spacingLarge"></div>
+
     <%- include(`${templatePath}/shared/divider25`, {
       sectionName:'Case Studies',
       topSpacing:'spacingMedium',
@@ -100,7 +96,29 @@
 
 
 
+    <div class="wrapper">
+      <div class="card">
+        <div class="card__left">
+          <p class="card25CardMeta">Consumer Facing • Q1 2026</p>
+          <h2 class="card25CardTitle">VRBO embedded experience (traffic drop → redesign)</h2>
+          <h5 class="card25CardDescription">Cross-platform funnel optimization under constraint, fixing conversion leakage in a partner-controlled surface</h5>
+          <h5 class="card25CardList">Reduce up funnel drop off, increase checkout conversion</h5>
+          <div class="card__cta">
+            <a href="/bq_b2b_inventory_management">
+              <button class="buttonMedium buttonPrimary">View Case Study</button>
+            </a>
+          </div>
+          <div class="spacingXSmall displayMobile"></div>
+        </div>
 
+        <div class="card__right">
+          <div class="card25-media">
+            <img src="/projectImages/cover_bq_inventory_management.png" alt="project image" class="card25-media-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingLarge"></div>
 
     <div class="spacingLarge"></div>
     <div class="wrapper">
@@ -127,46 +145,62 @@
     </div>
 
     <div class="spacingLarge"></div>
+
     <div class="wrapper">
       <div class="card">
         <div class="card__left">
-          <p class="card25CardMeta">Consumer Facing • Q1 2026</p>
-          <h2 class="card25CardTitle">VRBO</h2>
-          <h5 class="card25CardDescription">...</h5>
-          <h5 class="card25CardList">...</h5>
-          <div class="card__cta">
-            <a href="/bq_b2b_inventory_management">
+          <p class="card25CardMeta">Business-Facing • Q3 2025 (launch in progress)</p>
+          <h2 class="card25CardTitle">BabyQuip Package System for Growth</h2>
+          <h5 class="card25CardDescription">Introduced a standardized package system that enables marketing-led promotions and higher AOV, while preserving provider flexibility for custom offerings.</h5>
+          <h5 class="card25CardList displayNone"></h5>
+          <h5 class="card25CardList displayNone"></h5>
+          <h5 class="card25CardList displayNone"></h5>
+
+
+
+          <div class=" card__cta">
+            <!-- Trigger 1 -->
+            <a href="" class="open-modal alignBottom cta" data-modal="modal1">
               <button class="buttonMedium buttonPrimary">View Case Study</button>
             </a>
+
+            <!-- Modal 1 -->
+            <div id="modal1" class="modal hidden">
+              <span class="modal-close">
+                <img class="iconXforModal" src="../../icon/delete.svg" alt="×">
+              </span>
+              <div class="modal-content wrapperL">
+
+                <div class="column element">
+
+                  <div class="containerCopy">
+                    <div class="ClickandCopy">Email for access.</div>
+                    <div class="copy-text">
+                      <input id="copyEmail" name="copyEmail" type="text" class="text" value="hello.vicky.w@gmail.com" readonly="">
+                      <button class="centerHorz"> <img class="iconS" src="../icon/copyWt.svg">
+                      </button>
+                    </div>
+                  </div>
+                  <h5 class="textItalic">&nbsp; &nbsp; I’ll reply with a link within 24 hours.</h5>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="spacingXSmall displayMobile"></div>
+
+
+
+
+
         </div>
 
         <div class="card__right">
           <div class="card25-media">
-            <img src="/projectImages/cover_bq_inventory_management.png" alt="project image" class="card25-media-img">
+            <img src="/projectImages/cover_bq_package.png" alt="project image" class="card25-media-img">
           </div>
         </div>
       </div>
     </div>
-    <div class="spacingLarge"></div>
-
-    <%- include(`${templatePath}/shared/card_case_studies`, {
-      cardType:'card',
-      cardMeta:'Business-Facing • Q3 2025 (launch in progress)',
-      cardTitle:'BabyQuip Package System for Growth',
-      cardDescription:'Introduced a standardized package system that enables marketing-led promotions and higher AOV, while preserving provider flexibility for custom offerings.',
-      cardListContent1:'',
-      showCardList1:'displayNone',
-      showCardList2:'displayNone',
-      showCardList3:'displayNone',
-      withCTA:'',
-      ctaType:'buttonPrimary',
-      ctaName:'View Case Study',
-      imgURL:'/projectImages/cover_bq_package.png',
-
-
-      }) %>
 
     <div class="spacingLarge"></div>
 
@@ -188,21 +222,21 @@
         </div>
       </div>
     </div>
-    <div class="spacingXLarge"></div>
-
-
-
-
+            <div class="spacingLarge"></div>
 
   </section>
-  <div class="spacingLarge"></div>
 
 
   <section id="explorations" data-nav="explorations">
-    <%- include(`${templatePath}/shared/divider25`, {sectionName:'Explorations'}) %>
-    <div class="wrapper">
-      <div class=""></div>
+        <div class="spacingLarge"></div>
 
+    <%- include(`${templatePath}/shared/divider25`, {
+      sectionName:'Explorations',
+      topSpacing:'spacingMedium',
+      bottomSpacing:'spacingXLarge',
+      topNbottomSpacing:''
+      }) %>
+    <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
@@ -230,22 +264,27 @@
       </div>
 
 
-             <div class="Grid Grid--full Grid--gutter">
+      <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell u-textCenter">
           <div class="element">
-   <a href="/design_system/"> <button class="buttonMedium buttonFlip">View Design System</button>
+            <a href="/design_system/"> <button class="buttonMedium buttonFlip">View Design System</button>
             </a>
           </div>
         </div>
-      </div>     
+      </div>
 
     </div>
-
   </section>
 
   <section id="contact" data-nav="contact">
-    <%- include(`${templatePath}/shared/divider25`, {sectionName:'Contact'}) %>
+    <div class="spacingLarge"></div>
 
+    <%- include(`${templatePath}/shared/divider25`, {
+      sectionName:'Contact',
+            topSpacing:'spacingMedium',
+      bottomSpacing:'spacingXLarge',
+      topNbottomSpacing:''
+      }) %>
     <div class="wrapper">
       <div class="Grid Grid--full Grid--gutter">
         <div class="Grid-cell">
