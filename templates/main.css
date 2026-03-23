@@ -3592,6 +3592,10 @@ button.passwordArr {
 }
 
 @media all and (max-width: 1380px) {
+  body .card25LandingTitle {
+  font-size: 48px;
+}
+
   body .paddingXL {
     padding: var(--paddingL);
   }
@@ -4712,6 +4716,9 @@ body .flex-container.Mobile {
 /*head tool bar scroll*/
 
 @media screen and (max-width: 480px) {
+body .card25LandingTitle {
+  font-size: 36px;
+}
 
   body .top-glass {
     height: 53px;
