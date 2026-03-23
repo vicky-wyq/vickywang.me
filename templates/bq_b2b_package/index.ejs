@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`BabyQuip Package System for Growth`,
+  description:'Enhancing the Consumer Booking Experience', pageURL:'bq_b2b_inventory_management/',
+  thumbnailImgURL: 'vickywang_web.png' }) %>
+<!--Head-->
+
+<body class="">
+  <%- include(`${templatePath}/shared/header_back`, {
+  tab1:'Overview',
+  tab1_data_link:'overview',
+
+  tab2:'What Changed',
+  tab2_data_link:'changes',
+
+  tab3:'Results',
+  tab3_data_link:'results',
+
+  }) %>
+
+
+
+  <section id="overview" data-nav="overview">
+    <div class="wrapper">
+      <div class="blankHXS"></div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
+            <h1 class="fontWeight500">BabyQuip Package System for Growth</h1>
+            <h4 class="fontWeight300">Reworked inventory management to reduce supply decay and protect high-value providers by making updates fast, visible, and maintainable at scale.</h4>
+          </div>
+        </div>
+      </div>
+      <div class="spacingMedium"></div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-2 u-textCenter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="spacingSmall"></div>
+
+            <img src="bq_b2b_inventory_management_diagram__before.svg" alt="Legacy inventory UX diagram">
+            <div class="spacingSmall"></div>
+            <h6 class="textItalic">Legacy Flow: <span class="fontWeight500">Navigation-based edits</span></h6>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="spacingSmall"></div>
+
+            <img src="bq_b2b_inventory_management_diagram_after.svg" alt="Redesigned inventory UX diagram">
+            <div class="spacingSmall"></div>
+            <h6 class="textItalic">New Flow: <span class="fontWeight500">unified, filter-based control</span></h6>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight300">As BabyQuip scaled, inventory management broke down: high-volume providers couldn’t efficiently maintain listings, unlisted gear blocked category growth, and fragmented workflows caused updates to be abandoned during peak demand. I replaced navigation-heavy, category-siloed tools with a unified inventory surface that made all gear, categories, and packages visible in one place, using persistent filters and inline actions. This removed context loss, reduced update friction for power providers who manage nearly half of platform supply, improved inventory completeness, and lowered ongoing support and operational overhead as the catalog expanded.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingLarge"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight500">Increased active supply by reducing update friction</h4>
+            <h5>Enabled providers to keep listings complete during peak season, preventing supply decay and increasing bookable inventory across categories.</h5>
+            <div class="spacingXSmall"></div>
+
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight500">Protected high-value providers from operational churn</h4>
+            <h5>Removed workflow bottlenecks for power QPs who manage a disproportionate share of supply, reducing update abandonment during peak demand.</h5>
+            <div class="spacingXSmall"></div>
+
+
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight500">Reduced internal cost of maintaining inventory quality</h4>
+            <h5>A unified inventory structure simplified workflows and edge cases, lowering support load, QA cycles, and training overhead as the catalog scaled.</h5>
+            <div class="spacingXSmall"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacingMedium"></div>
+
+      <hr>
+      <div class="spacingXSmall"></div>
+    </div>
+
+
+
+    <div class="wrapper">
+
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="fontWeight500">Context</h5>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="">BabyQuip is a two-sided marketplace with 3,000+ active providers and $20M+ annual GMV, where provider reliability and inventory quality are the primary drivers of customer trust.</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="textItalic">Role: <span class="fontWeight500">Lead UX</span></h5>
+          </div>
+        </div>
+        <div class=" Grid-cell">
+          <div class="element">
+            <h5 class="textItalic">Scope: <span class="fontWeight500">Gear listing &amp; storefront control</span></h5>
+          </div>
+        </div>
+        <div class=" Grid-cell">
+          <div class="element">
+            <h5 class="textItalic">Stakeholders <span class="fontWeight500"><a class="textUnderline fontWeight500" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight500" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="spacingXLarge"></div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <section id="changes" data-nav="changes">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Problem & Insight',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+            <h2 class="fontWeight500">Problem</h2>
+            <h4>1. Power QPs couldn’t efficiently manage inventory → updates abandoned → supply quality decayed during peak demand.</h4>
+            <h4>2. Unlisted gear wasn’t discoverable → new categories underutilized → growth blocked.</h4>
+            <div class="spacingMedium"></div>
+
+            <div class="element GreyBg100 borderRadiusS textItalic">
+              <h6>The initial request was to add an “Unlisted Gear” tab. Instead, I proposed a structural redesign—addressing both underutilized categories (missed growth) and inefficiency for high-volume QPs (lost retention).</h6>
+            </div>
+          </div>
+          <div class="spacingMedium"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+
+            <h2><span class=" fontWeight500">Insight </span></h2>
+
+            <h4>A small group of high-volume providers controls a disproportionate share of supply, but the system was optimized for low-volume workflows.</h4>
+
+            <div class="spacingXSmall"></div>
+
+
+            <h4>Required 4–5 clicks per edit, no filters/unified view</h4>
+            <div class="spacingXSmall"></div>
+
+            <h4>Top 10% of QPs = 46.3% of supply</h4>
+            <div class="spacingXSmall"></div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th class="fontWeight400">% of QPs</th>
+                  <th class="fontWeight400"># of QPs</th>
+                  <th class="fontWeight400">% of Supply Index</th>
+                  <th class="fontWeight400">What It Means</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="colorBgYellowVW300">
+                  <td class="fontWeight400">Top 10%</td>
+                  <td>559</td>
+                  <td>46.3%</td>
+                  <td>High-volume QPs managing the most complete listings</td>
+                </tr>
+                <tr>
+                  <td class="fontWeight400">Next 20%</td>
+                  <td>1,117</td>
+                  <td>31.7%</td>
+                  <td>Mid-tier QPs, active but less comprehensive</td>
+                </tr>
+                <tr>
+                  <td class="fontWeight400">Remaining 70%</td>
+                  <td>3,913</td>
+                  <td>21.9%</td>
+                  <td>Smaller catalogs or lower platform engagement</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="spacingMedium"></div>
+            <h3 class="leftVerLine2025 textItalic">“I just don’t update my listings during peak season, it takes too long to find and edit everything.”</h3>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Before / After',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+            <h2 class="fontWeight500">Before/After</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <img class="modal-target card2025" src="flow_im_before.png" alt="">
+          <h4><span class="fontWeight400">Before:</span> Fragmented, navigation-driven updates that reset context</h4>
+
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2025" src="flow_im_after.png" alt="">
+            <h4><span class="fontWeight400">After:</span> Unified inventory with persistent filters and inline actions</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+
+  </section>
+
+  <section id="changes" data-nav="changes">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Key Changes',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+            <h3><span class=" fontWeight500">Key Changes </span></h4>
+              <h4>Unified inventory surface (replaced multi-screen navigation)</h4>
+              <h4>Persistent filtering + inline actions (removed context loss)</h4>
+              <h4>Surfaced unlisted gear in primary workflow (made adoption default)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+
+    <div class="wrapper">
+      <div class="TBcarousel Grid--center Grid Grid--gutters Grid--full u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
+        <div class="TBslides">
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_one_unified_view.gif" alt="1 unified view">
+            </div>
+          </div>
+          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_persistent_filters.gif" alt="Persistent filters">
+            </div>
+          </div>
+          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_inline_editing.gif" alt="Inline editing">
+            </div>
+          </div>
+        </div>
+        <div class="blankHXXS"></div>
+
+        <div class="TBcarouselNav Grid-cell flipBtn">
+          <a class="TBsliderNav" aria-label="Go to slide 1" tabindex="0">
+            <div>1 unified view</div>
+          </a>
+          <a class="TBsliderNav active" aria-label="Go to slide 2" tabindex="0">
+            <div>Persistent filters</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 3" tabindex="0">
+            <div>Inline editing</div>
+          </a>
+        </div>
+        <div class="blankHXXS"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="results" data-nav="results">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Results',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+            <h3 class="fontWeight500">Results</h3>
+            <h3 class="fontWeight400">Sustained inventory quality during peak demand</h3>
+            <h5>A unified, flat inventory surface made missing, outdated, or miscategorized gear immediately visible, enabling providers to maintain complete listings without abandoning updates during peak season.</h5>
+
+            <h3 class="fontWeight400">Faster, self-sufficient inventory management</h3>
+            <h5>Persistent filters and inline actions eliminated navigation resets, allowing providers to scan, filter, and update inventory across categories without manual support or training.</h5>
+
+            <h3 class="fontWeight400">Clear mental model between inventory and storefront</h3>
+            <h5>Aligning the Partner Portal with the QP shop helped providers understand how gear, categories, and packages appear to customers—reducing confusion and misconfiguration.</h5>
+
+            <h3 class="fontWeight400">Reduced operational dependency as the catalog scaled</h3>
+            <h5>By removing fragmented flows and “start-over” moments, inventory updates no longer required human intervention, lowering support load and QA effort as supply expanded.</h5>
+            <div class="spacingMedium"></div>
+
+            <h3 class="leftVerLine2025 textItalic">“What once took 7 screens and 3 reloads now takes 30 seconds on a single page.”</h3>
+            <div class="spacingMedium"></div>
+
+            <div class="element GreyBg100 borderRadiusS textItalic">
+              <h6>Internal estimates suggested faster edit times and reduced QA effort following the redesign.</h6>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Case study ends -->
+  <div class="blankHS"></div>
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/footer`) %>
+  <%- include(`${templatePath}/shared/imgModal`) %>
+
+
+  <!-- Shared across the platform -->
+</body>
+
+</html>
