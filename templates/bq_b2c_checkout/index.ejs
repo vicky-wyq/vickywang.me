@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-          <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell">
           <div class="element">
             <h5 class="">Role: <span class="fontWeight400">Lead UX</span></h5>
@@ -50,7 +50,7 @@
         </div>
         <div class=" Grid-cell">
           <div class="element">
-            <h4 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h4>
+            <h5 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h5>
           </div>
         </div>
       </div>
@@ -89,16 +89,48 @@
             <h1 class="fontWeight400">Identify the issue (GA4 & HotJar)</h1>
 
             <h4>ga4, landing and shopping complete rate is low, after that drop off rate is very little, very little user drop during checkout, so the problem mainly happen in the top funnels/early exploration(entry/landing, shopping, select a qp) </h4>
+          </div>
+        </div>
+      </div>
 
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2026" src="ga4_Cross-PlatformComparison.png" alt="">
+            <h6>Cross-Platform Comparison</h6>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2026" src="ga4_DetailedBreakdown.png" alt="">
+            <h6>Detailed UX Breakdown</h6>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2026" src="ga4_MobileAppCompletion.png" alt="">
+            <h6><span class="fontWeight400">Mobile App Completion</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3 class="fontWeight400">1. Checkout conversion (web vs mobile web)</h3>
+            <h4>👉 From funnel:</h4>
+            <h5><span> Web: </span>~84% completion from begin_checkout → purchase </h5>
+            <h5><span> Mobile web:</span> ~46% completion </h5>
 
           </div>
         </div>
       </div>
     </div>
-    </div>
 
     <div class="spacingMedium"></div>
-
   </section>
 
   <section id="changes" data-nav="changes">
@@ -113,7 +145,20 @@
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
+            <div class="Grid Grid--gutters Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Before / After',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
 
+                </div>
+              </div>
+            </div>
             <h1 class="fontWeight400">Key Changes</h1>
             <h4 class="fontWeight400">1. Restore orientation at entry</h4>
             <h5>Improved navigation behavior, spacing, and landing consistency to help users understand where they are, what they’re browsing, and how their VRBO context (e.g., address) carries over.</h5>
@@ -137,37 +182,7 @@
       </div>
     </div>
     <div class="spacingMedium"></div>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <div class="blankHXXS"></div>
-            <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Before / After',
-            topSpacing:'spacingMedium',
-            bottomSpacing:'spacingXLarge',
-            topNbottomSpacing:''
-            }) %>
-            <h2 class="fontWeight500">Before/After</h2>
 
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--cols-2">
-        <div class="Grid-cell">
-          <img class="modal-target card2025" src="flow_im_before.png" alt="">
-          <h4><span class="fontWeight400">Before:</span> Fragmented, navigation-driven updates that reset context</h4>
-
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2025" src="flow_im_after.png" alt="">
-            <h4><span class="fontWeight400">After:</span> Unified inventory with persistent filters and inline actions</h4>
-
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="wrapper">
       <div class="TBcarousel Grid--center Grid Grid--gutters Grid--full u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
         <div class="TBslides">
@@ -221,7 +236,7 @@
             <h1 class="fontWeight400">Impact</h1>
 
             <h3 class="">Reduced early-stage confusion and enabled users to progress into the booking flow despite incomplete information, improving conversion in a constrained in-app browser environment.</h3>
-            
+
 
           </div>
 
