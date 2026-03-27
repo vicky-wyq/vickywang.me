@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Checkout
+`,
+  description:'Optimize VRBO Embedded Experience', pageURL:'bq_b2c_vrbo/',
+  thumbnailImgURL: 'vickywang_web.png' }) %>
+<!--Head-->
+
+<body class="">
+  <%- include(`${templatePath}/shared/header_back`, {
+  tab1:'Problem',
+  tab1_data_link:'overview',
+
+  tab2:'Design',
+  tab2_data_link:'changes',
+
+  tab3:'Impact',
+  tab3_data_link:'results',
+  }) %>
+
+
+
+  <section id="overview" data-nav="overview">
+    <div class="wrapper">
+      <div class="blankHXS"></div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
+            <h6>Two-sided marketplace (3,000+ providers, $20M+ GMV)</h6>
+            <div class="spacingMedium"></div>
+
+            <h1 class="titleCaseStudy">Rethinking Checkout Under Marketplace Constraints</h1>
+            <h4 class="fontWeight300">Simplified the flow to support ongoing decision-making and reduce mobile friction.</h4>
+          </div>
+        </div>
+      </div>
+          <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="">Role: <span class="fontWeight400">Lead UX</span></h5>
+          </div>
+        </div>
+        <div class=" Grid-cell">
+          <div class="element">
+            <h5 class="">Scope: <span class="fontWeight400">Gear listing &amp; storefront control</span></h5>
+          </div>
+        </div>
+        <div class=" Grid-cell">
+          <div class="element">
+            <h4 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="changes" data-nav="changes">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Problem & Insight',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+            <h1 class="fontWeight400">Problem</h1>
+            <h4>Checkout is treated as a final step, but user behavior remains non-linear and decision-driven. Users continue adjusting key inputs during checkout, while the system assumes a stable, ready-to-complete state—leading to friction, confusion, and drop-off.</h4>
+
+          </div>
+          <div class="spacingMedium"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+
+            <h1 class="fontWeight400">Identify the issue (GA4 & HotJar)</h1>
+
+            <h4>ga4, landing and shopping complete rate is low, after that drop off rate is very little, very little user drop during checkout, so the problem mainly happen in the top funnels/early exploration(entry/landing, shopping, select a qp) </h4>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="spacingMedium"></div>
+
+  </section>
+
+  <section id="changes" data-nav="changes">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Design',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+
+            <h1 class="fontWeight400">Key Changes</h1>
+            <h4 class="fontWeight400">1. Restore orientation at entry</h4>
+            <h5>Improved navigation behavior, spacing, and landing consistency to help users understand where they are, what they’re browsing, and how their VRBO context (e.g., address) carries over.</h5>
+            <h4 class="fontWeight400">2. Delay unreliable evaluation</h4>
+            <h5>Reduced emphasis on early item exploration and simplified add-to-cart interactions, acknowledging that pricing and availability are placeholders before provider selection.</h5>
+
+            <h4 class="fontWeight400">3. Restructure decision flow</h4>
+            <h5>Moved meaningful comparison and decision-making to the QP selection and checkout stages, with clearer navigation and simplified order summary to support conversion.</h5>
+
+            <div class="spacingMedium"></div>
+
+            <h4 class="fontWeight400">What didn’t change </h4>
+            <h5>because we need to quickly launch the version to fix current lossing traffic, for sucondary flow and big flow change, we will do it in the future iteration, but we do found these issues</h5>
+            <div class="spacingXSmall"></div>
+
+            <div class="element GreyBg100 borderRadiusS textItalic">
+              <h5><span class="fontWeight400">Core unresolved issue:</span> Provider selection remains a dependency for accurate pricing and availability.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Before / After',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+            <h2 class="fontWeight500">Before/After</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <img class="modal-target card2025" src="flow_im_before.png" alt="">
+          <h4><span class="fontWeight400">Before:</span> Fragmented, navigation-driven updates that reset context</h4>
+
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2025" src="flow_im_after.png" alt="">
+            <h4><span class="fontWeight400">After:</span> Unified inventory with persistent filters and inline actions</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="TBcarousel Grid--center Grid Grid--gutters Grid--full u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
+        <div class="TBslides">
+          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_one_unified_view.gif" alt="1 unified view">
+            </div>
+          </div>
+          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_persistent_filters.gif" alt="Persistent filters">
+            </div>
+          </div>
+          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
+            <div class="crop_mockup">
+              <img src="after_inline_editing.gif" alt="Inline editing">
+            </div>
+          </div>
+        </div>
+        <div class="blankHXXS"></div>
+
+        <div class="TBcarouselNav Grid-cell flipBtn">
+          <a class="TBsliderNav" aria-label="Go to slide 1" tabindex="0">
+            <div>1 unified view</div>
+          </a>
+          <a class="TBsliderNav active" aria-label="Go to slide 2" tabindex="0">
+            <div>Persistent filters</div>
+          </a>
+          <a class="TBsliderNav" aria-label="Go to slide 3" tabindex="0">
+            <div>Inline editing</div>
+          </a>
+        </div>
+        <div class="blankHXXS"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="results" data-nav="results">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Results',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+            <h1 class="fontWeight400">Impact</h1>
+
+            <h3 class="">Reduced early-stage confusion and enabled users to progress into the booking flow despite incomplete information, improving conversion in a constrained in-app browser environment.</h3>
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Case study ends -->
+  <div class="blankHS"></div>
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/footer`) %>
+  <%- include(`${templatePath}/shared/imgModal`) %>
+
+
+  <!-- Shared across the platform -->
+</body>
+
+</html>
