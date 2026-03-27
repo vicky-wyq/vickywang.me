@@ -1335,7 +1335,13 @@ polygon {
   border-radius: 1.2em;
   border: 1px solid var(--border);
 }
-
+.card2026 {
+  border-radius: 32px;
+  border: 1px solid #1b1b1b;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: inline-block;
+}
 .card2025 {
   border-radius: 2.2em;
   border: 2px solid #1b1b1b;
