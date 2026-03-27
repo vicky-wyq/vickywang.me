@@ -498,6 +498,7 @@ body .displayMobile {
   display: flex;
   justify-content: center;
   width: max-content;
+  box-shadow: #798888;
 }
 
 .headerShadow {
@@ -2473,6 +2474,13 @@ section .padding {
   margin: 0.6em 0;
   line-height: 120%;
   color: var(--Grey700);
+}
+.titleCaseStudy {
+  font-family: inherit;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 120%;
 }
 
 .alignBottom {
