@@ -66,68 +66,394 @@
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Problem & Insight',
+            sectionName:'Problem - Insight',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
-            <h1 class="fontWeight400">Problem</h1>
-            <h4>Checkout is treated as a final step, but user behavior remains non-linear and decision-driven. Users continue adjusting key inputs during checkout, while the system assumes a stable, ready-to-complete state—leading to friction, confusion, and drop-off.</h4>
-
           </div>
-          <div class="spacingMedium"></div>
         </div>
       </div>
-    </div>
     </div>
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <div class="blankHXXS"></div>
-
-            <h1 class="fontWeight400">Identify the issue (GA4 & HotJar)</h1>
-
-            <h4>ga4, landing and shopping complete rate is low, after that drop off rate is very little, very little user drop during checkout, so the problem mainly happen in the top funnels/early exploration(entry/landing, shopping, select a qp) </h4>
+            <h1 class="fontWeight400">Problem</h1>
+            <h4>Checkout is treated as a final step, but user behavior remains non-linear and decision-driven. Users continue adjusting key inputs during checkout, while the system assumes a stable, ready-to-complete state—leading to friction, confusion, and drop-off.</h4>
           </div>
         </div>
       </div>
-
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="fontWeight400">WHAT is happenning (Quantitative)</h2>
+          </div>
+        </div>
+      </div>
       <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" src="ga4_Cross-PlatformComparison.png" alt="">
-            <h6>Cross-Platform Comparison</h6>
+            <p>Cross-Platform Comparison</p>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" src="ga4_DetailedBreakdown.png" alt="">
-            <h6>Detailed UX Breakdown</h6>
+            <p>Detailed UX Breakdown</p>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" src="ga4_MobileAppCompletion.png" alt="">
-            <h6><span class="fontWeight400">Mobile App Completion</h6>
+            <p>Mobile App Completion</p>
           </div>
         </div>
       </div>
 
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">Mobile checkout has ~2x higher drop-off than desktop</h4>
+              <h6>Mobile web users are significantly less likely to complete checkout compared to desktop users, with nearly 2x higher drop-off at the checkout entry step.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Funnel:</h6>
+                <h6><span class="fontWeight400"> Web: </span>~84% completion from begin_checkout → purchase </h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> ~46% completion </h6>
+              </div>
+            </div>
+            <div class="spacingSmall"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">Largest drop-off occurs before checkout begins</h4>
+              <h6>The largest drop-off occurs before checkout begins, particularly on mobile, where over 60% of users abandon after adding items to cart.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Funnel: add_to_cart → begin_checkout</h6>
+                <h6><span class="fontWeight400"> Web: </span>~49% continue</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> ~34% continue </h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">Post-checkout entry completion is high</h4>
+              <h6>Users who proceed past checkout entry are highly likely to complete purchase, indicating low friction in later checkout stages.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Funnel: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> ~99% step completion</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> ~97–98%</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">Mobile app tracking is inconsistent</h4>
+              <h6>Mobile app event tracking is inconsistent, with purchase events exceeding checkout initiation, indicating missing or unreliable funnel instrumentation.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+      <div class="spacingXLarge"></div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="fontWeight400">HOW it feels / WHY behavior happens (Qualitative)</h2>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">Navigate back to cart or earlier steps</h4>
+              <h6>Users frequently navigate back to cart or earlier steps during checkout to modify items or trip details.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">Long scrolling and persistent UI elements</h4>
+              <h6>Long scrolling and persistent UI elements (e.g., footer, fixed sections) create friction and contribute to abandonment on mobile.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h6 class="fontWeight400">Flow interrupt</h6>
+              <h6>Error states (login, payment, iframe issues) interrupt the flow and reduce user confidence.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">Unresolved decisions during checkout</h4>
+              <h6>Users exhibit repeated back-and-forth behavior (U-turns), indicating unresolved decisions during checkout.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+      <div class="spacingXLarge"></div>
 
 
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-
-            <h3 class="fontWeight400">1. Checkout conversion (web vs mobile web)</h3>
-            <h4>👉 From funnel:</h4>
-            <h5><span> Web: </span>~84% completion from begin_checkout → purchase </h5>
-            <h5><span> Mobile web:</span> ~46% completion </h5>
+            <h1 class="fontWeight400">Insight</h1>
 
           </div>
         </div>
       </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">Decision state mismatch (core)</h4>
+              <h6>Users continue decision-making during checkout rather than treating it as a final confirmation step.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">System fragility</h4>
+              <h6>Changes to key inputs (e.g., dates, items, delivery method) can lead to unclear or disruptive system behavior.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+      <div class="accItem">
+        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="fontWeight400">UI friction on mobile</h4>
+              <h6>Long scroll, persistent UI elements, and low signal-to-noise ratio increase cognitive load and contribute to abandonment.</h6>
+            </div>
+          </div>
+          <div class="align-right">
+            <div class="element">
+              <div class="accIcon iconAccTrigger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accContent" style="">
+          <div class="Grid Grid--gutters Grid--full Grid--gutter">
+            <div class="Grid-cell">
+              <div class="element">
+                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+              </div>
+            </div>
+          </div>
+          <div class="spacingSmall"></div>
+
+        </div>
+      </div>
+
+
+
     </div>
 
     <div class="spacingMedium"></div>
@@ -145,44 +471,22 @@
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
-            <div class="Grid Grid--gutters Grid--full Grid--gutter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <div class="blankHXXS"></div>
-                  <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Before / After',
-            topSpacing:'spacingMedium',
-            bottomSpacing:'spacingXLarge',
-            topNbottomSpacing:''
-            }) %>
 
-                </div>
-              </div>
-            </div>
-            <h1 class="fontWeight400">Key Changes</h1>
-            <h4 class="fontWeight400">1. Restore orientation at entry</h4>
-            <h5>Improved navigation behavior, spacing, and landing consistency to help users understand where they are, what they’re browsing, and how their VRBO context (e.g., address) carries over.</h5>
-            <h4 class="fontWeight400">2. Delay unreliable evaluation</h4>
-            <h5>Reduced emphasis on early item exploration and simplified add-to-cart interactions, acknowledging that pricing and availability are placeholders before provider selection.</h5>
-
-            <h4 class="fontWeight400">3. Restructure decision flow</h4>
-            <h5>Moved meaningful comparison and decision-making to the QP selection and checkout stages, with clearer navigation and simplified order summary to support conversion.</h5>
-
-            <div class="spacingMedium"></div>
-
-            <h4 class="fontWeight400">What didn’t change </h4>
-            <h5>because we need to quickly launch the version to fix current lossing traffic, for sucondary flow and big flow change, we will do it in the future iteration, but we do found these issues</h5>
-            <div class="spacingXSmall"></div>
-
-            <div class="element GreyBg100 borderRadiusS textItalic">
-              <h5><span class="fontWeight400">Core unresolved issue:</span> Provider selection remains a dependency for accurate pricing and availability.</h5>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="spacingMedium"></div>
-
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Problem</h1>
+            <h4>Checkout is treated as a final step, but user behavior remains non-linear and decision-driven. Users continue adjusting key inputs during checkout, while the system assumes a stable, ready-to-complete state—leading to friction, confusion, and drop-off.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="TBcarousel Grid--center Grid Grid--gutters Grid--full u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
         <div class="TBslides">
