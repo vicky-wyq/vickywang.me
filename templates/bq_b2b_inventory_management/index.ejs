@@ -42,7 +42,7 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_subtitle`, {
+            <%- include(`${templatePath}/shared/txt_title_s`, {
             subtitle:'Context',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
             descriptionL:'BabyQuip is a two-sided marketplace with 3,000+ active providers and $20M+ annual GMV, where provider reliability and inventory quality are the primary drivers of customer trust.',}) %>
@@ -86,11 +86,47 @@
             topNbottomSpacing:''
             }) %>
           </div>
-          <div class="spacingMedium"></div>
         </div>
       </div>
     </div>
+    <div class="spacingMedium"></div>
 
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+            title:'Constraint',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'Inventory management did not scale with supply growth.',}) %>
+            <div class="marginLeft">
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'· Editing required 4–5 clicks with frequent context switching',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'· Inventory split across multiple views with no single overview',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'· Filters disappeared during navigation, forcing re-orientation',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'· 45% of categories remained undiscovered or unused',}) %>
+            </div>
+            <h4>As inventory increased, <span class="fontWeight400"> the cost to manage it increased faster than the inventory itself</span> reducing update frequency and leaving supply underutilized.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Legacy Flow:',}) %>
+          <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'Fragmented, navigation-driven updates that reset context',}) %>
+          <img class="modal-target card2025" src="flow_im_before.png" alt="Legacy Flow">
+
+        </div>
+
+      </div>
+    </div>
 
 
   </section>
@@ -110,18 +146,48 @@
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
-            <h2><span class=" fontWeight500">Insight </span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Task',}) %>
 
-            <h4>A small group of high-volume providers controls a disproportionate share of supply, but the system was optimized for low-volume workflows.</h4>
 
-            <div class="spacingXSmall"></div>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'Initially asked to improve category discoverability by adding a new tab.',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'This assumed a visibility problem.',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'Analysis showed the real constraint was interaction cost, not lack of entry points.',}) %>
 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
 
-            <h4>Required 4–5 clicks per edit, no filters/unified view</h4>
-            <div class="spacingXSmall"></div>
-
-            <h4>Top 10% of QPs = 46.3% of supply</h4>
-            <div class="spacingXSmall"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Findings',}) %>
+            <div class="marginLeft">
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· High-volume QPs (top 10%) contributed 46.3% of total supply but faced the highest management burden',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Managing inventory competed with operational work (delivery, cleaning), so updates were infrequent',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· New or unlisted gear remained hidden, requiring CS support and increasing onboarding friction',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Additional navigation (e.g., new tabs) would increase complexity without improving usage',}) %>
+            </div>
+            <div class="spacingSmall"></div>
 
             <table>
               <thead>
@@ -154,28 +220,147 @@
               </tbody>
             </table>
 
-            <div class="spacingMedium"></div>
-            <h3 class="leftVerLine2025 textItalic">“I just don’t update my listings during peak season, it takes too long to find and edit everything.”</h3>
+            <div class="spacingSmall"></div>
 
 
+            <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Conclusion:',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'As inventory scales, navigation-heavy workflows make management inefficient, especially for the providers who drive most of the marketplace supply.',}) %>
           </div>
         </div>
       </div>
     </div>
+    <div class="spacingMedium"></div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Approach',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'Evaluated two directions:',}) %>
+
+            <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Option 1 - Add discovery tab',}) %>
+            <div class="marginLeft">
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Improves visibility of categories',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Maintains fragmented workflows',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Adds another navigation layer',}) %>
+            </div>
+            <div class="wrapper">
+              <div class="Grid Grid--gutters Grid--full Grid--gutter">
+                <div class="Grid-cell">
+                  <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Wireframe:',}) %>
+                  <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'Unlisted Gear for Discoverbility',}) %>
+                  <img class="modal-target card2025" src="wireframe_opt1.png" alt="Legacy Flow">
+
+                </div>
+
+              </div>
+            </div>
+            <div class="spacingXSmall"></div>
+
+            <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Option 2 - Integrate discovery into management (recommended)',}) %>
+            <div class="marginLeft">
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Reduces interaction cost',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Enables editing and discovery in the same workflow',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Scales with increasing inventory',}) %>
+            </div>
+
+            <div class="spacingXSmall"></div>
+            <div class="wrapper">
+              <div class="Grid Grid--gutters Grid--full Grid--gutter">
+                <div class="Grid-cell">
+                  <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Wireframe:',}) %>
+                  <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'Single tab that easy to discover during gear editing',}) %>
+                  <img class="modal-target card2025" src="wireframe_opt2.png" alt="Legacy Flow">
+
+                </div>
+
+              </div>
+            </div>
+            <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Decision:',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'Chose Option 2 after internal reviews and QP validation, as it addressed both efficiency and discoverability at the system level.',}) %>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="spacingMedium"></div>
+
+
+  </section>
+
+  <section id="intervention" data-nav="intervention">
+
+
+
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Before / After',
+            sectionName:'Intervention',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
-            <h2 class="fontWeight500">Before/After</h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Intervention',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'Reduced inventory management to a single, continuous interaction loop.',}) %>
+            <div class="marginLeft">
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Unified all inventory into one surface (replaced multi-screen navigation)',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Enabled inline editing to eliminate context switching',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Persisted filters to maintain orientation during scanning',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Surfaced listed and unlisted gear in the same workflow',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Added "View Shop" to connect provider actions with customer-facing output',}) %>
+            </div>
+            <div class="spacingXSmall"></div>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'This shifted the system from navigation-driven UI to a data-driven control surface.',}) %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'From fragmented navigation → to continuous inline management',}) %>
           </div>
         </div>
       </div>
@@ -194,31 +379,7 @@
         </div>
       </div>
     </div>
-    <div class="spacingMedium"></div>
-
-  </section>
-
-  <section id="intervention" data-nav="intervention">
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <div class="blankHXXS"></div>
-            <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Key Changes',
-            topSpacing:'spacingMedium',
-            bottomSpacing:'spacingXLarge',
-            topNbottomSpacing:''
-            }) %>
-            <h3><span class=" fontWeight500">Key Changes </span></h4>
-              <h4>Unified inventory surface (replaced multi-screen navigation)</h4>
-              <h4>Persistent filtering + inline actions (removed context loss)</h4>
-              <h4>Surfaced unlisted gear in primary workflow (made adoption default)</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spacingMedium"></div>
+    <div class="spacingXLarge"></div>
 
     <div class="wrapper">
       <div class="TBcarousel Grid--center Grid Grid--gutters Grid--full u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
@@ -255,6 +416,11 @@
         <div class="blankHXXS"></div>
       </div>
     </div>
+    <div class="spacingMedium"></div>
+
+
+
+
 
   </section>
 
@@ -265,38 +431,62 @@
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Results',
+            sectionName:'Impact',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
-            <h3 class="fontWeight500">Results</h3>
-            <h3 class="fontWeight400">Sustained inventory quality during peak demand</h3>
-            <h5>A unified, flat inventory surface made missing, outdated, or miscategorized gear immediately visible, enabling providers to maintain complete listings without abandoning updates during peak season.</h5>
-
-            <h3 class="fontWeight400">Faster, self-sufficient inventory management</h3>
-            <h5>Persistent filters and inline actions eliminated navigation resets, allowing providers to scan, filter, and update inventory across categories without manual support or training.</h5>
-
-            <h3 class="fontWeight400">Clear mental model between inventory and storefront</h3>
-            <h5>Aligning the Partner Portal with the QP shop helped providers understand how gear, categories, and packages appear to customers—reducing confusion and misconfiguration.</h5>
-
-            <h3 class="fontWeight400">Reduced operational dependency as the catalog scaled</h3>
-            <h5>By removing fragmented flows and “start-over” moments, inventory updates no longer required human intervention, lowering support load and QA effort as supply expanded.</h5>
-            <div class="spacingMedium"></div>
-
-            <h3 class="leftVerLine2025 textItalic">“What once took 7 screens and 3 reloads now takes 30 seconds on a single page.”</h3>
-            <div class="spacingMedium"></div>
-
-            <div class="element GreyBg100 borderRadiusS textItalic">
-              <h6>Internal estimates suggested faster edit times and reduced QA effort following the redesign.</h6>
-            </div>
-
-
           </div>
-
         </div>
       </div>
     </div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Impact',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'By removing navigation as the primary constraint:',}) %>
+            <div class="marginLeft">
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· 3x faster edits for high-volume providers',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Increased activation of previously unused categories and inventory',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Reduced CS and QA overhead caused by fragmented workflows',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Improved inventory freshness and completeness',}) %>
+            </div>
+            <div class="spacingXSmall"></div>
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+              descriptionL:'Established a scalable foundation for expanding categories and supply (e.g., GoQuip and future marketplace growth).',}) %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'System Outcome',}) %>
+            <div class="marginLeft">
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Reduced interaction cost per item to increase update frequency',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Increased inventory visibility to improve supply utilization',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                descriptionL:'· Enabled supply growth without proportional operational overhead',}) %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </section>
   <!-- Case study ends -->
   <div class="blankHS"></div>
