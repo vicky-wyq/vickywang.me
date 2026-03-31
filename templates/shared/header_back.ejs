@@ -17,7 +17,11 @@ tab4_display = typeof tab4_display !== 'undefined' ? tab4_display : 'displayNone
 
   <div class="top-glass"></div>
   <header class="top-nav">
-    <a class="backArrow" href="/workhub">&#8592;</a>
+    <a
+      class="backArrow"
+      href="/"
+      onclick="if (window.history.length > 1) { history.back(); return false; }"
+    >&#8592;</a>
     <div class="headerShadow">
       <div class="nav-pill" id="navPill">
         <span class="nav-pill-active" id="navActive"></span>
