@@ -5898,6 +5898,41 @@ ul.iconx {
   transform: scale(1.01);
 }
 
+.gif-player {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.gif-player__image {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.gif-player__label {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--Grey300);
+  color: var(--Grey900);
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.gif-player.is-playing .gif-player__label {
+  background-color: rgba(27, 27, 27, 0.9);
+  border-color: rgba(27, 27, 27, 0.9);
+  color: var(--white);
+}
+
 /* The Modal (background) */
 .modal {
   display: none;

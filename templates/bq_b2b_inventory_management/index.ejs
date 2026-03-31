@@ -378,9 +378,45 @@
 
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
+
           <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {title:'Workflow redesign',}) %>
+
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'From fragmented navigation → to continuous inline management',}) %>
+                description:'From fragmented navigation to continuous inline management',}) %>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><span class="fontWeight400">Before:</span> Fragmented, multi-step navigation</h4>
+            <img class="modal-target card2026" src="flow_im_before_intervention.png" alt="">
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><span class="fontWeight400">After:</span> Unified, inline inventory management</h4>
+            <img class="modal-target card2026" src="flow_im_after.png" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingXLarge"></div>
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {title:'Interaction comparison',}) %>
+
+
+            <div class="spacingLarge"></div>
+
+
+            <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Navigation simplified',}) %>
           </div>
         </div>
       </div>
@@ -388,64 +424,103 @@
         <div class="Grid-cell">
           <div class="element">
 
-            <img class="modal-target card2026" src="flow_im_before_intervention.png" alt="">
-            <h4><span class="fontWeight400">Before:</span> Fragmented, multi-step navigation</h4>
+
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+                description:'Before: multi-step navigation',}) %>
+
+
+            <button class="gif-player" type="button" aria-pressed="false">
+              <img class="gif-player__image card2026" src="gif_entire_flow_before_poster.png" data-poster-src="gif_entire_flow_before_poster.png" data-gif-src="gif_entire_flow_before.gif" alt="Before flow animation">
+              <span class="gif-player__label">Click to play</span>
+            </button>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
-            <img class="modal-target card2026" src="flow_im_after.png" alt="">
-            <h4><span class="fontWeight400">After:</span> Unified, inline inventory management</h4>
+
+
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+                description:'After: direct access within inventory',}) %>
+            <button class="gif-player" type="button" aria-pressed="false">
+              <img class="gif-player__image card2026" src="gif_entire_flow_after_poster.png" data-poster-src="gif_entire_flow_after_poster.png" data-gif-src="gif_entire_flow_after.gif" alt="After flow animation">
+              <span class="gif-player__label">Click to play</span>
+            </button>
 
           </div>
         </div>
       </div>
     </div>
-    <div class="spacingXLarge"></div>
+    <div class="spacingLarge"></div>
 
     <div class="wrapper">
+
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_s`, {
-              title:'Inventory updates now happen in a single continuous flow:',}) %>
+            <%- include(`${templatePath}/shared/txt_title_s`, {title:'Editing without context loss',}) %>
           </div>
         </div>
       </div>
-      <div class="TBcarousel Grid--center Grid Grid--gutters Grid--full u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
-        <div class="TBslides">
-          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
-            <div class="crop_mockup">
-              <img src="after_one_unified_view.gif" alt="Edit without leaving the page">
-            </div>
-          </div>
-          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
-            <div class="crop_mockup">
-              <img src="after_persistent_filters.gif" alt="Filters stay applied">
-            </div>
-          </div>
-          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
-            <div class="crop_mockup">
-              <img src="after_inline_editing.gif" alt="No reset when switching">
-            </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_description_l`, {description:'Before: leave page, edit, return',}) %>
+            <button class="gif-player" type="button" aria-pressed="false">
+              <img class="gif-player__image card2026" src="gif_persistent_filter_before_poster.png" data-poster-src="gif_persistent_filter_before_poster.png" data-gif-src="gif_persistent_filter_before.gif" alt="Before persistent filter animation">
+              <span class="gif-player__label">Click to play</span>
+            </button>
           </div>
         </div>
-        <div class="blankHXXS"></div>
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_description_l`, {description:'After: inline editing',}) %>
 
-        <div class="TBcarouselNav Grid-cell">
-          <a class="TBsliderNav" aria-label="Go to slide 1" tabindex="0">
-            <div>Edit without leaving the page</div>
-          </a>
-          <a class="TBsliderNav active" aria-label="Go to slide 2" tabindex="0">
-            <div>Filters stay applied</div>
-          </a>
-          <a class="TBsliderNav" aria-label="Go to slide 3" tabindex="0">
-            <div>No reset when switching</div>
-          </a>
+            <button class="gif-player" type="button" aria-pressed="false">
+              <img class="gif-player__image card2026" src="gif_persistent_filter_after_poster.png" data-poster-src="gif_persistent_filter_after_poster.png" data-gif-src="gif_persistent_filter_after.gif" alt="After persistent filter animation">
+              <span class="gif-player__label">Click to play</span>
+            </button>
+
+          </div>
         </div>
-        <div class="blankHXXS"></div>
       </div>
     </div>
+    <div class="spacingLarge"></div>
+
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Discovery integrated into workflow',}) %>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <%- include(`${templatePath}/shared/txt_description_l`, {description:'hidden in separate flow',}) %>
+            <button class="gif-player" type="button" aria-pressed="false">
+              <img class="gif-player__image card2026" src="gif_unlisted_before_poster.png" data-poster-src="gif_unlisted_before_poster.png" data-gif-src="gif_unlisted_before.gif" alt="Before unlisted gear animation">
+              <span class="gif-player__label">Click to play</span>
+            </button>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_description_l`, {description:'After: surfaced during workflow',}) %>
+            <button class="gif-player" type="button" aria-pressed="false">
+              <img class="gif-player__image card2026" src="gif_unlisted_after_poster.png" data-poster-src="gif_unlisted_after_poster.png" data-gif-src="gif_unlisted_after.gif" alt="After unlisted gear animation">
+              <span class="gif-player__label">Click to play</span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="spacingMedium"></div>
 
 
