@@ -1337,7 +1337,7 @@ polygon {
 }
 .card2026 {
   border-radius: 32px;
-  border: 1px solid #1b1b1b;
+  border: 1px solid var(--Grey500);
   box-sizing: border-box;
   overflow: hidden;
   display: inline-block;
