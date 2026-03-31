@@ -251,6 +251,56 @@ function initializeToggles() {
 }
 //Read more/less
 
+function initializeGifPlayers() {
+  const gifPlayers = document.querySelectorAll(".gif-player");
+
+  if (!gifPlayers.length) {
+    return;
+  }
+
+  let activePlayer = null;
+
+  function stopPlayer(player) {
+    const image = player.querySelector(".gif-player__image");
+    const label = player.querySelector(".gif-player__label");
+
+    image.src = image.dataset.posterSrc;
+    player.classList.remove("is-playing");
+    player.setAttribute("aria-pressed", "false");
+    label.textContent = "Click to play";
+
+    if (activePlayer === player) {
+      activePlayer = null;
+    }
+  }
+
+  function playPlayer(player) {
+    const image = player.querySelector(".gif-player__image");
+    const label = player.querySelector(".gif-player__label");
+
+    if (activePlayer && activePlayer !== player) {
+      stopPlayer(activePlayer);
+    }
+
+    image.src = image.dataset.gifSrc;
+    player.classList.add("is-playing");
+    player.setAttribute("aria-pressed", "true");
+    label.textContent = "Playing";
+    activePlayer = player;
+  }
+
+  gifPlayers.forEach((player) => {
+    player.addEventListener("click", () => {
+      if (player.classList.contains("is-playing")) {
+        stopPlayer(player);
+        return;
+      }
+
+      playPlayer(player);
+    });
+  });
+}
+
 const k = {
   onboardingSubscription:
     "U2FsdGVkX1/flTfDtan9WXoDnkCK30v0Y5pr4g5B680u6cXGNODszTEE+d0dCpzHn1coOmfqkGnppGteFyeRmn8ogiL8n2JOH2IyzJ2ygMU=",
@@ -510,6 +560,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // ====== Scroll bar ====== //
 
   initializeToggles();
+  initializeGifPlayers();
   /* =================== accTrigger ===================*/
   const accTriggers = document.querySelectorAll(".accTrigger");
 
