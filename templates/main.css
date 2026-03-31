@@ -3847,10 +3847,7 @@ button.passwordArr {
     /* Makes each element a block */
   }
 
-  body tr {
-    margin-bottom: 22px;
-    /* Adds spacing between rows */
-  }
+
 
   body th,
   td {
@@ -3865,7 +3862,7 @@ button.passwordArr {
 
   body td {
     position: relative;
-    height: 2vh;
+    height: 38px;
     /* Adjust as needed */
   }
 
@@ -4476,37 +4473,37 @@ flex: 0 0 calc(33.3333% - 1em);
   flex-direction: row;
 }
 
+
 .TBsliderNav {
   font-weight: 400 !important;
   font-size: clamp(0.78em, 1vw, 1.1em);
-  color: var(--grey900);
-  transition: 0.65s;
-  background: none;
-  border: 2px solid var(--grey900);
+  color: var(--Grey900);
+  background: transparent;
+  border: 1px solid transparent;
   line-height: inherit;
   margin: 0.5em;
   padding: 1em 2em;
   border-radius: 2em;
-  display: inline-block;
-
-  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   display: block;
   text-decoration: none;
+  box-shadow: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.TBsliderNav:hover {
+  border-color: var(--Grey900);
   color: var(--Grey900);
-  box-shadow: rgb(0, 0, 0) 0 0px 0px 0.08em inset;
 }
 
-.TBsliderNav:hover,
 .TBsliderNav.active {
-  border-color: var(--White-transparent);
-  color: var(--white);
-  box-shadow: rgb(0, 0, 0) 0 0px 0px 40px inset;
+  border-color: var(--Grey900);
+  background-color: transparent;
+  color: var(--Grey900);
+  box-shadow: none;
 }
-
+TBsliderNav, a:hover{
+  color: var(--grey900) !important;
+}
 /* ======================= TBcarousel ======================= */
 
 .TBsliderNav.noBg {
@@ -4520,9 +4517,12 @@ flex: 0 0 calc(33.3333% - 1em);
   color: var(--Grey900);
   box-shadow: inset -4.25em 0 0 0 var(--hover);
   font-weight: 500 !important;
+
   box-shadow: inset 18em 0 0 0 var(--hover);
   z-index: auto;
 }
+
+
 
 /* ======================= TBcarousel ======================= */
 
@@ -5808,7 +5808,7 @@ table {
 
 td,
 th {
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--Grey300);
   text-align: left;
   padding: 0.6vh;
   height: 0.6vh;
@@ -5851,7 +5851,7 @@ table {
 
 td,
 th {
-  border: 1px solid var(--Grey600);
+  /* border: 1px solid var(--Grey600); */
   text-align: left;
   padding: 0.6vh;
   height: 0.6vh;

@@ -229,7 +229,6 @@
 
 
 
-
           </div>
         </div>
       </div>
@@ -244,64 +243,82 @@
              title:'Approach',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
               description:'Evaluated two directions:',}) %>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
 
             <%- include(`${templatePath}/shared/txt_title_s`, {
-                title:'Option 1 - Add discovery tab',}) %>
+                title:'Option 1 - Separate discovery surface (adds visibility, not efficiency)',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
                 description:'· Improves visibility of categories',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Maintains fragmented workflows',}) %>
+                description:'· Requires intentional navigation outside the core workflow',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Adds another navigation layer',}) %>
+                description:'· Low likelihood of adoption in regular usage',}) %>
+
             </div>
-            <div class="wrapper">
-              <div class="Grid Grid--gutters Grid--full Grid--gutter">
-                <div class="Grid-cell">
-                  <%- include(`${templatePath}/shared/txt_title_s`, {
+
+            <div class="Grid-cell">
+              <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Wireframe:',}) %>
-                  <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Unlisted Gear for Discoverbility',}) %>
-                  <img class="modal-target card2026" src="wireframe_opt1.png" alt="Legacy Flow">
-
-                </div>
-
-              </div>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                description:'Discovery requires navigating to a separate view',}) %>
+              <img class="modal-target card2026" src="wireframe_opt1.png" alt="Legacy Flow">
             </div>
-            <div class="spacingXSmall"></div>
+
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+
 
             <%- include(`${templatePath}/shared/txt_title_s`, {
-                title:'Option 2 - Integrate discovery into management (recommended)',}) %>
+                title:'Option 2 - Integrated discovery within inventory workflow',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
                 description:'· Reduces interaction cost',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Enables editing and discovery in the same workflow',}) %>
+                description:'· Makes discovery unavoidable during active editing',}) %>
+
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Scales with increasing inventory',}) %>
+                description:'· Scales with inventory growth without added complexity',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+                description:'',}) %>
             </div>
+            <div class="spacingSmall displayDesktop"></div>
 
-            <div class="spacingXSmall"></div>
-            <div class="wrapper">
-              <div class="Grid Grid--gutters Grid--full Grid--gutter">
-                <div class="Grid-cell">
-                  <%- include(`${templatePath}/shared/txt_title_s`, {
+            <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Wireframe:',}) %>
-                  <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Single tab that easy to discover during gear editing',}) %>
-                  <img class="modal-target card2026" src="wireframe_opt2.png" alt="Legacy Flow">
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+                description:'Discovery happens during editing, without leaving the workflow',}) %>
+            <img class="modal-target card2026" src="wireframe_opt2.png" alt="Legacy Flow">
 
-                </div>
+          </div>
 
-              </div>
-            </div>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_description_l`, {
+                description:'Discovery features outside the core workflow are rarely used, while embedding discovery within existing tasks ensures consistent exposure without additional effort.',}) %>
             <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Decision:',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Chose Option 2 after internal reviews and QP validation, as it addressed both efficiency and discoverability at the system level.',}) %>
+                description:'Chose Option 2 after internal reviews and QP validation, as it addressed both interaction cost and discovery through the same workflow..',}) %>
           </div>
         </div>
       </div>
+    </div>
+
+
     </div>
 
     <div class="spacingMedium"></div>
@@ -415,7 +432,7 @@
         </div>
         <div class="blankHXXS"></div>
 
-        <div class="TBcarouselNav Grid-cell flipBtn">
+        <div class="TBcarouselNav Grid-cell">
           <a class="TBsliderNav" aria-label="Go to slide 1" tabindex="0">
             <div>Edit without leaving the page</div>
           </a>
