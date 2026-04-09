@@ -11,62 +11,60 @@
 <body class="">
   <%- include(`${templatePath}/shared/header_back`, {
   tab1:'Problem',
-  tab1_data_link:'overview',
+  tab1_data_link:'problem',
 
-  tab2:'Design',
-  tab2_data_link:'changes',
+  tab2:'Insight',
+  tab2_data_link:'insight',
 
-  tab3:'Impact',
-  tab3_data_link:'results',
+  tab3:'Solution',
+  tab3_data_link:'solution',
+
+  tab4_display:'dispay',
+  tab4:'Impact',
+  tab4_data_link:'impact',
   }) %>
 
+  <div class="wrapper">
+    <div class="blankHXS"></div>
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
+          <h6>Two-sided marketplace (3,000+ providers, $20M+ GMV)</h6>
+          <div class="spacingMedium"></div>
 
-
-  <section id="overview" data-nav="overview">
-    <div class="wrapper">
-      <div class="blankHXS"></div>
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
-            <h6>Two-sided marketplace (3,000+ providers, $20M+ GMV)</h6>
-            <div class="spacingMedium"></div>
-
-            <h1 class="titleCaseStudy">Rethinking Checkout Under Marketplace Constraints</h1>
-            <h4 class="fontWeight300">Simplified the flow to support ongoing decision-making and reduce mobile friction.</h4>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--cols-3">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="">Role: <span class="fontWeight400">Lead UX</span></h5>
-          </div>
-        </div>
-        <div class=" Grid-cell">
-          <div class="element">
-            <h5 class="">Scope: <span class="fontWeight400">Gear listing &amp; storefront control</span></h5>
-          </div>
-        </div>
-        <div class=" Grid-cell">
-          <div class="element">
-            <h5 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h5>
-          </div>
+          <h1 class="titleCaseStudy">Improving Checkout Conversion by Reducing Early-Stage Friction</h1>
+          <h4 class="fontWeight300">Improving cart-to-checkout transition and early-stage completion, especially on mobile.</h4>
         </div>
       </div>
     </div>
-  </section>
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid-cell">
+        <div class="element">
+          <h5 class="">Role: <span class="fontWeight400">Lead UX</span></h5>
+        </div>
+      </div>
+      <div class=" Grid-cell">
+        <div class="element">
+          <h5 class="">Scope: <span class="fontWeight400">Gear listing &amp; storefront control</span></h5>
+        </div>
+      </div>
+      <div class=" Grid-cell">
+        <div class="element">
+          <h5 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h5>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-  <section id="changes" data-nav="changes">
+  <section id="problem" data-nav="problem">
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Problem - Insight',
+            sectionName:'Problem',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
@@ -80,7 +78,9 @@
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight400">Problem</h1>
-            <h4>Checkout is treated as a final step, but user behavior remains non-linear and decision-driven. Users continue adjusting key inputs during checkout, while the system assumes a stable, ready-to-complete state—leading to friction, confusion, and drop-off.</h4>
+            <h2 class="fontWeight100">High drop-off before and early in checkout, especially on mobile → lost revenue</h2>
+
+            <h2 class="fontWeight100 Alet">From begin_checkout to purchase dropped x percent, mobile is doubled</h2>
           </div>
         </div>
       </div>
@@ -359,136 +359,171 @@
       <div class="spacingXLarge"></div>
 
 
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h1 class="fontWeight400">Insight</h1>
-
-          </div>
-        </div>
-      </div>
-      <div class="accItem">
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <h4 class="fontWeight400">Decision state mismatch (core)</h4>
-              <h6>Users continue decision-making during checkout rather than treating it as a final confirmation step.</h6>
-            </div>
-          </div>
-          <div class="align-right">
-            <div class="element">
-              <div class="accIcon iconAccTrigger"></div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent" style="">
-          <div class="Grid Grid--gutters Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
-                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
-                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
-              </div>
-            </div>
-          </div>
-          <div class="spacingSmall"></div>
-
-        </div>
-      </div>
-      <div class="accItem">
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <h4 class="fontWeight400">System fragility</h4>
-              <h6>Changes to key inputs (e.g., dates, items, delivery method) can lead to unclear or disruptive system behavior.</h6>
-            </div>
-          </div>
-          <div class="align-right">
-            <div class="element">
-              <div class="accIcon iconAccTrigger"></div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent" style="">
-          <div class="Grid Grid--gutters Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
-                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
-                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
-              </div>
-            </div>
-          </div>
-          <div class="spacingSmall"></div>
-
-        </div>
-      </div>
-      <div class="accItem">
-        <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
-          <div class="Grid-cell">
-            <div class="element">
-              <h4 class="fontWeight400">UI friction on mobile</h4>
-              <h6>Long scroll, persistent UI elements, and low signal-to-noise ratio increase cognitive load and contribute to abandonment.</h6>
-            </div>
-          </div>
-          <div class="align-right">
-            <div class="element">
-              <div class="accIcon iconAccTrigger"></div>
-            </div>
-          </div>
-        </div>
-        <div class="accContent" style="">
-          <div class="Grid Grid--gutters Grid--full Grid--gutter">
-            <div class="Grid-cell">
-              <div class="element">
-                <h6>Free Form: begin_checkout → add_payment → purchase</h6>
-                <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
-                <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
-              </div>
-            </div>
-          </div>
-          <div class="spacingSmall"></div>
-
-        </div>
-      </div>
-
-
 
     </div>
 
-    <div class="spacingMedium"></div>
   </section>
 
-  <section id="changes" data-nav="changes">
+
+
+  <section id="insight" data-nav="insight">
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Design',
+            sectionName:'Insight',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
-
           </div>
         </div>
       </div>
     </div>
+
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <h1 class="fontWeight400">Insight</h1>
+          <h2 class="fontWeight100">Users hesitate or disengage before committing, not during payment</h2>
+        </div>
+      </div>
+    </div>
+    <div class="accItem">
+      <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight400">Decision state mismatch (core)</h4>
+            <h6>Users continue decision-making during checkout rather than treating it as a final confirmation step.</h6>
+          </div>
+        </div>
+        <div class="align-right">
+          <div class="element">
+            <div class="accIcon iconAccTrigger"></div>
+          </div>
+        </div>
+      </div>
+      <div class="accContent" style="">
+        <div class="Grid Grid--gutters Grid--full Grid--gutter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+              <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+              <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+            </div>
+          </div>
+        </div>
+        <div class="spacingSmall"></div>
+
+      </div>
+    </div>
+    <div class="accItem">
+      <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight400">System fragility</h4>
+            <h6>Changes to key inputs (e.g., dates, items, delivery method) can lead to unclear or disruptive system behavior.</h6>
+          </div>
+        </div>
+        <div class="align-right">
+          <div class="element">
+            <div class="accIcon iconAccTrigger"></div>
+          </div>
+        </div>
+      </div>
+      <div class="accContent" style="">
+        <div class="Grid Grid--gutters Grid--full Grid--gutter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+              <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+              <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+            </div>
+          </div>
+        </div>
+        <div class="spacingSmall"></div>
+
+      </div>
+    </div>
+    <div class="accItem">
+      <div class="Grid Grid--gutters Grid--cols-2 Grid--top accTrigger">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight400">UI friction on mobile</h4>
+            <h6>Long scroll, persistent UI elements, and low signal-to-noise ratio increase cognitive load and contribute to abandonment.</h6>
+          </div>
+        </div>
+        <div class="align-right">
+          <div class="element">
+            <div class="accIcon iconAccTrigger"></div>
+          </div>
+        </div>
+      </div>
+      <div class="accContent" style="">
+        <div class="Grid Grid--gutters Grid--full Grid--gutter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h6>Free Form: begin_checkout → add_payment → purchase</h6>
+              <h6><span class="fontWeight400"> Web: </span> begin_checkout: 5,177</h6>
+              <h6><span class="fontWeight400"> Mobile web:</span> purchase: 9,986</h6>
+            </div>
+          </div>
+        </div>
+        <div class="spacingSmall"></div>
+
+      </div>
+    </div>
+
+
     <div class="spacingMedium"></div>
-
-
   </section>
 
-  <section id="results" data-nav="results">
+  <section id="solution" data-nav="solution">
+
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Results',
+            sectionName:'Solution',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <h1 class="fontWeight400">Solution</h1>
+          <h2 class="fontWeight100">Improve transition to checkout + reduce early-stage friction</h2>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+
+  </section>
+
+  <section id="impact" data-nav="impact">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Impact',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
@@ -500,6 +535,24 @@
         </div>
       </div>
     </div>
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <h1 class="fontWeight400">Impact</h1>
+          <h2 class="fontWeight100">Increase conversion from cart to purchase</h2>
+          <h2 class="fontWeight100">Improve mobile funnel performance</h2>
+          <h2 class="fontWeight100">Unlock revenue from existing traffic</h2>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
+    <div class="spacingXLarge"></div>
   </section>
   <!-- Case study ends -->
   <div class="blankHS"></div>
