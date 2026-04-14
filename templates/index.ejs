@@ -100,13 +100,15 @@
 
           <h4 class="fontWeight400">Reducing early-stage drop-off in mobile funnels with incomplete data
           </h4>
-          <h5 class="">Partner-driven users dropped off early due to lack of context and trust. Redesigned the entry and decision flow to help more high-intent users progress into and through the funnel without increasing acquisition.
-          </h5>
-          <h4>↓ Drop-off, ↑ checkout progression</h4>
-          <div class="spacingMedium"></div>
-          <%- include(`${templatePath}/shared/modal_email_for_access`, {
+          <h4>Partner-driven users dropped off early due to lack of context and trust. Redesigned the entry and decision flow to help more high-intent users progress into and through the funnel without increasing acquisition.
+          </h4>
+          <div class="card__cta">
+            <h4>↓ Drop-off, ↑ checkout progression</h4>
+            <div class="spacingSmall"></div>
+            <%- include(`${templatePath}/shared/modal_email_for_access`, {
             ctaButton:'buttonPrimary'
           }) %>
+          </div>
           <div class="spacingXSmall displayMobile"></div>
         </div>
 
@@ -120,14 +122,16 @@
     <div class="spacingLarge"></div>
 
     <div class="spacingLarge"></div>
-<div class="wrapper">
+    <div class="wrapper">
       <div class="card">
         <div class="card__left">
           <p class="card25CardMeta">Business Facing Partner Portal • Q3 2025</p>
           <h2 class="fontWeight400">Unlocking Supply Growth by Simplifying Inventory Management</h2>
           <h4 class="">Redesigned inventory management to reduce operational overhead for high-volume providers, enabling more frequent updates and unlocking underutilized supply.</h4>
-          <h4>↓ interaction cost · 3× faster edits for high-volume providers</h4>
           <div class="card__cta">
+            <h4>↓ interaction cost · 3× faster edits for high-volume providers</h4>
+            <div class="spacingSmall"></div>
+
             <a href="/bq_b2b_inventory_management">
               <button class="buttonMedium buttonPrimary">View Case Study</button>
             </a>
@@ -149,13 +153,16 @@
       <div class="card">
         <div class="card__left">
           <p class="card25CardMeta">Business-Facing • Q3 2025</p>
-          <h2 class="fontWeight400">BabyQuip Package System for Growth</h2>
-          <h4>Introduced a standardized package system that enables marketing-led promotions and higher AOV, while preserving provider flexibility for custom offerings.</h4>
+          <h2 class="fontWeight400">Restoring Bundle Discovery in a Browsing-First Marketplace</h2>
+          <h4>Packages were hidden during early browsing, limiting conversion and order value. Introduced standardized packages to surface bundles earlier and support higher-value decisions.</h4>
 
-
-          <%- include(`${templatePath}/shared/modal_email_for_access`, {
+          <div class="card__cta">
+            <h4>↑ bundle visibility · ↑ early-stage engagement · ↑ conversion potential</h4>
+            <div class="spacingSmall"></div>
+            <%- include(`${templatePath}/shared/modal_email_for_access`, {
             ctaButton:'buttonPrimary'
           }) %>
+          </div>
           <div class="spacingXSmall displayMobile"></div>
 
 
@@ -288,4 +295,5 @@
 
 
 </body>
+
 </html>
