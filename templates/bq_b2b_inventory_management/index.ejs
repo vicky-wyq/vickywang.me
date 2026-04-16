@@ -4,7 +4,7 @@
 <!--Head-->
 <%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Scaling Inventory Management for Growth
 `,
-  description:'Enhancing the Consumer Booking Experience', pageURL:'bq_b2b_inventory_management/',
+  text:'Enhancing the Consumer Booking Experience', pageURL:'bq_b2b_inventory_management/',
   thumbnailImgURL: 'vickywang_web.png' }) %>
 <!--Head-->
 
@@ -31,9 +31,9 @@
           <div class="element">
             <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
             <%- include(`${templatePath}/shared/txt_banner_title`, {
-            bannerTitle:'Unlocking Supply Growth Through Streamlined Inventory Management',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-            description:'Redesigned inventory workflows to reduce operational overhead for high-volume providers, enabling faster updates and unlocking underutilized supply.',}) %>
+            text:'Unlocking Supply Growth Through Streamlined Inventory Management',}) %>
+            <%- include(`${templatePath}/shared/txt_banner_description`, {
+            text:'Simplified fragmented inventory workflows into a unified management system, enabling faster updates and unlocking underutilized supply.',}) %>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
             <%- include(`${templatePath}/shared/txt_title_s`, {
             subtitle:'Context',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-            description:'BabyQuip is a two-sided marketplace with 3,000+ active providers and $20M+ annual GMV, where provider reliability and inventory quality are the primary drivers of customer trust.',}) %>
+            text:'BabyQuip is a two-sided marketplace with 3,000+ active providers and $20M+ annual GMV, where provider reliability and inventory quality are the primary drivers of customer trust.',}) %>
           </div>
         </div>
 
@@ -98,16 +98,16 @@
             <%- include(`${templatePath}/shared/txt_title_l`, {
             title:'Constraint',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'Inventory management did not scale with supply growth.',}) %>
+              text:'Inventory management did not scale with supply growth.',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'· Editing required 4–5 clicks with frequent context switching',}) %>
+              text:'· Editing required 4–5 clicks with frequent context switching',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'· Inventory split across multiple views with no single overview',}) %>
+              text:'· Inventory split across multiple views with no single overview',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'· Filters disappeared during navigation, forcing re-orientation',}) %>
+              text:'· Filters disappeared during navigation, forcing re-orientation',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'· 45% of categories remained undiscovered or unused',}) %>
+              text:'· 45% of categories remained undiscovered or unused',}) %>
             </div>
             <h4>As inventory increased, <span class="fontWeight400"> the cost to manage it increased faster than the inventory itself</span> reducing update frequency and leaving supply underutilized.</h4>
           </div>
@@ -120,7 +120,7 @@
           <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Legacy Flow:',}) %>
           <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Fragmented, navigation-driven updates that reset context',}) %>
+                text:'Fragmented, navigation-driven updates that reset context',}) %>
           <img class="modal-target card2026" src="flow_im_before_constraint.png" alt="Legacy Flow">
 
         </div>
@@ -159,11 +159,11 @@
 
 
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'Initially asked to improve category discoverability by adding a new tab.',}) %>
+              text:'Initially asked to improve category discoverability by adding a new tab.',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'This assumed a visibility problem.',}) %>
+              text:'This assumed a visibility problem.',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'Analysis showed the real constraint was interaction cost, not lack of entry points.',}) %>
+              text:'Analysis showed the real constraint was interaction cost, not lack of entry points.',}) %>
 
           </div>
         </div>
@@ -179,13 +179,13 @@
              title:'Why the original task was too narrow',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· High-volume QPs (top 10%) contributed 46.3% of total supply but faced the highest management burden',}) %>
+                text:'· High-volume QPs (top 10%) contributed 46.3% of total supply but faced the highest management burden',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Managing inventory competed with operational work (delivery, cleaning), so updates were infrequent',}) %>
+                text:'· Managing inventory competed with operational work (delivery, cleaning), so updates were infrequent',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· New or unlisted gear remained hidden, requiring CS support and increasing onboarding friction',}) %>
+                text:'· New or unlisted gear remained hidden, requiring CS support and increasing onboarding friction',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Additional navigation (e.g., new tabs) would increase complexity without improving usage',}) %>
+                text:'· Additional navigation (e.g., new tabs) would increase complexity without improving usage',}) %>
             </div>
             <div class="spacingSmall"></div>
 
@@ -223,7 +223,7 @@
             <div class="spacingSmall"></div>
 
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'As inventory scales, navigation-heavy workflows make management inefficient, especially for the providers driving most marketplace supply.'}) %>
+                text:'As inventory scales, navigation-heavy workflows make management inefficient, especially for the providers driving most marketplace supply.'}) %>
 
 
 
@@ -242,7 +242,7 @@
             <%- include(`${templatePath}/shared/txt_title_l`, {
              title:'Approach',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'Evaluated two directions:',}) %>
+              text:'Evaluated two directions:',}) %>
           </div>
         </div>
       </div>
@@ -254,11 +254,11 @@
                 title:'Option 1 - Separate discovery surface (adds visibility, not efficiency)',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Improves visibility of categories',}) %>
+                text:'· Improves visibility of categories',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Requires intentional navigation outside the core workflow',}) %>
+                text:'· Requires intentional navigation outside the core workflow',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Low likelihood of adoption in regular usage',}) %>
+                text:'· Low likelihood of adoption in regular usage',}) %>
 
             </div>
 
@@ -266,7 +266,7 @@
               <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Wireframe:',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Discovery requires navigating to a separate view',}) %>
+                text:'Discovery requires navigating to a separate view',}) %>
               <img class="modal-target card2026" src="wireframe_opt1.png" alt="Legacy Flow">
             </div>
 
@@ -281,21 +281,21 @@
                 title:'Option 2 - Integrated discovery within inventory workflow',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Reduces interaction cost',}) %>
+                text:'· Reduces interaction cost',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Makes discovery unavoidable during active editing',}) %>
+                text:'· Makes discovery unavoidable during active editing',}) %>
 
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Scales with inventory growth without added complexity',}) %>
+                text:'· Scales with inventory growth without added complexity',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'',}) %>
+                text:'',}) %>
             </div>
             <div class="spacingSmall displayDesktop"></div>
 
             <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Wireframe:',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Discovery happens during editing, without leaving the workflow',}) %>
+                text:'Discovery happens during editing, without leaving the workflow',}) %>
             <img class="modal-target card2026" src="wireframe_opt2.png" alt="Legacy Flow">
 
           </div>
@@ -308,11 +308,11 @@
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Discovery features outside the core workflow are rarely used, while embedding discovery within existing tasks ensures consistent exposure without additional effort.',}) %>
+                text:'Discovery features outside the core workflow are rarely used, while embedding discovery within existing tasks ensures consistent exposure without additional effort.',}) %>
             <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Decision:',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Chose Option 2 after internal reviews and QP validation, as it addressed both interaction cost and discovery through the same workflow..',}) %>
+                text:'Chose Option 2 after internal reviews and QP validation, as it addressed both interaction cost and discovery through the same workflow..',}) %>
           </div>
         </div>
       </div>
@@ -353,22 +353,22 @@
             <%- include(`${templatePath}/shared/txt_title_l`, {
              title:'Intervention',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'Reduced the operational cost of inventory management by restructuring it into a single, continuous interaction loop.',}) %>
+              text:'Reduced the operational cost of inventory management by restructuring it into a single, continuous interaction loop.',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Unified all inventory into one surface (replaced multi-screen navigation)',}) %>
+                text:'· Unified all inventory into one surface (replaced multi-screen navigation)',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Inline editing eliminates context switching',}) %>
+                text:'· Inline editing eliminates context switching',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Persistent filters maintain orientation',}) %>
+                text:'· Persistent filters maintain orientation',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Listed and unlisted gear in the same workflow',}) %>
+                text:'· Listed and unlisted gear in the same workflow',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· “View Shop” connects provider actions to customer output',}) %>
+                text:'· “View Shop” connects provider actions to customer output',}) %>
             </div>
             <div class="spacingXSmall"></div>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Shifted from navigation-driven UI to a data-driven control surface.',}) %>
+                text:'Shifted from navigation-driven UI to a data-driven control surface.',}) %>
           </div>
         </div>
       </div>
@@ -383,7 +383,7 @@
             <%- include(`${templatePath}/shared/txt_title_l`, {title:'Workflow redesign',}) %>
 
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'From fragmented navigation to continuous inline management',}) %>
+                text:'From fragmented navigation to continuous inline management',}) %>
           </div>
         </div>
       </div>
@@ -426,7 +426,7 @@
 
 
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'Before: multi-step navigation',}) %>
+                text:'Before: multi-step navigation',}) %>
 
 
             <button class="gif-player" type="button" aria-pressed="false">
@@ -440,7 +440,7 @@
 
 
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'After: direct access within inventory',}) %>
+                text:'After: direct access within inventory',}) %>
             <button class="gif-player" type="button" aria-pressed="false">
               <img class="gif-player__image card2026" src="gif_entire_flow_after_poster.png" data-poster-src="gif_entire_flow_after_poster.png" data-gif-src="gif_entire_flow_after.gif" alt="After flow animation">
               <span class="gif-player__label">Click to play</span>
@@ -464,7 +464,7 @@
       <div class="Grid Grid--gutters Grid--cols-2">
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_description_l`, {description:'Before: leave page, edit, return',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {text:'Before: leave page, edit, return',}) %>
             <button class="gif-player" type="button" aria-pressed="false">
               <img class="gif-player__image card2026" src="gif_persistent_filter_before_poster.png" data-poster-src="gif_persistent_filter_before_poster.png" data-gif-src="gif_persistent_filter_before.gif" alt="Before persistent filter animation">
               <span class="gif-player__label">Click to play</span>
@@ -473,7 +473,7 @@
         </div>
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_description_l`, {description:'After: inline editing',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {text:'After: inline editing',}) %>
 
             <button class="gif-player" type="button" aria-pressed="false">
               <img class="gif-player__image card2026" src="gif_persistent_filter_after_poster.png" data-poster-src="gif_persistent_filter_after_poster.png" data-gif-src="gif_persistent_filter_after.gif" alt="After persistent filter animation">
@@ -501,7 +501,7 @@
         <div class="Grid-cell">
           <div class="element">
 
-            <%- include(`${templatePath}/shared/txt_description_l`, {description:'hidden in separate flow',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {text:'hidden in separate flow',}) %>
             <button class="gif-player" type="button" aria-pressed="false">
               <img class="gif-player__image card2026" src="gif_unlisted_before_poster.png" data-poster-src="gif_unlisted_before_poster.png" data-gif-src="gif_unlisted_before.gif" alt="Before unlisted gear animation">
               <span class="gif-player__label">Click to play</span>
@@ -510,7 +510,7 @@
         </div>
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_description_l`, {description:'After: surfaced during workflow',}) %>
+            <%- include(`${templatePath}/shared/txt_description_l`, {text:'After: surfaced during workflow',}) %>
             <button class="gif-player" type="button" aria-pressed="false">
               <img class="gif-player__image card2026" src="gif_unlisted_after_poster.png" data-poster-src="gif_unlisted_after_poster.png" data-gif-src="gif_unlisted_after.gif" alt="After unlisted gear animation">
               <span class="gif-player__label">Click to play</span>
@@ -553,20 +553,20 @@
             <%- include(`${templatePath}/shared/txt_title_l`, {
              title:'Impact',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'By removing navigation as the primary constraint:',}) %>
+              text:'By removing navigation as the primary constraint:',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· 3x faster edits for high-volume providers',}) %>
+                text:'· 3x faster edits for high-volume providers',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Increased activation of previously unused categories and inventory',}) %>
+                text:'· Increased activation of previously unused categories and inventory',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Reduced CS and QA overhead caused by fragmented workflows',}) %>
+                text:'· Reduced CS and QA overhead caused by fragmented workflows',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Improved inventory freshness and completeness',}) %>
+                text:'· Improved inventory freshness and completeness',}) %>
             </div>
             <div class="spacingXSmall"></div>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              description:'Established a scalable foundation for expanding categories and supply (e.g., GoQuip and future marketplace growth).',}) %>
+              text:'Established a scalable foundation for expanding categories and supply (e.g., GoQuip and future marketplace growth).',}) %>
           </div>
         </div>
       </div>
@@ -580,11 +580,11 @@
              title:'System Outcome',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Reduced interaction cost per item to increase update frequency',}) %>
+                text:'· Reduced interaction cost per item to increase update frequency',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Increased inventory visibility to improve supply utilization',}) %>
+                text:'· Increased inventory visibility to improve supply utilization',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                description:'· Enabled supply growth without proportional operational overhead',}) %>
+                text:'· Enabled supply growth without proportional operational overhead',}) %>
             </div>
           </div>
         </div>
