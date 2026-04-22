@@ -9,99 +9,244 @@
 <!--Head-->
 
 <body class="">
+
+
   <%- include(`${templatePath}/shared/header_back`, {
   tab1:'Problem',
-  tab1_data_link:'overview',
+  tab1_data_link:'problem', 
 
-  tab2:'Design',
-  tab2_data_link:'changes',
+  tab2:'Insights',
+  tab2_data_link:'insights',
 
-  tab3:'Impact',
-  tab3_data_link:'results',
+  tab3:'Design',
+  tab3_data_link:'design',
+
+  tab4_display:'dispay',
+  tab4:'Impact',
+  tab4_data_link:'impact',
   }) %>
+  <div class="wrapper">
+    <div class="blankHXS"></div>
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
+          <h6>Two-sided marketplace (3,000+ providers, $20M+ GMV)</h6>
+          <div class="spacingMedium"></div>
 
-
-
-  <section id="overview" data-nav="overview">
-    <div class="wrapper">
-      <div class="blankHXS"></div>
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
-            <h6>Two-sided marketplace (3,000+ providers, $20M+ GMV)</h6>
-            <div class="spacingMedium"></div>
-
-            <h1 class="titleCaseStudy">Converting High-Intent Partner Traffic Under In-App Constraints (VRBO)</h1>
-            <h4 class="fontWeight300">Reducing early-stage drop-off in mobile funnels with incomplete data</h4>
-          </div>
-        </div>
-      </div>
-          <div class="Grid Grid--gutters Grid--cols-3">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="">Role: <span class="fontWeight400">Lead UX</span></h5>
-          </div>
-        </div>
-        <div class=" Grid-cell">
-          <div class="element">
-            <h5 class="">Scope: <span class="fontWeight400">Gear listing &amp; storefront control</span></h5>
-          </div>
-        </div>
-        <div class=" Grid-cell">
-          <div class="element">
-            <h4 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h4>
-          </div>
+          <h1 class="titleCaseStudy">Converting High-Intent Partner Traffic Under In-App Constraints (VRBO)</h1>
+          <h4 class="fontWeight300">Reducing early-stage drop-off in mobile funnels with incomplete data</h4>
         </div>
       </div>
     </div>
-  </section>
-
-
-
-  <section id="changes" data-nav="changes">
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid-cell">
+        <div class="element">
+          <h5 class="">Role: <span class="fontWeight400">Lead UX</span></h5>
+        </div>
+      </div>
+      <div class=" Grid-cell">
+        <div class="element">
+          <h5 class="">Scope: <span class="fontWeight400">VRBO Landing, Shopping, In App Experience</span></h5>
+        </div>
+      </div>
+      <div class=" Grid-cell">
+        <div class="element">
+          <h5 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="problem" data-nav="problem">
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Problem & Insight',
+            sectionName:'Problem & Context',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
-            <h1 class="fontWeight400">Problem</h1>
-            <h4>Users entering from VRBO lack clarity on both context and data reliability, they are unsure where they are in the experience, how information like location is carried over, and whether pricing and availability can be trusted.</h4>
-
           </div>
           <div class="spacingMedium"></div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="wrapper">
+
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
 
-            <h1 class="fontWeight400">Identify the issue (GA4 & HotJar)</h1>
+            <h1 class="fontWeight400">Context</h1>
 
-            <h4>ga4, landing and shopping complete rate is low, after that drop off rate is very little, very little user drop during checkout, so the problem mainly happen in the top funnels/early exploration(entry/landing, shopping, select a qp) </h4>
+            <div class="marginLeft">
+              <h4>· VRBO = high-intent, mobile-heavy traffic</h4>
+              <h4>· Embedded webview → constraints</h4>
+              <div class="spacingXSmall"></div>
+            </div>
 
+                        <h1 class="fontWeight400">Core Issue</h1>
+
+            <div class="marginLeft">
+
+              <h4>· Existing system = gear-first UI on provider-first backend</h4>
+              <div class="spacingXSmall"></div>
+            </div>
+            <h1 class="fontWeight400">Problem</h1>
+            <h4>Users were allowed to build orders without ever committing to a provider, creating fake carts, unclear pricing, and drop-off.</h4>
+
+          </div>
+          <div class="spacingMedium"></div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+  <section id="insights" data-nav="insights">
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Insights',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+          </div>
+          <div class="spacingMedium"></div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <h1 class="fontWeight400">Identify the issue (drop-off at top funnel)</h1>
+            <div class="marginLeft">
+              <h4>· Massive drop at entry → shopping</h4>
+              <h4>· High completion after intent is established</h4>
+              <h4>· VRBO users = high intent, low tolerance</h4>
+              <div class="spacingXSmall"></div>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><span class="fontWeight400">Mobile vs. Web:</span> Last 90 days(GA4)</h4>
+            <img class="modal-target card2026" src="ga4.png" alt="">
+          </div>
+        </div>
+
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h4>The problem is not checkout.</h4>
+            <h4>The problem is <span class="fontWeight400">failure to transition users from browsing → commitment.</span></h4>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Problem breakdown</h1>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <h3 class="fontWeight400">A. Entry confusion </h3>
+
+            <div class="marginLeft">
+              <h4>· Modal stacking</h4>
+              <h4>· No loading state</h4>
+              <h4>· Unclear ownership (VRBO vs BabyQuip)</h4>
+              <div class="spacingXSmall"></div>
+            </div>
+            <img class="modal-target card2026" src="legacy_pre_entry.png" alt="">
 
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <h3 class="fontWeight400">B. Shopping = fake progress</h3>
+
+            <div class="marginLeft">
+              <h4>· Add-to-cart without commitment❌, add to cart modal is big, encarage shopping without encarage select a provider</h4>
+              <h4>· Placeholder item without real item details (title, pricing, image etc.)</h4>
+              <h4>· No push toward provider selection</h4>
+              <div class="spacingXSmall"></div>
+            </div>
+            <img class="modal-target card2026" src="legacy_pre_entry.png" alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <h3 class="fontWeight400">C. Provider selection gap </h3>
+
+            <div class="marginLeft">
+              <h4>· Optional instead of required</h4>
+              <h4>· Weak transition moment</h4>
+              <div class="spacingXSmall"></div>
+            </div>
+            <img class="modal-target card2026" src="legacy_provider_selection.png" alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <h3 class="fontWeight400">D. Pre-checkout chaos</h3>
+
+            <div class="marginLeft">
+              <h4>· Order summary → add-on → order summary</h4>
+              <h4>· Conflicting CTAs</h4>
+              <h4>· Looks like checkout but isn’t</h4>
+              <div class="spacingXSmall"></div>
+            </div>
+            <img class="modal-target card2026" src="legacy_precheckout.png" alt="">
+
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="spacingMedium"></div>
 
   </section>
 
-  <section id="changes" data-nav="changes">
+  <section id="design" data-nav="design">
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
@@ -114,120 +259,171 @@
             topNbottomSpacing:''
             }) %>
 
-            <h1 class="fontWeight400">Key Changes</h1>
-            <h4 class="fontWeight400">1. Restore orientation at entry</h4>
-            <h5>Improved navigation behavior, spacing, and landing consistency to help users understand where they are, what they’re browsing, and how their VRBO context (e.g., address) carries over.</h5>
-            <h4 class="fontWeight400">2. Delay unreliable evaluation</h4>
-            <h5>Reduced emphasis on early item exploration and simplified add-to-cart interactions, acknowledging that pricing and availability are placeholders before provider selection.</h5>
-
-            <h4 class="fontWeight400">3. Restructure decision flow</h4>
-            <h5>Moved meaningful comparison and decision-making to the QP selection and checkout stages, with clearer navigation and simplified order summary to support conversion.</h5>
-
-            <div class="spacingMedium"></div>
-
-            <h4 class="fontWeight400">What didn’t change </h4>
-            <h5>because we need to quickly launch the version to fix current lossing traffic, for sucondary flow and big flow change, we will do it in the future iteration, but we do found these issues</h5>
-            <div class="spacingXSmall"></div>
-
-            <div class="element GreyBg100 borderRadiusS textItalic">
-              <h5><span class="fontWeight400">Core unresolved issue:</span> Provider selection remains a dependency for accurate pricing and availability.</h5>
+            <div class="Grid Grid--gutters Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h1 class="fontWeight400">Design principles</h1>
+                </div>
+              </div>
             </div>
+            <div class="Grid Grid--gutters Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3 class="fontWeight400">A. Entry confusion </h3>
+
+                  <div class="marginLeft">
+                    <h4>· Make commitment explicit</h4>
+                    <h4>· Collapse redundant states</h4>
+                    <h4>· Align UI with system constraints</h4>
+                    <h4>· Reduce false progress</h4>
+
+                    <div class="spacingXSmall"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--gutters Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h1 class="fontWeight400">Solutions</h1>
+                </div>
+              </div>
+            </div>
+            <div class="Grid Grid--gutters Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3 class="fontWeight400">1. Clarified entry context (VRBO-specific)</h3>
+                  <div class="marginLeft">
+                    <h4>· Privacy + loading fix</h4>
+                    <h4>· Trip info surfaced</h4>
+                    <h4>· Brand/context clarity</h4>
+                    <div class="spacingXSmall"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid Grid--gutters Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3 class="fontWeight400">Forced commitment pathway (cross-platform)</h3>
+                  <div class="marginLeft">
+                    <h4>· Persistent “Select Provider”</h4>
+                    <h4>· Cart no longer dead-end</h4>
+                    <h4>· Clearer transition from browse → match</h4>
+                    <div class="spacingXSmall"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid Grid--gutters Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3 class="fontWeight400">Simplified decision loop (cross-platform)</h3>
+                  <div class="marginLeft">
+                    <h4>· Removed redundant screens</h4>
+                    <h4>· Unified add-on + cart logic</h4>
+                    <h4>· Fixed CTA hierarchy</h4>
+                    <div class="spacingXSmall"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="Grid Grid--gutters Grid--full Grid--gutter">
+              <div class="Grid-cell">
+                <div class="element">
+                  <div class="blankHXXS"></div>
+                  <h3 class="fontWeight400">4. Checkout alignment (cross-platform)</h3>
+                  <div class="marginLeft">
+                    <h4>· Real checkout looks like checkout</h4>
+                    <h4>· Removed fake states</h4>
+                    <div class="spacingXSmall"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
     <div class="spacingMedium"></div>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <div class="blankHXXS"></div>
-            <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Before / After',
-            topSpacing:'spacingMedium',
-            bottomSpacing:'spacingXLarge',
-            topNbottomSpacing:''
-            }) %>
-            <h2 class="fontWeight500">Before/After</h2>
-
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--cols-2">
-        <div class="Grid-cell">
-          <img class="modal-target card2025" src="flow_im_before.png" alt="">
-          <h4><span class="fontWeight400">Before:</span> Fragmented, navigation-driven updates that reset context</h4>
-
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2025" src="flow_im_after.png" alt="">
-            <h4><span class="fontWeight400">After:</span> Unified inventory with persistent filters and inline actions</h4>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="TBcarousel Grid--center Grid Grid--gutters Grid--full u-textCenter" aria-label="TBcarousel" tabindex="0" id="TBcarousel1">
-        <div class="TBslides">
-          <div class="TBslidesItem slide-1" id="slide-1" aria-label="slide 1 of 4" tabindex="0">
-            <div class="crop_mockup">
-              <img src="after_one_unified_view.gif" alt="1 unified view">
-            </div>
-          </div>
-          <div class="TBslidesItem slide-2" id="slide-2" aria-label="slide 2 of 4" tabindex="0">
-            <div class="crop_mockup">
-              <img src="after_persistent_filters.gif" alt="Persistent filters">
-            </div>
-          </div>
-          <div class="TBslidesItem slide-3" id="slide-3" aria-label="slide 3 of 4" tabindex="0">
-            <div class="crop_mockup">
-              <img src="after_inline_editing.gif" alt="Inline editing">
-            </div>
-          </div>
-        </div>
-        <div class="blankHXXS"></div>
-
-        <div class="TBcarouselNav Grid-cell flipBtn">
-          <a class="TBsliderNav" aria-label="Go to slide 1" tabindex="0">
-            <div>1 unified view</div>
-          </a>
-          <a class="TBsliderNav active" aria-label="Go to slide 2" tabindex="0">
-            <div>Persistent filters</div>
-          </a>
-          <a class="TBsliderNav" aria-label="Go to slide 3" tabindex="0">
-            <div>Inline editing</div>
-          </a>
-        </div>
-        <div class="blankHXXS"></div>
-      </div>
-    </div>
 
   </section>
 
-  <section id="results" data-nav="results">
+  <section id="impact" data-nav="impact">
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Results',
+            sectionName:'Impact',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
             }) %>
-            <h1 class="fontWeight400">Impact</h1>
-
-            <h3 class="">Reduced early-stage confusion and enabled users to progress into the booking flow despite incomplete information, improving conversion in a constrained in-app browser environment.</h3>
-            
 
           </div>
-
         </div>
       </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Impact</h1>
+
+            <div class="marginLeft">
+              <h4>· Reduced early-stage drop-off (supported by funnel analysis)</h4>
+              <h4>· Improved progression into provider selection</h4>
+              <h4>· Higher completion rates after item selection maintained or improved</h4>
+              <h4>· Established reusable pattern for partner traffic</h4>
+
+              <div class="spacingXSmall"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Trade-offs</h1>
+
+            <div class="marginLeft">
+              <h4>· Did not resolve provider-first vs gear-first tension</h4>
+              <h4>· Still relies on placeholder item logic</h4>
+              <h4>· Did not enable provider selection without items (explored but not shipped)</h4>
+              <h4>· Limited by embedded webview + tracking gaps</h4>
+
+              <div class="spacingXSmall"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Forward-looking</h1>
+
+            <h4 class="fontWeight400">Future direction:</h4>
+            <h5>support dual-entry model
+              (browse-first vs provider-first)</h5>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </section>
   <!-- Case study ends -->
   <div class="blankHS"></div>
