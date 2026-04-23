@@ -47,7 +47,7 @@
       </div>
       <div class=" Grid-cell">
         <div class="element">
-          <h5 class="">Scope: <span class="fontWeight400">VRBO Landing, Shopping, In App Experience</span></h5>
+          <h5 class="">Scope: <span class="fontWeight400">VRBO entry, shopping, and mobile web booking flow</span></h5>
         </div>
       </div>
       <div class=" Grid-cell">
@@ -81,21 +81,16 @@
 
             <h1 class="fontWeight400">Context</h1>
 
-            <div class="marginLeft">
-              <h4>· VRBO = high-intent, mobile-heavy traffic</h4>
-              <h4>· Embedded webview → constraints</h4>
-              <div class="spacingXSmall"></div>
-            </div>
+              <h4>VRBO brought high-intent, mobile-heavy traffic into BabyQuip’s embedded mobile web experience, where users entered mid-journey inside a constrained in-app browser.</h4>
 
-                        <h1 class="fontWeight400">Core Issue</h1>
+            <div class="spacingMedium"></div>
 
-            <div class="marginLeft">
+  
+            <div class="spacingMedium"></div>
 
-              <h4>· Existing system = gear-first UI on provider-first backend</h4>
-              <div class="spacingXSmall"></div>
-            </div>
             <h1 class="fontWeight400">Problem</h1>
-            <h4>Users were allowed to build orders without ever committing to a provider, creating fake carts, unclear pricing, and drop-off.</h4>
+            <h4>The experience encouraged item-first browsing even though price, availability, and fulfillment still depended on provider selection, allowing users to build carts that felt complete before a real booking could happen.
+</h4>
 
           </div>
           <div class="spacingMedium"></div>
@@ -141,11 +136,15 @@
         </div>
         <div class="Grid-cell">
           <div class="element">
-            <h4><span class="fontWeight400">Mobile vs. Web:</span> Last 90 days(GA4)</h4>
+            <h4><span class="fontWeight400">GA4 funnel comparison: </span> VRBO vs non-VRBO traffic across mobile and web (Last 90 days)</h4>
             <img class="modal-target card2026" src="ga4.png" alt="">
           </div>
         </div>
-
+        <div class="Grid-cell">
+          <div class="element">
+            <h4>Testing exposed the issue quickly, GA4 confirmed top-funnel drop-off, and session recordings provided supporting evidence of hesitation at entry.</h4>
+          </div>
+        </div>
         <div class="Grid-cell">
           <div class="element">
 
@@ -159,6 +158,11 @@
 
 
 
+
+      <div class="spacingXLarge"></div>
+
+
+
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
@@ -169,13 +173,13 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <div class="blankHXXS"></div>
             <h3 class="fontWeight400">A. Entry confusion </h3>
 
             <div class="marginLeft">
-              <h4>· Modal stacking</h4>
-              <h4>· No loading state</h4>
-              <h4>· Unclear ownership (VRBO vs BabyQuip)</h4>
+<h4>· Multiple overlays created a fragmented entry experience</h4>
+<h4>· Missing loading state made the app feel unresponsive</h4>
+<h4>· Unclear ownership between VRBO and BabyQuip reduced trust</h4>
+
               <div class="spacingXSmall"></div>
             </div>
             <img class="modal-target card2026" src="legacy_pre_entry.png" alt="">
@@ -183,37 +187,42 @@
           </div>
         </div>
       </div>
+      <div class="spacingMedium"></div>
 
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
 
 
         <div class="Grid-cell">
           <div class="element">
-            <div class="blankHXXS"></div>
-            <h3 class="fontWeight400">B. Shopping = fake progress</h3>
+            <h3 class="fontWeight400">B. Shopping created false progress in a provider-dependent marketplace</h3>
 
             <div class="marginLeft">
-              <h4>· Add-to-cart without commitment❌, add to cart modal is big, encarage shopping without encarage select a provider</h4>
-              <h4>· Placeholder item without real item details (title, pricing, image etc.)</h4>
-              <h4>· No push toward provider selection</h4>
+<h4>· Users added items before selecting a provider, even though pricing and availability depended on it</h4>
+<h4>· The cart appeared complete while a required step (provider selection) was still missing</h4>
+<h4>· Placeholder pricing and generic item details reinforced a false sense of certainty</h4>
+<h4>· The flow did not clearly transition users from browsing to provider selection</h4>
+
               <div class="spacingXSmall"></div>
             </div>
-            <img class="modal-target card2026" src="legacy_pre_entry.png" alt="">
+            <img class="modal-target card2026" src="legacy_shop_placeholder_items.png" alt="">
 
           </div>
         </div>
       </div>
+      <div class="spacingMedium"></div>
+
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
 
 
         <div class="Grid-cell">
           <div class="element">
-            <div class="blankHXXS"></div>
             <h3 class="fontWeight400">C. Provider selection gap </h3>
 
             <div class="marginLeft">
-              <h4>· Optional instead of required</h4>
-              <h4>· Weak transition moment</h4>
+<h4>· Add-to-cart used success feedback, making an incomplete step feel like completion</h4>
+<h4>· CTA hierarchy favored continued browsing over provider selection</h4>
+<h4>· Provider selection was available but not treated as the next required step</h4>
+
               <div class="spacingXSmall"></div>
             </div>
             <img class="modal-target card2026" src="legacy_provider_selection.png" alt="">
@@ -221,18 +230,20 @@
           </div>
         </div>
       </div>
+      <div class="spacingMedium"></div>
+
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
 
 
         <div class="Grid-cell">
           <div class="element">
-            <div class="blankHXXS"></div>
             <h3 class="fontWeight400">D. Pre-checkout chaos</h3>
 
             <div class="marginLeft">
-              <h4>· Order summary → add-on → order summary</h4>
-              <h4>· Conflicting CTAs</h4>
-              <h4>· Looks like checkout but isn’t</h4>
+<h4>· Repeated states across order summary and add-ons created unnecessary loops</h4>
+<h4>· Competing CTAs made it unclear whether to continue or checkout</h4>
+<h4>· The flow resembled checkout before users were actually ready to complete</h4>
+
               <div class="spacingXSmall"></div>
             </div>
             <img class="modal-target card2026" src="legacy_precheckout.png" alt="">
@@ -240,6 +251,8 @@
           </div>
         </div>
       </div>
+      <div class="spacingMedium"></div>
+
     </div>
 
     <div class="spacingMedium"></div>
@@ -269,14 +282,11 @@
             <div class="Grid Grid--gutters Grid--full Grid--gutter">
               <div class="Grid-cell">
                 <div class="element">
-                  <div class="blankHXXS"></div>
-                  <h3 class="fontWeight400">A. Entry confusion </h3>
-
                   <div class="marginLeft">
                     <h4>· Make commitment explicit</h4>
                     <h4>· Collapse redundant states</h4>
                     <h4>· Align UI with system constraints</h4>
-                    <h4>· Reduce false progress</h4>
+                    <h4>· Reduce false progress (item placeholder, item and provider availability)</h4>
 
                     <div class="spacingXSmall"></div>
                   </div>
@@ -284,75 +294,99 @@
                 </div>
               </div>
             </div>
+            <div class="spacingXLarge"></div>
+
             <div class="Grid Grid--gutters Grid--full Grid--gutter">
               <div class="Grid-cell">
                 <div class="element">
                   <h1 class="fontWeight400">Solutions</h1>
+                  <h4>Because pricing and availability were not final before provider selection, the redesign made uncertainty visible through lightweight disclaimers and contextual messaging, without blocking exploration.</h4>
                 </div>
               </div>
             </div>
             <div class="Grid Grid--gutters Grid--full Grid--gutter">
               <div class="Grid-cell">
                 <div class="element">
-                  <div class="blankHXXS"></div>
-                  <h3 class="fontWeight400">1. Clarified entry context (VRBO-specific)</h3>
+                  <h3 class="fontWeight400">1. <span class="fontWeight500">Entry:</span> Clarified entry context (VRBO-specific)</h3>
                   <div class="marginLeft">
-                    <h4>· Privacy + loading fix</h4>
-                    <h4>· Trip info surfaced</h4>
-                    <h4>· Brand/context clarity</h4>
+                    <h4>· Reduce system interruptions at entry</h4>
+                    <h4>· Clarify platform context and trust transfer from VRBO to BabyQuip</h4>
+                    <h4>· Surface trip details early so users understand what they are booking against</h4>
                     <div class="spacingXSmall"></div>
                   </div>
-
+                  <img class="modal-target card2026" src="design_pre_entry.png" alt="">
                 </div>
               </div>
             </div>
+            <div class="spacingMedium"></div>
 
             <div class="Grid Grid--gutters Grid--full Grid--gutter">
               <div class="Grid-cell">
                 <div class="element">
-                  <div class="blankHXXS"></div>
-                  <h3 class="fontWeight400">Forced commitment pathway (cross-platform)</h3>
+                  <h3 class="fontWeight400">2.<span class="fontWeight500">Shopping:</span> Reduce false progress before provider selection (VRBO-specific)</h3>
                   <div class="marginLeft">
-                    <h4>· Persistent “Select Provider”</h4>
-                    <h4>· Cart no longer dead-end</h4>
-                    <h4>· Clearer transition from browse → match</h4>
+                    <h4>· De-emphasize placeholder pricing and incomplete item certainty</h4>
+                    <h4>· Reframe add-to-cart as a transition, not a completion moment</h4>
+     
+
+                    <h4>· Guide users from browsing toward provider selection as the next required step</h4>
                     <div class="spacingXSmall"></div>
                   </div>
+                  <img class="modal-target card2026" src="design_shopping.png" alt="">
 
                 </div>
               </div>
             </div>
+            <div class="spacingMedium"></div>
 
             <div class="Grid Grid--gutters Grid--full Grid--gutter">
               <div class="Grid-cell">
                 <div class="element">
-                  <div class="blankHXXS"></div>
-                  <h3 class="fontWeight400">Simplified decision loop (cross-platform)</h3>
+                  <h3 class="fontWeight400">3. <span class="fontWeight500">Commitment:</span> Make provider selection explicit at the right moment (cross-platform)</h3>
                   <div class="marginLeft">
-                    <h4>· Removed redundant screens</h4>
-                    <h4>· Unified add-on + cart logic</h4>
-                    <h4>· Fixed CTA hierarchy</h4>
+                    <h4>· Make provider selection visible and necessary</h4>
+                    <h4>· Reduce dead-end cart states before fulfillment is confirmed</h4>
+                    <h4>· Align user actions with provider-based marketplace logic</h4>
                     <div class="spacingXSmall"></div>
                   </div>
+                  <img class="modal-target card2026" src="design_select_provider.png" alt="">
 
                 </div>
               </div>
             </div>
+            <div class="spacingMedium"></div>
 
             <div class="Grid Grid--gutters Grid--full Grid--gutter">
               <div class="Grid-cell">
                 <div class="element">
-                  <div class="blankHXXS"></div>
-                  <h3 class="fontWeight400">4. Checkout alignment (cross-platform)</h3>
+                  <h3 class="fontWeight400">4. <span class="fontWeight500">Pre-Checkout:</span> Remove redundant decision states (cross-platform)</h3>
                   <div class="marginLeft">
-                    <h4>· Real checkout looks like checkout</h4>
-                    <h4>· Removed fake states</h4>
-                    <div class="spacingXSmall"></div>
+                    <h4>· Remove repeated decision states across cart, add-ons, and summary</h4>
+                    <h4>· Make checkout the dominant action once users are ready to commit</h4>
+                    <h4>· Consolidate add-ons, order summary, and checkout into one continuous path</h4>
+
                   </div>
 
                 </div>
               </div>
             </div>
+
+            <div class="Grid Grid--gutters Grid--cols-2">
+              <div class="Grid-cell">
+                <div class="element">
+                  <h4><span class="fontWeight400">Before:</span> fragmented flow with repeated decision states before checkout</h4>
+                  <img class="modal-target card2026" src="legacy_pre_checkout.png" alt="">
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element">
+                  <h4><span class="fontWeight400">After:</span> one continuous path from add-ons to checkout</h4>
+                  <img class="modal-target card2026" src="design_pre_checkout.png" alt="">
+
+                </div>
+              </div>
+            </div>
+                    <div class="spacingXSmall"></div>
 
           </div>
         </div>
@@ -381,13 +415,24 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h1 class="fontWeight400">Impact</h1>
+            <h1 class="fontWeight400">Expected outcome</h1>
 
             <div class="marginLeft">
-              <h4>· Reduced early-stage drop-off (supported by funnel analysis)</h4>
-              <h4>· Improved progression into provider selection</h4>
+              <h4>· Reduce early-stage drop-off by making provider selection more explicit and removing redundant pre-checkout loops.</h4>
+              <h4>· Improve progression into provider selection</h4>
               <h4>· Higher completion rates after item selection maintained or improved</h4>
               <h4>· Established reusable pattern for partner traffic</h4>
+
+              <div class="spacingXSmall"></div>
+            </div>
+          </div>
+        </div>
+               <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Measurement plan</h1>
+
+            <div class="marginLeft">
+              <h4>· Validate post-launch through GA4 funnel progression from entry → shopping → provider selection → checkout.</h4>
 
               <div class="spacingXSmall"></div>
             </div>
@@ -400,7 +445,7 @@
             <h1 class="fontWeight400">Trade-offs</h1>
 
             <div class="marginLeft">
-              <h4>· Did not resolve provider-first vs gear-first tension</h4>
+              <h4>· Did not resolve provider-first vs gear-first tension (Placeholder items, availability unknown)</h4>
               <h4>· Still relies on placeholder item logic</h4>
               <h4>· Did not enable provider selection without items (explored but not shipped)</h4>
               <h4>· Limited by embedded webview + tracking gaps</h4>
@@ -418,6 +463,7 @@
             <h4 class="fontWeight400">Future direction:</h4>
             <h5>support dual-entry model
               (browse-first vs provider-first)</h5>
+            <img class="modal-target card2026" src="design_dual-entry_model.png" alt="">
           </div>
         </div>
       </div>

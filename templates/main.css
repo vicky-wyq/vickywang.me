@@ -2912,7 +2912,9 @@ strong {
 .textItalic {
   font-style: italic;
 }
-
+.textStrikethrough {
+  text-decoration: line-through;
+}
 a:link.textUnderline {
   color: inherit;
   text-decoration-line: underline;
