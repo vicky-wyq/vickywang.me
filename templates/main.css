@@ -5922,13 +5922,19 @@ ul.iconx {
   bottom: 1rem;
   padding: 0.45rem 0.8rem;
   border-radius: 999px;
-  background-color: rgba(255, 255, 255, 0.92);
+    background-color: var(--Grey200);
+
   border: 1px solid var(--Grey300);
+  box-shadow: 0 8px 24px rgba(27, 27, 27, 0.4);
   color: var(--Grey900);
   font-size: 0.95rem;
   line-height: 1;
 }
+.gif-player__label:hover {
+  background-color: var(--white);
+  box-shadow: 0 8px 24px rgba(27, 27, 27, 0.6);
 
+}
 .gif-player.is-playing .gif-player__label {
   background-color: rgba(27, 27, 27, 0.9);
   border-color: rgba(27, 27, 27, 0.9);
