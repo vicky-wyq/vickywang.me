@@ -2,7 +2,7 @@
 <html lang="en">
 
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Unlocking Supply Growth Through Streamlined Inventory Management
+<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Streamlined Inventory Management
 `,
   text:'Simplified fragmented inventory workflows into a unified management system, enabling faster updates and unlocking underutilized supply.', pageURL:'bq_b2b_inventory_management/',
   thumbnailImgURL: 'vickywang.svg' }) %>
@@ -30,10 +30,14 @@
         <div class="Grid-cell">
           <div class="element">
             <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
+            <%- include(`${templatePath}/shared/txt_about_bq`) %>
+
             <%- include(`${templatePath}/shared/txt_banner_title`, {
             text:'Unlocking Supply Growth Through Streamlined Inventory Management',}) %>
-            <%- include(`${templatePath}/shared/txt_banner_description`, {
-            text:'Simplified fragmented inventory workflows into a unified management system, enabling faster updates and unlocking underutilized supply.',}) %>
+
+            <h4>Simplified fragmented inventory workflows into a unified management system, enabling faster updates and unlocking underutilized supply.</h4>
+
+
           </div>
         </div>
       </div>
@@ -44,8 +48,7 @@
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_s`, {
             subtitle:'Context',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-            text:'BabyQuip is a two-sided marketplace with 3,000+ active providers and $20M+ annual GMV, where provider reliability and inventory quality are the primary drivers of customer trust.',}) %>
+
           </div>
         </div>
 
@@ -53,17 +56,17 @@
       <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell">
           <div class="element">
-            <h5 class="">Role: <span class="fontWeight400">Lead UX</span></h5>
+            <h4><span class="fontWeight400">Role:</span> Lead UX for provider inventory workflow</h4>
           </div>
         </div>
-        <div class=" Grid-cell">
+        <div class="Grid-cell">
           <div class="element">
-            <h5 class="">Scope: <span class="fontWeight400">Gear listing &amp; storefront control</span></h5>
+            <h4><span class="fontWeight400">Scope:</span> Provider-facing inventory management · B2B workflow redesign</h4>
           </div>
         </div>
-        <div class=" Grid-cell">
+        <div class="Grid-cell">
           <div class="element">
-            <h5 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h5>
+            <h4><span class="fontWeight400">Stakeholders:</span>VP Product Design, CTO, engineering, QA, providers </h4>
           </div>
         </div>
       </div>
@@ -97,7 +100,7 @@
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
             title:'Why inventory management did not scale with supply growth.',}) %>
-     <div class="spacingXSmall"></div>
+            <div class="spacingXSmall"></div>
 
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
@@ -109,7 +112,7 @@
               <%- include(`${templatePath}/shared/txt_description_l`, {
               text:'· 45% of categories remained undiscovered or unused',}) %>
             </div>
-                 <div class="spacingXSmall"></div>
+            <div class="spacingXSmall"></div>
 
             <h4>As inventory increased, <span class="fontWeight400"> the cost to manage it increased faster than the inventory itself</span> reducing update frequency and leaving supply underutilized.</h4>
           </div>
@@ -174,7 +177,7 @@
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {title:'Why the original task was too narrow',}) %>
-                        <div class="spacingSmall"></div>
+            <div class="spacingSmall"></div>
 
             <table>
               <thead>
@@ -208,13 +211,13 @@
             </table>
 
             <div class="spacingSmall"></div>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
+            <%- include(`${templatePath}/shared/txt_description_l`, {
                 text:'· The top 10% of QPs contributed 46.3% of total supply, making their workflow the highest-leverage problem to solve',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
+            <%- include(`${templatePath}/shared/txt_description_l`, {
                 text:'· Inventory updates competed with delivery, cleaning, and customer coordination, reducing update frequency',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
+            <%- include(`${templatePath}/shared/txt_description_l`, {
                 text:'· Unlisted and underused gear stayed hidden in separate flows, increasing CS support and onboarding friction',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
+            <%- include(`${templatePath}/shared/txt_description_l`, {
                 text:'· Adding another tab would improve exposure but also add another navigation step',}) %>
 
             <div class="spacingSmall"></div>
@@ -247,7 +250,7 @@
 
             <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Option 1 — Add a separate discovery surface',}) %>
-                <img class="modal-target card2026" src="wireframe_opt1.png" alt="Option 1 — Add a separate discovery surface">
+            <img class="modal-target card2026" src="wireframe_opt1.png" alt="Option 1 — Add a separate discovery surface">
 
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
@@ -259,7 +262,7 @@
 
             </div>
 
- 
+
 
           </div>
         </div>
@@ -270,7 +273,7 @@
 
             <%- include(`${templatePath}/shared/txt_title_s`, {
                 title:'Option 2 — Integrate discovery into inventory management',}) %>
-                            <img class="modal-target card2026" src="wireframe_opt2.png" alt="Option 2 — Integrate discovery into inventory management">
+            <img class="modal-target card2026" src="wireframe_opt2.png" alt="Option 2 — Integrate discovery into inventory management">
 
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
@@ -284,7 +287,7 @@
                 text:'',}) %>
             </div>
 
-   
+
           </div>
 
         </div>
@@ -395,7 +398,7 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-                <div class="spacingMedium"></div>
+            <div class="spacingMedium"></div>
 
             <%- include(`${templatePath}/shared/txt_title_l`, {title:'Workflow comparison',}) %>
             <div class="spacingLarge"></div>

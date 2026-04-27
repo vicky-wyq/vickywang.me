@@ -2,8 +2,7 @@
 <html lang="en">
 
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Scaling Inventory Management for Growth
-`,
+<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Standardizing Packages`,
   text:'Turning bundles from a hidden, provider-specific upsell into a platform-level conversion and AOV engine', pageURL:'bq_b2b_package/',
   thumbnailImgURL: 'vickywang.svg' }) %>
 <!--Head-->
@@ -29,11 +28,13 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
+            <%- include(`${templatePath}/shared/txt_about_bq`) %>
+
             <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
             <%- include(`${templatePath}/shared/txt_banner_title`, {
             text:'Standardizing Packages to Unlock Early Funnel Discovery',}) %>
-            <%- include(`${templatePath}/shared/txt_banner_description`, {
-            text:'Packages drove higher conversion and AOV but were inaccessible during browsing due to provider dependency. Redesigned the system to make bundles visible earlier, enabling higher-value decisions before users commit.',}) %>
+
+            <h4 class="fontWeight300">Packages drove higher conversion and AOV but were inaccessible during browsing due to provider dependency. Redesigned the system to make bundles visible earlier, enabling higher-value decisions before users commit.</h4>
           </div>
         </div>
       </div>
@@ -44,26 +45,27 @@
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_s`, {
             subtitle:'Context',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-            text:'BabyQuip is a two-sided marketplace with 3,000+ active providers and $20M+ annual GMV, where provider reliability and inventory quality are the primary drivers of customer trust.',}) %>
+            <h4>Packages were tied to individual providers, so they became invisible in browsing-first flows before provider selection.</h4>
           </div>
         </div>
 
       </div>
+            <div class="spacingLarge"></div>
+
       <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell">
           <div class="element">
-            <h5 class="">Role: <span class="fontWeight400">Lead UX</span></h5>
+            <h4 class=""><span class="fontWeight400">Role: </span>Product UX · Package system design</h4>
           </div>
         </div>
         <div class=" Grid-cell">
           <div class="element">
-            <h5 class="">Scope: <span class="fontWeight400">Marketplace package promotion</span></h5>
+            <h4 class=""><span class="fontWeight400">Scope: </span>Standardized package system · Consumer discovery + provider fulfillment</h4>
           </div>
         </div>
         <div class=" Grid-cell">
           <div class="element">
-            <h5 class="">Stakeholders <span class="fontWeight400"><a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/jemaier">Joe Maier</a>, <a class="textUnderline fontWeight400" href="https://www.linkedin.com/in/kimconnolly1">Kim Connolly</a></span></h5>
+            <h4 class=""><span class="fontWeight400">Stakeholders: </span>Stakeholders VP Product Design, CTO, engineering, QA, providers</h4>
           </div>
         </div>
       </div>
