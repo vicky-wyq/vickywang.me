@@ -2,7 +2,7 @@
 <html lang="en">
 
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Converting High-Intent Partner Traffic Under In-App Constraints (VRBO)`,
+<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Converting High-Intent Partner Traffic Under In-App Constraints (Vrbo)`,
   text:'Reducing early-stage drop-off in mobile funnels with incomplete data', pageURL:'bq_b2c_vrbo/',
   thumbnailImgURL: 'vickywang.svg' }) %>
 <!--Head-->
@@ -20,7 +20,7 @@
   tab3:'Design',
   tab3_data_link:'design',
 
-  tab4_display:'dispay',
+  tab4_display:'displayTab',
   tab4:'Impact',
   tab4_data_link:'impact',
   }) %>
@@ -31,9 +31,10 @@
         <div class="element">
           <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
           <h6>Two-sided marketplace (3,000+ providers, $20M+ GMV)</h6>
+          <h6>Partner-entry funnel redesign · Mobile web · Marketplace booking flow</h6>
           <div class="spacingMedium"></div>
 
-          <h1 class="titleCaseStudy">Converting High-Intent Partner Traffic Under In-App Constraints (VRBO)</h1>
+          <h1 class="titleCaseStudy">Converting High-Intent Partner Traffic Under In-App Constraints (Vrbo)</h1>
           <h4 class="fontWeight300">Reducing early-stage drop-off in mobile funnels with incomplete data</h4>
         </div>
       </div>
@@ -80,7 +81,9 @@
 
             <h1 class="fontWeight400">Context</h1>
 
-            <h4>VRBO brought high-intent, mobile-heavy traffic into BabyQuip’s embedded mobile web experience, where users entered mid-journey inside a constrained in-app browser.</h4>
+            <h4>Vrbo brought <span class="fontWeight400">high-intent, mobile-heavy traffic</span> into BabyQuip’s embedded mobile web experience, where users entered mid-journey inside a constrained in-app browser.</h4>
+            <!-- <h4>BabyQuip’s gear-first browsing flow supported partner discovery, but the provider-based backend meant pricing and availability were not reliable until QP selection. Vrbo exposed this mismatch because high-intent users entered through a constrained mobile webview with little context. I redesigned the flow to reduce false progress, make provider commitment clearer, and simplify the path from shopping to checkout, while identifying the deeper unresolved marketplace tension between gear-first browsing and provider-first fulfillment.
+            </h4> -->
 
             <div class="spacingMedium"></div>
 
@@ -88,7 +91,7 @@
             <div class="spacingMedium"></div>
 
             <h1 class="fontWeight400">Problem</h1>
-            <h4>The experience encouraged item-first browsing even though price, availability, and fulfillment still depended on provider selection, allowing users to build carts that felt complete before a real booking could happen.
+            <h4>The experience encouraged <span class="fontWeight400">item-first browsing</span> even though <span class="fontWeight400">price, availability, and fulfillment still depended on provider selection</span>, allowing users to build carts that felt complete before a real booking could happen.
             </h4>
 
           </div>
@@ -120,42 +123,92 @@
           <div class="spacingMedium"></div>
         </div>
       </div>
+
+
+
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
-            <h1 class="fontWeight400">Identify the issue (drop-off at top funnel)</h1>
+            <h1 class="fontWeight400">Where the funnel broke</h1>
+            <h4>GA4 and Hotjar showed that Vrbo users were not failing at checkout. They were dropping before the experience built enough context, trust, and provider commitment.</h4>
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <h1 class="fontWeight400">GA4 funnel comparison</h1>
+            <h4>To avoid comparing partner traffic against desktop-heavy baseline traffic, I separated the analysis into two views.</h4>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight400">Mobile comparison (Vrbo vs. non-Vrbo)</h4>
+
+
+            <img class="modal-target card2026" src="ga4_vrbo_nonvrbo_traffic.png" alt="Vrbo mobile vs non-Vrbo mobile">
+
+
             <div class="marginLeft">
-              <h4>· Massive drop at entry → shopping</h4>
-              <h4>· High completion after intent is established</h4>
-              <h4>· VRBO users appeared high-intent, but less tolerant of early friction</h4>
-              <div class="spacingXSmall"></div>
+              <h5 class="fontWeight400">How did Vrbo mobile compare with non-Vrbo mobile traffic?</h5>
+
+              <h6>· Compared with non-Vrbo mobile traffic, Vrbo mobile users dropped earlier in the funnel, while later-stage completion remained strong.</h6>
+
+              <h6>· The biggest issue was not checkout, but early-stage progression from entry/shopping toward provider commitment.
+              </h6>
+
+
             </div>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h4><span class="fontWeight400">GA4 funnel comparison: </span> VRBO vs non-VRBO traffic across mobile and web (Last 90 days)</h4>
-            <img class="modal-target card2026" src="ga4.png" alt="">
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h4>Testing exposed the issue quickly, GA4 confirmed top-funnel drop-off, and session recordings provided supporting evidence of hesitation at entry.</h4>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
 
-            <h4>The problem is not checkout.</h4>
-            <h4>The problem is <span class="fontWeight400">failure to transition users from browsing → commitment.</span></h4>
 
           </div>
+
         </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight400"> Mobile vs. web(Vrbo only)</h4>
+
+            <img class="modal-target card2026" src="ga4_mobile_vs_web_traffic.png" alt="Vrbo mobile vs Vrbo web">
+
+
+
+            <div class="marginLeft">
+              <h5 class="fontWeight400">Is Vrbo mainly a mobile/in-app browser problem?</h5>
+
+              <h6>· Vrbo traffic was primarily mobile web, making the constrained in-app browser experience the critical surface to fix.</h6>
+
+              <h6>· Vrbo mobile performed worse at early stages than Vrbo web, making embedded mobile web the priority.</h6>
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+
 
       </div>
 
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="textItalic fontWeight100 GreyBg400 GreyBg100 border-radius paddingXS">💡 Users drop before context, trust, and provider commitment are established</h4>
 
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="wrapper">
 
 
       <div class="spacingXLarge"></div>
@@ -164,36 +217,28 @@
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
-            <h1 class="fontWeight400">User experience across the funnel</h1>
+            <h1 class="fontWeight400">What the data meant in the experience</h1>
+            <h4>The data pointed to an early-funnel issue, but the experience revealed four separate breakdowns:</h4>
             <div class="marginLeft">
-              <h4>· <span class="fontWeight400">Entry:</span> unclear context and trust (“Where am I?”)</h4>
-              <h4>· <span class="fontWeight400">Shopping:</span> misleading progress (“This feels like a real cart”)</h4>
-              <h4>· <span class="fontWeight400">Commitment:</span> missing decision moment (“I haven’t actually chosen a provider”)</h4>
-              <h4>· <span class="fontWeight400">Pre-checkout:</span> redundant flow (“Why am I doing this again?”)</h4>
-
+              <h5>· <span class="fontWeight400">Entry:</span> unclear context and trust (“Where am I?”)</h5>
+              <h5>· <span class="fontWeight400">Shopping:</span> misleading progress (“This feels like a real cart”)</h5>
+              <h5>· <span class="fontWeight400">Commitment:</span> missing decision moment (“I haven’t actually chosen a provider”)</h5>
+              <h5>· <span class="fontWeight400">Pre-checkout:</span> redundant flow (“Why am I doing this again?”)</h5>
               <div class="spacingXSmall"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="spacingXLarge"></div>
-
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h1 class="fontWeight400">Problem breakdown</h1>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="fontWeight400">A. Entry confusion </h3>
+            <h4 class="fontWeight400">A. Entry confusion </h4>
 
             <div class="marginLeft">
-              <h4>· Multiple overlays created a fragmented entry experience</h4>
-              <h4>· Missing loading state made the app feel unresponsive</h4>
-              <h4>· Unclear ownership between VRBO and BabyQuip reduced trust</h4>
+              <h5>· Multiple overlays created a fragmented entry experience</h5>
+              <h5>· Missing loading state made the app feel unresponsive</h5>
+              <h5>· Unclear ownership between Vrbo and BabyQuip reduced trust</h5>
 
               <div class="spacingXSmall"></div>
             </div>
@@ -209,13 +254,13 @@
 
         <div class="Grid-cell">
           <div class="element">
-            <h3 class="fontWeight400">B. Shopping created false progress in a provider-dependent marketplace</h3>
+            <h4 class="fontWeight400">B. Shopping created false progress in a provider-dependent marketplace</h4>
 
             <div class="marginLeft">
-              <h4>· Users added items before selecting a provider, even though pricing and availability depended on it</h4>
-              <h4>· The cart appeared complete while a required step (provider selection) was still missing</h4>
-              <h4>· Placeholder pricing and generic item details reinforced a false sense of certainty</h4>
-              <h4>· The flow did not clearly transition users from browsing to provider selection</h4>
+              <h5>· Users added items before selecting a provider, even though pricing and availability depended on it</h5>
+              <h5>· The cart appeared complete while a required step (provider selection) was still missing</h5>
+              <h5>· Placeholder pricing and generic item details reinforced a false sense of certainty</h5>
+              <h5>· The flow did not clearly transition users from browsing to provider selection</h5>
 
               <div class="spacingXSmall"></div>
             </div>
@@ -231,12 +276,12 @@
 
         <div class="Grid-cell">
           <div class="element">
-            <h3 class="fontWeight400">C. Provider selection gap </h3>
+            <h4 class="fontWeight400">C. Provider selection gap </h4>
 
             <div class="marginLeft">
-              <h4>· Add-to-cart used success feedback, making an incomplete step feel like completion</h4>
-              <h4>· CTA hierarchy favored continued browsing over provider selection</h4>
-              <h4>· Provider selection was available but not treated as the next required step</h4>
+              <h5>· Add-to-cart used success feedback, making an incomplete step feel like completion</h5>
+              <h5>· CTA hierarchy favored continued browsing over provider selection</h5>
+              <h5>· Provider selection was available but not treated as the next required step</h5>
 
               <div class="spacingXSmall"></div>
             </div>
@@ -252,28 +297,26 @@
 
         <div class="Grid-cell">
           <div class="element">
-            <h3 class="fontWeight400">D. Pre-checkout chaos</h3>
+            <h4 class="fontWeight400">D. Pre-checkout chaos</h4>
 
             <div class="marginLeft">
-              <h4>· Repeated states across order summary and add-ons created unnecessary loops</h4>
-              <h4>· Competing CTAs made it unclear whether to continue or checkout</h4>
-              <h4>· The flow resembled checkout before users were actually ready to complete</h4>
+              <h5>· Repeated states across order summary and add-ons created unnecessary loops</h5>
+              <h5>· Competing CTAs made it unclear whether to continue or checkout</h5>
+              <h5>· The flow resembled checkout before users were actually ready to complete</h5>
 
-              <div class="spacingXSmall"></div>
             </div>
             <img class="modal-target card2026" src="legacy_precheckout.png" alt="">
 
           </div>
         </div>
       </div>
-      <div class="spacingMedium"></div>
-
     </div>
+    <div class="spacingMedium"></div>
+
 
     <div class="spacingMedium"></div>
 
   </section>
-
   <section id="design" data-nav="design">
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
@@ -299,13 +342,12 @@
                 <div class="element">
                   <div>
                     <h4 class="fontWeight400">1. Clarify context before action</h4>
-                    <h4>Users need to understand where they are, what carried over from VRBO, and what can be trusted before they act.</h4>
+                    <h5>Users need to understand where they are, what carried over from Vrbo, and what can be trusted before they act.</h5>
 
                     <h4 class="fontWeight400">2. Make commitment visible at the right moment</h4>
-                    <h4>Shift the flow from endless exploration toward clear provider selection and checkout progression.</h4>
+                    <h5>Shift the flow from endless exploration toward clear provider selection and checkout progression.</h5>
                     <h4 class="fontWeight400">3. Remove false progress and repeated decisions</h4>
-                    <h4>Avoid screens and states that look complete before pricing, availability, or fulfillment are actually resolved.</h4>
-                    <div class="spacingXSmall"></div>
+                    <h5>Avoid screens and states that look complete before pricing, availability, or fulfillment are actually resolved.</h5>
                   </div>
 
                 </div>
@@ -319,97 +361,98 @@
                   <h1 class="fontWeight400">Solutions</h1>
                   <h4>Because pricing and availability were not final before provider selection, the redesign made uncertainty visible through lightweight disclaimers and contextual messaging, without blocking exploration.</h4>
                 </div>
+
               </div>
-            </div>
-            <div class="Grid Grid--gutters Grid--full Grid--gutter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h3 class="fontWeight400">1. <span class="fontWeight500">Entry:</span> Clarified entry context (VRBO-specific)</h3>
-                  <div class="marginLeft">
-                    <h4>· Reduce system interruptions at entry</h4>
-                    <h4>· Clarify platform context and trust transfer from VRBO to BabyQuip</h4>
-                    <h4>· Surface trip details early so users understand what they are booking against</h4>
-                    <div class="spacingXSmall"></div>
+              <div class="Grid Grid--gutters Grid--full Grid--gutter">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h3 class="fontWeight400">1. <span class="fontWeight500">Entry:</span> Clarified entry context (Vrbo-specific)</h3>
+                    <div class="marginLeft">
+                      <h4>· Reduce system interruptions at entry</h4>
+                      <h4>· Surface trip details early so users understand what they are booking against</h4>
+                      <div class="spacingXSmall"></div>
+                    </div>
+                    <img class="modal-target card2026" src="design_pre_entry.png" alt="">
                   </div>
-                  <img class="modal-target card2026" src="design_pre_entry.png" alt="">
                 </div>
               </div>
-            </div>
-            <div class="spacingMedium"></div>
+              <div class="spacingMedium"></div>
 
-            <div class="Grid Grid--gutters Grid--full Grid--gutter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h3 class="fontWeight400">2.<span class="fontWeight500">Shopping:</span> Reduce false progress before provider selection (VRBO-specific)</h3>
-                  <div class="marginLeft">
-                    <h4>· De-emphasize placeholder pricing and incomplete item certainty</h4>
-                    <h4>· Reframe add-to-cart as a transition, not a completion moment</h4>
+              <div class="Grid Grid--gutters Grid--full Grid--gutter">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h3 class="fontWeight400">2.<span class="fontWeight500">Shopping:</span> Reduce false progress before provider selection (Vrbo-specific)</h3>
+                    <div class="marginLeft">
+                      <h4>· De-emphasize placeholder pricing and incomplete item certainty</h4>
+                      <h4>· Reframe add-to-cart as a transition, not a completion moment</h4>
 
 
-                    <h4>· Guide users from browsing toward provider selection as the next required step</h4>
-                    <div class="spacingXSmall"></div>
-                  </div>
-                  <img class="modal-target card2026" src="design_shopping.png" alt="">
-
-                </div>
-              </div>
-            </div>
-            <div class="spacingMedium"></div>
-
-            <div class="Grid Grid--gutters Grid--full Grid--gutter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h3 class="fontWeight400">3. <span class="fontWeight500">Commitment:</span> Make provider selection explicit at the right moment (cross-platform)</h3>
-                  <div class="marginLeft">
-                    <h4>· Make provider selection visible and necessary</h4>
-                    <h4>· Reduce dead-end cart states before fulfillment is confirmed</h4>
-                    <h4>· Align user actions with provider-based marketplace logic</h4>
-                    <div class="spacingXSmall"></div>
-                  </div>
-                  <img class="modal-target card2026" src="design_select_provider.png" alt="">
-
-                </div>
-              </div>
-            </div>
-            <div class="spacingMedium"></div>
-
-            <div class="Grid Grid--gutters Grid--full Grid--gutter">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h3 class="fontWeight400">4. <span class="fontWeight500">Pre-Checkout:</span> Remove redundant decision states (cross-platform)</h3>
-                  <div class="marginLeft">
-                    <h4>· Remove repeated decision states across cart, add-ons, and summary</h4>
-                    <h4>· Make checkout the dominant action once users are ready to commit</h4>
-                    <h4>· Consolidate add-ons, order summary, and checkout into one continuous path</h4>
+                      <h4>· Guide users from browsing toward provider selection as the next required step</h4>
+                      <div class="spacingXSmall"></div>
+                    </div>
+                    <img class="modal-target card2026" src="design_shopping.png" alt="">
 
                   </div>
-
                 </div>
               </div>
+              <div class="spacingMedium"></div>
+
+              <div class="Grid Grid--gutters Grid--full Grid--gutter">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h3 class="fontWeight400">3. <span class="fontWeight500">Commitment:</span> Make provider selection explicit at the right moment (cross-platform)</h3>
+                    <div class="marginLeft">
+                      <h4>· Make provider selection visible and necessary</h4>
+                      <h4>· Reduce dead-end cart states before fulfillment is confirmed</h4>
+                      <h4>· Align user actions with provider-based marketplace logic</h4>
+                      <div class="spacingXSmall"></div>
+                    </div>
+                    <img class="modal-target card2026" src="design_select_provider.png" alt="">
+
+                  </div>
+                </div>
+              </div>
+              <div class="spacingMedium"></div>
+
+              <div class="Grid Grid--gutters Grid--full Grid--gutter">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <h3 class="fontWeight400">4. <span class="fontWeight500">Pre-Checkout:</span> Remove redundant decision states (cross-platform)</h3>
+                    <div class="marginLeft">
+                      <h4>· Remove repeated decision states across cart, add-ons, and summary</h4>
+                      <h4>· Make checkout the dominant action once users are ready to commit</h4>
+                      <h4>· Consolidate add-ons, order summary, and checkout into one continuous path</h4>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="Grid Grid--gutters Grid--cols-2">
+                <div class="Grid-cell">
+                  <div class="element">
+                    <img class="modal-target card2026" src="legacy_pre_checkout.png" alt="">
+
+                    <h4><span class="fontWeight400">Before:</span> fragmented flow with repeated decision states before checkout</h4>
+                  </div>
+                </div>
+                <div class="Grid-cell">
+                  <div class="element">
+                    <img class="modal-target card2026" src="design_pre_checkout.png" alt="">
+
+                    <h4><span class="fontWeight400">After:</span> one continuous path from add-ons to checkout</h4>
+
+                  </div>
+                </div>
+              </div>
+              <div class="spacingXSmall"></div>
+
             </div>
-
-            <div class="Grid Grid--gutters Grid--cols-2">
-              <div class="Grid-cell">
-                <div class="element">
-                  <h4><span class="fontWeight400">Before:</span> fragmented flow with repeated decision states before checkout</h4>
-                  <img class="modal-target card2026" src="legacy_pre_checkout.png" alt="">
-                </div>
-              </div>
-              <div class="Grid-cell">
-                <div class="element">
-                  <h4><span class="fontWeight400">After:</span> one continuous path from add-ons to checkout</h4>
-                  <img class="modal-target card2026" src="design_pre_checkout.png" alt="">
-
-                </div>
-              </div>
-            </div>
-            <div class="spacingXSmall"></div>
-
           </div>
         </div>
       </div>
-    </div>
-    <div class="spacingMedium"></div>
+      <div class="spacingMedium"></div>
 
   </section>
 
@@ -437,7 +480,7 @@
             <div class="marginLeft">
               <h4>· Reduce early-stage drop-off by making provider selection more explicit and removing redundant pre-checkout loops.</h4>
               <h4>· Improve progression into provider selection</h4>
-              <h4>· Higher completion rates after item selection maintain or improve</h4>
+              <h4>· Maintain or improve completion after item selection by reducing redundant decision loops</h4>
               <h4>· Established reusable pattern for partner traffic</h4>
 
               <div class="spacingXSmall"></div>
@@ -462,8 +505,8 @@
             <h1 class="fontWeight400">Trade-offs</h1>
 
             <div class="marginLeft">
-              <h4>· <span class="fontWeight400">Did not resolve provider-first vs gear-first tension</span> (placeholder items, availability still unknown before provider selection)</h4>
-              <h4>· Still relies on placeholder item logic</h4>
+              <h4>· <span class="fontWeight400">Did not resolve the provider-first vs gear-first model tension</span>: users still browse before fulfillment is fully known</h4>
+              <h4>· <span class="fontWeight400">Placeholder item logic remains</span>: pricing and availability still become reliable only after provider selection</h4>
               <h4>· Did not enable provider selection without items (explored but not shipped)</h4>
               <h4>· Limited by embedded webview + tracking gaps</h4>
 
@@ -478,9 +521,8 @@
             <h1 class="fontWeight400">Forward-looking</h1>
 
             <h4 class="fontWeight400">Future direction:</h4>
-            <h5>support dual-entry model
-              (browse-first vs provider-first)</h5>
-            <img class="modal-target card2026" src="design_dual-entry_model.png" alt="">
+            <h5>support dual-entry model (browse-first vs provider-first)</h5>
+            <img class="modal-target card2026" src="design_dual-entry_model.png" alt="Provider selection available before item selection">
           </div>
         </div>
       </div>
