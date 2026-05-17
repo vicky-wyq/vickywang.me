@@ -1,0 +1,47 @@
+<% if (typeof gated === 'undefined') {
+  gated = false;
+} %>
+<% if (typeof ctaButton === 'undefined') {
+  ctaButton = 'buttonPrimary';
+} %>
+<% if (typeof modalId === 'undefined') {
+  modalId = 'providerAppAccessModal';
+} %>
+
+    <div class="wrapper">
+      <div class="card">
+        <div class="card__left">
+          <p class="card25CardMeta">Business Facing • Q2 2026 </p>
+          <h2 class="fontWeight400">Provider App: Reducing Operational Fragmentation for Active Reservations
+          </h2>
+
+          <h4 class="fontWeight400">
+            Helping QPs manage reservations, customer messages, and urgent updates on the go.
+          </h4>
+          <h4>Phase one centralizes reservation-based messages, urgent updates, and daily coordination workflows into a mobile-first operations console. </h4>
+
+          <div class="card__cta">
+            <h4>↓ missed updates · ↑ reservation clarity · ↓ operational mental load</h4>
+            <div class="spacingSmall"></div>
+
+            <% if (gated) { %>
+              <%- include(`${templatePath}/shared/modal_email_for_access`, {
+                ctaButton,
+                modalId
+              }) %>
+            <% } else { %>
+              <a href="/bq_b2b_provider_app">
+                <button class="buttonMedium <%= ctaButton %>">View Case Study</button>
+              </a>
+            <% } %>
+          </div>
+          <div class="spacingXSmall displayMobile"></div>
+        </div>
+
+        <div class="card__right">
+          <div class="card25-media">
+            <img src="/project_images/cover_bq_b2b_provider_app.png" alt="project image" class="card25-media-img">
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,49 @@
+
+<% if (typeof gated === 'undefined') {
+  gated = false;
+} %>
+<% if (typeof ctaButton === 'undefined') {
+  ctaButton = 'buttonPrimary';
+} %>
+<% if (typeof modalId === 'undefined') {
+  modalId = 'packageAccessModal';
+} %>
+
+    <div class="wrapper">
+      <div class="card">
+        <div class="card__left">
+          <p class="card25CardMeta">Business-Facing • Q3 2025</p>
+          <h2 class="fontWeight400">Integrating Bundles into Early-Stage Discovery</h2>
+          <h4>Shifted packages from post-selection upsells to a primary entry point through item-level mapping</h4>
+
+
+          <div class="card__cta">
+            <h4>↑ bundle visibility · ↑ early-stage engagement · ↑ conversion potential</h4>
+            <div class="spacingSmall"></div>
+
+            <% if (gated) { %>
+              <%- include(`${templatePath}/shared/modal_email_for_access`, {
+                ctaButton,
+                modalId
+              }) %>
+            <% } else { %>
+              <a href="/bq_b2b_package">
+                <button class="buttonMedium <%= ctaButton %>">View Case Study</button>
+              </a>
+            <% } %>
+          </div>
+          <div class="spacingXSmall displayMobile"></div>
+
+
+
+
+
+        </div>
+
+        <div class="card__right">
+          <div class="card25-media">
+            <img src="/project_images/cover_bq_package.png" alt="project image" class="card25-media-img">
+          </div>
+        </div>
+      </div>
+    </div>

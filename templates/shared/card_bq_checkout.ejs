@@ -1,0 +1,52 @@
+
+<% if (typeof gated === 'undefined') {
+  gated = false;
+} %>
+<% if (typeof ctaButton === 'undefined') {
+  ctaButton = 'buttonPrimary';
+} %>
+<% if (typeof modalId === 'undefined') {
+  modalId = 'checkoutAccessModal';
+} %>
+
+    <div class="wrapper">
+      <div class="card">
+        <div class="card__left">
+          <p class="card25CardMeta">Consumer Facing • Q2 2026 </p>
+          <h2 class="fontWeight400">Improving Checkout Conversion by Reducing Early-Stage Friction
+          </h2>
+
+          <h4 class="fontWeight400">
+            Improving cart-to-checkout transition and early-stage completion, especially on mobile.
+
+          </h4>
+          <h4>
+            Users dropped off before and at the start of checkout, limiting revenue from high-intent traffic.
+            Redesigned the transition to checkout and simplified early-stage interactions to improve commitment and completion.
+          </h4>
+
+          <div class="card__cta">
+            <h4>↓ Drop-off before checkout, ↑ completion rate, ↓ early drop-off</h4>
+            <div class="spacingSmall"></div>
+
+            <% if (gated) { %>
+              <%- include(`${templatePath}/shared/modal_email_for_access`, {
+                ctaButton,
+                modalId
+              }) %>
+            <% } else { %>
+              <a href="/bq_b2c_checkout">
+                <button class="buttonMedium <%= ctaButton %>">View Case Study</button>
+              </a>
+            <% } %>
+          </div>
+          <div class="spacingXSmall displayMobile"></div>
+        </div>
+
+        <div class="card__right">
+          <div class="card25-media">
+            <img src="/project_images/cover_bq_checkout.png" alt="project image" class="card25-media-img">
+          </div>
+        </div>
+      </div>
+    </div>

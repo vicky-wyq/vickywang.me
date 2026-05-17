@@ -1,14 +1,20 @@
 <% if (typeof ctaButton === 'undefined') { 
   ctaButton = ''; 
 } %>
+<% if (typeof modalId === 'undefined') { 
+  modalId = 'modal1'; 
+} %>
+<% if (typeof buttonLabel === 'undefined') { 
+  buttonLabel = 'View Case Study'; 
+} %>
 
 
   <!-- Trigger 1 -->
-  <a href="" class="open-modal alignBottom cta" data-modal="modal1">
-    <button class="buttonMedium <%= ctaButton %>">View Case Study</button>
+  <a href="" class="open-modal alignBottom cta" data-modal="<%= modalId %>">
+    <button class="buttonMedium <%= ctaButton %>"><%= buttonLabel %></button>
   </a>
   <!-- Modal 1 -->
-  <div id="modal1" class="modal hidden">
+  <div id="<%= modalId %>" class="modal hidden">
     <span class="modal-close">
       <img class="iconXforModal" src="../../icon/delete.svg" alt="×">
     </span>
