@@ -2829,12 +2829,14 @@ li {
   margin-left: 0;
 }
 
-‰
-
 /* Circle bullets */
-ul.listCircle {
+ul.listCircle,
+li.listCircle {
   list-style-type: circle;
   list-style-position: outside;
+}
+
+ul.listCircle {
   padding-left: 22px;
   margin-left: 0;
 }

@@ -91,166 +91,22 @@
       bottomSpacing:'spacingXLarge',
       topNbottomSpacing:''
       }) %>
-    <div class="wrapper">
-      <div class="card">
-        <div class="card__left">
-          <p class="card25CardMeta">Business Facing • Q2 2026 </p>
-          <h2 class="fontWeight400">Provider App: Reducing Operational Fragmentation for Active Reservations
-          </h2>
-
-          <h4 class="fontWeight400">
-            Helping QPs manage reservations, customer messages, and urgent updates on the go.
-          </h4>
-          <h4>Phase one centralizes reservation-based messages, urgent updates, and daily coordination workflows into a mobile-first operations console. </h4>
-
-          <div class="card__cta">
-            <h4>↓ missed updates · ↑ reservation clarity · ↓ operational mental load</h4>
-            <div class="spacingSmall"></div>
-
-            <a href="/bq_b2b_provider_app">
-              <button class="buttonMedium buttonPrimary">View Case Study</button>
-            </a>
-          </div>
-          <div class="spacingXSmall displayMobile"></div>
-        </div>
-
-        <div class="card__right">
-          <div class="card25-media">
-            <img src="/project_images/cover_bq_b2b_provider_app.png" alt="project image" class="card25-media-img">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spacingLarge"></div>
-
-    <div class="wrapper">
-      <div class="card">
-        <div class="card__left">
-          <p class="card25CardMeta">Consumer Facing • Q2 2026 </p>
-          <h2 class="fontWeight400">Improving Checkout Conversion by Reducing Early-Stage Friction
-          </h2>
-
-          <h4 class="fontWeight400">
-            Improving cart-to-checkout transition and early-stage completion, especially on mobile.
-
-          </h4>
-          <h4 class="">
-            Users dropped off before and at the start of checkout, limiting revenue from high-intent traffic.
-            Redesigned the transition to checkout and simplified early-stage interactions to improve commitment and completion.
-          </h4>
-
-          <div class="card__cta">
-            <h4>↓ Drop-off before checkout, ↑ completion rate, ↓ early drop-off</h4>
-            <div class="spacingSmall"></div>
-
-            <a href="/bq_b2c_checkout">
-              <button class="buttonMedium buttonPrimary">View Case Study</button>
-            </a>
-          </div>
-          <div class="spacingXSmall displayMobile"></div>
-        </div>
-
-        <div class="card__right">
-          <div class="card25-media">
-            <img src="/project_images/cover_bq_checkout.png" alt="project image" class="card25-media-img">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spacingLarge"></div>
-
-
-    <div class="wrapper">
-      <div class="card">
-        <div class="card__left">
-          <p class="card25CardMeta">Consumer Facing • Q2 2026 </p>
-          <h2 class="fontWeight400">Converting High-Intent Partner Traffic Under In-App Constraints (VRBO)</h2>
-
-          <h4 class="fontWeight400">Reducing early-stage drop-off in mobile funnels with incomplete data
-          </h4>
-          <h4 class="">High-intent partner traffic dropped off early as the experience suggested progress without real commitment (e.g., unconfirmed pricing and placeholder items). Redesigned entry and decision flow to align user actions with marketplace logic.
-          </h4>
-
-          <div class="card__cta">
-
-            <h4>↓ Drop-off, ↑ checkout progression</h4>
-            <div class="spacingSmall"></div>
-
-            <a href="/bq_b2c_vrbo">
-              <button class="buttonMedium buttonPrimary">View Case Study</button>
-            </a>
-          </div>
-          <div class="spacingXSmall displayMobile"></div>
-        </div>
-
-        <div class="card__right">
-          <div class="card25-media">
-            <img src="/project_images/cover_bq_b2c_vrbo.png" alt="project image" class="card25-media-img">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_bq_provider_app`) %>
 
     <div class="spacingLarge"></div>
-    <div class="wrapper">
-      <div class="card">
-        <div class="card__left">
-          <p class="card25CardMeta">Business Facing Partner Portal • Q3 2025</p>
-          <h2 class="fontWeight400">Unlocking Supply Growth Through Streamlined Inventory Management</h2>
-          <h4 class="">Simplified fragmented inventory workflows into a unified management system, enabling faster updates and unlocking underutilized supply.</h4>
-          <div class="card__cta">
-            <h4>↓ interaction cost · 3× faster edits for high-volume providers</h4>
-            <div class="spacingSmall"></div>
+    <%- include(`${templatePath}/shared/card_bq_checkout`) %>
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_bq_vrbo`) %>
 
-            <a href="/bq_b2b_inventory_management">
-              <button class="buttonMedium buttonPrimary">View Case Study</button>
-            </a>
-          </div>
-          <div class="spacingXSmall displayMobile"></div>
-        </div>
 
-        <div class="card__right">
-          <div class="card25-media">
-            <img src="/project_images/cover_bq_inventory_management.png" alt="project image" class="card25-media-img">
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="spacingLarge"></div>
-
-    <div class="wrapper">
-      <div class="card">
-        <div class="card__left">
-          <p class="card25CardMeta">Business-Facing • Q3 2025</p>
-          <h2 class="fontWeight400">Integrating Bundles into Early-Stage Discovery</h2>
-          <h4>Shifted packages from post-selection upsells to a primary entry point through item-level mapping</h4>
+    <%- include(`${templatePath}/shared/card_bq_inventory`) %>
 
 
-          <div class="card__cta">
-            <h4>↑ bundle visibility · ↑ early-stage engagement · ↑ conversion potential</h4>
-            <div class="spacingSmall"></div>
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_bq_package`) %>
 
-            <a href="/bq_b2b_package">
-              <button class="buttonMedium buttonPrimary">View Case Study</button>
-            </a>
-          </div>
-          <div class="spacingXSmall displayMobile"></div>
-
-
-
-
-
-        </div>
-
-        <div class="card__right">
-          <div class="card25-media">
-            <img src="/project_images/cover_bq_package.png" alt="project image" class="card25-media-img">
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="spacingLarge"></div>
 
@@ -259,54 +115,8 @@
   </section>
 
 
-  <section id="explorations" data-nav="explorations">
-    <div class="spacingLarge"></div>
+  <%- include(`${templatePath}/shared/section_explorations`) %>
 
-    <%- include(`${templatePath}/shared/divider25`, {
-      sectionName:'Explorations',
-      topSpacing:'spacingMedium',
-      bottomSpacing:'spacingXLarge',
-      topNbottomSpacing:''
-      }) %>
-    <div class="wrapper">
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-
-
-            <h2 class="fontWeight400">Design System &amp; Implementation Thinking</h2>
-
-            <h5 class="card25CardDescription">A personal design system built and iterated since 2020 to test layout scalability, accessibility, and design–code parity across real production surfaces.</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell u-textCenter">
-          <div class="element">
-            <div class="paddingL borderRadiusL gradient_background1">
-              <div class="element bgTransWhite paddingL borderRadiusM">
-
-                <h1 class="specialDS ">VICKYWANG.ME</h1>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell u-textCenter">
-          <div class="element">
-            <a href="/design_system/"> <button class="buttonMedium buttonFlip">View Design System</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <section id="contact" data-nav="contact">
     <div class="spacingLarge"></div>

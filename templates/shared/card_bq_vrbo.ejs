@@ -1,0 +1,48 @@
+
+<% if (typeof gated === 'undefined') {
+  gated = false;
+} %>
+<% if (typeof ctaButton === 'undefined') {
+  ctaButton = 'buttonPrimary';
+} %>
+<% if (typeof modalId === 'undefined') {
+  modalId = 'vrboAccessModal';
+} %>
+
+    <div class="wrapper">
+      <div class="card">
+        <div class="card__left">
+          <p class="card25CardMeta">Consumer Facing • Q2 2026 </p>
+          <h2 class="fontWeight400">Converting High-Intent Partner Traffic Under In-App Constraints (VRBO)</h2>
+
+          <h4 class="fontWeight400">Reducing early-stage drop-off in mobile funnels with incomplete data
+          </h4>
+          <h4 class="">High-intent partner traffic dropped off early as the experience suggested progress without real commitment (e.g., unconfirmed pricing and placeholder items). Redesigned entry and decision flow to align user actions with marketplace logic.
+          </h4>
+
+          <div class="card__cta">
+
+            <h4>↓ Drop-off, ↑ checkout progression</h4>
+            <div class="spacingSmall"></div>
+
+            <% if (gated) { %>
+              <%- include(`${templatePath}/shared/modal_email_for_access`, {
+                ctaButton,
+                modalId
+              }) %>
+            <% } else { %>
+              <a href="/bq_b2c_vrbo">
+                <button class="buttonMedium <%= ctaButton %>">View Case Study</button>
+              </a>
+            <% } %>
+          </div>
+          <div class="spacingXSmall displayMobile"></div>
+        </div>
+
+        <div class="card__right">
+          <div class="card25-media">
+            <img src="/project_images/cover_bq_b2c_vrbo.png" alt="project image" class="card25-media-img">
+          </div>
+        </div>
+      </div>
+    </div>
