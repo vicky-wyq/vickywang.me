@@ -12,8 +12,8 @@
   tab1:'Problem',
   tab1_data_link:'problem',
 
-  tab2:'Why it happens',
-  tab2_data_link:'why_it_happens',
+  tab2:'Insight',
+  tab2_data_link:'insight',
 
   tab3:'Solution',
   tab3_data_link:'solution',
@@ -33,7 +33,11 @@
             <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
             <%- include(`${templatePath}/shared/txt_banner_title`, {
             text:'Standardizing Packages to Unlock Early Funnel Discovery',}) %>
-
+            <h4>Resolved a structural conflict between browsing-first UX and provider-dependent bundles
+            </h4>
+            <h4>Packages were a key driver of conversion and AOV but became invisible in a browsing-first marketplace due to provider dependency.</h4>
+            <h4>By introducing standardized packages and integrating them into item-level discovery, bundles became part of early decision-making again—balancing platform consistency with provider flexibility.
+            </h4>
             <h4 class="fontWeight300">Packages drove higher conversion and AOV but were inaccessible during browsing due to provider dependency. Redesigned the system to make bundles visible earlier, enabling higher-value decisions before users commit.</h4>
           </div>
         </div>
@@ -50,7 +54,7 @@
         </div>
 
       </div>
-            <div class="spacingLarge"></div>
+      <div class="spacingLarge"></div>
 
       <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell">
@@ -60,7 +64,8 @@
         </div>
         <div class=" Grid-cell">
           <div class="element">
-            <h4 class=""><span class="fontWeight400">Scope: </span>Standardized package system · Consumer discovery + provider fulfillment</h4>
+            <h4 class=""><span class="fontWeight400">Scope: </span>Standardized package system · Consumer discovery + provider fulfillment </h4>
+            <h4>marketplace architecture fix + merchandising strategy</h4>
           </div>
         </div>
         <div class=" Grid-cell">
@@ -92,15 +97,61 @@
       </div>
     </div>
     <div class="spacingMedium"></div>
-
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
-            title:'Problem',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-              text:'High-value bundles were only visible after selecting a provider, removing them from early browsing where most decisions happen.',}) %>
+            title:'Context',}) %>
+            <h4>System Change:: Provider-first → Gear-first</h4>
+            <h4>joined company late 2024, help to ship the gear first swiched from provider first launch</h4>
+            <h4>gear first is good for partnership and easily to select gear then find available provider, however, this also create a placeholder item shopping experience in the early funnel </h4>
+
+            <h4>since this shift, user no longer able to see provider-specific packages before select a provider</h4>
+            <div class="marginLeft">
+              <h5>· each provider has different packages</h5>
+              <h5>· inconsistent structure(provider a can name a toy package while put package into crib category)</h5>
+              <h5>· unknown availability</h5>
+            </div>
+
+            <h4>Result: Packages disappeared from early funnel (landing + browsing)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+            title:'Why it matters',}) %>
+            <h4>Packages were:</h4>
+
+            <div class="marginLeft">
+              <h5>· high conversion driver</h5>
+              <h5>· high AOV driver</h5>
+            </div>
+
+            <h4>But now:</h4>
+
+            <div class="marginLeft">
+              <h5>· hidden until late</h5>
+              <h5>· disconnected from discovery</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {title:'Problem',}) %>
+
+            <!-- <div>not sure how to merge thoes below</div> -->
+
+            <h4>High-value bundles (packages) were invisible during browsing due to provider dependency, eliminating their impact on early decision-making.</h4>
+            <h4>Marketing team wanna run some seasonal campaign but Packages/promo became invisible after the shift to gear-first(from provider first) browsing because they depended on provider-specific inventory.</h4>
 
           </div>
         </div>
@@ -110,7 +161,7 @@
 
 
 
-  <section id="why_it_happens" data-nav="why_it_happens">
+  <section id="insight" data-nav="insight">
 
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
@@ -118,7 +169,7 @@
           <div class="element">
             <div class="blankHXXS"></div>
             <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Why it happens',
+            sectionName:'Insight',
             topSpacing:'spacingMedium',
             bottomSpacing:'spacingXLarge',
             topNbottomSpacing:''
@@ -133,19 +184,33 @@
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
              title:'Why it happens',}) %>
+            <h4>packages depend on providers → providers unknown early → packages invisible</h4>
+            <h4>because we have the flow before provider election, all items are placeholder, bundles were tied to individual providersthey couldn’t be displayed before a provider was selected.</h4>
 
-
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-              text:'Because bundles were tied to individual providers, they couldn’t be displayed before a provider was selected.',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-              text:'To support browsing-first shopping, bundles needed to exist independently of providers.',}) %>
+            <h4 class="textItalic fontWeight100 GreyBg400 GreyBg100 border-radius paddingXS">💡 Key insight: to support browsing-first shopping, packages must exist independently of providers.</h4>
 
           </div>
         </div>
       </div>
     </div>
     <div class="spacingMedium"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Package must',}) %>
+            <div class="marginLeft">
+              <h5>· be defined at platform level</h5>
+              <h5>· not depend on specific providers</h5>
+              <h5>· be renderable before QP selection</h5>
 
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="spacingMedium"></div>
 
 
@@ -180,18 +245,8 @@
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
              title:'Solution',}) %>
+            <h2>decoupling package definition from provider, introduce standardized package</h2>
 
-            <div class="marginLeft">
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Introduced standardized packages at the platform level',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Mapped packages to shopping categories',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Surfaced them on landing and browsing pages',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Enabled provider participation while maintaining flexibility',}) %>
-
-            </div>
             <div class="spacingXSmall"></div>
 
           </div>
@@ -200,33 +255,173 @@
     </div>
     <div class="wrapper">
 
-      <div class="Grid Grid--gutters Grid--cols-2">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3>A. Introduced standardized packages at the platform level</h3>
+            <img class="modal-target card2026" src="" alt="stantarlized package ui placeholder">
+
+            <div class="spacingXSmall"></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3>B. maintaining flexibility(prioritize standarlized package but keep customer package still)</h3>
+            <h5></h5>
+            <img class="modal-target card2026" src="" alt="customized package ui enhancement placeholder">
+
+            <div class="spacingXSmall"></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3>C. make standardized package as defult state</h3>
+            <h5></h5>
+            <img class="modal-target card2026" src="" alt="standardized + customized ui structure placeholder">
+
+            <div class="spacingXSmall"></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3>D. Mapped packages to shopping categories</h3>
+
+            <div class="spacingXSmall"></div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {title:'What changed structurally',}) %>
+          </div>
+        </div>
+        <div class="Grid Grid--gutters Grid--full Grid--gutter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4>A. Platform-defined packages
+              </h4>
+
+              <div class="marginLeft">
+                <h5>· BabyQuip defines</h5>
+                <h5>· package structure</h5>
+                <h5>· included items</h5>
+                <h5>· naming</h5>
+              </div>
+              <h4>B. Provider participation </h4>
+              <div class="marginLeft">
+                <h5>· provider opt into standardized packages</h5>
+                <h5>· providerfulfill them if inventory matches</h5>
+                <h5>· </h5>
+              </div>
+
+
+              <h4>C. Dual system </h4>
+              <h5 class="fontWeight400"> 1. Standardized packages (new)
+              </h5>
+              <div class="marginLeft">
+                <h5>· consistent</h5>
+                <h5>· comparable</h5>
+                <h5>· promotable</h5>
+              </div>
+              <h5 class="fontWeight400"> 2. Custom packages (legacy)
+              </h5>
+              <div class="marginLeft">
+                <h5>· flexible</h5>
+                <h5>· inconsistent</h5>
+                <h5>· still allowed</h5>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3>Result: Surfaced them on landing and browsing pages</h3>
+
+            <div class="spacingXSmall"></div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" src="discover_before.png" alt="Packages only visible inside provider shops">
-            <h4 class="fontWeight500">Before:</h4>
-            <h4> Packages were <span class="fontWeight400">only visible inside provider shops</span>, functioning as <span class="fontWeight400">late-stage upsells</span>.</h4>
+            <h5 class="fontWeight500">Before:</h5>
+            <h5> Packages were <span class="fontWeight400">only visible inside provider shops</span>, functioning as <span class="fontWeight400">late-stage upsells</span>.</h5>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" src="discover_after.png" alt="Packages surfaced before provider selection">
-            <h4 class="fontWeight500">After:</h4>
+            <h5 class="fontWeight500">After:</h5>
 
-            <h4> Standardized packages surfaced during browsing, <span class="fontWeight400">enabling discovery before provider selection. </span></h4>
+            <h5> Standardized packages surfaced during browsing, <span class="fontWeight400">enabling discovery before provider selection. </span></h5>
 
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" src="discover_future.png" alt="Packages mapped into categories when fulfillment can be validated">
-            <h4 class="fontWeight500">Future</h4>
+            <h5 class="fontWeight500">Future</h5>
 
-            <h4>Integrate packages into categories once supply coverage and availability validation <span class="fontWeight400">support reliable fulfillment.</span> </h4>
+            <h5>Integrate packages into categories once supply coverage and availability validation <span class="fontWeight400">support reliable fulfillment.</span> </h5>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="spacingXLarge"></div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h2>Key Tradeoffs & Constraints</h2>
+            <div class="marginLeft">
+              <h5>· pricing still not fully accurate early</h5>
+              <h5>· package availability not guaranteed</h5>
+              <h5>· provider flexibility still partially messy</h5>
+            </div>
+            <div class="spacingXSmall"></div>
+
           </div>
         </div>
       </div>
+
+
+
+
+
     </div>
+
 
 
     <div class="spacingMedium"></div>
@@ -267,23 +462,37 @@
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
              title:'Outcome',}) %>
-
+            <h3>Packages are not a section anymore → they become a decision option</h3>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
                 text:'· Restored bundle visibility in early funnel',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
                 text:'· Enabled bundle-based discovery',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Improved alignment with marketing goals',}) %>
+                text:'· Created a scalable merchandising system',}) %>
 
             </div>
             <div class="spacingXSmall"></div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2>Key impact: turned packages from hidden, provider-specific upsells into a scalable, contextual discovery mechanism.
+            </h2>
+            <h4 class="textItalic fontWeight100 GreyBg400 GreyBg100 border-radius paddingXS">👉 Key impact: packages become part of decision-making, not optional browsing
+            </h4>
+            <h4 class="textItalic fontWeight100 GreyBg400 GreyBg100 border-radius paddingXS">👉 Key impact: Resolved a structural conflict between browsing-first UX and provider-dependent bundles.</h4>
+            <h4 class="textItalic fontWeight100 GreyBg400 GreyBg100 border-radius paddingXS">👉 Key impact: Made bundles discoverable and actionable within item-level browsing
+            </h4>
 
           </div>
         </div>
       </div>
     </div>
-
 
 
   </section>

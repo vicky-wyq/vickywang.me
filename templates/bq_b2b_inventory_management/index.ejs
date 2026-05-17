@@ -66,7 +66,7 @@
         </div>
         <div class="Grid-cell">
           <div class="element">
-            <h4><span class="fontWeight400">Stakeholders:</span>VP Product Design, CTO, engineering, QA, providers </h4>
+            <h4><span class="fontWeight400">Stakeholders:</span> VP Product Design, CTO, engineering, QA, providers </h4>
           </div>
         </div>
       </div>
@@ -211,15 +211,18 @@
             </table>
 
             <div class="spacingSmall"></div>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· The top 10% of QPs contributed 46.3% of total supply, making their workflow the highest-leverage problem to solve',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Inventory updates competed with delivery, cleaning, and customer coordination, reducing update frequency',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Unlisted and underused gear stayed hidden in separate flows, increasing CS support and onboarding friction',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Adding another tab would improve exposure but also add another navigation step',}) %>
 
+
+            <div class="marginLeft">
+
+              <h4>· The top 10% of QPs contributed 46.3% of total supply, making their workflow the highest-leverage problem to solve</h4>
+
+              <h4>· Inventory updates competed with delivery, cleaning, and customer coordination, reducing update frequency</h4>
+
+              <h4>· Unlisted and underused gear stayed hidden in separate flows, increasing CS support and onboarding friction</h4>
+
+              <h4>· Adding another tab would improve exposure but also add another navigation step</h4>
+            </div>
             <div class="spacingSmall"></div>
 
 
@@ -233,17 +236,63 @@
       </div>
     </div>
     <div class="spacingMedium"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'User mental model',}) %>
+            <h2 class="fontWeight100">Providers were not trying to “manage inventory” in the abstract. They were trying to quickly find, edit, and verify real gear listings without losing context.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_s`, {
+             title:'What they needed',}) %>
+            <div class="marginLeft">
+              <h4>· Is that easy to scan and manage quickly</h4>
+              <h4>· which items are poupular, higher aov</h4>
+              <h4>· What items is not in the inventory, what else I can add?</h4>
+              <h4>· Can I find an item and update it quickly?</h4>
+              <h4>· Can I scan what items are available, how it looks on customer facing site</h4>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_s`, {
+             title:'What the old system did',}) %>
+            <div class="marginLeft">
+              <h4>· forced repeated navigation</h4>
+              <h4>· hid products behind layers</h4>
+              <h4>· broke context between management and storefront</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="spacingMedium"></div>
 
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Approach',}) %>
+             title:'Approach, how to restire the control, continutiy, confidence in edits',}) %>
+
             <h2 class="fontWeight100">I compared two ways to improve discoverability without adding workflow complexity:</h2>
           </div>
         </div>
       </div>
+
+
       <div class="Grid Grid--gutters Grid--cols-2">
         <div class="Grid-cell">
           <div class="element">
