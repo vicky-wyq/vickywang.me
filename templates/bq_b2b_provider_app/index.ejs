@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Standardizing Packages`,
+  text:'Turning bundles from a hidden, provider-specific upsell into a platform-level conversion and AOV engine', pageURL:'bq_b2b_package/',
+  thumbnailImgURL: 'vickywang.svg' }) %>
+<!--Head-->
+
+<body class="">
+  <%- include(`${templatePath}/shared/header_back`, {
+  tab1:'Background',
+  tab1_data_link:'background',
+
+  tab2:'Discovery',
+  tab2_data_link:'discovery',
+
+  tab3:'Solution',
+  tab3_data_link:'solution',
+
+  tab4_display:'displayTab',
+  tab4:'Outcome',
+  tab4_data_link:'outcome',
+  }) %>
+  <section class="banner_intro">
+    <div class="wrapper">
+      <div class="blankHXS"></div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
+            <%- include(`${templatePath}/shared/txt_about_bq`) %>
+            <div class="spacingSmall"></div>
+
+            <%- include(`${templatePath}/shared/txt_banner_title`, {
+            text:'Provider App: Reducing Operational Fragmentation for Active Reservations',}) %>
+
+            <h3> Helping QPs manage reservations, customer messages, and urgent updates on the go.
+            </h3>
+
+            <h3>Phase one centralizes reservation-based messages, urgent updates, and daily coordination workflows into a mobile-first operations console. </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+
+      <div class="spacingLarge"></div>
+
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class=""><span class="fontWeight400">Role: </span>UX Research/Design · prioritization</h4>
+          </div>
+        </div>
+        <div class=" Grid-cell">
+          <div class="element">
+            <h4 class=""><span class="fontWeight400">Scope: </span>centralizes reservation-based messages, urgent updates, and daily coordination workflows </h4>
+          </div>
+        </div>
+        <div class=" Grid-cell">
+          <div class="element">
+            <h4 class=""><span class="fontWeight400">Stakeholders: </span>Stakeholders VP Product Design, PM, CTO, engineering, QA, providers</h4>
+          </div>
+        </div>
+      </div>
+      <div class="spacingXLarge"></div>
+
+    </div>
+  </section>
+
+
+  <section id="background" data-nav="background">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Background',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {title:'Context',}) %>
+
+            <h3>QPs currently manage reservations through a mix of portal emails, platform messages, texting, templates, and manual planning. Phase 1 focuses on reducing this operational fragmentation.</h3>
+
+            <h4><span class="fontWeight500">Symptom/current situation:</span> Provider manage business at night, delivery during the day</h4>
+            <h4><span class="fontWeight500">Provider growth:</span> Active provider is bout 3000-4000, never fully grow</h4>
+            <h4><span class="fontWeight500">Goal:</span>The goal is build a provider app to help them manage daily business on the goal by reusing current web portal features that can launch faster</h4>
+            <h3>Business owners want to have more control over their business:</h3>
+
+            <div class="marginLeft">
+              <h5>· Rounting, location</h5>
+              <h5>· Availability</h5>
+              <h5>· Communication</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {title:`Problem (Understand provider's challenge)`}) %>
+            <h3>The current system mixes messages, notifications, and operational updates.</h3>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--cols-4">
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2026" src="legacy_notifications.png" alt="current notifications screenshot">
+            <h5> current notifications screenshot</h5>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2026" src="legacy_messages.png" alt="current messages screenshot">
+            <h5> current messages screenshot</h5>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2026" src="legacy_email_based_message_test.png" alt="email-based message test">
+            <h5> email-based message test</h5>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <img class="modal-target card2026" src="legacy_messages_notifications.png" alt="“Messages” acting as email wrapper + notification dump">
+            <h5> “Messages” acting as email wrapper + notification dump</h5>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight400 GreyBg400 GreyBg200 border-radius paddingXS">💡 Main problem: QPs cannot easily tell what needs attention, what is customer communication, and what is reservation-critical..</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section id="discovery" data-nav="discovery">
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Discovery',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+            title:'Research',}) %>
+            <h3>How QPs actually manage communication.</h3>
+            <h3>Stephanie’s workflow:</h3>
+            <div class="marginLeft">
+              <h5>· email as alert feed</h5>
+              <h5>· texting as reliable coordination</h5>
+              <h5>· templates in Google Keep</h5>
+              <h5>· weekly/night/weekend planning</h5>
+              <h5>· reservation timing as primary scan object</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4 class="fontWeight400 GreyBg400 GreyBg200 border-radius paddingXS">💡 Key insight: Reservation is the primary object. Communication is secondary.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+            title:'Design Principle',}) %>
+            <h4>Turn insights into principles:</h4>
+            <div class="marginLeft">
+              <h5>· Anchor communication to reservations</h5>
+              <h5>· Separate human messages from operational alerts</h5>
+              <h5>· Prioritize urgency over chronology</h5>
+              <h5>· Support real channels instead of pretending everything stays in-app</h5>
+              <h5>· Reduce QP mental load during active reservations</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'System Model',}) %>
+            <h4>flow chart....</h4>
+            <h4>The product is not just “messaging.” It is a routing and attention system.</h4>
+
+            <h4>📌 will include</h4>
+            <div class="marginLeft">
+              <h5>· notification categories</h5>
+              <h5>· message/email behavior</h5>
+              <h5>· SMS/texting role</h5>
+              <h5>· eservation-linked communication</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacingMedium"></div>
+
+
+    <div class="spacingMedium"></div>
+
+
+  </section>
+
+  <section id="solution" data-nav="solution">
+
+
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Solution',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Solution',}) %>
+            <h3>Phase 1 reframes provider messaging from a standalone communication feature into a reservation-centered operations console, helping QPs manage urgent updates, customer communication, and daily coordination with less fragmentation.</h3>
+
+            <div class="spacingXSmall"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--cols-3">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h3>Inbox / Operations Console</h3>
+            <div class="marginLeft">
+              <h5>· urgent items pinned on top </h5>
+              <h5>· filters: Messages, Reservations, Platform, Unread </h5>
+              <h5>· badge/count for messages </h5>
+              <h5>· platform updates deprioritized</h5>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h3>Message Thread</h3>
+            <div class="marginLeft">
+              <h5>· reservation info pinned at top </h5>
+              <h5>· order summary accessible</h5>
+              <h5>· operational status indicators </h5>
+              <h5>· quick templates/actions</h5>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h3>Sorting / Priority</h3>
+            <div class="marginLeft">
+              <h5>· sort by delivery date or operational urgency, not only newest message</h5>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Wireframe',}) %>
+            <h3>log in without sign up...</h3>
+            <h3>minimal account & setting...in app notification, reservition list, availability control</h3>
+            <h3>inbox contains message and notification...alone with reservation summary, allow to see order details</h3>
+
+            <div class="spacingXSmall"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Testing',}) %>
+            <h3>did we centralized communication entry point...</h3>
+            <h3>did QPs ever missing the reservation context...</h3>
+            <h3>did we help QPs make their workflow more efficient...</h3>
+
+            <div class="spacingXSmall"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Iteration',}) %>
+            <h3>...</h3>
+            <h3>...</h3>
+            <h3>...</h3>
+
+            <div class="spacingXSmall"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Final solution',}) %>
+            <h3>...</h3>
+            <h3>...</h3>
+            <h3>...</h3>
+
+            <div class="spacingXSmall"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'V1 Scope / Tradeoffs',}) %>
+            <h3>We did not try to replace email/SMS in V1. Instead, we preserved existing behavior where useful and focused on making daily reservation coordination easier to track.</h3>
+            <div class="marginLeft">
+              <h5>· email messaging already works</h5>
+              <h5>· SMS is still trusted</h5>
+              <h5>· backend overhaul may be too large</h5>
+              <h5>· V1 focuses on attention, context, and operational clarity</h5>
+
+            </div>
+            <h3>...</h3>
+            <h3>...</h3>
+
+            <div class="spacingXSmall"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacingMedium"></div>
+
+    <div class="spacingXLarge"></div>
+
+    <div class="spacingLarge"></div>
+
+
+    <div class="spacingMedium"></div>
+
+
+
+
+
+  </section>
+
+  <section id="outcome" data-nav="outcome">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Outcome',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+             title:'Expected Outcome / Next Steps',}) %>
+            <div class="marginLeft">
+              <h5>· expected reduction in missed updates</h5>
+              <h5>· clearer reservation tracking</h5>
+              <h5>· less context switching</h5>
+              <h5>· better QP confidence</h5>
+              <h5>· future validation through QP feedback / usage patterns </h5>
+
+            </div>
+            <div class="spacingXSmall"></div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+  <!-- Case study ends -->
+  <div class="blankHS"></div>
+  <!-- Shared across the platform -->
+  <%- include(`${templatePath}/shared/footer`) %>
+  <%- include(`${templatePath}/shared/imgModal`) %>
+
+
+  <!-- Shared across the platform -->
+</body>
+
+</html>
