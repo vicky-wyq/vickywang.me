@@ -67,6 +67,7 @@
 
   --Grey800: #2f2f2f;
   /* 5f6368 4f4f4f*/
+  --Grey750: #323232;
   --Grey700: #707070;
   /* #505050 83878a 787878  757575*/
   --Grey600: #a5a5a5;
@@ -588,7 +589,7 @@ body .displayMobile {
   justify-content: space-between;
 }
 
-.bgVWGrey {
+.bgVWgrey {
   background: var(--VW--Grey2024);
 }
 
@@ -855,78 +856,86 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* ===== color grey ===== */
-.Grey900 {
+.grey900 {
   color: var(--Grey900);
 }
 
-.Grey800 {
+.grey800 {
   color: var(--Grey800);
 }
 
-.Grey700 {
+.grey750 {
+  color: var(--Grey750);
+}
+
+.grey700 {
   color: var(--Grey700);
 }
 
-.Grey600 {
+.grey600 {
   color: var(--Grey600);
 }
 
-.Grey500 {
+.grey500 {
   color: var(--Grey500);
 }
 
-.Grey400 {
+.grey400 {
   color: var(--Grey400);
 }
 
-.Grey300 {
+.grey300 {
   color: var(--Grey300);
 }
 
-.Grey200 {
+.grey200 {
   color: var(--Grey200);
 }
 
-.Grey100 {
+.grey100 {
   color: var(--Grey100);
 }
 
 /* ===== color grey ===== */
 /* ===== bg color grey ===== */
 
-.GreyBg900 {
+.greyBg900 {
   background: var(--Grey900);
 }
 
-.GreyBg800 {
+.greyBg800 {
   background: var(--Grey800);
 }
 
-.GreyBg700 {
+.greyBg750 {
+  background: var(--Grey750);
+}
+
+.greyBg700 {
   background: var(--Grey700);
 }
 
-.GreyBg600 {
+.greyBg600 {
   background: var(--Grey600);
 }
 
-.GreyBg500 {
+.greyBg500 {
   background: var(--Grey500);
 }
 
-.GreyBg400 {
+.greyBg400 {
   background: var(--Grey400);
 }
 
-.GreyBg300 {
+.greyBg300 {
   background: var(--Grey300);
 }
 
-.GreyBg200 {
+.greyBg200 {
   background: var(--Grey200);
 }
 
-.GreyBg100 {
+.greyBg100 {
   background: var(--Grey100);
 }
 
@@ -2483,7 +2492,7 @@ section .padding {
 }
 .titleCaseStudy {
   font-family: inherit;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 400;
   margin: 0;
   line-height: 120%;
@@ -5738,39 +5747,39 @@ body .card25LandingTitle {
   border: 0.06em solid var(--Grey400);
 }
 
-.hoverGrey100 {
+.hovergrey100 {
   background-color: none;
   border: 0.06em solid var(--white);
   transition: background-color 0.3s, border-color 0.3s;
   /* Smooth transition for hover effect */
 }
 
-.hoverGrey100:hover {
+.hovergrey100:hover {
   background-color: var(--Grey100);
   border: 0.06em solid var(--Grey300);
 }
 
-.hoverGrey100:hover {
+.hovergrey100:hover {
   background-color: var(--Grey100);
   border: 0.06em solid var(--Grey300);
 }
 
-.hoverGrey300 {
+.hovergrey300 {
   background-color: none;
   border: 0.06em solid transparent;
 }
 
-.hoverGrey300:hover {
+.hovergrey300:hover {
   background-color: var(--Grey300);
   border: 0.06em solid var(--Grey400);
 }
 
-.hoverGrey900 {
+.hovergrey900 {
   background-color: var(--White-transparent);
   border: 0.075em solid var(--Grey900);
 }
 
-.hoverGrey900:hover {
+.hovergrey900:hover {
   background-color: var(--white);
 }
 

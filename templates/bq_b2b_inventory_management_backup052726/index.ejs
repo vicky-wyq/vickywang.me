@@ -2,9 +2,9 @@
 <html lang="en">
 
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Scaling Provider Inventory Management
+<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Streamlined Inventory Management
 `,
-  text:'Redesigned fragmented provider inventory workflows into a unified operational surface, reducing management overhead and supporting marketplace supply expansion.', pageURL:'bq_b2b_inventory_management/',
+  text:'Simplified fragmented inventory workflows into a unified management system, enabling faster updates and unlocking underutilized supply.', pageURL:'bq_b2b_inventory_management/',
   thumbnailImgURL: 'vickywang.svg' }) %>
 <!--Head-->
 
@@ -33,9 +33,9 @@
             <%- include(`${templatePath}/shared/txt_about_bq`) %>
 
             <%- include(`${templatePath}/shared/txt_banner_title`, {
-            text:'Scaling Provider Inventory Management to Unlock Marketplace Supply',}) %>
+            text:'Unlocking Supply Growth Through Streamlined Inventory Management',}) %>
 
-            <h4>Redesigned fragmented provider inventory workflows into a unified operational surface, reducing management overhead for high-volume providers and supporting supply activation across new categories.</h4>
+            <h4>Simplified fragmented inventory workflows into a unified management system, enabling faster updates and unlocking underutilized supply.</h4>
 
 
           </div>
@@ -56,26 +56,20 @@
       <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell">
           <div class="element">
-            <h5 class="fontWeight500 grey750">Role:</h5>
-            <h5>Lead UX for provider inventory management redesign</h5>
+            <h4><span class="fontWeight400">Role:</span> Lead UX for provider inventory workflow</h4>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
-            <h5 class="fontWeight500 grey750">Scope:</h5>
-
-            <h5>Provider-facing B2B workflow redesign · inventory operations · category expansion</h5>
+            <h4><span class="fontWeight400">Scope:</span> Provider-facing inventory management · B2B workflow redesign</h4>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
-            <h5 class="fontWeight500 grey750">Stakeholders:</h5>
-
-            <h5>VP Product Design, CTO, engineering, QA, providers (QPs)</h5>
+            <h4><span class="fontWeight400">Stakeholders:</span> VP Product Design, CTO, engineering, QA, providers </h4>
           </div>
         </div>
       </div>
-
       <div class="spacingXLarge"></div>
 
     </div>
@@ -99,200 +93,50 @@
       </div>
     </div>
     <div class="spacingMedium"></div>
-    <div class="wrapper">
 
+    <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h1 class="fontWeight400">Context</h1>
-            <h3 class="fontWeight400 grey900">Marketplace growth depended on providers maintaining active inventory</h3>
-
-          </div>
-        </div>
-
-
-        <div class="Grid-cell">
-          <div class="element">
-            <h5>BabyQuip is a two-sided marketplace where independent providers, called QPs, manage inventory, delivery, setup, pickup, and customer coordination.</h5>
-            <h5>As the marketplace expanded into new gear categories, the business faced a supply problem:</h5>
-            <h5 class="fontWeight200 greyBg200 paddingXS borderRadiusXS">
-              👉 new categories existed, but providers rarely added inventory to them.
-            </h5>
-          </div>
-
-        </div>
-        <div class="spacingSmall"></div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="fontWeight400 grey900">The original request</h3>
-
-            <h5>The original request from leadership was to improve category discoverability by adding a new “discovery” tab inside the provider portal.</h5>
-            <img class="modal-target card2026" src="diagram_original_request.png" alt="original request: adding a new “discovery” tab inside the provider portal">
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="fontWeight400 grey900">The deeper issue</h3>
-
-            <h5>After joining the project, I found the deeper issue was not category visibility itself, but the operational friction required to manage inventory.</h5>
+            <%- include(`${templatePath}/shared/txt_title_l`, {
+            title:'Why inventory management did not scale with supply growth.',}) %>
             <div class="spacingXSmall"></div>
-            <h5>Providers were not trying to manage storefronts as a primary activity. </h5>
-            <h5>Most QPs were busy handling:</h5>
-            <ul class="listCircle">
-              <li> delivery logistics</li>
-              <li> cleaning and maintenance</li>
-              <li> weekly scheduling</li>
-              <li> customer coordination</li>
 
-            </ul>
-            <h5>Inventory management became secondary operational work with low perceived ROI.</h5>
-            <h5>As inventory complexity increased, the effort required to maintain listings increased even faster.</h5>
-            <h5 class="fontWeight200 greyBg200 paddingXS borderRadiusXS">
-              👉 most QPs do not have time to update inventories
-            </h5>
+            <div class="marginLeft">
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+              text:'· Editing required 4–5 clicks with frequent context switching',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+              text:'· Inventory split across multiple views with no single overview',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+              text:'· Filters disappeared during navigation, forcing re-orientation',}) %>
+              <%- include(`${templatePath}/shared/txt_description_l`, {
+              text:'· 45% of categories remained undiscovered or unused',}) %>
+            </div>
+            <div class="spacingXSmall"></div>
+
+            <h4>As inventory increased, <span class="fontWeight400"> the cost to manage it increased faster than the inventory itself</span> reducing update frequency and leaving supply underutilized.</h4>
           </div>
         </div>
       </div>
-
     </div>
-    <div class="spacingMedium"></div>
-
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
-          <div class="element">
-            <h1 class="fontWeight400">Constraint</h1>
-            <h3 class="fontWeight400 grey900">Inventory growth exposed a provider workflow bottleneck</h3>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="fontWeight400 grey900">Core findings</h3>
+          <%- include(`${templatePath}/shared/txt_title_s`, {
+                title:'Legacy Flow:',}) %>
+          <%- include(`${templatePath}/shared/txt_description_l`, {
+                text:'Fragmented, navigation-driven updates that reset context',}) %>
+          <img class="modal-target card2026" src="flow_im_before_constraint.png" alt="Legacy Flow — Fragmented, navigation-driven updates that reset context">
 
-            <ul class="listCircle">
-              <li> Editing inventory required 4–5 clicks with repeated navigation and context switching</li>
-              <li> Inventory was fragmented across multiple views without a unified overview</li>
-              <li> Filters reset during navigation, forcing providers to repeatedly re-orient themselves</li>
-              <li> Unlisted and underused gear remained buried inside separate management flows</li>
-              <li>New category expansion relied on providers actively maintaining inventory, but the workflow discouraged ongoing updates</li>
-            </ul>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h6><span class="fontWeight400 grey900">Legacy Flow:</span> Fragmented, navigation-driven updates that reset provider context</h6>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--cols-4">
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="flow_im_before_constraint1.png" alt="Inventory spread across multiple screens">
-            <h6>Inventory spread across multiple screens</h6>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="flow_im_before_constraint2.png" alt="4–5 clicks to edit a single item">
-            <h6>4–5 clicks to edit a single item</h6>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="flow_im_before_constraint3.png" alt="Changing categories requires restarting the flow">
-            <h6>Changing categories requires restarting the flow</h6>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="flow_im_before_constraint4.png" alt="Unlisted gear not surfaced in primary workflow">
-            <h6>Unlisted gear not surfaced in primary workflow</h6>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="fontWeight400 grey900">Internal marketplace data showed:</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th class="fontWeight400">QP segment</th>
-                  <th class="fontWeight400"># of QPs</th>
-                  <th class="fontWeight400">Supply index</th>
-                  <th class="fontWeight400">Interpretation</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="colorBgYellowVW100">
-                  <td class="fontWeight400">Top 10%</td>
-                  <td>559</td>
-                  <td>46.3%</td>
-                  <td>High-volume QPs with the most complete listings</td>
-                </tr>
-                <tr>
-                  <td class="fontWeight400">Next 20%</td>
-                  <td>1,117</td>
-                  <td>31.7%</td>
-                  <td>Mid-tier QPs with moderate listing depth</td>
-                </tr>
-                <tr>
-                  <td class="fontWeight400">Remaining 70%</td>
-                  <td>3,913</td>
-                  <td>21.9%</td>
-                  <td>Smaller catalogs or lower platform engagement</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="listCircle">
-              <li> the top 10% of QPs contributed 46.3% of total supply</li>
-              <li> high-volume providers managed the largest and most complete inventories</li>
-              <li> improving workflows for these providers created disproportionate marketplace impact</li>
-            </ul>
-            <h5 class="fontWeight200 greyBg200 paddingXS borderRadiusXS">
-              💡 High-volume providers created disproportionate marketplace impact
-
-            </h5>
-          </div>
         </div>
 
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="fontWeight400 grey900">Important system insight</h3>
-            <h5>The original proposal focused on adding another discovery surface.</h5>
-
-            <h5>But discovery outside the operational workflow would likely fail because:</h5>
-            <ul class="listCircle">
-              <li> providers already avoided inventory management due to time cost</li>
-              <li> additional tabs created more navigation overhead</li>
-              <li> discoverability separated from editing created another disconnected destination</li>
-            </ul>
-            <div class="spacingSmall"></div>
-
-            <h5>The problem was not lack of visibility.</h5>
-            <h5>The problem was:</h5>
-            <h5 class="fontWeight200 greyBg200 paddingXS borderRadiusXS">
-              👉 inventory management itself was too operationally expensive.
-            </h5>
-          </div>
-        </div>
       </div>
     </div>
-
-
-
-
-
-
 
 
   </section>
 
 
-    <div class="spacingMedium"></div>
 
   <section id="reframe" data-nav="reframe">
 
@@ -316,10 +160,10 @@
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'The project shifted from discoverability to operational efficiency',}) %>
+             title:'Task',}) %>
             <h2 class="fontWeight100">The original ask was to improve category discoverability by adding a new tab.</h2>
 
-            <h2 class="fontWeight100">I reframed the problem: reduce operational friction so providers could naturally discover and manage inventory during existing workflows.</h2>
+            <h2 class="fontWeight100">I reframed the problem: the real constraint was not visibility, but the interaction cost required to manage inventory.</h2>
 
 
           </div>
@@ -332,16 +176,61 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {title:'Why a separate discovery tab would likely fail',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-              text:'Discovery features outside the core operational workflow are rarely adopted when the workflow itself already feels time-consuming.',}) %>
+            <%- include(`${templatePath}/shared/txt_title_l`, {title:'Why the original task was too narrow',}) %>
+            <div class="spacingSmall"></div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th class="fontWeight400">QP segment</th>
+                  <th class="fontWeight400"># of QPs</th>
+                  <th class="fontWeight400">Supply index</th>
+                  <th class="fontWeight400">Interpretation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="colorBgYellowVW300">
+                  <td class="fontWeight400">Top 10%</td>
+                  <td>559</td>
+                  <td>46.3%</td>
+                  <td>High-volume QPs with the most complete listings</td>
+                </tr>
+                <tr>
+                  <td class="fontWeight400">Next 20%</td>
+                  <td>1,117</td>
+                  <td>31.7%</td>
+                  <td>Mid-tier QPs with moderate listing depth</td>
+                </tr>
+                <tr>
+                  <td class="fontWeight400">Remaining 70%</td>
+                  <td>3,913</td>
+                  <td>21.9%</td>
+                  <td>Smaller catalogs or lower platform engagement</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="spacingSmall"></div>
+
+
             <div class="marginLeft">
-              <h4>· Providers already avoided inventory management because of time cost</h4>
-              <h4>· Additional tabs created more navigation overhead</h4>
-              <h4>· Discoverability separated from editing created another disconnected destination</h4>
+
+              <h4>· The top 10% of QPs contributed 46.3% of total supply, making their workflow the highest-leverage problem to solve</h4>
+
+              <h4>· Inventory updates competed with delivery, cleaning, and customer coordination, reducing update frequency</h4>
+
+              <h4>· Unlisted and underused gear stayed hidden in separate flows, increasing CS support and onboarding friction</h4>
+
+              <h4>· Adding another tab would improve exposure but also add another navigation step</h4>
             </div>
             <div class="spacingSmall"></div>
-            <h2 class="fontWeight100">Embedding discovery directly into inventory management made category exposure part of routine usage instead of requiring intentional exploration.</h2>
+
+
+            <h2 class="fontWeight100">As inventory scales, navigation-heavy workflows make management inefficient, especially for the providers driving most marketplace supply.</h2>
+
+
+
+
           </div>
         </div>
       </div>
@@ -353,7 +242,7 @@
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
              title:'User mental model',}) %>
-            <h2 class="fontWeight100">Providers were not looking for more navigation, more surfaces, or more inventory tools. They needed to quickly scan, edit, and verify real gear listings without losing context.</h2>
+            <h2 class="fontWeight100">Providers were not trying to “manage inventory” in the abstract. They were trying to quickly find, edit, and verify real gear listings without losing context.</h2>
           </div>
         </div>
       </div>
@@ -363,11 +252,11 @@
             <%- include(`${templatePath}/shared/txt_title_s`, {
              title:'What they needed',}) %>
             <div class="marginLeft">
-              <h4>· Fast scanning across large catalogs</h4>
-              <h4>· Low-friction edits without repeated page changes</h4>
-              <h4>· Continuous context while filtering and updating items</h4>
-              <h4>· Visibility into missing, underused, or unlisted inventory</h4>
-              <h4>· Confidence in how listings appeared on the customer-facing storefront</h4>
+              <h4>· Is that easy to scan and manage quickly</h4>
+              <h4>· which items are poupular, higher aov</h4>
+              <h4>· What items is not in the inventory, what else I can add?</h4>
+              <h4>· Can I find an item and update it quickly?</h4>
+              <h4>· Can I scan what items are available, how it looks on customer facing site</h4>
 
             </div>
           </div>
@@ -378,10 +267,9 @@
             <%- include(`${templatePath}/shared/txt_title_s`, {
              title:'What the old system did',}) %>
             <div class="marginLeft">
-              <h4>· Forced repeated navigation</h4>
-              <h4>· Hid products behind separate management layers</h4>
-              <h4>· Reset provider context during routine edits</h4>
-              <h4>· Broke the connection between management actions and storefront output</h4>
+              <h4>· forced repeated navigation</h4>
+              <h4>· hid products behind layers</h4>
+              <h4>· broke context between management and storefront</h4>
             </div>
           </div>
         </div>
@@ -397,9 +285,9 @@
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Balancing operational efficiency, discoverability, and legacy constraints',}) %>
+             title:'Approach, how to restire the control, continutiy, confidence in edits',}) %>
 
-            <h2 class="fontWeight100">I compared two ways to improve discoverability while preserving provider familiarity and respecting existing inventory logic.</h2>
+            <h2 class="fontWeight100">I compared two ways to improve discoverability without adding workflow complexity:</h2>
           </div>
         </div>
       </div>
@@ -415,15 +303,11 @@
 
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Increased visibility of new categories',}) %>
+                text:'· Improves category visibility',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Aligned with the original stakeholder request',}) %>
+                text:'· Requires providers to leave the core inventory workflow',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Required providers to leave inventory workflows',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Introduced another destination to manage',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Preserved the fragmented workflow structure',}) %>
+                text:'· Adds another place to check, making adoption unlikely during routine updates',}) %>
 
             </div>
 
@@ -442,14 +326,14 @@
 
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Combined editing and discovery into one operational flow',}) %>
+                text:'· Reduces interaction cost by keeping discovery inside the editing flow',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Reduced interaction cost during routine inventory updates',}) %>
+                text:'· Surfaces listed and unlisted gear while providers are already managing inventory',}) %>
 
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Surfaced listed and unlisted gear while providers were already managing inventory',}) %>
+                text:'· Scales with inventory growth without adding another navigation layer',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Supported ongoing maintenance without extra navigation',}) %>
+                text:'',}) %>
             </div>
 
 
@@ -463,22 +347,18 @@
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'After internal reviews with product leadership and engineering, we aligned around embedded discovery because it addressed visibility and interaction cost through the same workflow.',}) %>
+                text:'A separate discovery surface would add visibility but not reduce effort. Embedding discovery into the existing workflow made exposure part of routine inventory management.',}) %>
             <%- include(`${templatePath}/shared/txt_title_s`, {
-                title:'Collaboration & tradeoffs:',}) %>
+                title:'Decision:',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'The remaining design challenge was improving category visibility without disrupting existing provider behavior. We balanced legacy navigation patterns, provider familiarity, marketing preferences for visual category browsing, and engineering support for existing inventory logic.',}) %>
-            <div class="marginLeft">
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Explored top tabs, text-based navigation, left-side navigation, and hierarchical category structures',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Evolved the system toward lightweight visual category navigation, unified inventory surfaces, persistent filtering, inline editing, clearer drag-and-drop behavior, and integrated storefront visibility',}) %>
-            </div>
+                text:'Chose Option 2 after internal reviews and QP validation because it addressed discovery and interaction cost through the same workflow.',}) %>
           </div>
         </div>
       </div>
     </div>
 
+
+    </div>
 
     <div class="spacingMedium"></div>
 
@@ -510,28 +390,24 @@
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Restructuring inventory management into a continuous operational workflow',}) %>
+             title:'Intervention',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              text:'The redesign reduced operational overhead by consolidating fragmented inventory management into a single continuous interaction surface.',}) %>
+              text:'Reduced the operational cost of inventory management by restructuring it into a single, continuous interaction loop.',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
                 text:'· Unified all inventory into one surface (replaced multi-screen navigation)',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Embedded category discovery directly into editing workflows',}) %>
+                text:'· Inline editing eliminates context switching',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Enabled inline editing to eliminate repeated context switching',}) %>
+                text:'· Persistent filters maintain orientation',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Persisted filters to maintain orientation during scanning and updates',}) %>
+                text:'· Listed and unlisted gear in the same workflow',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Surfaced listed and unlisted gear within the same management flow',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Added “View Shop” so providers could verify the customer-facing presentation during edits',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Improved drag-and-drop interactions with clearer feedback and placement behavior',}) %>
+                text:'· “View Shop” connects provider actions to customer output',}) %>
             </div>
             <div class="spacingXSmall"></div>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'The final structure preserved existing mental models while reducing workflow interruption.',}) %>
+                text:'Shifted from navigation-driven UI to a data-driven control surface.',}) %>
           </div>
         </div>
       </div>
@@ -546,7 +422,7 @@
             <%- include(`${templatePath}/shared/txt_title_l`, {title:'Workflow redesign',}) %>
 
             <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'From fragmented navigation to continuous inline inventory management',}) %>
+                text:'From fragmented navigation to continuous inline management',}) %>
           </div>
         </div>
       </div>
@@ -574,8 +450,6 @@
             <div class="spacingMedium"></div>
 
             <%- include(`${templatePath}/shared/txt_title_l`, {title:'Workflow comparison',}) %>
-            <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'The visual comparisons are framed around operational continuity, reduced interaction cost, and embedded discovery rather than navigation polish alone.',}) %>
             <div class="spacingLarge"></div>
 
           </div>
@@ -717,24 +591,22 @@
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Lower operational friction improved supply maintainability',}) %>
+             title:'Impact',}) %>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              text:'The redesign focused on reducing operational friction rather than claiming direct revenue attribution.',}) %>
+              text:'By reducing navigation as the primary constraint:',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Reduced inventory management effort for high-volume providers',}) %>
+                text:'· Internal testing showed the redesigned flow could reduce edit time by up to 3x for high-volume providers',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Enabled faster edits without repeated navigation',}) %>
+                text:'· Lowered the effort required to surface and manage previously underused categories',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Reduced workflow interruption during inventory updates',}) %>
+                text:'· Reduced support and QA burden created by fragmented inventory workflows',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Lowered onboarding and support burden caused by fragmented inventory logic',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Improved visibility of underused and unlisted inventory',}) %>
+                text:'· Made frequent inventory updates more practical for high-volume providers',}) %>
             </div>
             <div class="spacingXSmall"></div>
             <%- include(`${templatePath}/shared/txt_description_l`, {
-              text:'This made inventory maintenance more practical for providers managing large catalogs and created a stronger operational foundation for future category growth.',}) %>
+              text:'Created a scalable foundation for expanding categories and supply without adding equivalent workflow complexity.',}) %>
           </div>
         </div>
       </div>
@@ -745,50 +617,14 @@
         <div class="Grid-cell">
           <div class="element">
             <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Marketplace impact',}) %>
+             title:'System Outcome',}) %>
             <div class="marginLeft">
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Increased exposure and activation opportunities for newer inventory categories',}) %>
+                text:'· Reduced interaction cost per item, making updates faster and more repeatable',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Supported marketplace supply expansion without proportional workflow complexity',}) %>
+                text:'· Increased visibility of inventory that had previously remained hidden in separate flows',}) %>
               <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Connected provider operations more directly to supply maintainability',}) %>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--cols-2">
-        <div class="Grid-cell">
-          <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Tradeoffs',}) %>
-            <div class="marginLeft">
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Provider growth depended on more than inventory tooling alone',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Category expansion still relied on providers perceiving enough value to maintain inventory',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Legacy feature compatibility constrained some workflow simplifications',}) %>
-            </div>
-          </div>
-        </div>
-
-        <div class="Grid-cell">
-          <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Future opportunities',}) %>
-            <div class="marginLeft">
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· High-demand inventory recommendations',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Popular gear dashboards',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Operational insights for providers',}) %>
-              <%- include(`${templatePath}/shared/txt_description_l`, {
-                text:'· Inventory prioritization tools',}) %>
+                text:'· Enabled supply growth without adding proportional workflow overhead',}) %>
             </div>
           </div>
         </div>

@@ -1,58 +1,64 @@
                  /* ===== color grey ===== */
-                 .Grey900 {
+                 .grey900 {
                     color: var(--Grey900);
                 }
-                .Grey800 {
+                .grey800 {
                     color: var(--Grey800);
                 }
-                .Grey700 {
+                .grey750 {
+                    color: var(--Grey750);
+                }
+                .grey700 {
                     color: var(--Grey700);
                 }
-                .Grey600 {
+                .grey600 {
                     color: var(--Grey600);
                 }
-                .Grey500 {
+                .grey500 {
                     color: var(--Grey500);
                 }
-                .Grey400 {
+                .grey400 {
                     color: var(--Grey400);
                 }
-                .Grey300 {
+                .grey300 {
                     color: var(--Grey300);
                 }
-                .Grey200 {
+                .grey200 {
                     color: var(--Grey200);
                 }
-                .Grey100 {
+                .grey100 {
                     color: var(--Grey100);
                 }
               /* ===== color grey ===== */
               /* ===== bg color grey ===== */
-                .GreyBg900 {
+                .greyBg900 {
                     background: var(--Grey900);
                 }
-                .GreyBg800 {
+                .greyBg800 {
                     background: var(--Grey800);
                 }
-                .GreyBg700 {
+                .greyBg750 {
+                    background: var(--Grey750);
+                }
+                .greyBg700 {
                     background: var(--Grey700);
                 }
-                .GreyBg600 {
+                .greyBg600 {
                     background: var(--Grey600);
                 }
-                .GreyBg500 {
+                .greyBg500 {
                     background: var(--Grey500);
                 }
-                .GreyBg400 {
+                .greyBg400 {
                     background: var(--Grey400);
                 }
-                .GreyBg300 {
+                .greyBg300 {
                     background: var(--Grey300);
                 }
-                .GreyBg200 {
+                .greyBg200 {
                     background: var(--Grey200);
                 }
-                .GreyBg100 {
+                .greyBg100 {
                     background: var(--Grey100);
                 }
                 .WhiteBg {
