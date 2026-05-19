@@ -79,25 +79,6 @@
       <div class="spacingXLarge"></div>
 
     </div>
-  </section>
-
-
-  <section id="constraint" data-nav="constraint">
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <div class="blankHXXS"></div>
-            <%- include(`${templatePath}/shared/divider25`, {
-            sectionName:'Constraint',
-            topSpacing:'spacingMedium',
-            bottomSpacing:'spacingXLarge',
-            topNbottomSpacing:''
-            }) %>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="spacingMedium"></div>
     <div class="wrapper">
 
@@ -105,7 +86,7 @@
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight400">Context</h1>
-            <h3 class="fontWeight400 grey900">Marketplace growth depended on providers maintaining active inventory</h3>
+            <h5 class="fontWeight400 grey900">Marketplace growth depended on providers maintaining active inventory</h5>
 
           </div>
         </div>
@@ -155,6 +136,26 @@
       </div>
 
     </div>
+  </section>
+
+
+  <section id="constraint" data-nav="constraint">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="blankHXXS"></div>
+            <%- include(`${templatePath}/shared/divider25`, {
+            sectionName:'Constraint',
+            topSpacing:'spacingMedium',
+            bottomSpacing:'spacingXLarge',
+            topNbottomSpacing:''
+            }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="spacingMedium"></div>
 
     <div class="wrapper">
@@ -162,7 +163,9 @@
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight400">Constraint</h1>
-            <h3 class="fontWeight400 grey900">Inventory growth exposed a provider workflow bottleneck</h3>
+            <h5 class="fontWeight400 grey900">Marketplace expansion required more provider inventory.</h5>
+            <h5 class="fontWeight400 grey900">But providers avoided inventory maintenance because the workflow was operationally expensive.</h5>
+
           </div>
         </div>
       </div>
@@ -362,7 +365,7 @@
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight400">Reframe</h1>
-            <h3 class="fontWeight400 grey900">The project shifted from discoverability to operational efficiency</h3>
+            <h5 class="fontWeight400 grey900">The project shifted from discoverability to operational efficiency</h5>
           </div>
         </div>
       </div>
@@ -378,14 +381,14 @@
           <div class="element">
             <h3 class="fontWeight400 grey900">Reframed problem</h3>
 
-            <h5>Reduce operational friction so providers naturally discover and manage inventory during existing workflows.</h5>
+            <h5>Discovery fails if inventory management itself is painful</h5>
           </div>
         </div>
       </div>
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h3 class="fontWeight400 grey900">Balancing operational efficiency, discoverability, and legacy constraints</h3>
+            <h3 class="fontWeight400 grey900"> Explored 2 strategic directions</h3>
           </div>
         </div>
       </div>
@@ -395,7 +398,7 @@
         <div class="Grid-cell">
           <div class="element">
             <h5 class="fontWeight400 grey900">Option 1 — Separate discovery surface</h5>
-                        <img class="modal-target card2026" src="wireframe_opt1.png" alt="Option 1 — Separate discovery surface">
+            <img class="modal-target card2026" src="wireframe_opt1.png" alt="Option 1 — Separate discovery surface">
 
             <h5 class="fontWeight400 grey900">Pro</h5>
             <ul>
@@ -416,7 +419,7 @@
         <div class="Grid-cell">
           <div class="element">
             <h5 class="fontWeight400 grey900">Option 2 — Embedded discovery within inventory management</h5>
-                        <img class="modal-target card2026" src="wireframe_opt2.png" alt="Option 2 — Embedded discovery within inventory management">
+            <img class="modal-target card2026" src="wireframe_opt2.png" alt="Option 2 — Embedded discovery within inventory management">
 
             <h5 class="fontWeight400 grey900">Pro</h5>
             <ul>
@@ -435,7 +438,8 @@
         <div class="Grid-cell">
           <div class="element">
 
-            <h3 class="fontWeight400 grey900">Collaboration & iteration</h3>
+            <h5 class="fontWeight400 grey900">After internal reviews with product leadership and engineering, we aligned around Option 2.</h5>
+            <h5>The challenge shifted from adding another destination to embedding discovery into existing operational behavior.</h5>
           </div>
         </div>
       </div>
@@ -443,160 +447,29 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h5 class="fontWeight400 grey900">After internal reviews with product leadership and engineering, we aligned around Option 2.</h5>
             <h5>The remaining design challenge became:</h5>
             <h5 class="fontWeight200 greyBg200 paddingXS borderRadiusXS">
-              💡 how to improve discoverability without disrupting existing provider behavior.</h5>
+              👉 how to embed discovery into inventory management without increasing cognitive overhead</h5>
           </div>
         </div>
       </div>
+
+
+
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <h3 class="fontWeight400 grey900">Core product principle</h3>
-            <h5>Discovery features outside the core operational workflow are rarely adopted.</h5>
-            <h5>Embedding discovery directly into inventory management makes exposure part of routine usage instead of requiring intentional exploration.</h5>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h3 class="fontWeight400 grey900">User behavioral insight</h3>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="fontWeight400 grey900">Providers were NOT looking for:</h5>
             <ul class="listCircle">
-              <li> more navigation</li>
-              <li> more surfaces</li>
-              <li> more inventory tools</li>
+              <li>Discovery features outside the core operational workflow are rarely adopted.</li>
+              <li>Embedding discovery directly into inventory management makes exposure part of routine usage instead of requiring intentional exploration.</li>
 
             </ul>
 
           </div>
         </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="fontWeight400 grey900">They needed:</h5>
-            <ul class="listCircle">
 
-              <li> fast scanning</li>
-              <li> low-friction edits</li>
-              <li> continuous context</li>
-              <li> visibility into missing inventory</li>
-              <li> confidence in how listings appeared on the customer-facing storefront</li>
-            </ul>
-
-          </div>
-        </div>
       </div>
-
-
-
-
-
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-
-            <h3 class="fontWeight400 grey900">Design exploration & tradeoffs</h3>
-            <h5>Multiple interaction models were explored to improve discoverability without increasing operational overhead.</h5>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-
-            <h5 class="fontWeight400 grey900">Final direction</h5>
-            <h5>Lightweight visual category navigation embedded into inventory management</h5>
-            <h5>✅ Preserved existing provider workflows while improving discoverability</h5>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="Grid Grid--gutters Grid--cols-4">
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="wireframe_listed_unlisted gear.png" alt="">
-            <h6>boost discoverability by adding listed and unlisted toggle</h6>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="wireframe_listed_unlisted gear.png" alt="">
-            <h6>2-level filtering vs 3-level filtering</h6>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="wireframe_listed_unlisted gear.png" alt="">
-            <h6>adding shortcut card for Unlisted categories, Upcoming holiday, Popular gears</h6>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="wireframe_listed_unlisted gear.png" alt="">
-            <h6>x</h6>
-          </div>
-        </div>
-      </div>
-
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="fontWeight400 grey900">This required balancing:</h5>
-            <ul>
-              <li> legacy navigation patterns</li>
-              <li> provider familiarity</li>
-              <li> marketing preferences for visual category browsing</li>
-              <li> engineering support for existing inventory logic</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="fontWeight400 grey900">Multiple navigation structures were explored:</h5>
-            <ul>
-              <li> top tabs</li>
-              <li> text-based navigation</li>
-              <li> left-side navigation</li>
-              <li> hierarchical category structures</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="fontWeight400 grey900">We eventually evolved the system into:</h5>
-            <ul>
-              <li> lightweight visual category navigation</li>
-              <li> unified inventory surfaces</li>
-              <li> persistent filtering</li>
-              <li> inline editing</li>
-              <li> clearer drag-and-drop behavior</li>
-              <li> integrated storefront visibility (“View Shop”)</li>
-            </ul>
-            <h5 class="fontWeight400 grey900">The final structure preserved existing mental models while reducing workflow interruption.</h5>
-            <h5 class="fontWeight200 greyBg200 paddingXS borderRadiusXS">
-              👉 The redesign therefore focused on reducing operational friction while embedding discovery directly into routine provider behavior.
-            </h5>
-          </div>
-        </div>
-      </div>
-
-
 
 
 
@@ -630,12 +503,172 @@
     </div>
     <div class="wrapper">
 
-
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight400">Intervention</h1>
-            <h3 class="fontWeight400 grey900">Restructuring inventory management into a continuous operational workflow</h3>
+            <h5 class="fontWeight400 grey900">Designing lightweight discovery inside inventory workflows</h5>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h3 class="fontWeight400 grey900">Multiple navigation and discovery models were explored to balance:</h3>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-4 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <h5>→ fast scanning</h5>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h5>→ continuous context</h5>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h5>→ discoverability </h5>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h5>→ low operational overhead</h5>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-3">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="fontWeight400 grey900">Exploration1</h5>
+            <h5>Dashboard-oriented discovery</h5>
+
+            <img class="modal-target card2026" src="wireframe_exploration1.png" alt="">
+
+            <h5 class="fontWeight400 grey900">Strength</h5>
+            <ul class="listCircle">
+              <li> surfaced inventory opportunities</li>
+              <li> exposed underlisted categories</li>
+              <li> increased visibility of marketplace signals</li>
+
+            </ul>
+            <h5 class="fontWeight400 grey900">Tradeoff</h5>
+            <ul class="listCircle">
+              <li> introduced additional scanning overhead</li>
+              <li> reduced focus on active inventory management</li>
+              <li> duplicated existing dashboard behavior</li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="fontWeight400 grey900">Exploration 2</h5>
+            <h5>Discovery shortcuts within management</h5>
+
+            <img class="modal-target card2026" src="wireframe_exploration2.png" alt="">
+
+            <h5 class="fontWeight400 grey900">Strength</h5>
+            <ul class="listCircle">
+              <li> embedded promotional discovery closer to inventory workflows</li>
+              <li> exposed seasonal and underused categories</li>
+            </ul>
+            <h5 class="fontWeight400 grey900">Tradeoff</h5>
+            <ul class="listCircle">
+              <li> increased interface density</li>
+              <li> interrupted scanning rhythm during maintenance tasks</li>
+              <li> ompeted with primary inventory actions</li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="fontWeight400 grey900">Exploration 3</h5>
+            <h5>Sorting & prioritization model</h5>
+            <img class="modal-target card2026" src="wireframe_exploration3.png" alt="">
+
+            <h5 class="fontWeight400 grey900">Strength</h5>
+            <ul class="listCircle">
+              <li> supported visibility into high-performing or recently updated inventory</li>
+              <li> enabled operational prioritization</li>
+            </ul>
+            <h5 class="fontWeight400 grey900">Tradeoff</h5>
+            <ul class="listCircle">
+              <li> introduced deeper interaction complexity</li>
+              <li> increased filtering and sorting decisions during routine edits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="fontWeight400 grey900">Revisit user behavioral insight</h3>
+            <h5>providers not looking for more tools, they need:</h5>
+            <ul class="listCircle">
+
+              <li> fast scanning</li>
+              <li> low-friction edits</li>
+              <li> continuous context</li>
+              <li> visibility into missing inventory</li>
+              <li> confidence in how listings appeared on the customer-facing storefront</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="fontWeight400 grey900">Final direction</h3>
+
+            <h5>The final system intentionally prioritized operational continuity over feature density.</h5>
+            <h5>Instead of building a discovery-heavy interface, the redesign focused on:</h5>
+
+        <ul class="listCircle">
+
+              <li>     lightweight category navigation</li>
+              <li>     persistent filtering</li>
+              <li>      inline editing</li>
+              <li> unified inventory surfaces</li>
+              <li>     embedded storefront visibility</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+ 
+
+
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <img class="modal-target card2026" src="hifi_v1_1.png" alt="">
+        </div>
+        <div class="Grid-cell">
+          <img class="modal-target card2026" src="hifi_v1_2.png" alt="">
+        </div>
+      </div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="fontWeight200 greyBg200 paddingXS borderRadiusXS">
+              👉 Discovery remained integrated into the workflow, but secondary to fast inventory maintenance.
+            </h5>
           </div>
         </div>
       </div>
@@ -643,59 +676,67 @@
         <div class="Grid-cell">
           <div class="element">
             <h3 class="fontWeight400 grey900">Core intervention</h3>
-            <h5>The redesign reduced operational overhead by consolidating fragmented inventory management into a single continuous interaction surface.</h5>
+            <ul class="listCircle">
+              <li>Early high-fidelity explorations introduced deeper filtering and expanded management controls to improve discoverability.</li>
+              <li>However, additional sorting layers increased scanning complexity and operational overhead during routine inventory updates.</li>
+              <li>The final direction intentionally simplified the interaction model into lightweight visual category navigation, prioritizing fast recognition and continuous workflow continuity over feature density.</li>
+
+            </ul>
           </div>
         </div>
       </div>
       <div class="spacingMedium"></div>
+      <div class="Grid Grid--gutters Grid--cols-2">
 
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
-
           <div class="element">
+            <h5 class="fontWeight400 grey900">Hi-fi exploration</h5>
+            <img class="modal-target card2026" src="hifi_v1_2.png" alt="">
 
-            <h3 class="fontWeight400 grey900">Hifi V1</h3>
-            <h5> no img filter, dropdown menu with filters</h5>
+            <h5 class="fontWeight400 grey900">Pro</h5>
+            <ul class="listCircle">
+              <li> advitise more categories(unlisted, holiday, popular gears)</li>
+
+            </ul>
+            <h5 class="fontWeight400 grey900">Problems</h5>
+            <ul class="listCircle">
+              <li> take more space</li>
+              <li> duplacate with dashboard tab</li>
+              <li> not easy to scan the current inventory</li>
+
+            </ul>
           </div>
         </div>
-        <div class="Grid Grid--gutters Grid--cols-4">
-          <div class="Grid-cell">
-            <img class="modal-target card2026" src="placeholder.png" alt="">
-          </div>
-          <div class="Grid-cell">
-            <img class="modal-target card2026" src="placeholder.png" alt="">
-          </div>
-          <div class="Grid-cell">
-            <img class="modal-target card2026" src="placeholder.png" alt="">
-          </div>
-          <div class="Grid-cell">
-            <img class="modal-target card2026" src="placeholder.png" alt="">
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="fontWeight400 grey900">Final Version</h5>
+            <img class="modal-target card2026" src="hifi_final.png" alt="">
+
+            <h5 class="fontWeight400 grey900">Pro</h5>
+            <ul class="listCircle">
+              <li> advitise more categories(unlisted, holiday, popular gears)</li>
+
+            </ul>
+            <h5 class="fontWeight400 grey900">Problems</h5>
+            <ul class="listCircle">
+              <li> take more space</li>
+              <li> duplacate with dashboard tab</li>
+              <li> not easy to scan the current inventory</li>
+
+            </ul>
           </div>
         </div>
       </div>
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
 
+        <div class="Grid-cell">
           <div class="element">
-            <h3 class="fontWeight400 grey900">Hifi V2</h3>
-            <h5> cut Sort feature because of the short deadline, we also keep the img circle on top keep the familiarity</h5>
-          </div>
-        </div>
-        <div class="Grid Grid--gutters Grid--cols-4">
-          <div class="Grid-cell">
-            <img class="modal-target card2026" src="placeholder.png" alt="">
-          </div>
-          <div class="Grid-cell">
-            <img class="modal-target card2026" src="placeholder.png" alt="">
-          </div>
-          <div class="Grid-cell">
-            <img class="modal-target card2026" src="placeholder.png" alt="">
-          </div>
-          <div class="Grid-cell">
-            <img class="modal-target card2026" src="placeholder.png" alt="">
+
+            <h5 class="fontWeight400 grey900">After internal reviews with marketing team. keep the img circle on top keep the familiarity, sort feature will add later, next iteration due to the tight deadline</h5>
           </div>
         </div>
       </div>
+
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
