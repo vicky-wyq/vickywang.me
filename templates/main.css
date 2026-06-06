@@ -28,7 +28,7 @@
 
   --fs-p: clamp(1em, 1vw, 1.1em);
   --fs-list: clamp(1.12em, 1.2vw, 1.25em);
-  --fs-table: clamp(1.12em, 1.2vw, 1.25em);
+  --fs-table: clamp(1em, 1.1vw, 1.2em);
 
   --border-radius: 0.5em;
 
@@ -1344,13 +1344,15 @@ polygon {
   border-radius: 1.2em;
   border: 1px solid var(--border);
 }
+
 .card2026 {
-  border-radius: 32px;
-  border: 1px solid var(--Grey500);
+  border-radius: 12px;
+  border: 1px solid var(--Grey600);
   box-sizing: border-box;
   overflow: hidden;
   display: inline-block;
 }
+
 .card2025 {
   border-radius: 2.2em;
   border: 2px solid #1b1b1b;
@@ -2490,6 +2492,7 @@ section .padding {
   line-height: 120%;
   color: var(--Grey700);
 }
+
 .titleCaseStudy {
   font-family: inherit;
   font-size: 48px;
@@ -2704,11 +2707,12 @@ section .padding {
   font-weight: 100;
   font-size: clamp(1.6em, 1.86vw, 2.8em);
   margin: clamp(1.6em, 8vw, 4em);
-  
+
 
 }
-.bgTransWhite{
-        background-color: var(--White-transparent);
+
+.bgTransWhite {
+  background-color: var(--White-transparent);
 
 }
 
@@ -2923,9 +2927,11 @@ strong {
 .textItalic {
   font-style: italic;
 }
+
 .textStrikethrough {
   text-decoration: line-through;
 }
+
 a:link.textUnderline {
   color: inherit;
   text-decoration-line: underline;
@@ -3620,8 +3626,8 @@ button.passwordArr {
 
 @media all and (max-width: 1380px) {
   body .card25LandingTitle {
-  font-size: 48px;
-}
+    font-size: 48px;
+  }
 
   body .paddingXL {
     padding: var(--paddingL);
@@ -4514,9 +4520,12 @@ flex: 0 0 calc(33.3333% - 1em);
   color: var(--Grey900);
   box-shadow: none;
 }
-TBsliderNav, a:hover{
+
+TBsliderNav,
+a:hover {
   color: var(--grey900) !important;
 }
+
 /* ======================= TBcarousel ======================= */
 
 .TBsliderNav.noBg {
@@ -4743,9 +4752,9 @@ body .flex-container.Mobile {
 /*head tool bar scroll*/
 
 @media screen and (max-width: 480px) {
-body .card25LandingTitle {
-  font-size: 36px;
-}
+  body .card25LandingTitle {
+    font-size: 36px;
+  }
 
   body .top-glass {
     height: 53px;
@@ -4938,6 +4947,17 @@ body .card25LandingTitle {
 /* Geometry*/
 .border {
   border: 1px solid #4c665b;
+}
+
+.csCallout {
+  font-family: var(--uia-card-time-font-size);
+  font-weight: 400;
+  border-radius: 12px;
+  border: 1px solid var(--Grey200);
+  padding: 12px;
+  background-color: var(--Grey100);
+
+
 }
 
 .chipBorderPadding {
@@ -5933,7 +5953,7 @@ ul.iconx {
   bottom: 1rem;
   padding: 0.45rem 0.8rem;
   border-radius: 999px;
-    background-color: var(--Grey200);
+  background-color: var(--Grey200);
 
   border: 1px solid var(--Grey300);
   box-shadow: 0 8px 24px rgba(27, 27, 27, 0.4);
@@ -5941,11 +5961,13 @@ ul.iconx {
   font-size: 0.95rem;
   line-height: 1;
 }
+
 .gif-player__label:hover {
   background-color: var(--white);
   box-shadow: 0 8px 24px rgba(27, 27, 27, 0.6);
 
 }
+
 .gif-player.is-playing .gif-player__label {
   background-color: rgba(27, 27, 27, 0.9);
   border-color: rgba(27, 27, 27, 0.9);

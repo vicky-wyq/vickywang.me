@@ -93,6 +93,9 @@
       topNbottomSpacing:''
       }) %>
 
+  <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_bq_inventory`) %>
+
 
     <div class="spacingLarge"></div>
 
@@ -100,12 +103,8 @@
       gated: true,
       modalId: 'checkoutAccessModalLanding'
     }) %>
-    <div class="spacingLarge"></div>
 
-    <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_bq_inventory`) %>
-
-
+  
     <div class="spacingLarge"></div>
 
     <%- include(`${templatePath}/shared/card_bq_package`, {
