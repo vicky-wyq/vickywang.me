@@ -22,74 +22,99 @@
   tab4:'Solution',
   tab4_data_link:'solution',
   }) %>
-  <section>
+
+
+  <div class="wrapper">
+    <div class="blankHXS"></div>
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
+          <%- include(`${templatePath}/shared/txt_about_bq`) %>
+          <div class="spacingSmall"></div>
+
+          <%- include(`${templatePath}/shared/txt_banner_title`, {
+            text:'Provider App: Building BabyQuip’s First Mobile Operations Layer',}) %>
+
+          <h3>Helping providers manage active reservations, customer messages, and urgent updates away from desktop.</h3>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="spacingMedium"></div>
+
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid-cell">
+        <div class="element">
+          <h5><span class="fontWeight400">Role: </span>Lead UX Designer for V1 provider app strategy, research synthesis, workflow design, and scope prioritization</h5>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h5><span class="fontWeight400">Scope: </span>Mobile provider operations console focused on reservation-centered communication, operational alerts, and urgent coordination workflows</h5>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h5><span class="fontWeight400">Stakeholders: </span>VP Product Design, PM, CTO, engineering, QA, and active providers</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="greyBg100">
     <div class="wrapper">
-      <div class="blankHXS"></div>
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
+
         <div class="Grid-cell">
           <div class="element">
-            <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
-            <%- include(`${templatePath}/shared/txt_about_bq`) %>
-            <div class="spacingSmall"></div>
+            <h1 class="fontWeight400">Context</h1>
+          </div>
+        </div>
 
-            <%- include(`${templatePath}/shared/txt_banner_title`, {
-            text:'Provider App: Reducing Operational Fragmentation for Active Reservations',}) %>
 
-            <h3>Helping QPs manage reservations, customer communication, and urgent updates on the go.</h3>
+
+
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h4>BabyQuip providers relied on a legacy web experience to manage operational work, but many reservation tasks happen away from desktop. The first provider mobile app focused on the workflows most critical to fulfillment: messages, notifications, reservations, calendar, and basic account access. The goal was not to recreate the full website, but to define the essential mobile layer providers need to keep active reservations moving.</h4>
 
           </div>
         </div>
+        <img class="" src="screenshot_Vrbo_BabyQuip.png" alt="">
+
+
+        <div class="spacingMedium"></div>
+
       </div>
+
     </div>
 
-
-    <div class="spacingMedium"></div>
-
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--cols-3">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><span class="fontWeight400">Role: </span>Lead UX Designer for V1 provider app strategy, research synthesis, workflow design, and scope prioritization</h5>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><span class="fontWeight400">Scope: </span>Mobile provider operations console focused on reservation-centered communication, operational alerts, and urgent coordination workflows</h5>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h5><span class="fontWeight400">Stakeholders: </span>VP Product Design, PM, CTO, engineering, QA, and active providers</h5>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
     <div class="spacingXLarge"></div>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="fontWeight400">Summary:</h5>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
 
-            <h5>Phase one focused on centralizing reservation-based communication, operational alerts, and daily coordination workflows into a mobile-first provider operations console.</h5>
-          </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <h5 class="fontWeight400">Expected impact:</h5>
+          <ul class="listCircle">
+            <li>Reduce missed operational updates</li>
+            <li>Improve provider coordination clarity</li>
+            <li>Reduce operational mental load</li>
+            <li>Support scalable provider operations as marketplace supply grows</li>
+
+          </ul>
         </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h5 class="fontWeight400">Expected impact:</h5>
-            <ul class="listCircle">
-              <li>Reduce missed operational updates</li>
-              <li>Improve provider coordination clarity</li>
-              <li>Reduce operational mental load</li>
-              <li>Support scalable provider operations as marketplace supply grows</li>
-
-            </ul>
-          </div>
-        </div>
-
       </div>
+
     </div>
-  </section>
+  </div>
   <section id="challenge" data-nav="challenge" class="banner_intro">
 
     <div class="wrapper">
@@ -561,7 +586,7 @@
         </div>
       </div>
     </div>
-  
+
 
 
     <div class="wrapper">

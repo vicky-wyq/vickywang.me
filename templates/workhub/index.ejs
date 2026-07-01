@@ -91,21 +91,23 @@
       bottomSpacing:'spacingXLarge',
       topNbottomSpacing:''
       }) %>
+
+    <%- include(`${templatePath}/shared/card_bq_inventory`) %>
+        <div class="spacingLarge"></div>
+
     <%- include(`${templatePath}/shared/card_bq_provider_app`) %>
 
-    <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_bq_checkout`) %>
-    <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_bq_vrbo`) %>
 
-
-
-    <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_bq_inventory`) %>
 
 
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/card_bq_package`) %>
+
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_bq_vrbo`) %>
+
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_bq_checkout`) %>
 
 
     <div class="spacingLarge"></div>
