@@ -845,10 +845,48 @@ document.addEventListener("DOMContentLoaded", function (event) {
   var activeGallery = [];
   var activeGalleryIndex = -1;
 
+  function syncModalControlsToImage() {
+    if (!modal || !modalImg || modal.style.display !== "block") return;
+
+    var captionRect = captionText ? captionText.getBoundingClientRect() : null;
+    var imageRect = modalImg.getBoundingClientRect();
+    var contentBottom = captionRect && captionRect.height
+      ? captionRect.bottom
+      : imageRect.bottom;
+    var shouldScroll = modal.classList.contains("modal--portrait") ||
+      contentBottom > window.innerHeight;
+
+    modal.classList.toggle("modal--scrollable", shouldScroll);
+
+    if (modal.classList.contains("modal--portrait")) {
+      modal.style.setProperty("--modal-control-top", "50%");
+      return;
+    }
+
+    if (!imageRect.width || !imageRect.height) {
+      modal.style.setProperty("--modal-control-top", "50%");
+      return;
+    }
+
+    var controlCenter = imageRect.top + imageRect.height / 2;
+    var minControlTop = 72;
+    var maxControlTop = window.innerHeight - 72;
+    var clampedControlTop = Math.min(
+      Math.max(controlCenter, minControlTop),
+      maxControlTop
+    );
+
+    modal.style.setProperty("--modal-control-top", clampedControlTop + "px");
+  }
+
   function closeImageModal() {
     if (!modal) return;
 
     modal.style.display = "none";
+    modal.classList.remove("modal--portrait");
+    modal.classList.remove("modal--scrollable");
+    modal.style.removeProperty("--modal-control-top");
+    document.body.classList.remove("image-modal-open");
     activeGallery = [];
     activeGalleryIndex = -1;
   }
@@ -865,10 +903,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     modal.style.backgroundColor =
       img.getAttribute("data-bgcolor") || "rgba(255, 255, 255, 0.98)";
+    modal.classList.toggle("modal--portrait", img.naturalHeight > img.naturalWidth);
+    modal.classList.remove("modal--scrollable");
+    document.body.classList.add("image-modal-open");
     modal.style.display = "block";
+    modalImg.onload = syncModalControlsToImage;
     modalImg.src = img.src;
     modalImg.alt = img.alt;
     captionText.textContent = img.alt;
+
+    requestAnimationFrame(syncModalControlsToImage);
   }
 
   function moveInGallery(direction) {
@@ -934,6 +978,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (e.key === "ArrowLeft") moveInGallery(-1);
     if (e.key === "ArrowRight") moveInGallery(1);
   });
+
+  window.addEventListener("resize", syncModalControlsToImage);
 
   // img Modal finished
   //====================================
