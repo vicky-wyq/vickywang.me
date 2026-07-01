@@ -838,42 +838,101 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // img Modal Setup
   var modal = document.getElementById("modal");
   var modalClose = document.getElementById("modal-close");
+  var modalImg = document.getElementById("modal-content");
+  var captionText = document.getElementById("modal-caption");
+  var modalPrevious = document.getElementById("modal-previous");
+  var modalNext = document.getElementById("modal-next");
+  var activeGallery = [];
+  var activeGalleryIndex = -1;
+
+  function closeImageModal() {
+    if (!modal) return;
+
+    modal.style.display = "none";
+    activeGallery = [];
+    activeGalleryIndex = -1;
+  }
+
+  function updateGalleryControls() {
+    var showControls = activeGallery.length > 1;
+
+    if (modalPrevious) modalPrevious.classList.toggle("is-visible", showControls);
+    if (modalNext) modalNext.classList.toggle("is-visible", showControls);
+  }
+
+  function showModalImage(img) {
+    if (!modal || !modalImg || !captionText) return;
+
+    modal.style.backgroundColor =
+      img.getAttribute("data-bgcolor") || "rgba(255, 255, 255, 0.98)";
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    captionText.textContent = img.alt;
+  }
+
+  function moveInGallery(direction) {
+    if (activeGallery.length < 2) return;
+
+    activeGalleryIndex =
+      (activeGalleryIndex + direction + activeGallery.length) %
+      activeGallery.length;
+    showModalImage(activeGallery[activeGalleryIndex]);
+  }
 
   if (modalClose) {
-    modalClose.addEventListener("click", function () {
-      modal.style.display = "none";
+    modalClose.addEventListener("click", function (e) {
+      e.stopPropagation();
+      closeImageModal();
     });
   }
 
   if (modal) {
-    modal.addEventListener("click", function () {
-      modal.style.display = "none";
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) closeImageModal();
+    });
+  }
+
+  if (modalPrevious) {
+    modalPrevious.addEventListener("click", function (e) {
+      e.stopPropagation();
+      moveInGallery(-1);
+    });
+  }
+
+  if (modalNext) {
+    modalNext.addEventListener("click", function (e) {
+      e.stopPropagation();
+      moveInGallery(1);
     });
   }
 
   // global handler
   document.addEventListener("click", function (e) {
-    if (e.target.className.indexOf("modal-target") !== -1) {
-      var img = e.target;
-      var modalImg = document.getElementById("modal-content");
-      var captionText = document.getElementById("modal-caption");
+    var img = e.target.closest && e.target.closest(".modal-target");
+    if (!img) return;
 
-      // Read background color from the clicked element's data attribute
-      var bgColor = img.getAttribute("data-bgcolor");
-      if (bgColor) {
-        modal.style.backgroundColor = bgColor;
-      }
+    var galleryName = img.getAttribute("data-modal-gallery");
+    activeGallery = galleryName
+      ? Array.from(document.querySelectorAll(".modal-target")).filter(function (
+          galleryImage
+        ) {
+          return galleryImage.getAttribute("data-modal-gallery") === galleryName;
+        })
+      : [];
+    activeGalleryIndex = activeGallery.indexOf(img);
 
-      modal.style.display = "block";
-      modalImg.src = img.src;
-      captionText.innerHTML = img.alt;
-    }
+    updateGalleryControls();
+    showModalImage(img);
   });
-  // ESC key closes image modal
+
+  // Keyboard controls for the image modal
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && modal.style.display === "block") {
-      modal.style.display = "none";
-    }
+    if (!modal || modal.style.display !== "block") return;
+
+    if (e.key === "Escape") closeImageModal();
+    if (e.key === "ArrowLeft") moveInGallery(-1);
+    if (e.key === "ArrowRight") moveInGallery(1);
   });
 
   // img Modal finished
@@ -1085,6 +1144,36 @@ document.querySelectorAll(".modal .modal-content").forEach((content) => {
     initLRcarousel("carousel3");
   })();
   // LRCarousel ends
+
+  // Legacy issue carousel starts
+  (function () {
+    const carousels = document.querySelectorAll("[data-legacy-issue-carousel]");
+    if (!carousels.length) return;
+
+    carousels.forEach((carousel) => {
+      const tabs = carousel.querySelectorAll("[data-legacy-tab]");
+      const panels = carousel.querySelectorAll("[data-legacy-panel]");
+
+      function setActivePanel(panelId) {
+        tabs.forEach((tab) => {
+          const isActive = tab.dataset.legacyTab === panelId;
+          tab.classList.toggle("is-active", isActive);
+          tab.setAttribute("aria-selected", isActive ? "true" : "false");
+        });
+
+        panels.forEach((panel) => {
+          const isActive = panel.id === panelId;
+          panel.classList.toggle("is-active", isActive);
+          panel.hidden = !isActive;
+        });
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => setActivePanel(tab.dataset.legacyTab));
+      });
+    });
+  })();
+  // Legacy issue carousel ends
 
   // Global variable to hold the currently playing audio element
   let currentlyPlaying = null;
