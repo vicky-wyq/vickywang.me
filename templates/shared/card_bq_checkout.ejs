@@ -1,4 +1,3 @@
-
 <% if (typeof gated === 'undefined') {
   gated = false;
 } %>
@@ -9,40 +8,40 @@
   modalId = 'checkoutAccessModal';
 } %>
 
-    <div class="wrapper">
-      <div class="card">
-        <div class="card__left">
-          <p class="card25CardMeta">Consumer Facing • Q2 2026 </p>
-          <h2 class="fontWeight400">Improving Checkout to prevent avoidable drop-off after users are ready to book.
-            
-          </h2>
+<div class="wrapper">
+  <div class="card">
+    <div class="card__left">
+      <p class="card25CardMeta">Consumer Facing • Q2 2026 </p>
+      <h2 class="fontWeight400">Reducing Checkout Friction After Renters Are Ready to Book
 
-          <h4 class="">
-The checkout redesign protected purchase intent by removing late-stage blockers, reducing account-related errors, and moving nonessential tasks out of the payment path.          </h4>
+      </h2>
+
+      <h4 class="">
+        Checkout is the commitment phase. The redesign protected that moment by resolving identity earlier, keeping order-critical tasks in checkout, and moving nonessential prompts after purchase. </h4>
 
 
-          <div class="card__cta">
-            <h4>↓ drop-off before checkout, ↑ completion rate, ↓ early drop-off</h4>
-            <div class="spacingSmall"></div>
+      <div class="card__cta">
+        <h4>↓ late-stage blockers · ↓ account errors · ↑ checkout focus</h4>
+        <div class="spacingSmall"></div>
 
-            <% if (gated) { %>
-              <%- include(`${templatePath}/shared/modal_email_for_access`, {
+        <% if (gated) { %>
+        <%- include(`${templatePath}/shared/modal_email_for_access`, {
                 ctaButton,
                 modalId
               }) %>
-            <% } else { %>
-              <a href="/bq_b2c_checkout">
-                <button class="buttonMedium <%= ctaButton %>">View Case Study</button>
-              </a>
-            <% } %>
-          </div>
-          <div class="spacingXSmall displayMobile"></div>
-        </div>
+        <% } else { %>
+        <a href="/bq_b2c_checkout">
+          <button class="buttonMedium <%= ctaButton %>">View Case Study</button>
+        </a>
+        <% } %>
+      </div>
+      <div class="spacingXSmall displayMobile"></div>
+    </div>
 
-        <div class="card__right">
-          <div class="card25-media">
-            <img src="/project_images/cover_bq_checkout.png" alt="project image" class="card25-media-img">
-          </div>
-        </div>
+    <div class="card__right">
+      <div class="card25-media">
+        <img src="/project_images/cover_bq_checkout.png" alt="project image" class="card25-media-img">
       </div>
     </div>
+  </div>
+</div>

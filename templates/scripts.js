@@ -848,11 +848,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   function syncModalControlsToImage() {
     if (!modal || !modalImg || modal.style.display !== "block") return;
 
-    var captionRect = captionText ? captionText.getBoundingClientRect() : null;
     var imageRect = modalImg.getBoundingClientRect();
-    var contentBottom = captionRect && captionRect.height
-      ? captionRect.bottom
-      : imageRect.bottom;
+    var contentBottom = Math.max(modal.scrollHeight, imageRect.bottom);
     var shouldScroll = modal.classList.contains("modal--portrait") ||
       contentBottom > window.innerHeight;
 

@@ -5058,6 +5058,20 @@ border-radius: 12px;
   background-color: var(--white);
 }
 
+.commitmentMomentGrid .Grid-cell {
+  display: flex;
+}
+
+.commitmentMomentCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.commitmentMomentOutcome {
+  margin-top: auto;
+}
+
 @media (max-width: 800px) {
   .legacyIssueTabs {
     display: flex;
@@ -6220,7 +6234,7 @@ body.image-modal-open {
   color: var(--Grey900);
   font-weight: 500;
   font-size: clamp(1.3em, 1.46vw, 1.68em);
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 /* Add Animation */
