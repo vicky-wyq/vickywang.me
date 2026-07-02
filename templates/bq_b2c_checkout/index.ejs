@@ -2,7 +2,7 @@
 <html lang="en">
 
 <!--Head-->
-<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Checkout `, text:'Optimize VRBO Embedded Experience',
+<%- include(`${templatePath}/shared/head`, { SEO:false, Title:`Checkout Redesign`, text:'Reducing checkout friction after renters are ready to book',
   pageURL:'bq_b2c_checkout', thumbnailImgURL: 'vickywang.svg' }) %>
 <!--Head-->
 
@@ -20,10 +20,9 @@
           <h6>Two-sided marketplace (3,000+ providers, $20M+ GMV)</h6>
           <div class="spacingMedium"></div>
 
-          <h1 class="titleCaseStudy">Improving Checkout to prevent avoidable drop-off after users are ready to book.
+          <h1 class="titleCaseStudy">Reducing Checkout Friction After Renters Are Ready to Book
           </h1>
-          <h4 class="fontWeight300">The checkout redesign protected purchase intent by removing late-stage blockers,
-            reducing account-related errors, and moving nonessential tasks out of the payment path.</h4>
+          <h4 class="fontWeight300">Checkout is the commitment phase. The redesign protected that moment by resolving identity earlier, keeping order-critical tasks in checkout, and moving nonessential prompts after purchase.</h4>
         </div>
       </div>
     </div>
@@ -31,21 +30,21 @@
       <div class="Grid-cell">
         <div class="element">
           <h5 class="fontWeight400 grey750">Role:</h5>
-          <h5>Lead UX for provider inventory management redesign</h5>
+          <h5>Lead UX Designer for cross-platform checkout redesign</h5>
         </div>
       </div>
       <div class="Grid-cell">
         <div class="element">
           <h5 class="fontWeight400 grey750">Scope:</h5>
 
-          <h5>Cross platform checkout exclude mobile app</h5>
+          <h5>Cross-platform web checkout, excluding native mobile app</h5>
         </div>
       </div>
       <div class="Grid-cell">
         <div class="element">
           <h5 class="fontWeight400 grey750">Stakeholders:</h5>
 
-          <h5>VP Product Design, CTO, engineering, QA, providers (QPs)</h5>
+          <h5>VP Product Design, CTO, engineering, QA, product, customer support</h5>
         </div>
       </div>
     </div>
@@ -72,7 +71,7 @@
           <div class="element">
             <h1 class="fontWeight400">Problem</h1>
             <h4>Checkout is the commitment layer of the marketplace journey. By the time users reach checkout, they are no longer trying to explore every option. They are trying to confirm the rental, resolve required logistics, pay, and know what happens next. </h4>
-            <h4>The redesign focused on protecting that commitment moment by removing nonessential tasks, resolving identity earlier, preventing late-stage account errors, and making the final order easy to review before purchase. </h4>
+            <h4>The old checkout mixed order completion with account creation, optional prompts, and editing paths. This created extra opportunities for users to pause, hit errors, or leave after they had already shown purchase intent.</h4>
 
           </div>
         </div>
@@ -82,7 +81,7 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h2 class="fontWeight400">WHAT is happenning (Quantitative)</h2>
+            <h2 class="fontWeight400">Quantitative signals</h2>
           </div>
         </div>
       </div>
@@ -173,8 +172,7 @@
           <div class="Grid-cell">
             <div class="element">
               <h4 class="fontWeight400">Post-checkout entry completion is high</h4>
-              <h6>Users who proceed past checkout entry are highly likely to complete purchase, indicating low
-                friction in later checkout stages.</h6>
+              <h6>Users who passed checkout entry were more likely to complete purchase, which suggested checkout friction was concentrated around entry, account state, and early commitment moments rather than every later step.</h6>
             </div>
           </div>
           <div class="align-right">
@@ -231,7 +229,7 @@
         <div class="Grid-cell">
           <div class="element">
             <div class="specialCaseStudyTxt">
-              <h5>GA4 showed that the largest drop-off happened before checkout. However users who reached checkout had higher purchase intent, losing people here is expensive. so the design goal was to reduce avoidable loss after users are ready to book.
+              <h5>Checkout was not the largest funnel leak, but it was still a high-value moment where avoidable friction could lose users who were already ready to book.
               </h5>
             </div>
           </div>
@@ -244,7 +242,7 @@
 
         <div class="Grid-cell">
           <div class="element">
-            <h2 class="fontWeight400">Where the frictions are (Qualitative)</h2>
+            <h2 class="fontWeight400">Qualitative signals</h2>
           </div>
         </div>
 
@@ -256,13 +254,10 @@
           <div class="element">
             <div class="legacyIssueCarousel" data-legacy-issue-carousel="">
               <div class="legacyIssueTabs" role="tablist" aria-label="Legacy experience breakdowns">
-                <button class="legacyIssueTab is-active" type="button" role="tab" aria-selected="true" aria-controls="legacy-issue-a" id="legacy-issue-tab-a" data-legacy-tab="legacy-issue-a">A.
-                  Navigate to other screens</button>
-                <button class="legacyIssueTab" type="button" role="tab" aria-selected="false" aria-controls="legacy-issue-b" id="legacy-issue-tab-b" data-legacy-tab="legacy-issue-b">B. Long
-                  scrolling & persistent UI</button>
-                <button class="legacyIssueTab" type="button" role="tab" aria-selected="false" aria-controls="legacy-issue-c" id="legacy-issue-tab-c" data-legacy-tab="legacy-issue-c">C. Flow
-                  interrupt</button>
-                <button class="legacyIssueTab" type="button" role="tab" aria-selected="false" aria-controls="legacy-issue-d" id="legacy-issue-tab-d" data-legacy-tab="legacy-issue-d">D. Lack of clear completion focus</button>
+                <button class="legacyIssueTab is-active" type="button" role="tab" aria-selected="true" aria-controls="legacy-issue-a" id="legacy-issue-tab-a" data-legacy-tab="legacy-issue-a">A. Decision loops</button>
+                <button class="legacyIssueTab" type="button" role="tab" aria-selected="false" aria-controls="legacy-issue-b" id="legacy-issue-tab-b" data-legacy-tab="legacy-issue-b">B. Mobile review friction</button>
+                <button class="legacyIssueTab" type="button" role="tab" aria-selected="false" aria-controls="legacy-issue-c" id="legacy-issue-tab-c" data-legacy-tab="legacy-issue-c">C. Flow interruptions</button>
+                <button class="legacyIssueTab" type="button" role="tab" aria-selected="false" aria-controls="legacy-issue-d" id="legacy-issue-tab-d" data-legacy-tab="legacy-issue-d">D. Completion uncertainty</button>
               </div>
 
               <div class="legacyIssuePanels">
@@ -270,8 +265,7 @@
                   <img class="modal-target card2026 legacyIssueImg" src="screenshot_qualitative1.png" alt="Legacy Vrbo entry added friction before shopping" data-modal-gallery="legacy-issue-carousel">
                   <div class="legacyIssueCopy">
                     <div class="marginLeft">
-                      <h6>Users frequently navigate back to cart or earlier steps during checkout to modify items or
-                        trip details.</h6>
+                      <h5>Links back to cart, trip, and supporting pages pull users out of checkout</h5>
                     </div>
                   </div>
 
@@ -280,7 +274,7 @@
                 <article class="legacyIssuePanel  checkout" id="legacy-issue-b" role="tabpanel" aria-labelledby="legacy-issue-tab-b" data-legacy-panel="" hidden="">
                   <img class="modal-target card2026 legacyIssueImg" src="screenshot_qualitative2.png" alt="    Legacy shopping with generic products and pricing" data-modal-gallery="legacy-issue-carousel">
 
-                  <h6>Long scrolling, hard to review the rental info on mobile</h6>
+                  <h5>    long scroll + persistent UI + footer make review harder</h5>
                 </article>
 
                 <article class="legacyIssuePanel checkout" id="legacy-issue-c" role="tabpanel" aria-labelledby="legacy-issue-tab-c" data-legacy-panel="" hidden="">
@@ -288,8 +282,7 @@
 
                   <div class="legacyIssueCopy">
                     <div class="marginLeft">
-                      <h6>Error states (login, payment, iframe issues) interrupt the flow and reduce user
-                        confidence.</h6>
+                      <h5>     login/payment/password/iframe errors break confidence</h5>
 
                     </div>
                   </div>
@@ -300,8 +293,7 @@
 
                   <div class="legacyIssueCopy">
                     <div class="marginLeft">
-                      <h6>Users exhibit repeated back-and-forth behavior (U-turns), indicating unresolved decisions
-                        during checkout.</h6>
+                      <h6>    repeated back-and-forth suggests users are still deciding instead of completing</h6>
                     </div>
                   </div>
                 </article>
@@ -310,7 +302,16 @@
           </div>
         </div>
       </div>
-
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="specialCaseStudyTxt">
+              <h5>The opportunity: Protecting high-intent renters from avoidable late-stage friction.
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="spacingXLarge"></div>
 
 
@@ -327,7 +328,7 @@
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
-            <%- include(`${templatePath}/shared/divider25`, { sectionName:'Synthesis', topSpacing:'spacingMedium',
+            <%- include(`${templatePath}/shared/divider25`, { sectionName:'Insight', topSpacing:'spacingMedium',
                   bottomSpacing:'spacingXLarge', topNbottomSpacing:'' }) %>
           </div>
         </div>
@@ -339,64 +340,64 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h1 class="fontWeight400">Synthesis</h1>
+            <h1 class="fontWeight400">Insight</h1>
           </div>
         </div>
       </div>
-
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h2 class="fontWeight100">The marketplace user journey</h2>
-
-            <h6 class="">Users hesitate or disengage before committing, not during payment</h6>
+            <h2 class="fontWeight400">Marketplace journey</h2>
+            <h4 class="">Checkout is the commitment layer: users are trying to confirm the rental, not continue exploring.</h4>
 
           </div>
         </div>
-
       </div>
+
 
       <div class="Grid Grid--gutters Grid--cols-6">
         <div class="Grid-cell">
           <div class="element">
-            <h1 class="fontWeight900 grey500">1.</h1>
-            <h6 class="fontWeight400">Need clarity</h6>
-            <h6>“What do I need for this trip?”</h6>
+            <h1 class="fontWeight900 grey400">1.</h1>
+            <h6 class="fontWeight500">Need clarity</h6>
+            <h6 class="fontSatoshi"> "What do I need for this trip?"</h6>
+
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight900 grey500">2.</h1>
-            <h6 class="fontWeight400">Fit clarity</h6>
-            <h6>“Is this the right item for my child/trip?”</h6>
+            <h6 class="fontWeight500">Fit clarity</h6>
+            <h6 class="fontSatoshi">“Is this the right item for my child/trip?”</h6>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight900 grey500">3.</h1>
-            <h6 class="fontWeight400">Provider trust</h6>
-            <h6>“Can I trust this provider?”</h6>
+            <h6 class="fontWeight500">Provider trust</h6>
+            <h6 class="fontSatoshi">“Can I trust this provider?”</h6>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight900 grey500">4.</h1>
-            <h6 class="fontWeight400">Availability & logistics</h6>
-            <h6>“Can this actually work for my dates and location?”</h6>
+            <h6 class="fontWeight500">Availability & logistics</h6>
+            <h6 class="fontSatoshi">“Can this actually work for my dates and location?”</h6>
+
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <h1 class="fontWeight900 grey500">5.</h1>
-            <h6 class="fontWeight400">“Do I understand what this will cost?”</h6>
-            <h6></h6>
+            <h6 class="fontWeight500">Price confidence </h6>
+            <h6 class="fontSatoshi">Do I understand what this will cost?</h6>
           </div>
         </div>
         <div class="Grid-cell colorBgGlorifyLt borderDiagram">
           <div class="element ">
             <div class="">
               <h1 class="fontWeight900 grey500">6.</h1>
-              <h6 class="fontWeight400">Commitment</h6>
+              <h6 class="fontWeight500">Commitment</h6>
               <h6>“I’m ready. Don’t interrupt me now.”</h6>
 
             </div>
@@ -410,90 +411,29 @@
         <div class="Grid-cell">
           <div class="element">
             <div class="specialCaseStudyTxt">
-              <h5>Checkout is where the business has already paid for or earned the user’s intent. Losing people there is expensive.
+              <h5>Checkout is the commitment layer. Users are no longer trying to explore every option. They are trying to confirm, pay, and know what happens next.
               </h5>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="spacingXLarge"></div>
-
+      <div class="spacingXLarge"> </div>
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h2 class="fontWeight100">Problem at commitment phase</h2>
-
+            <h2 class="fontWeight400">Old checkout mixed three jobs</h2>
+            <h4 class="">The old checkout combined <span class="fontWeight400"> identity/account state</span>, <span class="fontWeight400"> rental completion</span>, <span class="fontWeight400"> extra business/user data</span> in the same flow.</h4>
           </div>
         </div>
       </div>
+      <div class="spacingMedium"></div>
 
-      <div class="Grid Grid--gutters Grid--cols-3">
-
-        <div class="Grid-cell">
-          <div class="element">
-            <h1 class="fontWeight900 grey500">A.</h1>
-
-            <h4 class="fontWeight400">Decision state mismatch (core)</h4>
-            <div class="">
-              <h6>Users continue decision-making during checkout rather than treating it as a final confirmation step.</h6>
-            </div>
-
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h1 class="fontWeight900 grey500">B.</h1>
-
-            <h4 class="fontWeight400">System fragility</h4>
-            <div class="">
-
-              <h6>Changes to key inputs (e.g., dates, items, delivery method) can lead to unclear or disruptive system behavior.</h6>
-            </div>
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <h1 class="fontWeight900 grey500">C.</h1>
-
-            <h4 class="fontWeight400">UI friction on mobile</h4>
-            <div class="">
-              <h6>Long scroll, persistent UI elements, and low signal-to-noise ratio increase cognitive load and contribute to abandonment.</h6>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-      <div class="spacingXLarge"></div>
-
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-
-        <div class="Grid-cell">
-          <div class="element">
-            <h2 class="fontWeight100">Protect the commitment moment.</h2>
-
-            <img src="diagram_mental_model_design_decision.svg" alt="Legacy flow with repeated checkout states">
-          </div>
-        </div>
-      </div>
-      <div class="spacingXLarge"></div>
-
-
-
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <h2 class="fontWeight100">Current checkout mixed three different jobs together:</h2>
-          </div>
-        </div>
-      </div>
       <div class="Grid Grid--gutters Grid--cols-6">
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" data-modal-gallery="checkoutscreenshot" src="screenshot_checkout_process1.png" alt="">
             <h5 class="fontWeight400 grey600">Step0</h5>
-            <h6>Guest checkout or log in</h6>
+            <h6> Guest checkout or log in</h6>
           </div>
         </div>
         <div class="Grid-cell">
@@ -507,14 +447,14 @@
           <div class="element">
             <img class="modal-target card2026" data-modal-gallery="checkoutscreenshot" src="screenshot_checkout_process3.png" alt="">
             <h5 class="fontWeight400 grey600">Step2</h5>
-            <h6>Delivery/pickup, note</h6>
+            <h6> Delivery/pickup details and notes</h6>
           </div>
         </div>
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" data-modal-gallery="checkoutscreenshot" src="screenshot_checkout_process4.png" alt="">
             <h5 class="fontWeight400 grey600">Step3</h5>
-            <h6>Survey</h6>
+            <h6> Survey and additional notes</h6>
           </div>
         </div>
 
@@ -522,87 +462,82 @@
           <div class="element">
             <img class="modal-target card2026" data-modal-gallery="checkoutscreenshot" src="screenshot_checkout_process5.png" alt="">
             <h5 class="fontWeight400 grey600">Step4</h5>
-            <h6>Payment, tip, cancel for no reason, rental responsibility</h6>
+            <h6> Payment, tip, cancellation option, rental responsibility, and account creation</h6>
           </div>
         </div>
       </div>
-      <div class="spacingXLarge"></div>
 
+      <div class="spacingXLarge"></div>
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h2 class="fontWeight100">Design update to separate these three different jobs:</h2>
-            <h6>The redesign made the hierarchy cleaner:</h6>
+            <h2 class="fontWeight400">Design Strategy</h2>
+            <h4>Separate required checkout tasks from everything else</h4>
+
           </div>
         </div>
       </div>
-      <div class="Grid Grid--gutters Grid--cols-3">
-
+      <div class="Grid Grid--gutters Grid--cols-3 commitmentMomentGrid">
 
         <div class="Grid-cell">
-          <div class="element">
-            <h1 class="fontWeight900 grey500">1.</h1>
-
-            <h4 class="fontWeight400">Resolve identity/account state</h4>
-            <div class="">
-              <h6>· guest vs existing email</h6>
-              <h6>· create password</h6>
-              <h6>· password confirmation</h6>
-              <h6>· password rules</h6>
+          <div class="element commitmentMomentCard">
+            <h1 class="fontWeight900 grey500">Identity.</h1>
+            <div class="commitmentMomentBody">
+              <h4 class="fontSatoshi"> "Don’t make me lose my progress at the end of checkout if account creation fails"</h4>
+              <h4 class="fontSatoshi"> "Don’t make account state confusing"</h4>
             </div>
-            <div class="spacingSmall"></div>
-            <h5 class="fontWeight400 grey600">Sulution 1</h5>
-            <img class="modal-target card2026" data-modal-gallery="mockups" src="mockup01.png" alt="Sulution 1 - Account/password friction becomes OTP verification instead of late password creation.">
-            <div class="spacingXSmall"></div>
+            <div class="commitmentMomentOutcome">
+              <h4 class="commitmentMomentArrow fontWeight900 grey500">↓</h4>
+              <h4 class="commitmentMomentResult fontWeight400"> Resolve identity earlier</h4>
+              <h4 class="commitmentMomentResult "> OTP verification, remove guest/password split</h4>
+            </div>
 
-            <h6>Account/password friction becomes OTP verification instead of late password creation.</h6>
           </div>
         </div>
         <div class="Grid-cell">
-          <div class="element">
-            <h1 class="fontWeight900 grey500">2.</h1>
+          <div class="element commitmentMomentCard">
+            <h1 class="fontWeight900 grey500">Completion.</h1>
 
-            <h4 class="fontWeight400">Complete the rental</h4>
-            <div class="">
-              <h6>· customer info</h6>
-              <h6>· trip/delivery details </h6>
-              <h6>· payment</h6>
-              <h6>· review</h6>
+            <div class="commitmentMomentBody">
+              <h4 class="fontSatoshi"> "Let me understand the whole task before I commit"</h4>
+              <h4 class="fontSatoshi"> "Tell me what is wrong in context"</h4>
+              <h4 class="fontSatoshi"> "Show progress while keeping review possible"</h4>
             </div>
-            <div class="spacingSmall"></div>
-            <h5 class="fontWeight400 grey600">Sulution 2</h5>
+            <div class="commitmentMomentOutcome">
+              <h4 class="commitmentMomentArrow fontWeight900 grey500">↓</h4>
+              <h4 class="commitmentMomentResult fontWeight400"> Keep required rental tasks in checkout</h4>
+              <h4 class="commitmentMomentResult "> one-page checkout, section validation, collapsed completed sections</h4>
+            </div>
 
-            <img class="modal-target card2026" data-modal-gallery="mockups" src="mockup02.png" alt="Sulution 2 - Required checkout tasks stay in checkout.
-">
-            <div class="spacingXSmall"></div>
-            <h6>Required checkout tasks stay in checkout.</h6>
           </div>
         </div>
         <div class="Grid-cell">
-          <div class="element">
-            <h1 class="fontWeight900 grey500">3.</h1>
+          <div class="element commitmentMomentCard">
 
-            <h4 class="fontWeight400">Collect extra business/user data</h4>
-            <div class="">
-              <h6>· survey questions </h6>
-              <h6>· app download prompt</h6>
-              <h6>· optional trip/profile info</h6>
-              <h6>· cart or order editing</h6>
+            <h1 class="fontWeight900 grey500">Focus.</h1>
+
+            <div class="commitmentMomentBody">
+              <h4 class="fontSatoshi"> "Don’t ask nonessential questions before I finish"</h4>
+              <h4 class="fontSatoshi"> "Don’t interrupt purchase with a secondary goal"</h4>
+              <h4 class="fontSatoshi"> "Don’t pull me back into decision mode"</h4>
             </div>
-            <div class="spacingSmall"></div>
-            <h5 class="fontWeight400 grey600">Sulution 3</h5>
+            <div class="commitmentMomentOutcome">
+              <h4 class="commitmentMomentArrow fontWeight900 grey500">↓</h4>
+              <h4 class="commitmentMomentResult fontWeight400"> Move optional tasks after checkout</h4>
+              <h4 class="commitmentMomentResult "> move survey and app prompts after purchase; minimize trip and cart editing</h4>
+            </div>
 
-            <img class="modal-target card2026" data-modal-gallery="mockups" src="mockup03.png" alt="Sulution 3 - Optional/post-purchase tasks move after checkout.
 
-">
-            <div class="spacingXSmall"></div>
 
-            <h6>Optional/post-purchase tasks move after checkout.</h6>
           </div>
         </div>
       </div>
+
 
     </div>
+
+    <div class="spacingXLarge"></div>
+
 
 
     <div class="spacingMedium"></div>
@@ -615,36 +550,119 @@
         <div class="Grid-cell">
           <div class="element">
             <div class="blankHXXS"></div>
-            <%- include(`${templatePath}/shared/divider25`, { sectionName:'Resposive hi-fi', topSpacing:'spacingMedium',
+            <%- include(`${templatePath}/shared/divider25`, { sectionName:'Solution', topSpacing:'spacingMedium',
                   bottomSpacing:'spacingXLarge', topNbottomSpacing:'' }) %>
           </div>
         </div>
       </div>
     </div>
     <div class="wrapper">
+      <div class="spacingXLarge"></div>
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h1>log in</h1>
-            <h1>main checkout</h1>
-            <h1>post checkout/confirmation</h1>
+            <h1 class="fontWeight400">Solution</h1>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="fontWeight400">Group by the three jobs</h2>
 
           </div>
         </div>
       </div>
+
+      <div class="Grid Grid--gutters Grid--cols-3">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight900 grey500">1.</h1>
+            <img class="modal-target card2026" data-modal-gallery="mockups" src="mockup_desktop1.png" alt="Sign up/Log in: Resolve identity earlier">
+
+            <h4 class="fontWeight400">Resolve identity earlier</h4>
+            <div class="spacingXSmall"></div>
+            <div>
+              <ul class="listCircle">
+                <li>Remove guest/password split</li>
+                <li>OTP verification</li>
+                <li>Avoid late password creation</li>
+                <li>Prevent existing-email, password mismatch, and password-rule errors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight900 grey500">2.</h1>
+            <img class="modal-target card2026" data-modal-gallery="mockups" src="mockup_desktop2.png" alt="Main checkout: Make checkout reviewable & focused">
+
+            <h4 class="fontWeight400">Make checkout reviewable & focused</h4>
+            <div class="spacingXSmall"></div>
+            <div>
+              <ul class="listCircle">
+                <li>One-page checkout</li>
+                <li>Section-by-section validation</li>
+                <li>Completed sections collapse</li>
+                <li>Easier final review before placing order</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight900 grey500">3.</h1>
+            <img class="modal-target card2026" data-modal-gallery="mockups" src="mockup_desktop3.png" alt="Post checkout: Move nonessential tasks out">
+
+            <h4 class="fontWeight400">Move nonessential tasks out</h4>
+            <div class="spacingXSmall"></div>
+            <ul class="listCircle">
+              <li>Move survey to confirmation</li>
+              <li>Move app download to confirmation</li>
+              <li>Minimize trip/cart editing and reduce footer size</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="spacingXLarge"></div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="fontWeight400">Mobile adaptation</h2>
+            <h4>On mobile, completed sections collapse to reduce scrolling while keeping the order reviewable before purchase.</h4>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight900 grey500">1.</h1>
+            <h4 class="fontWeight400">Active checkout state</h4>
+            <img class="modal-target card2026" data-modal-gallery="mobile" src="mockup_mobile1.png" alt="Active checkout state">
+
+
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight900 grey500">2.</h1>
+            <h4 class="fontWeight400">Review state with sticky completion CTA</h4>
+
+            <img class="modal-target card2026" data-modal-gallery="mobile" src="mockup_mobile2.png" alt="    Review state with sticky completion CTA">
+
+          </div>
+        </div>
+      </div>
+
+
     </div>
-    <div class="spacingXLarge"></div>
 
 
 
-
-
-    <div class="spacingMedium"></div>
-
-    <div class="spacingXLarge"></div>
-    <div class="spacingXLarge"></div>
-    <div class="spacingXLarge"></div>
-    <div class="spacingXLarge"></div>
+    </div>
     <div class="spacingXLarge"></div>
 
   </section>
@@ -669,23 +687,54 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h1 class="fontWeight400">Outcome</h1>
-            <h2 class="fontWeight100">The redesign created a clearer, more focused checkout foundation that reduced late-stage error risk and kept users focused on completing the rental.</h2>
-
-            <div class="spacingXLarge"></div>
-
-            <h1 class="fontWeight400">Measure after 30 days of launch</h1>
-
-
-            <h2 class="fontWeight100">Increase conversion from cart to purchase</h2>
-            <h2 class="fontWeight100">Improve mobile funnel performance</h2>
-            <h2 class="fontWeight100">Unlock revenue from existing traffic</h2>
-
+            <h1 class="fontWeight400">Impact</h1>
 
           </div>
         </div>
       </div>
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h2 class="fontWeight400"> Measurement Plan</h2>
+            <h4 class="">The redesign created a cleaner checkout foundation by reducing account-related error risk, keeping checkout focused on order-critical tasks, and moving secondary prompts after purchase.</h4>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <ul class="listCircle">
+              <li>Cart → purchase conversion</li>
+              <li>Checkout entry → purchase completion</li>
+              <li>Mobile checkout completion rate</li>
+              <li>OTP verification success/error rate</li>
+              <li>Reduction in account/password-related errors</li>
+              <li>Confirmation-page survey/app prompt engagement</li>
+              <li>Support tickets related to checkout/account issues, if available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="specialCaseStudyTxt">
+              <h5>Checkout was not the largest funnel leak, but it was a high-value commitment moment. The redesign protected that moment by resolving identity earlier, making checkout reviewable, and moving nonessential tasks out.
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+
+
 
     <div class="spacingXLarge"></div>
     <div class="spacingXLarge"></div>
