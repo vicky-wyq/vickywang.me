@@ -17,68 +17,8 @@
       <button class="nav-link" data-link="contact" type="button">Contact</button>
     </div>
   </header>
-  <div class="spacingXLarge"></div>
+    <%- include(`${templatePath}/shared/banner_landing`)%>
 
-  <div class="spacingXLarge"></div>
-  <div class="wrapper">
-    <div class="Grid Grid--full Grid--gutter">
-      <div class="Grid-cell">
-        <div class="element">
-          <div class="rowcard25 centerVer">
-            <div class="photoWrappercard25">
-              <img class="landingProfileImg" src="photo_profile_avatar.png" alt="vicky">
-            </div>
-            <div class="chat-bubble-wrap">
-              <div class="card25Chat chat-bubble">
-                <span class="typing">
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                </span>
-                <span class="bubble-text"></span>
-              </div>
-            </div>
-          </div>
-          <div class="spacingXSmall"></div>
-          <h1 class="card25LandingTitle"> Marketplace & platform UX for providers and travelers at scale
-          </h1>
-          <h2 class="fontWeight300">I turn complex provider operations and consumer funnels into clear systems that reduce friction and improve booking conversion.
-          </h2>
-          <h2 class="fontWeight300">I focus on how user behavior, system constraints, and product decisions shape real outcomes.</h2>
-        </div>
-
-      </div>
-    </div>
-    <div class="spacingXSmall"></div>
-
-    <div class="Grid Grid--full Grid--gutter">
-      <div class="element">
-        <a href="/resume"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
-      </div>
-    </div>
-    <div class="Grid Grid--full Grid--gutter">
-      <div class="Grid-cell">
-        <div class="element">
-          <h3 class="fontWeight400"> My working principles</h3>
-        </div>
-      </div>
-    </div>
-    <div class="Grid Grid--gutters Grid--cols-3">
-      <div class="Grid-cell">
-        <h4 class="marginRight">Start from constraints and user behavior, not ideas
-        </h4>
-      </div>
-      <div class="Grid-cell">
-        <h4 class="marginRight"> Simplify systems before optimizing flows
-        </h4>
-      </div>
-      <div class="Grid-cell marginRight">
-        <h4 class="marginRight"> Measure success by reduced friction and clearer decisions, not feature count
-        </h4>
-      </div>
-
-    </div>
-  </div>
 
 
   <section id="casestudies" data-nav="casestudies">
@@ -93,22 +33,23 @@
       }) %>
 
     <%- include(`${templatePath}/shared/card_bq_inventory`) %>
-        <div class="spacingLarge"></div>
-
-    <%- include(`${templatePath}/shared/card_bq_provider_app`) %>
-
-
 
 
     <div class="spacingLarge"></div>
-    <%- include(`${templatePath}/shared/card_bq_package`) %>
+
+    <!-- <%- include(`${templatePath}/shared/card_bq_provider_app`) %> -->
+
+
+
+
 
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/card_bq_vrbo`) %>
 
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/card_bq_checkout`) %>
-
+    <div class="spacingLarge"></div>
+    <%- include(`${templatePath}/shared/card_bq_package`) %>
 
     <div class="spacingLarge"></div>
 

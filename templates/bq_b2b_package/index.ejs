@@ -32,52 +32,74 @@
 
             <img class="widthXXS" src="../../logos/bq.svg" alt="Logo">
             <%- include(`${templatePath}/shared/txt_banner_title`, {
-            text:'Standardizing Packages to Unlock Early Funnel Discovery',}) %>
-            <h4>Resolved a structural conflict between browsing-first UX and provider-dependent bundles
+            text:'Building a Scalable Package System for Marketplace Bundles',}) %>
+            <h4>Enabled packages to be represented before provider selection for the first time.
             </h4>
-            <h4>Packages were a key driver of conversion and AOV but became invisible in a browsing-first marketplace due to provider dependency.</h4>
-            <h4>By introducing standardized packages and integrating them into item-level discovery, bundles became part of early decision-making again—balancing platform consistency with provider flexibility.
-            </h4>
-            <h4 class="fontWeight300">Packages drove higher conversion and AOV but were inaccessible during browsing due to provider dependency. Redesigned the system to make bundles visible earlier, enabling higher-value decisions before users commit.</h4>
+
           </div>
         </div>
       </div>
     </div>
+
+
     <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_s`, {
-            subtitle:'Context',}) %>
-            <h4>Packages were tied to individual providers, so they became invisible in browsing-first flows before provider selection.</h4>
-          </div>
-        </div>
 
-      </div>
       <div class="spacingLarge"></div>
-
       <div class="Grid Grid--gutters Grid--cols-3">
         <div class="Grid-cell">
           <div class="element">
-            <h4 class=""><span class="fontWeight400">Role: </span>Product UX · Package system design</h4>
+            <h5><span class="fontWeight400">Role: </span>Product UX · Package system design</h5>
           </div>
         </div>
         <div class=" Grid-cell">
           <div class="element">
-            <h4 class=""><span class="fontWeight400">Scope: </span>Standardized package system · Consumer discovery + provider fulfillment </h4>
-            <h4>Marketplace architecture fix + merchandising strategy</h4>
+            <h5><span class="fontWeight400">Scope: </span>Standardized package system · Consumer discovery + provider fulfillment</h5>
           </div>
         </div>
         <div class=" Grid-cell">
           <div class="element">
-            <h4 class=""><span class="fontWeight400">Stakeholders: </span>VP Product Design, CTO, engineering, QA, providers</h4>
+            <h5><span class="fontWeight400">Stakeholders: </span>VP Product Design, CTO, engineering, QA, providers</h5>
           </div>
         </div>
       </div>
       <div class="spacingXLarge"></div>
 
     </div>
+
+
+
   </section>
+  <div class="greyBg100">
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Context</h1>
+          </div>
+        </div>
+
+
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h4>BabyQuip has a package part of the inventory management, it is almost looks like one of the gear categories. each provider might have their unique packge, so we never able to promote them during discover or shopping phase since gear first launch.</h4>
+            <h4> before gear first: provider - items/package</h4>
+            <h4> gear first: items - provider - provider shop - packge</h4>
+          </div>
+
+        </div>
+        <div class="spacingMedium"></div>
+
+
+
+      </div>
+
+    </div>
+    <div class="spacingLarge"></div>
+
+  </div>
+  <div class="spacingXLarge"></div>
 
 
   <section id="problem" data-nav="problem">
@@ -96,73 +118,45 @@
         </div>
       </div>
     </div>
+    <div class="wrapper">
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Problem</h1>
+          </div>
+        </div>
+
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="fontWeight400 grey900">inconsistent</h3>
+
+            <h4>they were fully provider-created. they can define the name, quantity themself</h4>
+          </div>
+
+        </div>
+        <div class="spacingMedium"></div>
+
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="fontWeight400 grey900">not appear during discover/shopping</h3>
+
+            <h4>each provider can have their unique package, it is unable to promote before select provider</h4>
+
+          </div>
+        </div>
+        <img class="" src="screenshot_Vrbo_BabyQuip.png" alt="">
+
+
+
+      </div>
+
+    </div>
+
     <div class="spacingMedium"></div>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {
-            title:'Context',}) %>
-            <h4>System change: Provider-first → gear-first</h4>
-            <h4>I joined the company in late 2024 and helped ship the gear-first launch, which shifted browsing from provider-first to gear-first.</h4>
-            <h4>Gear-first browsing supported partnerships and made it easier to select gear before finding an available provider. However, it also created a placeholder-item shopping experience in the early funnel.</h4>
 
-            <h4>Since this shift, users could no longer see provider-specific packages before selecting a provider.</h4>
-            <div class="marginLeft">
-              <ul class="listCircle">
-                <li>Each provider had different packages</li>
-                <li>Inconsistent structure: a provider could name something a toy package while placing it in the crib category</li>
-                <li>Unknown availability</li>
-              </ul>
-            </div>
 
-            <h4>Result: Packages disappeared from the early funnel (landing + browsing)</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {
-            title:'Why it matters',}) %>
-            <h4>Packages were:</h4>
-
-            <div class="marginLeft">
-              <ul class="listCircle">
-                <li>High conversion driver</li>
-                <li>High AOV driver</li>
-              </ul>
-            </div>
-
-            <h4>But now:</h4>
-
-            <div class="marginLeft">
-              <ul class="listCircle">
-                <li>Hidden until late</li>
-                <li>Disconnected from discovery</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {title:'Problem',}) %>
-
-            <!-- <div>not sure how to merge thoes below</div> -->
-
-            <h4>High-value bundles (packages) were invisible during browsing due to provider dependency, eliminating their impact on early decision-making.</h4>
-            <h4>The marketing team wanted to run seasonal campaigns, but packages and promos became invisible after the shift from provider-first to gear-first browsing because they depended on provider-specific inventory.</h4>
-
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
 
@@ -184,28 +178,13 @@
         </div>
       </div>
     </div>
-    <div class="wrapper">
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Why it happens',}) %>
-            <h4>Packages depend on providers → providers are unknown early → packages are invisible</h4>
-            <h4>Because the flow happens before provider selection, all items are placeholders. Bundles were tied to individual providers, so they could not be displayed before a provider was selected.</h4>
 
-            <h4 class="textItalic fontWeight100 greyBg400 greyBg100 border-radius paddingXS">💡 Key insight: To support browsing-first shopping, packages must exist independently of providers.</h4>
-
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="spacingMedium"></div>
     <div class="wrapper">
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Packages must',}) %>
+            <h1 class="fontWeight400">Insight</h1>
             <div class="marginLeft">
               <ul class="listCircle">
                 <li>Be defined at the platform level</li>
@@ -250,14 +229,44 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Solution',}) %>
-            <h2>Decouple package definitions from providers and introduce standardized packages</h2>
+
+            <h1 class="fontWeight400">Solution</h1>
+            <h2>introduction standardized package while still keep the current package as custom packge, ensure adobtion well, ui bias towards standardized package, auto convert current custom package into standarlized package if qualified </h2>
 
             <div class="spacingXSmall"></div>
 
           </div>
         </div>
+      </div>
+    </div>
+    <div class="wrapper">
+
+      <div class="Grid Grid--gutters Grid--cols-2">
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="fontWeight500">current package system:</h3>
+
+            <ul class="listCircle">
+              <li>Flexible</li>
+              <li>Inconsistent</li>
+              <li>Still allowed</li>
+            </ul>
+          </div>
+        </div>
+        <div class="Grid-cell">
+          <div class="element">
+            <h3 class="fontWeight500">Standardized package:</h3>
+
+            <ul class="listCircle">
+              <li>Consistent</li>
+              <li>Comparable</li>
+              <li>Promotable</li>
+            </ul>
+
+          </div>
+        </div>
+
+
       </div>
     </div>
     <div class="wrapper">
@@ -304,7 +313,7 @@
         <div class="Grid-cell">
           <div class="element">
 
-            <h3>D. Mapped packages to shopping categories</h3>
+            <h3>D. Mapped packages to shopping categories on consumer site</h3>
 
             <div class="spacingXSmall"></div>
 
@@ -315,78 +324,18 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {title:'What changed structurally',}) %>
-          </div>
-        </div>
-        <div class="Grid Grid--gutters Grid--full Grid--gutter">
-          <div class="Grid-cell">
-            <div class="element">
-              <h4>A. Platform-defined packages
-              </h4>
-
-              <div class="marginLeft">
-                <ul class="listCircle">
-                  <li>BabyQuip defines</li>
-                  <li>Package structure</li>
-                  <li>Included items</li>
-                  <li>Naming</li>
-                </ul>
-              </div>
-              <h4>B. Provider participation </h4>
-              <div class="marginLeft">
-                <ul class="listCircle">
-                  <li>Providers opt into standardized packages</li>
-                  <li>Providers fulfill them if inventory matches</li>
-                </ul>
-              </div>
-
-
-              <h4>C. Dual system </h4>
-              <h5 class="fontWeight400"> 1. Standardized packages (new)
-              </h5>
-              <div class="marginLeft">
-                <ul class="listCircle">
-                  <li>Consistent</li>
-                  <li>Comparable</li>
-                  <li>Promotable</li>
-                </ul>
-              </div>
-              <h5 class="fontWeight400"> 2. Custom packages (legacy)
-              </h5>
-              <div class="marginLeft">
-                <ul class="listCircle">
-                  <li>Flexible</li>
-                  <li>Inconsistent</li>
-                  <li>Still allowed</li>
-                </ul>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-      <div class="Grid Grid--gutters Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-
-            <h3>Result: Surfaced them on landing and browsing pages</h3>
-
-            <div class="spacingXSmall"></div>
+            <h1 class="fontWeight400">Before vs. after on consumer facing site</h1>
 
           </div>
         </div>
       </div>
-
-
-      <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid Grid--gutters Grid--cols-2">
         <div class="Grid-cell">
           <div class="element">
             <img class="modal-target card2026" src="discover_before.png" alt="Packages only visible inside provider shops">
             <h5 class="fontWeight500">Before:</h5>
-            <h5> Packages were <span class="fontWeight400">only visible inside provider shops</span>, functioning as <span class="fontWeight400">late-stage upsells</span>.</h5>
+            <h5> Packages could not appear before provider selection because they were fully provider-created and inconsistent.</h5>
+
           </div>
         </div>
         <div class="Grid-cell">
@@ -394,43 +343,136 @@
             <img class="modal-target card2026" src="discover_after.png" alt="Packages surfaced before provider selection">
             <h5 class="fontWeight500">After:</h5>
 
-            <h5> Standardized packages surfaced during browsing, <span class="fontWeight400">enabling discovery before provider selection. </span></h5>
+            <h5> Standardized package templates can appear before provider selection because BabyQuip now controls the package definition.</h5>
+     
 
-          </div>
-        </div>
-        <div class="Grid-cell">
-          <div class="element">
-            <img class="modal-target card2026" src="discover_future.png" alt="Packages mapped into categories when fulfillment can be validated">
-            <h5 class="fontWeight500">Future</h5>
-
-            <h5>Integrate packages into categories once supply coverage and availability validation <span class="fontWeight400">support reliable fulfillment.</span> </h5>
           </div>
         </div>
 
 
       </div>
-
-
-
-      <div class="spacingXLarge"></div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Constraint</h1>
+            <h5> Because package fulfillment still depends on provider participation and inventory coverage, we intentionally avoided making packages overly dominant in the consumer experience. Surfacing packages too aggressively could create dead ends, especially if users selected packages that few providers could fulfill.</h5>
+          </div>
+        </div>
+      </div>
 
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
+            <h4>A. Platform-defined packages
+            </h4>
 
-            <h2>Key Trade-offs and Constraints</h2>
             <div class="marginLeft">
               <ul class="listCircle">
-                <li>Pricing is still not fully accurate early</li>
-                <li>Package availability is not guaranteed</li>
-                <li>Provider flexibility is still partially messy</li>
+                <li>BabyQuip defines</li>
+                <li>Package structure</li>
+                <li>Included items</li>
+                <li>Naming</li>
               </ul>
             </div>
-            <div class="spacingXSmall"></div>
+            <h4>B. Provider participation </h4>
+            <div class="marginLeft">
+              <ul class="listCircle">
+                <li>Providers opt into standardized packages</li>
+                <li>Providers fulfill them if inventory matches</li>
+              </ul>
+            </div>
+
+
+            <h4>C. Dual system </h4>
+            <h5 class="fontWeight400"> 1. Standardized packages (new)
+            </h5>
+            <div class="marginLeft">
+              <ul class="listCircle">
+                <li>Consistent</li>
+                <li>Comparable</li>
+                <li>Promotable</li>
+              </ul>
+            </div>
+            <h5 class="fontWeight400"> 2. Custom packages (legacy)
+            </h5>
+            <div class="marginLeft">
+              <ul class="listCircle">
+                <li>Flexible</li>
+                <li>Inconsistent</li>
+                <li>Still allowed</li>
+              </ul>
+            </div>
+
 
           </div>
         </div>
       </div>
+
+
+    </div>
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h3>Result: Surfaced them on landing and browsing pages</h3>
+
+          <div class="spacingXSmall"></div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="modal-target card2026" src="discover_before.png" alt="Packages only visible inside provider shops">
+          <h5 class="fontWeight500">Before:</h5>
+          <h5> Packages were <span class="fontWeight400">only visible inside provider shops</span>, functioning as <span class="fontWeight400">late-stage upsells</span>.</h5>
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="modal-target card2026" src="discover_after.png" alt="Packages surfaced before provider selection">
+          <h5 class="fontWeight500">After:</h5>
+
+          <h5> Standardized packages surfaced during browsing, <span class="fontWeight400">enabling discovery before provider selection. </span></h5>
+
+        </div>
+      </div>
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="modal-target card2026" src="discover_future.png" alt="Packages mapped into categories when fulfillment can be validated">
+          <h5 class="fontWeight500">Future</h5>
+
+          <h5>Integrate packages into categories once supply coverage and availability validation <span class="fontWeight400">support reliable fulfillment.</span> </h5>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="spacingXLarge"></div>
+
+    <div class="Grid Grid--gutters Grid--full Grid--gutter">
+      <div class="Grid-cell">
+        <div class="element">
+
+          <h2>Key Trade-offs and Constraints</h2>
+          <div class="marginLeft">
+            <ul class="listCircle">
+              <li>Pricing is still not fully accurate early</li>
+              <li>Package availability is not guaranteed</li>
+              <li>Provider flexibility is still partially messy</li>
+            </ul>
+          </div>
+          <div class="spacingXSmall"></div>
+
+        </div>
+      </div>
+    </div>
 
 
 
@@ -476,16 +518,21 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <%- include(`${templatePath}/shared/txt_title_l`, {
-             title:'Outcome',}) %>
-            <h3>Packages are no longer a section → they become a decision option</h3>
-            <div class="marginLeft">
-              <ul class="listCircle">
-                <li>Restored bundle visibility in early funnel</li>
-                <li>Enabled bundle-based discovery</li>
-                <li>Created a scalable merchandising system</li>
-              </ul>
-            </div>
+            <h1 class="fontWeight400">Outcome</h1>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full Grid--gutter">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h2>BabyQuip now has a controlled package system that can scale.
+            </h2>
+            <ul class="listCircle">
+              <li>Restored bundle visibility in early funnel</li>
+              <li>Enabled bundle-based discovery</li>
+              <li>Created a scalable merchandising system</li>
+            </ul>
             <div class="spacingXSmall"></div>
 
 
@@ -495,17 +542,18 @@
       <div class="Grid Grid--gutters Grid--full Grid--gutter">
         <div class="Grid-cell">
           <div class="element">
-            <h2>Key impact: Turned packages from hidden, provider-specific upsells into a scalable, contextual discovery mechanism.
+
+            <h2>Enabled generic package during discover and shopping phase
             </h2>
-            <h4 class="textItalic fontWeight100 greyBg400 greyBg100 border-radius paddingXS">👉 Key impact: Packages become part of decision-making, not optional browsing
-            </h4>
-            <h4 class="textItalic fontWeight100 greyBg400 greyBg100 border-radius paddingXS">👉 Key impact: Resolved a structural conflict between browsing-first UX and provider-dependent bundles.</h4>
-            <h4 class="textItalic fontWeight100 greyBg400 greyBg100 border-radius paddingXS">👉 Key impact: Made bundles discoverable and actionable within item-level browsing
-            </h4>
+            <h5>Although the redesign happened in the provider portal, the purpose was broader: to create a standardized package layer that consumer-facing experiences could reference before provider selection. This made package discovery technically possible in gear-first flows, while still respecting marketplace constraints around provider inventory and availability.</h5>
+
+            <div class="spacingXSmall"></div>
+
 
           </div>
         </div>
       </div>
+
     </div>
 
 
