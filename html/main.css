@@ -2460,11 +2460,20 @@ section .padding {
 
 .card25LandingTitle {
   font-family: inherit;
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 400;
   margin: 0;
   line-height: 120%;
 }
+.card25LandingTitle1 {
+  font-family: inherit;
+  font-size: 44px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 120%;
+}
+
+
 
 .card25CardMeta {
   font-family: inherit;
@@ -2522,13 +2531,7 @@ section .padding {
   margin-top: auto;
 }
 
-.cardNoEffect1 {
 
-  border: 0.08em solid var(--Grey200);
-  border-radius: 12px;
-  overflow: hidden;
-  padding: 18px;
-}
 
 .cardNoEffect {
   display: grid;
@@ -2537,10 +2540,10 @@ section .padding {
   gap: 12px;
   align-items: stretch;
 
-  border: 0.08em solid var(--Grey200);
+  border: 0.08em solid var(--White-transparent);
   border-radius: 12px;
   overflow: hidden;
-  padding: 18px;
+  padding: 1.6em;
 }
 
 .card {
@@ -4771,6 +4774,7 @@ body .flex-container.Mobile {
   body .card25LandingTitle {
     font-size: 36px;
   }
+
 
   body .top-glass {
     height: 53px;
@@ -8518,7 +8522,7 @@ UIA-TIMELINE
   min-height: 40px;
   font-size: 16px;
   font-weight: 600;
-  color: #222;
+  color: var(--Grey300);
   /* remove old box-shadow, wrapper handles it */
   box-shadow: none;
 }
