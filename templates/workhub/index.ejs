@@ -17,25 +17,19 @@
       <button class="nav-link" data-link="contact" type="button">Contact</button>
     </div>
   </header>
-    <%- include(`${templatePath}/shared/banner_landing`)%>
+  <%- include(`${templatePath}/shared/banner_landing`)%>
+
+
+  <section class="colorFooterBg" id="casestudies" data-nav="casestudies">
 
 
 
-  <section id="casestudies" data-nav="casestudies">
-
-    <div class="spacingLarge"></div>
-
-    <%- include(`${templatePath}/shared/divider25`, {
-      sectionName:'Case Studies',
-      topSpacing:'spacingMedium',
-      bottomSpacing:'spacingXLarge',
-      topNbottomSpacing:''
-      }) %>
+  <div class="spacingXLarge"></div>
 
     <%- include(`${templatePath}/shared/card_bq_inventory`) %>
 
 
-    <div class="spacingLarge"></div>
+    <!-- <div class="spacingLarge"></div> -->
 
     <!-- <%- include(`${templatePath}/shared/card_bq_provider_app`) %> -->
 
@@ -51,72 +45,28 @@
     <div class="spacingLarge"></div>
     <%- include(`${templatePath}/shared/card_bq_package`) %>
 
-    <div class="spacingLarge"></div>
+    <div class="spacingXLarge"></div>
 
 
 
   </section>
+  <div class="spacingXLarge"></div>
 
 
-  <%- include(`${templatePath}/shared/section_explorations`) %>
-
-
-  <section id="contact" data-nav="contact">
-    <div class="spacingLarge"></div>
-
-    <%- include(`${templatePath}/shared/divider25`, {
-      sectionName:'Contact',
-            topSpacing:'spacingMedium',
-      bottomSpacing:'spacingXLarge',
-      topNbottomSpacing:''
-      }) %>
-    <div class="wrapper">
-      <div class="Grid Grid--full Grid--gutter">
-        <div class="Grid-cell">
-          <div class="element">
-            <div class="rowcard25 centerVer">
-              <div class="photoWrappercard25">
-                <img class="landingProfileImg" src="photo_profile_avatar.png" alt="vicky">
-              </div>
-              <div class="chat-bubble-wrap">
-                <div class="card25Chat chat-bubble">
-
-                  <span class="bubble-text">Let's Connect</span>
-                </div>
-              </div>
-            </div>
-            <div class="spacingXSmall"></div>
-            <h1 class=""> Working on marketplaces / platform UX? I’d love to hear what you’re building.
-            </h1>
-            <h4 class="fontWeight300">Collaborations, product discussions, or feedback on my work.</h4>
-            <div class="spacingSmall"></div>
-            <a href="mailto:vickyw.design@gmail.com" class="textUnderline">
-              <h5 class="fontWeight400">Email me &#8594;</h5>
-            </a>
-            <a href="https://www.linkedin.com/in/vicky-wyq/" class="textUnderline">
-              <h5 class="fontWeight400">Message me on LinkedIn &#8599; </h5>
-            </a>
-
-
-            <div class="spacingXLarge"></div>
-
-            <a href="/resume"> <button class="buttonMedium buttonFlip WhiteBg">View Resume </button></a>
-
-
-
-          </div>
-
-        </div>
-      </div>
-
-
-    </div>
+  <section id="explorations" data-nav="explorations">
     <div class="spacingXLarge"></div>
-    <div class="spacingXLarge"></div>
-    <div class="spacingXLarge"></div>
+
+
+    <%- include(`${templatePath}/shared/card_design_system`) %>
 
 
   </section>
+  <div class="spacingLarge"></div>
+  <div class="spacingXLarge"></div>
+
+  <%- include(`${templatePath}/shared/section_connect`) %>
+
+
 
   <%- include(`${templatePath}/shared/footer`, {sectionName:'Contact'}) %>
 
