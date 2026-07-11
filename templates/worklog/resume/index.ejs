@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<%- include(`${templatePath}/shared/head`, {SEO:true, Title:`Vicky's Resume`, text:`I'm a UX Designer focused on
+  bridging efficiency and engagement in SaaS, administrative Interfaces, and user-Driven applications`, pageURL:'',
+  thumbnailImgURL: 'vickywang.svg' }) %>
+<!--Head-->
+
+<body>
+  <%- include(`${templatePath}/shared/header_back`, {
+  tab1:'About',
+  tab1_data_link:'about',
+
+  tab2:'Experience',
+  tab2_data_link:'experience',
+
+  tab3:'Education',
+  tab3_data_link:'education',
+
+  }) %>
+
+
+  <section id="about" data-nav="about">
+    <div class="wrapper">
+      <div class="blankHXS"></div>
+
+      <div class="Grid Grid--gutters Grid--full u-textCenter positionFixed">
+        <div class="Grid-cell">
+          <div class="element ">
+            <a href="/resume/resume.pdf" target="_blank"> <button class="buttonSmall buttonPrimary bgVWgrey">PDF Resume
+              </button></a>
+            <!--buttonBlack-->
+
+          </div>
+        </div>
+      </div>
+      <div class="spacingSmall"></div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h1 class="fontWeight400">Vicky (Yiqi) Wang</h1>
+            <h3 class="grey700 TextPoppins fontWeight200">Senior UX / Product Designer</h3>
+            <div class="spacingSmall"></div>
+            <div class="">
+              <h4 class="fontWeight300 fontWeight400">Marketplace & platform UX for providers and travelers at scale</h4>
+              <h5 class="fontWeight200">I turn complex provider operations and consumer funnels into clear systems that reduce friction and improve booking conversion.</h5>
+              <h5 class="fontWeight200">I focus on how user behavior, system constraints, and product decisions shape real outcomes.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <div class="">
+
+              <h5 class="fontWeight300 fontWeight400">What I Work On</h5>
+              <ul class="disc">
+                <li><span class="fontWeight400">Platform & Systems UX:</span> B2B tools, onboarding, inventory, admin systems</li>
+                <li><span class="fontWeight400">Marketplace & Conversion UX:</span> Discovery, cart, checkout, and trip-based flows</li>
+                <li><span class="fontWeight400">Experience Architecture:</span> Cross-surface logic, funnels, and friction reduction</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h5 class="fontWeight300 fontWeight400">Skills</h5>
+
+            <h5>Platform & marketplace UX · Experience architecture · B2B admin tools · Checkout & funnels · AI-assisted prototyping </h5>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+
+            <h5 class="fontWeight300 fontWeight400">Tools</h5>
+
+            <h5><span class="fontWeight400">Tools: </span> Figma · HTML/CSS/JS · AI-assisted prototyping (design tokens → code)</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience" data-nav="experience">
+
+    <div class="wrapper">
+      <div class="spacingXLarge"></div>
+
+      <%- include(`${templatePath}/shared/divider25`, {
+      sectionName:'Experience',
+      topSpacing:'',
+      bottomSpacing:'',
+      topNbottomSpacing:'spacingMedium'
+      }) %>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>BabyQuip | Senior User Experience Designer </strong></h4>
+            <h6 class="textItalic">Oct 2024 – Present, Full-Time</h6>
+            <div class="spacingXSmall"></div>
+            <ul class="disc">
+              <li>Improved high-traffic consumer rental flows (checkout, item details, maps, filters, reviews) using behavioral data and funnel analysis to reduce friction for ~250K+ monthly active users.</li>
+              <li>Clarified partner-entry and shopping experiences (e.g., VRBO embedded flows) by making trip context, platform identity, and data continuity explicit, improving user trust and progression into the funnel.</li>
+              <li>Replaced fragmented, navigation-heavy inventory workflows with a continuous, context-preserving editing system, reducing interaction cost and enabling ~3× faster updates for high-volume providers.</li>
+              <li>Reframed package offerings from post-selection upsells into an early-stage discovery layer by enabling item-to-package mapping before provider selection, increasing bundle visibility and conversion potential.</li>
+              <li>Leveraged behavioral data and provider feedback to identify friction and decision breakdowns across booking and provider workflows, guiding prioritized UX improvements.</li>
+              <li>Used HTML/CSS/JS and AI-assisted prototyping to simulate production-like flows and accelerate iteration with engineering.</li>
+            </ul>
+          </div>
+          <div class="spacingSmall"></div>
+          <div class="element">
+            <h4><strong>BookYourPet | UX Designer </strong></h4>
+            <h6 class="textItalic">Oct 2021 – Oct 2024, Full-Time</h6>
+            <div class="spacingXSmall"></div>
+
+            <ul class="disc">
+              <li>Solo UX designer for an end-to-end B2B subscription platform, partnering closely with the CTO and CEO to define service setup, scheduling, and booking systems for pet-care businesses.</li>
+              <li>Identified and addressed rigid, tightly coupled system behaviors by working across feature dependencies, helping shift the platform toward a more flexible and scalable service configuration model.</li>
+              <li>Designed a configurable booking system supporting multiple business types and hybrids (grooming, walking, training), enabling complex services and pricing within a unified calendar and booking structure.</li>
+              <li>Built and maintained a Figma-based design system to support consistent booking experiences across provider setup and consumer flows.</li>
+            </ul>
+            <div class="spacingXSmall"></div>
+          </div>
+          <div class="spacingSmall"></div>
+          <div class="element">
+            <h4><strong>LASO Health | Product Designer </strong></h4>
+            <h6 class="textItalic">Aug 2023 – Jan 2024, Part-Time Contractor</h6>
+            <div class="spacingXSmall"></div>
+            <ul class="disc">
+              <li>Led 0→1 design of an Admin Panel for user management and sales operations, partnering with PMs and engineers to define core workflows and system structure.</li>
+              <li>Designed patient-facing decision flows, including a cost-benefit calculator and key marketing journeys, clarifying subscription options and reducing early-stage drop-off.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <section id="education" data-nav="education">
+
+    <div class="wrapper">
+      <div class="spacingXLarge"></div>
+
+      <%- include(`${templatePath}/shared/divider25`, {
+      sectionName:'Education',
+      topSpacing:'',
+      bottomSpacing:'',
+      topNbottomSpacing:'spacingMedium'
+      }) %>
+
+      <div class="Grid Grid--gutters Grid--full">
+        <div class="Grid-cell">
+          <div class="element">
+            <h4><strong>University of California, Berkeley | Master of Architecture, CED </strong></h4>
+            <h6 class="textItalic">Graduated May 2019</h6>
+            <div class="spacingXSmall"></div>
+
+            <ul class="disc">
+              <li>Focus on systems design, spatial workflows, and constraint-driven problem solving across physical and digital environments.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="blankHM"></div>
+    </div>
+  </section>
+  <%- include(`${templatePath}/shared/footer`) %>
+
+</body>
+
+</html>
