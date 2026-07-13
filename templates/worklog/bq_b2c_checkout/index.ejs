@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <title>Reducing Checkout Friction After Renters Are Ready to Book — Vicky Wang</title>
+  <meta name="description" content="Resolving identity earlier and simplifying checkout so renters stay focused on completing their reservation.">
+  <meta name="robots" content="noindex,nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header class="nav nav--sticky">
+    <div class="container nav-inner">
+      <a href="/worklog" class="nav-brand">
+        <span class="cs-nav-back">&larr;</span>
+        <img src="../photo_profile_avatar.png" alt="Vicky Wang">
+        <span>Vicky Wang</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#problem" class="nav-link muted">Problem</a>
+        <a href="#insight" class="nav-link muted">Insight</a>
+        <a href="#design" class="nav-link muted">Design</a>
+        <a href="#impact" class="nav-link muted">Impact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cs-hero container cs-section--sm">
+    <div class="cs-hero-meta">
+      <span class="case-index">&#8470; 3 &middot; Q2 2026 &middot; BabyQuip</span>
+      <span class="tag">DEMAND SIDE &mdash; CHECKOUT</span>
+    </div>
+    <h1 class="cs-h2" style="font-size: clamp(32px, 5vw, 56px); max-width: 900px;">Reducing Checkout Friction After Renters Are Ready to Book</h1>
+    <p class="cs-hero-sub">Checkout is the commitment phase. The redesign protected that moment by resolving identity earlier, keeping order-critical tasks in checkout, and moving nonessential prompts after purchase.</p>
+
+    <div class="cs-divider-grid cs-divider-grid--hero">
+      <div>
+        <div class="cs-label">PRE-REDESIGN BASELINE</div>
+        <div class="cs-stat-value--sm">~46% <span class="accent">vs</span> ~84%</div>
+        <div class="cs-stat-label">Mobile web vs. desktop, begin checkout &rarr; purchase completion</div>
+        <div class="cs-stat-note">Baseline from GA4 funnel comparison. Post-launch measurement plan defined; results pending.</div>
+      </div>
+      <div>
+        <div class="cs-label">SHIPPED STRUCTURAL CHANGE</div>
+        <div class="cs-stat-value--sm">1 mixed checkout <span class="accent">&rarr;</span> 3 deliberate moments</div>
+        <div class="cs-stat-label">Identity before checkout &middot; Order completion in checkout &middot; Secondary prompts after purchase</div>
+      </div>
+    </div>
+
+    <div class="cs-divider-grid cs-divider-grid--tight cs-divider-grid--bleed">
+      <div>
+        <div class="cs-label">ROLE</div>
+        <div class="cs-text">Product designer responsible for the cross-platform checkout redesign</div>
+      </div>
+      <div>
+        <div class="cs-label">SCOPE</div>
+        <div class="cs-text">Cross-platform web checkout, excluding the native mobile app</div>
+      </div>
+      <div>
+        <div class="cs-label">COLLABORATORS</div>
+        <div class="cs-text">VP Product Design, CTO, engineering, QA, product, customer support</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problem" class="cs-section container">
+    <div class="cs-kicker">01 &mdash; PROBLEM</div>
+    <h2 class="cs-h2">Checkout mixed order completion with everything else</h2>
+    <p class="cs-lead">By the time users reach checkout, they are no longer exploring &mdash; they are trying to confirm the rental, resolve required logistics, pay, and know what happens next. The old checkout mixed that with <strong style="font-weight: 600; color: var(--text)">account creation, optional prompts, and editing paths</strong>, creating extra opportunities to pause, hit errors, or leave after users had already shown purchase intent.</p>
+
+    <h3 class="cs-h3" style="margin-top: clamp(36px, 6vw, 52px)">Quantitative signals</h3>
+    <div class="cs-two-col" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 20px">
+      <div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="ga4_cross_platform.png" alt="GA4 cross-platform funnel comparison" data-modal-gallery="ga4-checkout">
+        </div>
+        <div class="cs-label" style="margin-top: 8px">Cross-platform comparison</div>
+      </div>
+      <div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="ga4_detailed_breakdown.png" alt="GA4 detailed UX breakdown" data-modal-gallery="ga4-checkout">
+        </div>
+        <div class="cs-label" style="margin-top: 8px">Detailed UX breakdown</div>
+      </div>
+      <div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="ga4_mobile_app.png" alt="GA4 mobile app completion" data-modal-gallery="ga4-checkout">
+        </div>
+        <div class="cs-label" style="margin-top: 8px">Mobile app completion</div>
+      </div>
+    </div>
+
+    <div class="cs-breakdown-grid">
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">Mobile drops ~2&times; more than desktop</div>
+        <p class="cs-text">From begin_checkout &rarr; purchase, web completed at ~84%; mobile web at ~46%.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">The largest drop happens before checkout begins</div>
+        <p class="cs-text">From add_to_cart &rarr; begin_checkout, ~49% continued on web, ~34% on mobile web &mdash; over 60% of mobile users abandoned after adding items.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">Once users entered checkout, later-stage completion was high</div>
+        <p class="cs-text">Among tracked web and mobile-web sessions, completion across payment and purchase steps was ~97&ndash;99% &mdash; friction was concentrated around entry, account state, and early commitment moments.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">Mobile app tracking is unreliable</div>
+        <p class="cs-text">Purchase events exceeded checkout-initiation events in the app, indicating missing funnel instrumentation &mdash; one reason the app was excluded from scope.</p>
+      </div>
+    </div>
+
+    <div class="cs-pullquote">
+      <p>Checkout was not the largest funnel leak &mdash; but it was a <span class="accent">high-value moment</span> where avoidable friction could lose users who were already ready to book.</p>
+    </div>
+
+    <h3 class="cs-h3" style="margin-top: clamp(36px, 6vw, 52px)">Qualitative signals</h3>
+    <p class="cs-lead" style="margin-top: 12px">Session recordings and walkthroughs of the legacy flow surfaced four recurring patterns.</p>
+
+    <div class="cs-breakdown-grid">
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">A &middot; Decision loops</div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="qual1.png" alt="Links pulling users out of checkout" data-modal-gallery="checkout-qual">
+        </div>
+        <p class="cs-text" style="margin-top: 12px">Links back to cart, trip, and supporting pages pulled users out of checkout and back into decision mode.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">B &middot; Mobile review friction</div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="qual2.png" alt="Long scroll and persistent UI on mobile" data-modal-gallery="checkout-qual">
+        </div>
+        <p class="cs-text" style="margin-top: 12px">Long scroll, persistent UI, and a heavy footer made reviewing the order harder on mobile.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">C &middot; Flow interruptions</div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="qual3.png" alt="Login, payment, and password errors" data-modal-gallery="checkout-qual">
+        </div>
+        <p class="cs-text" style="margin-top: 12px">Login, payment, password, and iframe errors interrupted the flow and broke confidence at the worst moment.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">D &middot; Completion uncertainty</div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="qual4.png" alt="Repeated back-and-forth between checkout states" data-modal-gallery="checkout-qual">
+        </div>
+        <p class="cs-text" style="margin-top: 12px">Repeated back-and-forth between checkout states suggested users were still deciding instead of completing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="insight" class="cs-section container">
+    <div class="cs-kicker">02 &mdash; INSIGHT</div>
+    <h2 class="cs-h2">Checkout is the commitment layer of the marketplace journey</h2>
+    <p class="cs-lead">Every earlier stage of the journey is about deciding. Checkout is the one stage where the user has already decided &mdash; and the interface should treat that differently.</p>
+
+    <div class="cs-journey-grid">
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">1</div>
+        <div class="cs-journey-label">Need clarity</div>
+        <div class="cs-journey-quote">&ldquo;What do I need for this trip?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">2</div>
+        <div class="cs-journey-label">Fit clarity</div>
+        <div class="cs-journey-quote">&ldquo;Is this the right item for my child and trip?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">3</div>
+        <div class="cs-journey-label">Provider trust</div>
+        <div class="cs-journey-quote">&ldquo;Can I trust this provider?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">4</div>
+        <div class="cs-journey-label">Availability &amp; logistics</div>
+        <div class="cs-journey-quote">&ldquo;Can this work for my dates and location?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">5</div>
+        <div class="cs-journey-label">Price confidence</div>
+        <div class="cs-journey-quote">&ldquo;Do I understand what this will cost?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item cs-journey-item--active">
+        <div class="cs-journey-num">6</div>
+        <div class="cs-journey-label">Commitment</div>
+        <div class="cs-journey-quote">&ldquo;I'm ready. Don't interrupt me now.&rdquo;</div>
+      </div>
+    </div>
+
+    <h3 class="cs-h3" style="margin-top: clamp(44px, 7vw, 64px)">The old checkout mixed three jobs</h3>
+    <p class="cs-text" style="max-width: 68ch; margin-top: 14px">The legacy flow combined <strong style="font-weight: 600; color: var(--text)">identity and account state</strong>, <strong style="font-weight: 600; color: var(--text)">rental completion</strong>, and <strong style="font-weight: 600; color: var(--text)">extra business and user data</strong> in the same five-step flow.</p>
+
+    <div class="cs-two-col" style="grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: clamp(14px, 2vw, 24px); margin-top: 24px">
+      <div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="process1.png" alt="Step 0 — guest checkout or log in" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label" style="margin-top: 10px">STEP 0</div>
+        <p class="cs-text" style="font-size: 13.5px">Guest checkout or log in</p>
+      </div>
+      <div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="process2.png" alt="Step 1 — customer information" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label" style="margin-top: 10px">STEP 1</div>
+        <p class="cs-text" style="font-size: 13.5px">Customer information</p>
+      </div>
+      <div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="process3.png" alt="Step 2 — delivery and pickup details" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label" style="margin-top: 10px">STEP 2</div>
+        <p class="cs-text" style="font-size: 13.5px">Delivery/pickup details and notes</p>
+      </div>
+      <div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="process4.png" alt="Step 3 — survey and additional notes" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label" style="margin-top: 10px">STEP 3</div>
+        <p class="cs-text" style="font-size: 13.5px">Survey and additional notes</p>
+      </div>
+      <div>
+        <div class="cs-media" style="aspect-ratio: 4 / 3">
+          <img class="modal-target" src="process5.png" alt="Step 4 — payment, tip, and account creation" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label" style="margin-top: 10px">STEP 4</div>
+        <p class="cs-text" style="font-size: 13.5px">Payment, tip, cancellation option, rental responsibility, and account creation</p>
+      </div>
+    </div>
+
+    <h3 class="cs-h3" style="margin-top: clamp(44px, 7vw, 64px)">Design strategy: separate required checkout tasks from everything else</h3>
+    <p class="cs-text" style="max-width: 68ch; margin-top: 14px">Each job got its own place in the flow, driven by what users were actually asking at the commitment moment.</p>
+
+    <div class="cs-breakdown-grid">
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">IDENTITY</div>
+        <p class="cs-text" style="font-style: italic">&ldquo;Don't make me lose my progress if account creation fails at the end.&rdquo;</p>
+        <p class="cs-text" style="font-style: italic">&ldquo;Don't make account state confusing.&rdquo;</p>
+        <p class="cs-breakdown-principle"><strong>&rarr; Resolve identity earlier.</strong> OTP verification; remove the guest/password split.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">COMPLETION</div>
+        <p class="cs-text" style="font-style: italic">&ldquo;Let me understand the whole task before I commit.&rdquo;</p>
+        <p class="cs-text" style="font-style: italic">&ldquo;Tell me what's wrong in context.&rdquo;</p>
+        <p class="cs-text" style="font-style: italic">&ldquo;Show progress while keeping review possible.&rdquo;</p>
+        <p class="cs-breakdown-principle"><strong>&rarr; Keep required rental tasks in checkout.</strong> One-page checkout, section validation, collapsed completed sections.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-subhead">FOCUS</div>
+        <p class="cs-text" style="font-style: italic">&ldquo;Don't ask nonessential questions before I finish.&rdquo;</p>
+        <p class="cs-text" style="font-style: italic">&ldquo;Don't interrupt purchase with a secondary goal.&rdquo;</p>
+        <p class="cs-text" style="font-style: italic">&ldquo;Don't pull me back into decision mode.&rdquo;</p>
+        <p class="cs-breakdown-principle"><strong>&rarr; Move optional tasks after purchase.</strong> Survey and app prompts moved to confirmation; trip and cart editing minimized during checkout.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="design" class="cs-section container">
+    <div class="cs-kicker">03 &mdash; DESIGN</div>
+    <h2 class="cs-h2">Solutions across the three checkout jobs</h2>
+
+    <div class="cs-solutions">
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">1 &middot;</span> Resolve identity earlier</h3>
+          <p>Removed the guest/password split and moved to OTP verification &mdash; preventing existing-email, password-mismatch, and password-rule errors, and avoiding late password creation that could cost users their progress.</p>
+        </div>
+        <div class="cs-media" style="aspect-ratio: 21 / 9">
+          <img class="modal-target" src="mockup_desktop1.png" alt="Sign up / log in — identity resolved before checkout" data-modal-gallery="checkout-solution-identity">
+        </div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">2 &middot;</span> Make checkout reviewable and focused</h3>
+          <p>One-page checkout with section-by-section validation: completed sections collapse, errors surface in context, and the final review happens before placing the order &mdash; not after a surprise.</p>
+        </div>
+        <div class="cs-media" style="aspect-ratio: 21 / 9">
+          <img class="modal-target" src="mockup_desktop2.png" alt="Main checkout — one page, section validation, collapsible sections" data-modal-gallery="checkout-solution-review">
+        </div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">3 &middot;</span> Move nonessential tasks out</h3>
+          <p>Survey and app-download prompts moved to the confirmation page; trip and cart editing minimized inside checkout; the footer reduced so the order is the only remaining task.</p>
+        </div>
+        <div class="cs-media" style="aspect-ratio: 21 / 9">
+          <img class="modal-target" src="mockup_desktop3.png" alt="Post-checkout — survey and app prompts on confirmation" data-modal-gallery="checkout-solution-focus">
+        </div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <div class="cs-kicker" style="margin-bottom: 12px">CROSS-PLATFORM ADAPTATION</div>
+          <h3 style="margin-bottom: 0">Collapse without hiding</h3>
+          <p>On mobile, completed sections collapsed to reduce scrolling while preserving review and access to the final action, with a sticky completion CTA in the review state.</p>
+        </div>
+        <div class="cs-before-after" style="max-width: 820px">
+          <figure style="margin: 0">
+            <div class="cs-media" style="aspect-ratio: 4 / 3">
+              <img class="modal-target" src="mockup_mobile1.png" alt="Mobile active checkout state" data-modal-gallery="checkout-solution-mobile">
+            </div>
+            <figcaption><strong>Active state:</strong> one section open at a time</figcaption>
+          </figure>
+          <figure style="margin: 0">
+            <div class="cs-media" style="aspect-ratio: 4 / 3">
+              <img class="modal-target" src="mockup_mobile2.png" alt="Mobile review state with sticky CTA" data-modal-gallery="checkout-solution-mobile">
+            </div>
+            <figcaption><strong>Review state:</strong> collapsed sections with sticky completion CTA</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="impact" class="cs-section cs-section--end container">
+    <div class="cs-kicker">04 &mdash; IMPACT</div>
+    <h2 class="cs-h2">A cleaner checkout foundation &mdash; with measurement defined up front</h2>
+    <p class="cs-lead">The redesign removed several known account-related failure paths, kept checkout focused on order-critical tasks, and moved secondary prompts after purchase. Post-launch results will be evaluated against a defined measurement plan rather than retrofitted metrics.</p>
+
+    <div class="cs-two-col">
+      <div>
+        <div class="cs-subhead">Primary funnel metrics</div>
+        <ul class="cs-list">
+          <li>Checkout entry &rarr; purchase completion</li>
+          <li>Mobile-web checkout completion</li>
+          <li>Cart &rarr; checkout entry, to identify upstream effects</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cs-subhead">Identity &amp; error metrics</div>
+        <ul class="cs-list">
+          <li>OTP completion and error rate</li>
+          <li>Account-related checkout errors</li>
+          <li>Checkout/account support contacts, when consistently categorized</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cs-subhead">Post-purchase metrics</div>
+        <ul class="cs-list">
+          <li>Confirmation-page survey completion</li>
+          <li>App-prompt engagement after purchase</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cs-pullquote">
+      <p>Checkout was a high-value commitment moment. The redesign protected it by <span class="accent">resolving identity earlier, making checkout reviewable, and moving nonessential tasks out</span>.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="contact-head">
+        <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
+        <a href="/worklog#work" class="contact-link accent">Next case study &rarr;</a>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
+        <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" rel="noopener" class="contact-link">LinkedIn &#8599;</a>
+        <a href="/worklog/resume" class="contact-link">Resume &#8599;</a>
+      </div>
+      <div class="contact-footer">
+        <span>&copy; 2020&ndash;2026 vickywang.me</span>
+        <span>Vicky Wang &mdash; Product Designer</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
+    <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>
+    <button class="wl-image-modal__control wl-image-modal__control--prev" type="button" aria-label="Previous image">&larr;</button>
+    <figure class="wl-image-modal__figure">
+      <img class="wl-image-modal__img" src="" alt="">
+      <figcaption class="wl-image-modal__caption"></figcaption>
+    </figure>
+    <button class="wl-image-modal__control wl-image-modal__control--next" type="button" aria-label="Next image">&rarr;</button>
+  </div>
+
+  <script>
+    (() => {
+      const modal = document.getElementById("wl-image-modal");
+      if (!modal) return;
+
+      const modalImg = modal.querySelector(".wl-image-modal__img");
+      const caption = modal.querySelector(".wl-image-modal__caption");
+      const closeBtn = modal.querySelector(".wl-image-modal__close");
+      const prevBtn = modal.querySelector(".wl-image-modal__control--prev");
+      const nextBtn = modal.querySelector(".wl-image-modal__control--next");
+      let gallery = [];
+      let activeIndex = -1;
+
+      function setControls() {
+        const hasGallery = gallery.length > 1;
+        prevBtn.hidden = !hasGallery;
+        nextBtn.hidden = !hasGallery;
+      }
+
+      function showImage(img) {
+        modalImg.src = img.currentSrc || img.src;
+        modalImg.alt = img.alt || "";
+        caption.textContent = img.alt || "";
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("image-modal-open");
+        setControls();
+      }
+
+      function closeModal() {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("image-modal-open");
+        modalImg.removeAttribute("src");
+        gallery = [];
+        activeIndex = -1;
+      }
+
+      function move(direction) {
+        if (gallery.length < 2) return;
+        activeIndex = (activeIndex + direction + gallery.length) % gallery.length;
+        showImage(gallery[activeIndex]);
+      }
+
+      document.addEventListener("click", (event) => {
+        const target = event.target.closest(".modal-target");
+        if (!target) return;
+
+        const galleryName = target.getAttribute("data-modal-gallery");
+        gallery = galleryName
+          ? Array.from(document.querySelectorAll(`.modal-target[data-modal-gallery="${galleryName}"]`))
+          : [target];
+        activeIndex = gallery.indexOf(target);
+        showImage(target);
+      });
+
+      closeBtn.addEventListener("click", closeModal);
+      prevBtn.addEventListener("click", () => move(-1));
+      nextBtn.addEventListener("click", () => move(1));
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) closeModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (!modal.classList.contains("is-open")) return;
+        if (event.key === "Escape") closeModal();
+        if (event.key === "ArrowLeft") move(-1);
+        if (event.key === "ArrowRight") move(1);
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
