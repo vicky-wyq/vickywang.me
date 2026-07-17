@@ -19,7 +19,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
   <link rel="stylesheet" href="../style.css">
-  <script src="../navigation.js" defer></script>
+  <script src="../worklog.js" defer></script>
 </head>
 
 <body>
@@ -360,7 +360,7 @@
     <div class="container">
       <div class="contact-head">
         <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
-        <a href="/worklog#work" class="contact-link accent">Next case study &rarr;</a>
+        <a href="/worklog#work" class="contact-link accent">All case studies &rarr;</a>
       </div>
       <div class="contact-links">
         <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
@@ -383,83 +383,6 @@
     </figure>
     <button class="wl-image-modal__control wl-image-modal__control--next" type="button" aria-label="Next image">&rarr;</button>
   </div>
-
-  <script>
-    (() => {
-      const modal = document.getElementById("wl-image-modal");
-      if (!modal) return;
-
-      const modalImg = modal.querySelector(".wl-image-modal__img");
-      const caption = modal.querySelector(".wl-image-modal__caption");
-      const closeBtn = modal.querySelector(".wl-image-modal__close");
-      const prevBtn = modal.querySelector(".wl-image-modal__control--prev");
-      const nextBtn = modal.querySelector(".wl-image-modal__control--next");
-      let gallery = [];
-      let activeIndex = -1;
-
-      function setControls() {
-        const hasGallery = gallery.length > 1;
-        prevBtn.hidden = !hasGallery;
-        nextBtn.hidden = !hasGallery;
-      }
-
-      function getModalImage(target) {
-        return target.matches("img") ? target : target.querySelector("img");
-      }
-
-      function showImage(target) {
-        const img = getModalImage(target);
-        if (!img) return;
-
-        modalImg.src = img.currentSrc || img.src;
-        modalImg.alt = img.alt || "";
-        caption.textContent = img.alt || "";
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden", "false");
-        document.body.classList.add("image-modal-open");
-        setControls();
-      }
-
-      function closeModal() {
-        modal.classList.remove("is-open");
-        modal.setAttribute("aria-hidden", "true");
-        document.body.classList.remove("image-modal-open");
-        modalImg.removeAttribute("src");
-        gallery = [];
-        activeIndex = -1;
-      }
-
-      function move(direction) {
-        if (gallery.length < 2) return;
-        activeIndex = (activeIndex + direction + gallery.length) % gallery.length;
-        showImage(gallery[activeIndex]);
-      }
-
-      document.addEventListener("click", (event) => {
-        const target = event.target.closest(".modal-target");
-        if (!target) return;
-
-        const galleryName = target.getAttribute("data-modal-gallery");
-        gallery = galleryName ?
-          Array.from(document.querySelectorAll(`.modal-target[data-modal-gallery="${galleryName}"]`)) : [target];
-        activeIndex = gallery.indexOf(target);
-        showImage(target);
-      });
-
-      closeBtn.addEventListener("click", closeModal);
-      prevBtn.addEventListener("click", () => move(-1));
-      nextBtn.addEventListener("click", () => move(1));
-      modal.addEventListener("click", (event) => {
-        if (event.target === modal) closeModal();
-      });
-      document.addEventListener("keydown", (event) => {
-        if (!modal.classList.contains("is-open")) return;
-        if (event.key === "Escape") closeModal();
-        if (event.key === "ArrowLeft") move(-1);
-        if (event.key === "ArrowRight") move(1);
-      });
-    })();
-  </script>
 
 </body>
 

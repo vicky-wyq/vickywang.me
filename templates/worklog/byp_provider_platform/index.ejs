@@ -19,7 +19,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
   <link rel="stylesheet" href="../style.css">
-  <script src="../navigation.js" defer></script>
+  <script src="../worklog.js" defer></script>
 </head>
 
 <body>
@@ -79,6 +79,12 @@
         <div class="cs-text">CEO, CTO, engineers, and pet-service businesses</div>
       </div>
     </div>
+    <div class="u-mt-clamp-sm">
+      <div class="cs-media cs-ar-3-1">
+        <img class="modal-target" src="diagram_my_role.svg" alt="Business opportunities, technical constraints, and provider operations converging through the designer’s role into a coherent product model.">
+      </div>
+      <div class="cs-media-caption">As the sole product designer, I worked closely with the CEO and CTO to understand the business need behind each request, identify the essential use cases, and design the simplest model that could support them without creating another layer of product complexity.</div>
+    </div>
   </section>
 
   <section id="problem" class="cs-section container">
@@ -132,7 +138,7 @@
 
     <div class="u-mt-clamp-sm">
       <div class="cs-media cs-ar-3-1">
-        <img src="mockup_team_ownership.png" alt="Legacy BookYourPet calendar and reminder-settings screens">
+        <img class="modal-target" src="legacy_service_creation.png" alt="Legacy service-creation workflow spanning location, staff eligibility, capacity, pricing, payment, and booking settings.">
       </div>
       <div class="cs-media-caption">Legacy platform &mdash; scheduling and business-wide settings lived in separate, disconnected screens</div>
     </div>
@@ -176,7 +182,7 @@
       <div class="cs-callout-label">WHAT USABILITY TESTING SHOWED</div>
       <div class="cs-two-col cs-two-col--tight">
         <div>
-          <p class="cs-callout-heading">The first redesign improved most core workflows, but system complexity remained</p>
+          <h3 class="cs-h3">The first redesign improved most core workflows, but system complexity remained</h3>
           <p class="cs-text u-mt-12">A comparative test covered the core journey &mdash; account creation, service creation, team setup, client and pet entry, new booking, booking management, search, and navigation. In the legacy experience, no participant completed the full task set. After the first redesign, full task-set completion rose from 0% to 32%, while most individual tasks also improved.</p>
         </div>
         <div class="cs-item-grey">
@@ -203,7 +209,7 @@
 
     <div class="cs-callout-box cs-callout-box--accent u-mt-clamp-md">
       <div class="cs-callout-label cs-callout-label--accent">THE DESIGN PRINCIPLE</div>
-      <p class="cs-callout-quote cs-callout-quote--lg">Put each decision at the level that owns it, derive what the system already knows, and defer what users do not need to decide yet.</p>
+      <h3 class="cs-h3 u-italic">Put each decision at the level that owns it, derive what the system already knows, and defer what users do not need to decide yet.</h3>
       <p class="cs-text u-mt-12">My role was not to remove every feature or eliminate legitimate operational complexity &mdash; it was to find the simplest system that could support the real use cases without exposing every layer of that complexity to providers.</p>
     </div>
   </section>
@@ -249,11 +255,30 @@
           </ul>
         </div>
       </div>
-      <div class="cs-media-caption">Before / after &mdash; where the four dependencies moved</div>
-    </div>
 
+    </div>
+    <div class="cs-breakdown-grid">
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">Before — shared and operational decisions were embedded inside Service</div>
+
+        <div class="modal-target" data-modal-gallery="diagram_service_setup">
+          <img src="diagram_service_setup_before.svg" alt="Legacy BookYourPet sitemap showing location, staff eligibility, capacity, payment, alerts, and booking rules embedded inside service setup.">
+        </div>
+
+
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">After — configuration moved to the business, team, settings, and system levels</div>
+
+        <div class="modal-target" data-modal-gallery="diagram_service_setup">
+          <img src="diagram_service_setup_after.svg" alt="Revised BookYourPet sitemap showing shared configuration moved out of service setup to the business, team, settings, and system levels.">
+        </div>
+
+
+      </div>
+    </div>
     <div class="cs-pullquote">
-      <p>The goal was not to make the platform less capable. It was to <span class="accent">move each decision closer to the moment when the user had enough context to make it correctly</span>.</p>
+      <p>The goal was not to remove operational complexity, but to <span class="accent">move each decision to the part of the platform that owned it</span> and <span class="accent">the moment when providers had enough context to make it</span>.</p>
     </div>
 
     <h3 class="cs-h3 u-mt-clamp-lg">Connecting configuration to daily operations</h3>
@@ -280,7 +305,7 @@
 
     <div class="u-mt-clamp-sm">
       <div class="cs-media cs-ar-3-1">
-        <img src="mockup_booking_flow.png" alt="Redesigned booking flow with client, pet, service, and staff assignment deferred into one continuous panel">
+        <img src="mockup_daily_operations.png" alt="Redesigned booking flow with client, pet, service, and staff assignment deferred into one continuous panel">
       </div>
       <div class="cs-media-caption">Booking &mdash; client, pet, staff assignment, and payment decisions deferred into context</div>
     </div>
@@ -303,9 +328,9 @@
 
     <div class="u-mt-clamp-sm">
       <div class="cs-media cs-ar-3-1">
-        <img src="mockup_onboarding.png" alt="Redesigned onboarding journey with account creation and subscription plan selection">
+        <img src="mockup_subscription.png" alt="Redesigned onboarding journey with account creation and subscription plan selection">
       </div>
-      <div class="cs-media-caption">Redesigned onboarding journey</div>
+      <div class="cs-media-caption">Redesigned business essentials, subscription</div>
     </div>
 
     <h3 class="cs-h3 u-mt-clamp-lg">Creating a clearer path from pricing to subscription</h3>
@@ -341,7 +366,7 @@
       </div>
       <div class="cs-item-dark">
         <div class="cs-subhead">In production</div>
-        <p class="cs-text"><strong class="cs-text-emphasis">The rebuilt workflows ran real daily operations</strong> &mdash; largely implemented and used by BookYourPet&rsquo;s largest customer, a UK grooming business coordinating appointments across multiple team members.</p>
+        <p class="cs-text"><strong class="cs-text-emphasis">The rebuilt booking workflows supported real daily operations</strong> for BookYourPet’s largest customer, a UK grooming business coordinating appointments across multiple team members.</p>
       </div>
     </div>
 
@@ -366,7 +391,7 @@
     <div class="container">
       <div class="contact-head">
         <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
-        <a href="/worklog#work" class="contact-link accent">Next case study &rarr;</a>
+        <a href="/worklog#work" class="contact-link accent">All case studies &rarr;</a>
       </div>
       <div class="contact-links">
         <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
@@ -389,77 +414,6 @@
     </figure>
     <button class="wl-image-modal__control wl-image-modal__control--next" type="button" aria-label="Next image">&rarr;</button>
   </div>
-
-  <script>
-    (() => {
-      const modal = document.getElementById("wl-image-modal");
-      if (!modal) return;
-
-      const modalImg = modal.querySelector(".wl-image-modal__img");
-      const caption = modal.querySelector(".wl-image-modal__caption");
-      const closeBtn = modal.querySelector(".wl-image-modal__close");
-      const prevBtn = modal.querySelector(".wl-image-modal__control--prev");
-      const nextBtn = modal.querySelector(".wl-image-modal__control--next");
-      let gallery = [];
-      let activeIndex = -1;
-
-      function setControls() {
-        const hasGallery = gallery.length > 1;
-        prevBtn.hidden = !hasGallery;
-        nextBtn.hidden = !hasGallery;
-      }
-
-      function showImage(img) {
-        modalImg.src = img.currentSrc || img.src;
-        modalImg.alt = img.alt || "";
-        caption.textContent = img.alt || "";
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden", "false");
-        document.body.classList.add("image-modal-open");
-        setControls();
-      }
-
-      function closeModal() {
-        modal.classList.remove("is-open");
-        modal.setAttribute("aria-hidden", "true");
-        document.body.classList.remove("image-modal-open");
-        modalImg.removeAttribute("src");
-        gallery = [];
-        activeIndex = -1;
-      }
-
-      function move(direction) {
-        if (gallery.length < 2) return;
-        activeIndex = (activeIndex + direction + gallery.length) % gallery.length;
-        showImage(gallery[activeIndex]);
-      }
-
-      document.addEventListener("click", (event) => {
-        const target = event.target.closest(".modal-target");
-        if (!target) return;
-
-        const galleryName = target.getAttribute("data-modal-gallery");
-        gallery = galleryName
-          ? Array.from(document.querySelectorAll(`.modal-target[data-modal-gallery="${galleryName}"]`))
-          : [target];
-        activeIndex = gallery.indexOf(target);
-        showImage(target);
-      });
-
-      closeBtn.addEventListener("click", closeModal);
-      prevBtn.addEventListener("click", () => move(-1));
-      nextBtn.addEventListener("click", () => move(1));
-      modal.addEventListener("click", (event) => {
-        if (event.target === modal) closeModal();
-      });
-      document.addEventListener("keydown", (event) => {
-        if (!modal.classList.contains("is-open")) return;
-        if (event.key === "Escape") closeModal();
-        if (event.key === "ArrowLeft") move(-1);
-        if (event.key === "ArrowRight") move(1);
-      });
-    })();
-  </script>
 
 </body>
 

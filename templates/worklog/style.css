@@ -1077,7 +1077,7 @@ body .show-below-900 {
 
 
 .cs-text {
-  font-size: 15.5px;
+  font-size: 14px;
   line-height: 1.7;
   color: var(--text-muted);
   margin: 0 0 var(--space-small);
@@ -1469,7 +1469,7 @@ body .show-below-900 {
 }
 
 .cs-callout-box p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.65;
   color: var(--text-muted);
   max-width: 68ch;
