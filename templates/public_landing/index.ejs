@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
   <title>Vicky Wang — Product Designer, Marketplace UX</title>
-  <meta name="description" content="I design both sides of a marketplace, so I fix the system, not just the screen. Product design work across supply and demand at Expedia Group.">
+  <meta name="description" content="I design both sides of a marketplace, so I fix the system, not just the screen. Product design work across supply and demand at BabyQuip.">
   <meta name="robots" content="noindex,nofollow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,7 @@
 
   <link rel="stylesheet" href="../worklog/style.css">
 </head>
+
 <body>
 
   <header class="nav">
@@ -77,7 +79,7 @@
         <h2>Selected work</h2>
         <p class="work-note">Project previews shown below &middot; Full case studies available upon request</p>
       </div>
-      <div class="work-meta">2025 &ndash; 2026 &middot; BabyQuip</div>
+      <div class="work-meta">2021 &ndash; 2026</div>
     </div>
 
     <article class="case case--hero">
@@ -138,34 +140,25 @@
       </article>
     </div>
 
-    <div class="case-grid">
-      <article class="case">
-        <div class="case-media">
-          <img src="../project_images/cover_bq_provider_app.png" alt="">
-        </div>
-        <div class="case-tag-group">
-          <span class="case-index">&#8470; 4 &middot; Q3 2026</span>
-          <span class="tag">SUPPLY SIDE &mdash; PROVIDER APP</span>
-        </div>
-        <h3>Bringing Essential Provider Operations to Mobile</h3>
-        <p>Moved essential provider workflows from desktop to mobile so reservations and customer communication could happen on the go.</p>
-        <div class="case-outcome"><span class="label">Key capabilities &mdash;</span> reservations &middot; customer messaging &middot; operational alerts</div>
-        <div class="case-cta">
-          <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; 4" data-case-title="Bringing Essential Provider Operations to Mobile">Read case study &rarr;</a>
-          <span class="private-badge">PRIVATE</span>
-        </div>
-      </article>
-      <article class="case">
+    <div class="">
+
+      <article class="case case--hero">
         <div class="case-media">
           <img src="../project_images/cover_bq_package.png" alt="">
         </div>
-        <div class="case-tag-group">
-          <span class="case-index">&#8470; 5 &middot; Q2 2026</span>
-          <span class="tag">SUPPLY SIDE &mdash; PARTNER PORTAL</span>
+<br>
+        <div class="case-hero-heading">
+
+          <div class="case-tag-group">
+            <span class="case-index">&#8470; 4 &middot; Q2 2026</span>
+            <span class="tag">SUPPLY SIDE &mdash; PARTNER PORTAL</span>
+          </div>
+          <h3>Standardizing Provider-Created Bundles into a Scalable Package System</h3>
         </div>
-        <h3>Standardizing Provider-Created Bundles into a Scalable Package System</h3>
         <p>Created a standardized package system providers could adopt, giving BabyQuip a foundation for bundle discovery and merchandising.</p>
         <div class="case-outcome"><span class="label">Key improvements &mdash;</span> package templates &middot; provider adoption &middot; legacy migration &middot; merchandising foundation</div>
+        <br>
+
         <div class="case-cta">
           <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; 5" data-case-title="Standardizing Provider-Created Bundles into a Scalable Package System">Read case study &rarr;</a>
           <span class="private-badge">PRIVATE</span>
@@ -195,7 +188,11 @@
       <button type="button" class="wl-case-modal__close" aria-label="Close">&times;</button>
       <div class="wl-case-modal__header">
         <span class="wl-case-modal__icon">
-          <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="6" width="11" height="8" rx="1.5" stroke="currentColor" stroke-width="1.4"></rect><path d="M3.5 6V4.5C3.5 2.84 4.84 1.5 6.5 1.5C8.16 1.5 9.5 2.84 9.5 4.5V6" stroke="currentColor" stroke-width="1.4"></path><circle cx="6.5" cy="10" r="1.2" fill="currentColor"></circle></svg>
+          <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="6" width="11" height="8" rx="1.5" stroke="currentColor" stroke-width="1.4"></rect>
+            <path d="M3.5 6V4.5C3.5 2.84 4.84 1.5 6.5 1.5C8.16 1.5 9.5 2.84 9.5 4.5V6" stroke="currentColor" stroke-width="1.4"></path>
+            <circle cx="6.5" cy="10" r="1.2" fill="currentColor"></circle>
+          </svg>
         </span>
         <div class="wl-case-modal__label-group">
           <span class="wl-case-modal__eyebrow">PRIVATE CASE STUDY</span>
@@ -227,7 +224,7 @@
   </div>
 
   <script>
-    (function () {
+    (function() {
       var modal = document.getElementById('case-modal');
       var labelEl = modal.querySelector('[data-modal-case-label]');
       var emailLink = modal.querySelector('[data-modal-email]');
@@ -278,37 +275,38 @@
         }
       }
 
-      copyBtn.addEventListener('click', function () {
+      copyBtn.addEventListener('click', function() {
         var email = copyEmailEl.textContent.trim();
-        copyText(email).then(function () {
+        copyText(email).then(function() {
           copyBtn.setAttribute('aria-label', 'Email copied');
           copyBtn.classList.add('is-copied');
           window.clearTimeout(copyResetTimer);
-          copyResetTimer = window.setTimeout(function () {
+          copyResetTimer = window.setTimeout(function() {
             copyBtn.setAttribute('aria-label', 'Copy email address');
             copyBtn.classList.remove('is-copied');
           }, 1400);
         });
       });
 
-      triggers.forEach(function (trigger) {
-        trigger.addEventListener('click', function (e) {
+      triggers.forEach(function(trigger) {
+        trigger.addEventListener('click', function(e) {
           e.preventDefault();
           openModal(trigger);
         });
       });
 
-      modal.addEventListener('click', function (e) {
+      modal.addEventListener('click', function(e) {
         if (e.target === modal) closeModal();
       });
 
       closeBtn.addEventListener('click', closeModal);
 
-      document.addEventListener('keydown', function (e) {
+      document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
       });
     })();
   </script>
 
 </body>
+
 </html>
