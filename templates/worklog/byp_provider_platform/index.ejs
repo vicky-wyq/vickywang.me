@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <title>Scaling a Provider Platform Without Scaling Complexity — Vicky Wang</title>
+  <meta name="description" content="Evolving BookYourPet's tightly coupled provider platform across service setup, team operations, booking, and subscription over three years as sole product designer.">
+  <meta name="robots" content="noindex,nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <link rel="stylesheet" href="../style.css">
+  <script src="../navigation.js" defer></script>
+</head>
+
+<body>
+
+  <header class="nav nav--sticky">
+    <div class="container nav-inner">
+      <a href="/worklog" class="nav-history-back" data-page-back aria-label="Go back to previous page">&larr;</a>
+
+      <a href="/worklog" class="nav-brand">
+        <img src="../../web_images/photo_profile_avatar.png" alt="Vicky Wang">
+        <span>Vicky Wang</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#problem" class="nav-link muted">Problem</a>
+        <a href="#insight" class="nav-link muted">Insight</a>
+        <a href="#design" class="nav-link muted">Design</a>
+        <a href="#impact" class="nav-link muted">Impact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cs-hero container cs-section--sm">
+    <div class="cs-hero-meta">
+      <span class="case-index">&#8470; 6 &middot; 2021&ndash;2024 &middot; BookYourPet</span>
+      <span class="tag">B2B SAAS &mdash; PROVIDER OPERATIONS</span>
+    </div>
+    <h1 class="cs-h2 cs-h2--display">Scaling a Provider Platform Without Scaling Complexity</h1>
+    <p class="cs-hero-sub cs-hero-sub--wide">Over three years as BookYourPet&rsquo;s sole product designer, I evolved a tightly coupled provider platform across service setup, team operations, booking, and subscription &mdash; reducing how much of the system businesses had to understand upfront.</p>
+
+    <div class="cs-divider-grid cs-divider-grid--hero">
+      <div>
+        <div class="cs-label">PLATFORM RESTRUCTURING</div>
+        <div class="cs-stat-value">4 <span class="cs-stat-annotation">dependencies moved out of service setup</span></div>
+        <div class="cs-stat-label">Location &middot; staff eligibility &middot; capacity &middot; universal alerts</div>
+        <div class="cs-stat-note">Shared, derived, and team-owned decisions moved out of individual service setup.</div>
+      </div>
+      <div>
+        <div class="cs-label">ONBOARDING SIMPLIFICATION</div>
+        <div class="cs-stat-value">6 <span class="cs-stat-annotation">steps</span> <span class="accent">&rarr;</span> 3 <span class="cs-stat-annotation">primary stages</span></div>
+        <div class="cs-stat-label">Account &middot; business essentials &middot; subscription</div>
+        <div class="cs-stat-note">Reduced how much businesses had to configure before entering the product.</div>
+      </div>
+    </div>
+
+    <div class="cs-divider-grid cs-divider-grid--tight cs-divider-grid--bleed">
+      <div>
+        <div class="cs-label">ROLE</div>
+        <div class="cs-text">Sole product designer across a three-year platform evolution</div>
+      </div>
+      <div>
+        <div class="cs-label">SCOPE</div>
+        <div class="cs-text">B2B SaaS &middot; Provider configuration &middot; Team operations &middot; Booking &middot; Subscription</div>
+      </div>
+      <div>
+        <div class="cs-label">COLLABORATORS</div>
+        <div class="cs-text">CEO, CTO, engineers, and pet-service businesses</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problem" class="cs-section container">
+    <div class="cs-kicker">01 &mdash; PROBLEM</div>
+    <h2 class="cs-h2 cs-h2--narrow">Every new business need became another layer of configuration</h2>
+    <p class="cs-lead">BookYourPet was an early-stage SaaS platform for pet-service businesses, including grooming, walking, daycare, training, and photography. Each business type brought different staffing models, schedules, pricing structures, and operating rules.</p>
+    <p class="cs-text u-max-w-68ch u-mt-12">Its small but operationally diverse customer base gave us close access to how businesses used the system. Customer feedback flowed directly through the CEO&rsquo;s support conversations and the product discussions I joined with company leadership.</p>
+
+    <div class="cs-two-col">
+      <div class="cs-item-dark">
+        <div class="cs-label">THE OPERATING MODEL</div>
+        <div class="cs-flow-line">Location <span class="accent">&rarr;</span> Team <span class="accent">&rarr;</span> Service <span class="accent">&rarr;</span> Capacity <span class="accent">&rarr;</span> Pricing <span class="accent">&rarr;</span> Booking</div>
+        <p class="cs-text u-mt-12">A change to one part of the system could affect several downstream workflows.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-label">THE LEGACY ASSUMPTION</div>
+        <p class="cs-callout-quote">Collect and configure most business rules before providers could begin operating.</p>
+        <p class="cs-text u-mt-12">This protected existing booking logic, but made setup difficult to understand and core workflows risky to change.</p>
+      </div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-clamp-lg">Creating a service meant configuring far more than the service itself</h3>
+    <p class="cs-text u-max-w-68ch u-mt-8">Providers also had to:</p>
+    <div class="cs-breakdown-grid u-mt-clamp-sm">
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">A &middot; Location</div>
+        <p class="cs-text u-mt-8">Select where the service was available.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">B &middot; Eligibility</div>
+        <p class="cs-text u-mt-8">Assign eligible team members.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">C &middot; Capacity</div>
+        <p class="cs-text u-mt-8">Calculate appointment capacity by hand.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">D &middot; Pricing</div>
+        <p class="cs-text u-mt-8">Configure pricing variants.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">E &middot; Payment</div>
+        <p class="cs-text u-mt-8">Define payment behavior.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">F &middot; Rules</div>
+        <p class="cs-text u-mt-8">Manage alerts and booking rules.</p>
+      </div>
+    </div>
+    <p class="cs-text u-max-w-68ch u-mt-clamp-sm">These same relationships appeared again during appointment creation and management. Providers had to understand how the platform was constructed before they could use it to run their business.</p>
+
+    <div class="u-mt-clamp-sm">
+      <div class="cs-media cs-ar-3-1">
+        <img src="mockup_team_ownership.png" alt="Legacy BookYourPet calendar and reminder-settings screens">
+      </div>
+      <div class="cs-media-caption">Legacy platform &mdash; scheduling and business-wide settings lived in separate, disconnected screens</div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-clamp-lg">The booking flow was load-bearing</h3>
+    <p class="cs-text u-max-w-68ch u-mt-8">Booking connected nearly every part of the platform: clients and pets, service eligibility, staff availability, location, pricing, capacity, payment, status, and notifications. For my first two years, the core booking architecture was treated as <strong class="cs-text-emphasis">too risky to replace</strong> &mdash; even a small change could affect several dependent workflows.</p>
+    <p class="cs-text u-max-w-68ch u-mt-8">So I worked incrementally: documenting the system, improving individual workflows, and reorganizing configuration where changes could be made safely. The work initially looked like a collection of feature redesigns. Together, they revealed the deeper product problem: <strong class="cs-text-emphasis">the platform lacked clear ownership for many of its decisions</strong>.</p>
+
+    <div class="cs-pullquote">
+      <p>The product was exposing <span class="accent">its internal data relationships as a user workflow</span>.</p>
+    </div>
+  </section>
+
+  <section id="insight" class="cs-section container">
+    <div class="cs-kicker">02 &mdash; INSIGHT</div>
+    <h2 class="cs-h2 cs-h2--narrow">Simplifying the interface could not solve a structural problem</h2>
+    <p class="cs-lead">Research was embedded in product development rather than run as a separate formal phase. I joined customer conversations with the CEO and CTO, reviewed recurring issues from the CEO&rsquo;s direct support work, mapped provider journeys, documented system dependencies, and tested core workflows with prospective users. The same problems appeared repeatedly:</p>
+
+    <div class="cs-breakdown-grid u-mt-clamp-md">
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">A &middot; Lost placement</div>
+        <p class="cs-text u-mt-8">Providers did not know where information should be configured.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">B &middot; Duplication</div>
+        <p class="cs-text u-mt-8">The same decisions appeared in multiple workflows.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">C &middot; Hidden order</div>
+        <p class="cs-text u-mt-8">Setup order mattered even when users did not understand why.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">D &middot; Side effects</div>
+        <p class="cs-text u-mt-8">Changing one setting could unexpectedly affect booking behavior elsewhere.</p>
+      </div>
+    </div>
+
+    <p class="cs-text u-max-w-68ch u-mt-clamp-md">The problem was not simply that there were too many screens. <strong class="cs-text-emphasis">The platform was asking users to manage relationships that should have been owned by the system.</strong></p>
+
+    <div class="cs-callout-box u-mt-clamp-md background-white">
+      <div class="cs-callout-label">WHAT USABILITY TESTING SHOWED</div>
+      <div class="cs-two-col cs-two-col--tight">
+        <div>
+          <p class="cs-callout-heading">The first redesign improved most core workflows, but system complexity remained</p>
+          <p class="cs-text u-mt-12">A comparative test covered the core journey &mdash; account creation, service creation, team setup, client and pet entry, new booking, booking management, search, and navigation. In the legacy experience, no participant completed the full task set. After the first redesign, full task-set completion rose from 0% to 32%, while most individual tasks also improved.</p>
+        </div>
+        <div class="cs-item-grey">
+          <p class="cs-callout-quote">The result was useful, but not evidence that the problem was solved. The interface had improved while substantial platform complexity remained &mdash; which justified the structural direction.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-clamp-lg">Three kinds of complexity were being mixed together</h3>
+    <div class="cs-two-col cs-two-col--tight">
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">1 &middot; Shared stored locally</div>
+        <p class="cs-text u-mt-8">Location, alerts, and other business-wide settings were repeatedly configured inside individual services or appointments.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">2 &middot; Wrong owner</div>
+        <p class="cs-text u-mt-8">Staff eligibility was assigned while creating a service, even though eligibility and availability belonged to the team member.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">3 &middot; Outputs as inputs</div>
+        <p class="cs-text u-mt-8">Providers were asked to calculate values, such as capacity, that the system could derive from staffing and availability.</p>
+      </div>
+    </div>
+
+    <div class="cs-callout-box cs-callout-box--accent u-mt-clamp-md">
+      <div class="cs-callout-label cs-callout-label--accent">THE DESIGN PRINCIPLE</div>
+      <p class="cs-callout-quote cs-callout-quote--lg">Put each decision at the level that owns it, derive what the system already knows, and defer what users do not need to decide yet.</p>
+      <p class="cs-text u-mt-12">My role was not to remove every feature or eliminate legitimate operational complexity &mdash; it was to find the simplest system that could support the real use cases without exposing every layer of that complexity to providers.</p>
+    </div>
+  </section>
+
+  <section id="design" class="cs-section container">
+    <div class="cs-kicker">03 &mdash; DESIGN</div>
+    <h2 class="cs-h2 cs-h2--narrow">Reorganizing the platform around ownership and timing</h2>
+    <p class="cs-lead">Rather than treating every workflow as an isolated redesign, I applied three recurring structural moves across the provider platform.</p>
+
+    <div class="cs-breakdown-grid u-mt-clamp-sm">
+      <div class="cs-item-dark">
+        <h3 class="cs-h3 cs-h3--sm"><span class="accent">1 &middot;</span> Move shared decisions to the shared level</h3>
+        <p class="cs-text"><strong class="cs-text-emphasis">Location and universal alerts became business-level settings</strong> &mdash; configured once, reused across services, team members, and bookings. Service setup could focus on what was genuinely specific to the service: category, description, pricing, and duration.</p>
+      </div>
+      <div class="cs-item-dark">
+        <h3 class="cs-h3 cs-h3--sm"><span class="accent">2 &middot;</span> Attach relationships to the object that owns them</h3>
+        <p class="cs-text"><strong class="cs-text-emphasis">Team members owned service eligibility and availability</strong> &mdash; matching how pet-care businesses actually staff their days. Final assignment could happen in context during booking, preserving flexibility when daily staffing changed.</p>
+      </div>
+      <div class="cs-item-dark">
+        <h3 class="cs-h3 cs-h3--sm"><span class="accent">3 &middot;</span> Derive or defer decisions that did not belong upfront</h3>
+        <p class="cs-text"><strong class="cs-text-emphasis">Capacity was calculated</strong> from availability and duration instead of maintained by hand. Client and pet details could be entered during booking; status, assignment, and payment connected to the appointment lifecycle rather than setup.</p>
+      </div>
+    </div>
+
+    <div class="u-mt-clamp-sm">
+      <div class="cs-compare">
+        <div class="cs-compare-cell background-white">
+          <div class="cs-callout-label">BEFORE &mdash; INSIDE SERVICE SETUP</div>
+          <ul class="cs-list u-mt-12">
+            <li>Location selected per service</li>
+            <li>Staff eligibility assigned per service</li>
+            <li>Capacity calculated by hand</li>
+            <li>Alerts configured per service</li>
+          </ul>
+        </div>
+        <div class="cs-compare-cell cs-compare-cell--after">
+          <div class="cs-callout-label cs-callout-label--accent">AFTER &mdash; OWNED AT THE RIGHT LEVEL</div>
+          <ul class="cs-list u-mt-12">
+            <li><strong>Location</strong> &mdash; business-level setting, reused everywhere</li>
+            <li><strong>Eligibility</strong> &mdash; owned by the team member</li>
+            <li><strong>Capacity</strong> &mdash; derived from availability and duration</li>
+            <li><strong>Alerts</strong> &mdash; shared, business-level setting</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cs-media-caption">Before / after &mdash; where the four dependencies moved</div>
+    </div>
+
+    <div class="cs-pullquote">
+      <p>The goal was not to make the platform less capable. It was to <span class="accent">move each decision closer to the moment when the user had enough context to make it correctly</span>.</p>
+    </div>
+
+    <h3 class="cs-h3 u-mt-clamp-lg">Connecting configuration to daily operations</h3>
+    <p class="cs-text u-max-w-68ch u-mt-8">Configuration could not be simplified in isolation because its decisions shaped daily operations. I used a continuous lifecycle to verify that each setting still supported booking, appointment execution, and follow-up.</p>
+
+    <div class="cs-breakdown-grid u-mt-clamp-sm">
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">1 &middot; Configure</div>
+        <p class="cs-text u-mt-8">Business locations &middot; services and add-ons &middot; pricing and duration &middot; team eligibility &middot; availability</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">2 &middot; Book</div>
+        <p class="cs-text u-mt-8">Select or add client and pet &middot; choose a service &middot; find an available time &middot; assign staff &middot; collect payment</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">3 &middot; Operate</div>
+        <p class="cs-text u-mt-8">Confirm appointments &middot; check clients in &middot; update status &middot; complete services &middot; send notifications</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-breakdown-tag">4 &middot; Continue</div>
+        <p class="cs-text u-mt-8">Adjust or rebook &middot; recommend a future appointment &middot; create promotions</p>
+      </div>
+    </div>
+
+    <div class="u-mt-clamp-sm">
+      <div class="cs-media cs-ar-3-1">
+        <img src="mockup_booking_flow.png" alt="Redesigned booking flow with client, pet, service, and staff assignment deferred into one continuous panel">
+      </div>
+      <div class="cs-media-caption">Booking &mdash; client, pet, staff assignment, and payment decisions deferred into context</div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-clamp-lg">A later phase enabled a deeper rebuild</h3>
+    <p class="cs-text u-max-w-68ch u-mt-8">In my third year, the team was ready to revisit parts of the booking architecture that had previously been considered too risky to modify. Because I had already mapped the system, redesigned many of its component workflows, and understood how provider decisions affected downstream booking behavior, I could help define a broader rebuild spanning onboarding, subscription, and booking.</p>
+
+    <div class="cs-compare u-mt-clamp-sm">
+      <div class="cs-compare-cell background-white">
+        <div class="cs-callout-label">BEFORE &mdash; 6 SEQUENTIAL STAGES</div>
+        <div class="cs-flow-line cs-flow-line--muted u-mt-10">Package &rarr; Service &rarr; Personal info &rarr; Business info &rarr; Survey &rarr; Payment</div>
+        <p class="cs-text u-mt-12">The journey reflected the legacy assumption: understand and configure the business before the provider had entered the product.</p>
+      </div>
+      <div class="cs-compare-cell cs-compare-cell--after">
+        <div class="cs-callout-label cs-callout-label--accent">AFTER &mdash; 3 PRIMARY STAGES</div>
+        <div class="cs-flow-line u-mt-10">Account <span class="accent">&rarr;</span> Business essentials <span class="accent">&rarr;</span> Subscription</div>
+        <p class="cs-text u-mt-12">Nonessential configuration moved inside the product, into the context of service setup, team management, or booking.</p>
+      </div>
+    </div>
+
+    <div class="u-mt-clamp-sm">
+      <div class="cs-media cs-ar-3-1">
+        <img src="mockup_onboarding.png" alt="Redesigned onboarding journey with account creation and subscription plan selection">
+      </div>
+      <div class="cs-media-caption">Redesigned onboarding journey</div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-clamp-lg">Creating a clearer path from pricing to subscription</h3>
+    <p class="cs-text u-max-w-68ch u-mt-8">Customer conversations and session replays showed businesses struggled to determine which plan matched their operation, whether larger teams were supported, how to revise an earlier plan choice, or how to reach payment directly. I connected pricing, signup, business information, and subscription into one journey:</p>
+    <ul class="cs-list u-mt-clamp-sm">
+      <li>Connected pricing, signup, and subscription into one journey</li>
+      <li>Tied plan guidance to team size, locations, and services</li>
+      <li>Made trial, payment, and subscription details visible together</li>
+    </ul>
+
+    <div class="cs-pullquote">
+      <p>Ask only for the decision required at that moment, then <span class="accent">move the remaining configuration into the context where it becomes meaningful</span>.</p>
+    </div>
+  </section>
+
+  <section id="impact" class="cs-section cs-section--end container">
+    <div class="cs-kicker">04 &mdash; IMPACT</div>
+    <h2 class="cs-h2 cs-h2--narrow">Less coupling, less upfront work, and clearer operational ownership</h2>
+    <p class="cs-lead">Across three years, BookYourPet moved from workflows that repeatedly embedded business rules into individual features toward a clearer division of responsibility across the platform.</p>
+
+    <div class="cs-breakdown-grid u-mt-clamp-sm">
+      <div class="cs-item-dark">
+        <div class="cs-subhead">Structure</div>
+        <p class="cs-text"><strong class="cs-text-emphasis">Four core dependencies moved out of service setup</strong> &mdash; location to the business level, eligibility to the team member, capacity derived, alerts into shared settings. Service setup could focus on the service itself.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-subhead">Onboarding</div>
+        <p class="cs-text"><strong class="cs-text-emphasis">Six steps became three primary stages</strong> &mdash; a direct path from account creation to business essentials and subscription, with detailed setup deferred into the product.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-subhead">Usability</div>
+        <p class="cs-text"><strong class="cs-text-emphasis">Full task-set completion rose from 0% to 32%</strong> after the first redesign, with most individual workflows improving &mdash; and made clear that continued structural simplification was necessary.</p>
+      </div>
+      <div class="cs-item-dark">
+        <div class="cs-subhead">In production</div>
+        <p class="cs-text"><strong class="cs-text-emphasis">The rebuilt workflows ran real daily operations</strong> &mdash; largely implemented and used by BookYourPet&rsquo;s largest customer, a UK grooming business coordinating appointments across multiple team members.</p>
+      </div>
+    </div>
+
+    <p class="cs-text u-max-w-68ch u-mt-clamp-md">Most of the rebuilt onboarding and booking workflows shipped. The redesigned booking system supported daily operations for BookYourPet&rsquo;s largest customer, a UK grooming business coordinating appointments across multiple team members.</p>
+
+    <div class="cs-item-dark u-mt-clamp-lg">
+      <div class="cs-label">SHIPPING LESSON</div>
+      <p class="cs-text u-max-w-68ch">Replacing a load-bearing booking flow also exposed integration risks around scheduling, date handling, and payments. The experience taught me to pair workflow redesign with an earlier inventory of technical edge cases, closer implementation verification, and a more incremental rollout where possible.</p>
+    </div>
+
+    <div class="cs-callout-box u-mt-clamp-md background-white">
+      <div class="cs-callout-label">ADDITIONAL PLATFORM WORK</div>
+      <p class="cs-text u-mb-0">Service and add-on management &middot; client and pet records &middot; appointment status and check-in &middot; payments and reporting &middot; appointment overrides and rebooking &middot; future-service recommendations &middot; promotions &middot; consumer-facing booking experiences</p>
+    </div>
+
+    <div class="cs-pullquote">
+      <p>My role became translating broad business needs into <span class="accent">the smallest coherent system that could support the real operational cases</span>.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="contact-head">
+        <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
+        <a href="/worklog#work" class="contact-link accent">Next case study &rarr;</a>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
+        <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" rel="noopener" class="contact-link">LinkedIn &#8599;</a>
+        <a href="/worklog/resume" class="contact-link">Resume &#8599;</a>
+      </div>
+      <div class="contact-footer">
+        <span>&copy; 2020&ndash;2026 vickywang.me</span>
+        <span>Vicky Wang &mdash; Product Designer</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
+    <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>
+    <button class="wl-image-modal__control wl-image-modal__control--prev" type="button" aria-label="Previous image">&larr;</button>
+    <figure class="wl-image-modal__figure">
+      <img class="wl-image-modal__img" src="" alt="">
+      <figcaption class="wl-image-modal__caption"></figcaption>
+    </figure>
+    <button class="wl-image-modal__control wl-image-modal__control--next" type="button" aria-label="Next image">&rarr;</button>
+  </div>
+
+  <script>
+    (() => {
+      const modal = document.getElementById("wl-image-modal");
+      if (!modal) return;
+
+      const modalImg = modal.querySelector(".wl-image-modal__img");
+      const caption = modal.querySelector(".wl-image-modal__caption");
+      const closeBtn = modal.querySelector(".wl-image-modal__close");
+      const prevBtn = modal.querySelector(".wl-image-modal__control--prev");
+      const nextBtn = modal.querySelector(".wl-image-modal__control--next");
+      let gallery = [];
+      let activeIndex = -1;
+
+      function setControls() {
+        const hasGallery = gallery.length > 1;
+        prevBtn.hidden = !hasGallery;
+        nextBtn.hidden = !hasGallery;
+      }
+
+      function showImage(img) {
+        modalImg.src = img.currentSrc || img.src;
+        modalImg.alt = img.alt || "";
+        caption.textContent = img.alt || "";
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("image-modal-open");
+        setControls();
+      }
+
+      function closeModal() {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("image-modal-open");
+        modalImg.removeAttribute("src");
+        gallery = [];
+        activeIndex = -1;
+      }
+
+      function move(direction) {
+        if (gallery.length < 2) return;
+        activeIndex = (activeIndex + direction + gallery.length) % gallery.length;
+        showImage(gallery[activeIndex]);
+      }
+
+      document.addEventListener("click", (event) => {
+        const target = event.target.closest(".modal-target");
+        if (!target) return;
+
+        const galleryName = target.getAttribute("data-modal-gallery");
+        gallery = galleryName
+          ? Array.from(document.querySelectorAll(`.modal-target[data-modal-gallery="${galleryName}"]`))
+          : [target];
+        activeIndex = gallery.indexOf(target);
+        showImage(target);
+      });
+
+      closeBtn.addEventListener("click", closeModal);
+      prevBtn.addEventListener("click", () => move(-1));
+      nextBtn.addEventListener("click", () => move(1));
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) closeModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (!modal.classList.contains("is-open")) return;
+        if (event.key === "Escape") closeModal();
+        if (event.key === "ArrowLeft") move(-1);
+        if (event.key === "ArrowRight") move(1);
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

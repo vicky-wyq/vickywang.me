@@ -31,3 +31,32 @@
     window.location.href = getPreviousPageUrl(backLink.href);
   });
 })();
+
+(function () {
+  var header = document.querySelector(".nav--sticky");
+  if (!header) return;
+
+  var lastScrollY = window.scrollY;
+  var ticking = false;
+
+  function onScroll() {
+    var currentScrollY = window.scrollY;
+    var scrolledPastHeader = currentScrollY > header.offsetHeight;
+
+    if (scrolledPastHeader && currentScrollY > lastScrollY) {
+      header.classList.add("nav--hidden");
+    } else {
+      header.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+  }
+
+  window.addEventListener("scroll", function () {
+    if (!ticking) {
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  });
+})();

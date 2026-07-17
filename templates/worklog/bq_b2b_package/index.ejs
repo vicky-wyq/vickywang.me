@@ -26,8 +26,9 @@
 
   <header class="nav nav--sticky">
     <div class="container nav-inner">
-      <a href="/worklog" class="nav-brand" data-page-back>
-        <span class="cs-nav-back">&larr;</span>
+      <a href="/worklog" class="nav-history-back" data-page-back aria-label="Go back to previous page">&larr;</a>
+
+      <a href="/worklog" class="nav-brand">
         <img src="../../web_images/photo_profile_avatar.png" alt="Vicky Wang">
         <span>Vicky Wang</span>
       </a>
@@ -46,19 +47,19 @@
       <span class="case-index">&#8470; 5 &middot; Q2 2026 &middot; BabyQuip</span>
       <span class="tag">SUPPLY SIDE &mdash; PARTNER PORTAL</span>
     </div>
-    <h1 class="cs-h2" style="font-size: clamp(32px, 5vw, 56px); max-width: 920px;">Standardizing Provider-Created Bundles into a Scalable Package System</h1>
-    <p class="cs-hero-sub" style="max-width: 780px;">Turned unstructured provider-created packages into a standardized system BabyQuip could track, expand, and eventually merchandise, while preserving custom packages and migrating existing provider work.</p>
+    <h1 class="cs-h2 cs-h2--display-wide">Standardizing Provider-Created Bundles into a Scalable Package System</h1>
+    <p class="cs-hero-sub cs-hero-sub--wide">Turned unstructured provider-created packages into a standardized system BabyQuip could track, expand, and eventually merchandise, while preserving custom packages and migrating existing provider work.</p>
 
     <div class="cs-divider-grid cs-divider-grid--hero">
       <div>
         <div class="cs-label">INTERNAL PACKAGE TRACKING</div>
-        <div class="cs-stat-value--sm">~59% <span style="font: 400 italic clamp(18px, 2vw, 24px) var(--serif); color: var(--text-faint)">opportunity gap</span></div>
+        <div class="cs-stat-value--sm">~59% <span class="cs-stat-annotation">opportunity gap</span></div>
         <div class="cs-stat-label">Between package-like demand and actual standard-package bookings</div>
-        <div class="cs-stat-note">Internal package tracking at time of measurement &mdash; full breakdown in <a href="#problem" style="border-bottom: 1px solid var(--border)">01 &mdash; Problem</a>.</div>
+        <div class="cs-stat-note">Internal package tracking at time of measurement &mdash; full breakdown in <a href="#problem" class="cs-inline-link">01 &mdash; Problem</a>.</div>
       </div>
       <div>
         <div class="cs-label">PACKAGE MODEL SHIFT</div>
-        <div class="cs-stat-value--sm" style="font-size: 36px">Provider-created <span class="accent">&rarr;</span> platform-defined</div>
+        <div class="cs-stat-value--sm cs-stat-value--36">Provider-created <span class="accent">&rarr;</span> platform-defined</div>
         <div class="cs-stat-label">Standard package templates &middot; Provider adoption &middot; Legacy migration &middot; Custom packages preserved</div>
       </div>
     </div>
@@ -81,18 +82,18 @@
 
   <section id="problem" class="cs-section container">
     <div class="cs-kicker">01 &mdash; PROBLEM</div>
-    <h2 class="cs-h2" style="max-width: 860px">Package demand existed &mdash; but the package system was too fragmented to merchandise</h2>
+    <h2 class="cs-h2 cs-h2--narrow">Package demand existed &mdash; but the package system was too fragmented to merchandise</h2>
     <p class="cs-lead">BabyQuip had packages long before this project, but they were not a structured product system. They worked like custom inventory bundles individual providers created inside their own portals: every package could have a different name, item combination, quantity, and pricing logic. During data migration we even found packages containing a single item &mdash; &ldquo;package&rdquo; had no consistent definition across the marketplace.</p>
-    <p class="cs-lead">As BabyQuip moved toward gear-first shopping, this became a bigger issue. Customers could browse gear before choosing a provider, but packages were still tied to individual providers &mdash; <strong style="font-weight: 600; color: var(--text)">the system could not reliably know which packages existed until after a provider was selected</strong>.</p>
+    <p class="cs-lead">As BabyQuip moved toward gear-first shopping, this became a bigger issue. Customers could browse gear before choosing a provider, but packages were still tied to individual providers &mdash; <strong class="cs-text-emphasis">the system could not reliably know which packages existed until after a provider was selected</strong>.</p>
 
-    <div style="margin-top: clamp(32px, 5vw, 44px)">
-      <div class="cs-media modal-target" style="aspect-ratio: 1661 / 1196">
+    <div class="u-mt-clamp-sm">
+      <div class="cs-media modal-target cs-ar-package">
         <img src="discover_before.png" alt="Legacy packages, visible only inside an individual provider's shop">
       </div>
-      <div class="cs-label" style="margin-top: 8px">Legacy model &mdash; provider-created bundles, invisible until a shopper opened that provider&rsquo;s shop</div>
+      <div class="cs-label u-mt-8">Legacy model &mdash; provider-created bundles, invisible until a shopper opened that provider&rsquo;s shop</div>
     </div>
 
-    <h3 class="cs-h3" style="margin-top: clamp(36px, 6vw, 52px)">The legacy package model created five problems</h3>
+    <h3 class="cs-h3 u-mt-clamp-md">The legacy package model created five problems</h3>
     <div class="cs-breakdown-grid">
       <div class="cs-breakdown-card">
         <div class="cs-breakdown-tag">A &middot; No shared structure</div>
@@ -118,41 +119,41 @@
 
     <div class="cs-callout-box">
       <div class="cs-callout-label">WHAT THE ~59% GAP MEANT &mdash; DEMAND VS. ADOPTION</div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: clamp(16px, 3vw, 32px)">
+      <div class="cs-stat-grid">
         <div>
-          <div style="font: 400 clamp(26px, 3vw, 36px) var(--serif)">41,622</div>
-          <div style="font-size: 13.5px; line-height: 1.5; color: var(--text-muted); margin-top: 6px">Orders contained the right product types for a standard package</div>
+          <div class="cs-stat-grid-value">41,622</div>
+          <div class="cs-stat-grid-caption">Orders contained the right product types for a standard package</div>
         </div>
         <div>
-          <div style="font: 400 clamp(26px, 3vw, 36px) var(--serif)">16,992</div>
-          <div style="font-size: 13.5px; line-height: 1.5; color: var(--text-muted); margin-top: 6px">Orders actually booked a standard package &mdash; a ~59% gap</div>
+          <div class="cs-stat-grid-value">16,992</div>
+          <div class="cs-stat-grid-caption">Orders actually booked a standard package &mdash; a ~59% gap</div>
         </div>
         <div>
-          <div style="font: 400 clamp(26px, 3vw, 36px) var(--serif)">889 <span style="font: 400 italic clamp(15px, 1.8vw, 19px) var(--serif); color: var(--text-faint)">of 3,129</span></div>
-          <div style="font-size: 13.5px; line-height: 1.5; color: var(--text-muted); margin-top: 6px">Active providers offered at least one standard package &mdash; ~28% adoption</div>
+          <div class="cs-stat-grid-value">889 <span class="cs-stat-annotation--xs">of 3,129</span></div>
+          <div class="cs-stat-grid-caption">Active providers offered at least one standard package &mdash; ~28% adoption</div>
         </div>
       </div>
-      <p style="font-size: 14.5px; line-height: 1.65; color: var(--text-muted); max-width: 72ch; margin: 18px 0 0; border-top: 1px solid var(--border); padding-top: 16px">This data did not prove the redesign had already increased package rentals &mdash; it showed the size of the opportunity and clarified the real constraint: <strong style="font-weight: 600; color: var(--text)">BabyQuip needed a stronger supply-side package system before packages could become reliable consumer-facing merchandising</strong>.</p>
+      <p class="cs-footnote-block">This data did not prove the redesign had already increased package rentals &mdash; it showed the size of the opportunity and clarified the real constraint: <strong class="cs-text-emphasis">BabyQuip needed a stronger supply-side package system before packages could become reliable consumer-facing merchandising</strong>.</p>
     </div>
   </section>
 
   <section id="insight" class="cs-section container">
     <div class="cs-kicker">02 &mdash; INSIGHT</div>
-    <h2 class="cs-h2" style="max-width: 860px">Not a UI problem &mdash; a system ownership problem</h2>
-    <p class="cs-lead">As long as packages were fully created by individual providers, BabyQuip could not treat them as a platform-level merchandising object. Packages needed a <strong style="font-weight: 600; color: var(--text)">shared definition controlled by BabyQuip</strong>, while fulfillment remained provider-dependent. Separating package definition from provider fulfillment became the foundation of the new system.</p>
+    <h2 class="cs-h2 cs-h2--narrow">Not a UI problem &mdash; a system ownership problem</h2>
+    <p class="cs-lead">As long as packages were fully created by individual providers, BabyQuip could not treat them as a platform-level merchandising object. Packages needed a <strong class="cs-text-emphasis">shared definition controlled by BabyQuip</strong>, while fulfillment remained provider-dependent. Separating package definition from provider fulfillment became the foundation of the new system.</p>
 
-    <div style="border: 1px solid var(--border); background: var(--surface); margin-top: clamp(28px, 4vw, 40px); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))">
-      <div style="padding: clamp(18px, 3vw, 28px) clamp(18px, 3vw, 32px); border-right: 1px solid var(--border)">
+    <div class="cs-compare">
+      <div class="cs-compare-cell">
         <div class="cs-callout-label">BEFORE</div>
         <div class="cs-flow-line cs-flow-line--muted">Provider creates package &rarr; package only exists inside that provider&rsquo;s shop</div>
       </div>
-      <div style="padding: clamp(18px, 3vw, 28px) clamp(18px, 3vw, 32px); background: var(--accent-bg)">
+      <div class="cs-compare-cell cs-compare-cell--after">
         <div class="cs-callout-label cs-callout-label--accent">AFTER</div>
         <div class="cs-flow-line">BabyQuip defines package template &rarr; provider adopts it &rarr; system tracks adoption and represents packages earlier in shopping</div>
       </div>
     </div>
 
-    <h3 class="cs-h3" style="margin-top: clamp(36px, 6vw, 52px)">Design goals</h3>
+    <h3 class="cs-h3 u-mt-clamp-md">Design goals</h3>
     <div class="cs-journey-grid">
       <div class="cs-journey-item">
         <div class="cs-journey-num">1</div>
@@ -175,7 +176,7 @@
 
   <section id="design" class="cs-section container">
     <div class="cs-kicker">03 &mdash; DESIGN</div>
-    <h2 class="cs-h2" style="max-width: 860px">A dual package system: standardized BabyQuip packages plus custom provider packages</h2>
+    <h2 class="cs-h2 cs-h2--narrow">A dual package system: standardized BabyQuip packages plus custom provider packages</h2>
     <p class="cs-lead">Standardized packages gave BabyQuip a controlled structure for names, item categories, and merchandising logic. Custom packages preserved provider flexibility for cases that did not fit the standard model &mdash; a hierarchy, not a rigid template.</p>
 
     <div class="cs-solutions">
@@ -212,7 +213,7 @@
           <h3><span class="cs-solution-num">5 &middot;</span> Lightweight consumer-facing representation</h3>
           <p>Because BabyQuip now controlled standard definitions, packages could be represented before provider selection for the first time. Exposure stayed intentionally lightweight: the system made early representation possible without over-promising availability before supply coverage could support it.</p>
         </div>
-        <div class="cs-media modal-target" style="aspect-ratio: 1661 / 1196">
+        <div class="cs-media modal-target cs-ar-package">
           <img src="discover_after.png" alt="Standardized packages represented as a browsable category before provider selection">
         </div>
       </div>
@@ -220,14 +221,14 @@
 
     <div class="cs-callout-box">
       <div class="cs-callout-label">KEY CONSTRAINT &mdash; SUPPLY COVERAGE</div>
-      <p style="font-size: 14.5px; line-height: 1.65; color: var(--text-muted); max-width: 72ch; margin: 0">Even with standard definitions, packages were still fulfilled by individual providers. A standard package only helped customers if enough providers in a market had adopted it with the required inventory. If promotion became dominant too early, customers could select a package and find no one able to fulfill it. <strong style="font-weight: 600; color: var(--text)">The design intentionally balanced future merchandising potential with current fulfillment reality.</strong></p>
+      <p class="cs-footnote-block cs-footnote-block--flush">Even with standard definitions, packages were still fulfilled by individual providers. A standard package only helped customers if enough providers in a market had adopted it with the required inventory. If promotion became dominant too early, customers could select a package and find no one able to fulfill it. <strong class="cs-text-emphasis">The design intentionally balanced future merchandising potential with current fulfillment reality.</strong></p>
     </div>
   </section>
 
   <section id="impact" class="cs-section cs-section--end container">
     <div class="cs-kicker">04 &mdash; IMPACT</div>
-    <h2 class="cs-h2" style="max-width: 860px">A controlled, trackable package layer that can scale</h2>
-    <p class="cs-lead">The project&rsquo;s impact was foundational rather than immediate conversion lift: it created the <strong style="font-weight: 600; color: var(--text)">operational and data layer</strong> needed to grow package adoption over time. The dashboards separated demand from adoption: with only ~28% of providers offering a standard package against clear bundle-like demand, BabyQuip could target adoption where demand already existed, then merchandise packages more confidently as coverage improves.</p>
+    <h2 class="cs-h2 cs-h2--narrow">A controlled, trackable package layer that can scale</h2>
+    <p class="cs-lead">The project&rsquo;s impact was foundational rather than immediate conversion lift: it created the <strong class="cs-text-emphasis">operational and data layer</strong> needed to grow package adoption over time. The dashboards separated demand from adoption: with only ~28% of providers offering a standard package against clear bundle-like demand, BabyQuip could target adoption where demand already existed, then merchandise packages more confidently as coverage improves.</p>
 
     <div class="cs-two-col">
       <div>
@@ -248,7 +249,7 @@
           <li>Package recommendations based on customer trip needs</li>
           <li>Stronger availability logic and reliable bundle discovery as coverage improves</li>
         </ul>
-        <div class="cs-media modal-target" style="aspect-ratio: 1661 / 1196; margin-top: 16px">
+        <div class="cs-media modal-target cs-ar-package u-mt-16">
           <img src="discover_future.png" alt="Future state: standard packages mapped directly into shopping categories alongside individual gear">
         </div>
       </div>
