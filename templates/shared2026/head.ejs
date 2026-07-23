@@ -1,0 +1,50 @@
+<%
+  const resolvedHeadRobots = typeof headRobots !== 'undefined' ? headRobots : 'noindex, follow';
+  const resolvedHeadStylesheet = typeof headStylesheet !== 'undefined' ? headStylesheet : '/worklog/style.css';
+  const resolvedHeadScript = typeof headScript !== 'undefined' ? headScript : '/worklog/worklog.js';
+  const resolvedHeadCanonical = typeof headCanonical !== 'undefined' ? headCanonical : null;
+  const resolvedHeadImage = typeof headImage !== 'undefined' ? headImage : null;
+  const resolvedHeadType = typeof headType !== 'undefined' ? headType : 'website';
+%>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <title><%= headTitle %></title>
+  <meta name="description" content="<%= headDescription %>">
+  <meta name="robots" content="<%= resolvedHeadRobots %>">
+
+  <% if (resolvedHeadCanonical) { %>
+    <link rel="canonical" href="<%= resolvedHeadCanonical %>">
+  <% } %>
+
+  <% if (resolvedHeadCanonical || resolvedHeadImage) { %>
+    <meta property="og:type" content="<%= resolvedHeadType %>">
+    <meta property="og:title" content="<%= headTitle %>">
+    <meta property="og:description" content="<%= headDescription %>">
+    <% if (resolvedHeadCanonical) { %>
+      <meta property="og:url" content="<%= resolvedHeadCanonical %>">
+    <% } %>
+    <% if (resolvedHeadImage) { %>
+      <meta property="og:image" content="<%= resolvedHeadImage %>">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="<%= resolvedHeadImage %>">
+    <% } %>
+    <meta name="twitter:title" content="<%= headTitle %>">
+    <meta name="twitter:description" content="<%= headDescription %>">
+  <% } %>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <link rel="stylesheet" href="<%= resolvedHeadStylesheet %>">
+  <% if (resolvedHeadScript) { %>
+    <script src="<%= resolvedHeadScript %>" defer></script>
+  <% } %>
+</head>

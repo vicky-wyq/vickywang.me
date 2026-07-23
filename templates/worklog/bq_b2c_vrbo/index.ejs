@@ -1,46 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-
-  <title>Converting Vrbo Partner Traffic into Rental Intent — Vicky Wang</title>
-  <meta name="description" content="Reducing early-stage drop-off in a partner-entry mobile funnel with incomplete provider context.">
-  <meta name="robots" content="noindex,nofollow">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-  <link rel="stylesheet" href="../style.css">
-  <script src="../worklog.js" defer></script>
-</head>
+<%- include(`${templatePath}/shared2026/head`, {
+  headTitle: 'Converting Vrbo Partner Traffic into Rental Intent — Vicky Wang',
+  headDescription: 'Reducing early-stage drop-off in a partner-entry mobile funnel with incomplete provider context.',
+  headRobots: 'noindex, follow',
+  headType: 'article',
+  headImage: 'https://vickywang.me/thumbnails/cs_vrbo.png'
+}) %>
 
 <body>
 
-  <header class="nav nav--sticky">
-    <div class="container nav-inner">
-      <a href="/worklog" class="nav-history-back" data-page-back aria-label="Go back to previous page">&larr;</a>
-
-      <a href="/worklog" class="nav-brand">
-        <img src="../../web_images/photo_profile_avatar.png" alt="Vicky Wang">
-        <span>Vicky Wang</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="#problem" class="nav-link muted">Problem</a>
-        <a href="#insights" class="nav-link muted">Insights</a>
-        <a href="#design" class="nav-link muted">Design</a>
-        <a href="#impact" class="nav-link muted">Impact</a>
-      </nav>
-    </div>
-  </header>
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'detail',
+    headerHome: '/worklog',
+    headerAvatar: '../../web_images/photo_profile_avatar.png',
+    headerLinks: [
+      { href: '#problem', label: 'Problem', muted: true },
+      { href: '#insights', label: 'Insights', muted: true },
+      { href: '#design', label: 'Design', muted: true },
+      { href: '#impact', label: 'Impact', muted: true }
+    ]
+  }) %>
 
   <section class="cs-hero container cs-section--sm">
     <div class="cs-hero-meta">
@@ -87,8 +68,8 @@
     <div class="cs-two-col">
       <div>
         <h2 class="cs-h3">A two-sided marketplace, entered mid-journey</h2>
-        <p class="cs-text">BabyQuip is a two-sided marketplace where independent providers manage inventory, delivery, setup, pickup, and customer coordination. Its partnership with Vrbo launched in September 2025, bringing <strong class="cs-text-emphasis">high-intent, mobile-heavy traffic</strong> into BabyQuip's embedded mobile web experience &mdash; travelers entering mid-journey inside a constrained in-app browser, already committed to a trip but often meeting BabyQuip for the first time.</p>
-        <p class="cs-text">In 2026, Vrbo shared performance insights that revealed significant early-funnel friction. I was responsible for redesigning the partner-entry experience, Working with my design manager, I owned the redesign of covering partner entry, shopping, provider selection, and the handoff into checkout.</p>
+        <p class="cs-text u-mt-xs">BabyQuip is a two-sided marketplace where independent providers manage inventory, delivery, setup, pickup, and customer coordination. Its partnership with Vrbo launched in September 2025, bringing <strong class="cs-text-emphasis">high-intent, mobile-heavy traffic</strong> into BabyQuip's embedded mobile web experience &mdash; travelers entering mid-journey inside a constrained in-app browser, already committed to a trip but often meeting BabyQuip for the first time.</p>
+        <p class="cs-text u-mt-xs">In 2026, Vrbo shared performance insights that revealed significant early-funnel friction. I was responsible for redesigning the partner-entry experience, Working with my design manager, I owned the redesign of covering partner entry, shopping, provider selection, and the handoff into checkout.</p>
       </div>
       <div class="cs-media cs-ar-3-2">
         <img src="screenshot_Vrbo_BabyQuip.png" alt="Vrbo entry into BabyQuip">
@@ -109,8 +90,8 @@
 
         <br>
         <div class="cs-subhead">Marketplace model problem</div>
-        <p class="cs-text">BabyQuip looked item-first, but fulfillment was still provider-dependent.</p>
-        <ul class="cs-list u-mb-18">
+        <p class="cs-text u-mt-xs">BabyQuip looked item-first, but fulfillment was still provider-dependent.</p>
+        <ul class="cs-list u-mb-sm">
           <li>Users could browse gear first</li>
           <li>Users could add items first</li>
           <li>But price, availability, delivery, and fulfillment were not reliable until provider selection</li>
@@ -124,7 +105,7 @@
         <br>
 
         <div class="cs-subhead">Partner-entry problem</div>
-        <p class="cs-text">Vrbo users were not typical BabyQuip browsers, they used the mobile website inside the Vrbo app.</p>
+        <p class="cs-text u-mt-xs">Vrbo users were not typical BabyQuip browsers, they used the mobile website inside the Vrbo app.</p>
         <ul class="cs-list">
           <li>Mostly high-intent: they had already booked lodging through Vrbo, but might not know BabyQuip</li>
           <li>Their trip location carried over, so they didn't need the normal location gate</li>
@@ -146,7 +127,7 @@
         <div class="cs-media cs-ar-16-10">
           <img class="modal-target" src="ga4_vrbo_nonvrbo_traffic.png" alt="Vrbo mobile vs non-Vrbo mobile funnel comparison" data-modal-gallery="ga4-vrbo">
         </div>
-        <ul class="cs-list u-mt-14">
+        <ul class="cs-list u-mt-sm">
           <li>Vrbo mobile users dropped earlier in the funnel, while later-stage completion remained strong</li>
           <li>The biggest issue was early progression from entry/shopping toward provider commitment &mdash; not checkout</li>
         </ul>
@@ -156,7 +137,7 @@
         <div class="cs-media cs-ar-16-10">
           <img class="modal-target" src="ga4_mobile_vs_web_traffic.png" alt="Vrbo mobile vs Vrbo web funnel comparison" data-modal-gallery="ga4-vrbo">
         </div>
-        <ul class="cs-list u-mt-14">
+        <ul class="cs-list u-mt-sm">
           <li>Vrbo traffic was primarily mobile web &mdash; the embedded in-app browser was the highest-priority surface</li>
           <li>Vrbo mobile performed worse at early stages than Vrbo web</li>
         </ul>
@@ -164,7 +145,7 @@
     </div>
 
     <h2 class="cs-h2 cs-h2--follow cs-h2--sm">Four experience breakdowns &mdash; and the principle each demanded</h2>
-    <p class="cs-lead u-mt-16">In the product, the early drop showed up as four distinct breakdowns. Each one set a design principle for the redesign.</p>
+    <p class="cs-lead u-mt-sm">In the product, the early drop showed up as four distinct breakdowns. Each one set a design principle for the redesign.</p>
 
     <div class="cs-breakdown-grid">
       <div class="cs-breakdown-card">
@@ -175,7 +156,7 @@
         <div class="cs-media cs-ar-4-3">
           <img src="legacy_pre_entry.png" alt="Legacy Vrbo entry added friction before shopping">
         </div>
-        <ul class="cs-list u-mt-14">
+        <ul class="cs-list u-mt-sm">
           <li>Blank loading state created uncertainty</li>
           <li>Multiple overlays competed for attention</li>
           <li>Chat blocked the primary CTA</li>
@@ -191,7 +172,7 @@
         <div class="cs-media cs-ar-4-3">
           <img src="legacy_shop_placeholder_items.png" alt="Legacy shopping with generic products and pricing">
         </div>
-        <ul class="cs-list u-mt-14">
+        <ul class="cs-list u-mt-sm">
           <li>Users added items before selecting a provider</li>
           <li>Starting prices masked provider-dependent pricing</li>
           <li>Shopping didn't naturally transition to provider selection</li>
@@ -207,7 +188,7 @@
         <div class="cs-media cs-ar-4-3">
           <img src="legacy_provider_selection.png" alt="Legacy provider selection lacked clear guidance">
         </div>
-        <ul class="cs-list u-mt-14">
+        <ul class="cs-list u-mt-sm">
           <li>Add-to-cart feedback suggested completion</li>
           <li>CTA hierarchy favored continued browsing</li>
           <li>Provider selection wasn't presented as the next required step</li>
@@ -223,7 +204,7 @@
         <div class="cs-media cs-ar-4-3">
           <img src="legacy_precheckout.png" alt="Legacy flow with repeated checkout states">
         </div>
-        <ul class="cs-list u-mt-14">
+        <ul class="cs-list u-mt-sm">
           <li>Checkout and add-ons created repetitive loops</li>
           <li>Competing CTAs blurred the next step</li>
           <li>Users reached checkout before they were ready</li>
@@ -233,7 +214,7 @@
     </div>
 
     <h2 class="cs-h2 cs-h2--follow cs-h2--sm">The synthesis: a mental model mismatch</h2>
-    <p class="cs-lead u-mt-16">Underneath all four breakdowns was the same thing: travelers expected one kind of experience, and the marketplace actually works another way.</p>
+    <p class="cs-lead u-mt-sm">Underneath all four breakdowns was the same thing: travelers expected one kind of experience, and the marketplace actually works another way.</p>
 
     <div class="cs-diagram-grid">
       <div>
@@ -358,17 +339,17 @@
       <div class="cs-divider-grid cs-divider-grid--tight">
         <div>
           <div class="cs-label">SUPPORTING</div>
-          <div class="cs-text u-mb-6">Shopping &rarr; Add to cart</div>
+          <div class="cs-text u-mb-xs">Shopping &rarr; Add to cart</div>
           <div class="cs-stat-delta cs-stat-delta--dark">34.4% &rarr; 36.3% <span class="accent">(+5.5%)</span></div>
         </div>
         <div>
           <div class="cs-label">SUPPORTING</div>
-          <div class="cs-text u-mb-6">Add to cart &rarr; Cart view</div>
+          <div class="cs-text u-mb-xs">Add to cart &rarr; Cart view</div>
           <div class="cs-stat-delta cs-stat-delta--dark">71.1% &rarr; 86.2% <span class="accent">(+21%)</span></div>
         </div>
         <div>
           <div class="cs-label">NOT COMPARABLE *</div>
-          <div class="cs-text u-mb-6 u-color-faint">Cart &rarr; Checkout</div>
+          <div class="cs-text u-mb-xs u-color-faint">Cart &rarr; Checkout</div>
           <div class="cs-stat-delta cs-stat-delta--faint">66.1% &rarr; 47.8% (&minus;28%)</div>
         </div>
       </div>
@@ -388,7 +369,7 @@
       </div>
       <div>
         <h3 class="cs-h3">What this revealed about the system</h3>
-        <p class="cs-text u-mb-16">Longer term, the better structural fix is a <strong class="cs-text-emphasis">dual-entry model</strong> that supports both browse-first and provider-first journeys.</p>
+        <p class="cs-text u-mb-sm">Longer term, the better structural fix is a <strong class="cs-text-emphasis">dual-entry model</strong> that supports both browse-first and provider-first journeys.</p>
         <div class="cs-media cs-ar-16-10">
           <img src="design_dual-entry_model.png" alt="Dual-entry model diagram">
         </div>
@@ -396,23 +377,11 @@
     </div>
   </section>
 
-  <section class="contact">
-    <div class="container">
-      <div class="contact-head">
-        <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
-        <a href="/worklog#work" class="contact-link accent">All case studies &rarr;</a>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
-        <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" rel="noopener" class="contact-link">LinkedIn &#8599;</a>
-        <a href="/worklog/resume" class="contact-link">Resume &#8599;</a>
-      </div>
-      <div class="contact-footer">
-        <span>&copy; 2020&ndash;2026 vickywang.me</span>
-        <span>Vicky Wang &mdash; Product Designer</span>
-      </div>
-    </div>
-  </section>
+  <%- include(`${templatePath}/shared2026/footer`, {
+    footerVariant: 'case-study',
+    footerAllCaseStudiesHref: '/worklog',
+    footerResumeHref: '/worklog/resume'
+  }) %>
 
   <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
     <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>

@@ -62,6 +62,109 @@
 })();
 
 (function () {
+  var header = document.querySelector(".nav--detail");
+  if (!header) return;
+
+  var links = Array.from(header.querySelectorAll("[data-section-link]"));
+  var sectionLinks = links
+    .map(function (link) {
+      var id = link.getAttribute("href");
+      if (!id || id.charAt(0) !== "#") return null;
+
+      var section = document.getElementById(id.slice(1));
+      return section ? { link: link, section: section } : null;
+    })
+    .filter(Boolean);
+
+  if (!sectionLinks.length) return;
+
+  var ticking = false;
+
+  function setActiveLink(activeLink) {
+    links.forEach(function (link) {
+      var isActive = link === activeLink;
+      link.classList.toggle("is-active", isActive);
+      link.classList.toggle("muted", !isActive);
+
+      if (isActive) {
+        link.setAttribute("aria-current", "location");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  function updateActiveSection() {
+    var marker = header.offsetHeight + 32;
+    var active = sectionLinks[0];
+
+    sectionLinks.forEach(function (item) {
+      if (item.section.getBoundingClientRect().top <= marker) {
+        active = item;
+      }
+    });
+
+    setActiveLink(active.link);
+    ticking = false;
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(updateActiveSection);
+  }
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function () {
+      setActiveLink(link);
+    });
+  });
+
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate);
+})();
+
+(function () {
+  var header = document.querySelector(".nav--landing");
+  if (!header) return;
+
+  var links = Array.from(header.querySelectorAll("[data-landing-link]"));
+  if (!links.length) return;
+
+  function setActiveLink(activeLink) {
+    links.forEach(function (link) {
+      var isActive = link === activeLink;
+      link.classList.toggle("is-active", isActive);
+      link.classList.toggle("muted", !isActive);
+
+      if (isActive) {
+        link.setAttribute("aria-current", "location");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  function activateCurrentHash() {
+    if (!window.location.hash) return;
+
+    var matchingLink = links.find(function (link) {
+      return link.getAttribute("href") === window.location.hash;
+    });
+
+    if (matchingLink) setActiveLink(matchingLink);
+  }
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function () {
+      setActiveLink(link);
+    });
+  });
+
+  window.addEventListener("hashchange", activateCurrentHash);
+})();
+
+(function () {
   var modal = document.getElementById("wl-image-modal");
   if (!modal) return;
 

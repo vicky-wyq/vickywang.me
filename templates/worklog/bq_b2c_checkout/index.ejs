@@ -1,46 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-
-  <title>Reducing Checkout Friction After Renters Are Ready to Book — Vicky Wang</title>
-  <meta name="description" content="Resolving identity earlier and simplifying checkout so renters stay focused on completing their reservation.">
-  <meta name="robots" content="noindex,nofollow">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-  <link rel="stylesheet" href="../style.css">
-  <script src="../worklog.js" defer></script>
-</head>
+<%- include(`${templatePath}/shared2026/head`, {
+  headTitle: 'Reducing Checkout Friction After Renters Are Ready to Book — Vicky Wang',
+  headDescription: 'Resolving identity earlier and simplifying checkout so renters stay focused on completing their reservation.',
+  headRobots: 'noindex, follow',
+  headType: 'article',
+  headImage: 'https://vickywang.me/thumbnails/cs_checkout.png'
+}) %>
 
 <body>
 
-  <header class="nav nav--sticky">
-    <div class="container nav-inner">
-      <a href="/worklog" class="nav-history-back" data-page-back aria-label="Go back to previous page">&larr;</a>
-
-      <a href="/worklog" class="nav-brand">
-        <img src="../../web_images/photo_profile_avatar.png" alt="Vicky Wang">
-        <span>Vicky Wang</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="#problem" class="nav-link muted">Problem</a>
-        <a href="#insight" class="nav-link muted">Insight</a>
-        <a href="#design" class="nav-link muted">Design</a>
-        <a href="#impact" class="nav-link muted">Impact</a>
-      </nav>
-    </div>
-  </header>
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'detail',
+    headerHome: '/worklog',
+    headerAvatar: '../../web_images/photo_profile_avatar.png',
+    headerLinks: [
+      { href: '#problem', label: 'Problem', muted: true },
+      { href: '#insight', label: 'Insight', muted: true },
+      { href: '#design', label: 'Design', muted: true },
+      { href: '#impact', label: 'Impact', muted: true }
+    ]
+  }) %>
 
   <section class="cs-hero container cs-section--sm">
     <div class="cs-hero-meta">
@@ -85,44 +66,44 @@
     <h2 class="cs-h2">Checkout mixed order completion with everything else</h2>
     <p class="cs-lead">By the time users reach checkout, they are no longer exploring &mdash; they are trying to confirm the rental, resolve required logistics, pay, and know what happens next. The old checkout mixed that with <strong class="cs-text-emphasis">account creation, optional prompts, and editing paths</strong>, creating extra opportunities to pause, hit errors, or leave after users had already shown purchase intent.</p>
 
-    <h3 class="cs-h3 u-mt-clamp-md">Quantitative signals</h3>
+    <h3 class="cs-h3 u-mt-lg">Quantitative signals</h3>
     <div class="cs-two-col cs-two-col--tight">
       <div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="ga4_cross_platform.png" alt="GA4 cross-platform funnel comparison" data-modal-gallery="ga4-checkout">
         </div>
-        <div class="cs-label u-mt-8">Cross-platform comparison</div>
+        <div class="cs-label u-mt-xs">Cross-platform comparison</div>
       </div>
       <div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="ga4_detailed_breakdown.png" alt="GA4 detailed UX breakdown" data-modal-gallery="ga4-checkout">
         </div>
-        <div class="cs-label u-mt-8">Detailed UX breakdown</div>
+        <div class="cs-label u-mt-xs">Detailed UX breakdown</div>
       </div>
       <div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="ga4_mobile_app.png" alt="GA4 mobile app completion" data-modal-gallery="ga4-checkout">
         </div>
-        <div class="cs-label u-mt-8">Mobile app completion</div>
+        <div class="cs-label u-mt-xs">Mobile app completion</div>
       </div>
     </div>
 
     <div class="cs-breakdown-grid">
       <div class="cs-breakdown-card">
         <div class="cs-subhead">Mobile drops ~2&times; more than desktop</div>
-        <p class="cs-text">From begin_checkout &rarr; purchase, web completed at ~84%; mobile web at ~46%.</p>
+        <p class="cs-text u-mt-xs">From begin_checkout &rarr; purchase, web completed at ~84%; mobile web at ~46%.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-subhead">The largest drop happens before checkout begins</div>
-        <p class="cs-text">From add_to_cart &rarr; begin_checkout, ~49% continued on web, ~34% on mobile web &mdash; over 60% of mobile users abandoned after adding items.</p>
+        <p class="cs-text u-mt-xs">From add_to_cart &rarr; begin_checkout, ~49% continued on web, ~34% on mobile web &mdash; over 60% of mobile users abandoned after adding items.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-subhead">Once users entered checkout, later-stage completion was high</div>
-        <p class="cs-text">Among tracked web and mobile-web sessions, completion across payment and purchase steps was ~97&ndash;99% &mdash; friction was concentrated around entry, account state, and early commitment moments.</p>
+        <p class="cs-text u-mt-xs">Among tracked web and mobile-web sessions, completion across payment and purchase steps was ~97&ndash;99% &mdash; friction was concentrated around entry, account state, and early commitment moments.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-subhead">Mobile app tracking is unreliable</div>
-        <p class="cs-text">Purchase events exceeded checkout-initiation events in the app, indicating missing funnel instrumentation &mdash; one reason the app was excluded from scope.</p>
+        <p class="cs-text u-mt-xs">Purchase events exceeded checkout-initiation events in the app, indicating missing funnel instrumentation &mdash; one reason the app was excluded from scope.</p>
       </div>
     </div>
 
@@ -130,8 +111,8 @@
       <p>Checkout was not the largest funnel leak &mdash; but it was a <span class="accent">high-value moment</span> where avoidable friction could lose users who were already ready to book.</p>
     </div>
 
-    <h3 class="cs-h3 u-mt-clamp-md">Qualitative signals</h3>
-    <p class="cs-lead u-mt-12">Session recordings and walkthroughs of the legacy flow surfaced four recurring patterns.</p>
+    <h3 class="cs-h3 u-mt-lg">Qualitative signals</h3>
+    <p class="cs-lead u-mt-sm">Session recordings and walkthroughs of the legacy flow surfaced four recurring patterns.</p>
 
     <div class="cs-breakdown-grid">
       <div class="cs-breakdown-card">
@@ -139,28 +120,28 @@
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="qual1.png" alt="Links pulling users out of checkout" data-modal-gallery="checkout-qual">
         </div>
-        <p class="cs-text u-mt-12">Links back to cart, trip, and supporting pages pulled users out of checkout and back into decision mode.</p>
+        <p class="cs-text u-mt-sm">Links back to cart, trip, and supporting pages pulled users out of checkout and back into decision mode.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-subhead">B &middot; Mobile review friction</div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="qual2.png" alt="Long scroll and persistent UI on mobile" data-modal-gallery="checkout-qual">
         </div>
-        <p class="cs-text u-mt-12">Long scroll, persistent UI, and a heavy footer made reviewing the order harder on mobile.</p>
+        <p class="cs-text u-mt-sm">Long scroll, persistent UI, and a heavy footer made reviewing the order harder on mobile.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-subhead">C &middot; Flow interruptions</div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="qual3.png" alt="Login, payment, and password errors" data-modal-gallery="checkout-qual">
         </div>
-        <p class="cs-text u-mt-12">Login, payment, password, and iframe errors interrupted the flow and broke confidence at the worst moment.</p>
+        <p class="cs-text u-mt-sm">Login, payment, password, and iframe errors interrupted the flow and broke confidence at the worst moment.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-subhead">D &middot; Completion uncertainty</div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="qual4.png" alt="Repeated back-and-forth between checkout states" data-modal-gallery="checkout-qual">
         </div>
-        <p class="cs-text u-mt-12">Repeated back-and-forth between checkout states suggested users were still deciding instead of completing.</p>
+        <p class="cs-text u-mt-sm">Repeated back-and-forth between checkout states suggested users were still deciding instead of completing.</p>
       </div>
     </div>
   </section>
@@ -203,49 +184,49 @@
       </div>
     </div>
 
-    <h3 class="cs-h3 u-mt-clamp-lg">The old checkout mixed three jobs</h3>
-    <p class="cs-text u-max-w-68ch u-mt-14">The legacy flow combined <strong class="cs-text-emphasis">identity and account state</strong>, <strong class="cs-text-emphasis">rental completion</strong>, and <strong class="cs-text-emphasis">extra business and user data</strong> in the same five-step flow.</p>
+    <h3 class="cs-h3 u-mt-xl">The old checkout mixed three jobs</h3>
+    <p class="cs-text u-max-w-68ch u-mt-sm">The legacy flow combined <strong class="cs-text-emphasis">identity and account state</strong>, <strong class="cs-text-emphasis">rental completion</strong>, and <strong class="cs-text-emphasis">extra business and user data</strong> in the same five-step flow.</p>
 
     <div class="cs-two-col cs-two-col--steps">
       <div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="process1.png" alt="Step 0 — guest checkout or log in" data-modal-gallery="checkout-process">
         </div>
-        <div class="cs-label u-mt-10">STEP 0</div>
-        <p class="cs-text u-fs-13-5">Guest checkout or log in</p>
+        <div class="cs-label u-mt-sm">STEP 0</div>
+        <p class="cs-text u-fs-sm">Guest checkout or log in</p>
       </div>
       <div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="process2.png" alt="Step 1 — customer information" data-modal-gallery="checkout-process">
         </div>
-        <div class="cs-label u-mt-10">STEP 1</div>
-        <p class="cs-text u-fs-13-5">Customer information</p>
+        <div class="cs-label u-mt-sm">STEP 1</div>
+        <p class="cs-text u-fs-sm">Customer information</p>
       </div>
       <div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="process3.png" alt="Step 2 — delivery and pickup details" data-modal-gallery="checkout-process">
         </div>
-        <div class="cs-label u-mt-10">STEP 2</div>
-        <p class="cs-text u-fs-13-5">Delivery/pickup details and notes</p>
+        <div class="cs-label u-mt-sm">STEP 2</div>
+        <p class="cs-text u-fs-sm">Delivery/pickup details and notes</p>
       </div>
       <div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="process4.png" alt="Step 3 — survey and additional notes" data-modal-gallery="checkout-process">
         </div>
-        <div class="cs-label u-mt-10">STEP 3</div>
-        <p class="cs-text u-fs-13-5">Survey and additional notes</p>
+        <div class="cs-label u-mt-sm">STEP 3</div>
+        <p class="cs-text u-fs-sm">Survey and additional notes</p>
       </div>
       <div>
         <div class="cs-media cs-ar-4-3">
           <img class="modal-target" src="process5.png" alt="Step 4 — payment, tip, and account creation" data-modal-gallery="checkout-process">
         </div>
-        <div class="cs-label u-mt-10">STEP 4</div>
-        <p class="cs-text u-fs-13-5">Payment, tip, cancellation option, rental responsibility, and account creation</p>
+        <div class="cs-label u-mt-sm">STEP 4</div>
+        <p class="cs-text u-fs-sm">Payment, tip, cancellation option, rental responsibility, and account creation</p>
       </div>
     </div>
 
-    <h3 class="cs-h3 u-mt-clamp-lg">Design strategy: separate required checkout tasks from everything else</h3>
-    <p class="cs-text u-max-w-68ch u-mt-14">Each job got its own place in the flow, driven by what users were actually asking at the commitment moment.</p>
+    <h3 class="cs-h3 u-mt-xl">Design strategy: separate required checkout tasks from everything else</h3>
+    <p class="cs-text u-max-w-68ch u-mt-sm">Each job got its own place in the flow, driven by what users were actually asking at the commitment moment.</p>
 
     <div class="cs-breakdown-grid">
       <div class="cs-breakdown-card">
@@ -308,7 +289,7 @@
 
       <div>
         <div class="cs-solution-head">
-          <div class="cs-kicker u-mb-12">CROSS-PLATFORM ADAPTATION</div>
+          <div class="cs-kicker u-mb-sm">CROSS-PLATFORM ADAPTATION</div>
           <h3 class="u-mb-0">Collapse without hiding</h3>
           <p>On mobile, completed sections collapsed to reduce scrolling while preserving review and access to the final action, with a sticky completion CTA in the review state.</p>
         </div>
@@ -366,23 +347,11 @@
     </div>
   </section>
 
-  <section class="contact">
-    <div class="container">
-      <div class="contact-head">
-        <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
-        <a href="/worklog#work" class="contact-link accent">All case studies &rarr;</a>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
-        <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" rel="noopener" class="contact-link">LinkedIn &#8599;</a>
-        <a href="/worklog/resume" class="contact-link">Resume &#8599;</a>
-      </div>
-      <div class="contact-footer">
-        <span>&copy; 2020&ndash;2026 vickywang.me</span>
-        <span>Vicky Wang &mdash; Product Designer</span>
-      </div>
-    </div>
-  </section>
+  <%- include(`${templatePath}/shared2026/footer`, {
+    footerVariant: 'case-study',
+    footerAllCaseStudiesHref: '/worklog',
+    footerResumeHref: '/worklog/resume'
+  }) %>
 
   <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
     <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>

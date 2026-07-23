@@ -2,49 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-
-  <title>Resume — Vicky Wang, Senior UX / Product Designer</title>
-  <meta name="description" content="Senior UX / Product Designer — marketplace & platform UX for providers and travelers at scale.">
-  <meta name="robots" content="noindex,nofollow">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-  <link rel="stylesheet" href="../worklog/style.css">
-  <script src="../worklog/worklog.js" defer></script>
-</head>
+<%- include(`${templatePath}/shared2026/head`, {
+  headTitle: 'Resume — Vicky Wang, Senior UX / Product Designer',
+  headDescription: 'Senior UX / Product Designer — marketplace and platform UX for providers and travelers at scale.',
+  headRobots: typeof publicLanding !== 'undefined' && publicLanding ? 'index, follow' : 'noindex, follow',
+  headCanonical: typeof publicLanding !== 'undefined' && publicLanding ? 'https://vickywang.me/resume2026/' : null
+}) %>
 
 <body>
 
-  <header class="nav nav--sticky">
-    <div class="container nav-inner">
-      <a
-        href="../"
-        class="nav-history-back"
-        data-page-back
-        aria-label="Go back to previous page"
-      >&larr;</a>
-
-      <a href="../" class="nav-brand">
-        <img src="../web_images/photo_profile_avatar.png" alt="Vicky Wang">
-        <span>Vicky Wang</span>
-      </a>
-
-      <nav class="nav-links">
-
-        <a href="#contact" class="nav-link muted">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'detail',
+    headerHome: '../',
+    headerAvatar: '../web_images/photo_profile_avatar.png',
+    headerLinks: [
+      { href: '#contact', label: 'Contact', muted: true }
+    ]
+  }) %>
 
   <section class="resume-hero container">
     <div class="resume-hero-row">
@@ -70,15 +44,15 @@
         <ul class="resume-focus-list">
           <li>
             <span class="resume-focus-term">Simplify</span>
-            <span class="resume-focus-desc">Untangle complex workflows and system dependencies</span>
+            <span class="resume-focus-desc">Make the system carry the complexity, not the user.</span>
           </li>
           <li>
             <span class="resume-focus-term">Align</span>
-            <span class="resume-focus-desc">Balance user needs, business constraints, and engineering realities</span>
+            <span class="resume-focus-desc">Connect user needs, business goals, and technical constraints.</span>
           </li>
           <li>
-            <span class="resume-focus-term">Measure</span>
-            <span class="resume-focus-desc">Use behavioral data, task testing, and operational outcomes</span>
+            <span class="resume-focus-term">Validate</span>
+            <span class="resume-focus-desc">Test decisions through behavior, usability, and outcomes.</span>
           </li>
         </ul>
       </div>
@@ -162,16 +136,7 @@
 
   </section>
 
-  <section class="resume-cta" id="contact">
-    <div class="container resume-cta-inner">
-      <h2>Building something complex?</h2>
-      <div class="resume-cta-links">
-        
-        <a href="mailto:vickyw.design@gmail.com">Email me &rarr;</a>
-        <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
-      </div>
-    </div>
-  </section>
+  <%- include(`${templatePath}/shared2026/footer_resume`) %>
 
 </body>
 

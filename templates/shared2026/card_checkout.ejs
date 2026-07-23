@@ -1,0 +1,26 @@
+<article class="case">
+  <% if (cardGated) { %>
+    <div class="case-media">
+      <img src="../project_images/cover_bq_checkout1.png" alt="">
+    </div>
+  <% } else { %>
+    <a href="<%= cardHref %>" class="case-media">
+      <img src="../project_images/cover_bq_checkout1.png" alt="">
+    </a>
+  <% } %>
+  <div class="case-tag-group">
+    <span class="case-index">&#8470; <%= cardNumber %> &middot; Q2 2026</span>
+    <span class="tag">DEMAND SIDE &mdash; CHECKOUT</span>
+  </div>
+  <h3>Reducing Checkout Friction After Renters Are Ready to Book</h3>
+  <p>Resolved identity earlier and simplified checkout so renters stayed focused on completing their reservation.</p>
+  <div class="case-outcome"><span class="label">Key improvements &mdash;</span> earlier identity confirmation &middot; fewer purchase blockers &middot; simpler checkout flow</div>
+  <% if (cardGated) { %>
+    <div class="case-cta">
+      <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; <%= cardNumber %>" data-case-title="Reducing Checkout Friction After Renters Are Ready to Book">Read case study &rarr;</a>
+      <span class="private-badge">PRIVATE</span>
+    </div>
+  <% } else { %>
+    <a href="<%= cardHref %>" class="case-link">Read case study &rarr;</a>
+  <% } %>
+</article>

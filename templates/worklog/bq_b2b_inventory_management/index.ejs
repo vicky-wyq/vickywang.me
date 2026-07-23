@@ -1,46 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-
-  <title>Reducing Operational Friction to Unlock Marketplace Supply — Vicky Wang</title>
-  <meta name="description" content="Replaced a multi-step inventory hierarchy with a persistent filter workspace, bringing listed and unlisted gear into one continuous management flow.">
-  <meta name="robots" content="noindex,nofollow">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-  <link rel="stylesheet" href="../style.css">
-  <script src="../worklog.js" defer></script>
-</head>
+<%- include(`${templatePath}/shared2026/head`, {
+  headTitle: 'Reducing Operational Friction to Unlock Marketplace Supply — Vicky Wang',
+  headDescription: 'Replaced a multi-step inventory hierarchy with a persistent filter workspace, bringing listed and unlisted gear into one continuous management flow.',
+  headRobots: 'noindex, follow',
+  headType: 'article',
+  headImage: 'https://vickywang.me/thumbnails/cs_inventory.png'
+}) %>
 
 <body>
 
-  <header class="nav nav--sticky">
-    <div class="container nav-inner">
-      <a href="/worklog" class="nav-history-back" data-page-back aria-label="Go back to previous page">&larr;</a>
-
-      <a href="/worklog" class="nav-brand">
-        <img src="../../web_images/photo_profile_avatar.png" alt="Vicky Wang">
-        <span>Vicky Wang</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="#problem" class="nav-link muted">Problem</a>
-        <a href="#insight" class="nav-link muted">Insight</a>
-        <a href="#design" class="nav-link muted">Design</a>
-        <a href="#impact" class="nav-link muted">Impact</a>
-      </nav>
-    </div>
-  </header>
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'detail',
+    headerHome: '/worklog',
+    headerAvatar: '../../web_images/photo_profile_avatar.png',
+    headerLinks: [
+      { href: '#problem', label: 'Problem', muted: true },
+      { href: '#insight', label: 'Insight', muted: true },
+      { href: '#design', label: 'Design', muted: true },
+      { href: '#impact', label: 'Impact', muted: true }
+    ]
+  }) %>
 
   <section class="cs-hero container cs-section--sm">
     <div class="cs-hero-meta">
@@ -83,28 +64,29 @@
   <section id="problem" class="cs-section container">
     <div class="cs-kicker">01 &mdash; PROBLEM</div>
     <h2 class="cs-h2">Managing one type of gear meant navigating several disconnected views</h2>
-    <p class="cs-lead">BabyQuip is a two-sided rental marketplace where independent providers manage their own gear, pricing, availability, delivery, setup, and customer coordination. As the marketplace expanded into new gear categories, the business needed providers to maintain larger, more complete inventories &mdash; but new categories were often underlisted, limiting what customers could find and rent.</p>
+    <p class="cs-lead">BabyQuip is a two-sided rental marketplace with <strong class="cs-text-emphasis">3,000+ independent providers</strong> and more than <strong class="cs-text-emphasis">450,000 completed reservations</strong>. Providers manage their own gear, pricing, availability, delivery, setup, and customer coordination.</p>
+    <p class="cs-lead">As the marketplace expanded into new gear categories, the business needed providers to maintain larger, more complete inventories &mdash; but new categories were often underlisted, limiting what customers could find and rent.</p>
     <p class="cs-lead">Internal marketplace data showed the <strong class="cs-text-emphasis">top 10% of providers accounted for 46.3% of supply</strong>. These providers managed the largest catalogs, so small inefficiencies in inventory maintenance compounded quickly.</p>
 
     <div class="cs-two-col">
       <div class="cs-item-dark">
         <div class="cs-label">THE ORIGINAL REQUEST</div>
         <p class="cs-callout-quote">&ldquo;Add a Discovery tab under Manage Gear so providers can find unlisted items and newer categories.&rdquo;</p>
-        <p class="cs-text u-mt-12">The request addressed visibility. But after reviewing the existing workflow, I found visibility was only part of the problem.</p>
+        <p class="cs-text u-mt-sm">The request addressed visibility. But after reviewing the existing workflow, I found visibility was only part of the problem.</p>
       </div>
       <div class="cs-item-dark">
         <div class="cs-label">THE LEGACY MODEL</div>
-        <div class="cs-flow-line">Category <span class="accent">&rarr;</span> Subcategory <span class="accent">&rarr;</span> Product type <span class="accent">&rarr;</span> Item list</div>
-        <p class="cs-text u-mt-12">Reaching one inventory type required four or more navigation steps. Managing another type meant backing out and repeating the process.</p>
+        <div class="cs-flow-line">Category <span class="accent">&rarr;</span> Subcategory <span class="accent">&rarr;</span> Product type <span class="accent">&rarr;</span> Item list <span class="accent">&rarr;</span> View All</div>
+        <p class="cs-text u-mt-sm">Reaching <strong class="cs-text-emphasis">one inventory type</strong> required <strong class="cs-text-emphasis">four or more navigation steps</strong>. Managing another type meant backing out and repeating the process.</p>
       </div>
     </div>
-    <div class="u-mt-clamp-sm">
+    <div class="u-mt-md">
       <div class="">
         <img src="diagram_legacy_workflow.svg" alt="Legacy workflow: hard to scan inventory, 4&ndash;5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
       </div>
     </div>
 
-    <div class="u-mt-clamp-sm">
+    <div class="u-mt-md">
       <div class="cs-media modal-target cs-ar-flow">
         <img src="flow_im_before.png" alt="Legacy workflow: hard to scan inventory, 4&ndash;5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
       </div>
@@ -114,26 +96,26 @@
     <div class="cs-breakdown-grid">
       <div class="cs-breakdown-card">
         <div class="cs-breakdown-tag">A &middot; Fragmentation</div>
-        <p class="cs-text">Inventory was fragmented across separate screens.</p>
+        <p class="cs-text u-mt-xs">Inventory was fragmented across separate screens.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-breakdown-tag">B &middot; Restart cost</div>
-        <p class="cs-text">Changing categories required restarting the navigation flow.</p>
+        <p class="cs-text u-mt-xs">Changing categories required restarting the navigation flow.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-breakdown-tag">C &middot; Lost context</div>
-        <p class="cs-text">Filters and context did not persist between views.</p>
+        <p class="cs-text u-mt-xs">Filters and context did not persist between views.</p>
       </div>
       <div class="cs-breakdown-card">
         <div class="cs-breakdown-tag">D &middot; Split paths</div>
-        <p class="cs-text">Listed and unlisted gear lived in separate management paths.</p>
+        <p class="cs-text u-mt-xs">Listed and unlisted gear lived in separate management paths.</p>
       </div>
     </div>
 
     <div class="cs-callout-box background-white">
       <div class="cs-callout-label">BEFORE</div>
       <div class="cs-flow-line">Navigate &rarr; drill down &rarr; find gear &rarr; edit &rarr; go back &rarr; repeat</div>
-      <p class="u-mt-10">For providers with large catalogs, routine maintenance became a repetitive cycle of drilling down, editing an item, navigating back, and rebuilding context.</p>
+      <p class="u-mt-sm">For providers with large catalogs, routine maintenance became a repetitive cycle of drilling down, editing an item, navigating back, and rebuilding context.</p>
     </div>
 
     <div class="cs-pullquote">
@@ -154,47 +136,58 @@
       </div>
       <div class="cs-callout-box cs-callout-box--accent cs-callout-box--paired u-mt-0">
         <div class="cs-callout-label cs-callout-label--accent">REFRAMED PROBLEM</div>
-        <p class="cs-callout-quote">Make the entire inventory easier to scan, switch, and update &mdash; without forcing providers to repeatedly leave context.</p>
+        <p class="cs-callout-quote">Make the entire inventory easier to scan, switch, and update without forcing providers to repeatedly leave context.</p>
       </div>
     </div>
 
-    <h3 class="cs-h3 u-mt-clamp-md">Design principles</h3>
+    <h3 class="cs-h3 u-mt-lg">Design principles</h3>
     <div class="cs-journey-grid">
       <div class="cs-journey-item">
-        <div class="cs-journey-num">1</div>
-        <div class="cs-journey-label">Keep providers within one continuous workspace</div>
+        <div class="cs-journey-num-dark">1</div>
+        <div class="u-mt-xs">Keep providers within one continuous workspace</div>
       </div>
       <div class="cs-journey-item">
-        <div class="cs-journey-num">2</div>
-        <div class="cs-journey-label">Replace page changes with lightweight filtering</div>
+        <div class="cs-journey-num-dark">2</div>
+        <div class="u-mt-xs">Replace page changes with lightweight filtering</div>
       </div>
       <div class="cs-journey-item">
-        <div class="cs-journey-num">3</div>
-        <div class="cs-journey-label">Make listed and unlisted inventory visible during routine tasks</div>
+        <div class="cs-journey-num-dark">3</div>
+        <div class="u-mt-xs">Make listed and unlisted inventory visible during routine tasks</div>
       </div>
       <div class="cs-journey-item">
-        <div class="cs-journey-num">4</div>
-        <div class="cs-journey-label">Prioritize speed and context over feature density</div>
+        <div class="cs-journey-num-dark">4</div>
+        <div class="u-mt-xs">Prioritize speed and context over feature density</div>
       </div>
     </div>
 
     <h2 class="cs-h2 cs-h2--follow cs-h2--sm">How much discovery could be added without making management heavier?</h2>
-    <p class="cs-lead u-mt-16">I explored several ways to surface inventory opportunities while supporting routine maintenance.</p>
+    <p class="cs-lead u-mt-sm">I explored several ways to surface inventory opportunities while supporting routine maintenance.</p>
 
     <div class="cs-breakdown-grid">
       <div class="cs-breakdown-card">
+        <div class="modal-target" data-modal-gallery="directions">
+          <img src="place holder for wireframe" alt="x">
+        </div>
+
+
         <div class="cs-breakdown-tag">DIRECTION 1 &middot; DASHBOARD DISCOVERY</div>
-        <p class="cs-text u-mt-12">A summary area highlighting underlisted categories, recently added inventory, and marketplace opportunities.</p>
+        <p class="cs-text u-mt-sm">A summary area highlighting underlisted categories, recently added inventory, and marketplace opportunities.</p>
         <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> made inventory gaps and business signals more visible.<br><strong class="cs-text-emphasis">Tradeoff:</strong> added another layer to scan before primary tasks; duplicated dashboard behavior.</p>
       </div>
       <div class="cs-breakdown-card">
+                <div class="modal-target" data-modal-gallery="directions">
+          <img src="place holder for wireframe" alt="x">
+        </div>
         <div class="cs-breakdown-tag">DIRECTION 2 &middot; IN-CONTEXT SHORTCUTS</div>
-        <p class="cs-text u-mt-12">Contextual modules surfacing seasonal, underused, or newly available categories within the management page.</p>
+        <p class="cs-text u-mt-sm">Contextual modules surfacing seasonal, underused, or newly available categories within the management page.</p>
         <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> placed discovery closer to the existing workflow.<br><strong class="cs-text-emphasis">Tradeoff:</strong> increased density and competed with the primary task.</p>
       </div>
       <div class="cs-breakdown-card">
+                <div class="modal-target" data-modal-gallery="directions">
+          <img src="place holder for wireframe" alt="x">
+        </div>
         <div class="cs-breakdown-tag">DIRECTION 3 &middot; SORTING &amp; PRIORITIZATION</div>
-        <p class="cs-text u-mt-12">Sorting gear by performance, recency, listing status, or maintenance priority.</p>
+        <p class="cs-text u-mt-sm">Sorting gear by performance, recency, listing status, or maintenance priority.</p>
         <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> helped providers decide what to update first.<br><strong class="cs-text-emphasis">Tradeoff:</strong> more controls and decisions in an already difficult workflow.</p>
       </div>
     </div>
@@ -283,21 +276,32 @@
           <img src="flow_im_before.png" alt="Legacy inventory workflow with multiple navigation steps before reaching the item list">
         </div>
 
-        <div class="cs-breakdown-tag">Maintain inventory without rebuilding context</div>
-        <p class="cs-text cs-comparison-line cs-comparison-line--first"><strong class="cs-text-emphasis">Before:</strong> updating inventory required moving between separate views and repeating the same category-selection sequence.</p>
-        <p class="cs-text cs-comparison-line"><strong class="cs-text-emphasis">After:</strong> providers could browse, filter, and update inventory within one continuous workspace.</p>
+
+        <p class="cs-text cs-comparison-line cs-comparison-line--first"><strong class="cs-text-emphasis">Before:</strong>  Maintain inventory restarting each time</p>
+
+        <ul class="cs-list">
+          <li>updating inventory required moving between separate views and repeating the same category-selection sequence.</li>
+          <li>unlisted inventory sat in a separate flow, making it easy to overlook.</li>
+        </ul>
+
       </div>
       <div class="cs-breakdown-card">
         <div class="modal-target" data-modal-gallery="flow-comparison">
-          <img src="diagram_redesigned_workflow.svg" alt="Legacy workflow: hard to scan inventory, 4–5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
+          <img src="diagram_redesigned_workflow.svg" alt="Redesigned inventory workflow with one persistent workspace for filtering, scanning, and updating gear">
         </div>
 
         <div class="modal-target" data-modal-gallery="flow-comparison">
           <img src="flow_im_after.png" alt="Redesigned inventory workflow with one persistent workspace for filtering, scanning, and updating gear">
         </div>
-        <div class="cs-breakdown-tag">Discover unlisted gear during routine management</div>
-        <p class="cs-text u-mt-12"><strong class="cs-text-emphasis">Before:</strong> unlisted inventory sat in a separate flow, making it easy to overlook.</p>
-        <p class="cs-text u-mt-10"><strong class="cs-text-emphasis">After:</strong> listed and unlisted gear appeared within the same surface, making missing inventory easier to find and activate.</p>
+
+
+        <p class="cs-text u-mt-sm"><strong class="cs-text-emphasis">After:</strong> Discover unlisted gear during routine management</p>
+        <ul class="cs-list">
+          <li>Maintain inventory without rebuilding context</li>
+          <li>Discover unlisted gear during routine management
+</li>
+
+        </ul>
       </div>
     </div>
   </section>
@@ -330,14 +334,14 @@
       </div>
       <div>
         <div class="cs-subhead">Marketplace relevance</div>
-        <p class="cs-text">The redesign did not directly prove supply increased after launch. It reduced one cost of maintaining and expanding supply &mdash; the time providers spend managing inventory &mdash; supporting BabyQuip's broader goal of category depth and customer choice without proportional workflow complexity.</p>
+        <p class="cs-text u-mt-xs">The redesign did not directly prove supply increased after launch. It reduced one cost of maintaining and expanding supply &mdash; the time providers spend managing inventory &mdash; supporting BabyQuip's broader goal of category depth and customer choice without proportional workflow complexity.</p>
       </div>
     </div>
 
     <div class="cs-two-col cs-block-divider">
       <div>
         <div class="cs-label">WHAT THE REDESIGN DID NOT SOLVE</div>
-        <p class="cs-text">Inventory tooling was only one factor influencing supply &mdash; providers still needed sufficient demand and business value to justify purchasing and maintaining additional gear. Familiar category shortcuts were retained to reduce disruption for existing providers, and advanced prioritization and recommendation features were deferred due to scope and timeline constraints.</p>
+        <p class="cs-text u-mt-xs">Inventory tooling was only one factor influencing supply &mdash; providers still needed sufficient demand and business value to justify purchasing and maintaining additional gear. Familiar category shortcuts were retained to reduce disruption for existing providers, and advanced prioritization and recommendation features were deferred due to scope and timeline constraints.</p>
       </div>
       <div>
         <div class="cs-label">FUTURE OPPORTUNITIES</div>
@@ -356,23 +360,11 @@
     </div>
   </section>
 
-  <section class="contact">
-    <div class="container">
-      <div class="contact-head">
-        <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
-        <a href="/worklog#work" class="contact-link accent">All case studies &rarr;</a>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
-        <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" rel="noopener" class="contact-link">LinkedIn &#8599;</a>
-        <a href="/worklog/resume" class="contact-link">Resume &#8599;</a>
-      </div>
-      <div class="contact-footer">
-        <span>&copy; 2020&ndash;2026 vickywang.me</span>
-        <span>Vicky Wang &mdash; Product Designer</span>
-      </div>
-    </div>
-  </section>
+  <%- include(`${templatePath}/shared2026/footer`, {
+    footerVariant: 'case-study',
+    footerAllCaseStudiesHref: '/worklog',
+    footerResumeHref: '/worklog/resume'
+  }) %>
 
   <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
     <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>

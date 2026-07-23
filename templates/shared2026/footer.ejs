@@ -1,0 +1,27 @@
+<%
+  const resolvedFooterVariant = typeof footerVariant !== 'undefined' ? footerVariant : 'landing';
+  const resolvedFooterAllCaseStudies = typeof footerAllCaseStudiesHref !== 'undefined' ? footerAllCaseStudiesHref : null;
+  const resolvedFooterResume = typeof footerResumeHref !== 'undefined' ? footerResumeHref : '/resume2026';
+%>
+<section class="contact" id="contact">
+  <div class="container">
+    <% if (resolvedFooterVariant === 'case-study') { %>
+      <div class="contact-head">
+        <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
+        <a href="<%= resolvedFooterAllCaseStudies %>" class="contact-link accent">All case studies &rarr;</a>
+      </div>
+    <% } else { %>
+      <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
+    <% } %>
+
+    <div class="contact-links">
+      <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
+      <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" rel="noopener" class="contact-link">LinkedIn &#8599;</a>
+      <a href="<%= resolvedFooterResume %>" class="contact-link">Resume &#8599;</a>
+    </div>
+    <div class="contact-footer">
+      <span>&copy; 2020&ndash;2026 vickywang.me</span>
+      <span>Vicky Wang &mdash; Product Designer</span>
+    </div>
+  </div>
+</section>

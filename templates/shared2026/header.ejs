@@ -1,0 +1,35 @@
+<%
+  const resolvedHeaderVariant = typeof headerVariant !== 'undefined' ? headerVariant : 'landing';
+  const resolvedHeaderHome = typeof headerHome !== 'undefined' ? headerHome : '/';
+  const resolvedHeaderAvatar = typeof headerAvatar !== 'undefined' ? headerAvatar : '../web_images/photo_profile_avatar.png';
+  const resolvedHeaderLinks = typeof headerLinks !== 'undefined' ? headerLinks : [];
+  const resolvedHeaderSticky = typeof headerSticky !== 'undefined' ? headerSticky : true;
+  const resolvedHeaderResume = typeof headerResume !== 'undefined' ? headerResume : '/resume2026';
+%>
+<header class="nav nav--<%= resolvedHeaderVariant %><%= resolvedHeaderSticky ? ' nav--sticky' : '' %>">
+  <div class="container nav-inner">
+    <% if (resolvedHeaderVariant === 'detail') { %>
+      <a href="<%= resolvedHeaderHome %>" class="nav-history-back" data-page-back aria-label="Go back to previous page">&larr;</a>
+    <% } %>
+
+    <a href="<%= resolvedHeaderHome %>" class="nav-brand">
+      <img src="<%= resolvedHeaderAvatar %>" alt="Vicky Wang">
+      <span>Vicky Wang</span>
+    </a>
+
+    <nav class="nav-links" aria-label="<%= resolvedHeaderVariant === 'detail' ? 'Case study sections' : 'Primary' %>">
+      <% resolvedHeaderLinks.forEach(function (link) { %>
+        <a
+          href="<%= link.href %>"
+          class="nav-link<%= resolvedHeaderVariant === 'detail' ? ' muted' : (link.muted ? ' muted' : '') %>"
+          <% if (resolvedHeaderVariant === 'detail') { %>data-section-link<% } %>
+          <% if (resolvedHeaderVariant === 'landing') { %>data-landing-link<% } %>
+        ><%= link.label %></a>
+      <% }); %>
+
+      <% if (resolvedHeaderVariant === 'landing' && resolvedHeaderResume) { %>
+        <a href="<%= resolvedHeaderResume %>" class="nav-cta">Resume <span aria-hidden="true">&nearr;</span><span class="sr-only">, opens resume page</span></a>
+      <% } %>
+    </nav>
+  </div>
+</header>

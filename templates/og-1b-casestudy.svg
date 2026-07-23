@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f6f6f3"></rect>
+  <text x="76" y="110" font-family="Newsreader, Georgia, serif" font-style="italic" font-size="26" fill="#1a1a18">Vicky Wang</text>
+  <text x="1124" y="110" text-anchor="end" font-family="Space Mono, monospace" font-size="15" letter-spacing="2.4" fill="#8a8a82">CASE STUDY</text>
+  <rect x="76" y="278" width="352" height="34" rx="17" fill="#e6efe4" stroke="#2f6b41" stroke-opacity="0.3"></rect>
+  <text x="94" y="300" font-family="Space Mono, monospace" font-size="14" letter-spacing="2" fill="#2f6b41">SUPPLY SIDE — PARTNER PORTAL</text>
+  <text x="448" y="300" font-family="Space Mono, monospace" font-size="15" fill="#8a8a82">No. 1 · Q3 2025</text>
+  <text x="76" y="382" font-family="Newsreader, Georgia, serif" font-size="60" letter-spacing="-0.5" fill="#1a1a18">Reducing Operational Friction</text>
+  <text x="76" y="448" font-family="Newsreader, Georgia, serif" font-size="60" letter-spacing="-0.5" fill="#1a1a18">to Unlock Marketplace Supply</text>
+  <line x1="76" y1="540" x2="1124" y2="540" stroke="#1a1a18" stroke-opacity="0.12"></line>
+  <text x="76" y="574" font-family="Space Mono, monospace" font-size="15" fill="#4a4a45">Impact — <tspan fill="#2f6b41">~3×</tspan> faster inventory editing</text>
+  <text x="1124" y="574" text-anchor="end" font-family="Space Mono, monospace" font-size="15" letter-spacing="2.4" fill="#1a1a18">VICKYWANG.ME</text>
+</svg>

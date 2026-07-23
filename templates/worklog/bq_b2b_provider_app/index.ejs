@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include(`${templatePath}/shared2026/head`, {
+  headTitle: 'Turning a Desktop Portal into a Mobile Operating Layer — Vicky Wang',
+  headDescription: "Defined BabyQuip's first provider app around weekly planning, reservation context, and time-sensitive work — a focused mobile V1 built by reorganizing capabilities the platform already owned.",
+  headRobots: 'noindex, follow',
+  headType: 'article',
+  headImage: 'https://vickywang.me/thumbnails/cs_provider_app.png'
+}) %>
+
+<body>
+
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'detail',
+    headerHome: '/worklog',
+    headerAvatar: '../../web_images/photo_profile_avatar.png',
+    headerLinks: [
+      { href: '#problem', label: 'Problem', muted: true },
+      { href: '#research', label: 'Research', muted: true },
+      { href: '#architecture', label: 'Architecture', muted: true },
+      { href: '#design', label: 'Design', muted: true },
+      { href: '#impact', label: 'Impact', muted: true }
+    ]
+  }) %>
+
+  <section class="cs-hero container cs-section--sm">
+    <div class="cs-hero-meta">
+      <span class="case-index">&#8470; 4 &middot; Q3 2026 &middot; BabyQuip</span>
+      <span class="tag">SUPPLY SIDE &mdash; PROVIDER MOBILE APP</span>
+    </div>
+    <h1 class="cs-h2 cs-h2--display-wide">Turning a Desktop Portal into a Mobile Operating Layer</h1>
+    <p class="cs-hero-sub cs-hero-sub--wide">Defined BabyQuip&rsquo;s first provider app around weekly planning, reservation context, and time-sensitive work &mdash; a focused mobile V1 built by reorganizing capabilities the platform already owned.</p>
+
+    <div class="cs-divider-grid cs-divider-grid--hero">
+      <div>
+        <div class="cs-label">0&rarr;1 PROVIDER PRODUCT</div>
+        <div class="cs-stat-value--sm">1 st <span class="cs-stat-annotation--sm">provider mobile app</span></div>
+        <div class="cs-stat-label">Defined the product role, Phase 1 boundary, information architecture, and core mobile workflows</div>
+      </div>
+      <div>
+        <div class="cs-label">ATTENTION ARCHITECTURE</div>
+        <div class="cs-stat-value--sm">3 <span class="cs-stat-annotation--sm">attention types</span> <span class="accent">&rarr;</span> 1 <span class="cs-stat-annotation--sm"> inbox</span></div>
+        <div class="cs-stat-label">Persistent actions &middot; Customer messages &middot; Lightweight alerts</div>
+      </div>
+    </div>
+
+    <div class="cs-divider-grid cs-divider-grid--tight cs-divider-grid--bleed">
+      <div>
+        <div class="cs-label">ROLE</div>
+        <div class="cs-text">Senior UX designer &middot; product definition through engineering handoff</div>
+      </div>
+      <div>
+        <div class="cs-label">SCOPE</div>
+        <div class="cs-text">Product definition &middot; V1 strategy &middot; Information architecture &middot; Core workflows &middot; Engineering handoff</div>
+      </div>
+      <div>
+        <div class="cs-label">COLLABORATORS</div>
+        <div class="cs-text">Product, engineering, operations, Service Desk, and internal Quality Providers</div>
+      </div>
+      <div>
+        <div class="cs-label">TIMELINE &middot; STATUS</div>
+        <div class="cs-text">May&ndash;July 2026 &middot; Phase 1 design approved for engineering handoff</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problem" class="cs-section container">
+    <div class="cs-kicker">01 &mdash; PROBLEM</div>
+    <h2 class="cs-h2 cs-h2--narrow">Providers work in the field &mdash; the platform lived on a desktop</h2>
+    <p class="cs-lead">As of July 2026, BabyQuip supported roughly <strong class="cs-text-emphasis">3,285 Quality Providers (QPs)</strong> across US and international markets. QPs run independent rental businesses: inventory, customer coordination, gear preparation, delivery, pickup, and recovery across their own service areas.</p>
+    <p class="cs-lead">Much of that work happens away from a computer, yet the reservation, messaging, transfer, and modification workflows BabyQuip controls were accessed through a desktop-oriented Partner Portal. The challenge was not to shrink that portal onto a phone. It was to answer a harder question: <strong class="cs-text-emphasis">what should BabyQuip&rsquo;s first provider app be responsible for?</strong></p>
+
+    <div class="cs-pullquote">
+      <p>How might we help providers understand and act on active BabyQuip reservations on the go <span class="accent">without recreating the entire Partner Portal?</span></p>
+    </div>
+
+    <h3 class="cs-h3 u-mt-lg">A reservation is only the beginning of the provider&rsquo;s work</h3>
+    <p class="cs-lead">Once a reservation lands, the provider interprets it, prepares gear, coordinates with the customer, organizes the day, completes delivery and pickup, and returns inventory to a rentable state &mdash; often stitched together with spreadsheets, handwritten sheets, personal calendars, routing tools, SMS, and message templates.</p>
+    <div class="cs-callout-box background-white">
+      <div class="cs-flow-line">Weekly planning <span class="accent">&rarr;</span> customer coordination <span class="accent">&rarr;</span> gear preparation <span class="accent">&rarr;</span> routing &amp; delivery <span class="accent">&rarr;</span> pickup <span class="accent">&rarr;</span> cleaning &amp; inventory recovery</div>
+    </div>
+    <p class="cs-lead">Routing surfaced repeatedly as a major unmet need &mdash; but it is a separate product problem involving sequencing, travel time, delivery windows, vehicle capacity, and different operating models. Ignoring it would misunderstand the provider&rsquo;s business; solving it in Phase 1 would turn the first app into a much larger operational platform.</p>
+
+    <h3 class="cs-h3 u-mt-lg">Defining the app&rsquo;s role</h3>
+    <div class="cs-compare">
+      <div class="cs-compare-cell background-white">
+        <div class="cs-callout-label">PARTNER PORTAL</div>
+        <div class="cs-flow-line cs-flow-line--muted">Helps QPs administer their BabyQuip business</div>
+      </div>
+      <div class="cs-compare-cell cs-compare-cell--after">
+        <div class="cs-callout-label cs-callout-label--accent">MOBILE APP</div>
+        <div class="cs-flow-line">Helps QPs access and act on BabyQuip information while operating that business in the real world</div>
+      </div>
+    </div>
+    <p class="cs-lead">The app would focus on the workflows BabyQuip directly owns &mdash; reservations, customer and order details, platform communication, modifications, transfers, and approval-required changes &mdash; rather than replacing the external tools QPs use to run their whole business.</p>
+
+    <div class="cs-callout-box">
+      <div class="cs-callout-label">CORE CONSTRAINT &mdash; REUSE, DON&rsquo;T REBUILD</div>
+      <p>Phase 1 could not depend on a new routing system, CRM, or operations backend. The question changed from &ldquo;what could a provider operations app eventually become?&rdquo; to <strong class="cs-text-emphasis">&ldquo;what is the smallest set of current BabyQuip capabilities that becomes substantially more useful when reorganized around mobile work?&rdquo;</strong></p>
+    </div>
+  </section>
+
+  <section id="research" class="cs-section container">
+    <div class="cs-kicker">02 &mdash; RESEARCH</div>
+    <h2 class="cs-h2 cs-h2--narrow">Combining directional feedback with operational evidence</h2>
+    <p class="cs-lead">I triangulated an exploratory five-QP survey with deeper conversations with internal QPs and a Service Desk domain expert, reviews of real workflow artifacts &mdash; handwritten plans, printed lists, message templates, customer text threads &mdash; an audit of the existing Partner Portal, and calendar reviews of provider accounts sampled across the lower, middle, and upper ranges of the Supply Index ranking. I treated the survey as directional and grounded the product decisions in recurring patterns across workflow artifacts, provider conversations, portal audits, and account reviews.</p>
+
+    <h3 class="cs-h3 u-mt-lg">The strongest artifact was a handwritten daily/weekly plan</h3>
+    <p class="cs-lead">One provider printed outbound inventory lists, then rewrote each day into a notebook &mdash; route order, delivery windows, customer names, addresses, gear counts, hotel and flight details, confirmation checks, completion marks. It exposed a critical distinction: <strong class="cs-text-emphasis">the reservation was the system record; the operational day was the provider&rsquo;s working object</strong>. Providers were extracting information from BabyQuip and rebuilding it into a more usable operating plan.</p>
+    <div class="cs-diagram-grid">
+      <div>
+        <div class="cs-label">Outbound Inventory</div>
+        <img src="img_nootebook1.png" alt="Outbound Inventory">
+      </div>
+      <div>
+        <div class="cs-label">Daily plan</div>
+        <img src="img_nootebook2.png" alt="Outbound Inventory">
+
+      </div>
+      <div>
+        <div class="cs-label">Weekly plan</div>
+        <img src="img_nootebook3.png" alt="Outbound Inventory">
+
+      </div>
+    </div>
+
+    <div class="u-mt-md">
+      <div class="cs-media cs-ar-16-10" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+        <span class="cs-label u-m-0">Handwritten daily plan beside the Partner Portal calendar &mdash; route order &middot; customer/location &middot; gear count &middot; completion state</span>
+
+
+      </div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-lg">Five findings shaped the architecture</h3>
+    <div class="cs-breakdown-grid">
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">1 &middot; Three time horizons</div>
+        <p class="cs-text u-mt-xs">Weekly planning (workload, locations, gear), day-before coordination (confirmations, missing details, loading), and day-of execution (next stop, navigation, contact, delays). A generic reservation directory could not serve all three equally.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">2 &middot; Uneven workload density</div>
+        <p class="cs-text u-mt-xs">Sampled calendars ranged from nearly empty to densely booked, but workload was unevenly distributed across individual days at every tier. A Today-only home would often look empty or hide upcoming work; a full month view would bury immediate tasks.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">3 &middot; Communication was fulfillment</div>
+        <p class="cs-text u-mt-xs">Messages existed to complete operational work &mdash; timing, access codes, gear placement, last-minute changes. Conversations needed reservation context, not a generic standalone messaging feature.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">4 &middot; Context reconstructed across tools</div>
+        <p class="cs-text u-mt-xs">A modification email, an inbox search, the reopened order, the customer&rsquo;s notes, then a text. Providers rebuilt active reservation context across multiple BabyQuip surfaces and external tools before they could act.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">5 &middot; Unread &ne; responsibility</div>
+        <p class="cs-text u-mt-xs">The portal mixed conversations, confirmations, and modifications into one feed with badges that were hard to interpret or clear. Unread state did not reliably communicate what the provider was responsible for doing.</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">&rarr; The reframe</div>
+        <p class="cs-text u-mt-xs">These findings shifted the design from organizing information <em>by source</em> to organizing it <em>by required response</em> &mdash; and from a Today or Month view to a week-first default with day-level drill-down.</p>
+      </div>
+    </div>
+
+    <div class="cs-diagram-grid">
+      <div>
+        <div class="cs-label">LOWER SUPPLY INDEX TIER</div>
+        <div class="cs-media cs-ar-4-3" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+          <span class="cs-label u-m-0">Sparse calendar &mdash; lower-tier account</span>
+        </div>
+      </div>
+      <div>
+        <div class="cs-label">MIDDLE SUPPLY INDEX TIER</div>
+        <div class="cs-media cs-ar-4-3" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+          <span class="cs-label u-m-0">Moderate calendar &mdash; middle-tier account</span>
+        </div>
+      </div>
+      <div>
+        <div class="cs-label">UPPER SUPPLY INDEX TIER</div>
+        <div class="cs-media cs-ar-4-3" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+          <span class="cs-label u-m-0">Busy calendar &mdash; upper-tier account</span>
+        </div>
+      </div>
+    </div>
+    <div class="cs-media-caption">Account audit &mdash; calendars sampled by Supply Index tier. Density varied at every tier, and workload was unevenly distributed across individual days.</div>
+
+    <div class="cs-callout-box background-white">
+      <div class="cs-callout-label">EXPLORATORY SURVEY &mdash; 5 QPS, DIRECTIONAL</div>
+      <div class="cs-stat-grid">
+        <div>
+          <div class="cs-stat-grid-value">4 <span class="cs-stat-annotation--xs">of 5</span></div>
+          <div class="cs-stat-grid-caption">Primarily communicated with customers by text</div>
+        </div>
+        <div>
+          <div class="cs-stat-grid-value">4 <span class="cs-stat-annotation--xs">of 5</span></div>
+          <div class="cs-stat-grid-caption">Said conversations moved off-platform almost always</div>
+        </div>
+        <div>
+          <div class="cs-stat-grid-value">0 <span class="cs-stat-annotation--xs">of 5</span></div>
+          <div class="cs-stat-grid-caption">Selected platform messaging as their primary communication method</div>
+        </div>
+      </div>
+      <p class="cs-footnote-block">Internal providers also described monitoring BabyQuip <em>emails</em> rather than the portal inbox &mdash; reinforcing that the platform&rsquo;s communication surfaces were being routed around, not used. Four of five also named switching between tools as a major friction.</p>
+    </div>
+  </section>
+
+  <section id="architecture" class="cs-section container">
+    <div class="cs-kicker">03 &mdash; ARCHITECTURE</div>
+    <h2 class="cs-h2 cs-h2--narrow">Two connected models: a work hierarchy and an attention model</h2>
+
+    <h3 class="cs-h3 u-mt-lg">Work hierarchy &mdash; progressive disclosure from week to action</h3>
+    <div class="cs-breakdown-grid">
+      <div class="cs-breakdown-card">
+        <div class="cs-label">PLANNING</div>
+        <div class="cs-breakdown-voice">&ldquo;What does my upcoming week look like?&rdquo;</div>
+        <p class="cs-text u-mt-xs">Weekly calendar and workload indicators</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-label">DAILY WORKLOAD</div>
+        <div class="cs-breakdown-voice">&ldquo;What must I handle on this day?&rdquo;</div>
+        <p class="cs-text u-mt-xs">Date-specific delivery and pickup list</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-label">RESERVATION</div>
+        <div class="cs-breakdown-voice">&ldquo;What do I need to know about this order?&rdquo;</div>
+        <p class="cs-text u-mt-xs">Timing, location, gear, instructions, notes, customer, history</p>
+      </div>
+      <div class="cs-breakdown-card">
+        <div class="cs-label">ACTION</div>
+        <div class="cs-breakdown-voice">&ldquo;What must I do now?&rdquo;</div>
+        <p class="cs-text u-mt-xs">Navigate, message, approve, decline, or respond to a transfer</p>
+      </div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-lg">Attention model &mdash; responsibility, not unread volume</h3>
+    <p class="cs-lead u-mb-sm">The existing system treated every kind of activity as a variation of unread information. The app defines three attention types with different behavioral contracts:</p>
+
+    <div class="cs-divider-grid cs-divider-grid--flush cs-divider-grid--boxed background-white">
+      <div>
+        <div class="cs-callout-label cs-callout-label--accent">ACTION ITEMS</div>
+        <div class="cs-text-emphasis">A decision or response is required</div>
+        <p class="cs-text u-mt-xs">Persist until resolved. Deliberately limited to transfer offers and changes requiring provider approval &mdash; routine updates never become permanent tasks.</p>
+      </div>
+      <div>
+        <div class="cs-callout-label cs-callout-label--accent">MESSAGES</div>
+        <div class="cs-text-emphasis">A conversation may need a reply</div>
+        <p class="cs-text u-mt-xs">Preserve customer conversation read state, with reservation context attached to every thread.</p>
+      </div>
+      <div>
+        <div class="cs-callout-label cs-callout-label--accent">ALERTS</div>
+        <div class="cs-text-emphasis">A change should be noticed</div>
+        <p class="cs-text u-mt-xs">Lightweight awareness that clears once the Alerts view is reviewed &mdash; no lingering badges.</p>
+      </div>
+    </div>
+    <p class="cs-footnote">The same three attention states can support other operator-side marketplaces that need to distinguish required action, communication, and passive awareness.</p>
+  </section>
+
+  <section id="design" class="cs-section container">
+    <div class="cs-kicker">04 &mdash; DESIGN DECISIONS</div>
+    <h2 class="cs-h2 cs-h2--narrow">The central design problem was product structure, not visual treatment</h2>
+    <p class="cs-lead">Several rounds of wireframes tested entry points, planning horizons, communication surfaces, reservation-card hierarchy, and modification states. Three decisions defined the app.</p>
+
+    <div class="cs-solutions">
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">1 &middot;</span> Week-first calendar, not Today-first or list-first</h3>
+          <p>The weekly calendar became the default Reservations view, with List View as a secondary mode. The week gives lighter providers meaningful upcoming context, helps busy providers spot heavy days before they arrive, and avoids an often-empty Today dashboard &mdash; while staying more scannable than the portal&rsquo;s month view. List View covers the other retrieval need: search by customer, reservation number, or street; filter recently booked or unpaid; select custom date ranges.</p>
+        </div>
+        <div class="cs-media cs-ar-16-10" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+          <span class="cs-label u-m-0">Side-by-side wireframes &mdash; Today-first vs. week-first vs. list-first entry</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">2 &middot;</span> One Inbox, three distinct behaviors, instead of scattered destinations or one mixed feed</h3>
+          <p>Messages, Alerts, and Action Items were consolidated into a single Inbox but kept distinct inside it. Separate destinations would scatter related reservation information across the app; a single undifferentiated feed would reproduce the portal&rsquo;s existing problem &mdash; giving routine updates, customer conversations, and required decisions the same visual weight. Every item links back to its reservation, so providers never search for the order twice.</p>
+        </div>
+        <div class="cs-media cs-ar-16-10" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+          <span class="cs-label u-m-0">Side-by-side wireframes &mdash; separate surfaces vs. one unified feed vs. categorized Inbox</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">3 &middot;</span> Reservation details organized around fulfillment, not the desktop portal structure</h3>
+          <p>The mobile detail prioritizes delivery and pickup timing, location and navigation, operational instructions, customer contact, gear and quantities, private notes, and modification history. When a customer change requires approval, the page shifts from reference mode to decision mode: the approval state surfaces at the top, modified information is highlighted, and Approve / Decline stay persistently accessible. Mirroring the full portal page would have produced a dense administrative screen unsuitable for active fieldwork; showing too little would send providers back to email and the desktop.</p>
+        </div>
+        <div class="cs-media cs-ar-16-10" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+          <span class="cs-label u-m-0">Side-by-side wireframes &mdash; portal field order vs. operational reservation hierarchy</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-xl">Drawing the Phase 1 boundary</h3>
+    <p class="cs-lead">Research exposed a much larger opportunity space than the first release could responsibly support. Scope was drawn in three rings:</p>
+    <div class="cs-breakdown-grid">
+      <div class="cs-breakdown-card">
+        <div class="cs-breakdown-tag">Included in V1</div>
+        <ul class="cs-list u-mt-sm">
+          <li>Weekly calendar + date-based reservation views</li>
+          <li>Searchable, filterable reservation list</li>
+          <li>Delivery, pickup, customer, location, and gear details</li>
+          <li>Reservation-linked messaging, alerts, and history</li>
+          <li>Transfer offers and approval-required changes</li>
+          <li>Private notes, navigation, and contact actions</li>
+        </ul>
+      </div>
+      <div class="cs-breakdown-card-lighter-top-line">
+        <div class="cs-breakdown-tag u-color-faint">Fast follow</div>
+        <ul class="cs-list u-mt-sm">
+          <li>Reusable message templates</li>
+          <li>Richer photo and media support</li>
+          <li>Additional reservation editing and stronger search</li>
+          <li>Summarized modification updates</li>
+        </ul>
+      </div>
+      <div class="cs-breakdown-card-lighter-top-line">
+        <div class="cs-breakdown-tag u-color-faint">Future opportunities</div>
+        <ul class="cs-list u-mt-sm">
+          <li>Route planning and optimization</li>
+          <li>Preparation and vehicle-loading checklists</li>
+          <li>Delivery and pickup confirmation workflows</li>
+          <li>Staff assignment, CRM, and business-management tools</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cs-callout-box background-white">
+      <div class="cs-callout-label">ON ROUTING</div>
+      <p>Routing remained an important future opportunity, not a forgotten requirement. Solving it properly requires additional operational research, data, logic, and backend capability beyond the Phase 1 reuse constraint.</p>
+    </div>
+
+    <h3 class="cs-h3 u-mt-xl">Refining the structure through cross-functional review</h3>
+    <p class="cs-lead">I reviewed the wireframe architecture in two cross-functional sessions focused on Phase 1 scope, business rules, reservation states, transfer and approval behavior, and engineering feasibility. Scenario walkthroughs with an internal QP and Service Desk domain expert helped verify workflow coverage and surface operational edge cases.</p>
+    <p class="cs-lead">These reviews validated product direction and implementation readiness; broader task-based usability testing with external QPs remains a next step.</p>
+  </section>
+
+  <section id="final" class="cs-section container">
+    <div class="cs-kicker">05 &mdash; FINAL EXPERIENCE</div>
+    <h2 class="cs-h2 cs-h2--narrow">From understanding the week to completing the next task</h2>
+
+    <div class="cs-solutions">
+      <div>
+        <div class="cs-solution-head">
+          <h3>Reservations &mdash; from the week to the next task</h3>
+          <p>The app opens to the weekly calendar. Providers scan upcoming workload, select a date, and review its deliveries, pickups, self-pickups, and self-returns. Reservation cards expose enough to plan without opening every booking &mdash; fulfillment type, time window, customer, address, gear thumbnails and quantities, reservation number, payment status. List View adds search, filters, sorting, and custom date retrieval.</p>
+        </div>
+        <div class="cs-two-col cs-two-col--steps">
+          <div>
+            <div class="cs-label">1 &middot; WEEK</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Weekly calendar screen</span>
+            </div>
+          </div>
+          <div>
+            <div class="cs-label">2 &middot; SELECTED DAY</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Selected day &mdash; deliveries and pickups</span>
+            </div>
+          </div>
+          <div>
+            <div class="cs-label">3 &middot; RESERVATION</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Reservation detail screen</span>
+            </div>
+          </div>
+          <div>
+            <div class="cs-label">4 &middot; ACTION</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Navigate, message, or approve</span>
+            </div>
+          </div>
+        </div>
+        <div class="cs-media-caption">The work hierarchy in practice &mdash; week &rarr; selected day &rarr; reservation &rarr; action</div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <h3>Inbox &mdash; separating responsibility from awareness</h3>
+          <p>Action Items persist until the provider responds; Messages keep conversation context and read state; Alerts provide awareness without turning every modification into a permanent task. Each item links back to its reservation.</p>
+        </div>
+        <div class="cs-diagram-grid">
+          <div>
+            <div class="cs-label">ACTION ITEMS</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Inbox &mdash; Action Items view</span>
+            </div>
+            <div class="cs-label" style="color:var(--accent)">Persists until resolved</div>
+          </div>
+          <div>
+            <div class="cs-label">MESSAGES</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Inbox &mdash; Messages view</span>
+            </div>
+            <div class="cs-label" style="color:var(--accent)">Preserves conversation state</div>
+          </div>
+          <div>
+            <div class="cs-label">ALERTS</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Inbox &mdash; Alerts view</span>
+            </div>
+            <div class="cs-label" style="color:var(--accent)">Clears after review</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <h3>Reservation detail &mdash; one operational source of context</h3>
+          <p>The detail page consolidates what previously required several surfaces: windows, address and navigation, access and placement instructions, customer contact, gear and preferences, private notes, changes, and activity history. Not a copy of the Partner Portal &mdash; an operational view designed around what a QP needs before and during fulfillment.</p>
+        </div>
+        <div class="cs-before-after">
+          <div>
+            <div class="cs-label">STANDARD STATE &mdash; REFERENCE MODE</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Standard reservation detail</span>
+            </div>
+          </div>
+          <div>
+            <div class="cs-label" style="color:var(--accent)">APPROVAL-REQUIRED STATE &mdash; DECISION MODE</div>
+            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+              <span class="cs-label u-m-0">Approval-required state &mdash; approval banner &middot; modified fields &middot; activity log &middot; persistent Approve/Decline</span>
+            </div>
+          </div>
+        </div>
+        <div class="cs-media-caption">What changes in decision mode: approval banner at top &middot; modified fields highlighted &middot; activity log shows the change &middot; Approve / Decline stay persistently accessible</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="impact" class="cs-section cs-section--end container">
+    <div class="cs-kicker">06 &mdash; IMPACT</div>
+    <h2 class="cs-h2 cs-h2--narrow">An implementation-ready V1, with impact still to be measured</h2>
+    <p class="cs-lead">Phase 1 has been approved for engineering handoff. Because the product has not yet generated post-launch behavioral data, the current outcomes are <strong class="cs-text-emphasis">product-definition and delivery outcomes</strong> rather than measured marketplace results &mdash; stated as such deliberately.</p>
+
+    <div class="cs-two-col">
+      <div>
+        <div class="cs-subhead">Delivered</div>
+        <ul class="cs-list">
+          <li>Defined the role and boundary of BabyQuip&rsquo;s first dedicated provider app</li>
+          <li>Translated a broad provider-operations problem into a focused mobile V1 &mdash; no new operational backend required</li>
+          <li>Established a connected hierarchy from weekly planning to immediate action</li>
+          <li>Created a reusable attention model with distinct persistence rules for actions, messages, and alerts</li>
+          <li>Aligned product, operations, and engineering on Phase 1 scope; delivered implementation-ready designs and states</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cs-subhead">Intended value</div>
+        <ul class="cs-list">
+          <li>Less time reconstructing reservation context across tools</li>
+          <li>Required actions clearly distinguished from routine updates</li>
+          <li>Better customer communication away from a computer</li>
+          <li>Lower risk of missed timing, location, gear, and modification details</li>
+          <li>A mobile foundation for future routing and operations capabilities</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cs-subhead">Measurement framework</div>
+        <ul class="cs-list">
+          <li>Adoption and repeat use &mdash; are active QPs returning after activation?</li>
+          <li>Mobile vs. portal &mdash; are supported tasks shifting from desktop?</li>
+          <li>Response time &mdash; customer messages and required actions resolved faster?</li>
+          <li>Task success &mdash; can QPs find work, understand a change, and act without assistance?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cs-pullquote">
+      <p>The hardest part was not designing the Calendar, Inbox, or reservation screens &mdash; it was deciding what the first provider app should be responsible for. A focused V1 didn&rsquo;t need to replace the provider&rsquo;s entire operating system. It needed to make <span class="accent">the BabyQuip portion of that system coherent, accessible, and actionable in the moments providers were actually working</span>.</p>
+    </div>
+  </section>
+
+  <%- include(`${templatePath}/shared2026/footer`, {
+    footerVariant: 'case-study',
+    footerAllCaseStudiesHref: '/worklog',
+    footerResumeHref: '/worklog/resume'
+  }) %>
+
+  <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
+    <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>
+    <button class="wl-image-modal__control wl-image-modal__control--prev" type="button" aria-label="Previous image">&larr;</button>
+    <figure class="wl-image-modal__figure">
+      <img class="wl-image-modal__img" src="" alt="">
+      <figcaption class="wl-image-modal__caption"></figcaption>
+    </figure>
+    <button class="wl-image-modal__control wl-image-modal__control--next" type="button" aria-label="Next image">&rarr;</button>
+  </div>
+
+</body>
+
+</html>

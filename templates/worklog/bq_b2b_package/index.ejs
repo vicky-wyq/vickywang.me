@@ -1,46 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-
-  <title>Standardizing Provider-Created Bundles into a Scalable Package System — Vicky Wang</title>
-  <meta name="description" content="Turned unstructured provider-created packages into a standardized system BabyQuip could track, expand, and eventually merchandise, while preserving custom packages and migrating existing provider work.">
-  <meta name="robots" content="noindex,nofollow">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-  <link rel="stylesheet" href="../style.css">
-  <script src="../worklog.js" defer></script>
-</head>
+<%- include(`${templatePath}/shared2026/head`, {
+  headTitle: 'Standardizing Provider-Created Bundles into a Scalable Package System — Vicky Wang',
+  headDescription: 'Created a standardized package system providers could adopt, giving BabyQuip a foundation for bundle discovery, legacy migration, and merchandising.',
+  headRobots: 'noindex, follow',
+  headType: 'article',
+  headImage: 'https://vickywang.me/thumbnails/cs_package.png'
+}) %>
 
 <body>
 
-  <header class="nav nav--sticky">
-    <div class="container nav-inner">
-      <a href="/worklog" class="nav-history-back" data-page-back aria-label="Go back to previous page">&larr;</a>
-
-      <a href="/worklog" class="nav-brand">
-        <img src="../../web_images/photo_profile_avatar.png" alt="Vicky Wang">
-        <span>Vicky Wang</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="#problem" class="nav-link muted">Problem</a>
-        <a href="#insight" class="nav-link muted">Insight</a>
-        <a href="#design" class="nav-link muted">Design</a>
-        <a href="#impact" class="nav-link muted">Impact</a>
-      </nav>
-    </div>
-  </header>
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'detail',
+    headerHome: '/worklog',
+    headerAvatar: '../../web_images/photo_profile_avatar.png',
+    headerLinks: [
+      { href: '#problem', label: 'Problem', muted: true },
+      { href: '#insight', label: 'Insight', muted: true },
+      { href: '#design', label: 'Design', muted: true },
+      { href: '#impact', label: 'Impact', muted: true }
+    ]
+  }) %>
 
   <section class="cs-hero container cs-section--sm">
     <div class="cs-hero-meta">
@@ -82,42 +63,115 @@
 
   <section id="problem" class="cs-section container">
     <div class="cs-kicker">01 &mdash; PROBLEM</div>
-    <h2 class="cs-h2 cs-h2--narrow">Package demand existed &mdash; but the package system was too fragmented to merchandise</h2>
-    <p class="cs-lead">BabyQuip had packages long before this project, but they were not a structured product system. They worked like custom inventory bundles individual providers created inside their own portals: every package could have a different name, item combination, quantity, and pricing logic. During data migration we even found packages containing a single item &mdash; &ldquo;package&rdquo; had no consistent definition across the marketplace.</p>
+    <h2 class="cs-h2 cs-h2--narrow">Package demand existed, but the package system was too fragmented to merchandise</h2>
+    <p class="cs-lead">BabyQuip had packages long before this project, but they were not a structured product system. They worked like custom inventory bundles individual providers created inside their own portals: every package could have a different name, item combination, quantity, and pricing logic. During data migration we even found packages containing a single item, &ldquo;package&rdquo; had no consistent definition across the marketplace.</p>
     <p class="cs-lead">As BabyQuip moved toward gear-first shopping, this became a bigger issue. Customers could browse gear before choosing a provider, but packages were still tied to individual providers &mdash; <strong class="cs-text-emphasis">the system could not reliably know which packages existed until after a provider was selected</strong>.</p>
+    <div class="u-mt-md">
 
-    <div class="u-mt-clamp-sm">
-      <div class="cs-media modal-target cs-ar-package">
-        <img src="discover_before.png" alt="Legacy packages, visible only inside an individual provider's shop">
+      <p class="cs-lead u-mt-sm"><strong class="cs-text-emphasis">BEFORE</strong> &mdash; provider-created bundles, invisible until a shopper opened that provider&rsquo;s shop</p>
+      <div class="cs-journey-grid">
+        <div class="cs-journey-item">
+          <div class="cs-journey-num">1</div>
+          <div class="cs-journey-label">Landing</div>
+          <div class="cs-journey-quote">Shopper arrives on BabyQuip.</div>
+        </div>
+        <div class="cs-journey-item">
+          <div class="cs-journey-num">2</div>
+          <div class="cs-journey-label">Shopping</div>
+          <div class="cs-journey-quote">Browse individual gear. No packages shown.
+          </div>
+        </div>
+        <div class="cs-journey-item">
+          <div class="cs-journey-num">3</div>
+          <div class="cs-journey-label">Select provider</div>
+          <div class="cs-journey-quote">Choose a provider to rent from.
+          </div>
+        </div>
+        <div class="cs-journey-item cs-journey-item--active">
+          <div class="cs-journey-num">4</div>
+          <div class="cs-journey-label">Provider shop</div>
+          <div class="cs-journey-quote">See only that provider's packages.
+            <span class="cs-journey-pill">PACKAGES APPEAR</span>
+          </div>
+        </div>
+        <div class="cs-journey-item">
+          <div class="cs-journey-num">5</div>
+          <div class="cs-journey-label">Add &#38; checkout</div>
+          <div class="cs-journey-quote">Add items and complete booking.
+          </div>
+        </div>
+
       </div>
-      <div class="cs-label u-mt-8">Legacy model &mdash; provider-created bundles, invisible until a shopper opened that provider&rsquo;s shop</div>
     </div>
 
-    <h3 class="cs-h3 u-mt-clamp-md">The legacy package model created five problems</h3>
+    <div class="u-mt-md">
+
+      <p class="cs-lead u-mt-sm">
+        <strong class="cs-text-emphasis">AFTER</strong> &mdash;
+        packages explorable at the shopping step, before provider selection
+      </p>
+      <div class="cs-journey-grid">
+        <div class="cs-journey-item">
+          <div class="cs-journey-num">1</div>
+          <div class="cs-journey-label">Landing</div>
+          <div class="cs-journey-quote">Shopper arrives on BabyQuip.</div>
+        </div>
+        <div class="cs-journey-item  cs-journey-item--active">
+          <div class="cs-journey-num">2</div>
+          <div class="cs-journey-label">Shopping</div>
+          <div class="cs-journey-quote">Browse gear with standard packages available to explore.
+            <span class="cs-journey-pill">PACKAGES EXPLORABLE</span>
+          </div>
+        </div>
+        <div class="cs-journey-item">
+          <div class="cs-journey-num">3</div>
+          <div class="cs-journey-label">Select provider</div>
+          <div class="cs-journey-quote">Choose a provider, already aware of packages.
+
+          </div>
+        </div>
+        <div class="cs-journey-item">
+          <div class="cs-journey-num">4</div>
+          <div class="cs-journey-label">Provider shop</div>
+          <div class="cs-journey-quote">Confirm package and provider details.
+
+          </div>
+        </div>
+        <div class="cs-journey-item">
+          <div class="cs-journey-num">5</div>
+          <div class="cs-journey-label">Add &#38; checkout</div>
+          <div class="cs-journey-quote">Add items and complete booking.
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <h3 class="cs-h3 u-mt-lg">The legacy package model created five problems</h3>
     <div class="cs-breakdown-grid">
-      <div class="cs-breakdown-card">
+      <div class="cs-breakdown-card-lighter-top-line-lighter-top-line">
         <div class="cs-breakdown-tag">A &middot; No shared structure</div>
-        <p class="cs-text">A package could mean almost anything &mdash; a thoughtful crib-and-stroller bundle or a single item. Without a shared definition, packages could not be grouped, compared, or promoted.</p>
+        <p class="cs-text u-mt-xs">A package could mean almost anything &mdash; a thoughtful crib-and-stroller bundle or a single item. Without a shared definition, packages could not be grouped, compared, or promoted.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-breakdown-card-lighter-top-line-lighter-top-line">
         <div class="cs-breakdown-tag">B &middot; Buried in inventory</div>
-        <p class="cs-text">Packages had no dedicated experience. Creation was unguided for providers, and adoption was hard for the platform to control or scale.</p>
+        <p class="cs-text u-mt-xs">Packages had no dedicated experience. Creation was unguided for providers, and adoption was hard for the platform to control or scale.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-breakdown-card-lighter-top-line-lighter-top-line">
         <div class="cs-breakdown-tag">C &middot; Invisible before provider selection</div>
-        <p class="cs-text">In gear-first shopping, customers browse items before choosing a provider &mdash; but packages only existed inside provider shops.</p>
+        <p class="cs-text u-mt-xs">In gear-first shopping, customers browse items before choosing a provider &mdash; but packages only existed inside provider shops.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-breakdown-card-lighter-top-line-lighter-top-line">
         <div class="cs-breakdown-tag">D &middot; Consumer exposure needed supply safeguards</div>
-        <p class="cs-text">Fulfillment depended on provider participation. Promoting packages too aggressively before supply coverage improved could strand customers on no-availability results.</p>
+        <p class="cs-text u-mt-xs">Fulfillment depended on provider participation. Promoting packages too aggressively before supply coverage improved could strand customers on no-availability results.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-breakdown-card-lighter-top-line-lighter-top-line">
         <div class="cs-breakdown-tag">E &middot; Migration needed to preserve provider work</div>
-        <p class="cs-text">Many providers already had custom packages. The new system could not replace them or force manual rebuilds.</p>
+        <p class="cs-text u-mt-xs">Many providers already had custom packages. The new system could not replace them or force manual rebuilds.</p>
       </div>
     </div>
 
-    <div class="cs-callout-box">
+    <div class="cs-callout-box background-white">
       <div class="cs-callout-label">WHAT THE ~59% GAP MEANT &mdash; DEMAND VS. ADOPTION</div>
       <div class="cs-stat-grid">
         <div>
@@ -126,24 +180,24 @@
         </div>
         <div>
           <div class="cs-stat-grid-value">16,992</div>
-          <div class="cs-stat-grid-caption">Orders actually booked a standard package &mdash; a ~59% gap</div>
+          <div class="cs-stat-grid-caption">Orders actually booked a standard package, a ~59% gap</div>
         </div>
         <div>
           <div class="cs-stat-grid-value">889 <span class="cs-stat-annotation--xs">of 3,129</span></div>
-          <div class="cs-stat-grid-caption">Active providers offered at least one standard package &mdash; ~28% adoption</div>
+          <div class="cs-stat-grid-caption">Active providers offered at least one standard package, ~28% adoption</div>
         </div>
       </div>
-      <p class="cs-footnote-block">This data did not prove the redesign had already increased package rentals &mdash; it showed the size of the opportunity and clarified the real constraint: <strong class="cs-text-emphasis">BabyQuip needed a stronger supply-side package system before packages could become reliable consumer-facing merchandising</strong>.</p>
+      <p class="cs-footnote-block">This data did not prove the redesign had already increased package rentals, it showed the size of the opportunity and clarified the real constraint: <strong class="cs-text-emphasis">BabyQuip needed a stronger supply-side package system before packages could become reliable consumer-facing merchandising</strong>.</p>
     </div>
   </section>
 
   <section id="insight" class="cs-section container">
     <div class="cs-kicker">02 &mdash; INSIGHT</div>
-    <h2 class="cs-h2 cs-h2--narrow">Not a UI problem &mdash; a system ownership problem</h2>
+    <h2 class="cs-h2 cs-h2--narrow">Not a UI problem, a system ownership problem</h2>
     <p class="cs-lead">As long as packages were fully created by individual providers, BabyQuip could not treat them as a platform-level merchandising object. Packages needed a <strong class="cs-text-emphasis">shared definition controlled by BabyQuip</strong>, while fulfillment remained provider-dependent. Separating package definition from provider fulfillment became the foundation of the new system.</p>
 
     <div class="cs-compare">
-      <div class="cs-compare-cell">
+      <div class="cs-compare-cell background-white">
         <div class="cs-callout-label">BEFORE</div>
         <div class="cs-flow-line cs-flow-line--muted">Provider creates package &rarr; package only exists inside that provider&rsquo;s shop</div>
       </div>
@@ -153,23 +207,23 @@
       </div>
     </div>
 
-    <h3 class="cs-h3 u-mt-clamp-md">Design goals</h3>
-    <div class="cs-journey-grid">
-      <div class="cs-journey-item">
-        <div class="cs-journey-num">1</div>
-        <div class="cs-journey-label">Standardize core package definitions and make adoption easy for providers</div>
+    <h3 class="cs-h3 u-mt-lg">Design goals</h3>
+    <div class="cs-breakdown-grid">
+      <div class="cs-breakdown-card-lighter-top-line">
+        <div class="cs-journey-num-dark">1</div>
+        <p class="cs-text u-mt-xs">Standardize core package definitions and make adoption easy for providers</p>
       </div>
-      <div class="cs-journey-item">
-        <div class="cs-journey-num">2</div>
-        <div class="cs-journey-label">Preserve provider flexibility through custom packages and migrate existing work</div>
+      <div class="cs-breakdown-card-lighter-top-line">
+        <div class="cs-journey-num-dark">2</div>
+        <p class="cs-text u-mt-xs">Preserve provider flexibility through custom packages and migrate existing work</p>
       </div>
-      <div class="cs-journey-item">
-        <div class="cs-journey-num">3</div>
-        <div class="cs-journey-label">Make adoption trackable, and standard packages referenceable before provider selection</div>
+      <div class="cs-breakdown-card-lighter-top-line">
+        <div class="cs-journey-num-dark">3</div>
+        <p class="cs-text u-mt-xs">Make adoption trackable, and standard packages referenceable before provider selection</p>
       </div>
-      <div class="cs-journey-item">
-        <div class="cs-journey-num">4</div>
-        <div class="cs-journey-label">Avoid over-promoting packages before supply coverage could support reliable fulfillment</div>
+      <div class="cs-breakdown-card-lighter-top-line">
+        <div class="cs-journey-num-dark">4</div>
+        <p class="cs-text u-mt-xs">Avoid over-promoting packages before supply coverage could support reliable fulfillment</p>
       </div>
     </div>
   </section>
@@ -177,13 +231,16 @@
   <section id="design" class="cs-section container">
     <div class="cs-kicker">03 &mdash; DESIGN</div>
     <h2 class="cs-h2 cs-h2--narrow">A dual package system: standardized BabyQuip packages plus custom provider packages</h2>
-    <p class="cs-lead">Standardized packages gave BabyQuip a controlled structure for names, item categories, and merchandising logic. Custom packages preserved provider flexibility for cases that did not fit the standard model &mdash; a hierarchy, not a rigid template.</p>
+    <p class="cs-lead">Standardized packages gave BabyQuip a controlled structure for names, item categories, and merchandising logic. Custom packages preserved provider flexibility for cases that did not fit the standard model, a hierarchy, not a rigid template.</p>
 
     <div class="cs-solutions">
       <div>
         <div class="cs-solution-head">
           <h3><span class="cs-solution-num">1 &middot;</span> Standardized BabyQuip package templates</h3>
           <p>Instead of requiring providers to invent every package from scratch, BabyQuip defined standard templates &mdash; a controlled name, required item categories, and expected combinations. Packages became comparable and trackable across the marketplace, with custom packages kept as a flexible secondary path.</p>
+        </div>
+        <div class="modal-target" data-modal-gallery="solutions">
+          <img src="screenshot_package_type.png" alt="x">
         </div>
       </div>
 
@@ -192,12 +249,18 @@
           <h3><span class="cs-solution-num">2 &middot;</span> A dedicated package area in the provider portal</h3>
           <p>Packages were separated from general inventory management and given their own area &mdash; no longer just another inventory subtype. The experience prioritized standardized packages first, with custom package creation available as a secondary action.</p>
         </div>
+        <div class="modal-target" data-modal-gallery="solutions">
+          <img src="screenshot_package_tab.png" alt="x">
+        </div>
       </div>
 
       <div>
         <div class="cs-solution-head">
           <h3><span class="cs-solution-num">3 &middot;</span> Adoption guided by inventory readiness</h3>
           <p>Providers browsed pre-built packages instead of starting from a blank page. When adding a standard package, the system showed whether their inventory supported it and what was missing &mdash; shifting the question from &ldquo;what package should I invent?&rdquo; to &ldquo;which BabyQuip package can I support?&rdquo;</p>
+        </div>
+                <div class="modal-target" data-modal-gallery="solutions">
+          <img src="screenshot_standardized_package_templates.png" alt="x">
         </div>
       </div>
 
@@ -206,6 +269,9 @@
           <h3><span class="cs-solution-num">4 &middot;</span> Legacy migration that protected provider work</h3>
           <p>Existing packages that matched a standard definition were converted into the standardized system &mdash; a custom bundle already containing the required crib, stroller, and toy categories mapped to the matching BabyQuip package. Anything that didn&rsquo;t match stayed as a custom package. No provider had to rebuild their work.</p>
         </div>
+        <div class="modal-target" data-modal-gallery="solutions">
+          <img src="screenshot_package_banner.png" alt="x">
+        </div>
       </div>
 
       <div>
@@ -213,9 +279,10 @@
           <h3><span class="cs-solution-num">5 &middot;</span> Lightweight consumer-facing representation</h3>
           <p>Because BabyQuip now controlled standard definitions, packages could be represented before provider selection for the first time. Exposure stayed intentionally lightweight: the system made early representation possible without over-promising availability before supply coverage could support it.</p>
         </div>
-        <div class="cs-media modal-target cs-ar-package">
-          <img src="discover_after.png" alt="Standardized packages represented as a browsable category before provider selection">
+        <div class="modal-target" data-modal-gallery="solutions">
+          <img src="screenshot_shopping_page_package.png" alt="x">
         </div>
+
       </div>
     </div>
 
@@ -249,13 +316,11 @@
           <li>Package recommendations based on customer trip needs</li>
           <li>Stronger availability logic and reliable bundle discovery as coverage improves</li>
         </ul>
-        <div class="cs-media modal-target cs-ar-package u-mt-16">
-          <img src="discover_future.png" alt="Future state: standard packages mapped directly into shopping categories alongside individual gear">
-        </div>
+
       </div>
       <div>
         <div class="cs-subhead">Why supply came first</div>
-        <p class="cs-text">The visible consumer-facing change was only one part. The real design challenge was on the supply side &mdash; creating a structure that supports adoption, tracking, migration, and future merchandising. Consumer merchandising could only become reliable once the provider-side package model became standardized and trackable.</p>
+        <p class="cs-text u-mt-xs">The visible consumer-facing change was only one part. The real design challenge was on the supply side &mdash; creating a structure that supports adoption, tracking, migration, and future merchandising. Consumer merchandising could only become reliable once the provider-side package model became standardized and trackable.</p>
       </div>
     </div>
 
@@ -264,23 +329,11 @@
     </div>
   </section>
 
-  <section class="contact">
-    <div class="container">
-      <div class="contact-head">
-        <h2>Building a complex product or platform? I&rsquo;d love to hear what you&rsquo;re building.</h2>
-        <a href="/worklog#work" class="contact-link accent">All case studies &rarr;</a>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
-        <a href="https://www.linkedin.com/in/vicky-wyq/" target="_blank" rel="noopener" class="contact-link">LinkedIn &#8599;</a>
-        <a href="/worklog/resume" class="contact-link">Resume &#8599;</a>
-      </div>
-      <div class="contact-footer">
-        <span>&copy; 2020&ndash;2026 vickywang.me</span>
-        <span>Vicky Wang &mdash; Product Designer</span>
-      </div>
-    </div>
-  </section>
+  <%- include(`${templatePath}/shared2026/footer`, {
+    footerVariant: 'case-study',
+    footerAllCaseStudiesHref: '/worklog',
+    footerResumeHref: '/worklog/resume'
+  }) %>
 
   <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
     <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>
