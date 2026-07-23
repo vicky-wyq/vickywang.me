@@ -1,77 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-
-  <title>Vicky Wang — Product Designer, Marketplace UX</title>
-  <meta name="description" content="I design both sides of a marketplace, so I fix the system, not just the screen. Product design work across supply and demand at BabyQuip.">
-  <meta name="robots" content="noindex,nofollow">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-  <link rel="stylesheet" href="../worklog/style.css">
-</head>
+<%- include(`${templatePath}/shared2026/head`, {
+  headTitle: 'Vicky Wang — Senior Product Designer | Marketplace & Platform UX',
+  headDescription: 'Senior product designer specializing in marketplace and platform UX. I design consumer, B2B, and operational systems that improve supply, demand, and business outcomes.',
+  headRobots: 'index, follow',
+  headCanonical: 'https://vickywang.me/',
+  headImage: 'https://vickywang.me/thumbnails/landing.png'
+}) %>
 
 <body>
 
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="#" class="nav-brand">
-        <img src="../web_images/photo_profile_avatar.png" alt="Vicky Wang">
-        <span>Vicky Wang</span>
-      </a>
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'landing',
+    headerHome: '#',
+    headerAvatar: '../web_images/photo_profile_avatar.png',
+    headerSticky: false,
+    headerLinks: [
+      { href: '#work', label: 'Selected Work', muted: true },
+      { href: '#contact', label: 'Contact', muted: true }
+    ]
+  }) %>
 
-
-      <nav class="nav-links">
-        <a href="#work" class="nav-link">Selected Work</a>
-        <a href="#contact" class="nav-link muted">Contact</a>
-        <a href="/resume2026" class="nav-cta">Resume <span aria-hidden="true">↗</span><span class="sr-only">, opens resume page</span></a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero container">
-    <div class="eyebrow">MARKETPLACE + PLATFORM UX</div>
-    <h1>Senior product designer for products where the hard part is <em>the system</em>.</h1>
-    <div class="hero-grid">
-      <p class="hero-intro">I simplify complex consumer, B2B, and platform products, especially marketplaces, operational workflows, and partner integrations.</p>
-      <ol class="hero-principles">
-        <li><span class="num">Simplify</span><span>Simplify complex workflows and systems</span></li>
-        <li><span class="num">Align</span><span>Align user needs with business constraints</span></li>
-        <li><span class="num">Measure</span><span>Measure outcomes, not output</span></li>
-      </ol>
-    </div>
-    <div class="hero-outcomes" aria-label="Selected outcomes">
-      <div class="outcomes-eyebrow">Selected outcomes</div>
-      <div class="outcomes-grid">
-        <div class="outcome">
-          <strong>+60%</strong>
-          <span class="outcome-label">entry-to-shopping progression</span>
-          <span class="outcome-note">VRBO integration &middot; 30-day pre/post &middot; GA4</span>
-        </div>
-        <div class="outcome">
-          <strong>+52%</strong>
-          <span class="outcome-label">entry-to-purchase progression</span>
-          <span class="outcome-note">VRBO integration</span>
-        </div>
-        <div class="outcome">
-          <strong>~3&times;</strong>
-          <span class="outcome-label">faster inventory editing</span>
-          <span class="outcome-note">Comparative workflow testing</span>
-        </div>
-      </div>
-    </div>
-    <br>
-  </section>
+  <%- include(`${templatePath}/shared2026/hero`) %>
 
   <section class="work container" id="work">
     <div class="work-header">
@@ -79,109 +30,46 @@
         <h2>Selected work</h2>
         <p class="work-note">Project previews shown below &middot; Full case studies available upon request</p>
       </div>
-      <div class="work-meta">2021 &ndash; 2026</div>
+      <div class="work-meta">Product Design &middot; 2021 &ndash; 2026</div>
     </div>
 
-    <article class="case case--hero">
-      <div class="case-hero-grid">
-        <div class="case-hero-heading">
-          <div class="case-tag-group">
-            <span class="case-index">&#8470; 1 &middot; Q3 2025</span>
-            <span class="tag">SUPPLY SIDE &mdash; PARTNER PORTAL</span>
-          </div>
-          <h3>Reducing Operational Friction to Unlock Marketplace Supply</h3>
-        </div>
-        <div class="case-hero-detail">
-          <p>Unified fragmented inventory workflows into a faster management surface for high-volume providers.</p>
-          <div class="case-outcome"><span class="label">Impact &mdash;</span> <span class="value">~3&times;</span> faster inventory editing in comparative workflow testing</div>
-          <div class="case-cta">
-            <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; 1" data-case-title="Reducing Operational Friction to Unlock Marketplace Supply">Read case study &rarr;</a>
-            <span class="private-badge">PRIVATE</span>
-          </div>
-        </div>
-      </div>
-      <div class="case-media">
-        <img src="../project_images/cover_bq_inventory.png" alt="">
-      </div>
-    </article>
+    <%- include(`${templatePath}/shared2026/card_inventory`, {
+      cardNumber: 1,
+      cardHref: null,
+      cardGated: true
+    }) %>
 
     <div class="case-grid">
-      <article class="case">
-        <div class="case-media">
-          <img src="../project_images/cover_bq_vrbo1.png" alt="">
-        </div>
-        <div class="case-tag-group">
-          <span class="case-index">&#8470; 2 &middot; Q2 2026</span>
-          <span class="tag">DEMAND SIDE &mdash; SHOPPING</span>
-        </div>
-        <h3>Converting VRBO Partner Traffic into Rental Intent</h3>
-        <p>Redesigned the VRBO mobile experience to improve shopping progression and purchase conversion.</p>
-        <div class="case-outcome"><span class="label">Impact &mdash;</span> <span class="value">+60%</span> entry→shopping &middot; <span class="value">+52%</span> entry→purchase &middot; <span class="value">30</span>-day GA4 pre/post</div>
-        <div class="case-cta">
-          <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; 2" data-case-title="Converting VRBO Partner Traffic into Rental Intent">Read case study &rarr;</a>
-          <span class="private-badge">PRIVATE</span>
-        </div>
-      </article>
-      <article class="case">
-        <div class="case-media">
-          <img src="../project_images/cover_bq_checkout1.png" alt="">
-        </div>
-        <div class="case-tag-group">
-          <span class="case-index">&#8470; 3 &middot; Q2 2026</span>
-          <span class="tag">DEMAND SIDE &mdash; CHECKOUT</span>
-        </div>
-        <h3>Reducing Checkout Friction After Renters Are Ready to Book</h3>
-        <p>Resolved identity earlier and simplified checkout so renters stayed focused on completing their reservation.</p>
-        <div class="case-outcome"><span class="label">Key improvements &mdash;</span> earlier identity confirmation &middot; fewer purchase blockers &middot; simpler checkout flow</div>
-        <div class="case-cta">
-          <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; 3" data-case-title="Reducing Checkout Friction After Renters Are Ready to Book">Read case study &rarr;</a>
-          <span class="private-badge">PRIVATE</span>
-        </div>
-      </article>
+      <%- include(`${templatePath}/shared2026/card_vrbo`, {
+        cardNumber: 2,
+        cardHref: null,
+        cardGated: true
+      }) %>
+      <%- include(`${templatePath}/shared2026/card_checkout`, {
+        cardNumber: 3,
+        cardHref: null,
+        cardGated: true
+      }) %>
     </div>
 
-    <div class="">
-
-      <article class="case case--hero">
-        <div class="case-media">
-          <img src="../project_images/cover_bq_package.png" alt="">
-        </div>
-<br>
-        <div class="case-hero-heading">
-
-          <div class="case-tag-group">
-            <span class="case-index">&#8470; 4 &middot; Q2 2026</span>
-            <span class="tag">SUPPLY SIDE &mdash; PARTNER PORTAL</span>
-          </div>
-          <h3>Standardizing Provider-Created Bundles into a Scalable Package System</h3>
-        </div>
-        <p>Created a standardized package system providers could adopt, giving BabyQuip a foundation for bundle discovery and merchandising.</p>
-        <div class="case-outcome"><span class="label">Key improvements &mdash;</span> package templates &middot; provider adoption &middot; legacy migration &middot; merchandising foundation</div>
-        <br>
-
-        <div class="case-cta">
-          <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; 5" data-case-title="Standardizing Provider-Created Bundles into a Scalable Package System">Read case study &rarr;</a>
-          <span class="private-badge">PRIVATE</span>
-        </div>
-      </article>
+    <div class="case-grid">
+      <%- include(`${templatePath}/shared2026/card_package`, {
+        cardNumber: 4,
+        cardHref: null,
+        cardGated: true
+      }) %>
+      <%- include(`${templatePath}/shared2026/card_byp`, {
+        cardNumber: 5,
+        cardHref: '/byp_provider_platform'
+      }) %>
     </div>
     <div class="work-end"></div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Building a complex product or platform? I&rsquo;d love to hear what you're building.</h2>
-      <div class="contact-links">
-        <a href="mailto:vickyw.design@gmail.com" class="contact-link accent">Email me &rarr;</a>
-        <a href="https://www.linkedin.com/in/vicky-wyq/" class="contact-link">LinkedIn &#8599;</a>
-        <a href="/resume2026" class="contact-link">Resume &#8599;</a>
-      </div>
-      <div class="contact-footer">
-        <span>&copy; 2020&ndash;2026 vickywang.me</span>
-        <span>Vicky Wang &mdash; Product Designer</span>
-      </div>
-    </div>
-  </section>
+  <%- include(`${templatePath}/shared2026/footer`, {
+    footerVariant: 'landing',
+    footerResumeHref: '/resume2026'
+  }) %>
 
   <div class="wl-case-modal" id="case-modal">
     <div class="wl-case-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="case-modal-title">

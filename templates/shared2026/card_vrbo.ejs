@@ -1,0 +1,26 @@
+<article class="case">
+  <% if (cardGated) { %>
+    <div class="case-media">
+      <img src="../project_images/cover_bq_vrbo1.png" alt="">
+    </div>
+  <% } else { %>
+    <a href="<%= cardHref %>" class="case-media">
+      <img src="../project_images/cover_bq_vrbo1.png" alt="">
+    </a>
+  <% } %>
+  <div class="case-tag-group">
+    <span class="case-index">&#8470; <%= cardNumber %> &middot; Q1 2026</span>
+    <span class="tag">DEMAND SIDE &mdash; SHOPPING</span>
+  </div>
+  <h3>Converting VRBO Partner Traffic into Rental Intent</h3>
+  <p>Redesigned the VRBO mobile experience to improve shopping progression and purchase conversion.</p>
+  <div class="case-outcome"><span class="label">Impact &mdash;</span> <span class="value">+60%</span> entry&rarr;shopping &middot; <span class="value">+52%</span> entry&rarr;purchase &middot; 30-day GA4 pre/post</div>
+  <% if (cardGated) { %>
+    <div class="case-cta">
+      <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; <%= cardNumber %>" data-case-title="Converting VRBO Partner Traffic into Rental Intent">Read case study &rarr;</a>
+      <span class="private-badge">PRIVATE</span>
+    </div>
+  <% } else { %>
+    <a href="<%= cardHref %>" class="case-link">Read case study &rarr;</a>
+  <% } %>
+</article>

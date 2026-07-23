@@ -1,0 +1,32 @@
+<article class="case case--hero">
+  <div class="case-hero-grid">
+    <div class="case-hero-heading">
+      <div class="case-tag-group">
+        <span class="case-index">&#8470; <%= cardNumber %> &middot; Q3 2025</span>
+        <span class="tag">SUPPLY SIDE &mdash; PARTNER PORTAL</span>
+      </div>
+      <h3>Reducing Operational Friction to Unlock Marketplace Supply</h3>
+    </div>
+    <div class="case-hero-detail">
+      <p>Unified fragmented inventory workflows into a faster management surface for high-volume providers.</p>
+      <div class="case-outcome"><span class="label">Impact &mdash;</span> <span class="value">~3&times;</span> faster inventory editing in comparative workflow testing</div>
+      <% if (cardGated) { %>
+        <div class="case-cta">
+          <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; <%= cardNumber %>" data-case-title="Reducing Operational Friction to Unlock Marketplace Supply">Read case study &rarr;</a>
+          <span class="private-badge">PRIVATE</span>
+        </div>
+      <% } else { %>
+        <a href="<%= cardHref %>" class="case-link">Read case study &rarr;</a>
+      <% } %>
+    </div>
+  </div>
+  <% if (cardGated) { %>
+    <div class="case-media">
+      <img src="../project_images/cover_bq_inventory.png" alt="">
+    </div>
+  <% } else { %>
+    <a href="<%= cardHref %>" class="case-media">
+      <img src="../project_images/cover_bq_inventory.png" alt="">
+    </a>
+  <% } %>
+</article>

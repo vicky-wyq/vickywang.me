@@ -5,7 +5,7 @@ const ejsLiterals = require('./ejs_literals');
 
 const templatesDir = path.join(__dirname, 'templates');
 const outputDir = path.join(__dirname, 'html');
-const partialsDir = 'shared'; // Directory name for partials
+const partialsDirs = ['shared', 'shared2026']; // Directories containing EJS partials
 
 console.log(ejsLiterals)
 // Data to be passed to templates
@@ -32,7 +32,7 @@ async function processFile(filePath, relativePath = '') {
     }
   } else if (path.extname(filePath) === '.ejs') {
     // Skip files in the partials directory
-    if (relativePath.includes(`${partialsDir}/`)) {
+    if (relativePath.split(path.sep).some(part => partialsDirs.includes(part))) {
       return;
     }
 // Existing line
@@ -55,11 +55,13 @@ async function processFile(filePath, relativePath = '') {
 async function buildTemplates() {
   await clearOutputDir();
   await processFile(templatesDir);
+  await fs.copy(
+    path.join(__dirname, 'robots.txt'),
+    path.join(outputDir, 'robots.txt')
+  );
 }
 
 // Run the build process
 buildTemplates().catch(err => console.error(err));
-
-
 
 

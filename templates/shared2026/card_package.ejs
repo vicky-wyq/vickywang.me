@@ -1,0 +1,26 @@
+<article class="case">
+  <% if (cardGated) { %>
+    <div class="case-media">
+      <img src="../project_images/cover_bq_package.png" alt="">
+    </div>
+  <% } else { %>
+    <a href="<%= cardHref %>" class="case-media">
+      <img src="../project_images/cover_bq_package.png" alt="">
+    </a>
+  <% } %>
+  <div class="case-tag-group">
+    <span class="case-index">&#8470; <%= cardNumber %> &middot; Q2 2026</span>
+    <span class="tag">SUPPLY SIDE &mdash; PARTNER PORTAL</span>
+  </div>
+  <h3>Standardizing Provider-Created Bundles into a Scalable Package System</h3>
+  <p>Created a standardized package system providers could adopt, giving BabyQuip a foundation for bundle discovery and merchandising.</p>
+  <div class="case-outcome"><span class="label">Key improvements &mdash;</span> package templates &middot; provider adoption &middot; legacy migration &middot; merchandising foundation</div>
+  <% if (cardGated) { %>
+    <div class="case-cta">
+      <a href="#" class="case-link" data-modal-trigger data-case-num="&#8470; <%= cardNumber %>" data-case-title="Standardizing Provider-Created Bundles into a Scalable Package System">Read case study &rarr;</a>
+      <span class="private-badge">PRIVATE</span>
+    </div>
+  <% } else { %>
+    <a href="<%= cardHref %>" class="case-link">Read case study &rarr;</a>
+  <% } %>
+</article>
