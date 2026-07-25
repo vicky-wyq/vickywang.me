@@ -126,7 +126,7 @@
     </div>
 
     <div class="u-mt-md">
-      <div class="cs-media cs-ar-16-10" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+      <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
         <span class="cs-label u-m-0">Handwritten daily plan beside the Partner Portal calendar &mdash; route order &middot; customer/location &middot; gear count &middot; completion state</span>
 
 
@@ -135,27 +135,27 @@
 
     <h3 class="cs-h3 u-mt-lg">Five findings shaped the architecture</h3>
     <div class="cs-breakdown-grid">
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-breakdown-tag">1 &middot; Three time horizons</div>
         <p class="cs-text u-mt-xs">Weekly planning (workload, locations, gear), day-before coordination (confirmations, missing details, loading), and day-of execution (next stop, navigation, contact, delays). A generic reservation directory could not serve all three equally.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-breakdown-tag">2 &middot; Uneven workload density</div>
         <p class="cs-text u-mt-xs">Sampled calendars ranged from nearly empty to densely booked, but workload was unevenly distributed across individual days at every tier. A Today-only home would often look empty or hide upcoming work; a full month view would bury immediate tasks.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-breakdown-tag">3 &middot; Communication was fulfillment</div>
         <p class="cs-text u-mt-xs">Messages existed to complete operational work &mdash; timing, access codes, gear placement, last-minute changes. Conversations needed reservation context, not a generic standalone messaging feature.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-breakdown-tag">4 &middot; Context reconstructed across tools</div>
         <p class="cs-text u-mt-xs">A modification email, an inbox search, the reopened order, the customer&rsquo;s notes, then a text. Providers rebuilt active reservation context across multiple BabyQuip surfaces and external tools before they could act.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-breakdown-tag">5 &middot; Unread &ne; responsibility</div>
         <p class="cs-text u-mt-xs">The portal mixed conversations, confirmations, and modifications into one feed with badges that were hard to interpret or clear. Unread state did not reliably communicate what the provider was responsible for doing.</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-breakdown-tag">&rarr; The reframe</div>
         <p class="cs-text u-mt-xs">These findings shifted the design from organizing information <em>by source</em> to organizing it <em>by required response</em> &mdash; and from a Today or Month view to a week-first default with day-level drill-down.</p>
       </div>
@@ -164,19 +164,19 @@
     <div class="cs-diagram-grid">
       <div>
         <div class="cs-label">LOWER SUPPLY INDEX TIER</div>
-        <div class="cs-media cs-ar-4-3" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+        <div class="cs-media cs-ar-standard" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
           <span class="cs-label u-m-0">Sparse calendar &mdash; lower-tier account</span>
         </div>
       </div>
       <div>
         <div class="cs-label">MIDDLE SUPPLY INDEX TIER</div>
-        <div class="cs-media cs-ar-4-3" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+        <div class="cs-media cs-ar-standard" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
           <span class="cs-label u-m-0">Moderate calendar &mdash; middle-tier account</span>
         </div>
       </div>
       <div>
         <div class="cs-label">UPPER SUPPLY INDEX TIER</div>
-        <div class="cs-media cs-ar-4-3" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+        <div class="cs-media cs-ar-standard" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
           <span class="cs-label u-m-0">Busy calendar &mdash; upper-tier account</span>
         </div>
       </div>
@@ -209,22 +209,22 @@
 
     <h3 class="cs-h3 u-mt-lg">Work hierarchy &mdash; progressive disclosure from week to action</h3>
     <div class="cs-breakdown-grid">
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-label">PLANNING</div>
         <div class="cs-breakdown-voice">&ldquo;What does my upcoming week look like?&rdquo;</div>
         <p class="cs-text u-mt-xs">Weekly calendar and workload indicators</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-label">DAILY WORKLOAD</div>
         <div class="cs-breakdown-voice">&ldquo;What must I handle on this day?&rdquo;</div>
         <p class="cs-text u-mt-xs">Date-specific delivery and pickup list</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-label">RESERVATION</div>
         <div class="cs-breakdown-voice">&ldquo;What do I need to know about this order?&rdquo;</div>
         <p class="cs-text u-mt-xs">Timing, location, gear, instructions, notes, customer, history</p>
       </div>
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-label">ACTION</div>
         <div class="cs-breakdown-voice">&ldquo;What must I do now?&rdquo;</div>
         <p class="cs-text u-mt-xs">Navigate, message, approve, decline, or respond to a transfer</p>
@@ -265,7 +265,7 @@
           <h3><span class="cs-solution-num">1 &middot;</span> Week-first calendar, not Today-first or list-first</h3>
           <p>The weekly calendar became the default Reservations view, with List View as a secondary mode. The week gives lighter providers meaningful upcoming context, helps busy providers spot heavy days before they arrive, and avoids an often-empty Today dashboard &mdash; while staying more scannable than the portal&rsquo;s month view. List View covers the other retrieval need: search by customer, reservation number, or street; filter recently booked or unpaid; select custom date ranges.</p>
         </div>
-        <div class="cs-media cs-ar-16-10" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+        <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
           <span class="cs-label u-m-0">Side-by-side wireframes &mdash; Today-first vs. week-first vs. list-first entry</span>
         </div>
       </div>
@@ -275,7 +275,7 @@
           <h3><span class="cs-solution-num">2 &middot;</span> One Inbox, three distinct behaviors, instead of scattered destinations or one mixed feed</h3>
           <p>Messages, Alerts, and Action Items were consolidated into a single Inbox but kept distinct inside it. Separate destinations would scatter related reservation information across the app; a single undifferentiated feed would reproduce the portal&rsquo;s existing problem &mdash; giving routine updates, customer conversations, and required decisions the same visual weight. Every item links back to its reservation, so providers never search for the order twice.</p>
         </div>
-        <div class="cs-media cs-ar-16-10" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+        <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
           <span class="cs-label u-m-0">Side-by-side wireframes &mdash; separate surfaces vs. one unified feed vs. categorized Inbox</span>
         </div>
       </div>
@@ -285,7 +285,7 @@
           <h3><span class="cs-solution-num">3 &middot;</span> Reservation details organized around fulfillment, not the desktop portal structure</h3>
           <p>The mobile detail prioritizes delivery and pickup timing, location and navigation, operational instructions, customer contact, gear and quantities, private notes, and modification history. When a customer change requires approval, the page shifts from reference mode to decision mode: the approval state surfaces at the top, modified information is highlighted, and Approve / Decline stay persistently accessible. Mirroring the full portal page would have produced a dense administrative screen unsuitable for active fieldwork; showing too little would send providers back to email and the desktop.</p>
         </div>
-        <div class="cs-media cs-ar-16-10" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
+        <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
           <span class="cs-label u-m-0">Side-by-side wireframes &mdash; portal field order vs. operational reservation hierarchy</span>
         </div>
       </div>
@@ -294,7 +294,7 @@
     <h3 class="cs-h3 u-mt-xl">Drawing the Phase 1 boundary</h3>
     <p class="cs-lead">Research exposed a much larger opportunity space than the first release could responsibly support. Scope was drawn in three rings:</p>
     <div class="cs-breakdown-grid">
-      <div class="cs-breakdown-card">
+      <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-breakdown-tag">Included in V1</div>
         <ul class="cs-list u-mt-sm">
           <li>Weekly calendar + date-based reservation views</li>
@@ -305,7 +305,7 @@
           <li>Private notes, navigation, and contact actions</li>
         </ul>
       </div>
-      <div class="cs-breakdown-card-lighter-top-line">
+      <div class="cs-rule-top cs-rule-top--subtle">
         <div class="cs-breakdown-tag u-color-faint">Fast follow</div>
         <ul class="cs-list u-mt-sm">
           <li>Reusable message templates</li>
@@ -314,7 +314,7 @@
           <li>Summarized modification updates</li>
         </ul>
       </div>
-      <div class="cs-breakdown-card-lighter-top-line">
+      <div class="cs-rule-top cs-rule-top--subtle">
         <div class="cs-breakdown-tag u-color-faint">Future opportunities</div>
         <ul class="cs-list u-mt-sm">
           <li>Route planning and optimization</li>
@@ -348,25 +348,25 @@
         <div class="cs-two-col cs-two-col--steps">
           <div>
             <div class="cs-label">1 &middot; WEEK</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Weekly calendar screen</span>
             </div>
           </div>
           <div>
             <div class="cs-label">2 &middot; SELECTED DAY</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Selected day &mdash; deliveries and pickups</span>
             </div>
           </div>
           <div>
             <div class="cs-label">3 &middot; RESERVATION</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Reservation detail screen</span>
             </div>
           </div>
           <div>
             <div class="cs-label">4 &middot; ACTION</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Navigate, message, or approve</span>
             </div>
           </div>
@@ -382,21 +382,21 @@
         <div class="cs-diagram-grid">
           <div>
             <div class="cs-label">ACTION ITEMS</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Inbox &mdash; Action Items view</span>
             </div>
             <div class="cs-label" style="color:var(--accent)">Persists until resolved</div>
           </div>
           <div>
             <div class="cs-label">MESSAGES</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Inbox &mdash; Messages view</span>
             </div>
             <div class="cs-label" style="color:var(--accent)">Preserves conversation state</div>
           </div>
           <div>
             <div class="cs-label">ALERTS</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Inbox &mdash; Alerts view</span>
             </div>
             <div class="cs-label" style="color:var(--accent)">Clears after review</div>
@@ -412,13 +412,13 @@
         <div class="cs-before-after">
           <div>
             <div class="cs-label">STANDARD STATE &mdash; REFERENCE MODE</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Standard reservation detail</span>
             </div>
           </div>
           <div>
             <div class="cs-label" style="color:var(--accent)">APPROVAL-REQUIRED STATE &mdash; DECISION MODE</div>
-            <div class="cs-media cs-ar-3-2" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
+            <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:16px;text-align:center">
               <span class="cs-label u-m-0">Approval-required state &mdash; approval banner &middot; modified fields &middot; activity log &middot; persistent Approve/Decline</span>
             </div>
           </div>

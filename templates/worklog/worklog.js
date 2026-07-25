@@ -182,8 +182,8 @@
 
   function setControls() {
     var hasGallery = gallery.length > 1;
-    prevBtn.hidden = !hasGallery;
-    nextBtn.hidden = !hasGallery;
+    prevBtn.hidden = !hasGallery || activeIndex <= 0;
+    nextBtn.hidden = !hasGallery || activeIndex >= gallery.length - 1;
   }
 
   function showImage(target) {
@@ -210,7 +210,9 @@
 
   function move(direction) {
     if (gallery.length < 2) return;
-    activeIndex = (activeIndex + direction + gallery.length) % gallery.length;
+    var nextIndex = activeIndex + direction;
+    if (nextIndex < 0 || nextIndex >= gallery.length) return;
+    activeIndex = nextIndex;
     showImage(gallery[activeIndex]);
   }
 
