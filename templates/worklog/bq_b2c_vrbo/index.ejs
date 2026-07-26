@@ -33,13 +33,13 @@
 
     <div class="cs-divider-grid cs-divider-grid--hero">
       <div>
-        <div class="cs-stat-value">+60<span class="accent">%</span></div>
+        <div class="cs-stat-value">+60%</div>
         <div class="cs-stat-label">(22.6% → 36.1%)</div>
 
         <div class="cs-stat-label">Entry &rarr; Shopping progression</div>
       </div>
       <div>
-        <div class="cs-stat-value">+52<span class="accent">%</span></div>
+        <div class="cs-stat-value">+52%</div>
         <div class="cs-stat-label">2.70% → 4.11%</div>
 
         <div class="cs-stat-label">Entry &rarr; Purchase progression</div>
@@ -89,7 +89,7 @@
         </div>
 
         <br>
-        <div class="cs-subhead"><strong>Marketplace-model mismatch</strong></div>
+        <div class="cs-subhead">Marketplace-model mismatch</div>
         <p class="cs-text u-mt-xs">The interface supported item-first shopping, while fulfillment remained provider-dependent.</p>
         <ul class="cs-list u-mb-sm">
           <li>Travelers could browse and add gear before selecting a provider.</li>
@@ -105,7 +105,7 @@
         </div>
         <br>
 
-        <div class="cs-subhead"><strong>Partner-entry mismatch</strong></div>
+        <div class="cs-subhead">Partner-entry mismatch</div>
         <p class="cs-text u-mt-xs">Vrbo travelers arrived with a trip already booked, but often with little or no familiarity with BabyQuip.</p>
         <ul class="cs-list">
           <li>Their stay address and trip details carried over from Vrbo.</li>
@@ -128,26 +128,27 @@
     <p class="cs-lead">GA4 and Hotjar showed Vrbo users were not primarily failing at checkout &mdash; they were dropping early, and the drop was concentrated on mobile.</p>
 
     <div class="cs-two-col">
-      <div>
-        <div class="cs-subhead cs-subhead--dark">Vrbo mobile vs. non-Vrbo mobile</div>
-        <div class="cs-media cs-ar-wide">
-          <img class="modal-target" src="ga4_vrbo_nonvrbo_traffic.png" alt="Vrbo mobile vs non-Vrbo mobile funnel comparison" data-modal-gallery="ga4">
-        </div>
-        <ul class="cs-list u-mt-sm">
-          <li>Vrbo mobile users dropped earlier in the funnel, while later-stage completion remained strong</li>
-          <li>The biggest issue was early progression from entry/shopping toward provider commitment &mdash; not checkout</li>
-        </ul>
-      </div>
-      <div>
+            <div>
         <div class="cs-subhead cs-subhead--dark">Vrbo mobile vs. Vrbo web</div>
-        <div class="cs-media cs-ar-wide">
+        <div class="cs-media cs-ar-portrait">
           <img class="modal-target" src="ga4_mobile_vs_web_traffic.png" alt="Vrbo mobile vs Vrbo web funnel comparison" data-modal-gallery="ga4">
         </div>
         <ul class="cs-list u-mt-sm">
-          <li>Vrbo traffic was primarily mobile web &mdash; the embedded in-app browser was the highest-priority surface</li>
-          <li>Vrbo mobile performed worse at early stages than Vrbo web</li>
+          <li>Vrbo mobile progressed less effectively through the early funnel than Vrbo web.</li>
+          <li>Because most Vrbo traffic arrived on mobile, the embedded experience was the highest-priority surface.</li>
         </ul>
       </div>
+      <div>
+        <div class="cs-subhead cs-subhead--dark">Vrbo mobile vs. non-Vrbo mobile</div>
+        <div class="cs-media cs-ar-portrait">
+          <img class="modal-target" src="ga4_vrbo_nonvrbo_traffic.png" alt="Vrbo mobile vs non-Vrbo mobile funnel comparison" data-modal-gallery="ga4">
+        </div>
+        <ul class="cs-list u-mt-sm">
+          <li>Vrbo mobile underperformed non-Vrbo mobile most sharply at entry into shopping.</li>
+          <li>The primary weakness was early progression toward provider commitment, not checkout completion.</li>
+        </ul>
+      </div>
+
     </div>
 
     <h2 class="cs-h2 cs-h2--follow cs-h2--sm">Four experience breakdowns that shaped the redesign</h2>
@@ -157,9 +158,9 @@
       <div class="cs-rule-top cs-rule-top--subtle">
         <div class="cs-breakdown-head">
           <span class="cs-breakdown-tag">A &middot; Entry confusion</span>
-          <span class="cs-breakdown-voice">&ldquo;Where am I?&rdquo;</span>
+          <span class="cs-quote">&ldquo;Where am I?&rdquo;</span>
         </div>
-        <div class="cs-media cs-ar-banner">
+        <div class="cs-media cs-ar-standard">
           <img class="modal-target" src="legacy_pre_entry.png" alt="Legacy Vrbo entry added friction before shopping" data-modal-gallery="vrbo-insights">
         </div>
         <ul class="cs-list u-mt-sm">
@@ -173,9 +174,9 @@
       <div class="cs-rule-top cs-rule-top--subtle">
         <div class="cs-breakdown-head">
           <span class="cs-breakdown-tag">B &middot; Missing provider context</span>
-          <span class="cs-breakdown-voice">&ldquo;I thought these items and prices were confirmed.&rdquo;</span>
+          <span class="cs-quote">&ldquo;I thought these items and prices were confirmed.&rdquo;</span>
         </div>
-        <div class="cs-media cs-ar-banner">
+        <div class="cs-media cs-ar-standard">
           <img class="modal-target" src="legacy_shop_placeholder_items.png" alt="Legacy shopping with generic products and pricing" data-modal-gallery="vrbo-insights">
         </div>
         <ul class="cs-list u-mt-sm">
@@ -189,9 +190,9 @@
       <div class="cs-rule-top cs-rule-top--subtle">
         <div class="cs-breakdown-head">
           <span class="cs-breakdown-tag">C &middot; Unclear next action</span>
-          <span class="cs-breakdown-voice">&ldquo;What do I need to do next?&rdquo;</span>
+          <span class="cs-quote">&ldquo;What do I need to do next?&rdquo;</span>
         </div>
-        <div class="cs-media cs-ar-banner">
+        <div class="cs-media cs-ar-standard">
           <img class="modal-target" src="legacy_provider_selection.png" alt="Legacy provider selection lacked clear guidance" data-modal-gallery="vrbo-insights">
         </div>
         <ul class="cs-list u-mt-sm">
@@ -205,9 +206,9 @@
       <div class="cs-rule-top cs-rule-top--subtle">
         <div class="cs-breakdown-head">
           <span class="cs-breakdown-tag">D &middot; Repetitive checkout flow</span>
-          <span class="cs-breakdown-voice">&ldquo;Why am I doing this again?&rdquo;</span>
+          <span class="cs-quote">&ldquo;Why am I doing this again?&rdquo;</span>
         </div>
-        <div class="cs-media cs-ar-banner">
+        <div class="cs-media cs-ar-standard">
           <img class="modal-target" src="legacy_precheckout.png" alt="Legacy flow with repeated checkout states" data-modal-gallery="vrbo-insights">
         </div>
         <ul class="cs-list u-mt-sm">
@@ -305,16 +306,18 @@
         <div class="cs-solutions u-mt-0">
           <figure class="u-m-0">
             <div class="cs-media cs-media--diagram">
-              <img class="modal-target" src="legacy_pre_checkout.png" alt="Before: fragmented pre-checkout flow" data-modal-gallery="vrbo-design">
+              <img class="modal-target" src="legacy_pre_checkout.png" alt="Before:Repeated branching and loops
+" data-modal-gallery="vrbo-design">
             </div>
-            <figcaption class="cs-media-caption"><strong>Before:</strong> Fragmented cart and add-on states repeatedly asked users whether to keep shopping or continue.</figcaption>
+            <figcaption class="cs-media-caption"><strong>Before:</strong>Repeated branching and loops</figcaption>
           </figure>
 
           <figure class="u-m-0">
             <div class="cs-media cs-media--diagram">
-              <img class="modal-target" src="design_pre_checkout.png" alt="After: one continuous pre-checkout path" data-modal-gallery="vrbo-design">
+              <img class="modal-target" src="design_pre_checkout.png" alt="After: One intentional path to checkout
+" data-modal-gallery="vrbo-design">
             </div>
-            <figcaption class="cs-media-caption"><strong>After:</strong> One continuous path moved users from optional add-ons to order review and checkout.</figcaption>
+            <figcaption class="cs-media-caption"><strong>After:</strong> One intentional path to checkout</figcaption>
           </figure>
         </div>
       </div>
@@ -323,20 +326,13 @@
 
   <section id="impact" class="cs-section cs-section--end container">
     <div class="cs-kicker">04 &mdash; IMPACT</div>
-    <h2 class="cs-h2">Directional improvement &mdash; and a clearer view of the system</h2>
-    <p class="cs-lead">The redesign improved early-funnel progression and purchase completion directionally, while also revealing the deeper structural tension between gear-first browsing and provider-first fulfillment.</p>
+    <h2 class="cs-h2">What improved — and what the redesign revealed</h2>
+    <p class="cs-lead">After launch, early-funnel progression and entry-to-purchase conversion improved directionally. The work also clarified the unresolved tension between gear-first discovery and provider-dependent fulfillment.</p>
 
     <div class="cs-two-col">
       <div>
-        <div class="cs-subhead">Reduce discovery &amp; shopping drop-off</div>
-        <ul class="cs-list">
-          <li>Maintained gear context from Vrbo into BabyQuip &mdash; general entries show Vrbo + BabyQuip branding; gear-specific entries preserve the selected item</li>
-          <li>Replaced the disruptive trip-information modal with a lightweight popover confirming the traveler's address carried over</li>
-          <li>Simplified the privacy prompt with a clearer path to continue</li>
-          <li>Adjusted the disclaimer explaining prices may change after provider selection</li>
-          <li>Highlighted the Vrbo traveler discount; removed unrelated app-download messaging</li>
-          <li>Improved filter visibility and navigation for finding and comparing gear</li>
-        </ul>
+        <div class="cs-subhead">Observed funnel changes</div>
+        <p class="cs-text u-mt-sm">The strongest movement appeared at the stages targeted by the redesign: entry into shopping and progression from entry to purchase.</p>
       </div>
       <div>
         <div class="cs-subhead">Simplify the path to checkout</div>
@@ -348,27 +344,28 @@
     </div>
 
     <div class="cs-block-divider">
-      <div class="cs-funnel-header">
-        <h3>Observed funnel changes</h3>
-        <span class="cs-funnel-meta">Pre-redesign baseline: Mar 25 &ndash; Apr 24 &middot; Post-launch, stabilized: May 17 &ndash; Jun 15 &middot; GA4, 30 days each</span>
+      <div class="cs-heading-row">
+        <h3 class="cs-h3 u-mb-0">Directional funnel gains, with the structural constraint still visible</h3>
+        <p class="cs-text">Early-stage progression and entry-to-purchase conversion improved after launch. The results also confirmed that the deeper tension between gear-first discovery and provider-dependent fulfillment remained unresolved.</p>
+        <span class="cs-meta">Pre-redesign baseline: <button type="button" class="cs-modal-link modal-target" data-modal-gallery="vrbo-ga4-launch">Mar 25 &ndash; Apr 24<img src="ga4_before_launch.png" alt="GA4 source · Pre-redesign baseline · Mar 25–Apr 24, 2026" hidden></button> &middot; Post-launch, stabilized: <button type="button" class="cs-modal-link modal-target" data-modal-gallery="vrbo-ga4-launch">May 17 &ndash; Jun 15<img src="ga4_after_launch.png" alt="GA4 source · Stabilized post-launch period · May 17–Jun 15, 2026" hidden></button> &middot; GA4, 30 days &middot; each Launch and stabilization period excluded.</span>
       </div>
       <div class="cs-divider-grid cs-divider-grid--flush">
         <div>
           <div class="cs-stat-value--sm">22.6% <span class="accent">&rarr;</span> 36.1%</div>
           <div class="cs-stat-label">Entry &rarr; Shopping</div>
-          <div class="cs-stat-delta">+60% relative progression</div>
+          <div class="cs-stat-delta">+13.5 percentage points · +60% relative lift</div>
         </div>
         <div>
           <div class="cs-stat-value--sm">2.70% <span class="accent">&rarr;</span> 4.11%</div>
           <div class="cs-stat-label">Entry &rarr; Purchase</div>
-          <div class="cs-stat-delta">+52% relative progression</div>
+          <div class="cs-stat-delta">+1.41 percentage points · +52% relative lift</div>
         </div>
       </div>
       <div class="cs-divider-grid cs-divider-grid--tight">
         <div>
           <div class="cs-label">SUPPORTING</div>
           <div class="cs-text u-mb-xs">Shopping &rarr; Add to cart</div>
-          <div class="cs-stat-delta cs-stat-delta--dark">34.4% &rarr; 36.3% <span class="accent">(+5.5%)</span></div>
+          <div class="cs-stat-delta cs-stat-delta--dark">34.4% &rarr; 36.3% <span class="accent">(+5.8%)</span></div>
         </div>
         <div>
           <div class="cs-label">SUPPORTING</div>
@@ -378,29 +375,52 @@
         <div>
           <div class="cs-label">NOT COMPARABLE *</div>
           <div class="cs-text u-mb-xs u-color-faint">Cart &rarr; Checkout</div>
-          <div class="cs-stat-delta cs-stat-delta--faint">66.1% &rarr; 47.8% (&minus;28%)</div>
+          <div class="cs-stat-delta cs-stat-delta--faint"> </div>
+          <div class="cs-stat-note">Not directly comparable after launch. The redesign removed repeated cart and order-summary states, changing the meaning and frequency of checkout-entry events.</div>
         </div>
       </div>
-      <p class="cs-footnote">* Cart &rarr; Checkout is structurally non-comparable after the flow change: the redesign removed repeated cart/order-summary loops, so fewer &mdash; but more purposeful &mdash; checkout entries are expected.</p>
-      <p class="cs-footnote">Purchase volume also increased in the matched periods, but traffic, seasonality, and partner-side factors were not isolated &mdash; so it is supporting context, not a headline result.</p>
+
+      <div class="cs-stat-note cs-rule-bottom">Purchase volume also increased in the matched periods, but traffic, seasonality, and partner-side factors were not isolated &mdash; so it is supporting context, not a headline result.</div>
+
     </div>
 
     <div class="cs-two-col cs-block-divider">
       <div>
         <h3 class="cs-h3">Trade-offs</h3>
         <ul class="cs-list">
-          <li><strong>Did not resolve the provider-first vs. gear-first tension:</strong> users still browse before fulfillment is fully known</li>
-          <li><strong>Placeholder item logic remains:</strong> pricing and availability become reliable only after provider selection</li>
-          <li>Provider selection without items was explored but not shipped</li>
-          <li>Limited by the embedded webview and tracking gaps</li>
+          <li>Provider-first vs. gear-first tension remained: travelers could still browse before fulfillment was confirmed</li>
+          <li>Representative-item logic remained: final price and availability still depended on provider selection.</li>
+          <li>Provider-first entry without selected items was explored but not shipped.</li>
+          <li>Embedded webview and tracking limitations constrained measurement.</li>
         </ul>
       </div>
+
+    </div>
+    <div class="cs-heading-row cs-block-divider">
+      <h3 class="cs-h3 u-mb-0">Structural insight and future direction</h3>
+
+      <p class="cs-text">A longer-term opportunity is a hybrid marketplace model that supports multiple entry paths while treating pre-provider gear selections as fulfillment requirements, not confirmed inventory.</p>
+
+    </div>
+    <div class="cs-two-col ">
       <div>
-        <h3 class="cs-h3">What this revealed about the system</h3>
-        <p class="cs-text u-mb-sm">Longer term, the better structural fix is a <strong class="cs-text-emphasis">dual-entry model</strong> that supports both browse-first and provider-first journeys.</p>
-        <div class="cs-media cs-ar-wide">
-          <img class="modal-target" src="design_dual-entry_model.png" alt="Dual-entry model diagram" data-modal-gallery="vrbo-impact">
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="design_dual-entry_model.png" alt="Start with gear or providers
+" data-modal-gallery="vrbo-design-future">
         </div>
+
+        <div class="cs-subhead  u-mt-sm">Start with gear or providers</div>
+
+        <p class="cs-text u-mb-sm">Travelers could begin by browsing nearby providers or by describing the gear they need. Both paths would lead toward provider-specific inventory and fulfillment.</p>
+
+      </div>
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="design_fulfillment_aware_discovery.png" alt="Select provider → see actual inventory and price" data-modal-gallery="vrbo-design-future">
+        </div>
+        <div class="cs-subhead  u-mt-sm">Match gear needs to eligible providers</div>
+        <p class="cs-text u-mb-sm">Before provider selection, gear choices would narrow the providers capable of fulfilling the request rather than create a seemingly confirmed cart. After a provider was selected, the marketplace would reveal actual items, pricing, availability, and delivery options.</p>
+
       </div>
     </div>
   </section>

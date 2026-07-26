@@ -1097,7 +1097,7 @@ img {
 }
 
 .cs-subhead {
-  font: 500 var(--font-size-sm) var(--mono);
+  font: 500 var(--font-size-base) var(--mono);
   color: var(--accent);
   margin-bottom: var(--space-small);
 }
@@ -1242,6 +1242,11 @@ img {
   border-color: var(--rule-subtle);
 }
 
+.cs-rule-bottom {
+  border-bottom: var(--rule-line-width-medium) solid var(--rule-subtle);
+  padding-bottom: var(--space-small);
+}
+
 .cs-breakdown-head {
   display: flex;
   flex-direction: column;
@@ -1269,9 +1274,10 @@ img {
   color: var(--text);
 }
 
-.cs-breakdown-voice {
-  font: 400 italic var(--font-size-xl) var(--serif);
+.cs-quote {
+  font: 400 italic var(--font-size-lg)/1.5 var(--serif);
   color: var(--text-muted);
+  margin-top: 4px;
 }
 
 .cs-breakdown-principle {
@@ -1332,14 +1338,6 @@ img {
   margin-left: auto;
 }
 
-.cs-solution-head p {
-  font-size: var(--font-size-base);
-  line-height: 1.65;
-  color: var(--text-muted);
-  max-width: 68ch;
-  margin: var(--space-small) 0 0;
-}
-
 .cs-before-after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1386,12 +1384,6 @@ img {
   margin-top: 8px;
 }
 
-.cs-journey-quote {
-  font: 400 italic var(--font-size-sm)/1.5 var(--serif);
-  color: var(--text-faint);
-  margin-top: 4px;
-}
-
 .cs-journey-pill {
   display: flex;
   width: fit-content;
@@ -1422,7 +1414,7 @@ img {
   padding-top: var(--space-medium);
 }
 
-.cs-funnel-header {
+.cs-heading-row {
   display: flex;
   justify-content: space-between;
   gap: var(--space-small);
@@ -1431,12 +1423,7 @@ img {
   margin-bottom: var(--space-medium);
 }
 
-.cs-funnel-header h3 {
-  font: 400 var(--font-size-xl) var(--serif);
-  margin: 0;
-}
-
-.cs-funnel-meta {
+.cs-meta {
   font: 400 var(--font-size-xs) var(--mono);
   color: var(--text-faint);
 }
@@ -1530,22 +1517,6 @@ img {
   font: 400 var(--font-size-xs)/1.6 var(--mono);
   color: var(--text-faint);
   padding-top: var(--space-small);
-}
-
-.cs-footnote {
-  margin: 0;
-  font: 400 var(--font-size-sm)/1.65 var(--mono);
-  color: var(--text-faint);
-  /* max-width: 760px; */
-  /* margin: var(--space-medium) 0 0; */
-  border-top: var(--rule-line-width-medium) solid var(--rule-subtle);
-  padding-top: var(--space-small);
-}
-
-.cs-footnote+.cs-footnote {
-  border-top: 0;
-  margin-top: var(--space-small);
-  padding-top: 0;
 }
 
 .cs-callout-box {
@@ -2056,6 +2027,21 @@ body .cs-callout-quote {
   border-bottom: var(--rule-line-width-medium) solid var(--border);
 }
 
+.cs-modal-link {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: var(--rule-line-width-medium) solid var(--border);
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+.cs-modal-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 .cs-stat-annotation {
   font: 400 italic clamp(18px, 2vw, 24px) var(--serif);
   color: var(--text-faint);
@@ -2098,22 +2084,6 @@ body .cs-callout-quote {
   line-height: 1.5;
   color: var(--text-muted);
   margin-top: 6px;
-}
-
-.cs-footnote-block {
-  font-size: var(--font-size-sm);
-  line-height: 1.65;
-  color: var(--text-muted);
-  /* max-width: 72ch; */
-  margin: var(--space-small) 0 0;
-  border-top: var(--rule-line-width-medium) solid var(--border);
-  padding-top: var(--space-small);
-}
-
-.cs-footnote-block--flush {
-  margin: 0;
-  border-top: 0;
-  padding-top: 0;
 }
 
 .cs-two-col--tight {
@@ -2178,11 +2148,6 @@ body .cs-callout-quote {
 .cs-divider-grid--boxed>div {
   padding-right: clamp(16px, 3vw, 32px);
   padding-left: clamp(16px, 3vw, 32px);
-}
-
-.cs-divider-grid--boxed+.cs-footnote {
-  margin-top: 0;
-  border-top: 0;
 }
 
 /* Media aspect ratios */

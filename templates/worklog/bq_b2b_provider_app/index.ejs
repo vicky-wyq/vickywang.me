@@ -199,7 +199,7 @@
           <div class="cs-stat-grid-caption">Selected platform messaging as their primary communication method</div>
         </div>
       </div>
-      <p class="cs-footnote-block">Internal providers also described monitoring BabyQuip <em>emails</em> rather than the portal inbox &mdash; reinforcing that the platform&rsquo;s communication surfaces were being routed around, not used. Four of five also named switching between tools as a major friction.</p>
+      <p class="cs-text cs-text--divided">Internal providers also described monitoring BabyQuip <em>emails</em> rather than the portal inbox &mdash; reinforcing that the platform&rsquo;s communication surfaces were being routed around, not used. Four of five also named switching between tools as a major friction.</p>
     </div>
   </section>
 
@@ -211,22 +211,22 @@
     <div class="cs-breakdown-grid">
       <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-label">PLANNING</div>
-        <div class="cs-breakdown-voice">&ldquo;What does my upcoming week look like?&rdquo;</div>
+        <div class="cs-quote">&ldquo;What does my upcoming week look like?&rdquo;</div>
         <p class="cs-text u-mt-xs">Weekly calendar and workload indicators</p>
       </div>
       <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-label">DAILY WORKLOAD</div>
-        <div class="cs-breakdown-voice">&ldquo;What must I handle on this day?&rdquo;</div>
+        <div class="cs-quote">&ldquo;What must I handle on this day?&rdquo;</div>
         <p class="cs-text u-mt-xs">Date-specific delivery and pickup list</p>
       </div>
       <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-label">RESERVATION</div>
-        <div class="cs-breakdown-voice">&ldquo;What do I need to know about this order?&rdquo;</div>
+        <div class="cs-quote">&ldquo;What do I need to know about this order?&rdquo;</div>
         <p class="cs-text u-mt-xs">Timing, location, gear, instructions, notes, customer, history</p>
       </div>
       <div class="cs-rule-top cs-rule-top--strong">
         <div class="cs-label">ACTION</div>
-        <div class="cs-breakdown-voice">&ldquo;What must I do now?&rdquo;</div>
+        <div class="cs-quote">&ldquo;What must I do now?&rdquo;</div>
         <p class="cs-text u-mt-xs">Navigate, message, approve, decline, or respond to a transfer</p>
       </div>
     </div>
@@ -251,7 +251,7 @@
         <p class="cs-text u-mt-xs">Lightweight awareness that clears once the Alerts view is reviewed &mdash; no lingering badges.</p>
       </div>
     </div>
-    <p class="cs-footnote">The same three attention states can support other operator-side marketplaces that need to distinguish required action, communication, and passive awareness.</p>
+    <div class="cs-stat-note">The same three attention states can support other operator-side marketplaces that need to distinguish required action, communication, and passive awareness.</div>
   </section>
 
   <section id="design" class="cs-section container">
@@ -263,7 +263,7 @@
       <div>
         <div class="cs-solution-head">
           <h3><span class="cs-solution-num">1 &middot;</span> Week-first calendar, not Today-first or list-first</h3>
-          <p>The weekly calendar became the default Reservations view, with List View as a secondary mode. The week gives lighter providers meaningful upcoming context, helps busy providers spot heavy days before they arrive, and avoids an often-empty Today dashboard &mdash; while staying more scannable than the portal&rsquo;s month view. List View covers the other retrieval need: search by customer, reservation number, or street; filter recently booked or unpaid; select custom date ranges.</p>
+          <p class="cs-text u-mt-sm">The weekly calendar became the default Reservations view, with List View as a secondary mode. The week gives lighter providers meaningful upcoming context, helps busy providers spot heavy days before they arrive, and avoids an often-empty Today dashboard &mdash; while staying more scannable than the portal&rsquo;s month view. List View covers the other retrieval need: search by customer, reservation number, or street; filter recently booked or unpaid; select custom date ranges.</p>
         </div>
         <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
           <span class="cs-label u-m-0">Side-by-side wireframes &mdash; Today-first vs. week-first vs. list-first entry</span>
@@ -273,7 +273,7 @@
       <div>
         <div class="cs-solution-head">
           <h3><span class="cs-solution-num">2 &middot;</span> One Inbox, three distinct behaviors, instead of scattered destinations or one mixed feed</h3>
-          <p>Messages, Alerts, and Action Items were consolidated into a single Inbox but kept distinct inside it. Separate destinations would scatter related reservation information across the app; a single undifferentiated feed would reproduce the portal&rsquo;s existing problem &mdash; giving routine updates, customer conversations, and required decisions the same visual weight. Every item links back to its reservation, so providers never search for the order twice.</p>
+          <p class="cs-text u-mt-sm">Messages, Alerts, and Action Items were consolidated into a single Inbox but kept distinct inside it. Separate destinations would scatter related reservation information across the app; a single undifferentiated feed would reproduce the portal&rsquo;s existing problem &mdash; giving routine updates, customer conversations, and required decisions the same visual weight. Every item links back to its reservation, so providers never search for the order twice.</p>
         </div>
         <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
           <span class="cs-label u-m-0">Side-by-side wireframes &mdash; separate surfaces vs. one unified feed vs. categorized Inbox</span>
@@ -283,7 +283,7 @@
       <div>
         <div class="cs-solution-head">
           <h3><span class="cs-solution-num">3 &middot;</span> Reservation details organized around fulfillment, not the desktop portal structure</h3>
-          <p>The mobile detail prioritizes delivery and pickup timing, location and navigation, operational instructions, customer contact, gear and quantities, private notes, and modification history. When a customer change requires approval, the page shifts from reference mode to decision mode: the approval state surfaces at the top, modified information is highlighted, and Approve / Decline stay persistently accessible. Mirroring the full portal page would have produced a dense administrative screen unsuitable for active fieldwork; showing too little would send providers back to email and the desktop.</p>
+          <p class="cs-text u-mt-sm">The mobile detail prioritizes delivery and pickup timing, location and navigation, operational instructions, customer contact, gear and quantities, private notes, and modification history. When a customer change requires approval, the page shifts from reference mode to decision mode: the approval state surfaces at the top, modified information is highlighted, and Approve / Decline stay persistently accessible. Mirroring the full portal page would have produced a dense administrative screen unsuitable for active fieldwork; showing too little would send providers back to email and the desktop.</p>
         </div>
         <div class="cs-media cs-ar-wide" style="display:flex;align-items:center;justify-content:center;padding:24px;text-align:center">
           <span class="cs-label u-m-0">Side-by-side wireframes &mdash; portal field order vs. operational reservation hierarchy</span>
@@ -343,7 +343,7 @@
       <div>
         <div class="cs-solution-head">
           <h3>Reservations &mdash; from the week to the next task</h3>
-          <p>The app opens to the weekly calendar. Providers scan upcoming workload, select a date, and review its deliveries, pickups, self-pickups, and self-returns. Reservation cards expose enough to plan without opening every booking &mdash; fulfillment type, time window, customer, address, gear thumbnails and quantities, reservation number, payment status. List View adds search, filters, sorting, and custom date retrieval.</p>
+          <p class="cs-text u-mt-sm">The app opens to the weekly calendar. Providers scan upcoming workload, select a date, and review its deliveries, pickups, self-pickups, and self-returns. Reservation cards expose enough to plan without opening every booking &mdash; fulfillment type, time window, customer, address, gear thumbnails and quantities, reservation number, payment status. List View adds search, filters, sorting, and custom date retrieval.</p>
         </div>
         <div class="cs-two-col cs-two-col--steps">
           <div>
@@ -377,7 +377,7 @@
       <div>
         <div class="cs-solution-head">
           <h3>Inbox &mdash; separating responsibility from awareness</h3>
-          <p>Action Items persist until the provider responds; Messages keep conversation context and read state; Alerts provide awareness without turning every modification into a permanent task. Each item links back to its reservation.</p>
+          <p class="cs-text u-mt-sm">Action Items persist until the provider responds; Messages keep conversation context and read state; Alerts provide awareness without turning every modification into a permanent task. Each item links back to its reservation.</p>
         </div>
         <div class="cs-diagram-grid">
           <div>
@@ -407,7 +407,7 @@
       <div>
         <div class="cs-solution-head">
           <h3>Reservation detail &mdash; one operational source of context</h3>
-          <p>The detail page consolidates what previously required several surfaces: windows, address and navigation, access and placement instructions, customer contact, gear and preferences, private notes, changes, and activity history. Not a copy of the Partner Portal &mdash; an operational view designed around what a QP needs before and during fulfillment.</p>
+          <p class="cs-text u-mt-sm">The detail page consolidates what previously required several surfaces: windows, address and navigation, access and placement instructions, customer contact, gear and preferences, private notes, changes, and activity history. Not a copy of the Partner Portal &mdash; an operational view designed around what a QP needs before and during fulfillment.</p>
         </div>
         <div class="cs-before-after">
           <div>
