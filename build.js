@@ -59,9 +59,12 @@ async function buildTemplates() {
     path.join(__dirname, 'robots.txt'),
     path.join(outputDir, 'robots.txt')
   );
+  await fs.copy(
+    path.join(__dirname, 'sitemap.xml'),
+    path.join(outputDir, 'sitemap.xml')
+  );
 }
 
 // Run the build process
 buildTemplates().catch(err => console.error(err));
-
 
