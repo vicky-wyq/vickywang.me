@@ -1,0 +1,17 @@
+<% if (typeof textField === 'undefined') { 
+    textField = ''; 
+  } 
+  %>
+<div class="Grid Grid--gutters Grid--full Grid--gutters">
+    <div class="Grid-cell">
+      <div class="element">
+        <div class="ClipboardBox clickTxt">
+          <button class="Clipboard clickTxt" contenteditable="false">
+            <p> <%= textField %> </p>
+
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

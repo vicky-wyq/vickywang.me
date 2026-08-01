@@ -1866,6 +1866,13 @@ body .cs-callout-quote {
   flex-shrink: 0;
 }
 
+.wl-case-modal__icon svg {
+  width: 13px;
+  height: 15px;
+  flex: 0 0 auto;
+  filter: none;
+}
+
 .wl-case-modal__label-group {
   display: flex;
   flex-direction: column;

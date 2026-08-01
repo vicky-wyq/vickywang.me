@@ -1,0 +1,26 @@
+
+
+<% let textCenterClass = '' %>
+
+<% 
+if(textCenter === true){
+    textCenterClass = 'u-textCenter'
+}
+%>
+
+<!-- base classes-->
+<% const baseClasses = 'Grid Grid--gutters'; %>
+
+<!-- unique classes | always choose 1 of the 6 -->
+
+<% var colsClasses = colsClasses[numCols]%>
+<% 
+    const colsClasses = {
+        1: 'Grid--full', 
+        2: 'Grid--cols-2', 
+        3: 'Grid--cols-3', 
+        4: 'Grid--cols-4', 
+        6: 'Grid--cols-6', 
+        8: 'Grid--cols-8'
+    }; 
+%>

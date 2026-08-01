@@ -48,28 +48,33 @@
     </div>
 
     <div class="case-grid">
-      <%- include(`${templatePath}/shared2026/card_provider_app`, {
+      <!-- <%- include(`${templatePath}/shared2026/card_provider_app`, {
         cardNumber: 4,
         cardHref: '/worklog/bq_b2b_provider_app'
-      }) %>
+      }) %> -->
+
       <%- include(`${templatePath}/shared2026/card_package`, {
-        cardNumber: 5,
+        cardNumber: 4,
         cardHref: '/worklog/bq_b2b_package',
         cardGated: false
       }) %>
-    </div>
-    <div class="case-grid">
+
       <%- include(`${templatePath}/shared2026/card_byp`, {
-        cardNumber: 6,
+        cardNumber: 5,
         cardHref: '/worklog/byp_provider_platform'
       }) %>
     </div>
+
+      <%- include(`${templatePath}/shared2026/card_ds`) %>
+
     <div class="work-end"></div>
+
+
   </section>
 
   <%- include(`${templatePath}/shared2026/footer`, {
     footerVariant: 'landing',
-    footerResumeHref: '/worklog/resume'
+    footerResumeHref: '/resume2026'
   }) %>
 
 </body>
