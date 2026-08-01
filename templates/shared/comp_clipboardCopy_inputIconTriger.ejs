@@ -1,0 +1,21 @@
+<% if (typeof topLabel === 'undefined') { 
+    topLabel = ''; 
+  } 
+  %>
+<% if (typeof inputValue === 'undefined') { 
+        inputValue = ''; 
+      } 
+      %>
+<% if (typeof iconUrl === 'undefined') { 
+    iconUrl = ''; 
+  } 
+  %>
+
+<div class="containerCopy element">
+  <div class="ClickandCopy"><%= topLabel %></div>
+  <div class="copy-text">
+    <input type="text" class="text" value="<%= inputValue %>" />
+    <button class="centerHorz"> <img class="iconS" src="<%= iconUrl %>">
+    </button>
+  </div>
+</div>

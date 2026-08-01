@@ -1,0 +1,18 @@
+<% if (typeof sectionTitle === 'undefined') { 
+  sectionTitle = ''; 
+} %>
+<% if (typeof sectionDescription === 'undefined') { 
+  sectionDescription = ''; 
+} %>
+
+<div class="wrapper">
+  <div class="Grid Grid--full Grid--gutter">
+    <div class="Grid-cell">
+      <div class="element">
+        <div class="blankHXXS"></div>
+        <h2 class="fontWeight800"><%= sectionTitle %></h2>
+        <h4 class="fontWeight300 textItalic"><%= sectionDescription %></h4>
+      </div>
+    </div>
+  </div>
+</div>
