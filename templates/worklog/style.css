@@ -16,7 +16,7 @@
      --rule-strong marks the start of a new major beat (a kicker, a stat
      grid, a card grid). --rule-subtle marks a minor internal divider
      (a list item, a footnote, a quote). When two containers sit side by
-     side as a matched pair (e.g. children of .cs-two-col), both must use
+     side as a matched pair (e.g. children of .cs-content-grid), both must use
      the same tier so the pair reads as one visual weight. */
   --rule-strong: var(--text);
   --rule-subtle: var(--border);
@@ -113,7 +113,10 @@ img {
 .background-white {
   background-color: var(--true-white);
 }
-
+.cs-icon-size {
+  width: 4em;
+  height: 4em;
+}
 /* ---------------- Nav ---------------- */
 
 .nav {
@@ -1121,11 +1124,10 @@ img {
   text-align: center;
 }
 
-.cs-two-col {
+.cs-content-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: clamp(28px, 5vw, 56px);
-  margin-top: clamp(32px, 5vw, 48px);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(24px, 4vw, 40px);
   align-items: stretch;
 }
 
@@ -1223,19 +1225,12 @@ img {
   color: var(--accent);
 }
 
-.cs-breakdown-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: clamp(24px, 4vw, 40px);
-  margin-top: clamp(28px, 4vw, 40px);
-}
-
-.cs-breakdown-grid--two-col {
+.cs-content-grid--fixed {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 @media (max-width: 640px) {
-  .cs-breakdown-grid--two-col {
+  .cs-content-grid--fixed {
     grid-template-columns: 1fr;
   }
 }
@@ -1596,7 +1591,7 @@ body .cs-callout-quote {
 }
 
 /* Two-cell before/after comparison — one bordered box, split by an
-   internal divider instead of a gap (unlike .cs-two-col + .cs-callout-box,
+   internal divider instead of a gap (unlike .cs-content-grid + .cs-callout-box,
    which pairs two separate boxes side by side). */
 .cs-compare {
   display: grid;
@@ -2104,12 +2099,7 @@ body .cs-callout-quote {
   margin-top: 6px;
 }
 
-.cs-two-col--tight {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin-top: var(--space-medium);
-}
-
-.cs-two-col--media-aside {
+.cs-content-grid--media-aside {
   grid-template-columns: minmax(0, 79fr) minmax(180px, 21fr);
   align-items: stretch;
 }
@@ -2131,7 +2121,7 @@ body .cs-callout-quote {
 }
 
 @media (max-width: 900px) {
-  .cs-two-col--media-aside {
+  .cs-content-grid--media-aside {
     grid-template-columns: 1fr;
   }
 
@@ -2144,10 +2134,9 @@ body .cs-callout-quote {
   }
 }
 
-.cs-two-col--steps {
+.cs-content-grid--steps {
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: clamp(14px, 2vw, 24px);
-  margin-top: var(--space-medium);
 }
 
 .cs-before-after--narrow {

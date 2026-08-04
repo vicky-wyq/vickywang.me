@@ -2,26 +2,17 @@
 <html lang="en">
 
 <%- include(`${templatePath}/shared2026/head`, {
-  headTitle: 'Reducing Operational Friction to Unlock Marketplace Supply — Vicky Wang',
-  headDescription: 'Replaced a multi-step inventory hierarchy with a persistent filter workspace, bringing listed and unlisted gear into one continuous management flow.',
-  headRobots: 'noindex, follow',
-  headType: 'article',
-  headImage: 'https://vickywang.me/thumbnails/cs_inventory.png'
-}) %>
+  headTitle: 'Reducing Operational Friction to Unlock Marketplace Supply — Vicky Wang' ,
+  headDescription: 'Replaced a multi-step inventory hierarchy with a persistent filter workspace, embedding lightweight discovery into routine inventory management.'
+  , headRobots: 'noindex, follow' , headType: 'article' , headImage: 'https://vickywang.me/thumbnails/cs_inventory.png'
+  }) %>
 
 <body>
 
-  <%- include(`${templatePath}/shared2026/header`, {
-    headerVariant: 'detail',
-    headerHome: '/worklog',
-    headerAvatar: '../../web_images/photo_profile_avatar.png',
-    headerLinks: [
-      { href: '#problem', label: 'Problem', muted: true },
-      { href: '#insight', label: 'Insight', muted: true },
-      { href: '#design', label: 'Design', muted: true },
-      { href: '#impact', label: 'Impact', muted: true }
-    ]
-  }) %>
+  <%- include(`${templatePath}/shared2026/header`, { headerVariant: 'detail' , headerHome: '/worklog' ,
+      headerAvatar: '../../web_images/photo_profile_avatar.png' , headerLinks: [ { href: '#problem' , label: 'Problem' ,
+      muted: true }, { href: '#insight' , label: 'Insight' , muted: true }, { href: '#design' , label: 'Design' , muted:
+      true }, { href: '#impact' , label: 'Impact' , muted: true } ] }) %>
 
   <section class="cs-hero container cs-section--sm">
     <div class="cs-hero-meta">
@@ -29,19 +20,21 @@
       <span class="tag">SUPPLY SIDE &mdash; PARTNER PORTAL</span>
     </div>
     <h1 class="cs-h2 cs-h2--display">Reducing Operational Friction to Unlock Marketplace Supply</h1>
-    <p class="cs-hero-sub">Replaced a multi-step inventory hierarchy with a persistent filter workspace, bringing listed and unlisted gear into one continuous management flow.</p>
+    <p class="cs-hero-sub">Replaced a multi-step inventory hierarchy with a persistent filter workspace, embedding lightweight discovery into routine inventory management.</p>
 
     <div class="cs-divider-grid cs-divider-grid--hero">
       <div>
         <div class="cs-label">COMPARATIVE WORKFLOW TESTING</div>
         <div class="cs-stat-value--sm">~3<span>&times;</span> <span class="cs-stat-annotation">faster</span></div>
         <div class="cs-stat-label">Inventory editing vs. the legacy workflow</div>
-        <div class="cs-stat-note">Directional result from completing the same inventory-management tasks in both experiences, not production analytics.</div>
+        <div class="cs-stat-note">Directional result from completing the same inventory-management tasks in both
+          experiences, not production analytics.</div>
       </div>
       <div>
         <div class="cs-label">SHIPPED STRUCTURAL CHANGE</div>
         <div class="cs-stat-value--sm">4+ <span class="cs-stat-annotation--sm">nav steps</span> &rarr; 1 <span class="cs-stat-annotation--sm">workspace</span></div>
-        <div class="cs-stat-label">Persistent filters &middot; Listed + unlisted gear together &middot; Direct item actions</div>
+        <div class="cs-stat-label">Persistent filters &middot; Contextual unlisted-gear discovery &middot; Direct item
+          actions</div>
       </div>
     </div>
 
@@ -52,7 +45,8 @@
       </div>
       <div>
         <div class="cs-label">SCOPE</div>
-        <div class="cs-text">Provider portal &middot; B2B workflow &middot; Inventory management &middot; Marketplace supply</div>
+        <div class="cs-text">Provider portal &middot; B2B workflow &middot; Inventory management &middot;
+          Marketplace supply</div>
       </div>
       <div>
         <div class="cs-label">COLLABORATORS</div>
@@ -64,36 +58,53 @@
   <section id="problem" class="cs-section container">
     <div class="cs-kicker">01 &mdash; PROBLEM</div>
     <h2 class="cs-h2">Managing one type of gear meant navigating several disconnected views</h2>
-    <p class="cs-lead">BabyQuip is a two-sided rental marketplace with <strong class="cs-text-emphasis">3,000+ independent providers</strong> and more than <strong class="cs-text-emphasis">450,000 completed reservations</strong>. Providers manage their own gear, pricing, availability, delivery, setup, and customer coordination.</p>
-    <p class="cs-lead">As the marketplace expanded into new gear categories, the business needed providers to maintain larger, more complete inventories &mdash; but new categories were often underlisted, limiting what customers could find and rent.</p>
-    <p class="cs-lead">Internal marketplace data showed the <strong class="cs-text-emphasis">top 10% of providers accounted for 46.3% of supply</strong>. These providers managed the largest catalogs, so small inefficiencies in inventory maintenance compounded quickly.</p>
+    <p class="cs-lead">BabyQuip is a two-sided rental marketplace with <strong class="cs-text-emphasis">3,000+
+        independent providers</strong> and more than <strong class="cs-text-emphasis">450,000 completed
+        reservations</strong>. Providers manage their own gear, pricing, availability, delivery, setup, and customer
+      coordination.</p>
+    <p class="cs-lead">As the marketplace expanded into new gear categories, the business needed providers to
+      maintain larger, more complete inventories &mdash; but new categories were often underlisted, limiting what
+      customers could find and rent.</p>
+    <p class="cs-lead">Internal marketplace data showed the <strong class="cs-text-emphasis">top 10% of providers
+        accounted for 46.3% of supply</strong>. These providers managed the largest catalogs, so small
+      inefficiencies in inventory maintenance compounded quickly.</p>
 
-    <div class="cs-two-col">
+    <div class="cs-content-grid u-mt-lg">
       <div class="cs-item-dark">
         <div class="cs-label">THE ORIGINAL REQUEST</div>
-        <p class="cs-callout-quote">&ldquo;Add a Discovery tab under Manage Gear so providers can find unlisted items and newer categories.&rdquo;</p>
-        <p class="cs-text u-mt-sm">The request addressed visibility. But after reviewing the existing workflow, I found visibility was only part of the problem.</p>
+        <p class="cs-callout-quote">&ldquo;Add a Discovery tab under Manage Gear so providers can find unlisted
+          items and newer categories.&rdquo;</p>
+        <p class="cs-text u-mt-sm">The request addressed visibility. But after reviewing the existing workflow, I
+          found visibility was only part of the problem.</p>
       </div>
       <div class="cs-item-dark">
         <div class="cs-label">THE LEGACY MODEL</div>
         <div class="cs-flow-line">Category <span class="accent">&rarr;</span> Subcategory <span class="accent">&rarr;</span> Product type <span class="accent">&rarr;</span> Item list <span class="accent">&rarr;</span> View All</div>
-        <p class="cs-text u-mt-sm">Reaching <strong class="cs-text-emphasis">one inventory type</strong> required <strong class="cs-text-emphasis">four or more navigation steps</strong>. Managing another type meant backing out and repeating the process.</p>
-      </div>
-    </div>
-    <div class="u-mt-md">
-      <div class="">
-        <img src="diagram_legacy_workflow.svg" alt="Legacy workflow: hard to scan inventory, 4&ndash;5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
+        <p class="cs-text u-mt-sm">Reaching <strong class="cs-text-emphasis">one inventory type</strong> required
+          <strong class="cs-text-emphasis">four or more navigation steps</strong>. Managing another type meant
+          backing out and repeating the process.
+        </p>
       </div>
     </div>
 
-    <div class="u-mt-md">
-      <div class="cs-media modal-target cs-ar-banner">
-        <img src="flow_im_before.png" alt="Legacy workflow: hard to scan inventory, 4&ndash;5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
+    <div class="cs-content-grid u-mt-lg">
+
+      <div class="u-mt-md">
+        <div class="cs-media modal-target cs-ar-banner">
+          <img src="diagram_legacy_workflow_problem_section.svg" alt="Legacy workflow: hard to scan inventory, 4&ndash;5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
+        </div>
+      </div>
+
+      <div class="u-mt-md">
+        <div class="cs-media modal-target cs-ar-banner">
+          <img src="flow_im_before.png" alt="Legacy workflow: hard to scan inventory, 4&ndash;5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
+        </div>
       </div>
     </div>
+
 
     <h2 class="cs-h2 cs-h2--follow cs-h2--sm">The legacy workflow created four recurring problems</h2>
-    <div class="cs-breakdown-grid">
+    <div class="cs-content-grid u-mt-md">
       <div class="cs-rule-top cs-rule-top--subtle">
         <div class="cs-breakdown-tag">A &middot; Fragmentation</div>
         <p class="cs-text u-mt-xs">Inventory was fragmented across separate screens.</p>
@@ -112,206 +123,313 @@
       </div>
     </div>
 
-    <div class="cs-callout-box background-white">
-      <div class="cs-callout-label">BEFORE</div>
-      <div class="cs-flow-line">Navigate &rarr; drill down &rarr; find gear &rarr; edit &rarr; go back &rarr; repeat</div>
-      <p class="u-mt-sm">For providers with large catalogs, routine maintenance became a repetitive cycle of drilling down, editing an item, navigating back, and rebuilding context.</p>
+    <h2 class="cs-h2 cs-h2--follow cs-h2--sm">Inventory management was a recurring operational loop, not a one-time setup activity.</h2>
+    <div class="cs-stat-note">Derived from the legacy workflow audit, representative task scenarios, and workflow recordings.</div>
+
+    <div class="cs-journey-grid">
+      <div>
+
+
+        <img class="cs-icon-size u-mb-sm" src="icon_find.svg" alt="">
+        <div class="cs-journey-label">1. Find inventory</div>
+        <ul class="cs-list u-mt-sm">
+          <li>Navigate to a category, product type, or specific item</li>
+          <li>Locate the inventory they intend to manage</li>
+        </ul>
+
+      </div>
+      <div>
+
+        <img class="cs-icon-size u-mb-sm" src="icon_review.svg" alt="">
+        <div class="cs-journey-label">2. Review its current state</div>
+        <ul class="cs-list u-mt-sm">
+          <li>Check listing status, price, quantity, and storefront presentation</li>
+        </ul>
+
+      </div>
+
+      <div>
+        <img class="cs-icon-size u-mb-sm" src="icon_update.svg" alt="">
+
+        <div class="cs-journey-label">3. Update it </div>
+        <ul class="cs-list u-mt-sm">
+          <li>Edit item details or listing status</li>
+        </ul>
+
+      </div>
+
+      <div>
+        <img class="cs-icon-size u-mb-sm" src="icon_continue.svg" alt="">
+        <div class="cs-journey-label">4. Switch and repeat</div>
+        <ul class="cs-list u-mt-sm">
+          <li>Move to another item or category</li>
+          <li>Repeat the task while rebuilding context</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+    <div class="cs-pullquote">
+      <p> The original request focused on helping providers find unlisted gear and newer categories. But finding <span class="accent">missing inventory still depended on navigating the same fragmented catalog</span>.</p>
     </div>
 
-    <div class="cs-pullquote">
-      <p>The issue was not simply that providers could not see new categories. <span class="accent">The system made all inventory difficult to scan and maintain.</span></p>
-    </div>
+
+
+
+
   </section>
 
   <section id="insight" class="cs-section container">
     <div class="cs-kicker">02 &mdash; INSIGHT</div>
-    <h2 class="cs-h2">Poor discovery was a symptom of the navigation model</h2>
-    <p class="cs-lead">A separate Discovery tab could expose more unlisted gear, but it would preserve the underlying workflow: leave the current task, enter another destination, find an item, then return to inventory management.</p>
-    <p class="cs-lead">That mattered because providers approached Manage Gear as an <strong class="cs-text-emphasis">operational tool, not a browsing destination</strong>. They came to complete a task quickly and return to reservations, delivery, cleaning, and customer coordination. Improving discovery did not require another page &mdash; it required changing how providers navigated inventory.</p>
-
-    <div class="cs-two-col">
-      <div class="cs-callout-box cs-callout-box--plain cs-callout-box--paired u-mt-0 background-white">
+    <h2 class="cs-h2">The discovery request exposed a broader navigation problem</h2>
+    <p class="cs-lead">A separate Discovery tab could expose more unlisted gear, but it would preserve the
+      underlying workflow: leave the current task, enter another destination, find an item, then return to inventory
+      management.</p>
+    <p class="cs-lead">That mattered because providers approached Manage Gear as an <strong class="cs-text-emphasis">operational tool, not a browsing destination</strong>. They came to complete a task
+      quickly and return to reservations, delivery, cleaning, and customer coordination. Improving discovery did not
+      require another page &mdash; it required changing how providers navigated inventory.</p>
+    <div class="cs-compare">
+      <div class="cs-compare-cell background-white">
         <div class="cs-callout-label">ORIGINAL REQUEST</div>
-        <p class="cs-callout-quote u-color-muted">Add a dedicated destination for discovering unlisted gear.</p>
+        <div class="cs-flow-line cs-flow-line--muted">Add a dedicated destination for discovering unlisted gear.
+        </div>
       </div>
-      <div class="cs-callout-box cs-callout-box--accent cs-callout-box--paired u-mt-0">
+      <div class="cs-compare-cell cs-compare-cell--after">
         <div class="cs-callout-label cs-callout-label--accent">REFRAMED PROBLEM</div>
-        <p class="cs-callout-quote">Make the entire inventory easier to scan, switch, and update without forcing providers to repeatedly leave context.</p>
+        <div class="cs-flow-line">Make the entire inventory easier to scan, switch, and update without forcing
+          providers to repeatedly leave context.</div>
       </div>
     </div>
+
 
     <h3 class="cs-h3 u-mt-lg">Design principles</h3>
     <div class="cs-journey-grid">
       <div class="cs-journey-item">
-        <div class="cs-journey-num-dark">1</div>
-        <div class="u-mt-xs">Keep providers within one continuous workspace</div>
+        <div class="cs-journey-num-dark">1.</div>
+        <div class="cs-breakdown-tag u-mt-xs"><strong>One workspace</strong></div>
+        <div class="u-mt-xs">Keep inventory management in one place</div>
       </div>
       <div class="cs-journey-item">
-        <div class="cs-journey-num-dark">2</div>
-        <div class="u-mt-xs">Replace page changes with lightweight filtering</div>
+        <div class="cs-journey-num-dark">2.</div>
+        <div class="cs-breakdown-tag u-mt-xs"><strong>Lightweight navigation</strong></div>
+
+        <div class="u-mt-xs">Use filters instead of page changes</div>
       </div>
       <div class="cs-journey-item">
-        <div class="cs-journey-num-dark">3</div>
-        <div class="u-mt-xs">Make listed and unlisted inventory visible during routine tasks</div>
+        <div class="cs-journey-num-dark">3.
+        </div>
+        <div class="cs-breakdown-tag u-mt-xs"><strong>Contextual discovery</strong></div>
+
+        <div class="u-mt-xs">Surface listed and unlisted gear together</div>
       </div>
-      <div class="cs-journey-item">
-        <div class="cs-journey-num-dark">4</div>
-        <div class="u-mt-xs">Prioritize speed and context over feature density</div>
-      </div>
+
     </div>
 
-    <h2 class="cs-h2 cs-h2--follow cs-h2--sm">How much discovery could be added without making management heavier?</h2>
-    <p class="cs-lead u-mt-sm">I explored several ways to surface inventory opportunities while supporting routine maintenance.</p>
+    <h2 class="cs-h2 cs-h2--follow cs-h2--sm">How could discovery support inventory management without making the
+      workflow heavier?</h2>
+    <p class="cs-lead u-mt-sm">I explored three ways to surface inventory opportunities within routine management: a
+      dedicated discovery tab, a unified view of listed and unlisted inventory, and unlisted gear embedded directly
+      within the existing inventory view.</p>
 
-    <div class="cs-breakdown-grid">
+    <div class="cs-content-grid u-mt-md">
       <div class="cs-rule-top cs-rule-top--subtle">
         <div class="modal-target u-mb-sm" data-modal-gallery="directions">
           <img src="wireframe_exploration1.png" alt="Dashboard discovery">
         </div>
 
 
-        <div class="cs-breakdown-tag">DIRECTION 1 &middot; DASHBOARD DISCOVERY</div>
-        <p class="cs-text u-mt-sm">A summary area highlighting underlisted categories, recently added inventory, and marketplace opportunities.</p>
-        <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> made inventory gaps and business signals more visible.<br><strong class="cs-text-emphasis">Tradeoff:</strong> added another layer to scan before primary tasks; duplicated dashboard behavior.</p>
+        <div class="cs-breakdown-tag"> <strong>DIRECTION 1:</strong> Separate discovery tab</div>
+        <p class="cs-text u-mt-sm">Add a dedicated Discover tab that surfaces underlisted categories, recently added
+          inventory, and other marketplace opportunities outside the primary management view.</p>
+        <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> creates a focused
+          space for exploring inventory opportunities without adding density to routine management.<br><strong class="cs-text-emphasis">Tradeoff:</strong> separates discovery from the workflow where providers review
+          and update gear, requiring an additional navigation step.</p>
       </div>
       <div class="cs-rule-top cs-rule-top--subtle">
         <div class="modal-target u-mb-sm" data-modal-gallery="directions">
           <img src="wireframe_exploration2.png" alt="In-contect shortcuts">
         </div>
-        <div class="cs-breakdown-tag">DIRECTION 2 &middot; IN-CONTEXT SHORTCUTS</div>
-        <p class="cs-text u-mt-sm">Contextual modules surfacing seasonal, underused, or newly available categories within the management page.</p>
-        <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> placed discovery closer to the existing workflow.<br><strong class="cs-text-emphasis">Tradeoff:</strong> increased density and competed with the primary task.</p>
+        <div class="cs-breakdown-tag"><strong>DIRECTION 2:</strong> Unified listed and unlisted inventory</div>
+        <p class="cs-text u-mt-sm">makes inventory opportunities visible within the existing workflow and allows
+          providers to act without switching between separate views.</p>
+        <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> placed discovery
+          closer to the existing workflow.<br><strong class="cs-text-emphasis">Tradeoff:</strong> increases the
+          amount of content users must scan and may make routine management of listed gear feel less direct.</p>
       </div>
       <div class="cs-rule-top cs-rule-top--subtle">
         <div class="modal-target u-mb-sm" data-modal-gallery="directions">
           <img src="wireframe_exploration3.png" alt="Sorting &amp; prioritization">
         </div>
-        <div class="cs-breakdown-tag">DIRECTION 3 &middot; SORTING &amp; PRIORITIZATION</div>
-        <p class="cs-text u-mt-sm">Sorting gear by performance, recency, listing status, or maintenance priority.</p>
-        <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> helped providers decide what to update first.<br><strong class="cs-text-emphasis">Tradeoff:</strong> more controls and decisions in an already difficult workflow.</p>
+        <div class="cs-breakdown-tag"><strong>DIRECTION 3:</strong> Embedded unlisted inventory</div>
+        <p class="cs-text u-mt-sm">Surface unlisted gear directly within the existing inventory page, without
+          introducing a separate Discover or Unlisted tab.</p>
+        <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> keeps discovery
+          close to routine management while preserving the existing navigation structure.<br><strong class="cs-text-emphasis">Tradeoff:</strong> provides less room for broader discovery and may cause
+          unlisted opportunities to be overlooked as the inventory grows.</p>
       </div>
     </div>
 
     <div class="cs-callout-box background-white">
-      <div class="cs-callout-label cs-callout-label--accent">SELECTED DIRECTION</div>
-      <p>Keep discovery lightweight; make workflow efficiency the priority. Instead of a discovery-heavy interface: <strong class="cs-text-emphasis">a unified inventory surface, persistent category filters, familiar category shortcuts, direct item actions, and listed + unlisted gear in the same workflow</strong>. Discovery remained present, but secondary to fast maintenance.</p>
+      <div class="cs-callout-label cs-callout-label--accent">DESIGN DECISION</div>
+
+      <p>
+        The exploration showed that <strong class="cs-text-emphasis">a separate Discovery tab would duplicate the existing inventory experience and add another destination to an already fragmented workflow</strong>. I kept <strong class="cs-text-emphasis">discovery within Manage Gear and flattened the category structure</strong>, making unlisted and newly added gear easier to surface without leaving the workflow.
+      </p>
     </div>
+    <h2 class="cs-h2 cs-h2--follow cs-h2--sm">Supporting scan-first inventory management</h2>
+    <p class="cs-lead u-mt-sm">In comparative testing, participants began with broad scanning and then narrowed to a category when locating a specific item. I compared compact dropdowns with persistent category shortcuts to support both broad scanning and precise drill-down.</p>
+    <div class="cs-content-grid u-mt-md">
+      <div class="cs-rule-top cs-rule-top--subtle">
+        <div class="modal-target u-mb-sm" data-modal-gallery="directions">
+          <img src="hifi_opt1.png" alt="Dashboard discovery">
+        </div>
+
+
+        <div class="cs-breakdown-tag"> <strong>1 · Compact filter controls</strong></div>
+        <p class="cs-text u-mt-sm">Keep the inventory overview visually compact, with categories and product types available through dropdowns when providers need to narrow the results.</p>
+        <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> preserves more space for inventory and scales efficiently across screen sizes.<br><strong class="cs-text-emphasis">Tradeoff:</strong>
+          hides available categories and adds steps for providers who prefer to browse before filtering.
+        </p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--subtle">
+        <div class="modal-target u-mb-sm" data-modal-gallery="directions">
+          <img src="hifi_opt2.png" alt="In-context shortcuts">
+        </div>
+        <div class="cs-breakdown-tag"><strong>2 · Persistent category shortcuts</strong></div>
+
+        <p class="cs-text u-mt-sm">Keep the full inventory visible, with one-click category shortcuts for faster drill-down.</p>
+
+        <p class="cs-text cs-text--divided"><strong class="cs-text-emphasis">Strength:</strong> supports providers’ scan-first behavior; 4 of 5 internal participants found categories easier to locate.<br><strong class="cs-text-emphasis">Tradeoff:</strong> adds horizontal density and requires overflow or scrolling as the category set grows.</p>
+
+      </div>
+    </div>
+    <div class="cs-callout-box background-white">
+      <div class="cs-callout-label cs-callout-label--accent">SELECTED INTERACTION</div>
+      <p>
+        I retained persistent category shortcuts because they <strong class="cs-text-emphasis">supported the existing scan-first workflow, improved category findability</strong> for 4 of 5 internal participants, and <strong class="cs-text-emphasis">preserved a familiar interaction</strong> that reduced adaptation risk. Dropdown controls remained available for more precise filtering.
+      </p>
+    </div>
+
   </section>
 
   <section id="design" class="cs-section container">
     <div class="cs-kicker">03 &mdash; DESIGN</div>
-    <h2 class="cs-h2">From nested navigation to a persistent filter-based workspace</h2>
-    <p class="cs-lead">The redesign changed the underlying interaction model. Providers no longer navigated through a new sequence of pages each time they changed categories.</p>
+    <h2 class="cs-h2">One workspace for managing and discovering inventory</h2>
+    <p class="cs-lead">The final design preserved the familiar Manage Gear interface while flattening the navigation beneath it. Providers could scan their catalog, switch categories, surface unlisted gear, and take action without leaving the workspace.</p>
 
-    <div class="cs-compare">
-      <div class="cs-compare-cell background-white">
-        <div class="cs-callout-label">BEFORE</div>
-        <div class="cs-flow-line cs-flow-line--muted">Navigate into category &rarr; subcategory &rarr; product type &rarr; open inventory &rarr; edit &rarr; backtrack</div>
-      </div>
-      <div class="cs-compare-cell cs-compare-cell--after">
-        <div class="cs-callout-label cs-callout-label--accent">AFTER</div>
-        <div class="cs-flow-line">Stay in one workspace &rarr; filter inventory &rarr; scan items &rarr; update &rarr; switch filter</div>
-      </div>
-    </div>
 
     <div class="cs-solutions">
       <div>
         <div class="cs-solution-head">
           <h3><span class="cs-solution-num">1 &middot;</span> Flatten inventory into one management surface</h3>
-          <p class="cs-text u-mt-sm">Inventory moved into a single continuous workspace instead of being distributed across several category views. Providers could scan more of their catalog without entering and exiting separate screens &mdash; a stable starting point for searching, filtering, and editing gear.</p>
+          <p class="cs-text u-mt-sm">Category, subcategory, and product type no longer opened separate pages. Providers could move across inventory types from one stable management view without repeatedly entering and exiting category screens.</p>
         </div>
         <div class="cs-media modal-target cs-ar-wide" data-modal-gallery="inv-solutions">
-          <img src="after_one_unified_view.gif" alt="Unified inventory workspace showing all categories, filters, and items in one continuous page">
+          <img src="design_one_surface.png" alt="Unified inventory workspace showing all categories, filters, and items in one continuous page">
         </div>
       </div>
 
       <div>
         <div class="cs-solution-head">
-          <h3><span class="cs-solution-num">2 &middot;</span> Replace navigation with persistent filters</h3>
-          <p class="cs-text u-mt-sm">Category, subcategory, and product-type controls stayed at the top of the workspace. Changing a filter updated the inventory below without opening another page or resetting orientation &mdash; preserving context while moving rapidly between inventory types.</p>
+          <h3><span class="cs-solution-num">2 &middot;</span> Keep category controls persistent</h3>
+          <p class="cs-text u-mt-sm">Primary and secondary category controls remained visible while the inventory updated below. This preserved orientation and supported both broad scanning and precise drill-down.</p>
         </div>
         <div class="cs-media modal-target cs-ar-wide" data-modal-gallery="inv-solutions">
-          <img src="after_persistent_filters.gif" alt="Persistent filter bar letting providers switch categories without leaving the page">
+          <img src="design_persistent_filter.gif" alt="Persistent filter bar letting providers switch categories without leaving the page">
         </div>
       </div>
 
       <div>
         <div class="cs-solution-head">
-          <h3><span class="cs-solution-num">3 &middot;</span> Bring listed and unlisted gear into the same workflow</h3>
-          <p class="cs-text u-mt-sm">Previously, unlisted gear was buried in a separate path and easy to overlook. The redesigned workspace surfaced listed and unlisted items together &mdash; discovery became a consequence of the primary workflow rather than a separate activity providers had to remember to perform.</p>
+          <h3><span class="cs-solution-num">3 &middot;</span> Contextual discovery</h3>
+          <p class="cs-text u-mt-sm">Surface missing inventory within routine category management</p>
         </div>
         <div class="cs-media modal-target cs-ar-wide" data-modal-gallery="inv-solutions">
-          <img src="gif_unlisted_after.gif" alt="Listed and unlisted gear surfaced together in the same inventory grid">
+          <img src="design_discover.png" alt="Listed and unlisted gear surfaced together in the same inventory grid">
         </div>
       </div>
-
       <div>
         <div class="cs-solution-head">
-          <h3><span class="cs-solution-num">4 &middot;</span> Keep item actions close to the inventory</h3>
-          <p class="cs-text u-mt-sm">Common actions were attached directly to inventory cards, reducing transitions for routine changes. Providers could identify an item, understand its status, and begin editing without opening additional management layers.</p>
+          <h3><span class="cs-solution-num">4 &middot;</span> Keep supporting actions close to inventory</h3>
+          <p class="cs-text u-mt-sm">Two smaller changes reduced additional navigation while preserving the familiar workflow.</p>
         </div>
-        <div class="cs-media modal-target cs-ar-wide" data-modal-gallery="inv-solutions">
-          <img src="after_inline_editing.gif" alt="Inventory cards with direct, inline actions for editing and reordering">
+        <div class="cs-content-grid u-mt-lg">
+          <div>
+            <div class="cs-media modal-target cs-ar-wide" data-modal-gallery="inv-solutions">
+              <img src="design_card.png" alt="Inventory cards with direct, inline actions for editing and reordering">
+            </div>
+                    
+
+            <div class="cs-subhead u-mt-sm">Inline item actions </div>
+            <p class="cs-text">Common status, visibility, feature, and edit actions remained directly on inventory cards, allowing providers to act without opening additional layers.
+
+            </p>
+
+          </div>
+          <div>
+            <div class="cs-media modal-target cs-ar-wide" data-modal-gallery="inv-solutions">
+              <img src="design_view_shop.png" alt="Manage Gear workspace with a View Shop action connecting to the customer-facing storefront">
+            </div>
+
+            <div class="cs-subhead u-mt-sm">View Shop </div>
+            <p class="cs-text">A visible View Shop action let providers verify the customer-facing presentation of their inventory without searching for their storefront.
+
+            </p>
+
+          </div>
         </div>
+
+
+
       </div>
 
-      <div>
-        <div class="cs-solution-head">
-          <h3><span class="cs-solution-num">5 &middot;</span> Connect management with the customer-facing storefront</h3>
-          <p class="cs-text u-mt-sm">A visible View Shop action let providers verify how their inventory appeared to customers &mdash; no need to leave the portal, manually locate their storefront, and reconstruct the relationship between internal inventory and the public experience.</p>
-        </div>
-        <div class="cs-media modal-target cs-ar-wide" data-modal-gallery="inv-solutions">
-          <img src="hifi_final.png" alt="Manage Gear workspace with a View Shop action connecting to the customer-facing storefront">
-        </div>
-      </div>
+
+
     </div>
 
     <h2 class="cs-h2 cs-h2--follow cs-h2--sm">Workflow comparison</h2>
-    <div class="cs-breakdown-grid">
-      <div class="cs-rule-top cs-rule-top--subtle">
-        <div class="modal-target" data-modal-gallery="flow-comparison">
-          <img src="diagram_legacy_workflow.svg" alt="Legacy workflow: hard to scan inventory, 4–5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
-        </div>
-        <div class="modal-target" data-modal-gallery="flow-comparison">
-          <img src="flow_im_before.png" alt="Legacy inventory workflow with multiple navigation steps before reaching the item list">
-        </div>
-
-
-        <p class="cs-text cs-comparison-line cs-comparison-line--first"><strong class="cs-text-emphasis">Before:</strong> Maintain inventory restarting each time</p>
-
+    <div class="cs-compare">
+      <div class="cs-compare-cell background-white">
+        <p class="cs-text cs-comparison-line cs-comparison-line--first"><strong class="cs-text-emphasis">Before:</strong> Drill down → open inventory → edit → backtrack</p>
         <ul class="cs-list">
-          <li>updating inventory required moving between separate views and repeating the same category-selection sequence.</li>
-          <li>unlisted inventory sat in a separate flow, making it easy to overlook.</li>
+          <li>Repeated category navigation</li>
+          <li>Context lost between inventory types</li>
+          <li>Missing gear buried deeper in the hierarchy</li>
+
         </ul>
-
       </div>
-      <div class="cs-rule-top cs-rule-top--subtle">
-        <div class="modal-target" data-modal-gallery="flow-comparison">
-          <img src="diagram_redesigned_workflow.svg" alt="Redesigned inventory workflow with one persistent workspace for filtering, scanning, and updating gear">
-        </div>
-
-        <div class="modal-target" data-modal-gallery="flow-comparison">
-          <img src="flow_im_after.png" alt="Redesigned inventory workflow with one persistent workspace for filtering, scanning, and updating gear">
-        </div>
-
-
-        <p class="cs-text u-mt-sm"><strong class="cs-text-emphasis">After:</strong> Discover unlisted gear during routine management</p>
+      <div class="cs-compare-cell cs-compare-cell--after">
+        <p class="cs-text u-mt-sm"><strong class="cs-text-emphasis">After:</strong> Switch filters → scan, edit or add → continue</p>
         <ul class="cs-list">
-          <li>Maintain inventory without rebuilding context</li>
-          <li>Discover unlisted gear during routine management
-          </li>
+          <li>One persistent workspace</li>
+          <li>Context retained while switching categories</li>
+          <li>Missing inventory surfaced through in-context prompts</li>
 
         </ul>
       </div>
     </div>
+
+    <div class="cs-content-grid u-mt-md">
+      <div class="modal-target" data-modal-gallery="flow-comparison">
+        <img src="diagram_legacy_workflow.svg" alt="Legacy workflow: hard to scan inventory, 4–5 clicks per edit, filters vanish while scrolling, key tabs buried, unlisted gear hidden">
+      </div>
+      <div class="modal-target" data-modal-gallery="flow-comparison">
+        <img src="diagram_redesigned_workflow.svg" alt="Redesigned inventory workflow with one persistent workspace for filtering, scanning, and updating gear">
+      </div>
+    </div>
+
+
   </section>
 
   <section id="impact" class="cs-section cs-section--end container">
     <div class="cs-kicker">04 &mdash; IMPACT</div>
     <h2 class="cs-h2">Faster inventory maintenance for providers managing large catalogs</h2>
-    <p class="cs-lead">In comparative workflow testing, providers completed representative inventory-editing tasks <strong class="cs-text-emphasis">approximately three times faster</strong> in the redesigned experience than in the legacy flow. The result was not simply a shorter click path &mdash; providers could maintain continuity while working through a large catalog instead of repeatedly stopping to reconstruct where they were.</p>
+    <p class="cs-lead">
+      In informal comparative task testing, participants completed representative inventory-editing tasks approximately <strong class="cs-text-emphasis">three times faster</strong> in the redesigned workflow than in the legacy flow. The improvement came from more than a shorter click path: the persistent workspace let participants scan broadly, narrow to a category, and continue across inventory types without repeatedly rebuilding context.
+    </p>
 
-    <div class="cs-two-col">
+    <div class="cs-content-grid u-mt-lg">
       <div>
         <div class="cs-subhead">Where the speed came from</div>
         <ul class="cs-list">
@@ -325,23 +443,49 @@
       <div>
         <div class="cs-subhead">Operational impact</div>
         <ul class="cs-list">
-          <li>Large catalogs easier to scan and manage</li>
-          <li>Context preserved while switching categories</li>
-          <li>Overlooked and unlisted gear pulled into the primary workflow</li>
-          <li>Reduced learning burden from fragmented inventory logic</li>
-          <li>A more scalable foundation for future inventory features</li>
+          <li>Large catalogs became easier to scan and manage</li>
+          <li>Context remained available while switching categories</li>
+          <li>Unlisted opportunities appeared within the normal category workflow</li>
+          <li>Reduced repeated reorientation between category views</li>
+          <li>Missing inventory became visible through in-context prompts</li>
         </ul>
       </div>
       <div>
         <div class="cs-subhead">Marketplace relevance</div>
-        <p class="cs-text u-mt-xs">The redesign did not directly prove supply increased after launch. It reduced one cost of maintaining and expanding supply &mdash; the time providers spend managing inventory &mdash; supporting BabyQuip's broader goal of category depth and customer choice without proportional workflow complexity.</p>
+        <p class="cs-text u-mt-xs">The redesign did not directly prove supply increased after launch. It reduced one
+          cost of maintaining and expanding supply &mdash; the time providers spend managing inventory &mdash;
+          supporting BabyQuip's broader goal of category depth and customer choice without proportional workflow
+          complexity.</p>
       </div>
     </div>
+    <h2 class="cs-h2 cs-h2--follow cs-h2--sm">The interaction pattern was reused across multiple surfaces.</h2>
+    <p class="cs-lead">
+      The filter-and-card structure established in Manage Gear was <strong class="cs-text-emphasis">reused across package management</strong> and adapted for the <strong class="cs-text-emphasis">provider storefront</strong> and <strong class="cs-text-emphasis">internal admin tools</strong>. The implementations varied by context, but the same interaction model supported scanning, narrowing, and acting without navigating through additional pages.
+    </p>
+    <div class="cs-content-grid u-mt-md">
+      <div class="modal-target u-mb-sm" data-modal-gallery="directions">
+        <img src="screenshot_reuse_package.png" alt="Dashboard discovery">
+      </div>
 
-    <div class="cs-two-col cs-block-divider">
+
+      <div class="modal-target u-mb-sm" data-modal-gallery="directions">
+        <img src="screenshot_reuse_shop.png" alt="Dashboard discovery">
+      </div>
+
+
+
+      <div class="modal-target u-mb-sm" data-modal-gallery="directions">
+        <img src="screenshot_reuse_superadmin.png" alt="In-context shortcuts">
+      </div>
+
+    </div>
+    <div class="cs-content-grid cs-block-divider u-mt-lg">
       <div>
         <div class="cs-label">WHAT THE REDESIGN DID NOT SOLVE</div>
-        <p class="cs-text u-mt-xs">Inventory tooling was only one factor influencing supply &mdash; providers still needed sufficient demand and business value to justify purchasing and maintaining additional gear. Familiar category shortcuts were retained to reduce disruption for existing providers, and advanced prioritization and recommendation features were deferred due to scope and timeline constraints.</p>
+        <p class="cs-text u-mt-xs">Inventory tooling was only one factor influencing supply &mdash; providers still
+          needed sufficient demand and business value to justify purchasing and maintaining additional gear.
+          Familiar category shortcuts were retained to reduce disruption for existing providers, and advanced
+          prioritization and recommendation features were deferred due to scope and timeline constraints.</p>
       </div>
       <div>
         <div class="cs-label">FUTURE OPPORTUNITIES</div>
@@ -356,15 +500,13 @@
     </div>
 
     <div class="cs-pullquote">
-      <p>Discovery didn&rsquo;t need a destination. It needed a workflow where <span class="accent">finding, listing, and maintaining gear happened in the same place</span>.</p>
+      <p>Discovery didn&rsquo;t need a destination. It needed a workflow where <span class="accent">finding,
+          listing, and maintaining gear happened in the same place</span>.</p>
     </div>
   </section>
 
-  <%- include(`${templatePath}/shared2026/footer`, {
-    footerVariant: 'case-study',
-    footerAllCaseStudiesHref: '/worklog',
-    footerResumeHref: '/resume2026'
-  }) %>
+  <%- include(`${templatePath}/shared2026/footer`, { footerVariant: 'case-study' ,
+        footerAllCaseStudiesHref: '/worklog' , footerResumeHref: '/resume2026' }) %>
 
   <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
     <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>
