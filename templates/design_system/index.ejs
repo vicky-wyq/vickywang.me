@@ -75,6 +75,7 @@ font-family: "Ranade", serif; /* Ranade is a serif-ish transitional grotesk, but
   <!--handwriting font-family: 'Gloria Hallelujah';  | Hello font|-->
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet">
 
 
 
@@ -93,6 +94,7 @@ font-family: "Ranade", serif; /* Ranade is a serif-ish transitional grotesk, but
 
   <!-- Your CSS and JS -->
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="refresh.css">
   <script defer="" src="scripts.js"></script>
 
 
@@ -148,56 +150,39 @@ font-family: "Ranade", serif; /* Ranade is a serif-ish transitional grotesk, but
 <body class="design-system-page">
 
   <%- include(`${templatePath}/shared/comp_progressBar`) %>
-  <%- include(`${templatePath}/shared/nav_header_back`, { 
-    PageUrl:`${websitePath}/`,
-    headerBackgroundColor:`WhiteBgTrans`,
-    arrTxtColor:``,
-    }) %>
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'detail',
+    headerHome: '/worklog',
+    headerAvatar: '../web_images/photo_profile_avatar.png',
+    headerLinks: [
+      { href: '#content1', label: 'Foundations' },
+      { href: '#content2', label: 'Elements' },
+      { href: '#content3', label: 'Components' },
+      { href: '#content4', label: 'Blocks' }
+    ]
+  }) %>
 
-
-  <!-- header image -->
-  <div class="colorBgVW pattern2">
-    <div class="blankPhone"></div>
-    <div class="ProjectBanner displayDesktop">
-      <div class="blankMin1880"></div>
-      <img src="MockupL.png" alt="vickywang.me">
-
-      <div class="ProjectBannerInnerND">
-        <h1><strong>Design System</strong> </h1>
-
-        <h3 class="Grid Grid--center">A living system for testing responsive layouts, reusable components, accessibility, and design-to-code parity.</h3>
-
-        <h5 class="textItalic">Designed, built, and maintained since October 2020</h5>
-
+  <section class="ds-refresh-hero">
+    <div class="ds-refresh-container">
+      <div class="ds-refresh-meta">
+        <span>PERSONAL DESIGN SYSTEM</span>
+        <span>2020 &ndash; PRESENT</span>
+      </div>
+      <div class="ds-refresh-hero-grid">
+        <div class="ds-refresh-hero-copy">
+          <p class="ds-refresh-kicker">A living product-design practice</p>
+          <h1>Designing the system behind the screens</h1>
+          <p class="ds-refresh-lead">A working archive of responsive foundations, reusable components, accessibility decisions, and design-to-code patterns developed across multiple generations of this portfolio.</p>
+          <p class="ds-refresh-note">Built from scratch as an earlier hands-on exploration, this system helped me understand how design decisions translate into reusable HTML, CSS, and JavaScript. It is separate from the system used for the current case-study pages.</p>
+        </div>
+        <figure class="ds-refresh-hero-media">
+          <img src="MockupL.png" alt="Responsive views of the Vicky Wang portfolio design system">
+        </figure>
       </div>
     </div>
+  </section>
 
-    <div class="ProjectBanner displayTablet">
-      <div class="blankMin1880"></div>
-      <img class="displayTablet" src="MockupM.png" alt="vickywang.me">
-      <div class="ProjectBannerInnerND">
-        <h1><strong>Design System</strong> </h1>
-        <h3 class="Grid Grid--center colorBlack">Click, hover, or adjust the viewport to observe the responsive layout
-          and component behavior</h3>
-        <h5 class="textItalic">Design, implement, and maintain this website since October 2020</h5>
-
-      </div>
-    </div>
-    <div class="ProjectBanner displayMobile">
-      <div class="blankMin1880"></div>
-      <img class="displayMobile" src="MockupS.png" alt="vickywang.me">
-      <div class="ProjectBannerInnerND">
-        <h1><strong>Design System</strong> </h1>
-        <h3 class="Grid Grid--center colorBlack">Click, hover, or adjust the viewport to observe the responsive layout
-          and component behavior</h3>
-        <h5 class="textItalic fontWeight100">Design, implement, and maintain this website since October 2020</h5>
-
-      </div>
-
-    </div>
-  </div>
-
-  <div class="wrapper">
+  <div class="wrapper ds-refresh-content">
     <div class="blankHXXS"></div>
 
     <div class="Grid Grid--gutters Grid--cols-2">
@@ -4152,7 +4137,11 @@ font-family: "Ranade", serif; /* Ranade is a serif-ish transitional grotesk, but
 
   <%- include(`${templatePath}/shared/comp_modal`) %>
 
-  <%- include(`${templatePath}/shared/footer`) %>
+  <%- include(`${templatePath}/shared2026/footer`, {
+    footerVariant: 'case-study',
+    footerAllCaseStudiesHref: '/worklog',
+    footerResumeHref: '/resume2026'
+  }) %>
 
 
   <!-- Shared across the platform -->

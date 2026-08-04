@@ -1,0 +1,307 @@
+.design-system-page {
+  --refresh-white: #fff;
+  --refresh-bg: #fdfdfc;
+  --refresh-text: #1c1a17;
+  --refresh-muted: #5c564c;
+  --refresh-faint: #848a77;
+  --refresh-border: #e7e6e2;
+  --refresh-accent: oklch(0.50 0.15 148);
+  --refresh-accent-bg: oklch(0.96 0.025 148);
+  --refresh-accent-light: oklch(0.72 0.13 148);
+  --refresh-dark: #1c1a17;
+  --refresh-serif: "Newsreader", Georgia, serif;
+  --refresh-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --refresh-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --refresh-gutter: clamp(20px, 5vw, 56px);
+  margin: 0;
+  background: var(--refresh-bg);
+  color: var(--refresh-text);
+  font-family: var(--refresh-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.design-system-page *,
+.design-system-page *::before,
+.design-system-page *::after {
+  box-sizing: border-box;
+}
+
+.design-system-page a:focus-visible,
+.design-system-page button:focus-visible {
+  outline: 2px solid var(--refresh-accent);
+  outline-offset: 3px;
+}
+
+.design-system-page .container,
+.design-system-page .ds-refresh-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-left: var(--refresh-gutter);
+  padding-right: var(--refresh-gutter);
+}
+
+/* Current portfolio navigation, scoped so legacy examples remain unchanged. */
+.design-system-page > .nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1.5px solid var(--refresh-border);
+  background: rgb(253 253 252 / 92%);
+  backdrop-filter: blur(8px);
+  transition: transform 0.25s ease;
+}
+
+.design-system-page > .nav.nav--hidden {
+  transform: translateY(-100%);
+}
+
+.design-system-page > .nav .nav-inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 16px);
+  padding-top: clamp(18px, 3vw, 24px);
+  padding-bottom: clamp(18px, 3vw, 24px);
+}
+
+.design-system-page > .nav .nav-history-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border: 1.5px solid var(--refresh-border);
+  border-radius: 50%;
+  color: var(--refresh-faint);
+  font: 400 18px/1 var(--refresh-sans);
+  text-decoration: none;
+}
+
+.design-system-page > .nav .nav-history-back:hover {
+  color: var(--refresh-accent);
+  background: var(--refresh-accent-bg);
+}
+
+.design-system-page > .nav .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 16px);
+  color: var(--refresh-text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.design-system-page > .nav .nav-brand img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.design-system-page > .nav .nav-brand span {
+  font: 500 italic 15px var(--refresh-serif);
+}
+
+.design-system-page > .nav .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(14px, 2.5vw, 28px);
+  margin-left: auto;
+  font: 500 14px var(--refresh-sans);
+  letter-spacing: 0.02em;
+}
+
+.design-system-page > .nav .nav-link {
+  color: var(--refresh-faint);
+  text-decoration: none;
+}
+
+.design-system-page > .nav .nav-link:hover,
+.design-system-page > .nav .nav-link.is-active {
+  color: var(--refresh-accent);
+}
+
+.design-system-page .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* Updated editorial shell; the legacy library begins below it. */
+.design-system-page .ds-refresh-hero {
+  padding: clamp(52px, 9vw, 112px) 0 clamp(44px, 7vw, 84px);
+  border-bottom: 1.5px solid var(--refresh-border);
+  background: var(--refresh-bg);
+}
+
+.design-system-page .ds-refresh-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1.5px solid var(--refresh-text);
+  color: var(--refresh-faint);
+  font: 500 11px/1.4 var(--refresh-mono);
+  letter-spacing: 0.08em;
+}
+
+.design-system-page .ds-refresh-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  gap: clamp(32px, 6vw, 80px);
+  align-items: center;
+  padding-top: clamp(32px, 6vw, 68px);
+}
+
+.design-system-page .ds-refresh-kicker {
+  margin: 0 0 16px;
+  color: var(--refresh-accent);
+  font: 500 12px/1.4 var(--refresh-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.design-system-page .ds-refresh-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--refresh-text);
+  font: 400 italic clamp(44px, 7vw, 82px)/0.98 var(--refresh-serif);
+  letter-spacing: -0.035em;
+}
+
+.design-system-page .ds-refresh-lead {
+  max-width: 680px;
+  margin: clamp(24px, 4vw, 36px) 0 0;
+  color: var(--refresh-muted);
+  font: 400 clamp(18px, 2.2vw, 23px)/1.5 var(--refresh-sans);
+}
+
+.design-system-page .ds-refresh-note {
+  max-width: 620px;
+  margin: 24px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--refresh-border);
+  color: var(--refresh-faint);
+  font: 400 13px/1.6 var(--refresh-mono);
+}
+
+.design-system-page .ds-refresh-hero-media {
+  margin: 0;
+  padding: clamp(18px, 3vw, 32px);
+  background: var(--refresh-accent-bg);
+  border: 1px solid var(--refresh-border);
+}
+
+.design-system-page .ds-refresh-hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.design-system-page > .ds-refresh-content {
+  padding-top: clamp(36px, 6vw, 64px);
+}
+
+/* Keep the legacy ScrollSpy panel from resizing as active labels change weight. */
+.design-system-page .section-nav {
+  width: 264px;
+  max-width: calc(100vw - 32px);
+  box-sizing: border-box;
+  scrollbar-gutter: stable;
+}
+
+.design-system-page .section-nav a {
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 2px solid var(--refresh-border);
+}
+
+.design-system-page .section-nav li.active > a {
+  border-left-color: var(--refresh-text);
+}
+
+/* Current portfolio footer. */
+.design-system-page > .contact {
+  margin-top: clamp(44px, 7vw, 64px);
+  padding: clamp(56px, 10vw, 88px) 0;
+  background: var(--refresh-dark);
+  color: var(--refresh-bg);
+}
+
+.design-system-page > .contact h2 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--refresh-bg);
+  font: 400 italic clamp(28px, 5vw, 44px)/1.15 var(--refresh-serif);
+}
+
+.design-system-page > .contact .contact-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.design-system-page > .contact .contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(20px, 4vw, 40px);
+  margin-top: clamp(36px, 6vw, 52px);
+  font: 500 14px var(--refresh-sans);
+}
+
+.design-system-page > .contact .contact-link {
+  color: var(--refresh-bg);
+  border-bottom: 1.5px solid var(--refresh-bg);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+.design-system-page > .contact .contact-link.accent {
+  color: var(--refresh-accent-light);
+  border-color: var(--refresh-accent-light);
+}
+
+.design-system-page > .contact .contact-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: clamp(40px, 8vw, 72px);
+  color: var(--refresh-faint);
+  font: 400 12px var(--refresh-mono);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .design-system-page .ds-refresh-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .design-system-page .ds-refresh-hero-media {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 720px) {
+  .design-system-page > .nav .nav-brand span,
+  .design-system-page > .nav .nav-links {
+    display: none;
+  }
+
+  .design-system-page .ds-refresh-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .design-system-page .ds-refresh-hero-grid {
+    gap: 28px;
+  }
+}
