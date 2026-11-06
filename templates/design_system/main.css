@@ -4544,8 +4544,8 @@ flex: 0 0 calc(33.3333% - 1em);
   box-shadow: none;
 }
 
-TBsliderNav,
-a:hover {
+.TBsliderNav,
+.TBsliderNav:hover {
   color: var(--grey900) !important;
 }
 
