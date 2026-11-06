@@ -1,0 +1,210 @@
+@import url("../style.css");
+
+/* Page-specific layouts retain the shared worklog typography and colors. */
+main figure {
+  margin: 0;
+}
+
+.checkout-stats .cs-stat-value--sm {
+  font-size: clamp(30px, 3.1vw, 42px);
+  white-space: nowrap;
+}
+
+.checkout-measurement {
+  margin: 0 0 var(--space-medium);
+  padding-top: 0;
+}
+
+.checkout-legacy mark {
+  background: var(--accent-bg);
+  color: var(--accent);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 2px 3px;
+}
+
+.cs-subhead {
+  margin-top: 0;
+}
+
+.checkout-screen img {
+  height: auto;
+  object-fit: contain;
+}
+
+.checkout-zones,
+.checkout-annotations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-medium);
+}
+
+.checkout-zones > div {
+  border-top: var(--rule-line-width-medium) solid var(--border);
+  padding: var(--space-small);
+}
+
+.checkout-zones .checkout-zone-active {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+}
+
+.checkout-zone-active .cs-label {
+  color: var(--accent);
+}
+
+.checkout-ownership {
+  margin: var(--space-small) 0;
+  font: 400 var(--font-size-sm)/1.6 var(--mono);
+  color: var(--accent);
+}
+
+.cs-solution-head .cs-text {
+  max-width: 80ch;
+}
+
+.checkout-annotations > div {
+  display: flex;
+  gap: var(--space-small);
+  border-top: var(--rule-line-width-medium) solid var(--border);
+  padding-top: var(--space-small);
+}
+
+.checkout-annotations .cs-solution-num {
+  font: 400 var(--font-size-sm)/1.7 var(--mono);
+}
+
+.checkout-annotations .cs-text {
+  font-size: var(--font-size-sm);
+}
+
+.checkout-summary-comparison {
+  max-width: 960px;
+}
+
+/* Crop the existing full-screen assets without creating duplicate image files. */
+.checkout-summary-crop {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: var(--media-bg);
+  border: 1px solid var(--border);
+  aspect-ratio: 402 / 295;
+}
+
+.checkout-summary-crop img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+  pointer-events: none;
+}
+
+.checkout-summary-crop--before img {
+  width: 395.812%;
+  left: -253.927%;
+  top: -225.271%;
+}
+
+.checkout-summary-crop--before {
+  aspect-ratio: 382 / 277;
+}
+
+.checkout-summary-crop--after img {
+  width: 811.94%;
+  left: -259.453%;
+  top: -190.508%;
+}
+
+.checkout-table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+}
+
+.checkout-table caption {
+  padding-bottom: var(--space-small);
+  text-align: left;
+  color: var(--text-muted);
+  font: 400 var(--font-size-sm)/1.6 var(--mono);
+}
+
+.checkout-table th,
+.checkout-table td {
+  padding: var(--space-small);
+  border-bottom: 1px solid var(--border);
+}
+
+.checkout-table th:first-child {
+  width: 50%;
+  padding-left: 0;
+}
+
+.checkout-table thead th {
+  border-top: var(--rule-line-width-medium) solid var(--text);
+  color: var(--text-muted);
+  font: 400 var(--font-size-xs)/1.5 var(--mono);
+}
+
+.checkout-table tbody th {
+  font-weight: 500;
+}
+
+.checkout-table th span {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.checkout-table td {
+  font-size: var(--font-size-xl);
+  font-family: var(--serif);
+}
+
+.checkout-table .checkout-result {
+  color: var(--accent);
+}
+
+.checkout-trade {
+  max-width: 900px;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-bg);
+  padding: var(--space-medium);
+}
+
+.checkout-trade .cs-text {
+  max-width: 72ch;
+}
+
+@media (max-width: 640px) {
+  .checkout-zones,
+  .checkout-annotations {
+    grid-template-columns: 1fr;
+    gap: var(--space-small);
+  }
+
+  .checkout-legacy {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-table th,
+  .checkout-table td {
+    padding: var(--space-small) 8px;
+  }
+
+  .checkout-table th:first-child {
+    width: 44%;
+  }
+
+  .checkout-table th span {
+    display: block;
+  }
+
+  .checkout-table tbody th {
+    font-size: var(--font-size-sm);
+  }
+}

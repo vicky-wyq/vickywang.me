@@ -1,13 +1,12 @@
-User-agent: *
+User-agent: Claude-User
+User-agent: ChatGPT-User
 Allow: /
 
-User-agent: ChatGPT-User
-Allow: /worklog/
-
-User-agent: OAI-SearchBot
-Allow: /worklog/
-
+User-agent: ClaudeBot
 User-agent: GPTBot
-Disallow: /worklog/
+Disallow: /
+
+User-agent: *
+Allow: /
 
 Sitemap: https://vickywang.me/sitemap.xml

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include(`${templatePath}/shared2026/head`, {
+  headTitle: 'Reducing Checkout Friction After Renters Are Ready to Book — Vicky Wang',
+  headDescription: 'Resolving identity earlier and simplifying checkout so renters stay focused on completing their reservation.',
+  headRobots: 'noindex, follow',
+  headType: 'article',
+  headImage: 'https://vickywang.me/thumbnails/cs_checkout.png'
+}) %>
+
+<body>
+
+  <%- include(`${templatePath}/shared2026/header`, {
+    headerVariant: 'detail',
+    headerHome: '/worklog',
+    headerAvatar: '../../web_images/photo_profile_avatar.png',
+    headerLinks: [
+      { href: '#problem', label: 'Problem', muted: true },
+      { href: '#insight', label: 'Insight', muted: true },
+      { href: '#design', label: 'Design', muted: true },
+      { href: '#impact', label: 'Impact', muted: true }
+    ]
+  }) %>
+
+  <section class="cs-hero container cs-section--sm">
+    <div class="cs-hero-meta">
+      <span class="case-index">&#8470; 3 &middot; Q2 2026 &middot; BabyQuip</span>
+      <span class="tag">DEMAND SIDE &mdash; CHECKOUT</span>
+    </div>
+    <h1 class="cs-h2 cs-h2--display">Reducing Checkout Friction After Renters Are Ready to Book</h1>
+    <p class="cs-hero-sub">Checkout is the commitment phase. The redesign protected that moment by resolving identity earlier, keeping order-critical tasks in checkout, and moving nonessential prompts after purchase.</p>
+
+    <div class="cs-divider-grid cs-divider-grid--hero">
+      <div>
+        <div class="cs-label">PRE-REDESIGN BASELINE</div>
+        <div class="cs-stat-value--sm">~46% vs ~84%</div>
+        <div class="cs-stat-label">Mobile web vs. desktop, begin checkout &rarr; purchase completion</div>
+        <div class="cs-stat-note">Baseline from GA4 funnel comparison. Post-launch measurement plan defined; results pending.</div>
+      </div>
+      <div>
+        <div class="cs-label">SHIPPED STRUCTURAL CHANGE</div>
+        <div class="cs-stat-value--sm">1 mixed checkout &rarr; 3 deliberate moments</div>
+        <div class="cs-stat-label">Identity before checkout &middot; Order completion in checkout &middot; Secondary prompts after purchase</div>
+      </div>
+    </div>
+
+    <div class="cs-divider-grid cs-divider-grid--tight cs-divider-grid--bleed">
+      <div>
+        <div class="cs-label">ROLE</div>
+        <div class="cs-text">Product designer responsible for the cross-platform checkout redesign</div>
+      </div>
+      <div>
+        <div class="cs-label">SCOPE</div>
+        <div class="cs-text">Cross-platform web checkout, excluding the native mobile app</div>
+      </div>
+      <div>
+        <div class="cs-label">COLLABORATORS</div>
+        <div class="cs-text">VP Product Design, CTO, engineering, QA, product, customer support</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problem" class="cs-section container">
+    <div class="cs-kicker">01 &mdash; PROBLEM</div>
+    <h2 class="cs-h2">Checkout mixed order completion with everything else</h2>
+    <p class="cs-lead">By the time users reach checkout, they are no longer exploring &mdash; they are trying to confirm the rental, resolve required logistics, pay, and know what happens next. The old checkout mixed that with <strong class="cs-text-emphasis">account creation, optional prompts, and editing paths</strong>, creating extra opportunities to pause, hit errors, or leave after users had already shown purchase intent.</p>
+
+    <h3 class="cs-h3 u-mt-lg">Quantitative signals</h3>
+    <div class="cs-content-grid u-mt-md">
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="ga4_cross_platform.png" alt="GA4 cross-platform funnel comparison" data-modal-gallery="ga4-checkout">
+        </div>
+        <div class="cs-label u-mt-xs">Cross-platform comparison</div>
+      </div>
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="ga4_detailed_breakdown.png" alt="GA4 detailed UX breakdown" data-modal-gallery="ga4-checkout">
+        </div>
+        <div class="cs-label u-mt-xs">Detailed UX breakdown</div>
+      </div>
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="ga4_mobile_app.png" alt="GA4 mobile app completion" data-modal-gallery="ga4-checkout">
+        </div>
+        <div class="cs-label u-mt-xs">Mobile app completion</div>
+      </div>
+    </div>
+
+    <div class="cs-content-grid u-mt-md">
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">Mobile drops ~2&times; more than desktop</div>
+        <p class="cs-text u-mt-xs">From begin_checkout &rarr; purchase, web completed at ~84%; mobile web at ~46%.</p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">The largest drop happens before checkout begins</div>
+        <p class="cs-text u-mt-xs">From add_to_cart &rarr; begin_checkout, ~49% continued on web, ~34% on mobile web &mdash; over 60% of mobile users abandoned after adding items.</p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">Once users entered checkout, later-stage completion was high</div>
+        <p class="cs-text u-mt-xs">Among tracked web and mobile-web sessions, completion across payment and purchase steps was ~97&ndash;99% &mdash; friction was concentrated around entry, account state, and early commitment moments.</p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">Mobile app tracking is unreliable</div>
+        <p class="cs-text u-mt-xs">Purchase events exceeded checkout-initiation events in the app, indicating missing funnel instrumentation &mdash; one reason the app was excluded from scope.</p>
+      </div>
+    </div>
+
+    <div class="cs-pullquote">
+      <p>Checkout was not the largest funnel leak &mdash; but it was a <span class="accent">high-value moment</span> where avoidable friction could lose users who were already ready to book.</p>
+    </div>
+
+    <h3 class="cs-h3 u-mt-lg">Qualitative signals</h3>
+    <p class="cs-lead u-mt-sm">Session recordings and walkthroughs of the legacy flow surfaced four recurring patterns.</p>
+
+    <div class="cs-content-grid u-mt-md">
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">A &middot; Decision loops</div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_qualitative1.png" alt="Links pulling users out of checkout" data-modal-gallery="checkout-qual">
+        </div>
+        <p class="cs-text u-mt-sm">Links back to cart, trip, and supporting pages pulled users out of checkout and back into decision mode.</p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">B &middot; Mobile review friction</div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_qualitative2.png" alt="Long scroll and persistent UI on mobile" data-modal-gallery="checkout-qual">
+        </div>
+        <p class="cs-text u-mt-sm">Long scroll, persistent UI, and a heavy footer made reviewing the order harder on mobile.</p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">C &middot; Flow interruptions</div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_qualitative3.png" alt="Login, payment, and password errors" data-modal-gallery="checkout-qual">
+        </div>
+        <p class="cs-text u-mt-sm">Login, payment, password, and iframe errors interrupted the flow and broke confidence at the worst moment.</p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">D &middot; Completion uncertainty</div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_qualitative4.png" alt="Repeated back-and-forth between checkout states" data-modal-gallery="checkout-qual">
+        </div>
+        <p class="cs-text u-mt-sm">Repeated back-and-forth between checkout states suggested users were still deciding instead of completing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="insight" class="cs-section container">
+    <div class="cs-kicker">02 &mdash; INSIGHT</div>
+    <h2 class="cs-h2">Checkout is the commitment layer of the marketplace journey</h2>
+    <p class="cs-lead">Every earlier stage of the journey is about deciding. Checkout is the one stage where the user has already decided &mdash; and the interface should treat that differently.</p>
+
+    <div class="cs-journey-grid">
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">1</div>
+        <div class="cs-journey-label">Need clarity</div>
+        <div class="cs-quote">&ldquo;What do I need for this trip?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">2</div>
+        <div class="cs-journey-label">Fit clarity</div>
+        <div class="cs-quote">&ldquo;Is this the right item for my child and trip?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">3</div>
+        <div class="cs-journey-label">Provider trust</div>
+        <div class="cs-quote">&ldquo;Can I trust this provider?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">4</div>
+        <div class="cs-journey-label">Availability &amp; logistics</div>
+        <div class="cs-quote">&ldquo;Can this work for my dates and location?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item">
+        <div class="cs-journey-num">5</div>
+        <div class="cs-journey-label">Price confidence</div>
+        <div class="cs-quote">&ldquo;Do I understand what this will cost?&rdquo;</div>
+      </div>
+      <div class="cs-journey-item cs-journey-item--active">
+        <div class="cs-journey-num">6</div>
+        <div class="cs-journey-label">Commitment</div>
+        <div class="cs-quote">&ldquo;I'm ready. Don't interrupt me now.&rdquo;</div>
+      </div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-xl">The old checkout mixed three jobs</h3>
+    <p class="cs-text u-max-w-68ch u-mt-sm">The legacy flow combined <strong class="cs-text-emphasis">identity and account state</strong>, <strong class="cs-text-emphasis">rental completion</strong>, and <strong class="cs-text-emphasis">extra business and user data</strong> in the same five-step flow.</p>
+
+    <div class="cs-content-grid cs-content-grid--steps u-mt-md">
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_legacy_process01.png" alt="Step 0 — guest checkout or log in" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label u-mt-sm">STEP 0</div>
+        <p class="cs-text u-fs-sm">Guest checkout or log in</p>
+      </div>
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_legacy_process02.png" alt="Step 1 — customer information" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label u-mt-sm">STEP 1</div>
+        <p class="cs-text u-fs-sm">Customer information</p>
+      </div>
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_legacy_process03.png" alt="Step 2 — delivery and pickup details" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label u-mt-sm">STEP 2</div>
+        <p class="cs-text u-fs-sm">Delivery/pickup details and notes</p>
+      </div>
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_legacy_process04.png" alt="Step 3 — survey and additional notes" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label u-mt-sm">STEP 3</div>
+        <p class="cs-text u-fs-sm">Survey and additional notes</p>
+      </div>
+      <div>
+        <div class="cs-media cs-ar-standard">
+          <img class="modal-target" src="screenshot_legacy_process05.png" alt="Step 4 — payment, tip, and account creation" data-modal-gallery="checkout-process">
+        </div>
+        <div class="cs-label u-mt-sm">STEP 4</div>
+        <p class="cs-text u-fs-sm">Payment, tip, cancellation option, rental responsibility, and account creation</p>
+      </div>
+    </div>
+
+    <h3 class="cs-h3 u-mt-xl">Design strategy: separate required checkout tasks from everything else</h3>
+    <p class="cs-text u-max-w-68ch u-mt-sm">Each job got its own place in the flow, driven by what users were actually asking at the commitment moment.</p>
+
+    <div class="cs-content-grid u-mt-md">
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">IDENTITY</div>
+        <p class="cs-text u-italic">&ldquo;Don't make me lose my progress if account creation fails at the end.&rdquo;</p>
+        <p class="cs-text u-italic">&ldquo;Don't make account state confusing.&rdquo;</p>
+        <p class="cs-breakdown-principle"><strong>&rarr; Resolve identity earlier.</strong> OTP verification; remove the guest/password split.</p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">COMPLETION</div>
+        <p class="cs-text u-italic">&ldquo;Let me understand the whole task before I commit.&rdquo;</p>
+        <p class="cs-text u-italic">&ldquo;Tell me what's wrong in context.&rdquo;</p>
+        <p class="cs-text u-italic">&ldquo;Show progress while keeping review possible.&rdquo;</p>
+        <p class="cs-breakdown-principle"><strong>&rarr; Keep required rental tasks in checkout.</strong> One-page checkout, section validation, collapsed completed sections.</p>
+      </div>
+      <div class="cs-rule-top cs-rule-top--strong">
+        <div class="cs-subhead">FOCUS</div>
+        <p class="cs-text u-italic">&ldquo;Don't ask nonessential questions before I finish.&rdquo;</p>
+        <p class="cs-text u-italic">&ldquo;Don't interrupt purchase with a secondary goal.&rdquo;</p>
+        <p class="cs-text u-italic">&ldquo;Don't pull me back into decision mode.&rdquo;</p>
+        <p class="cs-breakdown-principle"><strong>&rarr; Move optional tasks after purchase.</strong> Survey and app prompts moved to confirmation; trip and cart editing minimized during checkout.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="design" class="cs-section container">
+    <div class="cs-kicker">03 &mdash; DESIGN</div>
+    <h2 class="cs-h2">Solutions across the three checkout jobs</h2>
+
+    <div class="cs-solutions">
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">1 &middot;</span> Resolve identity earlier</h3>
+          <p class="cs-text u-mt-sm">Removed the guest/password split and moved to OTP verification &mdash; preventing existing-email, password-mismatch, and password-rule errors, and avoiding late password creation that could cost users their progress.</p>
+        </div>
+        <div class="cs-before-after">
+          <div class="cs-media cs-ar-wide">
+            <img class="modal-target" src="screenshot_solution01.png" alt="Sign up / log in — identity resolved before checkout" data-modal-gallery="checkout-solution-identity">
+          </div>
+          <div class="cs-media cs-ar-wide">
+            <img class="modal-target" src="screenshot_solution01_1.png" alt="Sign up / log in — second identity-flow view" data-modal-gallery="checkout-solution-identity">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">2 &middot;</span> Make checkout reviewable and focused</h3>
+          <p class="cs-text u-mt-sm">One-page checkout with section-by-section validation: completed sections collapse, errors surface in context, and the final review happens before placing the order &mdash; not after a surprise.</p>
+        </div>
+        <div class="">
+          <img class="modal-target" src="screen_solution_01.gif" alt="Main checkout — one page, section validation, collapsible sections" data-modal-gallery="checkout-solution-review">
+        </div>
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <h3><span class="cs-solution-num">3 &middot;</span> Move nonessential tasks out</h3>
+          <p class="cs-text u-mt-sm">Survey and app-download prompts moved to the confirmation page; trip and cart editing minimized inside checkout; the footer reduced so the order is the only remaining task.</p>
+        </div>
+
+        <div class="cs-before-after">
+          <div class="cs-media cs-ar-wide">
+            <img class="modal-target" src="screenshot_solution03.png" alt="Post-checkout — survey" data-modal-gallery="checkout-solution-03">
+          </div>
+          <div class="cs-media cs-ar-wide">
+            <img class="modal-target" src="screenshot_solution03_1.png" alt="Post-checkout — app prompts on confirmation" data-modal-gallery="checkout-solution-03">
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <div class="cs-solution-head">
+          <div class="cs-kicker u-mb-sm">CROSS-PLATFORM ADAPTATION</div>
+          <h3 class="u-mb-0">Collapse without hiding</h3>
+          <p class="cs-text u-mt-sm">On mobile, completed sections collapsed to reduce scrolling while preserving review and access to the final action, with a sticky completion CTA in the review state.</p>
+        </div>
+
+        <div class="cs-before-after">
+          <div class="cs-media  cs-ar-standard">
+            <img class="modal-target" src="screen_solution_04_1.gif" alt="Post-checkout — survey" data-modal-gallery="checkout-solution-03">
+          </div>
+          <div class="cs-media cs-ar-standard">
+            <img class="modal-target " src="screen_solution_04.gif" alt="Post-checkout — survey" data-modal-gallery="checkout-solution-03">
+          </div>
+        </div>
+        <div class="cs-media cs-media--diagram u-mt-sm">
+          <img class="modal-target" src="screen_solution_04_2.png" alt="Mobile review state with sticky CTA" data-modal-gallery="checkout-solution-mobile">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="impact" class="cs-section cs-section--end container">
+    <div class="cs-kicker">04 &mdash; IMPACT</div>
+    <h2 class="cs-h2">A cleaner checkout foundation &mdash; with measurement defined up front</h2>
+    <p class="cs-lead">The redesign removed several known account-related failure paths, kept checkout focused on order-critical tasks, and moved secondary prompts after purchase. Post-launch results will be evaluated against a defined measurement plan rather than retrofitted metrics.</p>
+
+    <div class="cs-content-grid u-mt-lg">
+      <div>
+        <div class="cs-subhead">Primary funnel metrics</div>
+        <ul class="cs-list">
+          <li>Checkout entry &rarr; purchase completion</li>
+          <li>Mobile-web checkout completion</li>
+          <li>Cart &rarr; checkout entry, to identify upstream effects</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cs-subhead">Identity &amp; error metrics</div>
+        <ul class="cs-list">
+          <li>OTP completion and error rate</li>
+          <li>Account-related checkout errors</li>
+          <li>Checkout/account support contacts, when consistently categorized</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cs-subhead">Post-purchase metrics</div>
+        <ul class="cs-list">
+          <li>Confirmation-page survey completion</li>
+          <li>App-prompt engagement after purchase</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cs-pullquote">
+      <p>Checkout was a high-value commitment moment. The redesign protected it by <span class="accent">resolving identity earlier, making checkout reviewable, and moving nonessential tasks out</span>.</p>
+    </div>
+  </section>
+
+  <%- include(`${templatePath}/shared2026/footer`, {
+    footerVariant: 'case-study',
+    footerAllCaseStudiesHref: '/worklog',
+    footerResumeHref: '/resume2026'
+  }) %>
+
+  <div class="wl-image-modal" id="wl-image-modal" aria-hidden="true">
+    <button class="wl-image-modal__close" type="button" aria-label="Close image">&times;</button>
+    <button class="wl-image-modal__control wl-image-modal__control--prev" type="button" aria-label="Previous image">&larr;</button>
+    <figure class="wl-image-modal__figure">
+      <img class="wl-image-modal__img" src="" alt="">
+      <figcaption class="wl-image-modal__caption"></figcaption>
+    </figure>
+    <button class="wl-image-modal__control wl-image-modal__control--next" type="button" aria-label="Next image">&rarr;</button>
+  </div>
+
+</body>
+
+</html>
