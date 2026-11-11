@@ -1,0 +1,97 @@
+{
+  "name": "Vicky (Yiqi) Wang",
+  "subtitle": "Senior Product Designer — complex consumer, B2B, and platform systems",
+  "profile": "I design both sides of marketplaces: the tools providers run their business on, the flows customers book through, and the partner integrations in between.",
+  "tools": "Figma · HTML/CSS/JS · AI-assisted prototyping (design tokens → code)",
+  "focus": [
+    "Marketplace & Platform UX",
+    "Consumer Booking",
+    "B2B & Admin Tools",
+    "Provider Operations",
+    "Partner Integrations",
+    "Checkout & Funnels"
+  ],
+  "outcomes": [
+    {
+      "label": "Vrbo · Early funnel",
+      "value": "+60%",
+      "description": "entry-to-shopping progression",
+      "side": "demand"
+    },
+    {
+      "label": "Checkout · Late funnel",
+      "value": "76% → 80%",
+      "description": "mobile checkout completion",
+      "side": "demand"
+    },
+    {
+      "label": "Inventory · Supply",
+      "value": "68%",
+      "description": "of providers who rated the redesign were satisfied",
+      "side": "supply"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "BabyQuip — Senior User Experience Designer",
+      "date": "Oct 2024 – Present · Full-time",
+      "summary": "Design across consumer booking and provider operations for a two-sided marketplace reaching ~250K users a month.",
+      "bullets": [
+        {
+          "text": "Vrbo partner integration: Redesigned the embedded mobile experience across entry, shopping, pricing clarity, and checkout, contributing to +60% entry-to-shopping and +52% entry-to-purchase progression in a matched 30-day GA4 comparison.",
+          "bold": "Vrbo partner integration:"
+        },
+        {
+          "text": "Inventory management: Replaced fragmented workflows with a continuous management surface; 68% of providers who rated the redesign were satisfied.",
+          "bold": "Inventory management:"
+        },
+        {
+          "text": "Provider mobile app: Designed BabyQuip’s first provider app, bringing reservations, customer messaging, calendar planning, and urgent operational updates into an on-the-go workflow.",
+          "bold": "Provider mobile app:"
+        },
+        {
+          "text": "Checkout: Redesigned account identification and checkout to resolve identity earlier, remove repeated steps, and keep renters focused on completing their reservation; mobile checkout completion rose from 76% to 80%.",
+          "bold": "Checkout:"
+        },
+        {
+          "text": "Packages: Reframed packages into an early-stage discovery layer, enabling standardized package discovery before provider selection.",
+          "bold": "Packages:"
+        }
+      ]
+    },
+    {
+      "title": "BookYourPet — UX Designer",
+      "date": "Oct 2021 – Oct 2024 · Full-time",
+      "summary": "",
+      "bullets": [
+        {
+          "text": "Served as the sole UX designer for an end-to-end B2B subscription platform, partnering with the CTO and CEO across service setup, scheduling, and booking systems.",
+          "bold": ""
+        },
+        {
+          "text": "Untangled tightly coupled platform behaviors and helped move the product toward a more flexible service-configuration model.",
+          "bold": ""
+        },
+        {
+          "text": "Designed a configurable booking system and shared design patterns supporting multiple business types across provider setup and consumer booking.",
+          "bold": ""
+        }
+      ]
+    },
+    {
+      "title": "LASO Health — Product Designer",
+      "date": "Aug 2023 – Jan 2024 · Part-time contract",
+      "summary": "",
+      "bullets": [
+        {
+          "text": "Led 0→1 design for administrative and patient-facing decision tools, partnering with PMs and engineers across user management, sales operations, subscription flows, and cost-comparison experiences.",
+          "bold": ""
+        }
+      ]
+    }
+  ],
+  "education": {
+    "title": "University of California, Berkeley — Master of Architecture, CED",
+    "date": "Graduated May 2019"
+  }
+}

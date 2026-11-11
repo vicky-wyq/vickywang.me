@@ -9,7 +9,6 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Paragraph
 from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 
 ROOT = Path(__file__).resolve().parents[1]
 rendered = subprocess.check_output(['node', '-e', "require('ejs').renderFile('templates/resume/index.ejs',{templatePath:require('path').resolve('templates')}).then(s=>process.stdout.write(s))"], cwd=ROOT, text=True)
@@ -19,10 +18,8 @@ def token(name):
     value = re.search(r'--'+re.escape(name)+r':\s*([^;]+);', css).group(1)
     return token(value[6:-1]) if value.startswith('var(--') else value
 ink, muted, bronze, rule = [HexColor(token(k)) for k in ('text','text-muted','accent','border')]
-fonts = Path('/System/Library/Fonts/Supplemental')
-pdfmetrics.registerFont(TTFont('ResumeSans',str(fonts/'Arial.ttf')))
-pdfmetrics.registerFont(TTFont('ResumeSansBold',str(fonts/'Arial Bold.ttf')))
-pdfmetrics.registerFontFamily('ResumeSans',normal='ResumeSans',bold='ResumeSansBold',italic='ResumeSans',boldItalic='ResumeSansBold')
+# Standard PDF fonts avoid reader-specific problems with subsetted TTC fonts.
+# These use the PDF Base 14 Helvetica family, with no custom font embedding.
 out=ROOT/'output/pdf/Vicky-Wang-Resume.pdf';out.parent.mkdir(parents=True,exist_ok=True)
 c=canvas.Canvas(str(out),pagesize=(612,792))
 c.setTitle('Vicky Wang - Senior Product Designer');c.setAuthor('Vicky Wang')
@@ -34,8 +31,8 @@ def rich(el):
     raw=clean(el.decode_contents())
     raw=re.sub(r'</?span[^>]*>','',raw)
     return raw.replace('<strong>','<b>').replace('</strong>','</b>')
-def para(content,x,y,w,size=9.3,leading=12.8,bold=False,color=None):
-    style=ParagraphStyle('text',fontName='ResumeSansBold' if bold else 'ResumeSans',fontSize=size,leading=leading,textColor=color or muted)
+def para(content,x,y,w,size=9.3,leading=12.8,bold=False,color=None,font=None):
+    style=ParagraphStyle('text',fontName=font or ('Helvetica-Bold' if bold else 'Helvetica'),fontSize=size,leading=leading,textColor=color or muted)
     p=Paragraph(content,style);_,h=p.wrap(w,1000);p.drawOn(c,x,y-h);return y-h
 
 def label(t,x,y,w):
@@ -60,7 +57,7 @@ y=label('Selected outcomes',left,y,sw)
 for item in soup.select('.resume-outcomes .outcome-item'):
     color=HexColor(token('demand-color' if item.get('data-side')=='demand' else 'supply-color'))
     y=para(html.escape(text(item.select_one('dt'))),left,y,sw,8.3,11,color=muted)-3
-    y=para(html.escape(text(item.select_one('.outcome-value'))),left,y,sw,9.5,12,True,color)-2
+    y=para(html.escape(text(item.select_one('.outcome-value'))),left,y,sw,9.5,12,True,ink)-2
     y=para(html.escape(text(item.select_one('.outcome-description'))),left,y,sw,8.7,12)-12
 
 y-=5;y=label('Focus & expertise',left,y,sw)
@@ -76,7 +73,7 @@ for job in soup.select('.resume-job'):
     h=job.select_one('h3');role=h.select_one('span')
     company=h.get_text(' ',strip=True).split('—')[0].strip()
     y=para(html.escape(company),right,y,rw,11,14,True,ink)-2
-    y=para(html.escape(text(role).lstrip(' -')),right,y,rw,9.4,12,True,ink)-3
+    y=para(html.escape(text(role).lstrip(' -')),right,y,rw,9.4,12,color=ink,font='Helvetica')-3
     y=para(html.escape(text(job.select_one('.resume-job-date'))),right,y,rw,8,10.5,color=muted)-7
     summary=job.select_one('.resume-job-summary')
     if summary:y=para(html.escape(text(summary)),right,y,rw,9.1,12.5)-7

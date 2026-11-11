@@ -47,7 +47,7 @@ async function processFile(filePath, relativePath = '') {
     await fs.outputFile(outputPath, data);
   } else {
     const outputPath = path.join(outputDir, relativePath);
-    await fs.copy(filePath, outputPath);
+    await fs.copy(filePath, outputPath, { preserveTimestamps: true }); // unchanged files keep their date, so publish only uploads real changes
   }
 }
 
